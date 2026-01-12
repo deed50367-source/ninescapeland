@@ -1,5 +1,5 @@
-import { useState } from "react";
 import { useTranslation } from "react-i18next";
+import { useNavigate, useLocation, useParams } from "react-router-dom";
 import { Globe } from "lucide-react";
 import { languages } from "@/i18n/config";
 import {
@@ -12,16 +12,23 @@ import { Button } from "./ui/button";
 
 export const LanguageSwitcher = () => {
   const { i18n } = useTranslation();
-  const currentLang = languages.find((l) => l.code === i18n.language) || languages[0];
+  const navigate = useNavigate();
+  const location = useLocation();
+  const { lang } = useParams<{ lang: string }>();
+  
+  const currentLang = languages.find((l) => l.code === (lang || i18n.language)) || languages[0];
 
   const changeLanguage = (code: string) => {
     i18n.changeLanguage(code);
-    const lang = languages.find((l) => l.code === code);
-    if (lang?.rtl) {
-      document.documentElement.dir = "rtl";
-    } else {
-      document.documentElement.dir = "ltr";
-    }
+    const langConfig = languages.find((l) => l.code === code);
+    document.documentElement.dir = langConfig?.rtl ? "rtl" : "ltr";
+    document.documentElement.lang = code;
+    
+    // Update URL with new language prefix
+    const currentPath = location.pathname;
+    const pathWithoutLang = currentPath.replace(/^\/[a-z]{2}(\/|$)/, "/");
+    const newPath = `/${code}${pathWithoutLang === "/" ? "" : pathWithoutLang}`;
+    navigate(newPath + location.search + location.hash);
   };
 
   return (
@@ -34,14 +41,14 @@ export const LanguageSwitcher = () => {
         </Button>
       </DropdownMenuTrigger>
       <DropdownMenuContent align="end">
-        {languages.map((lang) => (
+        {languages.map((langItem) => (
           <DropdownMenuItem
-            key={lang.code}
-            onClick={() => changeLanguage(lang.code)}
-            className={i18n.language === lang.code ? "bg-muted" : ""}
+            key={langItem.code}
+            onClick={() => changeLanguage(langItem.code)}
+            className={currentLang.code === langItem.code ? "bg-muted" : ""}
           >
-            <span className="mr-2">{lang.flag}</span>
-            {lang.name}
+            <span className="mr-2">{langItem.flag}</span>
+            {langItem.name}
           </DropdownMenuItem>
         ))}
       </DropdownMenuContent>
