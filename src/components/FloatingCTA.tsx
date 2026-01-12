@@ -37,7 +37,7 @@ export const FloatingCTA = () => {
 
       {/* WhatsApp Button */}
       <motion.a
-        href="https://wa.me/8613500000000?text=Hi, I'm interested in your playground equipment"
+        href="https://wa.me/8615057582901?text=Hi, I'm interested in your playground equipment"
         target="_blank"
         rel="noopener noreferrer"
         initial={{ scale: 0 }}

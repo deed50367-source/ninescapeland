@@ -17,9 +17,9 @@ const companyLinks = [
 ];
 
 const socialLinks = [
-  { icon: Facebook, href: "#", label: "Facebook" },
+  { icon: Facebook, href: "https://www.facebook.com/profile.php?id=61552140959757vNSFQ", label: "Facebook" },
+  { icon: Youtube, href: "https://www.youtube.com/channel/UCIdoa0CaYjica6C0PIvNSFQ", label: "YouTube" },
   { icon: Linkedin, href: "#", label: "LinkedIn" },
-  { icon: Youtube, href: "#", label: "YouTube" },
   { icon: Instagram, href: "#", label: "Instagram" },
 ];
 
@@ -31,10 +31,10 @@ export const Footer = () => {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* Company Info */}
           <div className="lg:col-span-1">
-            <h3 className="text-2xl font-heading font-bold mb-4">PlaygroundPro</h3>
+            <h3 className="text-2xl font-heading font-bold mb-4">NinescapeLand</h3>
             <p className="text-primary-foreground/80 mb-6">
-              Leading manufacturer of commercial indoor playground equipment, trampoline parks, 
-              and family entertainment center solutions. Serving clients in 50+ countries since 2008.
+              Professional manufacturer of commercial indoor playground equipment, trampoline parks, 
+              ninja courses and family entertainment center solutions. Serving clients worldwide since 2008.
             </p>
             <div className="flex gap-4">
               {socialLinks.map((social, index) => (
@@ -92,8 +92,8 @@ export const Footer = () => {
                 <Phone className="w-5 h-5 mt-0.5 flex-shrink-0" />
                 <div>
                   <p className="text-primary-foreground/60 text-sm">Phone / WhatsApp</p>
-                  <a href="tel:+8613500000000" className="hover:opacity-80">
-                    +86 135 0000 0000
+                  <a href="tel:+8615057582901" className="hover:opacity-80">
+                    +86 150 5758 2901
                   </a>
                 </div>
               </li>
@@ -101,8 +101,8 @@ export const Footer = () => {
                 <Mail className="w-5 h-5 mt-0.5 flex-shrink-0" />
                 <div>
                   <p className="text-primary-foreground/60 text-sm">Email</p>
-                  <a href="mailto:info@playgroundpro.com" className="hover:opacity-80">
-                    info@playgroundpro.com
+                  <a href="mailto:NinescapeLand@gmail.com" className="hover:opacity-80">
+                    NinescapeLand@gmail.com
                   </a>
                 </div>
               </li>
@@ -121,7 +121,7 @@ export const Footer = () => {
       {/* Bottom Bar */}
       <div className="border-t border-primary-foreground/10">
         <div className="container-wide py-6 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-primary-foreground/60">
-          <p>© 2024 PlaygroundPro. All rights reserved.</p>
+          <p>© 2024 NinescapeLand. All rights reserved.</p>
           <div className="flex gap-6">
             <a href="#" className="hover:text-primary-foreground transition-colors">
               Privacy Policy

@@ -3,51 +3,75 @@ import { CheckCircle } from "lucide-react";
 
 const features = [
   {
-    title: "Timing Ninja",
-    nameZh: "忍者空间",
-    description: "Ninja space combines parkour and trampoline with climbing walls, balance beams, rope courses and interactive elements. Perfect for all ages seeking challenges.",
+    title: "Sponge Play Zone",
+    nameZh: "趣味海绵区",
+    description: "Dive into colorful foam cubes for soft landings and endless fun. Perfect for trampoline tricks and cool stunts safely.",
+    color: "from-cyan-500 to-blue-600",
+  },
+  {
+    title: "Plum Blossom Piles",
+    nameZh: "梅花桩",
+    description: "Unique pillar design that attracts attention and provides diverse exercise experiences for children of all skill levels.",
     color: "from-purple-600 to-indigo-700",
   },
   {
-    title: "Spider Wall",
-    nameZh: "蜘蛛墙",
-    description: "Interactive climbing wall combining special climbing holds with trampoline bounce. Perfect for professional training and exciting challenges.",
+    title: "Inflatable Football",
+    nameZh: "花式足球区",
+    description: "Innovative football training zone combining skills elements with exciting entertainment for a fresh learning experience.",
+    color: "from-green-500 to-emerald-600",
+  },
+  {
+    title: "Slam Dunk Zone",
+    nameZh: "花式灌篮区",
+    description: "Experience NBA-style dunking! Use trampoline bounce to soar and slam like a basketball pro. Feel the thrill of flying.",
     color: "from-orange-500 to-amber-600",
   },
   {
-    title: "Devil's Slide",
-    nameZh: "魔鬼滑梯",
-    description: "High-speed drop slide nearly 90 degrees, offering maximum excitement and adrenaline rush for thrill-seekers.",
+    title: "Skyrider",
+    nameZh: "空中滑索",
+    description: "Aerial zipline activity offering a unique flying adventure. Glide through the park for an exciting adventure experience.",
+    color: "from-yellow-500 to-orange-600",
+  },
+  {
+    title: "360° Bicycle",
+    nameZh: "360°自行车",
+    description: "Revolutionary rotating bike experience. Break free from traditional cycling and enjoy 360-degree freedom.",
     color: "from-pink-500 to-rose-600",
   },
   {
-    title: "Inflatable Bumper Ball",
-    nameZh: "充气碰碰球",
-    description: "Wearable inflatable bumpers for safe collision fun. Enjoy bumping competition and safe bouncing action.",
+    title: "Climbing Wall",
+    nameZh: "极限攀岩区",
+    description: "Not just a sport but an art form. Climb the 'rock ballet' like Spider-Man reaching for the stars.",
     color: "from-violet-600 to-purple-700",
   },
   {
-    title: "Battle Stick",
+    title: "Adventure Challenge",
+    nameZh: "拓展闯关",
+    description: "Unique challenge courses designed to spark curiosity and creativity. Overcome obstacles with teamwork.",
+    color: "from-fuchsia-500 to-pink-600",
+  },
+  {
+    title: "Free Jump Zone",
+    nameZh: "自由蹦床区",
+    description: "Large interconnected trampolines for freestyle jumping, wall walking, and gravity-defying fun. Ultimate stress relief.",
+    color: "from-blue-600 to-cyan-600",
+  },
+  {
+    title: "Pro Trampoline Zone",
+    nameZh: "专业蹦床区",
+    description: "Professional-grade trampolines with higher bounce for gymnastic training and advanced aerial maneuvers.",
+    color: "from-red-600 to-orange-600",
+  },
+  {
+    title: "Battle Stick Arena",
     nameZh: "打斗棍区",
     description: "Foam stick battle arena combining balance and combat. Safe padded weapons for exciting duels on elevated platforms.",
-    color: "from-fuchsia-500 to-pink-600",
+    color: "from-teal-500 to-green-600",
   },
   {
     title: "Dodgeball Zone",
     nameZh: "躲避球区",
     description: "Classic trampoline dodgeball with elastic bounce dynamics. Complete with safety padding for team competitions.",
-    color: "from-blue-600 to-cyan-600",
-  },
-  {
-    title: "Internet Celebrity Spider Tower",
-    nameZh: "网红蜘蛛塔",
-    description: "Viral attraction combining climbing challenges with spectacular design. Multi-level structure for brave climbers.",
-    color: "from-red-600 to-orange-600",
-  },
-  {
-    title: "Anti-Slope Slide",
-    nameZh: "旱雪滑梯区",
-    description: "European-style dry ski slide using special plastic material. Experience skiing sensation indoors safely year-round.",
     color: "from-amber-500 to-yellow-600",
   },
 ];
@@ -85,7 +109,7 @@ export const TrampolineFeaturesSection = () => {
             Complete <span className="text-gradient">Attraction Zones</span>
           </h2>
           <p className="text-muted-foreground text-lg">
-            Our trampoline parks feature diverse activity zones designed for maximum engagement 
+            Our trampoline parks feature 12+ diverse activity zones designed for maximum engagement 
             and repeat visits. Each zone offers unique experiences for different skill levels and ages.
           </p>
         </motion.div>

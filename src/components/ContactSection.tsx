@@ -10,14 +10,14 @@ const contactInfo = [
   {
     icon: Phone,
     label: "Phone / WhatsApp",
-    value: "+86 135 0000 0000",
-    href: "tel:+8613500000000",
+    value: "+86 150 5758 2901",
+    href: "tel:+8615057582901",
   },
   {
     icon: Mail,
     label: "Email",
-    value: "info@playgroundpro.com",
-    href: "mailto:info@playgroundpro.com",
+    value: "NinescapeLand@gmail.com",
+    href: "mailto:NinescapeLand@gmail.com",
   },
   {
     icon: MapPin,
@@ -271,7 +271,7 @@ export const ContactSection = () => {
               </div>
               <Button variant="outline" className="w-full" asChild>
                 <a
-                  href="https://wa.me/8613500000000?text=Hi, I'm interested in your playground equipment"
+                  href="https://wa.me/8615057582901?text=Hi, I'm interested in your playground equipment"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
