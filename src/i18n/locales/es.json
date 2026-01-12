@@ -258,8 +258,100 @@
     "privacy": "Política de Privacidad",
     "terms": "Términos de Servicio"
   },
-  "floatingCta": {
+"floatingCta": {
     "scrollToTop": "Volver arriba",
     "whatsapp": "Chatear en WhatsApp"
+  },
+  "trampolineFeatures": {
+    "sectionLabel": "Características del Parque de Trampolines",
+    "title": "Zonas de",
+    "titleHighlight": "Atracción Completas",
+    "description": "Nuestros parques de trampolines cuentan con más de 12 zonas de actividad diversas diseñadas para el máximo compromiso y visitas repetidas. Cada zona ofrece experiencias únicas para diferentes niveles y edades.",
+    "mixMatch": "Mezcla y combina zonas para crear el parque perfecto para tu espacio y presupuesto",
+    "modularDesign": "Diseño Modular",
+    "customLayouts": "Diseños Personalizados",
+    "scalableSolutions": "Soluciones Escalables",
+    "zones": {
+      "spongePlayZone": {
+        "title": "Zona de Esponja",
+        "description": "Sumérgete en cubos de espuma coloridos para aterrizajes suaves y diversión sin fin. Perfecto para trucos de trampolín y acrobacias seguras."
+      },
+      "plumBlossomPiles": {
+        "title": "Pilares Flor de Ciruelo",
+        "description": "Diseño único de pilares que atrae la atención y proporciona experiencias de ejercicio diversas para niños de todos los niveles."
+      },
+      "inflatableFootball": {
+        "title": "Fútbol Inflable",
+        "description": "Zona innovadora de entrenamiento de fútbol que combina elementos de habilidad con entretenimiento emocionante para una experiencia de aprendizaje fresca."
+      },
+      "slamDunkZone": {
+        "title": "Zona Slam Dunk",
+        "description": "¡Experimenta mates estilo NBA! Usa el rebote del trampolín para elevarte y clavar como un profesional del baloncesto."
+      },
+      "skyrider": {
+        "title": "Skyrider",
+        "description": "Actividad de tirolesa aérea que ofrece una aventura de vuelo única. Deslízate por el parque para una experiencia de aventura emocionante."
+      },
+      "bicycle360": {
+        "title": "Bicicleta 360°",
+        "description": "Experiencia revolucionaria de bicicleta giratoria. Libérate del ciclismo tradicional y disfruta de libertad de 360 grados."
+      },
+      "climbingWall": {
+        "title": "Muro de Escalada",
+        "description": "No solo un deporte sino una forma de arte. Escala el 'ballet de roca' como Spider-Man alcanzando las estrellas."
+      },
+      "adventureChallenge": {
+        "title": "Desafío de Aventura",
+        "description": "Cursos de desafío únicos diseñados para despertar la curiosidad y la creatividad. Supera obstáculos con trabajo en equipo."
+      },
+      "freeJumpZone": {
+        "title": "Zona de Salto Libre",
+        "description": "Grandes trampolines interconectados para saltos libres, caminatas en la pared y diversión desafiando la gravedad."
+      },
+      "proTrampolineZone": {
+        "title": "Zona de Trampolín Pro",
+        "description": "Trampolines de grado profesional con mayor rebote para entrenamiento gimnástico y maniobras aéreas avanzadas."
+      },
+      "battleStickArena": {
+        "title": "Arena de Bastones",
+        "description": "Arena de batalla con bastones de espuma que combina equilibrio y combate. Armas acolchadas seguras para duelos emocionantes."
+      },
+      "dodgeballZone": {
+        "title": "Zona de Dodgeball",
+        "description": "Dodgeball clásico en trampolín con dinámica de rebote elástico. Completo con acolchado de seguridad para competencias de equipos."
+      }
+    }
+  },
+  "ninjaFeatures": {
+    "sectionLabel": "Parque Ninja Interior",
+    "title": "Desafía Alturas,",
+    "titleHighlight": "Conquista Aventuras",
+    "description": "Nuestros cursos ninja warrior combinan desafíos de altura con obstáculos de aventura, proporcionando una experiencia inolvidable que construye confianza y habilidades de trabajo en equipo.",
+    "features": {
+      "highAltitude": {
+        "title": "Desafíos de Altura",
+        "description": "Supera tus límites con muros de escalada, tirolesas y redes aéreas. Experimenta aventuras emocionantes en un ambiente completamente seguro."
+      },
+      "adventureObstacles": {
+        "title": "Obstáculos de Aventura",
+        "description": "Explora cursos de desafío únicos llenos de sabiduría y diversión. Supera barreras, resuelve puzzles y trabaja en equipo."
+      },
+      "teamBuilding": {
+        "title": "Trabajo en Equipo",
+        "description": "Perfecto para grupos que buscan aventura y colaboración. Cada módulo está cuidadosamente diseñado para inspirar curiosidad y creatividad."
+      },
+      "physicalDevelopment": {
+        "title": "Desarrollo Físico",
+        "description": "Desafíate con obstáculos que construyen fuerza, agilidad y confianza. Adecuado para todas las edades y niveles de condición física."
+      }
+    },
+    "stats": {
+      "obstacleTypes": "Tipos de Obstáculos",
+      "layoutDesign": "Diseño de Layout",
+      "custom": "Personalizado",
+      "suitableFor": "Adecuado Para",
+      "allAges": "Todas las Edades",
+      "designRendering": "Renderizado de Diseño"
+    }
   }
 }

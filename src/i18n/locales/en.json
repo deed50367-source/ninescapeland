@@ -258,8 +258,100 @@
     "privacy": "Privacy Policy",
     "terms": "Terms of Service"
   },
-  "floatingCta": {
+"floatingCta": {
     "scrollToTop": "Scroll to top",
     "whatsapp": "Chat on WhatsApp"
+  },
+  "trampolineFeatures": {
+    "sectionLabel": "Trampoline Park Features",
+    "title": "Complete",
+    "titleHighlight": "Attraction Zones",
+    "description": "Our trampoline parks feature 12+ diverse activity zones designed for maximum engagement and repeat visits. Each zone offers unique experiences for different skill levels and ages.",
+    "mixMatch": "Mix and match zones to create the perfect park for your space and budget",
+    "modularDesign": "Modular Design",
+    "customLayouts": "Custom Layouts",
+    "scalableSolutions": "Scalable Solutions",
+    "zones": {
+      "spongePlayZone": {
+        "title": "Sponge Play Zone",
+        "description": "Dive into colorful foam cubes for soft landings and endless fun. Perfect for trampoline tricks and cool stunts safely."
+      },
+      "plumBlossomPiles": {
+        "title": "Plum Blossom Piles",
+        "description": "Unique pillar design that attracts attention and provides diverse exercise experiences for children of all skill levels."
+      },
+      "inflatableFootball": {
+        "title": "Inflatable Football",
+        "description": "Innovative football training zone combining skills elements with exciting entertainment for a fresh learning experience."
+      },
+      "slamDunkZone": {
+        "title": "Slam Dunk Zone",
+        "description": "Experience NBA-style dunking! Use trampoline bounce to soar and slam like a basketball pro. Feel the thrill of flying."
+      },
+      "skyrider": {
+        "title": "Skyrider",
+        "description": "Aerial zipline activity offering a unique flying adventure. Glide through the park for an exciting adventure experience."
+      },
+      "bicycle360": {
+        "title": "360° Bicycle",
+        "description": "Revolutionary rotating bike experience. Break free from traditional cycling and enjoy 360-degree freedom."
+      },
+      "climbingWall": {
+        "title": "Climbing Wall",
+        "description": "Not just a sport but an art form. Climb the 'rock ballet' like Spider-Man reaching for the stars."
+      },
+      "adventureChallenge": {
+        "title": "Adventure Challenge",
+        "description": "Unique challenge courses designed to spark curiosity and creativity. Overcome obstacles with teamwork."
+      },
+      "freeJumpZone": {
+        "title": "Free Jump Zone",
+        "description": "Large interconnected trampolines for freestyle jumping, wall walking, and gravity-defying fun. Ultimate stress relief."
+      },
+      "proTrampolineZone": {
+        "title": "Pro Trampoline Zone",
+        "description": "Professional-grade trampolines with higher bounce for gymnastic training and advanced aerial maneuvers."
+      },
+      "battleStickArena": {
+        "title": "Battle Stick Arena",
+        "description": "Foam stick battle arena combining balance and combat. Safe padded weapons for exciting duels on elevated platforms."
+      },
+      "dodgeballZone": {
+        "title": "Dodgeball Zone",
+        "description": "Classic trampoline dodgeball with elastic bounce dynamics. Complete with safety padding for team competitions."
+      }
+    }
+  },
+  "ninjaFeatures": {
+    "sectionLabel": "Indoor Ninja Park",
+    "title": "Challenge Heights,",
+    "titleHighlight": "Conquer Adventures",
+    "description": "Our ninja warrior courses combine high-altitude challenges with adventure obstacles, providing an unforgettable experience that builds confidence and teamwork skills.",
+    "features": {
+      "highAltitude": {
+        "title": "High Altitude Challenges",
+        "description": "Push your limits with climbing walls, ziplines, and aerial nets. Experience thrilling adventures in a completely safe environment."
+      },
+      "adventureObstacles": {
+        "title": "Adventure Obstacles",
+        "description": "Explore unique challenge courses filled with wisdom and fun. Overcome barriers, solve puzzles, and work together as a team."
+      },
+      "teamBuilding": {
+        "title": "Team Building",
+        "description": "Perfect for groups seeking adventure and collaboration. Each module is carefully designed to inspire curiosity and creativity."
+      },
+      "physicalDevelopment": {
+        "title": "Physical Development",
+        "description": "Challenge yourself with obstacles that build strength, agility, and confidence. Suitable for all ages and fitness levels."
+      }
+    },
+    "stats": {
+      "obstacleTypes": "Obstacle Types",
+      "layoutDesign": "Layout Design",
+      "custom": "Custom",
+      "suitableFor": "Suitable For",
+      "allAges": "All Ages",
+      "designRendering": "Design Rendering"
+    }
   }
 }

@@ -1,32 +1,13 @@
 import { motion } from "framer-motion";
 import { Mountain, Target, Users, Zap } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
-const ninjaFeatures = [
-  {
-    icon: Mountain,
-    title: "High Altitude Challenges",
-    description: "Push your limits with climbing walls, ziplines, and aerial nets. Experience thrilling adventures in a completely safe environment.",
-    color: "from-purple-600 to-indigo-700",
-  },
-  {
-    icon: Target,
-    title: "Adventure Obstacles",
-    description: "Explore unique challenge courses filled with wisdom and fun. Overcome barriers, solve puzzles, and work together as a team.",
-    color: "from-orange-500 to-amber-600",
-  },
-  {
-    icon: Users,
-    title: "Team Building",
-    description: "Perfect for groups seeking adventure and collaboration. Each module is carefully designed to inspire curiosity and creativity.",
-    color: "from-pink-500 to-rose-600",
-  },
-  {
-    icon: Zap,
-    title: "Physical Development",
-    description: "Challenge yourself with obstacles that build strength, agility, and confidence. Suitable for all ages and fitness levels.",
-    color: "from-cyan-500 to-blue-600",
-  },
-];
+const featureKeys = [
+  { key: "highAltitude", icon: Mountain, color: "from-purple-600 to-indigo-700" },
+  { key: "adventureObstacles", icon: Target, color: "from-orange-500 to-amber-600" },
+  { key: "teamBuilding", icon: Users, color: "from-pink-500 to-rose-600" },
+  { key: "physicalDevelopment", icon: Zap, color: "from-cyan-500 to-blue-600" },
+] as const;
 
 const container = {
   hidden: { opacity: 0 },
@@ -44,6 +25,8 @@ const item = {
 };
 
 export const NinjaFeaturesSection = () => {
+  const { t } = useTranslation();
+
   return (
     <section id="ninja-features" className="section-padding bg-gradient-to-br from-primary/10 via-background to-accent/10">
       <div className="container-wide">
@@ -55,14 +38,13 @@ export const NinjaFeaturesSection = () => {
           className="text-center max-w-3xl mx-auto mb-16"
         >
           <span className="text-accent font-semibold text-sm uppercase tracking-wider">
-            Indoor Ninja Park
+            {t("ninjaFeatures.sectionLabel")}
           </span>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold mt-3 mb-6">
-            Challenge Heights, <span className="text-gradient">Conquer Adventures</span>
+            {t("ninjaFeatures.title")} <span className="text-gradient">{t("ninjaFeatures.titleHighlight")}</span>
           </h2>
           <p className="text-muted-foreground text-lg">
-            Our ninja warrior courses combine high-altitude challenges with adventure obstacles, 
-            providing an unforgettable experience that builds confidence and teamwork skills.
+            {t("ninjaFeatures.description")}
           </p>
         </motion.div>
 
@@ -74,9 +56,9 @@ export const NinjaFeaturesSection = () => {
           viewport={{ once: true }}
           className="grid md:grid-cols-2 lg:grid-cols-4 gap-8"
         >
-          {ninjaFeatures.map((feature, index) => (
+          {featureKeys.map((feature) => (
             <motion.div
-              key={index}
+              key={feature.key}
               variants={item}
               className="group relative bg-card rounded-2xl p-8 shadow-soft hover:shadow-medium transition-all duration-300 text-center"
             >
@@ -86,9 +68,9 @@ export const NinjaFeaturesSection = () => {
               </div>
               
               {/* Content */}
-              <h3 className="text-xl font-heading font-bold mb-3">{feature.title}</h3>
+              <h3 className="text-xl font-heading font-bold mb-3">{t(`ninjaFeatures.features.${feature.key}.title`)}</h3>
               <p className="text-muted-foreground leading-relaxed">
-                {feature.description}
+                {t(`ninjaFeatures.features.${feature.key}.description`)}
               </p>
 
               {/* Hover Effect */}
@@ -105,16 +87,16 @@ export const NinjaFeaturesSection = () => {
           className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-8"
         >
           {[
-            { value: "50+", label: "Obstacle Types" },
-            { value: "Custom", label: "Layout Design" },
-            { value: "All Ages", label: "Suitable For" },
-            { value: "3D", label: "Design Rendering" },
+            { value: "50+", labelKey: "obstacleTypes" },
+            { value: t("ninjaFeatures.stats.custom"), labelKey: "layoutDesign" },
+            { value: t("ninjaFeatures.stats.allAges"), labelKey: "suitableFor" },
+            { value: "3D", labelKey: "designRendering" },
           ].map((stat, index) => (
             <div key={index} className="text-center">
               <p className="text-3xl md:text-4xl font-heading font-bold text-primary mb-2">
                 {stat.value}
               </p>
-              <p className="text-muted-foreground">{stat.label}</p>
+              <p className="text-muted-foreground">{t(`ninjaFeatures.stats.${stat.labelKey}`)}</p>
             </div>
           ))}
         </motion.div>
