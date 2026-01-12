@@ -15,6 +15,7 @@ import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { useLocalizedPath } from "@/hooks/useLocalizedPath";
 
 import indoorPlayground from "@/assets/product-indoor-playground.jpg";
 import trampolinePark from "@/assets/product-trampoline-park.jpg";
@@ -152,6 +153,7 @@ export default function ProductDetail() {
   const { productId } = useParams<{ productId: string }>();
   const [currentImage, setCurrentImage] = useState(0);
   const [lightboxOpen, setLightboxOpen] = useState(false);
+  const { localizedPath } = useLocalizedPath();
 
   const product = productId ? products[productId as keyof typeof products] : null;
 
@@ -166,7 +168,7 @@ export default function ProductDetail() {
               The product you're looking for doesn't exist.
             </p>
             <Button variant="hero" asChild>
-              <Link to="/#products">View All Products</Link>
+              <Link to={`${localizedPath("")}#products`}>View All Products</Link>
             </Button>
           </div>
         </main>
@@ -194,11 +196,11 @@ export default function ProductDetail() {
         <section className="py-4 border-b">
           <div className="container-wide">
             <nav className="flex items-center gap-2 text-sm text-muted-foreground">
-              <Link to="/" className="hover:text-primary transition-colors">
+              <Link to={localizedPath("")} className="hover:text-primary transition-colors">
                 Home
               </Link>
               <span>/</span>
-              <Link to="/#products" className="hover:text-primary transition-colors">
+              <Link to={`${localizedPath("")}#products`} className="hover:text-primary transition-colors">
                 Products
               </Link>
               <span>/</span>
@@ -211,7 +213,7 @@ export default function ProductDetail() {
         <section className="section-padding">
           <div className="container-wide">
             <Link
-              to="/#products"
+              to={`${localizedPath("")}#products`}
               className="inline-flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors mb-6"
             >
               <ArrowLeft className="w-4 h-4" />
@@ -308,13 +310,13 @@ export default function ProductDetail() {
 
                 <div className="space-y-4 mb-8">
                   <Button variant="hero" size="xl" className="w-full" asChild>
-                    <a href="/#contact">
+                    <a href={`${localizedPath("")}#contact`}>
                       Request Quote
                       <ArrowRight className="w-5 h-5" />
                     </a>
                   </Button>
                   <Button variant="outline" size="lg" className="w-full" asChild>
-                    <a href="/#quote-calculator">
+                    <a href={`${localizedPath("")}#quote-calculator`}>
                       Use Price Calculator
                     </a>
                   </Button>
@@ -435,7 +437,7 @@ export default function ProductDetail() {
               asChild
               className="bg-primary-foreground text-primary hover:bg-primary-foreground/90"
             >
-              <a href="/#contact" className="group">
+              <a href={`${localizedPath("")}#contact`} className="group">
                 Get Free Quote
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </a>

@@ -6,6 +6,7 @@ import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { supabase } from "@/integrations/supabase/client";
+import { useLocalizedPath } from "@/hooks/useLocalizedPath";
 
 interface CaseStudy {
   id: string;
@@ -43,6 +44,7 @@ export default function CaseStudies() {
   const [selectedCountry, setSelectedCountry] = useState<string>("");
   const [selectedType, setSelectedType] = useState<string>("");
   const [selectedCase, setSelectedCase] = useState<CaseStudy | null>(null);
+  const { localizedPath } = useLocalizedPath();
 
   useEffect(() => {
     fetchCaseStudies();
@@ -272,7 +274,7 @@ export default function CaseStudies() {
               asChild
               className="bg-primary-foreground text-primary hover:bg-primary-foreground/90"
             >
-              <a href="/#contact" className="group">
+              <a href={`${localizedPath("")}#contact`} className="group">
                 Start Your Project
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </a>
@@ -372,7 +374,7 @@ export default function CaseStudies() {
               )}
 
               <Button variant="hero" size="lg" asChild className="w-full">
-                <a href="/#contact">
+                <a href={`${localizedPath("")}#contact`}>
                   Start Similar Project
                   <ArrowRight className="w-5 h-5" />
                 </a>

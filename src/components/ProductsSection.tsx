@@ -1,7 +1,9 @@
 import { useTranslation } from "react-i18next";
+import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 import { Button } from "./ui/button";
+import { useLocalizedPath } from "@/hooks/useLocalizedPath";
 
 import indoorPlayground from "@/assets/product-indoor-playground.jpg";
 import trampolinePark from "@/assets/product-trampoline-park.jpg";
@@ -25,6 +27,7 @@ const item = {
 
 export const ProductsSection = () => {
   const { t } = useTranslation();
+  const { localizedPath } = useLocalizedPath();
 
   const products = [
     {
@@ -121,10 +124,10 @@ export const ProductsSection = () => {
                   {product.description}
                 </p>
                 <Button variant="outline" size="sm" asChild className="group/btn">
-                  <a href={`/products/${product.slug}`}>
+                  <Link to={localizedPath(`products/${product.slug}`)}>
                     {t("products.viewDetails")}
                     <ArrowRight className="w-4 h-4 group-hover/btn:translate-x-1 transition-transform" />
-                  </a>
+                  </Link>
                 </Button>
               </div>
             </motion.article>

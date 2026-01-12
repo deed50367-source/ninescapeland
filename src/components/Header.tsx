@@ -1,13 +1,16 @@
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
+import { Link } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X, Phone, Mail } from "lucide-react";
 import { Button } from "./ui/button";
 import { LanguageSwitcher } from "./LanguageSwitcher";
+import { useLocalizedPath } from "@/hooks/useLocalizedPath";
 
 export const Header = () => {
   const { t } = useTranslation();
   const [isOpen, setIsOpen] = useState(false);
+  const { localizedPath, currentLang } = useLocalizedPath();
 
   const navItems = [
     { label: t("nav.home"), href: "#home" },
@@ -45,11 +48,11 @@ export const Header = () => {
         <div className="container-wide">
           <div className="flex items-center justify-between h-16 md:h-20">
             {/* Logo */}
-            <a href="#home" className="flex items-center gap-2">
+            <Link to={localizedPath("/")} className="flex items-center gap-2">
               <span className="text-2xl md:text-3xl font-heading font-bold text-gradient">
                 NinescapeLand
               </span>
-            </a>
+            </Link>
 
             {/* Desktop Navigation */}
             <nav className="hidden lg:flex items-center gap-8">
