@@ -2,7 +2,7 @@ import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
-import { Menu, X, Phone, Mail, ChevronDown } from "lucide-react";
+import { Menu, X, Phone, Mail, ChevronDown, ChevronRight } from "lucide-react";
 import { Button } from "./ui/button";
 import { LanguageSwitcher } from "./LanguageSwitcher";
 import { useLocalizedPath } from "@/hooks/useLocalizedPath";
@@ -16,6 +16,7 @@ import {
 export const Header = () => {
   const { t } = useTranslation();
   const [isOpen, setIsOpen] = useState(false);
+  const [isProductsOpen, setIsProductsOpen] = useState(false);
   const { localizedPath } = useLocalizedPath();
 
   const productItems = [
@@ -31,6 +32,49 @@ export const Header = () => {
     { label: t("nav.projects"), href: "#projects" },
     { label: t("nav.contact"), href: "#contact" },
   ];
+
+  const menuVariants = {
+    closed: {
+      opacity: 0,
+      height: 0,
+      transition: {
+        duration: 0.3,
+        ease: [0.4, 0, 0.2, 1] as const,
+        when: "afterChildren" as const,
+      },
+    },
+    open: {
+      opacity: 1,
+      height: "auto",
+      transition: {
+        duration: 0.3,
+        ease: [0.4, 0, 0.2, 1] as const,
+        when: "beforeChildren" as const,
+        staggerChildren: 0.05,
+      },
+    },
+  };
+
+  const itemVariants = {
+    closed: { opacity: 0, x: -20 },
+    open: { opacity: 1, x: 0 },
+  };
+
+  const productMenuVariants = {
+    closed: {
+      opacity: 0,
+      height: 0,
+      transition: { duration: 0.2 },
+    },
+    open: {
+      opacity: 1,
+      height: "auto",
+      transition: {
+        duration: 0.2,
+        staggerChildren: 0.03,
+      },
+    },
+  };
 
   return (
     <>
@@ -127,13 +171,36 @@ export const Header = () => {
             {/* Mobile Menu Button */}
             <div className="lg:hidden flex items-center gap-2">
               <LanguageSwitcher />
-              <button
-                className="p-2 text-foreground"
+              <motion.button
+                className="p-2 text-foreground rounded-lg hover:bg-muted transition-colors"
                 onClick={() => setIsOpen(!isOpen)}
                 aria-label="Toggle menu"
+                whileTap={{ scale: 0.95 }}
               >
-                {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
-              </button>
+                <AnimatePresence mode="wait">
+                  {isOpen ? (
+                    <motion.div
+                      key="close"
+                      initial={{ rotate: -90, opacity: 0 }}
+                      animate={{ rotate: 0, opacity: 1 }}
+                      exit={{ rotate: 90, opacity: 0 }}
+                      transition={{ duration: 0.2 }}
+                    >
+                      <X className="w-6 h-6" />
+                    </motion.div>
+                  ) : (
+                    <motion.div
+                      key="menu"
+                      initial={{ rotate: 90, opacity: 0 }}
+                      animate={{ rotate: 0, opacity: 1 }}
+                      exit={{ rotate: -90, opacity: 0 }}
+                      transition={{ duration: 0.2 }}
+                    >
+                      <Menu className="w-6 h-6" />
+                    </motion.div>
+                  )}
+                </AnimatePresence>
+              </motion.button>
             </div>
           </div>
         </div>
@@ -142,41 +209,97 @@ export const Header = () => {
         <AnimatePresence>
           {isOpen && (
             <motion.div
-              initial={{ opacity: 0, height: 0 }}
-              animate={{ opacity: 1, height: "auto" }}
-              exit={{ opacity: 0, height: 0 }}
-              className="lg:hidden bg-card border-t border-border"
+              variants={menuVariants}
+              initial="closed"
+              animate="open"
+              exit="closed"
+              className="lg:hidden bg-card border-t border-border overflow-hidden"
             >
               <nav className="container-wide py-4 flex flex-col gap-1">
-                {navItems.map((item) => (
-                  <a
+                {navItems.slice(0, 1).map((item) => (
+                  <motion.a
                     key={item.label}
+                    variants={itemVariants}
                     href={item.href}
-                    className="py-3 px-4 text-foreground hover:bg-muted rounded-lg transition-colors font-medium"
+                    className="py-3 px-4 text-foreground hover:bg-primary/10 hover:text-primary rounded-xl transition-all font-medium flex items-center justify-between active:scale-[0.98]"
                     onClick={() => setIsOpen(false)}
+                    whileTap={{ scale: 0.98 }}
                   >
                     {item.label}
-                  </a>
+                    <ChevronRight className="w-4 h-4 opacity-40" />
+                  </motion.a>
                 ))}
                 
-                {/* Products Section in Mobile */}
-                <div className="py-2 px-4">
-                  <span className="text-sm text-muted-foreground font-medium">{t("nav.products")}</span>
-                </div>
-                {productItems.map((item) => (
-                  <a
+                {/* Products Accordion */}
+                <motion.div variants={itemVariants}>
+                  <button
+                    className="w-full py-3 px-4 text-foreground hover:bg-primary/10 hover:text-primary rounded-xl transition-all font-medium flex items-center justify-between active:scale-[0.98]"
+                    onClick={() => setIsProductsOpen(!isProductsOpen)}
+                  >
+                    <span>{t("nav.products")}</span>
+                    <motion.div
+                      animate={{ rotate: isProductsOpen ? 180 : 0 }}
+                      transition={{ duration: 0.2 }}
+                    >
+                      <ChevronDown className="w-4 h-4" />
+                    </motion.div>
+                  </button>
+                  
+                  <AnimatePresence>
+                    {isProductsOpen && (
+                      <motion.div
+                        variants={productMenuVariants}
+                        initial="closed"
+                        animate="open"
+                        exit="closed"
+                        className="overflow-hidden ml-2 border-l-2 border-primary/20"
+                      >
+                        {productItems.map((item) => (
+                          <motion.a
+                            key={item.label}
+                            variants={itemVariants}
+                            href={item.href}
+                            className="py-2.5 px-4 text-foreground/80 hover:text-primary hover:bg-primary/5 rounded-lg transition-all text-sm flex items-center gap-2 active:scale-[0.98]"
+                            onClick={() => {
+                              setIsOpen(false);
+                              setIsProductsOpen(false);
+                            }}
+                            whileTap={{ scale: 0.98 }}
+                          >
+                            <span className="w-1.5 h-1.5 rounded-full bg-primary/40" />
+                            {item.label}
+                          </motion.a>
+                        ))}
+                      </motion.div>
+                    )}
+                  </AnimatePresence>
+                </motion.div>
+
+                {navItems.slice(1).map((item) => (
+                  <motion.a
                     key={item.label}
+                    variants={itemVariants}
                     href={item.href}
-                    className="py-2 px-6 text-foreground/80 hover:bg-muted rounded-lg transition-colors text-sm"
+                    className="py-3 px-4 text-foreground hover:bg-primary/10 hover:text-primary rounded-xl transition-all font-medium flex items-center justify-between active:scale-[0.98]"
                     onClick={() => setIsOpen(false)}
+                    whileTap={{ scale: 0.98 }}
                   >
                     {item.label}
-                  </a>
+                    <ChevronRight className="w-4 h-4 opacity-40" />
+                  </motion.a>
                 ))}
                 
-                <Button variant="hero" size="lg" className="mt-4" asChild>
-                  <a href="#contact" onClick={() => setIsOpen(false)}>{t("nav.getFreeQuote")}</a>
-                </Button>
+                <motion.div variants={itemVariants} className="pt-4">
+                  <Button variant="hero" size="lg" className="w-full" asChild>
+                    <motion.a 
+                      href="#contact" 
+                      onClick={() => setIsOpen(false)}
+                      whileTap={{ scale: 0.98 }}
+                    >
+                      {t("nav.getFreeQuote")}
+                    </motion.a>
+                  </Button>
+                </motion.div>
               </nav>
             </motion.div>
           )}
