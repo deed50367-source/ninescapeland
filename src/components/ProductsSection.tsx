@@ -1,9 +1,10 @@
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, ArrowLeft } from "lucide-react";
 import { Button } from "./ui/button";
 import { useLocalizedPath } from "@/hooks/useLocalizedPath";
+import { useRTL } from "@/hooks/useRTL";
 
 import indoorPlayground from "@/assets/product-indoor-playground.jpg";
 import trampolinePark from "@/assets/product-trampoline-park.jpg";
@@ -28,6 +29,10 @@ const item = {
 export const ProductsSection = () => {
   const { t } = useTranslation();
   const { localizedPath } = useLocalizedPath();
+  const { isRTL } = useRTL();
+
+  // Choose the correct arrow based on RTL
+  const ArrowIcon = isRTL ? ArrowLeft : ArrowRight;
 
   const products = [
     {
@@ -126,7 +131,7 @@ export const ProductsSection = () => {
                 <Button variant="outline" size="sm" asChild className="group/btn">
                   <Link to={localizedPath(`products/${product.slug}`)}>
                     {t("products.viewDetails")}
-                    <ArrowRight className="w-4 h-4 group-hover/btn:translate-x-1 transition-transform" />
+                    <ArrowIcon className={`w-4 h-4 transition-transform ${isRTL ? 'group-hover/btn:-translate-x-1' : 'group-hover/btn:translate-x-1'}`} />
                   </Link>
                 </Button>
               </div>
@@ -147,7 +152,7 @@ export const ProductsSection = () => {
           <Button variant="hero" size="lg" asChild>
             <a href="#contact" className="group">
               {t("products.discussProject")}
-              <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+              <ArrowIcon className={`w-5 h-5 transition-transform ${isRTL ? 'group-hover:-translate-x-1' : 'group-hover:translate-x-1'}`} />
             </a>
           </Button>
         </motion.div>

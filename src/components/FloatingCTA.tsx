@@ -2,9 +2,11 @@ import { useTranslation } from "react-i18next";
 import { MessageCircle, ArrowUp } from "lucide-react";
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { useRTL } from "@/hooks/useRTL";
 
 export const FloatingCTA = () => {
   const { t } = useTranslation();
+  const { isRTL } = useRTL();
   const [showScrollTop, setShowScrollTop] = useState(false);
 
   useEffect(() => {
@@ -20,7 +22,7 @@ export const FloatingCTA = () => {
   };
 
   return (
-    <div className="fixed bottom-6 right-6 z-50 flex flex-col gap-3">
+    <div className={`fixed bottom-6 z-50 flex flex-col gap-3 ${isRTL ? 'left-6' : 'right-6'}`}>
       {/* Scroll to top */}
       <AnimatePresence>
         {showScrollTop && (

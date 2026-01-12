@@ -2,10 +2,11 @@ import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
-import { Menu, X, Phone, Mail, ChevronDown, ChevronRight } from "lucide-react";
+import { Menu, X, Phone, Mail, ChevronDown, ChevronRight, ChevronLeft } from "lucide-react";
 import { Button } from "./ui/button";
 import { LanguageSwitcher } from "./LanguageSwitcher";
 import { useLocalizedPath } from "@/hooks/useLocalizedPath";
+import { useRTL } from "@/hooks/useRTL";
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -18,6 +19,7 @@ export const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isProductsOpen, setIsProductsOpen] = useState(false);
   const { localizedPath } = useLocalizedPath();
+  const { isRTL, flipX } = useRTL();
 
   const productItems = [
     { label: t("products.items.indoorPlayground.title"), href: "#products" },
@@ -56,7 +58,7 @@ export const Header = () => {
   };
 
   const itemVariants = {
-    closed: { opacity: 0, x: -20 },
+    closed: { opacity: 0, x: flipX(-20) },
     open: { opacity: 1, x: 0 },
   };
 
@@ -75,6 +77,9 @@ export const Header = () => {
       },
     },
   };
+
+  // Choose the correct chevron based on RTL
+  const DirectionalChevron = isRTL ? ChevronLeft : ChevronRight;
 
   return (
     <>
@@ -115,7 +120,7 @@ export const Header = () => {
                 className="text-foreground/80 hover:text-primary font-medium transition-colors relative group"
               >
                 {t("nav.home")}
-                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all group-hover:w-full" />
+                <span className="absolute -bottom-1 start-0 w-0 h-0.5 bg-primary transition-all group-hover:w-full" />
               </a>
 
               {/* Products Dropdown */}
@@ -140,7 +145,7 @@ export const Header = () => {
                 className="text-foreground/80 hover:text-primary font-medium transition-colors relative group"
               >
                 {t("nav.process")}
-                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all group-hover:w-full" />
+                <span className="absolute -bottom-1 start-0 w-0 h-0.5 bg-primary transition-all group-hover:w-full" />
               </a>
 
               <a
@@ -148,7 +153,7 @@ export const Header = () => {
                 className="text-foreground/80 hover:text-primary font-medium transition-colors relative group"
               >
                 {t("nav.projects")}
-                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all group-hover:w-full" />
+                <span className="absolute -bottom-1 start-0 w-0 h-0.5 bg-primary transition-all group-hover:w-full" />
               </a>
 
               <a
@@ -156,7 +161,7 @@ export const Header = () => {
                 className="text-foreground/80 hover:text-primary font-medium transition-colors relative group"
               >
                 {t("nav.contact")}
-                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all group-hover:w-full" />
+                <span className="absolute -bottom-1 start-0 w-0 h-0.5 bg-primary transition-all group-hover:w-full" />
               </a>
             </nav>
 
@@ -226,7 +231,7 @@ export const Header = () => {
                     whileTap={{ scale: 0.98 }}
                   >
                     {item.label}
-                    <ChevronRight className="w-4 h-4 opacity-40" />
+                    <DirectionalChevron className="w-4 h-4 opacity-40" />
                   </motion.a>
                 ))}
                 
@@ -252,7 +257,7 @@ export const Header = () => {
                         initial="closed"
                         animate="open"
                         exit="closed"
-                        className="overflow-hidden ml-2 border-l-2 border-primary/20"
+                        className={`overflow-hidden ${isRTL ? 'mr-2 border-r-2' : 'ml-2 border-l-2'} border-primary/20`}
                       >
                         {productItems.map((item) => (
                           <motion.a
@@ -285,7 +290,7 @@ export const Header = () => {
                     whileTap={{ scale: 0.98 }}
                   >
                     {item.label}
-                    <ChevronRight className="w-4 h-4 opacity-40" />
+                    <DirectionalChevron className="w-4 h-4 opacity-40" />
                   </motion.a>
                 ))}
                 

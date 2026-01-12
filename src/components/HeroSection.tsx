@@ -1,11 +1,13 @@
 import { useTranslation } from "react-i18next";
 import { motion } from "framer-motion";
-import { ArrowRight, CheckCircle } from "lucide-react";
+import { ArrowRight, ArrowLeft, CheckCircle } from "lucide-react";
 import { Button } from "./ui/button";
+import { useRTL } from "@/hooks/useRTL";
 import heroImage from "@/assets/hero-playground.jpg";
 
 export const HeroSection = () => {
   const { t } = useTranslation();
+  const { isRTL } = useRTL();
 
   const benefits = [
     t("hero.benefits.customDesign"),
@@ -13,6 +15,9 @@ export const HeroSection = () => {
     t("hero.benefits.globalShipping"),
     t("hero.benefits.warranty"),
   ];
+
+  // Choose the correct arrow based on RTL
+  const ArrowIcon = isRTL ? ArrowLeft : ArrowRight;
 
   return (
     <section id="home" className="relative min-h-[90vh] flex items-center overflow-hidden">
@@ -23,7 +28,7 @@ export const HeroSection = () => {
           alt="Indoor Playground Equipment Manufacturer"
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-primary/95 via-primary/80 to-primary/40" />
+        <div className={`absolute inset-0 ${isRTL ? 'bg-gradient-to-l' : 'bg-gradient-to-r'} from-primary/95 via-primary/80 to-primary/40`} />
       </div>
 
       {/* Content */}
@@ -85,7 +90,7 @@ export const HeroSection = () => {
             <Button variant="hero" size="xl" asChild>
               <a href="#contact" className="group">
                 {t("hero.cta.getQuote")}
-                <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                <ArrowIcon className={`w-5 h-5 transition-transform ${isRTL ? 'group-hover:-translate-x-1' : 'group-hover:translate-x-1'}`} />
               </a>
             </Button>
             <Button variant="heroOutline" size="xl" asChild>
