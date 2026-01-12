@@ -2,21 +2,31 @@ import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
-import { Menu, X, Phone, Mail } from "lucide-react";
+import { Menu, X, Phone, Mail, ChevronDown } from "lucide-react";
 import { Button } from "./ui/button";
 import { LanguageSwitcher } from "./LanguageSwitcher";
 import { useLocalizedPath } from "@/hooks/useLocalizedPath";
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from "./ui/dropdown-menu";
 
 export const Header = () => {
   const { t } = useTranslation();
   const [isOpen, setIsOpen] = useState(false);
-  const { localizedPath, currentLang } = useLocalizedPath();
+  const { localizedPath } = useLocalizedPath();
+
+  const productItems = [
+    { label: t("products.items.indoorPlayground.title"), href: "#products" },
+    { label: t("products.items.trampolinePark.title"), href: "#features" },
+    { label: t("products.items.ninjaCourse.title"), href: "#ninja-features" },
+    { label: t("products.items.softPlay.title"), href: "#products" },
+  ];
 
   const navItems = [
     { label: t("nav.home"), href: "#home" },
-    { label: t("nav.products"), href: "#products" },
-    { label: t("nav.trampolinePark"), href: "#features" },
-    { label: t("nav.ninjaCourse"), href: "#ninja-features" },
     { label: t("nav.process"), href: "#process" },
     { label: t("nav.projects"), href: "#projects" },
     { label: t("nav.contact"), href: "#contact" },
@@ -55,23 +65,61 @@ export const Header = () => {
             </Link>
 
             {/* Desktop Navigation */}
-            <nav className="hidden lg:flex items-center gap-8">
-              {navItems.map((item) => (
-                <a
-                  key={item.label}
-                  href={item.href}
-                  className="text-foreground/80 hover:text-primary font-medium transition-colors relative group"
-                >
-                  {item.label}
-                  <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all group-hover:w-full" />
-                </a>
-              ))}
+            <nav className="hidden lg:flex items-center gap-6">
+              <a
+                href="#home"
+                className="text-foreground/80 hover:text-primary font-medium transition-colors relative group"
+              >
+                {t("nav.home")}
+                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all group-hover:w-full" />
+              </a>
+
+              {/* Products Dropdown */}
+              <DropdownMenu>
+                <DropdownMenuTrigger className="flex items-center gap-1 text-foreground/80 hover:text-primary font-medium transition-colors">
+                  {t("nav.products")}
+                  <ChevronDown className="w-4 h-4" />
+                </DropdownMenuTrigger>
+                <DropdownMenuContent align="start" className="w-56">
+                  {productItems.map((item) => (
+                    <DropdownMenuItem key={item.label} asChild>
+                      <a href={item.href} className="cursor-pointer">
+                        {item.label}
+                      </a>
+                    </DropdownMenuItem>
+                  ))}
+                </DropdownMenuContent>
+              </DropdownMenu>
+
+              <a
+                href="#process"
+                className="text-foreground/80 hover:text-primary font-medium transition-colors relative group"
+              >
+                {t("nav.process")}
+                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all group-hover:w-full" />
+              </a>
+
+              <a
+                href="#projects"
+                className="text-foreground/80 hover:text-primary font-medium transition-colors relative group"
+              >
+                {t("nav.projects")}
+                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all group-hover:w-full" />
+              </a>
+
+              <a
+                href="#contact"
+                className="text-foreground/80 hover:text-primary font-medium transition-colors relative group"
+              >
+                {t("nav.contact")}
+                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all group-hover:w-full" />
+              </a>
             </nav>
 
             {/* CTA Button & Language Switcher */}
-            <div className="hidden md:flex items-center gap-4">
+            <div className="hidden md:flex items-center gap-3">
               <LanguageSwitcher />
-              <Button variant="hero" size="lg" asChild>
+              <Button variant="hero" size="default" asChild>
                 <a href="#contact">{t("nav.getFreeQuote")}</a>
               </Button>
             </div>
@@ -99,7 +147,7 @@ export const Header = () => {
               exit={{ opacity: 0, height: 0 }}
               className="lg:hidden bg-card border-t border-border"
             >
-              <nav className="container-wide py-4 flex flex-col gap-2">
+              <nav className="container-wide py-4 flex flex-col gap-1">
                 {navItems.map((item) => (
                   <a
                     key={item.label}
@@ -110,8 +158,24 @@ export const Header = () => {
                     {item.label}
                   </a>
                 ))}
+                
+                {/* Products Section in Mobile */}
+                <div className="py-2 px-4">
+                  <span className="text-sm text-muted-foreground font-medium">{t("nav.products")}</span>
+                </div>
+                {productItems.map((item) => (
+                  <a
+                    key={item.label}
+                    href={item.href}
+                    className="py-2 px-6 text-foreground/80 hover:bg-muted rounded-lg transition-colors text-sm"
+                    onClick={() => setIsOpen(false)}
+                  >
+                    {item.label}
+                  </a>
+                ))}
+                
                 <Button variant="hero" size="lg" className="mt-4" asChild>
-                  <a href="#contact">{t("nav.getFreeQuote")}</a>
+                  <a href="#contact" onClick={() => setIsOpen(false)}>{t("nav.getFreeQuote")}</a>
                 </Button>
               </nav>
             </motion.div>
