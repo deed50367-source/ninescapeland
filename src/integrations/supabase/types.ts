@@ -14,7 +14,96 @@ export type Database = {
   }
   public: {
     Tables: {
-      [_ in never]: never
+      case_studies: {
+        Row: {
+          area_sqm: number | null
+          city: string | null
+          client_name: string | null
+          client_testimonial: string | null
+          country: string
+          created_at: string
+          description: string | null
+          featured: boolean | null
+          id: string
+          images: string[] | null
+          project_type: string
+          title: string
+        }
+        Insert: {
+          area_sqm?: number | null
+          city?: string | null
+          client_name?: string | null
+          client_testimonial?: string | null
+          country: string
+          created_at?: string
+          description?: string | null
+          featured?: boolean | null
+          id?: string
+          images?: string[] | null
+          project_type: string
+          title: string
+        }
+        Update: {
+          area_sqm?: number | null
+          city?: string | null
+          client_name?: string | null
+          client_testimonial?: string | null
+          country?: string
+          created_at?: string
+          description?: string | null
+          featured?: boolean | null
+          id?: string
+          images?: string[] | null
+          project_type?: string
+          title?: string
+        }
+        Relationships: []
+      }
+      inquiries: {
+        Row: {
+          country: string
+          created_at: string
+          email: string
+          estimated_area: number | null
+          estimated_budget: string | null
+          id: string
+          message: string | null
+          name: string
+          phone: string | null
+          project_type: string
+          status: string | null
+          updated_at: string
+        }
+        Insert: {
+          country: string
+          created_at?: string
+          email: string
+          estimated_area?: number | null
+          estimated_budget?: string | null
+          id?: string
+          message?: string | null
+          name: string
+          phone?: string | null
+          project_type: string
+          status?: string | null
+          updated_at?: string
+        }
+        Update: {
+          country?: string
+          created_at?: string
+          email?: string
+          estimated_area?: number | null
+          estimated_budget?: string | null
+          id?: string
+          message?: string | null
+          name?: string
+          phone?: string | null
+          project_type?: string
+          status?: string | null
+          updated_at?: string
+        }
+        Relationships: []
+      }
     }
     Views: {
       [_ in never]: never
