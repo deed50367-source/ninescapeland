@@ -1,17 +1,9 @@
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X, Phone, Mail } from "lucide-react";
 import { Button } from "./ui/button";
-
-const navItems = [
-  { label: "Home", href: "#home" },
-  { label: "Products", href: "#products" },
-  { label: "Trampoline Park", href: "#features" },
-  { label: "Ninja Course", href: "#ninja-features" },
-  { label: "Process", href: "#process" },
-  { label: "Projects", href: "#projects" },
-  { label: "Contact", href: "#contact" },
-];
+import { LanguageSwitcher } from "./LanguageSwitcher";
 
 export const Header = () => {
   const [isOpen, setIsOpen] = useState(false);

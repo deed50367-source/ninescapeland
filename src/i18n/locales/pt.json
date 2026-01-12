@@ -1,0 +1,265 @@
+{
+  "nav": {
+    "home": "Início",
+    "products": "Produtos",
+    "trampolinePark": "Parque de Trampolins",
+    "ninjaCourse": "Curso Ninja",
+    "process": "Processo",
+    "projects": "Projetos",
+    "contact": "Contato",
+    "getFreeQuote": "Orçamento Grátis"
+  },
+  "topBar": {
+    "globalShipping": "Envio Global",
+    "warranty": "3 Anos de Garantia",
+    "customDesign": "Design Personalizado"
+  },
+  "hero": {
+    "badge": "🏭 Fabricante Líder de Playgrounds desde 2008",
+    "title": "Crie Experiências de Diversão",
+    "titleHighlight": "Inesquecíveis",
+    "description": "Fornecedor profissional de equipamentos de playground indoor. De parques de trampolins a cursos ninja, entregamos soluções completas para centros de entretenimento em todo o mundo.",
+    "benefits": {
+      "customDesign": "Soluções de Design Personalizado",
+      "certified": "Certificado ASTM e TUV",
+      "globalShipping": "Envio Global",
+      "warranty": "Garantia de 3 Anos"
+    },
+    "cta": {
+      "getQuote": "Obter Design e Orçamento Grátis",
+      "viewProducts": "Ver Produtos"
+    },
+    "trustedCertifications": "Certificações confiáveis:"
+  },
+  "products": {
+    "sectionLabel": "Nossos Produtos",
+    "title": "Soluções Comerciais de",
+    "titleHighlight": "Playground",
+    "description": "Do design à instalação, fornecemos soluções completas para centros de entretenimento indoor, centros de diversão familiar e parques de diversões em todo o mundo.",
+    "viewDetails": "Ver Detalhes",
+    "customCta": "Procurando algo específico? Oferecemos serviços de design personalizado.",
+    "discussProject": "Discutir Seu Projeto",
+    "items": {
+      "indoorPlayground": {
+        "title": "Equipamentos de Playground Indoor",
+        "description": "Estruturas de brincadeira multinível com escorregadores, piscinas de bolas, redes de escalada e elementos interativos para crianças de todas as idades.",
+        "features": ["Temas Personalizados", "Certificado de Segurança", "Todas as Idades"]
+      },
+      "trampolinePark": {
+        "title": "Parques de Trampolins",
+        "description": "Soluções completas de parques de trampolins com 12+ zonas de atividades: piscinas de espuma, enterradas, skyrider, bicicleta 360°, paredes de escalada e mais.",
+        "features": ["12+ Zonas de Atividade", "Alto Desempenho", "Design Modular"]
+      },
+      "ninjaCourse": {
+        "title": "Cursos Ninja Warrior",
+        "description": "Cursos de obstáculos ninja profissionais com desafios de altura, paredes de escalada, circuitos de cordas, barras de equilíbrio e obstáculos de aventura.",
+        "features": ["50+ Tipos de Obstáculos", "Design 3D", "Grau de Competição"]
+      },
+      "softPlay": {
+        "title": "Áreas de Brinquedo Macio",
+        "description": "Equipamentos de brinquedo macio seguros e envolventes projetados especificamente para bebês e crianças pequenas.",
+        "features": ["Seguro para Bebês", "Fácil Limpeza", "Modular"]
+      }
+    }
+  },
+  "whyUs": {
+    "sectionLabel": "Por Que Nos Escolher",
+    "title": "Seu Parceiro",
+    "titleHighlight": "Confiável",
+    "titleEnd": "em Diversão",
+    "description": "Com mais de 15 anos de experiência, ajudamos milhares de empresas a criar experiências de diversão excepcionais que impulsionam o crescimento e a satisfação do cliente.",
+    "stats": {
+      "experience": "Anos de Experiência",
+      "countries": "Países Atendidos",
+      "projects": "Projetos Concluídos",
+      "team": "Membros da Equipe"
+    },
+    "features": {
+      "customDesign": {
+        "title": "Design Personalizado",
+        "description": "Serviço de design 3D gratuito adaptado ao seu espaço e marca. Nossa equipe cria temas únicos que cativam os visitantes."
+      },
+      "safetyCertified": {
+        "title": "Certificado de Segurança",
+        "description": "Todos os produtos atendem aos padrões ASTM, TUV, CE e internacionais de segurança. A segurança dos seus visitantes é nossa prioridade."
+      },
+      "globalShipping": {
+        "title": "Envio Global",
+        "description": "Enviamos para mais de 50 países com suporte logístico profissional. Entrega porta a porta disponível em todo o mundo."
+      },
+      "warranty": {
+        "title": "Garantia de 3 Anos",
+        "description": "Garantia líder do setor de 3 anos com suporte técnico vitalício. Respaldamos nossa qualidade."
+      },
+      "support": {
+        "title": "Suporte 24/7",
+        "description": "Atendimento ao cliente 24 horas para ajudá-lo em cada etapa, do design à instalação."
+      },
+      "directFactory": {
+        "title": "Fábrica Direta",
+        "description": "Trate diretamente com o fabricante. Sem intermediários significa preços competitivos e controle de qualidade."
+      }
+    },
+    "certifications": {
+      "title": "Certificações e Padrões",
+      "description": "Nossos produtos cumprem os padrões internacionais de segurança e qualidade"
+    }
+  },
+  "process": {
+    "sectionLabel": "Nosso Processo",
+    "title": "Do Conceito à",
+    "titleHighlight": "Grande Inauguração",
+    "description": "Guiamos você em cada passo para criar seu playground indoor. Nosso processo otimizado garante resultados de qualidade e entrega pontual.",
+    "steps": {
+      "consultation": {
+        "title": "Consulta e Requisitos",
+        "description": "Compartilhe sua visão, dimensões do espaço e orçamento. Nossa equipe fornece consultoria especializada sobre otimização de layout e seleção de atrações."
+      },
+      "design": {
+        "title": "Design 3D Gratuito",
+        "description": "Receba renderizações 3D profissionais mostrando seu playground personalizado. Inclui plantas baixas, vistas de elevação e designs de conceito temáticos."
+      },
+      "manufacturing": {
+        "title": "Fabricação",
+        "description": "A produção começa usando materiais premium e rigoroso controle de qualidade. Atualizações regulares de progresso com fotos e vídeos durante a produção."
+      },
+      "shipping": {
+        "title": "Envio Global",
+        "description": "Embalagem profissional e coordenação logística. Entrega porta a porta ou porto a porto com rastreamento completo e suporte alfandegário."
+      },
+      "installation": {
+        "title": "Suporte de Instalação",
+        "description": "Guias de instalação completos com tutoriais em vídeo. Serviço de instalação no local opcional por nossos técnicos treinados disponível."
+      },
+      "afterSales": {
+        "title": "Serviço Pós-Venda",
+        "description": "Cobertura de garantia de 3 anos. Suporte técnico vitalício, fornecimento de peças de reposição e treinamento operacional para sua equipe."
+      }
+    },
+    "timeline": {
+      "production": "Tempo de Produção",
+      "shipping": "Tempo de Envio",
+      "installation": "Tempo de Instalação"
+    }
+  },
+  "contact": {
+    "sectionLabel": "Entre em Contato",
+    "title": "Solicite Seu",
+    "titleHighlight": "Orçamento Grátis",
+    "description": "Conte-nos sobre seu projeto e obtenha um design e orçamento grátis em 24 horas. Nossa equipe está pronta para ajudá-lo a criar o espaço de diversão perfeito.",
+    "form": {
+      "name": "Seu Nome",
+      "email": "Endereço de E-mail",
+      "phone": "Telefone / WhatsApp",
+      "country": "País",
+      "projectType": "Tipo de Projeto",
+      "message": "Detalhes do Projeto",
+      "messagePlaceholder": "Conte-nos sobre seu projeto: tamanho do espaço, preferências de tema, faixa de orçamento, cronograma...",
+      "submit": "Enviar Consulta",
+      "sending": "Enviando...",
+      "privacy": "Respeitamos sua privacidade. Suas informações nunca serão compartilhadas.",
+      "projectTypes": {
+        "select": "Selecionar tipo de projeto...",
+        "indoorPlayground": "Playground Indoor",
+        "trampolinePark": "Parque de Trampolins",
+        "ninjaCourse": "Curso Ninja Warrior",
+        "softPlay": "Área de Brinquedo Macio",
+        "fec": "Centro de Entretenimento Familiar",
+        "other": "Outro / Misto"
+      }
+    },
+    "info": {
+      "title": "Informações de Contato",
+      "phone": "Telefone / WhatsApp",
+      "email": "E-mail",
+      "factory": "Endereço da Fábrica",
+      "hours": "Horário de Atendimento",
+      "hoursValue": "Suporte 24/7 Disponível"
+    },
+    "whatsapp": {
+      "title": "Resposta Rápida?",
+      "description": "Converse conosco no WhatsApp",
+      "button": "Iniciar Chat no WhatsApp"
+    },
+    "response": {
+      "title": "Resposta Rápida Garantida",
+      "description": "Respondemos a todas as consultas em 24 horas. A maioria das solicitações recebe resposta em 2-4 horas durante o horário comercial."
+    },
+    "toast": {
+      "successTitle": "Mensagem Enviada!",
+      "successDescription": "Obrigado pela sua consulta. Responderemos em 24 horas.",
+      "errorTitle": "Erro",
+      "errorDescription": "Falha ao enviar sua mensagem. Por favor, tente novamente ou entre em contato conosco diretamente."
+    }
+  },
+  "faq": {
+    "sectionLabel": "FAQ",
+    "title": "Perguntas",
+    "titleHighlight": "Frequentes",
+    "description": "Encontre respostas para perguntas comuns sobre nossos produtos, serviços e processo.",
+    "items": {
+      "leadTime": {
+        "question": "Qual é o prazo típico para equipamentos de playground?",
+        "answer": "A produção normalmente leva 25-35 dias dependendo do tamanho e complexidade do seu projeto. O tempo de envio varia conforme o destino - aproximadamente 20-35 dias para frete marítimo para a maioria dos portos internacionais. Podemos fornecer opções expeditas para projetos urgentes."
+      },
+      "customDesign": {
+        "question": "Vocês fornecem serviços de design personalizado?",
+        "answer": "Sim! Oferecemos serviços de design 3D gratuitos adaptados às dimensões do seu espaço e tema da marca. Nossa equipe de design trabalhará com você para criar um playground único que maximize seu espaço e atraia clientes. Basta fornecer sua planta baixa e requisitos para começar."
+      },
+      "safety": {
+        "question": "Quais certificações de segurança seus produtos têm?",
+        "answer": "Todos os nossos produtos cumprem os padrões de segurança internacionais incluindo ASTM F1918 (EUA), EN 1176 (Europa), AS 4685 (Austrália) e mais. Temos certificações ISO 9001, ISO 14001, ISO 45001 e somos membros da IAAPA. Certificados TUV e CE são fornecidos com cada projeto."
+      },
+      "warranty": {
+        "question": "Qual garantia vocês oferecem?",
+        "answer": "Fornecemos uma garantia abrangente de 3 anos em todos os equipamentos, que é a cobertura de garantia líder do setor. Isso inclui substituição gratuita de peças defeituosas. Também oferecemos suporte técnico vitalício e orientação de manutenção."
+      },
+      "installation": {
+        "question": "Vocês fornecem suporte de instalação?",
+        "answer": "Sim, oferecemos múltiplas opções de instalação: 1) Manuais de instalação detalhados com guias em vídeo para autoinstalação, 2) Orientação remota por vídeo durante a instalação, 3) Instalação no local por nossos técnicos treinados (disponível por uma taxa adicional). A maioria dos clientes se autoinstala com sucesso com nossa orientação."
+      },
+      "budget": {
+        "question": "Qual é a faixa de orçamento para um playground comercial?",
+        "answer": "O preço depende do tamanho, complexidade e recursos. Uma área de brinquedo macio básica começa em torno de $15.000, enquanto playgrounds multinível completos variam de $30.000-$200.000+. Parques de trampolins normalmente variam de $50.000-$500.000+. Fornecemos orçamentos detalhados com base em seus requisitos específicos."
+      },
+      "shipping": {
+        "question": "Vocês podem enviar para meu país?",
+        "answer": "Sim! Enviamos para mais de 50 países em todo o mundo incluindo EUA, Canadá, Reino Unido, Austrália, EAU, Sudeste Asiático, Europa e mais. Cuidamos de toda a documentação de exportação e podemos organizar entrega porta a porta ou porto a porto conforme sua preferência."
+      },
+      "materials": {
+        "question": "Quais materiais vocês usam?",
+        "answer": "Usamos materiais premium e ecológicos incluindo: tubos de aço galvanizado (2.2mm de espessura), acolchoamento de espuma revestido de PVC, plásticos LLDPE de grau comercial, tecidos retardantes de fogo e tintas não tóxicas. Todos os materiais são rigorosamente testados para segurança e durabilidade."
+      }
+    }
+  },
+  "footer": {
+    "description": "Fabricante profissional de equipamentos de playground comercial, parques de trampolins, cursos ninja e soluções de centros de entretenimento familiar. Atendendo clientes em todo o mundo desde 2008.",
+    "products": "Produtos",
+    "company": "Empresa",
+    "contactUs": "Contate-nos",
+    "links": {
+      "indoorPlayground": "Equipamentos de Playground Indoor",
+      "trampolinePark": "Equipamentos de Parque de Trampolins",
+      "ninjaCourse": "Curso Ninja Warrior",
+      "softPlay": "Equipamentos de Brinquedo Macio",
+      "customDesign": "Serviço de Design Personalizado",
+      "aboutUs": "Sobre Nós",
+      "projects": "Nossos Projetos",
+      "certifications": "Certificações",
+      "faq": "FAQ",
+      "contact": "Contate-nos"
+    },
+    "contact": {
+      "phone": "Telefone / WhatsApp",
+      "email": "E-mail",
+      "factory": "Fábrica"
+    },
+    "copyright": "© 2024 NinescapeLand. Todos os direitos reservados.",
+    "privacy": "Política de Privacidade",
+    "terms": "Termos de Serviço"
+  },
+  "floatingCta": {
+    "scrollToTop": "Voltar ao topo",
+    "whatsapp": "Conversar no WhatsApp"
+  }
+}

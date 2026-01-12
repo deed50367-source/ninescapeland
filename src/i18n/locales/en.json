@@ -1,0 +1,265 @@
+{
+  "nav": {
+    "home": "Home",
+    "products": "Products",
+    "trampolinePark": "Trampoline Park",
+    "ninjaCourse": "Ninja Course",
+    "process": "Process",
+    "projects": "Projects",
+    "contact": "Contact",
+    "getFreeQuote": "Get Free Quote"
+  },
+  "topBar": {
+    "globalShipping": "Global Shipping",
+    "warranty": "3 Year Warranty",
+    "customDesign": "Custom Design"
+  },
+  "hero": {
+    "badge": "🏭 Leading Indoor Playground Manufacturer Since 2008",
+    "title": "Create Unforgettable",
+    "titleHighlight": "Play Experiences",
+    "description": "Professional indoor playground equipment supplier. From trampoline parks to ninja courses, we deliver turnkey solutions for entertainment centers worldwide.",
+    "benefits": {
+      "customDesign": "Custom Design Solutions",
+      "certified": "ASTM & TUV Certified",
+      "globalShipping": "Global Shipping",
+      "warranty": "3-Year Warranty"
+    },
+    "cta": {
+      "getQuote": "Get Free Design & Quote",
+      "viewProducts": "View Products"
+    },
+    "trustedCertifications": "Trusted certifications:"
+  },
+  "products": {
+    "sectionLabel": "Our Products",
+    "title": "Commercial Playground",
+    "titleHighlight": "Solutions",
+    "description": "From design to installation, we provide complete turnkey solutions for indoor entertainment centers, family entertainment centers, and amusement parks worldwide.",
+    "viewDetails": "View Details",
+    "customCta": "Looking for something specific? We offer custom design services.",
+    "discussProject": "Discuss Your Project",
+    "items": {
+      "indoorPlayground": {
+        "title": "Indoor Playground Equipment",
+        "description": "Multi-level play structures with slides, ball pits, climbing nets, and interactive elements for children of all ages.",
+        "features": ["Custom Themes", "Safety Certified", "All Ages"]
+      },
+      "trampolinePark": {
+        "title": "Trampoline Parks",
+        "description": "Complete trampoline park solutions with 12+ activity zones: foam pits, slam dunk, skyrider, 360° bicycle, climbing walls, dodgeball, and more.",
+        "features": ["12+ Activity Zones", "High Performance", "Modular Design"]
+      },
+      "ninjaCourse": {
+        "title": "Ninja Warrior Courses",
+        "description": "Professional ninja obstacle courses featuring high-altitude challenges, climbing walls, rope courses, balance beams, and adventure obstacles.",
+        "features": ["50+ Obstacle Types", "3D Design", "Competition Grade"]
+      },
+      "softPlay": {
+        "title": "Soft Play Areas",
+        "description": "Safe and engaging soft play equipment designed specifically for toddlers and young children.",
+        "features": ["Toddler Safe", "Easy Clean", "Modular"]
+      }
+    }
+  },
+  "whyUs": {
+    "sectionLabel": "Why Choose Us",
+    "title": "Your Trusted",
+    "titleHighlight": "Partner",
+    "titleEnd": "in Play",
+    "description": "With over 15 years of experience, we've helped thousands of businesses create exceptional indoor play experiences that drive growth and customer satisfaction.",
+    "stats": {
+      "experience": "Years Experience",
+      "countries": "Countries Served",
+      "projects": "Projects Completed",
+      "team": "Team Members"
+    },
+    "features": {
+      "customDesign": {
+        "title": "Custom Design",
+        "description": "Free 3D design service tailored to your space and brand. Our team creates unique themes that captivate visitors."
+      },
+      "safetyCertified": {
+        "title": "Safety Certified",
+        "description": "All products meet ASTM, TUV, CE, and international safety standards. Your visitors' safety is our priority."
+      },
+      "globalShipping": {
+        "title": "Global Shipping",
+        "description": "We ship to 50+ countries with professional logistics support. Door-to-door delivery available worldwide."
+      },
+      "warranty": {
+        "title": "3-Year Warranty",
+        "description": "Industry-leading 3-year warranty with lifetime technical support. We stand behind our quality."
+      },
+      "support": {
+        "title": "24/7 Support",
+        "description": "Round-the-clock customer service to assist you at every stage, from design to installation."
+      },
+      "directFactory": {
+        "title": "Direct Factory",
+        "description": "Deal directly with the manufacturer. No middlemen means competitive pricing and quality control."
+      }
+    },
+    "certifications": {
+      "title": "Certifications & Standards",
+      "description": "Our products comply with international safety and quality standards"
+    }
+  },
+  "process": {
+    "sectionLabel": "Our Process",
+    "title": "From Concept to",
+    "titleHighlight": "Grand Opening",
+    "description": "We guide you through every step of creating your indoor playground. Our streamlined process ensures quality results and on-time delivery.",
+    "steps": {
+      "consultation": {
+        "title": "Consultation & Requirements",
+        "description": "Share your vision, space dimensions, and budget. Our team provides expert advice on layout optimization and attraction selection."
+      },
+      "design": {
+        "title": "Free 3D Design",
+        "description": "Receive professional 3D renderings showing your customized playground. Includes floor plans, elevation views, and themed concept designs."
+      },
+      "manufacturing": {
+        "title": "Manufacturing",
+        "description": "Production begins using premium materials and strict quality control. Regular progress updates with photos and videos throughout production."
+      },
+      "shipping": {
+        "title": "Global Shipping",
+        "description": "Professional packaging and logistics coordination. Door-to-door or port-to-port delivery with full tracking and customs support."
+      },
+      "installation": {
+        "title": "Installation Support",
+        "description": "Comprehensive installation guides with video tutorials. Optional on-site installation service by our trained technicians available."
+      },
+      "afterSales": {
+        "title": "After-Sales Service",
+        "description": "3-year warranty coverage. Lifetime technical support, spare parts supply, and operational training for your staff."
+      }
+    },
+    "timeline": {
+      "production": "Production Time",
+      "shipping": "Shipping Time",
+      "installation": "Installation Time"
+    }
+  },
+  "contact": {
+    "sectionLabel": "Get In Touch",
+    "title": "Request Your",
+    "titleHighlight": "Free Quote",
+    "description": "Tell us about your project and get a free design and quotation within 24 hours. Our team is ready to help you create the perfect play space.",
+    "form": {
+      "name": "Your Name",
+      "email": "Email Address",
+      "phone": "Phone / WhatsApp",
+      "country": "Country",
+      "projectType": "Project Type",
+      "message": "Project Details",
+      "messagePlaceholder": "Tell us about your project: space size, theme preferences, budget range, timeline...",
+      "submit": "Send Inquiry",
+      "sending": "Sending...",
+      "privacy": "We respect your privacy. Your information will never be shared.",
+      "projectTypes": {
+        "select": "Select project type...",
+        "indoorPlayground": "Indoor Playground",
+        "trampolinePark": "Trampoline Park",
+        "ninjaCourse": "Ninja Warrior Course",
+        "softPlay": "Soft Play Area",
+        "fec": "Family Entertainment Center",
+        "other": "Other / Mixed"
+      }
+    },
+    "info": {
+      "title": "Contact Information",
+      "phone": "Phone / WhatsApp",
+      "email": "Email",
+      "factory": "Factory Address",
+      "hours": "Working Hours",
+      "hoursValue": "24/7 Support Available"
+    },
+    "whatsapp": {
+      "title": "Quick Response?",
+      "description": "Chat with us on WhatsApp",
+      "button": "Start WhatsApp Chat"
+    },
+    "response": {
+      "title": "Fast Response Guaranteed",
+      "description": "We respond to all inquiries within 24 hours. Most requests receive a reply within 2-4 hours during business hours."
+    },
+    "toast": {
+      "successTitle": "Message Sent!",
+      "successDescription": "Thank you for your inquiry. We'll get back to you within 24 hours.",
+      "errorTitle": "Error",
+      "errorDescription": "Failed to send your message. Please try again or contact us directly."
+    }
+  },
+  "faq": {
+    "sectionLabel": "FAQ",
+    "title": "Frequently Asked",
+    "titleHighlight": "Questions",
+    "description": "Find answers to common questions about our products, services, and process.",
+    "items": {
+      "leadTime": {
+        "question": "What is the typical lead time for indoor playground equipment?",
+        "answer": "Production typically takes 25-35 days depending on the size and complexity of your project. Shipping time varies by destination - approximately 20-35 days for sea freight to most international ports. We can provide expedited options for urgent projects."
+      },
+      "customDesign": {
+        "question": "Do you provide custom design services?",
+        "answer": "Yes! We offer free 3D design services tailored to your space dimensions and brand theme. Our design team will work with you to create a unique playground that maximizes your space and attracts customers. Simply provide your floor plan and requirements to get started."
+      },
+      "safety": {
+        "question": "What safety certifications do your products have?",
+        "answer": "All our products comply with international safety standards including ASTM F1918 (USA), EN 1176 (Europe), AS 4685 (Australia), and more. We hold ISO 9001, ISO 14001, ISO 45001 certifications, and are members of IAAPA. TUV and CE certificates are provided with each project."
+      },
+      "warranty": {
+        "question": "What warranty do you offer?",
+        "answer": "We provide a comprehensive 3-year warranty on all equipment, which is the industry's leading warranty coverage. This includes free replacement of defective parts. We also offer lifetime technical support and maintenance guidance."
+      },
+      "installation": {
+        "question": "Do you provide installation support?",
+        "answer": "Yes, we offer multiple installation options: 1) Detailed installation manuals with video guides for self-installation, 2) Remote video guidance during installation, 3) On-site installation by our trained technicians (available for an additional fee). Most clients successfully self-install with our guidance."
+      },
+      "budget": {
+        "question": "What is the budget range for a commercial indoor playground?",
+        "answer": "Pricing depends on size, complexity, and features. A basic soft play area starts around $15,000, while comprehensive multi-level playgrounds range from $30,000-$200,000+. Trampoline parks typically range from $50,000-$500,000+. We provide detailed quotes based on your specific requirements."
+      },
+      "shipping": {
+        "question": "Can you ship to my country?",
+        "answer": "Yes! We ship to over 50 countries worldwide including USA, Canada, UK, Australia, UAE, Southeast Asia, Europe, and more. We handle all export documentation and can arrange door-to-door delivery or port-to-port shipping based on your preference."
+      },
+      "materials": {
+        "question": "What materials do you use?",
+        "answer": "We use premium, eco-friendly materials including: galvanized steel tubes (2.2mm thickness), PVC-coated foam padding, commercial-grade LLDPE plastics, fire-retardant fabrics, and non-toxic paints. All materials are rigorously tested for safety and durability."
+      }
+    }
+  },
+  "footer": {
+    "description": "Professional manufacturer of commercial indoor playground equipment, trampoline parks, ninja courses and family entertainment center solutions. Serving clients worldwide since 2008.",
+    "products": "Products",
+    "company": "Company",
+    "contactUs": "Contact Us",
+    "links": {
+      "indoorPlayground": "Indoor Playground Equipment",
+      "trampolinePark": "Trampoline Park Equipment",
+      "ninjaCourse": "Ninja Warrior Course",
+      "softPlay": "Soft Play Equipment",
+      "customDesign": "Custom Design Service",
+      "aboutUs": "About Us",
+      "projects": "Our Projects",
+      "certifications": "Certifications",
+      "faq": "FAQ",
+      "contact": "Contact Us"
+    },
+    "contact": {
+      "phone": "Phone / WhatsApp",
+      "email": "Email",
+      "factory": "Factory"
+    },
+    "copyright": "© 2024 NinescapeLand. All rights reserved.",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service"
+  },
+  "floatingCta": {
+    "scrollToTop": "Scroll to top",
+    "whatsapp": "Chat on WhatsApp"
+  }
+}
