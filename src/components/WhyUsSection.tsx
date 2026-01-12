@@ -1,3 +1,4 @@
+import { useTranslation } from "react-i18next";
 import { motion } from "framer-motion";
 import { 
   Shield, 
@@ -6,49 +7,8 @@ import {
   Paintbrush, 
   Award, 
   Wrench,
-  Users,
   Factory
 } from "lucide-react";
-
-const features = [
-  {
-    icon: Paintbrush,
-    title: "Custom Design",
-    description: "Free 3D design service tailored to your space and brand. Our team creates unique themes that captivate visitors.",
-  },
-  {
-    icon: Shield,
-    title: "Safety Certified",
-    description: "All products meet ASTM, TUV, CE, and international safety standards. Your visitors' safety is our priority.",
-  },
-  {
-    icon: Globe2,
-    title: "Global Shipping",
-    description: "We ship to 50+ countries with professional logistics support. Door-to-door delivery available worldwide.",
-  },
-  {
-    icon: Wrench,
-    title: "3-Year Warranty",
-    description: "Industry-leading 3-year warranty with lifetime technical support. We stand behind our quality.",
-  },
-  {
-    icon: Clock,
-    title: "24/7 Support",
-    description: "Round-the-clock customer service to assist you at every stage, from design to installation.",
-  },
-  {
-    icon: Factory,
-    title: "Direct Factory",
-    description: "Deal directly with the manufacturer. No middlemen means competitive pricing and quality control.",
-  },
-];
-
-const stats = [
-  { value: "15+", label: "Years Experience" },
-  { value: "50+", label: "Countries Served" },
-  { value: "1000+", label: "Projects Completed" },
-  { value: "200+", label: "Team Members" },
-];
 
 const container = {
   hidden: { opacity: 0 },
@@ -66,6 +26,48 @@ const item = {
 };
 
 export const WhyUsSection = () => {
+  const { t } = useTranslation();
+
+  const features = [
+    {
+      icon: Paintbrush,
+      title: t("whyUs.features.customDesign.title"),
+      description: t("whyUs.features.customDesign.description"),
+    },
+    {
+      icon: Shield,
+      title: t("whyUs.features.safetyCertified.title"),
+      description: t("whyUs.features.safetyCertified.description"),
+    },
+    {
+      icon: Globe2,
+      title: t("whyUs.features.globalShipping.title"),
+      description: t("whyUs.features.globalShipping.description"),
+    },
+    {
+      icon: Wrench,
+      title: t("whyUs.features.warranty.title"),
+      description: t("whyUs.features.warranty.description"),
+    },
+    {
+      icon: Clock,
+      title: t("whyUs.features.support.title"),
+      description: t("whyUs.features.support.description"),
+    },
+    {
+      icon: Factory,
+      title: t("whyUs.features.directFactory.title"),
+      description: t("whyUs.features.directFactory.description"),
+    },
+  ];
+
+  const stats = [
+    { value: "15+", label: t("whyUs.stats.experience") },
+    { value: "50+", label: t("whyUs.stats.countries") },
+    { value: "1000+", label: t("whyUs.stats.projects") },
+    { value: "200+", label: t("whyUs.stats.team") },
+  ];
+
   return (
     <section id="why-us" className="section-padding bg-muted">
       <div className="container-wide">
@@ -77,14 +79,13 @@ export const WhyUsSection = () => {
           className="text-center max-w-3xl mx-auto mb-16"
         >
           <span className="text-accent font-semibold text-sm uppercase tracking-wider">
-            Why Choose Us
+            {t("whyUs.sectionLabel")}
           </span>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold mt-3 mb-6">
-            Your Trusted <span className="text-gradient">Partner</span> in Play
+            {t("whyUs.title")} <span className="text-gradient">{t("whyUs.titleHighlight")}</span> {t("whyUs.titleEnd")}
           </h2>
           <p className="text-muted-foreground text-lg">
-            With over 15 years of experience, we've helped thousands of businesses create 
-            exceptional indoor play experiences that drive growth and customer satisfaction.
+            {t("whyUs.description")}
           </p>
         </motion.div>
 
@@ -142,9 +143,9 @@ export const WhyUsSection = () => {
         >
           <div className="text-center mb-8">
             <Award className="w-12 h-12 text-primary mx-auto mb-4" />
-            <h3 className="text-2xl font-heading font-bold">Certifications & Standards</h3>
+            <h3 className="text-2xl font-heading font-bold">{t("whyUs.certifications.title")}</h3>
             <p className="text-muted-foreground mt-2">
-              Our products comply with international safety and quality standards
+              {t("whyUs.certifications.description")}
             </p>
           </div>
           <div className="flex flex-wrap justify-center items-center gap-8">

@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
 import { motion } from "framer-motion";
 import { Send, Phone, Mail, MapPin, Clock, MessageCircle } from "lucide-react";
 import { Button } from "./ui/button";
@@ -7,34 +8,8 @@ import { Textarea } from "./ui/textarea";
 import { useToast } from "@/hooks/use-toast";
 import { supabase } from "@/integrations/supabase/client";
 
-const contactInfo = [
-  {
-    icon: Phone,
-    label: "Phone / WhatsApp",
-    value: "+86 150 5758 2901",
-    href: "tel:+8615057582901",
-  },
-  {
-    icon: Mail,
-    label: "Email",
-    value: "NinescapeLand@gmail.com",
-    href: "mailto:NinescapeLand@gmail.com",
-  },
-  {
-    icon: MapPin,
-    label: "Factory Address",
-    value: "Wenzhou, Zhejiang, China",
-    href: "#",
-  },
-  {
-    icon: Clock,
-    label: "Working Hours",
-    value: "24/7 Support Available",
-    href: "#",
-  },
-];
-
 export const ContactSection = () => {
+  const { t } = useTranslation();
   const { toast } = useToast();
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [formData, setFormData] = useState({
@@ -45,6 +20,33 @@ export const ContactSection = () => {
     projectType: "",
     message: "",
   });
+
+  const contactInfo = [
+    {
+      icon: Phone,
+      label: t("contact.info.phone"),
+      value: "+86 150 5758 2901",
+      href: "tel:+8615057582901",
+    },
+    {
+      icon: Mail,
+      label: t("contact.info.email"),
+      value: "NinescapeLand@gmail.com",
+      href: "mailto:NinescapeLand@gmail.com",
+    },
+    {
+      icon: MapPin,
+      label: t("contact.info.factory"),
+      value: "Wenzhou, Zhejiang, China",
+      href: "#",
+    },
+    {
+      icon: Clock,
+      label: t("contact.info.hours"),
+      value: t("contact.info.hoursValue"),
+      href: "#",
+    },
+  ];
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -63,8 +65,8 @@ export const ContactSection = () => {
       if (error) throw error;
 
       toast({
-        title: "Message Sent!",
-        description: "Thank you for your inquiry. We'll get back to you within 24 hours.",
+        title: t("contact.toast.successTitle"),
+        description: t("contact.toast.successDescription"),
       });
       
       setFormData({
@@ -78,8 +80,8 @@ export const ContactSection = () => {
     } catch (error) {
       console.error("Error submitting inquiry:", error);
       toast({
-        title: "Error",
-        description: "Failed to send your message. Please try again or contact us directly.",
+        title: t("contact.toast.errorTitle"),
+        description: t("contact.toast.errorDescription"),
         variant: "destructive",
       });
     } finally {
@@ -107,14 +109,13 @@ export const ContactSection = () => {
           className="text-center max-w-3xl mx-auto mb-12"
         >
           <span className="text-accent font-semibold text-sm uppercase tracking-wider">
-            Get In Touch
+            {t("contact.sectionLabel")}
           </span>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold mt-3 mb-6">
-            Request Your <span className="text-gradient">Free Quote</span>
+            {t("contact.title")} <span className="text-gradient">{t("contact.titleHighlight")}</span>
           </h2>
           <p className="text-muted-foreground text-lg">
-            Tell us about your project and get a free design and quotation within 24 hours.
-            Our team is ready to help you create the perfect play space.
+            {t("contact.description")}
           </p>
         </motion.div>
 
@@ -130,7 +131,7 @@ export const ContactSection = () => {
               <div className="grid md:grid-cols-2 gap-6 mb-6">
                 <div>
                   <label htmlFor="name" className="block text-sm font-medium mb-2">
-                    Your Name *
+                    {t("contact.form.name")} *
                   </label>
                   <Input
                     id="name"
@@ -144,7 +145,7 @@ export const ContactSection = () => {
                 </div>
                 <div>
                   <label htmlFor="email" className="block text-sm font-medium mb-2">
-                    Email Address *
+                    {t("contact.form.email")} *
                   </label>
                   <Input
                     id="email"
@@ -159,7 +160,7 @@ export const ContactSection = () => {
                 </div>
                 <div>
                   <label htmlFor="phone" className="block text-sm font-medium mb-2">
-                    Phone / WhatsApp
+                    {t("contact.form.phone")}
                   </label>
                   <Input
                     id="phone"
@@ -173,7 +174,7 @@ export const ContactSection = () => {
                 </div>
                 <div>
                   <label htmlFor="country" className="block text-sm font-medium mb-2">
-                    Country *
+                    {t("contact.form.country")} *
                   </label>
                   <Input
                     id="country"
@@ -189,7 +190,7 @@ export const ContactSection = () => {
               
               <div className="mb-6">
                 <label htmlFor="projectType" className="block text-sm font-medium mb-2">
-                  Project Type *
+                  {t("contact.form.projectType")} *
                 </label>
                 <select
                   id="projectType"
@@ -199,26 +200,26 @@ export const ContactSection = () => {
                   required
                   className="w-full h-12 px-4 rounded-lg border border-input bg-background text-foreground focus:ring-2 focus:ring-ring focus:outline-none"
                 >
-                  <option value="">Select project type...</option>
-                  <option value="indoor-playground">Indoor Playground</option>
-                  <option value="trampoline-park">Trampoline Park</option>
-                  <option value="ninja-course">Ninja Warrior Course</option>
-                  <option value="soft-play">Soft Play Area</option>
-                  <option value="fec">Family Entertainment Center</option>
-                  <option value="other">Other / Mixed</option>
+                  <option value="">{t("contact.form.projectTypes.select")}</option>
+                  <option value="indoor-playground">{t("contact.form.projectTypes.indoorPlayground")}</option>
+                  <option value="trampoline-park">{t("contact.form.projectTypes.trampolinePark")}</option>
+                  <option value="ninja-course">{t("contact.form.projectTypes.ninjaCourse")}</option>
+                  <option value="soft-play">{t("contact.form.projectTypes.softPlay")}</option>
+                  <option value="fec">{t("contact.form.projectTypes.fec")}</option>
+                  <option value="other">{t("contact.form.projectTypes.other")}</option>
                 </select>
               </div>
 
               <div className="mb-6">
                 <label htmlFor="message" className="block text-sm font-medium mb-2">
-                  Project Details
+                  {t("contact.form.message")}
                 </label>
                 <Textarea
                   id="message"
                   name="message"
                   value={formData.message}
                   onChange={handleChange}
-                  placeholder="Tell us about your project: space size, theme preferences, budget range, timeline..."
+                  placeholder={t("contact.form.messagePlaceholder")}
                   rows={5}
                   className="resize-none"
                 />
@@ -232,17 +233,17 @@ export const ContactSection = () => {
                 disabled={isSubmitting}
               >
                 {isSubmitting ? (
-                  "Sending..."
+                  t("contact.form.sending")
                 ) : (
                   <>
-                    Send Inquiry
+                    {t("contact.form.submit")}
                     <Send className="w-5 h-5" />
                   </>
                 )}
               </Button>
 
               <p className="text-center text-sm text-muted-foreground mt-4">
-                We respect your privacy. Your information will never be shared.
+                {t("contact.form.privacy")}
               </p>
             </form>
           </motion.div>
@@ -256,7 +257,7 @@ export const ContactSection = () => {
           >
             <div className="bg-primary text-primary-foreground p-8 rounded-2xl">
               <h3 className="text-2xl font-heading font-bold mb-6">
-                Contact Information
+                {t("contact.info.title")}
               </h3>
               <div className="space-y-6">
                 {contactInfo.map((info, index) => (
@@ -284,8 +285,8 @@ export const ContactSection = () => {
                   <MessageCircle className="w-6 h-6 text-white" />
                 </div>
                 <div>
-                  <h4 className="font-heading font-bold">Quick Response?</h4>
-                  <p className="text-sm text-muted-foreground">Chat with us on WhatsApp</p>
+                  <h4 className="font-heading font-bold">{t("contact.whatsapp.title")}</h4>
+                  <p className="text-sm text-muted-foreground">{t("contact.whatsapp.description")}</p>
                 </div>
               </div>
               <Button variant="outline" className="w-full" asChild>
@@ -294,7 +295,7 @@ export const ContactSection = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  Start WhatsApp Chat
+                  {t("contact.whatsapp.button")}
                 </a>
               </Button>
             </div>
@@ -302,10 +303,9 @@ export const ContactSection = () => {
             {/* Response Time */}
             <div className="bg-muted p-6 rounded-2xl text-center">
               <Clock className="w-10 h-10 text-primary mx-auto mb-3" />
-              <h4 className="font-heading font-bold mb-2">Fast Response Guaranteed</h4>
+              <h4 className="font-heading font-bold mb-2">{t("contact.response.title")}</h4>
               <p className="text-muted-foreground text-sm">
-                We respond to all inquiries within 24 hours. Most requests receive a 
-                reply within 2-4 hours during business hours.
+                {t("contact.response.description")}
               </p>
             </div>
           </motion.div>

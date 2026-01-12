@@ -1,8 +1,10 @@
+import { useTranslation } from "react-i18next";
 import { MessageCircle, ArrowUp } from "lucide-react";
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
 export const FloatingCTA = () => {
+  const { t } = useTranslation();
   const [showScrollTop, setShowScrollTop] = useState(false);
 
   useEffect(() => {
@@ -28,7 +30,7 @@ export const FloatingCTA = () => {
             exit={{ opacity: 0, scale: 0 }}
             onClick={scrollToTop}
             className="w-12 h-12 rounded-full bg-muted text-foreground shadow-medium flex items-center justify-center hover:bg-secondary transition-colors"
-            aria-label="Scroll to top"
+            aria-label={t("floatingCta.scrollToTop")}
           >
             <ArrowUp className="w-5 h-5" />
           </motion.button>
@@ -44,7 +46,7 @@ export const FloatingCTA = () => {
         animate={{ scale: 1 }}
         transition={{ delay: 1 }}
         className="w-14 h-14 rounded-full bg-green-500 text-white shadow-glow flex items-center justify-center hover:scale-110 transition-transform"
-        aria-label="Chat on WhatsApp"
+        aria-label={t("floatingCta.whatsapp")}
       >
         <MessageCircle className="w-7 h-7" />
       </motion.a>

@@ -1,3 +1,4 @@
+import { useTranslation } from "react-i18next";
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 import { Button } from "./ui/button";
@@ -6,41 +7,6 @@ import indoorPlayground from "@/assets/product-indoor-playground.jpg";
 import trampolinePark from "@/assets/product-trampoline-park.jpg";
 import ninjaCourse from "@/assets/product-ninja-course.jpg";
 import softPlay from "@/assets/product-soft-play.jpg";
-
-const products = [
-  {
-    title: "Indoor Playground Equipment",
-    description: "Multi-level play structures with slides, ball pits, climbing nets, and interactive elements for children of all ages.",
-    image: indoorPlayground,
-    features: ["Custom Themes", "Safety Certified", "All Ages"],
-    keywords: "indoor playground equipment, commercial playground, kids play area",
-    slug: "indoor-playground",
-  },
-  {
-    title: "Trampoline Parks",
-    description: "Complete trampoline park solutions with 12+ activity zones: foam pits, slam dunk, skyrider, 360° bicycle, climbing walls, dodgeball, and more. Professional-grade equipment.",
-    image: trampolinePark,
-    features: ["12+ Activity Zones", "High Performance", "Modular Design"],
-    keywords: "trampoline park equipment, commercial trampolines, jump park",
-    slug: "trampoline-park",
-  },
-  {
-    title: "Ninja Warrior Courses",
-    description: "Professional ninja obstacle courses featuring high-altitude challenges, climbing walls, rope courses, balance beams, and adventure obstacles for all ages.",
-    image: ninjaCourse,
-    features: ["50+ Obstacle Types", "3D Design", "Competition Grade"],
-    keywords: "ninja warrior course, obstacle course equipment, adventure park",
-    slug: "ninja-course",
-  },
-  {
-    title: "Soft Play Areas",
-    description: "Safe and engaging soft play equipment designed specifically for toddlers and young children.",
-    image: softPlay,
-    features: ["Toddler Safe", "Easy Clean", "Modular"],
-    keywords: "soft play equipment, toddler playground, indoor play area",
-    slug: "soft-play",
-  },
-];
 
 const container = {
   hidden: { opacity: 0 },
@@ -58,6 +24,39 @@ const item = {
 };
 
 export const ProductsSection = () => {
+  const { t } = useTranslation();
+
+  const products = [
+    {
+      title: t("products.items.indoorPlayground.title"),
+      description: t("products.items.indoorPlayground.description"),
+      image: indoorPlayground,
+      features: t("products.items.indoorPlayground.features", { returnObjects: true }) as string[],
+      slug: "indoor-playground",
+    },
+    {
+      title: t("products.items.trampolinePark.title"),
+      description: t("products.items.trampolinePark.description"),
+      image: trampolinePark,
+      features: t("products.items.trampolinePark.features", { returnObjects: true }) as string[],
+      slug: "trampoline-park",
+    },
+    {
+      title: t("products.items.ninjaCourse.title"),
+      description: t("products.items.ninjaCourse.description"),
+      image: ninjaCourse,
+      features: t("products.items.ninjaCourse.features", { returnObjects: true }) as string[],
+      slug: "ninja-course",
+    },
+    {
+      title: t("products.items.softPlay.title"),
+      description: t("products.items.softPlay.description"),
+      image: softPlay,
+      features: t("products.items.softPlay.features", { returnObjects: true }) as string[],
+      slug: "soft-play",
+    },
+  ];
+
   return (
     <section id="products" className="section-padding bg-background">
       <div className="container-wide">
@@ -69,14 +68,13 @@ export const ProductsSection = () => {
           className="text-center max-w-3xl mx-auto mb-16"
         >
           <span className="text-accent font-semibold text-sm uppercase tracking-wider">
-            Our Products
+            {t("products.sectionLabel")}
           </span>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold mt-3 mb-6">
-            Commercial Playground <span className="text-gradient">Solutions</span>
+            {t("products.title")} <span className="text-gradient">{t("products.titleHighlight")}</span>
           </h2>
           <p className="text-muted-foreground text-lg">
-            From design to installation, we provide complete turnkey solutions for indoor 
-            entertainment centers, family entertainment centers, and amusement parks worldwide.
+            {t("products.description")}
           </p>
         </motion.div>
 
@@ -102,7 +100,7 @@ export const ProductsSection = () => {
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-foreground/60 to-transparent" />
-                <div className="absolute bottom-4 left-4 right-4 flex gap-2">
+                <div className="absolute bottom-4 left-4 right-4 flex gap-2 flex-wrap">
                   {product.features.map((feature, i) => (
                     <span
                       key={i}
@@ -124,7 +122,7 @@ export const ProductsSection = () => {
                 </p>
                 <Button variant="outline" size="sm" asChild className="group/btn">
                   <a href={`/products/${product.slug}`}>
-                    View Details
+                    {t("products.viewDetails")}
                     <ArrowRight className="w-4 h-4 group-hover/btn:translate-x-1 transition-transform" />
                   </a>
                 </Button>
@@ -141,11 +139,11 @@ export const ProductsSection = () => {
           className="text-center mt-12"
         >
           <p className="text-muted-foreground mb-4">
-            Looking for something specific? We offer custom design services.
+            {t("products.customCta")}
           </p>
           <Button variant="hero" size="lg" asChild>
             <a href="#contact" className="group">
-              Discuss Your Project
+              {t("products.discussProject")}
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </a>
           </Button>
