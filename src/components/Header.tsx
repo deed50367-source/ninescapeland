@@ -6,7 +6,8 @@ import { Button } from "./ui/button";
 const navItems = [
   { label: "Home", href: "#home" },
   { label: "Products", href: "#products" },
-  { label: "Features", href: "#features" },
+  { label: "Trampoline Park", href: "#features" },
+  { label: "Ninja Course", href: "#ninja-features" },
   { label: "Process", href: "#process" },
   { label: "Projects", href: "#projects" },
   { label: "Contact", href: "#contact" },
@@ -21,13 +22,13 @@ export const Header = () => {
       <div className="hidden md:block bg-primary text-primary-foreground py-2">
         <div className="container-wide flex justify-between items-center text-sm">
           <div className="flex items-center gap-6">
-            <a href="mailto:info@playgroundpro.com" className="flex items-center gap-2 hover:opacity-80 transition-opacity">
+            <a href="mailto:NinescapeLand@gmail.com" className="flex items-center gap-2 hover:opacity-80 transition-opacity">
               <Mail className="w-4 h-4" />
-              info@playgroundpro.com
+              NinescapeLand@gmail.com
             </a>
-            <a href="tel:+8613500000000" className="flex items-center gap-2 hover:opacity-80 transition-opacity">
+            <a href="tel:+8615057582901" className="flex items-center gap-2 hover:opacity-80 transition-opacity">
               <Phone className="w-4 h-4" />
-              +86 135 0000 0000
+              +86 150 5758 2901
             </a>
           </div>
           <div className="flex items-center gap-4">
@@ -43,7 +44,7 @@ export const Header = () => {
             {/* Logo */}
             <a href="#home" className="flex items-center gap-2">
               <span className="text-2xl md:text-3xl font-heading font-bold text-gradient">
-                PlaygroundPro
+                NinescapeLand
               </span>
             </a>
 
