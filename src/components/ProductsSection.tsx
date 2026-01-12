@@ -17,9 +17,9 @@ const products = [
   },
   {
     title: "Trampoline Parks",
-    description: "Complete trampoline park solutions including jump zones, foam pits, dodgeball courts, and professional-grade equipment.",
+    description: "Complete trampoline park solutions with 8+ activity zones: ninja courses, dodgeball, foam pits, spider walls, battle sticks, devil slides, and more. Professional-grade equipment for maximum engagement.",
     image: trampolinePark,
-    features: ["High Performance", "Safety Padding", "Modular Design"],
+    features: ["8+ Activity Zones", "High Performance", "Modular Design"],
     keywords: "trampoline park equipment, commercial trampolines, jump park",
   },
   {
