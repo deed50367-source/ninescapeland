@@ -14,6 +14,7 @@ const products = [
     image: indoorPlayground,
     features: ["Custom Themes", "Safety Certified", "All Ages"],
     keywords: "indoor playground equipment, commercial playground, kids play area",
+    slug: "indoor-playground",
   },
   {
     title: "Trampoline Parks",
@@ -21,6 +22,7 @@ const products = [
     image: trampolinePark,
     features: ["12+ Activity Zones", "High Performance", "Modular Design"],
     keywords: "trampoline park equipment, commercial trampolines, jump park",
+    slug: "trampoline-park",
   },
   {
     title: "Ninja Warrior Courses",
@@ -28,6 +30,7 @@ const products = [
     image: ninjaCourse,
     features: ["50+ Obstacle Types", "3D Design", "Competition Grade"],
     keywords: "ninja warrior course, obstacle course equipment, adventure park",
+    slug: "ninja-course",
   },
   {
     title: "Soft Play Areas",
@@ -35,6 +38,7 @@ const products = [
     image: softPlay,
     features: ["Toddler Safe", "Easy Clean", "Modular"],
     keywords: "soft play equipment, toddler playground, indoor play area",
+    slug: "soft-play",
   },
 ];
 
@@ -119,8 +123,8 @@ export const ProductsSection = () => {
                   {product.description}
                 </p>
                 <Button variant="outline" size="sm" asChild className="group/btn">
-                  <a href="#contact">
-                    Request Quote
+                  <a href={`/products/${product.slug}`}>
+                    View Details
                     <ArrowRight className="w-4 h-4 group-hover/btn:translate-x-1 transition-transform" />
                   </a>
                 </Button>
