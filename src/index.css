@@ -176,3 +176,133 @@
     @apply py-16 md:py-24;
   }
 }
+
+/* RTL Support */
+[dir="rtl"] {
+  /* Flip horizontal margins and paddings */
+  .space-x-1 > :not([hidden]) ~ :not([hidden]),
+  .space-x-2 > :not([hidden]) ~ :not([hidden]),
+  .space-x-3 > :not([hidden]) ~ :not([hidden]),
+  .space-x-4 > :not([hidden]) ~ :not([hidden]),
+  .space-x-6 > :not([hidden]) ~ :not([hidden]),
+  .space-x-8 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-x-reverse: 1;
+  }
+  
+  /* Flip gap for flex containers */
+  .gap-2, .gap-3, .gap-4, .gap-6, .gap-8, .gap-12 {
+    /* Gap works correctly in RTL */
+  }
+  
+  /* Flip translate animations */
+  .translate-x-1, .translate-x-2, .translate-x-4 {
+    --tw-translate-x: calc(var(--tw-translate-x) * -1);
+  }
+  
+  /* RTL-aware underline animation */
+  .group:hover .group-hover\:w-full {
+    width: 100%;
+  }
+  
+  /* Flip chevron icons in RTL */
+  .rtl-flip {
+    transform: scaleX(-1);
+  }
+}
+
+/* RTL text alignment utilities */
+.text-start {
+  text-align: start;
+}
+
+.text-end {
+  text-align: end;
+}
+
+/* RTL-aware flex utilities */
+.flex-row-rtl {
+  flex-direction: row;
+}
+
+[dir="rtl"] .flex-row-rtl {
+  flex-direction: row-reverse;
+}
+
+/* RTL-aware border utilities */
+.border-s {
+  border-inline-start-width: 1px;
+}
+
+.border-s-2 {
+  border-inline-start-width: 2px;
+}
+
+.border-e {
+  border-inline-end-width: 1px;
+}
+
+/* RTL-aware margin/padding utilities */
+.ms-2 {
+  margin-inline-start: 0.5rem;
+}
+
+.me-2 {
+  margin-inline-end: 0.5rem;
+}
+
+.ps-4 {
+  padding-inline-start: 1rem;
+}
+
+.pe-4 {
+  padding-inline-end: 1rem;
+}
+
+/* RTL-aware positioning */
+.start-0 {
+  inset-inline-start: 0;
+}
+
+.end-0 {
+  inset-inline-end: 0;
+}
+
+/* RTL-aware gradients */
+[dir="rtl"] .bg-gradient-to-r {
+  background-image: linear-gradient(to left, var(--tw-gradient-stops));
+}
+
+[dir="rtl"] .bg-gradient-to-l {
+  background-image: linear-gradient(to right, var(--tw-gradient-stops));
+}
+
+/* Arabic font improvements */
+[dir="rtl"] body {
+  font-family: 'Noto Sans Arabic', 'Open Sans', sans-serif;
+}
+
+[dir="rtl"] h1,
+[dir="rtl"] h2,
+[dir="rtl"] h3,
+[dir="rtl"] h4,
+[dir="rtl"] h5,
+[dir="rtl"] h6 {
+  font-family: 'Noto Sans Arabic', 'Montserrat', sans-serif;
+}
+
+/* Form inputs RTL */
+[dir="rtl"] input,
+[dir="rtl"] textarea,
+[dir="rtl"] select {
+  text-align: right;
+}
+
+[dir="rtl"] input::placeholder,
+[dir="rtl"] textarea::placeholder {
+  text-align: right;
+}
+
+/* RTL scroll to top arrow flip */
+[dir="rtl"] .rtl-arrow-flip {
+  transform: scaleX(-1);
+}

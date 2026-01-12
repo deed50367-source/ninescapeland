@@ -6,11 +6,13 @@ import { Button } from "./ui/button";
 import { Input } from "./ui/input";
 import { Textarea } from "./ui/textarea";
 import { useToast } from "@/hooks/use-toast";
+import { useRTL } from "@/hooks/useRTL";
 import { supabase } from "@/integrations/supabase/client";
 
 export const ContactSection = () => {
   const { t } = useTranslation();
   const { toast } = useToast();
+  const { isRTL, flipX } = useRTL();
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [formData, setFormData] = useState({
     name: "",
@@ -122,7 +124,7 @@ export const ContactSection = () => {
         <div className="grid lg:grid-cols-5 gap-12">
           {/* Contact Form */}
           <motion.div
-            initial={{ opacity: 0, x: -30 }}
+            initial={{ opacity: 0, x: flipX(-30) }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             className="lg:col-span-3"
@@ -250,7 +252,7 @@ export const ContactSection = () => {
 
           {/* Contact Info */}
           <motion.div
-            initial={{ opacity: 0, x: 30 }}
+            initial={{ opacity: 0, x: flipX(30) }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             className="lg:col-span-2 space-y-6"
@@ -264,14 +266,14 @@ export const ContactSection = () => {
                   <a
                     key={index}
                     href={info.href}
-                    className="flex items-start gap-4 group hover:opacity-80 transition-opacity"
+                    className={`flex items-start gap-4 group hover:opacity-80 transition-opacity ${isRTL ? 'flex-row-reverse text-right' : ''}`}
                   >
                     <div className="w-12 h-12 rounded-xl bg-primary-foreground/10 flex items-center justify-center flex-shrink-0">
                       <info.icon className="w-6 h-6" />
                     </div>
                     <div>
                       <p className="text-sm text-primary-foreground/70">{info.label}</p>
-                      <p className="font-semibold">{info.value}</p>
+                      <p className="font-semibold" dir={info.href.startsWith('tel:') || info.href.startsWith('mailto:') ? 'ltr' : undefined}>{info.value}</p>
                     </div>
                   </a>
                 ))}
@@ -280,7 +282,7 @@ export const ContactSection = () => {
 
             {/* WhatsApp CTA */}
             <div className="bg-card p-6 rounded-2xl shadow-soft border-2 border-dashed border-accent">
-              <div className="flex items-center gap-4 mb-4">
+              <div className={`flex items-center gap-4 mb-4 ${isRTL ? 'flex-row-reverse text-right' : ''}`}>
                 <div className="w-12 h-12 rounded-full bg-green-500 flex items-center justify-center">
                   <MessageCircle className="w-6 h-6 text-white" />
                 </div>

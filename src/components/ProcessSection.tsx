@@ -1,6 +1,7 @@
 import { useTranslation } from "react-i18next";
 import { motion } from "framer-motion";
 import { Lightbulb, Palette, Cog, Truck, Wrench, CheckCircle2 } from "lucide-react";
+import { useRTL } from "@/hooks/useRTL";
 
 const container = {
   hidden: { opacity: 0 },
@@ -12,13 +13,14 @@ const container = {
   },
 };
 
-const item = {
-  hidden: { opacity: 0, x: -30 },
-  show: { opacity: 1, x: 0, transition: { duration: 0.5 } },
-};
-
 export const ProcessSection = () => {
   const { t } = useTranslation();
+  const { isRTL, flipX } = useRTL();
+
+  const item = {
+    hidden: { opacity: 0, x: flipX(-30) },
+    show: { opacity: 1, x: 0, transition: { duration: 0.5 } },
+  };
 
   const steps = [
     {
@@ -118,7 +120,7 @@ export const ProcessSection = () => {
                 {/* Card */}
                 <div className="relative bg-card rounded-2xl p-6 shadow-soft hover:shadow-medium transition-all duration-300 h-full">
                   {/* Number Badge */}
-                  <div className="absolute -top-4 -left-4 w-12 h-12 rounded-full hero-gradient text-accent-foreground font-heading font-bold text-xl flex items-center justify-center shadow-glow">
+                  <div className={`absolute -top-4 ${isRTL ? '-right-4' : '-left-4'} w-12 h-12 rounded-full hero-gradient text-accent-foreground font-heading font-bold text-xl flex items-center justify-center shadow-glow`}>
                     {step.number}
                   </div>
 

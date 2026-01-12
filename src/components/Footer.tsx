@@ -1,5 +1,6 @@
 import { useTranslation } from "react-i18next";
 import { Mail, Phone, MapPin, Facebook, Linkedin, Youtube, Instagram } from "lucide-react";
+import { useRTL } from "@/hooks/useRTL";
 
 const socialLinks = [
   { icon: Facebook, href: "https://www.facebook.com/profile.php?id=61552140959757vNSFQ", label: "Facebook" },
@@ -10,6 +11,7 @@ const socialLinks = [
 
 export const Footer = () => {
   const { t } = useTranslation();
+  const { isRTL } = useRTL();
 
   const productLinks = [
     { label: t("footer.links.indoorPlayground"), href: "#products" },
@@ -90,25 +92,25 @@ export const Footer = () => {
           <div>
             <h4 className="font-heading font-bold text-lg mb-4">{t("footer.contactUs")}</h4>
             <ul className="space-y-4">
-              <li className="flex items-start gap-3">
+              <li className={`flex items-start gap-3 ${isRTL ? 'flex-row-reverse text-right' : ''}`}>
                 <Phone className="w-5 h-5 mt-0.5 flex-shrink-0" />
                 <div>
                   <p className="text-primary-foreground/60 text-sm">{t("footer.contact.phone")}</p>
-                  <a href="tel:+8615057582901" className="hover:opacity-80">
+                  <a href="tel:+8615057582901" className="hover:opacity-80" dir="ltr">
                     +86 150 5758 2901
                   </a>
                 </div>
               </li>
-              <li className="flex items-start gap-3">
+              <li className={`flex items-start gap-3 ${isRTL ? 'flex-row-reverse text-right' : ''}`}>
                 <Mail className="w-5 h-5 mt-0.5 flex-shrink-0" />
                 <div>
                   <p className="text-primary-foreground/60 text-sm">{t("footer.contact.email")}</p>
-                  <a href="mailto:NinescapeLand@gmail.com" className="hover:opacity-80">
+                  <a href="mailto:NinescapeLand@gmail.com" className="hover:opacity-80" dir="ltr">
                     NinescapeLand@gmail.com
                   </a>
                 </div>
               </li>
-              <li className="flex items-start gap-3">
+              <li className={`flex items-start gap-3 ${isRTL ? 'flex-row-reverse text-right' : ''}`}>
                 <MapPin className="w-5 h-5 mt-0.5 flex-shrink-0" />
                 <div>
                   <p className="text-primary-foreground/60 text-sm">{t("footer.contact.factory")}</p>
