@@ -1,44 +1,6 @@
+import { useTranslation } from "react-i18next";
 import { motion } from "framer-motion";
 import { Lightbulb, Palette, Cog, Truck, Wrench, CheckCircle2 } from "lucide-react";
-
-const steps = [
-  {
-    icon: Lightbulb,
-    title: "Consultation & Requirements",
-    description: "Share your vision, space dimensions, and budget. Our team provides expert advice on layout optimization and attraction selection.",
-    number: "01",
-  },
-  {
-    icon: Palette,
-    title: "Free 3D Design",
-    description: "Receive professional 3D renderings showing your customized playground. Includes floor plans, elevation views, and themed concept designs.",
-    number: "02",
-  },
-  {
-    icon: Cog,
-    title: "Manufacturing",
-    description: "Production begins using premium materials and strict quality control. Regular progress updates with photos and videos throughout production.",
-    number: "03",
-  },
-  {
-    icon: Truck,
-    title: "Global Shipping",
-    description: "Professional packaging and logistics coordination. Door-to-door or port-to-port delivery with full tracking and customs support.",
-    number: "04",
-  },
-  {
-    icon: Wrench,
-    title: "Installation Support",
-    description: "Comprehensive installation guides with video tutorials. Optional on-site installation service by our trained technicians available.",
-    number: "05",
-  },
-  {
-    icon: CheckCircle2,
-    title: "After-Sales Service",
-    description: "3-year warranty coverage. Lifetime technical support, spare parts supply, and operational training for your staff.",
-    number: "06",
-  },
-];
 
 const container = {
   hidden: { opacity: 0 },
@@ -56,6 +18,47 @@ const item = {
 };
 
 export const ProcessSection = () => {
+  const { t } = useTranslation();
+
+  const steps = [
+    {
+      icon: Lightbulb,
+      title: t("process.steps.consultation.title"),
+      description: t("process.steps.consultation.description"),
+      number: "01",
+    },
+    {
+      icon: Palette,
+      title: t("process.steps.design.title"),
+      description: t("process.steps.design.description"),
+      number: "02",
+    },
+    {
+      icon: Cog,
+      title: t("process.steps.manufacturing.title"),
+      description: t("process.steps.manufacturing.description"),
+      number: "03",
+    },
+    {
+      icon: Truck,
+      title: t("process.steps.shipping.title"),
+      description: t("process.steps.shipping.description"),
+      number: "04",
+    },
+    {
+      icon: Wrench,
+      title: t("process.steps.installation.title"),
+      description: t("process.steps.installation.description"),
+      number: "05",
+    },
+    {
+      icon: CheckCircle2,
+      title: t("process.steps.afterSales.title"),
+      description: t("process.steps.afterSales.description"),
+      number: "06",
+    },
+  ];
+
   return (
     <section id="process" className="section-padding bg-background relative overflow-hidden">
       {/* Background Pattern */}
@@ -73,14 +76,13 @@ export const ProcessSection = () => {
           className="text-center max-w-3xl mx-auto mb-16"
         >
           <span className="text-accent font-semibold text-sm uppercase tracking-wider">
-            Our Process
+            {t("process.sectionLabel")}
           </span>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold mt-3 mb-6">
-            From Concept to <span className="text-gradient">Grand Opening</span>
+            {t("process.title")} <span className="text-gradient">{t("process.titleHighlight")}</span>
           </h2>
           <p className="text-muted-foreground text-lg">
-            We guide you through every step of creating your indoor playground. 
-            Our streamlined process ensures quality results and on-time delivery.
+            {t("process.description")}
           </p>
         </motion.div>
 
@@ -145,15 +147,15 @@ export const ProcessSection = () => {
         >
           <div className="text-center p-6 bg-card rounded-2xl shadow-soft">
             <div className="text-3xl font-heading font-bold text-gradient mb-2">25-35 Days</div>
-            <div className="text-muted-foreground">Production Time</div>
+            <div className="text-muted-foreground">{t("process.timeline.production")}</div>
           </div>
           <div className="text-center p-6 bg-card rounded-2xl shadow-soft">
             <div className="text-3xl font-heading font-bold text-gradient mb-2">20-35 Days</div>
-            <div className="text-muted-foreground">Shipping Time</div>
+            <div className="text-muted-foreground">{t("process.timeline.shipping")}</div>
           </div>
           <div className="text-center p-6 bg-card rounded-2xl shadow-soft">
             <div className="text-3xl font-heading font-bold text-gradient mb-2">5-10 Days</div>
-            <div className="text-muted-foreground">Installation Time</div>
+            <div className="text-muted-foreground">{t("process.timeline.installation")}</div>
           </div>
         </motion.div>
       </div>

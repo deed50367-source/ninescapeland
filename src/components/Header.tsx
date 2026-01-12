@@ -6,7 +6,18 @@ import { Button } from "./ui/button";
 import { LanguageSwitcher } from "./LanguageSwitcher";
 
 export const Header = () => {
+  const { t } = useTranslation();
   const [isOpen, setIsOpen] = useState(false);
+
+  const navItems = [
+    { label: t("nav.home"), href: "#home" },
+    { label: t("nav.products"), href: "#products" },
+    { label: t("nav.trampolinePark"), href: "#features" },
+    { label: t("nav.ninjaCourse"), href: "#ninja-features" },
+    { label: t("nav.process"), href: "#process" },
+    { label: t("nav.projects"), href: "#projects" },
+    { label: t("nav.contact"), href: "#contact" },
+  ];
 
   return (
     <>
@@ -24,7 +35,7 @@ export const Header = () => {
             </a>
           </div>
           <div className="flex items-center gap-4">
-            <span className="opacity-80">Global Shipping | 3 Year Warranty | Custom Design</span>
+            <span className="opacity-80">{t("topBar.globalShipping")} | {t("topBar.warranty")} | {t("topBar.customDesign")}</span>
           </div>
         </div>
       </div>
@@ -54,21 +65,25 @@ export const Header = () => {
               ))}
             </nav>
 
-            {/* CTA Button */}
+            {/* CTA Button & Language Switcher */}
             <div className="hidden md:flex items-center gap-4">
+              <LanguageSwitcher />
               <Button variant="hero" size="lg" asChild>
-                <a href="#contact">Get Free Quote</a>
+                <a href="#contact">{t("nav.getFreeQuote")}</a>
               </Button>
             </div>
 
             {/* Mobile Menu Button */}
-            <button
-              className="lg:hidden p-2 text-foreground"
-              onClick={() => setIsOpen(!isOpen)}
-              aria-label="Toggle menu"
-            >
-              {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
-            </button>
+            <div className="lg:hidden flex items-center gap-2">
+              <LanguageSwitcher />
+              <button
+                className="p-2 text-foreground"
+                onClick={() => setIsOpen(!isOpen)}
+                aria-label="Toggle menu"
+              >
+                {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+              </button>
+            </div>
           </div>
         </div>
 
@@ -93,7 +108,7 @@ export const Header = () => {
                   </a>
                 ))}
                 <Button variant="hero" size="lg" className="mt-4" asChild>
-                  <a href="#contact">Get Free Quote</a>
+                  <a href="#contact">{t("nav.getFreeQuote")}</a>
                 </Button>
               </nav>
             </motion.div>

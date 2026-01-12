@@ -1,20 +1,5 @@
+import { useTranslation } from "react-i18next";
 import { Mail, Phone, MapPin, Facebook, Linkedin, Youtube, Instagram } from "lucide-react";
-
-const productLinks = [
-  { label: "Indoor Playground Equipment", href: "#products" },
-  { label: "Trampoline Park Equipment", href: "#products" },
-  { label: "Ninja Warrior Course", href: "#products" },
-  { label: "Soft Play Equipment", href: "#products" },
-  { label: "Custom Design Service", href: "#contact" },
-];
-
-const companyLinks = [
-  { label: "About Us", href: "#why-us" },
-  { label: "Our Projects", href: "#projects" },
-  { label: "Certifications", href: "#why-us" },
-  { label: "FAQ", href: "#faq" },
-  { label: "Contact Us", href: "#contact" },
-];
 
 const socialLinks = [
   { icon: Facebook, href: "https://www.facebook.com/profile.php?id=61552140959757vNSFQ", label: "Facebook" },
@@ -24,6 +9,24 @@ const socialLinks = [
 ];
 
 export const Footer = () => {
+  const { t } = useTranslation();
+
+  const productLinks = [
+    { label: t("footer.links.indoorPlayground"), href: "#products" },
+    { label: t("footer.links.trampolinePark"), href: "#products" },
+    { label: t("footer.links.ninjaCourse"), href: "#products" },
+    { label: t("footer.links.softPlay"), href: "#products" },
+    { label: t("footer.links.customDesign"), href: "#contact" },
+  ];
+
+  const companyLinks = [
+    { label: t("footer.links.aboutUs"), href: "#why-us" },
+    { label: t("footer.links.projects"), href: "#projects" },
+    { label: t("footer.links.certifications"), href: "#why-us" },
+    { label: t("footer.links.faq"), href: "#faq" },
+    { label: t("footer.links.contact"), href: "#contact" },
+  ];
+
   return (
     <footer className="bg-primary text-primary-foreground">
       {/* Main Footer */}
@@ -33,8 +36,7 @@ export const Footer = () => {
           <div className="lg:col-span-1">
             <h3 className="text-2xl font-heading font-bold mb-4">NinescapeLand</h3>
             <p className="text-primary-foreground/80 mb-6">
-              Professional manufacturer of commercial indoor playground equipment, trampoline parks, 
-              ninja courses and family entertainment center solutions. Serving clients worldwide since 2008.
+              {t("footer.description")}
             </p>
             <div className="flex gap-4">
               {socialLinks.map((social, index) => (
@@ -52,7 +54,7 @@ export const Footer = () => {
 
           {/* Products */}
           <div>
-            <h4 className="font-heading font-bold text-lg mb-4">Products</h4>
+            <h4 className="font-heading font-bold text-lg mb-4">{t("footer.products")}</h4>
             <ul className="space-y-3">
               {productLinks.map((link, index) => (
                 <li key={index}>
@@ -69,7 +71,7 @@ export const Footer = () => {
 
           {/* Company */}
           <div>
-            <h4 className="font-heading font-bold text-lg mb-4">Company</h4>
+            <h4 className="font-heading font-bold text-lg mb-4">{t("footer.company")}</h4>
             <ul className="space-y-3">
               {companyLinks.map((link, index) => (
                 <li key={index}>
@@ -86,12 +88,12 @@ export const Footer = () => {
 
           {/* Contact */}
           <div>
-            <h4 className="font-heading font-bold text-lg mb-4">Contact Us</h4>
+            <h4 className="font-heading font-bold text-lg mb-4">{t("footer.contactUs")}</h4>
             <ul className="space-y-4">
               <li className="flex items-start gap-3">
                 <Phone className="w-5 h-5 mt-0.5 flex-shrink-0" />
                 <div>
-                  <p className="text-primary-foreground/60 text-sm">Phone / WhatsApp</p>
+                  <p className="text-primary-foreground/60 text-sm">{t("footer.contact.phone")}</p>
                   <a href="tel:+8615057582901" className="hover:opacity-80">
                     +86 150 5758 2901
                   </a>
@@ -100,7 +102,7 @@ export const Footer = () => {
               <li className="flex items-start gap-3">
                 <Mail className="w-5 h-5 mt-0.5 flex-shrink-0" />
                 <div>
-                  <p className="text-primary-foreground/60 text-sm">Email</p>
+                  <p className="text-primary-foreground/60 text-sm">{t("footer.contact.email")}</p>
                   <a href="mailto:NinescapeLand@gmail.com" className="hover:opacity-80">
                     NinescapeLand@gmail.com
                   </a>
@@ -109,7 +111,7 @@ export const Footer = () => {
               <li className="flex items-start gap-3">
                 <MapPin className="w-5 h-5 mt-0.5 flex-shrink-0" />
                 <div>
-                  <p className="text-primary-foreground/60 text-sm">Factory</p>
+                  <p className="text-primary-foreground/60 text-sm">{t("footer.contact.factory")}</p>
                   <span>Wenzhou, Zhejiang, China</span>
                 </div>
               </li>
@@ -121,13 +123,13 @@ export const Footer = () => {
       {/* Bottom Bar */}
       <div className="border-t border-primary-foreground/10">
         <div className="container-wide py-6 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-primary-foreground/60">
-          <p>© 2024 NinescapeLand. All rights reserved.</p>
+          <p>{t("footer.copyright")}</p>
           <div className="flex gap-6">
             <a href="#" className="hover:text-primary-foreground transition-colors">
-              Privacy Policy
+              {t("footer.privacy")}
             </a>
             <a href="#" className="hover:text-primary-foreground transition-colors">
-              Terms of Service
+              {t("footer.terms")}
             </a>
           </div>
         </div>

@@ -1,16 +1,19 @@
+import { useTranslation } from "react-i18next";
 import { motion } from "framer-motion";
 import { ArrowRight, CheckCircle } from "lucide-react";
 import { Button } from "./ui/button";
 import heroImage from "@/assets/hero-playground.jpg";
 
-const benefits = [
-  "Custom Design Solutions",
-  "ASTM & TUV Certified",
-  "Global Shipping",
-  "3-Year Warranty",
-];
-
 export const HeroSection = () => {
+  const { t } = useTranslation();
+
+  const benefits = [
+    t("hero.benefits.customDesign"),
+    t("hero.benefits.certified"),
+    t("hero.benefits.globalShipping"),
+    t("hero.benefits.warranty"),
+  ];
+
   return (
     <section id="home" className="relative min-h-[90vh] flex items-center overflow-hidden">
       {/* Background Image */}
@@ -32,7 +35,7 @@ export const HeroSection = () => {
             transition={{ duration: 0.5 }}
             className="inline-block px-4 py-2 bg-accent/20 text-accent-foreground rounded-full text-sm font-semibold mb-6 border border-accent-foreground/20"
           >
-            🏭 Leading Indoor Playground Manufacturer Since 2008
+            {t("hero.badge")}
           </motion.span>
 
           <motion.h1
@@ -41,8 +44,8 @@ export const HeroSection = () => {
             transition={{ duration: 0.6, delay: 0.1 }}
             className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-primary-foreground leading-tight mb-6"
           >
-            Create Unforgettable
-            <span className="block text-accent">Play Experiences</span>
+            {t("hero.title")}
+            <span className="block text-accent">{t("hero.titleHighlight")}</span>
           </motion.h1>
 
           <motion.p
@@ -51,8 +54,7 @@ export const HeroSection = () => {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="text-lg md:text-xl text-primary-foreground/90 mb-8 max-w-2xl"
           >
-            Professional indoor playground equipment supplier. From trampoline parks to ninja courses, 
-            we deliver turnkey solutions for entertainment centers worldwide.
+            {t("hero.description")}
           </motion.p>
 
           {/* Benefits */}
@@ -82,12 +84,12 @@ export const HeroSection = () => {
           >
             <Button variant="hero" size="xl" asChild>
               <a href="#contact" className="group">
-                Get Free Design & Quote
+                {t("hero.cta.getQuote")}
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </a>
             </Button>
             <Button variant="heroOutline" size="xl" asChild>
-              <a href="#products">View Products</a>
+              <a href="#products">{t("hero.cta.viewProducts")}</a>
             </Button>
           </motion.div>
 
@@ -98,7 +100,7 @@ export const HeroSection = () => {
             transition={{ duration: 0.8, delay: 0.6 }}
             className="mt-12 pt-8 border-t border-primary-foreground/20"
           >
-            <p className="text-primary-foreground/60 text-sm mb-4">Trusted certifications:</p>
+            <p className="text-primary-foreground/60 text-sm mb-4">{t("hero.trustedCertifications")}</p>
             <div className="flex flex-wrap items-center gap-6">
               {["ISO 9001", "CE", "TUV", "ASTM", "IAAPA Member"].map((cert, index) => (
                 <span
