@@ -9,31 +9,37 @@ import de from "./locales/de.json";
 import ar from "./locales/ar.json";
 
 export const languages = [
-  { code: "en", name: "English", flag: "🇬🇧" },
-  { code: "es", name: "Español", flag: "🇪🇸" },
-  { code: "pt", name: "Português", flag: "🇧🇷" },
-  { code: "de", name: "Deutsch", flag: "🇩🇪" },
+  { code: "en", name: "English", flag: "🇬🇧", rtl: false },
+  { code: "es", name: "Español", flag: "🇪🇸", rtl: false },
+  { code: "pt", name: "Português", flag: "🇧🇷", rtl: false },
+  { code: "de", name: "Deutsch", flag: "🇩🇪", rtl: false },
   { code: "ar", name: "العربية", flag: "🇸🇦", rtl: true },
-];
+] as const;
+
+const resources = {
+  en: { translation: en },
+  es: { translation: es },
+  pt: { translation: pt },
+  de: { translation: de },
+  ar: { translation: ar },
+};
 
 i18n
   .use(LanguageDetector)
   .use(initReactI18next)
   .init({
-    resources: {
-      en: { translation: en },
-      es: { translation: es },
-      pt: { translation: pt },
-      de: { translation: de },
-      ar: { translation: ar },
-    },
+    resources,
     fallbackLng: "en",
+    debug: false,
     interpolation: {
       escapeValue: false,
     },
     detection: {
       order: ["localStorage", "navigator"],
       caches: ["localStorage"],
+    },
+    react: {
+      useSuspense: false,
     },
   });
 
