@@ -109,7 +109,7 @@ export const TrampolineFeaturesSection = () => {
             Complete <span className="text-gradient">Attraction Zones</span>
           </h2>
           <p className="text-muted-foreground text-lg">
-            Our trampoline parks feature diverse activity zones designed for maximum engagement 
+            Our trampoline parks feature 12+ diverse activity zones designed for maximum engagement 
             and repeat visits. Each zone offers unique experiences for different skill levels and ages.
           </p>
         </motion.div>
