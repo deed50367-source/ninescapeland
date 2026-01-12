@@ -17,16 +17,16 @@ const products = [
   },
   {
     title: "Trampoline Parks",
-    description: "Complete trampoline park solutions with 8+ activity zones: ninja courses, dodgeball, foam pits, spider walls, battle sticks, devil slides, and more. Professional-grade equipment for maximum engagement.",
+    description: "Complete trampoline park solutions with 12+ activity zones: foam pits, slam dunk, skyrider, 360° bicycle, climbing walls, dodgeball, and more. Professional-grade equipment.",
     image: trampolinePark,
-    features: ["8+ Activity Zones", "High Performance", "Modular Design"],
+    features: ["12+ Activity Zones", "High Performance", "Modular Design"],
     keywords: "trampoline park equipment, commercial trampolines, jump park",
   },
   {
     title: "Ninja Warrior Courses",
-    description: "Professional ninja obstacle courses featuring climbing walls, rope courses, balance beams, and challenging obstacles.",
+    description: "Professional ninja obstacle courses featuring high-altitude challenges, climbing walls, rope courses, balance beams, and adventure obstacles for all ages.",
     image: ninjaCourse,
-    features: ["Competition Grade", "Adjustable Difficulty", "All Ages"],
+    features: ["50+ Obstacle Types", "3D Design", "Competition Grade"],
     keywords: "ninja warrior course, obstacle course equipment, adventure park",
   },
   {
