@@ -1,12 +1,15 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { MapPin, ArrowRight } from "lucide-react";
+import { MapPin, ArrowRight, ArrowLeft } from "lucide-react";
 import { Button } from "./ui/button";
+import { useRTL } from "@/hooks/useRTL";
 
 import indoorPlayground from "@/assets/product-indoor-playground.jpg";
 import trampolinePark from "@/assets/product-trampoline-park.jpg";
 import ninjaCourse from "@/assets/product-ninja-course.jpg";
 import softPlay from "@/assets/product-soft-play.jpg";
+import fecCenter from "@/assets/project-fec-center.jpg";
+import bouncePark from "@/assets/project-bounce-park.jpg";
 
 const projects = [
   {
@@ -47,7 +50,7 @@ const projects = [
     location: "Toronto, Canada",
     type: "Indoor Playground",
     size: "4,200 sqm",
-    image: indoorPlayground,
+    image: fecCenter,
   },
   {
     id: 6,
@@ -55,7 +58,7 @@ const projects = [
     location: "Singapore",
     type: "Trampoline Park",
     size: "2,800 sqm",
-    image: trampolinePark,
+    image: bouncePark,
   },
 ];
 
@@ -63,6 +66,9 @@ const categories = ["All", "Indoor Playground", "Trampoline Park", "Ninja Course
 
 export const ProjectsSection = () => {
   const [activeCategory, setActiveCategory] = useState("All");
+  const { isRTL } = useRTL();
+
+  const ArrowIcon = isRTL ? ArrowLeft : ArrowRight;
 
   const filteredProjects = activeCategory === "All"
     ? projects
@@ -164,7 +170,7 @@ export const ProjectsSection = () => {
           <Button variant="hero" size="lg" asChild>
             <a href="#contact" className="group">
               Start Your Project
-              <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+              <ArrowIcon className={`w-5 h-5 transition-transform ${isRTL ? 'group-hover:-translate-x-1' : 'group-hover:translate-x-1'}`} />
             </a>
           </Button>
         </motion.div>
