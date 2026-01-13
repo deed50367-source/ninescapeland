@@ -7,7 +7,7 @@ import { QuoteCalculator } from "@/components/QuoteCalculator";
 import { FAQSection } from "@/components/FAQSection";
 import { Footer } from "@/components/Footer";
 import { FloatingCTA } from "@/components/FloatingCTA";
-import heroImage from "@/assets/hero-products.jpg";
+import { heroImages } from "@/config/galleryImages";
 
 const Products = () => {
   return (
@@ -18,7 +18,7 @@ const Products = () => {
           titleKey="pages.products.title"
           titleHighlightKey="pages.products.titleHighlight"
           descriptionKey="pages.products.description"
-          backgroundImage={heroImage}
+          backgroundImage={heroImages.products}
         />
         <ProductsSection />
         <TrampolineFeaturesSection />

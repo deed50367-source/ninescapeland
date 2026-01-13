@@ -3,13 +3,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { MapPin, ArrowRight, ArrowLeft } from "lucide-react";
 import { Button } from "./ui/button";
 import { useRTL } from "@/hooks/useRTL";
-
-import indoorPlayground from "@/assets/product-indoor-playground.jpg";
-import trampolinePark from "@/assets/product-trampoline-park.jpg";
-import ninjaCourse from "@/assets/product-ninja-course.jpg";
-import softPlay from "@/assets/product-soft-play.jpg";
-import fecCenter from "@/assets/project-fec-center.jpg";
-import bouncePark from "@/assets/project-bounce-park.jpg";
+import { productImages, projectImages } from "@/config/galleryImages";
 
 const projects = [
   {
@@ -18,7 +12,7 @@ const projects = [
     location: "California, USA",
     type: "Indoor Playground",
     size: "5,000 sqm",
-    image: indoorPlayground,
+    image: productImages.indoorPlayground,
   },
   {
     id: 2,
@@ -26,7 +20,7 @@ const projects = [
     location: "Dubai, UAE",
     type: "Trampoline Park",
     size: "3,500 sqm",
-    image: trampolinePark,
+    image: productImages.trampolinePark,
   },
   {
     id: 3,
@@ -34,7 +28,7 @@ const projects = [
     location: "London, UK",
     type: "Ninja Course",
     size: "2,000 sqm",
-    image: ninjaCourse,
+    image: productImages.ninjaCourse,
   },
   {
     id: 4,
@@ -42,7 +36,7 @@ const projects = [
     location: "Sydney, Australia",
     type: "Soft Play",
     size: "800 sqm",
-    image: softPlay,
+    image: productImages.softPlay,
   },
   {
     id: 5,
@@ -50,7 +44,7 @@ const projects = [
     location: "Toronto, Canada",
     type: "Indoor Playground",
     size: "4,200 sqm",
-    image: fecCenter,
+    image: projectImages.fecCenter,
   },
   {
     id: 6,
@@ -58,7 +52,7 @@ const projects = [
     location: "Singapore",
     type: "Trampoline Park",
     size: "2,800 sqm",
-    image: bouncePark,
+    image: projectImages.bouncePark,
   },
 ];
 
