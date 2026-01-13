@@ -23,17 +23,17 @@ export const Header = () => {
   const { isRTL, flipX } = useRTL();
 
   const productItems = [
-    { label: t("products.items.indoorPlayground.title"), href: "#products" },
-    { label: t("products.items.trampolinePark.title"), href: "#features" },
-    { label: t("products.items.ninjaCourse.title"), href: "#ninja-features" },
-    { label: t("products.items.softPlay.title"), href: "#products" },
+    { label: t("products.items.indoorPlayground.title"), href: localizedPath("/products") },
+    { label: t("products.items.trampolinePark.title"), href: localizedPath("/products") },
+    { label: t("products.items.ninjaCourse.title"), href: localizedPath("/products") },
+    { label: t("products.items.softPlay.title"), href: localizedPath("/products") },
   ];
 
   const navItems = [
-    { label: t("nav.home"), href: "#home" },
-    { label: t("nav.process"), href: "#process" },
-    { label: t("nav.projects"), href: "#projects" },
-    { label: t("nav.contact"), href: "#contact" },
+    { label: t("nav.home"), href: localizedPath("/") },
+    { label: t("nav.process"), href: localizedPath("/process") },
+    { label: t("nav.projects"), href: localizedPath("/projects") },
+    { label: t("nav.contact"), href: localizedPath("/contact") },
   ];
 
   const menuVariants = {
@@ -114,13 +114,13 @@ export const Header = () => {
 
             {/* Desktop Navigation */}
             <nav className="hidden lg:flex items-center gap-6">
-              <a
-                href="#home"
+              <Link
+                to={localizedPath("/")}
                 className="text-foreground/80 hover:text-primary font-medium transition-colors relative group"
               >
                 {t("nav.home")}
                 <span className="absolute -bottom-1 start-0 w-0 h-0.5 bg-primary transition-all group-hover:w-full" />
-              </a>
+              </Link>
 
               {/* Products Dropdown */}
               <DropdownMenu>
@@ -131,44 +131,44 @@ export const Header = () => {
                 <DropdownMenuContent align="start" className="w-56">
                   {productItems.map((item) => (
                     <DropdownMenuItem key={item.label} asChild>
-                      <a href={item.href} className="cursor-pointer">
+                      <Link to={item.href} className="cursor-pointer">
                         {item.label}
-                      </a>
+                      </Link>
                     </DropdownMenuItem>
                   ))}
                 </DropdownMenuContent>
               </DropdownMenu>
 
-              <a
-                href="#process"
+              <Link
+                to={localizedPath("/process")}
                 className="text-foreground/80 hover:text-primary font-medium transition-colors relative group"
               >
                 {t("nav.process")}
                 <span className="absolute -bottom-1 start-0 w-0 h-0.5 bg-primary transition-all group-hover:w-full" />
-              </a>
+              </Link>
 
-              <a
-                href="#projects"
+              <Link
+                to={localizedPath("/projects")}
                 className="text-foreground/80 hover:text-primary font-medium transition-colors relative group"
               >
                 {t("nav.projects")}
                 <span className="absolute -bottom-1 start-0 w-0 h-0.5 bg-primary transition-all group-hover:w-full" />
-              </a>
+              </Link>
 
-              <a
-                href="#contact"
+              <Link
+                to={localizedPath("/contact")}
                 className="text-foreground/80 hover:text-primary font-medium transition-colors relative group"
               >
                 {t("nav.contact")}
                 <span className="absolute -bottom-1 start-0 w-0 h-0.5 bg-primary transition-all group-hover:w-full" />
-              </a>
+              </Link>
             </nav>
 
             {/* CTA Button & Language Switcher */}
             <div className="hidden md:flex items-center gap-3">
               <LanguageSwitcher />
               <Button variant="hero" size="default" asChild>
-                <a href="#contact">{t("nav.getFreeQuote")}</a>
+                <Link to={localizedPath("/contact")}>{t("nav.getFreeQuote")}</Link>
               </Button>
             </div>
 
@@ -221,17 +221,16 @@ export const Header = () => {
             >
               <nav className="container-wide py-4 flex flex-col gap-1">
                 {navItems.slice(0, 1).map((item) => (
-                  <motion.a
-                    key={item.label}
-                    variants={itemVariants}
-                    href={item.href}
-                    className="py-3 px-4 text-foreground hover:bg-primary/10 hover:text-primary rounded-xl transition-all font-medium flex items-center justify-between active:scale-[0.98]"
-                    onClick={() => setIsOpen(false)}
-                    whileTap={{ scale: 0.98 }}
-                  >
-                    {item.label}
-                    <DirectionalChevron className="w-4 h-4 opacity-40" />
-                  </motion.a>
+                  <motion.div key={item.label} variants={itemVariants}>
+                    <Link
+                      to={item.href}
+                      className="py-3 px-4 text-foreground hover:bg-primary/10 hover:text-primary rounded-xl transition-all font-medium flex items-center justify-between active:scale-[0.98] block"
+                      onClick={() => setIsOpen(false)}
+                    >
+                      {item.label}
+                      <DirectionalChevron className="w-4 h-4 opacity-40" />
+                    </Link>
+                  </motion.div>
                 ))}
                 
                 {/* Products Accordion */}
@@ -259,20 +258,19 @@ export const Header = () => {
                         className={`overflow-hidden ${isRTL ? 'mr-2 border-r-2' : 'ml-2 border-l-2'} border-primary/20`}
                       >
                         {productItems.map((item) => (
-                          <motion.a
-                            key={item.label}
-                            variants={itemVariants}
-                            href={item.href}
-                            className="py-2.5 px-4 text-foreground/80 hover:text-primary hover:bg-primary/5 rounded-lg transition-all text-sm flex items-center gap-2 active:scale-[0.98]"
-                            onClick={() => {
-                              setIsOpen(false);
-                              setIsProductsOpen(false);
-                            }}
-                            whileTap={{ scale: 0.98 }}
-                          >
-                            <span className="w-1.5 h-1.5 rounded-full bg-primary/40" />
-                            {item.label}
-                          </motion.a>
+                          <motion.div key={item.label} variants={itemVariants}>
+                            <Link
+                              to={item.href}
+                              className="py-2.5 px-4 text-foreground/80 hover:text-primary hover:bg-primary/5 rounded-lg transition-all text-sm flex items-center gap-2 active:scale-[0.98] block"
+                              onClick={() => {
+                                setIsOpen(false);
+                                setIsProductsOpen(false);
+                              }}
+                            >
+                              <span className="w-1.5 h-1.5 rounded-full bg-primary/40" />
+                              {item.label}
+                            </Link>
+                          </motion.div>
                         ))}
                       </motion.div>
                     )}
@@ -280,28 +278,26 @@ export const Header = () => {
                 </motion.div>
 
                 {navItems.slice(1).map((item) => (
-                  <motion.a
-                    key={item.label}
-                    variants={itemVariants}
-                    href={item.href}
-                    className="py-3 px-4 text-foreground hover:bg-primary/10 hover:text-primary rounded-xl transition-all font-medium flex items-center justify-between active:scale-[0.98]"
-                    onClick={() => setIsOpen(false)}
-                    whileTap={{ scale: 0.98 }}
-                  >
-                    {item.label}
-                    <DirectionalChevron className="w-4 h-4 opacity-40" />
-                  </motion.a>
+                  <motion.div key={item.label} variants={itemVariants}>
+                    <Link
+                      to={item.href}
+                      className="py-3 px-4 text-foreground hover:bg-primary/10 hover:text-primary rounded-xl transition-all font-medium flex items-center justify-between active:scale-[0.98] block"
+                      onClick={() => setIsOpen(false)}
+                    >
+                      {item.label}
+                      <DirectionalChevron className="w-4 h-4 opacity-40" />
+                    </Link>
+                  </motion.div>
                 ))}
                 
                 <motion.div variants={itemVariants} className="pt-4">
                   <Button variant="hero" size="lg" className="w-full" asChild>
-                    <motion.a 
-                      href="#contact" 
+                    <Link 
+                      to={localizedPath("/contact")} 
                       onClick={() => setIsOpen(false)}
-                      whileTap={{ scale: 0.98 }}
                     >
                       {t("nav.getFreeQuote")}
-                    </motion.a>
+                    </Link>
                   </Button>
                 </motion.div>
               </nav>
