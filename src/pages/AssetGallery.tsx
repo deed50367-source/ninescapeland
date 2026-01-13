@@ -295,7 +295,14 @@ const AssetGallery = () => {
     folder.name.toLowerCase().includes(searchQuery.toLowerCase())
   );
 
-  if (authLoading) {
+  // Redirect to login if not admin
+  useEffect(() => {
+    if (!authLoading && !isAdmin) {
+      navigate(localizedPath("/admin-login"));
+    }
+  }, [authLoading, isAdmin, navigate, localizedPath]);
+
+  if (authLoading || !isAdmin) {
     return (
       <div className="min-h-screen flex items-center justify-center bg-background">
         <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-primary"></div>
