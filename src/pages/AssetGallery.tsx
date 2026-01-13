@@ -329,20 +329,129 @@ const AssetGallery = () => {
     }
   };
 
-  const deleteFolder = async (folderId: string) => {
-    if (!confirm("确定要删除此文件夹吗？文件夹内的所有内容都将被删除。")) return;
+  // Recursively get all assets in a folder and its subfolders
+  const getAllAssetsInFolder = async (folderId: string): Promise<Asset[]> => {
+    const allAssets: Asset[] = [];
 
-    const { error } = await supabase
+    // Get assets in this folder
+    const { data: assets } = await supabase
+      .from("assets")
+      .select("*")
+      .eq("folder_id", folderId);
+
+    if (assets) {
+      allAssets.push(...assets);
+    }
+
+    // Get subfolders
+    const { data: subfolders } = await supabase
       .from("asset_folders")
-      .delete()
-      .eq("id", folderId);
+      .select("id")
+      .eq("parent_id", folderId);
 
-    if (error) {
-      toast.error("删除文件夹失败");
-      console.error(error);
-    } else {
-      toast.success("文件夹已删除");
+    if (subfolders) {
+      for (const subfolder of subfolders) {
+        const subAssets = await getAllAssetsInFolder(subfolder.id);
+        allAssets.push(...subAssets);
+      }
+    }
+
+    return allAssets;
+  };
+
+  // Recursively get all subfolder IDs
+  const getAllSubfolderIds = async (folderId: string): Promise<string[]> => {
+    const allIds: string[] = [folderId];
+
+    const { data: subfolders } = await supabase
+      .from("asset_folders")
+      .select("id")
+      .eq("parent_id", folderId);
+
+    if (subfolders) {
+      for (const subfolder of subfolders) {
+        const subIds = await getAllSubfolderIds(subfolder.id);
+        allIds.push(...subIds);
+      }
+    }
+
+    return allIds;
+  };
+
+  const deleteFolder = async (folderId: string) => {
+    // Get folder info for confirmation message
+    const { data: folderInfo } = await supabase
+      .from("asset_folders")
+      .select("name")
+      .eq("id", folderId)
+      .single();
+
+    const folderName = folderInfo?.name || "此文件夹";
+
+    // Count assets in folder and subfolders
+    const allAssets = await getAllAssetsInFolder(folderId);
+    const allFolderIds = await getAllSubfolderIds(folderId);
+    const subfolderCount = allFolderIds.length - 1;
+
+    let confirmMessage = `确定要删除文件夹"${folderName}"吗？`;
+    if (allAssets.length > 0 || subfolderCount > 0) {
+      confirmMessage += `\n\n将删除：`;
+      if (subfolderCount > 0) {
+        confirmMessage += `\n• ${subfolderCount} 个子文件夹`;
+      }
+      if (allAssets.length > 0) {
+        confirmMessage += `\n• ${allAssets.length} 个文件`;
+      }
+      confirmMessage += `\n\n此操作不可恢复！`;
+    }
+
+    if (!confirm(confirmMessage)) return;
+
+    toast.info("正在删除文件夹...");
+
+    try {
+      // Delete all assets from storage
+      if (allAssets.length > 0) {
+        const filePaths = allAssets.map((a) => a.file_path);
+        
+        // Also delete thumbnails
+        const thumbPaths = allAssets
+          .filter((a) => a.mime_type?.startsWith("image/"))
+          .map((a) => {
+            const parts = a.file_path.split("/");
+            const fileName = parts.pop() || "";
+            const folderPath = parts.join("/");
+            return folderPath ? `${folderPath}/thumb_${fileName}` : `thumb_${fileName}`;
+          });
+
+        const allPaths = [...filePaths, ...thumbPaths];
+
+        // Delete in batches of 100
+        for (let i = 0; i < allPaths.length; i += 100) {
+          const batch = allPaths.slice(i, i + 100);
+          await supabase.storage.from("assets").remove(batch);
+        }
+
+        // Delete asset records
+        const assetIds = allAssets.map((a) => a.id);
+        for (let i = 0; i < assetIds.length; i += 100) {
+          const batch = assetIds.slice(i, i + 100);
+          await supabase.from("assets").delete().in("id", batch);
+        }
+      }
+
+      // Delete all folders (in reverse order so children are deleted before parents)
+      const reversedFolderIds = allFolderIds.reverse();
+      for (const id of reversedFolderIds) {
+        await supabase.from("asset_folders").delete().eq("id", id);
+      }
+
+      toast.success(`文件夹"${folderName}"已删除`);
       fetchFolders();
+      fetchAssets();
+    } catch (error) {
+      console.error("Error deleting folder:", error);
+      toast.error("删除文件夹时出错");
     }
   };
 
