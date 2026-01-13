@@ -31,9 +31,9 @@ export const Header = () => {
 
   const navItems = [
     { label: t("nav.home"), href: localizedPath("/") },
-    { label: t("nav.aboutUs"), href: localizedPath("/about-us") },
     { label: t("nav.process"), href: localizedPath("/process") },
     { label: t("nav.projects"), href: localizedPath("/projects") },
+    { label: t("nav.aboutUs"), href: localizedPath("/about-us") },
     { label: t("nav.contact"), href: localizedPath("/contact") },
   ];
 
@@ -124,14 +124,6 @@ export const Header = () => {
               </Link>
 
               <Link
-                to={localizedPath("/about-us")}
-                className="text-foreground/80 hover:text-primary font-medium transition-colors relative group"
-              >
-                {t("nav.aboutUs")}
-                <span className="absolute -bottom-1 start-0 w-0 h-0.5 bg-primary transition-all group-hover:w-full" />
-              </Link>
-
-              <Link
                 to={localizedPath("/process")}
                 className="text-foreground/80 hover:text-primary font-medium transition-colors relative group"
               >
@@ -163,6 +155,14 @@ export const Header = () => {
                   ))}
                 </DropdownMenuContent>
               </DropdownMenu>
+
+              <Link
+                to={localizedPath("/about-us")}
+                className="text-foreground/80 hover:text-primary font-medium transition-colors relative group"
+              >
+                {t("nav.aboutUs")}
+                <span className="absolute -bottom-1 start-0 w-0 h-0.5 bg-primary transition-all group-hover:w-full" />
+              </Link>
 
               <Link
                 to={localizedPath("/contact")}
@@ -229,8 +229,8 @@ export const Header = () => {
               className="lg:hidden bg-card border-t border-border overflow-hidden"
             >
               <nav className="container-wide py-4 flex flex-col gap-1">
-                {/* Home, About Us, Process, Projects */}
-                {navItems.slice(0, 4).map((item) => (
+                {/* Home, Process, Projects */}
+                {navItems.slice(0, 3).map((item) => (
                   <motion.div key={item.label} variants={itemVariants}>
                     <Link
                       to={item.href}
@@ -287,8 +287,8 @@ export const Header = () => {
                   </AnimatePresence>
                 </motion.div>
 
-                {/* Contact */}
-                {navItems.slice(4).map((item) => (
+                {/* About Us, Contact */}
+                {navItems.slice(3).map((item) => (
                   <motion.div key={item.label} variants={itemVariants}>
                     <Link
                       to={item.href}
