@@ -88,9 +88,9 @@ export const Header = () => {
       <div className="hidden md:block bg-primary text-primary-foreground py-2">
         <div className="container-wide flex justify-between items-center text-sm">
           <div className="flex items-center gap-6">
-            <a href="mailto:NinescapeLand@gmail.com" className="flex items-center gap-2 hover:opacity-80 transition-opacity">
+            <a href="mailto:sale@indoorplaygroundsolution.com" className="flex items-center gap-2 hover:opacity-80 transition-opacity">
               <Mail className="w-4 h-4" />
-              NinescapeLand@gmail.com
+              sale@indoorplaygroundsolution.com
             </a>
             <a href="tel:+8615057582901" className="flex items-center gap-2 hover:opacity-80 transition-opacity">
               <Phone className="w-4 h-4" />
