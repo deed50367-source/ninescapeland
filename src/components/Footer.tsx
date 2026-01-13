@@ -1,6 +1,8 @@
 import { useTranslation } from "react-i18next";
+import { Link } from "react-router-dom";
 import { Mail, Phone, MapPin, Facebook, Linkedin, Youtube, Instagram } from "lucide-react";
 import { useRTL } from "@/hooks/useRTL";
+import { useLocalizedPath } from "@/hooks/useLocalizedPath";
 import logo from "@/assets/logo.png";
 
 const socialLinks = [
@@ -13,21 +15,22 @@ const socialLinks = [
 export const Footer = () => {
   const { t } = useTranslation();
   const { isRTL } = useRTL();
+  const { localizedPath } = useLocalizedPath();
 
   const productLinks = [
-    { label: t("footer.links.indoorPlayground"), href: "#products" },
-    { label: t("footer.links.trampolinePark"), href: "#products" },
-    { label: t("footer.links.ninjaCourse"), href: "#products" },
-    { label: t("footer.links.softPlay"), href: "#products" },
-    { label: t("footer.links.customDesign"), href: "#contact" },
+    { label: t("footer.links.indoorPlayground"), href: localizedPath("/products") },
+    { label: t("footer.links.trampolinePark"), href: localizedPath("/products") },
+    { label: t("footer.links.ninjaCourse"), href: localizedPath("/products") },
+    { label: t("footer.links.softPlay"), href: localizedPath("/products") },
+    { label: t("footer.links.customDesign"), href: localizedPath("/contact") },
   ];
 
   const companyLinks = [
-    { label: t("footer.links.aboutUs"), href: "#why-us" },
-    { label: t("footer.links.projects"), href: "#projects" },
-    { label: t("footer.links.certifications"), href: "#why-us" },
-    { label: t("footer.links.faq"), href: "#faq" },
-    { label: t("footer.links.contact"), href: "#contact" },
+    { label: t("footer.links.aboutUs"), href: localizedPath("/about") },
+    { label: t("footer.links.projects"), href: localizedPath("/projects") },
+    { label: t("footer.links.certifications"), href: localizedPath("/about") },
+    { label: t("footer.links.faq"), href: localizedPath("/faq") },
+    { label: t("footer.links.contact"), href: localizedPath("/contact") },
   ];
 
   return (
@@ -61,12 +64,12 @@ export const Footer = () => {
             <ul className="space-y-3">
               {productLinks.map((link, index) => (
                 <li key={index}>
-                  <a
-                    href={link.href}
+                  <Link
+                    to={link.href}
                     className="text-primary-foreground/80 hover:text-primary-foreground transition-colors"
                   >
                     {link.label}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -78,12 +81,12 @@ export const Footer = () => {
             <ul className="space-y-3">
               {companyLinks.map((link, index) => (
                 <li key={index}>
-                  <a
-                    href={link.href}
+                  <Link
+                    to={link.href}
                     className="text-primary-foreground/80 hover:text-primary-foreground transition-colors"
                   >
                     {link.label}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
