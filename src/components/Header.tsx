@@ -123,23 +123,6 @@ export const Header = () => {
                 <span className="absolute -bottom-1 start-0 w-0 h-0.5 bg-primary transition-all group-hover:w-full" />
               </Link>
 
-              {/* Products Dropdown */}
-              <DropdownMenu>
-                <DropdownMenuTrigger className="flex items-center gap-1 text-foreground/80 hover:text-primary font-medium transition-colors">
-                  {t("nav.products")}
-                  <ChevronDown className="w-4 h-4" />
-                </DropdownMenuTrigger>
-                <DropdownMenuContent align="start" className="w-56">
-                  {productItems.map((item) => (
-                    <DropdownMenuItem key={item.label} asChild>
-                      <Link to={item.href} className="cursor-pointer">
-                        {item.label}
-                      </Link>
-                    </DropdownMenuItem>
-                  ))}
-                </DropdownMenuContent>
-              </DropdownMenu>
-
               <Link
                 to={localizedPath("/about-us")}
                 className="text-foreground/80 hover:text-primary font-medium transition-colors relative group"
@@ -163,6 +146,23 @@ export const Header = () => {
                 {t("nav.projects")}
                 <span className="absolute -bottom-1 start-0 w-0 h-0.5 bg-primary transition-all group-hover:w-full" />
               </Link>
+
+              {/* Products Dropdown */}
+              <DropdownMenu>
+                <DropdownMenuTrigger className="flex items-center gap-1 text-foreground/80 hover:text-primary font-medium transition-colors">
+                  {t("nav.products")}
+                  <ChevronDown className="w-4 h-4" />
+                </DropdownMenuTrigger>
+                <DropdownMenuContent align="start" className="w-56">
+                  {productItems.map((item) => (
+                    <DropdownMenuItem key={item.label} asChild>
+                      <Link to={item.href} className="cursor-pointer">
+                        {item.label}
+                      </Link>
+                    </DropdownMenuItem>
+                  ))}
+                </DropdownMenuContent>
+              </DropdownMenu>
 
               <Link
                 to={localizedPath("/contact")}
@@ -229,7 +229,8 @@ export const Header = () => {
               className="lg:hidden bg-card border-t border-border overflow-hidden"
             >
               <nav className="container-wide py-4 flex flex-col gap-1">
-                {navItems.slice(0, 1).map((item) => (
+                {/* Home, About Us, Process, Projects */}
+                {navItems.slice(0, 4).map((item) => (
                   <motion.div key={item.label} variants={itemVariants}>
                     <Link
                       to={item.href}
@@ -286,7 +287,8 @@ export const Header = () => {
                   </AnimatePresence>
                 </motion.div>
 
-                {navItems.slice(1).map((item) => (
+                {/* Contact */}
+                {navItems.slice(4).map((item) => (
                   <motion.div key={item.label} variants={itemVariants}>
                     <Link
                       to={item.href}
