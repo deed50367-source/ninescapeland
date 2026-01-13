@@ -536,5 +536,195 @@
         "Interactive panels"
       ]
     }
+  },
+  "productPages": {
+    "indoorPlayground": {
+      "title": "Indoor Playground",
+      "titleHighlight": "Equipment",
+      "description": "Multi-level play structures with slides, ball pits, climbing nets, and interactive elements for children of all ages. Custom themes and ASTM & TUV certified for maximum safety.",
+      "featuresLabel": "Key Features",
+      "featuresTitle": "Why Choose Our",
+      "featuresTitleHighlight": "Indoor Playgrounds",
+      "features": {
+        "customTheme": {
+          "title": "Custom Themes",
+          "description": "Create unique branded environments with custom colors, themes, and character designs tailored to your vision."
+        },
+        "safety": {
+          "title": "Safety Certified",
+          "description": "All equipment meets ASTM, TUV, CE, and international safety standards for worry-free play."
+        },
+        "allAges": {
+          "title": "All Ages",
+          "description": "Designed for children of all ages with age-appropriate zones and challenges."
+        },
+        "modular": {
+          "title": "Modular Design",
+          "description": "Flexible layouts that can be customized and expanded as your business grows."
+        }
+      },
+      "galleryLabel": "Our Projects",
+      "galleryTitle": "Indoor Playground",
+      "galleryTitleHighlight": "Gallery",
+      "componentsLabel": "Equipment Components",
+      "componentsTitle": "Complete Play",
+      "componentsTitleHighlight": "Solutions",
+      "componentsDescription": "Our indoor playgrounds feature a wide variety of exciting elements that keep children engaged and active for hours.",
+      "components": {
+        "slides": "Spiral & Wave Slides",
+        "ballPits": "Ball Pits & Pools",
+        "climbingNets": "Climbing Nets",
+        "tubes": "Crawl Tubes",
+        "obstacles": "Obstacle Courses",
+        "interactiveGames": "Interactive Games",
+        "ropeElements": "Rope Elements",
+        "softPlay": "Soft Play Zones"
+      },
+      "cta": "Get Free Design & Quote",
+      "premiumQuality": "Premium Quality"
+    },
+    "trampolinePark": {
+      "title": "Trampoline Park",
+      "titleHighlight": "Solutions",
+      "description": "Complete trampoline park solutions with 12+ activity zones including foam pits, slam dunk areas, ninja courses, dodgeball courts, and more. High-performance equipment designed for maximum engagement.",
+      "featuresLabel": "Key Features",
+      "featuresTitle": "Why Choose Our",
+      "featuresTitleHighlight": "Trampoline Parks",
+      "features": {
+        "performance": {
+          "title": "High Performance",
+          "description": "Premium springs and mats for superior bounce, durability, and safety performance."
+        },
+        "safety": {
+          "title": "Safety First",
+          "description": "Padded frames, safety nets, and foam pits ensure safe landings and play."
+        },
+        "zones": {
+          "title": "12+ Activity Zones",
+          "description": "Diverse attractions keep visitors engaged and encourage repeat visits."
+        },
+        "modular": {
+          "title": "Modular Layout",
+          "description": "Flexible designs that adapt to your space and budget requirements."
+        }
+      },
+      "stats": {
+        "zones": "Activity Zones",
+        "projects": "Projects Completed",
+        "countries": "Countries Served",
+        "years": "Years Experience"
+      },
+      "galleryLabel": "Our Projects",
+      "galleryTitle": "Trampoline Park",
+      "galleryTitleHighlight": "Gallery",
+      "cta": "Get Free Design & Quote"
+    },
+    "ninjaCourse": {
+      "title": "Ninja Warrior",
+      "titleHighlight": "Courses",
+      "description": "Professional ninja obstacle courses featuring warped walls, salmon ladders, climbing walls, rope courses, and 50+ challenge elements. Competition-grade equipment for all skill levels.",
+      "featuresLabel": "Key Features",
+      "featuresTitle": "Why Choose Our",
+      "featuresTitleHighlight": "Ninja Courses",
+      "features": {
+        "obstacles": {
+          "title": "50+ Obstacle Types",
+          "description": "Extensive selection of challenges from beginner to professional competition grade."
+        },
+        "safety": {
+          "title": "Safety Systems",
+          "description": "Crash mats, safety harnesses, and padded surfaces for safe training."
+        },
+        "competition": {
+          "title": "Competition Grade",
+          "description": "Equipment designed to meet TV show and competition standards."
+        },
+        "customizable": {
+          "title": "Fully Customizable",
+          "description": "Design courses tailored to your space, audience, and skill levels."
+        }
+      },
+      "obstaclesLabel": "Popular Obstacles",
+      "obstaclesTitle": "Challenge",
+      "obstaclesTitleHighlight": "Elements",
+      "obstaclesDescription": "Our ninja courses include a wide range of obstacles that test strength, agility, and endurance. Mix and match to create the ultimate challenge.",
+      "obstacles": {
+        "warped": "Warped Wall",
+        "salmon": "Salmon Ladder",
+        "rings": "Flying Rings",
+        "cargo": "Cargo Nets",
+        "balance": "Balance Beams",
+        "rope": "Rope Swings",
+        "monkey": "Monkey Bars",
+        "climbing": "Climbing Walls"
+      },
+      "galleryLabel": "Our Projects",
+      "galleryTitle": "Ninja Course",
+      "galleryTitleHighlight": "Gallery",
+      "cta": "Get Free Design & Quote",
+      "competitionGrade": "Competition Grade"
+    },
+    "softPlay": {
+      "title": "Soft Play",
+      "titleHighlight": "Areas",
+      "description": "Safe and engaging soft play equipment designed specifically for toddlers and young children. Easy to clean, modular, and built with the highest safety standards for worry-free play.",
+      "featuresLabel": "Key Features",
+      "featuresTitle": "Why Choose Our",
+      "featuresTitleHighlight": "Soft Play Equipment",
+      "features": {
+        "toddlerSafe": {
+          "title": "Toddler Safe",
+          "description": "Designed specifically for children 0-5 years with rounded edges and soft surfaces."
+        },
+        "materials": {
+          "title": "Premium Materials",
+          "description": "High-density foam, PVC leather, and non-toxic materials throughout."
+        },
+        "easyClean": {
+          "title": "Easy to Clean",
+          "description": "Antibacterial surfaces and removable covers for simple maintenance."
+        },
+        "modular": {
+          "title": "Modular System",
+          "description": "Mix and match components to create custom layouts for any space."
+        }
+      },
+      "componentsLabel": "Equipment Types",
+      "componentsTitle": "Soft Play",
+      "componentsTitleHighlight": "Components",
+      "componentsDescription": "Our soft play equipment includes everything needed to create safe, engaging play areas for the youngest visitors.",
+      "components": {
+        "ballPits": "Ball Pits",
+        "rockers": "Soft Rockers",
+        "slides": "Mini Slides",
+        "tunnels": "Crawl Tunnels",
+        "shapes": "Soft Shapes",
+        "mats": "Play Mats",
+        "steps": "Soft Steps",
+        "walls": "Climbing Walls"
+      },
+      "benefitsLabel": "Benefits",
+      "benefitsTitle": "Developmental",
+      "benefitsTitleHighlight": "Benefits",
+      "benefits": {
+        "development": {
+          "title": "Motor Skills Development",
+          "description": "Climbing, crawling, and balancing activities help develop gross motor skills and coordination."
+        },
+        "socialSkills": {
+          "title": "Social Interaction",
+          "description": "Shared play spaces encourage cooperation, communication, and social skill development."
+        },
+        "sensory": {
+          "title": "Sensory Stimulation",
+          "description": "Various textures, colors, and interactive elements stimulate sensory development."
+        }
+      },
+      "galleryLabel": "Our Projects",
+      "galleryTitle": "Soft Play",
+      "galleryTitleHighlight": "Gallery",
+      "cta": "Get Free Design & Quote",
+      "kidsFriendly": "Kids Friendly"
+    }
   }
 }
