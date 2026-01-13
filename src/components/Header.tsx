@@ -23,10 +23,10 @@ export const Header = () => {
   const { isRTL, flipX } = useRTL();
 
   const productItems = [
-    { label: t("products.items.indoorPlayground.title"), href: localizedPath("/products") },
-    { label: t("products.items.trampolinePark.title"), href: localizedPath("/products") },
-    { label: t("products.items.ninjaCourse.title"), href: localizedPath("/products") },
-    { label: t("products.items.softPlay.title"), href: localizedPath("/products") },
+    { label: t("products.items.indoorPlayground.title"), href: localizedPath("/products/indoor-playground") },
+    { label: t("products.items.trampolinePark.title"), href: localizedPath("/products/trampoline-park") },
+    { label: t("products.items.ninjaCourse.title"), href: localizedPath("/products/ninja-course") },
+    { label: t("products.items.softPlay.title"), href: localizedPath("/products/soft-play") },
   ];
 
   const navItems = [
