@@ -225,6 +225,35 @@
       "errorDescription": "Nachricht konnte nicht gesendet werden. Bitte versuchen Sie es erneut oder kontaktieren Sie uns direkt."
     }
   },
+  "coreValues": {
+    "title": "Unsere",
+    "titleHighlight": "Kernwerte",
+    "description": "Diese Prinzipien leiten alles, was wir tun, vom Produktdesign bis zum Kundenservice, um bei jedem Schritt Exzellenz zu liefern.",
+    "quality": {
+      "title": "Qualität Zuerst",
+      "description": "Wir machen keine Kompromisse bei der Qualität. Jede Komponente wird sorgfältig ausgewählt und getestet, um Haltbarkeit, Sicherheit und langfristige Leistung zu gewährleisten."
+    },
+    "innovation": {
+      "title": "Innovation",
+      "description": "Wir verschieben kontinuierlich Grenzen, um neue Erlebnisse zu schaffen. Unser F&E-Team entwickelt modernste Attraktionen, die Besucher wiederkommen lassen."
+    },
+    "customerFirst": {
+      "title": "Kunde Zuerst",
+      "description": "Ihr Erfolg ist unser Erfolg. Wir bieten personalisierte Lösungen und engagierten Support während Ihrer gesamten Projektreise."
+    },
+    "excellence": {
+      "title": "Exzellenz",
+      "description": "Wir streben nach Exzellenz in jedem Detail. Von der Designpräzision bis zur Installationsperfektion übertreffen wir bei jedem Schritt die Erwartungen."
+    },
+    "integrity": {
+      "title": "Integrität",
+      "description": "Wir bauen Beziehungen auf Vertrauen und Transparenz auf. Ehrliche Kommunikation und ethische Praktiken sind das Fundament unseres Geschäfts."
+    },
+    "efficiency": {
+      "title": "Effizienz",
+      "description": "Wir respektieren Ihre Zeit und Investition. Unsere optimierten Prozesse gewährleisten pünktliche Lieferung und kosteneffektive Lösungen."
+    }
+  },
   "faq": {
     "sectionLabel": "FAQ",
     "title": "Häufig gestellte",

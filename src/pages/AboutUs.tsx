@@ -1,6 +1,7 @@
 import { Header } from "@/components/Header";
 import { PageHero } from "@/components/PageHero";
 import { WhyUsSection } from "@/components/WhyUsSection";
+import { CoreValuesSection } from "@/components/CoreValuesSection";
 import { FAQSection } from "@/components/FAQSection";
 import { Footer } from "@/components/Footer";
 import { FloatingCTA } from "@/components/FloatingCTA";
@@ -17,6 +18,7 @@ const AboutUs = () => {
           descriptionKey="pages.aboutUs.description"
           backgroundImage={heroImage}
         />
+        <CoreValuesSection />
         <WhyUsSection />
         <FAQSection />
       </main>

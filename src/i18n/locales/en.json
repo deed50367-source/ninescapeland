@@ -225,6 +225,35 @@
       "errorDescription": "Failed to send your message. Please try again or contact us directly."
     }
   },
+  "coreValues": {
+    "title": "Our Core",
+    "titleHighlight": "Values",
+    "description": "These principles guide everything we do, from product design to customer service, ensuring we deliver excellence at every step.",
+    "quality": {
+      "title": "Quality First",
+      "description": "We never compromise on quality. Every component is carefully selected and tested to ensure durability, safety, and long-lasting performance."
+    },
+    "innovation": {
+      "title": "Innovation",
+      "description": "We continuously push boundaries to create new experiences. Our R&D team develops cutting-edge attractions that keep visitors coming back."
+    },
+    "customerFirst": {
+      "title": "Customer First",
+      "description": "Your success is our success. We provide personalized solutions and dedicated support throughout your entire project journey."
+    },
+    "excellence": {
+      "title": "Excellence",
+      "description": "We strive for excellence in every detail. From design precision to installation perfection, we exceed expectations at every step."
+    },
+    "integrity": {
+      "title": "Integrity",
+      "description": "We build relationships on trust and transparency. Honest communication and ethical practices are the foundation of our business."
+    },
+    "efficiency": {
+      "title": "Efficiency",
+      "description": "We respect your time and investment. Our streamlined processes ensure on-time delivery and cost-effective solutions."
+    }
+  },
   "faq": {
     "sectionLabel": "FAQ",
     "title": "Frequently Asked",
