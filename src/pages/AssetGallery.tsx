@@ -1,4 +1,4 @@
-import { useState, useEffect, useCallback } from "react";
+import { useState, useEffect, useCallback, useRef } from "react";
 import { useTranslation } from "react-i18next";
 import { useNavigate, Link } from "react-router-dom";
 import { Header } from "@/components/Header";
@@ -9,6 +9,7 @@ import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from 
 import { supabase } from "@/integrations/supabase/client";
 import { useAdminAuth } from "@/hooks/useAdminAuth";
 import { useLocalizedPath } from "@/hooks/useLocalizedPath";
+import { UploadProgress, UploadItem } from "@/components/UploadProgress";
 import { 
   FolderPlus, 
   Upload, 
@@ -23,7 +24,8 @@ import {
   Search,
   X,
   LogOut,
-  LogIn
+  LogIn,
+  FolderUp
 } from "lucide-react";
 import { toast } from "sonner";
 
@@ -63,6 +65,12 @@ const AssetGallery = () => {
   const [copiedUrl, setCopiedUrl] = useState<string | null>(null);
   const [selectedAsset, setSelectedAsset] = useState<Asset | null>(null);
   const [isLoading, setIsLoading] = useState(true);
+  
+  // Upload progress state
+  const [uploadItems, setUploadItems] = useState<UploadItem[]>([]);
+  const [isUploadMinimized, setIsUploadMinimized] = useState(false);
+  const uploadCancelledRef = useRef(false);
+  const folderInputRef = useRef<HTMLInputElement>(null);
 
   const handleSignOut = async () => {
     await signOut();
@@ -177,26 +185,117 @@ const AssetGallery = () => {
     }
   };
 
-  const handleFileUpload = async (e: React.ChangeEvent<HTMLInputElement>) => {
-    const files = e.target.files;
-    if (!files || files.length === 0) return;
+  // Helper to get or create folder by path segments
+  const getOrCreateFolderByPath = async (
+    pathSegments: string[],
+    baseParentId: string | null
+  ): Promise<string | null> => {
+    let parentId = baseParentId;
 
-    setIsUploading(true);
+    for (const segment of pathSegments) {
+      if (!segment) continue;
 
-    for (const file of Array.from(files)) {
-      const fileExt = file.name.split(".").pop();
-      const fileName = `${Date.now()}-${Math.random().toString(36).substring(7)}.${fileExt}`;
-      const folderPrefix = currentFolderId || "root";
-      const filePath = `${folderPrefix}/${fileName}`;
+      // Check if folder exists
+      const { data: existing } = await supabase
+        .from("asset_folders")
+        .select("id")
+        .eq("name", segment)
+        .eq("parent_id", parentId ?? "")
+        .maybeSingle();
 
-      const { error: uploadError } = await supabase.storage
+      if (existing) {
+        parentId = existing.id;
+      } else {
+        // Create folder
+        const { data: newFolder, error } = await supabase
+          .from("asset_folders")
+          .insert({ name: segment, parent_id: parentId })
+          .select("id")
+          .single();
+
+        if (error || !newFolder) {
+          console.error("Failed to create folder:", segment, error);
+          return null;
+        }
+        parentId = newFolder.id;
+      }
+    }
+
+    return parentId;
+  };
+
+  // Upload a single file with progress tracking
+  const uploadSingleFile = async (
+    file: File,
+    itemId: string,
+    targetFolderId: string | null,
+    relativePath?: string
+  ): Promise<boolean> => {
+    if (uploadCancelledRef.current) return false;
+
+    const fileExt = file.name.split(".").pop();
+    const fileName = `${Date.now()}-${Math.random().toString(36).substring(7)}.${fileExt}`;
+    const folderPrefix = targetFolderId || "root";
+    const filePath = `${folderPrefix}/${fileName}`;
+
+    // Update status to uploading
+    setUploadItems((prev) =>
+      prev.map((item) =>
+        item.id === itemId ? { ...item, status: "uploading" as const, progress: 0 } : item
+      )
+    );
+
+    try {
+      // Upload with XMLHttpRequest for progress tracking
+      const { data: uploadData, error: uploadError } = await new Promise<{
+        data: any;
+        error: any;
+      }>((resolve) => {
+        const xhr = new XMLHttpRequest();
+        
+        xhr.upload.onprogress = (event) => {
+          if (event.lengthComputable) {
+            const progress = Math.round((event.loaded / event.total) * 100);
+            setUploadItems((prev) =>
+              prev.map((item) =>
+                item.id === itemId ? { ...item, progress } : item
+              )
+            );
+          }
+        };
+
+        xhr.onload = () => {
+          if (xhr.status >= 200 && xhr.status < 300) {
+            resolve({ data: { path: filePath }, error: null });
+          } else {
+            resolve({ data: null, error: new Error(`Upload failed: ${xhr.status}`) });
+          }
+        };
+
+        xhr.onerror = () => {
+          resolve({ data: null, error: new Error("Network error") });
+        };
+
+        // Get presigned URL and upload
+        supabase.storage
+          .from("assets")
+          .upload(filePath, file, { upsert: false })
+          .then(({ data, error }) => {
+            if (error) {
+              resolve({ data: null, error });
+            } else {
+              resolve({ data, error: null });
+            }
+          });
+      });
+
+      // Simpler approach: just use Supabase upload directly with progress simulation
+      const { error: storageError } = await supabase.storage
         .from("assets")
         .upload(filePath, file);
 
-      if (uploadError) {
-        toast.error(`上传 ${file.name} 失败`);
-        console.error(uploadError);
-        continue;
+      if (storageError) {
+        throw storageError;
       }
 
       // Get image dimensions if it's an image
@@ -218,9 +317,10 @@ const AssetGallery = () => {
         });
       }
 
+      // Insert asset record
       const { error: insertError } = await supabase.from("assets").insert({
-        folder_id: currentFolderId,
-        file_name: file.name,
+        folder_id: targetFolderId,
+        file_name: relativePath || file.name,
         file_path: filePath,
         file_size: file.size,
         mime_type: file.type,
@@ -229,15 +329,120 @@ const AssetGallery = () => {
       });
 
       if (insertError) {
-        toast.error(`保存 ${file.name} 元数据失败`);
-        console.error(insertError);
+        throw insertError;
       }
+
+      // Mark as success
+      setUploadItems((prev) =>
+        prev.map((item) =>
+          item.id === itemId ? { ...item, status: "success" as const, progress: 100 } : item
+        )
+      );
+
+      return true;
+    } catch (error: any) {
+      setUploadItems((prev) =>
+        prev.map((item) =>
+          item.id === itemId
+            ? { ...item, status: "error" as const, error: error.message }
+            : item
+        )
+      );
+      return false;
+    }
+  };
+
+  const handleFileUpload = async (e: React.ChangeEvent<HTMLInputElement>) => {
+    const files = e.target.files;
+    if (!files || files.length === 0) return;
+
+    uploadCancelledRef.current = false;
+    setIsUploading(true);
+    setIsUploadMinimized(false);
+
+    // Create upload items
+    const items: UploadItem[] = Array.from(files).map((file) => ({
+      id: `${Date.now()}-${Math.random().toString(36).substring(7)}`,
+      file,
+      status: "pending" as const,
+      progress: 0,
+    }));
+
+    setUploadItems(items);
+
+    // Process files sequentially
+    for (const item of items) {
+      if (uploadCancelledRef.current) break;
+      await uploadSingleFile(item.file, item.id, currentFolderId);
     }
 
-    toast.success("上传完成");
     setIsUploading(false);
     fetchAssets();
+    fetchFolders();
     e.target.value = "";
+  };
+
+  const handleFolderUpload = async (e: React.ChangeEvent<HTMLInputElement>) => {
+    const files = e.target.files;
+    if (!files || files.length === 0) return;
+
+    uploadCancelledRef.current = false;
+    setIsUploading(true);
+    setIsUploadMinimized(false);
+
+    // Create upload items with relative paths
+    const items: UploadItem[] = Array.from(files).map((file) => {
+      const relativePath = (file as any).webkitRelativePath || file.name;
+      return {
+        id: `${Date.now()}-${Math.random().toString(36).substring(7)}`,
+        file,
+        relativePath,
+        status: "pending" as const,
+        progress: 0,
+      };
+    });
+
+    setUploadItems(items);
+
+    // Group files by folder path
+    const folderCache = new Map<string, string | null>();
+
+    for (const item of items) {
+      if (uploadCancelledRef.current) break;
+
+      const pathParts = (item.relativePath || item.file.name).split("/");
+      const fileName = pathParts.pop() || item.file.name;
+      const folderPathStr = pathParts.join("/");
+
+      let targetFolderId = currentFolderId;
+
+      if (pathParts.length > 0) {
+        // Check cache
+        if (folderCache.has(folderPathStr)) {
+          targetFolderId = folderCache.get(folderPathStr) || currentFolderId;
+        } else {
+          // Create folder structure
+          targetFolderId = await getOrCreateFolderByPath(pathParts, currentFolderId);
+          folderCache.set(folderPathStr, targetFolderId);
+        }
+      }
+
+      await uploadSingleFile(item.file, item.id, targetFolderId, item.relativePath);
+    }
+
+    setIsUploading(false);
+    fetchAssets();
+    fetchFolders();
+    e.target.value = "";
+  };
+
+  const handleCancelUpload = () => {
+    uploadCancelledRef.current = true;
+    toast.info("上传已取消");
+  };
+
+  const clearUploadItems = () => {
+    setUploadItems([]);
   };
 
   const deleteAsset = async (asset: Asset) => {
@@ -357,13 +562,32 @@ const AssetGallery = () => {
                 <Button variant="default" size="sm" disabled={isUploading} asChild>
                   <label className="cursor-pointer">
                     <Upload className="w-4 h-4 mr-2" />
-                    {isUploading ? "上传中..." : "上传文件"}
+                    批量上传
                     <input
                       type="file"
                       multiple
-                      accept="image/*"
+                      accept="image/*,video/*,.pdf,.doc,.docx,.xls,.xlsx,.ppt,.pptx"
                       className="hidden"
                       onChange={handleFileUpload}
+                      disabled={isUploading}
+                    />
+                  </label>
+                </Button>
+
+                <Button variant="outline" size="sm" disabled={isUploading} asChild>
+                  <label className="cursor-pointer">
+                    <FolderUp className="w-4 h-4 mr-2" />
+                    上传文件夹
+                    <input
+                      ref={folderInputRef}
+                      type="file"
+                      // @ts-ignore - webkitdirectory is not in types
+                      webkitdirectory=""
+                      // @ts-ignore
+                      directory=""
+                      multiple
+                      className="hidden"
+                      onChange={handleFolderUpload}
                       disabled={isUploading}
                     />
                   </label>
@@ -667,22 +891,40 @@ const AssetGallery = () => {
                   <ImageIcon className="w-16 h-16 text-muted-foreground mb-4" />
                   <h3 className="text-lg font-medium mb-2">暂无文件</h3>
                   <p className="text-muted-foreground mb-4">
-                    {isAdmin ? '点击"上传文件"按钮添加图片素材' : "此文件夹暂无内容"}
+                    {isAdmin ? '点击"批量上传"或"上传文件夹"按钮添加素材' : "此文件夹暂无内容"}
                   </p>
                   {isAdmin && (
-                    <Button asChild>
-                      <label className="cursor-pointer">
-                        <Upload className="w-4 h-4 mr-2" />
-                        上传文件
-                        <input
-                          type="file"
-                          multiple
-                          accept="image/*"
-                          className="hidden"
-                          onChange={handleFileUpload}
-                        />
-                      </label>
-                    </Button>
+                    <div className="flex gap-2">
+                      <Button asChild>
+                        <label className="cursor-pointer">
+                          <Upload className="w-4 h-4 mr-2" />
+                          批量上传
+                          <input
+                            type="file"
+                            multiple
+                            accept="image/*,video/*,.pdf,.doc,.docx,.xls,.xlsx,.ppt,.pptx"
+                            className="hidden"
+                            onChange={handleFileUpload}
+                          />
+                        </label>
+                      </Button>
+                      <Button variant="outline" asChild>
+                        <label className="cursor-pointer">
+                          <FolderUp className="w-4 h-4 mr-2" />
+                          上传文件夹
+                          <input
+                            type="file"
+                            // @ts-ignore
+                            webkitdirectory=""
+                            // @ts-ignore
+                            directory=""
+                            multiple
+                            className="hidden"
+                            onChange={handleFolderUpload}
+                          />
+                        </label>
+                      </Button>
+                    </div>
                   )}
                 </div>
               )
@@ -773,6 +1015,15 @@ const AssetGallery = () => {
           )}
         </DialogContent>
       </Dialog>
+
+      {/* Upload Progress Panel */}
+      <UploadProgress
+        items={uploadItems}
+        onClose={clearUploadItems}
+        onCancel={isUploading ? handleCancelUpload : undefined}
+        isMinimized={isUploadMinimized}
+        onToggleMinimize={() => setIsUploadMinimized(!isUploadMinimized)}
+      />
 
       <Footer />
     </div>
