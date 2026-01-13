@@ -109,7 +109,7 @@ export const Header = () => {
           <div className="flex items-center justify-between h-16 md:h-20">
             {/* Logo */}
             <Link to={localizedPath("/")} className="flex items-center py-2">
-              <img src={logo} alt="NinescapeLand" className="h-12 md:h-16 w-auto object-contain" />
+              <img src={logo} alt="NinescapeLand" className="h-14 md:h-20 w-auto max-w-[200px] md:max-w-[280px] object-contain" />
             </Link>
 
             {/* Desktop Navigation */}
