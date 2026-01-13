@@ -536,5 +536,195 @@
         "Painéis interativos"
       ]
     }
+  },
+  "productPages": {
+    "indoorPlayground": {
+      "title": "Equipamentos de",
+      "titleHighlight": "Playground Indoor",
+      "description": "Estruturas de jogo multinível com escorregadores, piscinas de bolinhas, redes de escalada e elementos interativos para crianças de todas as idades. Temas personalizados e certificados ASTM e TUV para máxima segurança.",
+      "featuresLabel": "Características Principais",
+      "featuresTitle": "Por Que Escolher Nossos",
+      "featuresTitleHighlight": "Playgrounds Indoor",
+      "features": {
+        "customTheme": {
+          "title": "Temas Personalizados",
+          "description": "Crie ambientes de marca únicos com cores, temas e designs de personagens personalizados."
+        },
+        "safety": {
+          "title": "Certificado de Segurança",
+          "description": "Todos os equipamentos atendem aos padrões de segurança ASTM, TUV, CE e internacionais."
+        },
+        "allAges": {
+          "title": "Todas as Idades",
+          "description": "Projetado para crianças de todas as idades com zonas e desafios apropriados para cada faixa etária."
+        },
+        "modular": {
+          "title": "Design Modular",
+          "description": "Layouts flexíveis que podem ser personalizados e expandidos conforme seu negócio cresce."
+        }
+      },
+      "galleryLabel": "Nossos Projetos",
+      "galleryTitle": "Galeria de",
+      "galleryTitleHighlight": "Playground Indoor",
+      "componentsLabel": "Componentes do Equipamento",
+      "componentsTitle": "Soluções Completas",
+      "componentsTitleHighlight": "de Diversão",
+      "componentsDescription": "Nossos playgrounds indoor apresentam uma grande variedade de elementos emocionantes que mantêm as crianças ativas e engajadas por horas.",
+      "components": {
+        "slides": "Escorregadores Espirais e de Onda",
+        "ballPits": "Piscinas de Bolinhas",
+        "climbingNets": "Redes de Escalada",
+        "tubes": "Tubos de Rastejamento",
+        "obstacles": "Circuitos de Obstáculos",
+        "interactiveGames": "Jogos Interativos",
+        "ropeElements": "Elementos de Cordas",
+        "softPlay": "Zonas de Soft Play"
+      },
+      "cta": "Design e Orçamento Grátis",
+      "premiumQuality": "Qualidade Premium"
+    },
+    "trampolinePark": {
+      "title": "Soluções para",
+      "titleHighlight": "Parques de Trampolim",
+      "description": "Soluções completas para parques de trampolim com 12+ zonas de atividade incluindo piscinas de espuma, áreas de slam dunk, circuitos ninja, quadras de dodgeball e mais. Equipamentos de alto desempenho projetados para máximo engajamento.",
+      "featuresLabel": "Características Principais",
+      "featuresTitle": "Por Que Escolher Nossos",
+      "featuresTitleHighlight": "Parques de Trampolim",
+      "features": {
+        "performance": {
+          "title": "Alto Desempenho",
+          "description": "Molas e lonas premium para salto superior, durabilidade e segurança."
+        },
+        "safety": {
+          "title": "Segurança em Primeiro",
+          "description": "Estruturas acolchoadas, redes de segurança e piscinas de espuma para pousos seguros."
+        },
+        "zones": {
+          "title": "12+ Zonas de Atividade",
+          "description": "Atrações diversas mantêm os visitantes engajados e incentivam visitas repetidas."
+        },
+        "modular": {
+          "title": "Layout Modular",
+          "description": "Designs flexíveis que se adaptam ao seu espaço e requisitos de orçamento."
+        }
+      },
+      "stats": {
+        "zones": "Zonas de Atividade",
+        "projects": "Projetos Concluídos",
+        "countries": "Países Atendidos",
+        "years": "Anos de Experiência"
+      },
+      "galleryLabel": "Nossos Projetos",
+      "galleryTitle": "Galeria de Parques",
+      "galleryTitleHighlight": "de Trampolim",
+      "cta": "Design e Orçamento Grátis"
+    },
+    "ninjaCourse": {
+      "title": "Circuitos",
+      "titleHighlight": "Ninja Warrior",
+      "description": "Circuitos de obstáculos ninja profissionais com paredes curvas, escadas de salmão, paredes de escalada, circuitos de cordas e mais de 50 elementos de desafio. Equipamentos de nível competição para todos os níveis de habilidade.",
+      "featuresLabel": "Características Principais",
+      "featuresTitle": "Por Que Escolher Nossos",
+      "featuresTitleHighlight": "Circuitos Ninja",
+      "features": {
+        "obstacles": {
+          "title": "50+ Tipos de Obstáculos",
+          "description": "Ampla seleção de desafios desde iniciante até nível de competição profissional."
+        },
+        "safety": {
+          "title": "Sistemas de Segurança",
+          "description": "Colchões de impacto, cintos de segurança e superfícies acolchoadas para treino seguro."
+        },
+        "competition": {
+          "title": "Nível Competição",
+          "description": "Equipamentos projetados para atender aos padrões de programas de TV e competições."
+        },
+        "customizable": {
+          "title": "Totalmente Personalizável",
+          "description": "Projete circuitos adaptados ao seu espaço, público e níveis de habilidade."
+        }
+      },
+      "obstaclesLabel": "Obstáculos Populares",
+      "obstaclesTitle": "Elementos de",
+      "obstaclesTitleHighlight": "Desafio",
+      "obstaclesDescription": "Nossos circuitos ninja incluem uma ampla gama de obstáculos que testam força, agilidade e resistência. Combine para criar o desafio definitivo.",
+      "obstacles": {
+        "warped": "Parede Curva",
+        "salmon": "Escada de Salmão",
+        "rings": "Argolas Voadoras",
+        "cargo": "Redes de Carga",
+        "balance": "Barras de Equilíbrio",
+        "rope": "Balanços de Corda",
+        "monkey": "Barras de Macaco",
+        "climbing": "Paredes de Escalada"
+      },
+      "galleryLabel": "Nossos Projetos",
+      "galleryTitle": "Galeria de Circuitos",
+      "galleryTitleHighlight": "Ninja",
+      "cta": "Design e Orçamento Grátis",
+      "competitionGrade": "Nível Competição"
+    },
+    "softPlay": {
+      "title": "Áreas de",
+      "titleHighlight": "Soft Play",
+      "description": "Equipamentos de soft play seguros e envolventes projetados especificamente para crianças pequenas. Fáceis de limpar, modulares e construídos com os mais altos padrões de segurança.",
+      "featuresLabel": "Características Principais",
+      "featuresTitle": "Por Que Escolher Nossos",
+      "featuresTitleHighlight": "Equipamentos Soft Play",
+      "features": {
+        "toddlerSafe": {
+          "title": "Seguro para Crianças",
+          "description": "Projetado especificamente para crianças de 0-5 anos com bordas arredondadas e superfícies macias."
+        },
+        "materials": {
+          "title": "Materiais Premium",
+          "description": "Espuma de alta densidade, couro PVC e materiais não tóxicos em todo o equipamento."
+        },
+        "easyClean": {
+          "title": "Fácil de Limpar",
+          "description": "Superfícies antibacterianas e capas removíveis para manutenção simples."
+        },
+        "modular": {
+          "title": "Sistema Modular",
+          "description": "Combine componentes para criar layouts personalizados para qualquer espaço."
+        }
+      },
+      "componentsLabel": "Tipos de Equipamentos",
+      "componentsTitle": "Componentes de",
+      "componentsTitleHighlight": "Soft Play",
+      "componentsDescription": "Nossos equipamentos de soft play incluem tudo o que é necessário para criar áreas de diversão seguras e envolventes para os visitantes mais jovens.",
+      "components": {
+        "ballPits": "Piscinas de Bolinhas",
+        "rockers": "Balanços Macios",
+        "slides": "Mini Escorregadores",
+        "tunnels": "Túneis de Rastejamento",
+        "shapes": "Formas Macias",
+        "mats": "Tapetes de Jogo",
+        "steps": "Degraus Macios",
+        "walls": "Paredes de Escalada"
+      },
+      "benefitsLabel": "Benefícios",
+      "benefitsTitle": "Benefícios do",
+      "benefitsTitleHighlight": "Desenvolvimento",
+      "benefits": {
+        "development": {
+          "title": "Desenvolvimento Motor",
+          "description": "Escalar, rastejar e equilibrar ajudam a desenvolver habilidades motoras grossas e coordenação."
+        },
+        "socialSkills": {
+          "title": "Interação Social",
+          "description": "Espaços de brincadeira compartilhados incentivam cooperação, comunicação e desenvolvimento social."
+        },
+        "sensory": {
+          "title": "Estimulação Sensorial",
+          "description": "Várias texturas, cores e elementos interativos estimulam o desenvolvimento sensorial."
+        }
+      },
+      "galleryLabel": "Nossos Projetos",
+      "galleryTitle": "Galeria de",
+      "galleryTitleHighlight": "Soft Play",
+      "cta": "Design e Orçamento Grátis",
+      "kidsFriendly": "Amigável para Crianças"
+    }
   }
 }

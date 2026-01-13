@@ -536,5 +536,195 @@
         "Interaktive Panels"
       ]
     }
+  },
+  "productPages": {
+    "indoorPlayground": {
+      "title": "Indoor-Spielplatz",
+      "titleHighlight": "Ausrüstung",
+      "description": "Mehrstöckige Spielstrukturen mit Rutschen, Bällebädern, Kletternetzen und interaktiven Elementen für Kinder jeden Alters. Individuelle Themen und ASTM & TÜV zertifiziert für maximale Sicherheit.",
+      "featuresLabel": "Hauptmerkmale",
+      "featuresTitle": "Warum unsere",
+      "featuresTitleHighlight": "Indoor-Spielplätze wählen",
+      "features": {
+        "customTheme": {
+          "title": "Individuelle Themen",
+          "description": "Erstellen Sie einzigartige Markenumgebungen mit individuellen Farben, Themen und Charakterdesigns nach Ihren Vorstellungen."
+        },
+        "safety": {
+          "title": "Sicherheitszertifiziert",
+          "description": "Alle Geräte erfüllen ASTM, TÜV, CE und internationale Sicherheitsstandards für sorgenfreies Spielen."
+        },
+        "allAges": {
+          "title": "Alle Altersgruppen",
+          "description": "Konzipiert für Kinder jeden Alters mit altersgerechten Zonen und Herausforderungen."
+        },
+        "modular": {
+          "title": "Modulares Design",
+          "description": "Flexible Layouts, die angepasst und erweitert werden können, wenn Ihr Unternehmen wächst."
+        }
+      },
+      "galleryLabel": "Unsere Projekte",
+      "galleryTitle": "Indoor-Spielplatz",
+      "galleryTitleHighlight": "Galerie",
+      "componentsLabel": "Ausrüstungskomponenten",
+      "componentsTitle": "Komplette Spiel",
+      "componentsTitleHighlight": "Lösungen",
+      "componentsDescription": "Unsere Indoor-Spielplätze bieten eine Vielzahl aufregender Elemente, die Kinder stundenlang aktiv und beschäftigt halten.",
+      "components": {
+        "slides": "Spiral- & Wellenrutschen",
+        "ballPits": "Bällebäder & Pools",
+        "climbingNets": "Kletternetze",
+        "tubes": "Krabbelröhren",
+        "obstacles": "Hindernisparcours",
+        "interactiveGames": "Interaktive Spiele",
+        "ropeElements": "Seilelemente",
+        "softPlay": "Softplay-Bereiche"
+      },
+      "cta": "Kostenloses Design & Angebot",
+      "premiumQuality": "Premium-Qualität"
+    },
+    "trampolinePark": {
+      "title": "Trampolinpark",
+      "titleHighlight": "Lösungen",
+      "description": "Komplette Trampolinpark-Lösungen mit 12+ Aktivitätszonen inklusive Schaumstoffgruben, Slam-Dunk-Bereichen, Ninja-Parcours, Dodgeball-Feldern und mehr. Hochleistungsgeräte für maximales Engagement.",
+      "featuresLabel": "Hauptmerkmale",
+      "featuresTitle": "Warum unsere",
+      "featuresTitleHighlight": "Trampolinparks wählen",
+      "features": {
+        "performance": {
+          "title": "Hochleistung",
+          "description": "Premium-Federn und Matten für überlegene Sprungkraft, Haltbarkeit und Sicherheitsleistung."
+        },
+        "safety": {
+          "title": "Sicherheit zuerst",
+          "description": "Gepolsterte Rahmen, Sicherheitsnetze und Schaumstoffgruben für sichere Landungen und Spielen."
+        },
+        "zones": {
+          "title": "12+ Aktivitätszonen",
+          "description": "Vielfältige Attraktionen halten Besucher bei der Stange und fördern Wiederholungsbesuche."
+        },
+        "modular": {
+          "title": "Modulares Layout",
+          "description": "Flexible Designs, die sich an Ihren Raum und Ihre Budgetanforderungen anpassen."
+        }
+      },
+      "stats": {
+        "zones": "Aktivitätszonen",
+        "projects": "Abgeschlossene Projekte",
+        "countries": "Belieferte Länder",
+        "years": "Jahre Erfahrung"
+      },
+      "galleryLabel": "Unsere Projekte",
+      "galleryTitle": "Trampolinpark",
+      "galleryTitleHighlight": "Galerie",
+      "cta": "Kostenloses Design & Angebot"
+    },
+    "ninjaCourse": {
+      "title": "Ninja Warrior",
+      "titleHighlight": "Parcours",
+      "description": "Professionelle Ninja-Hindernisparcours mit Warpwänden, Lachsleitern, Kletterwänden, Seilparcours und 50+ Herausforderungselementen. Wettkampftaugliche Ausrüstung für alle Fähigkeitsstufen.",
+      "featuresLabel": "Hauptmerkmale",
+      "featuresTitle": "Warum unsere",
+      "featuresTitleHighlight": "Ninja-Parcours wählen",
+      "features": {
+        "obstacles": {
+          "title": "50+ Hindernistypen",
+          "description": "Umfangreiche Auswahl an Herausforderungen von Anfänger bis professionelles Wettkampfniveau."
+        },
+        "safety": {
+          "title": "Sicherheitssysteme",
+          "description": "Fallmatten, Sicherheitsgurte und gepolsterte Oberflächen für sicheres Training."
+        },
+        "competition": {
+          "title": "Wettkampftauglich",
+          "description": "Ausrüstung konzipiert für TV-Shows und Wettkampfstandards."
+        },
+        "customizable": {
+          "title": "Vollständig anpassbar",
+          "description": "Entwerfen Sie Parcours für Ihren Raum, Ihre Zielgruppe und Fähigkeitsstufen."
+        }
+      },
+      "obstaclesLabel": "Beliebte Hindernisse",
+      "obstaclesTitle": "Herausforderungs",
+      "obstaclesTitleHighlight": "Elemente",
+      "obstaclesDescription": "Unsere Ninja-Parcours umfassen eine breite Palette von Hindernissen, die Kraft, Beweglichkeit und Ausdauer testen. Kombinieren Sie nach Belieben für die ultimative Herausforderung.",
+      "obstacles": {
+        "warped": "Warpwand",
+        "salmon": "Lachsleiter",
+        "rings": "Fliegende Ringe",
+        "cargo": "Frachtnetze",
+        "balance": "Schwebebalken",
+        "rope": "Seilschaukeln",
+        "monkey": "Hangelstangen",
+        "climbing": "Kletterwände"
+      },
+      "galleryLabel": "Unsere Projekte",
+      "galleryTitle": "Ninja-Parcours",
+      "galleryTitleHighlight": "Galerie",
+      "cta": "Kostenloses Design & Angebot",
+      "competitionGrade": "Wettkampftauglich"
+    },
+    "softPlay": {
+      "title": "Softplay",
+      "titleHighlight": "Bereiche",
+      "description": "Sichere und ansprechende Softplay-Ausrüstung speziell für Kleinkinder und junge Kinder. Leicht zu reinigen, modular und mit höchsten Sicherheitsstandards für sorgenfreies Spielen.",
+      "featuresLabel": "Hauptmerkmale",
+      "featuresTitle": "Warum unsere",
+      "featuresTitleHighlight": "Softplay-Ausrüstung wählen",
+      "features": {
+        "toddlerSafe": {
+          "title": "Kindersicher",
+          "description": "Speziell für Kinder von 0-5 Jahren mit abgerundeten Kanten und weichen Oberflächen."
+        },
+        "materials": {
+          "title": "Premium-Materialien",
+          "description": "Hochdichter Schaumstoff, PVC-Leder und ungiftige Materialien durchgehend."
+        },
+        "easyClean": {
+          "title": "Leicht zu reinigen",
+          "description": "Antibakterielle Oberflächen und abnehmbare Bezüge für einfache Wartung."
+        },
+        "modular": {
+          "title": "Modulares System",
+          "description": "Kombinieren Sie Komponenten für individuelle Layouts für jeden Raum."
+        }
+      },
+      "componentsLabel": "Ausrüstungstypen",
+      "componentsTitle": "Softplay",
+      "componentsTitleHighlight": "Komponenten",
+      "componentsDescription": "Unsere Softplay-Ausrüstung umfasst alles, was nötig ist, um sichere, ansprechende Spielbereiche für die jüngsten Besucher zu schaffen.",
+      "components": {
+        "ballPits": "Bällebäder",
+        "rockers": "Weiche Wippen",
+        "slides": "Mini-Rutschen",
+        "tunnels": "Krabbeltunnel",
+        "shapes": "Weiche Formen",
+        "mats": "Spielmatten",
+        "steps": "Weiche Stufen",
+        "walls": "Kletterwände"
+      },
+      "benefitsLabel": "Vorteile",
+      "benefitsTitle": "Entwicklungs",
+      "benefitsTitleHighlight": "Vorteile",
+      "benefits": {
+        "development": {
+          "title": "Motorische Entwicklung",
+          "description": "Klettern, Krabbeln und Balancieren helfen bei der Entwicklung der Grobmotorik und Koordination."
+        },
+        "socialSkills": {
+          "title": "Soziale Interaktion",
+          "description": "Gemeinsame Spielbereiche fördern Kooperation, Kommunikation und soziale Fähigkeiten."
+        },
+        "sensory": {
+          "title": "Sensorische Stimulation",
+          "description": "Verschiedene Texturen, Farben und interaktive Elemente fördern die sensorische Entwicklung."
+        }
+      },
+      "galleryLabel": "Unsere Projekte",
+      "galleryTitle": "Softplay",
+      "galleryTitleHighlight": "Galerie",
+      "cta": "Kostenloses Design & Angebot",
+      "kidsFriendly": "Kinderfreundlich"
+    }
   }
 }
