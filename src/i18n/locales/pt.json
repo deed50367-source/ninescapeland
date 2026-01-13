@@ -9,6 +9,38 @@
     "contact": "Contato",
     "getFreeQuote": "Orçamento Grátis"
   },
+  "pages": {
+    "aboutUs": {
+      "title": "Sobre",
+      "titleHighlight": "Nossa Empresa",
+      "description": "Com mais de 15 anos de experiência, nos tornamos um líder global confiável no design e fabricação de equipamentos comerciais de playground, atendendo clientes em mais de 50 países em todo o mundo."
+    },
+    "products": {
+      "title": "Nossa",
+      "titleHighlight": "Linha de Produtos",
+      "description": "Explore nossa gama completa de soluções comerciais de playground, desde playgrounds indoor e parques de trampolins até cursos ninja e áreas de brinquedo macio."
+    },
+    "process": {
+      "title": "Nosso",
+      "titleHighlight": "Processo de Trabalho",
+      "description": "Da consulta inicial à grande inauguração, guiamos você em cada passo para criar seu centro de entretenimento indoor ideal com nosso processo otimizado de 6 etapas."
+    },
+    "projects": {
+      "title": "Nossas",
+      "titleHighlight": "Histórias de Sucesso",
+      "description": "Descubra nosso portfólio de projetos concluídos em todo o mundo. Cada instalação mostra nosso compromisso com qualidade, criatividade e satisfação do cliente."
+    },
+    "contact": {
+      "title": "Entre em",
+      "titleHighlight": "Contato Conosco",
+      "description": "Pronto para iniciar seu projeto? Entre em contato com nossa equipe hoje para uma consulta gratuita e design personalizado. Respondemos a todas as consultas em 24 horas."
+    },
+    "faq": {
+      "title": "Perguntas",
+      "titleHighlight": "Frequentes",
+      "description": "Encontre respostas para perguntas comuns sobre nossos produtos, serviços, preços, envio e processo de instalação."
+    }
+  },
   "topBar": {
     "globalShipping": "Envio Global",
     "warranty": "3 Anos de Garantia",

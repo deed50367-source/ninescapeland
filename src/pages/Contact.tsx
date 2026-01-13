@@ -1,4 +1,5 @@
 import { Header } from "@/components/Header";
+import { PageHero } from "@/components/PageHero";
 import { ContactSection } from "@/components/ContactSection";
 import { FAQSection } from "@/components/FAQSection";
 import { Footer } from "@/components/Footer";
@@ -9,6 +10,11 @@ const Contact = () => {
     <div className="min-h-screen">
       <Header />
       <main>
+        <PageHero
+          titleKey="pages.contact.title"
+          titleHighlightKey="pages.contact.titleHighlight"
+          descriptionKey="pages.contact.description"
+        />
         <ContactSection />
         <FAQSection />
       </main>
