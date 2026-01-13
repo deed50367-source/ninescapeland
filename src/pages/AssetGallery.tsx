@@ -11,6 +11,7 @@ import { useAdminAuth } from "@/hooks/useAdminAuth";
 import { useLocalizedPath } from "@/hooks/useLocalizedPath";
 import { UploadProgress, UploadItem } from "@/components/UploadProgress";
 import { compressImage, generateThumbnail, isCompressibleImage } from "@/utils/imageCompression";
+import { Progress } from "@/components/ui/progress";
 import { 
   FolderPlus, 
   Upload, 
@@ -26,7 +27,9 @@ import {
   X,
   LogOut,
   LogIn,
-  FolderUp
+  FolderUp,
+  ImagePlus,
+  Loader2
 } from "lucide-react";
 import { toast } from "sonner";
 
@@ -72,10 +75,167 @@ const AssetGallery = () => {
   const [isUploadMinimized, setIsUploadMinimized] = useState(false);
   const uploadCancelledRef = useRef(false);
   const folderInputRef = useRef<HTMLInputElement>(null);
+  
+  // Thumbnail generation state
+  const [isGeneratingThumbnails, setIsGeneratingThumbnails] = useState(false);
+  const [thumbnailProgress, setThumbnailProgress] = useState({ current: 0, total: 0 });
+  const thumbnailCancelledRef = useRef(false);
 
   const handleSignOut = async () => {
     await signOut();
     toast.success("已退出登录");
+  };
+
+  // Generate thumbnail from URL
+  const generateThumbnailFromUrl = async (imageUrl: string, size = 400, quality = 0.7): Promise<Blob> => {
+    return new Promise((resolve, reject) => {
+      const img = new Image();
+      img.crossOrigin = "anonymous";
+      
+      img.onload = () => {
+        const { width, height } = img;
+        const minDim = Math.min(width, height);
+        const sx = (width - minDim) / 2;
+        const sy = (height - minDim) / 2;
+
+        const canvas = document.createElement("canvas");
+        canvas.width = size;
+        canvas.height = size;
+
+        const ctx = canvas.getContext("2d");
+        if (!ctx) {
+          reject(new Error("Failed to get canvas context"));
+          return;
+        }
+
+        ctx.drawImage(img, sx, sy, minDim, minDim, 0, 0, size, size);
+
+        canvas.toBlob(
+          (blob) => {
+            if (blob) {
+              resolve(blob);
+            } else {
+              reject(new Error("Failed to generate thumbnail"));
+            }
+          },
+          "image/jpeg",
+          quality
+        );
+      };
+
+      img.onerror = () => {
+        reject(new Error("Failed to load image"));
+      };
+
+      img.src = imageUrl;
+    });
+  };
+
+  // Check if thumbnail exists for an asset
+  const checkThumbnailExists = async (filePath: string): Promise<boolean> => {
+    const parts = filePath.split("/");
+    const fileName = parts.pop() || "";
+    const folderPath = parts.join("/");
+    const thumbFileName = `thumb_${fileName}`;
+    const thumbPath = folderPath ? `${folderPath}/${thumbFileName}` : thumbFileName;
+    
+    // Try to get the thumbnail URL and check if it exists
+    const { data } = supabase.storage.from("assets").getPublicUrl(thumbPath);
+    
+    try {
+      const response = await fetch(data.publicUrl, { method: "HEAD" });
+      return response.ok;
+    } catch {
+      return false;
+    }
+  };
+
+  // Generate thumbnails for all assets missing them
+  const handleGenerateThumbnails = async () => {
+    thumbnailCancelledRef.current = false;
+    setIsGeneratingThumbnails(true);
+    
+    // Get all image assets
+    const { data: allAssets, error } = await supabase
+      .from("assets")
+      .select("*")
+      .like("mime_type", "image/%");
+
+    if (error || !allAssets) {
+      toast.error("获取图片列表失败");
+      setIsGeneratingThumbnails(false);
+      return;
+    }
+
+    // Filter to only images that can have thumbnails
+    const imageAssets = allAssets.filter(
+      (a) => a.mime_type && !a.mime_type.includes("gif") && !a.mime_type.includes("svg")
+    );
+
+    setThumbnailProgress({ current: 0, total: imageAssets.length });
+
+    let generated = 0;
+    let skipped = 0;
+    let failed = 0;
+
+    for (let i = 0; i < imageAssets.length; i++) {
+      if (thumbnailCancelledRef.current) break;
+
+      const asset = imageAssets[i];
+      setThumbnailProgress({ current: i + 1, total: imageAssets.length });
+
+      // Check if thumbnail already exists
+      const exists = await checkThumbnailExists(asset.file_path);
+      if (exists) {
+        skipped++;
+        continue;
+      }
+
+      try {
+        // Get original image URL
+        const { data: urlData } = supabase.storage.from("assets").getPublicUrl(asset.file_path);
+        
+        // Generate thumbnail
+        const thumbnailBlob = await generateThumbnailFromUrl(urlData.publicUrl);
+
+        // Calculate thumbnail path
+        const parts = asset.file_path.split("/");
+        const fileName = parts.pop() || "";
+        const folderPath = parts.join("/");
+        const thumbFileName = `thumb_${fileName}`;
+        const thumbPath = folderPath ? `${folderPath}/${thumbFileName}` : thumbFileName;
+
+        // Upload thumbnail
+        const { error: uploadError } = await supabase.storage
+          .from("assets")
+          .upload(thumbPath, thumbnailBlob, { contentType: "image/jpeg" });
+
+        if (uploadError) {
+          console.warn(`Failed to upload thumbnail for ${asset.file_name}:`, uploadError);
+          failed++;
+        } else {
+          generated++;
+        }
+      } catch (e) {
+        console.warn(`Failed to generate thumbnail for ${asset.file_name}:`, e);
+        failed++;
+      }
+    }
+
+    setIsGeneratingThumbnails(false);
+    
+    if (thumbnailCancelledRef.current) {
+      toast.info(`缩略图生成已取消。已生成: ${generated}, 跳过: ${skipped}, 失败: ${failed}`);
+    } else {
+      toast.success(`缩略图生成完成！生成: ${generated}, 跳过: ${skipped}, 失败: ${failed}`);
+    }
+    
+    // Refresh assets to show new thumbnails
+    fetchAssets();
+  };
+
+  const handleCancelThumbnailGeneration = () => {
+    thumbnailCancelledRef.current = true;
   };
 
   const fetchFolders = useCallback(async () => {
@@ -647,6 +807,42 @@ const AssetGallery = () => {
             )}
           </div>
         </div>
+
+        {/* Thumbnail Generation Progress Bar */}
+        {isGeneratingThumbnails && (
+          <div className="mb-6 p-4 bg-card border rounded-lg">
+            <div className="flex items-center justify-between mb-2">
+              <div className="flex items-center gap-2">
+                <Loader2 className="w-4 h-4 animate-spin text-primary" />
+                <span className="text-sm font-medium">
+                  正在生成缩略图... ({thumbnailProgress.current}/{thumbnailProgress.total})
+                </span>
+              </div>
+              <Button variant="ghost" size="sm" onClick={handleCancelThumbnailGeneration}>
+                取消
+              </Button>
+            </div>
+            <Progress 
+              value={(thumbnailProgress.current / thumbnailProgress.total) * 100} 
+              className="h-2"
+            />
+          </div>
+        )}
+
+        {/* Generate Thumbnails Button (only show when not on root and there are assets) */}
+        {isAdmin && !isGeneratingThumbnails && assets.length > 0 && (
+          <div className="mb-4">
+            <Button
+              variant="outline"
+              size="sm"
+              onClick={handleGenerateThumbnails}
+              className="text-muted-foreground"
+            >
+              <ImagePlus className="w-4 h-4 mr-2" />
+              为旧图片生成缩略图
+            </Button>
+          </div>
+        )}
 
         {/* Breadcrumb & Search */}
         <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-6">
