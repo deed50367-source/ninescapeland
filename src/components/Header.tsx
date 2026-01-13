@@ -3,6 +3,7 @@ import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X, Phone, Mail, ChevronDown, ChevronRight, ChevronLeft } from "lucide-react";
+import logo from "@/assets/logo.png";
 import { Button } from "./ui/button";
 import { LanguageSwitcher } from "./LanguageSwitcher";
 import { useLocalizedPath } from "@/hooks/useLocalizedPath";
@@ -107,10 +108,8 @@ export const Header = () => {
         <div className="container-wide">
           <div className="flex items-center justify-between h-16 md:h-20">
             {/* Logo */}
-            <Link to={localizedPath("/")} className="flex items-center gap-2">
-              <span className="text-2xl md:text-3xl font-heading font-bold text-gradient">
-                NinescapeLand
-              </span>
+            <Link to={localizedPath("/")} className="flex items-center">
+              <img src={logo} alt="NinescapeLand" className="h-10 md:h-14 w-auto" />
             </Link>
 
             {/* Desktop Navigation */}
