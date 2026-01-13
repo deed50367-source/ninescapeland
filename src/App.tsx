@@ -9,6 +9,10 @@ import CaseStudies from "./pages/CaseStudies";
 import ProductDetail from "./pages/ProductDetail";
 import AboutUs from "./pages/AboutUs";
 import Products from "./pages/Products";
+import IndoorPlayground from "./pages/IndoorPlayground";
+import TrampolinePark from "./pages/TrampolinePark";
+import NinjaCourse from "./pages/NinjaCourse";
+import SoftPlay from "./pages/SoftPlay";
 import Process from "./pages/Process";
 import Projects from "./pages/Projects";
 import Contact from "./pages/Contact";
@@ -34,6 +38,10 @@ const App = () => (
             <Route index element={<Index />} />
             <Route path="about-us" element={<AboutUs />} />
             <Route path="products" element={<Products />} />
+            <Route path="products/indoor-playground" element={<IndoorPlayground />} />
+            <Route path="products/trampoline-park" element={<TrampolinePark />} />
+            <Route path="products/ninja-course" element={<NinjaCourse />} />
+            <Route path="products/soft-play" element={<SoftPlay />} />
             <Route path="products/:productId" element={<ProductDetail />} />
             <Route path="process" element={<Process />} />
             <Route path="projects" element={<Projects />} />
