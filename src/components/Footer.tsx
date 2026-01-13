@@ -1,6 +1,7 @@
 import { useTranslation } from "react-i18next";
 import { Mail, Phone, MapPin, Facebook, Linkedin, Youtube, Instagram } from "lucide-react";
 import { useRTL } from "@/hooks/useRTL";
+import logo from "@/assets/logo.png";
 
 const socialLinks = [
   { icon: Facebook, href: "https://www.facebook.com/profile.php?id=61552140959757vNSFQ", label: "Facebook" },
@@ -36,7 +37,7 @@ export const Footer = () => {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* Company Info */}
           <div className="lg:col-span-1">
-            <h3 className="text-2xl font-heading font-bold mb-4">NinescapeLand</h3>
+            <img src={logo} alt="NinescapeLand" className="h-16 w-auto mb-4 brightness-0 invert" />
             <p className="text-primary-foreground/80 mb-6">
               {t("footer.description")}
             </p>
