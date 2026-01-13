@@ -13,33 +13,33 @@
   "pages": {
     "aboutUs": {
       "title": "About",
-      "titleHighlight": "Our Company",
-      "description": "With over 15 years of experience, we've become a trusted global leader in designing and manufacturing commercial indoor playground equipment, serving clients in 50+ countries worldwide."
+      "titleHighlight": "NinescapeLand",
+      "description": "Since 2008, we've been crafting joy and adventure for families worldwide. As a leading indoor playground manufacturer with 15+ years of expertise, we've successfully delivered 2,000+ projects across 50+ countries, turning dreams into unforgettable play experiences."
     },
     "products": {
-      "title": "Our",
-      "titleHighlight": "Product Range",
-      "description": "Explore our comprehensive range of commercial playground solutions, from indoor playgrounds and trampoline parks to ninja courses and soft play areas."
+      "title": "Premium",
+      "titleHighlight": "Playground Solutions",
+      "description": "From thrilling trampoline parks to imaginative indoor playgrounds, ninja warrior courses to safe soft play areas - discover our complete range of ASTM & TUV certified commercial playground equipment designed for maximum fun and safety."
     },
     "process": {
-      "title": "Our",
-      "titleHighlight": "Work Process",
-      "description": "From initial consultation to grand opening, we guide you through every step of creating your dream indoor entertainment center with our streamlined 6-step process."
+      "title": "Your Journey to",
+      "titleHighlight": "Grand Opening",
+      "description": "Experience our proven 6-step turnkey process: from free 3D design consultation to professional manufacturing, global shipping, and installation support. We handle everything so you can focus on your business success."
     },
     "projects": {
-      "title": "Our",
+      "title": "Global",
       "titleHighlight": "Success Stories",
-      "description": "Discover our portfolio of completed projects worldwide. Each installation showcases our commitment to quality, creativity, and customer satisfaction."
+      "description": "Explore 2,000+ completed installations across the globe. From family entertainment centers in Dubai to trampoline parks in the USA, each project showcases our commitment to quality craftsmanship and customer satisfaction."
     },
     "contact": {
-      "title": "Get In",
-      "titleHighlight": "Touch With Us",
-      "description": "Ready to start your project? Contact our team today for a free consultation and custom design. We respond to all inquiries within 24 hours."
+      "title": "Start Your",
+      "titleHighlight": "Project Today",
+      "description": "Ready to create an amazing play space? Get a free 3D design and competitive quote within 24 hours. Our expert team is standing by to bring your vision to life with personalized solutions tailored to your space and budget."
     },
     "faq": {
-      "title": "Frequently Asked",
-      "titleHighlight": "Questions",
-      "description": "Find answers to common questions about our products, services, pricing, shipping, and installation process."
+      "title": "Questions?",
+      "titleHighlight": "We Have Answers",
+      "description": "Everything you need to know about pricing, lead times, shipping, installation, warranties, and more. Can't find what you're looking for? Our team is just a message away."
     }
   },
   "topBar": {

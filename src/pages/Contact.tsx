@@ -4,6 +4,7 @@ import { ContactSection } from "@/components/ContactSection";
 import { FAQSection } from "@/components/FAQSection";
 import { Footer } from "@/components/Footer";
 import { FloatingCTA } from "@/components/FloatingCTA";
+import heroImage from "@/assets/hero-contact.jpg";
 
 const Contact = () => {
   return (
@@ -14,6 +15,7 @@ const Contact = () => {
           titleKey="pages.contact.title"
           titleHighlightKey="pages.contact.titleHighlight"
           descriptionKey="pages.contact.description"
+          backgroundImage={heroImage}
         />
         <ContactSection />
         <FAQSection />

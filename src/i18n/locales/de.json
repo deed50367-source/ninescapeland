@@ -13,33 +13,33 @@
   "pages": {
     "aboutUs": {
       "title": "Über",
-      "titleHighlight": "Unser Unternehmen",
-      "description": "Mit über 15 Jahren Erfahrung sind wir zu einem vertrauenswürdigen globalen Marktführer in der Entwicklung und Herstellung von kommerziellen Indoor-Spielplatzgeräten geworden und bedienen Kunden in über 50 Ländern weltweit."
+      "titleHighlight": "NinescapeLand",
+      "description": "Seit 2008 schaffen wir Freude und Abenteuer für Familien weltweit. Als führender Indoor-Spielplatz-Hersteller mit über 15 Jahren Erfahrung haben wir erfolgreich mehr als 2.000 Projekte in über 50 Ländern realisiert."
     },
     "products": {
-      "title": "Unser",
-      "titleHighlight": "Produktsortiment",
-      "description": "Entdecken Sie unser umfassendes Sortiment an kommerziellen Spielplatzlösungen, von Indoor-Spielplätzen und Trampolinparks bis hin zu Ninja-Kursen und Soft-Play-Bereichen."
+      "title": "Premium",
+      "titleHighlight": "Spielplatzlösungen",
+      "description": "Von aufregenden Trampolinparks über fantasievolle Indoor-Spielplätze bis zu Ninja-Parcours und sicheren Soft-Play-Bereichen - entdecken Sie unser komplettes Sortiment an ASTM & TUV-zertifizierten kommerziellen Spielplatzgeräten."
     },
     "process": {
-      "title": "Unser",
-      "titleHighlight": "Arbeitsprozess",
-      "description": "Von der ersten Beratung bis zur Eröffnung begleiten wir Sie durch jeden Schritt bei der Erstellung Ihres Indoor-Unterhaltungszentrums mit unserem optimierten 6-Schritte-Prozess."
+      "title": "Ihr Weg zur",
+      "titleHighlight": "Eröffnung",
+      "description": "Erleben Sie unseren bewährten 6-Stufen-Prozess: von der kostenlosen 3D-Designberatung über professionelle Fertigung bis zum weltweiten Versand und Installationsunterstützung. Wir kümmern uns um alles."
     },
     "projects": {
-      "title": "Unsere",
+      "title": "Globale",
       "titleHighlight": "Erfolgsgeschichten",
-      "description": "Entdecken Sie unser Portfolio abgeschlossener Projekte weltweit. Jede Installation zeigt unser Engagement für Qualität, Kreativität und Kundenzufriedenheit."
+      "description": "Entdecken Sie über 2.000 abgeschlossene Installationen weltweit. Von Familienunterhaltungszentren in Dubai bis zu Trampolinparks in den USA - jedes Projekt zeigt unser Engagement für Qualität."
     },
     "contact": {
-      "title": "Kontaktieren",
-      "titleHighlight": "Sie Uns",
-      "description": "Bereit, Ihr Projekt zu starten? Kontaktieren Sie noch heute unser Team für eine kostenlose Beratung und individuelles Design. Wir antworten auf alle Anfragen innerhalb von 24 Stunden."
+      "title": "Starten Sie Ihr",
+      "titleHighlight": "Projekt Heute",
+      "description": "Bereit, einen erstaunlichen Spielbereich zu schaffen? Erhalten Sie ein kostenloses 3D-Design und ein wettbewerbsfähiges Angebot innerhalb von 24 Stunden. Unser Expertenteam steht bereit."
     },
     "faq": {
-      "title": "Häufig Gestellte",
-      "titleHighlight": "Fragen",
-      "description": "Finden Sie Antworten auf häufige Fragen zu unseren Produkten, Dienstleistungen, Preisen, Versand und Installationsprozess."
+      "title": "Fragen?",
+      "titleHighlight": "Wir Haben Antworten",
+      "description": "Alles, was Sie über Preise, Lieferzeiten, Versand, Installation, Garantien und mehr wissen müssen. Nicht gefunden, was Sie suchen? Unser Team ist nur eine Nachricht entfernt."
     }
   },
   "topBar": {

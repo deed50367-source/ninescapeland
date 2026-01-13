@@ -12,34 +12,34 @@
   },
   "pages": {
     "aboutUs": {
-      "title": "Sobre",
-      "titleHighlight": "Nossa Empresa",
-      "description": "Com mais de 15 anos de experiência, nos tornamos um líder global confiável no design e fabricação de equipamentos comerciais de playground, atendendo clientes em mais de 50 países em todo o mundo."
+      "title": "Sobre a",
+      "titleHighlight": "NinescapeLand",
+      "description": "Desde 2008, criamos alegria e aventura para famílias em todo o mundo. Como fabricante líder de playgrounds com mais de 15 anos de experiência, concluímos com sucesso mais de 2.000 projetos em mais de 50 países."
     },
     "products": {
-      "title": "Nossa",
-      "titleHighlight": "Linha de Produtos",
-      "description": "Explore nossa gama completa de soluções comerciais de playground, desde playgrounds indoor e parques de trampolins até cursos ninja e áreas de brinquedo macio."
+      "title": "Soluções",
+      "titleHighlight": "Premium de Playground",
+      "description": "De emocionantes parques de trampolins a criativos playgrounds indoor, cursos ninja a áreas de brinquedo macio seguras - descubra nossa linha completa de equipamentos comerciais certificados ASTM e TUV."
     },
     "process": {
-      "title": "Nosso",
-      "titleHighlight": "Processo de Trabalho",
-      "description": "Da consulta inicial à grande inauguração, guiamos você em cada passo para criar seu centro de entretenimento indoor ideal com nosso processo otimizado de 6 etapas."
+      "title": "Sua Jornada até a",
+      "titleHighlight": "Grande Inauguração",
+      "description": "Experimente nosso processo comprovado de 6 etapas: da consulta de design 3D gratuita à fabricação profissional, envio global e suporte de instalação. Cuidamos de tudo."
     },
     "projects": {
-      "title": "Nossas",
-      "titleHighlight": "Histórias de Sucesso",
-      "description": "Descubra nosso portfólio de projetos concluídos em todo o mundo. Cada instalação mostra nosso compromisso com qualidade, criatividade e satisfação do cliente."
+      "title": "Histórias de",
+      "titleHighlight": "Sucesso Globais",
+      "description": "Explore mais de 2.000 instalações concluídas em todo o mundo. De centros de entretenimento familiar em Dubai a parques de trampolins nos EUA, cada projeto mostra nosso compromisso com a qualidade."
     },
     "contact": {
-      "title": "Entre em",
-      "titleHighlight": "Contato Conosco",
-      "description": "Pronto para iniciar seu projeto? Entre em contato com nossa equipe hoje para uma consulta gratuita e design personalizado. Respondemos a todas as consultas em 24 horas."
+      "title": "Comece Seu",
+      "titleHighlight": "Projeto Hoje",
+      "description": "Pronto para criar um espaço de diversão incrível? Receba um design 3D gratuito e orçamento competitivo em 24 horas. Nossa equipe de especialistas está pronta para dar vida à sua visão."
     },
     "faq": {
-      "title": "Perguntas",
-      "titleHighlight": "Frequentes",
-      "description": "Encontre respostas para perguntas comuns sobre nossos produtos, serviços, preços, envio e processo de instalação."
+      "title": "Dúvidas?",
+      "titleHighlight": "Temos Respostas",
+      "description": "Tudo o que você precisa saber sobre preços, prazos de entrega, envio, instalação, garantias e mais. Não encontrou o que procura? Nossa equipe está a uma mensagem de distância."
     }
   },
   "topBar": {
