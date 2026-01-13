@@ -15,6 +15,7 @@ import Contact from "./pages/Contact";
 import FAQ from "./pages/FAQ";
 import NotFound from "./pages/NotFound";
 import AssetGallery from "./pages/AssetGallery";
+import AdminLogin from "./pages/AdminLogin";
 
 const queryClient = new QueryClient();
 
@@ -40,6 +41,7 @@ const App = () => (
             <Route path="faq" element={<FAQ />} />
             <Route path="case-studies" element={<CaseStudies />} />
             <Route path="asset-gallery" element={<AssetGallery />} />
+            <Route path="admin-login" element={<AdminLogin />} />
           </Route>
           
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
