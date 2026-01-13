@@ -22,12 +22,32 @@ export const LanguageWrapper = () => {
     }
   }, [lang, i18n]);
 
+  // Guard against malformed URLs that accidentally include route params (e.g. "/en/:lang/admin-login")
+  useEffect(() => {
+    if (!lang || !supportedLangs.includes(lang)) return;
+
+    const parts = location.pathname.split("/").filter(Boolean);
+    const restParts = parts.slice(1);
+    const cleanedRestParts = restParts.filter((p) => !p.startsWith(":"));
+
+    if (cleanedRestParts.length !== restParts.length) {
+      const cleanedPath = `/${lang}${cleanedRestParts.length ? `/${cleanedRestParts.join("/")}` : ""}${location.search}${location.hash}`;
+      navigate(cleanedPath, { replace: true });
+    }
+  }, [lang, location.hash, location.pathname, location.search, navigate]);
+
   // If no valid lang, redirect to default language
   useEffect(() => {
     if (!lang || !supportedLangs.includes(lang)) {
       const detectedLang = i18n.language?.split("-")[0] || "en";
       const targetLang = supportedLangs.includes(detectedLang) ? detectedLang : "en";
-      const newPath = `/${targetLang}${location.pathname}${location.search}${location.hash}`;
+
+      // Strip the (invalid) first path segment and replace it with targetLang.
+      // Example: "/:lang/admin-login" -> "/en/admin-login"
+      const parts = location.pathname.split("/").filter(Boolean);
+      const rest = parts.length > 0 ? `/${parts.slice(1).join("/")}` : "";
+      const newPath = `/${targetLang}${rest}${location.search}${location.hash}`;
+
       navigate(newPath, { replace: true });
     }
   }, [lang, i18n.language, location, navigate]);
