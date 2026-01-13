@@ -9,6 +9,38 @@
     "contact": "Contacto",
     "getFreeQuote": "Cotización Gratis"
   },
+  "pages": {
+    "aboutUs": {
+      "title": "Sobre",
+      "titleHighlight": "Nuestra Empresa",
+      "description": "Con más de 15 años de experiencia, nos hemos convertido en un líder global confiable en el diseño y fabricación de equipos comerciales de parques infantiles, sirviendo a clientes en más de 50 países en todo el mundo."
+    },
+    "products": {
+      "title": "Nuestra",
+      "titleHighlight": "Gama de Productos",
+      "description": "Explora nuestra gama completa de soluciones comerciales de parques infantiles, desde parques interiores y parques de trampolines hasta cursos ninja y áreas de juego suave."
+    },
+    "process": {
+      "title": "Nuestro",
+      "titleHighlight": "Proceso de Trabajo",
+      "description": "Desde la consulta inicial hasta la gran apertura, te guiamos en cada paso para crear tu centro de entretenimiento interior ideal con nuestro proceso optimizado de 6 pasos."
+    },
+    "projects": {
+      "title": "Nuestras",
+      "titleHighlight": "Historias de Éxito",
+      "description": "Descubre nuestro portafolio de proyectos completados en todo el mundo. Cada instalación muestra nuestro compromiso con la calidad, creatividad y satisfacción del cliente."
+    },
+    "contact": {
+      "title": "Ponte en",
+      "titleHighlight": "Contacto con Nosotros",
+      "description": "¿Listo para iniciar tu proyecto? Contacta a nuestro equipo hoy para una consulta gratuita y diseño personalizado. Respondemos a todas las consultas en 24 horas."
+    },
+    "faq": {
+      "title": "Preguntas",
+      "titleHighlight": "Frecuentes",
+      "description": "Encuentra respuestas a preguntas comunes sobre nuestros productos, servicios, precios, envío y proceso de instalación."
+    }
+  },
   "topBar": {
     "globalShipping": "Envío Global",
     "warranty": "3 Años de Garantía",

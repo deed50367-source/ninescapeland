@@ -9,6 +9,38 @@
     "contact": "Contact",
     "getFreeQuote": "Get Free Quote"
   },
+  "pages": {
+    "aboutUs": {
+      "title": "About",
+      "titleHighlight": "Our Company",
+      "description": "With over 15 years of experience, we've become a trusted global leader in designing and manufacturing commercial indoor playground equipment, serving clients in 50+ countries worldwide."
+    },
+    "products": {
+      "title": "Our",
+      "titleHighlight": "Product Range",
+      "description": "Explore our comprehensive range of commercial playground solutions, from indoor playgrounds and trampoline parks to ninja courses and soft play areas."
+    },
+    "process": {
+      "title": "Our",
+      "titleHighlight": "Work Process",
+      "description": "From initial consultation to grand opening, we guide you through every step of creating your dream indoor entertainment center with our streamlined 6-step process."
+    },
+    "projects": {
+      "title": "Our",
+      "titleHighlight": "Success Stories",
+      "description": "Discover our portfolio of completed projects worldwide. Each installation showcases our commitment to quality, creativity, and customer satisfaction."
+    },
+    "contact": {
+      "title": "Get In",
+      "titleHighlight": "Touch With Us",
+      "description": "Ready to start your project? Contact our team today for a free consultation and custom design. We respond to all inquiries within 24 hours."
+    },
+    "faq": {
+      "title": "Frequently Asked",
+      "titleHighlight": "Questions",
+      "description": "Find answers to common questions about our products, services, pricing, shipping, and installation process."
+    }
+  },
   "topBar": {
     "globalShipping": "Global Shipping",
     "warranty": "3 Year Warranty",

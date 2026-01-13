@@ -9,6 +9,38 @@
     "contact": "Kontakt",
     "getFreeQuote": "Kostenloses Angebot"
   },
+  "pages": {
+    "aboutUs": {
+      "title": "Über",
+      "titleHighlight": "Unser Unternehmen",
+      "description": "Mit über 15 Jahren Erfahrung sind wir zu einem vertrauenswürdigen globalen Marktführer in der Entwicklung und Herstellung von kommerziellen Indoor-Spielplatzgeräten geworden und bedienen Kunden in über 50 Ländern weltweit."
+    },
+    "products": {
+      "title": "Unser",
+      "titleHighlight": "Produktsortiment",
+      "description": "Entdecken Sie unser umfassendes Sortiment an kommerziellen Spielplatzlösungen, von Indoor-Spielplätzen und Trampolinparks bis hin zu Ninja-Kursen und Soft-Play-Bereichen."
+    },
+    "process": {
+      "title": "Unser",
+      "titleHighlight": "Arbeitsprozess",
+      "description": "Von der ersten Beratung bis zur Eröffnung begleiten wir Sie durch jeden Schritt bei der Erstellung Ihres Indoor-Unterhaltungszentrums mit unserem optimierten 6-Schritte-Prozess."
+    },
+    "projects": {
+      "title": "Unsere",
+      "titleHighlight": "Erfolgsgeschichten",
+      "description": "Entdecken Sie unser Portfolio abgeschlossener Projekte weltweit. Jede Installation zeigt unser Engagement für Qualität, Kreativität und Kundenzufriedenheit."
+    },
+    "contact": {
+      "title": "Kontaktieren",
+      "titleHighlight": "Sie Uns",
+      "description": "Bereit, Ihr Projekt zu starten? Kontaktieren Sie noch heute unser Team für eine kostenlose Beratung und individuelles Design. Wir antworten auf alle Anfragen innerhalb von 24 Stunden."
+    },
+    "faq": {
+      "title": "Häufig Gestellte",
+      "titleHighlight": "Fragen",
+      "description": "Finden Sie Antworten auf häufige Fragen zu unseren Produkten, Dienstleistungen, Preisen, Versand und Installationsprozess."
+    }
+  },
   "topBar": {
     "globalShipping": "Weltweiter Versand",
     "warranty": "3 Jahre Garantie",

@@ -1,4 +1,5 @@
 import { Header } from "@/components/Header";
+import { PageHero } from "@/components/PageHero";
 import { ProcessSection } from "@/components/ProcessSection";
 import { FAQSection } from "@/components/FAQSection";
 import { Footer } from "@/components/Footer";
@@ -9,6 +10,11 @@ const Process = () => {
     <div className="min-h-screen">
       <Header />
       <main>
+        <PageHero
+          titleKey="pages.process.title"
+          titleHighlightKey="pages.process.titleHighlight"
+          descriptionKey="pages.process.description"
+        />
         <ProcessSection />
         <FAQSection />
       </main>
