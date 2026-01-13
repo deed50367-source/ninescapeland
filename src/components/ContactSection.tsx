@@ -33,8 +33,8 @@ export const ContactSection = () => {
     {
       icon: Mail,
       label: t("contact.info.email"),
-      value: "NinescapeLand@gmail.com",
-      href: "mailto:NinescapeLand@gmail.com",
+      value: "sale@indoorplaygroundsolution.com",
+      href: "mailto:sale@indoorplaygroundsolution.com",
     },
     {
       icon: MapPin,
