@@ -30,7 +30,7 @@ const App = () => (
           {/* Language-prefixed routes */}
           <Route path="/:lang" element={<LanguageWrapper />}>
             <Route index element={<Index />} />
-            <Route path="about" element={<AboutUs />} />
+            <Route path="about-us" element={<AboutUs />} />
             <Route path="products" element={<Products />} />
             <Route path="products/:productId" element={<ProductDetail />} />
             <Route path="process" element={<Process />} />
