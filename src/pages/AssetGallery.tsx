@@ -10,6 +10,7 @@ import { supabase } from "@/integrations/supabase/client";
 import { useAdminAuth } from "@/hooks/useAdminAuth";
 import { useLocalizedPath } from "@/hooks/useLocalizedPath";
 import { UploadProgress, UploadItem } from "@/components/UploadProgress";
+import { compressImage, generateThumbnail, isCompressibleImage } from "@/utils/imageCompression";
 import { 
   FolderPlus, 
   Upload, 
@@ -224,7 +225,7 @@ const AssetGallery = () => {
     return parentId;
   };
 
-  // Upload a single file with progress tracking
+  // Upload a single file with progress tracking (with compression and thumbnail)
   const uploadSingleFile = async (
     file: File,
     itemId: string,
@@ -233,10 +234,8 @@ const AssetGallery = () => {
   ): Promise<boolean> => {
     if (uploadCancelledRef.current) return false;
 
-    const fileExt = file.name.split(".").pop();
-    const fileName = `${Date.now()}-${Math.random().toString(36).substring(7)}.${fileExt}`;
+    const baseFileName = `${Date.now()}-${Math.random().toString(36).substring(7)}`;
     const folderPrefix = targetFolderId || "root";
-    const filePath = `${folderPrefix}/${fileName}`;
 
     // Update status to uploading
     setUploadItems((prev) =>
@@ -246,63 +245,14 @@ const AssetGallery = () => {
     );
 
     try {
-      // Upload with XMLHttpRequest for progress tracking
-      const { data: uploadData, error: uploadError } = await new Promise<{
-        data: any;
-        error: any;
-      }>((resolve) => {
-        const xhr = new XMLHttpRequest();
-        
-        xhr.upload.onprogress = (event) => {
-          if (event.lengthComputable) {
-            const progress = Math.round((event.loaded / event.total) * 100);
-            setUploadItems((prev) =>
-              prev.map((item) =>
-                item.id === itemId ? { ...item, progress } : item
-              )
-            );
-          }
-        };
-
-        xhr.onload = () => {
-          if (xhr.status >= 200 && xhr.status < 300) {
-            resolve({ data: { path: filePath }, error: null });
-          } else {
-            resolve({ data: null, error: new Error(`Upload failed: ${xhr.status}`) });
-          }
-        };
-
-        xhr.onerror = () => {
-          resolve({ data: null, error: new Error("Network error") });
-        };
-
-        // Get presigned URL and upload
-        supabase.storage
-          .from("assets")
-          .upload(filePath, file, { upsert: false })
-          .then(({ data, error }) => {
-            if (error) {
-              resolve({ data: null, error });
-            } else {
-              resolve({ data, error: null });
-            }
-          });
-      });
-
-      // Simpler approach: just use Supabase upload directly with progress simulation
-      const { error: storageError } = await supabase.storage
-        .from("assets")
-        .upload(filePath, file);
-
-      if (storageError) {
-        throw storageError;
-      }
-
-      // Get image dimensions if it's an image
+      let fileToUpload: Blob | File = file;
+      let thumbnailBlob: Blob | null = null;
       let width: number | null = null;
       let height: number | null = null;
 
-      if (file.type.startsWith("image/")) {
+      // Compress image and generate thumbnail if it's a compressible image
+      if (isCompressibleImage(file)) {
+        // Get original dimensions
         const img = new window.Image();
         const url = URL.createObjectURL(file);
         await new Promise<void>((resolve) => {
@@ -315,15 +265,91 @@ const AssetGallery = () => {
           img.onerror = () => resolve();
           img.src = url;
         });
+
+        // Update progress - compressing
+        setUploadItems((prev) =>
+          prev.map((item) =>
+            item.id === itemId ? { ...item, progress: 10 } : item
+          )
+        );
+
+        // Compress main image (max 1920px, quality 0.85)
+        try {
+          fileToUpload = await compressImage(file, 1920, 1920, 0.85);
+        } catch (e) {
+          console.warn("Failed to compress image, using original:", e);
+          fileToUpload = file;
+        }
+
+        // Update progress - generating thumbnail
+        setUploadItems((prev) =>
+          prev.map((item) =>
+            item.id === itemId ? { ...item, progress: 20 } : item
+          )
+        );
+
+        // Generate thumbnail (400px square, quality 0.7)
+        try {
+          thumbnailBlob = await generateThumbnail(file, 400, 0.7);
+        } catch (e) {
+          console.warn("Failed to generate thumbnail:", e);
+        }
       }
 
-      // Insert asset record
+      // Update progress - uploading main file
+      setUploadItems((prev) =>
+        prev.map((item) =>
+          item.id === itemId ? { ...item, progress: 30 } : item
+        )
+      );
+
+      // Upload main file
+      const mainFilePath = `${folderPrefix}/${baseFileName}.jpg`;
+      const { error: mainUploadError } = await supabase.storage
+        .from("assets")
+        .upload(mainFilePath, fileToUpload, { 
+          contentType: isCompressibleImage(file) ? "image/jpeg" : file.type 
+        });
+
+      if (mainUploadError) {
+        throw mainUploadError;
+      }
+
+      // Update progress - uploading thumbnail
+      setUploadItems((prev) =>
+        prev.map((item) =>
+          item.id === itemId ? { ...item, progress: 70 } : item
+        )
+      );
+
+      // Upload thumbnail if available
+      let thumbnailPath: string | null = null;
+      if (thumbnailBlob) {
+        thumbnailPath = `${folderPrefix}/thumb_${baseFileName}.jpg`;
+        const { error: thumbUploadError } = await supabase.storage
+          .from("assets")
+          .upload(thumbnailPath, thumbnailBlob, { contentType: "image/jpeg" });
+
+        if (thumbUploadError) {
+          console.warn("Failed to upload thumbnail:", thumbUploadError);
+          thumbnailPath = null;
+        }
+      }
+
+      // Update progress - saving metadata
+      setUploadItems((prev) =>
+        prev.map((item) =>
+          item.id === itemId ? { ...item, progress: 90 } : item
+        )
+      );
+
+      // Insert asset record (store thumbnail path in a way we can derive it)
       const { error: insertError } = await supabase.from("assets").insert({
         folder_id: targetFolderId,
         file_name: relativePath || file.name,
-        file_path: filePath,
-        file_size: file.size,
-        mime_type: file.type,
+        file_path: mainFilePath,
+        file_size: fileToUpload instanceof Blob ? fileToUpload.size : file.size,
+        mime_type: isCompressibleImage(file) ? "image/jpeg" : file.type,
         width,
         height,
       });
@@ -475,6 +501,19 @@ const AssetGallery = () => {
 
   const getAssetUrl = (filePath: string) => {
     const { data } = supabase.storage.from("assets").getPublicUrl(filePath);
+    return data.publicUrl;
+  };
+
+  // Get thumbnail URL (if exists, otherwise use main image)
+  const getThumbnailUrl = (filePath: string) => {
+    // Derive thumbnail path from main file path
+    const parts = filePath.split("/");
+    const fileName = parts.pop() || "";
+    const folderPath = parts.join("/");
+    const thumbFileName = `thumb_${fileName}`;
+    const thumbPath = folderPath ? `${folderPath}/${thumbFileName}` : thumbFileName;
+    
+    const { data } = supabase.storage.from("assets").getPublicUrl(thumbPath);
     return data.publicUrl;
   };
 
@@ -764,6 +803,7 @@ const AssetGallery = () => {
                 >
                   {filteredAssets.map((asset) => {
                     const url = getAssetUrl(asset.file_path);
+                    const thumbUrl = getThumbnailUrl(asset.file_path);
                     return (
                       <div
                         key={asset.id}
@@ -779,10 +819,14 @@ const AssetGallery = () => {
                             <div className="aspect-square bg-muted flex items-center justify-center overflow-hidden">
                               {asset.mime_type?.startsWith("image/") ? (
                                 <img
-                                  src={url}
+                                  src={thumbUrl}
                                   alt={asset.file_name}
                                   className="w-full h-full object-cover"
                                   loading="lazy"
+                                  onError={(e) => {
+                                    // Fallback to main image if thumbnail doesn't exist
+                                    (e.target as HTMLImageElement).src = url;
+                                  }}
                                 />
                               ) : (
                                 <ImageIcon className="w-12 h-12 text-muted-foreground" />
@@ -801,10 +845,13 @@ const AssetGallery = () => {
                               <div className="w-12 h-12 bg-muted rounded flex items-center justify-center overflow-hidden">
                                 {asset.mime_type?.startsWith("image/") ? (
                                   <img
-                                    src={url}
+                                    src={thumbUrl}
                                     alt={asset.file_name}
                                     className="w-full h-full object-cover"
                                     loading="lazy"
+                                    onError={(e) => {
+                                      (e.target as HTMLImageElement).src = url;
+                                    }}
                                   />
                                 ) : (
                                   <ImageIcon className="w-6 h-6 text-muted-foreground" />
