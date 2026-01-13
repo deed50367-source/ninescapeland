@@ -415,5 +415,126 @@
       "allAges": "Alle Altersgruppen",
       "designRendering": "Design-Rendering"
     }
+  },
+  "productDetail": {
+    "notFound": {
+      "title": "Produkt nicht gefunden",
+      "description": "Das gesuchte Produkt existiert nicht.",
+      "backToProducts": "Alle Produkte anzeigen"
+    },
+    "breadcrumb": {
+      "home": "Startseite",
+      "products": "Produkte"
+    },
+    "backToProducts": "Zurück zu Produkten",
+    "startingFrom": "Ab",
+    "requestQuote": "Angebot anfordern",
+    "usePriceCalculator": "Preisrechner nutzen",
+    "benefits": {
+      "free3DDesign": "Kostenloses 3D-Design",
+      "worldwideShipping": "Weltweiter Versand",
+      "installationSupport": "Installationsunterstützung"
+    },
+    "tabs": {
+      "features": "Funktionen",
+      "specifications": "Spezifikationen",
+      "process": "Prozess"
+    },
+    "keyFeatures": "Hauptmerkmale",
+    "technicalSpecs": "Technische Spezifikationen",
+    "ourProcess": "Unser Prozess",
+    "process": {
+      "consultation": {
+        "title": "Beratung",
+        "desc": "Besprechen Sie Ihre Vision und Anforderungen"
+      },
+      "design": {
+        "title": "3D-Design",
+        "desc": "Erhalten Sie individuelle 3D-Designvorschläge"
+      },
+      "production": {
+        "title": "Produktion",
+        "desc": "Ausrüstung nach Spezifikation gefertigt"
+      },
+      "installation": {
+        "title": "Installation",
+        "desc": "Professionelle Installationsunterstützung"
+      }
+    },
+    "cta": {
+      "title": "Bereit loszulegen?",
+      "description": "Kontaktieren Sie uns heute für eine kostenlose Beratung und einen 3D-Designvorschlag. Lassen Sie uns Ihre Vision zum Leben erwecken.",
+      "button": "Kostenloses Angebot erhalten"
+    },
+    "specs": {
+      "ageRange": "Altersbereich",
+      "minSpace": "Min. Fläche",
+      "maxHeight": "Max. Höhe",
+      "materials": "Materialien",
+      "warranty": "Garantie",
+      "installation": "Installation",
+      "certification": "Zertifizierung",
+      "leadTime": "Lieferzeit"
+    },
+    "indoorPlayground": {
+      "title": "Indoor-Spielplatzausrüstung",
+      "subtitle": "Mehrstöckige Spielstrukturen",
+      "description": "Schaffen Sie magische Spielerlebnisse mit unseren maßgeschneiderten Indoor-Spielplatzgeräten. Von mehrstöckigen Strukturen bis hin zu Themen-Spielbereichen - wir erwecken Fantasie mit sicherheitszertifizierter Ausrüstung zum Leben.",
+      "features": [
+        "Individuelle Themen und Designs",
+        "Mehrstöckige Spielstrukturen",
+        "Interaktive Elemente",
+        "Bällebäder und Rutschen",
+        "Kletterwände und Netze",
+        "Sensorische Spielbereiche",
+        "Kleinkinderzonen",
+        "Rollenspiel-Bereiche"
+      ]
+    },
+    "trampolinePark": {
+      "title": "Trampolinpark-Ausrüstung",
+      "subtitle": "Komplette Jump-Park-Lösungen",
+      "description": "Professionelle Trampolinpark-Ausrüstung mit über 12 Aktivitätszonen. Unsere modularen Designs maximieren Spaß und Sicherheit mit Schaumstoffgruben, Slam Dunk, Skyrider, 360°-Fahrrad, Kletterwänden und mehr.",
+      "features": [
+        "Freie Sprungzonen",
+        "Schaumstoffgruben-Bereiche",
+        "Slam Dunk Basketball",
+        "Dodgeball-Felder",
+        "Skyrider-Systeme",
+        "360°-Fahrrad",
+        "Ninja-Hindernisse",
+        "Airbag-Landung"
+      ]
+    },
+    "ninjaCourse": {
+      "title": "Ninja Warrior Parcours",
+      "subtitle": "Professionelle Hindernisparcours",
+      "description": "Herausforderungssuchende lieben unsere Ninja Warrior Parcours. Mit über 50 Hindernistypen einschließlich gebogener Wände, Lachsleitern, Seilklettern, Schwebebalken und individuellen Herausforderungen für alle Fähigkeitsstufen.",
+      "features": [
+        "Gebogene Wände",
+        "Lachsleitern",
+        "Seilparcours",
+        "Balance-Hindernisse",
+        "Kletterherausforderungen",
+        "Ringschaukeln",
+        "Frachtnetze",
+        "Wettkampfbahnen"
+      ]
+    },
+    "softPlay": {
+      "title": "Softplay-Ausrüstung",
+      "subtitle": "Kindersichere Spielbereiche",
+      "description": "Entwickelt für die jüngsten Abenteurer bietet unsere Softplay-Ausrüstung sichere, ansprechende Umgebungen für Kleinkinder. Leicht zu reinigen, modular und mit höchsten Sicherheitsstandards gebaut.",
+      "features": [
+        "Kleinkindersicheres Design",
+        "Weiche Schaumstoffkonstruktion",
+        "Leicht zu reinigende Oberflächen",
+        "Modulare Komponenten",
+        "Sensorische Elemente",
+        "Bällebäder",
+        "Mini-Rutschen",
+        "Interaktive Panels"
+      ]
+    }
   }
 }
