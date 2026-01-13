@@ -225,6 +225,35 @@
       "errorDescription": "Falha ao enviar sua mensagem. Por favor, tente novamente ou entre em contato conosco diretamente."
     }
   },
+  "coreValues": {
+    "title": "Nossos",
+    "titleHighlight": "Valores Fundamentais",
+    "description": "Estes princípios orientam tudo o que fazemos, do design de produtos ao atendimento ao cliente, garantindo excelência em cada etapa.",
+    "quality": {
+      "title": "Qualidade em Primeiro",
+      "description": "Nunca comprometemos a qualidade. Cada componente é cuidadosamente selecionado e testado para garantir durabilidade, segurança e desempenho duradouro."
+    },
+    "innovation": {
+      "title": "Inovação",
+      "description": "Continuamente superamos limites para criar novas experiências. Nossa equipe de P&D desenvolve atrações de ponta que fazem os visitantes voltarem."
+    },
+    "customerFirst": {
+      "title": "Cliente em Primeiro",
+      "description": "Seu sucesso é nosso sucesso. Fornecemos soluções personalizadas e suporte dedicado durante toda a jornada do seu projeto."
+    },
+    "excellence": {
+      "title": "Excelência",
+      "description": "Buscamos excelência em cada detalhe. Da precisão do design à perfeição da instalação, superamos expectativas em cada etapa."
+    },
+    "integrity": {
+      "title": "Integridade",
+      "description": "Construímos relacionamentos baseados em confiança e transparência. Comunicação honesta e práticas éticas são a base do nosso negócio."
+    },
+    "efficiency": {
+      "title": "Eficiência",
+      "description": "Respeitamos seu tempo e investimento. Nossos processos otimizados garantem entrega pontual e soluções econômicas."
+    }
+  },
   "faq": {
     "sectionLabel": "FAQ",
     "title": "Perguntas",
