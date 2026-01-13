@@ -1,11 +1,14 @@
 import { useState, useEffect, useCallback } from "react";
 import { useTranslation } from "react-i18next";
+import { useNavigate, Link } from "react-router-dom";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
 import { supabase } from "@/integrations/supabase/client";
+import { useAdminAuth } from "@/hooks/useAdminAuth";
+import { useLocalizedPath } from "@/hooks/useLocalizedPath";
 import { 
   FolderPlus, 
   Upload, 
@@ -18,7 +21,9 @@ import {
   Grid,
   List,
   Search,
-  X
+  X,
+  LogOut,
+  LogIn
 } from "lucide-react";
 import { toast } from "sonner";
 
@@ -43,6 +48,9 @@ interface Asset {
 
 const AssetGallery = () => {
   const { t } = useTranslation();
+  const navigate = useNavigate();
+  const { localizedPath } = useLocalizedPath();
+  const { user, isAdmin, isLoading: authLoading, signOut } = useAdminAuth();
   const [folders, setFolders] = useState<AssetFolder[]>([]);
   const [assets, setAssets] = useState<Asset[]>([]);
   const [currentFolderId, setCurrentFolderId] = useState<string | null>(null);
@@ -55,6 +63,11 @@ const AssetGallery = () => {
   const [copiedUrl, setCopiedUrl] = useState<string | null>(null);
   const [selectedAsset, setSelectedAsset] = useState<Asset | null>(null);
   const [isLoading, setIsLoading] = useState(true);
+
+  const handleSignOut = async () => {
+    await signOut();
+    toast.success("已退出登录");
+  };
 
   const fetchFolders = useCallback(async () => {
     let query = supabase
@@ -282,6 +295,14 @@ const AssetGallery = () => {
     folder.name.toLowerCase().includes(searchQuery.toLowerCase())
   );
 
+  if (authLoading) {
+    return (
+      <div className="min-h-screen flex items-center justify-center bg-background">
+        <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-primary"></div>
+      </div>
+    );
+  }
+
   return (
     <div className="min-h-screen flex flex-col bg-background">
       <Header />
@@ -294,50 +315,66 @@ const AssetGallery = () => {
               素材图库
             </h1>
             <p className="text-muted-foreground mt-1">
-              管理和组织公司所有图片素材
+              {isAdmin ? "管理和组织公司所有图片素材" : "浏览公司图片素材（登录管理员账号可编辑）"}
             </p>
           </div>
 
           <div className="flex items-center gap-2">
-            <Dialog open={isCreateFolderOpen} onOpenChange={setIsCreateFolderOpen}>
-              <DialogTrigger asChild>
-                <Button variant="outline" size="sm">
-                  <FolderPlus className="w-4 h-4 mr-2" />
-                  新建文件夹
-                </Button>
-              </DialogTrigger>
-              <DialogContent>
-                <DialogHeader>
-                  <DialogTitle>新建文件夹</DialogTitle>
-                </DialogHeader>
-                <div className="space-y-4 pt-4">
-                  <Input
-                    placeholder="文件夹名称"
-                    value={newFolderName}
-                    onChange={(e) => setNewFolderName(e.target.value)}
-                    onKeyDown={(e) => e.key === "Enter" && createFolder()}
-                  />
-                  <Button onClick={createFolder} className="w-full">
-                    创建
-                  </Button>
-                </div>
-              </DialogContent>
-            </Dialog>
+            {isAdmin ? (
+              <>
+                <Dialog open={isCreateFolderOpen} onOpenChange={setIsCreateFolderOpen}>
+                  <DialogTrigger asChild>
+                    <Button variant="outline" size="sm">
+                      <FolderPlus className="w-4 h-4 mr-2" />
+                      新建文件夹
+                    </Button>
+                  </DialogTrigger>
+                  <DialogContent>
+                    <DialogHeader>
+                      <DialogTitle>新建文件夹</DialogTitle>
+                    </DialogHeader>
+                    <div className="space-y-4 pt-4">
+                      <Input
+                        placeholder="文件夹名称"
+                        value={newFolderName}
+                        onChange={(e) => setNewFolderName(e.target.value)}
+                        onKeyDown={(e) => e.key === "Enter" && createFolder()}
+                      />
+                      <Button onClick={createFolder} className="w-full">
+                        创建
+                      </Button>
+                    </div>
+                  </DialogContent>
+                </Dialog>
 
-            <Button variant="default" size="sm" disabled={isUploading} asChild>
-              <label className="cursor-pointer">
-                <Upload className="w-4 h-4 mr-2" />
-                {isUploading ? "上传中..." : "上传文件"}
-                <input
-                  type="file"
-                  multiple
-                  accept="image/*"
-                  className="hidden"
-                  onChange={handleFileUpload}
-                  disabled={isUploading}
-                />
-              </label>
-            </Button>
+                <Button variant="default" size="sm" disabled={isUploading} asChild>
+                  <label className="cursor-pointer">
+                    <Upload className="w-4 h-4 mr-2" />
+                    {isUploading ? "上传中..." : "上传文件"}
+                    <input
+                      type="file"
+                      multiple
+                      accept="image/*"
+                      className="hidden"
+                      onChange={handleFileUpload}
+                      disabled={isUploading}
+                    />
+                  </label>
+                </Button>
+
+                <Button variant="ghost" size="sm" onClick={handleSignOut}>
+                  <LogOut className="w-4 h-4 mr-2" />
+                  退出
+                </Button>
+              </>
+            ) : (
+              <Button variant="default" size="sm" asChild>
+                <Link to={localizedPath("/admin-login")}>
+                  <LogIn className="w-4 h-4 mr-2" />
+                  管理员登录
+                </Link>
+              </Button>
+            )}
           </div>
         </div>
 
@@ -464,15 +501,17 @@ const AssetGallery = () => {
                           {folder.name}
                         </span>
                       </div>
-                      <button
-                        onClick={(e) => {
-                          e.stopPropagation();
-                          deleteFolder(folder.id);
-                        }}
-                        className="absolute top-2 right-2 p-1 bg-destructive/10 text-destructive rounded opacity-0 group-hover:opacity-100 transition-opacity"
-                      >
-                        <Trash2 className="w-4 h-4" />
-                      </button>
+                      {isAdmin && (
+                        <button
+                          onClick={(e) => {
+                            e.stopPropagation();
+                            deleteFolder(folder.id);
+                          }}
+                          className="absolute top-2 right-2 p-1 bg-destructive/10 text-destructive rounded opacity-0 group-hover:opacity-100 transition-opacity"
+                        >
+                          <Trash2 className="w-4 h-4" />
+                        </button>
+                      )}
                     </div>
                   ))}
                 </div>
@@ -568,15 +607,17 @@ const AssetGallery = () => {
                                   <Copy className="w-4 h-4" />
                                 )}
                               </button>
-                              <button
-                                onClick={(e) => {
-                                  e.stopPropagation();
-                                  deleteAsset(asset);
-                                }}
-                                className="p-2 hover:bg-destructive/10 text-destructive rounded transition-colors"
-                              >
-                                <Trash2 className="w-4 h-4" />
-                              </button>
+                              {isAdmin && (
+                                <button
+                                  onClick={(e) => {
+                                    e.stopPropagation();
+                                    deleteAsset(asset);
+                                  }}
+                                  className="p-2 hover:bg-destructive/10 text-destructive rounded transition-colors"
+                                >
+                                  <Trash2 className="w-4 h-4" />
+                                </button>
+                              )}
                             </div>
                           </>
                         )}
@@ -595,15 +636,17 @@ const AssetGallery = () => {
                                 <Copy className="w-4 h-4" />
                               )}
                             </button>
-                            <button
-                              onClick={(e) => {
-                                e.stopPropagation();
-                                deleteAsset(asset);
-                              }}
-                              className="p-1.5 bg-destructive/80 text-destructive-foreground rounded"
-                            >
-                              <Trash2 className="w-4 h-4" />
-                            </button>
+                            {isAdmin && (
+                              <button
+                                onClick={(e) => {
+                                  e.stopPropagation();
+                                  deleteAsset(asset);
+                                }}
+                                className="p-1.5 bg-destructive/80 text-destructive-foreground rounded"
+                              >
+                                <Trash2 className="w-4 h-4" />
+                              </button>
+                            )}
                           </div>
                         )}
                       </div>
@@ -617,21 +660,23 @@ const AssetGallery = () => {
                   <ImageIcon className="w-16 h-16 text-muted-foreground mb-4" />
                   <h3 className="text-lg font-medium mb-2">暂无文件</h3>
                   <p className="text-muted-foreground mb-4">
-                    点击"上传文件"按钮添加图片素材
+                    {isAdmin ? '点击"上传文件"按钮添加图片素材' : "此文件夹暂无内容"}
                   </p>
-                  <Button asChild>
-                    <label className="cursor-pointer">
-                      <Upload className="w-4 h-4 mr-2" />
-                      上传文件
-                      <input
-                        type="file"
-                        multiple
-                        accept="image/*"
-                        className="hidden"
-                        onChange={handleFileUpload}
-                      />
-                    </label>
-                  </Button>
+                  {isAdmin && (
+                    <Button asChild>
+                      <label className="cursor-pointer">
+                        <Upload className="w-4 h-4 mr-2" />
+                        上传文件
+                        <input
+                          type="file"
+                          multiple
+                          accept="image/*"
+                          className="hidden"
+                          onChange={handleFileUpload}
+                        />
+                      </label>
+                    </Button>
+                  )}
                 </div>
               )
             )}
@@ -700,13 +745,15 @@ const AssetGallery = () => {
                     <Copy className="w-4 h-4 mr-2" />
                     复制链接
                   </Button>
-                  <Button
-                    variant="destructive"
-                    onClick={() => deleteAsset(selectedAsset)}
-                  >
-                    <Trash2 className="w-4 h-4 mr-2" />
-                    删除
-                  </Button>
+                  {isAdmin && (
+                    <Button
+                      variant="destructive"
+                      onClick={() => deleteAsset(selectedAsset)}
+                    >
+                      <Trash2 className="w-4 h-4 mr-2" />
+                      删除
+                    </Button>
+                  )}
                 </div>
                 <div className="bg-muted p-3 rounded-lg">
                   <p className="text-xs text-muted-foreground mb-1">文件链接：</p>
