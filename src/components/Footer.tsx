@@ -106,8 +106,8 @@ export const Footer = () => {
                 <Mail className="w-5 h-5 mt-0.5 flex-shrink-0" />
                 <div>
                   <p className="text-primary-foreground/60 text-sm">{t("footer.contact.email")}</p>
-                  <a href="mailto:NinescapeLand@gmail.com" className="hover:opacity-80" dir="ltr">
-                    NinescapeLand@gmail.com
+                  <a href="mailto:sale@indoorplaygroundsolution.com" className="hover:opacity-80" dir="ltr">
+                    sale@indoorplaygroundsolution.com
                   </a>
                 </div>
               </li>
