@@ -80,6 +80,63 @@ const AssetGallery = () => {
   const [isGeneratingThumbnails, setIsGeneratingThumbnails] = useState(false);
   const [thumbnailProgress, setThumbnailProgress] = useState({ current: 0, total: 0 });
   const thumbnailCancelledRef = useRef(false);
+  
+  // Resume upload state
+  const [pendingUploadSession, setPendingUploadSession] = useState<{
+    sessionId: string;
+    folderName: string;
+    totalFiles: number;
+    uploadedFiles: number;
+    uploadedPaths: string[];
+  } | null>(null);
+  
+  const UPLOAD_SESSION_KEY = "asset_upload_session";
+  
+  // Load pending upload session on mount
+  useEffect(() => {
+    const savedSession = localStorage.getItem(UPLOAD_SESSION_KEY);
+    if (savedSession) {
+      try {
+        const session = JSON.parse(savedSession);
+        setPendingUploadSession(session);
+      } catch (e) {
+        localStorage.removeItem(UPLOAD_SESSION_KEY);
+      }
+    }
+  }, []);
+  
+  // Save upload progress to localStorage
+  const saveUploadProgress = (sessionId: string, folderName: string, totalFiles: number, uploadedPaths: string[]) => {
+    const session = {
+      sessionId,
+      folderName,
+      totalFiles,
+      uploadedFiles: uploadedPaths.length,
+      uploadedPaths,
+    };
+    localStorage.setItem(UPLOAD_SESSION_KEY, JSON.stringify(session));
+    setPendingUploadSession(session);
+  };
+  
+  // Clear upload session
+  const clearUploadSession = () => {
+    localStorage.removeItem(UPLOAD_SESSION_KEY);
+    setPendingUploadSession(null);
+  };
+  
+  // Check if file was already uploaded in current session
+  const isFileAlreadyUploaded = (relativePath: string, sessionId: string): boolean => {
+    const savedSession = localStorage.getItem(UPLOAD_SESSION_KEY);
+    if (!savedSession) return false;
+    
+    try {
+      const session = JSON.parse(savedSession);
+      if (session.sessionId !== sessionId) return false;
+      return session.uploadedPaths?.includes(relativePath) || false;
+    } catch {
+      return false;
+    }
+  };
 
   const handleSignOut = async () => {
     await signOut();
@@ -685,15 +742,43 @@ const AssetGallery = () => {
     setIsUploading(true);
     setIsUploadMinimized(false);
 
+    // Get folder name from first file's path
+    const firstFilePath = (files[0] as any).webkitRelativePath || files[0].name;
+    const folderName = firstFilePath.split("/")[0] || "upload";
+    
+    // Generate session ID based on folder name and file count
+    const sessionId = `${folderName}_${files.length}_${Array.from(files).reduce((acc, f) => acc + f.size, 0)}`;
+    
+    // Check if we have a previous session for this folder
+    const savedSession = localStorage.getItem(UPLOAD_SESSION_KEY);
+    let uploadedPaths: string[] = [];
+    let isResume = false;
+    
+    if (savedSession) {
+      try {
+        const session = JSON.parse(savedSession);
+        if (session.sessionId === sessionId) {
+          uploadedPaths = session.uploadedPaths || [];
+          isResume = uploadedPaths.length > 0;
+          if (isResume) {
+            toast.info(`检测到未完成的上传，将从第 ${uploadedPaths.length + 1} 个文件继续`);
+          }
+        }
+      } catch {
+        // Invalid session, start fresh
+      }
+    }
+
     // Create upload items with relative paths
     const items: UploadItem[] = Array.from(files).map((file) => {
       const relativePath = (file as any).webkitRelativePath || file.name;
+      const alreadyUploaded = uploadedPaths.includes(relativePath);
       return {
         id: `${Date.now()}-${Math.random().toString(36).substring(7)}`,
         file,
         relativePath,
-        status: "pending" as const,
-        progress: 0,
+        status: alreadyUploaded ? ("success" as const) : ("pending" as const),
+        progress: alreadyUploaded ? 100 : 0,
       };
     });
 
@@ -701,9 +786,20 @@ const AssetGallery = () => {
 
     // Group files by folder path
     const folderCache = new Map<string, string | null>();
+    let successCount = uploadedPaths.length;
 
     for (const item of items) {
-      if (uploadCancelledRef.current) break;
+      if (uploadCancelledRef.current) {
+        // Save progress when cancelled
+        saveUploadProgress(sessionId, folderName, files.length, uploadedPaths);
+        toast.info(`上传已暂停，已完成 ${successCount}/${files.length} 个文件，下次可继续`);
+        break;
+      }
+
+      // Skip already uploaded files
+      if (item.status === "success") {
+        continue;
+      }
 
       const pathParts = (item.relativePath || item.file.name).split("/");
       const fileName = pathParts.pop() || item.file.name;
@@ -722,7 +818,20 @@ const AssetGallery = () => {
         }
       }
 
-      await uploadSingleFile(item.file, item.id, targetFolderId, item.relativePath);
+      const success = await uploadSingleFile(item.file, item.id, targetFolderId, item.relativePath);
+      
+      if (success && item.relativePath) {
+        uploadedPaths.push(item.relativePath);
+        successCount++;
+        // Save progress after each successful upload
+        saveUploadProgress(sessionId, folderName, files.length, uploadedPaths);
+      }
+    }
+
+    // Clear session if all files uploaded successfully
+    if (successCount === files.length) {
+      clearUploadSession();
+      toast.success(`文件夹上传完成！共 ${successCount} 个文件`);
     }
 
     setIsUploading(false);
@@ -935,6 +1044,40 @@ const AssetGallery = () => {
               value={(thumbnailProgress.current / thumbnailProgress.total) * 100} 
               className="h-2"
             />
+          </div>
+        )}
+
+        {/* Resume Upload Banner */}
+        {pendingUploadSession && !isUploading && (
+          <div className="mb-4 p-4 bg-amber-50 dark:bg-amber-950/30 border border-amber-200 dark:border-amber-800 rounded-lg flex items-center justify-between">
+            <div className="flex items-center gap-3">
+              <FolderUp className="w-5 h-5 text-amber-600" />
+              <div>
+                <p className="font-medium text-amber-800 dark:text-amber-200">
+                  检测到未完成的上传任务
+                </p>
+                <p className="text-sm text-amber-600 dark:text-amber-400">
+                  文件夹 "{pendingUploadSession.folderName}" - 已上传 {pendingUploadSession.uploadedFiles}/{pendingUploadSession.totalFiles} 个文件
+                </p>
+              </div>
+            </div>
+            <div className="flex items-center gap-2">
+              <Button
+                variant="outline"
+                size="sm"
+                onClick={clearUploadSession}
+                className="border-amber-300 text-amber-700 hover:bg-amber-100"
+              >
+                放弃
+              </Button>
+              <Button
+                size="sm"
+                onClick={() => folderInputRef.current?.click()}
+                className="bg-amber-600 hover:bg-amber-700 text-white"
+              >
+                继续上传
+              </Button>
+            </div>
           </div>
         )}
 
