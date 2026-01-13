@@ -5,7 +5,7 @@ import { CoreValuesSection } from "@/components/CoreValuesSection";
 import { FAQSection } from "@/components/FAQSection";
 import { Footer } from "@/components/Footer";
 import { FloatingCTA } from "@/components/FloatingCTA";
-import heroImage from "@/assets/hero-about-us.jpg";
+import { heroImages } from "@/config/galleryImages";
 
 const AboutUs = () => {
   return (
@@ -16,7 +16,7 @@ const AboutUs = () => {
           titleKey="pages.aboutUs.title"
           titleHighlightKey="pages.aboutUs.titleHighlight"
           descriptionKey="pages.aboutUs.description"
-          backgroundImage={heroImage}
+          backgroundImage={heroImages.aboutUs}
         />
         <CoreValuesSection />
         <WhyUsSection />

@@ -4,7 +4,7 @@ import { ProcessSection } from "@/components/ProcessSection";
 import { FAQSection } from "@/components/FAQSection";
 import { Footer } from "@/components/Footer";
 import { FloatingCTA } from "@/components/FloatingCTA";
-import heroImage from "@/assets/hero-process.jpg";
+import { heroImages } from "@/config/galleryImages";
 
 const Process = () => {
   return (
@@ -15,7 +15,7 @@ const Process = () => {
           titleKey="pages.process.title"
           titleHighlightKey="pages.process.titleHighlight"
           descriptionKey="pages.process.description"
-          backgroundImage={heroImage}
+          backgroundImage={heroImages.process}
         />
         <ProcessSection />
         <FAQSection />

@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { ArrowRight, ArrowLeft, CheckCircle } from "lucide-react";
 import { Button } from "./ui/button";
 import { useRTL } from "@/hooks/useRTL";
-import heroImage from "@/assets/hero-playground.jpg";
+import { heroImages } from "@/config/galleryImages";
 
 export const HeroSection = () => {
   const { t } = useTranslation();
@@ -24,7 +24,7 @@ export const HeroSection = () => {
       {/* Background Image */}
       <div className="absolute inset-0">
         <img
-          src={heroImage}
+          src={heroImages.home}
           alt="Indoor Playground Equipment Manufacturer"
           className="w-full h-full object-cover"
         />

@@ -5,11 +5,7 @@ import { ArrowRight, ArrowLeft } from "lucide-react";
 import { Button } from "./ui/button";
 import { useLocalizedPath } from "@/hooks/useLocalizedPath";
 import { useRTL } from "@/hooks/useRTL";
-
-import indoorPlayground from "@/assets/product-indoor-playground.jpg";
-import trampolinePark from "@/assets/product-trampoline-park.jpg";
-import ninjaCourse from "@/assets/product-ninja-course.jpg";
-import softPlay from "@/assets/product-soft-play.jpg";
+import { productImages } from "@/config/galleryImages";
 
 const container = {
   hidden: { opacity: 0 },
@@ -38,28 +34,28 @@ export const ProductsSection = () => {
     {
       title: t("products.items.indoorPlayground.title"),
       description: t("products.items.indoorPlayground.description"),
-      image: indoorPlayground,
+      image: productImages.indoorPlayground,
       features: t("products.items.indoorPlayground.features", { returnObjects: true }) as string[],
       slug: "indoor-playground",
     },
     {
       title: t("products.items.trampolinePark.title"),
       description: t("products.items.trampolinePark.description"),
-      image: trampolinePark,
+      image: productImages.trampolinePark,
       features: t("products.items.trampolinePark.features", { returnObjects: true }) as string[],
       slug: "trampoline-park",
     },
     {
       title: t("products.items.ninjaCourse.title"),
       description: t("products.items.ninjaCourse.description"),
-      image: ninjaCourse,
+      image: productImages.ninjaCourse,
       features: t("products.items.ninjaCourse.features", { returnObjects: true }) as string[],
       slug: "ninja-course",
     },
     {
       title: t("products.items.softPlay.title"),
       description: t("products.items.softPlay.description"),
-      image: softPlay,
+      image: productImages.softPlay,
       features: t("products.items.softPlay.features", { returnObjects: true }) as string[],
       slug: "soft-play",
     },
