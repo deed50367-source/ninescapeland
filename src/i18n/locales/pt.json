@@ -415,5 +415,126 @@
       "allAges": "Todas as Idades",
       "designRendering": "Renderização de Design"
     }
+  },
+  "productDetail": {
+    "notFound": {
+      "title": "Produto não encontrado",
+      "description": "O produto que você procura não existe.",
+      "backToProducts": "Ver todos os produtos"
+    },
+    "breadcrumb": {
+      "home": "Início",
+      "products": "Produtos"
+    },
+    "backToProducts": "Voltar aos produtos",
+    "startingFrom": "A partir de",
+    "requestQuote": "Solicitar orçamento",
+    "usePriceCalculator": "Usar calculadora de preços",
+    "benefits": {
+      "free3DDesign": "Design 3D gratuito",
+      "worldwideShipping": "Envio mundial",
+      "installationSupport": "Suporte de instalação"
+    },
+    "tabs": {
+      "features": "Características",
+      "specifications": "Especificações",
+      "process": "Processo"
+    },
+    "keyFeatures": "Principais características",
+    "technicalSpecs": "Especificações técnicas",
+    "ourProcess": "Nosso processo",
+    "process": {
+      "consultation": {
+        "title": "Consulta",
+        "desc": "Discuta sua visão e requisitos"
+      },
+      "design": {
+        "title": "Design 3D",
+        "desc": "Receba propostas de design personalizadas"
+      },
+      "production": {
+        "title": "Produção",
+        "desc": "Equipamento fabricado conforme especificações"
+      },
+      "installation": {
+        "title": "Instalação",
+        "desc": "Suporte de instalação profissional"
+      }
+    },
+    "cta": {
+      "title": "Pronto para começar?",
+      "description": "Entre em contato conosco hoje para uma consulta gratuita e proposta de design 3D. Vamos dar vida à sua visão.",
+      "button": "Obter orçamento gratuito"
+    },
+    "specs": {
+      "ageRange": "Faixa etária",
+      "minSpace": "Espaço mín.",
+      "maxHeight": "Altura máx.",
+      "materials": "Materiais",
+      "warranty": "Garantia",
+      "installation": "Instalação",
+      "certification": "Certificação",
+      "leadTime": "Prazo de entrega"
+    },
+    "indoorPlayground": {
+      "title": "Equipamentos de playground indoor",
+      "subtitle": "Estruturas de jogo multinível",
+      "description": "Crie experiências de brincadeira mágicas com nossos equipamentos de playground indoor personalizados. De estruturas multinível a áreas de brincadeira temáticas, damos vida à imaginação com equipamentos certificados em segurança.",
+      "features": [
+        "Temas e designs personalizados",
+        "Estruturas de jogo multinível",
+        "Elementos interativos",
+        "Piscinas de bolinhas e escorregadores",
+        "Paredes e redes de escalada",
+        "Áreas de jogo sensorial",
+        "Zonas para crianças pequenas",
+        "Áreas de brincadeira de faz de conta"
+      ]
+    },
+    "trampolinePark": {
+      "title": "Equipamentos de parque de trampolins",
+      "subtitle": "Soluções completas para parques de salto",
+      "description": "Equipamentos profissionais para parques de trampolins com mais de 12 zonas de atividade. Nossos designs modulares maximizam diversão e segurança com piscinas de espuma, slam dunk, skyrider, bicicleta 360°, paredes de escalada e mais.",
+      "features": [
+        "Zonas de salto livre",
+        "Áreas de piscinas de espuma",
+        "Basquete slam dunk",
+        "Quadras de dodgeball",
+        "Sistemas skyrider",
+        "Bicicleta 360°",
+        "Obstáculos ninja",
+        "Pouso com airbag"
+      ]
+    },
+    "ninjaCourse": {
+      "title": "Circuito Ninja Warrior",
+      "subtitle": "Circuitos de obstáculos profissionais",
+      "description": "Os caçadores de desafios amam nossos circuitos ninja warrior. Com mais de 50 tipos de obstáculos incluindo paredes curvas, escadas de salmão, cordas de escalada, barras de equilíbrio e desafios personalizados para todos os níveis de habilidade.",
+      "features": [
+        "Paredes curvas",
+        "Escadas de salmão",
+        "Circuitos de cordas",
+        "Obstáculos de equilíbrio",
+        "Desafios de escalada",
+        "Balanços de anéis",
+        "Redes de carga",
+        "Pistas de competição"
+      ]
+    },
+    "softPlay": {
+      "title": "Equipamentos de soft play",
+      "subtitle": "Áreas de brincadeira seguras para crianças",
+      "description": "Projetado para os menores aventureiros, nosso equipamento de soft play oferece ambientes seguros e envolventes para crianças pequenas. Fácil de limpar, modular e construído com os mais altos padrões de segurança.",
+      "features": [
+        "Design seguro para crianças pequenas",
+        "Construção de espuma macia",
+        "Superfícies fáceis de limpar",
+        "Componentes modulares",
+        "Elementos sensoriais",
+        "Piscinas de bolinhas",
+        "Mini escorregadores",
+        "Painéis interativos"
+      ]
+    }
   }
 }

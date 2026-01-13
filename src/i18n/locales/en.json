@@ -415,5 +415,126 @@
       "allAges": "All Ages",
       "designRendering": "Design Rendering"
     }
+  },
+  "productDetail": {
+    "notFound": {
+      "title": "Product Not Found",
+      "description": "The product you're looking for doesn't exist.",
+      "backToProducts": "View All Products"
+    },
+    "breadcrumb": {
+      "home": "Home",
+      "products": "Products"
+    },
+    "backToProducts": "Back to Products",
+    "startingFrom": "Starting from",
+    "requestQuote": "Request Quote",
+    "usePriceCalculator": "Use Price Calculator",
+    "benefits": {
+      "free3DDesign": "Free 3D Design",
+      "worldwideShipping": "Worldwide Shipping",
+      "installationSupport": "Installation Support"
+    },
+    "tabs": {
+      "features": "Features",
+      "specifications": "Specifications",
+      "process": "Process"
+    },
+    "keyFeatures": "Key Features",
+    "technicalSpecs": "Technical Specifications",
+    "ourProcess": "Our Process",
+    "process": {
+      "consultation": {
+        "title": "Consultation",
+        "desc": "Discuss your vision and requirements"
+      },
+      "design": {
+        "title": "3D Design",
+        "desc": "Receive custom 3D design proposals"
+      },
+      "production": {
+        "title": "Production",
+        "desc": "Equipment manufactured to specification"
+      },
+      "installation": {
+        "title": "Installation",
+        "desc": "Professional installation support"
+      }
+    },
+    "cta": {
+      "title": "Ready to Get Started?",
+      "description": "Contact us today for a free consultation and 3D design proposal. Let's bring your vision to life.",
+      "button": "Get Free Quote"
+    },
+    "specs": {
+      "ageRange": "Age Range",
+      "minSpace": "Min. Space",
+      "maxHeight": "Max. Height",
+      "materials": "Materials",
+      "warranty": "Warranty",
+      "installation": "Installation",
+      "certification": "Certification",
+      "leadTime": "Lead Time"
+    },
+    "indoorPlayground": {
+      "title": "Indoor Playground Equipment",
+      "subtitle": "Multi-level Play Structures",
+      "description": "Create magical play experiences with our custom-designed indoor playground equipment. From multi-level structures to themed play areas, we bring imagination to life with safety-certified equipment.",
+      "features": [
+        "Custom themes and designs",
+        "Multi-level play structures",
+        "Interactive elements",
+        "Ball pools and slides",
+        "Climbing walls and nets",
+        "Sensory play areas",
+        "Toddler zones",
+        "Role-play areas"
+      ]
+    },
+    "trampolinePark": {
+      "title": "Trampoline Park Equipment",
+      "subtitle": "Complete Jump Park Solutions",
+      "description": "Professional-grade trampoline park equipment with 12+ activity zones. Our modular designs maximize fun and safety with foam pits, slam dunk, skyrider, 360° bicycle, climbing walls, and more.",
+      "features": [
+        "Free jump zones",
+        "Foam pit areas",
+        "Slam dunk basketball",
+        "Dodgeball courts",
+        "Skyrider systems",
+        "360° bicycle",
+        "Ninja obstacles",
+        "Airbag landing"
+      ]
+    },
+    "ninjaCourse": {
+      "title": "Ninja Warrior Course",
+      "subtitle": "Professional Obstacle Courses",
+      "description": "Challenge seekers love our ninja warrior courses. Featuring 50+ obstacle types including warped walls, salmon ladders, rope climbs, balance beams, and custom challenges for all skill levels.",
+      "features": [
+        "Warped walls",
+        "Salmon ladders",
+        "Rope courses",
+        "Balance obstacles",
+        "Climbing challenges",
+        "Ring swings",
+        "Cargo nets",
+        "Competition lanes"
+      ]
+    },
+    "softPlay": {
+      "title": "Soft Play Equipment",
+      "subtitle": "Toddler-Safe Play Areas",
+      "description": "Designed for the youngest adventurers, our soft play equipment provides safe, engaging environments for toddlers. Easy to clean, modular, and built with the highest safety standards.",
+      "features": [
+        "Toddler-safe design",
+        "Soft foam construction",
+        "Easy to clean surfaces",
+        "Modular components",
+        "Sensory elements",
+        "Ball pools",
+        "Mini slides",
+        "Interactive panels"
+      ]
+    }
   }
 }
