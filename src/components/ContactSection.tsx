@@ -291,14 +291,8 @@ export const ContactSection = () => {
                   <p className="text-sm text-muted-foreground">{t("contact.whatsapp.description")}</p>
                 </div>
               </div>
-              <Button variant="outline" className="w-full" asChild>
-                <a
-                  href="https://wa.me/8615057582901?text=Hi, I'm interested in your playground equipment"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  {t("contact.whatsapp.button")}
-                </a>
+              <Button variant="outline" className="w-full">
+                {t("contact.whatsapp.button")}
               </Button>
             </div>
 

@@ -57,7 +57,7 @@ export const ProjectsCTASection = () => {
               size="lg"
               variant="outline"
               className="border-white text-white hover:bg-white/10"
-              onClick={() => window.open("https://wa.me/8613588746818", "_blank")}
+              onClick={() => navigate(localizedPath("/contact"))}
             >
               <MessageCircle className="mr-2 w-5 h-5" />
               {t("projectsCTA.whatsapp")}
