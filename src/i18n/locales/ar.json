@@ -2,12 +2,16 @@
   "nav": {
     "home": "الرئيسية",
     "aboutUs": "من نحن",
+    "about": "من نحن",
     "products": "المنتجات",
     "trampolinePark": "حديقة الترامبولين",
     "ninjaCourse": "مسار النينجا",
     "process": "العملية",
     "projects": "المشاريع",
     "contact": "اتصل بنا",
+    "faq": "الأسئلة الشائعة",
+    "caseStudies": "الحالات",
+    "more": "المزيد",
     "getFreeQuote": "عرض سعر مجاني"
   },
   "pages": {
