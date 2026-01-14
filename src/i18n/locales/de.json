@@ -730,5 +730,101 @@
       "cta": "Kostenloses Design & Angebot",
       "kidsFriendly": "Kinderfreundlich"
     }
+  },
+  "processDetail": {
+    "sectionLabel": "Detaillierter Prozess",
+    "title": "Jeder Schritt",
+    "titleHighlight": "Erklärt",
+    "description": "Wir glauben an vollständige Transparenz. Hier ist ein detaillierter Einblick, wie wir Ihre Vision in einen erfolgreichen Unterhaltungsort verwandeln, mit dedizierter Unterstützung bei jedem Meilenstein.",
+    "consultation": {
+      "title": "Beratungs- und Planungsphase",
+      "description": "Unsere Reise beginnt mit dem Verständnis Ihrer einzigartigen Vision, Ihres Marktes und Ihrer Geschäftsziele. Unsere erfahrenen Berater arbeiten eng mit Ihnen zusammen, um Ihre Zielgruppe, lokale Konkurrenz und Standortbedingungen zu analysieren.",
+      "feature1": "Kostenlose Standortanalyse und Machbarkeitsstudie",
+      "feature2": "Marktforschung und Wettbewerbsanalyse",
+      "feature3": "Budgetplanung und ROI-Prognosen",
+      "feature4": "Regulatorische Compliance-Beratung"
+    },
+    "design": {
+      "title": "Maßgeschneidertes 3D-Design & Engineering",
+      "description": "Unser preisgekröntes Designteam erstellt atemberaubende 3D-Visualisierungen, die Ihr Konzept zum Leben erwecken. Wir entwickeln Grundrisse, Ansichten und thematische Konzeptdesigns, die den Verkehrsfluss optimieren.",
+      "feature1": "Fotorealistische 3D-Renderings",
+      "feature2": "Detaillierte Grundrisse und Ansichten",
+      "feature3": "Themenentwicklung und Markenintegration",
+      "feature4": "Mehrere Designüberarbeitungsrunden inklusive"
+    },
+    "manufacturing": {
+      "title": "Präzisionsfertigung",
+      "description": "Die Produktion beginnt in unserer hochmodernen 50.000 m² großen Anlage mit ISO 9001-Zertifizierung. Jede Komponente wird mit Premium-Materialien, fortschrittlichen CNC-Maschinen und strengen Qualitätskontrollen gefertigt.",
+      "feature1": "Premium umweltfreundliche Materialien",
+      "feature2": "Automatisierte Qualitätsprüfsysteme",
+      "feature3": "Echtzeit-Produktionsupdates mit Fotos",
+      "feature4": "Prüfung und Zertifizierung vor dem Versand"
+    }
+  },
+  "processGuarantee": {
+    "sectionLabel": "Unsere Garantien",
+    "title": "Ihre Investition",
+    "titleHighlight": "Geschützt",
+    "description": "Wir stehen hinter jedem Projekt mit branchenführenden Garantien und umfassendem Support. Ihr Erfolg ist unser Erfolg, und wir sind bestrebt, in jeder Phase Exzellenz zu liefern.",
+    "quality": {
+      "title": "Qualitätsgarantie",
+      "description": "Jede Komponente durchläuft strenge Tests und Inspektionen. Wir verwenden nur Premium-Materialien, die internationale Sicherheitsstandards erfüllen oder übertreffen."
+    },
+    "delivery": {
+      "title": "Pünktliche Lieferung",
+      "description": "Wir verstehen, dass Timing für Ihr Geschäft entscheidend ist. Unsere optimierten Produktions- und Logistikprozesse stellen sicher, dass Ihre Ausrüstung planmäßig ankommt."
+    },
+    "warranty": {
+      "title": "3 Jahre Garantie",
+      "description": "Branchenführende umfassende Garantie, die alle Herstellungsfehler abdeckt. Wir bieten kostenlose Ersatzteile und dedizierten Support während der Garantiezeit."
+    },
+    "support": {
+      "title": "Lebenslanger technischer Support",
+      "description": "Unsere Beziehung endet nicht bei der Installation. Wir bieten kontinuierliche technische Unterstützung, Wartungsberatung und betriebliche Beratung."
+    },
+    "replacement": {
+      "title": "Kostenlose Ersatzteile",
+      "description": "Wenn eine Komponente während der Garantiezeit aufgrund von Herstellungsfehlern ausfällt, versenden wir kostenlos Ersatzteile. Ihre Betriebszeit und Gästezufriedenheit haben Priorität."
+    },
+    "satisfaction": {
+      "title": "Zufriedenheitsgarantie",
+      "description": "Wir arbeiten während des gesamten Prozesses eng mit Ihnen zusammen, um vollständige Zufriedenheit zu gewährleisten. Vom Design bis zur Installation nehmen wir Anpassungen vor."
+    }
+  },
+  "processTestimonials": {
+    "sectionLabel": "Erfolgsgeschichten",
+    "title": "Was unsere Kunden",
+    "titleHighlight": "Sagen",
+    "description": "Nehmen Sie nicht nur unser Wort. Hören Sie von Unterhaltungsort-Besitzern weltweit, die mit NinescapeLand zusammengearbeitet haben, um erfolgreiche, profitable Spielziele zu schaffen.",
+    "items": [
+      {
+        "name": "Michael Anderson",
+        "role": "FEC-Besitzer",
+        "country": "USA",
+        "content": "Von unserer ersten Beratung bis zur Eröffnung war das NinescapeLand-Team außergewöhnlich. Die 3D-Designs waren atemberaubend und die endgültige Installation übertraf unsere Erwartungen. Unser Trampolinpark ist seit dem ersten Tag ausgebucht."
+      },
+      {
+        "name": "Sarah Mitchell",
+        "role": "Unterhaltungszentrum-Direktorin",
+        "country": "Großbritannien",
+        "content": "Die Zusammenarbeit mit NinescapeLand war eine nahtlose Erfahrung. Ihre Liebe zum Detail und ihr Engagement für Sicherheit haben uns von Anfang an beeindruckt. Der maßgeschneiderte Indoor-Spielplatz ist zur beliebtesten Attraktion geworden."
+      },
+      {
+        "name": "Ahmed Hassan",
+        "role": "Business Development Manager",
+        "country": "Vereinigte Arabische Emirate",
+        "content": "Wir haben mit NinescapeLand an drei Projekten in den VAE zusammengearbeitet. Ihre Konsistenz in Qualität, wettbewerbsfähige Preise und zuverlässige Lieferung haben sie zu unserem bevorzugten Lieferanten gemacht."
+      }
+    ]
+  },
+  "processCTA": {
+    "title": "Bereit, Ihr Projekt",
+    "titleHighlight": "Zu Starten?",
+    "description": "Schließen Sie sich Tausenden erfolgreicher Unterhaltungsort-Besitzer an, die NinescapeLand vertraut haben. Holen Sie sich heute Ihr kostenloses 3D-Design und wettbewerbsfähiges Angebot.",
+    "getQuote": "Kostenloses Design & Angebot",
+    "whatsapp": "Chat auf WhatsApp",
+    "response": "Antwortzeit",
+    "design": "3D-Designservice",
+    "countries": "Bediente Länder"
   }
 }
