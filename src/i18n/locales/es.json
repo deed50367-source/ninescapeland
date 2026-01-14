@@ -52,21 +52,21 @@
     "customDesign": "Diseño Personalizado"
   },
   "hero": {
-    "badge": "🏭 Fabricante Líder de Parques Infantiles desde 2008",
+    "badge": "🏭 Fabricante Líder de Parques Infantiles desde 2008 | Más de 2,000 Proyectos Globales",
     "title": "Crea Experiencias de Juego",
     "titleHighlight": "Inolvidables",
-    "description": "Proveedor profesional de equipos de parques infantiles. Desde parques de trampolines hasta cursos ninja, ofrecemos soluciones llave en mano para centros de entretenimiento en todo el mundo.",
+    "description": "NinescapeLand es un fabricante y proveedor profesional de equipos de parques infantiles con más de 15 años de experiencia en la industria. Nos especializamos en diseñar, fabricar e instalar soluciones llave en mano completas para parques infantiles comerciales, parques de trampolines, cursos ninja warrior, áreas de juego suave y centros de entretenimiento familiar. Nuestra fábrica de última generación de 50,000 m² utiliza materiales premium y tecnología de producción avanzada para entregar equipos certificados ASTM y TUV que cumplen con los más altos estándares internacionales de seguridad. Desde la consulta inicial y el diseño 3D gratuito hasta la fabricación profesional, envío global y soporte de instalación, manejamos cada aspecto de tu proyecto. Con instalaciones exitosas en más de 50 países, hemos ayudado a miles de empresarios a crear entornos de juego rentables y seguros.",
     "benefits": {
-      "customDesign": "Soluciones de Diseño Personalizado",
+      "customDesign": "Diseño 3D Gratuito",
       "certified": "Certificado ASTM y TUV",
-      "globalShipping": "Envío Global",
+      "globalShipping": "Envío a 50+ Países",
       "warranty": "Garantía de 3 Años"
     },
     "cta": {
       "getQuote": "Obtener Diseño y Cotización Gratis",
-      "viewProducts": "Ver Productos"
+      "viewProducts": "Explorar Nuestros Productos"
     },
-    "trustedCertifications": "Certificaciones confiables:"
+    "trustedCertifications": "Confiado por líderes de la industria en todo el mundo:"
   },
   "products": {
     "sectionLabel": "Nuestros Productos",

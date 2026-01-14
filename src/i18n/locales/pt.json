@@ -52,21 +52,21 @@
     "customDesign": "Design Personalizado"
   },
   "hero": {
-    "badge": "🏭 Fabricante Líder de Playgrounds desde 2008",
+    "badge": "🏭 Fabricante Líder de Playgrounds desde 2008 | Mais de 2.000 Projetos Globais",
     "title": "Crie Experiências de Diversão",
     "titleHighlight": "Inesquecíveis",
-    "description": "Fornecedor profissional de equipamentos de playground indoor. De parques de trampolins a cursos ninja, entregamos soluções completas para centros de entretenimento em todo o mundo.",
+    "description": "NinescapeLand é um fabricante e fornecedor profissional de equipamentos de playground com mais de 15 anos de experiência no setor. Somos especializados em projetar, fabricar e instalar soluções completas para playgrounds comerciais indoor, parques de trampolins, cursos ninja warrior, áreas de brinquedo macio e centros de entretenimento familiar. Nossa fábrica de última geração de 50.000 m² utiliza materiais premium e tecnologia de produção avançada para entregar equipamentos certificados ASTM e TUV que atendem aos mais altos padrões internacionais de segurança. Da consulta inicial e design 3D gratuito à fabricação profissional, envio global e suporte de instalação, cuidamos de cada aspecto do seu projeto. Com instalações bem-sucedidas em mais de 50 países, ajudamos milhares de empreendedores a criar ambientes de diversão rentáveis e seguros.",
     "benefits": {
-      "customDesign": "Soluções de Design Personalizado",
+      "customDesign": "Design 3D Gratuito",
       "certified": "Certificado ASTM e TUV",
-      "globalShipping": "Envio Global",
+      "globalShipping": "Envio para 50+ Países",
       "warranty": "Garantia de 3 Anos"
     },
     "cta": {
       "getQuote": "Obter Design e Orçamento Grátis",
-      "viewProducts": "Ver Produtos"
+      "viewProducts": "Explorar Nossos Produtos"
     },
-    "trustedCertifications": "Certificações confiáveis:"
+    "trustedCertifications": "Confiado por líderes da indústria em todo o mundo:"
   },
   "products": {
     "sectionLabel": "Nossos Produtos",
