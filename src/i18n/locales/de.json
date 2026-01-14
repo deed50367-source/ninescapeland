@@ -52,21 +52,21 @@
     "customDesign": "Individuelles Design"
   },
   "hero": {
-    "badge": "🏭 Führender Indoor-Spielplatz-Hersteller seit 2008",
+    "badge": "🏭 Führender Indoor-Spielplatz-Hersteller seit 2008 | 2.000+ globale Projekte",
     "title": "Erschaffe Unvergessliche",
     "titleHighlight": "Spielerlebnisse",
-    "description": "Professioneller Anbieter von Indoor-Spielplatzausrüstung. Von Trampolinparks bis zu Ninja-Kursen liefern wir schlüsselfertige Lösungen für Unterhaltungszentren weltweit.",
+    "description": "NinescapeLand ist ein professioneller Indoor-Spielplatz-Hersteller und -Lieferant mit über 15 Jahren Branchenerfahrung. Wir sind spezialisiert auf Design, Fertigung und Installation von schlüsselfertigen Lösungen für kommerzielle Indoor-Spielplätze, Trampolinparks, Ninja-Warrior-Parcours, Soft-Play-Bereiche und Familienunterhaltungszentren. Unsere hochmoderne 50.000 qm große Fabrik verwendet Premium-Materialien und fortschrittliche Produktionstechnologie für ASTM- und TUV-zertifizierte Geräte. Von der ersten Konzeption und kostenlosen 3D-Designberatung bis zur professionellen Fertigung, weltweitem Versand und Installationsunterstützung kümmern wir uns um jeden Aspekt Ihres Projekts. Mit erfolgreichen Installationen in über 50 Ländern haben wir Tausenden von Unternehmern geholfen, profitable und sichere Spielumgebungen zu schaffen.",
     "benefits": {
-      "customDesign": "Individuelle Designlösungen",
+      "customDesign": "Kostenloses 3D-Design",
       "certified": "ASTM & TUV zertifiziert",
-      "globalShipping": "Weltweiter Versand",
+      "globalShipping": "Versand in 50+ Länder",
       "warranty": "3 Jahre Garantie"
     },
     "cta": {
       "getQuote": "Kostenloses Design & Angebot",
-      "viewProducts": "Produkte ansehen"
+      "viewProducts": "Unsere Produkte entdecken"
     },
-    "trustedCertifications": "Vertrauenswürdige Zertifizierungen:"
+    "trustedCertifications": "Vertraut von Branchenführern weltweit:"
   },
   "products": {
     "sectionLabel": "Unsere Produkte",

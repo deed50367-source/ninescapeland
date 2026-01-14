@@ -52,59 +52,59 @@
     "customDesign": "Custom Design"
   },
   "hero": {
-    "badge": "🏭 Leading Indoor Playground Manufacturer Since 2008",
+    "badge": "🏭 Leading Indoor Playground Manufacturer Since 2008 | 2,000+ Global Projects",
     "title": "Create Unforgettable",
     "titleHighlight": "Play Experiences",
-    "description": "Professional indoor playground equipment supplier. From trampoline parks to ninja courses, we deliver turnkey solutions for entertainment centers worldwide.",
+    "description": "NinescapeLand is a professional indoor playground equipment manufacturer and supplier with over 15 years of industry expertise. We specialize in designing, manufacturing, and installing complete turnkey solutions for commercial indoor playgrounds, trampoline parks, ninja warrior courses, soft play areas, and family entertainment centers. Our state-of-the-art 50,000 sqm factory uses premium materials and advanced production technology to deliver ASTM and TUV certified equipment that meets the highest international safety standards. From initial concept and free 3D design consultation to professional manufacturing, global shipping, and on-site installation support, we handle every aspect of your project. Whether you're launching a new FEC, expanding an existing facility, or creating a unique themed attraction, our dedicated team of designers, engineers, and project managers work closely with you to bring your vision to life. With successful installations in over 50 countries including the USA, UK, Australia, UAE, Germany, and throughout Asia, we've helped thousands of entrepreneurs and businesses create profitable, safe, and engaging play environments that keep families coming back.",
     "benefits": {
-      "customDesign": "Custom Design Solutions",
+      "customDesign": "Free Custom 3D Design",
       "certified": "ASTM & TUV Certified",
-      "globalShipping": "Global Shipping",
+      "globalShipping": "50+ Countries Shipped",
       "warranty": "3-Year Warranty"
     },
     "cta": {
       "getQuote": "Get Free Design & Quote",
-      "viewProducts": "View Products"
+      "viewProducts": "Explore Our Products"
     },
-    "trustedCertifications": "Trusted certifications:"
+    "trustedCertifications": "Trusted by industry leaders worldwide:"
   },
   "products": {
-    "sectionLabel": "Our Products",
+    "sectionLabel": "Premium Products",
     "title": "Commercial Playground",
     "titleHighlight": "Solutions",
-    "description": "From design to installation, we provide complete turnkey solutions for indoor entertainment centers, family entertainment centers, and amusement parks worldwide.",
+    "description": "From initial design consultation to final installation, NinescapeLand provides complete turnkey solutions for indoor entertainment centers, family entertainment centers, trampoline parks, and amusement facilities worldwide. Our comprehensive product range is manufactured in our modern 50,000 sqm factory using premium eco-friendly materials, advanced production technology, and strict quality control processes. Every piece of equipment undergoes rigorous safety testing and comes with full ASTM, TUV, CE, and EN certification.",
     "viewDetails": "View Details",
-    "customCta": "Looking for something specific? We offer custom design services.",
-    "discussProject": "Discuss Your Project",
+    "customCta": "Looking for something unique? Our design team creates custom themed attractions tailored to your space, budget, and brand identity.",
+    "discussProject": "Start Your Free Consultation",
     "items": {
       "indoorPlayground": {
         "title": "Indoor Playground Equipment",
-        "description": "Multi-level play structures with slides, ball pits, climbing nets, and interactive elements for children of all ages.",
+        "description": "Our indoor playground systems feature multi-level play structures with exciting spiral slides, tube slides, wave slides, expansive ball pits, challenging climbing nets, rope bridges, and interactive elements designed to engage children of all ages from toddlers to teens. Each structure is custom designed to maximize your space and can be themed to match any concept from jungle adventures to space exploration.",
         "features": ["Custom Themes", "Safety Certified", "All Ages"]
       },
       "trampolinePark": {
         "title": "Trampoline Parks",
-        "description": "Complete trampoline park solutions with 12+ activity zones: foam pits, slam dunk, skyrider, 360° bicycle, climbing walls, dodgeball, and more.",
+        "description": "Our complete trampoline park solutions include 12+ activity zones designed for maximum entertainment value: foam pit jump zones, professional slam dunk basketball areas, skyrider zip lines, 360° spinning bicycles, challenging climbing walls, dodgeball arenas, ninja courses, and performance trampolines. Each zone is engineered with high-performance spring systems and commercial-grade materials for durability and safety.",
         "features": ["12+ Activity Zones", "High Performance", "Modular Design"]
       },
       "ninjaCourse": {
         "title": "Ninja Warrior Courses",
-        "description": "Professional ninja obstacle courses featuring high-altitude challenges, climbing walls, rope courses, balance beams, and adventure obstacles.",
+        "description": "Professional-grade ninja warrior courses designed to challenge participants of all skill levels. Our courses feature over 50 obstacle types including warped walls, salmon ladders, ring swings, rope climbs, balance beams, spinning logs, and custom challenges. Perfect for fitness centers, adventure parks, and competitive training facilities.",
         "features": ["50+ Obstacle Types", "3D Design", "Competition Grade"]
       },
       "softPlay": {
         "title": "Soft Play Areas",
-        "description": "Safe and engaging soft play equipment designed specifically for toddlers and young children.",
+        "description": "Specially designed soft play equipment that provides safe, engaging play experiences for toddlers and young children under 5 years old. Our soft play areas feature padded climbing structures, mini slides, ball pools, sensory panels, and interactive elements that support early childhood development while ensuring maximum safety.",
         "features": ["Toddler Safe", "Easy Clean", "Modular"]
       }
     }
   },
   "whyUs": {
-    "sectionLabel": "Why Choose Us",
+    "sectionLabel": "Why Choose NinescapeLand",
     "title": "Your Trusted",
     "titleHighlight": "Partner",
     "titleEnd": "in Play",
-    "description": "With over 15 years of experience, we've helped thousands of businesses create exceptional indoor play experiences that drive growth and customer satisfaction.",
+    "description": "With over 15 years of manufacturing experience and more than 2,000 successful installations worldwide, NinescapeLand has become the trusted partner for entrepreneurs, investors, and businesses looking to create exceptional indoor play experiences. Our commitment to quality, innovation, and customer success has helped clients across 50+ countries build profitable entertainment ventures that drive growth, repeat visits, and lasting customer satisfaction.",
     "stats": {
       "experience": "Years Experience",
       "countries": "Countries Served",
@@ -113,33 +113,33 @@
     },
     "features": {
       "customDesign": {
-        "title": "Custom Design",
-        "description": "Free 3D design service tailored to your space and brand. Our team creates unique themes that captivate visitors."
+        "title": "Free 3D Design",
+        "description": "Our professional design team provides complimentary 3D renderings and floor plans tailored to your exact space dimensions and brand identity. We create unique, eye-catching themes that captivate visitors and maximize revenue potential."
       },
       "safetyCertified": {
         "title": "Safety Certified",
-        "description": "All products meet ASTM, TUV, CE, and international safety standards. Your visitors' safety is our priority."
+        "description": "Every product meets or exceeds ASTM F1918, TUV, CE, EN 1176, and international safety standards. We use only premium, eco-friendly materials that pass rigorous testing for durability, fire resistance, and child safety."
       },
       "globalShipping": {
-        "title": "Global Shipping",
-        "description": "We ship to 50+ countries with professional logistics support. Door-to-door delivery available worldwide."
+        "title": "Worldwide Shipping",
+        "description": "We ship to over 50 countries with comprehensive logistics support. Our experienced shipping team handles all export documentation, customs clearance, and offers both door-to-door and port-to-port delivery options."
       },
       "warranty": {
         "title": "3-Year Warranty",
-        "description": "Industry-leading 3-year warranty with lifetime technical support. We stand behind our quality."
+        "description": "Industry-leading comprehensive 3-year warranty on all equipment with lifetime technical support. We provide free replacement parts for any manufacturing defects and stand firmly behind our quality."
       },
       "support": {
         "title": "24/7 Support",
-        "description": "Round-the-clock customer service to assist you at every stage, from design to installation."
+        "description": "Our dedicated customer service team is available around the clock to assist you at every stage of your project, from initial consultation and design to manufacturing updates, installation guidance, and ongoing maintenance."
       },
       "directFactory": {
-        "title": "Direct Factory",
-        "description": "Deal directly with the manufacturer. No middlemen means competitive pricing and quality control."
+        "title": "Factory Direct",
+        "description": "Buy directly from our 50,000 sqm manufacturing facility with no middlemen or distributors. This means competitive factory pricing, complete quality control, and direct communication with our production team."
       }
     },
     "certifications": {
-      "title": "Certifications & Standards",
-      "description": "Our products comply with international safety and quality standards"
+      "title": "Industry Certifications & Quality Standards",
+      "description": "Our products comply with the world's most stringent safety and quality standards"
     }
   },
   "process": {
