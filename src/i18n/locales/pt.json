@@ -2,12 +2,16 @@
   "nav": {
     "home": "Início",
     "aboutUs": "Sobre Nós",
+    "about": "Sobre Nós",
     "products": "Produtos",
     "trampolinePark": "Parque de Trampolins",
     "ninjaCourse": "Curso Ninja",
     "process": "Processo",
     "projects": "Projetos",
     "contact": "Contato",
+    "faq": "FAQ",
+    "caseStudies": "Casos",
+    "more": "Mais",
     "getFreeQuote": "Orçamento Grátis"
   },
   "pages": {

@@ -11,10 +11,11 @@ import { FAQSection } from "@/components/FAQSection";
 import { ContactSection } from "@/components/ContactSection";
 import { Footer } from "@/components/Footer";
 import { FloatingCTA } from "@/components/FloatingCTA";
+import MobileBottomNav from "@/components/MobileBottomNav";
 
 const Index = () => {
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen pb-16 md:pb-0">
       <Header />
       <main>
         <HeroSection />
@@ -30,6 +31,7 @@ const Index = () => {
       </main>
       <Footer />
       <FloatingCTA />
+      <MobileBottomNav />
     </div>
   );
 };
