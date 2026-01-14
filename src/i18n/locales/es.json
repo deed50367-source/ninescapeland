@@ -826,5 +826,67 @@
     "response": "Tiempo de Respuesta",
     "design": "Servicio de Diseño 3D",
     "countries": "Países Atendidos"
+  },
+  "processTimeline": {
+    "sectionLabel": "Cronograma del Proyecto",
+    "title": "Cronograma Completo",
+    "titleHighlight": "del Proyecto",
+    "description": "Una visión transparente de tu viaje de proyecto desde la consulta inicial hasta la gran inauguración. Cada fase se gestiona cuidadosamente para garantizar entregas de calidad y finalización a tiempo.",
+    "totalTime": "Duración Total del Proyecto",
+    "totalTimeDesc": "Desde la consulta hasta la inauguración",
+    "days": "Días",
+    "months": "Meses",
+    "approximately": "Aproximadamente",
+    "note": "* El cronograma puede variar según la complejidad del proyecto, requisitos de personalización, destino de envío y alcance de instalación. Pedidos urgentes disponibles para proyectos urgentes.",
+    "phases": {
+      "inquiry": {
+        "phase": "Fase 1",
+        "title": "Consulta Inicial",
+        "duration": "1-3 Días",
+        "task1": "Enviar requisitos del proyecto y detalles del espacio",
+        "task2": "Recibir consulta preliminar y recomendaciones",
+        "task3": "Obtener estimación de presupuesto inicial y opciones"
+      },
+      "design": {
+        "phase": "Fase 2",
+        "title": "Diseño 3D",
+        "duration": "5-10 Días",
+        "task1": "Diseño 3D personalizado según tus especificaciones",
+        "task2": "Múltiples revisiones y refinamientos de diseño",
+        "task3": "Aprobación final del diseño y firma"
+      },
+      "confirmation": {
+        "phase": "Fase 3",
+        "title": "Confirmación de Pedido",
+        "duration": "3-5 Días",
+        "task1": "Revisar y aprobar cotización final",
+        "task2": "Firmar contrato y acuerdo de producción",
+        "task3": "Procesar pago de depósito (30-50%)"
+      },
+      "production": {
+        "phase": "Fase 4",
+        "title": "Fabricación",
+        "duration": "25-35 Días",
+        "task1": "Preparación de materiales e inspección de calidad",
+        "task2": "Producción con actualizaciones regulares de fotos/videos",
+        "task3": "Control de calidad e inspección previa al envío"
+      },
+      "shipping": {
+        "phase": "Fase 5",
+        "title": "Envío Global",
+        "duration": "20-35 Días",
+        "task1": "Embalaje profesional y carga de contenedor",
+        "task2": "Flete marítimo con seguimiento en tiempo real",
+        "task3": "Despacho aduanero y coordinación de entrega"
+      },
+      "installation": {
+        "phase": "Fase 6",
+        "title": "Instalación",
+        "duration": "5-10 Días",
+        "task1": "Guías de instalación detalladas y soporte de video",
+        "task2": "Instalación en sitio por técnicos capacitados (opcional)",
+        "task3": "Inspección final, pruebas y entrega"
+      }
+    }
   }
 }

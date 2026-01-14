@@ -826,5 +826,67 @@
     "response": "Response Time",
     "design": "3D Design Service",
     "countries": "Countries Served"
+  },
+  "processTimeline": {
+    "sectionLabel": "Project Timeline",
+    "title": "Complete Project",
+    "titleHighlight": "Timeline",
+    "description": "A transparent overview of your project journey from initial inquiry to grand opening. Each phase is carefully managed to ensure quality delivery and on-time completion.",
+    "totalTime": "Total Project Duration",
+    "totalTimeDesc": "From inquiry to grand opening",
+    "days": "Days",
+    "months": "Months",
+    "approximately": "Approximately",
+    "note": "* Timeline may vary based on project complexity, customization requirements, shipping destination, and installation scope. Rush orders available for urgent projects.",
+    "phases": {
+      "inquiry": {
+        "phase": "Phase 1",
+        "title": "Initial Inquiry",
+        "duration": "1-3 Days",
+        "task1": "Submit project requirements and space details",
+        "task2": "Receive preliminary consultation and recommendations",
+        "task3": "Get initial budget estimation and options"
+      },
+      "design": {
+        "phase": "Phase 2",
+        "title": "3D Design",
+        "duration": "5-10 Days",
+        "task1": "Custom 3D design based on your specifications",
+        "task2": "Multiple design revisions and refinements",
+        "task3": "Final design approval and sign-off"
+      },
+      "confirmation": {
+        "phase": "Phase 3",
+        "title": "Order Confirmation",
+        "duration": "3-5 Days",
+        "task1": "Review and approve final quotation",
+        "task2": "Sign contract and production agreement",
+        "task3": "Process deposit payment (30-50%)"
+      },
+      "production": {
+        "phase": "Phase 4",
+        "title": "Manufacturing",
+        "duration": "25-35 Days",
+        "task1": "Material preparation and quality inspection",
+        "task2": "Production with regular photo/video updates",
+        "task3": "Quality control and pre-shipment inspection"
+      },
+      "shipping": {
+        "phase": "Phase 5",
+        "title": "Global Shipping",
+        "duration": "20-35 Days",
+        "task1": "Professional packing and container loading",
+        "task2": "Sea freight with real-time tracking",
+        "task3": "Customs clearance and delivery coordination"
+      },
+      "installation": {
+        "phase": "Phase 6",
+        "title": "Installation",
+        "duration": "5-10 Days",
+        "task1": "Detailed installation guides and video support",
+        "task2": "On-site installation by trained technicians (optional)",
+        "task3": "Final inspection, testing, and handover"
+      }
+    }
   }
 }
