@@ -826,5 +826,67 @@
     "response": "Antwortzeit",
     "design": "3D-Designservice",
     "countries": "Bediente Länder"
+  },
+  "processTimeline": {
+    "sectionLabel": "Projektzeitplan",
+    "title": "Vollständiger",
+    "titleHighlight": "Projektzeitplan",
+    "description": "Ein transparenter Überblick über Ihre Projektreise von der ersten Anfrage bis zur Eröffnung. Jede Phase wird sorgfältig verwaltet, um qualitativ hochwertige Lieferung und termingerechte Fertigstellung zu gewährleisten.",
+    "totalTime": "Gesamte Projektdauer",
+    "totalTimeDesc": "Von der Anfrage bis zur Eröffnung",
+    "days": "Tage",
+    "months": "Monate",
+    "approximately": "Ungefähr",
+    "note": "* Der Zeitplan kann je nach Projektkomplexität, Anpassungsanforderungen, Versandziel und Installationsumfang variieren. Eilaufträge für dringende Projekte verfügbar.",
+    "phases": {
+      "inquiry": {
+        "phase": "Phase 1",
+        "title": "Erste Anfrage",
+        "duration": "1-3 Tage",
+        "task1": "Projektanforderungen und Raumdetails einreichen",
+        "task2": "Vorläufige Beratung und Empfehlungen erhalten",
+        "task3": "Erste Budgetschätzung und Optionen erhalten"
+      },
+      "design": {
+        "phase": "Phase 2",
+        "title": "3D-Design",
+        "duration": "5-10 Tage",
+        "task1": "Individuelles 3D-Design nach Ihren Spezifikationen",
+        "task2": "Mehrere Designüberarbeitungen und Verfeinerungen",
+        "task3": "Finale Designgenehmigung und Freigabe"
+      },
+      "confirmation": {
+        "phase": "Phase 3",
+        "title": "Auftragsbestätigung",
+        "duration": "3-5 Tage",
+        "task1": "Endgültiges Angebot prüfen und genehmigen",
+        "task2": "Vertrag und Produktionsvereinbarung unterzeichnen",
+        "task3": "Anzahlung verarbeiten (30-50%)"
+      },
+      "production": {
+        "phase": "Phase 4",
+        "title": "Fertigung",
+        "duration": "25-35 Tage",
+        "task1": "Materialvorbereitung und Qualitätsprüfung",
+        "task2": "Produktion mit regelmäßigen Foto-/Video-Updates",
+        "task3": "Qualitätskontrolle und Inspektion vor dem Versand"
+      },
+      "shipping": {
+        "phase": "Phase 5",
+        "title": "Weltweiter Versand",
+        "duration": "20-35 Tage",
+        "task1": "Professionelle Verpackung und Containerbeladung",
+        "task2": "Seefracht mit Echtzeit-Tracking",
+        "task3": "Zollabfertigung und Lieferkoordination"
+      },
+      "installation": {
+        "phase": "Phase 6",
+        "title": "Installation",
+        "duration": "5-10 Tage",
+        "task1": "Detaillierte Installationsanleitungen und Video-Support",
+        "task2": "Vor-Ort-Installation durch geschulte Techniker (optional)",
+        "task3": "Endkontrolle, Tests und Übergabe"
+      }
+    }
   }
 }

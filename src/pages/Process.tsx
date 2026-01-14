@@ -1,6 +1,7 @@
 import { Header } from "@/components/Header";
 import { PageHero } from "@/components/PageHero";
 import { ProcessSection } from "@/components/ProcessSection";
+import { ProcessTimelineSection } from "@/components/ProcessTimelineSection";
 import { ProcessDetailSection } from "@/components/ProcessDetailSection";
 import { ProcessGuaranteeSection } from "@/components/ProcessGuaranteeSection";
 import { ProcessTestimonialsSection } from "@/components/ProcessTestimonialsSection";
@@ -23,6 +24,7 @@ const Process = () => {
           backgroundImage={heroImages.process}
         />
         <ProcessSection />
+        <ProcessTimelineSection />
         <ProcessDetailSection />
         <ProcessGuaranteeSection />
         <ProcessTestimonialsSection />
