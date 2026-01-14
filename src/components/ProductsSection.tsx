@@ -69,15 +69,15 @@ export const ProductsSection = () => {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="text-center max-w-3xl mx-auto mb-16"
+          className="text-center max-w-3xl mx-auto mb-8 sm:mb-12 lg:mb-16"
         >
-          <span className="text-accent font-semibold text-sm uppercase tracking-wider">
+          <span className="text-accent font-semibold text-xs sm:text-sm uppercase tracking-wider">
             {t("products.sectionLabel")}
           </span>
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold mt-3 mb-6">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-heading font-bold mt-2 sm:mt-3 mb-3 sm:mb-6">
             {t("products.title")} <span className="text-gradient">{t("products.titleHighlight")}</span>
           </h2>
-          <p className="text-muted-foreground text-lg">
+          <p className="text-muted-foreground text-sm sm:text-base lg:text-lg px-4 sm:px-0">
             {t("products.description")}
           </p>
         </motion.div>
@@ -88,27 +88,27 @@ export const ProductsSection = () => {
           initial="hidden"
           whileInView="show"
           viewport={{ once: true }}
-          className="grid md:grid-cols-2 gap-8"
+          className="grid sm:grid-cols-2 gap-4 sm:gap-6 lg:gap-8"
         >
           {products.map((product, index) => (
             <motion.article
               key={index}
               variants={item}
-              className="group bg-card rounded-2xl overflow-hidden shadow-soft hover:shadow-medium transition-all duration-300"
+              className="group bg-card rounded-xl sm:rounded-2xl overflow-hidden shadow-soft hover:shadow-medium transition-all duration-300"
             >
               {/* Image */}
-              <div className="relative h-64 overflow-hidden">
+              <div className="relative h-48 sm:h-56 lg:h-64 overflow-hidden">
                 <img
                   src={product.image}
                   alt={product.title}
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-foreground/60 to-transparent" />
-                <div className="absolute bottom-4 left-4 right-4 flex gap-2 flex-wrap">
+                <div className="absolute bottom-3 left-3 right-3 sm:bottom-4 sm:left-4 sm:right-4 flex gap-1.5 sm:gap-2 flex-wrap">
                   {product.features.map((feature, i) => (
                     <span
                       key={i}
-                      className="px-3 py-1 bg-primary-foreground/90 text-primary rounded-full text-xs font-semibold"
+                      className="px-2 py-0.5 sm:px-3 sm:py-1 bg-primary-foreground/90 text-primary rounded-full text-[10px] sm:text-xs font-semibold"
                     >
                       {feature}
                     </span>
@@ -117,17 +117,17 @@ export const ProductsSection = () => {
               </div>
 
               {/* Content */}
-              <div className="p-6">
-                <h3 className="text-xl font-heading font-bold mb-3 group-hover:text-primary transition-colors">
+              <div className="p-4 sm:p-6">
+                <h3 className="text-lg sm:text-xl font-heading font-bold mb-2 sm:mb-3 group-hover:text-primary transition-colors">
                   {product.title}
                 </h3>
-                <p className="text-muted-foreground mb-4">
+                <p className="text-muted-foreground text-sm sm:text-base mb-3 sm:mb-4 line-clamp-2">
                   {product.description}
                 </p>
-                <Button variant="outline" size="sm" asChild className="group/btn">
+                <Button variant="outline" size="sm" asChild className="group/btn text-xs sm:text-sm">
                   <Link to={localizedPath(`products/${product.slug}`)}>
                     {t("products.viewDetails")}
-                    <ArrowIcon className={`w-4 h-4 transition-transform ${isRTL ? 'group-hover/btn:-translate-x-1' : 'group-hover/btn:translate-x-1'}`} />
+                    <ArrowIcon className={`w-3.5 h-3.5 sm:w-4 sm:h-4 transition-transform ${isRTL ? 'group-hover/btn:-translate-x-1' : 'group-hover/btn:translate-x-1'}`} />
                   </Link>
                 </Button>
               </div>

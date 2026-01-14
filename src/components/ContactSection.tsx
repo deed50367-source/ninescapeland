@@ -108,20 +108,20 @@ export const ContactSection = () => {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="text-center max-w-3xl mx-auto mb-12"
+          className="text-center max-w-3xl mx-auto mb-8 sm:mb-12"
         >
-          <span className="text-accent font-semibold text-sm uppercase tracking-wider">
+          <span className="text-accent font-semibold text-xs sm:text-sm uppercase tracking-wider">
             {t("contact.sectionLabel")}
           </span>
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold mt-3 mb-6">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-heading font-bold mt-2 sm:mt-3 mb-3 sm:mb-6">
             {t("contact.title")} <span className="text-gradient">{t("contact.titleHighlight")}</span>
           </h2>
-          <p className="text-muted-foreground text-lg">
+          <p className="text-muted-foreground text-sm sm:text-base lg:text-lg px-4 sm:px-0">
             {t("contact.description")}
           </p>
         </motion.div>
 
-        <div className="grid lg:grid-cols-5 gap-12">
+        <div className="grid lg:grid-cols-5 gap-6 sm:gap-8 lg:gap-12">
           {/* Contact Form */}
           <motion.div
             initial={{ opacity: 0, x: flipX(-30) }}
@@ -129,10 +129,10 @@ export const ContactSection = () => {
             viewport={{ once: true }}
             className="lg:col-span-3"
           >
-            <form onSubmit={handleSubmit} className="bg-card p-8 rounded-2xl shadow-soft">
-              <div className="grid md:grid-cols-2 gap-6 mb-6">
+            <form onSubmit={handleSubmit} className="bg-card p-4 sm:p-6 lg:p-8 rounded-xl sm:rounded-2xl shadow-soft">
+              <div className="grid sm:grid-cols-2 gap-4 sm:gap-6 mb-4 sm:mb-6">
                 <div>
-                  <label htmlFor="name" className="block text-sm font-medium mb-2">
+                  <label htmlFor="name" className="block text-xs sm:text-sm font-medium mb-1.5 sm:mb-2">
                     {t("contact.form.name")} *
                   </label>
                   <Input
@@ -142,11 +142,11 @@ export const ContactSection = () => {
                     onChange={handleChange}
                     placeholder="John Smith"
                     required
-                    className="h-12"
+                    className="h-10 sm:h-12 text-sm sm:text-base"
                   />
                 </div>
                 <div>
-                  <label htmlFor="email" className="block text-sm font-medium mb-2">
+                  <label htmlFor="email" className="block text-xs sm:text-sm font-medium mb-1.5 sm:mb-2">
                     {t("contact.form.email")} *
                   </label>
                   <Input
@@ -157,11 +157,11 @@ export const ContactSection = () => {
                     onChange={handleChange}
                     placeholder="john@company.com"
                     required
-                    className="h-12"
+                    className="h-10 sm:h-12 text-sm sm:text-base"
                   />
                 </div>
                 <div>
-                  <label htmlFor="phone" className="block text-sm font-medium mb-2">
+                  <label htmlFor="phone" className="block text-xs sm:text-sm font-medium mb-1.5 sm:mb-2">
                     {t("contact.form.phone")}
                   </label>
                   <Input
@@ -171,11 +171,11 @@ export const ContactSection = () => {
                     value={formData.phone}
                     onChange={handleChange}
                     placeholder="+1 234 567 8900"
-                    className="h-12"
+                    className="h-10 sm:h-12 text-sm sm:text-base"
                   />
                 </div>
                 <div>
-                  <label htmlFor="country" className="block text-sm font-medium mb-2">
+                  <label htmlFor="country" className="block text-xs sm:text-sm font-medium mb-1.5 sm:mb-2">
                     {t("contact.form.country")} *
                   </label>
                   <Input
@@ -185,13 +185,13 @@ export const ContactSection = () => {
                     onChange={handleChange}
                     placeholder="United States"
                     required
-                    className="h-12"
+                    className="h-10 sm:h-12 text-sm sm:text-base"
                   />
                 </div>
               </div>
               
-              <div className="mb-6">
-                <label htmlFor="projectType" className="block text-sm font-medium mb-2">
+              <div className="mb-4 sm:mb-6">
+                <label htmlFor="projectType" className="block text-xs sm:text-sm font-medium mb-1.5 sm:mb-2">
                   {t("contact.form.projectType")} *
                 </label>
                 <select
@@ -200,7 +200,7 @@ export const ContactSection = () => {
                   value={formData.projectType}
                   onChange={handleChange}
                   required
-                  className="w-full h-12 px-4 rounded-lg border border-input bg-background text-foreground focus:ring-2 focus:ring-ring focus:outline-none"
+                  className="w-full h-10 sm:h-12 px-3 sm:px-4 rounded-lg border border-input bg-background text-foreground text-sm sm:text-base focus:ring-2 focus:ring-ring focus:outline-none"
                 >
                   <option value="">{t("contact.form.projectTypes.select")}</option>
                   <option value="indoor-playground">{t("contact.form.projectTypes.indoorPlayground")}</option>
@@ -209,11 +209,11 @@ export const ContactSection = () => {
                   <option value="soft-play">{t("contact.form.projectTypes.softPlay")}</option>
                   <option value="fec">{t("contact.form.projectTypes.fec")}</option>
                   <option value="other">{t("contact.form.projectTypes.other")}</option>
-                </select>
+              </select>
               </div>
 
-              <div className="mb-6">
-                <label htmlFor="message" className="block text-sm font-medium mb-2">
+              <div className="mb-4 sm:mb-6">
+                <label htmlFor="message" className="block text-xs sm:text-sm font-medium mb-1.5 sm:mb-2">
                   {t("contact.form.message")}
                 </label>
                 <Textarea
@@ -222,16 +222,16 @@ export const ContactSection = () => {
                   value={formData.message}
                   onChange={handleChange}
                   placeholder={t("contact.form.messagePlaceholder")}
-                  rows={5}
-                  className="resize-none"
+                  rows={4}
+                  className="resize-none text-sm sm:text-base"
                 />
               </div>
 
               <Button
                 type="submit"
                 variant="hero"
-                size="xl"
-                className="w-full"
+                size="lg"
+                className="w-full h-11 sm:h-14 text-sm sm:text-base"
                 disabled={isSubmitting}
               >
                 {isSubmitting ? (

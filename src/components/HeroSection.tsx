@@ -20,7 +20,7 @@ export const HeroSection = () => {
   const ArrowIcon = isRTL ? ArrowLeft : ArrowRight;
 
   return (
-    <section id="home" className="relative min-h-[90vh] flex items-center overflow-hidden">
+    <section id="home" className="relative min-h-[85vh] md:min-h-[90vh] flex items-center overflow-hidden">
       {/* Animated Background Image */}
       <div className="absolute inset-0">
         {/* Main background with slow zoom animation */}
@@ -102,13 +102,13 @@ export const HeroSection = () => {
       </div>
 
       {/* Content */}
-      <div className="container-wide relative z-10 py-20 md:py-32">
+      <div className="container-wide relative z-10 py-12 sm:py-16 md:py-24 lg:py-32">
         <div className="max-w-3xl">
           <motion.span
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
-            className="inline-block px-4 py-2 bg-accent/20 text-accent-foreground rounded-full text-sm font-semibold mb-6 border border-accent-foreground/20"
+            className="inline-block px-3 py-1.5 sm:px-4 sm:py-2 bg-accent/20 text-accent-foreground rounded-full text-xs sm:text-sm font-semibold mb-4 sm:mb-6 border border-accent-foreground/20"
           >
             {t("hero.badge")}
           </motion.span>
@@ -117,7 +117,7 @@ export const HeroSection = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.1 }}
-            className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-primary-foreground leading-tight mb-6"
+            className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-heading font-bold text-primary-foreground leading-tight mb-4 sm:mb-6"
           >
             {t("hero.title")}
             <span className="block text-accent">{t("hero.titleHighlight")}</span>
@@ -127,7 +127,7 @@ export const HeroSection = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="text-lg md:text-xl text-primary-foreground/90 mb-8 max-w-2xl"
+            className="text-sm sm:text-base md:text-lg lg:text-xl text-primary-foreground/90 mb-6 sm:mb-8 max-w-2xl"
           >
             {t("hero.description")}
           </motion.p>
@@ -137,15 +137,15 @@ export const HeroSection = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.3 }}
-            className="flex flex-wrap gap-4 mb-10"
+            className="flex flex-wrap gap-2 sm:gap-4 mb-6 sm:mb-10"
           >
             {benefits.map((benefit, index) => (
               <div
                 key={index}
-                className="flex items-center gap-2 text-primary-foreground/90"
+                className="flex items-center gap-1.5 sm:gap-2 text-primary-foreground/90"
               >
-                <CheckCircle className="w-5 h-5 text-accent" />
-                <span className="text-sm font-medium">{benefit}</span>
+                <CheckCircle className="w-4 h-4 sm:w-5 sm:h-5 text-accent flex-shrink-0" />
+                <span className="text-xs sm:text-sm font-medium">{benefit}</span>
               </div>
             ))}
           </motion.div>
@@ -155,15 +155,15 @@ export const HeroSection = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.4 }}
-            className="flex flex-col sm:flex-row gap-4"
+            className="flex flex-col sm:flex-row gap-3 sm:gap-4"
           >
-            <Button variant="hero" size="xl" asChild>
+            <Button variant="hero" size="lg" className="sm:h-12 sm:px-8 sm:text-base lg:h-14 lg:px-10 lg:text-lg" asChild>
               <a href="#contact" className="group">
                 {t("hero.cta.getQuote")}
-                <ArrowIcon className={`w-5 h-5 transition-transform ${isRTL ? 'group-hover:-translate-x-1' : 'group-hover:translate-x-1'}`} />
+                <ArrowIcon className={`w-4 h-4 sm:w-5 sm:h-5 transition-transform ${isRTL ? 'group-hover:-translate-x-1' : 'group-hover:translate-x-1'}`} />
               </a>
             </Button>
-            <Button variant="heroOutline" size="xl" asChild>
+            <Button variant="heroOutline" size="lg" className="sm:h-12 sm:px-8 sm:text-base lg:h-14 lg:px-10 lg:text-lg" asChild>
               <a href="#products">{t("hero.cta.viewProducts")}</a>
             </Button>
           </motion.div>
@@ -173,14 +173,14 @@ export const HeroSection = () => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.8, delay: 0.6 }}
-            className="mt-12 pt-8 border-t border-primary-foreground/20"
+            className="mt-8 sm:mt-12 pt-6 sm:pt-8 border-t border-primary-foreground/20"
           >
-            <p className="text-primary-foreground/60 text-sm mb-4">{t("hero.trustedCertifications")}</p>
-            <div className="flex flex-wrap items-center gap-6">
+            <p className="text-primary-foreground/60 text-xs sm:text-sm mb-3 sm:mb-4">{t("hero.trustedCertifications")}</p>
+            <div className="flex flex-wrap items-center gap-2 sm:gap-4 lg:gap-6">
               {["ISO 9001", "CE", "TUV", "ASTM", "IAAPA Member"].map((cert, index) => (
                 <span
                   key={index}
-                  className="px-4 py-2 bg-primary-foreground/10 rounded-lg text-primary-foreground font-semibold text-sm"
+                  className="px-2.5 py-1.5 sm:px-4 sm:py-2 bg-primary-foreground/10 rounded-lg text-primary-foreground font-semibold text-xs sm:text-sm"
                 >
                   {cert}
                 </span>
