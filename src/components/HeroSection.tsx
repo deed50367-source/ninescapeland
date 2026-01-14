@@ -21,13 +21,83 @@ export const HeroSection = () => {
 
   return (
     <section id="home" className="relative min-h-[90vh] flex items-center overflow-hidden">
-      {/* Background Image */}
+      {/* Animated Background Image */}
       <div className="absolute inset-0">
-        <img
-          src={heroImages.home}
-          alt="Indoor Playground Equipment Manufacturer"
-          className="w-full h-full object-cover"
+        {/* Main background with slow zoom animation */}
+        <motion.div
+          className="absolute inset-0"
+          animate={{
+            scale: [1, 1.08, 1],
+          }}
+          transition={{
+            duration: 20,
+            repeat: Infinity,
+            ease: "easeInOut",
+          }}
+        >
+          <img
+            src={heroImages.home}
+            alt="Indoor Playground Equipment Manufacturer"
+            className="w-full h-full object-cover"
+          />
+        </motion.div>
+        
+        {/* Animated light overlay - simulates moving lights */}
+        <motion.div
+          className="absolute inset-0 bg-gradient-to-br from-accent/10 via-transparent to-primary/10"
+          animate={{
+            opacity: [0.3, 0.6, 0.3],
+          }}
+          transition={{
+            duration: 4,
+            repeat: Infinity,
+            ease: "easeInOut",
+          }}
         />
+        
+        {/* Floating bokeh/light particles effect */}
+        <div className="absolute inset-0 overflow-hidden">
+          {[...Array(6)].map((_, i) => (
+            <motion.div
+              key={i}
+              className="absolute rounded-full bg-accent/20 blur-xl"
+              style={{
+                width: `${80 + i * 40}px`,
+                height: `${80 + i * 40}px`,
+                left: `${10 + i * 15}%`,
+                top: `${20 + (i % 3) * 25}%`,
+              }}
+              animate={{
+                y: [0, -30, 0],
+                x: [0, 20, 0],
+                opacity: [0.2, 0.5, 0.2],
+                scale: [1, 1.2, 1],
+              }}
+              transition={{
+                duration: 6 + i * 1.5,
+                repeat: Infinity,
+                ease: "easeInOut",
+                delay: i * 0.8,
+              }}
+            />
+          ))}
+        </div>
+        
+        {/* Subtle shimmer effect */}
+        <motion.div
+          className="absolute inset-0 bg-gradient-to-r from-transparent via-white/5 to-transparent"
+          animate={{
+            x: ["-100%", "100%"],
+          }}
+          transition={{
+            duration: 8,
+            repeat: Infinity,
+            ease: "linear",
+            repeatDelay: 4,
+          }}
+        />
+        
+        {/* Main gradient overlay */}
         <div className={`absolute inset-0 ${isRTL ? 'bg-gradient-to-l' : 'bg-gradient-to-r'} from-primary/95 via-primary/80 to-primary/40`} />
       </div>
 
