@@ -1033,5 +1033,59 @@
         "feature3": "Kompakte und modulare Designs"
       }
     }
+  },
+  "interactiveMap": {
+    "sectionLabel": "Interaktive Weltkarte",
+    "title": "Entdecken Sie unsere",
+    "titleHighlight": "weltweite Reichweite",
+    "description": "Klicken Sie auf eine Region, um detaillierte Informationen über unsere Projekte, Kunden und Erfolgsgeschichten in diesem Gebiet zu entdecken. Wir haben dauerhafte Partnerschaften auf jedem Kontinent aufgebaut.",
+    "clickHint": "Klicken Sie auf eine Region, um detaillierte Projektinformationen anzuzeigen",
+    "selectRegion": "Region auswählen",
+    "selectRegionHint": "Klicken Sie auf eine Region auf der Karte oder nutzen Sie die Schaltflächen unten, um unsere globale Präsenz und unser Projektportfolio zu erkunden.",
+    "projectsLabel": "Projekte",
+    "clientsLabel": "Zufriedene Kunden",
+    "featuredProject": "Ausgewähltes Projekt",
+    "startProject": "Starten Sie Ihr Projekt hier",
+    "globalStats": "Globale Übersicht",
+    "totalProjects": "Gesamtprojekte",
+    "countriesServed": "Bediente Länder",
+    "regions": {
+      "northAmerica": {
+        "name": "Nordamerika",
+        "countries": "USA, Kanada, Mexiko",
+        "featured": "Mega Adventure Zone - 8.000 qm Indoor-Unterhaltungszentrum in Los Angeles mit 15 einzigartigen Attraktionen",
+        "description": "Unser nordamerikanisches Portfolio umfasst einige der größten und innovativsten Familienunterhaltungszentren der Region. Von Küste zu Küste haben wir mit Unternehmern zusammengearbeitet, um sehenswerte Attraktionen zu schaffen."
+      },
+      "europe": {
+        "name": "Europa",
+        "countries": "UK, Deutschland, Frankreich, Spanien, Italien, Niederlande",
+        "featured": "PlayWorld Hamburg - 5.500 qm mehrstöckiger Abenteuer-Spielplatz mit modernster Gestaltung",
+        "description": "Europäische Projekte zeigen unsere Fähigkeit, strengste Sicherheitsstandards zu erfüllen und gleichzeitig kreative, ansprechende Designs zu liefern. Unsere Installationen entsprechen den EN-Sicherheitsstandards."
+      },
+      "middleEast": {
+        "name": "Naher Osten",
+        "countries": "VAE, Saudi-Arabien, Katar, Kuwait, Bahrain",
+        "featured": "Kingdom Entertainment City - 12.000 qm Flaggschiff-Anlage in Riad mit 20+ Attraktionen",
+        "description": "Der Nahe Osten ist unser am schnellsten wachsender Markt, wo wir zahlreiche Premium-Projekte für Einkaufszentren, Hotels und eigenständige Unterhaltungszentren realisiert haben."
+      },
+      "asiaPacific": {
+        "name": "Asien-Pazifik",
+        "countries": "Australien, Singapur, Malaysia, Thailand, Philippinen, Vietnam",
+        "featured": "Adventure Island Sydney - 6.500 qm thematisierter Indoor-Spielplatz mit interaktiver Technologie-Integration",
+        "description": "Asien-Pazifik zeigt unsere Vielseitigkeit, von kompakten Mall-Installationen bis hin zu massiven thematisierten Attraktionen."
+      },
+      "latinAmerica": {
+        "name": "Lateinamerika",
+        "countries": "Brasilien, Argentinien, Chile, Kolumbien, Mexiko",
+        "featured": "Parque Diversão - 4.200 qm Familienunterhaltungszentrum in São Paulo mit zweisprachiger Beschilderung",
+        "description": "Unsere lateinamerikanischen Projekte demonstrieren unser Engagement, erstklassige Unterhaltung in aufstrebende Märkte zu bringen."
+      },
+      "africa": {
+        "name": "Afrika",
+        "countries": "Südafrika, Ägypten, Nigeria, Kenia, Marokko",
+        "featured": "Safari Adventure Park - 3.800 qm thematisierter Spielplatz in Kapstadt mit afrikanischem Wildtier-Thema",
+        "description": "Afrika bietet spannende Wachstumsmöglichkeiten, wo wir starke Partnerschaften aufgebaut haben. Unsere Projekte in dieser Region zeichnen sich oft durch lokal inspirierte Themen aus."
+      }
+    }
   }
 }
