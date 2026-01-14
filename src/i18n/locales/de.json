@@ -888,5 +888,150 @@
         "task3": "Endkontrolle, Tests und Übergabe"
       }
     }
+  },
+  "projectsStats": {
+    "sectionLabel": "Globale Wirkung",
+    "title": "Unsere Erfolgsbilanz der",
+    "titleHighlight": "Exzellenz",
+    "description": "Zahlen, die für unser Engagement für Qualität, Innovation und Kundenerfolg sprechen. Jede Statistik repräsentiert echte Projekte, echte Familien und echte Freude weltweit.",
+    "projectsCompleted": "Abgeschlossene Projekte",
+    "countriesServed": "Bediente Länder",
+    "happyVisitors": "Glückliche Besucher jährlich",
+    "yearsExperience": "Jahre Erfahrung",
+    "clientSatisfaction": "Kundenzufriedenheitsrate",
+    "sqmInstalled": "Quadratmeter installiert"
+  },
+  "projectsMap": {
+    "sectionLabel": "Weltweite Präsenz",
+    "title": "Projekte",
+    "titleHighlight": "rund um den Globus",
+    "description": "Von Nordamerika bis zum Nahen Osten, von Europa bis Asien-Pazifik - unsere Spielplatzausrüstung bringt Familien in jedem Winkel der Welt Freude.",
+    "projectsLabel": "Projekte",
+    "highlightsTitle": "Globale Service-Highlights",
+    "regions": {
+      "northAmerica": {
+        "name": "Nordamerika",
+        "countries": "USA, Kanada, Mexiko"
+      },
+      "europe": {
+        "name": "Europa",
+        "countries": "UK, Deutschland, Frankreich, Spanien, Italien"
+      },
+      "middleEast": {
+        "name": "Naher Osten",
+        "countries": "VAE, Saudi-Arabien, Katar, Kuwait"
+      },
+      "asiaPacific": {
+        "name": "Asien-Pazifik",
+        "countries": "Australien, Singapur, Malaysia, Thailand"
+      },
+      "latinAmerica": {
+        "name": "Lateinamerika",
+        "countries": "Brasilien, Argentinien, Chile, Kolumbien"
+      },
+      "africa": {
+        "name": "Afrika",
+        "countries": "Südafrika, Ägypten, Nigeria, Kenia"
+      }
+    },
+    "highlights": {
+      "item1": "Lokale Projektmanager in wichtigen Regionen",
+      "item2": "Mehrsprachige Support-Teams",
+      "item3": "Regionsspezifische Sicherheitsstandards",
+      "item4": "Schneller Versand auf alle Kontinente"
+    }
+  },
+  "projectsTestimonials": {
+    "sectionLabel": "Erfolgsgeschichten unserer Kunden",
+    "title": "Echte Projekte,",
+    "titleHighlight": "echte Ergebnisse",
+    "description": "Hören Sie von Betreibern und Eigentümern von Unterhaltungszentren weltweit, die mit NinescapeLand erfolgreiche, profitable Spielziele geschaffen haben.",
+    "items": [
+      {
+        "name": "David Müller",
+        "role": "CEO, Adventure Zone Group",
+        "country": "Kalifornien, USA",
+        "project": "5.000 qm FEC",
+        "content": "NinescapeLand hat einen unglaublichen Indoor-Spielplatz geliefert, der zur bestbewerteten Familienattraktion in unserer Region geworden ist. Das Design-Team hat unsere Vision perfekt verstanden, und die Qualität der Ausrüstung hat alle Erwartungen übertroffen. Unser Umsatz stieg im ersten Jahr um 40%."
+      },
+      {
+        "name": "Emma Thompson",
+        "role": "Betriebsleiterin",
+        "country": "London, UK",
+        "project": "3.500 qm Trampolinpark",
+        "content": "Von der ersten Beratung bis zur Eröffnung war die Erfahrung nahtlos. Die Aufmerksamkeit für Sicherheitsdetails, kreative Designlösungen und reaktionsschnelle Kommunikation machten dies zu unserer besten Lieferantenpartnerschaft."
+      },
+      {
+        "name": "Mohammed Al-Rashid",
+        "role": "Geschäftsführender Partner",
+        "country": "Dubai, VAE",
+        "project": "4.200 qm Indoor-Spielplatz",
+        "content": "Wir haben drei Projekte mit NinescapeLand in der Golfregion abgeschlossen. Ihre Beständigkeit, Zuverlässigkeit und ihr Verständnis für unsere Marktbedürfnisse ist unübertroffen. Der After-Sales-Support setzt sich Jahre nach der Installation fort."
+      },
+      {
+        "name": "Lisa Chen",
+        "role": "Franchise-Inhaberin",
+        "country": "Sydney, Australien",
+        "project": "2.800 qm Mixed Venue",
+        "content": "Der maßgeschneiderte Themen-Spielplatz, den NinescapeLand erstellt hat, ist zu einer Instagram-Sensation geworden. Eltern lieben die Liebe zum Detail, Kinder können nicht genug von den einzigartigen Attraktionen bekommen."
+      }
+    ]
+  },
+  "projectsCTA": {
+    "title": "Bereit, Ihren Traum-Spielplatz zu erschaffen?",
+    "description": "Schließen Sie sich über 2.000 erfolgreichen Unterhaltungszentren weltweit an. Erhalten Sie Ihr kostenloses 3D-Design und wettbewerbsfähiges Angebot innerhalb von 24 Stunden.",
+    "getQuote": "Kostenloses Design & Angebot",
+    "whatsapp": "WhatsApp Chat",
+    "features": {
+      "freeConsultation": {
+        "title": "Kostenlose Beratung",
+        "description": "Expertenrat ohne Kosten"
+      },
+      "expertAdvice": {
+        "title": "Experten-Team",
+        "description": "15+ Jahre Erfahrung"
+      },
+      "fastResponse": {
+        "title": "Schnelle Reaktion",
+        "description": "Angebot in 24 Stunden"
+      }
+    }
+  },
+  "projectTypes": {
+    "sectionLabel": "Projektkategorien",
+    "title": "Was wir",
+    "titleHighlight": "bauen",
+    "description": "Von intimen Softplay-Zonen bis zu riesigen Unterhaltungskomplexen - wir entwerfen und fertigen komplette Lösungen für jeden Typ von Indoor-Freizeiteinrichtung.",
+    "learnMore": "Mehr erfahren",
+    "items": {
+      "fec": {
+        "title": "Familienunterhaltungszentren",
+        "description": "Komplette FEC-Lösungen mit mehrstöckigen Spielstrukturen, Themen-Attraktionen, Partyräumen und umsatzoptimierenden Layouts.",
+        "feature1": "Multi-Attraktionszonen für alle Altersgruppen",
+        "feature2": "Integrierte Party- und Eventbereiche",
+        "feature3": "Umsatzoptimierende Grundrisse"
+      },
+      "trampolinePark": {
+        "title": "Trampolinparks",
+        "description": "Energiegeladene Trampolinpark-Installationen mit Performance-Trampolinen, Schaumstoffgruben, Völkerballfeldern und einzigartigen Luftattraktionen.",
+        "feature1": "12+ Aktivitätszonen-Optionen",
+        "feature2": "Wettkampftaugliche Ausrüstung",
+        "feature3": "Modulares, erweiterbares Design"
+      },
+      "ninjaWarrior": {
+        "title": "Ninja Warrior Kurse",
+        "description": "Professionelle Hinderniskurse inspiriert von TV-Wettbewerben. Perfekt für Fitnessstudios, spezielle Trainingseinrichtungen oder Ergänzungen zu bestehenden Unterhaltungszentren.",
+        "feature1": "50+ Hindernisarten",
+        "feature2": "Einstellbare Schwierigkeitsgrade",
+        "feature3": "Wettkampf- und Trainings-Layouts"
+      },
+      "softPlay": {
+        "title": "Softplay-Bereiche",
+        "description": "Sichere, ansprechende Spielumgebungen speziell für Kleinkinder und junge Kinder. Ideal für Einkaufszentren, Restaurants und Gemeindezentren.",
+        "feature1": "Kleinkindersichere Materialien",
+        "feature2": "Leicht zu reinigende Oberflächen",
+        "feature3": "Kompakte und modulare Designs"
+      }
+    }
   }
 }
