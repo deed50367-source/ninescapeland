@@ -2,7 +2,7 @@ import { Header } from "@/components/Header";
 import { PageHero } from "@/components/PageHero";
 import { ProjectsSection } from "@/components/ProjectsSection";
 import { ProjectsStatsSection } from "@/components/ProjectsStatsSection";
-import { ProjectsMapSection } from "@/components/ProjectsMapSection";
+import { InteractiveWorldMap } from "@/components/InteractiveWorldMap";
 import { ProjectTypesSection } from "@/components/ProjectTypesSection";
 import { ProjectsTestimonialsSection } from "@/components/ProjectsTestimonialsSection";
 import { ProjectsCTASection } from "@/components/ProjectsCTASection";
@@ -26,7 +26,7 @@ const Projects = () => {
         <ProjectsStatsSection />
         <ProjectsSection />
         <ProjectTypesSection />
-        <ProjectsMapSection />
+        <InteractiveWorldMap />
         <ProjectsTestimonialsSection />
         <ProjectsCTASection />
         <FAQSection />

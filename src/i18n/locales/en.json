@@ -1030,7 +1030,61 @@
         "description": "Safe, engaging play environments specifically designed for toddlers and young children. Ideal for shopping centers, restaurants, community centers, and family venues.",
         "feature1": "Toddler-safe materials",
         "feature2": "Easy-clean surfaces",
-        "feature3": "Compact and modular designs"
+      "feature3": "Compact and modular designs"
+      }
+    }
+  },
+  "interactiveMap": {
+    "sectionLabel": "Interactive Global Map",
+    "title": "Explore Our",
+    "titleHighlight": "Worldwide Reach",
+    "description": "Click on any region to discover detailed information about our projects, clients, and success stories in that area. We've built lasting partnerships across every continent.",
+    "clickHint": "Click on a region to view detailed project information",
+    "selectRegion": "Select a Region",
+    "selectRegionHint": "Click on any region on the map or use the buttons below to explore our global presence and project portfolio.",
+    "projectsLabel": "Projects",
+    "clientsLabel": "Happy Clients",
+    "featuredProject": "Featured Project",
+    "startProject": "Start Your Project Here",
+    "globalStats": "Global Overview",
+    "totalProjects": "Total Projects",
+    "countriesServed": "Countries Served",
+    "regions": {
+      "northAmerica": {
+        "name": "North America",
+        "countries": "USA, Canada, Mexico",
+        "featured": "Mega Adventure Zone - 8,000 sqm indoor entertainment center in Los Angeles featuring 15 unique attractions",
+        "description": "Our North American portfolio includes some of the largest and most innovative family entertainment centers in the region. From coast to coast, we've partnered with entrepreneurs to create destination-worthy attractions that draw families from miles around."
+      },
+      "europe": {
+        "name": "Europe",
+        "countries": "UK, Germany, France, Spain, Italy, Netherlands",
+        "featured": "PlayWorld Hamburg - 5,500 sqm multi-level adventure playground with cutting-edge theming",
+        "description": "European projects showcase our ability to meet the strictest safety standards while delivering creative, engaging designs. Our installations comply with EN safety standards and feature premium materials suited for high-traffic venues."
+      },
+      "middleEast": {
+        "name": "Middle East",
+        "countries": "UAE, Saudi Arabia, Qatar, Kuwait, Bahrain",
+        "featured": "Kingdom Entertainment City - 12,000 sqm flagship facility in Riyadh with 20+ attractions",
+        "description": "The Middle East represents our fastest-growing market, where we've delivered numerous premium projects for malls, hotels, and standalone entertainment centers. Our designs incorporate luxury finishes and climate-appropriate solutions."
+      },
+      "asiaPacific": {
+        "name": "Asia Pacific",
+        "countries": "Australia, Singapore, Malaysia, Thailand, Philippines, Vietnam",
+        "featured": "Adventure Island Sydney - 6,500 sqm themed indoor playground with interactive technology integration",
+        "description": "Asia Pacific showcases our versatility, from compact mall installations to massive themed attractions. We understand the diverse market requirements and cultural preferences across this dynamic region."
+      },
+      "latinAmerica": {
+        "name": "Latin America",
+        "countries": "Brazil, Argentina, Chile, Colombia, Mexico",
+        "featured": "Parque Diversão - 4,200 sqm family entertainment center in São Paulo with bilingual signage",
+        "description": "Our Latin American projects demonstrate our commitment to bringing world-class entertainment to emerging markets. We provide comprehensive support including Spanish and Portuguese documentation and local installation teams."
+      },
+      "africa": {
+        "name": "Africa",
+        "countries": "South Africa, Egypt, Nigeria, Kenya, Morocco",
+        "featured": "Safari Adventure Park - 3,800 sqm themed playground in Cape Town with African wildlife theme",
+        "description": "Africa presents exciting growth opportunities where we've established strong partnerships. Our projects in this region often feature locally-inspired themes and are designed to withstand varied climate conditions."
       }
     }
   }
