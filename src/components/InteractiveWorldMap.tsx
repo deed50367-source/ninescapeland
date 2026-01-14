@@ -1,7 +1,7 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import { motion, AnimatePresence } from "framer-motion";
-import { MapPin, X, Building2, Users, Award, ArrowRight } from "lucide-react";
+import { MapPin, X, Building2, Users, Award, ArrowRight, Zap } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useNavigate } from "react-router-dom";
 import { useLocalizedPath } from "@/hooks/useLocalizedPath";
@@ -15,7 +15,18 @@ interface RegionData {
   featured: string;
   description: string;
   flag: string;
+  heatIntensity: number; // 0-1 for heatmap
 }
+
+interface ConnectionLine {
+  id: string;
+  from: { x: number; y: number };
+  to: { x: number; y: number };
+  delay: number;
+}
+
+// Headquarters location (China)
+const HQ_LOCATION = { x: 540, y: 140 };
 
 export const InteractiveWorldMap = () => {
   const { t } = useTranslation();
@@ -23,6 +34,7 @@ export const InteractiveWorldMap = () => {
   const { localizedPath } = useLocalizedPath();
   const [selectedRegion, setSelectedRegion] = useState<string | null>(null);
   const [hoveredRegion, setHoveredRegion] = useState<string | null>(null);
+  const [activeConnection, setActiveConnection] = useState<number>(0);
 
   const regions: Record<string, RegionData> = {
     northAmerica: {
@@ -34,6 +46,7 @@ export const InteractiveWorldMap = () => {
       featured: t("interactiveMap.regions.northAmerica.featured"),
       description: t("interactiveMap.regions.northAmerica.description"),
       flag: "🇺🇸",
+      heatIntensity: 0.85,
     },
     europe: {
       id: "europe",
@@ -44,6 +57,7 @@ export const InteractiveWorldMap = () => {
       featured: t("interactiveMap.regions.europe.featured"),
       description: t("interactiveMap.regions.europe.description"),
       flag: "🇪🇺",
+      heatIntensity: 0.75,
     },
     middleEast: {
       id: "middleEast",
@@ -54,6 +68,7 @@ export const InteractiveWorldMap = () => {
       featured: t("interactiveMap.regions.middleEast.featured"),
       description: t("interactiveMap.regions.middleEast.description"),
       flag: "🇦🇪",
+      heatIntensity: 0.7,
     },
     asiaPacific: {
       id: "asiaPacific",
@@ -64,6 +79,7 @@ export const InteractiveWorldMap = () => {
       featured: t("interactiveMap.regions.asiaPacific.featured"),
       description: t("interactiveMap.regions.asiaPacific.description"),
       flag: "🇦🇺",
+      heatIntensity: 0.95,
     },
     latinAmerica: {
       id: "latinAmerica",
@@ -74,6 +90,7 @@ export const InteractiveWorldMap = () => {
       featured: t("interactiveMap.regions.latinAmerica.featured"),
       description: t("interactiveMap.regions.latinAmerica.description"),
       flag: "🇧🇷",
+      heatIntensity: 0.5,
     },
     africa: {
       id: "africa",
@@ -84,41 +101,64 @@ export const InteractiveWorldMap = () => {
       featured: t("interactiveMap.regions.africa.featured"),
       description: t("interactiveMap.regions.africa.description"),
       flag: "🇿🇦",
+      heatIntensity: 0.4,
     },
   };
 
-  const regionPaths: Record<string, { path: string; labelX: number; labelY: number }> = {
+  const regionPaths: Record<string, { path: string; labelX: number; labelY: number; center: { x: number; y: number } }> = {
     northAmerica: {
       path: "M 50 80 L 180 80 L 200 120 L 180 180 L 120 200 L 80 180 L 40 140 Z",
       labelX: 120,
       labelY: 140,
+      center: { x: 120, y: 140 },
     },
     latinAmerica: {
       path: "M 100 200 L 150 200 L 180 260 L 160 340 L 120 380 L 80 340 L 70 260 Z",
       labelX: 125,
       labelY: 290,
+      center: { x: 125, y: 290 },
     },
     europe: {
       path: "M 280 70 L 380 60 L 400 100 L 380 140 L 320 160 L 280 140 L 260 100 Z",
       labelX: 330,
       labelY: 110,
+      center: { x: 330, y: 110 },
     },
     africa: {
       path: "M 280 180 L 380 160 L 400 220 L 380 320 L 320 360 L 260 320 L 260 220 Z",
       labelX: 320,
       labelY: 260,
+      center: { x: 320, y: 260 },
     },
     middleEast: {
       path: "M 400 120 L 480 100 L 520 140 L 500 200 L 440 220 L 400 180 Z",
       labelX: 460,
       labelY: 160,
+      center: { x: 460, y: 160 },
     },
     asiaPacific: {
       path: "M 480 60 L 620 50 L 680 100 L 700 180 L 660 280 L 580 320 L 500 280 L 480 200 L 500 140 Z",
       labelX: 580,
       labelY: 180,
+      center: { x: 580, y: 180 },
     },
   };
+
+  // Generate connection lines from HQ to each region
+  const connectionLines: ConnectionLine[] = Object.entries(regionPaths).map(([regionId, { center }], index) => ({
+    id: regionId,
+    from: HQ_LOCATION,
+    to: center,
+    delay: index * 0.3,
+  }));
+
+  // Animate through connections
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setActiveConnection((prev) => (prev + 1) % connectionLines.length);
+    }, 2000);
+    return () => clearInterval(interval);
+  }, [connectionLines.length]);
 
   const handleRegionClick = (regionId: string) => {
     setSelectedRegion(selectedRegion === regionId ? null : regionId);
@@ -126,8 +166,27 @@ export const InteractiveWorldMap = () => {
 
   const selectedData = selectedRegion ? regions[selectedRegion] : null;
 
+  // Get heatmap color based on intensity
+  const getHeatmapColor = (intensity: number, isSelected: boolean, isHovered: boolean) => {
+    if (isSelected) return "hsl(var(--primary))";
+    if (isHovered) return "hsl(var(--primary) / 0.8)";
+    
+    // Gradient from cool (low projects) to hot (high projects)
+    const hue = 200 - (intensity * 160); // Blue (200) to Red (40)
+    const saturation = 60 + (intensity * 30);
+    const lightness = 50 + (intensity * 10);
+    return `hsl(${hue}, ${saturation}%, ${lightness}%)`;
+  };
+
+  // Generate curved path for connection line
+  const generateCurvedPath = (from: { x: number; y: number }, to: { x: number; y: number }) => {
+    const midX = (from.x + to.x) / 2;
+    const midY = Math.min(from.y, to.y) - 50;
+    return `M ${from.x} ${from.y} Q ${midX} ${midY} ${to.x} ${to.y}`;
+  };
+
   return (
-    <section className="section-padding bg-gradient-to-b from-background to-muted/30">
+    <section className="section-padding bg-gradient-to-b from-background to-muted/30 overflow-hidden">
       <div className="container-wide">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -161,80 +220,241 @@ export const InteractiveWorldMap = () => {
               className="w-full h-auto"
               style={{ maxHeight: "500px" }}
             >
-              {/* Background grid */}
+              {/* Definitions for gradients and filters */}
               <defs>
+                {/* Grid pattern */}
                 <pattern id="grid" width="50" height="50" patternUnits="userSpaceOnUse">
                   <path d="M 50 0 L 0 0 0 50" fill="none" stroke="currentColor" strokeWidth="0.5" className="text-muted/20" />
                 </pattern>
+                
+                {/* Glow filter for connection lines */}
+                <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+                  <feGaussianBlur stdDeviation="3" result="coloredBlur" />
+                  <feMerge>
+                    <feMergeNode in="coloredBlur" />
+                    <feMergeNode in="SourceGraphic" />
+                  </feMerge>
+                </filter>
+
+                {/* Gradient for active connection */}
+                <linearGradient id="connectionGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                  <stop offset="0%" stopColor="hsl(var(--primary))" stopOpacity="0" />
+                  <stop offset="50%" stopColor="hsl(var(--accent))" stopOpacity="1" />
+                  <stop offset="100%" stopColor="hsl(var(--primary))" stopOpacity="0" />
+                </linearGradient>
+
+                {/* Radial gradient for heatmap glow */}
+                <radialGradient id="heatGlow" cx="50%" cy="50%" r="50%">
+                  <stop offset="0%" stopColor="hsl(var(--accent))" stopOpacity="0.6" />
+                  <stop offset="100%" stopColor="hsl(var(--accent))" stopOpacity="0" />
+                </radialGradient>
               </defs>
+
+              {/* Background grid */}
               <rect width="100%" height="100%" fill="url(#grid)" />
 
-              {/* Region paths */}
-              {Object.entries(regionPaths).map(([regionId, { path, labelX, labelY }]) => (
-                <g key={regionId}>
+              {/* Static connection lines (logistics network) */}
+              {connectionLines.map((line, index) => (
+                <g key={`static-${line.id}`}>
                   <motion.path
-                    d={path}
-                    fill={selectedRegion === regionId ? "hsl(var(--primary))" : hoveredRegion === regionId ? "hsl(var(--primary) / 0.6)" : "hsl(var(--muted))"}
-                    stroke="hsl(var(--primary))"
-                    strokeWidth={selectedRegion === regionId || hoveredRegion === regionId ? 3 : 1.5}
-                    className="cursor-pointer transition-colors duration-300"
-                    onClick={() => handleRegionClick(regionId)}
-                    onMouseEnter={() => setHoveredRegion(regionId)}
-                    onMouseLeave={() => setHoveredRegion(null)}
-                    whileHover={{ scale: 1.02 }}
-                    whileTap={{ scale: 0.98 }}
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    transition={{ duration: 0.5, delay: Object.keys(regionPaths).indexOf(regionId) * 0.1 }}
+                    d={generateCurvedPath(line.from, line.to)}
+                    stroke="hsl(var(--primary) / 0.15)"
+                    strokeWidth="1.5"
+                    strokeDasharray="8,4"
+                    fill="none"
+                    initial={{ pathLength: 0, opacity: 0 }}
+                    whileInView={{ pathLength: 1, opacity: 1 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 1.5, delay: 0.5 + index * 0.2 }}
                   />
-                  
-                  {/* Region label */}
-                  <motion.g
-                    className="pointer-events-none"
-                    initial={{ opacity: 0, y: 10 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ delay: 0.5 + Object.keys(regionPaths).indexOf(regionId) * 0.1 }}
-                  >
-                    <text
-                      x={labelX}
-                      y={labelY}
-                      textAnchor="middle"
-                      className="text-xs font-semibold fill-foreground"
-                    >
-                      {regions[regionId]?.flag} {regions[regionId]?.projects}
-                    </text>
-                  </motion.g>
+                </g>
+              ))}
 
-                  {/* Pulse animation for selected region */}
-                  {selectedRegion === regionId && (
-                    <motion.circle
-                      cx={labelX}
-                      cy={labelY - 20}
-                      r="8"
-                      fill="hsl(var(--accent))"
-                      initial={{ scale: 0, opacity: 0 }}
-                      animate={{ scale: [1, 1.5, 1], opacity: [1, 0.5, 1] }}
-                      transition={{ duration: 1.5, repeat: Infinity }}
-                    />
+              {/* Animated connection lines */}
+              {connectionLines.map((line, index) => (
+                <g key={`animated-${line.id}`}>
+                  {activeConnection === index && (
+                    <>
+                      {/* Glowing animated line */}
+                      <motion.path
+                        d={generateCurvedPath(line.from, line.to)}
+                        stroke="url(#connectionGradient)"
+                        strokeWidth="3"
+                        fill="none"
+                        filter="url(#glow)"
+                        initial={{ pathLength: 0, opacity: 0 }}
+                        animate={{ pathLength: 1, opacity: 1 }}
+                        transition={{ duration: 1.5, ease: "easeInOut" }}
+                      />
+                      
+                      {/* Moving dot along path */}
+                      <motion.circle
+                        r="5"
+                        fill="hsl(var(--accent))"
+                        filter="url(#glow)"
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: [0, 1, 1, 0] }}
+                        transition={{ duration: 1.5, times: [0, 0.1, 0.9, 1] }}
+                      >
+                        <animateMotion
+                          dur="1.5s"
+                          path={generateCurvedPath(line.from, line.to)}
+                          fill="freeze"
+                        />
+                      </motion.circle>
+                    </>
                   )}
                 </g>
               ))}
 
-              {/* Connection lines */}
-              <motion.path
-                d="M 320 260 Q 400 200 460 160 M 460 160 Q 500 140 580 180 M 320 260 Q 280 200 330 110 M 330 110 Q 350 90 400 100"
-                stroke="hsl(var(--primary) / 0.3)"
-                strokeWidth="1"
-                strokeDasharray="5,5"
-                fill="none"
-                initial={{ pathLength: 0 }}
-                whileInView={{ pathLength: 1 }}
-                viewport={{ once: true }}
-                transition={{ duration: 2, delay: 1 }}
-              />
+              {/* Headquarters marker */}
+              <g>
+                <motion.circle
+                  cx={HQ_LOCATION.x}
+                  cy={HQ_LOCATION.y}
+                  r="12"
+                  fill="hsl(var(--accent))"
+                  initial={{ scale: 0 }}
+                  whileInView={{ scale: 1 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.5, delay: 0.3 }}
+                />
+                <motion.circle
+                  cx={HQ_LOCATION.x}
+                  cy={HQ_LOCATION.y}
+                  r="20"
+                  fill="none"
+                  stroke="hsl(var(--accent))"
+                  strokeWidth="2"
+                  initial={{ scale: 0, opacity: 0 }}
+                  animate={{ scale: [1, 1.5, 1], opacity: [0.8, 0, 0.8] }}
+                  transition={{ duration: 2, repeat: Infinity }}
+                />
+                <motion.text
+                  x={HQ_LOCATION.x}
+                  y={HQ_LOCATION.y - 25}
+                  textAnchor="middle"
+                  className="text-xs font-bold fill-accent"
+                  initial={{ opacity: 0, y: 10 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: 0.5 }}
+                >
+                  🏭 HQ
+                </motion.text>
+              </g>
+
+              {/* Region paths with heatmap coloring */}
+              {Object.entries(regionPaths).map(([regionId, { path, labelX, labelY, center }], index) => {
+                const region = regions[regionId];
+                const isSelected = selectedRegion === regionId;
+                const isHovered = hoveredRegion === regionId;
+                
+                return (
+                  <g key={regionId}>
+                    {/* Heatmap glow effect */}
+                    <motion.ellipse
+                      cx={center.x}
+                      cy={center.y}
+                      rx={40 + region.heatIntensity * 30}
+                      ry={30 + region.heatIntensity * 20}
+                      fill={`hsl(${200 - region.heatIntensity * 160}, 70%, 50%)`}
+                      opacity={0.15 + region.heatIntensity * 0.15}
+                      initial={{ scale: 0, opacity: 0 }}
+                      whileInView={{ scale: 1, opacity: 0.15 + region.heatIntensity * 0.15 }}
+                      viewport={{ once: true }}
+                      transition={{ duration: 0.8, delay: 0.3 + index * 0.1 }}
+                      className="pointer-events-none"
+                    />
+                    
+                    {/* Region shape */}
+                    <motion.path
+                      d={path}
+                      fill={getHeatmapColor(region.heatIntensity, isSelected, isHovered)}
+                      stroke={isSelected ? "hsl(var(--accent))" : "hsl(var(--primary))"}
+                      strokeWidth={isSelected || isHovered ? 3 : 1.5}
+                      className="cursor-pointer transition-colors duration-300"
+                      onClick={() => handleRegionClick(regionId)}
+                      onMouseEnter={() => setHoveredRegion(regionId)}
+                      onMouseLeave={() => setHoveredRegion(null)}
+                      whileHover={{ scale: 1.02 }}
+                      whileTap={{ scale: 0.98 }}
+                      initial={{ opacity: 0 }}
+                      animate={{ opacity: 1 }}
+                      transition={{ duration: 0.5, delay: index * 0.1 }}
+                    />
+                    
+                    {/* Region label */}
+                    <motion.g
+                      className="pointer-events-none"
+                      initial={{ opacity: 0, y: 10 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      transition={{ delay: 0.5 + index * 0.1 }}
+                    >
+                      <text
+                        x={labelX}
+                        y={labelY}
+                        textAnchor="middle"
+                        className="text-xs font-semibold fill-foreground"
+                      >
+                        {region.flag} {region.projects}
+                      </text>
+                    </motion.g>
+
+                    {/* Pulse animation for selected region */}
+                    {isSelected && (
+                      <motion.circle
+                        cx={labelX}
+                        cy={labelY - 20}
+                        r="8"
+                        fill="hsl(var(--accent))"
+                        initial={{ scale: 0, opacity: 0 }}
+                        animate={{ scale: [1, 1.5, 1], opacity: [1, 0.5, 1] }}
+                        transition={{ duration: 1.5, repeat: Infinity }}
+                      />
+                    )}
+
+                    {/* Project count indicators (small dots) */}
+                    {Array.from({ length: Math.floor(region.heatIntensity * 5) }).map((_, dotIndex) => (
+                      <motion.circle
+                        key={`dot-${regionId}-${dotIndex}`}
+                        cx={center.x + (Math.random() - 0.5) * 60}
+                        cy={center.y + (Math.random() - 0.5) * 40}
+                        r="3"
+                        fill="hsl(var(--accent))"
+                        opacity={0.6}
+                        initial={{ scale: 0 }}
+                        whileInView={{ scale: 1 }}
+                        viewport={{ once: true }}
+                        transition={{ delay: 1 + dotIndex * 0.1 }}
+                      />
+                    ))}
+                  </g>
+                );
+              })}
             </svg>
 
-            <div className="mt-4 text-center text-sm text-muted-foreground">
+            {/* Legend */}
+            <div className="mt-4 flex flex-wrap items-center justify-center gap-4 text-sm">
+              <div className="flex items-center gap-2">
+                <div className="w-3 h-3 rounded-full bg-[hsl(200,60%,50%)]" />
+                <span className="text-muted-foreground">{t("interactiveMap.lowActivity") || "Low Activity"}</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <div className="w-3 h-3 rounded-full bg-[hsl(120,70%,55%)]" />
+                <span className="text-muted-foreground">{t("interactiveMap.mediumActivity") || "Medium"}</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <div className="w-3 h-3 rounded-full bg-[hsl(40,90%,60%)]" />
+                <span className="text-muted-foreground">{t("interactiveMap.highActivity") || "High Activity"}</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <Zap className="w-4 h-4 text-accent" />
+                <span className="text-muted-foreground">{t("interactiveMap.liveShipping") || "Live Shipping"}</span>
+              </div>
+            </div>
+
+            <div className="mt-2 text-center text-sm text-muted-foreground">
               {t("interactiveMap.clickHint")}
             </div>
           </motion.div>
