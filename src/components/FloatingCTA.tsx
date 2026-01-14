@@ -39,11 +39,9 @@ export const FloatingCTA = () => {
         )}
       </AnimatePresence>
 
-      {/* WhatsApp Button */}
-      <motion.a
-        href="https://wa.me/8615057582901?text=Hi, I'm interested in your playground equipment"
-        target="_blank"
-        rel="noopener noreferrer"
+      {/* Contact Button */}
+      <motion.button
+        onClick={() => window.location.href = "/contact"}
         initial={{ scale: 0 }}
         animate={{ scale: 1 }}
         transition={{ delay: 1 }}
@@ -51,7 +49,7 @@ export const FloatingCTA = () => {
         aria-label={t("floatingCta.whatsapp")}
       >
         <MessageCircle className="w-7 h-7" />
-      </motion.a>
+      </motion.button>
     </div>
   );
 };

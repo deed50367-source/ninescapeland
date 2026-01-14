@@ -39,7 +39,7 @@ export const ProcessCTASection = () => {
               size="lg"
               variant="outline"
               className="group"
-              onClick={() => window.open("https://wa.me/8613632255757", "_blank")}
+              onClick={() => navigate(localizedPath("/contact"))}
             >
               <MessageCircle className="mr-2 w-5 h-5" />
               {t("processCTA.whatsapp")}

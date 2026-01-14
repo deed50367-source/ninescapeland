@@ -6,8 +6,8 @@ import { useLocalizedPath } from "@/hooks/useLocalizedPath";
 import logo from "@/assets/logo.png";
 
 const socialLinks = [
-  { icon: Facebook, href: "https://www.facebook.com/profile.php?id=61552140959757vNSFQ", label: "Facebook" },
-  { icon: Youtube, href: "https://www.youtube.com/channel/UCIdoa0CaYjica6C0PIvNSFQ", label: "YouTube" },
+  { icon: Facebook, href: "#", label: "Facebook" },
+  { icon: Youtube, href: "#", label: "YouTube" },
   { icon: Linkedin, href: "#", label: "LinkedIn" },
   { icon: Instagram, href: "#", label: "Instagram" },
 ];
