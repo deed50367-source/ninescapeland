@@ -730,5 +730,101 @@
       "cta": "Get Free Design & Quote",
       "kidsFriendly": "Kids Friendly"
     }
+  },
+  "processDetail": {
+    "sectionLabel": "Detailed Process",
+    "title": "Every Step",
+    "titleHighlight": "Explained",
+    "description": "We believe in complete transparency. Here's an in-depth look at how we transform your vision into a successful entertainment venue, with dedicated support at every milestone to ensure your project exceeds expectations.",
+    "consultation": {
+      "title": "Consultation & Planning Phase",
+      "description": "Our journey begins with understanding your unique vision, market, and business goals. Our experienced consultants work closely with you to analyze your target audience, local competition, and site conditions to develop a comprehensive project strategy that maximizes ROI and creates a truly differentiated entertainment destination.",
+      "feature1": "Free site analysis and feasibility study",
+      "feature2": "Market research and competitor analysis",
+      "feature3": "Budget planning and ROI projections",
+      "feature4": "Regulatory compliance guidance"
+    },
+    "design": {
+      "title": "Custom 3D Design & Engineering",
+      "description": "Our award-winning design team creates stunning 3D visualizations that bring your concept to life. Using advanced CAD software and years of experience, we develop floor plans, elevation views, and themed concept designs that optimize traffic flow, maximize capacity, and create Instagram-worthy moments throughout your venue.",
+      "feature1": "Photorealistic 3D renderings",
+      "feature2": "Detailed floor plans and elevations",
+      "feature3": "Theme development and branding integration",
+      "feature4": "Multiple design revision rounds included"
+    },
+    "manufacturing": {
+      "title": "Precision Manufacturing",
+      "description": "Production begins in our state-of-the-art 50,000 sqm facility with ISO 9001 certification. Every component is manufactured using premium materials, advanced CNC machinery, and rigorous quality control processes. Our skilled craftsmen ensure every weld, stitch, and finish meets our exacting standards before shipping.",
+      "feature1": "Premium eco-friendly materials",
+      "feature2": "Automated quality inspection systems",
+      "feature3": "Real-time production updates with photos",
+      "feature4": "Pre-shipment testing and certification"
+    }
+  },
+  "processGuarantee": {
+    "sectionLabel": "Our Guarantees",
+    "title": "Your Investment",
+    "titleHighlight": "Protected",
+    "description": "We stand behind every project with industry-leading guarantees and comprehensive support. Your success is our success, and we're committed to delivering excellence at every stage of your playground journey.",
+    "quality": {
+      "title": "Quality Guarantee",
+      "description": "Every component undergoes rigorous testing and inspection. We use only premium materials that meet or exceed international safety standards, ensuring your equipment performs flawlessly for years to come."
+    },
+    "delivery": {
+      "title": "On-Time Delivery",
+      "description": "We understand that timing is critical for your business. Our streamlined production and logistics processes ensure your equipment arrives on schedule, with real-time tracking and proactive communication throughout."
+    },
+    "warranty": {
+      "title": "3-Year Warranty",
+      "description": "Industry-leading comprehensive warranty covering all manufacturing defects. We provide free replacement parts and dedicated support to keep your equipment in perfect condition throughout the warranty period."
+    },
+    "support": {
+      "title": "Lifetime Technical Support",
+      "description": "Our relationship doesn't end at installation. We provide ongoing technical assistance, maintenance guidance, and operational advice to help you maximize your investment and keep your venue running smoothly."
+    },
+    "replacement": {
+      "title": "Free Replacement Parts",
+      "description": "If any component fails due to manufacturing defects during the warranty period, we'll ship replacement parts at no cost. Your uptime and guest satisfaction are our top priorities."
+    },
+    "satisfaction": {
+      "title": "Satisfaction Guarantee",
+      "description": "We work closely with you throughout the entire process to ensure complete satisfaction. From design to installation, we make adjustments and improvements until your vision is perfectly realized."
+    }
+  },
+  "processTestimonials": {
+    "sectionLabel": "Success Stories",
+    "title": "What Our Clients",
+    "titleHighlight": "Say",
+    "description": "Don't just take our word for it. Hear from entertainment venue owners around the world who have partnered with NinescapeLand to create successful, profitable play destinations.",
+    "items": [
+      {
+        "name": "Michael Anderson",
+        "role": "FEC Owner",
+        "country": "United States",
+        "content": "From our first consultation to grand opening, the NinescapeLand team was exceptional. The 3D designs were stunning and the final installation exceeded our expectations. Our trampoline park has been packed since day one. Highly recommend their professional approach and quality equipment."
+      },
+      {
+        "name": "Sarah Mitchell",
+        "role": "Entertainment Center Director",
+        "country": "United Kingdom",
+        "content": "Working with NinescapeLand was a seamless experience. Their attention to detail and commitment to safety impressed us from the start. The custom indoor playground they designed has become the most popular attraction in our center, driving significant revenue growth."
+      },
+      {
+        "name": "Ahmed Hassan",
+        "role": "Business Development Manager",
+        "country": "United Arab Emirates",
+        "content": "We've partnered with NinescapeLand for three projects now across the UAE. Their consistency in quality, competitive pricing, and reliable delivery has made them our go-to supplier. The after-sales support is also outstanding - they truly care about our success."
+      }
+    ]
+  },
+  "processCTA": {
+    "title": "Ready to Start",
+    "titleHighlight": "Your Project?",
+    "description": "Join thousands of successful entertainment venue owners who have trusted NinescapeLand to bring their vision to life. Get your free custom 3D design and competitive quote today - our team is ready to help you create something extraordinary.",
+    "getQuote": "Get Free Design & Quote",
+    "whatsapp": "Chat on WhatsApp",
+    "response": "Response Time",
+    "design": "3D Design Service",
+    "countries": "Countries Served"
   }
 }

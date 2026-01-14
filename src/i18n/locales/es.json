@@ -730,5 +730,101 @@
       "cta": "Diseño y Cotización Gratis",
       "kidsFriendly": "Amigable para Niños"
     }
+  },
+  "processDetail": {
+    "sectionLabel": "Proceso Detallado",
+    "title": "Cada Paso",
+    "titleHighlight": "Explicado",
+    "description": "Creemos en la transparencia total. Aquí hay una mirada profunda a cómo transformamos tu visión en un lugar de entretenimiento exitoso, con soporte dedicado en cada hito para asegurar que tu proyecto supere las expectativas.",
+    "consultation": {
+      "title": "Fase de Consulta y Planificación",
+      "description": "Nuestro viaje comienza entendiendo tu visión única, mercado y objetivos de negocio. Nuestros consultores experimentados trabajan contigo para analizar tu audiencia objetivo, competencia local y condiciones del sitio.",
+      "feature1": "Análisis de sitio y estudio de factibilidad gratis",
+      "feature2": "Investigación de mercado y análisis de competencia",
+      "feature3": "Planificación de presupuesto y proyecciones de ROI",
+      "feature4": "Orientación sobre cumplimiento regulatorio"
+    },
+    "design": {
+      "title": "Diseño 3D Personalizado e Ingeniería",
+      "description": "Nuestro galardonado equipo de diseño crea impresionantes visualizaciones 3D que dan vida a tu concepto. Desarrollamos planos de planta, vistas de elevación y diseños conceptuales temáticos que optimizan el flujo de tráfico.",
+      "feature1": "Renderizados 3D fotorrealistas",
+      "feature2": "Planos de planta y elevaciones detallados",
+      "feature3": "Desarrollo de temas e integración de marca",
+      "feature4": "Múltiples rondas de revisión de diseño incluidas"
+    },
+    "manufacturing": {
+      "title": "Fabricación de Precisión",
+      "description": "La producción comienza en nuestra instalación de 50,000 m² con certificación ISO 9001. Cada componente se fabrica usando materiales premium, maquinaria CNC avanzada y rigurosos procesos de control de calidad.",
+      "feature1": "Materiales premium ecológicos",
+      "feature2": "Sistemas de inspección de calidad automatizados",
+      "feature3": "Actualizaciones de producción en tiempo real con fotos",
+      "feature4": "Pruebas y certificación previas al envío"
+    }
+  },
+  "processGuarantee": {
+    "sectionLabel": "Nuestras Garantías",
+    "title": "Tu Inversión",
+    "titleHighlight": "Protegida",
+    "description": "Respaldamos cada proyecto con garantías líderes en la industria y soporte integral. Tu éxito es nuestro éxito, y estamos comprometidos a entregar excelencia en cada etapa.",
+    "quality": {
+      "title": "Garantía de Calidad",
+      "description": "Cada componente pasa por pruebas e inspecciones rigurosas. Solo usamos materiales premium que cumplen o superan los estándares internacionales de seguridad."
+    },
+    "delivery": {
+      "title": "Entrega a Tiempo",
+      "description": "Entendemos que el tiempo es crítico para tu negocio. Nuestros procesos de producción y logística optimizados aseguran que tu equipo llegue según lo programado."
+    },
+    "warranty": {
+      "title": "Garantía de 3 Años",
+      "description": "Garantía integral líder en la industria que cubre todos los defectos de fabricación. Proporcionamos piezas de repuesto gratis y soporte dedicado durante el período de garantía."
+    },
+    "support": {
+      "title": "Soporte Técnico de Por Vida",
+      "description": "Nuestra relación no termina en la instalación. Proporcionamos asistencia técnica continua, orientación de mantenimiento y asesoramiento operativo."
+    },
+    "replacement": {
+      "title": "Piezas de Repuesto Gratis",
+      "description": "Si algún componente falla debido a defectos de fabricación durante el período de garantía, enviaremos piezas de repuesto sin costo. Tu tiempo de actividad y satisfacción del cliente son nuestras prioridades."
+    },
+    "satisfaction": {
+      "title": "Garantía de Satisfacción",
+      "description": "Trabajamos contigo durante todo el proceso para asegurar satisfacción completa. Desde el diseño hasta la instalación, hacemos ajustes hasta que tu visión se realice."
+    }
+  },
+  "processTestimonials": {
+    "sectionLabel": "Historias de Éxito",
+    "title": "Lo Que Dicen",
+    "titleHighlight": "Nuestros Clientes",
+    "description": "No solo tomes nuestra palabra. Escucha a propietarios de lugares de entretenimiento de todo el mundo que se han asociado con NinescapeLand para crear destinos de juego exitosos y rentables.",
+    "items": [
+      {
+        "name": "Michael Anderson",
+        "role": "Propietario de FEC",
+        "country": "Estados Unidos",
+        "content": "Desde nuestra primera consulta hasta la inauguración, el equipo de NinescapeLand fue excepcional. Los diseños 3D fueron impresionantes y la instalación final superó nuestras expectativas. Nuestro parque de trampolines ha estado lleno desde el primer día."
+      },
+      {
+        "name": "Sarah Mitchell",
+        "role": "Directora de Centro de Entretenimiento",
+        "country": "Reino Unido",
+        "content": "Trabajar con NinescapeLand fue una experiencia fluida. Su atención al detalle y compromiso con la seguridad nos impresionaron desde el principio. El parque infantil personalizado se ha convertido en la atracción más popular."
+      },
+      {
+        "name": "Ahmed Hassan",
+        "role": "Gerente de Desarrollo de Negocios",
+        "country": "Emiratos Árabes Unidos",
+        "content": "Nos hemos asociado con NinescapeLand para tres proyectos en los EAU. Su consistencia en calidad, precios competitivos y entrega confiable los ha convertido en nuestro proveedor preferido."
+      }
+    ]
+  },
+  "processCTA": {
+    "title": "¿Listo para Comenzar",
+    "titleHighlight": "Tu Proyecto?",
+    "description": "Únete a miles de propietarios exitosos de lugares de entretenimiento que han confiado en NinescapeLand. Obtén tu diseño 3D personalizado gratis y cotización competitiva hoy.",
+    "getQuote": "Diseño y Cotización Gratis",
+    "whatsapp": "Chat en WhatsApp",
+    "response": "Tiempo de Respuesta",
+    "design": "Servicio de Diseño 3D",
+    "countries": "Países Atendidos"
   }
 }

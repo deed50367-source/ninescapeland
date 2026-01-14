@@ -730,5 +730,101 @@
       "cta": "Design e Orçamento Grátis",
       "kidsFriendly": "Amigável para Crianças"
     }
+  },
+  "processDetail": {
+    "sectionLabel": "Processo Detalhado",
+    "title": "Cada Passo",
+    "titleHighlight": "Explicado",
+    "description": "Acreditamos em total transparência. Aqui está uma visão aprofundada de como transformamos sua visão em um local de entretenimento de sucesso, com suporte dedicado em cada marco para garantir que seu projeto supere as expectativas.",
+    "consultation": {
+      "title": "Fase de Consulta e Planejamento",
+      "description": "Nossa jornada começa entendendo sua visão única, mercado e objetivos de negócio. Nossos consultores experientes trabalham de perto com você para analisar seu público-alvo, concorrência local e condições do local.",
+      "feature1": "Análise de local e estudo de viabilidade grátis",
+      "feature2": "Pesquisa de mercado e análise de concorrência",
+      "feature3": "Planejamento de orçamento e projeções de ROI",
+      "feature4": "Orientação sobre conformidade regulatória"
+    },
+    "design": {
+      "title": "Design 3D Personalizado e Engenharia",
+      "description": "Nossa equipe de design premiada cria visualizações 3D impressionantes que dão vida ao seu conceito. Desenvolvemos plantas baixas, vistas de elevação e designs conceituais temáticos que otimizam o fluxo de tráfego.",
+      "feature1": "Renderizações 3D fotorrealistas",
+      "feature2": "Plantas baixas e elevações detalhadas",
+      "feature3": "Desenvolvimento de temas e integração de marca",
+      "feature4": "Múltiplas rodadas de revisão de design incluídas"
+    },
+    "manufacturing": {
+      "title": "Fabricação de Precisão",
+      "description": "A produção começa em nossa instalação de 50.000 m² com certificação ISO 9001. Cada componente é fabricado usando materiais premium, máquinas CNC avançadas e rigorosos processos de controle de qualidade.",
+      "feature1": "Materiais premium ecológicos",
+      "feature2": "Sistemas de inspeção de qualidade automatizados",
+      "feature3": "Atualizações de produção em tempo real com fotos",
+      "feature4": "Testes e certificação antes do envio"
+    }
+  },
+  "processGuarantee": {
+    "sectionLabel": "Nossas Garantias",
+    "title": "Seu Investimento",
+    "titleHighlight": "Protegido",
+    "description": "Apoiamos cada projeto com garantias líderes do setor e suporte abrangente. Seu sucesso é nosso sucesso, e estamos comprometidos em entregar excelência em cada etapa.",
+    "quality": {
+      "title": "Garantia de Qualidade",
+      "description": "Cada componente passa por testes e inspeções rigorosas. Usamos apenas materiais premium que atendem ou excedem os padrões internacionais de segurança."
+    },
+    "delivery": {
+      "title": "Entrega no Prazo",
+      "description": "Entendemos que o tempo é crítico para seu negócio. Nossos processos de produção e logística otimizados garantem que seu equipamento chegue no prazo."
+    },
+    "warranty": {
+      "title": "Garantia de 3 Anos",
+      "description": "Garantia abrangente líder do setor cobrindo todos os defeitos de fabricação. Fornecemos peças de reposição gratuitas e suporte dedicado durante o período de garantia."
+    },
+    "support": {
+      "title": "Suporte Técnico Vitalício",
+      "description": "Nosso relacionamento não termina na instalação. Fornecemos assistência técnica contínua, orientação de manutenção e consultoria operacional."
+    },
+    "replacement": {
+      "title": "Peças de Reposição Grátis",
+      "description": "Se qualquer componente falhar devido a defeitos de fabricação durante o período de garantia, enviaremos peças de reposição sem custo. Seu tempo de atividade e satisfação do cliente são nossas prioridades."
+    },
+    "satisfaction": {
+      "title": "Garantia de Satisfação",
+      "description": "Trabalhamos de perto com você durante todo o processo para garantir satisfação completa. Do design à instalação, fazemos ajustes até que sua visão seja realizada."
+    }
+  },
+  "processTestimonials": {
+    "sectionLabel": "Histórias de Sucesso",
+    "title": "O Que Dizem",
+    "titleHighlight": "Nossos Clientes",
+    "description": "Não apenas acredite em nossa palavra. Ouça proprietários de locais de entretenimento ao redor do mundo que se associaram à NinescapeLand para criar destinos de diversão bem-sucedidos e lucrativos.",
+    "items": [
+      {
+        "name": "Michael Anderson",
+        "role": "Proprietário de FEC",
+        "country": "Estados Unidos",
+        "content": "Da nossa primeira consulta até a inauguração, a equipe NinescapeLand foi excepcional. Os designs 3D foram impressionantes e a instalação final superou nossas expectativas. Nosso parque de trampolins está lotado desde o primeiro dia."
+      },
+      {
+        "name": "Sarah Mitchell",
+        "role": "Diretora de Centro de Entretenimento",
+        "country": "Reino Unido",
+        "content": "Trabalhar com a NinescapeLand foi uma experiência perfeita. Sua atenção aos detalhes e compromisso com a segurança nos impressionaram desde o início. O playground interno personalizado se tornou a atração mais popular."
+      },
+      {
+        "name": "Ahmed Hassan",
+        "role": "Gerente de Desenvolvimento de Negócios",
+        "country": "Emirados Árabes Unidos",
+        "content": "Nos associamos com a NinescapeLand em três projetos nos EAU. Sua consistência em qualidade, preços competitivos e entrega confiável os tornaram nosso fornecedor preferido."
+      }
+    ]
+  },
+  "processCTA": {
+    "title": "Pronto para Começar",
+    "titleHighlight": "Seu Projeto?",
+    "description": "Junte-se a milhares de proprietários bem-sucedidos de locais de entretenimento que confiaram na NinescapeLand. Obtenha seu design 3D personalizado gratuito e orçamento competitivo hoje.",
+    "getQuote": "Design e Orçamento Grátis",
+    "whatsapp": "Chat no WhatsApp",
+    "response": "Tempo de Resposta",
+    "design": "Serviço de Design 3D",
+    "countries": "Países Atendidos"
   }
 }
