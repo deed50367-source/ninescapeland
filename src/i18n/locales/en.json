@@ -1119,6 +1119,154 @@
           "quote": "We've seen a significant increase in memberships since adding the ninja course. The competition-grade obstacles attract serious athletes and casual visitors alike."
         }
       },
+      "extendedObstacles": {
+        "quintSteps": {
+          "title": "Quintuple Steps",
+          "description": "Five angled platforms requiring speed, precision, and momentum to cross successfully."
+        },
+        "spiderWall": {
+          "title": "Spider Wall",
+          "description": "Narrow vertical corridor requiring climbing with arms and legs pressed against opposite walls."
+        },
+        "swingRopes": {
+          "title": "Swing Ropes",
+          "description": "Series of hanging ropes for swinging from one platform to another."
+        },
+        "rollingLog": {
+          "title": "Rolling Log",
+          "description": "Rotating cylinder requiring balance and quick reflexes to cross."
+        },
+        "pegBoard": {
+          "title": "Peg Board",
+          "description": "Vertical board with holes for hand pegs, testing upper body strength and grip."
+        },
+        "doorKnobs": {
+          "title": "Door Knobs",
+          "description": "Series of rotating knobs requiring grip strength and technique to traverse."
+        },
+        "pipeFitter": {
+          "title": "Pipe Fitter",
+          "description": "Overhead bars of varying diameters challenging grip transitions."
+        },
+        "cannonball": {
+          "title": "Cannonball Alley",
+          "description": "Series of hanging spheres requiring swing and grip technique."
+        }
+      },
+      "trainingBenefits": {
+        "sectionLabel": "Training Benefits",
+        "title": "Build Strength",
+        "titleHighlight": "& Confidence",
+        "description": "Ninja training provides comprehensive physical and mental development benefits for all ages.",
+        "strength": {
+          "title": "Full Body Strength",
+          "description": "Develops upper body, core, and leg muscles through functional movements and obstacle challenges."
+        },
+        "grip": {
+          "title": "Grip Strength",
+          "description": "Hanging, swinging, and climbing obstacles dramatically improve hand and forearm strength."
+        },
+        "agility": {
+          "title": "Agility & Speed",
+          "description": "Quick transitions and timed courses develop fast-twitch muscles and reaction time."
+        },
+        "mental": {
+          "title": "Mental Toughness",
+          "description": "Overcoming challenging obstacles builds perseverance, focus, and problem-solving skills."
+        },
+        "coordination": {
+          "title": "Body Coordination",
+          "description": "Complex movements improve proprioception, spatial awareness, and motor control."
+        },
+        "confidence": {
+          "title": "Self-Confidence",
+          "description": "Achieving goals and conquering fears builds lasting self-esteem and resilience."
+        }
+      },
+      "safetySection": {
+        "sectionLabel": "Safety Standards",
+        "title": "Your Safety is",
+        "titleHighlight": "Our Priority",
+        "description": "Every ninja course is designed with comprehensive safety features and built to exceed international standards.",
+        "crashMats": {
+          "title": "Crash Mats",
+          "description": "High-density foam mats under all obstacles for safe landings and fall protection."
+        },
+        "harnesses": {
+          "title": "Safety Harnesses",
+          "description": "Optional harness systems for high elements provide additional security for beginners."
+        },
+        "padding": {
+          "title": "Padded Surfaces",
+          "description": "All frames, poles, and edges are covered with protective padding to prevent injuries."
+        },
+        "certification": {
+          "title": "International Certified",
+          "description": "All equipment meets ASTM, TUV, CE, and EN safety standards with full documentation."
+        }
+      },
+      "ageGroups": {
+        "sectionLabel": "Age-Appropriate Design",
+        "title": "Courses for",
+        "titleHighlight": "All Ages",
+        "description": "We design separate course sections with age-appropriate challenges for maximum safety and fun.",
+        "kids": {
+          "age": "6-12",
+          "title": "Junior Ninjas",
+          "description": "Scaled obstacles with extra padding. Perfect for building confidence and basic skills."
+        },
+        "teens": {
+          "age": "13-17",
+          "title": "Teen Warriors",
+          "description": "Intermediate challenges with full obstacle variety. Great for developing strength and technique."
+        },
+        "adults": {
+          "age": "18+",
+          "title": "Adult Athletes",
+          "description": "Full competition-grade obstacles. Maximum challenge for serious training and competitions."
+        },
+        "family": {
+          "age": "All Ages",
+          "title": "Family Courses",
+          "description": "Mixed difficulty sections where families can train together with parallel lanes."
+        }
+      },
+      "processSection": {
+        "sectionLabel": "Our Process",
+        "title": "From Concept to",
+        "titleHighlight": "Competition Ready",
+        "description": "We guide you through every step of creating your professional ninja warrior facility.",
+        "consultation": {
+          "step": "1",
+          "title": "Consultation",
+          "description": "Share your vision, space dimensions, and target audience for expert planning advice."
+        },
+        "design": {
+          "step": "2",
+          "title": "3D Design",
+          "description": "Receive professional 3D renderings with optimized obstacle placement and flow."
+        },
+        "production": {
+          "step": "3",
+          "title": "Manufacturing",
+          "description": "Premium equipment production using commercial-grade materials with regular updates."
+        },
+        "shipping": {
+          "step": "4",
+          "title": "Global Shipping",
+          "description": "Professional packaging and logistics with door-to-door delivery worldwide."
+        },
+        "installation": {
+          "step": "5",
+          "title": "Installation",
+          "description": "Detailed installation guides with video tutorials or on-site installation by our team."
+        },
+        "support": {
+          "step": "6",
+          "title": "After-Sales",
+          "description": "3-year warranty with lifetime technical support and training resources."
+        }
+      },
       "ctaSection": {
         "title": "Ready to Build Your Ninja Course?",
         "description": "Get a free 3D design and competitive quote within 24 hours. Our expert team will help you create a challenging, profitable ninja warrior facility.",

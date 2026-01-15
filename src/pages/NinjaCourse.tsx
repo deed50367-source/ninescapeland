@@ -33,7 +33,23 @@ import {
   Zap,
   Mountain,
   Timer,
-  Users
+  Users,
+  Dumbbell,
+  Hand,
+  Brain,
+  Heart,
+  Smile,
+  ShieldCheck,
+  FileCheck,
+  Settings,
+  Baby,
+  User,
+  Home,
+  Lightbulb,
+  Pencil,
+  Factory,
+  Package,
+  Headphones
 } from "lucide-react";
 
 const NinjaCourse = () => {
@@ -117,6 +133,54 @@ const NinjaCourse = () => {
       description: "productPages.ninjaCourse.levels.elite.description",
       color: "bg-red-500"
     }
+  ];
+
+  // Extended obstacles
+  const extendedObstacles = [
+    { titleKey: "productPages.ninjaCourse.extendedObstacles.quintSteps.title", descKey: "productPages.ninjaCourse.extendedObstacles.quintSteps.description" },
+    { titleKey: "productPages.ninjaCourse.extendedObstacles.spiderWall.title", descKey: "productPages.ninjaCourse.extendedObstacles.spiderWall.description" },
+    { titleKey: "productPages.ninjaCourse.extendedObstacles.swingRopes.title", descKey: "productPages.ninjaCourse.extendedObstacles.swingRopes.description" },
+    { titleKey: "productPages.ninjaCourse.extendedObstacles.rollingLog.title", descKey: "productPages.ninjaCourse.extendedObstacles.rollingLog.description" },
+    { titleKey: "productPages.ninjaCourse.extendedObstacles.pegBoard.title", descKey: "productPages.ninjaCourse.extendedObstacles.pegBoard.description" },
+    { titleKey: "productPages.ninjaCourse.extendedObstacles.doorKnobs.title", descKey: "productPages.ninjaCourse.extendedObstacles.doorKnobs.description" },
+    { titleKey: "productPages.ninjaCourse.extendedObstacles.pipeFitter.title", descKey: "productPages.ninjaCourse.extendedObstacles.pipeFitter.description" },
+    { titleKey: "productPages.ninjaCourse.extendedObstacles.cannonball.title", descKey: "productPages.ninjaCourse.extendedObstacles.cannonball.description" }
+  ];
+
+  // Training benefits
+  const trainingBenefits = [
+    { icon: Dumbbell, titleKey: "productPages.ninjaCourse.trainingBenefits.strength.title", descKey: "productPages.ninjaCourse.trainingBenefits.strength.description" },
+    { icon: Hand, titleKey: "productPages.ninjaCourse.trainingBenefits.grip.title", descKey: "productPages.ninjaCourse.trainingBenefits.grip.description" },
+    { icon: Zap, titleKey: "productPages.ninjaCourse.trainingBenefits.agility.title", descKey: "productPages.ninjaCourse.trainingBenefits.agility.description" },
+    { icon: Brain, titleKey: "productPages.ninjaCourse.trainingBenefits.mental.title", descKey: "productPages.ninjaCourse.trainingBenefits.mental.description" },
+    { icon: Target, titleKey: "productPages.ninjaCourse.trainingBenefits.coordination.title", descKey: "productPages.ninjaCourse.trainingBenefits.coordination.description" },
+    { icon: Heart, titleKey: "productPages.ninjaCourse.trainingBenefits.confidence.title", descKey: "productPages.ninjaCourse.trainingBenefits.confidence.description" }
+  ];
+
+  // Safety features
+  const safetyFeatures = [
+    { icon: ShieldCheck, titleKey: "productPages.ninjaCourse.safetySection.crashMats.title", descKey: "productPages.ninjaCourse.safetySection.crashMats.description" },
+    { icon: Shield, titleKey: "productPages.ninjaCourse.safetySection.harnesses.title", descKey: "productPages.ninjaCourse.safetySection.harnesses.description" },
+    { icon: FileCheck, titleKey: "productPages.ninjaCourse.safetySection.padding.title", descKey: "productPages.ninjaCourse.safetySection.padding.description" },
+    { icon: Award, titleKey: "productPages.ninjaCourse.safetySection.certification.title", descKey: "productPages.ninjaCourse.safetySection.certification.description" }
+  ];
+
+  // Age groups
+  const ageGroups = [
+    { icon: Smile, age: "6-12", titleKey: "productPages.ninjaCourse.ageGroups.kids.title", descKey: "productPages.ninjaCourse.ageGroups.kids.description" },
+    { icon: User, age: "13-17", titleKey: "productPages.ninjaCourse.ageGroups.teens.title", descKey: "productPages.ninjaCourse.ageGroups.teens.description" },
+    { icon: Dumbbell, age: "18+", titleKey: "productPages.ninjaCourse.ageGroups.adults.title", descKey: "productPages.ninjaCourse.ageGroups.adults.description" },
+    { icon: Home, age: "All", titleKey: "productPages.ninjaCourse.ageGroups.family.title", descKey: "productPages.ninjaCourse.ageGroups.family.description" }
+  ];
+
+  // Design process
+  const processSteps = [
+    { icon: Lightbulb, step: 1, titleKey: "productPages.ninjaCourse.processSection.consultation.title", descKey: "productPages.ninjaCourse.processSection.consultation.description" },
+    { icon: Pencil, step: 2, titleKey: "productPages.ninjaCourse.processSection.design.title", descKey: "productPages.ninjaCourse.processSection.design.description" },
+    { icon: Factory, step: 3, titleKey: "productPages.ninjaCourse.processSection.production.title", descKey: "productPages.ninjaCourse.processSection.production.description" },
+    { icon: Package, step: 4, titleKey: "productPages.ninjaCourse.processSection.shipping.title", descKey: "productPages.ninjaCourse.processSection.shipping.description" },
+    { icon: Settings, step: 5, titleKey: "productPages.ninjaCourse.processSection.installation.title", descKey: "productPages.ninjaCourse.processSection.installation.description" },
+    { icon: Headphones, step: 6, titleKey: "productPages.ninjaCourse.processSection.support.title", descKey: "productPages.ninjaCourse.processSection.support.description" }
   ];
 
   const advantages = [
@@ -358,6 +422,118 @@ const NinjaCourse = () => {
                   </Button>
                 </Link>
               </motion.div>
+            </div>
+          </div>
+        </section>
+
+        {/* Extended Obstacles Section */}
+        <section className="py-20 bg-muted/30">
+          <div className="container mx-auto px-4">
+            <motion.div className="text-center mb-12" initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
+              <Badge variant="secondary" className="mb-4">More Obstacles</Badge>
+              <h2 className="text-3xl md:text-4xl font-bold mb-4">Extended <span className="text-primary">Challenge Elements</span></h2>
+            </motion.div>
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+              {extendedObstacles.map((obs, index) => (
+                <motion.div key={index} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: index * 0.05 }}>
+                  <Card className="h-full border-0 shadow-lg"><CardContent className="p-4">
+                    <h4 className="font-semibold mb-1">{t(obs.titleKey)}</h4>
+                    <p className="text-muted-foreground text-xs">{t(obs.descKey)}</p>
+                  </CardContent></Card>
+                </motion.div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Training Benefits Section */}
+        <section className="py-20 bg-background">
+          <div className="container mx-auto px-4">
+            <motion.div className="text-center mb-12" initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
+              <Badge variant="secondary" className="mb-4">{t("productPages.ninjaCourse.trainingBenefits.sectionLabel")}</Badge>
+              <h2 className="text-3xl md:text-4xl font-bold mb-4">{t("productPages.ninjaCourse.trainingBenefits.title")} <span className="text-primary">{t("productPages.ninjaCourse.trainingBenefits.titleHighlight")}</span></h2>
+              <p className="text-muted-foreground max-w-2xl mx-auto">{t("productPages.ninjaCourse.trainingBenefits.description")}</p>
+            </motion.div>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {trainingBenefits.map((benefit, index) => (
+                <motion.div key={index} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: index * 0.1 }}>
+                  <Card className="h-full border-0 shadow-lg"><CardContent className="p-6 text-center">
+                    <div className="w-14 h-14 mx-auto mb-4 rounded-full bg-accent/20 flex items-center justify-center"><benefit.icon className="w-7 h-7 text-accent" /></div>
+                    <h3 className="text-lg font-semibold mb-2">{t(benefit.titleKey)}</h3>
+                    <p className="text-muted-foreground text-sm">{t(benefit.descKey)}</p>
+                  </CardContent></Card>
+                </motion.div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Safety Section */}
+        <section className="py-20 bg-primary text-primary-foreground">
+          <div className="container mx-auto px-4">
+            <motion.div className="text-center mb-12" initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
+              <Badge variant="secondary" className="mb-4 bg-white/20 text-white">{t("productPages.ninjaCourse.safetySection.sectionLabel")}</Badge>
+              <h2 className="text-3xl md:text-4xl font-bold mb-4">{t("productPages.ninjaCourse.safetySection.title")} <span className="text-white/80">{t("productPages.ninjaCourse.safetySection.titleHighlight")}</span></h2>
+              <p className="text-primary-foreground/80 max-w-2xl mx-auto">{t("productPages.ninjaCourse.safetySection.description")}</p>
+            </motion.div>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+              {safetyFeatures.map((feature, index) => (
+                <motion.div key={index} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: index * 0.1 }}>
+                  <Card className="bg-white/10 border-white/20 h-full"><CardContent className="p-6 text-center">
+                    <feature.icon className="w-10 h-10 mx-auto mb-4 text-white" />
+                    <h3 className="text-lg font-semibold mb-2 text-white">{t(feature.titleKey)}</h3>
+                    <p className="text-white/80 text-sm">{t(feature.descKey)}</p>
+                  </CardContent></Card>
+                </motion.div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Age Groups Section */}
+        <section className="py-20 bg-background">
+          <div className="container mx-auto px-4">
+            <motion.div className="text-center mb-12" initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
+              <Badge variant="secondary" className="mb-4">{t("productPages.ninjaCourse.ageGroups.sectionLabel")}</Badge>
+              <h2 className="text-3xl md:text-4xl font-bold mb-4">{t("productPages.ninjaCourse.ageGroups.title")} <span className="text-primary">{t("productPages.ninjaCourse.ageGroups.titleHighlight")}</span></h2>
+              <p className="text-muted-foreground max-w-2xl mx-auto">{t("productPages.ninjaCourse.ageGroups.description")}</p>
+            </motion.div>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+              {ageGroups.map((group, index) => (
+                <motion.div key={index} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: index * 0.1 }}>
+                  <Card className="h-full border-0 shadow-lg text-center"><CardContent className="p-6">
+                    <div className="w-14 h-14 mx-auto mb-3 rounded-full bg-primary/10 flex items-center justify-center"><group.icon className="w-7 h-7 text-primary" /></div>
+                    <Badge variant="outline" className="mb-3">{group.age}</Badge>
+                    <h3 className="text-lg font-semibold mb-2">{t(group.titleKey)}</h3>
+                    <p className="text-muted-foreground text-sm">{t(group.descKey)}</p>
+                  </CardContent></Card>
+                </motion.div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Process Section */}
+        <section className="py-20 bg-muted/30">
+          <div className="container mx-auto px-4">
+            <motion.div className="text-center mb-12" initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
+              <Badge variant="secondary" className="mb-4">{t("productPages.ninjaCourse.processSection.sectionLabel")}</Badge>
+              <h2 className="text-3xl md:text-4xl font-bold mb-4">{t("productPages.ninjaCourse.processSection.title")} <span className="text-primary">{t("productPages.ninjaCourse.processSection.titleHighlight")}</span></h2>
+              <p className="text-muted-foreground max-w-2xl mx-auto">{t("productPages.ninjaCourse.processSection.description")}</p>
+            </motion.div>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {processSteps.map((step, index) => (
+                <motion.div key={index} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: index * 0.1 }}>
+                  <Card className="h-full border-0 shadow-lg"><CardContent className="p-6">
+                    <div className="flex items-center gap-4 mb-4">
+                      <div className="w-12 h-12 rounded-full bg-primary flex items-center justify-center text-primary-foreground font-bold">{step.step}</div>
+                      <step.icon className="w-6 h-6 text-primary" />
+                    </div>
+                    <h3 className="text-lg font-semibold mb-2">{t(step.titleKey)}</h3>
+                    <p className="text-muted-foreground text-sm">{t(step.descKey)}</p>
+                  </CardContent></Card>
+                </motion.div>
+              ))}
             </div>
           </div>
         </section>

@@ -1065,6 +1065,60 @@
           "quote": "Wir haben seit dem Hinzufügen des Ninja-Parcours einen deutlichen Anstieg der Mitgliedschaften verzeichnet. Die wettkampftauglichen Hindernisse ziehen sowohl ernsthafte Athleten als auch Gelegenheitsbesucher an."
         }
       },
+      "extendedObstacles": {
+        "quintSteps": { "title": "Fünffach-Stufen", "description": "Fünf schräge Plattformen, die Geschwindigkeit, Präzision und Schwung erfordern." },
+        "spiderWall": { "title": "Spinnenwand", "description": "Enger vertikaler Korridor, der Klettern mit Armen und Beinen erfordert." },
+        "swingRopes": { "title": "Schwingseile", "description": "Serie von hängenden Seilen zum Schwingen zwischen Plattformen." },
+        "rollingLog": { "title": "Rollender Stamm", "description": "Rotierende Zylinder, die Gleichgewicht und schnelle Reflexe erfordern." },
+        "pegBoard": { "title": "Steckbrett", "description": "Vertikales Brett mit Löchern für Handgriffe, testet Oberkörperstärke." },
+        "doorKnobs": { "title": "Türknöpfe", "description": "Serie von rotierenden Knöpfen, die Griffstärke erfordern." },
+        "pipeFitter": { "title": "Rohrtrainer", "description": "Überkopfstangen mit verschiedenen Durchmessern für Griffwechsel." },
+        "cannonball": { "title": "Kanonenkugel-Gasse", "description": "Serie von hängenden Kugeln für Schwung- und Grifftechnik." }
+      },
+      "trainingBenefits": {
+        "sectionLabel": "Trainingsvorteile",
+        "title": "Kraft aufbauen",
+        "titleHighlight": "& Selbstvertrauen",
+        "description": "Ninja-Training bietet umfassende körperliche und mentale Entwicklungsvorteile.",
+        "strength": { "title": "Ganzkörperstärke", "description": "Entwickelt Oberkörper-, Rumpf- und Beinmuskeln durch funktionelle Bewegungen." },
+        "grip": { "title": "Griffstärke", "description": "Hängen, Schwingen und Klettern verbessern die Hand- und Unterarmstärke." },
+        "agility": { "title": "Beweglichkeit & Schnelligkeit", "description": "Schnelle Übergänge und zeitgesteuerte Kurse entwickeln schnelle Muskelfasern." },
+        "mental": { "title": "Mentale Stärke", "description": "Das Überwinden schwieriger Hindernisse baut Ausdauer und Fokus auf." },
+        "coordination": { "title": "Körperkoordination", "description": "Komplexe Bewegungen verbessern Propriozeption und räumliches Bewusstsein." },
+        "confidence": { "title": "Selbstvertrauen", "description": "Ziele erreichen und Ängste überwinden baut dauerhaftes Selbstwertgefühl auf." }
+      },
+      "safetySection": {
+        "sectionLabel": "Sicherheitsstandards",
+        "title": "Ihre Sicherheit ist",
+        "titleHighlight": "Unsere Priorität",
+        "description": "Jeder Ninja-Parcours ist mit umfassenden Sicherheitsmerkmalen konzipiert.",
+        "crashMats": { "title": "Fallmatten", "description": "Hochdichte Schaummatten unter allen Hindernissen für sichere Landungen." },
+        "harnesses": { "title": "Sicherheitsgurte", "description": "Optionale Gurtsysteme für hohe Elemente bieten zusätzliche Sicherheit." },
+        "padding": { "title": "Gepolsterte Oberflächen", "description": "Alle Rahmen, Stangen und Kanten sind mit Schutzpolsterung bedeckt." },
+        "certification": { "title": "International Zertifiziert", "description": "Alle Geräte erfüllen ASTM, TUV, CE und EN Standards." }
+      },
+      "ageGroups": {
+        "sectionLabel": "Altersgerechtes Design",
+        "title": "Parcours für",
+        "titleHighlight": "Alle Altersgruppen",
+        "description": "Wir gestalten separate Parcoursabschnitte mit altersgerechten Herausforderungen.",
+        "kids": { "age": "6-12", "title": "Junior Ninjas", "description": "Skalierte Hindernisse mit extra Polsterung für Vertrauensaufbau." },
+        "teens": { "age": "13-17", "title": "Teen Krieger", "description": "Mittlere Herausforderungen mit voller Hindernisvielfalt." },
+        "adults": { "age": "18+", "title": "Erwachsene Athleten", "description": "Volle wettkampftaugliche Hindernisse für ernstes Training." },
+        "family": { "age": "Alle Alter", "title": "Familienparcours", "description": "Gemischte Schwierigkeitsabschnitte für gemeinsames Training." }
+      },
+      "processSection": {
+        "sectionLabel": "Unser Prozess",
+        "title": "Vom Konzept zur",
+        "titleHighlight": "Wettkampfreife",
+        "description": "Wir begleiten Sie durch jeden Schritt Ihrer professionellen Ninja Warrior-Anlage.",
+        "consultation": { "step": "1", "title": "Beratung", "description": "Teilen Sie Ihre Vision, Raummaße und Zielgruppe." },
+        "design": { "step": "2", "title": "3D-Design", "description": "Professionelle 3D-Renderings mit optimierter Hindernisplatzierung." },
+        "production": { "step": "3", "title": "Fertigung", "description": "Premium-Geräteproduktion mit kommerziellen Materialien." },
+        "shipping": { "step": "4", "title": "Weltweiter Versand", "description": "Professionelle Verpackung und Logistik mit Tür-zu-Tür-Lieferung." },
+        "installation": { "step": "5", "title": "Installation", "description": "Detaillierte Anleitungen mit Video-Tutorials oder Vor-Ort-Installation." },
+        "support": { "step": "6", "title": "After-Sales", "description": "3 Jahre Garantie mit lebenslangem technischen Support." }
+      },
       "ctaSection": {
         "title": "Bereit, Ihren Ninja-Parcours zu Bauen?",
         "description": "Erhalten Sie ein kostenloses 3D-Design und ein wettbewerbsfähiges Angebot innerhalb von 24 Stunden. Unser Expertenteam hilft Ihnen, eine herausfordernde, profitable Ninja Warrior-Anlage zu erstellen.",
