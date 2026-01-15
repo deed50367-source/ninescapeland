@@ -971,7 +971,127 @@
       "galleryTitle": "Soft Play",
       "galleryTitleHighlight": "Gallery",
       "cta": "Get Free Design & Quote",
-      "kidsFriendly": "Kids Friendly"
+      "kidsFriendly": "Kids Friendly",
+      "stats": {
+        "projects": "Soft Play Projects",
+        "countries": "Countries Served",
+        "experience": "Years Experience",
+        "satisfaction": "Client Satisfaction"
+      },
+      "ageZonesLabel": "Age-Appropriate Design",
+      "ageZonesTitle": "Designed for",
+      "ageZonesTitleHighlight": "Every Age",
+      "ageZonesDescription": "Our soft play areas are carefully designed to meet the developmental needs of different age groups, ensuring safe and engaging play for all children.",
+      "ageZones": {
+        "infant": {
+          "age": "0-12 Months",
+          "title": "Baby Zone",
+          "description": "Ultra-soft surfaces, sensory toys, and gentle activities designed for the youngest explorers."
+        },
+        "toddler": {
+          "age": "1-3 Years",
+          "title": "Toddler Zone",
+          "description": "Low climbing elements, ball pits, and interactive panels to encourage early motor development."
+        },
+        "preschool": {
+          "age": "3-5 Years",
+          "title": "Preschool Zone",
+          "description": "More challenging obstacles, slides, and imaginative play elements for active preschoolers."
+        },
+        "mixed": {
+          "age": "All Ages",
+          "title": "Family Zone",
+          "description": "Inclusive play areas where siblings can play together with age-appropriate challenges."
+        }
+      },
+      "safetyLabel": "Safety First",
+      "safetyTitle": "Certified",
+      "safetyTitleHighlight": "Safety Standards",
+      "safetyDescription": "Your children's safety is our top priority. Every soft play element we manufacture meets or exceeds international safety standards.",
+      "safetyCertified": "ASTM & EN Certified",
+      "safety": {
+        "standards": {
+          "title": "International Certifications",
+          "description": "All products meet ASTM F1487, EN 1176, and TÜV safety standards for commercial play equipment."
+        },
+        "materials": {
+          "title": "Non-Toxic Materials",
+          "description": "Lead-free, phthalate-free, and flame-retardant materials safe for children of all ages."
+        },
+        "hygiene": {
+          "title": "Hygienic Design",
+          "description": "Antibacterial surfaces and easy-clean covers prevent germ buildup and simplify maintenance."
+        }
+      },
+      "advantagesLabel": "Why Choose Us",
+      "advantagesTitle": "Our Competitive",
+      "advantagesTitleHighlight": "Advantages",
+      "advantages": {
+        "certified": {
+          "title": "Safety Certified",
+          "description": "All products meet ASTM, EN, and TÜV international safety standards."
+        },
+        "fast": {
+          "title": "Fast Production",
+          "description": "15-25 day manufacturing with strict quality control at every step."
+        },
+        "shipping": {
+          "title": "Global Shipping",
+          "description": "Door-to-door delivery to 80+ countries with full customs support."
+        },
+        "support": {
+          "title": "Installation Support",
+          "description": "Detailed manuals, video guides, and optional on-site installation."
+        }
+      },
+      "caseStudiesLabel": "Success Stories",
+      "caseStudiesTitle": "Featured",
+      "caseStudiesTitleHighlight": "Projects",
+      "caseStudiesDescription": "Explore our completed soft play installations that delight children and parents around the world.",
+      "caseStudies": {
+        "case1": {
+          "title": "Kids Kingdom Play Center",
+          "location": "Dubai, UAE",
+          "size": "150 sqm",
+          "feature1": "Multi-level Structure",
+          "feature2": "Ball Pit Paradise",
+          "feature3": "Sensory Wall"
+        },
+        "case2": {
+          "title": "Little Stars Nursery",
+          "location": "London, UK",
+          "size": "80 sqm",
+          "feature1": "Age-Separated Zones",
+          "feature2": "Ocean Theme",
+          "feature3": "Interactive Elements"
+        }
+      },
+      "testimonialsLabel": "Client Reviews",
+      "testimonialsTitle": "What Parents",
+      "testimonialsTitleHighlight": "Say",
+      "testimonials": {
+        "testimonial1": {
+          "quote": "The soft play area has become the most popular attraction in our family center. The quality is outstanding and the children love it!",
+          "name": "Sarah Johnson",
+          "location": "London, UK"
+        },
+        "testimonial2": {
+          "quote": "Professional team from design to installation. The safety features give parents peace of mind while kids have fun.",
+          "name": "Ahmed Hassan",
+          "location": "Dubai, UAE"
+        },
+        "testimonial3": {
+          "quote": "We've seen a 40% increase in bookings since installing the soft play zone. Best investment we've made!",
+          "name": "Maria Garcia",
+          "location": "Madrid, Spain"
+        }
+      },
+      "ctaSection": {
+        "title": "Ready to Create Your Soft Play Area?",
+        "description": "Get a free 3D design and competitive quote within 24 hours. Our expert team will help you create a safe, engaging play space that children love.",
+        "getQuote": "Get Free Quote",
+        "viewProjects": "View More Projects"
+      }
     }
   },
   "processDetail": {

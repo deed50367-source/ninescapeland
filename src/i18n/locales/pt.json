@@ -971,7 +971,127 @@
       "galleryTitle": "Galeria de",
       "galleryTitleHighlight": "Soft Play",
       "cta": "Design e Orçamento Grátis",
-      "kidsFriendly": "Amigável para Crianças"
+      "kidsFriendly": "Amigável para Crianças",
+      "stats": {
+        "projects": "Projetos Soft Play",
+        "countries": "Países Atendidos",
+        "experience": "Anos de Experiência",
+        "satisfaction": "Satisfação do Cliente"
+      },
+      "ageZonesLabel": "Design Apropriado por Idade",
+      "ageZonesTitle": "Projetado para",
+      "ageZonesTitleHighlight": "Todas as Idades",
+      "ageZonesDescription": "Nossas áreas de soft play são cuidadosamente projetadas para atender às necessidades de desenvolvimento de diferentes faixas etárias.",
+      "ageZones": {
+        "infant": {
+          "age": "0-12 Meses",
+          "title": "Zona Bebês",
+          "description": "Superfícies ultra macias, brinquedos sensoriais e atividades gentis para os menores exploradores."
+        },
+        "toddler": {
+          "age": "1-3 Anos",
+          "title": "Zona Crianças Pequenas",
+          "description": "Elementos de escalada baixos, piscinas de bolinhas e painéis interativos para desenvolvimento motor."
+        },
+        "preschool": {
+          "age": "3-5 Anos",
+          "title": "Zona Pré-Escolar",
+          "description": "Obstáculos mais desafiadores, escorregadores e elementos de brincadeira imaginativa."
+        },
+        "mixed": {
+          "age": "Todas as Idades",
+          "title": "Zona Familiar",
+          "description": "Áreas de brincadeira inclusivas onde irmãos podem brincar juntos com desafios apropriados."
+        }
+      },
+      "safetyLabel": "Segurança em Primeiro",
+      "safetyTitle": "Padrões de Segurança",
+      "safetyTitleHighlight": "Certificados",
+      "safetyDescription": "A segurança de seus filhos é nossa prioridade máxima. Cada elemento de soft play atende ou supera os padrões internacionais.",
+      "safetyCertified": "Certificado ASTM e EN",
+      "safety": {
+        "standards": {
+          "title": "Certificações Internacionais",
+          "description": "Todos os produtos atendem ASTM F1487, EN 1176 e TÜV para equipamentos comerciais."
+        },
+        "materials": {
+          "title": "Materiais Não Tóxicos",
+          "description": "Sem chumbo, sem ftalatos e retardantes de chamas, seguros para crianças de todas as idades."
+        },
+        "hygiene": {
+          "title": "Design Higiênico",
+          "description": "Superfícies antibacterianas e capas fáceis de limpar previnem acúmulo de germes."
+        }
+      },
+      "advantagesLabel": "Por Que Nos Escolher",
+      "advantagesTitle": "Nossas Vantagens",
+      "advantagesTitleHighlight": "Competitivas",
+      "advantages": {
+        "certified": {
+          "title": "Certificado em Segurança",
+          "description": "Todos os produtos atendem padrões ASTM, EN e TÜV internacionais."
+        },
+        "fast": {
+          "title": "Produção Rápida",
+          "description": "Fabricação em 15-25 dias com controle de qualidade rigoroso."
+        },
+        "shipping": {
+          "title": "Envio Global",
+          "description": "Entrega porta a porta para mais de 80 países com suporte alfandegário."
+        },
+        "support": {
+          "title": "Suporte de Instalação",
+          "description": "Manuais detalhados, vídeos guia e instalação no local opcional."
+        }
+      },
+      "caseStudiesLabel": "Histórias de Sucesso",
+      "caseStudiesTitle": "Projetos",
+      "caseStudiesTitleHighlight": "em Destaque",
+      "caseStudiesDescription": "Explore nossas instalações de soft play concluídas que encantam crianças e pais ao redor do mundo.",
+      "caseStudies": {
+        "case1": {
+          "title": "Centro de Jogos Kids Kingdom",
+          "location": "Dubai, EAU",
+          "size": "150 m²",
+          "feature1": "Estrutura Multinível",
+          "feature2": "Paraíso de Bolinhas",
+          "feature3": "Parede Sensorial"
+        },
+        "case2": {
+          "title": "Berçário Little Stars",
+          "location": "Londres, Reino Unido",
+          "size": "80 m²",
+          "feature1": "Zonas por Idade",
+          "feature2": "Tema Oceano",
+          "feature3": "Elementos Interativos"
+        }
+      },
+      "testimonialsLabel": "Avaliações de Clientes",
+      "testimonialsTitle": "O Que os Pais",
+      "testimonialsTitleHighlight": "Dizem",
+      "testimonials": {
+        "testimonial1": {
+          "quote": "A área de soft play tornou-se a atração mais popular. A qualidade é excepcional e as crianças adoram!",
+          "name": "Sara Johnson",
+          "location": "Londres, Reino Unido"
+        },
+        "testimonial2": {
+          "quote": "Equipe profissional do design à instalação. Os recursos de segurança dão tranquilidade aos pais.",
+          "name": "Ahmed Hassan",
+          "location": "Dubai, EAU"
+        },
+        "testimonial3": {
+          "quote": "Vimos um aumento de 40% nas reservas desde a instalação. Melhor investimento que fizemos!",
+          "name": "Maria Garcia",
+          "location": "Madrid, Espanha"
+        }
+      },
+      "ctaSection": {
+        "title": "Pronto para Criar sua Área Soft Play?",
+        "description": "Obtenha um design 3D gratuito e orçamento competitivo em 24 horas. Nossa equipe especializada ajudará você a criar um espaço de brincadeira seguro e envolvente.",
+        "getQuote": "Obter Orçamento Grátis",
+        "viewProjects": "Ver Mais Projetos"
+      }
     }
   },
   "processDetail": {
