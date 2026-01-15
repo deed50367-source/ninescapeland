@@ -699,7 +699,86 @@
       "galleryLabel": "Unsere Projekte",
       "galleryTitle": "Trampolinpark",
       "galleryTitleHighlight": "Galerie",
-      "cta": "Kostenloses Design & Angebot"
+      "cta": "Kostenloses Design & Angebot",
+      "zonesLabel": "Aktivitätszonen",
+      "zonesTitle": "Aufregende",
+      "zonesTitleHighlight": "Spielzonen",
+      "zonesDescription": "Unsere Trampolinparks verfügen über mehrere Aktivitätszonen, die Besucher aller Altersgruppen und Fähigkeitsstufen ansprechen.",
+      "zones": {
+        "freejump": {
+          "title": "Freie Sprungzone",
+          "description": "Offene Trampoline für Freestyle-Springen, Saltos und Tricks mit Sicherheitspolsterung überall."
+        },
+        "foampit": {
+          "title": "Schaumstoffgrube",
+          "description": "Weiche Landezonen zum Üben neuer Luftbewegungen und sicherem Tricktraining."
+        },
+        "basketball": {
+          "title": "Slam Dunk",
+          "description": "Trampolin-unterstützte Basketballkörbe für hochfliegende Dunks und Wettbewerbe."
+        },
+        "dodgeball": {
+          "title": "Dodgeball Arena",
+          "description": "Springende Dodgeball-Felder für Teamspiele und aufregende Gruppenaktivitäten."
+        }
+      },
+      "advantagesLabel": "Unsere Vorteile",
+      "advantagesTitle": "Warum",
+      "advantagesTitleHighlight": "NinescapeLand wählen",
+      "advantages": {
+        "certified": {
+          "title": "International Zertifiziert",
+          "description": "ASTM, TUV, CE zertifizierte Geräte, die globale Sicherheitsstandards erfüllen."
+        },
+        "production": {
+          "title": "Schnelle Produktion",
+          "description": "25-35 Tage Fertigung mit regelmäßigen Fortschrittsupdates."
+        },
+        "shipping": {
+          "title": "Weltweiter Versand",
+          "description": "Tür-zu-Tür-Lieferung in über 50 Länder weltweit."
+        },
+        "installation": {
+          "title": "Installationssupport",
+          "description": "Detaillierte Anleitungen, Video-Support oder Vor-Ort-Installation verfügbar."
+        }
+      },
+      "casesLabel": "Erfolgsgeschichten",
+      "casesTitle": "Ausgewählte",
+      "casesTitleHighlight": "Projekte",
+      "cases": {
+        "skypark": {
+          "title": "SkyJump Abenteuerpark",
+          "location": "Los Angeles, USA"
+        },
+        "jumpworld": {
+          "title": "JumpWorld Familienzentrum",
+          "location": "London, Großbritannien"
+        }
+      },
+      "testimonialsLabel": "Kundenbewertungen",
+      "testimonialsTitle": "Was Kunden",
+      "testimonialsTitleHighlight": "Über Uns Sagen",
+      "testimonials": {
+        "james": {
+          "location": "FEC-Besitzer, Texas, USA",
+          "quote": "Die Trampolinpark-Ausrüstung hat unsere Erwartungen übertroffen. Tolle Qualität, pünktliche Lieferung und ausgezeichneter Kundensupport während des gesamten Prozesses."
+        },
+        "maria": {
+          "location": "Unterhaltungszentrum-Direktorin, Madrid, Spanien",
+          "quote": "NinescapeLand hat eine komplette schlüsselfertige Lösung geliefert. Vom Design bis zur Installation wurde alles professionell gehandhabt. Unser Park war ein riesiger Erfolg!"
+        },
+        "david": {
+          "location": "Geschäftsinhaber, Sydney, Australien",
+          "quote": "Die Zusammenarbeit mit NinescapeLand war nahtlos. Die Gerätequalität ist hervorragend und der After-Sales-Support war außergewöhnlich. Sehr empfehlenswert!"
+        }
+      },
+      "ctaSection": {
+        "title": "Bereit, Ihren Trampolinpark zu Bauen?",
+        "description": "Erhalten Sie innerhalb von 24 Stunden ein kostenloses 3D-Design und ein wettbewerbsfähiges Angebot. Unser Expertenteam hilft Ihnen, einen aufregenden, profitablen Trampolinpark zu erstellen.",
+        "getQuote": "Kostenloses Angebot",
+        "viewProjects": "Mehr Projekte Ansehen"
+      }
     },
     "ninjaCourse": {
       "title": "Ninja Warrior",
