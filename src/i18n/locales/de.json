@@ -1665,5 +1665,135 @@
         "description": "Afrika bietet spannende Wachstumsmöglichkeiten, wo wir starke Partnerschaften aufgebaut haben. Unsere Projekte in dieser Region zeichnen sich oft durch lokal inspirierte Themen aus."
       }
     }
+  },
+  "productFAQ": {
+    "indoorPlayground": {
+      "sectionLabel": "Häufig gestellte Fragen",
+      "title": "Indoor-Spielplatz",
+      "titleHighlight": "FAQ",
+      "description": "Finden Sie Antworten auf häufige Fragen zu Indoor-Spielplatzausrüstung, Installation, Sicherheitsstandards und mehr.",
+      "items": {
+        "q1": {
+          "question": "Wie viel Platz wird mindestens für einen Indoor-Spielplatz benötigt?",
+          "answer": "Wir können Indoor-Spielplätze für Räume ab 50 qm für kompakte Spielbereiche entwerfen, empfehlen jedoch mindestens 100-200 qm für eine sinnvolle Mehrebenstruktur. Unser Designteam erstellt ein maßgeschneidertes Layout, das Ihren verfügbaren Platz maximiert und gleichzeitig sichere Spielzonen und Verkehrsfluss gewährleistet."
+        },
+        "q2": {
+          "question": "Wie lange dauert die Herstellung und Lieferung eines Indoor-Spielplatzes?",
+          "answer": "Die Produktion dauert in der Regel 25-35 Tage nach Designfreigabe, gefolgt von 20-35 Tagen für den internationalen Versand. Die Gesamtvorlaufzeit beträgt normalerweise 45-70 Tage ab Auftragsbestätigung. Eilbestellungen können für dringende Projekte nach Absprache berücksichtigt werden."
+        },
+        "q3": {
+          "question": "Welche Sicherheitszertifizierungen erfüllen Ihre Indoor-Spielplätze?",
+          "answer": "Alle unsere Indoor-Spielplatzgeräte sind nach ASTM F1918 (USA), TÜV, CE und EN 1176 (europäisch) zertifiziert. Wir verwenden ausschließlich hochwertige, bleifreie, ungiftige Materialien, die strenge Sicherheitstests für Kinderausrüstung bestanden haben."
+        },
+        "q4": {
+          "question": "Können Sie maßgeschneiderte thematische Indoor-Spielplätze erstellen?",
+          "answer": "Absolut! Individuelle Thematisierung ist eine unserer Spezialitäten. Wir können jedes Thema kreieren, das Sie sich vorstellen - von Dschungelabenteuer und Unterwasserwelten bis hin zu Weltraumerkundung und Burgkönigreichen. Unser Designteam liefert kostenlose 3D-Renderings, die genau zeigen, wie Ihr thematischer Spielplatz aussehen wird."
+        },
+        "q5": {
+          "question": "Was beinhaltet Ihre Installationsunterstützung für Indoor-Spielplätze?",
+          "answer": "Wir bieten umfassende Installationsunterstützung einschließlich detaillierter Montageanleitungen, Schritt-für-Schritt-Video-Tutorials, nummerierter Komponentenbeschriftung und 24/7 technischem Support via WhatsApp. Vor-Ort-Installation durch unsere geschulten Techniker ist gegen Aufpreis verfügbar."
+        },
+        "q6": {
+          "question": "Welche Garantie bieten Sie auf Indoor-Spielplatzausrüstung?",
+          "answer": "Wir bieten eine umfassende 3-Jahres-Garantie auf Herstellungsfehler aller Strukturkomponenten mit kostenlosen Ersatzteilen. Zusätzlich bieten wir lebenslangen technischen Support und können Ersatzteile für Wartungsbedarf während der gesamten Lebensdauer Ihres Spielplatzes liefern."
+        }
+      }
+    },
+    "trampolinePark": {
+      "sectionLabel": "Häufig gestellte Fragen",
+      "title": "Trampolinpark",
+      "titleHighlight": "FAQ",
+      "description": "Alles, was Sie über Trampolinpark-Ausrüstung, Sicherheitsmerkmale, Aktivitätszonen und Installation wissen müssen.",
+      "items": {
+        "q1": {
+          "question": "Wie viel Platz wird mindestens für einen Trampolinpark benötigt?",
+          "answer": "Ein einfacher Trampolinpark mit 3-4 Aktivitätszonen erfordert mindestens 500 qm. Für einen voll ausgestatteten Park mit über 10 Zonen einschließlich Schaumstoffgruben, Dodgeball-Plätzen und Ninja-Parcours empfehlen wir 1.000-3.000 qm. Die Deckenhöhe sollte mindestens 4-6 Meter für optimale Sprunghöhe betragen."
+        },
+        "q2": {
+          "question": "Wie viele Aktivitätszonen können Sie in einen Trampolinpark integrieren?",
+          "answer": "Wir bieten über 12 verschiedene Aktivitätszonentypen an, darunter: Freispringbereiche, Schaumstoffgruben-Sprungzonen, Slam-Dunk-Basketball, Dodgeball-Plätze, Kletterwände, Ninja-Parcours, 360°-Fahrräder, Skyrider-Seilrutschen, Kampfbalken, Airbag-Sprünge, Performance-Trampoline und Kleinkinderzonen."
+        },
+        "q3": {
+          "question": "Welche Sicherheitsmerkmale sind bei Trampolinpark-Ausrüstung enthalten?",
+          "answer": "Sicherheit hat oberste Priorität. Unsere Trampoline verfügen über gepolsterte Rahmenabdeckungen, Sicherheitsnetze, stoßdämpfende Landezonen und gewerbliche Federn für intensive Nutzung. Alle Geräte erfüllen ASTM F2970 Trampolinpark-Standards, TÜV-Zertifizierung und internationale Sicherheitsanforderungen."
+        },
+        "q4": {
+          "question": "Wie oft müssen Trampolinpark-Komponenten ausgetauscht werden?",
+          "answer": "Bei ordnungsgemäßer Wartung halten unsere gewerblichen Trampolinbetten typischerweise 3-5 Jahre bei hohem Verkehr, Polsterung und Schaumstoffgruben 5-7 Jahre. Wir stellen Wartungsanleitungen bereit und können alle Ersatzteile liefern. Regelmäßige Inspektionschecklisten sind bei jeder Installation enthalten."
+        },
+        "q5": {
+          "question": "Bieten Sie Geschäftsplanungsunterstützung für Trampolinparks?",
+          "answer": "Ja! Über die Ausrüstung hinaus bieten wir Beratung zur Layout-Optimierung für maximale Kapazität und Umsatz, Personalempfehlungen, Haftungsverzichtssysteme, operative Best Practices und können Sie mit erfolgreichen Parkbetreibern für Mentoring verbinden. Wir wollen, dass Ihr Geschäft erfolgreich ist."
+        },
+        "q6": {
+          "question": "Wie hoch ist die Gewichtskapazität Ihrer Trampoline?",
+          "answer": "Unsere gewerblichen Trampoline sind für Benutzer bis 150 kg (330 lbs) pro Sprungfläche ausgelegt. Rahmenstrukturen sind für gleichzeitige Mehrbenutzeraktivität über alle verbundenen Trampoline konstruiert. Alle Gewichtseinstufungen übertreffen internationale gewerbliche Nutzungsstandards."
+        }
+      }
+    },
+    "ninjaCourse": {
+      "sectionLabel": "Häufig gestellte Fragen",
+      "title": "Ninja-Parcours",
+      "titleHighlight": "FAQ",
+      "description": "Erfahren Sie mehr über Ninja-Warrior-Hindernisparcours, Schwierigkeitsstufen, Trainingsvorteile und Installationsanforderungen.",
+      "items": {
+        "q1": {
+          "question": "Welche Hindernisse sind in einem Ninja-Warrior-Parcours enthalten?",
+          "answer": "Wir bieten über 50 Hindernistypen an, darunter gebogene Wände, Lachsleitern, Ringschwingen, Seilklettern, Spinnengänge, Fünffachschritte, Steckbretter, Klippenhänger, rotierende Baumstämme, fliegende Stangen, Frachtnetze und vieles mehr. Jeder Parcours wird basierend auf Ihrem Raum, Ihrer Zielgruppe und Schwierigkeitspräferenzen angepasst."
+        },
+        "q2": {
+          "question": "Können Ninja-Parcours für verschiedene Fähigkeitsstufen angepasst werden?",
+          "answer": "Absolut! Viele unserer Hindernisse verfügen über einstellbare Schwierigkeitseinstellungen. Wir können auch Mehrbahn-Parcours mit parallel verlaufenden Anfänger-, Mittelstufen- und Fortgeschrittenenstrecken entwerfen. Dies ermöglicht Einrichtungen, alle von Erstbesuchern bis hin zu Wettkampfsportlern aufzunehmen."
+        },
+        "q3": {
+          "question": "Wie viel Platz wird mindestens für einen Ninja-Parcours benötigt?",
+          "answer": "Ein einfacher Ninja-Parcours mit 8-10 Hindernissen benötigt etwa 150-200 qm mit Deckenhöhen von mindestens 3,5 Metern. Wettkampftaugliche Parcours erfordern typischerweise 300-500 qm. Wir können kreative Lösungen für kleinere oder unregelmäßig geformte Räume entwickeln."
+        },
+        "q4": {
+          "question": "Sind Ninja-Parcours sicher für Kinder?",
+          "answer": "Ja! Wir entwerfen altersgerechte Parcours für alle Fähigkeitsstufen. Junior-Parcours (Alter 6-12) verfügen über niedrigere Höhen, breitere Griffe und kürzere Abstände. Alle Parcours beinhalten Sturzmatten, Sicherheitspolsterung und optionale Gurtsysteme. Unsere Ausrüstung erfüllt alle internationalen Kindersicherheitsstandards."
+        },
+        "q5": {
+          "question": "Können Sie wettkampfstandard-konforme Ninja-Parcours erstellen?",
+          "answer": "Ja, wir entwerfen professionelle Wettkampf-Parcours nach TV-Show-Spezifikationen und Wettkampfliga-Anforderungen. Diese umfassen Zeitmesssysteme, mehrere Schwierigkeitsbahnen und Zuschauerbereiche. Viele Wettkampf-Trainingseinrichtungen und TV-Produktionen nutzen unsere Ausrüstung."
+        },
+        "q6": {
+          "question": "Welche Wartung ist für Ninja-Parcours-Ausrüstung erforderlich?",
+          "answer": "Tägliche Sichtprüfungen dauern etwa 10 Minuten. Monatliche detaillierte Überprüfungen aller Verbindungspunkte, Polsterungen und beweglichen Teile werden empfohlen. Wir stellen umfassende Wartungsanleitungen bereit und können Ersatzteile liefern. Bei ordnungsgemäßer Pflege halten Strukturkomponenten über 10 Jahre."
+        }
+      }
+    },
+    "softPlay": {
+      "sectionLabel": "Häufig gestellte Fragen",
+      "title": "Soft Play",
+      "titleHighlight": "FAQ",
+      "description": "Häufige Fragen zu Soft-Play-Ausrüstung für Kleinkinder, Sicherheitsmaterialien, Hygiene und altersgerechtem Design.",
+      "items": {
+        "q1": {
+          "question": "Für welche Altersgruppe ist Soft-Play-Ausrüstung konzipiert?",
+          "answer": "Unsere Soft-Play-Ausrüstung ist speziell für Kinder von 6 Monaten bis 5 Jahren konzipiert. Wir schaffen altersgerechte Zonen: Säuglingsbereiche (6-18 Monate) mit sensorischen Elementen, Kleinkinderzonen (18 Monate-3 Jahre) mit sanftem Klettern und Rutschen, und Vorschulbereiche (3-5 Jahre) mit anspruchsvolleren Spielstrukturen."
+        },
+        "q2": {
+          "question": "Welche Materialien werden in Soft-Play-Ausrüstung verwendet?",
+          "answer": "Wir verwenden hochwertiges PVC-Leder, das hochdichte Schaumstoffkerne umhüllt. Alle Materialien sind bleifrei, phthalatfrei, flammhemmend (erfüllt BS 5852) und leicht zu reinigen. Die PVC-Beschichtung ist antimikrobiell und kann mit Standard-Reinigungslösungen ohne Abbau desinfiziert werden."
+        },
+        "q3": {
+          "question": "Wie einfach ist es, Soft-Play-Ausrüstung zu reinigen und zu warten?",
+          "answer": "Sehr einfach! Die glatten PVC-Oberflächen können mit milder Seife und Wasser oder gewerblichen Desinfektionslösungen abgewischt werden. Wir empfehlen tägliche Oberflächenreinigung und wöchentliche Tiefenreinigung. Die langlebigen Materialien sind fleckenresistent und für hochfrequente Desinfektion konzipiert."
+        },
+        "q4": {
+          "question": "Wie viel Platz wird mindestens für einen Soft-Play-Bereich benötigt?",
+          "answer": "Soft-Play-Bereiche können für kompakte Räume ab 20 qm für ein einfaches Bällebad und eine Kletterzone konzipiert werden. Typische Installationen reichen von 50-200 qm. Wir sind spezialisiert auf die Maximierung des Spielwerts in kleinen Räumen - perfekt für Cafés, Restaurants, Kirchen und Wartebereiche."
+        },
+        "q5": {
+          "question": "Kann Soft-Play-Ausrüstung an unsere Marke angepasst werden?",
+          "answer": "Absolut! Wir bieten vollständige Farbanpassung mit einer umfangreichen Palette an PVC-Lederfarben. Ihr Soft-Play-Bereich kann Ihre Markenfarben, Ihr Veranstaltungsortthema oder jede spezifische Designvision widerspiegeln. Kundenspezifische Druckelemente und Markenschilder können ebenfalls integriert werden."
+        },
+        "q6": {
+          "question": "Wie lange hält Soft-Play-Ausrüstung?",
+          "answer": "Bei ordnungsgemäßer Pflege hält unsere gewerbliche Soft-Play-Ausrüstung über 8-10 Jahre in stark frequentierten Umgebungen. Der hochdichte Schaumstoff behält seine Form und Dämpfungseigenschaften, während die hochwertige PVC-Beschichtung Verschleiß, Verblassen und Rissbildung widersteht. Wir bieten eine 3-jährige Herstellergarantie."
+        }
+      }
+    }
   }
 }
