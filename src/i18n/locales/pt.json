@@ -1065,6 +1065,60 @@
           "quote": "Vimos um aumento significativo nas assinaturas desde que adicionamos o circuito ninja. Os obstáculos de nível competição atraem tanto atletas sérios quanto visitantes casuais."
         }
       },
+      "extendedObstacles": {
+        "quintSteps": { "title": "Passos Quíntuplos", "description": "Cinco plataformas anguladas que requerem velocidade, precisão e impulso." },
+        "spiderWall": { "title": "Parede Aranha", "description": "Corredor vertical estreito que requer escalada com braços e pernas." },
+        "swingRopes": { "title": "Cordas de Balanço", "description": "Série de cordas penduradas para balançar entre plataformas." },
+        "rollingLog": { "title": "Tronco Rolante", "description": "Cilindro giratório que requer equilíbrio e reflexos rápidos." },
+        "pegBoard": { "title": "Quadro de Pinos", "description": "Quadro vertical com buracos para pinos que testa força superior." },
+        "doorKnobs": { "title": "Maçanetas", "description": "Série de maçanetas giratórias que requerem força de pegada." },
+        "pipeFitter": { "title": "Barras de Tubos", "description": "Barras aéreas de diâmetros variados que desafiam transições de pegada." },
+        "cannonball": { "title": "Corredor de Bolas", "description": "Série de esferas penduradas que requerem técnica de balanço e pegada." }
+      },
+      "trainingBenefits": {
+        "sectionLabel": "Benefícios do Treino",
+        "title": "Construa Força",
+        "titleHighlight": "e Confiança",
+        "description": "O treinamento ninja proporciona benefícios de desenvolvimento físico e mental para todas as idades.",
+        "strength": { "title": "Força Corporal Total", "description": "Desenvolve músculos superiores, core e pernas através de movimentos funcionais." },
+        "grip": { "title": "Força de Pegada", "description": "Obstáculos de pendurar, balançar e escalar melhoram a força de mãos e antebraços." },
+        "agility": { "title": "Agilidade e Velocidade", "description": "Transições rápidas e cursos cronometrados desenvolvem músculos de fibra rápida." },
+        "mental": { "title": "Força Mental", "description": "Superar obstáculos desafiadores constrói perseverança e foco." },
+        "coordination": { "title": "Coordenação Corporal", "description": "Movimentos complexos melhoram a propriocepção e consciência espacial." },
+        "confidence": { "title": "Autoconfiança", "description": "Alcançar metas e superar medos constrói autoestima duradoura." }
+      },
+      "safetySection": {
+        "sectionLabel": "Padrões de Segurança",
+        "title": "Sua Segurança é",
+        "titleHighlight": "Nossa Prioridade",
+        "description": "Cada circuito ninja é projetado com recursos de segurança abrangentes.",
+        "crashMats": { "title": "Colchões de Impacto", "description": "Colchões de espuma de alta densidade sob todos os obstáculos." },
+        "harnesses": { "title": "Cintos de Segurança", "description": "Sistemas de cinto opcionais para elementos altos." },
+        "padding": { "title": "Superfícies Acolchoadas", "description": "Todas as molduras, postes e bordas cobertas com acolchoamento protetor." },
+        "certification": { "title": "Certificado Internacional", "description": "Todos os equipamentos atendem aos padrões ASTM, TUV, CE e EN." }
+      },
+      "ageGroups": {
+        "sectionLabel": "Design por Idades",
+        "title": "Circuitos para",
+        "titleHighlight": "Todas as Idades",
+        "description": "Projetamos seções de circuito separadas com desafios apropriados para a idade.",
+        "kids": { "age": "6-12", "title": "Ninjas Junior", "description": "Obstáculos escalonados com acolchoamento extra para construir confiança." },
+        "teens": { "age": "13-17", "title": "Guerreiros Adolescentes", "description": "Desafios intermediários com variedade completa de obstáculos." },
+        "adults": { "age": "18+", "title": "Atletas Adultos", "description": "Obstáculos de nível competição completo para treino sério." },
+        "family": { "age": "Todas", "title": "Circuitos Familiares", "description": "Seções de dificuldade mista onde famílias podem treinar juntas." }
+      },
+      "processSection": {
+        "sectionLabel": "Nosso Processo",
+        "title": "Do Conceito a",
+        "titleHighlight": "Pronto para Competir",
+        "description": "Guiamos você em cada passo de criar sua instalação ninja warrior profissional.",
+        "consultation": { "step": "1", "title": "Consulta", "description": "Compartilhe sua visão, dimensões e público-alvo." },
+        "design": { "step": "2", "title": "Design 3D", "description": "Receba renderizações 3D profissionais com posicionamento otimizado." },
+        "production": { "step": "3", "title": "Fabricação", "description": "Produção de equipamentos premium com materiais comerciais." },
+        "shipping": { "step": "4", "title": "Envio Global", "description": "Embalagem e logística profissional com entrega porta a porta." },
+        "installation": { "step": "5", "title": "Instalação", "description": "Guias detalhados com tutoriais em vídeo ou instalação no local." },
+        "support": { "step": "6", "title": "Pós-Venda", "description": "Garantia de 3 anos com suporte técnico vitalício." }
+      },
       "ctaSection": {
         "title": "Pronto para Construir Seu Circuito Ninja?",
         "description": "Obtenha um design 3D gratuito e orçamento competitivo em 24 horas. Nossa equipe de especialistas ajudará você a criar uma instalação ninja warrior lucrativa e desafiadora.",
