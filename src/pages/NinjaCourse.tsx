@@ -12,6 +12,7 @@ import { useTranslation } from "react-i18next";
 import { useLocalizedPath } from "@/hooks/useLocalizedPath";
 import { Link } from "react-router-dom";
 import { getStorageUrl } from "@/config/galleryImages";
+import { motion } from "framer-motion";
 import { 
   Target, 
   Shield, 
@@ -19,7 +20,20 @@ import {
   Layers, 
   ArrowRight,
   CheckCircle,
-  Star
+  Star,
+  Award,
+  Clock,
+  Truck,
+  Wrench,
+  Quote,
+  MapPin,
+  Ruler,
+  Building2,
+  Flame,
+  Zap,
+  Mountain,
+  Timer,
+  Users
 } from "lucide-react";
 
 const NinjaCourse = () => {
@@ -71,6 +85,101 @@ const NinjaCourse = () => {
     "productPages.ninjaCourse.obstacles.climbing"
   ];
 
+  const stats = [
+    { value: "50+", labelKey: "productPages.ninjaCourse.stats.obstacles" },
+    { value: "200+", labelKey: "productPages.ninjaCourse.stats.projects" },
+    { value: "30+", labelKey: "productPages.ninjaCourse.stats.countries" },
+    { value: "15+", labelKey: "productPages.ninjaCourse.stats.years" }
+  ];
+
+  const difficultyLevels = [
+    {
+      icon: Users,
+      level: "productPages.ninjaCourse.levels.beginner.title",
+      description: "productPages.ninjaCourse.levels.beginner.description",
+      color: "bg-green-500"
+    },
+    {
+      icon: Zap,
+      level: "productPages.ninjaCourse.levels.intermediate.title",
+      description: "productPages.ninjaCourse.levels.intermediate.description",
+      color: "bg-yellow-500"
+    },
+    {
+      icon: Flame,
+      level: "productPages.ninjaCourse.levels.advanced.title",
+      description: "productPages.ninjaCourse.levels.advanced.description",
+      color: "bg-orange-500"
+    },
+    {
+      icon: Mountain,
+      level: "productPages.ninjaCourse.levels.elite.title",
+      description: "productPages.ninjaCourse.levels.elite.description",
+      color: "bg-red-500"
+    }
+  ];
+
+  const advantages = [
+    {
+      icon: Award,
+      titleKey: "productPages.ninjaCourse.advantages.certified.title",
+      descKey: "productPages.ninjaCourse.advantages.certified.description"
+    },
+    {
+      icon: Clock,
+      titleKey: "productPages.ninjaCourse.advantages.production.title",
+      descKey: "productPages.ninjaCourse.advantages.production.description"
+    },
+    {
+      icon: Truck,
+      titleKey: "productPages.ninjaCourse.advantages.shipping.title",
+      descKey: "productPages.ninjaCourse.advantages.shipping.description"
+    },
+    {
+      icon: Wrench,
+      titleKey: "productPages.ninjaCourse.advantages.installation.title",
+      descKey: "productPages.ninjaCourse.advantages.installation.description"
+    }
+  ];
+
+  const cases = [
+    {
+      image: galleryImages[0],
+      titleKey: "productPages.ninjaCourse.cases.ninja1.title",
+      locationKey: "productPages.ninjaCourse.cases.ninja1.location",
+      size: "800",
+      features: ["12 Obstacles", "Competition Grade", "LED Lighting"]
+    },
+    {
+      image: galleryImages[2],
+      titleKey: "productPages.ninjaCourse.cases.ninja2.title",
+      locationKey: "productPages.ninjaCourse.cases.ninja2.location",
+      size: "600",
+      features: ["8 Obstacles", "Kids Friendly", "Timing System"]
+    }
+  ];
+
+  const testimonials = [
+    {
+      name: "Mike Johnson",
+      location: "productPages.ninjaCourse.testimonials.mike.location",
+      quote: "productPages.ninjaCourse.testimonials.mike.quote",
+      rating: 5
+    },
+    {
+      name: "Lisa Chen",
+      location: "productPages.ninjaCourse.testimonials.lisa.location",
+      quote: "productPages.ninjaCourse.testimonials.lisa.quote",
+      rating: 5
+    },
+    {
+      name: "Robert Williams",
+      location: "productPages.ninjaCourse.testimonials.robert.location",
+      quote: "productPages.ninjaCourse.testimonials.robert.quote",
+      rating: 5
+    }
+  ];
+
   return (
     <div className="min-h-screen">
       <Header />
@@ -81,6 +190,31 @@ const NinjaCourse = () => {
           descriptionKey="productPages.ninjaCourse.description"
           backgroundImage={heroImage}
         />
+
+        {/* Stats Section */}
+        <section className="py-12 bg-primary">
+          <div className="container mx-auto px-4">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+              {stats.map((stat, index) => (
+                <motion.div
+                  key={index}
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: index * 0.1 }}
+                  className="text-center"
+                >
+                  <div className="text-4xl md:text-5xl font-bold text-primary-foreground mb-2">
+                    {stat.value}
+                  </div>
+                  <div className="text-primary-foreground/80 text-sm md:text-base">
+                    {t(stat.labelKey)}
+                  </div>
+                </motion.div>
+              ))}
+            </div>
+          </div>
+        </section>
 
         {/* Features Section */}
         <section className="py-20 bg-background">
@@ -97,15 +231,63 @@ const NinjaCourse = () => {
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
               {features.map((feature, index) => (
-                <Card key={index} className="border-0 shadow-lg hover:shadow-xl transition-shadow">
-                  <CardContent className="p-6 text-center">
-                    <div className="w-14 h-14 mx-auto mb-4 rounded-full bg-primary/10 flex items-center justify-center">
-                      <feature.icon className="w-7 h-7 text-primary" />
-                    </div>
-                    <h3 className="text-lg font-semibold mb-2">{t(feature.titleKey)}</h3>
-                    <p className="text-muted-foreground text-sm">{t(feature.descKey)}</p>
-                  </CardContent>
-                </Card>
+                <motion.div
+                  key={index}
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: index * 0.1 }}
+                >
+                  <Card className="border-0 shadow-lg hover:shadow-xl transition-shadow h-full">
+                    <CardContent className="p-6 text-center">
+                      <div className="w-14 h-14 mx-auto mb-4 rounded-full bg-primary/10 flex items-center justify-center">
+                        <feature.icon className="w-7 h-7 text-primary" />
+                      </div>
+                      <h3 className="text-lg font-semibold mb-2">{t(feature.titleKey)}</h3>
+                      <p className="text-muted-foreground text-sm">{t(feature.descKey)}</p>
+                    </CardContent>
+                  </Card>
+                </motion.div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Difficulty Levels Section */}
+        <section className="py-20 bg-muted/30">
+          <div className="container mx-auto px-4">
+            <div className="text-center mb-12">
+              <Badge variant="secondary" className="mb-4">
+                {t("productPages.ninjaCourse.levelsLabel")}
+              </Badge>
+              <h2 className="text-3xl md:text-4xl font-bold mb-4">
+                {t("productPages.ninjaCourse.levelsTitle")}{" "}
+                <span className="text-primary">{t("productPages.ninjaCourse.levelsTitleHighlight")}</span>
+              </h2>
+              <p className="text-muted-foreground max-w-2xl mx-auto">
+                {t("productPages.ninjaCourse.levelsDescription")}
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+              {difficultyLevels.map((level, index) => (
+                <motion.div
+                  key={index}
+                  initial={{ opacity: 0, scale: 0.9 }}
+                  whileInView={{ opacity: 1, scale: 1 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: index * 0.1 }}
+                >
+                  <Card className="border-0 shadow-lg hover:shadow-xl transition-all hover:-translate-y-1 h-full">
+                    <CardContent className="p-6">
+                      <div className={`w-12 h-12 ${level.color} rounded-xl flex items-center justify-center mb-4`}>
+                        <level.icon className="w-6 h-6 text-white" />
+                      </div>
+                      <h3 className="text-xl font-bold mb-2">{t(level.level)}</h3>
+                      <p className="text-muted-foreground text-sm">{t(level.description)}</p>
+                    </CardContent>
+                  </Card>
+                </motion.div>
               ))}
             </div>
           </div>
@@ -118,7 +300,12 @@ const NinjaCourse = () => {
         <section className="py-20 bg-background">
           <div className="container mx-auto px-4">
             <div className="grid lg:grid-cols-2 gap-12 items-center">
-              <div className="relative">
+              <motion.div 
+                className="relative"
+                initial={{ opacity: 0, x: -50 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+              >
                 <img 
                   src={galleryImages[1]}
                   alt="Ninja warrior obstacles"
@@ -130,9 +317,13 @@ const NinjaCourse = () => {
                     <span className="font-semibold">{t("productPages.ninjaCourse.competitionGrade")}</span>
                   </div>
                 </div>
-              </div>
+              </motion.div>
 
-              <div>
+              <motion.div
+                initial={{ opacity: 0, x: 50 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+              >
                 <Badge variant="secondary" className="mb-4">
                   {t("productPages.ninjaCourse.obstaclesLabel")}
                 </Badge>
@@ -146,10 +337,17 @@ const NinjaCourse = () => {
 
                 <div className="grid grid-cols-2 gap-4 mb-8">
                   {obstacles.map((obstacle, index) => (
-                    <div key={index} className="flex items-center gap-2">
+                    <motion.div 
+                      key={index} 
+                      className="flex items-center gap-2"
+                      initial={{ opacity: 0, x: 20 }}
+                      whileInView={{ opacity: 1, x: 0 }}
+                      viewport={{ once: true }}
+                      transition={{ delay: index * 0.05 }}
+                    >
                       <CheckCircle className="w-5 h-5 text-primary flex-shrink-0" />
                       <span className="text-sm">{t(obstacle)}</span>
-                    </div>
+                    </motion.div>
                   ))}
                 </div>
 
@@ -159,13 +357,159 @@ const NinjaCourse = () => {
                     <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
                   </Button>
                 </Link>
-              </div>
+              </motion.div>
+            </div>
+          </div>
+        </section>
+
+        {/* Advantages Section */}
+        <section className="py-20 bg-muted/30">
+          <div className="container mx-auto px-4">
+            <div className="text-center mb-12">
+              <Badge variant="secondary" className="mb-4">
+                {t("productPages.ninjaCourse.advantagesLabel")}
+              </Badge>
+              <h2 className="text-3xl md:text-4xl font-bold mb-4">
+                {t("productPages.ninjaCourse.advantagesTitle")}{" "}
+                <span className="text-primary">{t("productPages.ninjaCourse.advantagesTitleHighlight")}</span>
+              </h2>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+              {advantages.map((advantage, index) => (
+                <motion.div
+                  key={index}
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: index * 0.1 }}
+                >
+                  <Card className="border-0 shadow-lg hover:shadow-xl transition-all hover:-translate-y-1 h-full bg-background">
+                    <CardContent className="p-6 text-center">
+                      <div className="w-14 h-14 mx-auto mb-4 rounded-full bg-primary/10 flex items-center justify-center">
+                        <advantage.icon className="w-7 h-7 text-primary" />
+                      </div>
+                      <h3 className="text-lg font-semibold mb-2">{t(advantage.titleKey)}</h3>
+                      <p className="text-muted-foreground text-sm">{t(advantage.descKey)}</p>
+                    </CardContent>
+                  </Card>
+                </motion.div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Case Studies Section */}
+        <section className="py-20 bg-background">
+          <div className="container mx-auto px-4">
+            <div className="text-center mb-12">
+              <Badge variant="secondary" className="mb-4">
+                {t("productPages.ninjaCourse.casesLabel")}
+              </Badge>
+              <h2 className="text-3xl md:text-4xl font-bold mb-4">
+                {t("productPages.ninjaCourse.casesTitle")}{" "}
+                <span className="text-primary">{t("productPages.ninjaCourse.casesTitleHighlight")}</span>
+              </h2>
+            </div>
+
+            <div className="grid md:grid-cols-2 gap-8">
+              {cases.map((caseItem, index) => (
+                <motion.div
+                  key={index}
+                  initial={{ opacity: 0, y: 30 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: index * 0.2 }}
+                >
+                  <Card className="overflow-hidden border-0 shadow-xl hover:shadow-2xl transition-shadow">
+                    <div className="relative h-64">
+                      <img 
+                        src={caseItem.image} 
+                        alt={t(caseItem.titleKey)}
+                        className="w-full h-full object-cover"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent" />
+                      <div className="absolute bottom-4 left-4 right-4">
+                        <h3 className="text-xl font-bold text-white mb-1">{t(caseItem.titleKey)}</h3>
+                        <div className="flex items-center gap-2 text-white/80 text-sm">
+                          <MapPin className="w-4 h-4" />
+                          <span>{t(caseItem.locationKey)}</span>
+                        </div>
+                      </div>
+                    </div>
+                    <CardContent className="p-6">
+                      <div className="flex items-center gap-4 mb-4">
+                        <div className="flex items-center gap-2">
+                          <Ruler className="w-4 h-4 text-primary" />
+                          <span className="text-sm">{caseItem.size} m²</span>
+                        </div>
+                        <div className="flex items-center gap-2">
+                          <Timer className="w-4 h-4 text-primary" />
+                          <span className="text-sm">30 {t("productPages.ninjaCourse.days")}</span>
+                        </div>
+                      </div>
+                      <div className="flex flex-wrap gap-2">
+                        {caseItem.features.map((feature, idx) => (
+                          <Badge key={idx} variant="secondary" className="text-xs">
+                            {feature}
+                          </Badge>
+                        ))}
+                      </div>
+                    </CardContent>
+                  </Card>
+                </motion.div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Testimonials Section */}
+        <section className="py-20 bg-muted/30">
+          <div className="container mx-auto px-4">
+            <div className="text-center mb-12">
+              <Badge variant="secondary" className="mb-4">
+                {t("productPages.ninjaCourse.testimonialsLabel")}
+              </Badge>
+              <h2 className="text-3xl md:text-4xl font-bold mb-4">
+                {t("productPages.ninjaCourse.testimonialsTitle")}{" "}
+                <span className="text-primary">{t("productPages.ninjaCourse.testimonialsTitleHighlight")}</span>
+              </h2>
+            </div>
+
+            <div className="grid md:grid-cols-3 gap-6">
+              {testimonials.map((testimonial, index) => (
+                <motion.div
+                  key={index}
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: index * 0.1 }}
+                >
+                  <Card className="border-0 shadow-lg h-full bg-background">
+                    <CardContent className="p-6">
+                      <Quote className="w-10 h-10 text-primary/20 mb-4" />
+                      <p className="text-muted-foreground mb-6 italic">
+                        "{t(testimonial.quote)}"
+                      </p>
+                      <div className="flex items-center gap-1 mb-4">
+                        {[...Array(testimonial.rating)].map((_, i) => (
+                          <Star key={i} className="w-4 h-4 fill-yellow-400 text-yellow-400" />
+                        ))}
+                      </div>
+                      <div>
+                        <p className="font-semibold">{testimonial.name}</p>
+                        <p className="text-sm text-muted-foreground">{t(testimonial.location)}</p>
+                      </div>
+                    </CardContent>
+                  </Card>
+                </motion.div>
+              ))}
             </div>
           </div>
         </section>
 
         {/* Gallery Section */}
-        <section className="py-20 bg-muted/30">
+        <section className="py-20 bg-background">
           <div className="container mx-auto px-4">
             <div className="text-center mb-12">
               <Badge variant="secondary" className="mb-4">
@@ -179,16 +523,55 @@ const NinjaCourse = () => {
 
             <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
               {galleryImages.map((image, index) => (
-                <div key={index} className="relative aspect-[4/3] rounded-xl overflow-hidden group">
+                <motion.div 
+                  key={index} 
+                  className="relative aspect-[4/3] rounded-xl overflow-hidden group"
+                  initial={{ opacity: 0, scale: 0.9 }}
+                  whileInView={{ opacity: 1, scale: 1 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: index * 0.1 }}
+                >
                   <img 
                     src={image} 
                     alt={`Ninja course ${index + 1}`}
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                   />
                   <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors" />
-                </div>
+                </motion.div>
               ))}
             </div>
+          </div>
+        </section>
+
+        {/* CTA Section */}
+        <section className="py-20 bg-primary">
+          <div className="container mx-auto px-4">
+            <motion.div 
+              className="text-center max-w-3xl mx-auto"
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+            >
+              <h2 className="text-3xl md:text-4xl font-bold text-primary-foreground mb-4">
+                {t("productPages.ninjaCourse.ctaSection.title")}
+              </h2>
+              <p className="text-primary-foreground/80 mb-8 text-lg">
+                {t("productPages.ninjaCourse.ctaSection.description")}
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                <Link to={localizedPath("/contact")}>
+                  <Button size="lg" variant="secondary" className="w-full sm:w-auto group">
+                    {t("productPages.ninjaCourse.ctaSection.getQuote")}
+                    <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                  </Button>
+                </Link>
+                <Link to={localizedPath("/projects")}>
+                  <Button size="lg" variant="outline" className="w-full sm:w-auto border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary">
+                    {t("productPages.ninjaCourse.ctaSection.viewProjects")}
+                  </Button>
+                </Link>
+              </div>
+            </motion.div>
           </div>
         </section>
 

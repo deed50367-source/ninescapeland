@@ -823,8 +823,93 @@
       "galleryTitle": "Galeria de Circuitos",
       "galleryTitleHighlight": "Ninja",
       "cta": "Design e Orçamento Grátis",
-      "competitionGrade": "Nível Competição"
-    },
+      "competitionGrade": "Nível Competição",
+      "days": "Dias",
+      "stats": {
+        "obstacles": "Tipos de Obstáculos",
+        "projects": "Projetos Concluídos",
+        "countries": "Países Atendidos",
+        "years": "Anos de Experiência"
+      },
+      "levelsLabel": "Níveis de Dificuldade",
+      "levelsTitle": "Níveis de",
+      "levelsTitleHighlight": "Dificuldade de Treino",
+      "levelsDescription": "Nossos circuitos ninja são projetados com múltiplos níveis de dificuldade para desafiar participantes desde iniciantes até atletas de elite.",
+      "levels": {
+        "beginner": {
+          "title": "Iniciante",
+          "description": "Perfeito para primeira vez. Obstáculos baixos com acolchoamento de segurança e pontos de apoio fáceis para ganhar confiança."
+        },
+        "intermediate": {
+          "title": "Intermediário",
+          "description": "Desafios moderados com maior complexidade. Alcances mais longos e elementos de equilíbrio para desenvolver habilidades."
+        },
+        "advanced": {
+          "title": "Avançado",
+          "description": "Obstáculos exigentes que requerem força e técnica. Elementos técnicos que testam atletas experientes."
+        },
+        "elite": {
+          "title": "Elite / Competição",
+          "description": "Dificuldade nível programa de TV. Máximo desafio para atletas ninja profissionais e treino de competição."
+        }
+      },
+      "advantagesLabel": "Nossas Vantagens",
+      "advantagesTitle": "Por Que Escolher",
+      "advantagesTitleHighlight": "NinescapeLand",
+      "advantages": {
+        "certified": {
+          "title": "Certificação Internacional",
+          "description": "Equipamentos certificados ASTM, TUV, CE que atendem aos padrões de segurança globais."
+        },
+        "production": {
+          "title": "Produção Rápida",
+          "description": "Fabricação de 25-35 dias com atualizações regulares de progresso."
+        },
+        "shipping": {
+          "title": "Envio Global",
+          "description": "Entrega porta a porta para mais de 50 países em todo o mundo."
+        },
+        "installation": {
+          "title": "Suporte de Instalação",
+          "description": "Guias detalhados, suporte por vídeo ou instalação no local disponível."
+        }
+      },
+      "casesLabel": "Casos de Sucesso",
+      "casesTitle": "Projetos",
+      "casesTitleHighlight": "Destacados",
+      "cases": {
+        "ninja1": {
+          "title": "Academia Ninja USA",
+          "location": "Denver, Colorado, EUA"
+        },
+        "ninja2": {
+          "title": "Treinamento Ultimate Warrior",
+          "location": "Toronto, Canadá"
+        }
+      },
+      "testimonialsLabel": "Avaliações de Clientes",
+      "testimonialsTitle": "O Que Clientes",
+      "testimonialsTitleHighlight": "Dizem Sobre Nós",
+      "testimonials": {
+        "mike": {
+          "location": "Dono de Academia, Califórnia, EUA",
+          "quote": "O equipamento do circuito ninja transformou nossa academia. Os membros adoram o desafio e se tornou nossa maior atração. A qualidade é excepcional e a instalação foi simples."
+        },
+        "lisa": {
+          "location": "Gerente de FEC, Vancouver, Canadá",
+          "quote": "Do design à instalação, a NinescapeLand superou nossas expectativas. O layout do circuito maximiza nosso espaço e a qualidade do equipamento é excelente."
+        },
+        "robert": {
+          "location": "Diretor de Parque de Aventuras, Melbourne, Austrália",
+          "quote": "Vimos um aumento significativo nas assinaturas desde que adicionamos o circuito ninja. Os obstáculos de nível competição atraem tanto atletas sérios quanto visitantes casuais."
+        }
+      },
+      "ctaSection": {
+        "title": "Pronto para Construir Seu Circuito Ninja?",
+        "description": "Obtenha um design 3D gratuito e orçamento competitivo em 24 horas. Nossa equipe de especialistas ajudará você a criar uma instalação ninja warrior lucrativa e desafiadora.",
+        "getQuote": "Obter Orçamento Grátis",
+        "viewProjects": "Ver Mais Projetos"
+      },
     "softPlay": {
       "title": "Áreas de",
       "titleHighlight": "Soft Play",
