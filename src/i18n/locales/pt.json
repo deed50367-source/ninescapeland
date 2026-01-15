@@ -226,7 +226,16 @@
       "successTitle": "Mensagem Enviada!",
       "successDescription": "Obrigado pela sua consulta. Responderemos em 24 horas.",
       "errorTitle": "Erro",
-      "errorDescription": "Falha ao enviar sua mensagem. Por favor, tente novamente ou entre em contato conosco diretamente."
+      "errorDescription": "Falha ao enviar sua mensagem. Por favor, tente novamente ou entre em contato conosco diretamente.",
+      "rateLimitTitle": "Muitas Solicitações",
+      "rateLimitDescription": "Por favor, aguarde {{time}} antes de enviar novamente.",
+      "validationErrorTitle": "Erro de Validação",
+      "validationErrorDescription": "Por favor, verifique os campos do formulário"
+    },
+    "rateLimit": {
+      "title": "Limite de Envios Atingido",
+      "description": "Por favor, aguarde {{time}} antes de enviar outra mensagem.",
+      "wait": "Aguarde {{time}}"
     }
   },
   "coreValues": {

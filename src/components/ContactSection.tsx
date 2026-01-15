@@ -1,12 +1,13 @@
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { motion } from "framer-motion";
-import { Send, Phone, Mail, MapPin, Clock, MessageCircle } from "lucide-react";
+import { Send, Phone, Mail, MapPin, Clock, MessageCircle, AlertTriangle } from "lucide-react";
 import { Button } from "./ui/button";
 import { Input } from "./ui/input";
 import { Textarea } from "./ui/textarea";
 import { useToast } from "@/hooks/use-toast";
 import { useRTL } from "@/hooks/useRTL";
+import { useRateLimit } from "@/hooks/useRateLimit";
 import { supabase } from "@/integrations/supabase/client";
 import { z } from "zod";
 
@@ -60,6 +61,13 @@ export const ContactSection = () => {
     projectType: "",
     message: "",
   });
+  
+  // Rate limiting: max 3 submissions per minute, 5 minute cooldown
+  const rateLimit = useRateLimit({
+    maxAttempts: 3,
+    windowMs: 60000,
+    cooldownMs: 300000,
+  });
 
   const contactInfo = [
     {
@@ -91,6 +99,19 @@ export const ContactSection = () => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setFormErrors({});
+    
+    // Check rate limit before proceeding
+    if (!rateLimit.recordAttempt()) {
+      toast({
+        title: t("contact.toast.rateLimitTitle"),
+        description: t("contact.toast.rateLimitDescription", { 
+          time: rateLimit.formatTimeRemaining(rateLimit.timeUntilReset) 
+        }),
+        variant: "destructive",
+      });
+      return;
+    }
+    
     setIsSubmitting(true);
     
     try {
@@ -303,15 +324,38 @@ export const ContactSection = () => {
                 {formErrors.message && <p className="text-destructive text-xs mt-1">{formErrors.message}</p>}
               </div>
 
+              {/* Rate limit warning */}
+              {rateLimit.isLimited && (
+                <div className="mb-4 p-4 bg-destructive/10 border border-destructive/20 rounded-lg flex items-center gap-3">
+                  <AlertTriangle className="w-5 h-5 text-destructive flex-shrink-0" />
+                  <div>
+                    <p className="text-sm font-medium text-destructive">
+                      {t("contact.rateLimit.title")}
+                    </p>
+                    <p className="text-xs text-destructive/80">
+                      {t("contact.rateLimit.description", { 
+                        time: rateLimit.formatTimeRemaining(rateLimit.timeUntilReset) 
+                      })}
+                    </p>
+                  </div>
+                </div>
+              )}
+
               <Button
                 type="submit"
                 variant="hero"
                 size="lg"
                 className="w-full h-11 sm:h-14 text-sm sm:text-base"
-                disabled={isSubmitting}
+                disabled={isSubmitting || rateLimit.isLimited}
               >
                 {isSubmitting ? (
                   t("contact.form.sending")
+                ) : rateLimit.isLimited ? (
+                  <>
+                    {t("contact.rateLimit.wait", { 
+                      time: rateLimit.formatTimeRemaining(rateLimit.timeUntilReset) 
+                    })}
+                  </>
                 ) : (
                   <>
                     {t("contact.form.submit")}
