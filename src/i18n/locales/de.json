@@ -226,7 +226,16 @@
       "successTitle": "Nachricht gesendet!",
       "successDescription": "Vielen Dank für Ihre Anfrage. Wir melden uns innerhalb von 24 Stunden.",
       "errorTitle": "Fehler",
-      "errorDescription": "Nachricht konnte nicht gesendet werden. Bitte versuchen Sie es erneut oder kontaktieren Sie uns direkt."
+      "errorDescription": "Nachricht konnte nicht gesendet werden. Bitte versuchen Sie es erneut oder kontaktieren Sie uns direkt.",
+      "rateLimitTitle": "Zu viele Anfragen",
+      "rateLimitDescription": "Bitte warten Sie {{time}} vor dem erneuten Senden.",
+      "validationErrorTitle": "Validierungsfehler",
+      "validationErrorDescription": "Bitte überprüfen Sie die Formularfelder"
+    },
+    "rateLimit": {
+      "title": "Sendelimit erreicht",
+      "description": "Bitte warten Sie {{time}} bevor Sie eine weitere Nachricht senden.",
+      "wait": "Warten {{time}}"
     }
   },
   "coreValues": {

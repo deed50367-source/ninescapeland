@@ -226,7 +226,16 @@
       "successTitle": "تم إرسال الرسالة!",
       "successDescription": "شكراً لاستفسارك. سنرد عليك خلال 24 ساعة.",
       "errorTitle": "خطأ",
-      "errorDescription": "فشل إرسال رسالتك. يرجى المحاولة مرة أخرى أو الاتصال بنا مباشرة."
+      "errorDescription": "فشل إرسال رسالتك. يرجى المحاولة مرة أخرى أو الاتصال بنا مباشرة.",
+      "rateLimitTitle": "طلبات كثيرة جداً",
+      "rateLimitDescription": "يرجى الانتظار {{time}} قبل الإرسال مرة أخرى.",
+      "validationErrorTitle": "خطأ في التحقق",
+      "validationErrorDescription": "يرجى التحقق من حقول النموذج"
+    },
+    "rateLimit": {
+      "title": "تم الوصول إلى حد الإرسال",
+      "description": "يرجى الانتظار {{time}} قبل إرسال رسالة أخرى.",
+      "wait": "انتظر {{time}}"
     }
   },
   "coreValues": {

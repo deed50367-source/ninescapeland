@@ -226,7 +226,16 @@
       "successTitle": "Message Sent!",
       "successDescription": "Thank you for your inquiry. We'll get back to you within 24 hours.",
       "errorTitle": "Error",
-      "errorDescription": "Failed to send your message. Please try again or contact us directly."
+      "errorDescription": "Failed to send your message. Please try again or contact us directly.",
+      "rateLimitTitle": "Too Many Requests",
+      "rateLimitDescription": "Please wait {{time}} before submitting again.",
+      "validationErrorTitle": "Validation Error",
+      "validationErrorDescription": "Please check the form fields"
+    },
+    "rateLimit": {
+      "title": "Submission Limit Reached",
+      "description": "Please wait {{time}} before submitting another message.",
+      "wait": "Wait {{time}}"
     }
   },
   "coreValues": {
