@@ -3,7 +3,7 @@ import { PageHero } from "@/components/PageHero";
 import { Footer } from "@/components/Footer";
 import { FloatingCTA } from "@/components/FloatingCTA";
 import { QuoteCalculator } from "@/components/QuoteCalculator";
-import { FAQSection } from "@/components/FAQSection";
+import { ProductFAQ } from "@/components/ProductFAQ";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -889,8 +889,8 @@ const IndoorPlayground = () => {
           </div>
         </section>
 
+        <ProductFAQ productType="indoorPlayground" />
         <QuoteCalculator />
-        <FAQSection />
       </main>
       <Footer />
       <FloatingCTA />

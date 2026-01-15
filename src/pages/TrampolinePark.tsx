@@ -4,7 +4,7 @@ import { Footer } from "@/components/Footer";
 import { FloatingCTA } from "@/components/FloatingCTA";
 import { TrampolineFeaturesSection } from "@/components/TrampolineFeaturesSection";
 import { QuoteCalculator } from "@/components/QuoteCalculator";
-import { FAQSection } from "@/components/FAQSection";
+import { ProductFAQ } from "@/components/ProductFAQ";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -818,8 +818,8 @@ const TrampolinePark = () => {
           </div>
         </section>
 
+        <ProductFAQ productType="trampolinePark" />
         <QuoteCalculator />
-        <FAQSection />
       </main>
       <Footer />
       <FloatingCTA />

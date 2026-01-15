@@ -1813,5 +1813,135 @@
         "description": "Africa presents exciting growth opportunities where we've established strong partnerships. Our projects in this region often feature locally-inspired themes and are designed to withstand varied climate conditions."
       }
     }
+  },
+  "productFAQ": {
+    "indoorPlayground": {
+      "sectionLabel": "Frequently Asked Questions",
+      "title": "Indoor Playground",
+      "titleHighlight": "FAQ",
+      "description": "Find answers to common questions about indoor playground equipment, installation, safety standards, and more.",
+      "items": {
+        "q1": {
+          "question": "What is the minimum space required for an indoor playground?",
+          "answer": "We can design indoor playgrounds for spaces as small as 50 sqm for compact play areas, though we recommend at least 100-200 sqm for a meaningful multi-level structure. Our design team will create a custom layout that maximizes your available space while ensuring safe play zones and traffic flow."
+        },
+        "q2": {
+          "question": "How long does it take to manufacture and deliver an indoor playground?",
+          "answer": "Production typically takes 25-35 days after design approval, followed by 20-35 days for international shipping. Total lead time is usually 45-70 days from order confirmation. Rush orders can be accommodated for urgent projects with prior arrangement."
+        },
+        "q3": {
+          "question": "What safety certifications do your indoor playgrounds meet?",
+          "answer": "All our indoor playground equipment is certified to ASTM F1918 (USA), TUV, CE, and EN 1176 (European) standards. We use only premium, lead-free, non-toxic materials that have passed rigorous safety testing for child equipment."
+        },
+        "q4": {
+          "question": "Can you create custom themed indoor playgrounds?",
+          "answer": "Absolutely! Custom theming is one of our specialties. We can create any theme you envision - from jungle adventures and underwater worlds to space exploration and castle kingdoms. Our design team provides free 3D renderings showing exactly how your themed playground will look."
+        },
+        "q5": {
+          "question": "What is included in your indoor playground installation support?",
+          "answer": "We provide comprehensive installation support including detailed assembly manuals, step-by-step video tutorials, numbered component labeling, and 24/7 technical support via WhatsApp. Optional on-site installation by our trained technicians is available for an additional fee."
+        },
+        "q6": {
+          "question": "What warranty do you offer on indoor playground equipment?",
+          "answer": "We provide a comprehensive 3-year warranty covering manufacturing defects on all structural components, with free replacement parts. Additionally, we offer lifetime technical support and can supply spare parts for maintenance needs throughout the life of your playground."
+        }
+      }
+    },
+    "trampolinePark": {
+      "sectionLabel": "Frequently Asked Questions",
+      "title": "Trampoline Park",
+      "titleHighlight": "FAQ",
+      "description": "Everything you need to know about trampoline park equipment, safety features, activity zones, and installation.",
+      "items": {
+        "q1": {
+          "question": "What is the minimum space needed for a trampoline park?",
+          "answer": "A basic trampoline park with 3-4 activity zones requires at least 500 sqm. For a full-featured park with 10+ zones including foam pits, dodgeball courts, and ninja courses, we recommend 1,000-3,000 sqm. Ceiling height should be at least 4-6 meters for optimal jumping clearance."
+        },
+        "q2": {
+          "question": "How many activity zones can you include in a trampoline park?",
+          "answer": "We offer 12+ different activity zone types including: free jump areas, foam pit jump zones, slam dunk basketball, dodgeball courts, climbing walls, ninja courses, 360° bicycles, skyrider zip lines, battle beams, airbag jumps, performance trampolines, and toddler zones. Your park can include any combination based on space and budget."
+        },
+        "q3": {
+          "question": "What safety features are included with trampoline park equipment?",
+          "answer": "Safety is paramount. Our trampolines feature padded frame covers, safety nets, impact-absorbing landing zones, and commercial-grade springs rated for intensive use. All equipment meets ASTM F2970 trampoline park standards, TUV certification, and international safety requirements."
+        },
+        "q4": {
+          "question": "How often do trampoline park components need replacement?",
+          "answer": "With proper maintenance, our commercial-grade trampoline beds typically last 3-5 years with high traffic, padding and foam pits 5-7 years. We provide maintenance guides and can supply all replacement parts. Regular inspection checklists are included with every installation."
+        },
+        "q5": {
+          "question": "Do you provide trampoline park business planning support?",
+          "answer": "Yes! Beyond equipment, we offer guidance on layout optimization for maximum capacity and revenue, staffing recommendations, waiver systems, operational best practices, and can connect you with successful park owners for mentorship. We want your business to succeed."
+        },
+        "q6": {
+          "question": "What is the weight capacity of your trampolines?",
+          "answer": "Our commercial trampolines are rated for users up to 150kg (330 lbs) per jumping surface. Frame structures are engineered to support simultaneous multi-user activity across all connected trampolines. All weight ratings exceed international commercial use standards."
+        }
+      }
+    },
+    "ninjaCourse": {
+      "sectionLabel": "Frequently Asked Questions",
+      "title": "Ninja Course",
+      "titleHighlight": "FAQ",
+      "description": "Learn about ninja warrior obstacle courses, difficulty levels, training benefits, and installation requirements.",
+      "items": {
+        "q1": {
+          "question": "What obstacles are included in a ninja warrior course?",
+          "answer": "We offer 50+ obstacle types including warped walls, salmon ladders, ring swings, rope climbs, spider walks, quintuple steps, peg boards, cliff hangers, spinning logs, flying bars, cargo nets, and many more. Each course is customized based on your space, target audience, and difficulty preferences."
+        },
+        "q2": {
+          "question": "Can ninja courses be adjusted for different skill levels?",
+          "answer": "Absolutely! Many of our obstacles feature adjustable difficulty settings. We can also design multi-lane courses with beginner, intermediate, and advanced tracks running parallel. This allows facilities to accommodate everyone from first-timers to competitive athletes."
+        },
+        "q3": {
+          "question": "What is the minimum space required for a ninja course?",
+          "answer": "A basic ninja course with 8-10 obstacles needs approximately 150-200 sqm with ceiling heights of at least 3.5 meters. Competition-grade courses typically require 300-500 sqm. We can design creative solutions for smaller or irregularly shaped spaces."
+        },
+        "q4": {
+          "question": "Are ninja courses safe for children?",
+          "answer": "Yes! We design age-appropriate courses for all skill levels. Junior courses (ages 6-12) feature lower heights, wider grips, and shorter spans. All courses include crash mats, safety padding, and optional harness systems. Our equipment meets all international child safety standards."
+        },
+        "q5": {
+          "question": "Can you create competition-standard ninja courses?",
+          "answer": "Yes, we design professional competition courses following TV show specifications and competition league requirements. These include timing systems, multiple difficulty lanes, and spectator viewing considerations. Many competitive training facilities and TV productions use our equipment."
+        },
+        "q6": {
+          "question": "What maintenance is required for ninja course equipment?",
+          "answer": "Daily visual inspections take about 10 minutes. Monthly detailed checks of all connection points, padding, and moving parts are recommended. We provide comprehensive maintenance guides and can supply replacement parts. With proper care, structural components last 10+ years."
+        }
+      }
+    },
+    "softPlay": {
+      "sectionLabel": "Frequently Asked Questions",
+      "title": "Soft Play",
+      "titleHighlight": "FAQ",
+      "description": "Common questions about soft play equipment for toddlers, safety materials, hygiene, and age-appropriate design.",
+      "items": {
+        "q1": {
+          "question": "What age range is soft play equipment designed for?",
+          "answer": "Our soft play equipment is specifically designed for children from 6 months to 5 years old. We create age-appropriate zones: infant areas (6-18 months) with sensory elements, toddler zones (18 months-3 years) with gentle climbing and slides, and preschool areas (3-5 years) with more challenging play structures."
+        },
+        "q2": {
+          "question": "What materials are used in soft play equipment?",
+          "answer": "We use premium PVC leather covering high-density foam cores. All materials are lead-free, phthalate-free, fire-retardant (meets BS 5852), and easy to clean. The PVC covering is antimicrobial and can be sanitized with standard cleaning solutions without degradation."
+        },
+        "q3": {
+          "question": "How easy is it to clean and maintain soft play equipment?",
+          "answer": "Very easy! The smooth PVC surfaces can be wiped down with mild soap and water or commercial sanitizing solutions. We recommend daily surface cleaning and weekly deep cleaning. The durable materials resist staining and are designed for high-frequency sanitization."
+        },
+        "q4": {
+          "question": "What is the minimum space needed for a soft play area?",
+          "answer": "Soft play areas can be designed for spaces as compact as 20 sqm for a simple ball pit and climbing zone. Typical installations range from 50-200 sqm. We specialize in maximizing play value within small footprints - perfect for cafes, restaurants, churches, and waiting areas."
+        },
+        "q5": {
+          "question": "Can soft play equipment be customized to match our brand?",
+          "answer": "Absolutely! We offer full color customization with an extensive palette of PVC leather colors. Your soft play area can match your brand colors, venue theme, or any specific design vision. Custom printed elements and branded signage can also be incorporated."
+        },
+        "q6": {
+          "question": "How long does soft play equipment last?",
+          "answer": "With proper care, our commercial-grade soft play equipment lasts 8-10+ years in high-traffic environments. The high-density foam maintains its shape and cushioning properties, while the premium PVC covering resists wear, fading, and cracking. We provide a 3-year manufacturer warranty."
+        }
+      }
+    }
   }
 }

@@ -4,7 +4,7 @@ import { Footer } from "@/components/Footer";
 import { FloatingCTA } from "@/components/FloatingCTA";
 import { NinjaFeaturesSection } from "@/components/NinjaFeaturesSection";
 import { QuoteCalculator } from "@/components/QuoteCalculator";
-import { FAQSection } from "@/components/FAQSection";
+import { ProductFAQ } from "@/components/ProductFAQ";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -751,8 +751,8 @@ const NinjaCourse = () => {
           </div>
         </section>
 
+        <ProductFAQ productType="ninjaCourse" />
         <QuoteCalculator />
-        <FAQSection />
       </main>
       <Footer />
       <FloatingCTA />

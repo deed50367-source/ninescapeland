@@ -1665,5 +1665,135 @@
         "description": "África presenta oportunidades de crecimiento emocionantes donde hemos establecido sólidas asociaciones. Nuestros proyectos en esta región a menudo presentan temas de inspiración local."
       }
     }
+  },
+  "productFAQ": {
+    "indoorPlayground": {
+      "sectionLabel": "Preguntas Frecuentes",
+      "title": "Parque Infantil Interior",
+      "titleHighlight": "FAQ",
+      "description": "Encuentre respuestas a preguntas comunes sobre equipos de parques infantiles interiores, instalación, estándares de seguridad y más.",
+      "items": {
+        "q1": {
+          "question": "¿Cuál es el espacio mínimo requerido para un parque infantil interior?",
+          "answer": "Podemos diseñar parques infantiles interiores para espacios tan pequeños como 50 m² para áreas de juego compactas, aunque recomendamos al menos 100-200 m² para una estructura multinivel significativa. Nuestro equipo de diseño creará un diseño personalizado que maximice su espacio disponible mientras garantiza zonas de juego seguras y flujo de tráfico."
+        },
+        "q2": {
+          "question": "¿Cuánto tiempo lleva fabricar y entregar un parque infantil interior?",
+          "answer": "La producción normalmente toma 25-35 días después de la aprobación del diseño, seguida de 20-35 días para el envío internacional. El tiempo total de entrega suele ser de 45-70 días desde la confirmación del pedido. Los pedidos urgentes pueden acomodarse para proyectos urgentes con arreglo previo."
+        },
+        "q3": {
+          "question": "¿Qué certificaciones de seguridad cumplen sus parques infantiles interiores?",
+          "answer": "Todos nuestros equipos de parques infantiles interiores están certificados según ASTM F1918 (EE.UU.), TUV, CE y EN 1176 (europeo). Utilizamos únicamente materiales premium, libres de plomo y no tóxicos que han pasado pruebas de seguridad rigurosas para equipos infantiles."
+        },
+        "q4": {
+          "question": "¿Pueden crear parques infantiles interiores temáticos personalizados?",
+          "answer": "¡Absolutamente! La tematización personalizada es una de nuestras especialidades. Podemos crear cualquier tema que imagine - desde aventuras en la selva y mundos submarinos hasta exploración espacial y reinos de castillos. Nuestro equipo de diseño proporciona renders 3D gratuitos mostrando exactamente cómo se verá su parque temático."
+        },
+        "q5": {
+          "question": "¿Qué incluye su soporte de instalación de parques infantiles interiores?",
+          "answer": "Proporcionamos soporte de instalación integral que incluye manuales de ensamblaje detallados, tutoriales en video paso a paso, etiquetado de componentes numerados y soporte técnico 24/7 vía WhatsApp. La instalación en sitio por nuestros técnicos capacitados está disponible por una tarifa adicional."
+        },
+        "q6": {
+          "question": "¿Qué garantía ofrecen en equipos de parques infantiles interiores?",
+          "answer": "Proporcionamos una garantía integral de 3 años que cubre defectos de fabricación en todos los componentes estructurales, con piezas de repuesto gratuitas. Además, ofrecemos soporte técnico de por vida y podemos suministrar repuestos para necesidades de mantenimiento durante toda la vida de su parque."
+        }
+      }
+    },
+    "trampolinePark": {
+      "sectionLabel": "Preguntas Frecuentes",
+      "title": "Parque de Trampolines",
+      "titleHighlight": "FAQ",
+      "description": "Todo lo que necesita saber sobre equipos de parques de trampolines, características de seguridad, zonas de actividades e instalación.",
+      "items": {
+        "q1": {
+          "question": "¿Cuál es el espacio mínimo necesario para un parque de trampolines?",
+          "answer": "Un parque de trampolines básico con 3-4 zonas de actividad requiere al menos 500 m². Para un parque con todas las funciones con más de 10 zonas incluyendo fosas de espuma, canchas de dodgeball y cursos ninja, recomendamos 1,000-3,000 m². La altura del techo debe ser de al menos 4-6 metros para una altura de salto óptima."
+        },
+        "q2": {
+          "question": "¿Cuántas zonas de actividades pueden incluir en un parque de trampolines?",
+          "answer": "Ofrecemos más de 12 tipos diferentes de zonas de actividades incluyendo: áreas de salto libre, zonas de salto en fosa de espuma, baloncesto slam dunk, canchas de dodgeball, muros de escalada, cursos ninja, bicicletas 360°, tirolinas skyrider, vigas de batalla, saltos en bolsa de aire, trampolines de rendimiento y zonas para niños pequeños."
+        },
+        "q3": {
+          "question": "¿Qué características de seguridad están incluidas con el equipo del parque de trampolines?",
+          "answer": "La seguridad es primordial. Nuestros trampolines cuentan con cubiertas de marco acolchadas, redes de seguridad, zonas de aterrizaje absorbentes de impacto y resortes de grado comercial diseñados para uso intensivo. Todos los equipos cumplen con los estándares ASTM F2970 para parques de trampolines, certificación TUV y requisitos de seguridad internacionales."
+        },
+        "q4": {
+          "question": "¿Con qué frecuencia necesitan reemplazo los componentes del parque de trampolines?",
+          "answer": "Con el mantenimiento adecuado, nuestras camas de trampolín de grado comercial típicamente duran 3-5 años con alto tráfico, el acolchado y las fosas de espuma 5-7 años. Proporcionamos guías de mantenimiento y podemos suministrar todas las piezas de repuesto. Las listas de verificación de inspección regular se incluyen con cada instalación."
+        },
+        "q5": {
+          "question": "¿Proporcionan soporte de planificación empresarial para parques de trampolines?",
+          "answer": "¡Sí! Más allá del equipo, ofrecemos orientación sobre optimización del diseño para máxima capacidad e ingresos, recomendaciones de personal, sistemas de exención, mejores prácticas operativas, y podemos conectarlo con propietarios de parques exitosos para mentoría. Queremos que su negocio tenga éxito."
+        },
+        "q6": {
+          "question": "¿Cuál es la capacidad de peso de sus trampolines?",
+          "answer": "Nuestros trampolines comerciales están clasificados para usuarios de hasta 150 kg (330 lbs) por superficie de salto. Las estructuras del marco están diseñadas para soportar la actividad simultánea de múltiples usuarios en todos los trampolines conectados. Todas las clasificaciones de peso superan los estándares internacionales de uso comercial."
+        }
+      }
+    },
+    "ninjaCourse": {
+      "sectionLabel": "Preguntas Frecuentes",
+      "title": "Curso Ninja",
+      "titleHighlight": "FAQ",
+      "description": "Aprenda sobre cursos de obstáculos ninja warrior, niveles de dificultad, beneficios del entrenamiento y requisitos de instalación.",
+      "items": {
+        "q1": {
+          "question": "¿Qué obstáculos están incluidos en un curso ninja warrior?",
+          "answer": "Ofrecemos más de 50 tipos de obstáculos incluyendo paredes curvadas, escaleras de salmón, columpios de anillos, escalada de cuerdas, caminatas de araña, pasos quíntuples, tableros de clavijas, colgadores de acantilados, troncos giratorios, barras voladoras, redes de carga y mucho más. Cada curso se personaliza según su espacio, audiencia objetivo y preferencias de dificultad."
+        },
+        "q2": {
+          "question": "¿Se pueden ajustar los cursos ninja para diferentes niveles de habilidad?",
+          "answer": "¡Absolutamente! Muchos de nuestros obstáculos cuentan con configuraciones de dificultad ajustables. También podemos diseñar cursos de múltiples carriles con pistas para principiantes, intermedios y avanzados funcionando en paralelo. Esto permite que las instalaciones acomoden a todos, desde principiantes hasta atletas competitivos."
+        },
+        "q3": {
+          "question": "¿Cuál es el espacio mínimo requerido para un curso ninja?",
+          "answer": "Un curso ninja básico con 8-10 obstáculos necesita aproximadamente 150-200 m² con alturas de techo de al menos 3.5 metros. Los cursos de grado de competición típicamente requieren 300-500 m². Podemos diseñar soluciones creativas para espacios más pequeños o de formas irregulares."
+        },
+        "q4": {
+          "question": "¿Son los cursos ninja seguros para niños?",
+          "answer": "¡Sí! Diseñamos cursos apropiados para la edad para todos los niveles de habilidad. Los cursos junior (edades 6-12) cuentan con alturas más bajas, agarres más anchos y tramos más cortos. Todos los cursos incluyen colchonetas de impacto, acolchado de seguridad y sistemas de arnés opcionales. Nuestros equipos cumplen con todos los estándares internacionales de seguridad infantil."
+        },
+        "q5": {
+          "question": "¿Pueden crear cursos ninja de estándar de competición?",
+          "answer": "Sí, diseñamos cursos de competición profesional siguiendo especificaciones de programas de TV y requisitos de ligas de competición. Estos incluyen sistemas de cronometraje, múltiples carriles de dificultad y consideraciones para espectadores. Muchas instalaciones de entrenamiento competitivo y producciones de TV usan nuestro equipo."
+        },
+        "q6": {
+          "question": "¿Qué mantenimiento se requiere para el equipo del curso ninja?",
+          "answer": "Las inspecciones visuales diarias toman aproximadamente 10 minutos. Se recomiendan verificaciones detalladas mensuales de todos los puntos de conexión, acolchado y piezas móviles. Proporcionamos guías de mantenimiento completas y podemos suministrar piezas de repuesto. Con el cuidado adecuado, los componentes estructurales duran más de 10 años."
+        }
+      }
+    },
+    "softPlay": {
+      "sectionLabel": "Preguntas Frecuentes",
+      "title": "Juego Suave",
+      "titleHighlight": "FAQ",
+      "description": "Preguntas comunes sobre equipos de juego suave para niños pequeños, materiales de seguridad, higiene y diseño apropiado para la edad.",
+      "items": {
+        "q1": {
+          "question": "¿Para qué rango de edad está diseñado el equipo de juego suave?",
+          "answer": "Nuestro equipo de juego suave está diseñado específicamente para niños de 6 meses a 5 años. Creamos zonas apropiadas para la edad: áreas para bebés (6-18 meses) con elementos sensoriales, zonas para niños pequeños (18 meses-3 años) con escalada suave y toboganes, y áreas preescolares (3-5 años) con estructuras de juego más desafiantes."
+        },
+        "q2": {
+          "question": "¿Qué materiales se utilizan en el equipo de juego suave?",
+          "answer": "Utilizamos cuero PVC premium cubriendo núcleos de espuma de alta densidad. Todos los materiales son libres de plomo, libres de ftalatos, retardantes de fuego (cumple BS 5852) y fáciles de limpiar. El revestimiento de PVC es antimicrobiano y puede desinfectarse con soluciones de limpieza estándar sin degradación."
+        },
+        "q3": {
+          "question": "¿Qué tan fácil es limpiar y mantener el equipo de juego suave?",
+          "answer": "¡Muy fácil! Las superficies lisas de PVC pueden limpiarse con jabón suave y agua o soluciones desinfectantes comerciales. Recomendamos limpieza superficial diaria y limpieza profunda semanal. Los materiales duraderos resisten las manchas y están diseñados para desinfección de alta frecuencia."
+        },
+        "q4": {
+          "question": "¿Cuál es el espacio mínimo necesario para un área de juego suave?",
+          "answer": "Las áreas de juego suave pueden diseñarse para espacios tan compactos como 20 m² para una piscina de pelotas simple y zona de escalada. Las instalaciones típicas van de 50-200 m². Nos especializamos en maximizar el valor del juego dentro de espacios pequeños - perfecto para cafés, restaurantes, iglesias y áreas de espera."
+        },
+        "q5": {
+          "question": "¿Se puede personalizar el equipo de juego suave para que coincida con nuestra marca?",
+          "answer": "¡Absolutamente! Ofrecemos personalización completa de colores con una amplia paleta de colores de cuero PVC. Su área de juego suave puede coincidir con los colores de su marca, tema del lugar o cualquier visión de diseño específica. También se pueden incorporar elementos impresos personalizados y señalización de marca."
+        },
+        "q6": {
+          "question": "¿Cuánto dura el equipo de juego suave?",
+          "answer": "Con el cuidado adecuado, nuestro equipo de juego suave de grado comercial dura más de 8-10 años en entornos de alto tráfico. La espuma de alta densidad mantiene su forma y propiedades de amortiguación, mientras que el revestimiento de PVC premium resiste el desgaste, la decoloración y las grietas. Proporcionamos una garantía del fabricante de 3 años."
+        }
+      }
+    }
   }
 }

@@ -1665,5 +1665,135 @@
         "description": "A África apresenta oportunidades de crescimento empolgantes onde estabelecemos parcerias fortes. Nossos projetos nesta região frequentemente apresentam temas de inspiração local."
       }
     }
+  },
+  "productFAQ": {
+    "indoorPlayground": {
+      "sectionLabel": "Perguntas Frequentes",
+      "title": "Playground Indoor",
+      "titleHighlight": "FAQ",
+      "description": "Encontre respostas para perguntas comuns sobre equipamentos de playground indoor, instalação, padrões de segurança e mais.",
+      "items": {
+        "q1": {
+          "question": "Qual é o espaço mínimo necessário para um playground indoor?",
+          "answer": "Podemos projetar playgrounds indoor para espaços pequenos de 50 m² para áreas de brincar compactas, embora recomendemos pelo menos 100-200 m² para uma estrutura multinível significativa. Nossa equipe de design criará um layout personalizado que maximize seu espaço disponível enquanto garante zonas de brincar seguras e fluxo de tráfego."
+        },
+        "q2": {
+          "question": "Quanto tempo leva para fabricar e entregar um playground indoor?",
+          "answer": "A produção normalmente leva 25-35 dias após a aprovação do design, seguido de 20-35 dias para envio internacional. O prazo total de entrega geralmente é de 45-70 dias a partir da confirmação do pedido. Pedidos urgentes podem ser acomodados para projetos urgentes com acordo prévio."
+        },
+        "q3": {
+          "question": "Quais certificações de segurança seus playgrounds indoor atendem?",
+          "answer": "Todos os nossos equipamentos de playground indoor são certificados de acordo com ASTM F1918 (EUA), TUV, CE e EN 1176 (europeu). Usamos apenas materiais premium, livres de chumbo e não tóxicos que passaram por rigorosos testes de segurança para equipamentos infantis."
+        },
+        "q4": {
+          "question": "Vocês podem criar playgrounds indoor temáticos personalizados?",
+          "answer": "Absolutamente! Tematização personalizada é uma de nossas especialidades. Podemos criar qualquer tema que você imaginar - de aventuras na selva e mundos submarinos a exploração espacial e reinos de castelos. Nossa equipe de design fornece renderizações 3D gratuitas mostrando exatamente como seu playground temático ficará."
+        },
+        "q5": {
+          "question": "O que está incluído no suporte de instalação do playground indoor?",
+          "answer": "Fornecemos suporte de instalação abrangente incluindo manuais de montagem detalhados, tutoriais em vídeo passo a passo, etiquetagem de componentes numerados e suporte técnico 24/7 via WhatsApp. Instalação no local por nossos técnicos treinados está disponível por uma taxa adicional."
+        },
+        "q6": {
+          "question": "Qual garantia vocês oferecem em equipamentos de playground indoor?",
+          "answer": "Fornecemos uma garantia abrangente de 3 anos cobrindo defeitos de fabricação em todos os componentes estruturais, com peças de reposição gratuitas. Além disso, oferecemos suporte técnico vitalício e podemos fornecer peças de reposição para necessidades de manutenção durante toda a vida do seu playground."
+        }
+      }
+    },
+    "trampolinePark": {
+      "sectionLabel": "Perguntas Frequentes",
+      "title": "Parque de Trampolins",
+      "titleHighlight": "FAQ",
+      "description": "Tudo que você precisa saber sobre equipamentos de parque de trampolins, recursos de segurança, zonas de atividades e instalação.",
+      "items": {
+        "q1": {
+          "question": "Qual é o espaço mínimo necessário para um parque de trampolins?",
+          "answer": "Um parque de trampolins básico com 3-4 zonas de atividades requer pelo menos 500 m². Para um parque completo com mais de 10 zonas incluindo piscinas de espuma, quadras de dodgeball e cursos ninja, recomendamos 1.000-3.000 m². A altura do teto deve ser de pelo menos 4-6 metros para altura de salto ideal."
+        },
+        "q2": {
+          "question": "Quantas zonas de atividades vocês podem incluir em um parque de trampolins?",
+          "answer": "Oferecemos mais de 12 tipos diferentes de zonas de atividades incluindo: áreas de salto livre, zonas de salto em piscina de espuma, basquete slam dunk, quadras de dodgeball, paredes de escalada, cursos ninja, bicicletas 360°, tirolesas skyrider, vigas de batalha, saltos em airbag, trampolins de performance e zonas infantis."
+        },
+        "q3": {
+          "question": "Quais recursos de segurança estão incluídos com equipamentos de parque de trampolins?",
+          "answer": "Segurança é primordial. Nossos trampolins apresentam coberturas de estrutura acolchoadas, redes de segurança, zonas de aterrissagem absorventes de impacto e molas de grau comercial para uso intensivo. Todos os equipamentos atendem aos padrões ASTM F2970 para parques de trampolins, certificação TUV e requisitos internacionais de segurança."
+        },
+        "q4": {
+          "question": "Com que frequência os componentes do parque de trampolins precisam de substituição?",
+          "answer": "Com manutenção adequada, nossas camas de trampolim de grau comercial tipicamente duram 3-5 anos com alto tráfego, acolchoamento e piscinas de espuma 5-7 anos. Fornecemos guias de manutenção e podemos fornecer todas as peças de reposição. Listas de verificação de inspeção regular estão incluídas em cada instalação."
+        },
+        "q5": {
+          "question": "Vocês fornecem suporte de planejamento de negócios para parques de trampolins?",
+          "answer": "Sim! Além dos equipamentos, oferecemos orientação sobre otimização de layout para máxima capacidade e receita, recomendações de pessoal, sistemas de isenção, melhores práticas operacionais e podemos conectá-lo com proprietários de parques bem-sucedidos para mentoria. Queremos que seu negócio tenha sucesso."
+        },
+        "q6": {
+          "question": "Qual é a capacidade de peso dos seus trampolins?",
+          "answer": "Nossos trampolins comerciais são classificados para usuários de até 150 kg (330 lbs) por superfície de salto. As estruturas são projetadas para suportar atividade simultânea de múltiplos usuários em todos os trampolins conectados. Todas as classificações de peso excedem os padrões internacionais de uso comercial."
+        }
+      }
+    },
+    "ninjaCourse": {
+      "sectionLabel": "Perguntas Frequentes",
+      "title": "Curso Ninja",
+      "titleHighlight": "FAQ",
+      "description": "Aprenda sobre cursos de obstáculos ninja warrior, níveis de dificuldade, benefícios do treinamento e requisitos de instalação.",
+      "items": {
+        "q1": {
+          "question": "Quais obstáculos estão incluídos em um curso ninja warrior?",
+          "answer": "Oferecemos mais de 50 tipos de obstáculos incluindo paredes curvas, escadas de salmão, balanços de argolas, escalada de cordas, caminhadas de aranha, passos quíntuplos, painéis de pinos, penduradores de penhasco, troncos giratórios, barras voadoras, redes de carga e muito mais. Cada curso é personalizado com base no seu espaço, público-alvo e preferências de dificuldade."
+        },
+        "q2": {
+          "question": "Os cursos ninja podem ser ajustados para diferentes níveis de habilidade?",
+          "answer": "Absolutamente! Muitos dos nossos obstáculos apresentam configurações de dificuldade ajustáveis. Também podemos projetar cursos de múltiplas faixas com trilhas para iniciantes, intermediários e avançados funcionando em paralelo. Isso permite que as instalações acomodem todos, desde iniciantes até atletas competitivos."
+        },
+        "q3": {
+          "question": "Qual é o espaço mínimo necessário para um curso ninja?",
+          "answer": "Um curso ninja básico com 8-10 obstáculos precisa de aproximadamente 150-200 m² com alturas de teto de pelo menos 3,5 metros. Cursos de nível de competição tipicamente requerem 300-500 m². Podemos projetar soluções criativas para espaços menores ou de formatos irregulares."
+        },
+        "q4": {
+          "question": "Os cursos ninja são seguros para crianças?",
+          "answer": "Sim! Projetamos cursos apropriados para a idade para todos os níveis de habilidade. Cursos júnior (idades 6-12) apresentam alturas mais baixas, pegadas mais largas e distâncias mais curtas. Todos os cursos incluem colchões de impacto, acolchoamento de segurança e sistemas de arnês opcionais. Nossos equipamentos atendem a todos os padrões internacionais de segurança infantil."
+        },
+        "q5": {
+          "question": "Vocês podem criar cursos ninja de padrão de competição?",
+          "answer": "Sim, projetamos cursos de competição profissional seguindo especificações de programas de TV e requisitos de ligas de competição. Estes incluem sistemas de cronometragem, múltiplas faixas de dificuldade e considerações para espectadores. Muitas instalações de treinamento competitivo e produções de TV usam nossos equipamentos."
+        },
+        "q6": {
+          "question": "Qual manutenção é necessária para equipamentos de curso ninja?",
+          "answer": "Inspeções visuais diárias levam cerca de 10 minutos. Verificações detalhadas mensais de todos os pontos de conexão, acolchoamento e peças móveis são recomendadas. Fornecemos guias de manutenção abrangentes e podemos fornecer peças de reposição. Com cuidado adequado, componentes estruturais duram mais de 10 anos."
+        }
+      }
+    },
+    "softPlay": {
+      "sectionLabel": "Perguntas Frequentes",
+      "title": "Soft Play",
+      "titleHighlight": "FAQ",
+      "description": "Perguntas comuns sobre equipamentos de soft play para crianças pequenas, materiais de segurança, higiene e design apropriado para a idade.",
+      "items": {
+        "q1": {
+          "question": "Para qual faixa etária os equipamentos de soft play são projetados?",
+          "answer": "Nossos equipamentos de soft play são projetados especificamente para crianças de 6 meses a 5 anos. Criamos zonas apropriadas para a idade: áreas para bebês (6-18 meses) com elementos sensoriais, zonas para crianças pequenas (18 meses-3 anos) com escalada suave e escorregadores, e áreas pré-escolares (3-5 anos) com estruturas de brincar mais desafiadoras."
+        },
+        "q2": {
+          "question": "Quais materiais são usados em equipamentos de soft play?",
+          "answer": "Usamos couro PVC premium cobrindo núcleos de espuma de alta densidade. Todos os materiais são livres de chumbo, livres de ftalatos, retardantes de fogo (atende BS 5852) e fáceis de limpar. O revestimento de PVC é antimicrobiano e pode ser higienizado com soluções de limpeza padrão sem degradação."
+        },
+        "q3": {
+          "question": "Quão fácil é limpar e manter equipamentos de soft play?",
+          "answer": "Muito fácil! As superfícies lisas de PVC podem ser limpas com sabão suave e água ou soluções de higienização comerciais. Recomendamos limpeza de superfície diária e limpeza profunda semanal. Os materiais duráveis resistem a manchas e são projetados para higienização de alta frequência."
+        },
+        "q4": {
+          "question": "Qual é o espaço mínimo necessário para uma área de soft play?",
+          "answer": "Áreas de soft play podem ser projetadas para espaços compactos de 20 m² para uma piscina de bolinhas simples e zona de escalada. Instalações típicas variam de 50-200 m². Somos especializados em maximizar o valor do brincar em espaços pequenos - perfeito para cafés, restaurantes, igrejas e áreas de espera."
+        },
+        "q5": {
+          "question": "Os equipamentos de soft play podem ser personalizados para combinar com nossa marca?",
+          "answer": "Absolutamente! Oferecemos personalização completa de cores com uma ampla paleta de cores de couro PVC. Sua área de soft play pode combinar com as cores da sua marca, tema do local ou qualquer visão de design específica. Elementos impressos personalizados e sinalização de marca também podem ser incorporados."
+        },
+        "q6": {
+          "question": "Quanto tempo dura o equipamento de soft play?",
+          "answer": "Com cuidado adequado, nossos equipamentos de soft play de grau comercial duram mais de 8-10 anos em ambientes de alto tráfego. A espuma de alta densidade mantém sua forma e propriedades de amortecimento, enquanto o revestimento de PVC premium resiste a desgaste, desbotamento e rachaduras. Fornecemos uma garantia de fabricante de 3 anos."
+        }
+      }
+    }
   }
 }
