@@ -8,12 +8,50 @@ import { Textarea } from "./ui/textarea";
 import { useToast } from "@/hooks/use-toast";
 import { useRTL } from "@/hooks/useRTL";
 import { supabase } from "@/integrations/supabase/client";
+import { z } from "zod";
+
+// Validation schema for contact form
+const contactFormSchema = z.object({
+  name: z.string()
+    .trim()
+    .min(1, "Name is required")
+    .max(100, "Name must be less than 100 characters"),
+  email: z.string()
+    .trim()
+    .email("Invalid email address")
+    .max(255, "Email must be less than 255 characters"),
+  phone: z.string()
+    .trim()
+    .max(50, "Phone must be less than 50 characters")
+    .optional()
+    .or(z.literal("")),
+  country: z.string()
+    .trim()
+    .min(1, "Country is required")
+    .max(100, "Country must be less than 100 characters"),
+  projectType: z.enum([
+    "indoor-playground",
+    "trampoline-park", 
+    "ninja-course",
+    "soft-play",
+    "fec",
+    "other"
+  ], { errorMap: () => ({ message: "Please select a project type" }) }),
+  message: z.string()
+    .trim()
+    .max(5000, "Message must be less than 5000 characters")
+    .optional()
+    .or(z.literal("")),
+});
+
+type ContactFormData = z.infer<typeof contactFormSchema>;
 
 export const ContactSection = () => {
   const { t } = useTranslation();
   const { toast } = useToast();
   const { isRTL, flipX } = useRTL();
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [formErrors, setFormErrors] = useState<Record<string, string>>({});
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -52,16 +90,20 @@ export const ContactSection = () => {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    setFormErrors({});
     setIsSubmitting(true);
     
     try {
+      // Validate form data
+      const validatedData = contactFormSchema.parse(formData);
+      
       const { error } = await supabase.from("inquiries").insert({
-        name: formData.name,
-        email: formData.email,
-        phone: formData.phone || null,
-        country: formData.country,
-        project_type: formData.projectType,
-        message: formData.message || null,
+        name: validatedData.name,
+        email: validatedData.email,
+        phone: validatedData.phone || null,
+        country: validatedData.country,
+        project_type: validatedData.projectType,
+        message: validatedData.message || null,
       });
 
       if (error) throw error;
@@ -80,12 +122,26 @@ export const ContactSection = () => {
         message: "",
       });
     } catch (error) {
-      console.error("Error submitting inquiry:", error);
-      toast({
-        title: t("contact.toast.errorTitle"),
-        description: t("contact.toast.errorDescription"),
-        variant: "destructive",
-      });
+      if (error instanceof z.ZodError) {
+        const errors: Record<string, string> = {};
+        error.errors.forEach((err) => {
+          if (err.path[0]) {
+            errors[err.path[0] as string] = err.message;
+          }
+        });
+        setFormErrors(errors);
+        toast({
+          title: t("contact.toast.validationErrorTitle") || "Validation Error",
+          description: t("contact.toast.validationErrorDescription") || "Please check the form fields",
+          variant: "destructive",
+        });
+      } else {
+        toast({
+          title: t("contact.toast.errorTitle"),
+          description: t("contact.toast.errorDescription"),
+          variant: "destructive",
+        });
+      }
     } finally {
       setIsSubmitting(false);
     }
@@ -94,10 +150,19 @@ export const ContactSection = () => {
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>
   ) => {
+    const { name, value } = e.target;
     setFormData((prev) => ({
       ...prev,
-      [e.target.name]: e.target.value,
+      [name]: value,
     }));
+    // Clear error when user starts typing
+    if (formErrors[name]) {
+      setFormErrors((prev) => {
+        const newErrors = { ...prev };
+        delete newErrors[name];
+        return newErrors;
+      });
+    }
   };
 
   return (
@@ -142,8 +207,10 @@ export const ContactSection = () => {
                     onChange={handleChange}
                     placeholder="John Smith"
                     required
-                    className="h-10 sm:h-12 text-sm sm:text-base"
+                    maxLength={100}
+                    className={`h-10 sm:h-12 text-sm sm:text-base ${formErrors.name ? 'border-destructive' : ''}`}
                   />
+                  {formErrors.name && <p className="text-destructive text-xs mt-1">{formErrors.name}</p>}
                 </div>
                 <div>
                   <label htmlFor="email" className="block text-xs sm:text-sm font-medium mb-1.5 sm:mb-2">
@@ -157,8 +224,10 @@ export const ContactSection = () => {
                     onChange={handleChange}
                     placeholder="john@company.com"
                     required
-                    className="h-10 sm:h-12 text-sm sm:text-base"
+                    maxLength={255}
+                    className={`h-10 sm:h-12 text-sm sm:text-base ${formErrors.email ? 'border-destructive' : ''}`}
                   />
+                  {formErrors.email && <p className="text-destructive text-xs mt-1">{formErrors.email}</p>}
                 </div>
                 <div>
                   <label htmlFor="phone" className="block text-xs sm:text-sm font-medium mb-1.5 sm:mb-2">
@@ -171,8 +240,10 @@ export const ContactSection = () => {
                     value={formData.phone}
                     onChange={handleChange}
                     placeholder="+1 234 567 8900"
-                    className="h-10 sm:h-12 text-sm sm:text-base"
+                    maxLength={50}
+                    className={`h-10 sm:h-12 text-sm sm:text-base ${formErrors.phone ? 'border-destructive' : ''}`}
                   />
+                  {formErrors.phone && <p className="text-destructive text-xs mt-1">{formErrors.phone}</p>}
                 </div>
                 <div>
                   <label htmlFor="country" className="block text-xs sm:text-sm font-medium mb-1.5 sm:mb-2">
@@ -185,8 +256,10 @@ export const ContactSection = () => {
                     onChange={handleChange}
                     placeholder="United States"
                     required
-                    className="h-10 sm:h-12 text-sm sm:text-base"
+                    maxLength={100}
+                    className={`h-10 sm:h-12 text-sm sm:text-base ${formErrors.country ? 'border-destructive' : ''}`}
                   />
+                  {formErrors.country && <p className="text-destructive text-xs mt-1">{formErrors.country}</p>}
                 </div>
               </div>
               
@@ -200,7 +273,7 @@ export const ContactSection = () => {
                   value={formData.projectType}
                   onChange={handleChange}
                   required
-                  className="w-full h-10 sm:h-12 px-3 sm:px-4 rounded-lg border border-input bg-background text-foreground text-sm sm:text-base focus:ring-2 focus:ring-ring focus:outline-none"
+                  className={`w-full h-10 sm:h-12 px-3 sm:px-4 rounded-lg border bg-background text-foreground text-sm sm:text-base focus:ring-2 focus:ring-ring focus:outline-none ${formErrors.projectType ? 'border-destructive' : 'border-input'}`}
                 >
                   <option value="">{t("contact.form.projectTypes.select")}</option>
                   <option value="indoor-playground">{t("contact.form.projectTypes.indoorPlayground")}</option>
@@ -209,7 +282,8 @@ export const ContactSection = () => {
                   <option value="soft-play">{t("contact.form.projectTypes.softPlay")}</option>
                   <option value="fec">{t("contact.form.projectTypes.fec")}</option>
                   <option value="other">{t("contact.form.projectTypes.other")}</option>
-              </select>
+                </select>
+                {formErrors.projectType && <p className="text-destructive text-xs mt-1">{formErrors.projectType}</p>}
               </div>
 
               <div className="mb-4 sm:mb-6">
@@ -223,8 +297,10 @@ export const ContactSection = () => {
                   onChange={handleChange}
                   placeholder={t("contact.form.messagePlaceholder")}
                   rows={4}
-                  className="resize-none text-sm sm:text-base"
+                  maxLength={5000}
+                  className={`resize-none text-sm sm:text-base ${formErrors.message ? 'border-destructive' : ''}`}
                 />
+                {formErrors.message && <p className="text-destructive text-xs mt-1">{formErrors.message}</p>}
               </div>
 
               <Button
