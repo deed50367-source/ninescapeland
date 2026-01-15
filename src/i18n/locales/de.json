@@ -585,7 +585,85 @@
         "softPlay": "Softplay-Bereiche"
       },
       "cta": "Kostenloses Design & Angebot",
-      "premiumQuality": "Premium-Qualität"
+      "premiumQuality": "Premium-Qualität",
+      "years": "Jahre",
+      "commercial": "Gewerblich",
+      "stats": {
+        "projects": "Abgeschlossene Projekte",
+        "countries": "Bediente Länder",
+        "years": "Jahre Erfahrung",
+        "customization": "Anpassung"
+      },
+      "ageZonesLabel": "Altersgerechtes Design",
+      "ageZonesTitle": "Spielzonen für",
+      "ageZonesTitleHighlight": "Jedes Alter",
+      "ageZonesDescription": "Wir entwerfen altersspezifische Zonen, um sicherzustellen, dass jedes Kind eine sichere und ansprechende Spielerfahrung hat, die auf seine Entwicklungsstufe zugeschnitten ist.",
+      "ageZones": {
+        "toddler": {
+          "title": "Kleinkind-Zone",
+          "description": "Weiche, sichere Bereiche mit sensorischen Elementen, Mini-Rutschen und gepolsterten Spielbereichen für kleine Entdecker."
+        },
+        "kids": {
+          "title": "Kinder-Abenteuer",
+          "description": "Mehrstöckige Strukturen mit Kletternetzen, Bällebädern und interaktiven Spielen, die die Fantasie anregen."
+        },
+        "juniors": {
+          "title": "Junior-Herausforderung",
+          "description": "Spannende Hindernisparcours, Seilelemente und herausfordernde Klettereien für wachsende Abenteurer."
+        },
+        "teens": {
+          "title": "Teenager-Zone",
+          "description": "Hochenergetische Aktivitäten mit Ninja-Elementen, Wettkampfbereichen und sozialen Räumen."
+        }
+      },
+      "advantagesLabel": "Warum NinescapeLand",
+      "advantagesTitle": "Unsere Wettbewerbs",
+      "advantagesTitleHighlight": "Vorteile",
+      "advantages": {
+        "certified": {
+          "title": "International Zertifiziert",
+          "description": "Alle Produkte erfüllen ASTM, TÜV, CE, EN 1176 Sicherheitsstandards mit vollständiger Zertifizierungsdokumentation."
+        },
+        "fastDelivery": {
+          "title": "Schnelle Produktion",
+          "description": "25-35 Tage Produktionszeit mit regelmäßigen Updates. Beschleunigte Optionen für dringende Projekte verfügbar."
+        },
+        "globalShipping": {
+          "title": "Weltweiter Versand",
+          "description": "Tür-zu-Tür oder Hafen-zu-Hafen Lieferung in 50+ Länder mit vollständiger Zollunterstützung."
+        },
+        "installation": {
+          "title": "Installationsunterstützung",
+          "description": "Detaillierte Anleitungen, Video-Tutorials und optionale Vor-Ort-Installation durch unser Expertenteam."
+        }
+      },
+      "casesLabel": "Erfolgsgeschichten",
+      "casesTitle": "Ausgewählte",
+      "casesTitleHighlight": "Projekte",
+      "cases": {
+        "case1": {
+          "title": "Adventure Kingdom FEC",
+          "location": "Houston, Texas, USA"
+        },
+        "case2": {
+          "title": "Kids Wonder World",
+          "location": "Dubai, VAE"
+        }
+      },
+      "testimonialsLabel": "Kundenstimmen",
+      "testimonialsTitle": "Was unsere Kunden",
+      "testimonialsTitleHighlight": "Sagen",
+      "testimonials": {
+        "sarah": "Die Qualität übertraf unsere Erwartungen! NinescapeLand lieferte einen atemberaubenden Spielplatz, den unsere Kunden absolut lieben. Das Designteam war unglaublich kreativ und die Installationsunterstützung war fantastisch.",
+        "ahmed": "Vom Konzept bis zur Installation war das NinescapeLand-Team professionell und reaktionsschnell. Unser neuer Spielplatz ist zum Highlight unseres Unterhaltungszentrums geworden. Sehr empfehlenswert!",
+        "emma": "Wir haben seit der Eröffnung unseres neuen Indoor-Spielplatzes eine 40%ige Steigerung der Besucher verzeichnet. Das individuelle Theming und die Liebe zum Detail heben uns wirklich von der Konkurrenz ab."
+      },
+      "ctaSection": {
+        "title": "Bereit, Ihren Traumspielplatz zu Erstellen?",
+        "description": "Erhalten Sie innerhalb von 24 Stunden ein kostenloses 3D-Design und ein wettbewerbsfähiges Angebot. Unser Expertenteam hilft Ihnen, Ihren Raum zu maximieren und ein unvergessliches Spielerlebnis zu schaffen.",
+        "getQuote": "Kostenloses Angebot",
+        "viewProjects": "Mehr Projekte Ansehen"
+      }
     },
     "trampolinePark": {
       "title": "Trampolinpark",
