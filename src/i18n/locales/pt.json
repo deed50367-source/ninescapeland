@@ -585,7 +585,85 @@
         "softPlay": "Zonas de Soft Play"
       },
       "cta": "Design e Orçamento Grátis",
-      "premiumQuality": "Qualidade Premium"
+      "premiumQuality": "Qualidade Premium",
+      "years": "Anos",
+      "commercial": "Comercial",
+      "stats": {
+        "projects": "Projetos Concluídos",
+        "countries": "Países Atendidos",
+        "years": "Anos de Experiência",
+        "customization": "Personalização"
+      },
+      "ageZonesLabel": "Design por Faixa Etária",
+      "ageZonesTitle": "Zonas de Diversão para",
+      "ageZonesTitleHighlight": "Cada Idade",
+      "ageZonesDescription": "Projetamos zonas específicas para cada faixa etária para garantir que cada criança tenha uma experiência de diversão segura e envolvente adaptada ao seu estágio de desenvolvimento.",
+      "ageZones": {
+        "toddler": {
+          "title": "Zona de Bebês",
+          "description": "Espaços macios e seguros com elementos sensoriais, mini escorregadores e áreas de brincadeira almofadadas para pequenos exploradores."
+        },
+        "kids": {
+          "title": "Aventura Infantil",
+          "description": "Estruturas multinível com redes de escalada, piscinas de bolinhas e jogos interativos que despertam a imaginação."
+        },
+        "juniors": {
+          "title": "Desafio Júnior",
+          "description": "Circuitos de obstáculos emocionantes, elementos de cordas e escaladas desafiadoras para aventureiros em crescimento."
+        },
+        "teens": {
+          "title": "Zona Teen",
+          "description": "Atividades de alta energia com elementos ninja, áreas de competição e espaços sociais."
+        }
+      },
+      "advantagesLabel": "Por Que NinescapeLand",
+      "advantagesTitle": "Nossas Vantagens",
+      "advantagesTitleHighlight": "Competitivas",
+      "advantages": {
+        "certified": {
+          "title": "Certificado Internacional",
+          "description": "Todos os produtos atendem aos padrões de segurança ASTM, TUV, CE, EN 1176 com documentação de certificação completa."
+        },
+        "fastDelivery": {
+          "title": "Produção Rápida",
+          "description": "Tempo de produção de 25-35 dias com atualizações regulares. Opções aceleradas disponíveis para projetos urgentes."
+        },
+        "globalShipping": {
+          "title": "Envio Mundial",
+          "description": "Entrega porta a porta ou porto a porto para mais de 50 países com suporte aduaneiro completo."
+        },
+        "installation": {
+          "title": "Suporte de Instalação",
+          "description": "Guias detalhados, tutoriais em vídeo e instalação opcional no local por nossa equipe especializada."
+        }
+      },
+      "casesLabel": "Histórias de Sucesso",
+      "casesTitle": "Projetos",
+      "casesTitleHighlight": "Destacados",
+      "cases": {
+        "case1": {
+          "title": "Centro de Aventuras Kingdom",
+          "location": "Houston, Texas, EUA"
+        },
+        "case2": {
+          "title": "Kids Wonder World",
+          "location": "Dubai, EAU"
+        }
+      },
+      "testimonialsLabel": "Depoimentos de Clientes",
+      "testimonialsTitle": "O Que Nossos Clientes",
+      "testimonialsTitleHighlight": "Dizem",
+      "testimonials": {
+        "sarah": "A qualidade superou nossas expectativas! A NinescapeLand entregou um playground impressionante que nossos clientes adoram absolutamente. A equipe de design foi incrivelmente criativa e o suporte de instalação foi fantástico.",
+        "ahmed": "Do conceito à instalação, a equipe da NinescapeLand foi profissional e responsiva. Nosso novo playground se tornou o destaque do nosso centro de entretenimento. Altamente recomendado!",
+        "emma": "Vimos um aumento de 40% nos visitantes desde a abertura do nosso novo playground indoor. A temática personalizada e a atenção aos detalhes realmente nos diferenciam da concorrência."
+      },
+      "ctaSection": {
+        "title": "Pronto para Criar o Playground dos Seus Sonhos?",
+        "description": "Receba um design 3D gratuito e um orçamento competitivo em 24 horas. Nossa equipe especializada ajudará você a maximizar seu espaço e criar uma experiência de diversão inesquecível.",
+        "getQuote": "Obter Orçamento Grátis",
+        "viewProjects": "Ver Mais Projetos"
+      }
     },
     "trampolinePark": {
       "title": "Soluções para",

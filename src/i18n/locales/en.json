@@ -585,7 +585,85 @@
         "softPlay": "Soft Play Zones"
       },
       "cta": "Get Free Design & Quote",
-      "premiumQuality": "Premium Quality"
+      "premiumQuality": "Premium Quality",
+      "years": "Years",
+      "commercial": "Commercial",
+      "stats": {
+        "projects": "Projects Completed",
+        "countries": "Countries Served",
+        "years": "Years Experience",
+        "customization": "Customization"
+      },
+      "ageZonesLabel": "Age-Appropriate Design",
+      "ageZonesTitle": "Play Zones for",
+      "ageZonesTitleHighlight": "Every Age",
+      "ageZonesDescription": "We design age-specific zones to ensure every child has a safe and engaging play experience tailored to their developmental stage.",
+      "ageZones": {
+        "toddler": {
+          "title": "Toddler Zone",
+          "description": "Soft, safe spaces with sensory elements, mini slides, and cushioned play areas perfect for little explorers."
+        },
+        "kids": {
+          "title": "Kids Adventure",
+          "description": "Multi-level structures with climbing nets, ball pits, and interactive games that spark imagination."
+        },
+        "juniors": {
+          "title": "Junior Challenge",
+          "description": "Exciting obstacle courses, rope elements, and challenging climbs for growing adventurers."
+        },
+        "teens": {
+          "title": "Teen Zone",
+          "description": "High-energy activities with ninja elements, competition areas, and social spaces."
+        }
+      },
+      "advantagesLabel": "Why NinescapeLand",
+      "advantagesTitle": "Our Competitive",
+      "advantagesTitleHighlight": "Advantages",
+      "advantages": {
+        "certified": {
+          "title": "Internationally Certified",
+          "description": "All products meet ASTM, TUV, CE, EN 1176 safety standards with complete certification documentation."
+        },
+        "fastDelivery": {
+          "title": "Fast Production",
+          "description": "25-35 day production time with regular updates. Expedited options available for urgent projects."
+        },
+        "globalShipping": {
+          "title": "Worldwide Shipping",
+          "description": "Door-to-door or port-to-port delivery to 50+ countries with full customs support."
+        },
+        "installation": {
+          "title": "Installation Support",
+          "description": "Detailed guides, video tutorials, and optional on-site installation by our expert team."
+        }
+      },
+      "casesLabel": "Success Stories",
+      "casesTitle": "Featured",
+      "casesTitleHighlight": "Projects",
+      "cases": {
+        "case1": {
+          "title": "Adventure Kingdom FEC",
+          "location": "Houston, Texas, USA"
+        },
+        "case2": {
+          "title": "Kids Wonder World",
+          "location": "Dubai, UAE"
+        }
+      },
+      "testimonialsLabel": "Client Testimonials",
+      "testimonialsTitle": "What Our Clients",
+      "testimonialsTitleHighlight": "Say",
+      "testimonials": {
+        "sarah": "The quality exceeded our expectations! NinescapeLand delivered a stunning playground that our customers absolutely love. The design team was incredibly creative and the installation support was fantastic.",
+        "ahmed": "From concept to installation, the NinescapeLand team was professional and responsive. Our new playground has become the highlight of our entertainment center. Highly recommended!",
+        "emma": "We've seen a 40% increase in visitors since opening our new indoor playground. The custom theming and attention to detail really set us apart from competitors."
+      },
+      "ctaSection": {
+        "title": "Ready to Create Your Dream Playground?",
+        "description": "Get a free 3D design and competitive quote within 24 hours. Our expert team will help you maximize your space and create an unforgettable play experience.",
+        "getQuote": "Get Free Quote",
+        "viewProjects": "View More Projects"
+      }
     },
     "trampolinePark": {
       "title": "Trampoline Park",
