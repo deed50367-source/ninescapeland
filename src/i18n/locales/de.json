@@ -909,7 +909,8 @@
         "description": "Erhalten Sie ein kostenloses 3D-Design und ein wettbewerbsfähiges Angebot innerhalb von 24 Stunden. Unser Expertenteam hilft Ihnen, eine herausfordernde, profitable Ninja Warrior-Anlage zu erstellen.",
         "getQuote": "Kostenloses Angebot Erhalten",
         "viewProjects": "Mehr Projekte Ansehen"
-      },
+      }
+    },
     "softPlay": {
       "title": "Softplay",
       "titleHighlight": "Bereiche",

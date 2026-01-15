@@ -909,7 +909,8 @@
         "description": "Get a free 3D design and competitive quote within 24 hours. Our expert team will help you create a challenging, profitable ninja warrior facility.",
         "getQuote": "Get Free Quote",
         "viewProjects": "View More Projects"
-      },
+      }
+    },
     "softPlay": {
       "title": "Soft Play",
       "titleHighlight": "Areas",

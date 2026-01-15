@@ -909,7 +909,8 @@
         "description": "Obtén un diseño 3D gratuito y cotización competitiva en 24 horas. Nuestro equipo de expertos te ayudará a crear una instalación ninja warrior rentable y desafiante.",
         "getQuote": "Obtener Cotización Gratis",
         "viewProjects": "Ver Más Proyectos"
-      },
+      }
+    },
     "softPlay": {
       "title": "Áreas de",
       "titleHighlight": "Juego Suave",
