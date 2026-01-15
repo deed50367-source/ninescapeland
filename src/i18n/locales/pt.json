@@ -660,9 +660,55 @@
       },
       "ctaSection": {
         "title": "Pronto para Criar o Playground dos Seus Sonhos?",
-        "description": "Receba um design 3D gratuito e um orçamento competitivo em 24 horas. Nossa equipe especializada ajudará você a maximizar seu espaço e criar uma experiência de diversão inesquecível.",
+        "description": "Receba um design 3D gratuito e um orçamento competitivo em 24 horas.",
         "getQuote": "Obter Orçamento Grátis",
         "viewProjects": "Ver Mais Projetos"
+      },
+      "themesLabel": "Designs Temáticos",
+      "themesTitle": "Temas Populares de",
+      "themesTitleHighlight": "Playgrounds",
+      "themesDescription": "Transforme seu espaço com nossos designs temáticos criativos.",
+      "themesCustomNote": "Não encontrou o tema ideal? Criamos designs personalizados baseados na sua visão.",
+      "themesDiscuss": "Discuta Seu Tema",
+      "themes": {
+        "jungle": { "title": "Aventura na Selva", "description": "Tema de floresta tropical com palmeiras e personagens de animais." },
+        "ocean": { "title": "Explorador do Oceano", "description": "Mundo submarino com criaturas marinhas e estruturas inspiradas em ondas." },
+        "castle": { "title": "Castelo de Conto de Fadas", "description": "Tema de reino mágico com torres e dragões." },
+        "space": { "title": "Estação Espacial", "description": "Tema espacial futurista com foguetes e planetas." }
+      },
+      "benefitsLabel": "Benefícios do Desenvolvimento",
+      "benefitsTitle": "Crescendo Através da",
+      "benefitsTitleHighlight": "Brincadeira",
+      "benefitsDescription": "Nossos playgrounds apoiam o desenvolvimento físico, cognitivo e social das crianças.",
+      "benefits": {
+        "cognitive": { "title": "Desenvolvimento Cognitivo", "description": "Atividades de resolução de problemas que estimulam o desenvolvimento cerebral." },
+        "physical": { "title": "Crescimento Físico", "description": "Atividades de escalada, salto e equilíbrio para força e coordenação." },
+        "motor": { "title": "Habilidades Motoras", "description": "Desenvolvimento de habilidades motoras finas e grossas." },
+        "social": { "title": "Habilidades Sociais", "description": "Áreas de brincadeira em grupo que ensinam compartilhamento e trabalho em equipe." }
+      },
+      "designProcessLabel": "Nosso Processo",
+      "designProcessTitle": "Do Conceito à",
+      "designProcessTitleHighlight": "Grande Inauguração",
+      "designProcessDescription": "Guiamos você em cada etapa para criar seu playground interno perfeito.",
+      "step": "Passo",
+      "designProcess": {
+        "consultation": { "title": "Consulta", "description": "Compartilhe sua visão, dimensões e orçamento." },
+        "design": { "title": "Design 3D", "description": "Receba renderizações 3D profissionais do seu playground." },
+        "production": { "title": "Fabricação", "description": "Produção com materiais premium e controle de qualidade rigoroso." },
+        "shipping": { "title": "Envio Global", "description": "Embalagem profissional e entrega porta a porta." },
+        "installation": { "title": "Instalação", "description": "Guias completos com tutoriais em vídeo." },
+        "support": { "title": "Pós-Venda", "description": "Garantia de 3 anos com suporte técnico vitalício." }
+      },
+      "safetyLabel": "Padrões de Segurança",
+      "safetyTitle": "Certificações",
+      "safetyTitleHighlight": "Internacionais",
+      "safetyDescription": "Segurança é nossa prioridade máxima. Todos os equipamentos atendem aos padrões internacionais.",
+      "safetyCertified": "100% Certificado",
+      "safety": {
+        "astm": { "title": "ASTM F1918", "description": "Padrão americano de segurança para playgrounds." },
+        "tuv": { "title": "Certificado TUV", "description": "Marca alemã de qualidade e segurança." },
+        "ce": { "title": "Marcação CE", "description": "Conformidade europeia para saúde e segurança." },
+        "en": { "title": "EN 1176", "description": "Padrão europeu de segurança para equipamentos de playground." }
       }
     },
     "trampolinePark": {
