@@ -62,6 +62,9 @@ export const ContactSection = () => {
     message: "",
   });
   
+  // Honeypot field - bots will fill this, humans won't see it
+  const [honeypot, setHoneypot] = useState("");
+  
   // Rate limiting: max 3 submissions per minute, 5 minute cooldown
   const rateLimit = useRateLimit({
     maxAttempts: 3,
@@ -99,6 +102,16 @@ export const ContactSection = () => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setFormErrors({});
+    
+    // Honeypot check - if filled, silently reject (bot detected)
+    if (honeypot) {
+      // Fake success to not alert the bot
+      toast({
+        title: t("contact.toast.successTitle"),
+        description: t("contact.toast.successDescription"),
+      });
+      return;
+    }
     
     // Check rate limit before proceeding
     if (!rateLimit.recordAttempt()) {
@@ -216,6 +229,25 @@ export const ContactSection = () => {
             className="lg:col-span-3"
           >
             <form onSubmit={handleSubmit} className="bg-card p-4 sm:p-6 lg:p-8 rounded-xl sm:rounded-2xl shadow-soft">
+              {/* Honeypot field - hidden from users, traps bots */}
+              <div 
+                className="absolute -left-[9999px] opacity-0 h-0 w-0 overflow-hidden"
+                aria-hidden="true"
+              >
+                <label htmlFor="website">
+                  Website (leave empty)
+                </label>
+                <input
+                  type="text"
+                  id="website"
+                  name="website"
+                  value={honeypot}
+                  onChange={(e) => setHoneypot(e.target.value)}
+                  tabIndex={-1}
+                  autoComplete="off"
+                />
+              </div>
+              
               <div className="grid sm:grid-cols-2 gap-4 sm:gap-6 mb-4 sm:mb-6">
                 <div>
                   <label htmlFor="name" className="block text-xs sm:text-sm font-medium mb-1.5 sm:mb-2">
