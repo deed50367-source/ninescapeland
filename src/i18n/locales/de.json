@@ -971,7 +971,127 @@
       "galleryTitle": "Softplay",
       "galleryTitleHighlight": "Galerie",
       "cta": "Kostenloses Design & Angebot",
-      "kidsFriendly": "Kinderfreundlich"
+      "kidsFriendly": "Kinderfreundlich",
+      "stats": {
+        "projects": "Softplay-Projekte",
+        "countries": "Länder bedient",
+        "experience": "Jahre Erfahrung",
+        "satisfaction": "Kundenzufriedenheit"
+      },
+      "ageZonesLabel": "Altersgerechtes Design",
+      "ageZonesTitle": "Entworfen für",
+      "ageZonesTitleHighlight": "Jedes Alter",
+      "ageZonesDescription": "Unsere Softplay-Bereiche sind sorgfältig konzipiert, um den Entwicklungsbedürfnissen verschiedener Altersgruppen gerecht zu werden.",
+      "ageZones": {
+        "infant": {
+          "age": "0-12 Monate",
+          "title": "Babyzone",
+          "description": "Ultraweiche Oberflächen, Sensorikspielzeug und sanfte Aktivitäten für die Kleinsten."
+        },
+        "toddler": {
+          "age": "1-3 Jahre",
+          "title": "Kleinkindzone",
+          "description": "Niedrige Kletterelemente, Bällebäder und interaktive Tafeln für frühe motorische Entwicklung."
+        },
+        "preschool": {
+          "age": "3-5 Jahre",
+          "title": "Vorschulzone",
+          "description": "Anspruchsvollere Hindernisse, Rutschen und fantasievolle Spielelemente für aktive Vorschulkinder."
+        },
+        "mixed": {
+          "age": "Alle Altersgruppen",
+          "title": "Familienzone",
+          "description": "Inklusive Spielbereiche, in denen Geschwister mit altersgerechten Herausforderungen zusammen spielen können."
+        }
+      },
+      "safetyLabel": "Sicherheit Zuerst",
+      "safetyTitle": "Zertifizierte",
+      "safetyTitleHighlight": "Sicherheitsstandards",
+      "safetyDescription": "Die Sicherheit Ihrer Kinder hat für uns oberste Priorität. Jedes Softplay-Element erfüllt oder übertrifft internationale Sicherheitsstandards.",
+      "safetyCertified": "ASTM & EN Zertifiziert",
+      "safety": {
+        "standards": {
+          "title": "Internationale Zertifizierungen",
+          "description": "Alle Produkte erfüllen ASTM F1487, EN 1176 und TÜV-Standards für kommerzielle Spielgeräte."
+        },
+        "materials": {
+          "title": "Ungiftige Materialien",
+          "description": "Bleifrei, phthalatfrei und flammhemmend, sicher für Kinder aller Altersgruppen."
+        },
+        "hygiene": {
+          "title": "Hygienisches Design",
+          "description": "Antibakterielle Oberflächen und leicht zu reinigende Bezüge verhindern Keimbildung."
+        }
+      },
+      "advantagesLabel": "Warum uns wählen",
+      "advantagesTitle": "Unsere Wettbewerbs",
+      "advantagesTitleHighlight": "vorteile",
+      "advantages": {
+        "certified": {
+          "title": "Sicherheitszertifiziert",
+          "description": "Alle Produkte erfüllen internationale ASTM, EN und TÜV-Standards."
+        },
+        "fast": {
+          "title": "Schnelle Produktion",
+          "description": "15-25 Tage Fertigung mit strenger Qualitätskontrolle."
+        },
+        "shipping": {
+          "title": "Weltweiter Versand",
+          "description": "Tür-zu-Tür-Lieferung in über 80 Länder mit Zollunterstützung."
+        },
+        "support": {
+          "title": "Installationsunterstützung",
+          "description": "Detaillierte Anleitungen, Video-Guides und optionale Vor-Ort-Installation."
+        }
+      },
+      "caseStudiesLabel": "Erfolgsgeschichten",
+      "caseStudiesTitle": "Ausgewählte",
+      "caseStudiesTitleHighlight": "Projekte",
+      "caseStudiesDescription": "Entdecken Sie unsere fertigen Softplay-Installationen, die Kinder und Eltern weltweit begeistern.",
+      "caseStudies": {
+        "case1": {
+          "title": "Kids Kingdom Spielcenter",
+          "location": "Dubai, VAE",
+          "size": "150 qm",
+          "feature1": "Mehrstöckige Struktur",
+          "feature2": "Bällebad-Paradies",
+          "feature3": "Sensorikwand"
+        },
+        "case2": {
+          "title": "Little Stars Kindergarten",
+          "location": "London, UK",
+          "size": "80 qm",
+          "feature1": "Altersbereiche",
+          "feature2": "Ozean-Thema",
+          "feature3": "Interaktive Elemente"
+        }
+      },
+      "testimonialsLabel": "Kundenbewertungen",
+      "testimonialsTitle": "Was Eltern",
+      "testimonialsTitleHighlight": "Sagen",
+      "testimonials": {
+        "testimonial1": {
+          "quote": "Der Softplay-Bereich ist zur beliebtesten Attraktion in unserem Familienzentrum geworden. Die Qualität ist hervorragend!",
+          "name": "Sarah Johnson",
+          "location": "London, UK"
+        },
+        "testimonial2": {
+          "quote": "Professionelles Team von Design bis Installation. Die Sicherheitsmerkmale geben Eltern Ruhe.",
+          "name": "Ahmed Hassan",
+          "location": "Dubai, VAE"
+        },
+        "testimonial3": {
+          "quote": "Wir haben seit der Installation einen 40%igen Anstieg der Buchungen gesehen. Beste Investition!",
+          "name": "Maria Garcia",
+          "location": "Madrid, Spanien"
+        }
+      },
+      "ctaSection": {
+        "title": "Bereit, Ihren Softplay-Bereich zu gestalten?",
+        "description": "Erhalten Sie ein kostenloses 3D-Design und wettbewerbsfähiges Angebot innerhalb von 24 Stunden. Unser Expertenteam hilft Ihnen, einen sicheren, ansprechenden Spielbereich zu schaffen.",
+        "getQuote": "Kostenloses Angebot Erhalten",
+        "viewProjects": "Mehr Projekte Ansehen"
+      }
     }
   },
   "processDetail": {

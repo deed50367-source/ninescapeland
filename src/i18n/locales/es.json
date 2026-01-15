@@ -971,7 +971,127 @@
       "galleryTitle": "Galería de",
       "galleryTitleHighlight": "Juego Suave",
       "cta": "Diseño y Cotización Gratis",
-      "kidsFriendly": "Amigable para Niños"
+      "kidsFriendly": "Amigable para Niños",
+      "stats": {
+        "projects": "Proyectos Soft Play",
+        "countries": "Países Atendidos",
+        "experience": "Años de Experiencia",
+        "satisfaction": "Satisfacción del Cliente"
+      },
+      "ageZonesLabel": "Diseño Apropiado por Edad",
+      "ageZonesTitle": "Diseñado para",
+      "ageZonesTitleHighlight": "Todas las Edades",
+      "ageZonesDescription": "Nuestras áreas de juego suave están diseñadas cuidadosamente para satisfacer las necesidades de desarrollo de diferentes grupos de edad.",
+      "ageZones": {
+        "infant": {
+          "age": "0-12 Meses",
+          "title": "Zona Bebés",
+          "description": "Superficies ultra suaves, juguetes sensoriales y actividades gentiles para los más pequeños."
+        },
+        "toddler": {
+          "age": "1-3 Años",
+          "title": "Zona Niños Pequeños",
+          "description": "Elementos de escalada bajos, piscinas de bolas y paneles interactivos para el desarrollo motor."
+        },
+        "preschool": {
+          "age": "3-5 Años",
+          "title": "Zona Preescolar",
+          "description": "Obstáculos más desafiantes, toboganes y elementos de juego imaginativo para preescolares activos."
+        },
+        "mixed": {
+          "age": "Todas las Edades",
+          "title": "Zona Familiar",
+          "description": "Áreas de juego inclusivas donde los hermanos pueden jugar juntos con desafíos apropiados."
+        }
+      },
+      "safetyLabel": "Seguridad Primero",
+      "safetyTitle": "Estándares de Seguridad",
+      "safetyTitleHighlight": "Certificados",
+      "safetyDescription": "La seguridad de sus hijos es nuestra máxima prioridad. Cada elemento de juego suave cumple o supera los estándares internacionales.",
+      "safetyCertified": "Certificado ASTM y EN",
+      "safety": {
+        "standards": {
+          "title": "Certificaciones Internacionales",
+          "description": "Todos los productos cumplen ASTM F1487, EN 1176 y TÜV para equipos comerciales."
+        },
+        "materials": {
+          "title": "Materiales No Tóxicos",
+          "description": "Sin plomo, sin ftalatos y retardantes de fuego, seguros para niños de todas las edades."
+        },
+        "hygiene": {
+          "title": "Diseño Higiénico",
+          "description": "Superficies antibacterianas y fundas fáciles de limpiar previenen la acumulación de gérmenes."
+        }
+      },
+      "advantagesLabel": "Por Qué Elegirnos",
+      "advantagesTitle": "Nuestras Ventajas",
+      "advantagesTitleHighlight": "Competitivas",
+      "advantages": {
+        "certified": {
+          "title": "Certificado en Seguridad",
+          "description": "Todos los productos cumplen estándares ASTM, EN y TÜV internacionales."
+        },
+        "fast": {
+          "title": "Producción Rápida",
+          "description": "Fabricación en 15-25 días con control de calidad estricto."
+        },
+        "shipping": {
+          "title": "Envío Global",
+          "description": "Entrega puerta a puerta a más de 80 países con soporte aduanero."
+        },
+        "support": {
+          "title": "Soporte de Instalación",
+          "description": "Manuales detallados, videos guía e instalación en sitio opcional."
+        }
+      },
+      "caseStudiesLabel": "Historias de Éxito",
+      "caseStudiesTitle": "Proyectos",
+      "caseStudiesTitleHighlight": "Destacados",
+      "caseStudiesDescription": "Explore nuestras instalaciones de juego suave completadas que deleitan a niños y padres alrededor del mundo.",
+      "caseStudies": {
+        "case1": {
+          "title": "Centro de Juegos Kids Kingdom",
+          "location": "Dubai, EAU",
+          "size": "150 m²",
+          "feature1": "Estructura Multinivel",
+          "feature2": "Paraíso de Bolas",
+          "feature3": "Pared Sensorial"
+        },
+        "case2": {
+          "title": "Guardería Little Stars",
+          "location": "Londres, Reino Unido",
+          "size": "80 m²",
+          "feature1": "Zonas por Edad",
+          "feature2": "Tema Océano",
+          "feature3": "Elementos Interactivos"
+        }
+      },
+      "testimonialsLabel": "Opiniones de Clientes",
+      "testimonialsTitle": "Lo Que Dicen",
+      "testimonialsTitleHighlight": "Los Padres",
+      "testimonials": {
+        "testimonial1": {
+          "quote": "El área de juego suave se ha convertido en la atracción más popular. ¡La calidad es excepcional y los niños la adoran!",
+          "name": "Sara Johnson",
+          "location": "Londres, Reino Unido"
+        },
+        "testimonial2": {
+          "quote": "Equipo profesional desde el diseño hasta la instalación. Las características de seguridad dan tranquilidad a los padres.",
+          "name": "Ahmed Hassan",
+          "location": "Dubai, EAU"
+        },
+        "testimonial3": {
+          "quote": "¡Hemos visto un aumento del 40% en reservas desde la instalación. La mejor inversión que hemos hecho!",
+          "name": "María García",
+          "location": "Madrid, España"
+        }
+      },
+      "ctaSection": {
+        "title": "¿Listo para Crear tu Área de Juego Suave?",
+        "description": "Obtén un diseño 3D gratuito y cotización competitiva en 24 horas. Nuestro equipo experto te ayudará a crear un espacio de juego seguro y atractivo.",
+        "getQuote": "Obtener Cotización Gratis",
+        "viewProjects": "Ver Más Proyectos"
+      }
     }
   },
   "processDetail": {
