@@ -823,8 +823,93 @@
       "galleryTitle": "Ninja Course",
       "galleryTitleHighlight": "Gallery",
       "cta": "Get Free Design & Quote",
-      "competitionGrade": "Competition Grade"
-    },
+      "competitionGrade": "Competition Grade",
+      "days": "Days",
+      "stats": {
+        "obstacles": "Obstacle Types",
+        "projects": "Projects Completed",
+        "countries": "Countries Served",
+        "years": "Years Experience"
+      },
+      "levelsLabel": "Difficulty Levels",
+      "levelsTitle": "Training",
+      "levelsTitleHighlight": "Difficulty Levels",
+      "levelsDescription": "Our ninja courses are designed with multiple difficulty levels to challenge participants from beginners to elite athletes.",
+      "levels": {
+        "beginner": {
+          "title": "Beginner",
+          "description": "Perfect for first-timers. Low obstacles with safety padding and easy grip points for building confidence."
+        },
+        "intermediate": {
+          "title": "Intermediate",
+          "description": "Moderate challenges with increased complexity. Longer reaches and balance elements for developing skills."
+        },
+        "advanced": {
+          "title": "Advanced",
+          "description": "Demanding obstacles requiring strength and technique. Technical elements that test experienced athletes."
+        },
+        "elite": {
+          "title": "Elite / Competition",
+          "description": "TV-show level difficulty. Maximum challenge for professional ninja athletes and competition training."
+        }
+      },
+      "advantagesLabel": "Our Advantages",
+      "advantagesTitle": "Why Choose",
+      "advantagesTitleHighlight": "NinescapeLand",
+      "advantages": {
+        "certified": {
+          "title": "Internationally Certified",
+          "description": "ASTM, TUV, CE certified equipment meeting global safety standards."
+        },
+        "production": {
+          "title": "Fast Production",
+          "description": "25-35 days manufacturing with regular progress updates."
+        },
+        "shipping": {
+          "title": "Global Shipping",
+          "description": "Door-to-door delivery to 50+ countries worldwide."
+        },
+        "installation": {
+          "title": "Installation Support",
+          "description": "Detailed guides, video support, or on-site installation available."
+        }
+      },
+      "casesLabel": "Success Stories",
+      "casesTitle": "Featured",
+      "casesTitleHighlight": "Projects",
+      "cases": {
+        "ninja1": {
+          "title": "Ninja Academy USA",
+          "location": "Denver, Colorado, USA"
+        },
+        "ninja2": {
+          "title": "Ultimate Warrior Training",
+          "location": "Toronto, Canada"
+        }
+      },
+      "testimonialsLabel": "Client Reviews",
+      "testimonialsTitle": "What Clients",
+      "testimonialsTitleHighlight": "Say About Us",
+      "testimonials": {
+        "mike": {
+          "location": "Gym Owner, California, USA",
+          "quote": "The ninja course equipment transformed our gym. Members love the challenge, and it's become our biggest draw. Quality is exceptional and setup was straightforward."
+        },
+        "lisa": {
+          "location": "FEC Manager, Vancouver, Canada",
+          "quote": "From design to installation, NinescapeLand exceeded our expectations. The course layout maximizes our space and the equipment quality is outstanding."
+        },
+        "robert": {
+          "location": "Adventure Park Director, Melbourne, Australia",
+          "quote": "We've seen a significant increase in memberships since adding the ninja course. The competition-grade obstacles attract serious athletes and casual visitors alike."
+        }
+      },
+      "ctaSection": {
+        "title": "Ready to Build Your Ninja Course?",
+        "description": "Get a free 3D design and competitive quote within 24 hours. Our expert team will help you create a challenging, profitable ninja warrior facility.",
+        "getQuote": "Get Free Quote",
+        "viewProjects": "View More Projects"
+      },
     "softPlay": {
       "title": "Soft Play",
       "titleHighlight": "Areas",

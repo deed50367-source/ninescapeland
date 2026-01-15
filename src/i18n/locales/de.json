@@ -823,8 +823,93 @@
       "galleryTitle": "Ninja-Parcours",
       "galleryTitleHighlight": "Galerie",
       "cta": "Kostenloses Design & Angebot",
-      "competitionGrade": "Wettkampftauglich"
-    },
+      "competitionGrade": "Wettkampftauglich",
+      "days": "Tage",
+      "stats": {
+        "obstacles": "Hindernistypen",
+        "projects": "Abgeschlossene Projekte",
+        "countries": "Bediente Länder",
+        "years": "Jahre Erfahrung"
+      },
+      "levelsLabel": "Schwierigkeitsstufen",
+      "levelsTitle": "Training",
+      "levelsTitleHighlight": "Schwierigkeitsstufen",
+      "levelsDescription": "Unsere Ninja-Parcours sind mit mehreren Schwierigkeitsstufen konzipiert, um Teilnehmer von Anfängern bis zu Eliteathleten herauszufordern.",
+      "levels": {
+        "beginner": {
+          "title": "Anfänger",
+          "description": "Perfekt für Erstmalige. Niedrige Hindernisse mit Sicherheitspolsterung und einfachen Griffpunkten zum Aufbau von Selbstvertrauen."
+        },
+        "intermediate": {
+          "title": "Fortgeschritten",
+          "description": "Moderate Herausforderungen mit erhöhter Komplexität. Längere Reichweiten und Balanceelemente zur Entwicklung von Fähigkeiten."
+        },
+        "advanced": {
+          "title": "Profi",
+          "description": "Anspruchsvolle Hindernisse, die Kraft und Technik erfordern. Technische Elemente, die erfahrene Athleten testen."
+        },
+        "elite": {
+          "title": "Elite / Wettkampf",
+          "description": "TV-Show-Niveau Schwierigkeit. Maximale Herausforderung für professionelle Ninja-Athleten und Wettkampftraining."
+        }
+      },
+      "advantagesLabel": "Unsere Vorteile",
+      "advantagesTitle": "Warum",
+      "advantagesTitleHighlight": "NinescapeLand wählen",
+      "advantages": {
+        "certified": {
+          "title": "International Zertifiziert",
+          "description": "ASTM, TUV, CE zertifizierte Ausrüstung, die globale Sicherheitsstandards erfüllt."
+        },
+        "production": {
+          "title": "Schnelle Produktion",
+          "description": "25-35 Tage Fertigung mit regelmäßigen Fortschrittsupdates."
+        },
+        "shipping": {
+          "title": "Weltweiter Versand",
+          "description": "Lieferung von Tür zu Tür in über 50 Länder weltweit."
+        },
+        "installation": {
+          "title": "Installationsunterstützung",
+          "description": "Detaillierte Anleitungen, Video-Support oder Vor-Ort-Installation verfügbar."
+        }
+      },
+      "casesLabel": "Erfolgsgeschichten",
+      "casesTitle": "Ausgewählte",
+      "casesTitleHighlight": "Projekte",
+      "cases": {
+        "ninja1": {
+          "title": "Ninja Academy USA",
+          "location": "Denver, Colorado, USA"
+        },
+        "ninja2": {
+          "title": "Ultimate Warrior Training",
+          "location": "Toronto, Kanada"
+        }
+      },
+      "testimonialsLabel": "Kundenbewertungen",
+      "testimonialsTitle": "Was Kunden",
+      "testimonialsTitleHighlight": "Über Uns Sagen",
+      "testimonials": {
+        "mike": {
+          "location": "Fitnessstudio-Besitzer, Kalifornien, USA",
+          "quote": "Die Ninja-Parcours-Ausrüstung hat unser Fitnessstudio transformiert. Die Mitglieder lieben die Herausforderung und es ist zu unserer größten Attraktion geworden. Die Qualität ist außergewöhnlich und der Aufbau war unkompliziert."
+        },
+        "lisa": {
+          "location": "FEC-Managerin, Vancouver, Kanada",
+          "quote": "Vom Design bis zur Installation hat NinescapeLand unsere Erwartungen übertroffen. Das Parcours-Layout maximiert unseren Raum und die Ausrüstungsqualität ist hervorragend."
+        },
+        "robert": {
+          "location": "Abenteuerpark-Direktor, Melbourne, Australien",
+          "quote": "Wir haben seit dem Hinzufügen des Ninja-Parcours einen deutlichen Anstieg der Mitgliedschaften verzeichnet. Die wettkampftauglichen Hindernisse ziehen sowohl ernsthafte Athleten als auch Gelegenheitsbesucher an."
+        }
+      },
+      "ctaSection": {
+        "title": "Bereit, Ihren Ninja-Parcours zu Bauen?",
+        "description": "Erhalten Sie ein kostenloses 3D-Design und ein wettbewerbsfähiges Angebot innerhalb von 24 Stunden. Unser Expertenteam hilft Ihnen, eine herausfordernde, profitable Ninja Warrior-Anlage zu erstellen.",
+        "getQuote": "Kostenloses Angebot Erhalten",
+        "viewProjects": "Mehr Projekte Ansehen"
+      },
     "softPlay": {
       "title": "Softplay",
       "titleHighlight": "Bereiche",
