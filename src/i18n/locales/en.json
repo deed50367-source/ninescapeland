@@ -699,7 +699,86 @@
       "galleryLabel": "Our Projects",
       "galleryTitle": "Trampoline Park",
       "galleryTitleHighlight": "Gallery",
-      "cta": "Get Free Design & Quote"
+      "cta": "Get Free Design & Quote",
+      "zonesLabel": "Activity Zones",
+      "zonesTitle": "Exciting",
+      "zonesTitleHighlight": "Play Zones",
+      "zonesDescription": "Our trampoline parks feature multiple activity zones designed to engage visitors of all ages and skill levels.",
+      "zones": {
+        "freejump": {
+          "title": "Free Jump Zone",
+          "description": "Open trampolines for freestyle jumping, flips, and tricks with safety padding throughout."
+        },
+        "foampit": {
+          "title": "Foam Pit",
+          "description": "Soft landing zones for practicing new aerial moves and safe trick training."
+        },
+        "basketball": {
+          "title": "Slam Dunk",
+          "description": "Trampoline-assisted basketball hoops for high-flying dunks and competitions."
+        },
+        "dodgeball": {
+          "title": "Dodgeball Arena",
+          "description": "Bouncing dodgeball courts for team games and exciting group activities."
+        }
+      },
+      "advantagesLabel": "Our Advantages",
+      "advantagesTitle": "Why Choose",
+      "advantagesTitleHighlight": "NinescapeLand",
+      "advantages": {
+        "certified": {
+          "title": "Internationally Certified",
+          "description": "ASTM, TUV, CE certified equipment meeting global safety standards."
+        },
+        "production": {
+          "title": "Fast Production",
+          "description": "25-35 days manufacturing with regular progress updates."
+        },
+        "shipping": {
+          "title": "Global Shipping",
+          "description": "Door-to-door delivery to 50+ countries worldwide."
+        },
+        "installation": {
+          "title": "Installation Support",
+          "description": "Detailed guides, video support, or on-site installation available."
+        }
+      },
+      "casesLabel": "Success Stories",
+      "casesTitle": "Featured",
+      "casesTitleHighlight": "Projects",
+      "cases": {
+        "skypark": {
+          "title": "SkyJump Adventure Park",
+          "location": "Los Angeles, USA"
+        },
+        "jumpworld": {
+          "title": "JumpWorld Family Center",
+          "location": "London, UK"
+        }
+      },
+      "testimonialsLabel": "Client Reviews",
+      "testimonialsTitle": "What Clients",
+      "testimonialsTitleHighlight": "Say About Us",
+      "testimonials": {
+        "james": {
+          "location": "FEC Owner, Texas, USA",
+          "quote": "The trampoline park equipment exceeded our expectations. Great quality, on-time delivery, and excellent customer support throughout the entire process."
+        },
+        "maria": {
+          "location": "Entertainment Center Director, Madrid, Spain",
+          "quote": "NinescapeLand delivered a complete turnkey solution. From design to installation, everything was handled professionally. Our park has been a huge success!"
+        },
+        "david": {
+          "location": "Business Owner, Sydney, Australia",
+          "quote": "Working with NinescapeLand was seamless. The equipment quality is outstanding and the after-sales support has been exceptional. Highly recommended!"
+        }
+      },
+      "ctaSection": {
+        "title": "Ready to Build Your Trampoline Park?",
+        "description": "Get a free 3D design and competitive quote within 24 hours. Our expert team will help you create an exciting, profitable trampoline park.",
+        "getQuote": "Get Free Quote",
+        "viewProjects": "View More Projects"
+      }
     },
     "ninjaCourse": {
       "title": "Ninja Warrior",

@@ -699,7 +699,86 @@
       "galleryLabel": "Nuestros Proyectos",
       "galleryTitle": "Galería de Parques",
       "galleryTitleHighlight": "de Trampolines",
-      "cta": "Diseño y Cotización Gratis"
+      "cta": "Diseño y Cotización Gratis",
+      "zonesLabel": "Zonas de Actividad",
+      "zonesTitle": "Zonas de Juego",
+      "zonesTitleHighlight": "Emocionantes",
+      "zonesDescription": "Nuestros parques de trampolines cuentan con múltiples zonas de actividad diseñadas para involucrar a visitantes de todas las edades y niveles de habilidad.",
+      "zones": {
+        "freejump": {
+          "title": "Zona de Salto Libre",
+          "description": "Trampolines abiertos para salto libre, piruetas y trucos con acolchado de seguridad en todo el área."
+        },
+        "foampit": {
+          "title": "Piscina de Espuma",
+          "description": "Zonas de aterrizaje suave para practicar nuevos movimientos aéreos y entrenamiento seguro de trucos."
+        },
+        "basketball": {
+          "title": "Slam Dunk",
+          "description": "Canastas de baloncesto asistidas por trampolín para clavadas espectaculares y competiciones."
+        },
+        "dodgeball": {
+          "title": "Arena de Dodgeball",
+          "description": "Canchas de dodgeball con rebote para juegos en equipo y emocionantes actividades grupales."
+        }
+      },
+      "advantagesLabel": "Nuestras Ventajas",
+      "advantagesTitle": "Por Qué Elegir",
+      "advantagesTitleHighlight": "NinescapeLand",
+      "advantages": {
+        "certified": {
+          "title": "Certificado Internacionalmente",
+          "description": "Equipos certificados ASTM, TUV, CE que cumplen con los estándares de seguridad globales."
+        },
+        "production": {
+          "title": "Producción Rápida",
+          "description": "Fabricación de 25-35 días con actualizaciones regulares del progreso."
+        },
+        "shipping": {
+          "title": "Envío Global",
+          "description": "Entrega puerta a puerta a más de 50 países en todo el mundo."
+        },
+        "installation": {
+          "title": "Soporte de Instalación",
+          "description": "Guías detalladas, soporte por video o instalación en sitio disponible."
+        }
+      },
+      "casesLabel": "Historias de Éxito",
+      "casesTitle": "Proyectos",
+      "casesTitleHighlight": "Destacados",
+      "cases": {
+        "skypark": {
+          "title": "SkyJump Parque de Aventuras",
+          "location": "Los Ángeles, EE.UU."
+        },
+        "jumpworld": {
+          "title": "JumpWorld Centro Familiar",
+          "location": "Londres, Reino Unido"
+        }
+      },
+      "testimonialsLabel": "Reseñas de Clientes",
+      "testimonialsTitle": "Lo Que Dicen",
+      "testimonialsTitleHighlight": "Nuestros Clientes",
+      "testimonials": {
+        "james": {
+          "location": "Propietario FEC, Texas, EE.UU.",
+          "quote": "El equipo del parque de trampolines superó nuestras expectativas. Gran calidad, entrega puntual y excelente soporte al cliente durante todo el proceso."
+        },
+        "maria": {
+          "location": "Directora de Centro de Entretenimiento, Madrid, España",
+          "quote": "NinescapeLand entregó una solución llave en mano completa. Desde el diseño hasta la instalación, todo fue manejado profesionalmente. ¡Nuestro parque ha sido un gran éxito!"
+        },
+        "david": {
+          "location": "Propietario de Negocio, Sídney, Australia",
+          "quote": "Trabajar con NinescapeLand fue fluido. La calidad del equipo es excepcional y el soporte posventa ha sido excepcional. ¡Muy recomendado!"
+        }
+      },
+      "ctaSection": {
+        "title": "¿Listo para Construir Tu Parque de Trampolines?",
+        "description": "Obtén un diseño 3D gratuito y cotización competitiva en 24 horas. Nuestro equipo experto te ayudará a crear un parque de trampolines emocionante y rentable.",
+        "getQuote": "Obtener Cotización Gratis",
+        "viewProjects": "Ver Más Proyectos"
+      }
     },
     "ninjaCourse": {
       "title": "Circuitos",

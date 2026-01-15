@@ -699,7 +699,86 @@
       "galleryLabel": "Nossos Projetos",
       "galleryTitle": "Galeria de Parques",
       "galleryTitleHighlight": "de Trampolim",
-      "cta": "Design e Orçamento Grátis"
+      "cta": "Design e Orçamento Grátis",
+      "zonesLabel": "Zonas de Atividade",
+      "zonesTitle": "Zonas de Jogo",
+      "zonesTitleHighlight": "Emocionantes",
+      "zonesDescription": "Nossos parques de trampolim apresentam múltiplas zonas de atividade projetadas para envolver visitantes de todas as idades e níveis de habilidade.",
+      "zones": {
+        "freejump": {
+          "title": "Zona de Salto Livre",
+          "description": "Trampolins abertos para salto livre, piruetas e truques com acolchoamento de segurança em toda a área."
+        },
+        "foampit": {
+          "title": "Piscina de Espuma",
+          "description": "Zonas de pouso suave para praticar novos movimentos aéreos e treinamento seguro de truques."
+        },
+        "basketball": {
+          "title": "Slam Dunk",
+          "description": "Cestas de basquete assistidas por trampolim para enterradas espetaculares e competições."
+        },
+        "dodgeball": {
+          "title": "Arena de Dodgeball",
+          "description": "Quadras de dodgeball com trampolins para jogos em equipe e atividades em grupo emocionantes."
+        }
+      },
+      "advantagesLabel": "Nossas Vantagens",
+      "advantagesTitle": "Por Que Escolher",
+      "advantagesTitleHighlight": "NinescapeLand",
+      "advantages": {
+        "certified": {
+          "title": "Certificado Internacionalmente",
+          "description": "Equipamentos certificados ASTM, TUV, CE que atendem aos padrões de segurança globais."
+        },
+        "production": {
+          "title": "Produção Rápida",
+          "description": "Fabricação de 25-35 dias com atualizações regulares do progresso."
+        },
+        "shipping": {
+          "title": "Envio Global",
+          "description": "Entrega porta a porta para mais de 50 países em todo o mundo."
+        },
+        "installation": {
+          "title": "Suporte de Instalação",
+          "description": "Guias detalhados, suporte por vídeo ou instalação no local disponível."
+        }
+      },
+      "casesLabel": "Histórias de Sucesso",
+      "casesTitle": "Projetos",
+      "casesTitleHighlight": "Destacados",
+      "cases": {
+        "skypark": {
+          "title": "SkyJump Parque de Aventuras",
+          "location": "Los Angeles, EUA"
+        },
+        "jumpworld": {
+          "title": "JumpWorld Centro Familiar",
+          "location": "Londres, Reino Unido"
+        }
+      },
+      "testimonialsLabel": "Avaliações de Clientes",
+      "testimonialsTitle": "O Que Dizem",
+      "testimonialsTitleHighlight": "Nossos Clientes",
+      "testimonials": {
+        "james": {
+          "location": "Proprietário FEC, Texas, EUA",
+          "quote": "O equipamento do parque de trampolim superou nossas expectativas. Ótima qualidade, entrega pontual e excelente suporte ao cliente durante todo o processo."
+        },
+        "maria": {
+          "location": "Diretora de Centro de Entretenimento, Madri, Espanha",
+          "quote": "NinescapeLand entregou uma solução completa chave na mão. Do design à instalação, tudo foi tratado profissionalmente. Nosso parque foi um grande sucesso!"
+        },
+        "david": {
+          "location": "Proprietário de Negócio, Sydney, Austrália",
+          "quote": "Trabalhar com NinescapeLand foi tranquilo. A qualidade do equipamento é excepcional e o suporte pós-venda foi extraordinário. Altamente recomendado!"
+        }
+      },
+      "ctaSection": {
+        "title": "Pronto para Construir Seu Parque de Trampolim?",
+        "description": "Receba um design 3D gratuito e orçamento competitivo em 24 horas. Nossa equipe especializada ajudará você a criar um parque de trampolim emocionante e lucrativo.",
+        "getQuote": "Obter Orçamento Grátis",
+        "viewProjects": "Ver Mais Projetos"
+      }
     },
     "ninjaCourse": {
       "title": "Circuitos",
