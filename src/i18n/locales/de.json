@@ -819,6 +819,121 @@
           "quote": "Die Zusammenarbeit mit NinescapeLand war nahtlos. Die Gerätequalität ist hervorragend und der After-Sales-Support war außergewöhnlich. Sehr empfehlenswert!"
         }
       },
+      "extendedZones": {
+        "bicycle": {
+          "title": "360° Fahrrad",
+          "description": "Revolutionäres Drehfahrraderlebnis mit 360-Grad-Bewegungsfreiheit."
+        },
+        "airbag": {
+          "title": "Riesen-Airbag",
+          "description": "Sichere Landezone zum Üben extremer Sprünge und Lufttricks."
+        },
+        "battlebeam": {
+          "title": "Kampfbalken",
+          "description": "Erhöhter Schwebebalken für spannende Eins-gegen-Eins Schaumstoffkämpfe."
+        },
+        "ninja": {
+          "title": "Ninja-Parcours",
+          "description": "Herausfordernder Hindernisparcours mit Kletter-, Schwing- und Balancierelementen."
+        }
+      },
+      "ageZonesLabel": "Altersgerechte Zonen",
+      "ageZonesTitle": "Spaß für",
+      "ageZonesTitleHighlight": "Alle Altersgruppen",
+      "ageZonesDescription": "Wir gestalten altersspezifische Zonen für sichere, ansprechende Erlebnisse für jeden Besucher.",
+      "ageZones": {
+        "toddler": {
+          "title": "Kleinkinderzone",
+          "description": "Weiche, geschlossene Trampoline mit sanftem Sprung für die Jüngsten (3-6 Jahre)."
+        },
+        "kids": {
+          "title": "Kinderabenteuer",
+          "description": "Spannende Multi-Aktivitätszonen mit Schaumgruben und Basketball (7-12 Jahre)."
+        },
+        "teens": {
+          "title": "Teen Challenge",
+          "description": "Hochenergetische Zonen mit fortgeschrittenen Trickbereichen (13-17 Jahre)."
+        },
+        "adults": {
+          "title": "Erwachsenen-Fitness",
+          "description": "Fitnessorientierte Trampoline und Leistungszonen für Erwachsene (18+)."
+        }
+      },
+      "safetyLabel": "Sicherheitsstandards",
+      "safetyTitle": "Ihre Sicherheit ist",
+      "safetyTitleHighlight": "Unsere Priorität",
+      "safetyDescription": "Wir implementieren höchste Sicherheitsstandards in allen Aspekten des Designs.",
+      "safety": {
+        "padding": {
+          "title": "Premium Sicherheitspolsterung",
+          "description": "Hochdichte Schaumpolsterung an Rahmen, Federn und Landebereichen."
+        },
+        "certification": {
+          "title": "Internationale Zertifizierungen",
+          "description": "Alle Geräte erfüllen ASTM F2970, TUV, CE und EN Standards."
+        },
+        "materials": {
+          "title": "Kommerzielle Materialien",
+          "description": "Strapazierfähige Federn, verstärkte Matten und flammhemmende Stoffe."
+        },
+        "inspection": {
+          "title": "Qualitätsprüfung",
+          "description": "Strenge Tests und Inspektion in jeder Produktionsphase."
+        }
+      },
+      "benefitsLabel": "Gesundheit & Fitness",
+      "benefitsTitle": "Springen Sie zu",
+      "benefitsTitleHighlight": "Besserer Gesundheit",
+      "benefitsDescription": "Trampolinübungen bieten unglaubliche gesundheitliche Vorteile.",
+      "benefits": {
+        "cardio": {
+          "title": "Herz-Kreislauf-Gesundheit",
+          "description": "10 Minuten Springen entsprechen 30 Minuten Laufen für die Herzgesundheit."
+        },
+        "strength": {
+          "title": "Muskelaufbau",
+          "description": "Ganzkörpertraining für Beine, Rumpf und Arme zur Stärkung."
+        },
+        "balance": {
+          "title": "Gleichgewicht & Koordination",
+          "description": "Verbessert Propriozeption und motorische Fähigkeiten durch dynamische Bewegung."
+        },
+        "stress": {
+          "title": "Stressabbau",
+          "description": "Spaßige Aktivität setzt Endorphine frei und reduziert Stress."
+        }
+      },
+      "processLabel": "Unser Prozess",
+      "processTitle": "Vom Konzept zur",
+      "processTitleHighlight": "Großen Eröffnung",
+      "processDescription": "Wir begleiten Sie durch jeden Schritt Ihres erfolgreichen Trampolinparks.",
+      "step": "Schritt",
+      "process": {
+        "consultation": {
+          "title": "Beratung",
+          "description": "Teilen Sie Ihre Vision, Raummaße und Budget für Expertenberatung."
+        },
+        "design": {
+          "title": "3D-Design",
+          "description": "Erhalten Sie professionelle 3D-Renderings mit optimierten Zonenlayouts."
+        },
+        "production": {
+          "title": "Fertigung",
+          "description": "Premium-Geräteproduktion mit regelmäßigen Fortschrittsupdates."
+        },
+        "shipping": {
+          "title": "Weltweiter Versand",
+          "description": "Professionelle Logistik mit Tür-zu-Tür-Lieferung weltweit."
+        },
+        "installation": {
+          "title": "Installation",
+          "description": "Umfassende Anleitungen oder Vor-Ort-Installation durch unser Team."
+        },
+        "support": {
+          "title": "After-Sales",
+          "description": "3 Jahre Garantie mit lebenslangem technischen Support."
+        }
+      },
       "ctaSection": {
         "title": "Bereit, Ihren Trampolinpark zu Bauen?",
         "description": "Erhalten Sie innerhalb von 24 Stunden ein kostenloses 3D-Design und ein wettbewerbsfähiges Angebot. Unser Expertenteam hilft Ihnen, einen aufregenden, profitablen Trampolinpark zu erstellen.",

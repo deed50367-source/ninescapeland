@@ -819,6 +819,121 @@
           "quote": "Trabalhar com NinescapeLand foi tranquilo. A qualidade do equipamento é excepcional e o suporte pós-venda foi extraordinário. Altamente recomendado!"
         }
       },
+      "extendedZones": {
+        "bicycle": {
+          "title": "Bicicleta 360°",
+          "description": "Experiência revolucionária de bicicleta giratória com liberdade de movimento de 360 graus."
+        },
+        "airbag": {
+          "title": "Airbag Gigante",
+          "description": "Zona de aterrissagem segura para praticar saltos extremos e truques aéreos."
+        },
+        "battlebeam": {
+          "title": "Viga de Batalha",
+          "description": "Viga de equilíbrio elevada para emocionantes batalhas um contra um com bastões de espuma."
+        },
+        "ninja": {
+          "title": "Circuito Ninja",
+          "description": "Circuito de obstáculos desafiador combinando elementos de escalada, balanço e equilíbrio."
+        }
+      },
+      "ageZonesLabel": "Zonas por Idade",
+      "ageZonesTitle": "Diversão para",
+      "ageZonesTitleHighlight": "Todas as Idades",
+      "ageZonesDescription": "Projetamos zonas específicas por idade para garantir experiências seguras e envolventes.",
+      "ageZones": {
+        "toddler": {
+          "title": "Zona Infantil",
+          "description": "Trampolins macios e fechados com salto suave para os mais pequenos (3-6 anos)."
+        },
+        "kids": {
+          "title": "Aventura Crianças",
+          "description": "Zonas multi-atividade com piscinas de espuma e basquete para crianças (7-12 anos)."
+        },
+        "teens": {
+          "title": "Desafio Adolescente",
+          "description": "Zonas de alta energia com áreas de truques avançados e atividades competitivas (13-17 anos)."
+        },
+        "adults": {
+          "title": "Fitness Adultos",
+          "description": "Trampolins focados em fitness e zonas de desempenho para visitantes adultos (18+ anos)."
+        }
+      },
+      "safetyLabel": "Padrões de Segurança",
+      "safetyTitle": "Sua Segurança é",
+      "safetyTitleHighlight": "Nossa Prioridade",
+      "safetyDescription": "Implementamos os mais altos padrões de segurança em cada aspecto do design.",
+      "safety": {
+        "padding": {
+          "title": "Acolchoamento Premium",
+          "description": "Espuma de alta densidade em molduras, molas e áreas de aterrissagem."
+        },
+        "certification": {
+          "title": "Certificações Internacionais",
+          "description": "Todos os equipamentos atendem aos padrões ASTM F2970, TUV, CE e EN."
+        },
+        "materials": {
+          "title": "Materiais Comerciais",
+          "description": "Molas resistentes, tapetes reforçados e tecidos retardantes de fogo."
+        },
+        "inspection": {
+          "title": "Inspeção de Qualidade",
+          "description": "Testes e inspeção rigorosos em cada etapa de produção."
+        }
+      },
+      "benefitsLabel": "Saúde e Fitness",
+      "benefitsTitle": "Pule em Direção a uma",
+      "benefitsTitleHighlight": "Saúde Melhor",
+      "benefitsDescription": "O exercício em trampolim proporciona incríveis benefícios para a saúde.",
+      "benefits": {
+        "cardio": {
+          "title": "Saúde Cardiovascular",
+          "description": "10 minutos de salto equivalem a 30 minutos de corrida para a saúde do coração."
+        },
+        "strength": {
+          "title": "Construção Muscular",
+          "description": "Treino de corpo inteiro que trabalha pernas, core e braços."
+        },
+        "balance": {
+          "title": "Equilíbrio e Coordenação",
+          "description": "Melhora a propriocepção e habilidades motoras através do movimento dinâmico."
+        },
+        "stress": {
+          "title": "Alívio do Estresse",
+          "description": "Atividade divertida que libera endorfinas e reduz o estresse."
+        }
+      },
+      "processLabel": "Nosso Processo",
+      "processTitle": "Do Conceito à",
+      "processTitleHighlight": "Grande Inauguração",
+      "processDescription": "Guiamos você em cada passo para criar seu parque de trampolim de sucesso.",
+      "step": "Passo",
+      "process": {
+        "consultation": {
+          "title": "Consulta",
+          "description": "Compartilhe sua visão, dimensões e orçamento para assessoria especializada."
+        },
+        "design": {
+          "title": "Design 3D",
+          "description": "Receba renderizações 3D profissionais com layouts otimizados."
+        },
+        "production": {
+          "title": "Fabricação",
+          "description": "Produção de equipamentos premium com atualizações regulares."
+        },
+        "shipping": {
+          "title": "Envio Global",
+          "description": "Logística profissional com entrega porta a porta mundial."
+        },
+        "installation": {
+          "title": "Instalação",
+          "description": "Guias completos ou instalação no local pela nossa equipe."
+        },
+        "support": {
+          "title": "Pós-Venda",
+          "description": "Garantia de 3 anos com suporte técnico vitalício."
+        }
+      },
       "ctaSection": {
         "title": "Pronto para Construir Seu Parque de Trampolim?",
         "description": "Receba um design 3D gratuito e orçamento competitivo em 24 horas. Nossa equipe especializada ajudará você a criar um parque de trampolim emocionante e lucrativo.",

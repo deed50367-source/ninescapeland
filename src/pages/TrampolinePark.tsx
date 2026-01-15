@@ -33,7 +33,26 @@ import {
   Flame,
   Dumbbell,
   PartyPopper,
-  CheckCircle2
+  CheckCircle2,
+  Heart,
+  Brain,
+  Smile,
+  Footprints,
+  ShieldCheck,
+  FileCheck,
+  Lightbulb,
+  Pencil,
+  Factory,
+  Package,
+  Settings,
+  Headphones,
+  Globe,
+  Bike,
+  Waves,
+  Swords,
+  PersonStanding,
+  Baby,
+  User
 } from "lucide-react";
 
 const TrampolinePark = () => {
@@ -105,6 +124,150 @@ const TrampolinePark = () => {
       titleKey: "productPages.trampolinePark.zones.dodgeball.title",
       descKey: "productPages.trampolinePark.zones.dodgeball.description",
       color: "from-green-500 to-emerald-500"
+    }
+  ];
+
+  // Extended activity zones
+  const extendedZones = [
+    {
+      icon: Bike,
+      titleKey: "productPages.trampolinePark.extendedZones.bicycle.title",
+      descKey: "productPages.trampolinePark.extendedZones.bicycle.description",
+      color: "from-indigo-500 to-purple-500"
+    },
+    {
+      icon: Waves,
+      titleKey: "productPages.trampolinePark.extendedZones.airbag.title",
+      descKey: "productPages.trampolinePark.extendedZones.airbag.description",
+      color: "from-teal-500 to-cyan-500"
+    },
+    {
+      icon: Swords,
+      titleKey: "productPages.trampolinePark.extendedZones.battlebeam.title",
+      descKey: "productPages.trampolinePark.extendedZones.battlebeam.description",
+      color: "from-red-500 to-orange-500"
+    },
+    {
+      icon: PersonStanding,
+      titleKey: "productPages.trampolinePark.extendedZones.ninja.title",
+      descKey: "productPages.trampolinePark.extendedZones.ninja.description",
+      color: "from-yellow-500 to-amber-500"
+    }
+  ];
+
+  // Age zones
+  const ageZones = [
+    {
+      icon: Baby,
+      age: "3-6",
+      titleKey: "productPages.trampolinePark.ageZones.toddler.title",
+      descKey: "productPages.trampolinePark.ageZones.toddler.description"
+    },
+    {
+      icon: Smile,
+      age: "7-12",
+      titleKey: "productPages.trampolinePark.ageZones.kids.title",
+      descKey: "productPages.trampolinePark.ageZones.kids.description"
+    },
+    {
+      icon: User,
+      age: "13-17",
+      titleKey: "productPages.trampolinePark.ageZones.teens.title",
+      descKey: "productPages.trampolinePark.ageZones.teens.description"
+    },
+    {
+      icon: Users,
+      age: "18+",
+      titleKey: "productPages.trampolinePark.ageZones.adults.title",
+      descKey: "productPages.trampolinePark.ageZones.adults.description"
+    }
+  ];
+
+  // Safety features
+  const safetyFeatures = [
+    {
+      icon: ShieldCheck,
+      titleKey: "productPages.trampolinePark.safety.padding.title",
+      descKey: "productPages.trampolinePark.safety.padding.description"
+    },
+    {
+      icon: FileCheck,
+      titleKey: "productPages.trampolinePark.safety.certification.title",
+      descKey: "productPages.trampolinePark.safety.certification.description"
+    },
+    {
+      icon: Award,
+      titleKey: "productPages.trampolinePark.safety.materials.title",
+      descKey: "productPages.trampolinePark.safety.materials.description"
+    },
+    {
+      icon: Settings,
+      titleKey: "productPages.trampolinePark.safety.inspection.title",
+      descKey: "productPages.trampolinePark.safety.inspection.description"
+    }
+  ];
+
+  // Fitness benefits
+  const fitnessBenefits = [
+    {
+      icon: Heart,
+      titleKey: "productPages.trampolinePark.benefits.cardio.title",
+      descKey: "productPages.trampolinePark.benefits.cardio.description"
+    },
+    {
+      icon: Dumbbell,
+      titleKey: "productPages.trampolinePark.benefits.strength.title",
+      descKey: "productPages.trampolinePark.benefits.strength.description"
+    },
+    {
+      icon: Footprints,
+      titleKey: "productPages.trampolinePark.benefits.balance.title",
+      descKey: "productPages.trampolinePark.benefits.balance.description"
+    },
+    {
+      icon: Smile,
+      titleKey: "productPages.trampolinePark.benefits.stress.title",
+      descKey: "productPages.trampolinePark.benefits.stress.description"
+    }
+  ];
+
+  // Design process steps
+  const designProcess = [
+    {
+      icon: Lightbulb,
+      step: 1,
+      titleKey: "productPages.trampolinePark.process.consultation.title",
+      descKey: "productPages.trampolinePark.process.consultation.description"
+    },
+    {
+      icon: Pencil,
+      step: 2,
+      titleKey: "productPages.trampolinePark.process.design.title",
+      descKey: "productPages.trampolinePark.process.design.description"
+    },
+    {
+      icon: Factory,
+      step: 3,
+      titleKey: "productPages.trampolinePark.process.production.title",
+      descKey: "productPages.trampolinePark.process.production.description"
+    },
+    {
+      icon: Package,
+      step: 4,
+      titleKey: "productPages.trampolinePark.process.shipping.title",
+      descKey: "productPages.trampolinePark.process.shipping.description"
+    },
+    {
+      icon: Settings,
+      step: 5,
+      titleKey: "productPages.trampolinePark.process.installation.title",
+      descKey: "productPages.trampolinePark.process.installation.description"
+    },
+    {
+      icon: Headphones,
+      step: 6,
+      titleKey: "productPages.trampolinePark.process.support.title",
+      descKey: "productPages.trampolinePark.process.support.description"
     }
   ];
 
@@ -264,6 +427,156 @@ const TrampolinePark = () => {
                       </div>
                       <h3 className="text-lg font-semibold mb-2">{t(zone.titleKey)}</h3>
                       <p className="text-muted-foreground text-sm">{t(zone.descKey)}</p>
+                    </CardContent>
+                  </Card>
+                </motion.div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Extended Activity Zones Section */}
+        <section className="py-20 bg-muted/30">
+          <div className="container mx-auto px-4">
+            <motion.div 
+              className="text-center mb-12"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+            >
+              <Badge variant="secondary" className="mb-4">More Attractions</Badge>
+              <h2 className="text-3xl md:text-4xl font-bold mb-4">
+                Extended <span className="text-primary">Activity Zones</span>
+              </h2>
+            </motion.div>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+              {extendedZones.map((zone, index) => (
+                <motion.div
+                  key={index}
+                  initial={{ opacity: 0, y: 30 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: index * 0.1 }}
+                >
+                  <Card className="border-0 shadow-lg hover:shadow-xl transition-all duration-300 group h-full">
+                    <CardContent className="p-6 text-center">
+                      <div className={`w-16 h-16 mx-auto mb-4 rounded-2xl bg-gradient-to-br ${zone.color} flex items-center justify-center group-hover:scale-110 transition-transform`}>
+                        <zone.icon className="w-8 h-8 text-white" />
+                      </div>
+                      <h3 className="text-lg font-semibold mb-2">{t(zone.titleKey)}</h3>
+                      <p className="text-muted-foreground text-sm">{t(zone.descKey)}</p>
+                    </CardContent>
+                  </Card>
+                </motion.div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Age Zones Section */}
+        <section className="py-20 bg-background">
+          <div className="container mx-auto px-4">
+            <motion.div className="text-center mb-12" initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
+              <Badge variant="secondary" className="mb-4">{t("productPages.trampolinePark.ageZonesLabel")}</Badge>
+              <h2 className="text-3xl md:text-4xl font-bold mb-4">
+                {t("productPages.trampolinePark.ageZonesTitle")} <span className="text-primary">{t("productPages.trampolinePark.ageZonesTitleHighlight")}</span>
+              </h2>
+              <p className="text-muted-foreground max-w-2xl mx-auto">{t("productPages.trampolinePark.ageZonesDescription")}</p>
+            </motion.div>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+              {ageZones.map((zone, index) => (
+                <motion.div key={index} initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: index * 0.1 }}>
+                  <Card className="border-0 shadow-lg h-full text-center">
+                    <CardContent className="p-6">
+                      <div className="w-14 h-14 mx-auto mb-3 rounded-full bg-primary/10 flex items-center justify-center">
+                        <zone.icon className="w-7 h-7 text-primary" />
+                      </div>
+                      <Badge variant="outline" className="mb-3">{zone.age} {t("years") || "years"}</Badge>
+                      <h3 className="text-lg font-semibold mb-2">{t(zone.titleKey)}</h3>
+                      <p className="text-muted-foreground text-sm">{t(zone.descKey)}</p>
+                    </CardContent>
+                  </Card>
+                </motion.div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Safety Section */}
+        <section className="py-20 bg-primary text-primary-foreground">
+          <div className="container mx-auto px-4">
+            <motion.div className="text-center mb-12" initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
+              <Badge variant="secondary" className="mb-4 bg-white/20 text-white">{t("productPages.trampolinePark.safetyLabel")}</Badge>
+              <h2 className="text-3xl md:text-4xl font-bold mb-4">
+                {t("productPages.trampolinePark.safetyTitle")} <span className="text-white/80">{t("productPages.trampolinePark.safetyTitleHighlight")}</span>
+              </h2>
+              <p className="text-primary-foreground/80 max-w-2xl mx-auto">{t("productPages.trampolinePark.safetyDescription")}</p>
+            </motion.div>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+              {safetyFeatures.map((feature, index) => (
+                <motion.div key={index} initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: index * 0.1 }}>
+                  <Card className="bg-white/10 border-white/20 h-full">
+                    <CardContent className="p-6 text-center">
+                      <feature.icon className="w-10 h-10 mx-auto mb-4 text-white" />
+                      <h3 className="text-lg font-semibold mb-2 text-white">{t(feature.titleKey)}</h3>
+                      <p className="text-white/80 text-sm">{t(feature.descKey)}</p>
+                    </CardContent>
+                  </Card>
+                </motion.div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Health Benefits Section */}
+        <section className="py-20 bg-background">
+          <div className="container mx-auto px-4">
+            <motion.div className="text-center mb-12" initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
+              <Badge variant="secondary" className="mb-4">{t("productPages.trampolinePark.benefitsLabel")}</Badge>
+              <h2 className="text-3xl md:text-4xl font-bold mb-4">
+                {t("productPages.trampolinePark.benefitsTitle")} <span className="text-primary">{t("productPages.trampolinePark.benefitsTitleHighlight")}</span>
+              </h2>
+              <p className="text-muted-foreground max-w-2xl mx-auto">{t("productPages.trampolinePark.benefitsDescription")}</p>
+            </motion.div>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+              {fitnessBenefits.map((benefit, index) => (
+                <motion.div key={index} initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: index * 0.1 }}>
+                  <Card className="border-0 shadow-lg h-full">
+                    <CardContent className="p-6 text-center">
+                      <div className="w-14 h-14 mx-auto mb-4 rounded-full bg-accent/20 flex items-center justify-center">
+                        <benefit.icon className="w-7 h-7 text-accent" />
+                      </div>
+                      <h3 className="text-lg font-semibold mb-2">{t(benefit.titleKey)}</h3>
+                      <p className="text-muted-foreground text-sm">{t(benefit.descKey)}</p>
+                    </CardContent>
+                  </Card>
+                </motion.div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Design Process Section */}
+        <section className="py-20 bg-muted/30">
+          <div className="container mx-auto px-4">
+            <motion.div className="text-center mb-12" initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
+              <Badge variant="secondary" className="mb-4">{t("productPages.trampolinePark.processLabel")}</Badge>
+              <h2 className="text-3xl md:text-4xl font-bold mb-4">
+                {t("productPages.trampolinePark.processTitle")} <span className="text-primary">{t("productPages.trampolinePark.processTitleHighlight")}</span>
+              </h2>
+              <p className="text-muted-foreground max-w-2xl mx-auto">{t("productPages.trampolinePark.processDescription")}</p>
+            </motion.div>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {designProcess.map((step, index) => (
+                <motion.div key={index} initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: index * 0.1 }}>
+                  <Card className="border-0 shadow-lg h-full">
+                    <CardContent className="p-6">
+                      <div className="flex items-center gap-4 mb-4">
+                        <div className="w-12 h-12 rounded-full bg-primary flex items-center justify-center text-primary-foreground font-bold">{step.step}</div>
+                        <step.icon className="w-6 h-6 text-primary" />
+                      </div>
+                      <h3 className="text-lg font-semibold mb-2">{t(step.titleKey)}</h3>
+                      <p className="text-muted-foreground text-sm">{t(step.descKey)}</p>
                     </CardContent>
                   </Card>
                 </motion.div>
