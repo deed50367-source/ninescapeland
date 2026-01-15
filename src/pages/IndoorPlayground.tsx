@@ -31,7 +31,23 @@ import {
   Quote,
   MapPin,
   Ruler,
-  Building2
+  Building2,
+  TreePine,
+  Anchor,
+  Castle,
+  Plane,
+  Brain,
+  Heart,
+  Hand,
+  Smile,
+  Lightbulb,
+  FileCheck,
+  Pencil,
+  Factory,
+  Package,
+  Settings,
+  Headphones,
+  Globe
 } from "lucide-react";
 
 const IndoorPlayground = () => {
@@ -182,6 +198,122 @@ const IndoorPlayground = () => {
     }
   ];
 
+  // Theme designs
+  const themeDesigns = [
+    {
+      icon: TreePine,
+      titleKey: "productPages.indoorPlayground.themes.jungle.title",
+      descKey: "productPages.indoorPlayground.themes.jungle.description",
+      color: "from-green-500 to-emerald-500"
+    },
+    {
+      icon: Anchor,
+      titleKey: "productPages.indoorPlayground.themes.ocean.title",
+      descKey: "productPages.indoorPlayground.themes.ocean.description",
+      color: "from-blue-500 to-cyan-500"
+    },
+    {
+      icon: Castle,
+      titleKey: "productPages.indoorPlayground.themes.castle.title",
+      descKey: "productPages.indoorPlayground.themes.castle.description",
+      color: "from-purple-500 to-pink-500"
+    },
+    {
+      icon: Plane,
+      titleKey: "productPages.indoorPlayground.themes.space.title",
+      descKey: "productPages.indoorPlayground.themes.space.description",
+      color: "from-indigo-500 to-violet-500"
+    }
+  ];
+
+  // Benefits for children
+  const childBenefits = [
+    {
+      icon: Brain,
+      titleKey: "productPages.indoorPlayground.benefits.cognitive.title",
+      descKey: "productPages.indoorPlayground.benefits.cognitive.description"
+    },
+    {
+      icon: Heart,
+      titleKey: "productPages.indoorPlayground.benefits.physical.title",
+      descKey: "productPages.indoorPlayground.benefits.physical.description"
+    },
+    {
+      icon: Hand,
+      titleKey: "productPages.indoorPlayground.benefits.motor.title",
+      descKey: "productPages.indoorPlayground.benefits.motor.description"
+    },
+    {
+      icon: Smile,
+      titleKey: "productPages.indoorPlayground.benefits.social.title",
+      descKey: "productPages.indoorPlayground.benefits.social.description"
+    }
+  ];
+
+  // Design process steps
+  const designProcess = [
+    {
+      icon: Lightbulb,
+      step: "01",
+      titleKey: "productPages.indoorPlayground.designProcess.consultation.title",
+      descKey: "productPages.indoorPlayground.designProcess.consultation.description"
+    },
+    {
+      icon: Pencil,
+      step: "02",
+      titleKey: "productPages.indoorPlayground.designProcess.design.title",
+      descKey: "productPages.indoorPlayground.designProcess.design.description"
+    },
+    {
+      icon: Factory,
+      step: "03",
+      titleKey: "productPages.indoorPlayground.designProcess.production.title",
+      descKey: "productPages.indoorPlayground.designProcess.production.description"
+    },
+    {
+      icon: Package,
+      step: "04",
+      titleKey: "productPages.indoorPlayground.designProcess.shipping.title",
+      descKey: "productPages.indoorPlayground.designProcess.shipping.description"
+    },
+    {
+      icon: Settings,
+      step: "05",
+      titleKey: "productPages.indoorPlayground.designProcess.installation.title",
+      descKey: "productPages.indoorPlayground.designProcess.installation.description"
+    },
+    {
+      icon: Headphones,
+      step: "06",
+      titleKey: "productPages.indoorPlayground.designProcess.support.title",
+      descKey: "productPages.indoorPlayground.designProcess.support.description"
+    }
+  ];
+
+  // Safety standards
+  const safetyStandards = [
+    {
+      icon: FileCheck,
+      titleKey: "productPages.indoorPlayground.safety.astm.title",
+      descKey: "productPages.indoorPlayground.safety.astm.description"
+    },
+    {
+      icon: Shield,
+      titleKey: "productPages.indoorPlayground.safety.tuv.title",
+      descKey: "productPages.indoorPlayground.safety.tuv.description"
+    },
+    {
+      icon: Award,
+      titleKey: "productPages.indoorPlayground.safety.ce.title",
+      descKey: "productPages.indoorPlayground.safety.ce.description"
+    },
+    {
+      icon: Globe,
+      titleKey: "productPages.indoorPlayground.safety.en.title",
+      descKey: "productPages.indoorPlayground.safety.en.description"
+    }
+  ];
+
   return (
     <div className="min-h-screen">
       <Header />
@@ -251,6 +383,59 @@ const IndoorPlayground = () => {
           </div>
         </section>
 
+        {/* Theme Designs Section */}
+        <section className="py-20 bg-background">
+          <div className="container mx-auto px-4">
+            <div className="text-center mb-12">
+              <Badge variant="secondary" className="mb-4">
+                {t("productPages.indoorPlayground.themesLabel")}
+              </Badge>
+              <h2 className="text-3xl md:text-4xl font-bold mb-4">
+                {t("productPages.indoorPlayground.themesTitle")}{" "}
+                <span className="text-primary">{t("productPages.indoorPlayground.themesTitleHighlight")}</span>
+              </h2>
+              <p className="text-muted-foreground max-w-2xl mx-auto">
+                {t("productPages.indoorPlayground.themesDescription")}
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+              {themeDesigns.map((theme, index) => (
+                <motion.div
+                  key={index}
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: index * 0.1 }}
+                  className="group"
+                >
+                  <Card className="border-0 shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden h-full cursor-pointer">
+                    <CardContent className="p-6">
+                      <div className={`w-16 h-16 mx-auto mb-4 rounded-2xl bg-gradient-to-br ${theme.color} flex items-center justify-center transform group-hover:scale-110 group-hover:rotate-3 transition-all`}>
+                        <theme.icon className="w-8 h-8 text-white" />
+                      </div>
+                      <div className="text-center">
+                        <h3 className="text-lg font-semibold mb-2">{t(theme.titleKey)}</h3>
+                        <p className="text-muted-foreground text-sm">{t(theme.descKey)}</p>
+                      </div>
+                    </CardContent>
+                  </Card>
+                </motion.div>
+              ))}
+            </div>
+
+            <div className="text-center mt-8">
+              <p className="text-muted-foreground mb-4">{t("productPages.indoorPlayground.themesCustomNote")}</p>
+              <Link to={localizedPath("/contact")}>
+                <Button variant="outline" className="group">
+                  {t("productPages.indoorPlayground.themesDiscuss")}
+                  <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                </Button>
+              </Link>
+            </div>
+          </div>
+        </section>
+
         {/* Age Zones Section */}
         <section className="py-20 bg-muted/30">
           <div className="container mx-auto px-4">
@@ -289,6 +474,46 @@ const IndoorPlayground = () => {
                         <h3 className="text-lg font-semibold mb-2">{t(zone.titleKey)}</h3>
                         <p className="text-muted-foreground text-sm">{t(zone.descKey)}</p>
                       </div>
+                    </CardContent>
+                  </Card>
+                </motion.div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Child Development Benefits Section */}
+        <section className="py-20 bg-background">
+          <div className="container mx-auto px-4">
+            <div className="text-center mb-12">
+              <Badge variant="secondary" className="mb-4">
+                {t("productPages.indoorPlayground.benefitsLabel")}
+              </Badge>
+              <h2 className="text-3xl md:text-4xl font-bold mb-4">
+                {t("productPages.indoorPlayground.benefitsTitle")}{" "}
+                <span className="text-primary">{t("productPages.indoorPlayground.benefitsTitleHighlight")}</span>
+              </h2>
+              <p className="text-muted-foreground max-w-2xl mx-auto">
+                {t("productPages.indoorPlayground.benefitsDescription")}
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+              {childBenefits.map((benefit, index) => (
+                <motion.div
+                  key={index}
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: index * 0.1 }}
+                >
+                  <Card className="border-0 shadow-lg hover:shadow-xl transition-all duration-300 h-full text-center group">
+                    <CardContent className="p-6">
+                      <div className="w-14 h-14 mx-auto mb-4 rounded-full bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors">
+                        <benefit.icon className="w-7 h-7 text-primary" />
+                      </div>
+                      <h3 className="text-lg font-semibold mb-2">{t(benefit.titleKey)}</h3>
+                      <p className="text-muted-foreground text-sm">{t(benefit.descKey)}</p>
                     </CardContent>
                   </Card>
                 </motion.div>
@@ -371,6 +596,116 @@ const IndoorPlayground = () => {
                   </div>
                 </div>
               </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Design Process Section */}
+        <section className="py-20 bg-muted/30">
+          <div className="container mx-auto px-4">
+            <div className="text-center mb-12">
+              <Badge variant="secondary" className="mb-4">
+                {t("productPages.indoorPlayground.designProcessLabel")}
+              </Badge>
+              <h2 className="text-3xl md:text-4xl font-bold mb-4">
+                {t("productPages.indoorPlayground.designProcessTitle")}{" "}
+                <span className="text-primary">{t("productPages.indoorPlayground.designProcessTitleHighlight")}</span>
+              </h2>
+              <p className="text-muted-foreground max-w-2xl mx-auto">
+                {t("productPages.indoorPlayground.designProcessDescription")}
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {designProcess.map((step, index) => (
+                <motion.div
+                  key={index}
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: index * 0.1 }}
+                >
+                  <Card className="border-0 shadow-lg hover:shadow-xl transition-all duration-300 h-full group relative overflow-hidden">
+                    <div className="absolute top-4 right-4 text-6xl font-bold text-primary/5 group-hover:text-primary/10 transition-colors">
+                      {step.step}
+                    </div>
+                    <CardContent className="p-6 relative">
+                      <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4 group-hover:bg-primary/20 transition-colors">
+                        <step.icon className="w-6 h-6 text-primary" />
+                      </div>
+                      <div className="flex items-center gap-2 mb-2">
+                        <span className="text-xs font-semibold text-primary">{t("productPages.indoorPlayground.step")} {step.step}</span>
+                      </div>
+                      <h3 className="text-lg font-semibold mb-2">{t(step.titleKey)}</h3>
+                      <p className="text-muted-foreground text-sm">{t(step.descKey)}</p>
+                    </CardContent>
+                  </Card>
+                </motion.div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Safety Standards Section */}
+        <section className="py-20 bg-background">
+          <div className="container mx-auto px-4">
+            <div className="grid lg:grid-cols-2 gap-12 items-center">
+              <motion.div
+                initial={{ opacity: 0, x: -20 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+              >
+                <Badge variant="secondary" className="mb-4">
+                  {t("productPages.indoorPlayground.safetyLabel")}
+                </Badge>
+                <h2 className="text-3xl md:text-4xl font-bold mb-4">
+                  {t("productPages.indoorPlayground.safetyTitle")}{" "}
+                  <span className="text-primary">{t("productPages.indoorPlayground.safetyTitleHighlight")}</span>
+                </h2>
+                <p className="text-muted-foreground mb-8">
+                  {t("productPages.indoorPlayground.safetyDescription")}
+                </p>
+
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  {safetyStandards.map((standard, index) => (
+                    <motion.div
+                      key={index}
+                      initial={{ opacity: 0, y: 10 }}
+                      whileInView={{ opacity: 1, y: 0 }}
+                      viewport={{ once: true }}
+                      transition={{ delay: index * 0.1 }}
+                      className="flex items-start gap-3 p-4 bg-muted/50 rounded-lg"
+                    >
+                      <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
+                        <standard.icon className="w-5 h-5 text-primary" />
+                      </div>
+                      <div>
+                        <h4 className="font-semibold text-sm">{t(standard.titleKey)}</h4>
+                        <p className="text-muted-foreground text-xs mt-1">{t(standard.descKey)}</p>
+                      </div>
+                    </motion.div>
+                  ))}
+                </div>
+              </motion.div>
+
+              <motion.div
+                initial={{ opacity: 0, x: 20 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                className="relative"
+              >
+                <img 
+                  src={galleryImages[2]}
+                  alt="Safety certified playground"
+                  className="rounded-2xl shadow-2xl"
+                />
+                <div className="absolute -bottom-6 -right-6 bg-green-500 text-white p-4 rounded-xl shadow-lg">
+                  <div className="flex items-center gap-2">
+                    <Shield className="w-5 h-5" />
+                    <span className="font-semibold">{t("productPages.indoorPlayground.safetyCertified")}</span>
+                  </div>
+                </div>
+              </motion.div>
             </div>
           </div>
         </section>

@@ -663,6 +663,106 @@
         "description": "Get a free 3D design and competitive quote within 24 hours. Our expert team will help you maximize your space and create an unforgettable play experience.",
         "getQuote": "Get Free Quote",
         "viewProjects": "View More Projects"
+      },
+      "themesLabel": "Theme Designs",
+      "themesTitle": "Popular Playground",
+      "themesTitleHighlight": "Themes",
+      "themesDescription": "Transform your space with our creative theme designs. Each theme is fully customizable to match your brand and target audience.",
+      "themesCustomNote": "Don't see your ideal theme? We create fully custom designs based on your vision.",
+      "themesDiscuss": "Discuss Your Theme",
+      "themes": {
+        "jungle": {
+          "title": "Jungle Adventure",
+          "description": "Tropical rainforest theme with palm trees, animal characters, and nature-inspired play elements."
+        },
+        "ocean": {
+          "title": "Ocean Explorer",
+          "description": "Underwater world with sea creatures, ship elements, and wave-inspired structures."
+        },
+        "castle": {
+          "title": "Fairy Tale Castle",
+          "description": "Magical kingdom theme with towers, dragons, and princess/knight elements."
+        },
+        "space": {
+          "title": "Space Station",
+          "description": "Futuristic space theme with rockets, planets, and astronaut adventures."
+        }
+      },
+      "benefitsLabel": "Development Benefits",
+      "benefitsTitle": "Growing Through",
+      "benefitsTitleHighlight": "Play",
+      "benefitsDescription": "Our playgrounds are designed to support children's physical, cognitive, and social development through carefully planned play experiences.",
+      "benefits": {
+        "cognitive": {
+          "title": "Cognitive Development",
+          "description": "Problem-solving activities, interactive games, and exploration opportunities that stimulate brain development."
+        },
+        "physical": {
+          "title": "Physical Growth",
+          "description": "Climbing, jumping, and balancing activities that build strength, coordination, and healthy habits."
+        },
+        "motor": {
+          "title": "Motor Skills",
+          "description": "Fine and gross motor skill development through varied play activities and sensory experiences."
+        },
+        "social": {
+          "title": "Social Skills",
+          "description": "Group play areas and cooperative games that teach sharing, teamwork, and communication."
+        }
+      },
+      "designProcessLabel": "Our Process",
+      "designProcessTitle": "From Concept to",
+      "designProcessTitleHighlight": "Grand Opening",
+      "designProcessDescription": "We guide you through every step of creating your perfect indoor playground, from initial consultation to after-sales support.",
+      "step": "Step",
+      "designProcess": {
+        "consultation": {
+          "title": "Consultation",
+          "description": "Share your vision, space dimensions, and budget. Our team provides expert advice on layout optimization."
+        },
+        "design": {
+          "title": "3D Design",
+          "description": "Receive professional 3D renderings showing your customized playground with themed concept designs."
+        },
+        "production": {
+          "title": "Manufacturing",
+          "description": "Production using premium materials with strict quality control. Regular progress updates throughout."
+        },
+        "shipping": {
+          "title": "Global Shipping",
+          "description": "Professional packaging and logistics coordination. Door-to-door delivery with full customs support."
+        },
+        "installation": {
+          "title": "Installation",
+          "description": "Comprehensive installation guides with video tutorials. Optional on-site installation available."
+        },
+        "support": {
+          "title": "After-Sales",
+          "description": "3-year warranty coverage with lifetime technical support and spare parts supply."
+        }
+      },
+      "safetyLabel": "Safety Standards",
+      "safetyTitle": "International",
+      "safetyTitleHighlight": "Certifications",
+      "safetyDescription": "Safety is our top priority. All equipment meets or exceeds the most stringent international safety standards.",
+      "safetyCertified": "100% Certified",
+      "safety": {
+        "astm": {
+          "title": "ASTM F1918",
+          "description": "US standard for public playground equipment safety."
+        },
+        "tuv": {
+          "title": "TUV Certified",
+          "description": "German quality and safety certification mark."
+        },
+        "ce": {
+          "title": "CE Marking",
+          "description": "European conformity for health and safety."
+        },
+        "en": {
+          "title": "EN 1176",
+          "description": "European playground equipment safety standard."
+        }
       }
     },
     "trampolinePark": {

@@ -663,6 +663,52 @@
         "description": "Obtén un diseño 3D gratuito y una cotización competitiva en 24 horas. Nuestro equipo experto te ayudará a maximizar tu espacio y crear una experiencia de juego inolvidable.",
         "getQuote": "Obtener Cotización Gratis",
         "viewProjects": "Ver Más Proyectos"
+      },
+      "themesLabel": "Diseños Temáticos",
+      "themesTitle": "Temas Populares de",
+      "themesTitleHighlight": "Parques",
+      "themesDescription": "Transforma tu espacio con nuestros diseños temáticos creativos. Cada tema es totalmente personalizable.",
+      "themesCustomNote": "¿No ves tu tema ideal? Creamos diseños personalizados basados en tu visión.",
+      "themesDiscuss": "Discute Tu Tema",
+      "themes": {
+        "jungle": { "title": "Aventura en la Selva", "description": "Tema de selva tropical con palmeras, personajes animales y elementos de juego inspirados en la naturaleza." },
+        "ocean": { "title": "Explorador del Océano", "description": "Mundo submarino con criaturas marinas, elementos de barcos y estructuras inspiradas en olas." },
+        "castle": { "title": "Castillo de Cuento de Hadas", "description": "Tema de reino mágico con torres, dragones y elementos de princesa/caballero." },
+        "space": { "title": "Estación Espacial", "description": "Tema espacial futurista con cohetes, planetas y aventuras de astronautas." }
+      },
+      "benefitsLabel": "Beneficios del Desarrollo",
+      "benefitsTitle": "Creciendo a Través del",
+      "benefitsTitleHighlight": "Juego",
+      "benefitsDescription": "Nuestros parques están diseñados para apoyar el desarrollo físico, cognitivo y social de los niños.",
+      "benefits": {
+        "cognitive": { "title": "Desarrollo Cognitivo", "description": "Actividades de resolución de problemas y juegos interactivos que estimulan el desarrollo cerebral." },
+        "physical": { "title": "Crecimiento Físico", "description": "Actividades de escalada, salto y equilibrio que desarrollan fuerza y coordinación." },
+        "motor": { "title": "Habilidades Motoras", "description": "Desarrollo de habilidades motoras finas y gruesas a través de actividades variadas." },
+        "social": { "title": "Habilidades Sociales", "description": "Áreas de juego grupal que enseñan a compartir, trabajo en equipo y comunicación." }
+      },
+      "designProcessLabel": "Nuestro Proceso",
+      "designProcessTitle": "Del Concepto a la",
+      "designProcessTitleHighlight": "Gran Apertura",
+      "designProcessDescription": "Te guiamos en cada paso para crear tu parque interior perfecto.",
+      "step": "Paso",
+      "designProcess": {
+        "consultation": { "title": "Consulta", "description": "Comparte tu visión, dimensiones y presupuesto." },
+        "design": { "title": "Diseño 3D", "description": "Recibe renderizados 3D profesionales de tu parque personalizado." },
+        "production": { "title": "Fabricación", "description": "Producción con materiales premium y control de calidad estricto." },
+        "shipping": { "title": "Envío Global", "description": "Empaque profesional y entrega puerta a puerta." },
+        "installation": { "title": "Instalación", "description": "Guías completas con tutoriales en video." },
+        "support": { "title": "Postventa", "description": "Garantía de 3 años con soporte técnico de por vida." }
+      },
+      "safetyLabel": "Estándares de Seguridad",
+      "safetyTitle": "Certificaciones",
+      "safetyTitleHighlight": "Internacionales",
+      "safetyDescription": "La seguridad es nuestra máxima prioridad. Todos los equipos cumplen los estándares internacionales más estrictos.",
+      "safetyCertified": "100% Certificado",
+      "safety": {
+        "astm": { "title": "ASTM F1918", "description": "Estándar estadounidense para seguridad de parques." },
+        "tuv": { "title": "Certificado TUV", "description": "Marca alemana de calidad y seguridad." },
+        "ce": { "title": "Marcado CE", "description": "Conformidad europea para salud y seguridad." },
+        "en": { "title": "EN 1176", "description": "Estándar europeo de seguridad para parques." }
       }
     },
     "trampolinePark": {

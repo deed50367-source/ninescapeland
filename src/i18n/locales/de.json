@@ -660,9 +660,55 @@
       },
       "ctaSection": {
         "title": "Bereit, Ihren Traumspielplatz zu Erstellen?",
-        "description": "Erhalten Sie innerhalb von 24 Stunden ein kostenloses 3D-Design und ein wettbewerbsfähiges Angebot. Unser Expertenteam hilft Ihnen, Ihren Raum zu maximieren und ein unvergessliches Spielerlebnis zu schaffen.",
+        "description": "Erhalten Sie innerhalb von 24 Stunden ein kostenloses 3D-Design und ein wettbewerbsfähiges Angebot.",
         "getQuote": "Kostenloses Angebot",
         "viewProjects": "Mehr Projekte Ansehen"
+      },
+      "themesLabel": "Themendesigns",
+      "themesTitle": "Beliebte Spielplatz",
+      "themesTitleHighlight": "Themen",
+      "themesDescription": "Verwandeln Sie Ihren Raum mit unseren kreativen Themendesigns.",
+      "themesCustomNote": "Nicht das ideale Thema gefunden? Wir erstellen vollständig individuelle Designs.",
+      "themesDiscuss": "Besprechen Sie Ihr Thema",
+      "themes": {
+        "jungle": { "title": "Dschungelabenteuer", "description": "Tropisches Regenwaldthema mit Palmen und tierischen Charakteren." },
+        "ocean": { "title": "Ozeanentdecker", "description": "Unterwasserwelt mit Meeresbewohnern und welleninspirierten Strukturen." },
+        "castle": { "title": "Märchenschloss", "description": "Magisches Königreichthema mit Türmen und Drachen." },
+        "space": { "title": "Raumstation", "description": "Futuristisches Weltraumthema mit Raketen und Planeten." }
+      },
+      "benefitsLabel": "Entwicklungsvorteile",
+      "benefitsTitle": "Wachsen durch",
+      "benefitsTitleHighlight": "Spielen",
+      "benefitsDescription": "Unsere Spielplätze unterstützen die körperliche, kognitive und soziale Entwicklung von Kindern.",
+      "benefits": {
+        "cognitive": { "title": "Kognitive Entwicklung", "description": "Problemlösungsaktivitäten, die die Gehirnentwicklung stimulieren." },
+        "physical": { "title": "Körperliches Wachstum", "description": "Klettern, Springen und Balance-Aktivitäten für Kraft und Koordination." },
+        "motor": { "title": "Motorische Fähigkeiten", "description": "Entwicklung fein- und grobmotorischer Fähigkeiten." },
+        "social": { "title": "Soziale Fähigkeiten", "description": "Gruppenspiel, das Teilen und Teamarbeit lehrt." }
+      },
+      "designProcessLabel": "Unser Prozess",
+      "designProcessTitle": "Vom Konzept zur",
+      "designProcessTitleHighlight": "Eröffnung",
+      "designProcessDescription": "Wir begleiten Sie durch jeden Schritt zur Erstellung Ihres perfekten Indoor-Spielplatzes.",
+      "step": "Schritt",
+      "designProcess": {
+        "consultation": { "title": "Beratung", "description": "Teilen Sie Ihre Vision, Maße und Budget." },
+        "design": { "title": "3D-Design", "description": "Professionelle 3D-Renderings Ihres Spielplatzes." },
+        "production": { "title": "Fertigung", "description": "Produktion mit Premium-Materialien und strenger Qualitätskontrolle." },
+        "shipping": { "title": "Weltweiter Versand", "description": "Professionelle Verpackung und Tür-zu-Tür-Lieferung." },
+        "installation": { "title": "Installation", "description": "Umfassende Anleitungen mit Video-Tutorials." },
+        "support": { "title": "After-Sales", "description": "3 Jahre Garantie mit lebenslangem technischen Support." }
+      },
+      "safetyLabel": "Sicherheitsstandards",
+      "safetyTitle": "Internationale",
+      "safetyTitleHighlight": "Zertifizierungen",
+      "safetyDescription": "Sicherheit hat höchste Priorität. Alle Geräte erfüllen internationale Standards.",
+      "safetyCertified": "100% Zertifiziert",
+      "safety": {
+        "astm": { "title": "ASTM F1918", "description": "US-Standard für Spielplatzsicherheit." },
+        "tuv": { "title": "TÜV-zertifiziert", "description": "Deutsches Qualitäts- und Sicherheitszeichen." },
+        "ce": { "title": "CE-Kennzeichnung", "description": "Europäische Konformität für Gesundheit und Sicherheit." },
+        "en": { "title": "EN 1176", "description": "Europäischer Sicherheitsstandard für Spielgeräte." }
       }
     },
     "trampolinePark": {
