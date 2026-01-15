@@ -873,6 +873,121 @@
           "quote": "Working with NinescapeLand was seamless. The equipment quality is outstanding and the after-sales support has been exceptional. Highly recommended!"
         }
       },
+      "extendedZones": {
+        "bicycle": {
+          "title": "360° Bicycle",
+          "description": "Revolutionary rotating bike experience with 360-degree freedom of movement."
+        },
+        "airbag": {
+          "title": "Giant Airbag",
+          "description": "Safe landing zone for practicing extreme jumps and aerial tricks."
+        },
+        "battlebeam": {
+          "title": "Battle Beam",
+          "description": "Elevated balance beam for exciting one-on-one foam stick battles."
+        },
+        "ninja": {
+          "title": "Ninja Course",
+          "description": "Challenging obstacle course combining climbing, swinging, and balancing elements."
+        }
+      },
+      "ageZonesLabel": "Age-Appropriate Zones",
+      "ageZonesTitle": "Fun for",
+      "ageZonesTitleHighlight": "All Ages",
+      "ageZonesDescription": "We design age-specific zones ensuring safe, engaging experiences for every visitor from toddlers to adults.",
+      "ageZones": {
+        "toddler": {
+          "title": "Toddler Zone",
+          "description": "Soft, enclosed trampolines with gentle bounce for our youngest jumpers (ages 3-6)."
+        },
+        "kids": {
+          "title": "Kids Adventure",
+          "description": "Exciting multi-activity zones with foam pits and basketball for children (ages 7-12)."
+        },
+        "teens": {
+          "title": "Teen Challenge",
+          "description": "High-energy zones with advanced tricks areas and competitive activities (ages 13-17)."
+        },
+        "adults": {
+          "title": "Adult Fitness",
+          "description": "Fitness-focused trampolines and performance zones for adult visitors (ages 18+)."
+        }
+      },
+      "safetyLabel": "Safety Standards",
+      "safetyTitle": "Your Safety is",
+      "safetyTitleHighlight": "Our Priority",
+      "safetyDescription": "We implement the highest safety standards in every aspect of our trampoline park design and construction.",
+      "safety": {
+        "padding": {
+          "title": "Premium Safety Padding",
+          "description": "High-density foam padding on all frames, springs, and landing areas for maximum protection."
+        },
+        "certification": {
+          "title": "International Certifications",
+          "description": "All equipment meets ASTM F2970, TUV, CE, and EN standards for trampoline parks."
+        },
+        "materials": {
+          "title": "Commercial-Grade Materials",
+          "description": "Heavy-duty springs, reinforced mats, and fire-retardant fabrics for durability and safety."
+        },
+        "inspection": {
+          "title": "Quality Inspection",
+          "description": "Rigorous testing and inspection at every production stage ensures consistent quality."
+        }
+      },
+      "benefitsLabel": "Health & Fitness",
+      "benefitsTitle": "Bounce Your Way to",
+      "benefitsTitleHighlight": "Better Health",
+      "benefitsDescription": "Trampoline exercise provides incredible health benefits for visitors of all ages and fitness levels.",
+      "benefits": {
+        "cardio": {
+          "title": "Cardiovascular Health",
+          "description": "10 minutes of jumping equals 30 minutes of running for heart health and endurance."
+        },
+        "strength": {
+          "title": "Muscle Building",
+          "description": "Full-body workout engaging legs, core, and arms for improved strength and tone."
+        },
+        "balance": {
+          "title": "Balance & Coordination",
+          "description": "Improves proprioception, body awareness, and motor skills through dynamic movement."
+        },
+        "stress": {
+          "title": "Stress Relief",
+          "description": "Fun, high-energy activity releases endorphins and reduces stress and anxiety."
+        }
+      },
+      "processLabel": "Our Process",
+      "processTitle": "From Concept to",
+      "processTitleHighlight": "Grand Opening",
+      "processDescription": "We guide you through every step of creating your successful trampoline park.",
+      "step": "Step",
+      "process": {
+        "consultation": {
+          "title": "Consultation",
+          "description": "Share your vision, space dimensions, and budget for expert advice."
+        },
+        "design": {
+          "title": "3D Design",
+          "description": "Receive professional 3D renderings with optimized zone layouts."
+        },
+        "production": {
+          "title": "Manufacturing",
+          "description": "Premium equipment production with regular progress updates."
+        },
+        "shipping": {
+          "title": "Global Shipping",
+          "description": "Professional logistics with door-to-door delivery worldwide."
+        },
+        "installation": {
+          "title": "Installation",
+          "description": "Comprehensive guides or on-site installation by our team."
+        },
+        "support": {
+          "title": "After-Sales",
+          "description": "3-year warranty with lifetime technical support."
+        }
+      },
       "ctaSection": {
         "title": "Ready to Build Your Trampoline Park?",
         "description": "Get a free 3D design and competitive quote within 24 hours. Our expert team will help you create an exciting, profitable trampoline park.",
