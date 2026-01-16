@@ -1804,5 +1804,132 @@
         }
       }
     }
+  },
+  "testimonials": {
+    "sectionLabel": "Kundenstimmen",
+    "title": "Vertrauen von",
+    "titleHighlight": "Unternehmern Weltweit",
+    "description": "Hören Sie von unseren zufriedenen Kunden, die ihre Räume in florierende Unterhaltungsziele verwandelt haben.",
+    "items": [
+      {
+        "quote": "NinescapeLand hat unsere Erwartungen in jeder Hinsicht übertroffen. Das 3D-Design war genau das, was wir uns vorgestellt haben, und das Installationsteam war professionell und effizient.",
+        "name": "Michael Chen",
+        "role": "Inhaber",
+        "company": "SkyJump Adventure Park",
+        "location": "Kalifornien, USA"
+      },
+      {
+        "quote": "Von der ersten Beratung bis zur finalen Installation war das Team reaktionsschnell und hilfsbereit. Die Qualität der Ausrüstung ist hervorragend.",
+        "name": "Sarah Al-Hassan",
+        "role": "CEO",
+        "company": "FunZone Entertainment",
+        "location": "Dubai, VAE"
+      },
+      {
+        "quote": "Wir haben mit mehreren Herstellern gearbeitet, aber NinescapeLand zeichnet sich durch die Liebe zum Detail und den After-Sales-Support aus.",
+        "name": "Thomas Müller",
+        "role": "Geschäftsführer",
+        "company": "KinderWelt GmbH",
+        "location": "München, Deutschland"
+      },
+      {
+        "quote": "Der bestellte Ninja-Kurs ist zur Hauptattraktion unseres Fitnesscenters geworden. Mitglieder aller Altersgruppen lieben die Herausforderungen.",
+        "name": "Emma Thompson",
+        "role": "Facility Manager",
+        "company": "Elite Athletics Club",
+        "location": "London, UK"
+      },
+      {
+        "quote": "Ausgezeichnetes Preis-Leistungs-Verhältnis! Der Soft-Play-Bereich hat die Verweildauer unserer Gäste deutlich erhöht.",
+        "name": "Carlos Rodriguez",
+        "role": "Restaurantbesitzer",
+        "company": "Familia Bistro",
+        "location": "Madrid, Spanien"
+      },
+      {
+        "quote": "Das Team hat uns geholfen, ein komplettes FEC mit mehreren Zonen zu gestalten. Die schlüsselfertige Lösung hat uns Monate der Koordination erspart.",
+        "name": "David Kim",
+        "role": "Gründer",
+        "company": "PlayWorld Adventures",
+        "location": "Sydney, Australien"
+      }
+    ]
+  },
+  "partners": {
+    "sectionLabel": "Zertifizierungen & Partner",
+    "title": "Global Zertifiziert, Lokal Vertraut",
+    "certifications": {
+      "iso": {
+        "name": "ISO 9001:2015",
+        "description": "Qualitätsmanagementsystem"
+      },
+      "astm": {
+        "name": "ASTM F1918",
+        "description": "US-Sicherheitsstandards"
+      },
+      "en": {
+        "name": "EN 1176 & 1177",
+        "description": "Europäische Spielplatzsicherheit"
+      },
+      "tuv": {
+        "name": "TÜV Zertifiziert",
+        "description": "Deutsche Qualitätssicherung"
+      }
+    },
+    "clients": [
+      "FunZone USA",
+      "SkyPark EU",
+      "JumpWorld",
+      "KidsParadise",
+      "Adventure Hub",
+      "PlayNation",
+      "FEC Global",
+      "Happy Kids"
+    ]
+  },
+  "ctaBanner": {
+    "badge": "🚀 Bereit, Ihren Raum zu Verwandeln?",
+    "title": "Lassen Sie uns Ihr Traum-Spielziel Gemeinsam Bauen",
+    "description": "Erhalten Sie ein kostenloses 3D-Design und ein wettbewerbsfähiges Angebot innerhalb von 24 Stunden.",
+    "getQuote": "Kostenloses Design & Angebot",
+    "whatsapp": "Chat auf WhatsApp"
+  },
+  "featuresGrid": {
+    "sectionLabel": "Warum Wir",
+    "title": "Die Komplette",
+    "titleHighlight": "Schlüsselfertige Lösung",
+    "description": "Vom Konzept bis zur Eröffnung kümmern wir uns um alles für Ihren Projekterfolg.",
+    "customDesign": {
+      "title": "Individuelles 3D-Design",
+      "description": "Kostenloses professionelles Design für Ihren Raum"
+    },
+    "safetyCertified": {
+      "title": "Sicherheitszertifiziert",
+      "description": "ASTM, TÜV, EN, CE zertifizierte Ausrüstung"
+    },
+    "globalShipping": {
+      "title": "Weltweiter Versand",
+      "description": "Lieferung bis zur Haustür in 50+ Länder"
+    },
+    "installation": {
+      "title": "Installationsunterstützung",
+      "description": "Vor-Ort-Anleitung oder kompletter Installationsservice"
+    },
+    "support": {
+      "title": "24/7 Support",
+      "description": "Dedizierter Projektmanager und technische Unterstützung"
+    },
+    "fastDelivery": {
+      "title": "Schnelle Produktion",
+      "description": "20-35 Tage Fertigung mit strenger Qualitätskontrolle"
+    },
+    "warranty": {
+      "title": "3-Jahres-Garantie",
+      "description": "Umfassende Abdeckung mit lebenslangem Teile-Support"
+    },
+    "premiumMaterials": {
+      "title": "Premium-Materialien",
+      "description": "Umweltfreundlich, langlebig und pflegeleicht"
+    }
   }
 }

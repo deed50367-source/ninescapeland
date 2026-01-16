@@ -1804,5 +1804,51 @@
         }
       }
     }
+  },
+  "testimonials": {
+    "sectionLabel": "Depoimentos de Clientes",
+    "title": "Confiança de",
+    "titleHighlight": "Empresários em Todo o Mundo",
+    "description": "Ouça nossos clientes satisfeitos que transformaram seus espaços em destinos de entretenimento prósperos.",
+    "items": [
+      { "quote": "NinescapeLand superou nossas expectativas. O design 3D foi exatamente o que imaginamos.", "name": "Michael Chen", "role": "Proprietário", "company": "SkyJump Adventure Park", "location": "Califórnia, EUA" },
+      { "quote": "Da consulta inicial à instalação final, a equipe foi receptiva e prestativa.", "name": "Sarah Al-Hassan", "role": "CEO", "company": "FunZone Entertainment", "location": "Dubai, EAU" },
+      { "quote": "Trabalhamos com vários fabricantes, mas NinescapeLand se destaca pela atenção aos detalhes.", "name": "Thomas Müller", "role": "Diretor", "company": "KinderWelt GmbH", "location": "Munique, Alemanha" },
+      { "quote": "O curso ninja se tornou a atração principal do nosso centro de fitness.", "name": "Emma Thompson", "role": "Gerente", "company": "Elite Athletics Club", "location": "Londres, Reino Unido" },
+      { "quote": "Excelente custo-benefício! A área de soft play aumentou o tempo de permanência.", "name": "Carlos Rodriguez", "role": "Proprietário", "company": "Familia Bistro", "location": "Madrid, Espanha" },
+      { "quote": "A equipe nos ajudou a projetar um FEC completo com múltiplas zonas.", "name": "David Kim", "role": "Fundador", "company": "PlayWorld Adventures", "location": "Sydney, Austrália" }
+    ]
+  },
+  "partners": {
+    "sectionLabel": "Certificações e Parceiros",
+    "title": "Certificado Globalmente, Confiável Localmente",
+    "certifications": {
+      "iso": { "name": "ISO 9001:2015", "description": "Sistema de Gestão de Qualidade" },
+      "astm": { "name": "ASTM F1918", "description": "Padrões de Segurança dos EUA" },
+      "en": { "name": "EN 1176 & 1177", "description": "Segurança de Playgrounds Europeus" },
+      "tuv": { "name": "Certificado TÜV", "description": "Garantia de Qualidade Alemã" }
+    },
+    "clients": ["FunZone USA", "SkyPark EU", "JumpWorld", "KidsParadise", "Adventure Hub", "PlayNation", "FEC Global", "Happy Kids"]
+  },
+  "ctaBanner": {
+    "badge": "🚀 Pronto para Transformar seu Espaço?",
+    "title": "Vamos Construir Juntos seu Destino de Diversão dos Sonhos",
+    "description": "Obtenha um design 3D personalizado gratuito e orçamento competitivo em 24 horas.",
+    "getQuote": "Obter Design e Orçamento Grátis",
+    "whatsapp": "Conversar no WhatsApp"
+  },
+  "featuresGrid": {
+    "sectionLabel": "Por Que Nos Escolher",
+    "title": "A Solução",
+    "titleHighlight": "Chave na Mão Completa",
+    "description": "Do conceito à inauguração, cuidamos de tudo para o sucesso do seu projeto.",
+    "customDesign": { "title": "Design 3D Personalizado", "description": "Design profissional gratuito adaptado ao seu espaço" },
+    "safetyCertified": { "title": "Certificado de Segurança", "description": "Equipamento certificado ASTM, TÜV, EN, CE" },
+    "globalShipping": { "title": "Envio Global", "description": "Entrega porta a porta para mais de 50 países" },
+    "installation": { "title": "Suporte de Instalação", "description": "Orientação no local ou serviço de instalação completo" },
+    "support": { "title": "Suporte 24/7", "description": "Gerente de projeto dedicado e assistência técnica" },
+    "fastDelivery": { "title": "Produção Rápida", "description": "Fabricação de 20-35 dias com controle de qualidade" },
+    "warranty": { "title": "Garantia de 3 Anos", "description": "Cobertura completa com suporte de peças vitalício" },
+    "premiumMaterials": { "title": "Materiais Premium", "description": "Ecológicos, duráveis e fáceis de manter" }
   }
 }

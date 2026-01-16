@@ -1952,5 +1952,132 @@
         }
       }
     }
+  },
+  "testimonials": {
+    "sectionLabel": "Client Testimonials",
+    "title": "Trusted by",
+    "titleHighlight": "Business Owners Worldwide",
+    "description": "Hear from our satisfied clients who have transformed their spaces into thriving entertainment destinations with our playground solutions.",
+    "items": [
+      {
+        "quote": "NinescapeLand exceeded our expectations in every way. The 3D design was exactly what we envisioned, and the installation team was professional and efficient. Our trampoline park has been a huge success since opening!",
+        "name": "Michael Chen",
+        "role": "Owner",
+        "company": "SkyJump Adventure Park",
+        "location": "California, USA"
+      },
+      {
+        "quote": "From initial consultation to final installation, the team was responsive and helpful. The quality of the equipment is outstanding, and our customers love the custom theme we designed together.",
+        "name": "Sarah Al-Hassan",
+        "role": "CEO",
+        "company": "FunZone Entertainment",
+        "location": "Dubai, UAE"
+      },
+      {
+        "quote": "We've worked with several manufacturers, but NinescapeLand stands out for their attention to detail and after-sales support. The equipment is built to last and meets all EU safety standards.",
+        "name": "Thomas Müller",
+        "role": "Managing Director",
+        "company": "KinderWelt GmbH",
+        "location": "Munich, Germany"
+      },
+      {
+        "quote": "The ninja course we ordered has become the star attraction of our fitness center. Members of all ages love the challenges, and the adjustable difficulty keeps them coming back for more.",
+        "name": "Emma Thompson",
+        "role": "Facility Manager",
+        "company": "Elite Athletics Club",
+        "location": "London, UK"
+      },
+      {
+        "quote": "Excellent value for money! The soft play area we installed in our family restaurant has increased customer dwell time significantly. Parents love having a safe space for their toddlers.",
+        "name": "Carlos Rodriguez",
+        "role": "Restaurant Owner",
+        "company": "Familia Bistro",
+        "location": "Madrid, Spain"
+      },
+      {
+        "quote": "The team helped us design a complete FEC with multiple zones - playground, trampolines, and ninja course. The turnkey solution saved us months of coordination with multiple vendors.",
+        "name": "David Kim",
+        "role": "Founder",
+        "company": "PlayWorld Adventures",
+        "location": "Sydney, Australia"
+      }
+    ]
+  },
+  "partners": {
+    "sectionLabel": "Certifications & Partners",
+    "title": "Globally Certified, Locally Trusted",
+    "certifications": {
+      "iso": {
+        "name": "ISO 9001:2015",
+        "description": "Quality Management System"
+      },
+      "astm": {
+        "name": "ASTM F1918",
+        "description": "US Safety Standards"
+      },
+      "en": {
+        "name": "EN 1176 & 1177",
+        "description": "European Playground Safety"
+      },
+      "tuv": {
+        "name": "TÜV Certified",
+        "description": "German Quality Assurance"
+      }
+    },
+    "clients": [
+      "FunZone USA",
+      "SkyPark EU",
+      "JumpWorld",
+      "KidsParadise",
+      "Adventure Hub",
+      "PlayNation",
+      "FEC Global",
+      "Happy Kids"
+    ]
+  },
+  "ctaBanner": {
+    "badge": "🚀 Ready to Transform Your Space?",
+    "title": "Let's Build Your Dream Play Destination Together",
+    "description": "Get a free custom 3D design and competitive quote within 24 hours. Our team of experts is ready to help you create an unforgettable entertainment experience.",
+    "getQuote": "Get Free Design & Quote",
+    "whatsapp": "Chat on WhatsApp"
+  },
+  "featuresGrid": {
+    "sectionLabel": "Why Choose Us",
+    "title": "The Complete",
+    "titleHighlight": "Turnkey Solution",
+    "description": "From concept to grand opening, we handle everything to make your project a success.",
+    "customDesign": {
+      "title": "Custom 3D Design",
+      "description": "Free professional design tailored to your space and vision"
+    },
+    "safetyCertified": {
+      "title": "Safety Certified",
+      "description": "ASTM, TÜV, EN, CE certified equipment for peace of mind"
+    },
+    "globalShipping": {
+      "title": "Global Shipping",
+      "description": "Door-to-door delivery to 50+ countries worldwide"
+    },
+    "installation": {
+      "title": "Installation Support",
+      "description": "On-site guidance or complete installation service"
+    },
+    "support": {
+      "title": "24/7 Support",
+      "description": "Dedicated project manager and technical assistance"
+    },
+    "fastDelivery": {
+      "title": "Fast Production",
+      "description": "20-35 day manufacturing with strict quality control"
+    },
+    "warranty": {
+      "title": "3-Year Warranty",
+      "description": "Comprehensive coverage with lifetime parts support"
+    },
+    "premiumMaterials": {
+      "title": "Premium Materials",
+      "description": "Eco-friendly, durable, and easy to maintain"
+    }
   }
 }
