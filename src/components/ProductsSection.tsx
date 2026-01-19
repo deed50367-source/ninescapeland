@@ -6,6 +6,10 @@ import { Button } from "./ui/button";
 import { useLocalizedPath } from "@/hooks/useLocalizedPath";
 import { useRTL } from "@/hooks/useRTL";
 import { productImages } from "@/config/galleryImages";
+import mascotPlayground from "@/assets/mascot-playground.png";
+import mascotTrampoline from "@/assets/mascot-trampoline.png";
+import mascotNinja from "@/assets/mascot-ninja.png";
+import mascotSoftplay from "@/assets/mascot-softplay.png";
 
 const container = {
   hidden: { opacity: 0 },
@@ -37,6 +41,7 @@ export const ProductsSection = () => {
       image: productImages.indoorPlayground,
       features: t("products.items.indoorPlayground.features", { returnObjects: true }) as string[],
       slug: "indoor-playground",
+      mascot: mascotPlayground,
     },
     {
       title: t("products.items.trampolinePark.title"),
@@ -44,6 +49,7 @@ export const ProductsSection = () => {
       image: productImages.trampolinePark,
       features: t("products.items.trampolinePark.features", { returnObjects: true }) as string[],
       slug: "trampoline-park",
+      mascot: mascotTrampoline,
     },
     {
       title: t("products.items.ninjaCourse.title"),
@@ -51,6 +57,7 @@ export const ProductsSection = () => {
       image: productImages.ninjaCourse,
       features: t("products.items.ninjaCourse.features", { returnObjects: true }) as string[],
       slug: "ninja-course",
+      mascot: mascotNinja,
     },
     {
       title: t("products.items.softPlay.title"),
@@ -58,6 +65,7 @@ export const ProductsSection = () => {
       image: productImages.softPlay,
       features: t("products.items.softPlay.features", { returnObjects: true }) as string[],
       slug: "soft-play",
+      mascot: mascotSoftplay,
     },
   ];
 
@@ -117,11 +125,20 @@ export const ProductsSection = () => {
               </div>
 
               {/* Content */}
-              <div className="p-4 sm:p-6">
+              <div className="p-4 sm:p-6 relative">
+                {/* Mascot decoration */}
+                <motion.img
+                  src={product.mascot}
+                  alt="Ball mascot"
+                  className="absolute -top-12 right-2 w-16 h-16 sm:w-20 sm:h-20 object-contain opacity-0 group-hover:opacity-100 transition-opacity duration-300 drop-shadow-lg pointer-events-none"
+                  initial={{ y: 10, rotate: -5 }}
+                  whileHover={{ y: 0, rotate: 0 }}
+                />
+                
                 <h3 className="text-lg sm:text-xl font-heading font-bold mb-2 sm:mb-3 group-hover:text-primary transition-colors">
                   {product.title}
                 </h3>
-                <p className="text-muted-foreground text-sm sm:text-base mb-3 sm:mb-4 line-clamp-2">
+                <p className="text-muted-foreground text-sm sm:text-base mb-3 sm:mb-4 line-clamp-2 pr-16 sm:pr-0">
                   {product.description}
                 </p>
                 <Button variant="outline" size="sm" asChild className="group/btn text-xs sm:text-sm">
