@@ -281,6 +281,57 @@
       "description": "Wir respektieren Ihre Zeit und Investition. Unsere optimierten Prozesse gewährleisten pünktliche Lieferung und kosteneffektive Lösungen."
     }
   },
+  "hero": {
+    "mascotGreeting": "Willkommen! 👋"
+  },
+  "aboutMascot": {
+    "badge": "Willkommen bei NinescapeLand",
+    "title": "Lernen Sie unsere Freundin kennen",
+    "titleHighlight": "Ball",
+    "description": "Ball ist die Markenbotschafterin von NinescapeLand, ein reinherziges Mädchen, das durch ihre Taten Wärme verbreitet. Sie liebt es, die Spielplatzwelt zu erkunden und wird Sie durch unsere Produkte und Dienstleistungen führen und professionelle Beratung für Ihr Spielplatzprojekt bieten.",
+    "trait1": "Reines Herz",
+    "trait2": "Verbreitet Wärme",
+    "trait3": "Liebt Entdeckung",
+    "feature1": "Professionelles Design",
+    "feature2": "Sicherheitszertifiziert",
+    "feature3": "Globaler Service"
+  },
+  "aboutTeam": {
+    "timelineLabel": "Unsere Reise",
+    "timelineTitle": "Unsere Wachstumsgeschichte",
+    "mission": {
+      "title": "Unsere Mission",
+      "description": "Sichere, innovative und hochwertige Spielplatzlösungen für Kunden weltweit bereitzustellen, damit jedes Kind eine glückliche Kindheit genießen kann."
+    },
+    "vision": {
+      "title": "Unsere Vision",
+      "description": "Ein weltweit führender Hersteller von Spielplatzgeräten zu werden und die Branchenentwicklung mit innovativer Technologie und ausgezeichneter Qualität anzuführen."
+    },
+    "milestone1": {
+      "title": "Firmengründung",
+      "description": "Gegründet in Wenzhou, China, mit Fokus auf die Herstellung von Kinderspielplatzgeräten"
+    },
+    "milestone2": {
+      "title": "Internationale Expansion",
+      "description": "Begann den Export nach Südostasien und in den Nahen Osten"
+    },
+    "milestone3": {
+      "title": "Zertifizierungen erhalten",
+      "description": "Erhalt internationaler Sicherheitszertifizierungen ISO, CE, TUV"
+    },
+    "milestone4": {
+      "title": "Globales Geschäft",
+      "description": "Geschäft in über 50 Ländern mit 1000+ abgeschlossenen Projekten"
+    },
+    "teamTitle": "Professionelles Team",
+    "teamDescription": "200+ Fachleute einschließlich Designer, Ingenieure, Installationsteams und Kundendienst-Experten",
+    "designers": "Designer",
+    "engineers": "Ingenieure",
+    "support": "Support-Team"
+  },
+  "coreValues": {
+    "sectionLabel": "Kernwerte"
+  },
   "faq": {
     "sectionLabel": "FAQ",
     "title": "Häufig gestellte",
