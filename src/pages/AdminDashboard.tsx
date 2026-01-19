@@ -2,7 +2,6 @@ import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { useNavigate, Link } from "react-router-dom";
 import { useAdminAuth } from "@/hooks/useAdminAuth";
-import { useLocalizedPath } from "@/hooks/useLocalizedPath";
 import { Button } from "@/components/ui/button";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { 
@@ -24,14 +23,13 @@ import AdminBlogTab from "@/components/admin/AdminBlogTab";
 const AdminDashboard = () => {
   const { t } = useTranslation();
   const navigate = useNavigate();
-  const { localizedPath } = useLocalizedPath();
   const { user, isAdmin, isLoading: authLoading, signOut } = useAdminAuth();
   const [activeTab, setActiveTab] = useState("gallery");
 
   const handleSignOut = async () => {
     await signOut();
     toast.success("已退出登录");
-    navigate(localizedPath("/admin-login"));
+    navigate("/admin/login");
   };
 
   if (authLoading) {
@@ -51,7 +49,7 @@ const AdminDashboard = () => {
         <div className="text-center">
           <h2 className="text-2xl font-bold text-foreground mb-4">访问受限</h2>
           <p className="text-muted-foreground mb-6">您需要管理员权限才能访问此页面</p>
-          <Link to={localizedPath("/admin-login")}>
+          <Link to="/admin/login">
             <Button>前往登录</Button>
           </Link>
         </div>
@@ -65,7 +63,7 @@ const AdminDashboard = () => {
       <header className="sticky top-0 z-50 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 border-b">
         <div className="container mx-auto px-4 h-16 flex items-center justify-between">
           <div className="flex items-center gap-4">
-            <Link to={localizedPath("/")} className="flex items-center gap-2">
+            <Link to="/en" className="flex items-center gap-2">
               <img src={logo} alt="Logo" className="h-8" />
             </Link>
             <span className="text-muted-foreground">/</span>
