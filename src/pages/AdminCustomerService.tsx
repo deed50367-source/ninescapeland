@@ -5,8 +5,9 @@ import {
   MessageCircle, Send, ArrowLeft, Clock, User, Bot, 
   Loader2, RefreshCw, Search, CheckCircle, XCircle,
   Circle, CheckCheck, AlertCircle, Zap, Plus, Trash2, Edit2, Save, X,
-  Monitor, Smartphone, Tablet, Globe, MapPin, Link, ExternalLink
+  Monitor, Smartphone, Tablet, Globe, MapPin, Link, ExternalLink, BarChart3
 } from 'lucide-react';
+import AdminStatsPanel from '@/components/AdminStatsPanel';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
@@ -625,6 +626,9 @@ const AdminCustomerService = () => {
       </header>
 
       <div className="container mx-auto px-4 py-6">
+        {/* Stats Panel */}
+        <AdminStatsPanel />
+        
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 h-[calc(100vh-180px)]">
           {/* Sessions List */}
           <div className="lg:col-span-1 border rounded-lg bg-card overflow-hidden flex flex-col">

@@ -1,0 +1,457 @@
+import { useState, useEffect } from 'react';
+import { motion } from 'framer-motion';
+import {
+  MessageCircle, Users, Clock, TrendingUp, TrendingDown,
+  BarChart3, PieChart, Calendar, ChevronDown, ChevronUp,
+  Smile, Meh, Frown, Target, Zap
+} from 'lucide-react';
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import { Button } from '@/components/ui/button';
+import { Badge } from '@/components/ui/badge';
+import { Progress } from '@/components/ui/progress';
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select";
+import { supabase } from '@/integrations/supabase/client';
+
+interface StatsData {
+  totalSessions: number;
+  todaySessions: number;
+  avgResponseTime: number;
+  resolvedRate: number;
+  statusBreakdown: {
+    new: number;
+    in_progress: number;
+    resolved: number;
+    closed: number;
+  };
+  dailyTrend: {
+    date: string;
+    count: number;
+  }[];
+  hourlyDistribution: number[];
+  avgMessagesPerSession: number;
+  peakHour: number;
+}
+
+const AdminStatsPanel = () => {
+  const [stats, setStats] = useState<StatsData | null>(null);
+  const [isLoading, setIsLoading] = useState(true);
+  const [isExpanded, setIsExpanded] = useState(true);
+  const [dateRange, setDateRange] = useState('7');
+
+  const fetchStats = async () => {
+    setIsLoading(true);
+    try {
+      const now = new Date();
+      const daysAgo = new Date(now.getTime() - parseInt(dateRange) * 24 * 60 * 60 * 1000);
+      const todayStart = new Date(now.getFullYear(), now.getMonth(), now.getDate());
+
+      // Fetch all sessions
+      const { data: sessions, error: sessionsError } = await supabase
+        .from('chat_sessions')
+        .select('session_id, status, created_at, last_message_at')
+        .gte('created_at', daysAgo.toISOString());
+
+      if (sessionsError) throw sessionsError;
+
+      // Fetch all messages for response time calculation
+      const { data: messages, error: messagesError } = await supabase
+        .from('chat_messages')
+        .select('session_id, created_at, is_staff_reply, role')
+        .gte('created_at', daysAgo.toISOString())
+        .order('created_at', { ascending: true });
+
+      if (messagesError) throw messagesError;
+
+      // Calculate stats
+      const totalSessions = sessions?.length || 0;
+      const todaySessions = sessions?.filter(s => 
+        new Date(s.created_at) >= todayStart
+      ).length || 0;
+
+      // Status breakdown
+      const statusBreakdown = {
+        new: sessions?.filter(s => s.status === 'new').length || 0,
+        in_progress: sessions?.filter(s => s.status === 'in_progress').length || 0,
+        resolved: sessions?.filter(s => s.status === 'resolved').length || 0,
+        closed: sessions?.filter(s => s.status === 'closed').length || 0,
+      };
+
+      // Resolved rate
+      const resolvedRate = totalSessions > 0 
+        ? ((statusBreakdown.resolved + statusBreakdown.closed) / totalSessions) * 100 
+        : 0;
+
+      // Calculate average response time (time between user message and staff reply)
+      let totalResponseTime = 0;
+      let responseCount = 0;
+      const sessionMessages = new Map<string, any[]>();
+
+      messages?.forEach(msg => {
+        if (!sessionMessages.has(msg.session_id)) {
+          sessionMessages.set(msg.session_id, []);
+        }
+        sessionMessages.get(msg.session_id)?.push(msg);
+      });
+
+      sessionMessages.forEach((msgs) => {
+        for (let i = 1; i < msgs.length; i++) {
+          if (msgs[i].is_staff_reply && msgs[i - 1].role === 'user') {
+            const responseTime = new Date(msgs[i].created_at).getTime() - 
+                               new Date(msgs[i - 1].created_at).getTime();
+            totalResponseTime += responseTime;
+            responseCount++;
+          }
+        }
+      });
+
+      const avgResponseTime = responseCount > 0 
+        ? totalResponseTime / responseCount / 1000 / 60 // in minutes
+        : 0;
+
+      // Average messages per session
+      const avgMessagesPerSession = totalSessions > 0 
+        ? (messages?.length || 0) / totalSessions 
+        : 0;
+
+      // Daily trend
+      const dailyMap = new Map<string, number>();
+      for (let i = parseInt(dateRange) - 1; i >= 0; i--) {
+        const date = new Date(now.getTime() - i * 24 * 60 * 60 * 1000);
+        const dateStr = date.toISOString().split('T')[0];
+        dailyMap.set(dateStr, 0);
+      }
+
+      sessions?.forEach(session => {
+        const dateStr = new Date(session.created_at).toISOString().split('T')[0];
+        if (dailyMap.has(dateStr)) {
+          dailyMap.set(dateStr, (dailyMap.get(dateStr) || 0) + 1);
+        }
+      });
+
+      const dailyTrend = Array.from(dailyMap.entries()).map(([date, count]) => ({
+        date,
+        count
+      }));
+
+      // Hourly distribution
+      const hourlyDistribution = new Array(24).fill(0);
+      sessions?.forEach(session => {
+        const hour = new Date(session.created_at).getHours();
+        hourlyDistribution[hour]++;
+      });
+
+      const peakHour = hourlyDistribution.indexOf(Math.max(...hourlyDistribution));
+
+      setStats({
+        totalSessions,
+        todaySessions,
+        avgResponseTime,
+        resolvedRate,
+        statusBreakdown,
+        dailyTrend,
+        hourlyDistribution,
+        avgMessagesPerSession,
+        peakHour,
+      });
+    } catch (error) {
+      console.error('Error fetching stats:', error);
+    } finally {
+      setIsLoading(false);
+    }
+  };
+
+  useEffect(() => {
+    fetchStats();
+  }, [dateRange]);
+
+  const formatResponseTime = (minutes: number): string => {
+    if (minutes < 1) return '< 1 分钟';
+    if (minutes < 60) return `${Math.round(minutes)} 分钟`;
+    const hours = Math.floor(minutes / 60);
+    const mins = Math.round(minutes % 60);
+    return `${hours} 小时 ${mins} 分钟`;
+  };
+
+  const getResponseTimeColor = (minutes: number): string => {
+    if (minutes < 5) return 'text-green-500';
+    if (minutes < 15) return 'text-yellow-500';
+    if (minutes < 30) return 'text-orange-500';
+    return 'text-red-500';
+  };
+
+  const getResponseTimeIcon = (minutes: number) => {
+    if (minutes < 5) return Smile;
+    if (minutes < 15) return Meh;
+    return Frown;
+  };
+
+  const getTrendIndicator = () => {
+    if (!stats || stats.dailyTrend.length < 2) return null;
+    const recent = stats.dailyTrend.slice(-3).reduce((sum, d) => sum + d.count, 0) / 3;
+    const older = stats.dailyTrend.slice(0, 3).reduce((sum, d) => sum + d.count, 0) / 3;
+    
+    if (recent > older * 1.1) {
+      return { icon: TrendingUp, color: 'text-green-500', text: '上升' };
+    } else if (recent < older * 0.9) {
+      return { icon: TrendingDown, color: 'text-red-500', text: '下降' };
+    }
+    return null;
+  };
+
+  const trend = getTrendIndicator();
+
+  if (!isExpanded) {
+    return (
+      <Card className="mb-6">
+        <CardHeader className="py-3 cursor-pointer" onClick={() => setIsExpanded(true)}>
+          <div className="flex items-center justify-between">
+            <CardTitle className="text-base flex items-center gap-2">
+              <BarChart3 className="w-5 h-5" />
+              数据统计
+            </CardTitle>
+            <div className="flex items-center gap-4">
+              {stats && (
+                <div className="flex items-center gap-4 text-sm text-muted-foreground">
+                  <span>今日: {stats.todaySessions} 会话</span>
+                  <span>解决率: {stats.resolvedRate.toFixed(0)}%</span>
+                </div>
+              )}
+              <ChevronDown className="w-5 h-5" />
+            </div>
+          </div>
+        </CardHeader>
+      </Card>
+    );
+  }
+
+  return (
+    <motion.div
+      initial={{ opacity: 0, y: -10 }}
+      animate={{ opacity: 1, y: 0 }}
+      className="mb-6"
+    >
+      <Card>
+        <CardHeader className="pb-2">
+          <div className="flex items-center justify-between">
+            <CardTitle className="text-base flex items-center gap-2">
+              <BarChart3 className="w-5 h-5" />
+              数据统计
+            </CardTitle>
+            <div className="flex items-center gap-2">
+              <Select value={dateRange} onValueChange={setDateRange}>
+                <SelectTrigger className="w-[120px] h-8">
+                  <SelectValue />
+                </SelectTrigger>
+                <SelectContent>
+                  <SelectItem value="7">过去 7 天</SelectItem>
+                  <SelectItem value="14">过去 14 天</SelectItem>
+                  <SelectItem value="30">过去 30 天</SelectItem>
+                </SelectContent>
+              </Select>
+              <Button variant="ghost" size="icon" className="h-8 w-8" onClick={() => setIsExpanded(false)}>
+                <ChevronUp className="w-4 h-4" />
+              </Button>
+            </div>
+          </div>
+        </CardHeader>
+        <CardContent className="pt-4">
+          {isLoading ? (
+            <div className="h-32 flex items-center justify-center text-muted-foreground">
+              加载中...
+            </div>
+          ) : stats ? (
+            <div className="space-y-6">
+              {/* Key Metrics Grid */}
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+                {/* Today's Sessions */}
+                <div className="bg-muted/50 rounded-lg p-4">
+                  <div className="flex items-center gap-2 text-muted-foreground mb-1">
+                    <Calendar className="w-4 h-4" />
+                    <span className="text-xs">今日会话</span>
+                  </div>
+                  <div className="text-2xl font-bold">{stats.todaySessions}</div>
+                  {trend && (
+                    <div className={`flex items-center gap-1 text-xs mt-1 ${trend.color}`}>
+                      <trend.icon className="w-3 h-3" />
+                      <span>{trend.text}趋势</span>
+                    </div>
+                  )}
+                </div>
+
+                {/* Total Sessions */}
+                <div className="bg-muted/50 rounded-lg p-4">
+                  <div className="flex items-center gap-2 text-muted-foreground mb-1">
+                    <MessageCircle className="w-4 h-4" />
+                    <span className="text-xs">总会话数</span>
+                  </div>
+                  <div className="text-2xl font-bold">{stats.totalSessions}</div>
+                  <div className="text-xs text-muted-foreground mt-1">
+                    过去 {dateRange} 天
+                  </div>
+                </div>
+
+                {/* Average Response Time */}
+                <div className="bg-muted/50 rounded-lg p-4">
+                  <div className="flex items-center gap-2 text-muted-foreground mb-1">
+                    <Clock className="w-4 h-4" />
+                    <span className="text-xs">平均响应</span>
+                  </div>
+                  <div className={`text-2xl font-bold ${getResponseTimeColor(stats.avgResponseTime)}`}>
+                    {stats.avgResponseTime > 0 ? formatResponseTime(stats.avgResponseTime) : '-'}
+                  </div>
+                  {stats.avgResponseTime > 0 && (
+                    <div className="flex items-center gap-1 text-xs mt-1 text-muted-foreground">
+                      {(() => {
+                        const Icon = getResponseTimeIcon(stats.avgResponseTime);
+                        return <Icon className="w-3 h-3" />;
+                      })()}
+                      <span>{stats.avgResponseTime < 5 ? '优秀' : stats.avgResponseTime < 15 ? '良好' : '需改善'}</span>
+                    </div>
+                  )}
+                </div>
+
+                {/* Resolution Rate */}
+                <div className="bg-muted/50 rounded-lg p-4">
+                  <div className="flex items-center gap-2 text-muted-foreground mb-1">
+                    <Target className="w-4 h-4" />
+                    <span className="text-xs">解决率</span>
+                  </div>
+                  <div className="text-2xl font-bold">
+                    {stats.resolvedRate.toFixed(0)}%
+                  </div>
+                  <Progress value={stats.resolvedRate} className="h-1.5 mt-2" />
+                </div>
+              </div>
+
+              {/* Status Breakdown */}
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div className="bg-muted/50 rounded-lg p-4">
+                  <div className="flex items-center gap-2 text-muted-foreground mb-3">
+                    <PieChart className="w-4 h-4" />
+                    <span className="text-sm font-medium">状态分布</span>
+                  </div>
+                  <div className="space-y-2">
+                    <div className="flex items-center justify-between">
+                      <div className="flex items-center gap-2">
+                        <div className="w-3 h-3 rounded-full bg-red-500" />
+                        <span className="text-sm">新消息</span>
+                      </div>
+                      <div className="flex items-center gap-2">
+                        <span className="font-medium">{stats.statusBreakdown.new}</span>
+                        <span className="text-xs text-muted-foreground">
+                          ({stats.totalSessions > 0 ? ((stats.statusBreakdown.new / stats.totalSessions) * 100).toFixed(0) : 0}%)
+                        </span>
+                      </div>
+                    </div>
+                    <div className="flex items-center justify-between">
+                      <div className="flex items-center gap-2">
+                        <div className="w-3 h-3 rounded-full bg-yellow-500" />
+                        <span className="text-sm">处理中</span>
+                      </div>
+                      <div className="flex items-center gap-2">
+                        <span className="font-medium">{stats.statusBreakdown.in_progress}</span>
+                        <span className="text-xs text-muted-foreground">
+                          ({stats.totalSessions > 0 ? ((stats.statusBreakdown.in_progress / stats.totalSessions) * 100).toFixed(0) : 0}%)
+                        </span>
+                      </div>
+                    </div>
+                    <div className="flex items-center justify-between">
+                      <div className="flex items-center gap-2">
+                        <div className="w-3 h-3 rounded-full bg-green-500" />
+                        <span className="text-sm">已解决</span>
+                      </div>
+                      <div className="flex items-center gap-2">
+                        <span className="font-medium">{stats.statusBreakdown.resolved}</span>
+                        <span className="text-xs text-muted-foreground">
+                          ({stats.totalSessions > 0 ? ((stats.statusBreakdown.resolved / stats.totalSessions) * 100).toFixed(0) : 0}%)
+                        </span>
+                      </div>
+                    </div>
+                    <div className="flex items-center justify-between">
+                      <div className="flex items-center gap-2">
+                        <div className="w-3 h-3 rounded-full bg-gray-500" />
+                        <span className="text-sm">已关闭</span>
+                      </div>
+                      <div className="flex items-center gap-2">
+                        <span className="font-medium">{stats.statusBreakdown.closed}</span>
+                        <span className="text-xs text-muted-foreground">
+                          ({stats.totalSessions > 0 ? ((stats.statusBreakdown.closed / stats.totalSessions) * 100).toFixed(0) : 0}%)
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Additional Stats */}
+                <div className="bg-muted/50 rounded-lg p-4">
+                  <div className="flex items-center gap-2 text-muted-foreground mb-3">
+                    <Zap className="w-4 h-4" />
+                    <span className="text-sm font-medium">更多指标</span>
+                  </div>
+                  <div className="space-y-3">
+                    <div className="flex items-center justify-between">
+                      <span className="text-sm text-muted-foreground">平均消息/会话</span>
+                      <span className="font-medium">{stats.avgMessagesPerSession.toFixed(1)}</span>
+                    </div>
+                    <div className="flex items-center justify-between">
+                      <span className="text-sm text-muted-foreground">活跃高峰时段</span>
+                      <Badge variant="secondary">
+                        {stats.peakHour}:00 - {stats.peakHour + 1}:00
+                      </Badge>
+                    </div>
+                    <div className="flex items-center justify-between">
+                      <span className="text-sm text-muted-foreground">日均会话</span>
+                      <span className="font-medium">
+                        {(stats.totalSessions / parseInt(dateRange)).toFixed(1)}
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Daily Trend Chart */}
+              <div className="bg-muted/50 rounded-lg p-4">
+                <div className="flex items-center gap-2 text-muted-foreground mb-3">
+                  <BarChart3 className="w-4 h-4" />
+                  <span className="text-sm font-medium">每日趋势</span>
+                </div>
+                <div className="flex items-end gap-1 h-24">
+                  {stats.dailyTrend.map((day, index) => {
+                    const maxCount = Math.max(...stats.dailyTrend.map(d => d.count), 1);
+                    const height = (day.count / maxCount) * 100;
+                    return (
+                      <div key={day.date} className="flex-1 flex flex-col items-center gap-1">
+                        <motion.div
+                          initial={{ height: 0 }}
+                          animate={{ height: `${height}%` }}
+                          transition={{ delay: index * 0.05 }}
+                          className="w-full bg-primary/80 rounded-t min-h-[4px]"
+                          title={`${day.date}: ${day.count} 会话`}
+                        />
+                        <span className="text-[10px] text-muted-foreground">
+                          {new Date(day.date).getDate()}
+                        </span>
+                      </div>
+                    );
+                  })}
+                </div>
+              </div>
+            </div>
+          ) : (
+            <div className="h-32 flex items-center justify-center text-muted-foreground">
+              暂无数据
+            </div>
+          )}
+        </CardContent>
+      </Card>
+    </motion.div>
+  );
+};
+
+export default AdminStatsPanel;
