@@ -8,13 +8,27 @@
     "ninjaCourse": "مسار النينجا",
     "process": "العملية",
     "projects": "المشاريع",
+    "blog": "المدونة",
     "contact": "اتصل بنا",
     "faq": "الأسئلة الشائعة",
     "caseStudies": "الحالات",
     "more": "المزيد",
     "getFreeQuote": "عرض سعر مجاني"
   },
+  "blog": {
+    "readMore": "اقرأ المزيد",
+    "noPosts": "لا توجد مقالات حتى الآن",
+    "noPostsDescription": "تحقق لاحقاً للحصول على آخر الأخبار والمقالات.",
+    "notFound": "المقال غير موجود",
+    "notFoundDescription": "المقال الذي تبحث عنه غير موجود أو تم إزالته.",
+    "backToBlog": "العودة للمدونة"
+  },
   "pages": {
+    "blog": {
+      "title": "رؤى",
+      "titleHighlight": "وأخبار الصناعة",
+      "description": "ابق على اطلاع بأحدث الاتجاهات والنصائح والأخبار في صناعة الملاعب الداخلية والترفيه العائلي. رؤى الخبراء لمساعدتك في بناء عمل ناجح."
+    },
     "aboutUs": {
       "title": "عن",
       "titleHighlight": "NinescapeLand",

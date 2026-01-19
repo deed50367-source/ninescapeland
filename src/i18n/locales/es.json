@@ -8,13 +8,27 @@
     "ninjaCourse": "Curso Ninja",
     "process": "Proceso",
     "projects": "Proyectos",
+    "blog": "Blog",
     "contact": "Contacto",
     "faq": "FAQ",
     "caseStudies": "Casos",
     "more": "Más",
     "getFreeQuote": "Cotización Gratis"
   },
+  "blog": {
+    "readMore": "Leer Más",
+    "noPosts": "Sin Publicaciones Aún",
+    "noPostsDescription": "Vuelva más tarde para las últimas noticias y artículos.",
+    "notFound": "Publicación No Encontrada",
+    "notFoundDescription": "El artículo que busca no existe o ha sido eliminado.",
+    "backToBlog": "Volver al Blog"
+  },
   "pages": {
+    "blog": {
+      "title": "Perspectivas",
+      "titleHighlight": "e Noticias del Sector",
+      "description": "Manténgase actualizado con las últimas tendencias, consejos y noticias en la industria de parques infantiles y entretenimiento familiar. Perspectivas de expertos para ayudarlo a construir un negocio exitoso."
+    },
     "aboutUs": {
       "title": "Sobre",
       "titleHighlight": "NinescapeLand",
