@@ -122,13 +122,38 @@ export const AboutMascotIntro = () => {
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
               {t("aboutMascot.title", "认识我们的小伙伴")}
               <span className="block text-primary mt-2">
-                {t("aboutMascot.titleHighlight", "Nini")}
+                {t("aboutMascot.titleHighlight", "丸子 Ball")}
               </span>
             </h2>
             
-            <p className="text-muted-foreground text-lg md:text-xl leading-relaxed mb-8 max-w-xl">
-              {t("aboutMascot.description", "Nini 是我们的品牌形象大使，代表着快乐、创意与无限可能。她将陪伴您了解我们的产品和服务，为您的游乐场项目提供专业指导。")}
+            <p className="text-muted-foreground text-lg md:text-xl leading-relaxed mb-6 max-w-xl">
+              {t("aboutMascot.description", "丸子是 NinescapeLand 的品牌形象大使，一个心地纯洁、用行动传递温暖的小女孩。她热爱探索游乐世界，将陪伴您了解我们的产品和服务，为您的游乐场项目提供专业指导。")}
             </p>
+
+            {/* Character traits */}
+            <div className="flex flex-wrap gap-3 mb-8 justify-center lg:justify-start">
+              <motion.div
+                whileHover={{ scale: 1.05 }}
+                className="flex items-center gap-2 px-4 py-2 bg-pink-50 dark:bg-pink-950/30 rounded-full border border-pink-200 dark:border-pink-800"
+              >
+                <span className="text-lg">💖</span>
+                <span className="text-sm font-medium text-pink-700 dark:text-pink-300">{t("aboutMascot.trait1", "心地纯洁")}</span>
+              </motion.div>
+              <motion.div
+                whileHover={{ scale: 1.05 }}
+                className="flex items-center gap-2 px-4 py-2 bg-orange-50 dark:bg-orange-950/30 rounded-full border border-orange-200 dark:border-orange-800"
+              >
+                <span className="text-lg">🤗</span>
+                <span className="text-sm font-medium text-orange-700 dark:text-orange-300">{t("aboutMascot.trait2", "用行动传递温暖")}</span>
+              </motion.div>
+              <motion.div
+                whileHover={{ scale: 1.05 }}
+                className="flex items-center gap-2 px-4 py-2 bg-teal-50 dark:bg-teal-950/30 rounded-full border border-teal-200 dark:border-teal-800"
+              >
+                <span className="text-lg">🎠</span>
+                <span className="text-sm font-medium text-teal-700 dark:text-teal-300">{t("aboutMascot.trait3", "爱探索游乐世界")}</span>
+              </motion.div>
+            </div>
 
             <div className="flex flex-wrap gap-4 justify-center lg:justify-start">
               <motion.div
