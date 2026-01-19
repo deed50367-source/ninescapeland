@@ -138,6 +138,33 @@ export type Database = {
         }
         Relationships: []
       }
+      chat_messages: {
+        Row: {
+          content: string
+          created_at: string
+          id: string
+          is_ai_response: boolean
+          role: string
+          session_id: string
+        }
+        Insert: {
+          content: string
+          created_at?: string
+          id?: string
+          is_ai_response?: boolean
+          role: string
+          session_id: string
+        }
+        Update: {
+          content?: string
+          created_at?: string
+          id?: string
+          is_ai_response?: boolean
+          role?: string
+          session_id?: string
+        }
+        Relationships: []
+      }
       inquiries: {
         Row: {
           country: string

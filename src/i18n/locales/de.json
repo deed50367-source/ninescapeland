@@ -1931,5 +1931,20 @@
       "title": "Premium-Materialien",
       "description": "Umweltfreundlich, langlebig und pflegeleicht"
     }
+  },
+  "liveChat": {
+    "open": "Chat öffnen",
+    "close": "Chat schließen",
+    "humanSupport": "Kundenbetreuung",
+    "aiAssistant": "KI-Assistent",
+    "online": "Online",
+    "available247": "Rund um die Uhr verfügbar",
+    "businessHours": "Geschäftszeiten: Mo-Fr 9:00-18:00 (Pekinger Zeit)",
+    "welcomeHuman": "Hallo! Willkommen bei NinescapeLand. Unser Kundenservice-Team ist online. Wie können wir Ihnen heute helfen?",
+    "welcomeAI": "Hallo! Willkommen bei NinescapeLand. Ich bin Ihr KI-Assistent. Unser Team ist derzeit offline, aber ich bin rund um die Uhr für Sie da. Wie kann ich Ihnen helfen?",
+    "humanWaiting": "Ihre Nachricht wurde empfangen. Unser Team wird in Kürze antworten. Sie können uns auch über WhatsApp für eine schnellere Antwort kontaktieren.",
+    "error": "Entschuldigung, etwas ist schiefgelaufen. Bitte versuchen Sie es erneut oder kontaktieren Sie uns über WhatsApp.",
+    "placeholder": "Ihre Nachricht eingeben...",
+    "whatsappCTA": "Per WhatsApp chatten für schnellere Antwort"
   }
 }

@@ -2079,5 +2079,20 @@
       "title": "Premium Materials",
       "description": "Eco-friendly, durable, and easy to maintain"
     }
+  },
+  "liveChat": {
+    "open": "Open chat",
+    "close": "Close chat",
+    "humanSupport": "Customer Support",
+    "aiAssistant": "AI Assistant",
+    "online": "Online",
+    "available247": "Available 24/7",
+    "businessHours": "Business Hours: Mon-Fri 9:00-18:00 (Beijing Time)",
+    "welcomeHuman": "Hello! Welcome to NinescapeLand. Our customer service team is online. How can we help you today?",
+    "welcomeAI": "Hello! Welcome to NinescapeLand. I'm your AI assistant. Our team is currently offline, but I'm here to help you 24/7. How can I assist you?",
+    "humanWaiting": "Your message has been received. Our team will respond shortly. You can also reach us via WhatsApp for faster response.",
+    "error": "Sorry, something went wrong. Please try again or contact us via WhatsApp.",
+    "placeholder": "Type your message...",
+    "whatsappCTA": "Chat on WhatsApp for faster response"
   }
 }
