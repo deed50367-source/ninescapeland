@@ -55,7 +55,7 @@ const AdminLogin = () => {
         }
 
         toast.success("登录成功");
-        navigate(localizedPath("/asset-gallery"));
+        navigate("/admin");
       }
     } catch (error) {
       toast.error("登录失败，请重试");
