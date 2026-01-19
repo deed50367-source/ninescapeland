@@ -18,6 +18,7 @@ import { CTABannerSection } from "@/components/CTABannerSection";
 import { ContactSection } from "@/components/ContactSection";
 import { Footer } from "@/components/Footer";
 import { FloatingCTA } from "@/components/FloatingCTA";
+import { LiveChat } from "@/components/LiveChat";
 import MobileBottomNav from "@/components/MobileBottomNav";
 
 const Index = () => {
@@ -45,6 +46,7 @@ const Index = () => {
       </main>
       <Footer />
       <FloatingCTA />
+      <LiveChat />
       <MobileBottomNav />
     </div>
   );

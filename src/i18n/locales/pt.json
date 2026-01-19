@@ -1850,5 +1850,20 @@
     "fastDelivery": { "title": "Produção Rápida", "description": "Fabricação de 20-35 dias com controle de qualidade" },
     "warranty": { "title": "Garantia de 3 Anos", "description": "Cobertura completa com suporte de peças vitalício" },
     "premiumMaterials": { "title": "Materiais Premium", "description": "Ecológicos, duráveis e fáceis de manter" }
+  },
+  "liveChat": {
+    "open": "Abrir chat",
+    "close": "Fechar chat",
+    "humanSupport": "Suporte ao Cliente",
+    "aiAssistant": "Assistente IA",
+    "online": "Online",
+    "available247": "Disponível 24/7",
+    "businessHours": "Horário: Seg-Sex 9:00-18:00 (Hora de Pequim)",
+    "welcomeHuman": "Olá! Bem-vindo à NinescapeLand. Nossa equipe de atendimento está online. Como podemos ajudá-lo hoje?",
+    "welcomeAI": "Olá! Bem-vindo à NinescapeLand. Sou seu assistente de IA. Nossa equipe está offline, mas estou aqui para ajudá-lo 24/7. Como posso auxiliá-lo?",
+    "humanWaiting": "Sua mensagem foi recebida. Nossa equipe responderá em breve. Você também pode nos contatar pelo WhatsApp para resposta mais rápida.",
+    "error": "Desculpe, algo deu errado. Por favor tente novamente ou entre em contato pelo WhatsApp.",
+    "placeholder": "Digite sua mensagem...",
+    "whatsappCTA": "Converse no WhatsApp para resposta mais rápida"
   }
 }
