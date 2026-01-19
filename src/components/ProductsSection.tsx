@@ -130,9 +130,9 @@ export const ProductsSection = () => {
                 <motion.img
                   src={product.mascot}
                   alt="Ball mascot"
-                  className="absolute -top-12 right-2 w-16 h-16 sm:w-20 sm:h-20 object-contain opacity-0 group-hover:opacity-100 transition-opacity duration-300 drop-shadow-lg pointer-events-none"
-                  initial={{ y: 10, rotate: -5 }}
-                  whileHover={{ y: 0, rotate: 0 }}
+                  className="absolute -top-12 right-2 w-16 h-16 sm:w-20 sm:h-20 object-contain drop-shadow-lg pointer-events-none"
+                  animate={{ y: [0, -6, 0] }}
+                  transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
                 />
                 
                 <h3 className="text-lg sm:text-xl font-heading font-bold mb-2 sm:mb-3 group-hover:text-primary transition-colors">
