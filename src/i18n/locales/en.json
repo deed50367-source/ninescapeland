@@ -80,7 +80,8 @@
       "getQuote": "Get Free Design & Quote",
       "viewProducts": "Explore Our Products"
     },
-    "trustedCertifications": "Trusted by industry leaders worldwide:"
+    "trustedCertifications": "Trusted by industry leaders worldwide:",
+    "mascotGreeting": "Welcome! 👋"
   },
   "products": {
     "sectionLabel": "Premium Products",
@@ -280,9 +281,6 @@
       "title": "Efficiency",
       "description": "We respect your time and investment. Our streamlined processes ensure on-time delivery and cost-effective solutions."
     }
-  },
-  "hero": {
-    "mascotGreeting": "Welcome! 👋"
   },
   "aboutMascot": {
     "badge": "Welcome to NinescapeLand",
