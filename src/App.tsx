@@ -21,6 +21,7 @@ import NotFound from "./pages/NotFound";
 import AssetGallery from "./pages/AssetGallery";
 import AdminLogin from "./pages/AdminLogin";
 import AdminCustomerService from "./pages/AdminCustomerService";
+import AdminDashboard from "./pages/AdminDashboard";
 
 const queryClient = new QueryClient();
 
@@ -52,6 +53,7 @@ const App = () => (
             <Route path="asset-gallery" element={<AssetGallery />} />
             <Route path="admin-login" element={<AdminLogin />} />
             <Route path="admin/customer-service" element={<AdminCustomerService />} />
+            <Route path="admin" element={<AdminDashboard />} />
           </Route>
           
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
