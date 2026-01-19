@@ -1,6 +1,6 @@
 import { useTranslation } from "react-i18next";
 import { motion } from "framer-motion";
-import mascotWelcome from "@/assets/mascot-welcome.png";
+import mascotWelcomeBg from "@/assets/mascot-welcome-bg.png";
 
 export const AboutMascotIntro = () => {
   const { t } = useTranslation();
@@ -15,7 +15,7 @@ export const AboutMascotIntro = () => {
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
             viewport={{ once: true }}
-            className="flex-shrink-0 relative bg-gradient-to-br from-white to-pink-50 dark:from-pink-100 dark:to-pink-50 rounded-3xl p-8 shadow-lg"
+            className="flex-shrink-0 relative rounded-3xl p-8 bg-gradient-to-br from-card to-muted/40 border border-border shadow-lg"
           >
             {/* Decorative circles behind mascot */}
             <motion.div
@@ -45,7 +45,7 @@ export const AboutMascotIntro = () => {
             
             {/* Floating mascot */}
             <motion.img
-              src={mascotWelcome}
+              src={mascotWelcomeBg}
               alt="NinescapeLand Mascot"
               className="relative w-48 h-48 md:w-64 md:h-64 lg:w-80 lg:h-80 object-contain drop-shadow-2xl"
               animate={{ 
