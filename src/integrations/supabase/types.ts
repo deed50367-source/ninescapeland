@@ -144,6 +144,8 @@ export type Database = {
           created_at: string
           id: string
           is_ai_response: boolean
+          is_staff_reply: boolean | null
+          replied_by: string | null
           role: string
           session_id: string
         }
@@ -152,6 +154,8 @@ export type Database = {
           created_at?: string
           id?: string
           is_ai_response?: boolean
+          is_staff_reply?: boolean | null
+          replied_by?: string | null
           role: string
           session_id: string
         }
@@ -160,6 +164,8 @@ export type Database = {
           created_at?: string
           id?: string
           is_ai_response?: boolean
+          is_staff_reply?: boolean | null
+          replied_by?: string | null
           role?: string
           session_id?: string
         }

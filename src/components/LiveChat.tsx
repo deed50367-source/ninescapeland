@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef, useCallback } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { MessageCircle, X, Send, Clock, Bot, User, Loader2, Phone } from 'lucide-react';
+import { MessageCircle, X, Send, Clock, Bot, User, Loader2, Phone, CheckCircle } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
@@ -12,6 +12,7 @@ interface Message {
   content: string;
   timestamp: Date;
   isAI: boolean;
+  isStaffReply?: boolean;
 }
 
 // Business hours: Monday-Friday 9:00-18:00 Beijing Time (UTC+8)
@@ -48,6 +49,7 @@ export const LiveChat = () => {
   const [input, setInput] = useState('');
   const [isLoading, setIsLoading] = useState(false);
   const [isHumanMode, setIsHumanMode] = useState(false);
+  const [hasNewMessage, setHasNewMessage] = useState(false);
   const messagesEndRef = useRef<HTMLDivElement>(null);
   const sessionId = useRef(getSessionId());
 
@@ -59,10 +61,64 @@ export const LiveChat = () => {
     scrollToBottom();
   }, [messages, scrollToBottom]);
 
+  // Subscribe to realtime messages for staff replies
+  useEffect(() => {
+    const channel = supabase
+      .channel(`chat-${sessionId.current}`)
+      .on(
+        'postgres_changes',
+        {
+          event: 'INSERT',
+          schema: 'public',
+          table: 'chat_messages',
+          filter: `session_id=eq.${sessionId.current}`
+        },
+        (payload) => {
+          const newMsg = payload.new as {
+            id: string;
+            role: string;
+            content: string;
+            is_ai_response: boolean;
+            is_staff_reply: boolean;
+            created_at: string;
+          };
+          
+          // Only add if it's a staff reply (to avoid duplicates)
+          if (newMsg.is_staff_reply) {
+            const staffMessage: Message = {
+              id: newMsg.id,
+              role: 'assistant',
+              content: newMsg.content,
+              timestamp: new Date(newMsg.created_at),
+              isAI: false,
+              isStaffReply: true
+            };
+            
+            setMessages(prev => {
+              // Check if message already exists
+              if (prev.some(m => m.id === newMsg.id)) return prev;
+              return [...prev, staffMessage];
+            });
+            
+            // Show notification if chat is closed
+            if (!isOpen) {
+              setHasNewMessage(true);
+            }
+          }
+        }
+      )
+      .subscribe();
+
+    return () => {
+      supabase.removeChannel(channel);
+    };
+  }, [isOpen]);
+
   useEffect(() => {
     if (isOpen && messages.length === 0) {
       const businessHours = isBusinessHours();
       setIsHumanMode(businessHours);
+      setHasNewMessage(false);
       
       const welcomeMessage: Message = {
         id: 'welcome',
@@ -75,6 +131,10 @@ export const LiveChat = () => {
       };
       
       setMessages([welcomeMessage]);
+    }
+    
+    if (isOpen) {
+      setHasNewMessage(false);
     }
   }, [isOpen, t, messages.length]);
 
@@ -189,7 +249,9 @@ export const LiveChat = () => {
           >
             <MessageCircle className="w-6 h-6" />
             {/* Online indicator */}
-            <span className={`absolute top-0 right-0 w-4 h-4 rounded-full border-2 border-white ${isBusinessHours() ? 'bg-green-500' : 'bg-yellow-500'}`} />
+            <span className={`absolute top-0 right-0 w-4 h-4 rounded-full border-2 border-white ${
+              hasNewMessage ? 'bg-red-500 animate-pulse' : isBusinessHours() ? 'bg-green-500' : 'bg-yellow-500'
+            }`} />
           </motion.button>
         )}
       </AnimatePresence>
@@ -257,14 +319,21 @@ export const LiveChat = () => {
                     className={`max-w-[80%] rounded-2xl px-4 py-2 ${
                       message.role === 'user'
                         ? 'bg-primary text-primary-foreground rounded-br-md'
+                        : message.isStaffReply
+                        ? 'bg-green-500 text-white rounded-bl-md'
                         : 'bg-muted text-foreground rounded-bl-md'
                     }`}
                   >
                     <p className="text-sm whitespace-pre-wrap">{message.content}</p>
                     <div className={`flex items-center gap-1 mt-1 text-[10px] ${
-                      message.role === 'user' ? 'text-primary-foreground/70' : 'text-muted-foreground'
+                      message.role === 'user' 
+                        ? 'text-primary-foreground/70' 
+                        : message.isStaffReply 
+                        ? 'text-white/70' 
+                        : 'text-muted-foreground'
                     }`}>
                       {message.isAI && <Bot className="w-3 h-3" />}
+                      {message.isStaffReply && <CheckCircle className="w-3 h-3" />}
                       <span>
                         {message.timestamp.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })}
                       </span>
