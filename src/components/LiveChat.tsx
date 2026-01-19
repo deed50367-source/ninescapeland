@@ -42,6 +42,69 @@ const getSessionId = (): string => {
   return newId;
 };
 
+// Parse user agent to get device info
+const parseUserAgent = () => {
+  const ua = navigator.userAgent;
+  
+  // Detect device type
+  let device = 'Desktop';
+  if (/Mobile|Android|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(ua)) {
+    if (/iPad|Tablet/i.test(ua)) {
+      device = 'Tablet';
+    } else {
+      device = 'Mobile';
+    }
+  }
+  
+  // Detect browser
+  let browser = 'Unknown';
+  if (ua.includes('Firefox/')) browser = 'Firefox';
+  else if (ua.includes('Edg/')) browser = 'Edge';
+  else if (ua.includes('Chrome/')) browser = 'Chrome';
+  else if (ua.includes('Safari/') && !ua.includes('Chrome')) browser = 'Safari';
+  else if (ua.includes('Opera') || ua.includes('OPR/')) browser = 'Opera';
+  
+  // Detect OS
+  let os = 'Unknown';
+  if (ua.includes('Windows')) os = 'Windows';
+  else if (ua.includes('Mac OS')) os = 'macOS';
+  else if (ua.includes('Linux')) os = 'Linux';
+  else if (ua.includes('Android')) os = 'Android';
+  else if (ua.includes('iOS') || ua.includes('iPhone') || ua.includes('iPad')) os = 'iOS';
+  
+  return { device, browser, os };
+};
+
+// Save/update session metadata
+const saveSessionMetadata = async (sessionId: string, language: string) => {
+  try {
+    const { device, browser, os } = parseUserAgent();
+    
+    const metadata = {
+      session_id: sessionId,
+      customer_device: device,
+      customer_browser: browser,
+      customer_os: os,
+      customer_language: language,
+      customer_timezone: Intl.DateTimeFormat().resolvedOptions().timeZone,
+      page_url: window.location.href,
+      referrer: document.referrer || null,
+      status: 'new'
+    };
+    
+    // Try to upsert the session data
+    const { error } = await supabase
+      .from('chat_sessions')
+      .upsert(metadata, { onConflict: 'session_id' });
+    
+    if (error) {
+      console.error('Error saving session metadata:', error);
+    }
+  } catch (err) {
+    console.error('Error saving session metadata:', err);
+  }
+};
+
 export const LiveChat = () => {
   const { t, i18n } = useTranslation();
   const [isOpen, setIsOpen] = useState(false);
@@ -120,6 +183,9 @@ export const LiveChat = () => {
       setIsHumanMode(businessHours);
       setHasNewMessage(false);
       
+      // Save session metadata when chat opens
+      saveSessionMetadata(sessionId.current, i18n.language);
+      
       const welcomeMessage: Message = {
         id: 'welcome',
         role: 'assistant',
@@ -136,7 +202,7 @@ export const LiveChat = () => {
     if (isOpen) {
       setHasNewMessage(false);
     }
-  }, [isOpen, t, messages.length]);
+  }, [isOpen, t, i18n.language, messages.length]);
 
   const sendMessage = async () => {
     if (!input.trim() || isLoading) return;

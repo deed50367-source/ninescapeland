@@ -4,7 +4,8 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { 
   MessageCircle, Send, ArrowLeft, Clock, User, Bot, 
   Loader2, RefreshCw, Search, CheckCircle, XCircle,
-  Circle, CheckCheck, AlertCircle, Zap, Plus, Trash2, Edit2, Save, X
+  Circle, CheckCheck, AlertCircle, Zap, Plus, Trash2, Edit2, Save, X,
+  Monitor, Smartphone, Tablet, Globe, MapPin, Link, ExternalLink
 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
@@ -52,6 +53,20 @@ interface ChatSession {
   notes?: string;
 }
 
+interface CustomerMetadata {
+  customer_ip?: string;
+  customer_country?: string;
+  customer_city?: string;
+  customer_device?: string;
+  customer_browser?: string;
+  customer_os?: string;
+  customer_language?: string;
+  customer_timezone?: string;
+  page_url?: string;
+  referrer?: string;
+  created_at?: string;
+}
+
 interface ChatMessage {
   id: string;
   session_id: string;
@@ -97,6 +112,8 @@ const AdminCustomerService = () => {
   const [editingTemplate, setEditingTemplate] = useState<QuickReplyTemplate | null>(null);
   const [newTemplate, setNewTemplate] = useState({ title: '', content: '', category: '' });
   const [isLoadingTemplates, setIsLoadingTemplates] = useState(false);
+  const [customerMetadata, setCustomerMetadata] = useState<CustomerMetadata | null>(null);
+  const [showCustomerInfo, setShowCustomerInfo] = useState(true);
 
   const scrollToBottom = useCallback(() => {
     messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
@@ -344,6 +361,19 @@ const AdminCustomerService = () => {
       // Load session notes
       const statusInfo = sessionStatuses.get(sessionId);
       setSessionNotes(statusInfo?.notes || '');
+      
+      // Fetch customer metadata
+      const { data: sessionData, error: sessionError } = await supabase
+        .from('chat_sessions')
+        .select('customer_ip, customer_country, customer_city, customer_device, customer_browser, customer_os, customer_language, customer_timezone, page_url, referrer, created_at')
+        .eq('session_id', sessionId)
+        .single();
+      
+      if (!sessionError && sessionData) {
+        setCustomerMetadata(sessionData as CustomerMetadata);
+      } else {
+        setCustomerMetadata(null);
+      }
     } catch (error) {
       console.error('Error fetching messages:', error);
       toast.error('Failed to load messages');
@@ -718,6 +748,17 @@ const AdminCustomerService = () => {
                       </div>
                     </div>
                     <div className="flex items-center gap-2">
+                      {/* Customer Info Toggle */}
+                      <Button
+                        variant={showCustomerInfo ? "default" : "outline"}
+                        size="sm"
+                        className="h-9 gap-1"
+                        onClick={() => setShowCustomerInfo(!showCustomerInfo)}
+                      >
+                        <User className="w-3 h-3" />
+                        客户信息
+                      </Button>
+                      
                       {/* Status Selector */}
                       <Select
                         value={getSessionStatus(selectedSession)}
@@ -774,6 +815,90 @@ const AdminCustomerService = () => {
                     </Button>
                   </div>
                 </div>
+
+                {/* Customer Info Panel */}
+                {showCustomerInfo && customerMetadata && (
+                  <div className="border-b bg-gradient-to-r from-muted/50 to-muted/30 p-4">
+                    <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+                      {/* Device Info */}
+                      <div className="flex items-start gap-2">
+                        {customerMetadata.customer_device === 'Mobile' ? (
+                          <Smartphone className="w-4 h-4 text-muted-foreground mt-0.5" />
+                        ) : customerMetadata.customer_device === 'Tablet' ? (
+                          <Tablet className="w-4 h-4 text-muted-foreground mt-0.5" />
+                        ) : (
+                          <Monitor className="w-4 h-4 text-muted-foreground mt-0.5" />
+                        )}
+                        <div>
+                          <p className="text-xs text-muted-foreground">设备</p>
+                          <p className="text-sm font-medium">{customerMetadata.customer_device || '未知'}</p>
+                          <p className="text-xs text-muted-foreground">
+                            {customerMetadata.customer_os} · {customerMetadata.customer_browser}
+                          </p>
+                        </div>
+                      </div>
+                      
+                      {/* Language & Timezone */}
+                      <div className="flex items-start gap-2">
+                        <Globe className="w-4 h-4 text-muted-foreground mt-0.5" />
+                        <div>
+                          <p className="text-xs text-muted-foreground">语言/时区</p>
+                          <p className="text-sm font-medium">{customerMetadata.customer_language || '未知'}</p>
+                          <p className="text-xs text-muted-foreground truncate max-w-[150px]" title={customerMetadata.customer_timezone}>
+                            {customerMetadata.customer_timezone || '未知'}
+                          </p>
+                        </div>
+                      </div>
+                      
+                      {/* Page URL */}
+                      <div className="flex items-start gap-2">
+                        <Link className="w-4 h-4 text-muted-foreground mt-0.5" />
+                        <div className="min-w-0 flex-1">
+                          <p className="text-xs text-muted-foreground">来源页面</p>
+                          {customerMetadata.page_url ? (
+                            <a 
+                              href={customerMetadata.page_url} 
+                              target="_blank" 
+                              rel="noopener noreferrer"
+                              className="text-sm font-medium text-primary hover:underline flex items-center gap-1"
+                            >
+                              <span className="truncate max-w-[120px]">
+                                {new URL(customerMetadata.page_url).pathname}
+                              </span>
+                              <ExternalLink className="w-3 h-3 shrink-0" />
+                            </a>
+                          ) : (
+                            <p className="text-sm font-medium">未知</p>
+                          )}
+                          {customerMetadata.referrer && (
+                            <p className="text-xs text-muted-foreground truncate max-w-[150px]" title={customerMetadata.referrer}>
+                              来自: {customerMetadata.referrer}
+                            </p>
+                          )}
+                        </div>
+                      </div>
+                      
+                      {/* Session Time */}
+                      <div className="flex items-start gap-2">
+                        <Clock className="w-4 h-4 text-muted-foreground mt-0.5" />
+                        <div>
+                          <p className="text-xs text-muted-foreground">会话时间</p>
+                          <p className="text-sm font-medium">
+                            {customerMetadata.created_at 
+                              ? new Date(customerMetadata.created_at).toLocaleString('zh-CN', { 
+                                  month: 'short', 
+                                  day: 'numeric',
+                                  hour: '2-digit', 
+                                  minute: '2-digit' 
+                                })
+                              : '未知'
+                            }
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                )}
 
                 {/* Messages */}
                 <ScrollArea className="flex-1 p-4">
