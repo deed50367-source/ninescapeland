@@ -254,7 +254,13 @@ const AdminGalleryTab = () => {
       )}
 
       {uploadItems.length > 0 && (
-        <UploadProgress items={uploadItems} isMinimized={isUploadMinimized} onToggleMinimize={() => setIsUploadMinimized(!isUploadMinimized)} onCancel={() => { uploadCancelledRef.current = true; }} />
+        <UploadProgress 
+          items={uploadItems} 
+          isMinimized={isUploadMinimized} 
+          onToggleMinimize={() => setIsUploadMinimized(!isUploadMinimized)} 
+          onCancel={() => { uploadCancelledRef.current = true; }} 
+          onClose={() => setUploadItems([])}
+        />
       )}
     </div>
   );
