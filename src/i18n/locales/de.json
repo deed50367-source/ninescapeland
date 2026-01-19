@@ -254,6 +254,7 @@
     }
   },
   "coreValues": {
+    "sectionLabel": "Kernwerte",
     "title": "Unsere",
     "titleHighlight": "Kernwerte",
     "description": "Diese Prinzipien leiten alles, was wir tun, vom Produktdesign bis zum Kundenservice, um bei jedem Schritt Exzellenz zu liefern.",
@@ -326,9 +327,6 @@
     "designers": "Designer",
     "engineers": "Ingenieure",
     "support": "Support-Team"
-  },
-  "coreValues": {
-    "sectionLabel": "Kernwerte"
   },
   "faq": {
     "sectionLabel": "FAQ",

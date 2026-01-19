@@ -254,6 +254,7 @@
     }
   },
   "coreValues": {
+    "sectionLabel": "Valores Fundamentais",
     "title": "Nossos",
     "titleHighlight": "Valores Fundamentais",
     "description": "Estes princípios orientam tudo o que fazemos, do design de produtos ao atendimento ao cliente, garantindo excelência em cada etapa.",
@@ -326,9 +327,6 @@
     "designers": "Designers",
     "engineers": "Engenheiros",
     "support": "Equipe de Suporte"
-  },
-  "coreValues": {
-    "sectionLabel": "Valores Fundamentais"
   },
   "faq": {
     "sectionLabel": "FAQ",

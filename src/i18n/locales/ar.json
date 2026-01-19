@@ -254,6 +254,7 @@
     }
   },
   "coreValues": {
+    "sectionLabel": "القيم الأساسية",
     "title": "قيمنا",
     "titleHighlight": "الأساسية",
     "description": "هذه المبادئ توجه كل ما نقوم به، من تصميم المنتجات إلى خدمة العملاء، لضمان تقديم التميز في كل خطوة.",
@@ -326,9 +327,6 @@
     "designers": "مصممون",
     "engineers": "مهندسون",
     "support": "فريق الدعم"
-  },
-  "coreValues": {
-    "sectionLabel": "القيم الأساسية"
   },
   "faq": {
     "sectionLabel": "الأسئلة الشائعة",

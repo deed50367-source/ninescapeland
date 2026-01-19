@@ -254,6 +254,7 @@
     }
   },
   "coreValues": {
+    "sectionLabel": "Core Values",
     "title": "Our Core",
     "titleHighlight": "Values",
     "description": "These principles guide everything we do, from product design to customer service, ensuring we deliver excellence at every step.",
@@ -326,9 +327,6 @@
     "designers": "Designers",
     "engineers": "Engineers",
     "support": "Support Team"
-  },
-  "coreValues": {
-    "sectionLabel": "Core Values"
   },
   "faq": {
     "sectionLabel": "FAQ",
