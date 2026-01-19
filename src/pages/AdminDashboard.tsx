@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import { useNavigate, Link } from "react-router-dom";
 import { useAdminAuth } from "@/hooks/useAdminAuth";
@@ -9,8 +9,9 @@ import {
   MessageSquare, 
   FileText, 
   LogOut, 
-  ArrowLeft,
-  Loader2
+  Loader2,
+  ShieldX,
+  UserX
 } from "lucide-react";
 import { toast } from "sonner";
 import logo from "@/assets/logo.png";
@@ -26,49 +27,75 @@ const AdminDashboard = () => {
   const { user, isAdmin, isLoading: authLoading, signOut } = useAdminAuth();
   const [activeTab, setActiveTab] = useState("gallery");
 
+  // Auto-redirect to login if not authenticated (after loading completes)
+  useEffect(() => {
+    if (!authLoading && !user) {
+      navigate("/admin/login", { replace: true });
+    }
+  }, [authLoading, user, navigate]);
+
   const handleSignOut = async () => {
     await signOut();
     toast.success("已退出登录");
     navigate("/admin/login");
   };
 
+  const handleSwitchAccount = async () => {
+    await signOut();
+    navigate("/admin/login");
+  };
+
+  // Loading state
   if (authLoading) {
     return (
       <div className="min-h-screen flex items-center justify-center bg-background">
         <div className="flex flex-col items-center gap-4">
           <Loader2 className="w-8 h-8 animate-spin text-primary" />
-          <p className="text-muted-foreground">加载中...</p>
+          <p className="text-muted-foreground">验证身份中...</p>
         </div>
       </div>
     );
   }
 
+  // Not logged in - show brief message while redirecting
   if (!user) {
     return (
       <div className="min-h-screen flex items-center justify-center bg-background">
-        <div className="text-center">
-          <h2 className="text-2xl font-bold text-foreground mb-4">请先登录</h2>
-          <p className="text-muted-foreground mb-6">登录后才能进入管理后台</p>
-          <Link to="/admin/login">
-            <Button>前往登录</Button>
-          </Link>
+        <div className="flex flex-col items-center gap-4">
+          <UserX className="w-12 h-12 text-muted-foreground" />
+          <p className="text-muted-foreground">正在跳转到登录页...</p>
         </div>
       </div>
     );
   }
 
+  // Logged in but not admin
   if (!isAdmin) {
     return (
       <div className="min-h-screen flex items-center justify-center bg-background">
-        <div className="text-center">
-          <h2 className="text-2xl font-bold text-foreground mb-4">访问受限</h2>
-          <p className="text-muted-foreground mb-6">当前账号（{user.email}）没有管理员权限</p>
-          <div className="flex items-center justify-center gap-3">
-            <Link to="/admin/login">
-              <Button variant="outline">切换账号</Button>
-            </Link>
-            <Button onClick={handleSignOut}>退出登录</Button>
+        <div className="text-center max-w-md mx-auto px-4">
+          <div className="w-16 h-16 bg-destructive/10 rounded-full flex items-center justify-center mx-auto mb-6">
+            <ShieldX className="w-8 h-8 text-destructive" />
           </div>
+          <h2 className="text-2xl font-bold text-foreground mb-2">访问受限</h2>
+          <p className="text-muted-foreground mb-2">
+            当前账号没有管理员权限
+          </p>
+          <p className="text-sm text-muted-foreground mb-6 bg-muted px-3 py-2 rounded-md">
+            {user.email}
+          </p>
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
+            <Button variant="outline" onClick={handleSwitchAccount} className="w-full sm:w-auto">
+              切换账号
+            </Button>
+            <Button onClick={handleSignOut} className="w-full sm:w-auto">
+              <LogOut className="w-4 h-4 mr-2" />
+              退出登录
+            </Button>
+          </div>
+          <p className="text-xs text-muted-foreground mt-6">
+            如需管理员权限，请联系系统管理员
+          </p>
         </div>
       </div>
     );
