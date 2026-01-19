@@ -35,7 +35,11 @@ const App = () => (
           {/* Redirect root to default language */}
           <Route path="/" element={<Navigate to="/en" replace />} />
           
-          {/* Language-prefixed routes */}
+          {/* Admin routes - no language prefix needed */}
+          <Route path="/admin" element={<AdminDashboard />} />
+          <Route path="/admin/login" element={<AdminLogin />} />
+          
+          {/* Language-prefixed public routes */}
           <Route path="/:lang" element={<LanguageWrapper />}>
             <Route index element={<Index />} />
             <Route path="about-us" element={<AboutUs />} />
@@ -50,13 +54,9 @@ const App = () => (
             <Route path="contact" element={<Contact />} />
             <Route path="faq" element={<FAQ />} />
             <Route path="case-studies" element={<CaseStudies />} />
-            <Route path="asset-gallery" element={<AssetGallery />} />
-            <Route path="admin-login" element={<AdminLogin />} />
-            <Route path="admin/customer-service" element={<AdminCustomerService />} />
-            <Route path="admin" element={<AdminDashboard />} />
           </Route>
           
-          {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
+          {/* Catch-all route */}
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
