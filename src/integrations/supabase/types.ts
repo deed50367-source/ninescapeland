@@ -175,9 +175,19 @@ export type Database = {
         Row: {
           assigned_to: string | null
           created_at: string
+          customer_browser: string | null
+          customer_city: string | null
+          customer_country: string | null
+          customer_device: string | null
+          customer_ip: string | null
+          customer_language: string | null
+          customer_os: string | null
+          customer_timezone: string | null
           id: string
           last_message_at: string | null
           notes: string | null
+          page_url: string | null
+          referrer: string | null
           session_id: string
           status: string
           updated_at: string
@@ -185,9 +195,19 @@ export type Database = {
         Insert: {
           assigned_to?: string | null
           created_at?: string
+          customer_browser?: string | null
+          customer_city?: string | null
+          customer_country?: string | null
+          customer_device?: string | null
+          customer_ip?: string | null
+          customer_language?: string | null
+          customer_os?: string | null
+          customer_timezone?: string | null
           id?: string
           last_message_at?: string | null
           notes?: string | null
+          page_url?: string | null
+          referrer?: string | null
           session_id: string
           status?: string
           updated_at?: string
@@ -195,9 +215,19 @@ export type Database = {
         Update: {
           assigned_to?: string | null
           created_at?: string
+          customer_browser?: string | null
+          customer_city?: string | null
+          customer_country?: string | null
+          customer_device?: string | null
+          customer_ip?: string | null
+          customer_language?: string | null
+          customer_os?: string | null
+          customer_timezone?: string | null
           id?: string
           last_message_at?: string | null
           notes?: string | null
+          page_url?: string | null
+          referrer?: string | null
           session_id?: string
           status?: string
           updated_at?: string
