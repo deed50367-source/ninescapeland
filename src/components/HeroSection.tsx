@@ -4,7 +4,7 @@ import { ArrowRight, ArrowLeft, CheckCircle } from "lucide-react";
 import { Button } from "./ui/button";
 import { useRTL } from "@/hooks/useRTL";
 import { heroImages } from "@/config/galleryImages";
-import mascotWelcome from "@/assets/mascot-welcome.png";
+
 
 export const HeroSection = () => {
   const { t } = useTranslation();
@@ -102,78 +102,6 @@ export const HeroSection = () => {
         <div className={`absolute inset-0 ${isRTL ? 'bg-gradient-to-l' : 'bg-gradient-to-r'} from-primary/95 via-primary/80 to-primary/40`} />
       </div>
 
-      {/* Mascot - Ball (丸子) in bottom right corner */}
-      <motion.div
-        initial={{ opacity: 0, x: 100, y: 50 }}
-        animate={{ opacity: 1, x: 0, y: 0 }}
-        transition={{ duration: 0.8, delay: 0.8, ease: "easeOut" }}
-        className={`absolute bottom-4 ${isRTL ? 'left-4 md:left-8 lg:left-12' : 'right-4 md:right-8 lg:right-12'} z-20 hidden md:block`}
-      >
-        {/* Glow effect behind mascot */}
-        <motion.div
-          animate={{ 
-            scale: [1, 1.15, 1],
-            opacity: [0.3, 0.5, 0.3]
-          }}
-          transition={{ 
-            duration: 3,
-            repeat: Infinity,
-            ease: "easeInOut"
-          }}
-          className="absolute inset-0 bg-accent/30 rounded-full blur-3xl -z-10"
-        />
-        
-        {/* Floating mascot */}
-        <motion.img
-          src={mascotWelcome}
-          alt="Ball - NinescapeLand Mascot"
-          className="w-32 h-32 md:w-40 md:h-40 lg:w-52 lg:h-52 xl:w-64 xl:h-64 object-contain drop-shadow-2xl"
-          animate={{ 
-            y: [0, -12, 0],
-            rotate: [0, 3, -3, 0]
-          }}
-          transition={{ 
-            duration: 4,
-            repeat: Infinity,
-            ease: "easeInOut"
-          }}
-        />
-
-        {/* Speech bubble */}
-        <motion.div
-          initial={{ opacity: 0, scale: 0.8 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ delay: 1.2, duration: 0.5 }}
-          className={`absolute -top-2 ${isRTL ? '-right-2 md:-right-4' : '-left-2 md:-left-4'} bg-white dark:bg-card px-3 py-2 md:px-4 md:py-2.5 rounded-2xl shadow-lg`}
-        >
-          <motion.span
-            animate={{ scale: [1, 1.05, 1] }}
-            transition={{ duration: 2, repeat: Infinity }}
-            className="text-sm md:text-base font-medium text-foreground whitespace-nowrap"
-          >
-            {t("hero.mascotGreeting", "欢迎光临！👋")}
-          </motion.span>
-          {/* Speech bubble tail */}
-          <div className={`absolute -bottom-2 ${isRTL ? 'right-4' : 'left-4'} w-0 h-0 border-l-8 border-r-8 border-t-8 border-transparent border-t-white dark:border-t-card`} />
-        </motion.div>
-
-        {/* Sparkle effects around mascot */}
-        <motion.div
-          animate={{ scale: [0, 1, 0], opacity: [0, 1, 0] }}
-          transition={{ duration: 2, repeat: Infinity, delay: 0 }}
-          className="absolute top-2 right-2 w-3 h-3 bg-accent rounded-full"
-        />
-        <motion.div
-          animate={{ scale: [0, 1, 0], opacity: [0, 1, 0] }}
-          transition={{ duration: 2, repeat: Infinity, delay: 0.7 }}
-          className="absolute bottom-12 left-0 w-2 h-2 bg-primary-foreground rounded-full"
-        />
-        <motion.div
-          animate={{ scale: [0, 1, 0], opacity: [0, 1, 0] }}
-          transition={{ duration: 2, repeat: Infinity, delay: 1.4 }}
-          className="absolute top-1/3 -right-2 w-2 h-2 bg-accent rounded-full"
-        />
-      </motion.div>
 
       {/* Content */}
       <div className="container-wide relative z-10 py-12 sm:py-16 md:py-24 lg:py-32">
