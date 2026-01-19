@@ -3,13 +3,21 @@ import { useNavigate } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { 
   MessageCircle, Send, ArrowLeft, Clock, User, Bot, 
-  Loader2, RefreshCw, Search, CheckCircle, XCircle
+  Loader2, RefreshCw, Search, CheckCircle, XCircle,
+  Circle, CheckCheck, AlertCircle
 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { Badge } from '@/components/ui/badge';
 import { ScrollArea } from '@/components/ui/scroll-area';
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select";
 import { supabase } from '@/integrations/supabase/client';
 import { useAdminAuth } from '@/hooks/useAdminAuth';
 import { toast } from 'sonner';
@@ -20,6 +28,8 @@ interface ChatSession {
   last_message_time: string;
   message_count: number;
   has_unread: boolean;
+  status: 'new' | 'in_progress' | 'resolved' | 'closed';
+  notes?: string;
 }
 
 interface ChatMessage {
@@ -32,6 +42,19 @@ interface ChatMessage {
   created_at: string;
 }
 
+interface SessionStatus {
+  session_id: string;
+  status: string;
+  notes: string | null;
+}
+
+const STATUS_CONFIG = {
+  new: { label: '新消息', color: 'bg-red-500', icon: Circle },
+  in_progress: { label: '处理中', color: 'bg-yellow-500', icon: AlertCircle },
+  resolved: { label: '已解决', color: 'bg-green-500', icon: CheckCircle },
+  closed: { label: '已关闭', color: 'bg-gray-500', icon: CheckCheck },
+};
+
 const AdminCustomerService = () => {
   const navigate = useNavigate();
   const { isAdmin, isLoading: authLoading } = useAdminAuth();
@@ -42,6 +65,10 @@ const AdminCustomerService = () => {
   const [isLoading, setIsLoading] = useState(true);
   const [isSending, setIsSending] = useState(false);
   const [searchQuery, setSearchQuery] = useState('');
+  const [statusFilter, setStatusFilter] = useState<string>('all');
+  const [sessionStatuses, setSessionStatuses] = useState<Map<string, SessionStatus>>(new Map());
+  const [sessionNotes, setSessionNotes] = useState('');
+  const [isUpdatingStatus, setIsUpdatingStatus] = useState(false);
   const messagesEndRef = useRef<HTMLDivElement>(null);
 
   const scrollToBottom = useCallback(() => {
@@ -59,6 +86,25 @@ const AdminCustomerService = () => {
     }
   }, [authLoading, isAdmin, navigate]);
 
+  // Fetch session statuses from chat_sessions table
+  const fetchSessionStatuses = useCallback(async () => {
+    try {
+      const { data, error } = await supabase
+        .from('chat_sessions')
+        .select('session_id, status, notes');
+
+      if (error) throw error;
+
+      const statusMap = new Map<string, SessionStatus>();
+      data?.forEach((item) => {
+        statusMap.set(item.session_id, item as SessionStatus);
+      });
+      setSessionStatuses(statusMap);
+    } catch (error) {
+      console.error('Error fetching session statuses:', error);
+    }
+  }, []);
+
   // Fetch chat sessions
   const fetchSessions = useCallback(async () => {
     try {
@@ -69,17 +115,23 @@ const AdminCustomerService = () => {
 
       if (error) throw error;
 
+      // Also fetch statuses
+      await fetchSessionStatuses();
+
       // Group by session and get latest message
       const sessionMap = new Map<string, ChatSession>();
       
       data?.forEach((msg) => {
         if (!sessionMap.has(msg.session_id)) {
+          const statusInfo = sessionStatuses.get(msg.session_id);
           sessionMap.set(msg.session_id, {
             session_id: msg.session_id,
             last_message: msg.content,
             last_message_time: msg.created_at,
             message_count: 1,
-            has_unread: !msg.is_staff_reply
+            has_unread: !msg.is_staff_reply,
+            status: (statusInfo?.status as ChatSession['status']) || 'new',
+            notes: statusInfo?.notes || undefined
           });
         } else {
           const session = sessionMap.get(msg.session_id)!;
@@ -90,6 +142,15 @@ const AdminCustomerService = () => {
         }
       });
 
+      // Apply status from sessionStatuses
+      sessionMap.forEach((session, sessionId) => {
+        const statusInfo = sessionStatuses.get(sessionId);
+        if (statusInfo) {
+          session.status = statusInfo.status as ChatSession['status'];
+          session.notes = statusInfo.notes || undefined;
+        }
+      });
+
       setSessions(Array.from(sessionMap.values()));
     } catch (error) {
       console.error('Error fetching sessions:', error);
@@ -97,13 +158,13 @@ const AdminCustomerService = () => {
     } finally {
       setIsLoading(false);
     }
-  }, []);
+  }, [fetchSessionStatuses, sessionStatuses]);
 
   useEffect(() => {
     if (isAdmin) {
-      fetchSessions();
+      fetchSessionStatuses().then(() => fetchSessions());
     }
-  }, [isAdmin, fetchSessions]);
+  }, [isAdmin]);
 
   // Subscribe to realtime updates
   useEffect(() => {
@@ -130,12 +191,23 @@ const AdminCustomerService = () => {
           }
         }
       )
+      .on(
+        'postgres_changes',
+        {
+          event: '*',
+          schema: 'public',
+          table: 'chat_sessions'
+        },
+        () => {
+          fetchSessionStatuses();
+        }
+      )
       .subscribe();
 
     return () => {
       supabase.removeChannel(channel);
     };
-  }, [isAdmin, selectedSession, fetchSessions]);
+  }, [isAdmin, selectedSession, fetchSessions, fetchSessionStatuses]);
 
   // Fetch messages for selected session
   const fetchMessages = useCallback(async (sessionId: string) => {
@@ -148,17 +220,129 @@ const AdminCustomerService = () => {
 
       if (error) throw error;
       setMessages((data || []) as ChatMessage[]);
+      
+      // Load session notes
+      const statusInfo = sessionStatuses.get(sessionId);
+      setSessionNotes(statusInfo?.notes || '');
     } catch (error) {
       console.error('Error fetching messages:', error);
       toast.error('Failed to load messages');
     }
-  }, []);
+  }, [sessionStatuses]);
 
   useEffect(() => {
     if (selectedSession) {
       fetchMessages(selectedSession);
     }
   }, [selectedSession, fetchMessages]);
+
+  // Update session status
+  const updateSessionStatus = async (sessionId: string, newStatus: string) => {
+    setIsUpdatingStatus(true);
+    try {
+      // Check if session exists in chat_sessions table
+      const existingStatus = sessionStatuses.get(sessionId);
+      
+      if (existingStatus) {
+        // Update existing
+        const { error } = await supabase
+          .from('chat_sessions')
+          .update({ 
+            status: newStatus, 
+            updated_at: new Date().toISOString() 
+          })
+          .eq('session_id', sessionId);
+
+        if (error) throw error;
+      } else {
+        // Insert new
+        const { error } = await supabase
+          .from('chat_sessions')
+          .insert({ 
+            session_id: sessionId, 
+            status: newStatus 
+          });
+
+        if (error) throw error;
+      }
+
+      // Update local state
+      setSessionStatuses(prev => {
+        const newMap = new Map(prev);
+        newMap.set(sessionId, { 
+          session_id: sessionId, 
+          status: newStatus, 
+          notes: existingStatus?.notes || null 
+        });
+        return newMap;
+      });
+
+      // Update sessions list
+      setSessions(prev => prev.map(s => 
+        s.session_id === sessionId 
+          ? { ...s, status: newStatus as ChatSession['status'] }
+          : s
+      ));
+
+      toast.success('状态已更新');
+    } catch (error) {
+      console.error('Error updating status:', error);
+      toast.error('更新状态失败');
+    } finally {
+      setIsUpdatingStatus(false);
+    }
+  };
+
+  // Save session notes
+  const saveSessionNotes = async () => {
+    if (!selectedSession) return;
+    
+    setIsUpdatingStatus(true);
+    try {
+      const existingStatus = sessionStatuses.get(selectedSession);
+      
+      if (existingStatus) {
+        const { error } = await supabase
+          .from('chat_sessions')
+          .update({ 
+            notes: sessionNotes, 
+            updated_at: new Date().toISOString() 
+          })
+          .eq('session_id', selectedSession);
+
+        if (error) throw error;
+      } else {
+        const { error } = await supabase
+          .from('chat_sessions')
+          .insert({ 
+            session_id: selectedSession, 
+            status: 'new',
+            notes: sessionNotes 
+          });
+
+        if (error) throw error;
+      }
+
+      // Update local state
+      setSessionStatuses(prev => {
+        const newMap = new Map(prev);
+        const existing = prev.get(selectedSession);
+        newMap.set(selectedSession, { 
+          session_id: selectedSession, 
+          status: existing?.status || 'new', 
+          notes: sessionNotes 
+        });
+        return newMap;
+      });
+
+      toast.success('备注已保存');
+    } catch (error) {
+      console.error('Error saving notes:', error);
+      toast.error('保存备注失败');
+    } finally {
+      setIsUpdatingStatus(false);
+    }
+  };
 
   // Send reply
   const sendReply = async () => {
@@ -178,6 +362,12 @@ const AdminCustomerService = () => {
       });
 
       if (error) throw error;
+
+      // Auto update status to in_progress if it's new
+      const currentStatus = sessionStatuses.get(selectedSession);
+      if (!currentStatus || currentStatus.status === 'new') {
+        await updateSessionStatus(selectedSession, 'in_progress');
+      }
 
       setReplyText('');
       toast.success('Reply sent');
@@ -211,10 +401,43 @@ const AdminCustomerService = () => {
     }
   };
 
-  const filteredSessions = sessions.filter(session => 
-    session.session_id.toLowerCase().includes(searchQuery.toLowerCase()) ||
-    session.last_message.toLowerCase().includes(searchQuery.toLowerCase())
-  );
+  const getSessionStatus = (sessionId: string): ChatSession['status'] => {
+    const statusInfo = sessionStatuses.get(sessionId);
+    return (statusInfo?.status as ChatSession['status']) || 'new';
+  };
+
+  const filteredSessions = sessions.filter(session => {
+    const matchesSearch = session.session_id.toLowerCase().includes(searchQuery.toLowerCase()) ||
+      session.last_message.toLowerCase().includes(searchQuery.toLowerCase());
+    
+    const sessionStatus = getSessionStatus(session.session_id);
+    const matchesStatus = statusFilter === 'all' || sessionStatus === statusFilter;
+    
+    return matchesSearch && matchesStatus;
+  });
+
+  // Sort sessions: new first, then by last message time
+  const sortedSessions = [...filteredSessions].sort((a, b) => {
+    const statusA = getSessionStatus(a.session_id);
+    const statusB = getSessionStatus(b.session_id);
+    
+    // Priority: new > in_progress > resolved > closed
+    const statusPriority = { new: 0, in_progress: 1, resolved: 2, closed: 3 };
+    const priorityDiff = statusPriority[statusA] - statusPriority[statusB];
+    
+    if (priorityDiff !== 0) return priorityDiff;
+    
+    // Same status, sort by time
+    return new Date(b.last_message_time).getTime() - new Date(a.last_message_time).getTime();
+  });
+
+  const statusCounts = {
+    all: sessions.length,
+    new: sessions.filter(s => getSessionStatus(s.session_id) === 'new').length,
+    in_progress: sessions.filter(s => getSessionStatus(s.session_id) === 'in_progress').length,
+    resolved: sessions.filter(s => getSessionStatus(s.session_id) === 'resolved').length,
+    closed: sessions.filter(s => getSessionStatus(s.session_id) === 'closed').length,
+  };
 
   if (authLoading) {
     return (
@@ -240,11 +463,11 @@ const AdminCustomerService = () => {
             <div>
               <h1 className="text-xl font-bold">Customer Service</h1>
               <p className="text-sm text-muted-foreground">
-                {sessions.length} active conversations
+                {statusCounts.new} 新消息 · {statusCounts.in_progress} 处理中
               </p>
             </div>
           </div>
-          <Button variant="outline" size="sm" onClick={fetchSessions}>
+          <Button variant="outline" size="sm" onClick={() => { fetchSessionStatuses(); fetchSessions(); }}>
             <RefreshCw className="w-4 h-4 mr-2" />
             Refresh
           </Button>
@@ -255,7 +478,7 @@ const AdminCustomerService = () => {
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 h-[calc(100vh-180px)]">
           {/* Sessions List */}
           <div className="lg:col-span-1 border rounded-lg bg-card overflow-hidden flex flex-col">
-            <div className="p-4 border-b">
+            <div className="p-4 border-b space-y-3">
               <div className="relative">
                 <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-muted-foreground" />
                 <Input
@@ -265,6 +488,24 @@ const AdminCustomerService = () => {
                   className="pl-9"
                 />
               </div>
+              
+              {/* Status Filter */}
+              <div className="flex flex-wrap gap-1">
+                {Object.entries({ all: '全部', ...Object.fromEntries(Object.entries(STATUS_CONFIG).map(([k, v]) => [k, v.label])) }).map(([key, label]) => (
+                  <Button
+                    key={key}
+                    variant={statusFilter === key ? 'default' : 'outline'}
+                    size="sm"
+                    className="text-xs h-7 px-2"
+                    onClick={() => setStatusFilter(key)}
+                  >
+                    {label}
+                    <Badge variant="secondary" className="ml-1 h-4 px-1 text-[10px]">
+                      {statusCounts[key as keyof typeof statusCounts]}
+                    </Badge>
+                  </Button>
+                ))}
+              </div>
             </div>
             
             <ScrollArea className="flex-1">
@@ -272,48 +513,65 @@ const AdminCustomerService = () => {
                 <div className="flex items-center justify-center py-8">
                   <Loader2 className="w-6 h-6 animate-spin text-muted-foreground" />
                 </div>
-              ) : filteredSessions.length === 0 ? (
+              ) : sortedSessions.length === 0 ? (
                 <div className="text-center py-8 text-muted-foreground">
                   <MessageCircle className="w-12 h-12 mx-auto mb-3 opacity-50" />
                   <p>No conversations yet</p>
                 </div>
               ) : (
                 <div className="divide-y">
-                  {filteredSessions.map((session) => (
-                    <button
-                      key={session.session_id}
-                      onClick={() => setSelectedSession(session.session_id)}
-                      className={`w-full p-4 text-left hover:bg-muted/50 transition-colors ${
-                        selectedSession === session.session_id ? 'bg-muted' : ''
-                      }`}
-                    >
-                      <div className="flex items-start justify-between gap-2">
-                        <div className="flex-1 min-w-0">
-                          <div className="flex items-center gap-2">
-                            <span className="font-medium text-sm truncate">
-                              {session.session_id.slice(0, 20)}...
-                            </span>
-                            {session.has_unread && (
-                              <Badge variant="destructive" className="h-5 text-xs">
-                                New
-                              </Badge>
-                            )}
+                  {sortedSessions.map((session) => {
+                    const status = getSessionStatus(session.session_id);
+                    const StatusIcon = STATUS_CONFIG[status]?.icon || Circle;
+                    
+                    return (
+                      <button
+                        key={session.session_id}
+                        onClick={() => setSelectedSession(session.session_id)}
+                        className={`w-full p-4 text-left hover:bg-muted/50 transition-colors ${
+                          selectedSession === session.session_id ? 'bg-muted' : ''
+                        }`}
+                      >
+                        <div className="flex items-start justify-between gap-2">
+                          <div className="flex-1 min-w-0">
+                            <div className="flex items-center gap-2">
+                              <StatusIcon className={`w-3 h-3 ${
+                                status === 'new' ? 'text-red-500' :
+                                status === 'in_progress' ? 'text-yellow-500' :
+                                status === 'resolved' ? 'text-green-500' :
+                                'text-gray-500'
+                              }`} />
+                              <span className="font-medium text-sm truncate">
+                                {session.session_id.slice(0, 16)}...
+                              </span>
+                              {status === 'new' && (
+                                <Badge variant="destructive" className="h-5 text-xs">
+                                  New
+                                </Badge>
+                              )}
+                            </div>
+                            <p className="text-sm text-muted-foreground truncate mt-1">
+                              {session.last_message}
+                            </p>
                           </div>
-                          <p className="text-sm text-muted-foreground truncate mt-1">
-                            {session.last_message}
-                          </p>
+                          <div className="text-xs text-muted-foreground whitespace-nowrap">
+                            {formatTime(session.last_message_time)}
+                          </div>
                         </div>
-                        <div className="text-xs text-muted-foreground whitespace-nowrap">
-                          {formatTime(session.last_message_time)}
+                        <div className="flex items-center gap-2 mt-2">
+                          <Badge 
+                            variant="outline" 
+                            className={`text-xs ${STATUS_CONFIG[status]?.color} text-white border-0`}
+                          >
+                            {STATUS_CONFIG[status]?.label}
+                          </Badge>
+                          <Badge variant="outline" className="text-xs">
+                            {session.message_count} 消息
+                          </Badge>
                         </div>
-                      </div>
-                      <div className="flex items-center gap-2 mt-2">
-                        <Badge variant="outline" className="text-xs">
-                          {session.message_count} messages
-                        </Badge>
-                      </div>
-                    </button>
-                  ))}
+                      </button>
+                    );
+                  })}
                 </div>
               )}
             </ScrollArea>
@@ -323,7 +581,7 @@ const AdminCustomerService = () => {
           <div className="lg:col-span-2 border rounded-lg bg-card overflow-hidden flex flex-col">
             {selectedSession ? (
               <>
-                {/* Chat Header */}
+                {/* Chat Header with Status Control */}
                 <div className="p-4 border-b bg-muted/30">
                   <div className="flex items-center justify-between">
                     <div className="flex items-center gap-3">
@@ -332,20 +590,67 @@ const AdminCustomerService = () => {
                       </div>
                       <div>
                         <h3 className="font-medium text-sm">
-                          Session: {selectedSession.slice(0, 30)}...
+                          Session: {selectedSession.slice(0, 24)}...
                         </h3>
                         <p className="text-xs text-muted-foreground">
-                          {messages.length} messages in this conversation
+                          {messages.length} 条消息
                         </p>
                       </div>
                     </div>
+                    <div className="flex items-center gap-2">
+                      {/* Status Selector */}
+                      <Select
+                        value={getSessionStatus(selectedSession)}
+                        onValueChange={(value) => updateSessionStatus(selectedSession, value)}
+                        disabled={isUpdatingStatus}
+                      >
+                        <SelectTrigger className="w-[130px] h-9">
+                          <SelectValue />
+                        </SelectTrigger>
+                        <SelectContent>
+                          {Object.entries(STATUS_CONFIG).map(([key, config]) => (
+                            <SelectItem key={key} value={key}>
+                              <div className="flex items-center gap-2">
+                                <config.icon className={`w-3 h-3 ${
+                                  key === 'new' ? 'text-red-500' :
+                                  key === 'in_progress' ? 'text-yellow-500' :
+                                  key === 'resolved' ? 'text-green-500' :
+                                  'text-gray-500'
+                                }`} />
+                                {config.label}
+                              </div>
+                            </SelectItem>
+                          ))}
+                        </SelectContent>
+                      </Select>
+                      
+                      <Button 
+                        variant="ghost" 
+                        size="sm"
+                        onClick={() => setSelectedSession(null)}
+                        className="lg:hidden"
+                      >
+                        <XCircle className="w-4 h-4" />
+                      </Button>
+                    </div>
+                  </div>
+                  
+                  {/* Session Notes */}
+                  <div className="mt-3 flex gap-2">
+                    <Input
+                      placeholder="添加备注..."
+                      value={sessionNotes}
+                      onChange={(e) => setSessionNotes(e.target.value)}
+                      className="flex-1 h-8 text-sm"
+                    />
                     <Button 
-                      variant="ghost" 
-                      size="sm"
-                      onClick={() => setSelectedSession(null)}
-                      className="lg:hidden"
+                      size="sm" 
+                      variant="outline"
+                      onClick={saveSessionNotes}
+                      disabled={isUpdatingStatus}
+                      className="h-8"
                     >
-                      <XCircle className="w-4 h-4" />
+                      保存备注
                     </Button>
                   </div>
                 </div>
@@ -419,8 +724,8 @@ const AdminCustomerService = () => {
               <div className="flex-1 flex items-center justify-center text-muted-foreground">
                 <div className="text-center">
                   <MessageCircle className="w-16 h-16 mx-auto mb-4 opacity-30" />
-                  <p className="text-lg font-medium">Select a conversation</p>
-                  <p className="text-sm">Choose a chat session to view messages</p>
+                  <p className="text-lg font-medium">选择一个会话</p>
+                  <p className="text-sm">点击左侧会话查看消息</p>
                 </div>
               </div>
             )}
