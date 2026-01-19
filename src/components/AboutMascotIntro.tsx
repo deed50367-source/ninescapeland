@@ -15,7 +15,7 @@ export const AboutMascotIntro = () => {
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
             viewport={{ once: true }}
-            className="flex-shrink-0 relative"
+            className="flex-shrink-0 relative bg-gradient-to-br from-white to-pink-50 dark:from-pink-100 dark:to-pink-50 rounded-3xl p-8 shadow-lg"
           >
             {/* Decorative circles behind mascot */}
             <motion.div
