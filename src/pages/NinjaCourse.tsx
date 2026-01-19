@@ -2,6 +2,7 @@ import { Header } from "@/components/Header";
 import { PageHero } from "@/components/PageHero";
 import { Footer } from "@/components/Footer";
 import { FloatingCTA } from "@/components/FloatingCTA";
+import { FloatingMascot } from "@/components/FloatingMascot";
 import { NinjaFeaturesSection } from "@/components/NinjaFeaturesSection";
 import { QuoteCalculator } from "@/components/QuoteCalculator";
 import { ProductFAQ } from "@/components/ProductFAQ";
@@ -756,6 +757,7 @@ const NinjaCourse = () => {
       </main>
       <Footer />
       <FloatingCTA />
+      <FloatingMascot type="ninja" />
     </div>
   );
 };
