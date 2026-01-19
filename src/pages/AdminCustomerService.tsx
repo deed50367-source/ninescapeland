@@ -4,7 +4,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { 
   MessageCircle, Send, ArrowLeft, Clock, User, Bot, 
   Loader2, RefreshCw, Search, CheckCircle, XCircle,
-  Circle, CheckCheck, AlertCircle
+  Circle, CheckCheck, AlertCircle, Zap, Plus, Trash2, Edit2, Save, X
 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
@@ -18,9 +18,29 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
+import {
+  Dialog,
+  DialogContent,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from "@/components/ui/dialog";
+import {
+  Popover,
+  PopoverContent,
+  PopoverTrigger,
+} from "@/components/ui/popover";
 import { supabase } from '@/integrations/supabase/client';
 import { useAdminAuth } from '@/hooks/useAdminAuth';
 import { toast } from 'sonner';
+
+interface QuickReplyTemplate {
+  id: string;
+  title: string;
+  content: string;
+  category: string | null;
+  sort_order: number;
+}
 
 interface ChatSession {
   session_id: string;
@@ -70,6 +90,13 @@ const AdminCustomerService = () => {
   const [sessionNotes, setSessionNotes] = useState('');
   const [isUpdatingStatus, setIsUpdatingStatus] = useState(false);
   const messagesEndRef = useRef<HTMLDivElement>(null);
+  
+  // Quick reply templates state
+  const [templates, setTemplates] = useState<QuickReplyTemplate[]>([]);
+  const [showTemplateManager, setShowTemplateManager] = useState(false);
+  const [editingTemplate, setEditingTemplate] = useState<QuickReplyTemplate | null>(null);
+  const [newTemplate, setNewTemplate] = useState({ title: '', content: '', category: '' });
+  const [isLoadingTemplates, setIsLoadingTemplates] = useState(false);
 
   const scrollToBottom = useCallback(() => {
     messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
@@ -160,9 +187,102 @@ const AdminCustomerService = () => {
     }
   }, [fetchSessionStatuses, sessionStatuses]);
 
+  // Fetch quick reply templates
+  const fetchTemplates = useCallback(async () => {
+    setIsLoadingTemplates(true);
+    try {
+      const { data, error } = await supabase
+        .from('quick_reply_templates')
+        .select('*')
+        .order('sort_order', { ascending: true });
+
+      if (error) throw error;
+      setTemplates((data || []) as QuickReplyTemplate[]);
+    } catch (error) {
+      console.error('Error fetching templates:', error);
+    } finally {
+      setIsLoadingTemplates(false);
+    }
+  }, []);
+
+  // Add new template
+  const addTemplate = async () => {
+    if (!newTemplate.title.trim() || !newTemplate.content.trim()) {
+      toast.error('请填写模板标题和内容');
+      return;
+    }
+
+    try {
+      const { error } = await supabase
+        .from('quick_reply_templates')
+        .insert({
+          title: newTemplate.title.trim(),
+          content: newTemplate.content.trim(),
+          category: newTemplate.category.trim() || null,
+          sort_order: templates.length
+        });
+
+      if (error) throw error;
+      
+      setNewTemplate({ title: '', content: '', category: '' });
+      fetchTemplates();
+      toast.success('模板已添加');
+    } catch (error) {
+      console.error('Error adding template:', error);
+      toast.error('添加模板失败');
+    }
+  };
+
+  // Update template
+  const updateTemplate = async (template: QuickReplyTemplate) => {
+    try {
+      const { error } = await supabase
+        .from('quick_reply_templates')
+        .update({
+          title: template.title,
+          content: template.content,
+          category: template.category
+        })
+        .eq('id', template.id);
+
+      if (error) throw error;
+      
+      setEditingTemplate(null);
+      fetchTemplates();
+      toast.success('模板已更新');
+    } catch (error) {
+      console.error('Error updating template:', error);
+      toast.error('更新模板失败');
+    }
+  };
+
+  // Delete template
+  const deleteTemplate = async (id: string) => {
+    try {
+      const { error } = await supabase
+        .from('quick_reply_templates')
+        .delete()
+        .eq('id', id);
+
+      if (error) throw error;
+      
+      fetchTemplates();
+      toast.success('模板已删除');
+    } catch (error) {
+      console.error('Error deleting template:', error);
+      toast.error('删除模板失败');
+    }
+  };
+
+  // Use template
+  const useTemplate = (content: string) => {
+    setReplyText(content);
+  };
+
   useEffect(() => {
     if (isAdmin) {
       fetchSessionStatuses().then(() => fetchSessions());
+      fetchTemplates();
     }
   }, [isAdmin]);
 
@@ -694,8 +814,94 @@ const AdminCustomerService = () => {
                   </div>
                 </ScrollArea>
 
-                {/* Reply Input */}
-                <div className="p-4 border-t bg-background">
+                {/* Reply Input with Quick Templates */}
+                <div className="p-4 border-t bg-background space-y-3">
+                  {/* Quick Reply Templates */}
+                  <div className="flex items-center gap-2">
+                    <Popover>
+                      <PopoverTrigger asChild>
+                        <Button variant="outline" size="sm" className="h-8 gap-1">
+                          <Zap className="w-3 h-3" />
+                          快捷回复
+                        </Button>
+                      </PopoverTrigger>
+                      <PopoverContent className="w-80 p-0" align="start">
+                        <div className="p-3 border-b">
+                          <div className="flex items-center justify-between">
+                            <h4 className="font-medium text-sm">快捷回复模板</h4>
+                            <Button 
+                              variant="ghost" 
+                              size="sm" 
+                              className="h-7 text-xs"
+                              onClick={() => setShowTemplateManager(true)}
+                            >
+                              <Edit2 className="w-3 h-3 mr-1" />
+                              管理
+                            </Button>
+                          </div>
+                        </div>
+                        <ScrollArea className="h-[250px]">
+                          {isLoadingTemplates ? (
+                            <div className="flex items-center justify-center py-8">
+                              <Loader2 className="w-5 h-5 animate-spin text-muted-foreground" />
+                            </div>
+                          ) : templates.length === 0 ? (
+                            <div className="text-center py-8 text-muted-foreground text-sm">
+                              暂无模板
+                            </div>
+                          ) : (
+                            <div className="divide-y">
+                              {/* Group by category */}
+                              {Object.entries(
+                                templates.reduce((acc, t) => {
+                                  const cat = t.category || '未分类';
+                                  if (!acc[cat]) acc[cat] = [];
+                                  acc[cat].push(t);
+                                  return acc;
+                                }, {} as Record<string, QuickReplyTemplate[]>)
+                              ).map(([category, categoryTemplates]) => (
+                                <div key={category}>
+                                  <div className="px-3 py-1.5 bg-muted/50 text-xs font-medium text-muted-foreground">
+                                    {category}
+                                  </div>
+                                  {categoryTemplates.map((template) => (
+                                    <button
+                                      key={template.id}
+                                      onClick={() => useTemplate(template.content)}
+                                      className="w-full p-3 text-left hover:bg-muted/50 transition-colors"
+                                    >
+                                      <div className="font-medium text-sm">{template.title}</div>
+                                      <div className="text-xs text-muted-foreground line-clamp-2 mt-0.5">
+                                        {template.content}
+                                      </div>
+                                    </button>
+                                  ))}
+                                </div>
+                              ))}
+                            </div>
+                          )}
+                        </ScrollArea>
+                      </PopoverContent>
+                    </Popover>
+                    
+                    {/* Quick template chips */}
+                    <div className="flex-1 overflow-x-auto">
+                      <div className="flex gap-1">
+                        {templates.slice(0, 4).map((template) => (
+                          <Button
+                            key={template.id}
+                            variant="ghost"
+                            size="sm"
+                            className="h-7 text-xs whitespace-nowrap shrink-0"
+                            onClick={() => useTemplate(template.content)}
+                          >
+                            {template.title}
+                          </Button>
+                        ))}
+                      </div>
+                    </div>
+                  </div>
+                  
                   <div className="flex gap-2">
                     <Textarea
                       value={replyText}
@@ -719,6 +925,127 @@ const AdminCustomerService = () => {
                     </Button>
                   </div>
                 </div>
+                
+                {/* Template Manager Dialog */}
+                <Dialog open={showTemplateManager} onOpenChange={setShowTemplateManager}>
+                  <DialogContent className="max-w-2xl max-h-[80vh] overflow-hidden flex flex-col">
+                    <DialogHeader>
+                      <DialogTitle>管理快捷回复模板</DialogTitle>
+                    </DialogHeader>
+                    
+                    <div className="space-y-4 overflow-hidden flex flex-col flex-1">
+                      {/* Add new template form */}
+                      <div className="p-4 border rounded-lg bg-muted/30 space-y-3">
+                        <h4 className="font-medium text-sm flex items-center gap-2">
+                          <Plus className="w-4 h-4" />
+                          添加新模板
+                        </h4>
+                        <div className="grid grid-cols-2 gap-3">
+                          <Input
+                            placeholder="模板标题"
+                            value={newTemplate.title}
+                            onChange={(e) => setNewTemplate(prev => ({ ...prev, title: e.target.value }))}
+                          />
+                          <Input
+                            placeholder="分类 (可选)"
+                            value={newTemplate.category}
+                            onChange={(e) => setNewTemplate(prev => ({ ...prev, category: e.target.value }))}
+                          />
+                        </div>
+                        <Textarea
+                          placeholder="模板内容"
+                          value={newTemplate.content}
+                          onChange={(e) => setNewTemplate(prev => ({ ...prev, content: e.target.value }))}
+                          rows={2}
+                        />
+                        <Button size="sm" onClick={addTemplate}>
+                          <Plus className="w-4 h-4 mr-1" />
+                          添加模板
+                        </Button>
+                      </div>
+                      
+                      {/* Template list */}
+                      <ScrollArea className="flex-1 border rounded-lg">
+                        <div className="divide-y">
+                          {templates.map((template) => (
+                            <div key={template.id} className="p-3">
+                              {editingTemplate?.id === template.id ? (
+                                <div className="space-y-2">
+                                  <div className="grid grid-cols-2 gap-2">
+                                    <Input
+                                      value={editingTemplate.title}
+                                      onChange={(e) => setEditingTemplate(prev => prev ? { ...prev, title: e.target.value } : null)}
+                                      placeholder="标题"
+                                    />
+                                    <Input
+                                      value={editingTemplate.category || ''}
+                                      onChange={(e) => setEditingTemplate(prev => prev ? { ...prev, category: e.target.value } : null)}
+                                      placeholder="分类"
+                                    />
+                                  </div>
+                                  <Textarea
+                                    value={editingTemplate.content}
+                                    onChange={(e) => setEditingTemplate(prev => prev ? { ...prev, content: e.target.value } : null)}
+                                    rows={2}
+                                  />
+                                  <div className="flex gap-2">
+                                    <Button size="sm" onClick={() => updateTemplate(editingTemplate)}>
+                                      <Save className="w-3 h-3 mr-1" />
+                                      保存
+                                    </Button>
+                                    <Button size="sm" variant="ghost" onClick={() => setEditingTemplate(null)}>
+                                      <X className="w-3 h-3 mr-1" />
+                                      取消
+                                    </Button>
+                                  </div>
+                                </div>
+                              ) : (
+                                <div className="flex items-start justify-between gap-3">
+                                  <div className="flex-1 min-w-0">
+                                    <div className="flex items-center gap-2">
+                                      <span className="font-medium text-sm">{template.title}</span>
+                                      {template.category && (
+                                        <Badge variant="outline" className="text-xs">
+                                          {template.category}
+                                        </Badge>
+                                      )}
+                                    </div>
+                                    <p className="text-sm text-muted-foreground mt-1 line-clamp-2">
+                                      {template.content}
+                                    </p>
+                                  </div>
+                                  <div className="flex gap-1">
+                                    <Button 
+                                      variant="ghost" 
+                                      size="icon" 
+                                      className="h-8 w-8"
+                                      onClick={() => setEditingTemplate(template)}
+                                    >
+                                      <Edit2 className="w-3 h-3" />
+                                    </Button>
+                                    <Button 
+                                      variant="ghost" 
+                                      size="icon" 
+                                      className="h-8 w-8 text-destructive hover:text-destructive"
+                                      onClick={() => deleteTemplate(template.id)}
+                                    >
+                                      <Trash2 className="w-3 h-3" />
+                                    </Button>
+                                  </div>
+                                </div>
+                              )}
+                            </div>
+                          ))}
+                          {templates.length === 0 && (
+                            <div className="text-center py-8 text-muted-foreground">
+                              暂无模板，请添加新模板
+                            </div>
+                          )}
+                        </div>
+                      </ScrollArea>
+                    </div>
+                  </DialogContent>
+                </Dialog>
               </>
             ) : (
               <div className="flex-1 flex items-center justify-center text-muted-foreground">
