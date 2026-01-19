@@ -43,15 +43,32 @@ const AdminDashboard = () => {
     );
   }
 
+  if (!user) {
+    return (
+      <div className="min-h-screen flex items-center justify-center bg-background">
+        <div className="text-center">
+          <h2 className="text-2xl font-bold text-foreground mb-4">请先登录</h2>
+          <p className="text-muted-foreground mb-6">登录后才能进入管理后台</p>
+          <Link to="/admin/login">
+            <Button>前往登录</Button>
+          </Link>
+        </div>
+      </div>
+    );
+  }
+
   if (!isAdmin) {
     return (
       <div className="min-h-screen flex items-center justify-center bg-background">
         <div className="text-center">
           <h2 className="text-2xl font-bold text-foreground mb-4">访问受限</h2>
-          <p className="text-muted-foreground mb-6">您需要管理员权限才能访问此页面</p>
-          <Link to="/admin/login">
-            <Button>前往登录</Button>
-          </Link>
+          <p className="text-muted-foreground mb-6">当前账号（{user.email}）没有管理员权限</p>
+          <div className="flex items-center justify-center gap-3">
+            <Link to="/admin/login">
+              <Button variant="outline">切换账号</Button>
+            </Link>
+            <Button onClick={handleSignOut}>退出登录</Button>
+          </div>
         </div>
       </div>
     );

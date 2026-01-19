@@ -19,81 +19,66 @@ export const useAdminAuth = () => {
   const adminCacheRef = useRef<{ userId: string; isAdmin: boolean } | null>(null);
   const mountedRef = useRef(true);
 
+
+  const checkAdminRole = async (userId: string): Promise<boolean> => {
+    // Return cached value if same user
+    if (adminCacheRef.current?.userId === userId) {
+      return adminCacheRef.current.isAdmin;
+    }
+
+    const { data: roleData, error } = await supabase
+      .from("user_roles")
+      .select("role")
+      .eq("user_id", userId)
+      .eq("role", "admin")
+      .single();
+
+    if (error) {
+      // Don't cache failures; allow re-check on next render/session change
+      if (import.meta.env.DEV) {
+        console.warn("[useAdminAuth] role check failed", error);
+      }
+      return false;
+    }
+
+    const isAdmin = !!roleData;
+    adminCacheRef.current = { userId, isAdmin };
+    return isAdmin;
+  };
+
   useEffect(() => {
     mountedRef.current = true;
-
-    const checkAdminRole = async (userId: string): Promise<boolean> => {
-      // Return cached value if same user
-      if (adminCacheRef.current?.userId === userId) {
-        return adminCacheRef.current.isAdmin;
-      }
-
-      const { data: roleData } = await supabase
-        .from("user_roles")
-        .select("role")
-        .eq("user_id", userId)
-        .eq("role", "admin")
-        .single();
-
-      const isAdmin = !!roleData;
-      adminCacheRef.current = { userId, isAdmin };
-      return isAdmin;
-    };
-
-    // Set up auth state listener FIRST
-    const { data: { subscription } } = supabase.auth.onAuthStateChange(
-      async (event, session) => {
-        if (!mountedRef.current) return;
-
-        // Ignore token refresh events - they don't change auth state
-        if (event === "TOKEN_REFRESHED") {
-          return;
-        }
-
-        if (session?.user) {
-          const isAdmin = await checkAdminRole(session.user.id);
-          if (mountedRef.current) {
-            setState({
-              user: session.user,
-              isAdmin,
-              isLoading: false,
-            });
-          }
-        } else {
-          adminCacheRef.current = null;
-          if (mountedRef.current) {
-            setState({
-              user: null,
-              isAdmin: false,
-              isLoading: false,
-            });
-          }
-        }
-      }
-    );
-
-    // THEN check initial session
-    supabase.auth.getSession().then(async ({ data: { session } }) => {
+    const setFromSession = (sessionUser: User | null) => {
       if (!mountedRef.current) return;
 
-      if (session?.user) {
-        const isAdmin = await checkAdminRole(session.user.id);
-        if (mountedRef.current) {
-          setState({
-            user: session.user,
-            isAdmin,
-            isLoading: false,
-          });
-        }
+      if (sessionUser) {
+        setState({
+          user: sessionUser,
+          isAdmin: false,
+          isLoading: true,
+        });
       } else {
-        if (mountedRef.current) {
-          setState({
-            user: null,
-            isAdmin: false,
-            isLoading: false,
-          });
-        }
+        adminCacheRef.current = null;
+        setState({
+          user: null,
+          isAdmin: false,
+          isLoading: false,
+        });
       }
+    };
+
+    // Set up auth state listener FIRST (sync callback)
+    const {
+      data: { subscription },
+    } = supabase.auth.onAuthStateChange((event, session) => {
+      // Ignore token refresh events - they don't change auth state
+      if (event === "TOKEN_REFRESHED") return;
+      setFromSession(session?.user ?? null);
+    });
+
+    // THEN check initial session
+    supabase.auth.getSession().then(({ data: { session } }) => {
+      setFromSession(session?.user ?? null);
     });
 
     return () => {
@@ -101,6 +86,29 @@ export const useAdminAuth = () => {
       subscription.unsubscribe();
     };
   }, []);
+
+  // Fetch admin role whenever user changes (avoid supabase calls inside auth callback)
+  useEffect(() => {
+    const userId = state.user?.id;
+    if (!userId) return;
+
+    let cancelled = false;
+
+    (async () => {
+      const isAdmin = await checkAdminRole(userId);
+      if (!cancelled && mountedRef.current) {
+        setState((prev) => ({
+          ...prev,
+          isAdmin,
+          isLoading: false,
+        }));
+      }
+    })();
+
+    return () => {
+      cancelled = true;
+    };
+  }, [state.user?.id]);
 
   const signOut = async () => {
     adminCacheRef.current = null;
