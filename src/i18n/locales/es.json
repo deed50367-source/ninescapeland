@@ -281,6 +281,57 @@
       "description": "Respetamos tu tiempo e inversión. Nuestros procesos optimizados aseguran entrega a tiempo y soluciones rentables."
     }
   },
+  "hero": {
+    "mascotGreeting": "¡Bienvenido! 👋"
+  },
+  "aboutMascot": {
+    "badge": "Bienvenido a NinescapeLand",
+    "title": "Conoce a nuestra amiga",
+    "titleHighlight": "Ball",
+    "description": "Ball es la embajadora de marca de NinescapeLand, una niña de corazón puro que transmite calidez con sus acciones. Le encanta explorar el mundo de los parques infantiles y te guiará a través de nuestros productos y servicios, brindando orientación profesional para tu proyecto.",
+    "trait1": "Corazón Puro",
+    "trait2": "Transmite Calidez",
+    "trait3": "Ama Explorar",
+    "feature1": "Diseño Profesional",
+    "feature2": "Certificado en Seguridad",
+    "feature3": "Servicio Global"
+  },
+  "aboutTeam": {
+    "timelineLabel": "Nuestro Viaje",
+    "timelineTitle": "Nuestra Historia de Crecimiento",
+    "mission": {
+      "title": "Nuestra Misión",
+      "description": "Proporcionar soluciones de equipos de parques infantiles seguros, innovadores y de alta calidad para clientes de todo el mundo, permitiendo que cada niño disfrute de una infancia feliz."
+    },
+    "vision": {
+      "title": "Nuestra Visión",
+      "description": "Convertirnos en un líder global en la fabricación de equipos de parques infantiles, liderando el desarrollo de la industria con tecnología innovadora y excelente calidad."
+    },
+    "milestone1": {
+      "title": "Fundación de la Empresa",
+      "description": "Fundada en Wenzhou, China, enfocándose en la fabricación de equipos de parques infantiles"
+    },
+    "milestone2": {
+      "title": "Expansión Internacional",
+      "description": "Comenzó la exportación a mercados del Sudeste Asiático y Medio Oriente"
+    },
+    "milestone3": {
+      "title": "Certificaciones Obtenidas",
+      "description": "Obtuvimos certificaciones de seguridad internacionales ISO, CE, TUV"
+    },
+    "milestone4": {
+      "title": "Negocio Global",
+      "description": "Negocio en más de 50 países con 1000+ proyectos completados"
+    },
+    "teamTitle": "Equipo Profesional",
+    "teamDescription": "200+ profesionales incluyendo diseñadores, ingenieros, equipos de instalación y expertos en servicio postventa",
+    "designers": "Diseñadores",
+    "engineers": "Ingenieros",
+    "support": "Equipo de Soporte"
+  },
+  "coreValues": {
+    "sectionLabel": "Valores Fundamentales"
+  },
   "faq": {
     "sectionLabel": "FAQ",
     "title": "Preguntas",

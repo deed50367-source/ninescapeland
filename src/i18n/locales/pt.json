@@ -281,6 +281,57 @@
       "description": "Respeitamos seu tempo e investimento. Nossos processos otimizados garantem entrega pontual e soluções econômicas."
     }
   },
+  "hero": {
+    "mascotGreeting": "Bem-vindo! 👋"
+  },
+  "aboutMascot": {
+    "badge": "Bem-vindo ao NinescapeLand",
+    "title": "Conheça nossa amiga",
+    "titleHighlight": "Ball",
+    "description": "Ball é a embaixadora da marca NinescapeLand, uma menina de coração puro que transmite calor através de suas ações. Ela adora explorar o mundo dos playgrounds e vai guiá-lo através de nossos produtos e serviços, fornecendo orientação profissional para seu projeto.",
+    "trait1": "Coração Puro",
+    "trait2": "Transmite Calor",
+    "trait3": "Ama Explorar",
+    "feature1": "Design Profissional",
+    "feature2": "Certificado em Segurança",
+    "feature3": "Serviço Global"
+  },
+  "aboutTeam": {
+    "timelineLabel": "Nossa Jornada",
+    "timelineTitle": "Nossa História de Crescimento",
+    "mission": {
+      "title": "Nossa Missão",
+      "description": "Fornecer soluções de equipamentos de playground seguros, inovadores e de alta qualidade para clientes em todo o mundo, permitindo que cada criança desfrute de uma infância feliz."
+    },
+    "vision": {
+      "title": "Nossa Visão",
+      "description": "Tornar-se um líder global na fabricação de equipamentos de playground, liderando o desenvolvimento da indústria com tecnologia inovadora e excelente qualidade."
+    },
+    "milestone1": {
+      "title": "Fundação da Empresa",
+      "description": "Fundada em Wenzhou, China, focando na fabricação de equipamentos de playground infantil"
+    },
+    "milestone2": {
+      "title": "Expansão Internacional",
+      "description": "Começou a exportar para mercados do Sudeste Asiático e Oriente Médio"
+    },
+    "milestone3": {
+      "title": "Certificações Obtidas",
+      "description": "Obtivemos certificações de segurança internacionais ISO, CE, TUV"
+    },
+    "milestone4": {
+      "title": "Negócio Global",
+      "description": "Negócios em mais de 50 países com 1000+ projetos concluídos"
+    },
+    "teamTitle": "Equipe Profissional",
+    "teamDescription": "200+ profissionais incluindo designers, engenheiros, equipes de instalação e especialistas em pós-venda",
+    "designers": "Designers",
+    "engineers": "Engenheiros",
+    "support": "Equipe de Suporte"
+  },
+  "coreValues": {
+    "sectionLabel": "Valores Fundamentais"
+  },
   "faq": {
     "sectionLabel": "FAQ",
     "title": "Perguntas",

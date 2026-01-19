@@ -281,6 +281,57 @@
       "description": "We respect your time and investment. Our streamlined processes ensure on-time delivery and cost-effective solutions."
     }
   },
+  "hero": {
+    "mascotGreeting": "Welcome! 👋"
+  },
+  "aboutMascot": {
+    "badge": "Welcome to NinescapeLand",
+    "title": "Meet Our Friend",
+    "titleHighlight": "Ball",
+    "description": "Ball is NinescapeLand's brand ambassador, a pure-hearted girl who spreads warmth through her actions. She loves exploring the playground world and will guide you through our products and services, providing professional guidance for your playground project.",
+    "trait1": "Pure Heart",
+    "trait2": "Spreads Warmth",
+    "trait3": "Loves Exploration",
+    "feature1": "Professional Design",
+    "feature2": "Safety Certified",
+    "feature3": "Global Service"
+  },
+  "aboutTeam": {
+    "timelineLabel": "Our Journey",
+    "timelineTitle": "Our Growth Story",
+    "mission": {
+      "title": "Our Mission",
+      "description": "To provide safe, innovative, and high-quality playground equipment solutions for clients worldwide, letting every child enjoy a happy childhood."
+    },
+    "vision": {
+      "title": "Our Vision",
+      "description": "To become a global leader in playground equipment manufacturing, leading industry development with innovative technology and excellent quality."
+    },
+    "milestone1": {
+      "title": "Company Founded",
+      "description": "Founded in Wenzhou, China, focusing on children's playground equipment manufacturing"
+    },
+    "milestone2": {
+      "title": "International Expansion",
+      "description": "Started exporting to Southeast Asia and Middle East markets"
+    },
+    "milestone3": {
+      "title": "Certifications Obtained",
+      "description": "Obtained ISO, CE, TUV and other international safety certifications"
+    },
+    "milestone4": {
+      "title": "Global Business",
+      "description": "Business covers 50+ countries with 1000+ completed projects"
+    },
+    "teamTitle": "Professional Team",
+    "teamDescription": "200+ professionals including designers, engineers, installation teams and after-sales service experts",
+    "designers": "Designers",
+    "engineers": "Engineers",
+    "support": "Support Team"
+  },
+  "coreValues": {
+    "sectionLabel": "Core Values"
+  },
   "faq": {
     "sectionLabel": "FAQ",
     "title": "Frequently Asked",
