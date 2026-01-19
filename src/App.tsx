@@ -17,10 +17,10 @@ import Process from "./pages/Process";
 import Projects from "./pages/Projects";
 import Contact from "./pages/Contact";
 import FAQ from "./pages/FAQ";
+import Blog from "./pages/Blog";
+import BlogPost from "./pages/BlogPost";
 import NotFound from "./pages/NotFound";
-import AssetGallery from "./pages/AssetGallery";
 import AdminLogin from "./pages/AdminLogin";
-import AdminCustomerService from "./pages/AdminCustomerService";
 import AdminDashboard from "./pages/AdminDashboard";
 
 const queryClient = new QueryClient();
@@ -54,6 +54,8 @@ const App = () => (
             <Route path="contact" element={<Contact />} />
             <Route path="faq" element={<FAQ />} />
             <Route path="case-studies" element={<CaseStudies />} />
+            <Route path="blog" element={<Blog />} />
+            <Route path="blog/:slug" element={<BlogPost />} />
           </Route>
           
           {/* Catch-all route */}

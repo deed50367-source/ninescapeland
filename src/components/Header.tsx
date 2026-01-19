@@ -33,6 +33,7 @@ export const Header = () => {
     { label: t("nav.home"), href: localizedPath("/") },
     { label: t("nav.process"), href: localizedPath("/process") },
     { label: t("nav.projects"), href: localizedPath("/projects") },
+    { label: t("nav.blog"), href: localizedPath("/blog") },
     { label: t("nav.aboutUs"), href: localizedPath("/about-us") },
     { label: t("nav.contact"), href: localizedPath("/contact") },
   ];
@@ -155,6 +156,14 @@ export const Header = () => {
                   ))}
                 </DropdownMenuContent>
               </DropdownMenu>
+
+              <Link
+                to={localizedPath("/blog")}
+                className="text-foreground/80 hover:text-primary font-medium transition-colors relative group"
+              >
+                {t("nav.blog")}
+                <span className="absolute -bottom-1 start-0 w-0 h-0.5 bg-primary transition-all group-hover:w-full" />
+              </Link>
 
               <Link
                 to={localizedPath("/about-us")}

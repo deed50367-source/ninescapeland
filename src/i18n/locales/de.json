@@ -8,13 +8,27 @@
     "ninjaCourse": "Ninja-Parcours",
     "process": "Ablauf",
     "projects": "Projekte",
+    "blog": "Blog",
     "contact": "Kontakt",
     "faq": "FAQ",
     "caseStudies": "Fallstudien",
     "more": "Mehr",
     "getFreeQuote": "Kostenloses Angebot"
   },
+  "blog": {
+    "readMore": "Weiterlesen",
+    "noPosts": "Noch keine Beiträge",
+    "noPostsDescription": "Schauen Sie später wieder vorbei für die neuesten Nachrichten und Artikel.",
+    "notFound": "Beitrag nicht gefunden",
+    "notFoundDescription": "Der Artikel, den Sie suchen, existiert nicht oder wurde entfernt.",
+    "backToBlog": "Zurück zum Blog"
+  },
   "pages": {
+    "blog": {
+      "title": "Branchen",
+      "titleHighlight": "Einblicke & News",
+      "description": "Bleiben Sie auf dem Laufenden mit den neuesten Trends, Tipps und Neuigkeiten in der Indoor-Spielplatz- und Familienunterhaltungsbranche. Experteneinblicke für Ihren geschäftlichen Erfolg."
+    },
     "aboutUs": {
       "title": "Über",
       "titleHighlight": "NinescapeLand",
