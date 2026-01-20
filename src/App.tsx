@@ -7,9 +7,9 @@ import { ScrollToTop } from "@/components/ScrollToTop";
 import { LanguageWrapper } from "@/components/LanguageWrapper";
 import Index from "./pages/Index";
 import CaseStudies from "./pages/CaseStudies";
-import ProductDetail from "./pages/ProductDetail";
 import AboutUs from "./pages/AboutUs";
-import Products from "./pages/Products";
+import DynamicProducts from "./pages/DynamicProducts";
+import DynamicProductDetail from "./pages/DynamicProductDetail";
 import IndoorPlayground from "./pages/IndoorPlayground";
 import TrampolinePark from "./pages/TrampolinePark";
 import NinjaCourse from "./pages/NinjaCourse";
@@ -45,12 +45,12 @@ const App = () => (
           <Route path="/:lang" element={<LanguageWrapper />}>
             <Route index element={<Index />} />
             <Route path="about-us" element={<AboutUs />} />
-            <Route path="products" element={<Products />} />
+            <Route path="products" element={<DynamicProducts />} />
             <Route path="products/indoor-playground" element={<IndoorPlayground />} />
             <Route path="products/trampoline-park" element={<TrampolinePark />} />
             <Route path="products/ninja-course" element={<NinjaCourse />} />
             <Route path="products/soft-play" element={<SoftPlay />} />
-            <Route path="products/:productId" element={<ProductDetail />} />
+            <Route path="products/:slug" element={<DynamicProductDetail />} />
             <Route path="process" element={<Process />} />
             <Route path="projects" element={<Projects />} />
             <Route path="contact" element={<Contact />} />
