@@ -2,25 +2,16 @@ import { useState, useEffect, useRef, useCallback } from "react";
 import { supabase } from "@/integrations/supabase/client";
 import type { User } from "@supabase/supabase-js";
 
-interface AdminAuthState {
-  user: User | null;
-  isAdmin: boolean;
-  isLoading: boolean;
-}
-
 export const useAdminAuth = () => {
-  const [state, setState] = useState<AdminAuthState>({
-    user: null,
-    isAdmin: false,
-    isLoading: true,
-  });
+  const [user, setUser] = useState<User | null>(null);
+  const [isAdmin, setIsAdmin] = useState(false);
+  const [isLoading, setIsLoading] = useState(true);
   
-  // Cache admin status to avoid unnecessary re-fetches
   const adminCacheRef = useRef<{ userId: string; isAdmin: boolean } | null>(null);
-  const mountedRef = useRef(true);
+  const mountedRef = useRef(false);
+  const initRef = useRef(false);
 
   const checkAdminRole = useCallback(async (userId: string): Promise<boolean> => {
-    // Return cached value if same user
     if (adminCacheRef.current?.userId === userId) {
       return adminCacheRef.current.isAdmin;
     }
@@ -37,18 +28,23 @@ export const useAdminAuth = () => {
         return false;
       }
 
-      const isAdmin = data && data.length > 0;
-      adminCacheRef.current = { userId, isAdmin };
-      return isAdmin;
+      const hasRole = data && data.length > 0;
+      adminCacheRef.current = { userId, isAdmin: hasRole };
+      return hasRole;
     } catch (err) {
       console.error("[useAdminAuth] unexpected error", err);
       return false;
     }
   }, []);
 
-  // Initialize auth state
   useEffect(() => {
     mountedRef.current = true;
+    
+    // Prevent double initialization in strict mode
+    if (initRef.current) {
+      return;
+    }
+    initRef.current = true;
 
     const initializeAuth = async () => {
       try {
@@ -57,39 +53,31 @@ export const useAdminAuth = () => {
         if (!mountedRef.current) return;
 
         if (session?.user) {
-          const isAdmin = await checkAdminRole(session.user.id);
+          const hasAdminRole = await checkAdminRole(session.user.id);
           
           if (!mountedRef.current) return;
           
-          setState({
-            user: session.user,
-            isAdmin,
-            isLoading: false,
-          });
+          setUser(session.user);
+          setIsAdmin(hasAdminRole);
+          setIsLoading(false);
         } else {
-          setState({
-            user: null,
-            isAdmin: false,
-            isLoading: false,
-          });
+          setUser(null);
+          setIsAdmin(false);
+          setIsLoading(false);
         }
       } catch (err) {
         console.error("[useAdminAuth] init error", err);
         if (mountedRef.current) {
-          setState({
-            user: null,
-            isAdmin: false,
-            isLoading: false,
-          });
+          setUser(null);
+          setIsAdmin(false);
+          setIsLoading(false);
         }
       }
     };
 
     initializeAuth();
 
-    // Listen to auth state changes
     const { data: { subscription } } = supabase.auth.onAuthStateChange(async (event, session) => {
-      // Only respond to actual auth changes, ignore token refresh and initial session
       if (event === "TOKEN_REFRESHED" || event === "INITIAL_SESSION") {
         return;
       }
@@ -98,25 +86,21 @@ export const useAdminAuth = () => {
 
       if (event === "SIGNED_OUT") {
         adminCacheRef.current = null;
-        setState({
-          user: null,
-          isAdmin: false,
-          isLoading: false,
-        });
+        setUser(null);
+        setIsAdmin(false);
+        setIsLoading(false);
         return;
       }
 
       if (event === "SIGNED_IN" && session?.user) {
-        setState(prev => ({ ...prev, isLoading: true }));
+        setIsLoading(true);
         
-        const isAdmin = await checkAdminRole(session.user.id);
+        const hasAdminRole = await checkAdminRole(session.user.id);
         
         if (mountedRef.current) {
-          setState({
-            user: session.user,
-            isAdmin,
-            isLoading: false,
-          });
+          setUser(session.user);
+          setIsAdmin(hasAdminRole);
+          setIsLoading(false);
         }
       }
     });
@@ -132,5 +116,5 @@ export const useAdminAuth = () => {
     await supabase.auth.signOut();
   }, []);
 
-  return { ...state, signOut };
+  return { user, isAdmin, isLoading, signOut };
 };
