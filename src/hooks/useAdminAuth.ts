@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef, useCallback } from "react";
 import { supabase } from "@/integrations/supabase/client";
 import type { User } from "@supabase/supabase-js";
 
@@ -6,114 +6,164 @@ interface AdminAuthState {
   user: User | null;
   isAdmin: boolean;
   isLoading: boolean;
+  isInitialized: boolean;
 }
 
+// Global cache to persist across component re-mounts
+const globalAdminCache: { userId: string; isAdmin: boolean } | null = null;
+let globalAuthState: AdminAuthState | null = null;
+
 export const useAdminAuth = () => {
-  const [state, setState] = useState<AdminAuthState>({
-    user: null,
-    isAdmin: false,
-    isLoading: true,
+  const [state, setState] = useState<AdminAuthState>(() => {
+    // Initialize from global cache if available to avoid flash
+    if (globalAuthState) {
+      return globalAuthState;
+    }
+    return {
+      user: null,
+      isAdmin: false,
+      isLoading: true,
+      isInitialized: false,
+    };
   });
   
   // Cache admin status to avoid unnecessary re-fetches
-  const adminCacheRef = useRef<{ userId: string; isAdmin: boolean } | null>(null);
+  const adminCacheRef = useRef<{ userId: string; isAdmin: boolean } | null>(globalAdminCache);
   const mountedRef = useRef(true);
+  const initRef = useRef(false);
 
-
-  const checkAdminRole = async (userId: string): Promise<boolean> => {
+  const checkAdminRole = useCallback(async (userId: string): Promise<boolean> => {
     // Return cached value if same user
     if (adminCacheRef.current?.userId === userId) {
       return adminCacheRef.current.isAdmin;
     }
 
-    const { data: roleData, error } = await supabase
-      .from("user_roles")
-      .select("role")
-      .eq("user_id", userId)
-      .eq("role", "admin")
-      .single();
+    try {
+      const { data: roleData, error } = await supabase
+        .from("user_roles")
+        .select("role")
+        .eq("user_id", userId)
+        .eq("role", "admin")
+        .single();
 
-    if (error) {
-      // Don't cache failures; allow re-check on next render/session change
-      if (import.meta.env.DEV) {
-        console.warn("[useAdminAuth] role check failed", error);
+      if (error) {
+        if (import.meta.env.DEV) {
+          console.warn("[useAdminAuth] role check failed", error);
+        }
+        return false;
       }
+
+      const isAdmin = !!roleData;
+      adminCacheRef.current = { userId, isAdmin };
+      return isAdmin;
+    } catch (err) {
+      console.error("[useAdminAuth] unexpected error", err);
       return false;
     }
-
-    const isAdmin = !!roleData;
-    adminCacheRef.current = { userId, isAdmin };
-    return isAdmin;
-  };
+  }, []);
 
   useEffect(() => {
+    // Prevent double initialization in StrictMode
+    if (initRef.current) return;
+    initRef.current = true;
     mountedRef.current = true;
-    const setFromSession = (sessionUser: User | null) => {
+
+    const initializeAuth = async () => {
+      try {
+        const { data: { session } } = await supabase.auth.getSession();
+        
+        if (!mountedRef.current) return;
+
+        if (session?.user) {
+          const isAdmin = await checkAdminRole(session.user.id);
+          
+          if (!mountedRef.current) return;
+          
+          const newState: AdminAuthState = {
+            user: session.user,
+            isAdmin,
+            isLoading: false,
+            isInitialized: true,
+          };
+          globalAuthState = newState;
+          setState(newState);
+        } else {
+          const newState: AdminAuthState = {
+            user: null,
+            isAdmin: false,
+            isLoading: false,
+            isInitialized: true,
+          };
+          globalAuthState = newState;
+          setState(newState);
+        }
+      } catch (err) {
+        console.error("[useAdminAuth] init error", err);
+        if (mountedRef.current) {
+          setState({
+            user: null,
+            isAdmin: false,
+            isLoading: false,
+            isInitialized: true,
+          });
+        }
+      }
+    };
+
+    // Set up auth state listener for actual auth changes (login/logout)
+    const { data: { subscription } } = supabase.auth.onAuthStateChange(async (event, session) => {
+      // Ignore events that don't change auth state
+      if (event === "TOKEN_REFRESHED" || event === "INITIAL_SESSION") return;
+      
       if (!mountedRef.current) return;
 
-      if (sessionUser) {
-        setState({
-          user: sessionUser,
-          isAdmin: false,
-          isLoading: true,
-        });
-      } else {
+      if (event === "SIGNED_OUT") {
         adminCacheRef.current = null;
+        globalAuthState = null;
         setState({
           user: null,
           isAdmin: false,
           isLoading: false,
+          isInitialized: true,
         });
+        return;
       }
-    };
 
-    // Set up auth state listener FIRST (sync callback)
-    const {
-      data: { subscription },
-    } = supabase.auth.onAuthStateChange((event, session) => {
-      // Ignore token refresh events - they don't change auth state
-      if (event === "TOKEN_REFRESHED") return;
-      setFromSession(session?.user ?? null);
+      if (event === "SIGNED_IN" && session?.user) {
+        setState(prev => ({
+          ...prev,
+          user: session.user,
+          isLoading: true,
+        }));
+        
+        const isAdmin = await checkAdminRole(session.user.id);
+        
+        if (!mountedRef.current) return;
+        
+        const newState: AdminAuthState = {
+          user: session.user,
+          isAdmin,
+          isLoading: false,
+          isInitialized: true,
+        };
+        globalAuthState = newState;
+        setState(newState);
+      }
     });
 
-    // THEN check initial session
-    supabase.auth.getSession().then(({ data: { session } }) => {
-      setFromSession(session?.user ?? null);
-    });
+    initializeAuth();
 
     return () => {
       mountedRef.current = false;
       subscription.unsubscribe();
     };
-  }, []);
+  }, [checkAdminRole]);
 
-  // Fetch admin role whenever user changes (avoid supabase calls inside auth callback)
-  useEffect(() => {
-    const userId = state.user?.id;
-    if (!userId) return;
-
-    let cancelled = false;
-
-    (async () => {
-      const isAdmin = await checkAdminRole(userId);
-      if (!cancelled && mountedRef.current) {
-        setState((prev) => ({
-          ...prev,
-          isAdmin,
-          isLoading: false,
-        }));
-      }
-    })();
-
-    return () => {
-      cancelled = true;
-    };
-  }, [state.user?.id]);
-
-  const signOut = async () => {
+  const signOut = useCallback(async () => {
     adminCacheRef.current = null;
+    globalAuthState = null;
     await supabase.auth.signOut();
-  };
+  }, []);
 
   return { ...state, signOut };
 };
