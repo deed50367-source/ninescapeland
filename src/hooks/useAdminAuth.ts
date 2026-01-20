@@ -1,14 +1,15 @@
-import { useState, useEffect, useRef, useCallback } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 import { supabase } from "@/integrations/supabase/client";
-import type { User } from "@supabase/supabase-js";
+import type { Session, User } from "@supabase/supabase-js";
 
 export const useAdminAuth = () => {
   const [user, setUser] = useState<User | null>(null);
   const [isAdmin, setIsAdmin] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
-  
+
   const adminCacheRef = useRef<{ userId: string; isAdmin: boolean } | null>(null);
-  const mountedRef = useRef(false);
+  const activeUserIdRef = useRef<string | null>(null);
+  const initResolvedRef = useRef(false);
 
   const checkAdminRole = useCallback(async (userId: string): Promise<boolean> => {
     if (adminCacheRef.current?.userId === userId) {
@@ -27,7 +28,7 @@ export const useAdminAuth = () => {
         return false;
       }
 
-      const hasRole = data && data.length > 0;
+      const hasRole = !!(data && data.length > 0);
       adminCacheRef.current = { userId, isAdmin: hasRole };
       return hasRole;
     } catch (err) {
@@ -36,49 +37,12 @@ export const useAdminAuth = () => {
     }
   }, []);
 
-  useEffect(() => {
-    mountedRef.current = true;
-    
+  const applySession = useCallback(
+    async (session: Session | null) => {
+      const nextUser = session?.user ?? null;
 
-    const initializeAuth = async () => {
-      try {
-        const { data: { session } } = await supabase.auth.getSession();
-        
-        if (!mountedRef.current) return;
-
-        if (session?.user) {
-          const hasAdminRole = await checkAdminRole(session.user.id);
-          
-          if (!mountedRef.current) return;
-          
-          setUser(session.user);
-          setIsAdmin(hasAdminRole);
-          setIsLoading(false);
-        } else {
-          setUser(null);
-          setIsAdmin(false);
-          setIsLoading(false);
-        }
-      } catch (err) {
-        console.error("[useAdminAuth] init error", err);
-        if (mountedRef.current) {
-          setUser(null);
-          setIsAdmin(false);
-          setIsLoading(false);
-        }
-      }
-    };
-
-    initializeAuth();
-
-    const { data: { subscription } } = supabase.auth.onAuthStateChange(async (event, session) => {
-      if (event === "TOKEN_REFRESHED" || event === "INITIAL_SESSION") {
-        return;
-      }
-
-      if (!mountedRef.current) return;
-
-      if (event === "SIGNED_OUT") {
+      if (!nextUser) {
+        activeUserIdRef.current = null;
         adminCacheRef.current = null;
         setUser(null);
         setIsAdmin(false);
@@ -86,29 +50,82 @@ export const useAdminAuth = () => {
         return;
       }
 
-      if (event === "SIGNED_IN" && session?.user) {
-        setIsLoading(true);
-        
-        const hasAdminRole = await checkAdminRole(session.user.id);
-        
-        if (mountedRef.current) {
-          setUser(session.user);
-          setIsAdmin(hasAdminRole);
+      // Keep UI in "verifying" until role check completes.
+      activeUserIdRef.current = nextUser.id;
+      setUser(nextUser);
+      setIsLoading(true);
+
+      const hasAdminRole = await checkAdminRole(nextUser.id);
+
+      // If auth changed while the role check was in-flight, ignore this result.
+      if (activeUserIdRef.current !== nextUser.id) return;
+
+      setIsAdmin(hasAdminRole);
+      setIsLoading(false);
+    },
+    [checkAdminRole]
+  );
+
+  useEffect(() => {
+    let cancelled = false;
+
+    const safeApply = async (session: Session | null, markInitResolved = false) => {
+      try {
+        if (cancelled) return;
+        await applySession(session);
+      } catch (err) {
+        console.error("[useAdminAuth] apply session error", err);
+        if (!cancelled) {
+          activeUserIdRef.current = null;
+          adminCacheRef.current = null;
+          setUser(null);
+          setIsAdmin(false);
           setIsLoading(false);
         }
+      } finally {
+        if (markInitResolved) initResolvedRef.current = true;
       }
+    };
+
+    // 1) Subscribe FIRST (prevents missing the initial session event)
+    const {
+      data: { subscription },
+    } = supabase.auth.onAuthStateChange((event, session) => {
+      // After we have a stable initial state, ignore noisy refreshes to avoid flicker.
+      if (event === "TOKEN_REFRESHED" && initResolvedRef.current) return;
+
+      // "INITIAL_SESSION" is useful on first load; after init, ignore it.
+      if (event === "INITIAL_SESSION") {
+        void safeApply(session, true);
+        return;
+      }
+
+      // For other events (SIGNED_IN / SIGNED_OUT / USER_UPDATED), reconcile.
+      void safeApply(session);
     });
 
+    // 2) Also reconcile from stored session (covers cases where INITIAL_SESSION doesn’t fire)
+    supabase.auth
+      .getSession()
+      .then(({ data }) => safeApply(data.session, true))
+      .catch((err) => {
+        console.error("[useAdminAuth] getSession error", err);
+        if (!cancelled) setIsLoading(false);
+        initResolvedRef.current = true;
+      });
+
     return () => {
-      mountedRef.current = false;
+      cancelled = true;
       subscription.unsubscribe();
     };
-  }, [checkAdminRole]);
+  }, [applySession]);
 
   const signOut = useCallback(async () => {
     adminCacheRef.current = null;
+    activeUserIdRef.current = null;
     await supabase.auth.signOut();
   }, []);
 
   return { user, isAdmin, isLoading, signOut };
 };
+
