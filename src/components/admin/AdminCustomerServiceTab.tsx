@@ -82,10 +82,10 @@ interface SessionStatus {
 }
 
 const STATUS_CONFIG = {
-  new: { label: '新消息', color: 'bg-red-500', icon: Circle },
-  in_progress: { label: '处理中', color: 'bg-yellow-500', icon: AlertCircle },
-  resolved: { label: '已解决', color: 'bg-green-500', icon: CheckCircle },
-  closed: { label: '已关闭', color: 'bg-gray-500', icon: CheckCheck },
+  new: { label: '新消息', color: 'bg-destructive', icon: Circle },
+  in_progress: { label: '处理中', color: 'bg-warning', icon: AlertCircle },
+  resolved: { label: '已解决', color: 'bg-success', icon: CheckCircle },
+  closed: { label: '已关闭', color: 'bg-muted-foreground', icon: CheckCheck },
 };
 
 const AdminCustomerServiceTab = () => {

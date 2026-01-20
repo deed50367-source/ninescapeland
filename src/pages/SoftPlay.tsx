@@ -118,28 +118,28 @@ const SoftPlay = () => {
       ageKey: "productPages.softPlay.ageZones.infant.age",
       titleKey: "productPages.softPlay.ageZones.infant.title",
       descKey: "productPages.softPlay.ageZones.infant.description",
-      color: "bg-pink-500"
+      color: "bg-category-pink"
     },
     {
       icon: Smile,
       ageKey: "productPages.softPlay.ageZones.toddler.age",
       titleKey: "productPages.softPlay.ageZones.toddler.title",
       descKey: "productPages.softPlay.ageZones.toddler.description",
-      color: "bg-blue-500"
+      color: "bg-info"
     },
     {
       icon: Users,
       ageKey: "productPages.softPlay.ageZones.preschool.age",
       titleKey: "productPages.softPlay.ageZones.preschool.title",
       descKey: "productPages.softPlay.ageZones.preschool.description",
-      color: "bg-green-500"
+      color: "bg-success"
     },
     {
       icon: Star,
       ageKey: "productPages.softPlay.ageZones.mixed.age",
       titleKey: "productPages.softPlay.ageZones.mixed.title",
       descKey: "productPages.softPlay.ageZones.mixed.description",
-      color: "bg-purple-500"
+      color: "bg-category-purple"
     }
   ];
 

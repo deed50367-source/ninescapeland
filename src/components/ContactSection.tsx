@@ -435,8 +435,8 @@ export const ContactSection = () => {
             {/* WhatsApp CTA */}
             <div className="bg-card p-6 rounded-2xl shadow-soft border-2 border-dashed border-accent">
               <div className={`flex items-center gap-4 mb-4 ${isRTL ? 'flex-row-reverse text-right' : ''}`}>
-                <div className="w-12 h-12 rounded-full bg-green-500 flex items-center justify-center">
-                  <MessageCircle className="w-6 h-6 text-white" />
+                <div className="w-12 h-12 rounded-full bg-success flex items-center justify-center">
+                  <MessageCircle className="w-6 h-6 text-success-foreground" />
                 </div>
                 <div>
                   <h4 className="font-heading font-bold">{t("contact.whatsapp.title")}</h4>

@@ -13,7 +13,7 @@ export const ProcessTimelineSection = () => {
       title: t("processTimeline.phases.inquiry.title"),
       duration: t("processTimeline.phases.inquiry.duration"),
       days: "1-3",
-      color: "from-blue-500 to-blue-600",
+      color: "from-info to-info/80",
       tasks: [
         t("processTimeline.phases.inquiry.task1"),
         t("processTimeline.phases.inquiry.task2"),
@@ -25,7 +25,7 @@ export const ProcessTimelineSection = () => {
       title: t("processTimeline.phases.design.title"),
       duration: t("processTimeline.phases.design.duration"),
       days: "5-10",
-      color: "from-purple-500 to-purple-600",
+      color: "from-category-purple to-category-purple/80",
       tasks: [
         t("processTimeline.phases.design.task1"),
         t("processTimeline.phases.design.task2"),
@@ -37,7 +37,7 @@ export const ProcessTimelineSection = () => {
       title: t("processTimeline.phases.confirmation.title"),
       duration: t("processTimeline.phases.confirmation.duration"),
       days: "3-5",
-      color: "from-green-500 to-green-600",
+      color: "from-success to-success/80",
       tasks: [
         t("processTimeline.phases.confirmation.task1"),
         t("processTimeline.phases.confirmation.task2"),
@@ -49,7 +49,7 @@ export const ProcessTimelineSection = () => {
       title: t("processTimeline.phases.production.title"),
       duration: t("processTimeline.phases.production.duration"),
       days: "25-35",
-      color: "from-orange-500 to-orange-600",
+      color: "from-category-orange to-category-orange/80",
       tasks: [
         t("processTimeline.phases.production.task1"),
         t("processTimeline.phases.production.task2"),
@@ -61,7 +61,7 @@ export const ProcessTimelineSection = () => {
       title: t("processTimeline.phases.shipping.title"),
       duration: t("processTimeline.phases.shipping.duration"),
       days: "20-35",
-      color: "from-cyan-500 to-cyan-600",
+      color: "from-category-cyan to-category-cyan/80",
       tasks: [
         t("processTimeline.phases.shipping.task1"),
         t("processTimeline.phases.shipping.task2"),
@@ -73,7 +73,7 @@ export const ProcessTimelineSection = () => {
       title: t("processTimeline.phases.installation.title"),
       duration: t("processTimeline.phases.installation.duration"),
       days: "5-10",
-      color: "from-rose-500 to-rose-600",
+      color: "from-accent to-accent/80",
       tasks: [
         t("processTimeline.phases.installation.task1"),
         t("processTimeline.phases.installation.task2"),

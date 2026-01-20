@@ -215,7 +215,7 @@ const AdminBlogTab = () => {
   const getStatusBadge = (status: string) => {
     switch (status) {
       case "published":
-        return <Badge className="bg-green-500">Published</Badge>;
+        return <Badge className="bg-success">Published</Badge>;
       case "draft":
         return <Badge variant="secondary">Draft</Badge>;
       case "archived":
