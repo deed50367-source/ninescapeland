@@ -18,7 +18,6 @@ export const useAdminAuth = () => {
   // Cache admin status to avoid unnecessary re-fetches
   const adminCacheRef = useRef<{ userId: string; isAdmin: boolean } | null>(null);
   const mountedRef = useRef(true);
-  const initializedRef = useRef(false);
 
   const checkAdminRole = useCallback(async (userId: string): Promise<boolean> => {
     // Return cached value if same user
@@ -47,10 +46,8 @@ export const useAdminAuth = () => {
     }
   }, []);
 
-  // Initialize auth state once
+  // Initialize auth state
   useEffect(() => {
-    if (initializedRef.current) return;
-    initializedRef.current = true;
     mountedRef.current = true;
 
     const initializeAuth = async () => {
@@ -90,15 +87,9 @@ export const useAdminAuth = () => {
 
     initializeAuth();
 
-    return () => {
-      mountedRef.current = false;
-    };
-  }, [checkAdminRole]);
-
-  // Listen to auth state changes (login/logout only)
-  useEffect(() => {
+    // Listen to auth state changes
     const { data: { subscription } } = supabase.auth.onAuthStateChange(async (event, session) => {
-      // Only respond to actual auth changes
+      // Only respond to actual auth changes, ignore token refresh and initial session
       if (event === "TOKEN_REFRESHED" || event === "INITIAL_SESSION") {
         return;
       }
@@ -131,6 +122,7 @@ export const useAdminAuth = () => {
     });
 
     return () => {
+      mountedRef.current = false;
       subscription.unsubscribe();
     };
   }, [checkAdminRole]);
