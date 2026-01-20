@@ -316,7 +316,7 @@ export const LiveChat = () => {
             <MessageCircle className="w-6 h-6" />
             {/* Online indicator */}
             <span className={`absolute top-0 right-0 w-4 h-4 rounded-full border-2 border-white ${
-              hasNewMessage ? 'bg-red-500 animate-pulse' : isBusinessHours() ? 'bg-green-500' : 'bg-yellow-500'
+              hasNewMessage ? 'bg-destructive animate-pulse' : isBusinessHours() ? 'bg-online' : 'bg-warning'
             }`} />
           </motion.button>
         )}
@@ -340,7 +340,7 @@ export const LiveChat = () => {
                   ) : (
                     <Bot className="w-8 h-8" />
                   )}
-                  <span className={`absolute -bottom-1 -right-1 w-3 h-3 rounded-full border-2 border-primary ${isHumanMode ? 'bg-green-400' : 'bg-yellow-400'}`} />
+                  <span className={`absolute -bottom-1 -right-1 w-3 h-3 rounded-full border-2 border-primary ${isHumanMode ? 'bg-online' : 'bg-warning'}`} />
                 </div>
                 <div>
                   <h3 className="font-semibold text-sm">
@@ -386,7 +386,7 @@ export const LiveChat = () => {
                       message.role === 'user'
                         ? 'bg-primary text-primary-foreground rounded-br-md'
                         : message.isStaffReply
-                        ? 'bg-green-500 text-white rounded-bl-md'
+                        ? 'bg-success text-success-foreground rounded-bl-md'
                         : 'bg-muted text-foreground rounded-bl-md'
                     }`}
                   >
@@ -395,7 +395,7 @@ export const LiveChat = () => {
                       message.role === 'user' 
                         ? 'text-primary-foreground/70' 
                         : message.isStaffReply 
-                        ? 'text-white/70' 
+                        ? 'text-success-foreground/70' 
                         : 'text-muted-foreground'
                     }`}>
                       {message.isAI && <Bot className="w-3 h-3" />}
@@ -423,7 +423,7 @@ export const LiveChat = () => {
             <div className="px-4 py-2 border-t bg-muted/30">
               <button
                 onClick={openWhatsApp}
-                className="w-full flex items-center justify-center gap-2 py-2 text-xs text-green-600 hover:text-green-700 hover:bg-green-50 rounded-lg transition-colors"
+                className="w-full flex items-center justify-center gap-2 py-2 text-xs text-success hover:text-success/80 hover:bg-success/10 rounded-lg transition-colors"
               >
                 <Phone className="w-4 h-4" />
                 {t('liveChat.whatsappCTA', 'Chat on WhatsApp for faster response')}

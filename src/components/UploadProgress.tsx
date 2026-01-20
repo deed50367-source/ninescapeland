@@ -44,7 +44,7 @@ export const UploadProgress = ({
       >
         <div className="flex items-center gap-3">
           {isComplete ? (
-            <CheckCircle2 className="w-5 h-5 text-green-500" />
+            <CheckCircle2 className="w-5 h-5 text-success" />
           ) : (
             <Loader2 className="w-5 h-5 text-primary animate-spin" />
           )}
@@ -69,20 +69,20 @@ export const UploadProgress = ({
       <div className="flex items-center justify-between p-4 border-b">
         <div className="flex items-center gap-2">
           {isComplete ? (
-            <CheckCircle2 className="w-5 h-5 text-green-500" />
+            <CheckCircle2 className="w-5 h-5 text-success" />
           ) : (
             <Loader2 className="w-5 h-5 text-primary animate-spin" />
           )}
           <span className="font-medium">
             {isComplete
-              ? `上传完成`
-              : `上传中 (${completedCount}/${totalCount})`}
+              ? `Upload complete`
+              : `Uploading (${completedCount}/${totalCount})`}
           </span>
         </div>
         <div className="flex items-center gap-1">
           {!isComplete && onCancel && (
             <Button variant="ghost" size="sm" onClick={onCancel}>
-              取消
+              Cancel
             </Button>
           )}
           <Button
@@ -110,7 +110,7 @@ export const UploadProgress = ({
       {!isComplete && (
         <div className="px-4 py-2 border-b bg-muted/30">
           <div className="flex items-center justify-between text-sm mb-1">
-            <span>总进度</span>
+            <span>Overall Progress</span>
             <span>{overallProgress}%</span>
           </div>
           <Progress value={overallProgress} className="h-2" />
@@ -121,14 +121,14 @@ export const UploadProgress = ({
       {isComplete && (
         <div className="px-4 py-3 border-b bg-muted/30">
           <div className="flex items-center gap-4 text-sm">
-            <span className="flex items-center gap-1 text-green-600">
+            <span className="flex items-center gap-1 text-success">
               <CheckCircle2 className="w-4 h-4" />
-              成功 {completedCount}
+              Success {completedCount}
             </span>
             {errorCount > 0 && (
               <span className="flex items-center gap-1 text-destructive">
                 <AlertCircle className="w-4 h-4" />
-                失败 {errorCount}
+                Failed {errorCount}
               </span>
             )}
           </div>
@@ -144,7 +144,7 @@ export const UploadProgress = ({
           >
             <div className="flex-shrink-0">
               {item.status === "success" && (
-                <CheckCircle2 className="w-4 h-4 text-green-500" />
+                <CheckCircle2 className="w-4 h-4 text-success" />
               )}
               {item.status === "error" && (
                 <AlertCircle className="w-4 h-4 text-destructive" />

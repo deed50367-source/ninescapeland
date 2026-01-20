@@ -23,11 +23,11 @@ interface CaseStudy {
 }
 
 const projectTypeColors: Record<string, string> = {
-  "indoor-playground": "bg-blue-500",
-  "trampoline-park": "bg-purple-500",
-  "ninja-course": "bg-orange-500",
-  "soft-play": "bg-pink-500",
-  fec: "bg-green-500",
+  "indoor-playground": "bg-info",
+  "trampoline-park": "bg-category-purple",
+  "ninja-course": "bg-category-orange",
+  "soft-play": "bg-category-pink",
+  fec: "bg-success",
 };
 
 const projectTypeLabels: Record<string, string> = {

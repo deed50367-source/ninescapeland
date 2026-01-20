@@ -114,25 +114,25 @@ const NinjaCourse = () => {
       icon: Users,
       level: "productPages.ninjaCourse.levels.beginner.title",
       description: "productPages.ninjaCourse.levels.beginner.description",
-      color: "bg-green-500"
+      color: "bg-success"
     },
     {
       icon: Zap,
       level: "productPages.ninjaCourse.levels.intermediate.title",
       description: "productPages.ninjaCourse.levels.intermediate.description",
-      color: "bg-yellow-500"
+      color: "bg-warning"
     },
     {
       icon: Flame,
       level: "productPages.ninjaCourse.levels.advanced.title",
       description: "productPages.ninjaCourse.levels.advanced.description",
-      color: "bg-orange-500"
+      color: "bg-category-orange"
     },
     {
       icon: Mountain,
       level: "productPages.ninjaCourse.levels.elite.title",
       description: "productPages.ninjaCourse.levels.elite.description",
-      color: "bg-red-500"
+      color: "bg-destructive"
     }
   ];
 

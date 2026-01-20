@@ -179,10 +179,10 @@ const AdminStatsPanel = () => {
   };
 
   const getResponseTimeColor = (minutes: number): string => {
-    if (minutes < 5) return 'text-green-500';
-    if (minutes < 15) return 'text-yellow-500';
-    if (minutes < 30) return 'text-orange-500';
-    return 'text-red-500';
+    if (minutes < 5) return 'text-success';
+    if (minutes < 15) return 'text-warning';
+    if (minutes < 30) return 'text-accent';
+    return 'text-destructive';
   };
 
   const getResponseTimeIcon = (minutes: number) => {
@@ -197,9 +197,9 @@ const AdminStatsPanel = () => {
     const older = stats.dailyTrend.slice(0, 3).reduce((sum, d) => sum + d.count, 0) / 3;
     
     if (recent > older * 1.1) {
-      return { icon: TrendingUp, color: 'text-green-500', text: 'Up' };
+      return { icon: TrendingUp, color: 'text-success', text: 'Up' };
     } else if (recent < older * 0.9) {
-      return { icon: TrendingDown, color: 'text-red-500', text: 'Down' };
+      return { icon: TrendingDown, color: 'text-destructive', text: 'Down' };
     }
     return null;
   };
@@ -339,7 +339,7 @@ const AdminStatsPanel = () => {
                   <div className="space-y-2">
                     <div className="flex items-center justify-between">
                       <div className="flex items-center gap-2">
-                        <div className="w-3 h-3 rounded-full bg-red-500" />
+                        <div className="w-3 h-3 rounded-full bg-destructive" />
                         <span className="text-sm">New</span>
                       </div>
                       <div className="flex items-center gap-2">
@@ -351,7 +351,7 @@ const AdminStatsPanel = () => {
                     </div>
                     <div className="flex items-center justify-between">
                       <div className="flex items-center gap-2">
-                        <div className="w-3 h-3 rounded-full bg-yellow-500" />
+                        <div className="w-3 h-3 rounded-full bg-warning" />
                         <span className="text-sm">In Progress</span>
                       </div>
                       <div className="flex items-center gap-2">
@@ -363,7 +363,7 @@ const AdminStatsPanel = () => {
                     </div>
                     <div className="flex items-center justify-between">
                       <div className="flex items-center gap-2">
-                        <div className="w-3 h-3 rounded-full bg-green-500" />
+                        <div className="w-3 h-3 rounded-full bg-success" />
                         <span className="text-sm">Resolved</span>
                       </div>
                       <div className="flex items-center gap-2">
@@ -375,7 +375,7 @@ const AdminStatsPanel = () => {
                     </div>
                     <div className="flex items-center justify-between">
                       <div className="flex items-center gap-2">
-                        <div className="w-3 h-3 rounded-full bg-gray-500" />
+                        <div className="w-3 h-3 rounded-full bg-muted-foreground" />
                         <span className="text-sm">Closed</span>
                       </div>
                       <div className="flex items-center gap-2">

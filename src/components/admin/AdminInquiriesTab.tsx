@@ -57,11 +57,11 @@ interface Inquiry {
 }
 
 const statusColors: Record<string, string> = {
-  new: "bg-blue-500",
-  contacted: "bg-yellow-500",
-  qualified: "bg-green-500",
-  converted: "bg-purple-500",
-  closed: "bg-gray-500",
+  new: "bg-info",
+  contacted: "bg-warning",
+  qualified: "bg-success",
+  converted: "bg-category-purple",
+  closed: "bg-muted-foreground",
 };
 
 const statusLabels: Record<string, string> = {

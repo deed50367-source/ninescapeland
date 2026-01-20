@@ -53,7 +53,7 @@ export const FloatingCTA = () => {
         initial={{ scale: 0 }}
         animate={{ scale: 1 }}
         transition={{ delay: 1, type: "spring", stiffness: 200, damping: 20 }}
-        className="w-14 h-14 rounded-full bg-green-500 text-white shadow-glow flex items-center justify-center hover:scale-110 transition-transform"
+        className="w-14 h-14 rounded-full bg-success text-success-foreground shadow-glow flex items-center justify-center hover:scale-110 transition-transform"
         aria-label={t("floatingCta.whatsapp")}
       >
         <MessageCircle className="w-7 h-7" />

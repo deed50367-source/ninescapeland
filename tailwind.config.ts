@@ -61,6 +61,29 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
+        success: {
+          DEFAULT: "hsl(var(--success))",
+          foreground: "hsl(var(--success-foreground))",
+        },
+        warning: {
+          DEFAULT: "hsl(var(--warning))",
+          foreground: "hsl(var(--warning-foreground))",
+        },
+        info: {
+          DEFAULT: "hsl(var(--info))",
+          foreground: "hsl(var(--info-foreground))",
+        },
+        online: "hsl(var(--online))",
+        category: {
+          blue: "hsl(var(--category-blue))",
+          purple: "hsl(var(--category-purple))",
+          pink: "hsl(var(--category-pink))",
+          orange: "hsl(var(--category-orange))",
+          cyan: "hsl(var(--category-cyan))",
+          emerald: "hsl(var(--category-emerald))",
+          amber: "hsl(var(--category-amber))",
+          violet: "hsl(var(--category-violet))",
+        },
       },
       borderRadius: {
         lg: "var(--radius)",

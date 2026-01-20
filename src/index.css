@@ -53,6 +53,25 @@
     --shadow-medium: 0 8px 30px -8px hsl(258 47% 45% / 0.2);
     --shadow-glow: 0 0 40px hsl(16 85% 55% / 0.3);
 
+    /* Status Colors */
+    --success: 142 71% 45%;
+    --success-foreground: 0 0% 100%;
+    --warning: 38 92% 50%;
+    --warning-foreground: 0 0% 0%;
+    --info: 217 91% 60%;
+    --info-foreground: 0 0% 100%;
+    --online: 142 71% 45%;
+
+    /* Category Colors */
+    --category-blue: 217 91% 60%;
+    --category-purple: 270 70% 55%;
+    --category-pink: 330 80% 60%;
+    --category-orange: 25 95% 53%;
+    --category-cyan: 187 85% 53%;
+    --category-emerald: 160 84% 39%;
+    --category-amber: 38 92% 50%;
+    --category-violet: 258 90% 66%;
+
     --sidebar-background: 0 0% 98%;
     --sidebar-foreground: 240 5.3% 26.1%;
     --sidebar-primary: 240 5.9% 10%;

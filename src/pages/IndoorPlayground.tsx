@@ -113,28 +113,28 @@ const IndoorPlayground = () => {
       ageRange: "0-3",
       titleKey: "productPages.indoorPlayground.ageZones.toddler.title",
       descKey: "productPages.indoorPlayground.ageZones.toddler.description",
-      color: "from-pink-500 to-rose-500"
+      color: "from-category-pink to-accent"
     },
     {
       icon: Users,
       ageRange: "3-7",
       titleKey: "productPages.indoorPlayground.ageZones.kids.title",
       descKey: "productPages.indoorPlayground.ageZones.kids.description",
-      color: "from-blue-500 to-cyan-500"
+      color: "from-info to-category-cyan"
     },
     {
       icon: Rocket,
       ageRange: "7-12",
       titleKey: "productPages.indoorPlayground.ageZones.juniors.title",
       descKey: "productPages.indoorPlayground.ageZones.juniors.description",
-      color: "from-orange-500 to-amber-500"
+      color: "from-category-orange to-category-amber"
     },
     {
       icon: Target,
       ageRange: "12+",
       titleKey: "productPages.indoorPlayground.ageZones.teens.title",
       descKey: "productPages.indoorPlayground.ageZones.teens.description",
-      color: "from-purple-500 to-violet-500"
+      color: "from-category-purple to-category-violet"
     }
   ];
 
@@ -205,19 +205,19 @@ const IndoorPlayground = () => {
       icon: TreePine,
       titleKey: "productPages.indoorPlayground.themes.jungle.title",
       descKey: "productPages.indoorPlayground.themes.jungle.description",
-      color: "from-green-500 to-emerald-500"
+      color: "from-success to-category-emerald"
     },
     {
       icon: Anchor,
       titleKey: "productPages.indoorPlayground.themes.ocean.title",
       descKey: "productPages.indoorPlayground.themes.ocean.description",
-      color: "from-blue-500 to-cyan-500"
+      color: "from-info to-category-cyan"
     },
     {
       icon: Castle,
       titleKey: "productPages.indoorPlayground.themes.castle.title",
       descKey: "productPages.indoorPlayground.themes.castle.description",
-      color: "from-purple-500 to-pink-500"
+      color: "from-category-purple to-category-pink"
     },
     {
       icon: Plane,
