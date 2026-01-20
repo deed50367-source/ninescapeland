@@ -2007,5 +2007,73 @@
     "error": "Entschuldigung, etwas ist schiefgelaufen. Bitte versuchen Sie es erneut oder kontaktieren Sie uns über WhatsApp.",
     "placeholder": "Ihre Nachricht eingeben...",
     "whatsappCTA": "Per WhatsApp chatten für schnellere Antwort"
+  },
+  "seo": {
+    "defaultKeywords": "Indoor-Spielplatz-Ausrüstung, Trampolinpark-Hersteller, kommerzieller Spielplatz-Lieferant, Indoor-Spielgeräte, Ninja-Warrior-Parcours, Soft-Play-Ausrüstung, Familienunterhaltungszentrum",
+    "home": {
+      "title": "Indoor-Spielplatz-Ausrüstung Hersteller | Kommerzieller Spielplatz-Lieferant | NinescapeLand",
+      "description": "Führender kommerzieller Indoor-Spielplatz-Ausrüstung Hersteller seit 2008. Maßgeschneiderte Trampolinparks, Ninja-Parcours, Soft-Play-Bereiche. ASTM & TUV zertifiziert. Weltweiter Versand, 3 Jahre Garantie.",
+      "keywords": "Indoor-Spielplatz-Ausrüstung, Trampolinpark-Hersteller, kommerzieller Spielplatz-Lieferant, Familienunterhaltungszentrum"
+    },
+    "aboutUs": {
+      "title": "Über NinescapeLand | Indoor-Spielplatz-Hersteller seit 2008",
+      "description": "Erfahren Sie mehr über NinescapeLand, einen führenden Hersteller von Indoor-Spielplatz-Ausrüstung mit über 15 Jahren Erfahrung. Über 2.000 Projekte in über 50 Ländern abgeschlossen.",
+      "keywords": "über NinescapeLand, Spielplatz-Hersteller Geschichte, Indoor-Spielplatz-Unternehmen"
+    },
+    "products": {
+      "title": "Kommerzielle Spielplatzgeräte | Indoor-Spielstrukturen & Lösungen",
+      "description": "Entdecken Sie unsere Premium-Spielplatzgeräte: Indoor-Spielplätze, Trampolinparks, Ninja-Parcours, Soft-Play-Bereiche. ASTM & TUV zertifiziert. Individuelle Designs.",
+      "keywords": "kommerzielle Spielplatzgeräte, Indoor-Spielplatzstrukturen, Trampolinpark-Ausrüstung"
+    },
+    "trampolinePark": {
+      "title": "Trampolinpark-Ausrüstung Hersteller | Kommerzielle Trampolinsysteme",
+      "description": "Professioneller Trampolinpark-Ausrüstung Hersteller. Über 12 Aktivitätszonen. ASTM-zertifiziert, modulares Design. Kostenloses 3D-Design erhalten!",
+      "keywords": "Trampolinpark-Ausrüstung, kommerzielle Trampoline, Trampolinpark-Hersteller"
+    },
+    "indoorPlayground": {
+      "title": "Indoor-Spielplatz-Ausrüstung | Hersteller maßgeschneiderter Spielstrukturen",
+      "description": "Maßgeschneiderte Indoor-Spielplatz-Ausrüstung Hersteller. Mehrstöckige Spielstrukturen, Rutschen, Bällebäder. Themendesigns, ASTM & TUV zertifiziert.",
+      "keywords": "Indoor-Spielplatz-Ausrüstung, kommerzielle Spielstrukturen, Kinderspielplatz-Hersteller"
+    },
+    "ninjaCourse": {
+      "title": "Ninja-Warrior-Parcours-Ausrüstung | Professioneller Hindernisparcours-Hersteller",
+      "description": "Professioneller Ninja-Warrior-Parcours-Ausrüstung Hersteller. Über 50 Hindernistypen, einstellbare Schwierigkeitsgrade. Perfekt für Fitnessstudios und Abenteuerparks.",
+      "keywords": "Ninja-Warrior-Parcours, Ninja-Hindernisse, Ninja-Warrior-Ausrüstung"
+    },
+    "softPlay": {
+      "title": "Soft-Play-Ausrüstung | Kleinkind-Spielbereich Hersteller",
+      "description": "Sichere Soft-Play-Ausrüstung für Kleinkinder. Gepolsterte Strukturen, sensorische Elemente, leicht zu reinigendes Material. ASTM-zertifiziert, individuelle Designs.",
+      "keywords": "Soft-Play-Ausrüstung, Kleinkind-Spielbereich, Soft-Play-Hersteller"
+    },
+    "process": {
+      "title": "Unser Prozess | Vom Design zur Installation | NinescapeLand",
+      "description": "Erleben Sie unseren bewährten 6-Schritte-Prozess: kostenloses 3D-Design, professionelle Fertigung, weltweiter Versand, Installationsunterstützung. Schlüsselfertige Spielplatzlösungen.",
+      "keywords": "Spielplatz-Installationsprozess, schlüsselfertige Spielplatzlösungen, Spielplatz-Designservice"
+    },
+    "projects": {
+      "title": "Globale Projekte | Über 2.000 Spielplatzinstallationen weltweit",
+      "description": "Entdecken Sie über 2.000 erfolgreiche Spielplatzinstallationen in über 50 Ländern. Indoor-Spielplätze, Trampolinparks, FECs weltweit.",
+      "keywords": "Spielplatzprojekte, Indoor-Spielplatz-Installationen, Trampolinpark-Projekte"
+    },
+    "contact": {
+      "title": "Kontakt | Kostenloses Design & Angebot erhalten | NinescapeLand",
+      "description": "Kontaktieren Sie NinescapeLand für kostenloses 3D-Design und wettbewerbsfähiges Angebot. 24-Stunden-Antwort garantiert. WhatsApp-Support verfügbar.",
+      "keywords": "Spielplatz-Hersteller kontaktieren, Spielplatz-Angebot erhalten, Spielplatz-Design-Anfrage"
+    },
+    "faq": {
+      "title": "FAQ | Indoor-Spielplatz-Ausrüstung Fragen beantwortet",
+      "description": "Finden Sie Antworten auf häufig gestellte Fragen zu Indoor-Spielplatz-Ausrüstung, Preisen, Lieferzeiten, Versand, Installation, Garantien und mehr.",
+      "keywords": "Spielplatz-Ausrüstung FAQ, Indoor-Spielplatz-Fragen"
+    },
+    "blog": {
+      "title": "Brancheneinblicke & Neuigkeiten | Indoor-Spielplatz-Blog",
+      "description": "Bleiben Sie über die neuesten Trends, Tipps und Neuigkeiten in der Indoor-Spielplatz- und Familienunterhaltungsbranche informiert. Experteneinblicke für FEC-Betreiber.",
+      "keywords": "Indoor-Spielplatz-Blog, FEC-Branchennachrichten, Spielplatz-Business-Tipps"
+    },
+    "caseStudies": {
+      "title": "Fallstudien | Erfolgreiche Spielplatzprojekt-Beispiele",
+      "description": "Entdecken Sie detaillierte Fallstudien unserer erfolgreichen Spielplatzprojekte weltweit. Sehen Sie, wie wir Unternehmen bei der Schaffung profitabler Familienunterhaltungszentren geholfen haben.",
+      "keywords": "Spielplatz-Fallstudien, FEC-Erfolgsgeschichten, Indoor-Spielplatz-Beispiele"
+    }
   }
 }

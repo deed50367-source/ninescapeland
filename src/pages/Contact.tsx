@@ -7,10 +7,12 @@ import { FloatingCTA } from "@/components/FloatingCTA";
 import { ContactMascotBanner } from "@/components/ContactMascotBanner";
 import { ContactTrustSection } from "@/components/ContactTrustSection";
 import { heroImages } from "@/config/galleryImages";
+import { SEOHead } from "@/components/SEOHead";
 
 const Contact = () => {
   return (
     <div className="min-h-screen">
+      <SEOHead pageKey="contact" />
       <Header />
       <main>
         <PageHero

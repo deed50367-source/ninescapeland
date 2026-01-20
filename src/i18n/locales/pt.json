@@ -1926,5 +1926,73 @@
     "error": "Desculpe, algo deu errado. Por favor tente novamente ou entre em contato pelo WhatsApp.",
     "placeholder": "Digite sua mensagem...",
     "whatsappCTA": "Converse no WhatsApp para resposta mais rápida"
+  },
+  "seo": {
+    "defaultKeywords": "equipamentos de playground indoor, fabricante de parque de trampolins, fornecedor de playground comercial, equipamentos de diversão indoor, curso ninja warrior, equipamentos de brinquedo macio, centro de entretenimento familiar",
+    "home": {
+      "title": "Fabricante de Equipamentos de Playground Indoor | Fornecedor de Playground Comercial | NinescapeLand",
+      "description": "Fabricante líder de equipamentos de playground indoor comercial desde 2008. Parques de trampolins personalizados, cursos ninja, áreas de brinquedo macio. Certificado ASTM e TUV. Envio global, garantia de 3 anos.",
+      "keywords": "equipamentos de playground indoor, fabricante de parque de trampolins, fornecedor de playground comercial, centro de entretenimento familiar"
+    },
+    "aboutUs": {
+      "title": "Sobre a NinescapeLand | Fabricante de Playgrounds desde 2008",
+      "description": "Conheça a NinescapeLand, fabricante líder de equipamentos de playground indoor com mais de 15 anos de experiência. Mais de 2.000 projetos concluídos em mais de 50 países.",
+      "keywords": "sobre NinescapeLand, história do fabricante de playgrounds, empresa de playground indoor"
+    },
+    "products": {
+      "title": "Equipamentos de Playground Comercial | Estruturas de Diversão Indoor e Soluções",
+      "description": "Explore nossos equipamentos de playground comercial premium: playgrounds indoor, parques de trampolins, cursos ninja, áreas de brinquedo macio. Certificado ASTM e TUV.",
+      "keywords": "equipamentos de playground comercial, estruturas de playground indoor, equipamentos de parque de trampolins"
+    },
+    "trampolinePark": {
+      "title": "Fabricante de Equipamentos de Parque de Trampolins | Sistemas de Trampolim Comercial",
+      "description": "Fabricante profissional de equipamentos de parque de trampolins. Mais de 12 zonas de atividade. Certificado ASTM, design modular. Obtenha design 3D grátis!",
+      "keywords": "equipamentos de parque de trampolins, trampolins comerciais, fabricante de parque de trampolins"
+    },
+    "indoorPlayground": {
+      "title": "Equipamentos de Playground Indoor | Fabricante de Estruturas de Diversão Personalizadas",
+      "description": "Fabricante de equipamentos de playground indoor personalizados. Estruturas de brincadeira multinível, escorregadores, piscinas de bolas. Designs temáticos, certificado ASTM e TUV.",
+      "keywords": "equipamentos de playground indoor, estruturas de diversão comercial, fabricante de playground infantil"
+    },
+    "ninjaCourse": {
+      "title": "Equipamentos de Curso Ninja Warrior | Fabricante Profissional de Circuitos de Obstáculos",
+      "description": "Fabricante profissional de equipamentos de curso ninja warrior. Mais de 50 tipos de obstáculos, níveis de dificuldade ajustáveis. Perfeito para academias e parques de aventura.",
+      "keywords": "curso ninja warrior, obstáculos ninja, equipamentos ninja warrior"
+    },
+    "softPlay": {
+      "title": "Equipamentos de Brinquedo Macio | Fabricante de Áreas de Diversão para Crianças Pequenas",
+      "description": "Equipamentos de brinquedo macio seguros para bebês e crianças pequenas. Estruturas acolchoadas, elementos sensoriais, materiais fáceis de limpar. Certificado ASTM, designs personalizados.",
+      "keywords": "equipamentos de brinquedo macio, área de diversão para crianças pequenas, fabricante de brinquedo macio"
+    },
+    "process": {
+      "title": "Nosso Processo | Do Design à Instalação | NinescapeLand",
+      "description": "Experimente nosso processo comprovado de 6 etapas: design 3D grátis, fabricação profissional, envio global, suporte de instalação. Soluções de playground prontas para uso.",
+      "keywords": "processo de instalação de playground, soluções de playground prontas, serviço de design de playground"
+    },
+    "projects": {
+      "title": "Projetos Globais | Mais de 2.000 Instalações de Playgrounds em Todo o Mundo",
+      "description": "Explore mais de 2.000 instalações de playgrounds bem-sucedidas em mais de 50 países. Playgrounds indoor, parques de trampolins, FECs em todo o mundo.",
+      "keywords": "projetos de playgrounds, instalações de playground indoor, projetos de parques de trampolins"
+    },
+    "contact": {
+      "title": "Entre em Contato | Obtenha Design e Orçamento Grátis | NinescapeLand",
+      "description": "Entre em contato com a NinescapeLand para design 3D grátis e orçamento competitivo. Resposta em 24 horas garantida. Suporte por WhatsApp disponível.",
+      "keywords": "contatar fabricante de playgrounds, obter orçamento de playground, consulta de design de playground"
+    },
+    "faq": {
+      "title": "FAQ | Perguntas sobre Equipamentos de Playground Indoor Respondidas",
+      "description": "Encontre respostas para perguntas frequentes sobre equipamentos de playground indoor, preços, prazos de entrega, envio, instalação, garantias e mais.",
+      "keywords": "FAQ de equipamentos de playground, perguntas de playground indoor"
+    },
+    "blog": {
+      "title": "Perspectivas e Notícias do Setor | Blog de Playgrounds Indoor",
+      "description": "Fique atualizado com as últimas tendências, dicas e notícias na indústria de playgrounds e entretenimento familiar. Insights de especialistas para proprietários de FEC.",
+      "keywords": "blog de playground indoor, notícias da indústria FEC, dicas de negócio de playgrounds"
+    },
+    "caseStudies": {
+      "title": "Estudos de Caso | Exemplos de Projetos de Playground Bem-Sucedidos",
+      "description": "Explore estudos de caso detalhados de nossos projetos de playground bem-sucedidos em todo o mundo. Veja como ajudamos empresas a criar centros de entretenimento familiar lucrativos.",
+      "keywords": "estudos de caso de playgrounds, histórias de sucesso FEC, exemplos de playground indoor"
+    }
   }
 }
