@@ -11,6 +11,7 @@ import { useLocalizedPath } from "@/hooks/useLocalizedPath";
 import { Calendar, ArrowRight } from "lucide-react";
 import { format } from "date-fns";
 import { Skeleton } from "@/components/ui/skeleton";
+import { SEOHead } from "@/components/SEOHead";
 
 const Blog = () => {
   const { t } = useTranslation();
@@ -32,6 +33,7 @@ const Blog = () => {
 
   return (
     <div className="min-h-screen flex flex-col">
+      <SEOHead pageKey="blog" />
       <Header />
       
       <PageHero

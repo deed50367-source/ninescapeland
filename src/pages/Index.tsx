@@ -20,10 +20,12 @@ import { Footer } from "@/components/Footer";
 import { FloatingCTA } from "@/components/FloatingCTA";
 import { LiveChat } from "@/components/LiveChat";
 import MobileBottomNav from "@/components/MobileBottomNav";
+import { SEOHead } from "@/components/SEOHead";
 
 const Index = () => {
   return (
     <div className="min-h-screen pb-16 md:pb-0">
+      <SEOHead pageKey="home" />
       <Header />
       <main>
         <HeroSection />

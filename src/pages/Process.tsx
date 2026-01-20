@@ -11,10 +11,12 @@ import { Footer } from "@/components/Footer";
 import { FloatingCTA } from "@/components/FloatingCTA";
 import MobileBottomNav from "@/components/MobileBottomNav";
 import { heroImages } from "@/config/galleryImages";
+import { SEOHead } from "@/components/SEOHead";
 
 const Process = () => {
   return (
     <div className="min-h-screen pb-16 md:pb-0">
+      <SEOHead pageKey="process" />
       <Header />
       <main>
         <PageHero

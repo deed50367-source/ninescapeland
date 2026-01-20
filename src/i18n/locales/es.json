@@ -1926,5 +1926,73 @@
     "error": "Lo siento, algo salió mal. Por favor intenta de nuevo o contáctanos por WhatsApp.",
     "placeholder": "Escribe tu mensaje...",
     "whatsappCTA": "Chatea por WhatsApp para respuesta más rápida"
+  },
+  "seo": {
+    "defaultKeywords": "equipos de parque infantil interior, fabricante de parque de trampolines, proveedor de parque comercial, equipo de juego interior, curso ninja warrior, equipo de juego suave, centro de entretenimiento familiar",
+    "home": {
+      "title": "Fabricante de Equipos de Parque Infantil Interior | Proveedor de Parques Comerciales | NinescapeLand",
+      "description": "Fabricante líder de equipos de parque infantil interior comercial desde 2008. Parques de trampolines personalizados, cursos ninja, áreas de juego suave. Certificado ASTM y TUV. Envío global, garantía de 3 años.",
+      "keywords": "equipos de parque infantil interior, fabricante de parque de trampolines, proveedor de parque comercial, centro de entretenimiento familiar"
+    },
+    "aboutUs": {
+      "title": "Sobre NinescapeLand | Fabricante de Parques Infantiles desde 2008",
+      "description": "Conoce NinescapeLand, fabricante líder de equipos de parque infantil interior con más de 15 años de experiencia. Más de 2,000 proyectos completados en más de 50 países.",
+      "keywords": "sobre NinescapeLand, historia del fabricante de parques, empresa de parques infantiles interiores"
+    },
+    "products": {
+      "title": "Equipos de Parque Comercial | Estructuras de Juego Interior y Soluciones",
+      "description": "Explora nuestros equipos de parque comercial premium: parques infantiles interiores, parques de trampolines, cursos ninja, áreas de juego suave. Certificado ASTM y TUV.",
+      "keywords": "equipos de parque comercial, estructuras de parque infantil interior, equipos de parque de trampolines"
+    },
+    "trampolinePark": {
+      "title": "Fabricante de Equipos de Parque de Trampolines | Sistemas de Trampolín Comercial",
+      "description": "Fabricante profesional de equipos de parque de trampolines. Más de 12 zonas de actividad. Certificado ASTM, diseño modular. ¡Obtén diseño 3D gratis!",
+      "keywords": "equipos de parque de trampolines, trampolines comerciales, fabricante de parque de trampolines"
+    },
+    "indoorPlayground": {
+      "title": "Equipos de Parque Infantil Interior | Fabricante de Estructuras de Juego Personalizadas",
+      "description": "Fabricante de equipos de parque infantil interior personalizados. Estructuras de juego multinivel, toboganes, piscinas de bolas. Diseños temáticos, certificado ASTM y TUV.",
+      "keywords": "equipos de parque infantil interior, estructuras de juego comercial, fabricante de parque infantil"
+    },
+    "ninjaCourse": {
+      "title": "Equipos de Curso Ninja Warrior | Fabricante Profesional de Circuitos de Obstáculos",
+      "description": "Fabricante profesional de equipos de curso ninja warrior. Más de 50 tipos de obstáculos, niveles de dificultad ajustables. Perfecto para gimnasios y parques de aventura.",
+      "keywords": "curso ninja warrior, obstáculos ninja, equipos ninja warrior"
+    },
+    "softPlay": {
+      "title": "Equipos de Juego Suave | Fabricante de Áreas de Juego para Niños Pequeños",
+      "description": "Equipos de juego suave seguros para bebés y niños pequeños. Estructuras acolchadas, elementos sensoriales, materiales fáciles de limpiar. Certificado ASTM, diseños personalizados.",
+      "keywords": "equipos de juego suave, área de juego para niños pequeños, fabricante de juego suave"
+    },
+    "process": {
+      "title": "Nuestro Proceso | Del Diseño a la Instalación | NinescapeLand",
+      "description": "Experimenta nuestro proceso probado de 6 pasos: diseño 3D gratis, fabricación profesional, envío global, soporte de instalación. Soluciones de parque llave en mano.",
+      "keywords": "proceso de instalación de parque, soluciones de parque llave en mano, servicio de diseño de parque"
+    },
+    "projects": {
+      "title": "Proyectos Globales | Más de 2,000 Instalaciones de Parques en Todo el Mundo",
+      "description": "Explora más de 2,000 instalaciones de parques exitosas en más de 50 países. Parques infantiles interiores, parques de trampolines, FECs en todo el mundo.",
+      "keywords": "proyectos de parques, instalaciones de parques infantiles interiores, proyectos de parques de trampolines"
+    },
+    "contact": {
+      "title": "Contáctanos | Obtén Diseño y Cotización Gratis | NinescapeLand",
+      "description": "Contacta NinescapeLand para diseño 3D gratis y cotización competitiva. Respuesta en 24 horas garantizada. Soporte por WhatsApp disponible.",
+      "keywords": "contactar fabricante de parques, obtener cotización de parque, consulta de diseño de parque"
+    },
+    "faq": {
+      "title": "FAQ | Preguntas sobre Equipos de Parque Infantil Interior Respondidas",
+      "description": "Encuentra respuestas a preguntas frecuentes sobre equipos de parque infantil interior, precios, tiempos de entrega, envío, instalación, garantías y más.",
+      "keywords": "FAQ de equipos de parque, preguntas de parque infantil interior"
+    },
+    "blog": {
+      "title": "Perspectivas e Noticias del Sector | Blog de Parques Infantiles Interiores",
+      "description": "Mantente actualizado con las últimas tendencias, consejos y noticias en la industria de parques infantiles y entretenimiento familiar. Perspectivas de expertos para propietarios de FEC.",
+      "keywords": "blog de parques infantiles interiores, noticias de la industria FEC, consejos de negocio de parques"
+    },
+    "caseStudies": {
+      "title": "Casos de Estudio | Ejemplos de Proyectos de Parques Exitosos",
+      "description": "Explora casos de estudio detallados de nuestros proyectos de parques exitosos en todo el mundo. Ve cómo hemos ayudado a negocios a crear centros de entretenimiento familiar rentables.",
+      "keywords": "casos de estudio de parques, historias de éxito FEC, ejemplos de parques infantiles interiores"
+    }
   }
 }

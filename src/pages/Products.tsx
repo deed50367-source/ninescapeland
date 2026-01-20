@@ -8,10 +8,12 @@ import { FAQSection } from "@/components/FAQSection";
 import { Footer } from "@/components/Footer";
 import { FloatingCTA } from "@/components/FloatingCTA";
 import { heroImages } from "@/config/galleryImages";
+import { SEOHead } from "@/components/SEOHead";
 
 const Products = () => {
   return (
     <div className="min-h-screen">
+      <SEOHead pageKey="products" />
       <Header />
       <main>
         <PageHero

@@ -8,10 +8,12 @@ import { FloatingCTA } from "@/components/FloatingCTA";
 import { AboutMascotIntro } from "@/components/AboutMascotIntro";
 import { AboutTeamSection } from "@/components/AboutTeamSection";
 import { heroImages } from "@/config/galleryImages";
+import { SEOHead } from "@/components/SEOHead";
 
 const AboutUs = () => {
   return (
     <div className="min-h-screen">
+      <SEOHead pageKey="aboutUs" />
       <Header />
       <main>
         <PageHero

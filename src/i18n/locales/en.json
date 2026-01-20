@@ -2155,5 +2155,73 @@
     "error": "Sorry, something went wrong. Please try again or contact us via WhatsApp.",
     "placeholder": "Type your message...",
     "whatsappCTA": "Chat on WhatsApp for faster response"
+  },
+  "seo": {
+    "defaultKeywords": "indoor playground equipment, trampoline park manufacturer, commercial playground supplier, indoor play equipment, ninja warrior course, soft play equipment, family entertainment center, FEC equipment, playground manufacturer China",
+    "home": {
+      "title": "Indoor Playground Equipment Manufacturer | Commercial Playground Supplier",
+      "description": "Leading commercial indoor playground equipment manufacturer since 2008. Custom trampoline parks, ninja courses, soft play areas. ASTM & TUV certified. Global shipping, 3-year warranty. Get free design & quote!",
+      "keywords": "indoor playground equipment, trampoline park manufacturer, commercial playground supplier, indoor play equipment, ninja warrior course, soft play equipment, family entertainment center"
+    },
+    "aboutUs": {
+      "title": "About NinescapeLand | Indoor Playground Manufacturer Since 2008",
+      "description": "Learn about NinescapeLand, a leading indoor playground equipment manufacturer with 15+ years experience. 2,000+ projects completed in 50+ countries. ASTM & TUV certified quality.",
+      "keywords": "about NinescapeLand, playground manufacturer history, indoor playground company, playground equipment factory China"
+    },
+    "products": {
+      "title": "Commercial Playground Equipment | Indoor Play Structures & Solutions",
+      "description": "Explore our premium commercial playground equipment: indoor playgrounds, trampoline parks, ninja courses, soft play areas. ASTM & TUV certified. Custom designs, factory-direct pricing.",
+      "keywords": "commercial playground equipment, indoor playground structures, trampoline park equipment, ninja warrior obstacles, soft play equipment"
+    },
+    "trampolinePark": {
+      "title": "Trampoline Park Equipment Manufacturer | Commercial Trampoline Systems",
+      "description": "Professional trampoline park equipment manufacturer. 12+ activity zones including foam pits, slam dunk courts, ninja areas. ASTM certified, modular design. Get free 3D design!",
+      "keywords": "trampoline park equipment, commercial trampolines, trampoline park manufacturer, indoor trampoline park, foam pit trampolines"
+    },
+    "indoorPlayground": {
+      "title": "Indoor Playground Equipment | Custom Play Structures Manufacturer",
+      "description": "Custom indoor playground equipment manufacturer. Multi-level play structures, slides, ball pits, climbing nets. Themed designs, ASTM & TUV certified. Free 3D design service!",
+      "keywords": "indoor playground equipment, commercial play structures, indoor play area equipment, children playground manufacturer, themed playground"
+    },
+    "ninjaCourse": {
+      "title": "Ninja Warrior Course Equipment | Professional Obstacle Course Manufacturer",
+      "description": "Professional ninja warrior course equipment manufacturer. 50+ obstacle types, adjustable difficulty levels. Perfect for gyms, adventure parks, FECs. ASTM certified quality.",
+      "keywords": "ninja warrior course, ninja obstacles, ninja warrior equipment, indoor ninja course, adventure course equipment"
+    },
+    "softPlay": {
+      "title": "Soft Play Equipment | Toddler Play Area Manufacturer",
+      "description": "Safe soft play equipment for toddlers and young children. Padded structures, sensory elements, easy-clean materials. ASTM certified, custom designs available.",
+      "keywords": "soft play equipment, toddler play area, soft play manufacturer, indoor soft play, children soft play"
+    },
+    "process": {
+      "title": "Our Process | From Design to Installation | NinescapeLand",
+      "description": "Experience our proven 6-step process: free 3D design, professional manufacturing, global shipping, installation support. Turnkey playground solutions from concept to grand opening.",
+      "keywords": "playground installation process, turnkey playground solutions, playground design service, playground manufacturing"
+    },
+    "projects": {
+      "title": "Global Projects | 2,000+ Playground Installations Worldwide",
+      "description": "Explore 2,000+ successful playground installations across 50+ countries. Indoor playgrounds, trampoline parks, FECs worldwide. View our portfolio of completed projects.",
+      "keywords": "playground projects, indoor playground installations, trampoline park projects, FEC case studies"
+    },
+    "contact": {
+      "title": "Contact Us | Get Free Design & Quote | NinescapeLand",
+      "description": "Contact NinescapeLand for free 3D design and competitive quote. 24-hour response guaranteed. WhatsApp support available. Start your playground project today!",
+      "keywords": "contact playground manufacturer, get playground quote, playground design inquiry"
+    },
+    "faq": {
+      "title": "FAQ | Indoor Playground Equipment Questions Answered",
+      "description": "Find answers to frequently asked questions about indoor playground equipment, pricing, lead times, shipping, installation, warranties, and more. Expert guidance for your project.",
+      "keywords": "playground equipment FAQ, indoor playground questions, playground manufacturer FAQ"
+    },
+    "blog": {
+      "title": "Industry Insights & News | Indoor Playground Blog",
+      "description": "Stay updated with the latest trends, tips, and news in the indoor playground and family entertainment industry. Expert insights for FEC owners and entrepreneurs.",
+      "keywords": "indoor playground blog, FEC industry news, playground business tips, entertainment center trends"
+    },
+    "caseStudies": {
+      "title": "Case Studies | Successful Playground Project Examples",
+      "description": "Explore detailed case studies of our successful playground projects worldwide. See how we've helped businesses create profitable family entertainment centers.",
+      "keywords": "playground case studies, FEC success stories, indoor playground examples"
+    }
   }
 }
