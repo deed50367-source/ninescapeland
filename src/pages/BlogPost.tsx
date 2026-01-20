@@ -6,6 +6,7 @@ import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { LiveChat } from "@/components/LiveChat";
 import MobileBottomNav from "@/components/MobileBottomNav";
+import { SEOHead } from "@/components/SEOHead";
 import { useLocalizedPath } from "@/hooks/useLocalizedPath";
 import { Calendar, ArrowLeft } from "lucide-react";
 import { format } from "date-fns";
@@ -79,6 +80,12 @@ const BlogPost = () => {
 
   return (
     <div className="min-h-screen flex flex-col">
+      <SEOHead 
+        pageKey="blog" 
+        dynamicTitle={post.title}
+        dynamicDescription={post.excerpt || undefined}
+        ogImage={post.cover_image || undefined}
+      />
       <Header />
       
       <main className="flex-1 py-16 bg-background">

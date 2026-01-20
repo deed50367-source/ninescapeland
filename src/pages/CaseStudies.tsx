@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { MapPin, ArrowRight, Quote, Filter, X } from "lucide-react";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
+import { SEOHead } from "@/components/SEOHead";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { supabase } from "@/integrations/supabase/client";
@@ -78,6 +79,7 @@ export default function CaseStudies() {
 
   return (
     <div className="min-h-screen bg-background">
+      <SEOHead pageKey="caseStudies" />
       <Header />
       
       <main className="pt-24">
