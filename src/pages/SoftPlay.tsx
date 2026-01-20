@@ -6,6 +6,7 @@ import { FloatingMascot } from "@/components/FloatingMascot";
 import { QuoteCalculator } from "@/components/QuoteCalculator";
 import { ProductFAQ } from "@/components/ProductFAQ";
 import { SEOHead } from "@/components/SEOHead";
+import { ProductSchema } from "@/components/StructuredData";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -226,6 +227,13 @@ const SoftPlay = () => {
   return (
     <div className="min-h-screen">
       <SEOHead pageKey="softPlay" />
+      <ProductSchema
+        name="Soft Play Equipment for Toddlers"
+        description="Safe and colorful soft play equipment designed for toddlers and young children. Features foam-padded structures, sensory elements, and easy-clean materials. Perfect for daycare centers and family entertainment venues."
+        image={heroImage}
+        category="Soft Play Equipment"
+        aggregateRating={{ ratingValue: 4.9, reviewCount: 124 }}
+      />
       <Header />
       <main>
         <PageHero

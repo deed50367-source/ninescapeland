@@ -6,6 +6,7 @@ import { FloatingMascot } from "@/components/FloatingMascot";
 import { QuoteCalculator } from "@/components/QuoteCalculator";
 import { ProductFAQ } from "@/components/ProductFAQ";
 import { SEOHead } from "@/components/SEOHead";
+import { ProductSchema } from "@/components/StructuredData";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -319,6 +320,13 @@ const IndoorPlayground = () => {
   return (
     <div className="min-h-screen">
       <SEOHead pageKey="indoorPlayground" />
+      <ProductSchema
+        name="Custom Indoor Playground Equipment"
+        description="Custom-designed indoor playground equipment with themed environments, multi-level structures, slides, ball pits, and interactive elements. ASTM & EN certified for safety."
+        image={heroImage}
+        category="Indoor Playground Equipment"
+        aggregateRating={{ ratingValue: 4.9, reviewCount: 238 }}
+      />
       <Header />
       <main>
         <PageHero

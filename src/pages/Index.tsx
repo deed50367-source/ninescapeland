@@ -21,11 +21,15 @@ import { FloatingCTA } from "@/components/FloatingCTA";
 import { LiveChat } from "@/components/LiveChat";
 import MobileBottomNav from "@/components/MobileBottomNav";
 import { SEOHead } from "@/components/SEOHead";
+import { OrganizationSchema, LocalBusinessSchema, WebsiteSchema } from "@/components/StructuredData";
 
 const Index = () => {
   return (
     <div className="min-h-screen pb-16 md:pb-0">
       <SEOHead pageKey="home" />
+      <OrganizationSchema />
+      <LocalBusinessSchema />
+      <WebsiteSchema />
       <Header />
       <main>
         <HeroSection />
