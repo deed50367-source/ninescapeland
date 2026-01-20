@@ -22,7 +22,7 @@ const AdminLogin = () => {
     e.preventDefault();
     
     if (!email || !password) {
-      toast.error("请输入邮箱和密码");
+      toast.error("Please enter email and password");
       return;
     }
 
@@ -50,15 +50,15 @@ const AdminLogin = () => {
 
         if (roleError || !roleData) {
           await supabase.auth.signOut();
-          toast.error("您没有管理员权限");
+          toast.error("You do not have admin privileges");
           return;
         }
 
-        toast.success("登录成功");
+        toast.success("Login successful");
         navigate("/admin");
       }
     } catch (error) {
-      toast.error("登录失败，请重试");
+      toast.error("Login failed, please try again");
     } finally {
       setIsLoading(false);
     }
@@ -72,24 +72,24 @@ const AdminLogin = () => {
             <img src={logo} alt="NinescapeLand" className="h-16 mx-auto mb-4" />
           </Link>
           <h1 className="text-2xl font-heading font-bold text-foreground">
-            管理员登录
+            Admin Login
           </h1>
           <p className="text-muted-foreground mt-2">
-            登录以管理素材图库
+            Login to manage the asset gallery
           </p>
         </div>
 
         <Card>
           <CardHeader>
-            <CardTitle className="text-lg">登录</CardTitle>
+            <CardTitle className="text-lg">Login</CardTitle>
             <CardDescription>
-              使用您的管理员账号登录
+              Sign in with your admin account
             </CardDescription>
           </CardHeader>
           <CardContent>
             <form onSubmit={handleLogin} className="space-y-4">
               <div className="space-y-2">
-                <Label htmlFor="email">邮箱</Label>
+                <Label htmlFor="email">Email</Label>
                 <div className="relative">
                   <Mail className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-muted-foreground" />
                   <Input
@@ -105,7 +105,7 @@ const AdminLogin = () => {
               </div>
 
               <div className="space-y-2">
-                <Label htmlFor="password">密码</Label>
+                <Label htmlFor="password">Password</Label>
                 <div className="relative">
                   <Lock className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-muted-foreground" />
                   <Input
@@ -121,7 +121,7 @@ const AdminLogin = () => {
               </div>
 
               <Button type="submit" className="w-full" disabled={isLoading}>
-                {isLoading ? "登录中..." : "登录"}
+                {isLoading ? "Signing in..." : "Sign In"}
               </Button>
             </form>
           </CardContent>
@@ -133,7 +133,7 @@ const AdminLogin = () => {
             className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors"
           >
             <ArrowLeft className="w-4 h-4" />
-            返回首页
+            Back to Home
           </Link>
         </div>
       </div>

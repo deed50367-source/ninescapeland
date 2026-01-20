@@ -63,7 +63,7 @@ const AdminBlogTab = () => {
 
     if (error) {
       console.error("Error fetching posts:", error);
-      toast.error("获取文章列表失败");
+      toast.error("Failed to fetch posts");
     } else {
       setPosts(data || []);
     }
@@ -117,12 +117,12 @@ const AdminBlogTab = () => {
 
   const handleSave = async () => {
     if (!formData.title.trim()) {
-      toast.error("请输入文章标题");
+      toast.error("Please enter a title");
       return;
     }
 
     if (!formData.slug.trim()) {
-      toast.error("请输入文章别名");
+      toast.error("Please enter a slug");
       return;
     }
 
@@ -146,14 +146,14 @@ const AdminBlogTab = () => {
           .eq("id", editingPost.id);
 
         if (error) throw error;
-        toast.success("文章更新成功");
+        toast.success("Post updated successfully");
       } else {
         const { error } = await supabase
           .from("blog_posts")
           .insert(postData);
 
         if (error) throw error;
-        toast.success("文章创建成功");
+        toast.success("Post created successfully");
       }
 
       setIsEditorOpen(false);
@@ -161,9 +161,9 @@ const AdminBlogTab = () => {
     } catch (error: any) {
       console.error("Error saving post:", error);
       if (error.code === "23505") {
-        toast.error("文章别名已存在，请使用其他别名");
+        toast.error("Slug already exists, please use a different one");
       } else {
-        toast.error("保存失败: " + error.message);
+        toast.error("Save failed: " + error.message);
       }
     } finally {
       setIsSaving(false);
@@ -171,7 +171,7 @@ const AdminBlogTab = () => {
   };
 
   const handleDelete = async (post: BlogPost) => {
-    if (!confirm(`确定要删除文章"${post.title}"吗？`)) return;
+    if (!confirm(`Are you sure you want to delete "${post.title}"?`)) return;
 
     const { error } = await supabase
       .from("blog_posts")
@@ -179,9 +179,9 @@ const AdminBlogTab = () => {
       .eq("id", post.id);
 
     if (error) {
-      toast.error("删除失败: " + error.message);
+      toast.error("Delete failed: " + error.message);
     } else {
-      toast.success("文章已删除");
+      toast.success("Post deleted");
       fetchPosts();
     }
   };
@@ -198,9 +198,9 @@ const AdminBlogTab = () => {
       .eq("id", post.id);
 
     if (error) {
-      toast.error("操作失败: " + error.message);
+      toast.error("Operation failed: " + error.message);
     } else {
-      toast.success(newStatus === "published" ? "文章已发布" : "文章已取消发布");
+      toast.success(newStatus === "published" ? "Post published" : "Post unpublished");
       fetchPosts();
     }
   };
@@ -215,11 +215,11 @@ const AdminBlogTab = () => {
   const getStatusBadge = (status: string) => {
     switch (status) {
       case "published":
-        return <Badge className="bg-green-500">已发布</Badge>;
+        return <Badge className="bg-green-500">Published</Badge>;
       case "draft":
-        return <Badge variant="secondary">草稿</Badge>;
+        return <Badge variant="secondary">Draft</Badge>;
       case "archived":
-        return <Badge variant="outline">已归档</Badge>;
+        return <Badge variant="outline">Archived</Badge>;
       default:
         return <Badge variant="outline">{status}</Badge>;
     }
@@ -233,7 +233,7 @@ const AdminBlogTab = () => {
           <div className="relative flex-1 max-w-sm">
             <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-muted-foreground" />
             <Input
-              placeholder="搜索文章..."
+              placeholder="Search posts..."
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
               className="pl-10"
@@ -244,16 +244,16 @@ const AdminBlogTab = () => {
               <SelectValue />
             </SelectTrigger>
             <SelectContent>
-              <SelectItem value="all">全部状态</SelectItem>
-              <SelectItem value="draft">草稿</SelectItem>
-              <SelectItem value="published">已发布</SelectItem>
-              <SelectItem value="archived">已归档</SelectItem>
+              <SelectItem value="all">All Status</SelectItem>
+              <SelectItem value="draft">Draft</SelectItem>
+              <SelectItem value="published">Published</SelectItem>
+              <SelectItem value="archived">Archived</SelectItem>
             </SelectContent>
           </Select>
         </div>
         <Button onClick={() => openEditor()}>
           <Plus className="w-4 h-4 mr-2" />
-          新建文章
+          New Post
         </Button>
       </div>
 
@@ -267,7 +267,7 @@ const AdminBlogTab = () => {
           <CardContent className="flex flex-col items-center justify-center py-12">
             <FileText className="w-12 h-12 text-muted-foreground mb-4" />
             <p className="text-muted-foreground">
-              {searchQuery || statusFilter !== "all" ? "没有找到匹配的文章" : "还没有文章，点击上方按钮创建"}
+              {searchQuery || statusFilter !== "all" ? "No matching posts found" : "No posts yet, click the button above to create one"}
             </p>
           </CardContent>
         </Card>
@@ -293,12 +293,12 @@ const AdminBlogTab = () => {
                     <div className="flex items-center gap-4 mt-2 text-xs text-muted-foreground">
                       <span className="flex items-center gap-1">
                         <Calendar className="w-3 h-3" />
-                        创建: {format(new Date(post.created_at), "yyyy-MM-dd HH:mm")}
+                        Created: {format(new Date(post.created_at), "yyyy-MM-dd HH:mm")}
                       </span>
                       {post.published_at && (
                         <span className="flex items-center gap-1">
                           <Send className="w-3 h-3" />
-                          发布: {format(new Date(post.published_at), "yyyy-MM-dd HH:mm")}
+                          Published: {format(new Date(post.published_at), "yyyy-MM-dd HH:mm")}
                         </span>
                       )}
                     </div>
@@ -308,7 +308,7 @@ const AdminBlogTab = () => {
                       variant="ghost"
                       size="icon"
                       onClick={() => handlePublish(post)}
-                      title={post.status === "published" ? "取消发布" : "发布"}
+                      title={post.status === "published" ? "Unpublish" : "Publish"}
                     >
                       {post.status === "published" ? (
                         <Eye className="w-4 h-4" />
@@ -344,23 +344,23 @@ const AdminBlogTab = () => {
         <DialogContent className="max-w-4xl max-h-[90vh] overflow-y-auto">
           <DialogHeader>
             <DialogTitle>
-              {editingPost ? "编辑文章" : "新建文章"}
+              {editingPost ? "Edit Post" : "New Post"}
             </DialogTitle>
           </DialogHeader>
           
           <div className="space-y-4 py-4">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div className="space-y-2">
-                <Label htmlFor="title">标题 *</Label>
+                <Label htmlFor="title">Title *</Label>
                 <Input
                   id="title"
                   value={formData.title}
                   onChange={handleTitleChange}
-                  placeholder="文章标题"
+                  placeholder="Post title"
                 />
               </div>
               <div className="space-y-2">
-                <Label htmlFor="slug">别名 (URL) *</Label>
+                <Label htmlFor="slug">Slug (URL) *</Label>
                 <Input
                   id="slug"
                   value={formData.slug}
@@ -371,18 +371,18 @@ const AdminBlogTab = () => {
             </div>
 
             <div className="space-y-2">
-              <Label htmlFor="excerpt">摘要</Label>
+              <Label htmlFor="excerpt">Excerpt</Label>
               <Textarea
                 id="excerpt"
                 value={formData.excerpt}
                 onChange={(e) => setFormData(prev => ({ ...prev, excerpt: e.target.value }))}
-                placeholder="文章摘要..."
+                placeholder="Post excerpt..."
                 rows={2}
               />
             </div>
 
             <div className="space-y-2">
-              <Label htmlFor="cover_image">封面图片 URL</Label>
+              <Label htmlFor="cover_image">Cover Image URL</Label>
               <Input
                 id="cover_image"
                 value={formData.cover_image}
@@ -392,12 +392,12 @@ const AdminBlogTab = () => {
             </div>
 
             <div className="space-y-2">
-              <Label htmlFor="content">内容</Label>
+              <Label htmlFor="content">Content</Label>
               <Textarea
                 id="content"
                 value={formData.content}
                 onChange={(e) => setFormData(prev => ({ ...prev, content: e.target.value }))}
-                placeholder="文章内容（支持 Markdown）..."
+                placeholder="Post content (Markdown supported)..."
                 rows={12}
                 className="font-mono"
               />
@@ -405,7 +405,7 @@ const AdminBlogTab = () => {
 
             <div className="flex items-center gap-4">
               <div className="space-y-2">
-                <Label>状态</Label>
+                <Label>Status</Label>
                 <Select 
                   value={formData.status} 
                   onValueChange={(value) => setFormData(prev => ({ ...prev, status: value }))}
@@ -414,9 +414,9 @@ const AdminBlogTab = () => {
                     <SelectValue />
                   </SelectTrigger>
                   <SelectContent>
-                    <SelectItem value="draft">草稿</SelectItem>
-                    <SelectItem value="published">发布</SelectItem>
-                    <SelectItem value="archived">归档</SelectItem>
+                    <SelectItem value="draft">Draft</SelectItem>
+                    <SelectItem value="published">Published</SelectItem>
+                    <SelectItem value="archived">Archived</SelectItem>
                   </SelectContent>
                 </Select>
               </div>
@@ -425,11 +425,11 @@ const AdminBlogTab = () => {
 
           <div className="flex justify-end gap-2">
             <Button variant="outline" onClick={() => setIsEditorOpen(false)}>
-              取消
+              Cancel
             </Button>
             <Button onClick={handleSave} disabled={isSaving}>
               {isSaving && <Loader2 className="w-4 h-4 mr-2 animate-spin" />}
-              {editingPost ? "保存" : "创建"}
+              {editingPost ? "Save" : "Create"}
             </Button>
           </div>
         </DialogContent>
