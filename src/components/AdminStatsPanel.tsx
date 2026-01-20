@@ -171,11 +171,11 @@ const AdminStatsPanel = () => {
   }, [dateRange]);
 
   const formatResponseTime = (minutes: number): string => {
-    if (minutes < 1) return '< 1 分钟';
-    if (minutes < 60) return `${Math.round(minutes)} 分钟`;
+    if (minutes < 1) return '< 1 min';
+    if (minutes < 60) return `${Math.round(minutes)} min`;
     const hours = Math.floor(minutes / 60);
     const mins = Math.round(minutes % 60);
-    return `${hours} 小时 ${mins} 分钟`;
+    return `${hours}h ${mins}m`;
   };
 
   const getResponseTimeColor = (minutes: number): string => {
@@ -197,9 +197,9 @@ const AdminStatsPanel = () => {
     const older = stats.dailyTrend.slice(0, 3).reduce((sum, d) => sum + d.count, 0) / 3;
     
     if (recent > older * 1.1) {
-      return { icon: TrendingUp, color: 'text-green-500', text: '上升' };
+      return { icon: TrendingUp, color: 'text-green-500', text: 'Up' };
     } else if (recent < older * 0.9) {
-      return { icon: TrendingDown, color: 'text-red-500', text: '下降' };
+      return { icon: TrendingDown, color: 'text-red-500', text: 'Down' };
     }
     return null;
   };
@@ -213,13 +213,13 @@ const AdminStatsPanel = () => {
           <div className="flex items-center justify-between">
             <CardTitle className="text-base flex items-center gap-2">
               <BarChart3 className="w-5 h-5" />
-              数据统计
+              Statistics
             </CardTitle>
             <div className="flex items-center gap-4">
               {stats && (
                 <div className="flex items-center gap-4 text-sm text-muted-foreground">
-                  <span>今日: {stats.todaySessions} 会话</span>
-                  <span>解决率: {stats.resolvedRate.toFixed(0)}%</span>
+                  <span>Today: {stats.todaySessions} sessions</span>
+                  <span>Resolution rate: {stats.resolvedRate.toFixed(0)}%</span>
                 </div>
               )}
               <ChevronDown className="w-5 h-5" />
@@ -241,7 +241,7 @@ const AdminStatsPanel = () => {
           <div className="flex items-center justify-between">
             <CardTitle className="text-base flex items-center gap-2">
               <BarChart3 className="w-5 h-5" />
-              数据统计
+              Statistics
             </CardTitle>
             <div className="flex items-center gap-2">
               <Select value={dateRange} onValueChange={setDateRange}>
@@ -249,9 +249,9 @@ const AdminStatsPanel = () => {
                   <SelectValue />
                 </SelectTrigger>
                 <SelectContent>
-                  <SelectItem value="7">过去 7 天</SelectItem>
-                  <SelectItem value="14">过去 14 天</SelectItem>
-                  <SelectItem value="30">过去 30 天</SelectItem>
+                  <SelectItem value="7">Last 7 days</SelectItem>
+                  <SelectItem value="14">Last 14 days</SelectItem>
+                  <SelectItem value="30">Last 30 days</SelectItem>
                 </SelectContent>
               </Select>
               <Button variant="ghost" size="icon" className="h-8 w-8" onClick={() => setIsExpanded(false)}>
@@ -263,7 +263,7 @@ const AdminStatsPanel = () => {
         <CardContent className="pt-4">
           {isLoading ? (
             <div className="h-32 flex items-center justify-center text-muted-foreground">
-              加载中...
+              Loading...
             </div>
           ) : stats ? (
             <div className="space-y-6">
@@ -273,13 +273,13 @@ const AdminStatsPanel = () => {
                 <div className="bg-muted/50 rounded-lg p-4">
                   <div className="flex items-center gap-2 text-muted-foreground mb-1">
                     <Calendar className="w-4 h-4" />
-                    <span className="text-xs">今日会话</span>
+                    <span className="text-xs">Today's Sessions</span>
                   </div>
                   <div className="text-2xl font-bold">{stats.todaySessions}</div>
                   {trend && (
                     <div className={`flex items-center gap-1 text-xs mt-1 ${trend.color}`}>
                       <trend.icon className="w-3 h-3" />
-                      <span>{trend.text}趋势</span>
+                      <span>{trend.text} trend</span>
                     </div>
                   )}
                 </div>
@@ -288,11 +288,11 @@ const AdminStatsPanel = () => {
                 <div className="bg-muted/50 rounded-lg p-4">
                   <div className="flex items-center gap-2 text-muted-foreground mb-1">
                     <MessageCircle className="w-4 h-4" />
-                    <span className="text-xs">总会话数</span>
+                    <span className="text-xs">Total Sessions</span>
                   </div>
                   <div className="text-2xl font-bold">{stats.totalSessions}</div>
                   <div className="text-xs text-muted-foreground mt-1">
-                    过去 {dateRange} 天
+                    Last {dateRange} days
                   </div>
                 </div>
 
@@ -300,7 +300,7 @@ const AdminStatsPanel = () => {
                 <div className="bg-muted/50 rounded-lg p-4">
                   <div className="flex items-center gap-2 text-muted-foreground mb-1">
                     <Clock className="w-4 h-4" />
-                    <span className="text-xs">平均响应</span>
+                    <span className="text-xs">Avg Response</span>
                   </div>
                   <div className={`text-2xl font-bold ${getResponseTimeColor(stats.avgResponseTime)}`}>
                     {stats.avgResponseTime > 0 ? formatResponseTime(stats.avgResponseTime) : '-'}
@@ -311,7 +311,7 @@ const AdminStatsPanel = () => {
                         const Icon = getResponseTimeIcon(stats.avgResponseTime);
                         return <Icon className="w-3 h-3" />;
                       })()}
-                      <span>{stats.avgResponseTime < 5 ? '优秀' : stats.avgResponseTime < 15 ? '良好' : '需改善'}</span>
+                      <span>{stats.avgResponseTime < 5 ? 'Excellent' : stats.avgResponseTime < 15 ? 'Good' : 'Needs improvement'}</span>
                     </div>
                   )}
                 </div>
@@ -320,7 +320,7 @@ const AdminStatsPanel = () => {
                 <div className="bg-muted/50 rounded-lg p-4">
                   <div className="flex items-center gap-2 text-muted-foreground mb-1">
                     <Target className="w-4 h-4" />
-                    <span className="text-xs">解决率</span>
+                    <span className="text-xs">Resolution Rate</span>
                   </div>
                   <div className="text-2xl font-bold">
                     {stats.resolvedRate.toFixed(0)}%
@@ -334,13 +334,13 @@ const AdminStatsPanel = () => {
                 <div className="bg-muted/50 rounded-lg p-4">
                   <div className="flex items-center gap-2 text-muted-foreground mb-3">
                     <PieChart className="w-4 h-4" />
-                    <span className="text-sm font-medium">状态分布</span>
+                    <span className="text-sm font-medium">Status Distribution</span>
                   </div>
                   <div className="space-y-2">
                     <div className="flex items-center justify-between">
                       <div className="flex items-center gap-2">
                         <div className="w-3 h-3 rounded-full bg-red-500" />
-                        <span className="text-sm">新消息</span>
+                        <span className="text-sm">New</span>
                       </div>
                       <div className="flex items-center gap-2">
                         <span className="font-medium">{stats.statusBreakdown.new}</span>
@@ -352,7 +352,7 @@ const AdminStatsPanel = () => {
                     <div className="flex items-center justify-between">
                       <div className="flex items-center gap-2">
                         <div className="w-3 h-3 rounded-full bg-yellow-500" />
-                        <span className="text-sm">处理中</span>
+                        <span className="text-sm">In Progress</span>
                       </div>
                       <div className="flex items-center gap-2">
                         <span className="font-medium">{stats.statusBreakdown.in_progress}</span>
@@ -364,7 +364,7 @@ const AdminStatsPanel = () => {
                     <div className="flex items-center justify-between">
                       <div className="flex items-center gap-2">
                         <div className="w-3 h-3 rounded-full bg-green-500" />
-                        <span className="text-sm">已解决</span>
+                        <span className="text-sm">Resolved</span>
                       </div>
                       <div className="flex items-center gap-2">
                         <span className="font-medium">{stats.statusBreakdown.resolved}</span>
@@ -376,7 +376,7 @@ const AdminStatsPanel = () => {
                     <div className="flex items-center justify-between">
                       <div className="flex items-center gap-2">
                         <div className="w-3 h-3 rounded-full bg-gray-500" />
-                        <span className="text-sm">已关闭</span>
+                        <span className="text-sm">Closed</span>
                       </div>
                       <div className="flex items-center gap-2">
                         <span className="font-medium">{stats.statusBreakdown.closed}</span>
@@ -392,21 +392,21 @@ const AdminStatsPanel = () => {
                 <div className="bg-muted/50 rounded-lg p-4">
                   <div className="flex items-center gap-2 text-muted-foreground mb-3">
                     <Zap className="w-4 h-4" />
-                    <span className="text-sm font-medium">更多指标</span>
+                    <span className="text-sm font-medium">More Metrics</span>
                   </div>
                   <div className="space-y-3">
                     <div className="flex items-center justify-between">
-                      <span className="text-sm text-muted-foreground">平均消息/会话</span>
+                      <span className="text-sm text-muted-foreground">Avg Messages/Session</span>
                       <span className="font-medium">{stats.avgMessagesPerSession.toFixed(1)}</span>
                     </div>
                     <div className="flex items-center justify-between">
-                      <span className="text-sm text-muted-foreground">活跃高峰时段</span>
+                      <span className="text-sm text-muted-foreground">Peak Hours</span>
                       <Badge variant="secondary">
                         {stats.peakHour}:00 - {stats.peakHour + 1}:00
                       </Badge>
                     </div>
                     <div className="flex items-center justify-between">
-                      <span className="text-sm text-muted-foreground">日均会话</span>
+                      <span className="text-sm text-muted-foreground">Avg Daily Sessions</span>
                       <span className="font-medium">
                         {(stats.totalSessions / parseInt(dateRange)).toFixed(1)}
                       </span>
@@ -419,7 +419,7 @@ const AdminStatsPanel = () => {
               <div className="bg-muted/50 rounded-lg p-4">
                 <div className="flex items-center gap-2 text-muted-foreground mb-3">
                   <BarChart3 className="w-4 h-4" />
-                  <span className="text-sm font-medium">每日趋势</span>
+                  <span className="text-sm font-medium">Daily Trend</span>
                 </div>
                 <div className="flex items-end gap-1 h-24">
                   {stats.dailyTrend.map((day, index) => {
@@ -432,7 +432,7 @@ const AdminStatsPanel = () => {
                           animate={{ height: `${height}%` }}
                           transition={{ delay: index * 0.05 }}
                           className="w-full bg-primary/80 rounded-t min-h-[4px]"
-                          title={`${day.date}: ${day.count} 会话`}
+                          title={`${day.date}: ${day.count} sessions`}
                         />
                         <span className="text-[10px] text-muted-foreground">
                           {new Date(day.date).getDate()}
@@ -445,7 +445,7 @@ const AdminStatsPanel = () => {
             </div>
           ) : (
             <div className="h-32 flex items-center justify-center text-muted-foreground">
-              暂无数据
+              No data available
             </div>
           )}
         </CardContent>

@@ -96,23 +96,23 @@ const AdminGalleryTab = () => {
   const createFolder = async () => {
     if (!newFolderName.trim()) return;
     const { error } = await supabase.from("asset_folders").insert({ name: newFolderName.trim(), parent_id: currentFolderId });
-    if (error) { toast.error("创建文件夹失败"); } 
-    else { toast.success("文件夹创建成功"); setNewFolderName(""); setIsCreateFolderOpen(false); fetchFolders(); }
+    if (error) { toast.error("Failed to create folder"); } 
+    else { toast.success("Folder created successfully"); setNewFolderName(""); setIsCreateFolderOpen(false); fetchFolders(); }
   };
 
   const deleteAsset = async (asset: Asset) => {
-    if (!confirm("确定要删除此文件吗？")) return;
+    if (!confirm("Are you sure you want to delete this file?")) return;
     await supabase.storage.from("assets").remove([asset.file_path]);
     await supabase.from("assets").delete().eq("id", asset.id);
-    toast.success("文件已删除");
+    toast.success("File deleted");
     fetchAssets();
     setSelectedAsset(null);
   };
 
   const deleteFolder = async (folderId: string) => {
-    if (!confirm("确定要删除此文件夹吗？")) return;
+    if (!confirm("Are you sure you want to delete this folder?")) return;
     await supabase.from("asset_folders").delete().eq("id", folderId);
-    toast.success("文件夹已删除");
+    toast.success("Folder deleted");
     fetchFolders();
   };
 
@@ -133,7 +133,7 @@ const AdminGalleryTab = () => {
   const copyUrl = async (url: string) => {
     await navigator.clipboard.writeText(url);
     setCopiedUrl(url);
-    toast.success("链接已复制");
+    toast.success("Link copied");
     setTimeout(() => setCopiedUrl(null), 2000);
   };
 
@@ -165,7 +165,7 @@ const AdminGalleryTab = () => {
     
     setIsUploading(false);
     fetchAssets();
-    toast.success("上传完成");
+    toast.success("Upload complete");
     e.target.value = "";
   };
 
@@ -179,24 +179,24 @@ const AdminGalleryTab = () => {
         <div className="flex items-center gap-2">
           <Dialog open={isCreateFolderOpen} onOpenChange={setIsCreateFolderOpen}>
             <DialogTrigger asChild>
-              <Button variant="outline" size="sm"><FolderPlus className="w-4 h-4 mr-2" />新建文件夹</Button>
+              <Button variant="outline" size="sm"><FolderPlus className="w-4 h-4 mr-2" />New Folder</Button>
             </DialogTrigger>
             <DialogContent>
-              <DialogHeader><DialogTitle>新建文件夹</DialogTitle></DialogHeader>
+              <DialogHeader><DialogTitle>New Folder</DialogTitle></DialogHeader>
               <div className="space-y-4 pt-4">
-                <Input placeholder="文件夹名称" value={newFolderName} onChange={(e) => setNewFolderName(e.target.value)} onKeyDown={(e) => e.key === "Enter" && createFolder()} />
-                <Button onClick={createFolder} className="w-full">创建</Button>
+                <Input placeholder="Folder name" value={newFolderName} onChange={(e) => setNewFolderName(e.target.value)} onKeyDown={(e) => e.key === "Enter" && createFolder()} />
+                <Button onClick={createFolder} className="w-full">Create</Button>
               </div>
             </DialogContent>
           </Dialog>
           <Button variant="default" size="sm" disabled={isUploading} asChild>
-            <label className="cursor-pointer"><Upload className="w-4 h-4 mr-2" />上传文件<input type="file" multiple accept="image/*,video/*" className="hidden" onChange={handleFileUpload} disabled={isUploading} /></label>
+            <label className="cursor-pointer"><Upload className="w-4 h-4 mr-2" />Upload Files<input type="file" multiple accept="image/*,video/*" className="hidden" onChange={handleFileUpload} disabled={isUploading} /></label>
           </Button>
         </div>
         <div className="flex items-center gap-2">
           <div className="relative flex-1 md:w-64">
             <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-muted-foreground" />
-            <Input placeholder="搜索..." value={searchQuery} onChange={(e) => setSearchQuery(e.target.value)} className="pl-9" />
+            <Input placeholder="Search..." value={searchQuery} onChange={(e) => setSearchQuery(e.target.value)} className="pl-9" />
           </div>
           <Button variant={viewMode === "grid" ? "default" : "outline"} size="icon" onClick={() => setViewMode("grid")}><Grid className="w-4 h-4" /></Button>
           <Button variant={viewMode === "list" ? "default" : "outline"} size="icon" onClick={() => setViewMode("list")}><List className="w-4 h-4" /></Button>
@@ -205,7 +205,7 @@ const AdminGalleryTab = () => {
 
       {/* Breadcrumb */}
       <div className="flex items-center gap-2 text-sm">
-        <button onClick={() => setCurrentFolderId(null)} className={`hover:text-primary ${!currentFolderId ? "font-medium" : "text-muted-foreground"}`}>根目录</button>
+        <button onClick={() => setCurrentFolderId(null)} className={`hover:text-primary ${!currentFolderId ? "font-medium" : "text-muted-foreground"}`}>Root</button>
         {folderPath.map((folder, i) => (
           <div key={folder.id} className="flex items-center gap-2">
             <span className="text-muted-foreground">/</span>
@@ -249,7 +249,7 @@ const AdminGalleryTab = () => {
       {!isLoading && filteredFolders.length === 0 && filteredAssets.length === 0 && (
         <div className="text-center py-12 text-muted-foreground">
           <ImageIcon className="w-12 h-12 mx-auto mb-3 opacity-50" />
-          <p>此文件夹为空</p>
+          <p>This folder is empty</p>
         </div>
       )}
 

@@ -65,20 +65,20 @@ const statusColors: Record<string, string> = {
 };
 
 const statusLabels: Record<string, string> = {
-  new: "新询盘",
-  contacted: "已联系",
-  qualified: "已确认",
-  converted: "已成交",
-  closed: "已关闭",
+  new: "New",
+  contacted: "Contacted",
+  qualified: "Qualified",
+  converted: "Converted",
+  closed: "Closed",
 };
 
 const projectTypeLabels: Record<string, string> = {
-  "indoor-playground": "室内游乐场",
-  "trampoline-park": "蹦床公园",
-  "ninja-course": "忍者挑战",
-  "soft-play": "软体游乐",
-  "fec": "家庭娱乐中心",
-  "other": "其他",
+  "indoor-playground": "Indoor Playground",
+  "trampoline-park": "Trampoline Park",
+  "ninja-course": "Ninja Course",
+  "soft-play": "Soft Play",
+  "fec": "Family Entertainment Center",
+  "other": "Other",
 };
 
 const AdminInquiriesTab = () => {
@@ -107,7 +107,7 @@ const AdminInquiriesTab = () => {
       setInquiries(data || []);
     } catch (error) {
       console.error("Error fetching inquiries:", error);
-      toast.error("获取询盘列表失败");
+      toast.error("Failed to fetch inquiries");
     } finally {
       setIsLoading(false);
     }
@@ -136,15 +136,15 @@ const AdminInquiriesTab = () => {
         setSelectedInquiry({ ...selectedInquiry, status: newStatus });
       }
 
-      toast.success("状态更新成功");
+      toast.success("Status updated");
     } catch (error) {
       console.error("Error updating status:", error);
-      toast.error("状态更新失败");
+      toast.error("Failed to update status");
     }
   };
 
   const handleDelete = async (inquiryId: string) => {
-    if (!confirm("确定要删除这条询盘吗？此操作不可恢复。")) return;
+    if (!confirm("Are you sure you want to delete this inquiry? This action cannot be undone.")) return;
 
     try {
       const { error } = await supabase
@@ -159,10 +159,10 @@ const AdminInquiriesTab = () => {
         setIsDetailOpen(false);
         setSelectedInquiry(null);
       }
-      toast.success("询盘已删除");
+      toast.success("Inquiry deleted");
     } catch (error) {
       console.error("Error deleting inquiry:", error);
-      toast.error("删除失败");
+      toast.error("Delete failed");
     }
   };
 
@@ -186,14 +186,14 @@ const AdminInquiriesTab = () => {
       {/* Header */}
       <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
         <div>
-          <h2 className="text-2xl font-bold">询盘管理</h2>
+          <h2 className="text-2xl font-bold">Inquiry Management</h2>
           <p className="text-muted-foreground">
-            共 {inquiries.length} 条询盘记录
+            Total {inquiries.length} inquiries
           </p>
         </div>
         <Button onClick={fetchInquiries} variant="outline" size="sm">
           <RefreshCw className={`w-4 h-4 mr-2 ${isLoading ? "animate-spin" : ""}`} />
-          刷新
+          Refresh
         </Button>
       </div>
 
@@ -202,7 +202,7 @@ const AdminInquiriesTab = () => {
         <div className="relative flex-1">
           <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-muted-foreground" />
           <Input
-            placeholder="搜索姓名、邮箱、国家..."
+            placeholder="Search name, email, country..."
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
             className="pl-9"
@@ -211,15 +211,15 @@ const AdminInquiriesTab = () => {
         <Select value={statusFilter} onValueChange={setStatusFilter}>
           <SelectTrigger className="w-full sm:w-40">
             <Filter className="w-4 h-4 mr-2" />
-            <SelectValue placeholder="筛选状态" />
+            <SelectValue placeholder="Filter status" />
           </SelectTrigger>
           <SelectContent>
-            <SelectItem value="all">全部状态</SelectItem>
-            <SelectItem value="new">新询盘</SelectItem>
-            <SelectItem value="contacted">已联系</SelectItem>
-            <SelectItem value="qualified">已确认</SelectItem>
-            <SelectItem value="converted">已成交</SelectItem>
-            <SelectItem value="closed">已关闭</SelectItem>
+            <SelectItem value="all">All Status</SelectItem>
+            <SelectItem value="new">New</SelectItem>
+            <SelectItem value="contacted">Contacted</SelectItem>
+            <SelectItem value="qualified">Qualified</SelectItem>
+            <SelectItem value="converted">Converted</SelectItem>
+            <SelectItem value="closed">Closed</SelectItem>
           </SelectContent>
         </Select>
       </div>
@@ -232,19 +232,19 @@ const AdminInquiriesTab = () => {
       ) : filteredInquiries.length === 0 ? (
         <div className="text-center py-12 text-muted-foreground">
           <MessageSquare className="w-12 h-12 mx-auto mb-4 opacity-50" />
-          <p>暂无询盘记录</p>
+          <p>No inquiries found</p>
         </div>
       ) : (
         <div className="rounded-lg border overflow-hidden">
           <Table>
             <TableHeader>
               <TableRow>
-                <TableHead>客户信息</TableHead>
-                <TableHead>项目类型</TableHead>
-                <TableHead>国家</TableHead>
-                <TableHead>状态</TableHead>
-                <TableHead>提交时间</TableHead>
-                <TableHead className="text-right">操作</TableHead>
+                <TableHead>Customer Info</TableHead>
+                <TableHead>Project Type</TableHead>
+                <TableHead>Country</TableHead>
+                <TableHead>Status</TableHead>
+                <TableHead>Submitted</TableHead>
+                <TableHead className="text-right">Actions</TableHead>
               </TableRow>
             </TableHeader>
             <TableBody>
@@ -326,7 +326,7 @@ const AdminInquiriesTab = () => {
       <Dialog open={isDetailOpen} onOpenChange={setIsDetailOpen}>
         <DialogContent className="max-w-lg">
           <DialogHeader>
-            <DialogTitle>询盘详情</DialogTitle>
+            <DialogTitle>Inquiry Details</DialogTitle>
           </DialogHeader>
           {selectedInquiry && (
             <div className="space-y-6">
@@ -373,7 +373,7 @@ const AdminInquiriesTab = () => {
                   <div className="flex items-center gap-3 text-sm">
                     <Calendar className="w-4 h-4 text-muted-foreground" />
                     <span>
-                      {format(new Date(selectedInquiry.created_at), "yyyy年MM月dd日 HH:mm")}
+                      {format(new Date(selectedInquiry.created_at), "MMM dd, yyyy HH:mm")}
                     </span>
                   </div>
                 </div>
@@ -384,13 +384,13 @@ const AdminInquiriesTab = () => {
                 <div className="p-4 bg-muted rounded-lg space-y-2">
                   {selectedInquiry.estimated_area && (
                     <p className="text-sm">
-                      <span className="text-muted-foreground">预计面积：</span>
-                      {selectedInquiry.estimated_area} 平方米
+                      <span className="text-muted-foreground">Estimated Area: </span>
+                      {selectedInquiry.estimated_area} sqm
                     </p>
                   )}
                   {selectedInquiry.estimated_budget && (
                     <p className="text-sm">
-                      <span className="text-muted-foreground">预算范围：</span>
+                      <span className="text-muted-foreground">Budget Range: </span>
                       {selectedInquiry.estimated_budget}
                     </p>
                   )}
@@ -400,7 +400,7 @@ const AdminInquiriesTab = () => {
               {/* Message */}
               {selectedInquiry.message && (
                 <div>
-                  <h4 className="font-medium mb-2">客户留言</h4>
+                  <h4 className="font-medium mb-2">Customer Message</h4>
                   <p className="text-sm text-muted-foreground bg-muted p-4 rounded-lg whitespace-pre-wrap">
                     {selectedInquiry.message}
                   </p>
@@ -409,7 +409,7 @@ const AdminInquiriesTab = () => {
 
               {/* Status Change */}
               <div className="flex items-center justify-between pt-4 border-t">
-                <span className="text-sm text-muted-foreground">更改状态</span>
+                <span className="text-sm text-muted-foreground">Change Status</span>
                 <Select
                   value={selectedInquiry.status || "new"}
                   onValueChange={(value) =>
@@ -451,7 +451,7 @@ const AdminInquiriesTab = () => {
                   }
                 >
                   <Mail className="w-4 h-4 mr-2" />
-                  发送邮件
+                  Send Email
                 </Button>
                 {selectedInquiry.phone && (
                   <Button
