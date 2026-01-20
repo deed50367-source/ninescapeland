@@ -5,6 +5,7 @@ import { FloatingCTA } from "@/components/FloatingCTA";
 import { FloatingMascot } from "@/components/FloatingMascot";
 import { QuoteCalculator } from "@/components/QuoteCalculator";
 import { ProductFAQ } from "@/components/ProductFAQ";
+import { SEOHead } from "@/components/SEOHead";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -317,6 +318,7 @@ const IndoorPlayground = () => {
 
   return (
     <div className="min-h-screen">
+      <SEOHead pageKey="indoorPlayground" />
       <Header />
       <main>
         <PageHero

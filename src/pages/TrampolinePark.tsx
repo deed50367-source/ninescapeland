@@ -6,6 +6,7 @@ import { FloatingMascot } from "@/components/FloatingMascot";
 import { TrampolineFeaturesSection } from "@/components/TrampolineFeaturesSection";
 import { QuoteCalculator } from "@/components/QuoteCalculator";
 import { ProductFAQ } from "@/components/ProductFAQ";
+import { SEOHead } from "@/components/SEOHead";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -335,6 +336,7 @@ const TrampolinePark = () => {
 
   return (
     <div className="min-h-screen">
+      <SEOHead pageKey="trampolinePark" />
       <Header />
       <main>
         <PageHero

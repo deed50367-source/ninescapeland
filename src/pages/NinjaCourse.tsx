@@ -6,6 +6,7 @@ import { FloatingMascot } from "@/components/FloatingMascot";
 import { NinjaFeaturesSection } from "@/components/NinjaFeaturesSection";
 import { QuoteCalculator } from "@/components/QuoteCalculator";
 import { ProductFAQ } from "@/components/ProductFAQ";
+import { SEOHead } from "@/components/SEOHead";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -247,6 +248,7 @@ const NinjaCourse = () => {
 
   return (
     <div className="min-h-screen">
+      <SEOHead pageKey="ninjaCourse" />
       <Header />
       <main>
         <PageHero
