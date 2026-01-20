@@ -518,7 +518,11 @@ export const InteractiveWorldMap = () => {
 
                   <Button
                     className="w-full hero-gradient text-accent-foreground"
-                    onClick={() => navigate(localizedPath("/contact"))}
+                    onClick={() => {
+                      navigate(localizedPath("/contact"));
+                      // Scroll to top after navigation
+                      setTimeout(() => window.scrollTo({ top: 0, behavior: "smooth" }), 100);
+                    }}
                   >
                     {t("interactiveMap.startProject")}
                     <ArrowRight className="w-4 h-4 ml-2" />
