@@ -14,13 +14,18 @@ export default defineConfig(({ mode }) => ({
     alias: {
       "@": path.resolve(__dirname, "./src"),
 
-      // Pin React to a single instance to prevent invalid hook call / null dispatcher issues
+      // Pin React to a single instance to prevent invalid hook call / dispatcher issues
       react: path.resolve(__dirname, "./node_modules/react"),
       "react-dom": path.resolve(__dirname, "./node_modules/react-dom"),
-      "react/jsx-runtime": path.resolve(
+      "react-dom/client": path.resolve(
         __dirname,
-        "./node_modules/react/jsx-runtime"
+        "./node_modules/react-dom/client"
       ),
+      "react-dom/server": path.resolve(
+        __dirname,
+        "./node_modules/react-dom/server"
+      ),
+      "react/jsx-runtime": path.resolve(__dirname, "./node_modules/react/jsx-runtime"),
       "react/jsx-dev-runtime": path.resolve(
         __dirname,
         "./node_modules/react/jsx-dev-runtime"
@@ -29,6 +34,6 @@ export default defineConfig(({ mode }) => ({
     dedupe: ["react", "react-dom", "@tanstack/react-query"],
   },
   optimizeDeps: {
-    include: ["react", "react-dom", "@tanstack/react-query"],
+    include: ["react", "react-dom", "react-dom/client", "@tanstack/react-query"],
   },
 }));
