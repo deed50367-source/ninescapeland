@@ -17,7 +17,7 @@ export const CTABannerSection = () => {
   };
 
   const handleWhatsApp = () => {
-    window.open("https://wa.me/8613868620221", "_blank");
+    window.open("https://wa.me/8615058782901", "_blank");
   };
 
   return (
@@ -114,7 +114,7 @@ export const CTABannerSection = () => {
           >
             <div className="flex items-center gap-2">
               <Phone className="w-4 h-4" />
-              <span>+86 138 6862 0221</span>
+              <span>+86 150 5878 2901</span>
             </div>
             <div className="flex items-center gap-2">
               <Mail className="w-4 h-4" />
