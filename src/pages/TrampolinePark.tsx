@@ -7,6 +7,7 @@ import { TrampolineFeaturesSection } from "@/components/TrampolineFeaturesSectio
 import { QuoteCalculator } from "@/components/QuoteCalculator";
 import { ProductFAQ } from "@/components/ProductFAQ";
 import { SEOHead } from "@/components/SEOHead";
+import { ProductSchema } from "@/components/StructuredData";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -337,6 +338,13 @@ const TrampolinePark = () => {
   return (
     <div className="min-h-screen">
       <SEOHead pageKey="trampolinePark" />
+      <ProductSchema
+        name="Commercial Trampoline Park Equipment"
+        description="Professional trampoline park equipment with high-performance springs, safety padding, and modular design. Includes jump zones, dodgeball courts, foam pits, and ninja courses."
+        image={heroImage}
+        category="Trampoline Park Equipment"
+        aggregateRating={{ ratingValue: 4.9, reviewCount: 156 }}
+      />
       <Header />
       <main>
         <PageHero

@@ -7,6 +7,7 @@ import { Footer } from "@/components/Footer";
 import { LiveChat } from "@/components/LiveChat";
 import MobileBottomNav from "@/components/MobileBottomNav";
 import { SEOHead } from "@/components/SEOHead";
+import { ArticleSchema } from "@/components/StructuredData";
 import { useLocalizedPath } from "@/hooks/useLocalizedPath";
 import { Calendar, ArrowLeft } from "lucide-react";
 import { format } from "date-fns";
@@ -85,6 +86,14 @@ const BlogPost = () => {
         dynamicTitle={post.title}
         dynamicDescription={post.excerpt || undefined}
         ogImage={post.cover_image || undefined}
+      />
+      <ArticleSchema
+        headline={post.title}
+        description={post.excerpt || undefined}
+        image={post.cover_image || undefined}
+        datePublished={post.published_at || undefined}
+        dateModified={post.updated_at}
+        url={`https://ninescapeland.lovable.app${localizedPath(`/blog/${post.slug}`)}`}
       />
       <Header />
       

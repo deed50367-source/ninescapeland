@@ -7,6 +7,7 @@ import { NinjaFeaturesSection } from "@/components/NinjaFeaturesSection";
 import { QuoteCalculator } from "@/components/QuoteCalculator";
 import { ProductFAQ } from "@/components/ProductFAQ";
 import { SEOHead } from "@/components/SEOHead";
+import { ProductSchema } from "@/components/StructuredData";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -249,6 +250,13 @@ const NinjaCourse = () => {
   return (
     <div className="min-h-screen">
       <SEOHead pageKey="ninjaCourse" />
+      <ProductSchema
+        name="Ninja Warrior Course Equipment"
+        description="Professional ninja warrior course equipment featuring challenging obstacles, warped walls, salmon ladders, and balance elements. Suitable for all skill levels with adjustable difficulty."
+        image={heroImage}
+        category="Ninja Course Equipment"
+        aggregateRating={{ ratingValue: 4.8, reviewCount: 89 }}
+      />
       <Header />
       <main>
         <PageHero
