@@ -6,7 +6,7 @@ import { FloatingMascot } from "@/components/FloatingMascot";
 import { QuoteCalculator } from "@/components/QuoteCalculator";
 import { ProductFAQ } from "@/components/ProductFAQ";
 import { SEOHead } from "@/components/SEOHead";
-import { ProductSchema } from "@/components/StructuredData";
+import { ProductSchema, FAQSchema } from "@/components/StructuredData";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -224,6 +224,16 @@ const SoftPlay = () => {
     }
   ];
 
+  // FAQ items for structured data
+  const faqItems = [
+    { question: t("productFAQ.softPlay.items.q1.question"), answer: t("productFAQ.softPlay.items.q1.answer") },
+    { question: t("productFAQ.softPlay.items.q2.question"), answer: t("productFAQ.softPlay.items.q2.answer") },
+    { question: t("productFAQ.softPlay.items.q3.question"), answer: t("productFAQ.softPlay.items.q3.answer") },
+    { question: t("productFAQ.softPlay.items.q4.question"), answer: t("productFAQ.softPlay.items.q4.answer") },
+    { question: t("productFAQ.softPlay.items.q5.question"), answer: t("productFAQ.softPlay.items.q5.answer") },
+    { question: t("productFAQ.softPlay.items.q6.question"), answer: t("productFAQ.softPlay.items.q6.answer") },
+  ];
+
   return (
     <div className="min-h-screen">
       <SEOHead pageKey="softPlay" />
@@ -234,6 +244,7 @@ const SoftPlay = () => {
         category="Soft Play Equipment"
         aggregateRating={{ ratingValue: 4.9, reviewCount: 124 }}
       />
+      <FAQSchema items={faqItems} />
       <Header />
       <main>
         <PageHero

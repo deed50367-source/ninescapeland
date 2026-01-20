@@ -7,7 +7,7 @@ import { NinjaFeaturesSection } from "@/components/NinjaFeaturesSection";
 import { QuoteCalculator } from "@/components/QuoteCalculator";
 import { ProductFAQ } from "@/components/ProductFAQ";
 import { SEOHead } from "@/components/SEOHead";
-import { ProductSchema } from "@/components/StructuredData";
+import { ProductSchema, FAQSchema } from "@/components/StructuredData";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -247,6 +247,16 @@ const NinjaCourse = () => {
     }
   ];
 
+  // FAQ items for structured data
+  const faqItems = [
+    { question: t("productFAQ.ninjaCourse.items.q1.question"), answer: t("productFAQ.ninjaCourse.items.q1.answer") },
+    { question: t("productFAQ.ninjaCourse.items.q2.question"), answer: t("productFAQ.ninjaCourse.items.q2.answer") },
+    { question: t("productFAQ.ninjaCourse.items.q3.question"), answer: t("productFAQ.ninjaCourse.items.q3.answer") },
+    { question: t("productFAQ.ninjaCourse.items.q4.question"), answer: t("productFAQ.ninjaCourse.items.q4.answer") },
+    { question: t("productFAQ.ninjaCourse.items.q5.question"), answer: t("productFAQ.ninjaCourse.items.q5.answer") },
+    { question: t("productFAQ.ninjaCourse.items.q6.question"), answer: t("productFAQ.ninjaCourse.items.q6.answer") },
+  ];
+
   return (
     <div className="min-h-screen">
       <SEOHead pageKey="ninjaCourse" />
@@ -257,6 +267,7 @@ const NinjaCourse = () => {
         category="Ninja Course Equipment"
         aggregateRating={{ ratingValue: 4.8, reviewCount: 89 }}
       />
+      <FAQSchema items={faqItems} />
       <Header />
       <main>
         <PageHero

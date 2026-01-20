@@ -7,7 +7,7 @@ import { TrampolineFeaturesSection } from "@/components/TrampolineFeaturesSectio
 import { QuoteCalculator } from "@/components/QuoteCalculator";
 import { ProductFAQ } from "@/components/ProductFAQ";
 import { SEOHead } from "@/components/SEOHead";
-import { ProductSchema } from "@/components/StructuredData";
+import { ProductSchema, FAQSchema } from "@/components/StructuredData";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -335,6 +335,16 @@ const TrampolinePark = () => {
     }
   ];
 
+  // FAQ items for structured data
+  const faqItems = [
+    { question: t("productFAQ.trampolinePark.items.q1.question"), answer: t("productFAQ.trampolinePark.items.q1.answer") },
+    { question: t("productFAQ.trampolinePark.items.q2.question"), answer: t("productFAQ.trampolinePark.items.q2.answer") },
+    { question: t("productFAQ.trampolinePark.items.q3.question"), answer: t("productFAQ.trampolinePark.items.q3.answer") },
+    { question: t("productFAQ.trampolinePark.items.q4.question"), answer: t("productFAQ.trampolinePark.items.q4.answer") },
+    { question: t("productFAQ.trampolinePark.items.q5.question"), answer: t("productFAQ.trampolinePark.items.q5.answer") },
+    { question: t("productFAQ.trampolinePark.items.q6.question"), answer: t("productFAQ.trampolinePark.items.q6.answer") },
+  ];
+
   return (
     <div className="min-h-screen">
       <SEOHead pageKey="trampolinePark" />
@@ -345,6 +355,7 @@ const TrampolinePark = () => {
         category="Trampoline Park Equipment"
         aggregateRating={{ ratingValue: 4.9, reviewCount: 156 }}
       />
+      <FAQSchema items={faqItems} />
       <Header />
       <main>
         <PageHero
