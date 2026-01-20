@@ -27,21 +27,18 @@ export const useAdminAuth = () => {
     }
 
     try {
-      const { data: roleData, error } = await supabase
+      const { data, error } = await supabase
         .from("user_roles")
         .select("role")
         .eq("user_id", userId)
-        .eq("role", "admin")
-        .single();
+        .in("role", ["admin", "staff"]);
 
       if (error) {
-        if (import.meta.env.DEV) {
-          console.warn("[useAdminAuth] role check failed", error);
-        }
+        console.error("[useAdminAuth] role check error:", error);
         return false;
       }
 
-      const isAdmin = !!roleData;
+      const isAdmin = data && data.length > 0;
       adminCacheRef.current = { userId, isAdmin };
       return isAdmin;
     } catch (err) {
