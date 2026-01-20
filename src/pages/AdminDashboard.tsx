@@ -12,7 +12,8 @@ import {
   Loader2,
   ShieldX,
   UserX,
-  Inbox
+  Inbox,
+  Package
 } from "lucide-react";
 import { toast } from "sonner";
 import logo from "@/assets/logo.png";
@@ -22,6 +23,7 @@ import AdminGalleryTab from "@/components/admin/AdminGalleryTab";
 import AdminCustomerServiceTab from "@/components/admin/AdminCustomerServiceTab";
 import AdminBlogTab from "@/components/admin/AdminBlogTab";
 import AdminInquiriesTab from "@/components/admin/AdminInquiriesTab";
+import AdminProductsTab from "@/components/admin/AdminProductsTab";
 
 const AdminDashboard = () => {
   const { t } = useTranslation();
@@ -131,31 +133,35 @@ const AdminDashboard = () => {
       {/* Main Content */}
       <main className="container mx-auto px-4 py-6">
         <Tabs value={activeTab} onValueChange={setActiveTab} className="w-full">
-          <TabsList className="grid w-full max-w-lg grid-cols-4 mb-6">
+          <TabsList className="grid w-full max-w-2xl grid-cols-5 mb-6">
             <TabsTrigger value="inquiries" className="flex items-center gap-2">
               <Inbox className="w-4 h-4" />
-              <span className="hidden sm:inline">询盘管理</span>
-              <span className="sm:hidden">询盘</span>
+              <span className="hidden sm:inline">询盘</span>
+            </TabsTrigger>
+            <TabsTrigger value="products" className="flex items-center gap-2">
+              <Package className="w-4 h-4" />
+              <span className="hidden sm:inline">产品</span>
             </TabsTrigger>
             <TabsTrigger value="gallery" className="flex items-center gap-2">
               <ImageIcon className="w-4 h-4" />
-              <span className="hidden sm:inline">素材图库</span>
-              <span className="sm:hidden">图库</span>
+              <span className="hidden sm:inline">图库</span>
             </TabsTrigger>
             <TabsTrigger value="customer-service" className="flex items-center gap-2">
               <MessageSquare className="w-4 h-4" />
-              <span className="hidden sm:inline">在线客服</span>
-              <span className="sm:hidden">客服</span>
+              <span className="hidden sm:inline">客服</span>
             </TabsTrigger>
             <TabsTrigger value="blog" className="flex items-center gap-2">
               <FileText className="w-4 h-4" />
-              <span className="hidden sm:inline">博客文章</span>
-              <span className="sm:hidden">博客</span>
+              <span className="hidden sm:inline">博客</span>
             </TabsTrigger>
           </TabsList>
 
           <TabsContent value="inquiries" className="mt-0">
             <AdminInquiriesTab />
+          </TabsContent>
+
+          <TabsContent value="products" className="mt-0">
+            <AdminProductsTab />
           </TabsContent>
 
           <TabsContent value="gallery" className="mt-0">
