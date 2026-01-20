@@ -40,15 +40,14 @@ const AdminLogin = () => {
       }
 
       if (data.user) {
-        // Check if user has admin role
+        // Check if user has admin/staff role
         const { data: roleData, error: roleError } = await supabase
           .from("user_roles")
           .select("role")
           .eq("user_id", data.user.id)
-          .eq("role", "admin")
-          .single();
+          .in("role", ["admin", "staff"]);
 
-        if (roleError || !roleData) {
+        if (roleError || !roleData || roleData.length === 0) {
           await supabase.auth.signOut();
           toast.error("You do not have admin privileges");
           return;
