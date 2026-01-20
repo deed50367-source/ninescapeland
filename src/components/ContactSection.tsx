@@ -77,7 +77,7 @@ export const ContactSection = () => {
       icon: Phone,
       label: t("contact.info.phone"),
       value: "+86 150 5878 2901",
-      href: "tel:+8615058782901",
+      href: "https://wa.me/8615058782901",
     },
     {
       icon: Mail,

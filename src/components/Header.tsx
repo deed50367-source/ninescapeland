@@ -94,7 +94,7 @@ export const Header = () => {
               <Mail className="w-4 h-4" />
               sale@indoorplaygroundsolution.com
             </a>
-            <a href="tel:+8615058782901" className="flex items-center gap-2 hover:opacity-80 transition-opacity">
+            <a href="https://wa.me/8615058782901" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:opacity-80 transition-opacity">
               <Phone className="w-4 h-4" />
               +86 150 5878 2901
             </a>

@@ -100,7 +100,7 @@ export const Footer = () => {
                 <Phone className="w-4 h-4 sm:w-5 sm:h-5 mt-0.5 flex-shrink-0" />
                 <div>
                   <p className="text-primary-foreground/60 text-xs sm:text-sm">{t("footer.contact.phone")}</p>
-                  <a href="tel:+8615058782901" className="hover:opacity-80 text-xs sm:text-sm" dir="ltr">
+                  <a href="https://wa.me/8615058782901" target="_blank" rel="noopener noreferrer" className="hover:opacity-80 text-xs sm:text-sm" dir="ltr">
                     +86 150 5878 2901
                   </a>
                 </div>
