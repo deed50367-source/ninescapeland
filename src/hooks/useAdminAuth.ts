@@ -9,7 +9,6 @@ export const useAdminAuth = () => {
   
   const adminCacheRef = useRef<{ userId: string; isAdmin: boolean } | null>(null);
   const mountedRef = useRef(false);
-  const initRef = useRef(false);
 
   const checkAdminRole = useCallback(async (userId: string): Promise<boolean> => {
     if (adminCacheRef.current?.userId === userId) {
@@ -40,11 +39,6 @@ export const useAdminAuth = () => {
   useEffect(() => {
     mountedRef.current = true;
     
-    // Prevent double initialization in strict mode
-    if (initRef.current) {
-      return;
-    }
-    initRef.current = true;
 
     const initializeAuth = async () => {
       try {
