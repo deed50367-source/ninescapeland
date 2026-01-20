@@ -8,7 +8,7 @@ import { Input } from "@/components/ui/input";
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
 import { 
   FolderPlus, Upload, Folder, Image as ImageIcon, ArrowLeft, Trash2, Copy, Check,
-  Grid, List, Search, X, FolderUp, ImagePlus, Loader2
+  Grid, List, Search, X, FolderUp, ImagePlus, Loader2, Pencil
 } from "lucide-react";
 import { toast } from "sonner";
 
@@ -48,6 +48,13 @@ const AdminGalleryTab = () => {
   const [isUploadMinimized, setIsUploadMinimized] = useState(false);
   const uploadCancelledRef = useRef(false);
   const folderInputRef = useRef<HTMLInputElement>(null);
+  
+  // Rename states
+  const [isRenameFolderOpen, setIsRenameFolderOpen] = useState(false);
+  const [isRenameAssetOpen, setIsRenameAssetOpen] = useState(false);
+  const [renamingFolder, setRenamingFolder] = useState<AssetFolder | null>(null);
+  const [renamingAsset, setRenamingAsset] = useState<Asset | null>(null);
+  const [newName, setNewName] = useState("");
 
   const fetchFolders = useCallback(async () => {
     let query = supabase.from("asset_folders").select("*").order("name");
@@ -98,6 +105,73 @@ const AdminGalleryTab = () => {
     const { error } = await supabase.from("asset_folders").insert({ name: newFolderName.trim(), parent_id: currentFolderId });
     if (error) { toast.error("Failed to create folder"); } 
     else { toast.success("Folder created successfully"); setNewFolderName(""); setIsCreateFolderOpen(false); fetchFolders(); }
+  };
+
+  const renameFolder = async () => {
+    if (!renamingFolder || !newName.trim()) return;
+    const { error } = await supabase.from("asset_folders").update({ name: newName.trim() }).eq("id", renamingFolder.id);
+    if (error) { 
+      toast.error("Failed to rename folder"); 
+    } else { 
+      toast.success("Folder renamed successfully"); 
+      setNewName(""); 
+      setRenamingFolder(null);
+      setIsRenameFolderOpen(false); 
+      fetchFolders();
+      fetchFolderPath();
+    }
+  };
+
+  const renameAsset = async () => {
+    if (!renamingAsset || !newName.trim()) return;
+    const { error } = await supabase.from("assets").update({ file_name: newName.trim() }).eq("id", renamingAsset.id);
+    if (error) { 
+      toast.error("Failed to rename file"); 
+    } else { 
+      toast.success("File renamed successfully"); 
+      setNewName(""); 
+      setRenamingAsset(null);
+      setIsRenameAssetOpen(false); 
+      fetchAssets();
+    }
+  };
+
+  const openRenameFolder = (folder: AssetFolder, e: React.MouseEvent) => {
+    e.stopPropagation();
+    setRenamingFolder(folder);
+    setNewName(folder.name);
+    setIsRenameFolderOpen(true);
+  };
+
+  const openRenameAsset = (asset: Asset, e: React.MouseEvent) => {
+    e.stopPropagation();
+    setRenamingAsset(asset);
+    // Remove extension for editing, will preserve original extension
+    const lastDotIndex = asset.file_name.lastIndexOf(".");
+    const nameWithoutExt = lastDotIndex > 0 ? asset.file_name.substring(0, lastDotIndex) : asset.file_name;
+    setNewName(nameWithoutExt);
+    setIsRenameAssetOpen(true);
+  };
+
+  const getFileExtension = (fileName: string) => {
+    const lastDotIndex = fileName.lastIndexOf(".");
+    return lastDotIndex > 0 ? fileName.substring(lastDotIndex) : "";
+  };
+
+  const handleRenameAssetSubmit = async () => {
+    if (!renamingAsset || !newName.trim()) return;
+    const extension = getFileExtension(renamingAsset.file_name);
+    const finalName = newName.trim() + extension;
+    const { error } = await supabase.from("assets").update({ file_name: finalName }).eq("id", renamingAsset.id);
+    if (error) { 
+      toast.error("Failed to rename file"); 
+    } else { 
+      toast.success("File renamed successfully"); 
+      setNewName(""); 
+      setRenamingAsset(null);
+      setIsRenameAssetOpen(false); 
+      fetchAssets();
+    }
   };
 
   const deleteAsset = async (asset: Asset) => {
@@ -223,7 +297,10 @@ const AdminGalleryTab = () => {
             <div key={folder.id} className={`group relative ${viewMode === "grid" ? "aspect-square" : "flex items-center gap-3 p-3"} bg-card border rounded-lg hover:shadow-md transition-shadow cursor-pointer`} onClick={() => setCurrentFolderId(folder.id)}>
               <Folder className={`${viewMode === "grid" ? "w-12 h-12 mx-auto mt-6" : "w-6 h-6"} text-primary`} />
               <span className={`${viewMode === "grid" ? "block text-center mt-2 px-2" : ""} text-sm font-medium truncate`}>{folder.name}</span>
-              <Button variant="ghost" size="icon" className="absolute top-1 right-1 opacity-0 group-hover:opacity-100 h-7 w-7" onClick={(e) => { e.stopPropagation(); deleteFolder(folder.id); }}><Trash2 className="w-3 h-3 text-destructive" /></Button>
+              <div className="absolute top-1 right-1 flex gap-1 opacity-0 group-hover:opacity-100">
+                <Button variant="ghost" size="icon" className="h-7 w-7" onClick={(e) => openRenameFolder(folder, e)}><Pencil className="w-3 h-3" /></Button>
+                <Button variant="ghost" size="icon" className="h-7 w-7" onClick={(e) => { e.stopPropagation(); deleteFolder(folder.id); }}><Trash2 className="w-3 h-3 text-destructive" /></Button>
+              </div>
             </div>
           ))}
           {filteredAssets.map((asset) => (
@@ -238,6 +315,7 @@ const AdminGalleryTab = () => {
                 {viewMode === "list" && <p className="text-xs text-muted-foreground">{formatFileSize(asset.file_size)}</p>}
               </div>
               <div className="absolute top-1 right-1 flex gap-1 opacity-0 group-hover:opacity-100">
+                <Button variant="secondary" size="icon" className="h-7 w-7" onClick={(e) => openRenameAsset(asset, e)}><Pencil className="w-3 h-3" /></Button>
                 <Button variant="secondary" size="icon" className="h-7 w-7" onClick={() => copyUrl(getAssetUrl(asset.file_path))}>{copiedUrl === getAssetUrl(asset.file_path) ? <Check className="w-3 h-3" /> : <Copy className="w-3 h-3" />}</Button>
                 <Button variant="secondary" size="icon" className="h-7 w-7" onClick={() => deleteAsset(asset)}><Trash2 className="w-3 h-3 text-destructive" /></Button>
               </div>
@@ -262,6 +340,52 @@ const AdminGalleryTab = () => {
           onClose={() => setUploadItems([])}
         />
       )}
+
+      {/* Rename Folder Dialog */}
+      <Dialog open={isRenameFolderOpen} onOpenChange={setIsRenameFolderOpen}>
+        <DialogContent>
+          <DialogHeader><DialogTitle>Rename Folder</DialogTitle></DialogHeader>
+          <div className="space-y-4 pt-4">
+            <Input 
+              placeholder="New folder name" 
+              value={newName} 
+              onChange={(e) => setNewName(e.target.value)} 
+              onKeyDown={(e) => e.key === "Enter" && renameFolder()} 
+              autoFocus
+            />
+            <div className="flex gap-2">
+              <Button variant="outline" onClick={() => setIsRenameFolderOpen(false)} className="flex-1">Cancel</Button>
+              <Button onClick={renameFolder} className="flex-1">Rename</Button>
+            </div>
+          </div>
+        </DialogContent>
+      </Dialog>
+
+      {/* Rename Asset Dialog */}
+      <Dialog open={isRenameAssetOpen} onOpenChange={setIsRenameAssetOpen}>
+        <DialogContent>
+          <DialogHeader><DialogTitle>Rename File</DialogTitle></DialogHeader>
+          <div className="space-y-4 pt-4">
+            <div className="flex items-center gap-2">
+              <Input 
+                placeholder="New file name" 
+                value={newName} 
+                onChange={(e) => setNewName(e.target.value)} 
+                onKeyDown={(e) => e.key === "Enter" && handleRenameAssetSubmit()} 
+                autoFocus
+                className="flex-1"
+              />
+              {renamingAsset && (
+                <span className="text-sm text-muted-foreground">{getFileExtension(renamingAsset.file_name)}</span>
+              )}
+            </div>
+            <div className="flex gap-2">
+              <Button variant="outline" onClick={() => setIsRenameAssetOpen(false)} className="flex-1">Cancel</Button>
+              <Button onClick={handleRenameAssetSubmit} className="flex-1">Rename</Button>
+            </div>
+          </div>
+        </DialogContent>
+      </Dialog>
     </div>
   );
 };
