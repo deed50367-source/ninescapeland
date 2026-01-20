@@ -118,7 +118,7 @@ export const CTABannerSection = () => {
             </div>
             <div className="flex items-center gap-2">
               <Mail className="w-4 h-4" />
-              <span>info@ninescapeland.com</span>
+              <span>sale@indoorplaygroundsolution.com</span>
             </div>
           </motion.div>
         </div>
