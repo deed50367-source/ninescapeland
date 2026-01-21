@@ -51,6 +51,15 @@
       "success": "Welcome aboard!",
       "successDesc": "You've been successfully subscribed to our newsletter.",
       "thankYou": "Thank you for subscribing!"
+    },
+    "sidebar": {
+      "search": "Search Articles",
+      "searchPlaceholder": "Search...",
+      "categories": "Categories",
+      "recentPosts": "Recent Posts",
+      "popularTags": "Popular Tags",
+      "newsletter": "Stay Updated",
+      "newsletterDesc": "Subscribe to get the latest insights directly in your inbox."
     }
   },
   "pages": {
