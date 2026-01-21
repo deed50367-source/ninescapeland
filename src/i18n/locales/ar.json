@@ -13,7 +13,22 @@
     "faq": "الأسئلة الشائعة",
     "caseStudies": "الحالات",
     "more": "المزيد",
-    "getFreeQuote": "عرض سعر مجاني"
+    "getFreeQuote": "عرض سعر مجاني",
+    "coreProducts": "المنتجات الأساسية",
+    "viewAllProducts": "عرض جميع المنتجات",
+    "categories": "الفئات",
+    "featuredProducts": "المميزة",
+    "noCategoriesYet": "الفئات قادمة قريباً...",
+    "noFeaturedYet": "المنتجات المميزة قادمة قريباً...",
+    "megaMenuCta": "تحتاج حلول مخصصة؟",
+    "megaMenuCtaDesc": "احصل على استشارة مجانية لمشروعك"
+  },
+  "relatedProducts": {
+    "badge": "استكشف المنتجات",
+    "title": "منتجات ذات صلة",
+    "titleHighlight": "قد تعجبك",
+    "description": "اكتشف المزيد من المنتجات في هذه الفئة لتعزيز مشروعك",
+    "viewAll": "عرض جميع المنتجات"
   },
   "blog": {
     "readMore": "اقرأ المزيد",

@@ -13,7 +13,22 @@
     "faq": "FAQ",
     "caseStudies": "Casos",
     "more": "Mais",
-    "getFreeQuote": "Orçamento Grátis"
+    "getFreeQuote": "Orçamento Grátis",
+    "coreProducts": "Produtos Principais",
+    "viewAllProducts": "Ver Todos os Produtos",
+    "categories": "Categorias",
+    "featuredProducts": "Destaques",
+    "noCategoriesYet": "Categorias em breve...",
+    "noFeaturedYet": "Produtos em destaque em breve...",
+    "megaMenuCta": "Precisa de soluções personalizadas?",
+    "megaMenuCtaDesc": "Obtenha uma consulta gratuita para seu projeto"
+  },
+  "relatedProducts": {
+    "badge": "Explorar Produtos",
+    "title": "Produtos Relacionados",
+    "titleHighlight": "Que Você Pode Gostar",
+    "description": "Descubra mais produtos nesta categoria para aprimorar seu projeto",
+    "viewAll": "Ver Todos os Produtos"
   },
   "blog": {
     "readMore": "Ler Mais",

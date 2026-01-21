@@ -13,7 +13,22 @@
     "faq": "FAQ",
     "caseStudies": "Fallstudien",
     "more": "Mehr",
-    "getFreeQuote": "Kostenloses Angebot"
+    "getFreeQuote": "Kostenloses Angebot",
+    "coreProducts": "Kernprodukte",
+    "viewAllProducts": "Alle Produkte anzeigen",
+    "categories": "Kategorien",
+    "featuredProducts": "Empfohlen",
+    "noCategoriesYet": "Kategorien in Kürze verfügbar...",
+    "noFeaturedYet": "Empfohlene Produkte in Kürze verfügbar...",
+    "megaMenuCta": "Maßgeschneiderte Lösungen?",
+    "megaMenuCtaDesc": "Kostenlose Beratung für Ihr Projekt"
+  },
+  "relatedProducts": {
+    "badge": "Produkte entdecken",
+    "title": "Verwandte Produkte",
+    "titleHighlight": "Die Ihnen gefallen könnten",
+    "description": "Entdecken Sie weitere Produkte in dieser Kategorie für Ihr Projekt",
+    "viewAll": "Alle Produkte anzeigen"
   },
   "blog": {
     "readMore": "Weiterlesen",
