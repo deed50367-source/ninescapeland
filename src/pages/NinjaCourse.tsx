@@ -452,8 +452,8 @@ const NinjaCourse = () => {
         <section className="py-20 bg-muted/30">
           <div className="container mx-auto px-4">
             <motion.div className="text-center mb-12" initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
-              <Badge variant="secondary" className="mb-4">More Obstacles</Badge>
-              <h2 className="text-3xl md:text-4xl font-bold mb-4">Extended <span className="text-primary">Challenge Elements</span></h2>
+              <Badge variant="secondary" className="mb-4">{t("extendedSections.moreObstacles")}</Badge>
+              <h2 className="text-3xl md:text-4xl font-bold mb-4">{t("extendedSections.extendedChallengeElements").split(" ")[0]} <span className="text-primary">{t("extendedSections.extendedChallengeElements").split(" ").slice(1).join(" ")}</span></h2>
             </motion.div>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
               {extendedObstacles.map((obs, index) => (

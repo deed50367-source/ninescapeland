@@ -2068,6 +2068,82 @@
       }
     }
   },
+  "caseStudies": {
+    "sectionLabel": "Our Portfolio",
+    "title": "Global",
+    "titleHighlight": "Case Studies",
+    "description": "Explore our successful projects from around the world. Each project showcases our commitment to quality, innovation, and client satisfaction.",
+    "filters": {
+      "allCountries": "All Countries",
+      "allTypes": "All Types",
+      "clearFilters": "Clear Filters",
+      "noResults": "No case studies found matching your filters.",
+      "projectsCount": "projects"
+    },
+    "projectTypes": {
+      "indoor-playground": "Indoor Playground",
+      "trampoline-park": "Trampoline Park",
+      "ninja-course": "Ninja Course",
+      "soft-play": "Soft Play",
+      "fec": "Family Entertainment Center"
+    },
+    "cta": {
+      "title": "Ready to Create Your Success Story?",
+      "description": "Join hundreds of satisfied clients worldwide. Let's discuss your project and turn your vision into reality.",
+      "button": "Start Your Project",
+      "similarProject": "Start Similar Project"
+    },
+    "featured": "Featured"
+  },
+  "projects": {
+    "sectionLabel": "Our Projects",
+    "title": "Successful",
+    "titleHighlight": "Installations",
+    "subtitle": "Worldwide",
+    "description": "Explore our portfolio of completed projects across 50+ countries. Each installation showcases our commitment to quality and innovation.",
+    "categories": {
+      "all": "All",
+      "indoorPlayground": "Indoor Playground",
+      "trampolinePark": "Trampoline Park",
+      "ninjaCourse": "Ninja Course",
+      "softPlay": "Soft Play"
+    },
+    "cta": "Start Your Project",
+    "size": "Size"
+  },
+  "quoteCalculator": {
+    "sectionLabel": "Instant Estimate",
+    "title": "Online",
+    "titleHighlight": "Quote Calculator",
+    "description": "Get an instant estimate for your project. Select your equipment type and enter your space dimensions for a ballpark quote.",
+    "step1": "Select Equipment Type",
+    "step2": "Enter Space Area (m²)",
+    "step3": "Select Quality Level",
+    "sqmLabel": "Square Meters",
+    "calculateBtn": "Calculate Estimate",
+    "resultTitle": "Estimated Price Range",
+    "resultNote": "Final price depends on design complexity, theme, and installation requirements",
+    "ctaBtn": "Get Accurate Quote",
+    "productTypes": {
+      "indoor-playground": { "name": "Indoor Playground", "description": "Multi-level play structures" },
+      "trampoline-park": { "name": "Trampoline Park", "description": "Complete trampoline solutions" },
+      "ninja-course": { "name": "Ninja Warrior Course", "description": "Professional obstacle courses" },
+      "soft-play": { "name": "Soft Play Area", "description": "Toddler-friendly equipment" },
+      "fec": { "name": "Family Entertainment Center", "description": "Complete FEC solutions" }
+    },
+    "qualityLevels": {
+      "standard": "Standard",
+      "premium": "Premium",
+      "luxury": "Luxury"
+    },
+    "quality": "Quality"
+  },
+  "extendedSections": {
+    "moreAttractions": "More Attractions",
+    "extendedActivityZones": "Extended Activity Zones",
+    "moreObstacles": "More Obstacles",
+    "extendedChallengeElements": "Extended Challenge Elements"
+  },
   "testimonials": {
     "sectionLabel": "Client Testimonials",
     "title": "Trusted by",
