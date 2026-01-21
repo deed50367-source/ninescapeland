@@ -21,7 +21,37 @@
     "noPostsDescription": "Check back later for the latest news and articles.",
     "notFound": "Post Not Found",
     "notFoundDescription": "The article you're looking for doesn't exist or has been removed.",
-    "backToBlog": "Back to Blog"
+    "backToBlog": "Back to Blog",
+    "featuredPost": "Featured Article",
+    "latestArticles": "Latest Updates",
+    "allPosts": "All Articles",
+    "exploreTopics": "Explore Topics",
+    "exploreTopicsDesc": "Discover insights across various categories to help you succeed in the playground industry",
+    "categories": {
+      "tips": "Pro Tips",
+      "trends": "Industry Trends",
+      "guides": "How-To Guides",
+      "design": "Design Ideas",
+      "safety": "Safety Standards",
+      "business": "Business Growth"
+    },
+    "stats": {
+      "articles": "Articles Published",
+      "readers": "Monthly Readers",
+      "countries": "Countries Reached",
+      "experience": "Years of Expertise"
+    },
+    "newsletter": {
+      "badge": "Stay Informed",
+      "title": "Subscribe to Our Newsletter",
+      "description": "Get the latest industry insights, tips, and exclusive content delivered straight to your inbox.",
+      "placeholder": "Enter your email address",
+      "subscribe": "Subscribe",
+      "privacy": "We respect your privacy. Unsubscribe at any time.",
+      "success": "Welcome aboard!",
+      "successDesc": "You've been successfully subscribed to our newsletter.",
+      "thankYou": "Thank you for subscribing!"
+    }
   },
   "pages": {
     "blog": {
