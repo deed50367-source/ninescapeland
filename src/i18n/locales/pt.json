@@ -2009,5 +2009,81 @@
       "description": "Explore estudos de caso detalhados de nossos projetos de playground bem-sucedidos em todo o mundo. Veja como ajudamos empresas a criar centros de entretenimento familiar lucrativos.",
       "keywords": "estudos de caso de playgrounds, histórias de sucesso FEC, exemplos de playground indoor"
     }
+  },
+  "caseStudies": {
+    "sectionLabel": "Nosso Portfólio",
+    "title": "Estudos de Caso",
+    "titleHighlight": "Globais",
+    "description": "Explore nossos projetos bem-sucedidos de todo o mundo. Cada projeto demonstra nosso compromisso com qualidade, inovação e satisfação do cliente.",
+    "filters": {
+      "allCountries": "Todos os Países",
+      "allTypes": "Todos os Tipos",
+      "clearFilters": "Limpar Filtros",
+      "noResults": "Nenhum estudo de caso encontrado que corresponda aos seus filtros.",
+      "projectsCount": "projetos"
+    },
+    "projectTypes": {
+      "indoor-playground": "Playground Indoor",
+      "trampoline-park": "Parque de Trampolins",
+      "ninja-course": "Curso Ninja",
+      "soft-play": "Soft Play",
+      "fec": "Centro de Entretenimento Familiar"
+    },
+    "cta": {
+      "title": "Pronto para Criar Sua História de Sucesso?",
+      "description": "Junte-se a centenas de clientes satisfeitos em todo o mundo. Vamos discutir seu projeto e transformar sua visão em realidade.",
+      "button": "Inicie Seu Projeto",
+      "similarProject": "Iniciar Projeto Similar"
+    },
+    "featured": "Destaque"
+  },
+  "projects": {
+    "sectionLabel": "Nossos Projetos",
+    "title": "Instalações",
+    "titleHighlight": "Bem-Sucedidas",
+    "subtitle": "Em Todo o Mundo",
+    "description": "Explore nosso portfólio de projetos concluídos em mais de 50 países. Cada instalação demonstra nosso compromisso com qualidade e inovação.",
+    "categories": {
+      "all": "Todos",
+      "indoorPlayground": "Playground Indoor",
+      "trampolinePark": "Parque de Trampolins",
+      "ninjaCourse": "Curso Ninja",
+      "softPlay": "Soft Play"
+    },
+    "cta": "Inicie Seu Projeto",
+    "size": "Tamanho"
+  },
+  "quoteCalculator": {
+    "sectionLabel": "Estimativa Instantânea",
+    "title": "Calculadora de",
+    "titleHighlight": "Cotações Online",
+    "description": "Obtenha uma estimativa instantânea para seu projeto. Selecione o tipo de equipamento e insira as dimensões do espaço para uma cotação aproximada.",
+    "step1": "Selecione o Tipo de Equipamento",
+    "step2": "Insira a Área do Espaço (m²)",
+    "step3": "Selecione o Nível de Qualidade",
+    "sqmLabel": "Metros Quadrados",
+    "calculateBtn": "Calcular Estimativa",
+    "resultTitle": "Faixa de Preço Estimada",
+    "resultNote": "O preço final depende da complexidade do design, tema e requisitos de instalação",
+    "ctaBtn": "Obter Cotação Precisa",
+    "productTypes": {
+      "indoor-playground": { "name": "Playground Indoor", "description": "Estruturas de jogo multinível" },
+      "trampoline-park": { "name": "Parque de Trampolins", "description": "Soluções completas de trampolim" },
+      "ninja-course": { "name": "Curso Ninja Warrior", "description": "Percursos de obstáculos profissionais" },
+      "soft-play": { "name": "Área de Soft Play", "description": "Equipamentos para crianças pequenas" },
+      "fec": { "name": "Centro de Entretenimento Familiar", "description": "Soluções FEC completas" }
+    },
+    "qualityLevels": {
+      "standard": "Padrão",
+      "premium": "Premium",
+      "luxury": "Luxo"
+    },
+    "quality": "Qualidade"
+  },
+  "extendedSections": {
+    "moreAttractions": "Mais Atrações",
+    "extendedActivityZones": "Zonas de Atividade Estendidas",
+    "moreObstacles": "Mais Obstáculos",
+    "extendedChallengeElements": "Elementos de Desafio Estendidos"
   }
 }

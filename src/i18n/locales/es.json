@@ -2009,5 +2009,81 @@
       "description": "Explora casos de estudio detallados de nuestros proyectos de parques exitosos en todo el mundo. Ve cómo hemos ayudado a negocios a crear centros de entretenimiento familiar rentables.",
       "keywords": "casos de estudio de parques, historias de éxito FEC, ejemplos de parques infantiles interiores"
     }
+  },
+  "caseStudies": {
+    "sectionLabel": "Nuestro Portafolio",
+    "title": "Casos de Estudio",
+    "titleHighlight": "Globales",
+    "description": "Explora nuestros proyectos exitosos de todo el mundo. Cada proyecto demuestra nuestro compromiso con la calidad, la innovación y la satisfacción del cliente.",
+    "filters": {
+      "allCountries": "Todos los Países",
+      "allTypes": "Todos los Tipos",
+      "clearFilters": "Limpiar Filtros",
+      "noResults": "No se encontraron casos de estudio que coincidan con tus filtros.",
+      "projectsCount": "proyectos"
+    },
+    "projectTypes": {
+      "indoor-playground": "Parque Infantil Interior",
+      "trampoline-park": "Parque de Trampolines",
+      "ninja-course": "Curso Ninja",
+      "soft-play": "Juego Suave",
+      "fec": "Centro de Entretenimiento Familiar"
+    },
+    "cta": {
+      "title": "¿Listo para Crear Tu Historia de Éxito?",
+      "description": "Únete a cientos de clientes satisfechos en todo el mundo. Hablemos de tu proyecto y convirtamos tu visión en realidad.",
+      "button": "Inicia Tu Proyecto",
+      "similarProject": "Iniciar Proyecto Similar"
+    },
+    "featured": "Destacado"
+  },
+  "projects": {
+    "sectionLabel": "Nuestros Proyectos",
+    "title": "Instalaciones",
+    "titleHighlight": "Exitosas",
+    "subtitle": "En Todo el Mundo",
+    "description": "Explora nuestro portafolio de proyectos completados en más de 50 países. Cada instalación demuestra nuestro compromiso con la calidad y la innovación.",
+    "categories": {
+      "all": "Todos",
+      "indoorPlayground": "Parque Infantil Interior",
+      "trampolinePark": "Parque de Trampolines",
+      "ninjaCourse": "Curso Ninja",
+      "softPlay": "Juego Suave"
+    },
+    "cta": "Inicia Tu Proyecto",
+    "size": "Tamaño"
+  },
+  "quoteCalculator": {
+    "sectionLabel": "Estimación Instantánea",
+    "title": "Calculadora de",
+    "titleHighlight": "Cotizaciones en Línea",
+    "description": "Obtén una estimación instantánea para tu proyecto. Selecciona tu tipo de equipo e ingresa las dimensiones de tu espacio para una cotización aproximada.",
+    "step1": "Selecciona Tipo de Equipo",
+    "step2": "Ingresa Área del Espacio (m²)",
+    "step3": "Selecciona Nivel de Calidad",
+    "sqmLabel": "Metros Cuadrados",
+    "calculateBtn": "Calcular Estimación",
+    "resultTitle": "Rango de Precio Estimado",
+    "resultNote": "El precio final depende de la complejidad del diseño, tema y requisitos de instalación",
+    "ctaBtn": "Obtener Cotización Precisa",
+    "productTypes": {
+      "indoor-playground": { "name": "Parque Infantil Interior", "description": "Estructuras de juego multinivel" },
+      "trampoline-park": { "name": "Parque de Trampolines", "description": "Soluciones completas de trampolín" },
+      "ninja-course": { "name": "Curso Ninja Warrior", "description": "Cursos de obstáculos profesionales" },
+      "soft-play": { "name": "Área de Juego Suave", "description": "Equipamiento para niños pequeños" },
+      "fec": { "name": "Centro de Entretenimiento Familiar", "description": "Soluciones FEC completas" }
+    },
+    "qualityLevels": {
+      "standard": "Estándar",
+      "premium": "Premium",
+      "luxury": "Lujo"
+    },
+    "quality": "Calidad"
+  },
+  "extendedSections": {
+    "moreAttractions": "Más Atracciones",
+    "extendedActivityZones": "Zonas de Actividad Extendidas",
+    "moreObstacles": "Más Obstáculos",
+    "extendedChallengeElements": "Elementos de Desafío Extendidos"
   }
 }

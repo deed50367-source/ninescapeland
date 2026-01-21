@@ -467,9 +467,9 @@ const TrampolinePark = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
             >
-              <Badge variant="secondary" className="mb-4">More Attractions</Badge>
+              <Badge variant="secondary" className="mb-4">{t("extendedSections.moreAttractions")}</Badge>
               <h2 className="text-3xl md:text-4xl font-bold mb-4">
-                Extended <span className="text-primary">Activity Zones</span>
+                {t("extendedSections.extendedActivityZones").split(" ")[0]} <span className="text-primary">{t("extendedSections.extendedActivityZones").split(" ").slice(1).join(" ")}</span>
               </h2>
             </motion.div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">

@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { MapPin, ArrowRight, Quote, Filter, X } from "lucide-react";
+import { useTranslation } from "react-i18next";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { SEOHead } from "@/components/SEOHead";
@@ -32,15 +33,8 @@ const projectTypeColors: Record<string, string> = {
   fec: "bg-success",
 };
 
-const projectTypeLabels: Record<string, string> = {
-  "indoor-playground": "Indoor Playground",
-  "trampoline-park": "Trampoline Park",
-  "ninja-course": "Ninja Course",
-  "soft-play": "Soft Play",
-  fec: "Family Entertainment Center",
-};
-
 export default function CaseStudies() {
+  const { t } = useTranslation();
   const [caseStudies, setCaseStudies] = useState<CaseStudy[]>([]);
   const [loading, setLoading] = useState(true);
   const [selectedCountry, setSelectedCountry] = useState<string>("");
@@ -93,14 +87,13 @@ export default function CaseStudies() {
               className="text-center max-w-4xl mx-auto"
             >
               <span className="text-accent font-semibold text-sm uppercase tracking-wider">
-                Our Portfolio
+                {t("caseStudies.sectionLabel")}
               </span>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold mt-3 mb-6">
-                Global <span className="text-gradient">Case Studies</span>
+                {t("caseStudies.title")} <span className="text-gradient">{t("caseStudies.titleHighlight")}</span>
               </h1>
               <p className="text-muted-foreground text-lg md:text-xl">
-                Explore our successful projects from around the world. Each project
-                showcases our commitment to quality, innovation, and client satisfaction.
+                {t("caseStudies.description")}
               </p>
             </motion.div>
           </div>
@@ -117,7 +110,7 @@ export default function CaseStudies() {
                 onChange={(e) => setSelectedCountry(e.target.value)}
                 className="h-10 px-4 rounded-lg border border-input bg-background text-sm"
               >
-                <option value="">All Countries</option>
+                <option value="">{t("caseStudies.filters.allCountries")}</option>
                 {countries.map((country) => (
                   <option key={country} value={country}>
                     {country}
@@ -130,10 +123,10 @@ export default function CaseStudies() {
                 onChange={(e) => setSelectedType(e.target.value)}
                 className="h-10 px-4 rounded-lg border border-input bg-background text-sm"
               >
-                <option value="">All Types</option>
+                <option value="">{t("caseStudies.filters.allTypes")}</option>
                 {projectTypes.map((type) => (
                   <option key={type} value={type}>
-                    {projectTypeLabels[type] || type}
+                    {t(`caseStudies.projectTypes.${type}`, type)}
                   </option>
                 ))}
               </select>
@@ -147,13 +140,13 @@ export default function CaseStudies() {
                     setSelectedType("");
                   }}
                 >
-                  Clear Filters
+                  {t("caseStudies.filters.clearFilters")}
                   <X className="w-4 h-4" />
                 </Button>
               )}
 
               <span className="ml-auto text-sm text-muted-foreground">
-                {filteredCases.length} projects
+                {filteredCases.length} {t("caseStudies.filters.projectsCount")}
               </span>
             </div>
           </div>
@@ -178,7 +171,7 @@ export default function CaseStudies() {
             ) : filteredCases.length === 0 ? (
               <div className="text-center py-16">
                 <p className="text-muted-foreground text-lg">
-                  No case studies found matching your filters.
+                  {t("caseStudies.filters.noResults")}
                 </p>
                 <Button
                   variant="outline"
@@ -188,7 +181,7 @@ export default function CaseStudies() {
                     setSelectedType("");
                   }}
                 >
-                  Clear Filters
+                  {t("caseStudies.filters.clearFilters")}
                 </Button>
               </div>
             ) : (
@@ -221,7 +214,7 @@ export default function CaseStudies() {
                       )}
                       {caseStudy.featured && (
                         <Badge className="absolute top-4 left-4 bg-accent text-accent-foreground">
-                          Featured
+                          {t("caseStudies.featured")}
                         </Badge>
                       )}
                       <div
@@ -245,7 +238,7 @@ export default function CaseStudies() {
                       </h3>
                       <div className="flex items-center gap-3 text-sm">
                         <Badge variant="secondary">
-                          {projectTypeLabels[caseStudy.project_type] || caseStudy.project_type}
+                          {t(`caseStudies.projectTypes.${caseStudy.project_type}`, caseStudy.project_type)}
                         </Badge>
                         {caseStudy.area_sqm && (
                           <span className="text-muted-foreground">
@@ -265,11 +258,10 @@ export default function CaseStudies() {
         <section className="section-padding bg-primary text-primary-foreground">
           <div className="container-wide text-center">
             <h2 className="text-3xl md:text-4xl font-heading font-bold mb-6">
-              Ready to Create Your Success Story?
+              {t("caseStudies.cta.title")}
             </h2>
             <p className="text-primary-foreground/80 text-lg mb-8 max-w-2xl mx-auto">
-              Join hundreds of satisfied clients worldwide. Let's discuss your project
-              and turn your vision into reality.
+              {t("caseStudies.cta.description")}
             </p>
             <Button
               variant="secondary"
@@ -278,7 +270,7 @@ export default function CaseStudies() {
               className="bg-primary-foreground text-primary hover:bg-primary-foreground/90"
             >
               <Link to={localizedPath("/contact")} className="group">
-                Start Your Project
+                {t("caseStudies.cta.button")}
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </Link>
             </Button>
@@ -335,7 +327,7 @@ export default function CaseStudies() {
 
               <div className="flex flex-wrap gap-3 mb-6">
                 <Badge variant="secondary">
-                  {projectTypeLabels[selectedCase.project_type] || selectedCase.project_type}
+                  {t(`caseStudies.projectTypes.${selectedCase.project_type}`, selectedCase.project_type)}
                 </Badge>
                 {selectedCase.area_sqm && (
                   <Badge variant="outline">{selectedCase.area_sqm} m²</Badge>
@@ -377,10 +369,10 @@ export default function CaseStudies() {
               )}
 
               <Button variant="hero" size="lg" asChild className="w-full">
-                <a href={`${localizedPath("")}#contact`}>
-                  Start Similar Project
+                <Link to={localizedPath("/contact")}>
+                  {t("caseStudies.cta.similarProject")}
                   <ArrowRight className="w-5 h-5" />
-                </a>
+                </Link>
               </Button>
             </div>
           </motion.div>

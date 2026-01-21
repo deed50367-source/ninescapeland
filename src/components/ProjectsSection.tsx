@@ -1,8 +1,10 @@
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
 import { motion, AnimatePresence } from "framer-motion";
 import { MapPin, ArrowRight, ArrowLeft } from "lucide-react";
 import { Button } from "./ui/button";
 import { useRTL } from "@/hooks/useRTL";
+import { useLocalizedPath } from "@/hooks/useLocalizedPath";
 import { productImages, projectImages } from "@/config/galleryImages";
 
 const projects = [
@@ -60,9 +62,19 @@ const categories = ["All", "Indoor Playground", "Trampoline Park", "Ninja Course
 
 export const ProjectsSection = () => {
   const [activeCategory, setActiveCategory] = useState("All");
+  const { t } = useTranslation();
   const { isRTL } = useRTL();
+  const { localizedPath } = useLocalizedPath();
 
   const ArrowIcon = isRTL ? ArrowLeft : ArrowRight;
+
+  const categories = [
+    { key: "All", label: t("projects.categories.all") },
+    { key: "Indoor Playground", label: t("projects.categories.indoorPlayground") },
+    { key: "Trampoline Park", label: t("projects.categories.trampolinePark") },
+    { key: "Ninja Course", label: t("projects.categories.ninjaCourse") },
+    { key: "Soft Play", label: t("projects.categories.softPlay") },
+  ];
 
   const filteredProjects = activeCategory === "All"
     ? projects
@@ -79,14 +91,13 @@ export const ProjectsSection = () => {
           className="text-center max-w-3xl mx-auto mb-12"
         >
           <span className="text-accent font-semibold text-sm uppercase tracking-wider">
-            Our Projects
+            {t("projects.sectionLabel")}
           </span>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold mt-3 mb-6">
-            Successful <span className="text-gradient">Installations</span> Worldwide
+            {t("projects.title")} <span className="text-gradient">{t("projects.titleHighlight")}</span> {t("projects.subtitle")}
           </h2>
           <p className="text-muted-foreground text-lg">
-            Explore our portfolio of completed projects across 50+ countries. 
-            Each installation showcases our commitment to quality and innovation.
+            {t("projects.description")}
           </p>
         </motion.div>
 
@@ -99,15 +110,15 @@ export const ProjectsSection = () => {
         >
           {categories.map((category) => (
             <button
-              key={category}
-              onClick={() => setActiveCategory(category)}
+              key={category.key}
+              onClick={() => setActiveCategory(category.key)}
               className={`px-5 py-2 rounded-full font-medium text-sm transition-all ${
-                activeCategory === category
+                activeCategory === category.key
                   ? "bg-primary text-primary-foreground shadow-soft"
                   : "bg-muted text-muted-foreground hover:bg-secondary"
               }`}
             >
-              {category}
+              {category.label}
             </button>
           ))}
         </motion.div>
@@ -146,7 +157,7 @@ export const ProjectsSection = () => {
                     {project.location}
                   </div>
                   <div className="text-sm text-muted-foreground">
-                    Size: <span className="font-semibold text-foreground">{project.size}</span>
+                    {t("projects.size")}: <span className="font-semibold text-foreground">{project.size}</span>
                   </div>
                 </div>
               </motion.article>
@@ -162,8 +173,8 @@ export const ProjectsSection = () => {
           className="text-center mt-12"
         >
           <Button variant="hero" size="lg" asChild>
-            <a href="#contact" className="group">
-              Start Your Project
+            <a href={localizedPath("/contact")} className="group">
+              {t("projects.cta")}
               <ArrowIcon className={`w-5 h-5 transition-transform ${isRTL ? 'group-hover:-translate-x-1' : 'group-hover:translate-x-1'}`} />
             </a>
           </Button>
