@@ -243,6 +243,93 @@ const AdminGalleryTab = () => {
     e.target.value = "";
   };
 
+  const handleFolderUpload = async (e: React.ChangeEvent<HTMLInputElement>) => {
+    const files = e.target.files;
+    if (!files || files.length === 0) return;
+    
+    uploadCancelledRef.current = false;
+    const fileArray = Array.from(files);
+    
+    // Initialize upload items
+    const items: UploadItem[] = fileArray.map((file, index) => ({
+      id: `${Date.now()}-${index}`,
+      file,
+      relativePath: (file as any).webkitRelativePath || file.name,
+      status: "pending" as const,
+      progress: 0
+    }));
+    setUploadItems(items);
+    setIsUploadMinimized(false);
+    setIsUploading(true);
+
+    // Get folder name from first file's path
+    const firstPath = (fileArray[0] as any).webkitRelativePath || "";
+    const folderName = firstPath.split("/")[0];
+    
+    // Create main folder if needed
+    let targetFolderId = currentFolderId;
+    if (folderName) {
+      const { data: newFolder } = await supabase
+        .from("asset_folders")
+        .insert({ name: folderName, parent_id: currentFolderId })
+        .select()
+        .single();
+      if (newFolder) {
+        targetFolderId = newFolder.id;
+      }
+    }
+
+    // Upload files sequentially with progress
+    for (let i = 0; i < fileArray.length; i++) {
+      if (uploadCancelledRef.current) break;
+      
+      const file = fileArray[i];
+      const relativePath = (file as any).webkitRelativePath || file.name;
+      
+      setUploadItems(prev => prev.map((item, idx) => 
+        idx === i ? { ...item, status: "uploading" as const, progress: 10 } : item
+      ));
+
+      try {
+        const filePath = `${targetFolderId || "root"}/${Date.now()}-${file.name}`;
+        
+        setUploadItems(prev => prev.map((item, idx) => 
+          idx === i ? { ...item, progress: 50 } : item
+        ));
+        
+        const { error } = await supabase.storage.from("assets").upload(filePath, file);
+        
+        if (!error) {
+          await supabase.from("assets").insert({
+            folder_id: targetFolderId,
+            file_name: file.name,
+            file_path: filePath,
+            file_size: file.size,
+            mime_type: file.type
+          });
+          
+          setUploadItems(prev => prev.map((item, idx) => 
+            idx === i ? { ...item, status: "success" as const, progress: 100 } : item
+          ));
+        } else {
+          setUploadItems(prev => prev.map((item, idx) => 
+            idx === i ? { ...item, status: "error" as const, error: error.message } : item
+          ));
+        }
+      } catch (err: any) {
+        setUploadItems(prev => prev.map((item, idx) => 
+          idx === i ? { ...item, status: "error" as const, error: err.message } : item
+        ));
+      }
+    }
+
+    setIsUploading(false);
+    fetchFolders();
+    fetchAssets();
+    toast.success("Folder upload complete");
+    e.target.value = "";
+  };
+
   const filteredAssets = assets.filter(a => a.file_name.toLowerCase().includes(searchQuery.toLowerCase()));
   const filteredFolders = folders.filter(f => f.name.toLowerCase().includes(searchQuery.toLowerCase()));
 
@@ -266,6 +353,20 @@ const AdminGalleryTab = () => {
           <Button variant="default" size="sm" disabled={isUploading} asChild>
             <label className="cursor-pointer"><Upload className="w-4 h-4 mr-2" />Upload Files<input type="file" multiple accept="image/*,video/*" className="hidden" onChange={handleFileUpload} disabled={isUploading} /></label>
           </Button>
+          <Button variant="outline" size="sm" disabled={isUploading} onClick={() => folderInputRef.current?.click()}>
+            <FolderUp className="w-4 h-4 mr-2" />Upload Folder
+          </Button>
+          <input
+            ref={folderInputRef}
+            type="file"
+            // @ts-ignore - webkitdirectory is a non-standard attribute
+            webkitdirectory=""
+            directory=""
+            multiple
+            className="hidden"
+            onChange={handleFolderUpload}
+            disabled={isUploading}
+          />
         </div>
         <div className="flex items-center gap-2">
           <div className="relative flex-1 md:w-64">
