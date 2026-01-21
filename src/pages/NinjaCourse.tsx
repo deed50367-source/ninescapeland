@@ -60,7 +60,7 @@ const NinjaCourse = () => {
   const { t } = useTranslation();
   const { localizedPath } = useLocalizedPath();
 
-  const heroImage = getStorageUrl("dcbc5ed3-1863-4db6-bacf-59919b3abec6/1768294404756-dg7aeb.jpg");
+  const heroImage = getStorageUrl("root/1768967512755-1708914619333.jpg");
 
   const features = [
     {
@@ -86,12 +86,11 @@ const NinjaCourse = () => {
   ];
 
   const galleryImages = [
-    getStorageUrl("dcbc5ed3-1863-4db6-bacf-59919b3abec6/1768294404756-dg7aeb.jpg"),
-    getStorageUrl("dcbc5ed3-1863-4db6-bacf-59919b3abec6/1768294408691-xypop.jpg"),
-    getStorageUrl("dcbc5ed3-1863-4db6-bacf-59919b3abec6/1768294381259-ig9ii.jpg"),
-    getStorageUrl("dcbc5ed3-1863-4db6-bacf-59919b3abec6/1768294376731-g5jiv8.jpg"),
-    getStorageUrl("dcbc5ed3-1863-4db6-bacf-59919b3abec6/1768294400190-bx9gha.jpg"),
-    getStorageUrl("dcbc5ed3-1863-4db6-bacf-59919b3abec6/1768294404756-dg7aeb.jpg")
+    getStorageUrl("root/1768967512755-1708914619333.jpg"),
+    getStorageUrl("root/1768967510986-1708914597457.jpg"),
+    getStorageUrl("root/1768967509253-1708914541597.jpg"),
+    getStorageUrl("root/1768967504978-1708914505733.jpg"),
+    getStorageUrl("root/1768967514514-1708914634364.jpg"),
   ];
 
   const obstacles = [

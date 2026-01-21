@@ -67,8 +67,8 @@ export const productImages = {
   trampolinePark: getStorageUrl("88de2e3c-c85e-413b-878d-99b0d0aea8ed/1768294617155-efd0q8.jpg"), // 蹦床设计图 12(2) - 蹦床区域
   
   // 忍者课程 - "Ninja Warrior Courses"
-  // 使用攀爬挑战设备图
-  ninjaCourse: getStorageUrl("dcbc5ed3-1863-4db6-bacf-59919b3abec6/1768294404756-dg7aeb.jpg"), // 白底图 7-1.png - 挑战设备
+  // 使用3D效果渲染图
+  ninjaCourse: getStorageUrl("root/1768967512755-1708914619333.jpg"), // 忍者课程3D效果图
   
   // 软体游乐 - "Soft Play Areas"
   // 使用适合幼儿的软体游乐设备
@@ -89,7 +89,7 @@ export const projectImages = {
   indoorProject: getStorageUrl("e781d029-b8d9-4101-8835-35d1d8938a12/1768294208983-svikya.jpg"), // A_10 - 室内全景
   
   // 忍者挑战区项目
-  ninjaProject: getStorageUrl("dcbc5ed3-1863-4db6-bacf-59919b3abec6/1768294381259-ig9ii.jpg"), // 白底图 2-2.png
+  ninjaProject: getStorageUrl("root/1768967510986-1708914597457.jpg"), // 忍者课程3D效果图
 };
 
 /**
@@ -100,5 +100,5 @@ export const featureImages = {
   trampoline: getStorageUrl("88de2e3c-c85e-413b-878d-99b0d0aea8ed/1768294621773-h93mw.jpg"), // 蹦床设计图 12(4)
   
   // 忍者特性区 - 展示忍者挑战设备
-  ninja: getStorageUrl("dcbc5ed3-1863-4db6-bacf-59919b3abec6/1768294408691-xypop.jpg"), // 白底图 7.png
+  ninja: getStorageUrl("root/1768967509253-1708914541597.jpg"), // 忍者课程3D效果图
 };
