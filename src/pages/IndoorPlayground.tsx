@@ -7,6 +7,7 @@ import { QuoteCalculator } from "@/components/QuoteCalculator";
 import { ProductFAQ } from "@/components/ProductFAQ";
 import { SEOHead } from "@/components/SEOHead";
 import { ProductSchema, FAQSchema } from "@/components/StructuredData";
+import { RelatedProductsSection } from "@/components/RelatedProductsSection";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -911,6 +912,7 @@ const IndoorPlayground = () => {
           </div>
         </section>
 
+        <RelatedProductsSection categorySlug="indoor-playground" />
         <ProductFAQ productType="indoorPlayground" />
         <QuoteCalculator />
       </main>

@@ -7,6 +7,7 @@ import { QuoteCalculator } from "@/components/QuoteCalculator";
 import { ProductFAQ } from "@/components/ProductFAQ";
 import { SEOHead } from "@/components/SEOHead";
 import { ProductSchema, FAQSchema } from "@/components/StructuredData";
+import { RelatedProductsSection } from "@/components/RelatedProductsSection";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -768,6 +769,7 @@ const SoftPlay = () => {
           </div>
         </section>
 
+        <RelatedProductsSection categorySlug="soft-play" />
         <ProductFAQ productType="softPlay" />
         <QuoteCalculator />
       </main>

@@ -13,7 +13,22 @@
     "faq": "FAQ",
     "caseStudies": "Cases",
     "more": "More",
-    "getFreeQuote": "Get Free Quote"
+    "getFreeQuote": "Get Free Quote",
+    "coreProducts": "Core Products",
+    "viewAllProducts": "View All Products",
+    "categories": "Categories",
+    "featuredProducts": "Featured",
+    "noCategoriesYet": "Categories coming soon...",
+    "noFeaturedYet": "Featured products coming soon...",
+    "megaMenuCta": "Need custom solutions?",
+    "megaMenuCtaDesc": "Get a free consultation for your project"
+  },
+  "relatedProducts": {
+    "badge": "Explore Products",
+    "title": "Related Products",
+    "titleHighlight": "You May Like",
+    "description": "Discover more products in this category to enhance your project",
+    "viewAll": "View All Products"
   },
   "blog": {
     "readMore": "Read More",
