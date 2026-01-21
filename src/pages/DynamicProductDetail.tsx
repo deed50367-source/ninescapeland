@@ -32,6 +32,10 @@ interface ProductCategory {
   id: string;
   name: string;
   name_en: string | null;
+  name_ar: string | null;
+  name_de: string | null;
+  name_es: string | null;
+  name_pt: string | null;
   slug: string;
 }
 
@@ -49,10 +53,18 @@ interface Product {
   id: string;
   name: string;
   name_en: string | null;
+  name_ar: string | null;
+  name_de: string | null;
+  name_es: string | null;
+  name_pt: string | null;
   slug: string;
   short_description: string | null;
   description: string | null;
   description_en: string | null;
+  description_ar: string | null;
+  description_de: string | null;
+  description_es: string | null;
+  description_pt: string | null;
   featured_image: string | null;
   gallery_images: string[];
   price_min: number | null;
@@ -72,6 +84,10 @@ interface RelatedProduct {
   id: string;
   name: string;
   name_en: string | null;
+  name_ar: string | null;
+  name_de: string | null;
+  name_es: string | null;
+  name_pt: string | null;
   slug: string;
   featured_image: string | null;
   price_min: number | null;
@@ -147,7 +163,7 @@ const DynamicProductDetail = () => {
       if (data.category_id) {
         const { data: relatedData } = await supabase
           .from("products")
-          .select("id, name, name_en, slug, featured_image, price_min, price_unit")
+          .select("id, name, name_en, name_ar, name_de, name_es, name_pt, slug, featured_image, price_min, price_unit")
           .eq("category_id", data.category_id)
           .eq("is_active", true)
           .neq("id", data.id)
@@ -165,18 +181,34 @@ const DynamicProductDetail = () => {
   }, [slug]);
 
   // Get localized content
-  const getLocalizedName = (item: { name: string; name_en?: string | null }) => {
-    if (i18n.language === "en" && item.name_en) {
-      return item.name_en;
-    }
-    return item.name;
+  const getLocalizedName = (item: { 
+    name: string; 
+    name_en?: string | null;
+    name_ar?: string | null;
+    name_de?: string | null;
+    name_es?: string | null;
+    name_pt?: string | null;
+  }) => {
+    const lang = i18n.language;
+    if (lang === "en" && item.name_en) return item.name_en;
+    if (lang === "ar" && item.name_ar) return item.name_ar;
+    if (lang === "de" && item.name_de) return item.name_de;
+    if (lang === "es" && item.name_es) return item.name_es;
+    if (lang === "pt" && item.name_pt) return item.name_pt;
+    // Fallback to English, then default name
+    return item.name_en || item.name;
   };
 
   const getLocalizedDescription = () => {
-    if (i18n.language === "en" && product?.description_en) {
-      return product.description_en;
-    }
-    return product?.description || "";
+    if (!product) return "";
+    const lang = i18n.language;
+    if (lang === "en" && product.description_en) return product.description_en;
+    if (lang === "ar" && product.description_ar) return product.description_ar;
+    if (lang === "de" && product.description_de) return product.description_de;
+    if (lang === "es" && product.description_es) return product.description_es;
+    if (lang === "pt" && product.description_pt) return product.description_pt;
+    // Fallback to English, then default description
+    return product.description_en || product.description || "";
   };
 
   // Gallery images
