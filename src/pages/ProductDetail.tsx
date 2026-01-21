@@ -38,12 +38,12 @@ const productDetailImages = {
     getStorageUrl("88de2e3c-c85e-413b-878d-99b0d0aea8ed/1768294614701-b5b7pw.jpg"), // 蹦床设计图
   ],
   "ninja-course": [
-    // 主图 - 忍者设备图
+    // 主图 - 忍者设备3D效果图
     productImages.ninjaCourse,
-    // 其他挑战设备
-    getStorageUrl("dcbc5ed3-1863-4db6-bacf-59919b3abec6/1768294408691-xypop.jpg"), // 挑战设备1
-    getStorageUrl("dcbc5ed3-1863-4db6-bacf-59919b3abec6/1768294381259-ig9ii.jpg"), // 挑战设备2
-    getStorageUrl("dcbc5ed3-1863-4db6-bacf-59919b3abec6/1768294376731-g5jiv8.jpg"), // 组合设备
+    // 其他忍者课程3D效果图
+    getStorageUrl("root/1768967510986-1708914597457.jpg"),
+    getStorageUrl("root/1768967509253-1708914541597.jpg"),
+    getStorageUrl("root/1768967504978-1708914505733.jpg"),
   ],
   "soft-play": [
     // 主图 - 软体游乐设备
