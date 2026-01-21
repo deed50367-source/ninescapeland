@@ -2,7 +2,7 @@ import { Header } from "@/components/Header";
 import { PageHero } from "@/components/PageHero";
 import { Footer } from "@/components/Footer";
 import { FloatingCTA } from "@/components/FloatingCTA";
-import { FloatingMascot } from "@/components/FloatingMascot";
+
 import { TrampolineFeaturesSection } from "@/components/TrampolineFeaturesSection";
 import { QuoteCalculator } from "@/components/QuoteCalculator";
 import { ProductFAQ } from "@/components/ProductFAQ";
@@ -847,7 +847,7 @@ const TrampolinePark = () => {
       </main>
       <Footer />
       <FloatingCTA />
-      <FloatingMascot type="trampoline" />
+      
     </div>
   );
 };

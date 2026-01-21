@@ -2,7 +2,7 @@ import { Header } from "@/components/Header";
 import { PageHero } from "@/components/PageHero";
 import { Footer } from "@/components/Footer";
 import { FloatingCTA } from "@/components/FloatingCTA";
-import { FloatingMascot } from "@/components/FloatingMascot";
+
 import { QuoteCalculator } from "@/components/QuoteCalculator";
 import { ProductFAQ } from "@/components/ProductFAQ";
 import { SEOHead } from "@/components/SEOHead";
@@ -918,7 +918,7 @@ const IndoorPlayground = () => {
       </main>
       <Footer />
       <FloatingCTA />
-      <FloatingMascot type="playground" />
+      
     </div>
   );
 };
