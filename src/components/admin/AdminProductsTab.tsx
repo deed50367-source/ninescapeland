@@ -53,6 +53,10 @@ interface ProductCategory {
   id: string;
   name: string;
   name_en: string | null;
+  name_ar: string | null;
+  name_de: string | null;
+  name_es: string | null;
+  name_pt: string | null;
   slug: string;
   description: string | null;
   image_url: string | null;
@@ -65,10 +69,18 @@ interface Product {
   category_id: string | null;
   name: string;
   name_en: string | null;
+  name_ar: string | null;
+  name_de: string | null;
+  name_es: string | null;
+  name_pt: string | null;
   slug: string;
   short_description: string | null;
   description: string | null;
   description_en: string | null;
+  description_ar: string | null;
+  description_de: string | null;
+  description_es: string | null;
+  description_pt: string | null;
   featured_image: string | null;
   gallery_images: string[];
   price_min: number | null;
@@ -113,11 +125,19 @@ const AdminProductsTab = () => {
   const [productForm, setProductForm] = useState({
     name: "",
     name_en: "",
+    name_ar: "",
+    name_de: "",
+    name_es: "",
+    name_pt: "",
     slug: "",
     category_id: "",
     short_description: "",
     description: "",
     description_en: "",
+    description_ar: "",
+    description_de: "",
+    description_es: "",
+    description_pt: "",
     featured_image: "",
     gallery_images: [] as string[],
     price_min: "",
@@ -139,6 +159,10 @@ const AdminProductsTab = () => {
   const [categoryForm, setCategoryForm] = useState({
     name: "",
     name_en: "",
+    name_ar: "",
+    name_de: "",
+    name_es: "",
+    name_pt: "",
     slug: "",
     description: "",
     image_url: "",
@@ -237,6 +261,10 @@ const AdminProductsTab = () => {
       setCategoryForm({
         name: category.name,
         name_en: category.name_en || "",
+        name_ar: category.name_ar || "",
+        name_de: category.name_de || "",
+        name_es: category.name_es || "",
+        name_pt: category.name_pt || "",
         slug: category.slug,
         description: category.description || "",
         image_url: category.image_url || "",
@@ -248,6 +276,10 @@ const AdminProductsTab = () => {
       setCategoryForm({
         name: "",
         name_en: "",
+        name_ar: "",
+        name_de: "",
+        name_es: "",
+        name_pt: "",
         slug: "",
         description: "",
         image_url: "",
@@ -267,6 +299,10 @@ const AdminProductsTab = () => {
     const categoryData = {
       name: categoryForm.name,
       name_en: categoryForm.name_en || null,
+      name_ar: categoryForm.name_ar || null,
+      name_de: categoryForm.name_de || null,
+      name_es: categoryForm.name_es || null,
+      name_pt: categoryForm.name_pt || null,
       slug: categoryForm.slug,
       description: categoryForm.description || null,
       image_url: categoryForm.image_url || null,
@@ -320,11 +356,19 @@ const AdminProductsTab = () => {
       setProductForm({
         name: product.name,
         name_en: product.name_en || "",
+        name_ar: product.name_ar || "",
+        name_de: product.name_de || "",
+        name_es: product.name_es || "",
+        name_pt: product.name_pt || "",
         slug: product.slug,
         category_id: product.category_id || "",
         short_description: product.short_description || "",
         description: product.description || "",
         description_en: product.description_en || "",
+        description_ar: product.description_ar || "",
+        description_de: product.description_de || "",
+        description_es: product.description_es || "",
+        description_pt: product.description_pt || "",
         featured_image: product.featured_image || "",
         gallery_images: product.gallery_images || [],
         price_min: product.price_min?.toString() || "",
@@ -345,11 +389,19 @@ const AdminProductsTab = () => {
       setProductForm({
         name: "",
         name_en: "",
+        name_ar: "",
+        name_de: "",
+        name_es: "",
+        name_pt: "",
         slug: "",
         category_id: "",
         short_description: "",
         description: "",
         description_en: "",
+        description_ar: "",
+        description_de: "",
+        description_es: "",
+        description_pt: "",
         featured_image: "",
         gallery_images: [],
         price_min: "",
@@ -378,11 +430,19 @@ const AdminProductsTab = () => {
     const productData = {
       name: productForm.name,
       name_en: productForm.name_en || null,
+      name_ar: productForm.name_ar || null,
+      name_de: productForm.name_de || null,
+      name_es: productForm.name_es || null,
+      name_pt: productForm.name_pt || null,
       slug: productForm.slug,
       category_id: productForm.category_id || null,
       short_description: productForm.short_description || null,
       description: productForm.description || null,
       description_en: productForm.description_en || null,
+      description_ar: productForm.description_ar || null,
+      description_de: productForm.description_de || null,
+      description_es: productForm.description_es || null,
+      description_pt: productForm.description_pt || null,
       featured_image: productForm.featured_image || null,
       gallery_images: productForm.gallery_images,
       price_min: productForm.price_min ? parseFloat(productForm.price_min) : null,
@@ -858,8 +918,9 @@ const AdminProductsTab = () => {
           </DialogHeader>
 
           <Tabs defaultValue="basic" className="w-full">
-            <TabsList className="grid w-full grid-cols-5">
+            <TabsList className="grid w-full grid-cols-6">
               <TabsTrigger value="basic">基本信息</TabsTrigger>
+              <TabsTrigger value="i18n">多语言</TabsTrigger>
               <TabsTrigger value="media">图片媒体</TabsTrigger>
               <TabsTrigger value="specs">规格参数</TabsTrigger>
               <TabsTrigger value="variants">产品变体</TabsTrigger>
@@ -1027,6 +1088,130 @@ const AdminProductsTab = () => {
                       }
                     />
                     <Label>推荐</Label>
+                  </div>
+                </div>
+              </div>
+            </TabsContent>
+
+            <TabsContent value="i18n" className="space-y-4 mt-4">
+              <div className="bg-muted/30 rounded-lg p-4 mb-4">
+                <p className="text-sm text-muted-foreground">
+                  在此编辑各语言版本的产品名称和描述。如果某语言字段留空，将自动使用英文或中文内容。
+                </p>
+              </div>
+
+              <div className="space-y-6">
+                {/* Arabic */}
+                <div className="border rounded-lg p-4 space-y-4">
+                  <h4 className="font-medium flex items-center gap-2">
+                    🇸🇦 阿拉伯语 (Arabic)
+                  </h4>
+                  <div className="space-y-2">
+                    <Label>产品名称 (阿拉伯语)</Label>
+                    <Input
+                      value={productForm.name_ar}
+                      onChange={(e) =>
+                        setProductForm({ ...productForm, name_ar: e.target.value })
+                      }
+                      placeholder="اسم المنتج"
+                      dir="rtl"
+                    />
+                  </div>
+                  <div className="space-y-2">
+                    <Label>产品描述 (阿拉伯语)</Label>
+                    <Textarea
+                      value={productForm.description_ar}
+                      onChange={(e) =>
+                        setProductForm({ ...productForm, description_ar: e.target.value })
+                      }
+                      placeholder="وصف المنتج..."
+                      rows={3}
+                      dir="rtl"
+                    />
+                  </div>
+                </div>
+
+                {/* German */}
+                <div className="border rounded-lg p-4 space-y-4">
+                  <h4 className="font-medium flex items-center gap-2">
+                    🇩🇪 德语 (German)
+                  </h4>
+                  <div className="space-y-2">
+                    <Label>产品名称 (德语)</Label>
+                    <Input
+                      value={productForm.name_de}
+                      onChange={(e) =>
+                        setProductForm({ ...productForm, name_de: e.target.value })
+                      }
+                      placeholder="Produktname"
+                    />
+                  </div>
+                  <div className="space-y-2">
+                    <Label>产品描述 (德语)</Label>
+                    <Textarea
+                      value={productForm.description_de}
+                      onChange={(e) =>
+                        setProductForm({ ...productForm, description_de: e.target.value })
+                      }
+                      placeholder="Produktbeschreibung..."
+                      rows={3}
+                    />
+                  </div>
+                </div>
+
+                {/* Spanish */}
+                <div className="border rounded-lg p-4 space-y-4">
+                  <h4 className="font-medium flex items-center gap-2">
+                    🇪🇸 西班牙语 (Spanish)
+                  </h4>
+                  <div className="space-y-2">
+                    <Label>产品名称 (西班牙语)</Label>
+                    <Input
+                      value={productForm.name_es}
+                      onChange={(e) =>
+                        setProductForm({ ...productForm, name_es: e.target.value })
+                      }
+                      placeholder="Nombre del producto"
+                    />
+                  </div>
+                  <div className="space-y-2">
+                    <Label>产品描述 (西班牙语)</Label>
+                    <Textarea
+                      value={productForm.description_es}
+                      onChange={(e) =>
+                        setProductForm({ ...productForm, description_es: e.target.value })
+                      }
+                      placeholder="Descripción del producto..."
+                      rows={3}
+                    />
+                  </div>
+                </div>
+
+                {/* Portuguese */}
+                <div className="border rounded-lg p-4 space-y-4">
+                  <h4 className="font-medium flex items-center gap-2">
+                    🇧🇷 葡萄牙语 (Portuguese)
+                  </h4>
+                  <div className="space-y-2">
+                    <Label>产品名称 (葡萄牙语)</Label>
+                    <Input
+                      value={productForm.name_pt}
+                      onChange={(e) =>
+                        setProductForm({ ...productForm, name_pt: e.target.value })
+                      }
+                      placeholder="Nome do produto"
+                    />
+                  </div>
+                  <div className="space-y-2">
+                    <Label>产品描述 (葡萄牙语)</Label>
+                    <Textarea
+                      value={productForm.description_pt}
+                      onChange={(e) =>
+                        setProductForm({ ...productForm, description_pt: e.target.value })
+                      }
+                      placeholder="Descrição do produto..."
+                      rows={3}
+                    />
                   </div>
                 </div>
               </div>
@@ -1329,7 +1514,7 @@ const AdminProductsTab = () => {
             </DialogTitle>
           </DialogHeader>
 
-          <div className="space-y-4">
+          <div className="space-y-4 max-h-[60vh] overflow-y-auto pr-2">
             <div className="grid grid-cols-2 gap-4">
               <div className="space-y-2">
                 <Label>分类名称 (中文) *</Label>
@@ -1366,6 +1551,54 @@ const AdminProductsTab = () => {
                 }
                 placeholder="category-slug"
               />
+            </div>
+
+            {/* Multi-language category names */}
+            <div className="border rounded-lg p-4 space-y-4">
+              <h4 className="font-medium text-sm text-muted-foreground">其他语言名称 (可选)</h4>
+              <div className="grid grid-cols-2 gap-4">
+                <div className="space-y-2">
+                  <Label className="text-sm">🇸🇦 阿拉伯语</Label>
+                  <Input
+                    value={categoryForm.name_ar}
+                    onChange={(e) =>
+                      setCategoryForm({ ...categoryForm, name_ar: e.target.value })
+                    }
+                    placeholder="اسم الفئة"
+                    dir="rtl"
+                  />
+                </div>
+                <div className="space-y-2">
+                  <Label className="text-sm">🇩🇪 德语</Label>
+                  <Input
+                    value={categoryForm.name_de}
+                    onChange={(e) =>
+                      setCategoryForm({ ...categoryForm, name_de: e.target.value })
+                    }
+                    placeholder="Kategoriename"
+                  />
+                </div>
+                <div className="space-y-2">
+                  <Label className="text-sm">🇪🇸 西班牙语</Label>
+                  <Input
+                    value={categoryForm.name_es}
+                    onChange={(e) =>
+                      setCategoryForm({ ...categoryForm, name_es: e.target.value })
+                    }
+                    placeholder="Nombre de categoría"
+                  />
+                </div>
+                <div className="space-y-2">
+                  <Label className="text-sm">🇧🇷 葡萄牙语</Label>
+                  <Input
+                    value={categoryForm.name_pt}
+                    onChange={(e) =>
+                      setCategoryForm({ ...categoryForm, name_pt: e.target.value })
+                    }
+                    placeholder="Nome da categoria"
+                  />
+                </div>
+              </div>
             </div>
 
             <div className="space-y-2">
