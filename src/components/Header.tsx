@@ -2,18 +2,13 @@ import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
-import { Menu, X, Phone, Mail, ChevronDown, ChevronRight, ChevronLeft } from "lucide-react";
+import { Menu, X, Phone, Mail, ChevronDown, ChevronRight, ChevronLeft, Package } from "lucide-react";
 import logo from "@/assets/logo.png";
 import { Button } from "./ui/button";
 import { LanguageSwitcher } from "./LanguageSwitcher";
 import { useLocalizedPath } from "@/hooks/useLocalizedPath";
 import { useRTL } from "@/hooks/useRTL";
-import {
-  DropdownMenu,
-  DropdownMenuContent,
-  DropdownMenuItem,
-  DropdownMenuTrigger,
-} from "./ui/dropdown-menu";
+import { ProductMegaMenu } from "./ProductMegaMenu";
 
 export const Header = () => {
   const { t } = useTranslation();
@@ -140,22 +135,8 @@ export const Header = () => {
                 <span className="absolute -bottom-1 start-0 w-0 h-0.5 bg-primary transition-all group-hover:w-full" />
               </Link>
 
-              {/* Products Dropdown */}
-              <DropdownMenu>
-                <DropdownMenuTrigger className="flex items-center gap-1 text-foreground/80 hover:text-primary font-medium transition-colors">
-                  {t("nav.products")}
-                  <ChevronDown className="w-4 h-4" />
-                </DropdownMenuTrigger>
-                <DropdownMenuContent align="start" className="w-56">
-                  {productItems.map((item) => (
-                    <DropdownMenuItem key={item.label} asChild>
-                      <Link to={item.href} className="cursor-pointer">
-                        {item.label}
-                      </Link>
-                    </DropdownMenuItem>
-                  ))}
-                </DropdownMenuContent>
-              </DropdownMenu>
+              {/* Products Mega Menu */}
+              <ProductMegaMenu />
 
               <Link
                 to={localizedPath("/blog")}

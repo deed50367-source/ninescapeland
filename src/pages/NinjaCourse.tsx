@@ -8,6 +8,7 @@ import { QuoteCalculator } from "@/components/QuoteCalculator";
 import { ProductFAQ } from "@/components/ProductFAQ";
 import { SEOHead } from "@/components/SEOHead";
 import { ProductSchema, FAQSchema } from "@/components/StructuredData";
+import { RelatedProductsSection } from "@/components/RelatedProductsSection";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -773,6 +774,7 @@ const NinjaCourse = () => {
           </div>
         </section>
 
+        <RelatedProductsSection categorySlug="ninja-course" />
         <ProductFAQ productType="ninjaCourse" />
         <QuoteCalculator />
       </main>
