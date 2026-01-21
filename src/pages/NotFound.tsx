@@ -7,7 +7,12 @@ import { Home } from "lucide-react";
 
 const NotFound = () => {
   const location = useLocation();
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+  
+  // Get current language from path or default to "en"
+  const pathLang = location.pathname.split("/")[1];
+  const validLangs = ["en", "ar", "de", "es", "pt"];
+  const currentLang = validLangs.includes(pathLang) ? pathLang : i18n.language || "en";
 
   useEffect(() => {
     console.error("404 Error: User attempted to access non-existent route:", location.pathname);
@@ -28,7 +33,7 @@ const NotFound = () => {
           {t("notFound.description", "The page you are looking for might have been removed, had its name changed, or is temporarily unavailable.")}
         </p>
         <Button asChild size="lg">
-          <Link to="/en">
+          <Link to={`/${currentLang}`}>
             <Home className="w-4 h-4 mr-2" />
             {t("notFound.backHome", "Return to Home")}
           </Link>

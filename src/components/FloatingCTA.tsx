@@ -1,8 +1,10 @@
 import { useTranslation } from "react-i18next";
 import { MessageCircle, ArrowUp } from "lucide-react";
 import { useState, useEffect, forwardRef } from "react";
+import { useNavigate } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import { useRTL } from "@/hooks/useRTL";
+import { useLocalizedPath } from "@/hooks/useLocalizedPath";
 
 const ScrollTopButton = forwardRef<HTMLButtonElement, { onClick: () => void; label: string }>(
   ({ onClick, label }, ref) => (
@@ -24,6 +26,8 @@ ScrollTopButton.displayName = "ScrollTopButton";
 export const FloatingCTA = () => {
   const { t } = useTranslation();
   const { isRTL } = useRTL();
+  const navigate = useNavigate();
+  const { localizedPath } = useLocalizedPath();
   const [showScrollTop, setShowScrollTop] = useState(false);
 
   useEffect(() => {
@@ -49,7 +53,7 @@ export const FloatingCTA = () => {
 
       {/* Contact Button */}
       <motion.button
-        onClick={() => window.location.href = "/contact"}
+        onClick={() => navigate(localizedPath("/contact"))}
         initial={{ scale: 0 }}
         animate={{ scale: 1 }}
         transition={{ delay: 1, type: "spring", stiffness: 200, damping: 20 }}

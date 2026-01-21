@@ -22,7 +22,7 @@ const MobileBottomNav = () => {
   ];
 
   const moreNavItems = [
-    { label: t("nav.about"), path: `/${currentLang}/about` },
+    { label: t("nav.about"), path: `/${currentLang}/about-us` },
     { label: t("nav.process"), path: `/${currentLang}/process` },
     { label: t("nav.faq"), path: `/${currentLang}/faq` },
     { label: t("nav.caseStudies"), path: `/${currentLang}/case-studies` },
