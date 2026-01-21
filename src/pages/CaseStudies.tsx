@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 import { MapPin, ArrowRight, Quote, Filter, X } from "lucide-react";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
@@ -276,10 +277,10 @@ export default function CaseStudies() {
               asChild
               className="bg-primary-foreground text-primary hover:bg-primary-foreground/90"
             >
-              <a href={`${localizedPath("")}#contact`} className="group">
+              <Link to={localizedPath("/contact")} className="group">
                 Start Your Project
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-              </a>
+              </Link>
             </Button>
           </div>
         </section>
