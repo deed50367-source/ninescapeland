@@ -443,8 +443,10 @@ export const ContactSection = () => {
                   <p className="text-sm text-muted-foreground">{t("contact.whatsapp.description")}</p>
                 </div>
               </div>
-              <Button variant="outline" className="w-full">
-                {t("contact.whatsapp.button")}
+              <Button variant="outline" className="w-full" asChild>
+                <a href="https://wa.me/8615058782901" target="_blank" rel="noopener noreferrer">
+                  {t("contact.whatsapp.button")}
+                </a>
               </Button>
             </div>
 
