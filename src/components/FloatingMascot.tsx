@@ -32,7 +32,7 @@ export const FloatingMascot = ({
     : "left-4 md:left-8 lg:left-12";
 
   const handleClick = () => {
-    navigate(localizedPath("/contact"));
+    window.open("https://wa.me/8615058782901", "_blank");
   };
 
   return (
