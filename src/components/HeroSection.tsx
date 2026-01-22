@@ -3,12 +3,12 @@ import { motion } from "framer-motion";
 import { ArrowRight, ArrowLeft, CheckCircle } from "lucide-react";
 import { Button } from "./ui/button";
 import { useRTL } from "@/hooks/useRTL";
-import { heroImages } from "@/config/galleryImages";
-
+import { useSiteImages } from "@/hooks/useSiteImages";
 
 export const HeroSection = () => {
   const { t } = useTranslation();
   const { isRTL } = useRTL();
+  const { getImageUrl } = useSiteImages();
 
   const benefits = [
     t("hero.benefits.customDesign"),
@@ -37,7 +37,7 @@ export const HeroSection = () => {
           }}
         >
           <img
-            src={heroImages.home}
+            src={getImageUrl("hero.home")}
             alt="Indoor Playground Equipment Manufacturer"
             className="w-full h-full object-cover"
           />

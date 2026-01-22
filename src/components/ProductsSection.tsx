@@ -5,12 +5,11 @@ import { ArrowRight, ArrowLeft } from "lucide-react";
 import { Button } from "./ui/button";
 import { useLocalizedPath } from "@/hooks/useLocalizedPath";
 import { useRTL } from "@/hooks/useRTL";
-import { productImages } from "@/config/galleryImages";
+import { useSiteImages } from "@/hooks/useSiteImages";
 import mascotPlayground from "@/assets/mascot-playground.png";
 import mascotTrampoline from "@/assets/mascot-trampoline.png";
 import mascotNinja from "@/assets/mascot-ninja.png";
 import mascotSoftplay from "@/assets/mascot-softplay.png";
-
 const container = {
   hidden: { opacity: 0 },
   show: {
@@ -30,6 +29,7 @@ export const ProductsSection = () => {
   const { t } = useTranslation();
   const { localizedPath } = useLocalizedPath();
   const { isRTL } = useRTL();
+  const { getImageUrl } = useSiteImages();
 
   // Choose the correct arrow based on RTL
   const ArrowIcon = isRTL ? ArrowLeft : ArrowRight;
@@ -38,7 +38,7 @@ export const ProductsSection = () => {
     {
       title: t("products.items.indoorPlayground.title"),
       description: t("products.items.indoorPlayground.description"),
-      image: productImages.indoorPlayground,
+      image: getImageUrl("product.indoorPlayground"),
       features: t("products.items.indoorPlayground.features", { returnObjects: true }) as string[],
       slug: "indoor-playground",
       mascot: mascotPlayground,
@@ -46,7 +46,7 @@ export const ProductsSection = () => {
     {
       title: t("products.items.trampolinePark.title"),
       description: t("products.items.trampolinePark.description"),
-      image: productImages.trampolinePark,
+      image: getImageUrl("product.trampolinePark"),
       features: t("products.items.trampolinePark.features", { returnObjects: true }) as string[],
       slug: "trampoline-park",
       mascot: mascotTrampoline,
@@ -54,7 +54,7 @@ export const ProductsSection = () => {
     {
       title: t("products.items.ninjaCourse.title"),
       description: t("products.items.ninjaCourse.description"),
-      image: productImages.ninjaCourse,
+      image: getImageUrl("product.ninjaCourse"),
       features: t("products.items.ninjaCourse.features", { returnObjects: true }) as string[],
       slug: "ninja-course",
       mascot: mascotNinja,
@@ -62,7 +62,7 @@ export const ProductsSection = () => {
     {
       title: t("products.items.softPlay.title"),
       description: t("products.items.softPlay.description"),
-      image: productImages.softPlay,
+      image: getImageUrl("product.softPlay"),
       features: t("products.items.softPlay.features", { returnObjects: true }) as string[],
       slug: "soft-play",
       mascot: mascotSoftplay,

@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useCallback } from "react";
 import { supabase } from "@/integrations/supabase/client";
 
 interface SiteImageConfig {
@@ -36,6 +36,8 @@ const defaultImages: Record<string, string> = {
 // 缓存
 let cachedImages: Record<string, string> | null = null;
 let cachePromise: Promise<Record<string, string>> | null = null;
+let cacheTimestamp: number = 0;
+const CACHE_DURATION = 5 * 60 * 1000; // 5分钟缓存
 
 const fetchImages = async (): Promise<Record<string, string>> => {
   const { data, error } = await supabase
@@ -52,67 +54,94 @@ const fetchImages = async (): Promise<Record<string, string>> => {
     images[item.config_key] = item.image_url;
   });
   
+  cacheTimestamp = Date.now();
   return images;
+};
+
+// 构建完整URL
+const buildImageUrl = (path: string): string => {
+  if (!path) return "/placeholder.svg";
+  if (path.startsWith("http")) return path;
+  return `${STORAGE_URL}/${path}`;
 };
 
 export const getSiteImageUrl = (key: string): string => {
   const path = cachedImages?.[key] || defaultImages[key] || "";
-  if (!path) return "/placeholder.svg";
-  if (path.startsWith("http")) return path;
-  return `${STORAGE_URL}/${path}`;
+  return buildImageUrl(path);
+};
+
+// 检查缓存是否过期
+const isCacheValid = (): boolean => {
+  return cachedImages !== null && (Date.now() - cacheTimestamp) < CACHE_DURATION;
 };
 
 export const useSiteImages = () => {
   const [images, setImages] = useState<Record<string, string>>(cachedImages || defaultImages);
   const [isLoading, setIsLoading] = useState(!cachedImages);
 
-  useEffect(() => {
-    const load = async () => {
-      if (cachedImages) {
-        setImages(cachedImages);
-        setIsLoading(false);
-        return;
-      }
+  const loadImages = useCallback(async (forceRefresh = false) => {
+    // 如果不强制刷新且缓存有效，使用缓存
+    if (!forceRefresh && isCacheValid() && cachedImages) {
+      setImages(cachedImages);
+      setIsLoading(false);
+      return;
+    }
 
-      if (!cachePromise) {
-        cachePromise = fetchImages();
-      }
-      
+    // 如果已有加载中的请求，等待它完成
+    if (!forceRefresh && cachePromise) {
       const result = await cachePromise;
       cachedImages = result;
       setImages(result);
       setIsLoading(false);
-    };
-    
-    load();
+      return;
+    }
+
+    // 发起新请求
+    cachePromise = fetchImages();
+    const result = await cachePromise;
+    cachedImages = result;
+    setImages(result);
+    setIsLoading(false);
+    cachePromise = null;
   }, []);
 
-  const getImageUrl = (key: string): string => {
-    const path = images[key] || defaultImages[key] || "";
-    if (!path) return "/placeholder.svg";
-    if (path.startsWith("http")) return path;
-    return `${STORAGE_URL}/${path}`;
-  };
+  useEffect(() => {
+    loadImages();
+  }, [loadImages]);
 
-  const refresh = async () => {
+  const getImageUrl = useCallback((key: string): string => {
+    const path = images[key] || defaultImages[key] || "";
+    return buildImageUrl(path);
+  }, [images]);
+
+  const refresh = useCallback(async () => {
     setIsLoading(true);
     cachedImages = null;
     cachePromise = null;
+    cacheTimestamp = 0;
     const result = await fetchImages();
     cachedImages = result;
     setImages(result);
     setIsLoading(false);
-  };
+  }, []);
 
   return { images, isLoading, getImageUrl, refresh };
 };
 
 // 便捷函数 - 预加载图片配置
 export const preloadSiteImages = async () => {
-  if (cachedImages) return cachedImages;
+  if (isCacheValid() && cachedImages) return cachedImages;
   if (!cachePromise) {
     cachePromise = fetchImages();
   }
   cachedImages = await cachePromise;
+  cachePromise = null;
   return cachedImages;
+};
+
+// 清除缓存（用于管理后台更新后）
+export const clearSiteImagesCache = () => {
+  cachedImages = null;
+  cachePromise = null;
+  cacheTimestamp = 0;
 };

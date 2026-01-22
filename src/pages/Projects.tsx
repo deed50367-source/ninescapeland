@@ -10,7 +10,6 @@ import { FAQSection } from "@/components/FAQSection";
 import { Footer } from "@/components/Footer";
 import { FloatingCTA } from "@/components/FloatingCTA";
 import MobileBottomNav from "@/components/MobileBottomNav";
-import { heroImages } from "@/config/galleryImages";
 import { SEOHead } from "@/components/SEOHead";
 
 const Projects = () => {
@@ -23,7 +22,7 @@ const Projects = () => {
           titleKey="pages.projects.title"
           titleHighlightKey="pages.projects.titleHighlight"
           descriptionKey="pages.projects.description"
-          backgroundImage={heroImages.projects}
+          imageConfigKey="hero.projects"
         />
         <ProjectsStatsSection />
         <ProjectsSection />

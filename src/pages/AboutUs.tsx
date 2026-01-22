@@ -7,7 +7,6 @@ import { Footer } from "@/components/Footer";
 import { FloatingCTA } from "@/components/FloatingCTA";
 import { AboutMascotIntro } from "@/components/AboutMascotIntro";
 import { AboutTeamSection } from "@/components/AboutTeamSection";
-import { heroImages } from "@/config/galleryImages";
 import { SEOHead } from "@/components/SEOHead";
 
 const AboutUs = () => {
@@ -20,7 +19,7 @@ const AboutUs = () => {
           titleKey="pages.aboutUs.title"
           titleHighlightKey="pages.aboutUs.titleHighlight"
           descriptionKey="pages.aboutUs.description"
-          backgroundImage={heroImages.aboutUs}
+          imageConfigKey="hero.aboutUs"
         />
         <AboutMascotIntro />
         <CoreValuesSection />

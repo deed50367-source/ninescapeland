@@ -3,9 +3,18 @@ import { supabase } from "@/integrations/supabase/client";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { Loader2, ImageIcon, Check, RefreshCw } from "lucide-react";
+import { Loader2, ImageIcon, RefreshCw, History, Clock, User } from "lucide-react";
 import { toast } from "sonner";
 import GalleryPicker from "./GalleryPicker";
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogHeader,
+  DialogTitle,
+} from "@/components/ui/dialog";
+import { ScrollArea } from "@/components/ui/scroll-area";
+import { format } from "date-fns";
 
 interface SiteImageConfig {
   id: string;
@@ -16,9 +25,20 @@ interface SiteImageConfig {
   description: string | null;
 }
 
+interface ImageConfigLog {
+  id: string;
+  config_key: string;
+  old_image_url: string | null;
+  new_image_url: string;
+  changed_by: string | null;
+  changed_at: string;
+  user_email: string | null;
+}
+
 const STORAGE_URL = `https://gianldlquknsdhfpqqfe.supabase.co/storage/v1/object/public/assets`;
 
 const getFullUrl = (filePath: string): string => {
+  if (!filePath) return '/placeholder.svg';
   if (filePath.startsWith('http')) return filePath;
   return `${STORAGE_URL}/${filePath}`;
 };
@@ -30,6 +50,9 @@ const AdminSiteImagesTab = () => {
   const [pickerOpen, setPickerOpen] = useState(false);
   const [editingConfig, setEditingConfig] = useState<SiteImageConfig | null>(null);
   const [saving, setSaving] = useState<string | null>(null);
+  const [logsOpen, setLogsOpen] = useState(false);
+  const [logs, setLogs] = useState<ImageConfigLog[]>([]);
+  const [logsLoading, setLogsLoading] = useState(false);
 
   const fetchConfigs = async () => {
     setIsLoading(true);
@@ -48,6 +71,23 @@ const AdminSiteImagesTab = () => {
     setIsLoading(false);
   };
 
+  const fetchLogs = async () => {
+    setLogsLoading(true);
+    const { data, error } = await supabase
+      .from("site_image_config_logs")
+      .select("*")
+      .order("changed_at", { ascending: false })
+      .limit(50);
+    
+    if (error) {
+      toast.error("加载日志失败");
+      console.error(error);
+    } else {
+      setLogs(data || []);
+    }
+    setLogsLoading(false);
+  };
+
   useEffect(() => {
     fetchConfigs();
   }, []);
@@ -57,22 +97,47 @@ const AdminSiteImagesTab = () => {
     
     // 从完整URL提取相对路径
     const relativePath = url.replace(`${STORAGE_URL}/`, '');
+    const oldImageUrl = editingConfig.image_url;
     
     setSaving(editingConfig.id);
-    const { error } = await supabase
+    
+    // 获取当前用户信息
+    const { data: { user } } = await supabase.auth.getUser();
+    
+    // 更新配置
+    const { error: updateError } = await supabase
       .from("site_image_config")
       .update({ image_url: relativePath })
       .eq("id", editingConfig.id);
     
-    if (error) {
+    if (updateError) {
       toast.error("保存失败");
-      console.error(error);
-    } else {
-      toast.success("图片已更新");
-      setConfigs(prev => 
-        prev.map(c => c.id === editingConfig.id ? { ...c, image_url: relativePath } : c)
-      );
+      console.error(updateError);
+      setSaving(null);
+      return;
     }
+    
+    // 记录操作日志
+    const { error: logError } = await supabase
+      .from("site_image_config_logs")
+      .insert({
+        config_key: editingConfig.config_key,
+        old_image_url: oldImageUrl,
+        new_image_url: relativePath,
+        changed_by: user?.id,
+        user_email: user?.email,
+      });
+    
+    if (logError) {
+      console.error("日志记录失败:", logError);
+      // 不阻塞主流程
+    }
+    
+    toast.success("图片已更新");
+    setConfigs(prev => 
+      prev.map(c => c.id === editingConfig.id ? { ...c, image_url: relativePath } : c)
+    );
+    
     setSaving(null);
     setEditingConfig(null);
     setPickerOpen(false);
@@ -83,6 +148,11 @@ const AdminSiteImagesTab = () => {
     setPickerOpen(true);
   };
 
+  const openLogs = () => {
+    setLogsOpen(true);
+    fetchLogs();
+  };
+
   const categories = [
     { value: "hero", label: "页面 Hero", description: "各页面顶部大图背景" },
     { value: "product", label: "产品图片", description: "产品卡片展示图（全景图为主）" },
@@ -91,6 +161,12 @@ const AdminSiteImagesTab = () => {
   ];
 
   const filteredConfigs = configs.filter(c => c.category === activeCategory);
+
+  // 根据config_key获取label
+  const getLabelForKey = (key: string) => {
+    const config = configs.find(c => c.config_key === key);
+    return config?.label || key;
+  };
 
   if (isLoading) {
     return (
@@ -108,10 +184,16 @@ const AdminSiteImagesTab = () => {
           <h2 className="text-2xl font-bold">页面配图管理</h2>
           <p className="text-muted-foreground">点击图片更换网站各位置的配图</p>
         </div>
-        <Button variant="outline" onClick={fetchConfigs}>
-          <RefreshCw className="w-4 h-4 mr-2" />
-          刷新
-        </Button>
+        <div className="flex gap-2">
+          <Button variant="outline" onClick={openLogs}>
+            <History className="w-4 h-4 mr-2" />
+            操作日志
+          </Button>
+          <Button variant="outline" onClick={fetchConfigs}>
+            <RefreshCw className="w-4 h-4 mr-2" />
+            刷新
+          </Button>
+        </div>
       </div>
 
       {/* Category Tabs */}
@@ -197,6 +279,91 @@ const AdminSiteImagesTab = () => {
         }}
         onSelect={handleSelectImage}
       />
+
+      {/* Logs Dialog */}
+      <Dialog open={logsOpen} onOpenChange={setLogsOpen}>
+        <DialogContent className="max-w-3xl max-h-[80vh]">
+          <DialogHeader>
+            <DialogTitle>配图更换记录</DialogTitle>
+            <DialogDescription>
+              查看最近50条配图更换操作记录
+            </DialogDescription>
+          </DialogHeader>
+          
+          <ScrollArea className="h-[500px] pr-4">
+            {logsLoading ? (
+              <div className="flex items-center justify-center py-12">
+                <Loader2 className="w-6 h-6 animate-spin text-primary" />
+              </div>
+            ) : logs.length === 0 ? (
+              <div className="text-center py-12 text-muted-foreground">
+                <History className="w-12 h-12 mx-auto mb-3 opacity-50" />
+                <p>暂无操作记录</p>
+              </div>
+            ) : (
+              <div className="space-y-4">
+                {logs.map((log) => (
+                  <div key={log.id} className="border rounded-lg p-4">
+                    <div className="flex items-start justify-between mb-3">
+                      <div>
+                        <h4 className="font-medium">{getLabelForKey(log.config_key)}</h4>
+                        <code className="text-xs text-muted-foreground">{log.config_key}</code>
+                      </div>
+                      <div className="text-right text-sm text-muted-foreground">
+                        <div className="flex items-center gap-1">
+                          <Clock className="w-3 h-3" />
+                          {format(new Date(log.changed_at), "yyyy-MM-dd HH:mm:ss")}
+                        </div>
+                        {log.user_email && (
+                          <div className="flex items-center gap-1 mt-1">
+                            <User className="w-3 h-3" />
+                            {log.user_email}
+                          </div>
+                        )}
+                      </div>
+                    </div>
+                    
+                    <div className="grid grid-cols-2 gap-4">
+                      <div>
+                        <p className="text-xs text-muted-foreground mb-1">旧图片</p>
+                        <div className="aspect-video bg-muted rounded overflow-hidden">
+                          {log.old_image_url ? (
+                            <img
+                              src={getFullUrl(log.old_image_url)}
+                              alt="旧图片"
+                              className="w-full h-full object-cover"
+                              onError={(e) => {
+                                e.currentTarget.src = '/placeholder.svg';
+                              }}
+                            />
+                          ) : (
+                            <div className="w-full h-full flex items-center justify-center text-muted-foreground text-xs">
+                              无
+                            </div>
+                          )}
+                        </div>
+                      </div>
+                      <div>
+                        <p className="text-xs text-muted-foreground mb-1">新图片</p>
+                        <div className="aspect-video bg-muted rounded overflow-hidden">
+                          <img
+                            src={getFullUrl(log.new_image_url)}
+                            alt="新图片"
+                            className="w-full h-full object-cover"
+                            onError={(e) => {
+                              e.currentTarget.src = '/placeholder.svg';
+                            }}
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            )}
+          </ScrollArea>
+        </DialogContent>
+      </Dialog>
     </div>
   );
 };
