@@ -10,6 +10,7 @@ import { useRTL } from "@/hooks/useRTL";
 import { useRateLimit } from "@/hooks/useRateLimit";
 import { supabase } from "@/integrations/supabase/client";
 import { z } from "zod";
+import { useWhatsAppTracking, WHATSAPP_URL } from "@/hooks/useWhatsAppTracking";
 
 // Validation schema for contact form
 const contactFormSchema = z.object({
@@ -61,6 +62,7 @@ export const ContactSection = () => {
     projectType: "",
     message: "",
   });
+  const { trackAndNavigate } = useWhatsAppTracking();
   
   // Honeypot field - bots will fill this, humans won't see it
   const [honeypot, setHoneypot] = useState("");
@@ -77,7 +79,7 @@ export const ContactSection = () => {
       icon: Phone,
       label: t("contact.info.phone"),
       value: "+86 150 5878 2901",
-      href: "https://wa.me/8615058782901",
+      href: WHATSAPP_URL,
     },
     {
       icon: Mail,
@@ -444,7 +446,12 @@ export const ContactSection = () => {
                 </div>
               </div>
               <Button variant="outline" className="w-full" asChild>
-                <a href="https://wa.me/8615058782901" target="_blank" rel="noopener noreferrer">
+                <a 
+                  href={WHATSAPP_URL}
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  onClick={() => trackAndNavigate("contact_section")}
+                >
                   {t("contact.whatsapp.button")}
                 </a>
               </Button>

@@ -1,10 +1,9 @@
 import { motion } from "framer-motion";
-import { useNavigate } from "react-router-dom";
-import { useLocalizedPath } from "@/hooks/useLocalizedPath";
 import mascotPlayground from "@/assets/mascot-playground.png";
 import mascotTrampoline from "@/assets/mascot-trampoline.png";
 import mascotNinja from "@/assets/mascot-ninja.png";
 import mascotSoftplay from "@/assets/mascot-softplay.png";
+import { useWhatsAppTracking } from "@/hooks/useWhatsAppTracking";
 
 const mascotImages = {
   playground: mascotPlayground,
@@ -24,15 +23,14 @@ export const FloatingMascot = ({
   position = "right",
   className = "" 
 }: FloatingMascotProps) => {
-  const navigate = useNavigate();
-  const { localizedPath } = useLocalizedPath();
+  const { openWhatsApp } = useWhatsAppTracking();
   
   const positionClasses = position === "right" 
     ? "right-4 md:right-8 lg:right-12" 
     : "left-4 md:left-8 lg:left-12";
 
   const handleClick = () => {
-    window.open("https://wa.me/8615058782901", "_blank");
+    openWhatsApp("floating_mascot", { metadata: { mascotType: type } });
   };
 
   return (

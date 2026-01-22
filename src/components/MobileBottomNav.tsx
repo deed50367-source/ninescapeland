@@ -4,6 +4,7 @@ import { useLocation, useNavigate, useParams } from "react-router-dom";
 import { useState } from "react";
 import { Sheet, SheetContent, SheetTrigger } from "./ui/sheet";
 import { cn } from "@/lib/utils";
+import { useWhatsAppTracking, WHATSAPP_URL } from "@/hooks/useWhatsAppTracking";
 
 const MobileBottomNav = () => {
   const { t } = useTranslation();
@@ -11,6 +12,7 @@ const MobileBottomNav = () => {
   const navigate = useNavigate();
   const { lang } = useParams();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const { openWhatsApp } = useWhatsAppTracking();
 
   const currentLang = lang || "en";
 
@@ -18,7 +20,7 @@ const MobileBottomNav = () => {
     { icon: Home, label: t("nav.home"), path: `/${currentLang}`, isExternal: false },
     { icon: Package, label: t("nav.products"), path: `/${currentLang}/products`, isExternal: false },
     { icon: FolderOpen, label: t("nav.projects"), path: `/${currentLang}/projects`, isExternal: false },
-    { icon: Phone, label: t("nav.contact"), path: "https://wa.me/8615058782901", isExternal: true },
+    { icon: Phone, label: t("nav.contact"), path: WHATSAPP_URL, isExternal: true },
   ];
 
   const moreNavItems = [
@@ -37,7 +39,7 @@ const MobileBottomNav = () => {
 
   const handleNavClick = (path: string, isExternal: boolean) => {
     if (isExternal) {
-      window.open(path, "_blank");
+      openWhatsApp("mobile_nav");
     } else {
       navigate(path);
     }

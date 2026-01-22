@@ -5,6 +5,7 @@ import { useTranslation } from 'react-i18next';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { supabase } from '@/integrations/supabase/client';
+import { useWhatsAppTracking, WHATSAPP_URL } from '@/hooks/useWhatsAppTracking';
 
 interface Message {
   id: string;
@@ -296,8 +297,10 @@ export const LiveChat = () => {
     }
   };
 
+  const { openWhatsApp: trackOpenWhatsApp } = useWhatsAppTracking();
+  
   const openWhatsApp = () => {
-    window.open('https://wa.me/8615058782901', '_blank');
+    trackOpenWhatsApp("live_chat");
   };
 
   return (

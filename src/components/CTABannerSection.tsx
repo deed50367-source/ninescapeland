@@ -5,19 +5,21 @@ import { Button } from "@/components/ui/button";
 import { useNavigate } from "react-router-dom";
 import { useLocalizedPath } from "@/hooks/useLocalizedPath";
 import { useRTL } from "@/hooks/useRTL";
+import { useWhatsAppTracking, WHATSAPP_URL } from "@/hooks/useWhatsAppTracking";
 
 export const CTABannerSection = () => {
   const { t } = useTranslation();
   const navigate = useNavigate();
   const { localizedPath } = useLocalizedPath();
   const { isRTL } = useRTL();
+  const { openWhatsApp, trackAndNavigate } = useWhatsAppTracking();
 
   const handleNavigateContact = () => {
     navigate(localizedPath("/contact"));
   };
 
   const handleWhatsApp = () => {
-    window.open("https://wa.me/8615058782901", "_blank");
+    openWhatsApp("cta_banner");
   };
 
   return (
@@ -113,9 +115,10 @@ export const CTABannerSection = () => {
             className="flex flex-wrap justify-center gap-6 md:gap-10 text-primary-foreground/70 text-sm"
           >
             <a 
-              href="https://wa.me/8615058782901" 
+              href={WHATSAPP_URL}
               target="_blank" 
               rel="noopener noreferrer"
+              onClick={() => trackAndNavigate("cta_banner")}
               className="flex items-center gap-2 hover:text-primary-foreground transition-colors"
             >
               <Phone className="w-4 h-4" />

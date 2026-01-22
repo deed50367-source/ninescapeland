@@ -1,10 +1,9 @@
 import { useTranslation } from "react-i18next";
 import { MessageCircle, ArrowUp } from "lucide-react";
 import { useState, useEffect, forwardRef } from "react";
-import { useNavigate } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import { useRTL } from "@/hooks/useRTL";
-import { useLocalizedPath } from "@/hooks/useLocalizedPath";
+import { useWhatsAppTracking, WHATSAPP_URL } from "@/hooks/useWhatsAppTracking";
 
 const ScrollTopButton = forwardRef<HTMLButtonElement, { onClick: () => void; label: string }>(
   ({ onClick, label }, ref) => (
@@ -26,9 +25,8 @@ ScrollTopButton.displayName = "ScrollTopButton";
 export const FloatingCTA = () => {
   const { t } = useTranslation();
   const { isRTL } = useRTL();
-  const navigate = useNavigate();
-  const { localizedPath } = useLocalizedPath();
   const [showScrollTop, setShowScrollTop] = useState(false);
+  const { trackAndNavigate } = useWhatsAppTracking();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -53,9 +51,10 @@ export const FloatingCTA = () => {
 
       {/* WhatsApp Button */}
       <motion.a
-        href="https://wa.me/8615058782901"
+        href={WHATSAPP_URL}
         target="_blank"
         rel="noopener noreferrer"
+        onClick={() => trackAndNavigate("floating_cta")}
         initial={{ scale: 0 }}
         animate={{ scale: 1 }}
         transition={{ delay: 1, type: "spring", stiffness: 200, damping: 20 }}

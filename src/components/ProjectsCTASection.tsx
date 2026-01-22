@@ -4,11 +4,13 @@ import { ArrowRight, MessageCircle, Phone, Calendar } from "lucide-react";
 import { Button } from "./ui/button";
 import { useLocalizedPath } from "@/hooks/useLocalizedPath";
 import { useNavigate } from "react-router-dom";
+import { useWhatsAppTracking } from "@/hooks/useWhatsAppTracking";
 
 export const ProjectsCTASection = () => {
   const { t } = useTranslation();
   const { localizedPath } = useLocalizedPath();
   const navigate = useNavigate();
+  const { openWhatsApp } = useWhatsAppTracking();
 
   const features = [
     {
@@ -57,7 +59,7 @@ export const ProjectsCTASection = () => {
               size="lg"
               variant="outline"
               className="border-white text-white hover:bg-white/10"
-              onClick={() => window.open("https://wa.me/8615058782901", "_blank")}
+              onClick={() => openWhatsApp("projects_cta")}
             >
               <MessageCircle className="mr-2 w-5 h-5" />
               {t("projectsCTA.whatsapp")}
