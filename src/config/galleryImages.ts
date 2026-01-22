@@ -59,8 +59,8 @@ export const heroImages = {
  */
 export const productImages = {
   // 室内游乐场 - "Indoor Playground Equipment"
-  // 使用3D渲染效果图
-  indoorPlayground: getStorageUrl("5a28d2b2-0107-4854-93a9-cbc06f69b9bb/1769140979820-iehvw.jpg"), // 淘气堡3D渲染图
+  // 使用淘气堡3D渲染图
+  indoorPlayground: getStorageUrl("adaf5265-c979-48b7-b4c1-808e1e4b87b8/1768294592888-x69bgi.jpg"), // play zone equipment manufacturers
   
   // 蹦床公园 - "Trampoline Parks"
   // 使用蹦床区域的全景图
@@ -82,11 +82,11 @@ export const projectImages = {
   // 蹦床公园项目
   bouncePark: getStorageUrl("88de2e3c-c85e-413b-878d-99b0d0aea8ed/1768294614701-b5b7pw.jpg"), // 蹦床设计图 12(1)
   
-  // 家庭娱乐中心项目 - 使用3D渲染图
-  fecCenter: getStorageUrl("5a28d2b2-0107-4854-93a9-cbc06f69b9bb/1769140981872-dgpjjn.jpg"), // 淘气堡3D渲染图
+  // 家庭娱乐中心项目 - 使用淘气堡图
+  fecCenter: getStorageUrl("a8ce1619-1616-4719-83ae-cc72234f2a29/1768294521549-5d1e3a.jpg"), // play zone equipment
   
-  // 室内游乐场项目 - 使用3D渲染图
-  indoorProject: getStorageUrl("5a28d2b2-0107-4854-93a9-cbc06f69b9bb/1769140977803-1cqxk.jpg"), // 淘气堡3D渲染图
+  // 室内游乐场项目
+  indoorProject: getStorageUrl("0a456f96-af25-4386-b083-7c266fb8cdb1/1768294567562-zh3e7c.jpg"), // indoor playground from china
   
   // 忍者挑战区项目
   ninjaProject: getStorageUrl("root/1768967510986-1708914597457.jpg"), // 忍者课程3D效果图
