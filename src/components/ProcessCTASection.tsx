@@ -1,14 +1,16 @@
 import { useTranslation } from "react-i18next";
 import { motion } from "framer-motion";
-import { ArrowRight, Phone, MessageCircle } from "lucide-react";
+import { ArrowRight, MessageCircle } from "lucide-react";
 import { Button } from "./ui/button";
 import { useLocalizedPath } from "@/hooks/useLocalizedPath";
 import { useNavigate } from "react-router-dom";
+import { useWhatsAppTracking } from "@/hooks/useWhatsAppTracking";
 
 export const ProcessCTASection = () => {
   const { t } = useTranslation();
   const { localizedPath } = useLocalizedPath();
   const navigate = useNavigate();
+  const { openWhatsApp } = useWhatsAppTracking();
 
   return (
     <section className="section-padding bg-gradient-to-br from-primary/10 via-accent/5 to-primary/10">
@@ -39,7 +41,7 @@ export const ProcessCTASection = () => {
               size="lg"
               variant="outline"
               className="group"
-              onClick={() => window.open("https://wa.me/8615058782901", "_blank")}
+              onClick={() => openWhatsApp("process_cta")}
             >
               <MessageCircle className="mr-2 w-5 h-5" />
               {t("processCTA.whatsapp")}

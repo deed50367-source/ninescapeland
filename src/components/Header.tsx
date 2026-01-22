@@ -9,6 +9,7 @@ import { LanguageSwitcher } from "./LanguageSwitcher";
 import { useLocalizedPath } from "@/hooks/useLocalizedPath";
 import { useRTL } from "@/hooks/useRTL";
 import { ProductMegaMenu } from "./ProductMegaMenu";
+import { useWhatsAppTracking, WHATSAPP_URL } from "@/hooks/useWhatsAppTracking";
 
 export const Header = () => {
   const { t } = useTranslation();
@@ -16,6 +17,7 @@ export const Header = () => {
   const [isProductsOpen, setIsProductsOpen] = useState(false);
   const { localizedPath } = useLocalizedPath();
   const { isRTL, flipX } = useRTL();
+  const { trackAndNavigate } = useWhatsAppTracking();
 
   const productItems = [
     { label: t("products.items.indoorPlayground.title"), href: localizedPath("/products/indoor-playground") },
@@ -89,7 +91,13 @@ export const Header = () => {
               <Mail className="w-4 h-4" />
               sale@indoorplaygroundsolution.com
             </a>
-            <a href="https://wa.me/8615058782901" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:opacity-80 transition-opacity">
+            <a 
+              href={WHATSAPP_URL}
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="flex items-center gap-2 hover:opacity-80 transition-opacity"
+              onClick={() => trackAndNavigate("header")}
+            >
               <Phone className="w-4 h-4" />
               +86 150 5878 2901
             </a>
