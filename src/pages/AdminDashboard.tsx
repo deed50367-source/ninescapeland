@@ -13,7 +13,8 @@ import {
   ShieldX,
   UserX,
   Inbox,
-  Package
+  Package,
+  Palette
 } from "lucide-react";
 import { toast } from "sonner";
 import logo from "@/assets/logo.png";
@@ -24,6 +25,7 @@ import AdminCustomerServiceTab from "@/components/admin/AdminCustomerServiceTab"
 import AdminBlogTab from "@/components/admin/AdminBlogTab";
 import AdminInquiriesTab from "@/components/admin/AdminInquiriesTab";
 import AdminProductsTab from "@/components/admin/AdminProductsTab";
+import AdminSiteImagesTab from "@/components/admin/AdminSiteImagesTab";
 
 const AdminDashboard = () => {
   const { t } = useTranslation();
@@ -133,7 +135,7 @@ const AdminDashboard = () => {
       {/* Main Content */}
       <main className="container mx-auto px-4 py-6">
         <Tabs value={activeTab} onValueChange={setActiveTab} className="w-full">
-          <TabsList className="grid w-full max-w-2xl grid-cols-5 mb-6">
+          <TabsList className="grid w-full max-w-3xl grid-cols-6 mb-6">
             <TabsTrigger value="inquiries" className="flex items-center gap-2">
               <Inbox className="w-4 h-4" />
               <span className="hidden sm:inline">询盘</span>
@@ -141,6 +143,10 @@ const AdminDashboard = () => {
             <TabsTrigger value="products" className="flex items-center gap-2">
               <Package className="w-4 h-4" />
               <span className="hidden sm:inline">产品</span>
+            </TabsTrigger>
+            <TabsTrigger value="site-images" className="flex items-center gap-2">
+              <Palette className="w-4 h-4" />
+              <span className="hidden sm:inline">配图</span>
             </TabsTrigger>
             <TabsTrigger value="gallery" className="flex items-center gap-2">
               <ImageIcon className="w-4 h-4" />
@@ -162,6 +168,10 @@ const AdminDashboard = () => {
 
           <TabsContent value="products" className="mt-0">
             <AdminProductsTab />
+          </TabsContent>
+
+          <TabsContent value="site-images" className="mt-0">
+            <AdminSiteImagesTab />
           </TabsContent>
 
           <TabsContent value="gallery" className="mt-0">

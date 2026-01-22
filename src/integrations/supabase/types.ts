@@ -568,6 +568,39 @@ export type Database = {
         }
         Relationships: []
       }
+      site_image_config: {
+        Row: {
+          category: string
+          config_key: string
+          created_at: string
+          description: string | null
+          id: string
+          image_url: string
+          label: string | null
+          updated_at: string
+        }
+        Insert: {
+          category?: string
+          config_key: string
+          created_at?: string
+          description?: string | null
+          id?: string
+          image_url: string
+          label?: string | null
+          updated_at?: string
+        }
+        Update: {
+          category?: string
+          config_key?: string
+          created_at?: string
+          description?: string | null
+          id?: string
+          image_url?: string
+          label?: string | null
+          updated_at?: string
+        }
+        Relationships: []
+      }
       user_roles: {
         Row: {
           created_at: string
