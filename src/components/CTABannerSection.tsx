@@ -112,14 +112,22 @@ export const CTABannerSection = () => {
             transition={{ delay: 0.4 }}
             className="flex flex-wrap justify-center gap-6 md:gap-10 text-primary-foreground/70 text-sm"
           >
-            <div className="flex items-center gap-2">
+            <a 
+              href="https://wa.me/8615058782901" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 hover:text-primary-foreground transition-colors"
+            >
               <Phone className="w-4 h-4" />
-              <span>+86 150 5878 2901</span>
-            </div>
-            <div className="flex items-center gap-2">
+              <span dir="ltr">+86 150 5878 2901</span>
+            </a>
+            <a 
+              href="mailto:sale@indoorplaygroundsolution.com"
+              className="flex items-center gap-2 hover:text-primary-foreground transition-colors"
+            >
               <Mail className="w-4 h-4" />
-              <span>sale@indoorplaygroundsolution.com</span>
-            </div>
+              <span dir="ltr">sale@indoorplaygroundsolution.com</span>
+            </a>
           </motion.div>
         </div>
       </div>
