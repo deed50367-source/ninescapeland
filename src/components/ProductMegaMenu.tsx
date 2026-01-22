@@ -127,7 +127,7 @@ export const ProductMegaMenu = () => {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: 10 }}
             transition={{ duration: 0.2 }}
-            className="absolute top-full left-1/2 -translate-x-1/2 w-[800px] bg-card rounded-xl shadow-2xl border overflow-hidden z-50"
+            className="absolute top-full left-0 w-[800px] bg-card rounded-xl shadow-2xl border overflow-hidden z-50"
           >
             <div className="grid grid-cols-12 gap-0">
               {/* Left Column - Core Products */}
