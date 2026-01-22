@@ -38,7 +38,7 @@ const projects = [
     location: "Sydney, Australia",
     type: "Soft Play",
     size: "800 sqm",
-    image: productImages.softPlay,
+    image: projectImages.indoorProject, // 使用不同的局部图
   },
   {
     id: 5,
@@ -46,7 +46,7 @@ const projects = [
     location: "Toronto, Canada",
     type: "Indoor Playground",
     size: "4,200 sqm",
-    image: projectImages.fecCenter,
+    image: projectImages.fecCenter, // 保持淘气堡局部图
   },
   {
     id: 6,
