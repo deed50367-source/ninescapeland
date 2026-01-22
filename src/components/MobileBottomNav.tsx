@@ -15,10 +15,10 @@ const MobileBottomNav = () => {
   const currentLang = lang || "en";
 
   const mainNavItems = [
-    { icon: Home, label: t("nav.home"), path: `/${currentLang}` },
-    { icon: Package, label: t("nav.products"), path: `/${currentLang}/products` },
-    { icon: FolderOpen, label: t("nav.projects"), path: `/${currentLang}/projects` },
-    { icon: Phone, label: t("nav.contact"), path: `/${currentLang}/contact` },
+    { icon: Home, label: t("nav.home"), path: `/${currentLang}`, isExternal: false },
+    { icon: Package, label: t("nav.products"), path: `/${currentLang}/products`, isExternal: false },
+    { icon: FolderOpen, label: t("nav.projects"), path: `/${currentLang}/projects`, isExternal: false },
+    { icon: Phone, label: t("nav.contact"), path: "https://wa.me/8615058782901", isExternal: true },
   ];
 
   const moreNavItems = [
@@ -35,8 +35,12 @@ const MobileBottomNav = () => {
     return location.pathname.startsWith(path);
   };
 
-  const handleNavClick = (path: string) => {
-    navigate(path);
+  const handleNavClick = (path: string, isExternal: boolean) => {
+    if (isExternal) {
+      window.open(path, "_blank");
+    } else {
+      navigate(path);
+    }
     setIsMenuOpen(false);
   };
 
@@ -46,17 +50,17 @@ const MobileBottomNav = () => {
         {mainNavItems.map((item) => (
           <button
             key={item.path}
-            onClick={() => handleNavClick(item.path)}
+            onClick={() => handleNavClick(item.path, item.isExternal)}
             className={cn(
               "flex flex-col items-center justify-center flex-1 h-full py-1 px-1 transition-colors",
-              isActive(item.path)
+              !item.isExternal && isActive(item.path)
                 ? "text-primary"
                 : "text-muted-foreground hover:text-foreground"
             )}
           >
             <item.icon className={cn(
               "h-5 w-5 mb-0.5",
-              isActive(item.path) && "text-primary"
+              !item.isExternal && isActive(item.path) && "text-primary"
             )} />
             <span className="text-[10px] font-medium leading-tight truncate max-w-[60px]">
               {item.label}
@@ -88,7 +92,7 @@ const MobileBottomNav = () => {
                 {moreNavItems.map((item) => (
                   <button
                     key={item.path}
-                    onClick={() => handleNavClick(item.path)}
+                    onClick={() => handleNavClick(item.path, false)}
                     className={cn(
                       "w-full text-left px-4 py-3 rounded-lg transition-colors",
                       isActive(item.path)
