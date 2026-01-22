@@ -5,7 +5,6 @@ import { FAQSection } from "@/components/FAQSection";
 import { ContactSection } from "@/components/ContactSection";
 import { Footer } from "@/components/Footer";
 import { FloatingCTA } from "@/components/FloatingCTA";
-import { heroImages } from "@/config/galleryImages";
 import { SEOHead } from "@/components/SEOHead";
 import { FAQSchema } from "@/components/StructuredData";
 
@@ -34,7 +33,7 @@ const FAQ = () => {
           titleKey="pages.faq.title"
           titleHighlightKey="pages.faq.titleHighlight"
           descriptionKey="pages.faq.description"
-          backgroundImage={heroImages.faq}
+          imageConfigKey="hero.faq"
         />
         <FAQSection />
         <ContactSection />

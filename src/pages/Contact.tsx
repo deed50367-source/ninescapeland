@@ -6,7 +6,6 @@ import { Footer } from "@/components/Footer";
 import { FloatingCTA } from "@/components/FloatingCTA";
 import { ContactMascotBanner } from "@/components/ContactMascotBanner";
 import { ContactTrustSection } from "@/components/ContactTrustSection";
-import { heroImages } from "@/config/galleryImages";
 import { SEOHead } from "@/components/SEOHead";
 
 const Contact = () => {
@@ -19,7 +18,7 @@ const Contact = () => {
           titleKey="pages.contact.title"
           titleHighlightKey="pages.contact.titleHighlight"
           descriptionKey="pages.contact.description"
-          backgroundImage={heroImages.contact}
+          imageConfigKey="hero.contact"
         />
         <ContactMascotBanner />
         <ContactSection />

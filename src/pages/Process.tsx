@@ -10,7 +10,6 @@ import { FAQSection } from "@/components/FAQSection";
 import { Footer } from "@/components/Footer";
 import { FloatingCTA } from "@/components/FloatingCTA";
 import MobileBottomNav from "@/components/MobileBottomNav";
-import { heroImages } from "@/config/galleryImages";
 import { SEOHead } from "@/components/SEOHead";
 
 const Process = () => {
@@ -23,7 +22,7 @@ const Process = () => {
           titleKey="pages.process.title"
           titleHighlightKey="pages.process.titleHighlight"
           descriptionKey="pages.process.description"
-          backgroundImage={heroImages.process}
+          imageConfigKey="hero.process"
         />
         <ProcessSection />
         <ProcessTimelineSection />

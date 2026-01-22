@@ -1,30 +1,38 @@
 import { useTranslation } from "react-i18next";
 import { motion } from "framer-motion";
 import { useRTL } from "@/hooks/useRTL";
+import { useSiteImages } from "@/hooks/useSiteImages";
 
 interface PageHeroProps {
   titleKey: string;
   titleHighlightKey: string;
   descriptionKey: string;
   backgroundImage?: string;
+  /** 使用动态配图的 key，优先级高于 backgroundImage */
+  imageConfigKey?: string;
 }
 
 export const PageHero = ({ 
   titleKey, 
   titleHighlightKey, 
   descriptionKey,
-  backgroundImage 
+  backgroundImage,
+  imageConfigKey,
 }: PageHeroProps) => {
   const { t } = useTranslation();
   const { isRTL } = useRTL();
+  const { getImageUrl } = useSiteImages();
+
+  // 优先使用动态配图
+  const bgImage = imageConfigKey ? getImageUrl(imageConfigKey) : backgroundImage;
 
   return (
     <section className="relative py-24 md:py-32 overflow-hidden">
       {/* Background */}
-      {backgroundImage ? (
+      {bgImage ? (
         <div className="absolute inset-0">
           <img
-            src={backgroundImage}
+            src={bgImage}
             alt=""
             className="w-full h-full object-cover"
           />

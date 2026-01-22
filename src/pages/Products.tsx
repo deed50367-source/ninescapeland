@@ -7,7 +7,6 @@ import { QuoteCalculator } from "@/components/QuoteCalculator";
 import { FAQSection } from "@/components/FAQSection";
 import { Footer } from "@/components/Footer";
 import { FloatingCTA } from "@/components/FloatingCTA";
-import { heroImages } from "@/config/galleryImages";
 import { SEOHead } from "@/components/SEOHead";
 
 const Products = () => {
@@ -20,7 +19,7 @@ const Products = () => {
           titleKey="pages.products.title"
           titleHighlightKey="pages.products.titleHighlight"
           descriptionKey="pages.products.description"
-          backgroundImage={heroImages.products}
+          imageConfigKey="hero.products"
         />
         <ProductsSection />
         <TrampolineFeaturesSection />

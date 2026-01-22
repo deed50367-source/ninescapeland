@@ -601,6 +601,36 @@ export type Database = {
         }
         Relationships: []
       }
+      site_image_config_logs: {
+        Row: {
+          changed_at: string
+          changed_by: string | null
+          config_key: string
+          id: string
+          new_image_url: string
+          old_image_url: string | null
+          user_email: string | null
+        }
+        Insert: {
+          changed_at?: string
+          changed_by?: string | null
+          config_key: string
+          id?: string
+          new_image_url: string
+          old_image_url?: string | null
+          user_email?: string | null
+        }
+        Update: {
+          changed_at?: string
+          changed_by?: string | null
+          config_key?: string
+          id?: string
+          new_image_url?: string
+          old_image_url?: string | null
+          user_email?: string | null
+        }
+        Relationships: []
+      }
       user_roles: {
         Row: {
           created_at: string

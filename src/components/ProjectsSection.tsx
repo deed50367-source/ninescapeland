@@ -1,72 +1,71 @@
-import { useState } from "react";
+import { useState, useMemo } from "react";
 import { useTranslation } from "react-i18next";
 import { motion, AnimatePresence } from "framer-motion";
 import { MapPin, ArrowRight, ArrowLeft } from "lucide-react";
 import { Button } from "./ui/button";
 import { useRTL } from "@/hooks/useRTL";
 import { useLocalizedPath } from "@/hooks/useLocalizedPath";
-import { productImages, projectImages } from "@/config/galleryImages";
-
-const projects = [
-  {
-    id: 1,
-    title: "Adventure Zone Family Center",
-    location: "California, USA",
-    type: "Indoor Playground",
-    size: "5,000 sqm",
-    image: productImages.indoorPlayground,
-  },
-  {
-    id: 2,
-    title: "Sky Jump Trampoline Park",
-    location: "Dubai, UAE",
-    type: "Trampoline Park",
-    size: "3,500 sqm",
-    image: productImages.trampolinePark,
-  },
-  {
-    id: 3,
-    title: "Ninja Warriors Academy",
-    location: "London, UK",
-    type: "Ninja Course",
-    size: "2,000 sqm",
-    image: productImages.ninjaCourse,
-  },
-  {
-    id: 4,
-    title: "Little Stars Play Center",
-    location: "Sydney, Australia",
-    type: "Soft Play",
-    size: "800 sqm",
-    image: projectImages.indoorProject, // 使用不同的局部图
-  },
-  {
-    id: 5,
-    title: "Fun Galaxy FEC",
-    location: "Toronto, Canada",
-    type: "Indoor Playground",
-    size: "4,200 sqm",
-    image: projectImages.fecCenter, // 保持淘气堡局部图
-  },
-  {
-    id: 6,
-    title: "Bounce Kingdom",
-    location: "Singapore",
-    type: "Trampoline Park",
-    size: "2,800 sqm",
-    image: projectImages.bouncePark,
-  },
-];
-
-const categories = ["All", "Indoor Playground", "Trampoline Park", "Ninja Course", "Soft Play"];
-
+import { useSiteImages } from "@/hooks/useSiteImages";
 export const ProjectsSection = () => {
   const [activeCategory, setActiveCategory] = useState("All");
   const { t } = useTranslation();
   const { isRTL } = useRTL();
   const { localizedPath } = useLocalizedPath();
+  const { getImageUrl } = useSiteImages();
 
   const ArrowIcon = isRTL ? ArrowLeft : ArrowRight;
+
+  // 使用动态配图的项目数据
+  const projects = useMemo(() => [
+    {
+      id: 1,
+      title: "Adventure Zone Family Center",
+      location: "California, USA",
+      type: "Indoor Playground",
+      size: "5,000 sqm",
+      image: getImageUrl("product.indoorPlayground"),
+    },
+    {
+      id: 2,
+      title: "Sky Jump Trampoline Park",
+      location: "Dubai, UAE",
+      type: "Trampoline Park",
+      size: "3,500 sqm",
+      image: getImageUrl("product.trampolinePark"),
+    },
+    {
+      id: 3,
+      title: "Ninja Warriors Academy",
+      location: "London, UK",
+      type: "Ninja Course",
+      size: "2,000 sqm",
+      image: getImageUrl("product.ninjaCourse"),
+    },
+    {
+      id: 4,
+      title: "Little Stars Play Center",
+      location: "Sydney, Australia",
+      type: "Soft Play",
+      size: "800 sqm",
+      image: getImageUrl("project.indoorProject"),
+    },
+    {
+      id: 5,
+      title: "Fun Galaxy FEC",
+      location: "Toronto, Canada",
+      type: "Indoor Playground",
+      size: "4,200 sqm",
+      image: getImageUrl("project.fecCenter"),
+    },
+    {
+      id: 6,
+      title: "Bounce Kingdom",
+      location: "Singapore",
+      type: "Trampoline Park",
+      size: "2,800 sqm",
+      image: getImageUrl("project.bouncePark"),
+    },
+  ], [getImageUrl]);
 
   const categories = [
     { key: "All", label: t("projects.categories.all") },
