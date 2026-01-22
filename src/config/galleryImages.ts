@@ -55,41 +55,42 @@ export const heroImages = {
 
 /**
  * 产品卡片图片配置
- * 每个产品使用最能代表该类型的图片
+ * 产品展示以【全景图/3D渲染全景】为主，展示整体效果
  */
 export const productImages = {
   // 室内游乐场 - "Indoor Playground Equipment"
-  // 使用淘气堡3D渲染图
-  indoorPlayground: getStorageUrl("adaf5265-c979-48b7-b4c1-808e1e4b87b8/1768294592888-x69bgi.jpg"), // play zone equipment manufacturers
+  // 使用淘气堡3D渲染全景图
+  indoorPlayground: getStorageUrl("adaf5265-c979-48b7-b4c1-808e1e4b87b8/1768294592888-x69bgi.jpg"), // play zone equipment manufacturers - 全景
   
   // 蹦床公园 - "Trampoline Parks"
-  // 使用蹦床区域的全景图
-  trampolinePark: getStorageUrl("88de2e3c-c85e-413b-878d-99b0d0aea8ed/1768294617155-efd0q8.jpg"), // 蹦床设计图 12(2) - 蹦床区域
+  // 使用蹦床公园3D渲染全景图
+  trampolinePark: getStorageUrl("88de2e3c-c85e-413b-878d-99b0d0aea8ed/1768294617155-efd0q8.jpg"), // 蹦床设计图 12(2) - 全景
   
   // 忍者课程 - "Ninja Warrior Courses"
-  // 使用3D效果渲染图
-  ninjaCourse: getStorageUrl("root/1768967512755-1708914619333.jpg"), // 忍者课程3D效果图
+  // 使用3D效果渲染全景图
+  ninjaCourse: getStorageUrl("root/1768967512755-1708914619333.jpg"), // 忍者课程3D效果图 - 全景
   
   // 软体游乐 - "Soft Play Areas"
-  // 使用适合幼儿的软体游乐设备
+  // 使用软体游乐全景
   softPlay: getStorageUrl("dcbc5ed3-1863-4db6-bacf-59919b3abec6/1768294400190-bx9gha.jpg"), // 白底图 6.png - 软体游乐
 };
 
 /**
  * 项目案例图片配置
+ * 案例展示以【局部图/细节特写】为主，展示设备细节和实际使用场景
  */
 export const projectImages = {
-  // 蹦床公园项目
-  bouncePark: getStorageUrl("88de2e3c-c85e-413b-878d-99b0d0aea8ed/1768294614701-b5b7pw.jpg"), // 蹦床设计图 12(1)
+  // 蹦床公园项目 - 使用局部细节图（篮球区）
+  bouncePark: getStorageUrl("0d55c23f-ae63-47b1-b850-bb97872cf518/1768294349256-ahzwfa.jpg"), // trampoline park basketball - 蹦床篮球区局部
   
-  // 家庭娱乐中心项目 - 使用淘气堡图
-  fecCenter: getStorageUrl("a8ce1619-1616-4719-83ae-cc72234f2a29/1768294521549-5d1e3a.jpg"), // play zone equipment
+  // 家庭娱乐中心项目 - 使用淘气堡局部细节图
+  fecCenter: getStorageUrl("6e6b4c6d-2efc-446e-a7f4-8e98c91c81cc/1768294529825-ob7ylk.jpg"), // 变化_画板 1 副本 10 - 淘气堡局部
   
-  // 室内游乐场项目
-  indoorProject: getStorageUrl("0a456f96-af25-4386-b083-7c266fb8cdb1/1768294567562-zh3e7c.jpg"), // indoor playground from china
+  // 室内游乐场项目 - 使用局部细节图
+  indoorProject: getStorageUrl("39a9c37a-1063-4ba6-94d1-4e0cca1123e9/1768294471406-lp0vzf.jpg"), // 变化_画板 1 副本 18 - 游乐场局部
   
-  // 忍者挑战区项目
-  ninjaProject: getStorageUrl("root/1768967510986-1708914597457.jpg"), // 忍者课程3D效果图
+  // 忍者挑战区项目 - 使用局部细节图
+  ninjaProject: getStorageUrl("root/1768967509253-1708914541597.jpg"), // 忍者课程局部
 };
 
 /**
