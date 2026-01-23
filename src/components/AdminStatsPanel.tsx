@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import {
   MessageCircle, Users, Clock, TrendingUp, TrendingDown,
   BarChart3, PieChart, Calendar, ChevronDown, ChevronUp,
-  Smile, Meh, Frown, Target, Zap
+  Smile, Meh, Frown, Target, Zap, Download, Phone
 } from 'lucide-react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
@@ -17,6 +17,8 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 import { supabase } from '@/integrations/supabase/client';
+import { toast } from 'sonner';
+import { exportToExcel, whatsappClicksExportColumns } from '@/utils/excelExport';
 
 interface StatsData {
   totalSessions: number;
@@ -38,11 +40,33 @@ interface StatsData {
   peakHour: number;
 }
 
+interface WhatsAppStats {
+  totalClicks: number;
+  todayClicks: number;
+  bySource: Record<string, number>;
+  byLanguage: Record<string, number>;
+}
+
+interface WhatsAppClick {
+  id: string;
+  created_at: string;
+  source: string;
+  page_url: string | null;
+  referrer: string | null;
+  user_agent: string | null;
+  language: string | null;
+  country: string | null;
+  session_id: string | null;
+}
+
 const AdminStatsPanel = () => {
   const [stats, setStats] = useState<StatsData | null>(null);
+  const [whatsappStats, setWhatsappStats] = useState<WhatsAppStats | null>(null);
+  const [whatsappClicks, setWhatsappClicks] = useState<WhatsAppClick[]>([]);
   const [isLoading, setIsLoading] = useState(true);
   const [isExpanded, setIsExpanded] = useState(true);
   const [dateRange, setDateRange] = useState('7');
+  const [isExporting, setIsExporting] = useState(false);
 
   const fetchStats = async () => {
     setIsLoading(true);
@@ -148,6 +172,38 @@ const AdminStatsPanel = () => {
 
       const peakHour = hourlyDistribution.indexOf(Math.max(...hourlyDistribution));
 
+      // Fetch WhatsApp clicks
+      const { data: waClicks, error: waError } = await supabase
+        .from('whatsapp_clicks')
+        .select('*')
+        .gte('created_at', daysAgo.toISOString())
+        .order('created_at', { ascending: false });
+
+      if (!waError && waClicks) {
+        setWhatsappClicks(waClicks);
+        
+        const todayWAClicks = waClicks.filter(c => 
+          new Date(c.created_at) >= todayStart
+        ).length;
+
+        const bySource: Record<string, number> = {};
+        const byLanguage: Record<string, number> = {};
+        
+        waClicks.forEach(click => {
+          bySource[click.source] = (bySource[click.source] || 0) + 1;
+          if (click.language) {
+            byLanguage[click.language] = (byLanguage[click.language] || 0) + 1;
+          }
+        });
+
+        setWhatsappStats({
+          totalClicks: waClicks.length,
+          todayClicks: todayWAClicks,
+          bySource,
+          byLanguage,
+        });
+      }
+
       setStats({
         totalSessions,
         todaySessions,
@@ -202,6 +258,26 @@ const AdminStatsPanel = () => {
       return { icon: TrendingDown, color: 'text-destructive', text: 'Down' };
     }
     return null;
+  };
+
+  const handleExportWhatsAppClicks = async () => {
+    if (whatsappClicks.length === 0) {
+      toast.error("No WhatsApp click data to export");
+      return;
+    }
+    setIsExporting(true);
+    try {
+      exportToExcel(whatsappClicks, whatsappClicksExportColumns, {
+        filename: 'whatsapp_clicks',
+        sheetName: 'WhatsApp Clicks'
+      });
+      toast.success(`Exported ${whatsappClicks.length} WhatsApp click records`);
+    } catch (error) {
+      console.error('Export error:', error);
+      toast.error("Export failed");
+    } finally {
+      setIsExporting(false);
+    }
   };
 
   const trend = getTrendIndicator();
@@ -387,6 +463,51 @@ const AdminStatsPanel = () => {
                     </div>
                   </div>
                 </div>
+
+                {/* WhatsApp Stats */}
+                {whatsappStats && (
+                  <div className="bg-muted/50 rounded-lg p-4">
+                    <div className="flex items-center justify-between mb-3">
+                      <div className="flex items-center gap-2 text-muted-foreground">
+                        <Phone className="w-4 h-4" />
+                        <span className="text-sm font-medium">WhatsApp Conversions</span>
+                      </div>
+                      <Button
+                        variant="outline"
+                        size="sm"
+                        onClick={handleExportWhatsAppClicks}
+                        disabled={isExporting || whatsappClicks.length === 0}
+                        className="h-7 text-xs"
+                      >
+                        <Download className="w-3 h-3 mr-1" />
+                        Export
+                      </Button>
+                    </div>
+                    <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+                      <div>
+                        <div className="text-2xl font-bold text-success">{whatsappStats.totalClicks}</div>
+                        <div className="text-xs text-muted-foreground">Total Clicks</div>
+                      </div>
+                      <div>
+                        <div className="text-2xl font-bold">{whatsappStats.todayClicks}</div>
+                        <div className="text-xs text-muted-foreground">Today</div>
+                      </div>
+                      <div className="col-span-2">
+                        <div className="text-xs text-muted-foreground mb-1">Top Sources</div>
+                        <div className="flex flex-wrap gap-1">
+                          {Object.entries(whatsappStats.bySource)
+                            .sort((a, b) => b[1] - a[1])
+                            .slice(0, 4)
+                            .map(([source, count]) => (
+                              <Badge key={source} variant="secondary" className="text-xs">
+                                {source.replace(/_/g, ' ')}: {count}
+                              </Badge>
+                            ))}
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                )}
 
                 {/* Additional Stats */}
                 <div className="bg-muted/50 rounded-lg p-4">
