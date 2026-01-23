@@ -91,19 +91,17 @@ export const useAdminAuth = () => {
     const {
       data: { subscription },
     } = supabase.auth.onAuthStateChange((event, session) => {
-      // After we have a stable initial state, ignore ALL refresh events to prevent flicker
-      if (initResolvedRef.current && (event === "TOKEN_REFRESHED" || event === "INITIAL_SESSION")) {
-        return;
-      }
+      // Never show the blocking spinner for background token refresh.
+      if (event === "TOKEN_REFRESHED") return;
 
-      // "INITIAL_SESSION" is useful on first load only
-      if (event === "INITIAL_SESSION") {
-        void safeApply(session, true);
-        return;
-      }
+      // If we haven't resolved initial auth state yet, treat *the first* auth event
+      // (SIGNED_IN / SIGNED_OUT / USER_UPDATED / INITIAL_SESSION) as an initial load.
+      const isInitial = !initResolvedRef.current;
 
-      // For SIGNED_IN / SIGNED_OUT / USER_UPDATED, reconcile but don't show loading
-      void safeApply(session, false);
+      // After we have a stable initial state, ignore redundant INITIAL_SESSION events.
+      if (!isInitial && event === "INITIAL_SESSION") return;
+
+      void safeApply(session, isInitial);
     });
 
     // 2) Also reconcile from stored session (covers cases where INITIAL_SESSION doesn't fire)
