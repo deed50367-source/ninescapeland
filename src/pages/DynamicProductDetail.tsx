@@ -14,7 +14,7 @@ import { Skeleton } from "@/components/ui/skeleton";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { useLocalizedPath } from "@/hooks/useLocalizedPath";
 import { useRTL } from "@/hooks/useRTL";
-import { useWhatsAppTracking, WHATSAPP_URL } from "@/hooks/useWhatsAppTracking";
+import { useWhatsAppTracking } from "@/hooks/useWhatsAppTracking";
 import {
   ArrowRight,
   ArrowLeft,
@@ -100,7 +100,7 @@ const DynamicProductDetail = () => {
   const { t, i18n } = useTranslation();
   const { localizedPath } = useLocalizedPath();
   const { isRTL } = useRTL();
-  const { trackAndNavigate } = useWhatsAppTracking();
+  const { openWhatsApp } = useWhatsAppTracking();
 
   const [product, setProduct] = useState<Product | null>(null);
   const [variants, setVariants] = useState<ProductVariant[]>([]);
@@ -460,10 +460,11 @@ const DynamicProductDetail = () => {
               <div className="flex flex-col sm:flex-row gap-3 pt-4">
                 <Button size="lg" className="flex-1" asChild>
                   <a 
-                    href={WHATSAPP_URL}
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    onClick={() => trackAndNavigate("product_detail")}
+                    href="#"
+                    onClick={(e) => {
+                      e.preventDefault();
+                      openWhatsApp("product_detail", { productName: getLocalizedName(product) });
+                    }}
                   >
                     <MessageCircle className="w-5 h-5 mr-2" />
                     {t("products.getQuote", "获取报价")}

@@ -10,6 +10,7 @@ import {
   ChevronLeft,
   ChevronRight,
   X,
+  MessageCircle,
 } from "lucide-react";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
@@ -17,6 +18,7 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { useLocalizedPath } from "@/hooks/useLocalizedPath";
+import { useWhatsAppTracking } from "@/hooks/useWhatsAppTracking";
 import { getStorageUrl, productImages, projectImages, featureImages } from "@/config/galleryImages";
 
 // 产品详情图片配置 - 每个产品多张展示图
@@ -148,6 +150,7 @@ export default function ProductDetail() {
   const [lightboxOpen, setLightboxOpen] = useState(false);
   const { localizedPath } = useLocalizedPath();
   const { t } = useTranslation();
+  const { openWhatsApp } = useWhatsAppTracking();
 
   const product = productId ? products[productId as keyof typeof products] : null;
 
@@ -310,15 +313,22 @@ export default function ProductDetail() {
 
                 <div className="space-y-4 mb-8">
                   <Button variant="hero" size="xl" className="w-full" asChild>
-                    <Link to={localizedPath("contact")}>
+                    <a 
+                      href="#"
+                      onClick={(e) => {
+                        e.preventDefault();
+                        openWhatsApp("product_detail", { productName: title });
+                      }}
+                    >
+                      <MessageCircle className="w-5 h-5" />
                       {t("productDetail.requestQuote")}
-                      <ArrowRight className="w-5 h-5" />
-                    </Link>
+                    </a>
                   </Button>
                   <Button variant="outline" size="lg" className="w-full" asChild>
-                    <a href={`${localizedPath("products")}#quote-calculator`}>
-                      {t("productDetail.usePriceCalculator")}
-                    </a>
+                    <Link to={localizedPath("contact")}>
+                      {t("productDetail.contactUs", "Contact Us")}
+                      <ArrowRight className="w-5 h-5" />
+                    </Link>
                   </Button>
                 </div>
 
