@@ -38,7 +38,7 @@ export const useAdminAuth = () => {
   }, []);
 
   const applySession = useCallback(
-    async (session: Session | null) => {
+    async (session: Session | null, isInitialLoad = false) => {
       const nextUser = session?.user ?? null;
 
       if (!nextUser) {
@@ -46,14 +46,14 @@ export const useAdminAuth = () => {
         adminCacheRef.current = null;
         setUser(null);
         setIsAdmin(false);
-        setIsLoading(false);
+        if (isInitialLoad) setIsLoading(false);
         return;
       }
 
-      // Keep UI in "verifying" until role check completes.
+      // Only show loading spinner on initial load, not on token refresh
       activeUserIdRef.current = nextUser.id;
       setUser(nextUser);
-      setIsLoading(true);
+      if (isInitialLoad) setIsLoading(true);
 
       const hasAdminRole = await checkAdminRole(nextUser.id);
 
@@ -61,7 +61,7 @@ export const useAdminAuth = () => {
       if (activeUserIdRef.current !== nextUser.id) return;
 
       setIsAdmin(hasAdminRole);
-      setIsLoading(false);
+      if (isInitialLoad) setIsLoading(false);
     },
     [checkAdminRole]
   );
@@ -69,10 +69,10 @@ export const useAdminAuth = () => {
   useEffect(() => {
     let cancelled = false;
 
-    const safeApply = async (session: Session | null, markInitResolved = false) => {
+    const safeApply = async (session: Session | null, isInitial = false) => {
       try {
         if (cancelled) return;
-        await applySession(session);
+        await applySession(session, isInitial);
       } catch (err) {
         console.error("[useAdminAuth] apply session error", err);
         if (!cancelled) {
@@ -83,7 +83,7 @@ export const useAdminAuth = () => {
           setIsLoading(false);
         }
       } finally {
-        if (markInitResolved) initResolvedRef.current = true;
+        if (isInitial) initResolvedRef.current = true;
       }
     };
 
@@ -91,23 +91,29 @@ export const useAdminAuth = () => {
     const {
       data: { subscription },
     } = supabase.auth.onAuthStateChange((event, session) => {
-      // After we have a stable initial state, ignore noisy refreshes to avoid flicker.
-      if (event === "TOKEN_REFRESHED" && initResolvedRef.current) return;
+      // After we have a stable initial state, ignore ALL refresh events to prevent flicker
+      if (initResolvedRef.current && (event === "TOKEN_REFRESHED" || event === "INITIAL_SESSION")) {
+        return;
+      }
 
-      // "INITIAL_SESSION" is useful on first load; after init, ignore it.
+      // "INITIAL_SESSION" is useful on first load only
       if (event === "INITIAL_SESSION") {
         void safeApply(session, true);
         return;
       }
 
-      // For other events (SIGNED_IN / SIGNED_OUT / USER_UPDATED), reconcile.
-      void safeApply(session);
+      // For SIGNED_IN / SIGNED_OUT / USER_UPDATED, reconcile but don't show loading
+      void safeApply(session, false);
     });
 
-    // 2) Also reconcile from stored session (covers cases where INITIAL_SESSION doesn’t fire)
+    // 2) Also reconcile from stored session (covers cases where INITIAL_SESSION doesn't fire)
     supabase.auth
       .getSession()
-      .then(({ data }) => safeApply(data.session, true))
+      .then(({ data }) => {
+        if (!initResolvedRef.current) {
+          safeApply(data.session, true);
+        }
+      })
       .catch((err) => {
         console.error("[useAdminAuth] getSession error", err);
         if (!cancelled) setIsLoading(false);
