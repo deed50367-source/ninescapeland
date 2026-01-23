@@ -36,10 +36,12 @@ import {
   Building,
   MessageSquare,
   Loader2,
-  Filter
+  Filter,
+  Download
 } from "lucide-react";
 import { toast } from "sonner";
 import { format } from "date-fns";
+import { exportToExcel, inquiryExportColumns } from "@/utils/excelExport";
 
 interface Inquiry {
   id: string;
@@ -181,6 +183,18 @@ const AdminInquiriesTab = () => {
     setIsDetailOpen(true);
   };
 
+  const handleExport = () => {
+    if (filteredInquiries.length === 0) {
+      toast.error("No data to export");
+      return;
+    }
+    exportToExcel(filteredInquiries, inquiryExportColumns, {
+      filename: 'inquiries',
+      sheetName: 'Inquiries'
+    });
+    toast.success(`Exported ${filteredInquiries.length} inquiries`);
+  };
+
   return (
     <div className="space-y-6">
       {/* Header */}
@@ -191,10 +205,16 @@ const AdminInquiriesTab = () => {
             Total {inquiries.length} inquiries
           </p>
         </div>
-        <Button onClick={fetchInquiries} variant="outline" size="sm">
-          <RefreshCw className={`w-4 h-4 mr-2 ${isLoading ? "animate-spin" : ""}`} />
-          Refresh
-        </Button>
+        <div className="flex items-center gap-2">
+          <Button onClick={handleExport} variant="outline" size="sm">
+            <Download className="w-4 h-4 mr-2" />
+            Export Excel
+          </Button>
+          <Button onClick={fetchInquiries} variant="outline" size="sm">
+            <RefreshCw className={`w-4 h-4 mr-2 ${isLoading ? "animate-spin" : ""}`} />
+            Refresh
+          </Button>
+        </div>
       </div>
 
       {/* Filters */}

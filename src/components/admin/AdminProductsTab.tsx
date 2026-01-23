@@ -45,9 +45,11 @@ import {
   EyeOff,
   Package,
   Tags,
+  Download,
 } from "lucide-react";
 import { toast } from "sonner";
 import GalleryPicker from "./GalleryPicker";
+import { exportToExcel, productExportColumns, categoryExportColumns } from "@/utils/excelExport";
 
 interface ProductCategory {
   id: string;
@@ -672,6 +674,30 @@ const AdminProductsTab = () => {
       p.slug.toLowerCase().includes(searchQuery.toLowerCase())
   );
 
+  const handleExportProducts = () => {
+    if (filteredProducts.length === 0) {
+      toast.error("No products to export");
+      return;
+    }
+    exportToExcel(filteredProducts, productExportColumns, {
+      filename: 'products',
+      sheetName: 'Products'
+    });
+    toast.success(`Exported ${filteredProducts.length} products`);
+  };
+
+  const handleExportCategories = () => {
+    if (categories.length === 0) {
+      toast.error("No categories to export");
+      return;
+    }
+    exportToExcel(categories, categoryExportColumns, {
+      filename: 'product_categories',
+      sheetName: 'Categories'
+    });
+    toast.success(`Exported ${categories.length} categories`);
+  };
+
   if (isLoading) {
     return (
       <div className="flex items-center justify-center py-12">
@@ -701,6 +727,10 @@ const AdminProductsTab = () => {
               <Button onClick={() => openProductDialog()}>
                 <Plus className="w-4 h-4 mr-2" />
                 添加产品
+              </Button>
+              <Button onClick={handleExportProducts} variant="outline">
+                <Download className="w-4 h-4 mr-2" />
+                导出Excel
               </Button>
               <Select value={selectedCategory} onValueChange={setSelectedCategory}>
                 <SelectTrigger className="w-40">
@@ -844,10 +874,16 @@ const AdminProductsTab = () => {
         {/* Categories Tab */}
         <TabsContent value="categories" className="space-y-4">
           <div className="flex justify-between items-center">
-            <Button onClick={() => openCategoryDialog()}>
-              <Plus className="w-4 h-4 mr-2" />
-              添加分类
-            </Button>
+            <div className="flex items-center gap-2">
+              <Button onClick={() => openCategoryDialog()}>
+                <Plus className="w-4 h-4 mr-2" />
+                添加分类
+              </Button>
+              <Button onClick={handleExportCategories} variant="outline">
+                <Download className="w-4 h-4 mr-2" />
+                导出Excel
+              </Button>
+            </div>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
