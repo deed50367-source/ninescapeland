@@ -153,3 +153,37 @@ export const categoryExportColumns = [
   },
   { key: 'sort_order' as const, header: 'Sort Order' },
 ];
+
+/**
+ * WhatsApp clicks export columns configuration
+ */
+export const whatsappClicksExportColumns = [
+  { 
+    key: 'created_at' as const, 
+    header: 'Date/Time',
+    transform: (value: unknown) => value ? format(new Date(value as string), 'yyyy-MM-dd HH:mm:ss') : ''
+  },
+  { 
+    key: 'source' as const, 
+    header: 'Source',
+    transform: (value: unknown) => {
+      const labels: Record<string, string> = {
+        'floating_cta': 'Floating CTA',
+        'header': 'Header',
+        'footer': 'Footer',
+        'mobile_nav': 'Mobile Nav',
+        'contact_page': 'Contact Page',
+        'hero_section': 'Hero Section',
+        'product_page': 'Product Page',
+        'live_chat': 'Live Chat',
+      };
+      return labels[value as string] || (value as string) || '';
+    }
+  },
+  { key: 'page_url' as const, header: 'Page URL' },
+  { key: 'referrer' as const, header: 'Referrer' },
+  { key: 'language' as const, header: 'Language' },
+  { key: 'country' as const, header: 'Country' },
+  { key: 'user_agent' as const, header: 'User Agent' },
+  { key: 'session_id' as const, header: 'Session ID' },
+];
