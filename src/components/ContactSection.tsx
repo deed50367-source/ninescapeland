@@ -10,7 +10,7 @@ import { useRTL } from "@/hooks/useRTL";
 import { useRateLimit } from "@/hooks/useRateLimit";
 import { supabase } from "@/integrations/supabase/client";
 import { z } from "zod";
-import { useWhatsAppTracking, WHATSAPP_URL } from "@/hooks/useWhatsAppTracking";
+import { useWhatsAppTracking } from "@/hooks/useWhatsAppTracking";
 
 // Validation schema for contact form
 const contactFormSchema = z.object({
@@ -62,7 +62,7 @@ export const ContactSection = () => {
     projectType: "",
     message: "",
   });
-  const { trackAndNavigate } = useWhatsAppTracking();
+  const { openWhatsApp, getWhatsAppUrl } = useWhatsAppTracking();
   
   // Honeypot field - bots will fill this, humans won't see it
   const [honeypot, setHoneypot] = useState("");
@@ -79,7 +79,8 @@ export const ContactSection = () => {
       icon: Phone,
       label: t("contact.info.phone"),
       value: "+86 150 5878 2901",
-      href: WHATSAPP_URL,
+      href: getWhatsAppUrl("contact_section"),
+      isWhatsApp: true,
     },
     {
       icon: Mail,
@@ -420,7 +421,13 @@ export const ContactSection = () => {
                   <a
                     key={index}
                     href={info.href}
+                    target={info.isWhatsApp ? "_blank" : undefined}
+                    rel={info.isWhatsApp ? "noopener noreferrer" : undefined}
                     className={`flex items-start gap-4 group hover:opacity-80 transition-opacity ${isRTL ? 'flex-row-reverse text-right' : ''}`}
+                    onClick={info.isWhatsApp ? (e) => {
+                      e.preventDefault();
+                      openWhatsApp("contact_section");
+                    } : undefined}
                   >
                     <div className="w-12 h-12 rounded-xl bg-primary-foreground/10 flex items-center justify-center flex-shrink-0">
                       <info.icon className="w-6 h-6" />
@@ -445,15 +452,12 @@ export const ContactSection = () => {
                   <p className="text-sm text-muted-foreground">{t("contact.whatsapp.description")}</p>
                 </div>
               </div>
-              <Button variant="outline" className="w-full" asChild>
-                <a 
-                  href={WHATSAPP_URL}
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  onClick={() => trackAndNavigate("contact_section")}
-                >
-                  {t("contact.whatsapp.button")}
-                </a>
+              <Button 
+                variant="outline" 
+                className="w-full"
+                onClick={() => openWhatsApp("contact_section")}
+              >
+                {t("contact.whatsapp.button")}
               </Button>
             </div>
 

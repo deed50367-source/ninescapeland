@@ -3,7 +3,7 @@ import { MessageCircle, ArrowUp } from "lucide-react";
 import { useState, useEffect, forwardRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useRTL } from "@/hooks/useRTL";
-import { useWhatsAppTracking, WHATSAPP_URL } from "@/hooks/useWhatsAppTracking";
+import { useWhatsAppTracking } from "@/hooks/useWhatsAppTracking";
 
 const ScrollTopButton = forwardRef<HTMLButtonElement, { onClick: () => void; label: string }>(
   ({ onClick, label }, ref) => (
@@ -26,7 +26,7 @@ export const FloatingCTA = () => {
   const { t } = useTranslation();
   const { isRTL } = useRTL();
   const [showScrollTop, setShowScrollTop] = useState(false);
-  const { trackAndNavigate } = useWhatsAppTracking();
+  const { openWhatsApp, getWhatsAppUrl } = useWhatsAppTracking();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -40,6 +40,11 @@ export const FloatingCTA = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
+  const handleWhatsAppClick = (e: React.MouseEvent) => {
+    e.preventDefault();
+    openWhatsApp("floating_cta");
+  };
+
   return (
     <div className={`fixed bottom-6 z-50 flex flex-col gap-3 ${isRTL ? 'left-6' : 'right-6'}`}>
       {/* Scroll to top */}
@@ -51,10 +56,10 @@ export const FloatingCTA = () => {
 
       {/* WhatsApp Button */}
       <motion.a
-        href={WHATSAPP_URL}
+        href={getWhatsAppUrl("floating_cta")}
         target="_blank"
         rel="noopener noreferrer"
-        onClick={() => trackAndNavigate("floating_cta")}
+        onClick={handleWhatsAppClick}
         initial={{ scale: 0 }}
         animate={{ scale: 1 }}
         transition={{ delay: 1, type: "spring", stiffness: 200, damping: 20 }}

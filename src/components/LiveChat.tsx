@@ -5,7 +5,7 @@ import { useTranslation } from 'react-i18next';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { supabase } from '@/integrations/supabase/client';
-import { useWhatsAppTracking, WHATSAPP_URL } from '@/hooks/useWhatsAppTracking';
+import { useWhatsAppTracking } from '@/hooks/useWhatsAppTracking';
 
 interface Message {
   id: string;
@@ -116,6 +116,7 @@ export const LiveChat = () => {
   const [hasNewMessage, setHasNewMessage] = useState(false);
   const messagesEndRef = useRef<HTMLDivElement>(null);
   const sessionId = useRef(getSessionId());
+  const { openWhatsApp: openWhatsAppTracking } = useWhatsAppTracking();
 
   const scrollToBottom = useCallback(() => {
     messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
@@ -297,10 +298,8 @@ export const LiveChat = () => {
     }
   };
 
-  const { openWhatsApp: trackOpenWhatsApp } = useWhatsAppTracking();
-  
   const openWhatsApp = () => {
-    trackOpenWhatsApp("live_chat");
+    openWhatsAppTracking("live_chat");
   };
 
   return (
