@@ -15,7 +15,7 @@ export const ProjectsSection = () => {
 
   const ArrowIcon = isRTL ? ArrowLeft : ArrowRight;
 
-  // 使用动态配图的项目数据
+  // 使用动态配图的项目数据 - 每个项目对应后台 project.* 配置
   const projects = useMemo(() => [
     {
       id: 1,
@@ -23,7 +23,7 @@ export const ProjectsSection = () => {
       location: "California, USA",
       type: "Indoor Playground",
       size: "5,000 sqm",
-      image: getImageUrl("product.indoorPlayground"),
+      image: getImageUrl("project.indoorProject"),
     },
     {
       id: 2,
@@ -31,7 +31,7 @@ export const ProjectsSection = () => {
       location: "Dubai, UAE",
       type: "Trampoline Park",
       size: "3,500 sqm",
-      image: getImageUrl("product.trampolinePark"),
+      image: getImageUrl("project.trampolineProject"),
     },
     {
       id: 3,
@@ -39,7 +39,7 @@ export const ProjectsSection = () => {
       location: "London, UK",
       type: "Ninja Course",
       size: "2,000 sqm",
-      image: getImageUrl("product.ninjaCourse"),
+      image: getImageUrl("project.ninjaProject"),
     },
     {
       id: 4,
@@ -47,7 +47,7 @@ export const ProjectsSection = () => {
       location: "Sydney, Australia",
       type: "Soft Play",
       size: "800 sqm",
-      image: getImageUrl("project.indoorProject"),
+      image: getImageUrl("project.softPlayProject"),
     },
     {
       id: 5,
