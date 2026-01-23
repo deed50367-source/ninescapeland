@@ -4,7 +4,7 @@ import { Mail, Phone, MapPin, Facebook, Linkedin, Youtube, Instagram } from "luc
 import { useRTL } from "@/hooks/useRTL";
 import { useLocalizedPath } from "@/hooks/useLocalizedPath";
 import logo from "@/assets/logo.png";
-import { useWhatsAppTracking, WHATSAPP_URL } from "@/hooks/useWhatsAppTracking";
+import { useWhatsAppTracking } from "@/hooks/useWhatsAppTracking";
 
 const socialLinks = [
   { icon: Facebook, href: "#", label: "Facebook" },
@@ -17,7 +17,7 @@ export const Footer = () => {
   const { t } = useTranslation();
   const { isRTL } = useRTL();
   const { localizedPath } = useLocalizedPath();
-  const { trackAndNavigate } = useWhatsAppTracking();
+  const { openWhatsApp, getWhatsAppUrl } = useWhatsAppTracking();
 
   const productLinks = [
     { label: t("footer.links.indoorPlayground"), href: localizedPath("/products") },
@@ -103,12 +103,15 @@ export const Footer = () => {
                 <div>
                   <p className="text-primary-foreground/60 text-xs sm:text-sm">{t("footer.contact.phone")}</p>
                   <a 
-                    href={WHATSAPP_URL}
+                    href={getWhatsAppUrl("footer")}
                     target="_blank" 
                     rel="noopener noreferrer" 
                     className="hover:opacity-80 text-xs sm:text-sm" 
                     dir="ltr"
-                    onClick={() => trackAndNavigate("footer")}
+                    onClick={(e) => {
+                      e.preventDefault();
+                      openWhatsApp("footer");
+                    }}
                   >
                     +86 150 5878 2901
                   </a>
