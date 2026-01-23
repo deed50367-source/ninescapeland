@@ -162,10 +162,55 @@ const AdminSiteImagesTab = () => {
 
   const filteredConfigs = configs.filter(c => c.category === activeCategory);
 
+  // 对产品图片按类型分组
+  const groupedProductConfigs = () => {
+    if (activeCategory !== 'product') return null;
+    
+    const groups: Record<string, SiteImageConfig[]> = {};
+    filteredConfigs.forEach(config => {
+      // 提取产品类型，例如 product.indoorPlayground.2 -> indoorPlayground
+      const parts = config.config_key.split('.');
+      const productType = parts[1];
+      if (!groups[productType]) {
+        groups[productType] = [];
+      }
+      groups[productType].push(config);
+    });
+    
+    // 按 sort_order 排序每个组内的图片
+    Object.keys(groups).forEach(key => {
+      groups[key].sort((a, b) => {
+        const aOrder = a.config_key.includes('.') ? parseInt(a.config_key.split('.')[2] || '0') : 0;
+        const bOrder = b.config_key.includes('.') ? parseInt(b.config_key.split('.')[2] || '0') : 0;
+        return aOrder - bOrder;
+      });
+    });
+    
+    return groups;
+  };
+
+  const productGroups = groupedProductConfigs();
+
+  const productTypeLabels: Record<string, string> = {
+    indoorPlayground: '室内游乐场',
+    ninjaCourse: '忍者课程',
+    softPlay: '软体游乐',
+    trampolinePark: '蹦床公园',
+  };
+
   // 根据config_key获取label
   const getLabelForKey = (key: string) => {
     const config = configs.find(c => c.config_key === key);
     return config?.label || key;
+  };
+  
+  // 获取图片序号标签
+  const getImageOrderLabel = (configKey: string) => {
+    const parts = configKey.split('.');
+    if (parts.length === 3) {
+      return `图${parts[2]}`;
+    }
+    return '图1';
   };
 
   if (isLoading) {
@@ -214,56 +259,114 @@ const AdminSiteImagesTab = () => {
                 <CardDescription>{cat.description}</CardDescription>
               </CardHeader>
               <CardContent>
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                  {filteredConfigs.map(config => (
-                    <div
-                      key={config.id}
-                      className="group relative border rounded-lg overflow-hidden cursor-pointer hover:shadow-lg transition-all"
-                      onClick={() => openPicker(config)}
-                    >
-                      {/* Image Preview */}
-                      <div className="aspect-video bg-muted relative">
-                        <img
-                          src={getFullUrl(config.image_url)}
-                          alt={config.label || config.config_key}
-                          className="w-full h-full object-cover"
-                          onError={(e) => {
-                            e.currentTarget.src = '/placeholder.svg';
-                          }}
-                        />
-                        
-                        {/* Overlay on hover */}
-                        <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
-                          {saving === config.id ? (
-                            <Loader2 className="w-8 h-8 text-white animate-spin" />
-                          ) : (
-                            <div className="text-center text-white">
-                              <ImageIcon className="w-8 h-8 mx-auto mb-2" />
-                              <span className="text-sm">点击更换图片</span>
+                {/* 产品图片按类型分组显示 */}
+                {cat.value === 'product' && productGroups ? (
+                  <div className="space-y-8">
+                    {Object.entries(productGroups).map(([productType, images]) => (
+                      <div key={productType}>
+                        <h3 className="text-lg font-semibold mb-4 text-primary">
+                          {productTypeLabels[productType] || productType}
+                        </h3>
+                        <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+                          {images.map(config => (
+                            <div
+                              key={config.id}
+                              className="group relative border rounded-lg overflow-hidden cursor-pointer hover:shadow-lg transition-all"
+                              onClick={() => openPicker(config)}
+                            >
+                              {/* Image Preview */}
+                              <div className="aspect-video bg-muted relative">
+                                {config.image_url ? (
+                                  <img
+                                    src={getFullUrl(config.image_url)}
+                                    alt={config.label || config.config_key}
+                                    className="w-full h-full object-cover"
+                                    onError={(e) => {
+                                      e.currentTarget.src = '/placeholder.svg';
+                                    }}
+                                  />
+                                ) : (
+                                  <div className="w-full h-full flex items-center justify-center text-muted-foreground">
+                                    <ImageIcon className="w-8 h-8 opacity-30" />
+                                  </div>
+                                )}
+                                
+                                {/* Overlay on hover */}
+                                <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                                  {saving === config.id ? (
+                                    <Loader2 className="w-6 h-6 text-white animate-spin" />
+                                  ) : (
+                                    <div className="text-center text-white">
+                                      <ImageIcon className="w-6 h-6 mx-auto mb-1" />
+                                      <span className="text-xs">点击更换</span>
+                                    </div>
+                                  )}
+                                </div>
+                              </div>
+
+                              {/* Label */}
+                              <div className="p-2 bg-card text-center">
+                                <span className="text-sm font-medium">{getImageOrderLabel(config.config_key)}</span>
+                              </div>
                             </div>
+                          ))}
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                ) : (
+                  /* 其他分类保持原有布局 */
+                  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    {filteredConfigs.map(config => (
+                      <div
+                        key={config.id}
+                        className="group relative border rounded-lg overflow-hidden cursor-pointer hover:shadow-lg transition-all"
+                        onClick={() => openPicker(config)}
+                      >
+                        {/* Image Preview */}
+                        <div className="aspect-video bg-muted relative">
+                          <img
+                            src={getFullUrl(config.image_url)}
+                            alt={config.label || config.config_key}
+                            className="w-full h-full object-cover"
+                            onError={(e) => {
+                              e.currentTarget.src = '/placeholder.svg';
+                            }}
+                          />
+                          
+                          {/* Overlay on hover */}
+                          <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                            {saving === config.id ? (
+                              <Loader2 className="w-8 h-8 text-white animate-spin" />
+                            ) : (
+                              <div className="text-center text-white">
+                                <ImageIcon className="w-8 h-8 mx-auto mb-2" />
+                                <span className="text-sm">点击更换图片</span>
+                              </div>
+                            )}
+                          </div>
+                        </div>
+
+                        {/* Label */}
+                        <div className="p-3 bg-card">
+                          <h4 className="font-medium">{config.label || config.config_key}</h4>
+                          {config.description && (
+                            <p className="text-xs text-muted-foreground mt-1">
+                              {config.description}
+                            </p>
                           )}
                         </div>
                       </div>
+                    ))}
 
-                      {/* Label */}
-                      <div className="p-3 bg-card">
-                        <h4 className="font-medium">{config.label || config.config_key}</h4>
-                        {config.description && (
-                          <p className="text-xs text-muted-foreground mt-1">
-                            {config.description}
-                          </p>
-                        )}
+                    {filteredConfigs.length === 0 && (
+                      <div className="col-span-full text-center py-12 text-muted-foreground">
+                        <ImageIcon className="w-12 h-12 mx-auto mb-3 opacity-50" />
+                        <p>该分类暂无配置项</p>
                       </div>
-                    </div>
-                  ))}
-
-                  {filteredConfigs.length === 0 && (
-                    <div className="col-span-full text-center py-12 text-muted-foreground">
-                      <ImageIcon className="w-12 h-12 mx-auto mb-3 opacity-50" />
-                      <p>该分类暂无配置项</p>
-                    </div>
-                  )}
-                </div>
+                    )}
+                  </div>
+                )}
               </CardContent>
             </Card>
           </TabsContent>
