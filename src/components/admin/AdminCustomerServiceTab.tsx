@@ -4,7 +4,7 @@ import {
   MessageCircle, Send, Clock, User, Bot, 
   Loader2, RefreshCw, Search, CheckCircle, XCircle,
   Circle, CheckCheck, AlertCircle, Zap, Plus, Trash2, Edit2, Save, X,
-  Monitor, Smartphone, Tablet, Globe, MapPin, Link, ExternalLink
+  Monitor, Smartphone, Tablet, Globe, MapPin, Link, ExternalLink, Languages
 } from 'lucide-react';
 import AdminStatsPanel from '@/components/AdminStatsPanel';
 import { Button } from '@/components/ui/button';
@@ -12,6 +12,7 @@ import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { Badge } from '@/components/ui/badge';
 import { ScrollArea } from '@/components/ui/scroll-area';
+import { Switch } from '@/components/ui/switch';
 import {
   Select,
   SelectContent,
@@ -32,6 +33,46 @@ import {
 } from "@/components/ui/popover";
 import { supabase } from '@/integrations/supabase/client';
 import { toast } from 'sonner';
+
+// Language display names for the UI
+const LANGUAGE_DISPLAY_NAMES: Record<string, string> = {
+  'en': '英语',
+  'en-US': '英语 (美国)',
+  'en-GB': '英语 (英国)',
+  'zh': '中文',
+  'zh-CN': '中文 (简体)',
+  'zh-TW': '中文 (繁体)',
+  'ar': '阿拉伯语',
+  'ar-SA': '阿拉伯语',
+  'de': '德语',
+  'de-DE': '德语',
+  'es': '西班牙语',
+  'es-ES': '西班牙语',
+  'pt': '葡萄牙语',
+  'pt-BR': '葡萄牙语 (巴西)',
+  'pt-PT': '葡萄牙语',
+  'fr': '法语',
+  'fr-FR': '法语',
+  'ja': '日语',
+  'ko': '韩语',
+  'ru': '俄语',
+  'it': '意大利语',
+  'nl': '荷兰语',
+  'tr': '土耳其语',
+  'vi': '越南语',
+  'th': '泰语',
+  'id': '印尼语',
+  'ms': '马来语',
+  'hi': '印地语',
+};
+
+function getLanguageDisplayName(langCode: string | null): string {
+  if (!langCode) return '未知';
+  if (LANGUAGE_DISPLAY_NAMES[langCode]) return LANGUAGE_DISPLAY_NAMES[langCode];
+  const baseCode = langCode.split('-')[0];
+  if (LANGUAGE_DISPLAY_NAMES[baseCode]) return LANGUAGE_DISPLAY_NAMES[baseCode];
+  return langCode;
+}
 
 interface QuickReplyTemplate {
   id: string;
@@ -95,6 +136,7 @@ const AdminCustomerServiceTab = () => {
   const [replyText, setReplyText] = useState('');
   const [isLoading, setIsLoading] = useState(true);
   const [isSending, setIsSending] = useState(false);
+  const [isTranslating, setIsTranslating] = useState(false);
   const [searchQuery, setSearchQuery] = useState('');
   const [statusFilter, setStatusFilter] = useState<string>('all');
   const [sessionStatuses, setSessionStatuses] = useState<Map<string, SessionStatus>>(new Map());
@@ -109,6 +151,7 @@ const AdminCustomerServiceTab = () => {
   const [isLoadingTemplates, setIsLoadingTemplates] = useState(false);
   const [customerMetadata, setCustomerMetadata] = useState<CustomerMetadata | null>(null);
   const [showCustomerInfo, setShowCustomerInfo] = useState(true);
+  const [autoTranslate, setAutoTranslate] = useState(true);
 
   const scrollToBottom = useCallback(() => {
     messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
@@ -439,17 +482,58 @@ const AdminCustomerServiceTab = () => {
     }
   };
 
+  // Translate text using AI
+  const translateText = async (text: string, targetLanguage: string): Promise<string> => {
+    try {
+      const response = await supabase.functions.invoke('translate-reply', {
+        body: { text, targetLanguage, sourceLanguage: 'zh' }
+      });
+
+      if (response.error) {
+        throw new Error(response.error.message || 'Translation failed');
+      }
+
+      return response.data?.translatedText || text;
+    } catch (error) {
+      console.error('Translation error:', error);
+      throw error;
+    }
+  };
+
   const sendReply = async () => {
     if (!replyText.trim() || !selectedSession || isSending) return;
 
     setIsSending(true);
+    setIsTranslating(false);
+    
     try {
       const { data: { user } } = await supabase.auth.getUser();
+      
+      let finalContent = replyText.trim();
+      const customerLang = customerMetadata?.customer_language;
+      
+      // Check if we need to translate (customer language is not Chinese)
+      const shouldTranslate = autoTranslate && 
+        customerLang && 
+        !customerLang.startsWith('zh');
+      
+      if (shouldTranslate) {
+        setIsTranslating(true);
+        try {
+          finalContent = await translateText(finalContent, customerLang);
+          toast.success(`已翻译为${getLanguageDisplayName(customerLang)}`);
+        } catch (translateError) {
+          // If translation fails, ask user if they want to send original
+          toast.warning('翻译失败，将发送原文');
+          console.error('Translation failed:', translateError);
+        }
+        setIsTranslating(false);
+      }
       
       const { error } = await supabase.from('chat_messages').insert({
         session_id: selectedSession,
         role: 'assistant',
-        content: replyText.trim(),
+        content: finalContent,
         is_ai_response: false,
         is_staff_reply: true,
         replied_by: user?.id
@@ -469,6 +553,7 @@ const AdminCustomerServiceTab = () => {
       toast.error('发送失败');
     } finally {
       setIsSending(false);
+      setIsTranslating(false);
     }
   };
 
@@ -846,6 +931,27 @@ const AdminCustomerServiceTab = () => {
               </ScrollArea>
 
               <div className="p-4 border-t bg-background space-y-3">
+                {/* Customer language indicator and translate toggle */}
+                {customerMetadata?.customer_language && !customerMetadata.customer_language.startsWith('zh') && (
+                  <div className="flex items-center justify-between px-3 py-2 bg-primary/5 border border-primary/20 rounded-lg">
+                    <div className="flex items-center gap-2 text-sm">
+                      <Languages className="w-4 h-4 text-primary" />
+                      <span className="text-muted-foreground">客户语言：</span>
+                      <Badge variant="secondary" className="font-medium">
+                        {getLanguageDisplayName(customerMetadata.customer_language)}
+                      </Badge>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <span className="text-xs text-muted-foreground">自动翻译</span>
+                      <Switch
+                        checked={autoTranslate}
+                        onCheckedChange={setAutoTranslate}
+                        className="scale-90"
+                      />
+                    </div>
+                  </div>
+                )}
+                
                 <div className="flex items-center gap-2">
                   <Popover>
                     <PopoverTrigger asChild>
@@ -934,17 +1040,26 @@ const AdminCustomerServiceTab = () => {
                     value={replyText}
                     onChange={(e) => setReplyText(e.target.value)}
                     onKeyPress={handleKeyPress}
-                    placeholder="输入回复内容... (Enter发送)"
-                    disabled={isSending}
+                    placeholder={
+                      autoTranslate && customerMetadata?.customer_language && !customerMetadata.customer_language.startsWith('zh')
+                        ? `输入中文，发送时自动翻译为${getLanguageDisplayName(customerMetadata.customer_language)}`
+                        : "输入回复内容... (Enter发送)"
+                    }
+                    disabled={isSending || isTranslating}
                     className="flex-1 min-h-[44px] max-h-32 resize-none"
                     rows={1}
                   />
                   <Button
                     onClick={sendReply}
-                    disabled={!replyText.trim() || isSending}
+                    disabled={!replyText.trim() || isSending || isTranslating}
                     className="shrink-0"
                   >
-                    {isSending ? (
+                    {isTranslating ? (
+                      <div className="flex items-center gap-1">
+                        <Loader2 className="w-4 h-4 animate-spin" />
+                        <span className="text-xs">翻译中</span>
+                      </div>
+                    ) : isSending ? (
                       <Loader2 className="w-4 h-4 animate-spin" />
                     ) : (
                       <Send className="w-4 h-4" />
