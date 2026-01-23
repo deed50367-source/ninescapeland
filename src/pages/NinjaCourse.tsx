@@ -16,6 +16,7 @@ import { useTranslation } from "react-i18next";
 import { useLocalizedPath } from "@/hooks/useLocalizedPath";
 import { Link } from "react-router-dom";
 import { getStorageUrl } from "@/config/galleryImages";
+import { useSiteImages } from "@/hooks/useSiteImages";
 import { motion } from "framer-motion";
 import { 
   Target, 
@@ -59,6 +60,7 @@ import {
 const NinjaCourse = () => {
   const { t } = useTranslation();
   const { localizedPath } = useLocalizedPath();
+  const { getProductGalleryImages } = useSiteImages();
 
   const heroImage = getStorageUrl("root/1768967512755-1708914619333.jpg");
 
@@ -85,13 +87,21 @@ const NinjaCourse = () => {
     }
   ];
 
-  const galleryImages = [
+  // 动态获取产品图库图片
+  const dynamicGalleryImages = getProductGalleryImages('ninjaCourse', 5);
+  
+  // 静态后备图片
+  const staticGalleryImages = [
     getStorageUrl("root/1768967512755-1708914619333.jpg"),
     getStorageUrl("root/1768967510986-1708914597457.jpg"),
     getStorageUrl("root/1768967509253-1708914541597.jpg"),
     getStorageUrl("root/1768967504978-1708914505733.jpg"),
     getStorageUrl("root/1768967514514-1708914634364.jpg"),
   ];
+  
+  const galleryImages = dynamicGalleryImages.length >= 5 
+    ? dynamicGalleryImages 
+    : [...dynamicGalleryImages, ...staticGalleryImages.slice(dynamicGalleryImages.length)].slice(0, 5);
 
   const obstacles = [
     "productPages.ninjaCourse.obstacles.warped",
