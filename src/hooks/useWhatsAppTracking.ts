@@ -205,8 +205,9 @@ export const useWhatsAppTracking = () => {
     // Build URL with pre-filled message
     const url = buildWhatsAppUrl(source, i18n.language, options);
     
-    // Open WhatsApp
-    window.open(url, "_blank");
+    // Use location.href to avoid iframe blocking issues
+    // This navigates the current page, but WhatsApp will open in app/new tab automatically
+    window.location.href = url;
   }, [trackClick, i18n.language]);
 
   const getWhatsAppUrl = useCallback((
