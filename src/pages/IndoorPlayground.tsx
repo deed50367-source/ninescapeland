@@ -15,6 +15,7 @@ import { useTranslation } from "react-i18next";
 import { useLocalizedPath } from "@/hooks/useLocalizedPath";
 import { Link } from "react-router-dom";
 import { getStorageUrl } from "@/config/galleryImages";
+import { useSiteImages } from "@/hooks/useSiteImages";
 import { motion } from "framer-motion";
 import { 
   Palette, 
@@ -57,6 +58,7 @@ import {
 const IndoorPlayground = () => {
   const { t } = useTranslation();
   const { localizedPath } = useLocalizedPath();
+  const { getProductGalleryImages, getImageUrl } = useSiteImages();
 
   const heroImage = getStorageUrl("dcbc5ed3-1863-4db6-bacf-59919b3abec6/1768294376731-g5jiv8.jpg");
 
@@ -83,7 +85,11 @@ const IndoorPlayground = () => {
     }
   ];
 
-  const galleryImages = [
+  // 动态获取产品图库图片，如果后台没配置则使用默认
+  const dynamicGalleryImages = getProductGalleryImages('indoorPlayground', 6);
+  
+  // 静态后备图片
+  const staticGalleryImages = [
     getStorageUrl("dcbc5ed3-1863-4db6-bacf-59919b3abec6/1768294376731-g5jiv8.jpg"),
     getStorageUrl("e781d029-b8d9-4101-8835-35d1d8938a12/1768294274127-w29hc.jpg"),
     getStorageUrl("e781d029-b8d9-4101-8835-35d1d8938a12/1768294208983-svikya.jpg"),
@@ -91,6 +97,11 @@ const IndoorPlayground = () => {
     getStorageUrl("dcbc5ed3-1863-4db6-bacf-59919b3abec6/1768294381259-ig9ii.jpg"),
     getStorageUrl("dcbc5ed3-1863-4db6-bacf-59919b3abec6/1768294400190-bx9gha.jpg")
   ];
+  
+  // 使用动态图片，如果不足6张则用静态图片补充
+  const galleryImages = dynamicGalleryImages.length >= 6 
+    ? dynamicGalleryImages 
+    : [...dynamicGalleryImages, ...staticGalleryImages.slice(dynamicGalleryImages.length)].slice(0, 6);
 
   const components = [
     "productPages.indoorPlayground.components.slides",

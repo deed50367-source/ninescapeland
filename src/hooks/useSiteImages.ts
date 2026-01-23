@@ -114,6 +114,29 @@ export const useSiteImages = () => {
     return buildImageUrl(path);
   }, [images]);
 
+  // 获取产品图库图片数组
+  const getProductGalleryImages = useCallback((productType: string, count: number = 6): string[] => {
+    const galleryImages: string[] = [];
+    
+    // 首先添加主图 (product.indoorPlayground)
+    const mainKey = `product.${productType}`;
+    const mainPath = images[mainKey] || defaultImages[mainKey];
+    if (mainPath) {
+      galleryImages.push(buildImageUrl(mainPath));
+    }
+    
+    // 然后添加其他图片 (product.indoorPlayground.2, .3, .4, etc.)
+    for (let i = 2; i <= count; i++) {
+      const key = `product.${productType}.${i}`;
+      const path = images[key];
+      if (path) {
+        galleryImages.push(buildImageUrl(path));
+      }
+    }
+    
+    return galleryImages;
+  }, [images]);
+
   const refresh = useCallback(async () => {
     setIsLoading(true);
     cachedImages = null;
@@ -125,7 +148,7 @@ export const useSiteImages = () => {
     setIsLoading(false);
   }, []);
 
-  return { images, isLoading, getImageUrl, refresh };
+  return { images, isLoading, getImageUrl, getProductGalleryImages, refresh };
 };
 
 // 便捷函数 - 预加载图片配置

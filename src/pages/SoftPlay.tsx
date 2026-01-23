@@ -15,6 +15,7 @@ import { useTranslation } from "react-i18next";
 import { useLocalizedPath } from "@/hooks/useLocalizedPath";
 import { Link } from "react-router-dom";
 import { getStorageUrl } from "@/config/galleryImages";
+import { useSiteImages } from "@/hooks/useSiteImages";
 import { motion } from "framer-motion";
 import { 
   Baby, 
@@ -44,6 +45,7 @@ import {
 const SoftPlay = () => {
   const { t } = useTranslation();
   const { localizedPath } = useLocalizedPath();
+  const { getProductGalleryImages } = useSiteImages();
 
   const heroImage = getStorageUrl("dcbc5ed3-1863-4db6-bacf-59919b3abec6/1768294400190-bx9gha.jpg");
 
@@ -70,7 +72,11 @@ const SoftPlay = () => {
     }
   ];
 
-  const galleryImages = [
+  // 动态获取产品图库图片
+  const dynamicGalleryImages = getProductGalleryImages('softPlay', 6);
+  
+  // 静态后备图片
+  const staticGalleryImages = [
     getStorageUrl("dcbc5ed3-1863-4db6-bacf-59919b3abec6/1768294400190-bx9gha.jpg"),
     getStorageUrl("dcbc5ed3-1863-4db6-bacf-59919b3abec6/1768294376731-g5jiv8.jpg"),
     getStorageUrl("e781d029-b8d9-4101-8835-35d1d8938a12/1768294274127-w29hc.jpg"),
@@ -78,6 +84,10 @@ const SoftPlay = () => {
     getStorageUrl("e781d029-b8d9-4101-8835-35d1d8938a12/1768294287219-kmtl6.jpg"),
     getStorageUrl("dcbc5ed3-1863-4db6-bacf-59919b3abec6/1768294400190-bx9gha.jpg")
   ];
+  
+  const galleryImages = dynamicGalleryImages.length >= 6 
+    ? dynamicGalleryImages 
+    : [...dynamicGalleryImages, ...staticGalleryImages.slice(dynamicGalleryImages.length)].slice(0, 6);
 
   const components = [
     "productPages.softPlay.components.ballPits",

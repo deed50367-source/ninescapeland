@@ -16,6 +16,7 @@ import { useTranslation } from "react-i18next";
 import { useLocalizedPath } from "@/hooks/useLocalizedPath";
 import { Link } from "react-router-dom";
 import { getStorageUrl } from "@/config/galleryImages";
+import { useSiteImages } from "@/hooks/useSiteImages";
 import { motion } from "framer-motion";
 import { 
   Zap, 
@@ -62,6 +63,7 @@ import {
 const TrampolinePark = () => {
   const { t } = useTranslation();
   const { localizedPath } = useLocalizedPath();
+  const { getProductGalleryImages } = useSiteImages();
 
   const heroImage = getStorageUrl("88de2e3c-c85e-413b-878d-99b0d0aea8ed/1768294624727-6ia03.jpg");
 
@@ -88,7 +90,11 @@ const TrampolinePark = () => {
     }
   ];
 
-  const galleryImages = [
+  // 动态获取产品图库图片
+  const dynamicGalleryImages = getProductGalleryImages('trampolinePark', 6);
+  
+  // 静态后备图片
+  const staticGalleryImages = [
     getStorageUrl("88de2e3c-c85e-413b-878d-99b0d0aea8ed/1768294624727-6ia03.jpg"),
     getStorageUrl("88de2e3c-c85e-413b-878d-99b0d0aea8ed/1768294617155-efd0q8.jpg"),
     getStorageUrl("88de2e3c-c85e-413b-878d-99b0d0aea8ed/1768294621773-h93mw.jpg"),
@@ -96,6 +102,10 @@ const TrampolinePark = () => {
     getStorageUrl("88de2e3c-c85e-413b-878d-99b0d0aea8ed/1768294614701-b5b7pw.jpg"),
     getStorageUrl("88de2e3c-c85e-413b-878d-99b0d0aea8ed/1768294619294-xsbwg.jpg")
   ];
+  
+  const galleryImages = dynamicGalleryImages.length >= 6 
+    ? dynamicGalleryImages 
+    : [...dynamicGalleryImages, ...staticGalleryImages.slice(dynamicGalleryImages.length)].slice(0, 6);
 
   const stats = [
     { value: "12+", labelKey: "productPages.trampolinePark.stats.zones" },
