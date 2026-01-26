@@ -16,7 +16,9 @@ export const LanguageSwitcher = () => {
   const location = useLocation();
   const { lang } = useParams<{ lang: string }>();
   
-  const currentLang = languages.find((l) => l.code === (lang || i18n.language)) || languages[0];
+  // If no lang param, we're on English (default)
+  const currentLangCode = lang || "en";
+  const currentLang = languages.find((l) => l.code === currentLangCode) || languages[0];
 
   const changeLanguage = (code: string) => {
     i18n.changeLanguage(code);
@@ -24,10 +26,28 @@ export const LanguageSwitcher = () => {
     document.documentElement.dir = langConfig?.rtl ? "rtl" : "ltr";
     document.documentElement.lang = code;
     
-    // Update URL with new language prefix
+    // Get path without current language prefix
     const currentPath = location.pathname;
-    const pathWithoutLang = currentPath.replace(/^\/[a-z]{2}(\/|$)/, "/");
-    const newPath = `/${code}${pathWithoutLang === "/" ? "" : pathWithoutLang}`;
+    let pathWithoutLang: string;
+    
+    if (lang) {
+      // Currently on a non-English route with prefix
+      pathWithoutLang = currentPath.replace(/^\/[a-z]{2}(\/|$)/, "/");
+    } else {
+      // Currently on English route (no prefix)
+      pathWithoutLang = currentPath;
+    }
+    
+    // Build new path
+    let newPath: string;
+    if (code === "en") {
+      // English uses root path (no prefix)
+      newPath = pathWithoutLang === "/" ? "/" : pathWithoutLang;
+    } else {
+      // Other languages use prefix
+      newPath = `/${code}${pathWithoutLang === "/" ? "" : pathWithoutLang}`;
+    }
+    
     navigate(newPath + location.search + location.hash);
   };
 

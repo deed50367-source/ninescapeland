@@ -2,6 +2,7 @@ import { useParams } from "react-router-dom";
 
 export const useLocalizedPath = () => {
   const { lang } = useParams<{ lang: string }>();
+  // If no lang param, we're on English (default, no prefix)
   const currentLang = lang || "en";
   
   const localizedPath = (path: string) => {
@@ -15,6 +16,13 @@ export const useLocalizedPath = () => {
     }
     // Remove leading slash for consistency
     const cleanPath = path.startsWith("/") ? path.slice(1) : path;
+    
+    // English uses root path (no prefix)
+    if (currentLang === "en") {
+      return `/${cleanPath}`.replace(/\/+$/, "") || "/";
+    }
+    
+    // Other languages use prefix
     return `/${currentLang}/${cleanPath}`.replace(/\/+$/, "") || `/${currentLang}`;
   };
 
