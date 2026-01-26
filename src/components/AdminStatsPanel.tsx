@@ -267,7 +267,7 @@ const AdminStatsPanel = () => {
     }
     setIsExporting(true);
     try {
-      exportToExcel(whatsappClicks, whatsappClicksExportColumns, {
+      await exportToExcel(whatsappClicks, whatsappClicksExportColumns, {
         filename: 'whatsapp_clicks',
         sheetName: 'WhatsApp Clicks'
       });

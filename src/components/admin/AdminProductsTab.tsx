@@ -674,28 +674,38 @@ const AdminProductsTab = () => {
       p.slug.toLowerCase().includes(searchQuery.toLowerCase())
   );
 
-  const handleExportProducts = () => {
+  const handleExportProducts = async () => {
     if (filteredProducts.length === 0) {
       toast.error("No products to export");
       return;
     }
-    exportToExcel(filteredProducts, productExportColumns, {
-      filename: 'products',
-      sheetName: 'Products'
-    });
-    toast.success(`Exported ${filteredProducts.length} products`);
+    try {
+      await exportToExcel(filteredProducts, productExportColumns, {
+        filename: 'products',
+        sheetName: 'Products'
+      });
+      toast.success(`Exported ${filteredProducts.length} products`);
+    } catch (error) {
+      console.error('Export error:', error);
+      toast.error("Export failed");
+    }
   };
 
-  const handleExportCategories = () => {
+  const handleExportCategories = async () => {
     if (categories.length === 0) {
       toast.error("No categories to export");
       return;
     }
-    exportToExcel(categories, categoryExportColumns, {
-      filename: 'product_categories',
-      sheetName: 'Categories'
-    });
-    toast.success(`Exported ${categories.length} categories`);
+    try {
+      await exportToExcel(categories, categoryExportColumns, {
+        filename: 'product_categories',
+        sheetName: 'Categories'
+      });
+      toast.success(`Exported ${categories.length} categories`);
+    } catch (error) {
+      console.error('Export error:', error);
+      toast.error("Export failed");
+    }
   };
 
   if (isLoading) {
