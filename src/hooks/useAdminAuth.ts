@@ -17,20 +17,46 @@ export const useAdminAuth = () => {
     }
 
     try {
-      const { data, error } = await supabase
-        .from("user_roles")
-        .select("role")
-        .eq("user_id", userId)
-        .in("role", ["admin", "staff"]);
+      // Use the security definer function instead of querying user_roles directly
+      // This avoids RLS issues on the first login
+      const { data, error } = await supabase.rpc('has_role', {
+        _user_id: userId,
+        _role: 'admin'
+      });
 
       if (error) {
-        console.error("[useAdminAuth] role check error:", error);
-        return false;
+        console.error("[useAdminAuth] has_role check error:", error);
+        // Fallback: also check for staff role
+        const { data: staffData, error: staffError } = await supabase.rpc('has_role', {
+          _user_id: userId,
+          _role: 'staff'
+        });
+        
+        if (staffError) {
+          console.error("[useAdminAuth] has_role staff check error:", staffError);
+          return false;
+        }
+        
+        const hasStaffRole = staffData === true;
+        adminCacheRef.current = { userId, isAdmin: hasStaffRole };
+        return hasStaffRole;
       }
 
-      const hasRole = !!(data && data.length > 0);
-      adminCacheRef.current = { userId, isAdmin: hasRole };
-      return hasRole;
+      const hasAdminRole = data === true;
+      
+      // If not admin, check for staff role
+      if (!hasAdminRole) {
+        const { data: staffData } = await supabase.rpc('has_role', {
+          _user_id: userId,
+          _role: 'staff'
+        });
+        const hasStaffRole = staffData === true;
+        adminCacheRef.current = { userId, isAdmin: hasStaffRole };
+        return hasStaffRole;
+      }
+      
+      adminCacheRef.current = { userId, isAdmin: hasAdminRole };
+      return hasAdminRole;
     } catch (err) {
       console.error("[useAdminAuth] unexpected error", err);
       return false;
