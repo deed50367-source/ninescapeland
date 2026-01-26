@@ -1,3 +1,4 @@
+# Auto-deploy to Hostinger on push to main
 name: Build and Deploy to Hostinger
 
 on:
