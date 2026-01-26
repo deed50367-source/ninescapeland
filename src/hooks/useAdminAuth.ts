@@ -6,18 +6,10 @@ export const useAdminAuth = () => {
   const [user, setUser] = useState<User | null>(null);
   const [isAdmin, setIsAdmin] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
-
-  const adminCacheRef = useRef<{ userId: string; isAdmin: boolean } | null>(null);
-  const activeUserIdRef = useRef<string | null>(null);
-  const initResolvedRef = useRef(false);
+  const [authChecked, setAuthChecked] = useState(false);
 
   const checkAdminRole = useCallback(async (userId: string): Promise<boolean> => {
-    if (adminCacheRef.current?.userId === userId) {
-      return adminCacheRef.current.isAdmin;
-    }
-
     try {
-      // Query user_roles directly - RLS allows users to view their own roles
       const { data, error } = await supabase
         .from("user_roles")
         .select("role")
@@ -30,115 +22,76 @@ export const useAdminAuth = () => {
         return false;
       }
 
-      const hasRole = !!(data && data.length > 0);
-      adminCacheRef.current = { userId, isAdmin: hasRole };
-      return hasRole;
+      return !!(data && data.length > 0);
     } catch (err) {
       console.error("[useAdminAuth] unexpected error", err);
       return false;
     }
   }, []);
 
-  const applySession = useCallback(
-    async (session: Session | null, isInitialLoad = false) => {
-      const nextUser = session?.user ?? null;
-
-      if (!nextUser) {
-        activeUserIdRef.current = null;
-        adminCacheRef.current = null;
-        setUser(null);
-        setIsAdmin(false);
-        if (isInitialLoad) setIsLoading(false);
-        return;
-      }
-
-      // Only show loading spinner on initial load, not on token refresh
-      activeUserIdRef.current = nextUser.id;
-      setUser(nextUser);
-      if (isInitialLoad) setIsLoading(true);
-
-      const hasAdminRole = await checkAdminRole(nextUser.id);
-
-      // If auth changed while the role check was in-flight, ignore this result.
-      if (activeUserIdRef.current !== nextUser.id) return;
-
-      setIsAdmin(hasAdminRole);
-      if (isInitialLoad) setIsLoading(false);
-    },
-    [checkAdminRole]
-  );
-
   useEffect(() => {
-    let cancelled = false;
+    let mounted = true;
 
-    const safeApply = async (session: Session | null, isInitial = false) => {
+    const initAuth = async () => {
       try {
-        if (cancelled) return;
-        await applySession(session, isInitial);
-      } catch (err) {
-        console.error("[useAdminAuth] apply session error", err);
-        if (!cancelled) {
-          activeUserIdRef.current = null;
-          adminCacheRef.current = null;
+        const { data: { session } } = await supabase.auth.getSession();
+        
+        if (!mounted) return;
+        
+        if (!session?.user) {
           setUser(null);
           setIsAdmin(false);
           setIsLoading(false);
+          setAuthChecked(true);
+          return;
         }
-      } finally {
-        if (isInitial) initResolvedRef.current = true;
+
+        setUser(session.user);
+        
+        const hasRole = await checkAdminRole(session.user.id);
+        
+        if (!mounted) return;
+        
+        setIsAdmin(hasRole);
+        setIsLoading(false);
+        setAuthChecked(true);
+      } catch (error) {
+        console.error("[useAdminAuth] init error:", error);
+        if (mounted) {
+          setUser(null);
+          setIsAdmin(false);
+          setIsLoading(false);
+          setAuthChecked(true);
+        }
       }
     };
 
-    // Timeout fallback: if auth doesn't resolve within 3 seconds, stop loading
-    const timeoutId = setTimeout(() => {
-      if (!initResolvedRef.current && !cancelled) {
-        console.warn("[useAdminAuth] Auth initialization timed out, falling back");
-        initResolvedRef.current = true;
-        setIsLoading(false);
+    initAuth();
+
+    const { data: { subscription } } = supabase.auth.onAuthStateChange(async (event, session) => {
+      if (!authChecked) return; // Skip until initial check is done
+      
+      if (event === "SIGNED_OUT") {
+        setUser(null);
+        setIsAdmin(false);
+      } else if (event === "SIGNED_IN" || event === "USER_UPDATED") {
+        if (session?.user) {
+          setUser(session.user);
+          const hasRole = await checkAdminRole(session.user.id);
+          if (mounted) {
+            setIsAdmin(hasRole);
+          }
+        }
       }
-    }, 3000);
-
-    // 1) Subscribe FIRST (prevents missing the initial session event)
-    const {
-      data: { subscription },
-    } = supabase.auth.onAuthStateChange((event, session) => {
-      // Never show the blocking spinner for background token refresh.
-      if (event === "TOKEN_REFRESHED") return;
-
-      // If we haven't resolved initial auth state yet, treat *the first* auth event
-      // (SIGNED_IN / SIGNED_OUT / USER_UPDATED / INITIAL_SESSION) as an initial load.
-      const isInitial = !initResolvedRef.current;
-
-      // After we have a stable initial state, ignore redundant INITIAL_SESSION events.
-      if (!isInitial && event === "INITIAL_SESSION") return;
-
-      void safeApply(session, isInitial);
     });
 
-    // 2) Also reconcile from stored session (covers cases where INITIAL_SESSION doesn't fire)
-    supabase.auth
-      .getSession()
-      .then(({ data }) => {
-        if (!initResolvedRef.current) {
-          safeApply(data.session, true);
-        }
-      })
-      .catch((err) => {
-        console.error("[useAdminAuth] getSession error", err);
-        if (!cancelled) setIsLoading(false);
-        initResolvedRef.current = true;
-      });
-
     return () => {
-      cancelled = true;
-      clearTimeout(timeoutId);
+      mounted = false;
       subscription.unsubscribe();
     };
-  }, [applySession]);
+  }, [checkAdminRole, authChecked]);
 
   const signOut = useCallback(async () => {
-    adminCacheRef.current = null;
-    activeUserIdRef.current = null;
     await supabase.auth.signOut();
   }, []);
 
