@@ -19,8 +19,8 @@ export interface OrganizationSchemaProps {
 
 export const OrganizationSchema = ({
   name = "NinescapeLand",
-  url = "https://ninescapeland.lovable.app",
-  logo = "https://ninescapeland.lovable.app/favicon.png",
+  url = "https://indoorplaygroundsolution.com",
+  logo = "https://indoorplaygroundsolution.com/favicon.png",
   description = "Professional indoor playground equipment manufacturer specializing in custom indoor playgrounds, trampoline parks, ninja courses, and soft play equipment worldwide.",
   email = "sale@indoorplaygroundsolution.com",
   phone = "+86-150-5878-2901",
@@ -102,7 +102,7 @@ export const ProductSchema = ({
     manufacturer: {
       "@type": "Organization",
       name: "NinescapeLand",
-      url: "https://ninescapeland.lovable.app"
+      url: "https://indoorplaygroundsolution.com"
     }
   };
 
@@ -178,7 +178,7 @@ export const ArticleSchema = ({
       name: "NinescapeLand",
       logo: {
         "@type": "ImageObject",
-        url: "https://ninescapeland.lovable.app/favicon.png"
+        url: "https://indoorplaygroundsolution.com/favicon.png"
       }
     }
   };
@@ -267,13 +267,13 @@ export const LocalBusinessSchema = () => {
   const schema = {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
-    "@id": "https://ninescapeland.lovable.app",
+    "@id": "https://indoorplaygroundsolution.com",
     name: "NinescapeLand",
     description: "Professional indoor playground equipment manufacturer specializing in custom indoor playgrounds, trampoline parks, ninja courses, and soft play equipment. Factory direct sales with worldwide shipping.",
-    url: "https://ninescapeland.lovable.app",
+    url: "https://indoorplaygroundsolution.com",
     telephone: "+86-150-5878-2901",
     email: "sale@indoorplaygroundsolution.com",
-    image: "https://ninescapeland.lovable.app/favicon.png",
+    image: "https://indoorplaygroundsolution.com/favicon.png",
     priceRange: "$$$$",
     address: {
       "@type": "PostalAddress",
@@ -352,7 +352,7 @@ export const WebsiteSchema = () => {
     "@context": "https://schema.org",
     "@type": "WebSite",
     name: "NinescapeLand",
-    url: "https://ninescapeland.lovable.app",
+    url: "https://indoorplaygroundsolution.com",
     description: "Professional indoor playground equipment manufacturer",
     publisher: {
       "@type": "Organization",
@@ -362,7 +362,7 @@ export const WebsiteSchema = () => {
       "@type": "SearchAction",
       target: {
         "@type": "EntryPoint",
-        urlTemplate: "https://ninescapeland.lovable.app/en/products?search={search_term_string}"
+        urlTemplate: "https://indoorplaygroundsolution.com/en/products?search={search_term_string}"
       },
       "query-input": "required name=search_term_string"
     }

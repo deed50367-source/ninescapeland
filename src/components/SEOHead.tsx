@@ -12,7 +12,7 @@ interface SEOHeadProps {
   noIndex?: boolean;
 }
 
-const baseUrl = "https://ninescapeland.lovable.app";
+const baseUrl = "https://indoorplaygroundsolution.com";
 const defaultOgImage = "/og-image.png";
 const siteName = "NinescapeLand";
 
