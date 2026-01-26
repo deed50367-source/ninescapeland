@@ -3,7 +3,7 @@ import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 
-import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate, useLocation } from "react-router-dom";
 import { ScrollToTop } from "@/components/ScrollToTop";
 import { LanguageWrapper } from "@/components/LanguageWrapper";
 import Index from "./pages/Index";
@@ -26,6 +26,13 @@ import AdminLogin from "./pages/AdminLogin";
 import AdminDashboard from "./pages/AdminDashboard";
 
 const queryClient = new QueryClient();
+
+// Redirect component for /en/* routes to remove the /en prefix
+const EnglishRedirect = () => {
+  const location = useLocation();
+  const newPath = location.pathname.replace(/^\/en\/?/, '/') || '/';
+  return <Navigate to={newPath + location.search + location.hash} replace />;
+};
 
 // Shared page routes for reuse
 const pageRoutes = (
@@ -61,8 +68,8 @@ const App = () => (
           <Route path="/admin/login" element={<AdminLogin />} />
           
           {/* Redirect /en/* to root (English is default without prefix) */}
-          <Route path="/en" element={<Navigate to="/" replace />} />
-          <Route path="/en/*" element={<Navigate to={window.location.pathname.replace(/^\/en/, '') || '/'} replace />} />
+          <Route path="/en" element={<EnglishRedirect />} />
+          <Route path="/en/*" element={<EnglishRedirect />} />
           
           {/* English routes (default, no prefix) */}
           <Route path="/" element={<LanguageWrapper defaultLang="en" />}>
