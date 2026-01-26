@@ -1,4 +1,6 @@
-# Welcome to your Lovable project
+# Indoor Playground Solution
+
+<!-- Deployment trigger: 2026-01-26 -->
 
 ## Project info
 
