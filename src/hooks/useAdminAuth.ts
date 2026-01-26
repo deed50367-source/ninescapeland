@@ -6,7 +6,6 @@ export const useAdminAuth = () => {
   const [user, setUser] = useState<User | null>(null);
   const [isAdmin, setIsAdmin] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
-  const [authChecked, setAuthChecked] = useState(false);
 
   const checkAdminRole = useCallback(async (userId: string): Promise<boolean> => {
     try {
@@ -42,7 +41,6 @@ export const useAdminAuth = () => {
           setUser(null);
           setIsAdmin(false);
           setIsLoading(false);
-          setAuthChecked(true);
           return;
         }
 
@@ -54,14 +52,12 @@ export const useAdminAuth = () => {
         
         setIsAdmin(hasRole);
         setIsLoading(false);
-        setAuthChecked(true);
       } catch (error) {
         console.error("[useAdminAuth] init error:", error);
         if (mounted) {
           setUser(null);
           setIsAdmin(false);
           setIsLoading(false);
-          setAuthChecked(true);
         }
       }
     };
@@ -69,7 +65,7 @@ export const useAdminAuth = () => {
     initAuth();
 
     const { data: { subscription } } = supabase.auth.onAuthStateChange(async (event, session) => {
-      if (!authChecked) return; // Skip until initial check is done
+      if (!mounted) return;
       
       if (event === "SIGNED_OUT") {
         setUser(null);
@@ -89,7 +85,7 @@ export const useAdminAuth = () => {
       mounted = false;
       subscription.unsubscribe();
     };
-  }, [checkAdminRole, authChecked]);
+  }, [checkAdminRole]);
 
   const signOut = useCallback(async () => {
     await supabase.auth.signOut();
