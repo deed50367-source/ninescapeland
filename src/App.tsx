@@ -27,6 +27,27 @@ import AdminDashboard from "./pages/AdminDashboard";
 
 const queryClient = new QueryClient();
 
+// Shared page routes for reuse
+const pageRoutes = (
+  <>
+    <Route index element={<Index />} />
+    <Route path="about-us" element={<AboutUs />} />
+    <Route path="products" element={<DynamicProducts />} />
+    <Route path="products/indoor-playground" element={<IndoorPlayground />} />
+    <Route path="products/trampoline-park" element={<TrampolinePark />} />
+    <Route path="products/ninja-course" element={<NinjaCourse />} />
+    <Route path="products/soft-play" element={<SoftPlay />} />
+    <Route path="products/:slug" element={<DynamicProductDetail />} />
+    <Route path="process" element={<Process />} />
+    <Route path="projects" element={<Projects />} />
+    <Route path="contact" element={<Contact />} />
+    <Route path="faq" element={<FAQ />} />
+    <Route path="case-studies" element={<CaseStudies />} />
+    <Route path="blog" element={<Blog />} />
+    <Route path="blog/:slug" element={<BlogPost />} />
+  </>
+);
+
 const App = () => (
   <QueryClientProvider client={queryClient}>
     <TooltipProvider>
@@ -35,30 +56,22 @@ const App = () => (
       <BrowserRouter>
         <ScrollToTop />
         <Routes>
-          {/* Redirect root to default language */}
-          <Route path="/" element={<Navigate to="/en" replace />} />
-          
           {/* Admin routes - no language prefix needed */}
           <Route path="/admin" element={<AdminDashboard />} />
           <Route path="/admin/login" element={<AdminLogin />} />
           
-          {/* Language-prefixed public routes */}
+          {/* Redirect /en/* to root (English is default without prefix) */}
+          <Route path="/en" element={<Navigate to="/" replace />} />
+          <Route path="/en/*" element={<Navigate to={window.location.pathname.replace(/^\/en/, '') || '/'} replace />} />
+          
+          {/* English routes (default, no prefix) */}
+          <Route path="/" element={<LanguageWrapper defaultLang="en" />}>
+            {pageRoutes}
+          </Route>
+          
+          {/* Other language-prefixed routes (ar, de, es, pt) */}
           <Route path="/:lang" element={<LanguageWrapper />}>
-            <Route index element={<Index />} />
-            <Route path="about-us" element={<AboutUs />} />
-            <Route path="products" element={<DynamicProducts />} />
-            <Route path="products/indoor-playground" element={<IndoorPlayground />} />
-            <Route path="products/trampoline-park" element={<TrampolinePark />} />
-            <Route path="products/ninja-course" element={<NinjaCourse />} />
-            <Route path="products/soft-play" element={<SoftPlay />} />
-            <Route path="products/:slug" element={<DynamicProductDetail />} />
-            <Route path="process" element={<Process />} />
-            <Route path="projects" element={<Projects />} />
-            <Route path="contact" element={<Contact />} />
-            <Route path="faq" element={<FAQ />} />
-            <Route path="case-studies" element={<CaseStudies />} />
-            <Route path="blog" element={<Blog />} />
-            <Route path="blog/:slug" element={<BlogPost />} />
+            {pageRoutes}
           </Route>
           
           {/* Catch-all route */}

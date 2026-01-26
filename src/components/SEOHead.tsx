@@ -27,7 +27,8 @@ export const SEOHead = ({
   const { t, i18n } = useTranslation();
   const { lang } = useParams<{ lang: string }>();
   const location = useLocation();
-  const currentLang = lang || i18n.language || "en";
+  // If no lang param, we're on English (default)
+  const currentLang = lang || "en";
   
   const seo = t(`seo.${pageKey}`, { returnObjects: true }) as {
     title?: string;
@@ -46,8 +47,27 @@ export const SEOHead = ({
   const langConfig = languages.find((l) => l.code === currentLang);
   const isRTL = langConfig?.rtl || false;
 
+  // Generate alternate links - English uses root, others use prefix
+  const getPathWithoutLang = () => {
+    if (lang) {
+      // Currently on a non-English route with prefix
+      return canonicalPath.replace(/^\/[a-z]{2}/, "");
+    }
+    // Currently on English route (no prefix)
+    return canonicalPath;
+  };
+  
+  const pathWithoutLang = getPathWithoutLang();
+  
   const alternateLinks = languages.map((l) => {
-    const pathWithoutLang = canonicalPath.replace(/^\/[a-z]{2}/, "");
+    if (l.code === "en") {
+      // English uses root path
+      return {
+        hrefLang: l.code,
+        href: `${baseUrl}${pathWithoutLang || "/"}`,
+      };
+    }
+    // Other languages use prefix
     return {
       hrefLang: l.code,
       href: `${baseUrl}/${l.code}${pathWithoutLang}`,
@@ -85,7 +105,8 @@ export const SEOHead = ({
       {alternateLinks.map((link) => (
         <link key={link.hrefLang} rel="alternate" hrefLang={link.hrefLang} href={link.href} />
       ))}
-      <link rel="alternate" hrefLang="x-default" href={`${baseUrl}/en${canonicalPath.replace(/^\/[a-z]{2}/, "")}`} />
+      {/* x-default points to English (root) */}
+      <link rel="alternate" hrefLang="x-default" href={`${baseUrl}${pathWithoutLang || "/"}`} />
     </Helmet>
   );
 };
