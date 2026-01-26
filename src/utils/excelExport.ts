@@ -1,4 +1,4 @@
-import * as XLSX from 'xlsx';
+import ExcelJS from 'exceljs';
 import { format } from 'date-fns';
 
 interface ExportOptions {
@@ -7,49 +7,78 @@ interface ExportOptions {
 }
 
 /**
- * Export data to Excel file
+ * Export data to Excel file using ExcelJS (secure alternative to xlsx)
  */
-export const exportToExcel = <T extends object>(
+export const exportToExcel = async <T extends object>(
   data: T[],
   columns: { key: keyof T; header: string; transform?: (value: unknown, row: T) => string | number }[],
   options: ExportOptions
 ) => {
-  // Transform data according to column definitions
-  const exportData = data.map((row) => {
-    const exportRow: Record<string, string | number> = {};
+  // Create workbook and worksheet
+  const workbook = new ExcelJS.Workbook();
+  const worksheet = workbook.addWorksheet(options.sheetName || 'Sheet1');
+
+  // Set up columns with headers and widths
+  worksheet.columns = columns.map((col) => {
+    // Calculate width based on header length and data
+    const headerWidth = col.header.length;
+    const maxDataWidth = Math.max(
+      0,
+      ...data.map((row) => {
+        const value = row[col.key];
+        const transformedValue = col.transform 
+          ? col.transform(value, row)
+          : (value as string | number) ?? '';
+        return String(transformedValue).length;
+      })
+    );
+    const width = Math.min(Math.max(headerWidth, maxDataWidth) + 2, 50);
+
+    return {
+      header: col.header,
+      key: col.header,
+      width,
+    };
+  });
+
+  // Style header row
+  worksheet.getRow(1).font = { bold: true };
+  worksheet.getRow(1).fill = {
+    type: 'pattern',
+    pattern: 'solid',
+    fgColor: { argb: 'FFE0E0E0' },
+  };
+
+  // Add data rows
+  data.forEach((row) => {
+    const rowData: Record<string, string | number> = {};
     columns.forEach((col) => {
       const value = row[col.key];
-      exportRow[col.header] = col.transform 
+      rowData[col.header] = col.transform 
         ? col.transform(value, row)
         : (value as string | number) ?? '';
     });
-    return exportRow;
+    worksheet.addRow(rowData);
   });
-
-  // Create workbook and worksheet
-  const wb = XLSX.utils.book_new();
-  const ws = XLSX.utils.json_to_sheet(exportData);
-
-  // Auto-adjust column widths
-  const maxWidths: number[] = [];
-  columns.forEach((col, idx) => {
-    const headerWidth = col.header.length;
-    const maxDataWidth = Math.max(
-      ...exportData.map((row) => String(row[col.header] ?? '').length)
-    );
-    maxWidths[idx] = Math.min(Math.max(headerWidth, maxDataWidth) + 2, 50);
-  });
-  ws['!cols'] = maxWidths.map((w) => ({ wch: w }));
-
-  // Add worksheet to workbook
-  XLSX.utils.book_append_sheet(wb, ws, options.sheetName || 'Sheet1');
 
   // Generate filename with timestamp
   const timestamp = format(new Date(), 'yyyy-MM-dd_HHmm');
   const filename = `${options.filename}_${timestamp}.xlsx`;
 
-  // Download file
-  XLSX.writeFile(wb, filename);
+  // Generate buffer and download
+  const buffer = await workbook.xlsx.writeBuffer();
+  const blob = new Blob([buffer], { 
+    type: 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet' 
+  });
+  
+  const url = window.URL.createObjectURL(blob);
+  const link = document.createElement('a');
+  link.href = url;
+  link.download = filename;
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+  window.URL.revokeObjectURL(url);
 };
 
 /**

@@ -183,16 +183,21 @@ const AdminInquiriesTab = () => {
     setIsDetailOpen(true);
   };
 
-  const handleExport = () => {
+  const handleExport = async () => {
     if (filteredInquiries.length === 0) {
       toast.error("No data to export");
       return;
     }
-    exportToExcel(filteredInquiries, inquiryExportColumns, {
-      filename: 'inquiries',
-      sheetName: 'Inquiries'
-    });
-    toast.success(`Exported ${filteredInquiries.length} inquiries`);
+    try {
+      await exportToExcel(filteredInquiries, inquiryExportColumns, {
+        filename: 'inquiries',
+        sheetName: 'Inquiries'
+      });
+      toast.success(`Exported ${filteredInquiries.length} inquiries`);
+    } catch (error) {
+      console.error('Export error:', error);
+      toast.error("Export failed");
+    }
   };
 
   return (
