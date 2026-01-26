@@ -87,6 +87,15 @@ export const useAdminAuth = () => {
       }
     };
 
+    // Timeout fallback: if auth doesn't resolve within 5 seconds, stop loading
+    const timeoutId = setTimeout(() => {
+      if (!initResolvedRef.current && !cancelled) {
+        console.warn("[useAdminAuth] Auth initialization timed out, falling back");
+        initResolvedRef.current = true;
+        setIsLoading(false);
+      }
+    }, 5000);
+
     // 1) Subscribe FIRST (prevents missing the initial session event)
     const {
       data: { subscription },
@@ -120,6 +129,7 @@ export const useAdminAuth = () => {
 
     return () => {
       cancelled = true;
+      clearTimeout(timeoutId);
       subscription.unsubscribe();
     };
   }, [applySession]);
