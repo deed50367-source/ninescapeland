@@ -22,7 +22,7 @@ import { Calendar, ArrowRight, Clock, Sparkles, TrendingUp } from "lucide-react"
 import { format } from "date-fns";
 import { Skeleton } from "@/components/ui/skeleton";
 import { SEOHead } from "@/components/SEOHead";
-import { BreadcrumbSchema } from "@/components/StructuredData";
+import { BreadcrumbSchema, BlogSchema, CollectionPageSchema } from "@/components/StructuredData";
 import { Badge } from "@/components/ui/badge";
 import {
   Pagination,
@@ -118,10 +118,41 @@ const Blog = () => {
     { name: "Blog", url: "https://indoorplaygroundsolution.com/blog" }
   ];
 
+  const blogUrl = "https://indoorplaygroundsolution.com/blog";
+
+  // Prepare blog posts for schema
+  const blogPostsForSchema = posts?.slice(0, 10).map((post, index) => ({
+    position: index + 1,
+    title: post.title,
+    url: `https://indoorplaygroundsolution.com${localizedPath(`/blog/${post.slug}`)}`,
+    image: post.cover_image || undefined,
+    datePublished: post.published_at || undefined,
+    description: post.excerpt || undefined
+  })) || [];
+
   return (
     <div className="min-h-screen flex flex-col">
       <SEOHead pageKey="blog" />
       <BreadcrumbSchema items={breadcrumbItems} />
+      
+      {/* Blog Collection Page Schema */}
+      <CollectionPageSchema
+        name={t("pages.blog.title") + " " + t("pages.blog.titleHighlight")}
+        description={t("pages.blog.description")}
+        url={blogUrl}
+        numberOfItems={posts?.length || 0}
+      />
+      
+      {/* Blog Schema with post list */}
+      {blogPostsForSchema.length > 0 && (
+        <BlogSchema
+          name="NinescapeLand Blog"
+          description="Expert insights on indoor playground design, trampoline park business, installation guides, and industry trends from NinescapeLand."
+          url={blogUrl}
+          blogPosts={blogPostsForSchema}
+        />
+      )}
+      
       <Header />
       
       <PageHero

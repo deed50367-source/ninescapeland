@@ -677,3 +677,94 @@ export const OfferCatalogSchema = ({
     </Helmet>
   );
 };
+
+// Blog Schema - for blog listing pages
+export interface BlogItem {
+  position: number;
+  title: string;
+  url: string;
+  image?: string;
+  datePublished?: string;
+  description?: string;
+}
+
+export interface BlogSchemaProps {
+  name: string;
+  description: string;
+  url: string;
+  blogPosts: BlogItem[];
+}
+
+export const BlogSchema = ({
+  name,
+  description,
+  url,
+  blogPosts
+}: BlogSchemaProps) => {
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "Blog",
+    name,
+    description,
+    url,
+    publisher: {
+      "@type": "Organization",
+      name: "NinescapeLand",
+      url: "https://indoorplaygroundsolution.com",
+      logo: {
+        "@type": "ImageObject",
+        url: "https://indoorplaygroundsolution.com/favicon.png"
+      }
+    },
+    blogPost: blogPosts.map((post) => ({
+      "@type": "BlogPosting",
+      position: post.position,
+      headline: post.title,
+      url: post.url,
+      image: post.image,
+      datePublished: post.datePublished,
+      description: post.description,
+      author: {
+        "@type": "Organization",
+        name: "NinescapeLand Team"
+      }
+    }))
+  };
+
+  return (
+    <Helmet>
+      <script type="application/ld+json">
+        {JSON.stringify(schema)}
+      </script>
+    </Helmet>
+  );
+};
+
+// SearchAction Schema for Blog
+export interface BlogSearchActionSchemaProps {
+  blogUrl: string;
+}
+
+export const BlogSearchActionSchema = ({ blogUrl }: BlogSearchActionSchemaProps) => {
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    url: blogUrl,
+    potentialAction: {
+      "@type": "SearchAction",
+      target: {
+        "@type": "EntryPoint",
+        urlTemplate: `${blogUrl}?search={search_term_string}`
+      },
+      "query-input": "required name=search_term_string"
+    }
+  };
+
+  return (
+    <Helmet>
+      <script type="application/ld+json">
+        {JSON.stringify(schema)}
+      </script>
+    </Helmet>
+  );
+};
