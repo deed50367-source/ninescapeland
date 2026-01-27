@@ -38,7 +38,53 @@
     "notFoundDescription": "O artigo que você procura não existe ou foi removido.",
     "backToBlog": "Voltar ao Blog",
     "pageInfo": "Página {{current}} de {{total}}",
-    "showingPosts": "Mostrando {{from}}-{{to}} de {{total}} artigos"
+    "showingPosts": "Mostrando {{from}}-{{to}} de {{total}} artigos",
+    "related": {
+      "badge": "Continue Lendo",
+      "title": "Artigos Relacionados",
+      "description": "Explore mais insights e guias sobre o negócio e design de playgrounds"
+    },
+    "categoryLabel": "Categoria",
+    "tagsLabel": "Tags",
+    "featuredPost": "Artigo em Destaque",
+    "latestArticles": "Últimas Atualizações",
+    "allPosts": "Todos os Artigos",
+    "exploreTopics": "Explorar Tópicos",
+    "exploreTopicsDesc": "Descubra insights em várias categorias para ter sucesso na indústria de playgrounds",
+    "categories": {
+      "tips": "Dicas Profissionais",
+      "trends": "Tendências do Setor",
+      "guides": "Guias Práticos",
+      "design": "Ideias de Design",
+      "safety": "Normas de Segurança",
+      "business": "Crescimento do Negócio"
+    },
+    "stats": {
+      "articles": "Artigos Publicados",
+      "readers": "Leitores Mensais",
+      "countries": "Países Alcançados",
+      "experience": "Anos de Experiência"
+    },
+    "newsletter": {
+      "badge": "Fique Informado",
+      "title": "Assine Nossa Newsletter",
+      "description": "Receba os últimos insights do setor, dicas e conteúdo exclusivo diretamente na sua caixa de entrada.",
+      "placeholder": "Digite seu e-mail",
+      "subscribe": "Assinar",
+      "privacy": "Respeitamos sua privacidade. Cancele quando quiser.",
+      "success": "Bem-vindo!",
+      "successDesc": "Você se inscreveu com sucesso em nossa newsletter.",
+      "thankYou": "Obrigado por se inscrever!"
+    },
+    "sidebar": {
+      "search": "Pesquisar Artigos",
+      "searchPlaceholder": "Pesquisar...",
+      "categories": "Categorias",
+      "recentPosts": "Publicações Recentes",
+      "popularTags": "Tags Populares",
+      "newsletter": "Fique Atualizado",
+      "newsletterDesc": "Inscreva-se para receber os últimos insights diretamente no seu e-mail."
+    }
   },
   "pages": {
     "blog": {
