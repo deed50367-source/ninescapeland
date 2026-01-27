@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 import { useQuery } from "@tanstack/react-query";
@@ -23,6 +24,17 @@ import { Skeleton } from "@/components/ui/skeleton";
 import { SEOHead } from "@/components/SEOHead";
 import { BreadcrumbSchema } from "@/components/StructuredData";
 import { Badge } from "@/components/ui/badge";
+import {
+  Pagination,
+  PaginationContent,
+  PaginationEllipsis,
+  PaginationItem,
+  PaginationLink,
+  PaginationNext,
+  PaginationPrevious,
+} from "@/components/ui/pagination";
+
+const POSTS_PER_PAGE = 9;
 
 const containerVariants = {
   hidden: { opacity: 0 },
@@ -41,6 +53,7 @@ const Blog = () => {
   const { t, i18n } = useTranslation();
   const { localizedPath } = useLocalizedPath();
   const { isRTL } = useRTL();
+  const [currentPage, setCurrentPage] = useState(1);
 
   // Get current language code
   const currentLang = i18n.language?.split('-')[0] || 'en';
@@ -61,7 +74,36 @@ const Blog = () => {
   });
 
   const featuredPost = posts?.[0];
-  const remainingPosts = posts?.slice(1);
+  const allRemainingPosts = posts?.slice(1) || [];
+  
+  // Pagination logic
+  const totalPages = Math.ceil(allRemainingPosts.length / POSTS_PER_PAGE);
+  const startIndex = (currentPage - 1) * POSTS_PER_PAGE;
+  const endIndex = startIndex + POSTS_PER_PAGE;
+  const remainingPosts = allRemainingPosts.slice(startIndex, endIndex);
+
+  // Generate page numbers for display
+  const getPageNumbers = () => {
+    const pages: (number | 'ellipsis')[] = [];
+    if (totalPages <= 5) {
+      for (let i = 1; i <= totalPages; i++) pages.push(i);
+    } else {
+      if (currentPage <= 3) {
+        pages.push(1, 2, 3, 4, 'ellipsis', totalPages);
+      } else if (currentPage >= totalPages - 2) {
+        pages.push(1, 'ellipsis', totalPages - 3, totalPages - 2, totalPages - 1, totalPages);
+      } else {
+        pages.push(1, 'ellipsis', currentPage - 1, currentPage, currentPage + 1, 'ellipsis', totalPages);
+      }
+    }
+    return pages;
+  };
+
+  const handlePageChange = (page: number) => {
+    setCurrentPage(page);
+    // Scroll to the posts section
+    document.getElementById('all-posts-heading')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  };
 
   // Calculate reading time
   const getReadingTime = (content: string | null) => {
@@ -270,6 +312,63 @@ const Blog = () => {
                     <p className="text-muted-foreground text-lg max-w-md mx-auto">{t("blog.noPostsDescription")}</p>
                   </motion.div>
                 ) : null}
+
+                {/* Pagination */}
+                {totalPages > 1 && !isLoading && (
+                  <motion.div
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    className="mt-12"
+                  >
+                    <Pagination>
+                      <PaginationContent className={isRTL ? 'flex-row-reverse' : ''}>
+                        {/* Previous */}
+                        <PaginationItem>
+                          <PaginationPrevious
+                            onClick={() => currentPage > 1 && handlePageChange(currentPage - 1)}
+                            className={`cursor-pointer ${currentPage === 1 ? 'pointer-events-none opacity-50' : 'hover:bg-primary/10'}`}
+                          />
+                        </PaginationItem>
+
+                        {/* Page Numbers */}
+                        {getPageNumbers().map((page, index) => (
+                          <PaginationItem key={`${page}-${index}`}>
+                            {page === 'ellipsis' ? (
+                              <PaginationEllipsis />
+                            ) : (
+                              <PaginationLink
+                                onClick={() => handlePageChange(page)}
+                                isActive={currentPage === page}
+                                className="cursor-pointer hover:bg-primary/10"
+                              >
+                                {page}
+                              </PaginationLink>
+                            )}
+                          </PaginationItem>
+                        ))}
+
+                        {/* Next */}
+                        <PaginationItem>
+                          <PaginationNext
+                            onClick={() => currentPage < totalPages && handlePageChange(currentPage + 1)}
+                            className={`cursor-pointer ${currentPage === totalPages ? 'pointer-events-none opacity-50' : 'hover:bg-primary/10'}`}
+                          />
+                        </PaginationItem>
+                      </PaginationContent>
+                    </Pagination>
+
+                    {/* Page Info */}
+                    <p className="text-center text-sm text-muted-foreground mt-4">
+                      {t("blog.pageInfo", { current: currentPage, total: totalPages })} 
+                      {" · "}
+                      {t("blog.showingPosts", { 
+                        from: startIndex + 1, 
+                        to: Math.min(endIndex, allRemainingPosts.length), 
+                        total: allRemainingPosts.length 
+                      })}
+                    </p>
+                  </motion.div>
+                )}
               </div>
 
               {/* Sidebar */}

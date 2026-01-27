@@ -36,7 +36,9 @@
     "noPostsDescription": "Vuelva más tarde para las últimas noticias y artículos.",
     "notFound": "Publicación No Encontrada",
     "notFoundDescription": "El artículo que busca no existe o ha sido eliminado.",
-    "backToBlog": "Volver al Blog"
+    "backToBlog": "Volver al Blog",
+    "pageInfo": "Página {{current}} de {{total}}",
+    "showingPosts": "Mostrando {{from}}-{{to}} de {{total}} artículos"
   },
   "pages": {
     "blog": {

@@ -36,7 +36,9 @@
     "noPostsDescription": "تحقق لاحقاً للحصول على آخر الأخبار والمقالات.",
     "notFound": "المقال غير موجود",
     "notFoundDescription": "المقال الذي تبحث عنه غير موجود أو تم إزالته.",
-    "backToBlog": "العودة للمدونة"
+    "backToBlog": "العودة للمدونة",
+    "pageInfo": "صفحة {{current}} من {{total}}",
+    "showingPosts": "عرض {{from}}-{{to}} من {{total}} مقال"
   },
   "pages": {
     "blog": {
