@@ -20,6 +20,7 @@ import { Calendar, ArrowRight, Clock, Sparkles, TrendingUp } from "lucide-react"
 import { format } from "date-fns";
 import { Skeleton } from "@/components/ui/skeleton";
 import { SEOHead } from "@/components/SEOHead";
+import { BreadcrumbSchema } from "@/components/StructuredData";
 import { Badge } from "@/components/ui/badge";
 
 const containerVariants = {
@@ -57,9 +58,23 @@ const Blog = () => {
   const featuredPost = posts?.[0];
   const remainingPosts = posts?.slice(1);
 
+  // Calculate reading time
+  const getReadingTime = (content: string | null) => {
+    if (!content) return 1;
+    const plainText = content.replace(/<[^>]+>/g, '');
+    const wordCount = plainText.split(/\s+/).length;
+    return Math.max(1, Math.ceil(wordCount / 200));
+  };
+
+  const breadcrumbItems = [
+    { name: "Home", url: "https://indoorplaygroundsolution.com/" },
+    { name: "Blog", url: "https://indoorplaygroundsolution.com/blog" }
+  ];
+
   return (
     <div className="min-h-screen flex flex-col">
       <SEOHead pageKey="blog" />
+      <BreadcrumbSchema items={breadcrumbItems} />
       <Header />
       
       <PageHero
@@ -74,25 +89,33 @@ const Blog = () => {
         <BlogStatsSection />
 
         {/* Categories Section */}
-        <BlogCategoriesSection />
+        <section aria-labelledby="blog-categories-heading">
+          <BlogCategoriesSection />
+        </section>
 
         {/* Featured Post */}
         {!isLoading && featuredPost && (
-          <BlogFeaturedPost post={featuredPost} />
+          <section aria-labelledby="featured-post-heading">
+            <h2 id="featured-post-heading" className="sr-only">Featured Article</h2>
+            <BlogFeaturedPost post={featuredPost} />
+          </section>
         )}
 
         {/* All Posts Grid with Sidebar */}
-        <section className="py-16 md:py-24 bg-background relative overflow-hidden">
+        <section 
+          aria-labelledby="all-posts-heading"
+          className="py-16 md:py-24 bg-background relative overflow-hidden"
+        >
           {/* Decorative elements */}
-          <div className="absolute top-0 right-0 w-96 h-96 bg-primary/5 rounded-full blur-3xl" />
-          <div className="absolute bottom-0 left-0 w-80 h-80 bg-accent/5 rounded-full blur-3xl" />
+          <div className="absolute top-0 right-0 w-96 h-96 bg-primary/5 rounded-full blur-3xl" aria-hidden="true" />
+          <div className="absolute bottom-0 left-0 w-80 h-80 bg-accent/5 rounded-full blur-3xl" aria-hidden="true" />
           
           <div className="container-wide relative z-10">
             <div className="flex flex-col lg:flex-row gap-12">
               {/* Main Content */}
               <div className="flex-1">
                 {/* Section Header */}
-                <motion.div
+                <motion.header
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
@@ -100,19 +123,19 @@ const Blog = () => {
                 >
                   <div>
                     <div className="flex items-center gap-2 mb-3">
-                      <TrendingUp className="w-5 h-5 text-primary" />
+                      <TrendingUp className="w-5 h-5 text-primary" aria-hidden="true" />
                       <span className="text-sm font-semibold text-primary uppercase tracking-wider">
                         {t("blog.latestArticles")}
                       </span>
                     </div>
-                    <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold">
+                    <h2 id="all-posts-heading" className="text-2xl md:text-3xl lg:text-4xl font-bold">
                       {t("blog.allPosts")}
                     </h2>
                   </div>
-                </motion.div>
+                </motion.header>
 
                 {isLoading ? (
-                  <div className="grid md:grid-cols-2 gap-8">
+                  <div className="grid md:grid-cols-2 gap-8" role="status" aria-label="Loading articles">
                     {[1, 2, 3, 4].map((i) => (
                       <motion.div
                         key={i}
@@ -151,44 +174,48 @@ const Blog = () => {
                       >
                         <Link to={localizedPath(`/blog/${post.slug}`)}>
                           {/* Image */}
-                          <div className="relative aspect-[16/10] overflow-hidden">
+                          <figure className="relative aspect-[16/10] overflow-hidden">
                             {post.cover_image ? (
                               <img
                                 src={post.cover_image}
-                                alt={post.title}
+                                alt=""
                                 className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                                loading="lazy"
                               />
                             ) : (
                               <div className="w-full h-full flex items-center justify-center bg-gradient-to-br from-primary/20 via-primary/10 to-accent/10">
-                                <span className="text-6xl group-hover:scale-110 transition-transform">📝</span>
+                                <span className="text-6xl group-hover:scale-110 transition-transform" aria-hidden="true">📝</span>
                               </div>
                             )}
                             
                             {/* Gradient overlay */}
-                            <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
+                            <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity" aria-hidden="true" />
                             
                             {/* New badge for recent posts */}
                             {index < 3 && (
                               <Badge className="absolute top-4 right-4 bg-accent text-accent-foreground shadow-lg">
-                                <Sparkles className="w-3 h-3 mr-1" />
+                                <Sparkles className="w-3 h-3 mr-1" aria-hidden="true" />
                                 New
                               </Badge>
                             )}
-                          </div>
+                          </figure>
 
                           {/* Content */}
                           <div className="p-6 space-y-4">
                             {/* Meta info */}
                             <div className="flex flex-wrap items-center gap-3 text-sm text-muted-foreground">
                               {post.published_at && (
-                                <span className="flex items-center gap-1.5 bg-muted/50 px-3 py-1 rounded-full">
-                                  <Calendar className="w-3.5 h-3.5" />
+                                <time 
+                                  dateTime={post.published_at}
+                                  className="flex items-center gap-1.5 bg-muted/50 px-3 py-1 rounded-full"
+                                >
+                                  <Calendar className="w-3.5 h-3.5" aria-hidden="true" />
                                   {format(new Date(post.published_at), "MMM d, yyyy")}
-                                </span>
+                                </time>
                               )}
                               <span className="flex items-center gap-1.5 bg-muted/50 px-3 py-1 rounded-full">
-                                <Clock className="w-3.5 h-3.5" />
-                                5 min
+                                <Clock className="w-3.5 h-3.5" aria-hidden="true" />
+                                {getReadingTime(post.content)} min
                               </span>
                             </div>
 
@@ -207,7 +234,10 @@ const Blog = () => {
                             {/* Read more link */}
                             <div className="flex items-center gap-2 text-primary font-semibold pt-2">
                               {t("blog.readMore")}
-                              <ArrowRight className={`w-4 h-4 group-hover:translate-x-2 transition-transform duration-300 ${isRTL ? 'rotate-180' : ''}`} />
+                              <ArrowRight 
+                                className={`w-4 h-4 group-hover:translate-x-2 transition-transform duration-300 ${isRTL ? 'rotate-180' : ''}`} 
+                                aria-hidden="true"
+                              />
                             </div>
                           </div>
                         </Link>
@@ -224,6 +254,7 @@ const Blog = () => {
                       animate={{ y: [0, -10, 0] }}
                       transition={{ duration: 2, repeat: Infinity }}
                       className="text-8xl mb-6"
+                      aria-hidden="true"
                     >
                       📝
                     </motion.div>
@@ -234,17 +265,20 @@ const Blog = () => {
               </div>
 
               {/* Sidebar */}
-              <div className="lg:w-80 xl:w-96 flex-shrink-0">
+              <aside className="lg:w-80 xl:w-96 flex-shrink-0" aria-label="Blog sidebar">
                 <div className="lg:sticky lg:top-24">
                   <BlogSidebar recentPosts={posts || []} />
                 </div>
-              </div>
+              </aside>
             </div>
           </div>
         </section>
 
         {/* Newsletter Section */}
-        <BlogNewsletterSection />
+        <section aria-labelledby="newsletter-heading">
+          <h2 id="newsletter-heading" className="sr-only">Newsletter Subscription</h2>
+          <BlogNewsletterSection />
+        </section>
       </main>
 
       <Footer />
