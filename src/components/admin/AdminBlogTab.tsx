@@ -53,6 +53,15 @@ const LANGUAGES = [
   { code: 'pt', name: 'Português', flag: '🇧🇷' },
 ];
 
+const CATEGORIES = [
+  { key: 'tips', name: 'Pro Tips', color: 'bg-amber-500' },
+  { key: 'trends', name: 'Industry Trends', color: 'bg-emerald-500' },
+  { key: 'guides', name: 'How-To Guides', color: 'bg-blue-500' },
+  { key: 'design', name: 'Design Ideas', color: 'bg-pink-500' },
+  { key: 'safety', name: 'Safety Standards', color: 'bg-violet-500' },
+  { key: 'business', name: 'Business Growth', color: 'bg-cyan-500' },
+];
+
 const AdminBlogTab = () => {
   const [posts, setPosts] = useState<BlogPost[]>([]);
   const [isLoading, setIsLoading] = useState(true);
@@ -74,6 +83,7 @@ const AdminBlogTab = () => {
     cover_image: "",
     status: "draft",
     language: "en",
+    category: "",
     seo_title: "",
     seo_description: "",
     seo_keywords: ""
@@ -125,9 +135,18 @@ const AdminBlogTab = () => {
     }));
   };
 
+  // Extract category from seo_keywords (first keyword if it matches a category)
+  const extractCategoryFromKeywords = (keywords: string | null): string => {
+    if (!keywords) return "";
+    const keywordList = keywords.split(",").map(k => k.trim().toLowerCase());
+    const matchedCategory = CATEGORIES.find(cat => keywordList.includes(cat.key));
+    return matchedCategory ? matchedCategory.key : "";
+  };
+
   const openEditor = (post?: BlogPost) => {
     if (post) {
       setEditingPost(post);
+      const category = extractCategoryFromKeywords(post.seo_keywords);
       setFormData({
         title: post.title,
         title_en: "", // Extract from slug for display
@@ -137,6 +156,7 @@ const AdminBlogTab = () => {
         cover_image: post.cover_image || "",
         status: post.status,
         language: post.language || "en",
+        category: category,
         seo_title: post.seo_title || "",
         seo_description: post.seo_description || "",
         seo_keywords: post.seo_keywords || ""
@@ -152,6 +172,7 @@ const AdminBlogTab = () => {
         cover_image: "",
         status: "draft",
         language: "en",
+        category: "",
         seo_title: "",
         seo_description: "",
         seo_keywords: ""
@@ -174,6 +195,17 @@ const AdminBlogTab = () => {
     setIsSaving(true);
 
     try {
+      // Merge category into seo_keywords
+      let finalKeywords = formData.seo_keywords || "";
+      if (formData.category) {
+        const existingKeywords = finalKeywords.split(",").map(k => k.trim()).filter(k => k);
+        // Remove any existing category keywords
+        const filteredKeywords = existingKeywords.filter(k => !CATEGORIES.some(cat => cat.key === k.toLowerCase()));
+        // Add the selected category at the beginning
+        const newKeywords = [formData.category, ...filteredKeywords];
+        finalKeywords = newKeywords.join(", ");
+      }
+
       const postData = {
         title: formData.title.trim(),
         slug: formData.slug.trim(),
@@ -185,7 +217,7 @@ const AdminBlogTab = () => {
         published_at: formData.status === "published" ? new Date().toISOString() : null,
         seo_title: formData.seo_title || null,
         seo_description: formData.seo_description || null,
-        seo_keywords: formData.seo_keywords || null
+        seo_keywords: finalKeywords || null
       };
 
       if (editingPost) {
@@ -547,8 +579,8 @@ const AdminBlogTab = () => {
                   />
                 </div>
 
-                {/* Status and Language */}
-                <div className="grid grid-cols-2 gap-4">
+                {/* Status, Language and Category */}
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                   <div className="space-y-2">
                     <Label>状态</Label>
                     <Select 
@@ -582,8 +614,30 @@ const AdminBlogTab = () => {
                         ))}
                       </SelectContent>
                     </Select>
+                  </div>
+                  <div className="space-y-2">
+                    <Label>文章分类</Label>
+                    <Select 
+                      value={formData.category} 
+                      onValueChange={(value) => setFormData(prev => ({ ...prev, category: value === "none" ? "" : value }))}
+                    >
+                      <SelectTrigger>
+                        <SelectValue placeholder="选择分类" />
+                      </SelectTrigger>
+                      <SelectContent>
+                        <SelectItem value="none">无分类</SelectItem>
+                        {CATEGORIES.map(cat => (
+                          <SelectItem key={cat.key} value={cat.key}>
+                            <div className="flex items-center gap-2">
+                              <span className={`w-2 h-2 rounded-full ${cat.color}`}></span>
+                              {cat.name}
+                            </div>
+                          </SelectItem>
+                        ))}
+                      </SelectContent>
+                    </Select>
                     <p className="text-xs text-muted-foreground">
-                      文章将显示在对应语言的前端页面
+                      分类将用于前端筛选和SEO
                     </p>
                   </div>
                 </div>
