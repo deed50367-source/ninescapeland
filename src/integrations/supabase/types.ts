@@ -101,6 +101,7 @@ export type Database = {
           created_at: string
           excerpt: string | null
           id: string
+          language: string
           published_at: string | null
           seo_description: string | null
           seo_keywords: string | null
@@ -117,6 +118,7 @@ export type Database = {
           created_at?: string
           excerpt?: string | null
           id?: string
+          language?: string
           published_at?: string | null
           seo_description?: string | null
           seo_keywords?: string | null
@@ -133,6 +135,7 @@ export type Database = {
           created_at?: string
           excerpt?: string | null
           id?: string
+          language?: string
           published_at?: string | null
           seo_description?: string | null
           seo_keywords?: string | null

@@ -36,6 +36,7 @@ interface BlogPost {
   excerpt: string | null;
   cover_image: string | null;
   status: string;
+  language: string;
   published_at: string | null;
   created_at: string;
   updated_at: string;
@@ -44,11 +45,20 @@ interface BlogPost {
   seo_keywords: string | null;
 }
 
+const LANGUAGES = [
+  { code: 'en', name: 'English', flag: '🇺🇸' },
+  { code: 'ar', name: 'العربية', flag: '🇸🇦' },
+  { code: 'de', name: 'Deutsch', flag: '🇩🇪' },
+  { code: 'es', name: 'Español', flag: '🇪🇸' },
+  { code: 'pt', name: 'Português', flag: '🇧🇷' },
+];
+
 const AdminBlogTab = () => {
   const [posts, setPosts] = useState<BlogPost[]>([]);
   const [isLoading, setIsLoading] = useState(true);
   const [searchQuery, setSearchQuery] = useState("");
   const [statusFilter, setStatusFilter] = useState<string>("all");
+  const [languageFilter, setLanguageFilter] = useState<string>("all");
   const [isEditorOpen, setIsEditorOpen] = useState(false);
   const [editingPost, setEditingPost] = useState<BlogPost | null>(null);
   const [isSaving, setIsSaving] = useState(false);
@@ -63,6 +73,7 @@ const AdminBlogTab = () => {
     excerpt: "",
     cover_image: "",
     status: "draft",
+    language: "en",
     seo_title: "",
     seo_description: "",
     seo_keywords: ""
@@ -125,6 +136,7 @@ const AdminBlogTab = () => {
         excerpt: post.excerpt || "",
         cover_image: post.cover_image || "",
         status: post.status,
+        language: post.language || "en",
         seo_title: post.seo_title || "",
         seo_description: post.seo_description || "",
         seo_keywords: post.seo_keywords || ""
@@ -139,6 +151,7 @@ const AdminBlogTab = () => {
         excerpt: "",
         cover_image: "",
         status: "draft",
+        language: "en",
         seo_title: "",
         seo_description: "",
         seo_keywords: ""
@@ -168,6 +181,7 @@ const AdminBlogTab = () => {
         excerpt: formData.excerpt || null,
         cover_image: formData.cover_image || null,
         status: formData.status,
+        language: formData.language,
         published_at: formData.status === "published" ? new Date().toISOString() : null,
         seo_title: formData.seo_title || null,
         seo_description: formData.seo_description || null,
@@ -249,8 +263,14 @@ const AdminBlogTab = () => {
     const matchesSearch = post.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
                          post.slug.toLowerCase().includes(searchQuery.toLowerCase());
     const matchesStatus = statusFilter === "all" || post.status === statusFilter;
-    return matchesSearch && matchesStatus;
+    const matchesLanguage = languageFilter === "all" || post.language === languageFilter;
+    return matchesSearch && matchesStatus && matchesLanguage;
   });
+
+  const getLanguageLabel = (code: string) => {
+    const lang = LANGUAGES.find(l => l.code === code);
+    return lang ? `${lang.flag} ${lang.name}` : code;
+  };
 
   const getStatusBadge = (status: string) => {
     switch (status) {
@@ -288,6 +308,19 @@ const AdminBlogTab = () => {
               <SelectItem value="draft">草稿</SelectItem>
               <SelectItem value="published">已发布</SelectItem>
               <SelectItem value="archived">已归档</SelectItem>
+            </SelectContent>
+          </Select>
+          <Select value={languageFilter} onValueChange={setLanguageFilter}>
+            <SelectTrigger className="w-36">
+              <SelectValue placeholder="全部语言" />
+            </SelectTrigger>
+            <SelectContent>
+              <SelectItem value="all">全部语言</SelectItem>
+              {LANGUAGES.map(lang => (
+                <SelectItem key={lang.code} value={lang.code}>
+                  {lang.flag} {lang.name}
+                </SelectItem>
+              ))}
             </SelectContent>
           </Select>
         </div>
@@ -328,8 +361,11 @@ const AdminBlogTab = () => {
                     </div>
                   )}
                   <div className="flex-1 min-w-0">
-                    <div className="flex items-center gap-2 mb-1">
+                    <div className="flex items-center gap-2 mb-1 flex-wrap">
                       <h3 className="font-semibold truncate">{post.title}</h3>
+                      <Badge variant="outline" className="text-xs">
+                        {getLanguageLabel(post.language)}
+                      </Badge>
                       {getStatusBadge(post.status)}
                     </div>
                     <p className="text-sm text-muted-foreground truncate mb-2">
@@ -511,22 +547,45 @@ const AdminBlogTab = () => {
                   />
                 </div>
 
-                {/* Status */}
-                <div className="space-y-2">
-                  <Label>状态</Label>
-                  <Select 
-                    value={formData.status} 
-                    onValueChange={(value) => setFormData(prev => ({ ...prev, status: value }))}
-                  >
-                    <SelectTrigger className="w-32">
-                      <SelectValue />
-                    </SelectTrigger>
-                    <SelectContent>
-                      <SelectItem value="draft">草稿</SelectItem>
-                      <SelectItem value="published">已发布</SelectItem>
-                      <SelectItem value="archived">已归档</SelectItem>
-                    </SelectContent>
-                  </Select>
+                {/* Status and Language */}
+                <div className="grid grid-cols-2 gap-4">
+                  <div className="space-y-2">
+                    <Label>状态</Label>
+                    <Select 
+                      value={formData.status} 
+                      onValueChange={(value) => setFormData(prev => ({ ...prev, status: value }))}
+                    >
+                      <SelectTrigger>
+                        <SelectValue />
+                      </SelectTrigger>
+                      <SelectContent>
+                        <SelectItem value="draft">草稿</SelectItem>
+                        <SelectItem value="published">已发布</SelectItem>
+                        <SelectItem value="archived">已归档</SelectItem>
+                      </SelectContent>
+                    </Select>
+                  </div>
+                  <div className="space-y-2">
+                    <Label>发布语言</Label>
+                    <Select 
+                      value={formData.language} 
+                      onValueChange={(value) => setFormData(prev => ({ ...prev, language: value }))}
+                    >
+                      <SelectTrigger>
+                        <SelectValue />
+                      </SelectTrigger>
+                      <SelectContent>
+                        {LANGUAGES.map(lang => (
+                          <SelectItem key={lang.code} value={lang.code}>
+                            {lang.flag} {lang.name}
+                          </SelectItem>
+                        ))}
+                      </SelectContent>
+                    </Select>
+                    <p className="text-xs text-muted-foreground">
+                      文章将显示在对应语言的前端页面
+                    </p>
+                  </div>
                 </div>
               </TabsContent>
 

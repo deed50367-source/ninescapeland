@@ -37,17 +37,21 @@ const itemVariants = {
 };
 
 const Blog = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   const { localizedPath } = useLocalizedPath();
   const { isRTL } = useRTL();
 
+  // Get current language code
+  const currentLang = i18n.language?.split('-')[0] || 'en';
+
   const { data: posts, isLoading } = useQuery({
-    queryKey: ["blog-posts-public"],
+    queryKey: ["blog-posts-public", currentLang],
     queryFn: async () => {
       const { data, error } = await supabase
         .from("blog_posts")
         .select("*")
         .eq("status", "published")
+        .eq("language", currentLang)
         .order("published_at", { ascending: false });
       
       if (error) throw error;
