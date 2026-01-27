@@ -7,9 +7,9 @@ import { Footer } from "@/components/Footer";
 import { LiveChat } from "@/components/LiveChat";
 import MobileBottomNav from "@/components/MobileBottomNav";
 import { SEOHead } from "@/components/SEOHead";
-import { ArticleSchema } from "@/components/StructuredData";
+import { BlogPostingSchema, BreadcrumbSchema } from "@/components/StructuredData";
 import { useLocalizedPath } from "@/hooks/useLocalizedPath";
-import { Calendar, ArrowLeft } from "lucide-react";
+import { Calendar, ArrowLeft, Clock, User } from "lucide-react";
 import { format } from "date-fns";
 import { Skeleton } from "@/components/ui/skeleton";
 import { Button } from "@/components/ui/button";
@@ -34,6 +34,27 @@ const BlogPost = () => {
     },
     enabled: !!slug,
   });
+
+  // Calculate reading time
+  const getReadingTime = (content: string | null) => {
+    if (!content) return 1;
+    const plainText = content.replace(/<[^>]+>/g, '');
+    const wordCount = plainText.split(/\s+/).length;
+    return Math.max(1, Math.ceil(wordCount / 200));
+  };
+
+  // Get word count
+  const getWordCount = (content: string | null) => {
+    if (!content) return 0;
+    const plainText = content.replace(/<[^>]+>/g, '');
+    return plainText.split(/\s+/).length;
+  };
+
+  // Strip HTML for plain text
+  const stripHtml = (html: string | null) => {
+    if (!html) return '';
+    return html.replace(/<[^>]+>/g, '');
+  };
 
   if (isLoading) {
     return (
@@ -79,6 +100,16 @@ const BlogPost = () => {
     );
   }
 
+  const readingTime = getReadingTime(post.content);
+  const wordCount = getWordCount(post.content);
+  const articleUrl = `https://indoorplaygroundsolution.com${localizedPath(`/blog/${post.slug}`)}`;
+
+  const breadcrumbItems = [
+    { name: "Home", url: "https://indoorplaygroundsolution.com/" },
+    { name: "Blog", url: "https://indoorplaygroundsolution.com/blog" },
+    { name: post.title, url: articleUrl }
+  ];
+
   return (
     <div className="min-h-screen flex flex-col">
       <SEOHead 
@@ -88,56 +119,152 @@ const BlogPost = () => {
         dynamicKeywords={post.seo_keywords || undefined}
         ogImage={post.cover_image || undefined}
       />
-      <ArticleSchema
+      
+      {/* Enhanced Structured Data */}
+      <BlogPostingSchema
         headline={post.title}
-        description={post.excerpt || undefined}
+        description={post.seo_description || post.excerpt || undefined}
         image={post.cover_image || undefined}
         datePublished={post.published_at || undefined}
         dateModified={post.updated_at}
-        url={`https://ninescapeland.lovable.app${localizedPath(`/blog/${post.slug}`)}`}
+        url={articleUrl}
+        keywords={post.seo_keywords || undefined}
+        wordCount={wordCount}
+        articleBody={stripHtml(post.content)}
       />
+      <BreadcrumbSchema items={breadcrumbItems} />
+      
       <Header />
       
-      <main className="flex-1 py-16 bg-background">
-        <article className="container-wide max-w-4xl">
-          {/* Back Button */}
-          <Link 
-            to={localizedPath("/blog")}
-            className="inline-flex items-center gap-2 text-muted-foreground hover:text-primary mb-8 transition-colors"
-          >
-            <ArrowLeft className="w-4 h-4" />
-            {t("blog.backToBlog")}
-          </Link>
-
-          {/* Title */}
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">{post.title}</h1>
-
-          {/* Meta */}
-          <div className="flex items-center gap-4 text-muted-foreground mb-8">
-            {post.published_at && (
-              <span className="flex items-center gap-2">
-                <Calendar className="w-4 h-4" />
-                {format(new Date(post.published_at), "MMMM d, yyyy")}
-              </span>
-            )}
-          </div>
-
-          {/* Cover Image */}
-          {post.cover_image && (
-            <div className="aspect-video rounded-2xl overflow-hidden mb-8">
+      <main className="flex-1 bg-background">
+        {/* Hero Section */}
+        {post.cover_image && (
+          <header className="relative w-full h-[40vh] min-h-[300px] max-h-[500px] overflow-hidden">
+            <figure className="absolute inset-0">
               <img
                 src={post.cover_image}
                 alt={post.title}
                 className="w-full h-full object-cover"
               />
-            </div>
-          )}
+              <div className="absolute inset-0 bg-gradient-to-t from-background via-background/50 to-transparent" />
+            </figure>
+          </header>
+        )}
 
-          {/* Content */}
-          <div 
-            className="prose prose-lg max-w-none dark:prose-invert prose-headings:font-bold prose-a:text-primary"
+        <article className="container-wide max-w-4xl py-8 md:py-12">
+          {/* Breadcrumb Navigation */}
+          <nav aria-label="Breadcrumb" className="mb-6">
+            <ol className="flex items-center gap-2 text-sm text-muted-foreground">
+              <li>
+                <Link to={localizedPath("/")} className="hover:text-primary transition-colors">
+                  {t("nav.home")}
+                </Link>
+              </li>
+              <li aria-hidden="true">/</li>
+              <li>
+                <Link to={localizedPath("/blog")} className="hover:text-primary transition-colors">
+                  {t("nav.blog")}
+                </Link>
+              </li>
+              <li aria-hidden="true">/</li>
+              <li className="text-foreground font-medium truncate max-w-[200px]" aria-current="page">
+                {post.title}
+              </li>
+            </ol>
+          </nav>
+
+          {/* Article Header */}
+          <header className="mb-8 md:mb-12">
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight mb-6">
+              {post.title}
+            </h1>
+
+            {/* Meta Information */}
+            <aside className="flex flex-wrap items-center gap-4 md:gap-6 text-muted-foreground border-b border-border pb-6">
+              <div className="flex items-center gap-2">
+                <User className="w-4 h-4" />
+                <span>NinescapeLand Team</span>
+              </div>
+              {post.published_at && (
+                <time dateTime={post.published_at} className="flex items-center gap-2">
+                  <Calendar className="w-4 h-4" />
+                  {format(new Date(post.published_at), "MMMM d, yyyy")}
+                </time>
+              )}
+              <div className="flex items-center gap-2">
+                <Clock className="w-4 h-4" />
+                <span>{readingTime} min read</span>
+              </div>
+            </aside>
+
+            {/* Excerpt */}
+            {post.excerpt && (
+              <p className="text-lg md:text-xl text-muted-foreground mt-6 leading-relaxed">
+                {post.excerpt}
+              </p>
+            )}
+          </header>
+
+          {/* Article Content */}
+          <section 
+            className="blog-content prose prose-lg max-w-none dark:prose-invert
+              prose-headings:font-bold prose-headings:tracking-tight
+              prose-h2:text-2xl prose-h2:md:text-3xl prose-h2:mt-12 prose-h2:mb-6
+              prose-h3:text-xl prose-h3:md:text-2xl prose-h3:mt-8 prose-h3:mb-4
+              prose-h4:text-lg prose-h4:md:text-xl prose-h4:mt-6 prose-h4:mb-3
+              prose-p:text-base prose-p:md:text-lg prose-p:leading-relaxed prose-p:mb-6
+              prose-a:text-primary prose-a:no-underline hover:prose-a:underline
+              prose-img:rounded-xl prose-img:shadow-md prose-img:my-8
+              prose-blockquote:border-l-4 prose-blockquote:border-primary prose-blockquote:pl-6 prose-blockquote:italic prose-blockquote:text-muted-foreground
+              prose-ul:my-6 prose-ul:space-y-2
+              prose-ol:my-6 prose-ol:space-y-2
+              prose-li:text-base prose-li:md:text-lg
+              prose-code:bg-muted prose-code:px-1.5 prose-code:py-0.5 prose-code:rounded prose-code:text-sm
+              prose-pre:bg-muted prose-pre:rounded-xl prose-pre:p-4 prose-pre:overflow-x-auto
+              prose-table:w-full prose-table:border-collapse
+              prose-th:border prose-th:border-border prose-th:bg-muted prose-th:p-3 prose-th:text-left
+              prose-td:border prose-td:border-border prose-td:p-3
+              prose-hr:my-12 prose-hr:border-border
+              prose-figure:my-8
+              prose-figcaption:text-center prose-figcaption:text-muted-foreground prose-figcaption:mt-2"
             dangerouslySetInnerHTML={{ __html: post.content || "" }}
           />
+
+          {/* Article Footer */}
+          <footer className="mt-12 pt-8 border-t border-border">
+            <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+              <Link 
+                to={localizedPath("/blog")}
+                className="inline-flex items-center gap-2 text-primary hover:text-primary/80 font-medium transition-colors"
+              >
+                <ArrowLeft className="w-4 h-4" />
+                {t("blog.backToBlog")}
+              </Link>
+              
+              {/* Share Links - Semantic */}
+              <div className="flex items-center gap-4">
+                <span className="text-sm text-muted-foreground">Share:</span>
+                <a 
+                  href={`https://twitter.com/intent/tweet?text=${encodeURIComponent(post.title)}&url=${encodeURIComponent(articleUrl)}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-muted-foreground hover:text-primary transition-colors"
+                  aria-label="Share on Twitter"
+                >
+                  Twitter
+                </a>
+                <a 
+                  href={`https://www.linkedin.com/shareArticle?mini=true&url=${encodeURIComponent(articleUrl)}&title=${encodeURIComponent(post.title)}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-muted-foreground hover:text-primary transition-colors"
+                  aria-label="Share on LinkedIn"
+                >
+                  LinkedIn
+                </a>
+              </div>
+            </div>
+          </footer>
         </article>
       </main>
 

@@ -231,7 +231,173 @@ export const FAQSchema = ({ items }: FAQSchemaProps) => {
   );
 };
 
-// Breadcrumb Schema
+// Review Schema - for testimonials and reviews
+export interface ReviewItem {
+  author: string;
+  reviewBody: string;
+  ratingValue: number;
+  datePublished?: string;
+}
+
+export interface ReviewSchemaProps {
+  itemReviewed: {
+    type: string;
+    name: string;
+  };
+  reviews: ReviewItem[];
+}
+
+export const ReviewSchema = ({ itemReviewed, reviews }: ReviewSchemaProps) => {
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    name: itemReviewed.name,
+    review: reviews.map((review) => ({
+      "@type": "Review",
+      author: {
+        "@type": "Person",
+        name: review.author
+      },
+      reviewBody: review.reviewBody,
+      reviewRating: {
+        "@type": "Rating",
+        ratingValue: review.ratingValue,
+        bestRating: 5,
+        worstRating: 1
+      },
+      datePublished: review.datePublished
+    })),
+    aggregateRating: reviews.length > 0 ? {
+      "@type": "AggregateRating",
+      ratingValue: (reviews.reduce((acc, r) => acc + r.ratingValue, 0) / reviews.length).toFixed(1),
+      reviewCount: reviews.length,
+      bestRating: 5,
+      worstRating: 1
+    } : undefined
+  };
+
+  return (
+    <Helmet>
+      <script type="application/ld+json">
+        {JSON.stringify(schema)}
+      </script>
+    </Helmet>
+  );
+};
+
+// HowTo Schema - for tutorial/guide articles
+export interface HowToStep {
+  name: string;
+  text: string;
+  image?: string;
+}
+
+export interface HowToSchemaProps {
+  name: string;
+  description: string;
+  steps: HowToStep[];
+  totalTime?: string;
+  image?: string;
+}
+
+export const HowToSchema = ({ name, description, steps, totalTime, image }: HowToSchemaProps) => {
+  const schema: Record<string, unknown> = {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    name,
+    description,
+    step: steps.map((step, index) => ({
+      "@type": "HowToStep",
+      position: index + 1,
+      name: step.name,
+      text: step.text,
+      image: step.image
+    }))
+  };
+
+  if (totalTime) schema.totalTime = totalTime;
+  if (image) schema.image = image;
+
+  return (
+    <Helmet>
+      <script type="application/ld+json">
+        {JSON.stringify(schema)}
+      </script>
+    </Helmet>
+  );
+};
+
+// BlogPosting Schema - enhanced Article for blog posts
+export interface BlogPostingSchemaProps {
+  headline: string;
+  description?: string;
+  image?: string;
+  datePublished?: string;
+  dateModified?: string;
+  author?: string;
+  url?: string;
+  keywords?: string;
+  wordCount?: number;
+  articleBody?: string;
+}
+
+export const BlogPostingSchema = ({
+  headline,
+  description,
+  image,
+  datePublished,
+  dateModified,
+  author = "NinescapeLand Team",
+  url,
+  keywords,
+  wordCount,
+  articleBody
+}: BlogPostingSchemaProps) => {
+  const schema: Record<string, unknown> = {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    headline,
+    author: {
+      "@type": "Organization",
+      name: author,
+      url: "https://indoorplaygroundsolution.com"
+    },
+    publisher: {
+      "@type": "Organization",
+      name: "NinescapeLand",
+      logo: {
+        "@type": "ImageObject",
+        url: "https://indoorplaygroundsolution.com/favicon.png",
+        width: 512,
+        height: 512
+      }
+    },
+    isAccessibleForFree: true,
+    inLanguage: "en"
+  };
+
+  if (description) schema.description = description;
+  if (image) {
+    schema.image = {
+      "@type": "ImageObject",
+      url: image
+    };
+  }
+  if (datePublished) schema.datePublished = datePublished;
+  if (dateModified) schema.dateModified = dateModified;
+  if (url) schema.mainEntityOfPage = { "@type": "WebPage", "@id": url };
+  if (keywords) schema.keywords = keywords;
+  if (wordCount) schema.wordCount = wordCount;
+  if (articleBody) schema.articleBody = articleBody.substring(0, 500);
+
+  return (
+    <Helmet>
+      <script type="application/ld+json">
+        {JSON.stringify(schema)}
+      </script>
+    </Helmet>
+  );
+};
 export interface BreadcrumbItem {
   name: string;
   url: string;
