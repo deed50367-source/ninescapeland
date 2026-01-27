@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useRef, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import { supabase } from "@/integrations/supabase/client";
 
 export type Permission = 
@@ -69,13 +69,8 @@ export const useCurrentUserPermissions = () => {
   const [isAdmin, setIsAdmin] = useState(false);
   const [permissions, setPermissions] = useState<Permission[]>([]);
   const [isLoading, setIsLoading] = useState(true);
-  const initRef = useRef(false);
 
   useEffect(() => {
-    // Prevent double initialization in StrictMode
-    if (initRef.current) return;
-    initRef.current = true;
-
     let mounted = true;
 
     const init = async () => {
