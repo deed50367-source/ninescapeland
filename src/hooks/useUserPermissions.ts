@@ -1,6 +1,25 @@
 import { useCallback, useEffect, useState } from "react";
 import { supabase } from "@/integrations/supabase/client";
 
+const withTimeout = async <T,>(
+  promise: Promise<T>,
+  ms: number,
+  label: string
+): Promise<T> => {
+  let timeoutId: number | undefined;
+  const timeoutPromise = new Promise<T>((_, reject) => {
+    timeoutId = window.setTimeout(() => {
+      reject(new Error(`${label} timed out after ${ms}ms`));
+    }, ms);
+  });
+
+  try {
+    return await Promise.race([promise, timeoutPromise]);
+  } finally {
+    if (timeoutId) window.clearTimeout(timeoutId);
+  }
+};
+
 export type Permission = 
   | 'backend_access'
   | 'inquiries'
@@ -34,10 +53,16 @@ export const useUserPermissions = (userId?: string) => {
     }
 
     try {
-      const { data, error } = await supabase
-        .from("user_permissions")
-        .select("permission")
-        .eq("user_id", userId);
+      const { data, error } = await withTimeout(
+        Promise.resolve(
+          supabase
+            .from("user_permissions")
+            .select("permission")
+            .eq("user_id", userId)
+        ) as Promise<any>,
+        8000,
+        "[useUserPermissions] fetchPermissions"
+      );
 
       if (error) {
         console.error("[useUserPermissions] fetch error:", error);
@@ -75,7 +100,11 @@ export const useCurrentUserPermissions = () => {
 
     const init = async () => {
       try {
-        const { data: { session } } = await supabase.auth.getSession();
+        const { data: { session } } = await withTimeout(
+          supabase.auth.getSession(),
+          8000,
+          "[useCurrentUserPermissions] getSession"
+        );
         
         if (!mounted) return;
         
@@ -90,12 +119,18 @@ export const useCurrentUserPermissions = () => {
         setUser({ id: session.user.id });
 
         // Check admin role
-        const { data: roleData } = await supabase
-          .from("user_roles")
-          .select("role")
-          .eq("user_id", session.user.id)
-          .eq("role", "admin")
-          .limit(1);
+        const { data: roleData } = await withTimeout(
+          Promise.resolve(
+            supabase
+              .from("user_roles")
+              .select("role")
+              .eq("user_id", session.user.id)
+              .eq("role", "admin")
+              .limit(1)
+          ) as Promise<any>,
+          8000,
+          "[useCurrentUserPermissions] role check"
+        );
 
         const hasAdminRole = !!(roleData && roleData.length > 0);
         
@@ -110,10 +145,16 @@ export const useCurrentUserPermissions = () => {
         }
 
         // Fetch user permissions
-        const { data: permData } = await supabase
-          .from("user_permissions")
-          .select("permission")
-          .eq("user_id", session.user.id);
+        const { data: permData } = await withTimeout(
+          Promise.resolve(
+            supabase
+              .from("user_permissions")
+              .select("permission")
+              .eq("user_id", session.user.id)
+          ) as Promise<any>,
+          8000,
+          "[useCurrentUserPermissions] permissions fetch"
+        );
 
         if (!mounted) return;
         setPermissions((permData || []).map(d => d.permission as Permission));

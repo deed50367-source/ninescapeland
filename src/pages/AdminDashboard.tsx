@@ -3,6 +3,7 @@ import { useTranslation } from "react-i18next";
 import { useNavigate, Link } from "react-router-dom";
 import { useAdminAuth } from "@/hooks/useAdminAuth";
 import { useCurrentUserPermissions, Permission } from "@/hooks/useUserPermissions";
+import { useLoadingWatchdog } from "@/hooks/useLoadingWatchdog";
 import { Button } from "@/components/ui/button";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { 
@@ -37,6 +38,8 @@ const AdminDashboard = () => {
   const { user, isAdmin, isLoading: authLoading, signOut } = useAdminAuth();
   const { permissions, isLoading: permLoading, hasPermission, canAccessBackend } = useCurrentUserPermissions();
   const [activeTab, setActiveTab] = useState("inquiries");
+
+  const loadingTimedOut = useLoadingWatchdog(authLoading || permLoading, 12000);
 
   // Tab configuration with permission requirements
   const tabs = [
@@ -84,6 +87,22 @@ const AdminDashboard = () => {
         <div className="flex flex-col items-center gap-4">
           <Loader2 className="w-8 h-8 animate-spin text-primary" />
           <p className="text-muted-foreground">验证身份中...</p>
+
+          {loadingTimedOut && (
+            <div className="mt-2 text-center max-w-md">
+              <p className="text-sm text-muted-foreground">
+                加载超时（可能是网络或权限请求异常）。你可以刷新重试，或重新登录。
+              </p>
+              <div className="mt-4 flex flex-col sm:flex-row gap-3 justify-center">
+                <Button variant="outline" onClick={() => window.location.reload()}>
+                  刷新重试
+                </Button>
+                <Button onClick={handleSwitchAccount}>
+                  重新登录
+                </Button>
+              </div>
+            </div>
+          )}
         </div>
       </div>
     );
