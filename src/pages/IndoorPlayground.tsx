@@ -6,7 +6,7 @@ import { FloatingCTA } from "@/components/FloatingCTA";
 import { QuoteCalculator } from "@/components/QuoteCalculator";
 import { ProductFAQ } from "@/components/ProductFAQ";
 import { SEOHead } from "@/components/SEOHead";
-import { ProductSchema, FAQSchema } from "@/components/StructuredData";
+import { ProductSchema, FAQSchema, BreadcrumbSchema } from "@/components/StructuredData";
 import { RelatedProductsSection } from "@/components/RelatedProductsSection";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
@@ -339,9 +339,17 @@ const IndoorPlayground = () => {
     { question: t("productFAQ.indoorPlayground.items.q6.question"), answer: t("productFAQ.indoorPlayground.items.q6.answer") },
   ];
 
+  // Breadcrumb items for structured data
+  const breadcrumbItems = [
+    { name: "Home", url: "https://indoorplaygroundsolution.com" },
+    { name: "Products", url: "https://indoorplaygroundsolution.com/products" },
+    { name: "Indoor Playground", url: "https://indoorplaygroundsolution.com/products/indoor-playground" }
+  ];
+
   return (
     <div className="min-h-screen">
       <SEOHead pageKey="indoorPlayground" />
+      <BreadcrumbSchema items={breadcrumbItems} />
       <ProductSchema
         name="Custom Indoor Playground Equipment"
         description="Custom-designed indoor playground equipment with themed environments, multi-level structures, slides, ball pits, and interactive elements. ASTM & EN certified for safety."

@@ -7,7 +7,7 @@ import { TrampolineFeaturesSection } from "@/components/TrampolineFeaturesSectio
 import { QuoteCalculator } from "@/components/QuoteCalculator";
 import { ProductFAQ } from "@/components/ProductFAQ";
 import { SEOHead } from "@/components/SEOHead";
-import { ProductSchema, FAQSchema } from "@/components/StructuredData";
+import { ProductSchema, FAQSchema, BreadcrumbSchema } from "@/components/StructuredData";
 import { RelatedProductsSection } from "@/components/RelatedProductsSection";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
@@ -356,9 +356,17 @@ const TrampolinePark = () => {
     { question: t("productFAQ.trampolinePark.items.q6.question"), answer: t("productFAQ.trampolinePark.items.q6.answer") },
   ];
 
+  // Breadcrumb items for structured data
+  const breadcrumbItems = [
+    { name: "Home", url: "https://indoorplaygroundsolution.com" },
+    { name: "Products", url: "https://indoorplaygroundsolution.com/products" },
+    { name: "Trampoline Park", url: "https://indoorplaygroundsolution.com/products/trampoline-park" }
+  ];
+
   return (
     <div className="min-h-screen">
       <SEOHead pageKey="trampolinePark" />
+      <BreadcrumbSchema items={breadcrumbItems} />
       <ProductSchema
         name="Commercial Trampoline Park Equipment"
         description="Professional trampoline park equipment with high-performance springs, safety padding, and modular design. Includes jump zones, dodgeball courts, foam pits, and ninja courses."
