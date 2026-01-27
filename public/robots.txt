@@ -1,8 +1,49 @@
+# NinescapeLand - Indoor Playground Solutions
+# https://indoorplaygroundsolution.com
+
+# ==================== MAJOR SEARCH ENGINES ====================
+
+# Google
 User-agent: Googlebot
 Allow: /
+Crawl-delay: 1
 
+User-agent: Googlebot-Image
+Allow: /
+
+User-agent: Googlebot-News
+Allow: /blog/
+
+# Bing
 User-agent: Bingbot
 Allow: /
+Crawl-delay: 2
+
+User-agent: msnbot
+Allow: /
+Crawl-delay: 2
+
+# Yahoo (uses Bing)
+User-agent: Slurp
+Allow: /
+Crawl-delay: 2
+
+# Yandex
+User-agent: Yandex
+Allow: /
+Crawl-delay: 3
+
+# Baidu
+User-agent: Baiduspider
+Allow: /
+Crawl-delay: 3
+
+# DuckDuckGo
+User-agent: DuckDuckBot
+Allow: /
+Crawl-delay: 2
+
+# ==================== SOCIAL MEDIA BOTS ====================
 
 User-agent: Twitterbot
 Allow: /
@@ -10,10 +51,49 @@ Allow: /
 User-agent: facebookexternalhit
 Allow: /
 
+User-agent: LinkedInBot
+Allow: /
+
+User-agent: WhatsApp
+Allow: /
+
+User-agent: Pinterestbot
+Allow: /
+
+# ==================== DEFAULT RULES ====================
+
 User-agent: *
 Allow: /
+
+# Protected areas
 Disallow: /admin
 Disallow: /admin/
+Disallow: /admin/*
 
-# Sitemap
+# API and function endpoints
+Disallow: /api/
+Disallow: /.netlify/
+Disallow: /.vercel/
+
+# Query parameters that create duplicate content
+Disallow: /*?*utm_
+Disallow: /*?*ref=
+Disallow: /*?*source=
+Disallow: /*?*fbclid=
+Disallow: /*?*gclid=
+
+# Prevent crawling of legacy English prefix (redirects to root)
+Disallow: /en/
+Disallow: /en
+
+# ==================== SITEMAPS ====================
+
+# Dynamic sitemap (always up-to-date with database content)
+Sitemap: https://gianldlquknsdhfpqqfe.supabase.co/functions/v1/generate-sitemap
+
+# Static sitemap fallback
 Sitemap: https://indoorplaygroundsolution.com/sitemap.xml
+
+# ==================== HOST ====================
+
+Host: https://indoorplaygroundsolution.com
