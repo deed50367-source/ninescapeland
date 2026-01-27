@@ -57,6 +57,7 @@ const AdminBlogTab = () => {
   // Form state
   const [formData, setFormData] = useState({
     title: "",
+    title_en: "", // English title for slug generation
     slug: "",
     content: "",
     excerpt: "",
@@ -90,7 +91,7 @@ const AdminBlogTab = () => {
   const generateSlug = (title: string) => {
     return title
       .toLowerCase()
-      .replace(/[^a-z0-9\u4e00-\u9fa5]+/g, "-")
+      .replace(/[^a-z0-9]+/g, "-") // Only keep English letters and numbers
       .replace(/^-|-$/g, "");
   };
 
@@ -99,9 +100,17 @@ const AdminBlogTab = () => {
     setFormData(prev => ({
       ...prev,
       title,
-      slug: prev.slug || generateSlug(title),
       // Auto-fill SEO title if empty
       seo_title: prev.seo_title || title
+    }));
+  };
+
+  const handleEnglishTitleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const title_en = e.target.value;
+    setFormData(prev => ({
+      ...prev,
+      title_en,
+      slug: generateSlug(title_en)
     }));
   };
 
@@ -110,6 +119,7 @@ const AdminBlogTab = () => {
       setEditingPost(post);
       setFormData({
         title: post.title,
+        title_en: "", // Extract from slug for display
         slug: post.slug,
         content: post.content || "",
         excerpt: post.excerpt || "",
@@ -123,6 +133,7 @@ const AdminBlogTab = () => {
       setEditingPost(null);
       setFormData({
         title: "",
+        title_en: "",
         slug: "",
         content: "",
         excerpt: "",
@@ -413,14 +424,32 @@ const AdminBlogTab = () => {
                     />
                   </div>
                   <div className="space-y-2">
-                    <Label htmlFor="slug">Slug (URL) *</Label>
+                    <Label htmlFor="title_en">英文标题 (用于生成URL) *</Label>
+                    <Input
+                      id="title_en"
+                      value={formData.title_en}
+                      onChange={handleEnglishTitleChange}
+                      placeholder="English Title for URL"
+                    />
+                  </div>
+                </div>
+                
+                {/* Slug Display */}
+                <div className="space-y-2">
+                  <Label htmlFor="slug">Slug (URL) *</Label>
+                  <div className="flex items-center gap-2">
+                    <span className="text-sm text-muted-foreground">/blog/</span>
                     <Input
                       id="slug"
                       value={formData.slug}
                       onChange={(e) => setFormData(prev => ({ ...prev, slug: e.target.value }))}
                       placeholder="article-slug"
+                      className="flex-1"
                     />
                   </div>
+                  <p className="text-xs text-muted-foreground">
+                    输入英文标题后自动生成，也可手动修改
+                  </p>
                 </div>
 
                 {/* Cover Image */}
