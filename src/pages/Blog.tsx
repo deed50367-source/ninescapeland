@@ -36,6 +36,15 @@ import {
 
 const POSTS_PER_PAGE = 9;
 
+const CATEGORIES = [
+  { key: 'tips', name: 'tips', color: 'bg-amber-500' },
+  { key: 'trends', name: 'trends', color: 'bg-emerald-500' },
+  { key: 'guides', name: 'guides', color: 'bg-blue-500' },
+  { key: 'design', name: 'design', color: 'bg-pink-500' },
+  { key: 'safety', name: 'safety', color: 'bg-violet-500' },
+  { key: 'business', name: 'business', color: 'bg-cyan-500' },
+];
+
 const containerVariants = {
   hidden: { opacity: 0 },
   visible: {
@@ -54,6 +63,7 @@ const Blog = () => {
   const { localizedPath } = useLocalizedPath();
   const { isRTL } = useRTL();
   const [currentPage, setCurrentPage] = useState(1);
+  const [selectedCategory, setSelectedCategory] = useState<string>("all");
 
   // Get current language code
   const currentLang = i18n.language?.split('-')[0] || 'en';
@@ -73,8 +83,28 @@ const Blog = () => {
     },
   });
 
-  const featuredPost = posts?.[0];
-  const allRemainingPosts = posts?.slice(1) || [];
+  // Helper to extract category from post keywords
+  const getPostCategory = (keywords: string | null): string => {
+    if (!keywords) return "";
+    const keywordList = keywords.split(",").map(k => k.trim().toLowerCase());
+    const matchedCategory = CATEGORIES.find(cat => keywordList.includes(cat.key));
+    return matchedCategory ? matchedCategory.key : "";
+  };
+
+  // Filter posts by category
+  const filteredPosts = posts?.filter(post => {
+    if (selectedCategory === "all") return true;
+    return getPostCategory(post.seo_keywords) === selectedCategory;
+  }) || [];
+
+  const featuredPost = filteredPosts?.[0];
+  const allRemainingPosts = filteredPosts?.slice(1) || [];
+  
+  // Handle category change (reset page)
+  const handleCategoryChange = (category: string) => {
+    setSelectedCategory(category);
+    setCurrentPage(1);
+  };
   
   // Pagination logic
   const totalPages = Math.ceil(allRemainingPosts.length / POSTS_PER_PAGE);
@@ -200,18 +230,48 @@ const Blog = () => {
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
-                  className="flex items-center justify-between mb-12"
+                  className="flex flex-col gap-6 mb-12"
                 >
-                  <div>
-                    <div className="flex items-center gap-2 mb-3">
-                      <TrendingUp className="w-5 h-5 text-primary" aria-hidden="true" />
-                      <span className="text-sm font-semibold text-primary uppercase tracking-wider">
-                        {t("blog.latestArticles")}
-                      </span>
+                  <div className="flex items-center justify-between">
+                    <div>
+                      <div className="flex items-center gap-2 mb-3">
+                        <TrendingUp className="w-5 h-5 text-primary" aria-hidden="true" />
+                        <span className="text-sm font-semibold text-primary uppercase tracking-wider">
+                          {t("blog.latestArticles")}
+                        </span>
+                      </div>
+                      <h2 id="all-posts-heading" className="text-2xl md:text-3xl lg:text-4xl font-bold">
+                        {t("blog.allPosts")}
+                      </h2>
                     </div>
-                    <h2 id="all-posts-heading" className="text-2xl md:text-3xl lg:text-4xl font-bold">
-                      {t("blog.allPosts")}
-                    </h2>
+                  </div>
+                  
+                  {/* Category Filter */}
+                  <div className="flex flex-wrap gap-2">
+                    <button
+                      onClick={() => handleCategoryChange("all")}
+                      className={`px-4 py-2 rounded-full text-sm font-medium transition-all ${
+                        selectedCategory === "all"
+                          ? "bg-primary text-primary-foreground shadow-md"
+                          : "bg-muted hover:bg-muted/80 text-foreground"
+                      }`}
+                    >
+                      {t("blog.allCategories")}
+                    </button>
+                    {CATEGORIES.map((cat) => (
+                      <button
+                        key={cat.key}
+                        onClick={() => handleCategoryChange(cat.key)}
+                        className={`px-4 py-2 rounded-full text-sm font-medium transition-all flex items-center gap-2 ${
+                          selectedCategory === cat.key
+                            ? "bg-primary text-primary-foreground shadow-md"
+                            : "bg-muted hover:bg-muted/80 text-foreground"
+                        }`}
+                      >
+                        <span className={`w-2 h-2 rounded-full ${cat.color}`}></span>
+                        {t(`blog.categories.${cat.name}`)}
+                      </button>
+                    ))}
                   </div>
                 </motion.header>
 

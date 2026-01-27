@@ -68,6 +68,7 @@ const AdminBlogTab = () => {
   const [searchQuery, setSearchQuery] = useState("");
   const [statusFilter, setStatusFilter] = useState<string>("all");
   const [languageFilter, setLanguageFilter] = useState<string>("all");
+  const [categoryFilter, setCategoryFilter] = useState<string>("all");
   const [isEditorOpen, setIsEditorOpen] = useState(false);
   const [editingPost, setEditingPost] = useState<BlogPost | null>(null);
   const [isSaving, setIsSaving] = useState(false);
@@ -291,12 +292,34 @@ const AdminBlogTab = () => {
     setIsGalleryOpen(false);
   };
 
+  // Helper to extract category from post
+  const getPostCategory = (keywords: string | null): string => {
+    if (!keywords) return "";
+    const keywordList = keywords.split(",").map(k => k.trim().toLowerCase());
+    const matchedCategory = CATEGORIES.find(cat => keywordList.includes(cat.key));
+    return matchedCategory ? matchedCategory.key : "";
+  };
+
+  const getCategoryBadge = (keywords: string | null) => {
+    const categoryKey = getPostCategory(keywords);
+    if (!categoryKey) return null;
+    const category = CATEGORIES.find(cat => cat.key === categoryKey);
+    if (!category) return null;
+    return (
+      <Badge variant="outline" className="text-xs flex items-center gap-1">
+        <span className={`w-2 h-2 rounded-full ${category.color}`}></span>
+        {category.name}
+      </Badge>
+    );
+  };
+
   const filteredPosts = posts.filter(post => {
     const matchesSearch = post.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
                          post.slug.toLowerCase().includes(searchQuery.toLowerCase());
     const matchesStatus = statusFilter === "all" || post.status === statusFilter;
     const matchesLanguage = languageFilter === "all" || post.language === languageFilter;
-    return matchesSearch && matchesStatus && matchesLanguage;
+    const matchesCategory = categoryFilter === "all" || getPostCategory(post.seo_keywords) === categoryFilter;
+    return matchesSearch && matchesStatus && matchesLanguage && matchesCategory;
   });
 
   const getLanguageLabel = (code: string) => {
@@ -355,6 +378,22 @@ const AdminBlogTab = () => {
               ))}
             </SelectContent>
           </Select>
+          <Select value={categoryFilter} onValueChange={setCategoryFilter}>
+            <SelectTrigger className="w-40">
+              <SelectValue placeholder="全部分类" />
+            </SelectTrigger>
+            <SelectContent>
+              <SelectItem value="all">全部分类</SelectItem>
+              {CATEGORIES.map(cat => (
+                <SelectItem key={cat.key} value={cat.key}>
+                  <div className="flex items-center gap-2">
+                    <span className={`w-2 h-2 rounded-full ${cat.color}`}></span>
+                    {cat.name}
+                  </div>
+                </SelectItem>
+              ))}
+            </SelectContent>
+          </Select>
         </div>
         <Button onClick={() => openEditor()}>
           <Plus className="w-4 h-4 mr-2" />
@@ -398,6 +437,7 @@ const AdminBlogTab = () => {
                       <Badge variant="outline" className="text-xs">
                         {getLanguageLabel(post.language)}
                       </Badge>
+                      {getCategoryBadge(post.seo_keywords)}
                       {getStatusBadge(post.status)}
                     </div>
                     <p className="text-sm text-muted-foreground truncate mb-2">
