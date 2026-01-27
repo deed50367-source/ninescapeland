@@ -83,8 +83,9 @@ const BlogPost = () => {
     <div className="min-h-screen flex flex-col">
       <SEOHead 
         pageKey="blog" 
-        dynamicTitle={post.title}
-        dynamicDescription={post.excerpt || undefined}
+        dynamicTitle={post.seo_title || post.title}
+        dynamicDescription={post.seo_description || post.excerpt || undefined}
+        dynamicKeywords={post.seo_keywords || undefined}
         ogImage={post.cover_image || undefined}
       />
       <ArticleSchema
