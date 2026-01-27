@@ -1,11 +1,12 @@
 import { useCallback, useEffect, useRef, useState } from "react";
 import { supabase } from "@/integrations/supabase/client";
-import type { Session, User } from "@supabase/supabase-js";
+import type { User } from "@supabase/supabase-js";
 
 export const useAdminAuth = () => {
   const [user, setUser] = useState<User | null>(null);
   const [isAdmin, setIsAdmin] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
+  const initRef = useRef(false);
 
   const checkAdminRole = useCallback(async (userId: string): Promise<boolean> => {
     try {
@@ -29,6 +30,10 @@ export const useAdminAuth = () => {
   }, []);
 
   useEffect(() => {
+    // Prevent double initialization in StrictMode
+    if (initRef.current) return;
+    initRef.current = true;
+
     let mounted = true;
 
     const initAuth = async () => {
@@ -70,12 +75,16 @@ export const useAdminAuth = () => {
       if (event === "SIGNED_OUT") {
         setUser(null);
         setIsAdmin(false);
-      } else if (event === "SIGNED_IN" || event === "USER_UPDATED") {
+        setIsLoading(false);
+      } else if (event === "SIGNED_IN") {
+        // Only handle SIGNED_IN, not TOKEN_REFRESHED or other events
         if (session?.user) {
           setUser(session.user);
+          setIsLoading(true);
           const hasRole = await checkAdminRole(session.user.id);
           if (mounted) {
             setIsAdmin(hasRole);
+            setIsLoading(false);
           }
         }
       }
