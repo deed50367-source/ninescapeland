@@ -11,7 +11,9 @@ import { BlogPostingSchema, BreadcrumbSchema } from "@/components/StructuredData
 import { BlogTableOfContents } from "@/components/BlogTableOfContents";
 import { BlogRelatedPosts } from "@/components/BlogRelatedPosts";
 import { BlogCategoryTags } from "@/components/BlogCategoryTags";
+import { BlogSidebar } from "@/components/BlogSidebar";
 import { useLocalizedPath } from "@/hooks/useLocalizedPath";
+import { useIsMobile } from "@/hooks/use-mobile";
 import { Calendar, ArrowLeft, Clock, User, Share2 } from "lucide-react";
 import { format } from "date-fns";
 import { Skeleton } from "@/components/ui/skeleton";
@@ -21,6 +23,7 @@ const BlogPost = () => {
   const { t, i18n } = useTranslation();
   const { slug } = useParams();
   const { localizedPath } = useLocalizedPath();
+  const isMobile = useIsMobile();
 
   // Get current language code
   const currentLang = i18n.language?.split('-')[0] || 'en';
@@ -42,7 +45,7 @@ const BlogPost = () => {
     enabled: !!slug,
   });
 
-  // Fetch related posts
+  // Fetch related posts and recent posts for sidebar
   const { data: relatedPosts } = useQuery({
     queryKey: ["blog-related-posts", currentLang, post?.id],
     queryFn: async () => {
@@ -58,6 +61,23 @@ const BlogPost = () => {
       return data;
     },
     enabled: !!post?.id,
+  });
+
+  // Fetch recent posts for sidebar
+  const { data: recentPosts } = useQuery({
+    queryKey: ["blog-recent-posts-sidebar", currentLang],
+    queryFn: async () => {
+      const { data, error } = await supabase
+        .from("blog_posts")
+        .select("id, title, slug, published_at, cover_image")
+        .eq("status", "published")
+        .eq("language", currentLang)
+        .order("published_at", { ascending: false })
+        .limit(5);
+      
+      if (error) throw error;
+      return data;
+    },
   });
 
   // Calculate reading time
@@ -344,11 +364,14 @@ const BlogPost = () => {
               </footer>
             </article>
 
-            {/* Desktop Sidebar with TOC */}
-            {showTOC && (
+            {/* Desktop Sidebar with TOC and BlogSidebar */}
+            {!isMobile && (
               <aside className="hidden lg:block w-72 xl:w-80 flex-shrink-0">
-                <div className="sticky top-24">
-                  <BlogTableOfContents content={post.content} />
+                <div className="sticky top-24 space-y-6 max-h-[calc(100vh-8rem)] overflow-y-auto pr-2 scrollbar-thin">
+                  {showTOC && (
+                    <BlogTableOfContents content={post.content} />
+                  )}
+                  <BlogSidebar recentPosts={recentPosts || []} />
                 </div>
               </aside>
             )}
