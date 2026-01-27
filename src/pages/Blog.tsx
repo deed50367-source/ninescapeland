@@ -13,6 +13,7 @@ import { BlogFeaturedPost } from "@/components/BlogFeaturedPost";
 import { BlogCategoriesSection } from "@/components/BlogCategoriesSection";
 import { BlogNewsletterSection } from "@/components/BlogNewsletterSection";
 import { BlogStatsSection } from "@/components/BlogStatsSection";
+import { BlogLanguageStats } from "@/components/BlogLanguageStats";
 import { BlogSidebar } from "@/components/BlogSidebar";
 import { useLocalizedPath } from "@/hooks/useLocalizedPath";
 import { useRTL } from "@/hooks/useRTL";
@@ -91,6 +92,9 @@ const Blog = () => {
       <main className="flex-1">
         {/* Stats Section */}
         <BlogStatsSection />
+
+        {/* Language Stats */}
+        <BlogLanguageStats />
 
         {/* Categories Section */}
         <section aria-labelledby="blog-categories-heading">
