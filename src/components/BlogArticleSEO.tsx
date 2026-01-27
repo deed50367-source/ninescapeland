@@ -33,8 +33,28 @@ export const BlogArticleSEO = ({
   const location = useLocation();
   const currentLang = lang || "en";
 
+  // Generate proper canonical URL
+  // English pages should use root path (no /en prefix)
+  // Other languages should use their prefix
+  const getCanonicalUrl = () => {
+    const pathname = location.pathname.replace(/\/$/, "") || "/";
+    
+    if (currentLang === "en") {
+      // For English, ensure we use root path without /en prefix
+      const pathWithoutEn = pathname.replace(/^\/en\/?/, "/").replace(/^\/en/, "");
+      return `${baseUrl}${pathWithoutEn || "/"}`;
+    }
+    
+    // For other languages, ensure the path has the correct language prefix
+    if (pathname.startsWith(`/${currentLang}`)) {
+      return `${baseUrl}${pathname}`;
+    }
+    
+    return `${baseUrl}/${currentLang}${pathname}`;
+  };
+  
+  const canonicalUrl = getCanonicalUrl();
   const canonicalPath = location.pathname.replace(/\/$/, "");
-  const canonicalUrl = `${baseUrl}${canonicalPath}`;
   
   const fullTitle = `${title} | ${siteName}`;
   const ogImage = image || `${baseUrl}/og-image.png`;
