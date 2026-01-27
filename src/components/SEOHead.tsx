@@ -43,8 +43,31 @@ export const SEOHead = ({
   const keywords = dynamicKeywords || seo?.keywords || t("seo.defaultKeywords", "");
 
   const fullTitle = title.includes(siteName) ? title : `${title} | ${siteName}`;
+  
+  // Generate proper canonical URL
+  // English pages should use root path (no /en prefix)
+  // Other languages should use their prefix
+  const getCanonicalUrl = () => {
+    const pathname = location.pathname.replace(/\/$/, "") || "/";
+    
+    if (currentLang === "en") {
+      // For English, ensure we use root path without /en prefix
+      // This handles both cases: already at root or accidentally at /en
+      const pathWithoutEn = pathname.replace(/^\/en\/?/, "/").replace(/^\/en/, "");
+      return `${baseUrl}${pathWithoutEn || "/"}`;
+    }
+    
+    // For other languages, ensure the path has the correct language prefix
+    if (pathname.startsWith(`/${currentLang}`)) {
+      return `${baseUrl}${pathname}`;
+    }
+    
+    // If somehow the path doesn't have the prefix, add it
+    return `${baseUrl}/${currentLang}${pathname}`;
+  };
+  
+  const canonicalUrl = getCanonicalUrl();
   const canonicalPath = location.pathname.replace(/\/$/, "");
-  const canonicalUrl = `${baseUrl}${canonicalPath}`;
   
   const langConfig = languages.find((l) => l.code === currentLang);
   const isRTL = langConfig?.rtl || false;
