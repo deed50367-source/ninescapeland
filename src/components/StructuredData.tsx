@@ -542,3 +542,138 @@ export const WebsiteSchema = () => {
     </Helmet>
   );
 };
+
+// ItemList Schema - for product listing pages
+export interface ItemListItem {
+  position: number;
+  name: string;
+  url: string;
+  image?: string;
+  description?: string;
+}
+
+export interface ItemListSchemaProps {
+  name: string;
+  description?: string;
+  items: ItemListItem[];
+  itemListType?: "Product" | "ListItem";
+}
+
+export const ItemListSchema = ({
+  name,
+  description,
+  items,
+  itemListType = "ListItem"
+}: ItemListSchemaProps) => {
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    name,
+    description,
+    numberOfItems: items.length,
+    itemListElement: items.map((item) => ({
+      "@type": itemListType,
+      position: item.position,
+      name: item.name,
+      url: item.url,
+      image: item.image,
+      description: item.description
+    }))
+  };
+
+  return (
+    <Helmet>
+      <script type="application/ld+json">
+        {JSON.stringify(schema)}
+      </script>
+    </Helmet>
+  );
+};
+
+// CollectionPage Schema - for product category pages
+export interface CollectionPageSchemaProps {
+  name: string;
+  description: string;
+  url: string;
+  image?: string;
+  numberOfItems?: number;
+}
+
+export const CollectionPageSchema = ({
+  name,
+  description,
+  url,
+  image,
+  numberOfItems
+}: CollectionPageSchemaProps) => {
+  const schema: Record<string, unknown> = {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    name,
+    description,
+    url,
+    mainEntity: {
+      "@type": "ItemList",
+      numberOfItems
+    },
+    publisher: {
+      "@type": "Organization",
+      name: "NinescapeLand",
+      url: "https://indoorplaygroundsolution.com"
+    }
+  };
+
+  if (image) schema.image = image;
+
+  return (
+    <Helmet>
+      <script type="application/ld+json">
+        {JSON.stringify(schema)}
+      </script>
+    </Helmet>
+  );
+};
+
+// OfferCatalog Schema - for showcasing product categories
+export interface CatalogItem {
+  name: string;
+  description?: string;
+  url: string;
+}
+
+export interface OfferCatalogSchemaProps {
+  name: string;
+  description?: string;
+  items: CatalogItem[];
+}
+
+export const OfferCatalogSchema = ({
+  name,
+  description,
+  items
+}: OfferCatalogSchemaProps) => {
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "OfferCatalog",
+    name,
+    description,
+    itemListElement: items.map((item, index) => ({
+      "@type": "Offer",
+      position: index + 1,
+      itemOffered: {
+        "@type": "Product",
+        name: item.name,
+        description: item.description,
+        url: item.url
+      }
+    }))
+  };
+
+  return (
+    <Helmet>
+      <script type="application/ld+json">
+        {JSON.stringify(schema)}
+      </script>
+    </Helmet>
+  );
+};

@@ -7,7 +7,7 @@ import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { FloatingCTA } from "@/components/FloatingCTA";
 import { SEOHead } from "@/components/SEOHead";
-import { ProductSchema } from "@/components/StructuredData";
+import { ProductSchema, BreadcrumbSchema } from "@/components/StructuredData";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Skeleton } from "@/components/ui/skeleton";
@@ -276,6 +276,17 @@ const DynamicProductDetail = () => {
     );
   }
 
+  // Generate breadcrumb schema data
+  const breadcrumbSchemaItems = [
+    { name: t("nav.home", "Home"), url: "https://indoorplaygroundsolution.com" },
+    { name: t("nav.products", "Products"), url: "https://indoorplaygroundsolution.com/products" },
+    ...(product.category ? [{ 
+      name: getLocalizedName(product.category), 
+      url: `https://indoorplaygroundsolution.com/products?category=${product.category.id}` 
+    }] : []),
+    { name: getLocalizedName(product), url: `https://indoorplaygroundsolution.com/products/${product.slug}` }
+  ];
+
   return (
     <div className="min-h-screen">
       <SEOHead
@@ -283,6 +294,7 @@ const DynamicProductDetail = () => {
         dynamicTitle={product.seo_title || getLocalizedName(product)}
         dynamicDescription={product.seo_description || product.short_description || undefined}
       />
+      <BreadcrumbSchema items={breadcrumbSchemaItems} />
       <ProductSchema
         name={getLocalizedName(product)}
         description={product.short_description || getLocalizedDescription()}

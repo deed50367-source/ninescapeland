@@ -6,7 +6,7 @@ import { FloatingCTA } from "@/components/FloatingCTA";
 import { QuoteCalculator } from "@/components/QuoteCalculator";
 import { ProductFAQ } from "@/components/ProductFAQ";
 import { SEOHead } from "@/components/SEOHead";
-import { ProductSchema, FAQSchema } from "@/components/StructuredData";
+import { ProductSchema, FAQSchema, BreadcrumbSchema } from "@/components/StructuredData";
 import { RelatedProductsSection } from "@/components/RelatedProductsSection";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
@@ -245,9 +245,17 @@ const SoftPlay = () => {
     { question: t("productFAQ.softPlay.items.q6.question"), answer: t("productFAQ.softPlay.items.q6.answer") },
   ];
 
+  // Breadcrumb items for structured data
+  const breadcrumbItems = [
+    { name: "Home", url: "https://indoorplaygroundsolution.com" },
+    { name: "Products", url: "https://indoorplaygroundsolution.com/products" },
+    { name: "Soft Play", url: "https://indoorplaygroundsolution.com/products/soft-play" }
+  ];
+
   return (
     <div className="min-h-screen">
       <SEOHead pageKey="softPlay" />
+      <BreadcrumbSchema items={breadcrumbItems} />
       <ProductSchema
         name="Soft Play Equipment for Toddlers"
         description="Safe and colorful soft play equipment designed for toddlers and young children. Features foam-padded structures, sensory elements, and easy-clean materials. Perfect for daycare centers and family entertainment venues."

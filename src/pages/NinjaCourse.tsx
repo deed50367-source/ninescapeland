@@ -7,7 +7,7 @@ import { NinjaFeaturesSection } from "@/components/NinjaFeaturesSection";
 import { QuoteCalculator } from "@/components/QuoteCalculator";
 import { ProductFAQ } from "@/components/ProductFAQ";
 import { SEOHead } from "@/components/SEOHead";
-import { ProductSchema, FAQSchema } from "@/components/StructuredData";
+import { ProductSchema, FAQSchema, BreadcrumbSchema } from "@/components/StructuredData";
 import { RelatedProductsSection } from "@/components/RelatedProductsSection";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
@@ -267,9 +267,17 @@ const NinjaCourse = () => {
     { question: t("productFAQ.ninjaCourse.items.q6.question"), answer: t("productFAQ.ninjaCourse.items.q6.answer") },
   ];
 
+  // Breadcrumb items for structured data
+  const breadcrumbItems = [
+    { name: "Home", url: "https://indoorplaygroundsolution.com" },
+    { name: "Products", url: "https://indoorplaygroundsolution.com/products" },
+    { name: "Ninja Course", url: "https://indoorplaygroundsolution.com/products/ninja-course" }
+  ];
+
   return (
     <div className="min-h-screen">
       <SEOHead pageKey="ninjaCourse" />
+      <BreadcrumbSchema items={breadcrumbItems} />
       <ProductSchema
         name="Ninja Warrior Course Equipment"
         description="Professional ninja warrior course equipment featuring challenging obstacles, warped walls, salmon ladders, and balance elements. Suitable for all skill levels with adjustable difficulty."

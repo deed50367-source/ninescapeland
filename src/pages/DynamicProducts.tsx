@@ -8,6 +8,7 @@ import { PageHero } from "@/components/PageHero";
 import { Footer } from "@/components/Footer";
 import { FloatingCTA } from "@/components/FloatingCTA";
 import { SEOHead } from "@/components/SEOHead";
+import { CollectionPageSchema, ItemListSchema, BreadcrumbSchema } from "@/components/StructuredData";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Skeleton } from "@/components/ui/skeleton";
@@ -142,9 +143,40 @@ const DynamicProducts = () => {
   // Get featured products
   const featuredProducts = products.filter((p) => p.is_featured);
 
+  // Generate breadcrumb items
+  const breadcrumbItems = [
+    { name: t("nav.home", "Home"), url: "https://indoorplaygroundsolution.com" },
+    { name: t("nav.products", "Products"), url: "https://indoorplaygroundsolution.com/products" }
+  ];
+
+  // Generate product list items for ItemList schema
+  const productListItems = filteredProducts.slice(0, 20).map((product, index) => ({
+    position: index + 1,
+    name: getLocalizedName(product),
+    url: `https://indoorplaygroundsolution.com/products/${product.slug}`,
+    image: product.featured_image || undefined,
+    description: product.short_description || undefined
+  }));
+
   return (
     <div className="min-h-screen">
       <SEOHead pageKey="products" />
+      <BreadcrumbSchema items={breadcrumbItems} />
+      <CollectionPageSchema
+        name={t("seo.products.title", "Premium Playground Equipment")}
+        description={t("seo.products.description", "Explore our complete range of commercial indoor playground equipment")}
+        url="https://indoorplaygroundsolution.com/products"
+        image={heroImages.products}
+        numberOfItems={products.length}
+      />
+      {productListItems.length > 0 && (
+        <ItemListSchema
+          name={t("seo.products.title", "Premium Playground Equipment")}
+          description={t("seo.products.description", "Commercial indoor playground equipment for sale")}
+          items={productListItems}
+          itemListType="Product"
+        />
+      )}
       <Header />
       <main>
         <PageHero
