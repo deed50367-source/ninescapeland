@@ -75,7 +75,9 @@
       "popularTags": "Popular Tags",
       "newsletter": "Stay Updated",
       "newsletterDesc": "Subscribe to get the latest insights directly in your inbox."
-    }
+    },
+    "pageInfo": "Page {{current}} of {{total}}",
+    "showingPosts": "Showing {{from}}-{{to}} of {{total}} articles"
   },
   "pages": {
     "blog": {
