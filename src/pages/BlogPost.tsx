@@ -16,18 +16,22 @@ import { Skeleton } from "@/components/ui/skeleton";
 import { Button } from "@/components/ui/button";
 
 const BlogPost = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   const { slug } = useParams();
   const { localizedPath } = useLocalizedPath();
 
+  // Get current language code
+  const currentLang = i18n.language?.split('-')[0] || 'en';
+
   const { data: post, isLoading, error } = useQuery({
-    queryKey: ["blog-post", slug],
+    queryKey: ["blog-post", slug, currentLang],
     queryFn: async () => {
       const { data, error } = await supabase
         .from("blog_posts")
         .select("*")
         .eq("slug", slug)
         .eq("status", "published")
+        .eq("language", currentLang)
         .single();
       
       if (error) throw error;
