@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useRef, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import { supabase } from "@/integrations/supabase/client";
 import type { User } from "@supabase/supabase-js";
 
@@ -6,7 +6,6 @@ export const useAdminAuth = () => {
   const [user, setUser] = useState<User | null>(null);
   const [isAdmin, setIsAdmin] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
-  const initRef = useRef(false);
 
   const checkAdminRole = useCallback(async (userId: string): Promise<boolean> => {
     try {
@@ -30,10 +29,6 @@ export const useAdminAuth = () => {
   }, []);
 
   useEffect(() => {
-    // Prevent double initialization in StrictMode
-    if (initRef.current) return;
-    initRef.current = true;
-
     let mounted = true;
 
     const initAuth = async () => {
