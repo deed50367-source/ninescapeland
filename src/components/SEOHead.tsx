@@ -10,6 +10,7 @@ interface SEOHeadProps {
   dynamicKeywords?: string;
   ogImage?: string;
   noIndex?: boolean;
+  ogType?: "website" | "article";
 }
 
 const baseUrl = "https://indoorplaygroundsolution.com";
@@ -23,6 +24,7 @@ export const SEOHead = ({
   dynamicKeywords,
   ogImage,
   noIndex = false,
+  ogType = "website",
 }: SEOHeadProps) => {
   const { t, i18n } = useTranslation();
   const { lang } = useParams<{ lang: string }>();
@@ -88,18 +90,23 @@ export const SEOHead = ({
       {/* Open Graph */}
       <meta property="og:title" content={fullTitle} />
       <meta property="og:description" content={description} />
-      <meta property="og:type" content="website" />
+      <meta property="og:type" content={ogType} />
       <meta property="og:url" content={canonicalUrl} />
       <meta property="og:image" content={`${baseUrl}${ogImage || defaultOgImage}`} />
+      <meta property="og:image:width" content="1200" />
+      <meta property="og:image:height" content="630" />
+      <meta property="og:image:alt" content={fullTitle} />
       <meta property="og:site_name" content={siteName} />
       <meta property="og:locale" content={currentLang} />
       
       {/* Twitter */}
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:site" content="@NinescapeLand" />
+      <meta name="twitter:creator" content="@NinescapeLand" />
       <meta name="twitter:title" content={fullTitle} />
       <meta name="twitter:description" content={description} />
       <meta name="twitter:image" content={`${baseUrl}${ogImage || defaultOgImage}`} />
+      <meta name="twitter:image:alt" content={fullTitle} />
       
       {/* Alternate language links */}
       {alternateLinks.map((link) => (

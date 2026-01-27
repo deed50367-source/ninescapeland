@@ -38,7 +38,53 @@
     "notFoundDescription": "Der Artikel, den Sie suchen, existiert nicht oder wurde entfernt.",
     "backToBlog": "Zurück zum Blog",
     "pageInfo": "Seite {{current}} von {{total}}",
-    "showingPosts": "Zeige {{from}}-{{to}} von {{total}} Artikeln"
+    "showingPosts": "Zeige {{from}}-{{to}} von {{total}} Artikeln",
+    "related": {
+      "badge": "Weiterlesen",
+      "title": "Verwandte Artikel",
+      "description": "Entdecken Sie weitere Einblicke und Anleitungen zum Indoor-Spielplatz-Geschäft und Design"
+    },
+    "categoryLabel": "Kategorie",
+    "tagsLabel": "Tags",
+    "featuredPost": "Empfohlener Artikel",
+    "latestArticles": "Neueste Updates",
+    "allPosts": "Alle Artikel",
+    "exploreTopics": "Themen erkunden",
+    "exploreTopicsDesc": "Entdecken Sie Einblicke in verschiedene Kategorien für Ihren Erfolg in der Spielplatzbranche",
+    "categories": {
+      "tips": "Profi-Tipps",
+      "trends": "Branchentrends",
+      "guides": "Anleitungen",
+      "design": "Design-Ideen",
+      "safety": "Sicherheitsstandards",
+      "business": "Geschäftswachstum"
+    },
+    "stats": {
+      "articles": "Veröffentlichte Artikel",
+      "readers": "Monatliche Leser",
+      "countries": "Erreichte Länder",
+      "experience": "Jahre Erfahrung"
+    },
+    "newsletter": {
+      "badge": "Informiert bleiben",
+      "title": "Newsletter abonnieren",
+      "description": "Erhalten Sie die neuesten Brancheneinblicke, Tipps und exklusive Inhalte direkt in Ihr Postfach.",
+      "placeholder": "Ihre E-Mail-Adresse",
+      "subscribe": "Abonnieren",
+      "privacy": "Wir respektieren Ihre Privatsphäre. Jederzeit abmelden.",
+      "success": "Willkommen!",
+      "successDesc": "Sie haben sich erfolgreich für unseren Newsletter angemeldet.",
+      "thankYou": "Danke für Ihre Anmeldung!"
+    },
+    "sidebar": {
+      "search": "Artikel suchen",
+      "searchPlaceholder": "Suchen...",
+      "categories": "Kategorien",
+      "recentPosts": "Neueste Beiträge",
+      "popularTags": "Beliebte Tags",
+      "newsletter": "Aktuell bleiben",
+      "newsletterDesc": "Abonnieren Sie für die neuesten Einblicke direkt in Ihr Postfach."
+    }
   },
   "pages": {
     "blog": {

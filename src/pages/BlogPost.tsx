@@ -6,9 +6,11 @@ import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { LiveChat } from "@/components/LiveChat";
 import MobileBottomNav from "@/components/MobileBottomNav";
-import { SEOHead } from "@/components/SEOHead";
+import { BlogArticleSEO } from "@/components/BlogArticleSEO";
 import { BlogPostingSchema, BreadcrumbSchema } from "@/components/StructuredData";
 import { BlogTableOfContents } from "@/components/BlogTableOfContents";
+import { BlogRelatedPosts } from "@/components/BlogRelatedPosts";
+import { BlogCategoryTags } from "@/components/BlogCategoryTags";
 import { useLocalizedPath } from "@/hooks/useLocalizedPath";
 import { Calendar, ArrowLeft, Clock, User, Share2 } from "lucide-react";
 import { format } from "date-fns";
@@ -38,6 +40,24 @@ const BlogPost = () => {
       return data;
     },
     enabled: !!slug,
+  });
+
+  // Fetch related posts
+  const { data: relatedPosts } = useQuery({
+    queryKey: ["blog-related-posts", currentLang, post?.id],
+    queryFn: async () => {
+      const { data, error } = await supabase
+        .from("blog_posts")
+        .select("id, title, slug, excerpt, cover_image, published_at, content")
+        .eq("status", "published")
+        .eq("language", currentLang)
+        .order("published_at", { ascending: false })
+        .limit(6);
+      
+      if (error) throw error;
+      return data;
+    },
+    enabled: !!post?.id,
   });
 
   // Calculate reading time
@@ -129,14 +149,22 @@ const BlogPost = () => {
     { name: post.title, url: articleUrl }
   ];
 
+  // Parse tags from keywords
+  const postTags = post.seo_keywords?.split(',').map(tag => tag.trim()).filter(Boolean) || [];
+
   return (
     <div className="min-h-screen flex flex-col">
-      <SEOHead 
-        pageKey="blog" 
-        dynamicTitle={post.seo_title || post.title}
-        dynamicDescription={post.seo_description || post.excerpt || undefined}
-        dynamicKeywords={post.seo_keywords || undefined}
-        ogImage={post.cover_image || undefined}
+      {/* Enhanced Article SEO with Open Graph & Twitter Cards */}
+      <BlogArticleSEO 
+        title={post.seo_title || post.title}
+        description={post.seo_description || post.excerpt || undefined}
+        keywords={post.seo_keywords || undefined}
+        image={post.cover_image || undefined}
+        publishedAt={post.published_at || undefined}
+        modifiedAt={post.updated_at}
+        author="NinescapeLand Team"
+        section="Indoor Playground Industry"
+        tags={postTags}
       />
       
       {/* Enhanced Structured Data */}
@@ -225,6 +253,13 @@ const BlogPost = () => {
                   <p className="text-lg md:text-xl text-muted-foreground mt-6 leading-relaxed font-medium">
                     {post.excerpt}
                   </p>
+                )}
+
+                {/* Category and Tags */}
+                {postTags.length > 0 && (
+                  <div className="mt-6">
+                    <BlogCategoryTags tags={postTags} showLabels size="md" />
+                  </div>
                 )}
               </header>
 
@@ -319,6 +354,14 @@ const BlogPost = () => {
             )}
           </div>
         </div>
+
+        {/* Related Posts Section */}
+        {relatedPosts && relatedPosts.length > 1 && (
+          <BlogRelatedPosts 
+            posts={relatedPosts} 
+            currentPostId={post.id} 
+          />
+        )}
       </main>
 
       <Footer />

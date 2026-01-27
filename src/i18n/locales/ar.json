@@ -38,7 +38,53 @@
     "notFoundDescription": "المقال الذي تبحث عنه غير موجود أو تم إزالته.",
     "backToBlog": "العودة للمدونة",
     "pageInfo": "صفحة {{current}} من {{total}}",
-    "showingPosts": "عرض {{from}}-{{to}} من {{total}} مقال"
+    "showingPosts": "عرض {{from}}-{{to}} من {{total}} مقال",
+    "related": {
+      "badge": "تابع القراءة",
+      "title": "مقالات ذات صلة",
+      "description": "اكتشف المزيد من الرؤى والأدلة حول صناعة وتصميم الملاعب الداخلية"
+    },
+    "categoryLabel": "التصنيف",
+    "tagsLabel": "الوسوم",
+    "featuredPost": "مقال مميز",
+    "latestArticles": "آخر التحديثات",
+    "allPosts": "جميع المقالات",
+    "exploreTopics": "استكشف المواضيع",
+    "exploreTopicsDesc": "اكتشف رؤى عبر فئات متنوعة لمساعدتك على النجاح في صناعة الملاعب",
+    "categories": {
+      "tips": "نصائح احترافية",
+      "trends": "اتجاهات الصناعة",
+      "guides": "أدلة إرشادية",
+      "design": "أفكار التصميم",
+      "safety": "معايير السلامة",
+      "business": "نمو الأعمال"
+    },
+    "stats": {
+      "articles": "مقالات منشورة",
+      "readers": "قارئ شهرياً",
+      "countries": "دولة نصل إليها",
+      "experience": "سنوات من الخبرة"
+    },
+    "newsletter": {
+      "badge": "ابق على اطلاع",
+      "title": "اشترك في نشرتنا الإخبارية",
+      "description": "احصل على أحدث رؤى الصناعة والنصائح والمحتوى الحصري مباشرة إلى بريدك.",
+      "placeholder": "أدخل بريدك الإلكتروني",
+      "subscribe": "اشترك",
+      "privacy": "نحترم خصوصيتك. يمكنك إلغاء الاشتراك في أي وقت.",
+      "success": "مرحباً بك!",
+      "successDesc": "تم اشتراكك بنجاح في نشرتنا الإخبارية.",
+      "thankYou": "شكراً لاشتراكك!"
+    },
+    "sidebar": {
+      "search": "البحث في المقالات",
+      "searchPlaceholder": "بحث...",
+      "categories": "التصنيفات",
+      "recentPosts": "أحدث المقالات",
+      "popularTags": "الوسوم الشائعة",
+      "newsletter": "ابق محدثاً",
+      "newsletterDesc": "اشترك للحصول على أحدث الرؤى مباشرة في بريدك."
+    }
   },
   "pages": {
     "blog": {

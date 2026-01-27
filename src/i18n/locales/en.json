@@ -77,7 +77,14 @@
       "newsletterDesc": "Subscribe to get the latest insights directly in your inbox."
     },
     "pageInfo": "Page {{current}} of {{total}}",
-    "showingPosts": "Showing {{from}}-{{to}} of {{total}} articles"
+    "showingPosts": "Showing {{from}}-{{to}} of {{total}} articles",
+    "related": {
+      "badge": "Keep Reading",
+      "title": "Related Articles",
+      "description": "Explore more insights and guides on indoor playground business and design"
+    },
+    "categoryLabel": "Category",
+    "tagsLabel": "Tags"
   },
   "pages": {
     "blog": {

@@ -38,7 +38,53 @@
     "notFoundDescription": "El artículo que busca no existe o ha sido eliminado.",
     "backToBlog": "Volver al Blog",
     "pageInfo": "Página {{current}} de {{total}}",
-    "showingPosts": "Mostrando {{from}}-{{to}} de {{total}} artículos"
+    "showingPosts": "Mostrando {{from}}-{{to}} de {{total}} artículos",
+    "related": {
+      "badge": "Seguir Leyendo",
+      "title": "Artículos Relacionados",
+      "description": "Explore más ideas y guías sobre el negocio y diseño de parques infantiles"
+    },
+    "categoryLabel": "Categoría",
+    "tagsLabel": "Etiquetas",
+    "featuredPost": "Artículo Destacado",
+    "latestArticles": "Últimas Actualizaciones",
+    "allPosts": "Todos los Artículos",
+    "exploreTopics": "Explorar Temas",
+    "exploreTopicsDesc": "Descubra ideas en varias categorías para tener éxito en la industria de parques infantiles",
+    "categories": {
+      "tips": "Consejos Pro",
+      "trends": "Tendencias del Sector",
+      "guides": "Guías Prácticas",
+      "design": "Ideas de Diseño",
+      "safety": "Normas de Seguridad",
+      "business": "Crecimiento Empresarial"
+    },
+    "stats": {
+      "articles": "Artículos Publicados",
+      "readers": "Lectores Mensuales",
+      "countries": "Países Alcanzados",
+      "experience": "Años de Experiencia"
+    },
+    "newsletter": {
+      "badge": "Mantente Informado",
+      "title": "Suscríbete a Nuestro Boletín",
+      "description": "Recibe las últimas ideas del sector, consejos y contenido exclusivo directamente en tu bandeja.",
+      "placeholder": "Ingresa tu correo electrónico",
+      "subscribe": "Suscribirse",
+      "privacy": "Respetamos tu privacidad. Cancela cuando quieras.",
+      "success": "¡Bienvenido!",
+      "successDesc": "Te has suscrito exitosamente a nuestro boletín.",
+      "thankYou": "¡Gracias por suscribirte!"
+    },
+    "sidebar": {
+      "search": "Buscar Artículos",
+      "searchPlaceholder": "Buscar...",
+      "categories": "Categorías",
+      "recentPosts": "Publicaciones Recientes",
+      "popularTags": "Etiquetas Populares",
+      "newsletter": "Mantente Actualizado",
+      "newsletterDesc": "Suscríbete para recibir las últimas ideas directamente en tu correo."
+    }
   },
   "pages": {
     "blog": {
