@@ -23,7 +23,7 @@ export const CTABannerSection = () => {
   };
 
   return (
-    <section className="relative py-16 md:py-24 overflow-hidden">
+    <section className="relative py-12 sm:py-16 md:py-24 overflow-hidden">
       {/* Background with gradient and pattern */}
       <div className="absolute inset-0 bg-gradient-to-br from-primary via-primary/90 to-primary/80" />
       <div className="absolute inset-0 opacity-10">
@@ -32,9 +32,9 @@ export const CTABannerSection = () => {
         }} />
       </div>
       
-      {/* Animated circles */}
+      {/* Animated circles - hidden on mobile for performance */}
       <motion.div
-        className="absolute top-10 left-10 w-64 h-64 rounded-full bg-accent/20 blur-3xl"
+        className="absolute top-10 left-10 w-64 h-64 rounded-full bg-accent/20 blur-3xl hidden sm:block"
         animate={{
           scale: [1, 1.2, 1],
           opacity: [0.3, 0.5, 0.3],
@@ -42,7 +42,7 @@ export const CTABannerSection = () => {
         transition={{ duration: 6, repeat: Infinity }}
       />
       <motion.div
-        className="absolute bottom-10 right-10 w-80 h-80 rounded-full bg-white/10 blur-3xl"
+        className="absolute bottom-10 right-10 w-80 h-80 rounded-full bg-white/10 blur-3xl hidden sm:block"
         animate={{
           scale: [1.2, 1, 1.2],
           opacity: [0.2, 0.4, 0.2],
@@ -51,12 +51,12 @@ export const CTABannerSection = () => {
       />
 
       <div className="container-wide relative z-10">
-        <div className="max-w-4xl mx-auto text-center">
+        <div className="max-w-4xl mx-auto text-center px-2">
           <motion.span
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="inline-block px-4 py-2 bg-white/10 rounded-full text-primary-foreground/90 text-sm font-medium mb-6"
+            className="inline-block px-3 py-1.5 sm:px-4 sm:py-2 bg-white/10 rounded-full text-primary-foreground/90 text-xs sm:text-sm font-medium mb-4 sm:mb-6"
           >
             {t("ctaBanner.badge")}
           </motion.span>
@@ -66,7 +66,7 @@ export const CTABannerSection = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.1 }}
-            className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-heading font-bold text-primary-foreground mb-6 leading-tight"
+            className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-heading font-bold text-primary-foreground mb-4 sm:mb-6 leading-tight"
           >
             {t("ctaBanner.title")}
           </motion.h2>
@@ -76,7 +76,7 @@ export const CTABannerSection = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.2 }}
-            className="text-base md:text-lg lg:text-xl text-primary-foreground/80 mb-10 max-w-2xl mx-auto"
+            className="text-sm sm:text-base md:text-lg lg:text-xl text-primary-foreground/80 mb-6 sm:mb-10 max-w-2xl mx-auto"
           >
             {t("ctaBanner.description")}
           </motion.p>
@@ -86,23 +86,23 @@ export const CTABannerSection = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.3 }}
-            className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-10"
+            className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center mb-8 sm:mb-10"
           >
             <Button
               onClick={handleNavigateContact}
-              size="xl"
-              className="bg-accent hover:bg-accent/90 text-accent-foreground shadow-glow font-bold"
+              size="lg"
+              className="w-full sm:w-auto bg-accent hover:bg-accent/90 text-accent-foreground shadow-glow font-bold h-12 sm:h-14 text-sm sm:text-base"
             >
               {t("ctaBanner.getQuote")}
-              <ArrowRight className={`w-5 h-5 ${isRTL ? 'rotate-180' : ''}`} />
+              <ArrowRight className={`w-4 h-4 sm:w-5 sm:h-5 ${isRTL ? 'rotate-180' : ''}`} />
             </Button>
             <Button
               onClick={handleWhatsApp}
-              size="xl"
+              size="lg"
               variant="heroOutline"
-              className="border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10"
+              className="w-full sm:w-auto border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10 h-12 sm:h-14 text-sm sm:text-base"
             >
-              <MessageCircle className="w-5 h-5" />
+              <MessageCircle className="w-4 h-4 sm:w-5 sm:h-5" />
               {t("ctaBanner.whatsapp")}
             </Button>
           </motion.div>
@@ -112,24 +112,24 @@ export const CTABannerSection = () => {
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
             transition={{ delay: 0.4 }}
-            className="flex flex-wrap justify-center gap-6 md:gap-10 text-primary-foreground/70 text-sm"
+            className="flex flex-col sm:flex-row flex-wrap justify-center gap-3 sm:gap-6 md:gap-10 text-primary-foreground/70 text-xs sm:text-sm"
           >
             <a 
               href={WHATSAPP_URL}
               target="_blank" 
               rel="noopener noreferrer"
               onClick={() => trackAndNavigate("cta_banner")}
-              className="flex items-center gap-2 hover:text-primary-foreground transition-colors"
+              className="flex items-center justify-center gap-2 hover:text-primary-foreground transition-colors py-2"
             >
               <Phone className="w-4 h-4" />
               <span dir="ltr">+86 150 5878 2901</span>
             </a>
             <a 
               href="mailto:sale@indoorplaygroundsolution.com"
-              className="flex items-center gap-2 hover:text-primary-foreground transition-colors"
+              className="flex items-center justify-center gap-2 hover:text-primary-foreground transition-colors py-2"
             >
               <Mail className="w-4 h-4" />
-              <span dir="ltr">sale@indoorplaygroundsolution.com</span>
+              <span dir="ltr" className="truncate">sale@indoorplaygroundsolution.com</span>
             </a>
           </motion.div>
         </div>
