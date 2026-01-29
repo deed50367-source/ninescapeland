@@ -46,7 +46,7 @@ export const FloatingCTA = () => {
   };
 
   return (
-    <div className={`fixed bottom-6 z-50 flex flex-col gap-3 ${isRTL ? 'left-6' : 'right-6'}`}>
+    <div className={`fixed z-50 flex flex-col gap-3 ${isRTL ? 'left-4 sm:left-6' : 'right-4 sm:right-6'} bottom-20 md:bottom-6`}>
       {/* Scroll to top */}
       <AnimatePresence>
         {showScrollTop && (
@@ -63,10 +63,10 @@ export const FloatingCTA = () => {
         initial={{ scale: 0 }}
         animate={{ scale: 1 }}
         transition={{ delay: 1, type: "spring", stiffness: 200, damping: 20 }}
-        className="w-14 h-14 rounded-full bg-success text-success-foreground shadow-glow flex items-center justify-center hover:scale-110 transition-transform"
+        className="w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-success text-success-foreground shadow-glow flex items-center justify-center hover:scale-110 active:scale-95 transition-transform"
         aria-label={t("floatingCta.whatsapp")}
       >
-        <MessageCircle className="w-7 h-7" />
+        <MessageCircle className="w-6 h-6 sm:w-7 sm:h-7" />
       </motion.a>
     </div>
   );

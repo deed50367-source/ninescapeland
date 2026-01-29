@@ -117,17 +117,17 @@ export const QuoteCalculator = () => {
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="max-w-4xl mx-auto bg-card rounded-2xl p-6 md:p-10 shadow-medium"
+          className="max-w-4xl mx-auto bg-card rounded-xl sm:rounded-2xl p-4 sm:p-6 md:p-10 shadow-medium"
         >
           {/* Step 1: Select Product Type */}
-          <div className="mb-8">
-            <h3 className="text-lg font-heading font-bold mb-4 flex items-center gap-2">
-              <span className="w-8 h-8 rounded-full bg-primary text-primary-foreground flex items-center justify-center text-sm">
+          <div className="mb-6 sm:mb-8">
+            <h3 className="text-base sm:text-lg font-heading font-bold mb-3 sm:mb-4 flex items-center gap-2">
+              <span className="w-7 h-7 sm:w-8 sm:h-8 rounded-full bg-primary text-primary-foreground flex items-center justify-center text-xs sm:text-sm flex-shrink-0">
                 1
               </span>
-              Select Equipment Type
+              <span className="text-sm sm:text-base">Select Equipment Type</span>
             </h3>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+            <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 gap-2 sm:gap-3">
               {productTypes.map((product) => (
                 <button
                   key={product.id}
@@ -135,15 +135,15 @@ export const QuoteCalculator = () => {
                     setSelectedType(product.id);
                     setShowResult(false);
                   }}
-                  className={`p-4 rounded-xl border-2 text-left transition-all ${
+                  className={`p-3 sm:p-4 rounded-lg sm:rounded-xl border-2 text-left transition-all active:scale-[0.98] ${
                     selectedType === product.id
                       ? "border-primary bg-primary/5"
                       : "border-border hover:border-primary/50"
                   }`}
                 >
-                  <span className="text-2xl mb-2 block">{product.icon}</span>
-                  <h4 className="font-semibold text-sm">{product.name}</h4>
-                  <p className="text-xs text-muted-foreground">
+                  <span className="text-xl sm:text-2xl mb-1 sm:mb-2 block">{product.icon}</span>
+                  <h4 className="font-semibold text-xs sm:text-sm leading-tight">{product.name}</h4>
+                  <p className="text-[10px] sm:text-xs text-muted-foreground line-clamp-1 mt-0.5">
                     {product.description}
                   </p>
                 </button>
@@ -152,15 +152,15 @@ export const QuoteCalculator = () => {
           </div>
 
           {/* Step 2: Enter Area */}
-          <div className="mb-8">
-            <h3 className="text-lg font-heading font-bold mb-4 flex items-center gap-2">
-              <span className="w-8 h-8 rounded-full bg-primary text-primary-foreground flex items-center justify-center text-sm">
+          <div className="mb-6 sm:mb-8">
+            <h3 className="text-base sm:text-lg font-heading font-bold mb-3 sm:mb-4 flex items-center gap-2">
+              <span className="w-7 h-7 sm:w-8 sm:h-8 rounded-full bg-primary text-primary-foreground flex items-center justify-center text-xs sm:text-sm flex-shrink-0">
                 2
               </span>
-              Enter Space Area (m²)
+              <span className="text-sm sm:text-base">Enter Space Area (m²)</span>
             </h3>
-            <div className="flex items-center gap-6">
-              <div className="flex-1">
+            <div className="flex flex-col sm:flex-row sm:items-center gap-4 sm:gap-6">
+              <div className="flex-1 order-2 sm:order-1">
                 <Slider
                   value={[area]}
                   onValueChange={(value) => {
@@ -172,12 +172,12 @@ export const QuoteCalculator = () => {
                   step={10}
                   className="py-4"
                 />
-                <div className="flex justify-between text-sm text-muted-foreground mt-1">
+                <div className="flex justify-between text-xs sm:text-sm text-muted-foreground mt-1">
                   <span>50 m²</span>
                   <span>2,000 m²</span>
                 </div>
               </div>
-              <div className="w-32">
+              <div className="w-full sm:w-32 order-1 sm:order-2">
                 <Input
                   type="number"
                   value={area}
@@ -187,7 +187,8 @@ export const QuoteCalculator = () => {
                   }}
                   min={50}
                   max={5000}
-                  className="text-center text-lg font-semibold h-14"
+                  className="text-center text-lg sm:text-xl font-semibold h-12 sm:h-14"
+                  inputMode="numeric"
                 />
                 <span className="text-xs text-muted-foreground block text-center mt-1">
                   Square Meters
@@ -197,14 +198,14 @@ export const QuoteCalculator = () => {
           </div>
 
           {/* Step 3: Quality Level */}
-          <div className="mb-8">
-            <h3 className="text-lg font-heading font-bold mb-4 flex items-center gap-2">
-              <span className="w-8 h-8 rounded-full bg-primary text-primary-foreground flex items-center justify-center text-sm">
+          <div className="mb-6 sm:mb-8">
+            <h3 className="text-base sm:text-lg font-heading font-bold mb-3 sm:mb-4 flex items-center gap-2">
+              <span className="w-7 h-7 sm:w-8 sm:h-8 rounded-full bg-primary text-primary-foreground flex items-center justify-center text-xs sm:text-sm flex-shrink-0">
                 3
               </span>
-              Select Quality Level
+              <span className="text-sm sm:text-base">Select Quality Level</span>
             </h3>
-            <div className="grid grid-cols-3 gap-3">
+            <div className="grid grid-cols-3 gap-2 sm:gap-3">
               {qualityLevels.map((level) => (
                 <button
                   key={level.id}
@@ -212,15 +213,15 @@ export const QuoteCalculator = () => {
                     setQualityLevel(level.id);
                     setShowResult(false);
                   }}
-                  className={`p-4 rounded-xl border-2 text-center transition-all ${
+                  className={`p-3 sm:p-4 rounded-lg sm:rounded-xl border-2 text-center transition-all active:scale-[0.98] ${
                     qualityLevel === level.id
                       ? "border-primary bg-primary/5"
                       : "border-border hover:border-primary/50"
                   }`}
                 >
-                  <h4 className="font-semibold">{level.name}</h4>
+                  <h4 className="font-semibold text-xs sm:text-base">{level.name}</h4>
                   {level.id !== "standard" && (
-                    <p className="text-xs text-muted-foreground">
+                    <p className="text-[10px] sm:text-xs text-muted-foreground">
                       +{Math.round((level.multiplier - 1) * 100)}%
                     </p>
                   )}
@@ -230,15 +231,15 @@ export const QuoteCalculator = () => {
           </div>
 
           {/* Calculate Button */}
-          <div className="text-center mb-8">
+          <div className="text-center mb-6 sm:mb-8">
             <Button
               variant="hero"
-              size="xl"
+              size="lg"
               onClick={handleCalculate}
               disabled={!selectedType || area < 50}
-              className="min-w-64"
+              className="w-full sm:w-auto sm:min-w-64 h-12 sm:h-14 text-sm sm:text-base"
             >
-              <Calculator className="w-5 h-5" />
+              <Calculator className="w-4 h-4 sm:w-5 sm:h-5" />
               Calculate Estimate
             </Button>
           </div>
@@ -248,39 +249,39 @@ export const QuoteCalculator = () => {
             <motion.div
               initial={{ opacity: 0, scale: 0.95 }}
               animate={{ opacity: 1, scale: 1 }}
-              className="bg-gradient-to-br from-primary to-primary/80 text-primary-foreground rounded-2xl p-8 text-center"
+              className="bg-gradient-to-br from-primary to-primary/80 text-primary-foreground rounded-xl sm:rounded-2xl p-4 sm:p-6 md:p-8 text-center"
             >
-              <h3 className="text-xl font-heading mb-2">Estimated Price Range</h3>
-              <div className="text-4xl md:text-5xl font-heading font-bold mb-4">
+              <h3 className="text-base sm:text-xl font-heading mb-2">Estimated Price Range</h3>
+              <div className="text-2xl sm:text-4xl md:text-5xl font-heading font-bold mb-3 sm:mb-4">
                 {formatPrice(price.min)} - {formatPrice(price.max)}
               </div>
-              <div className="flex flex-wrap justify-center gap-4 text-sm mb-6">
+              <div className="flex flex-wrap justify-center gap-2 sm:gap-4 text-xs sm:text-sm mb-4 sm:mb-6">
                 <span className="flex items-center gap-1">
-                  <Check className="w-4 h-4" />
+                  <Check className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
                   {selectedProduct?.name}
                 </span>
                 <span className="flex items-center gap-1">
-                  <Check className="w-4 h-4" />
+                  <Check className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
                   {area} m²
                 </span>
                 <span className="flex items-center gap-1">
-                  <Check className="w-4 h-4" />
-                  {selectedQuality?.name} Quality
+                  <Check className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
+                  {selectedQuality?.name}
                 </span>
               </div>
-              <p className="text-primary-foreground/80 text-sm mb-6 flex items-center justify-center gap-2">
-                <Info className="w-4 h-4" />
-                Final price depends on design complexity, theme, and installation requirements
+              <p className="text-primary-foreground/80 text-xs sm:text-sm mb-4 sm:mb-6 flex items-start sm:items-center justify-center gap-2 text-left sm:text-center">
+                <Info className="w-4 h-4 flex-shrink-0 mt-0.5 sm:mt-0" />
+                <span>Final price depends on design complexity, theme, and installation requirements</span>
               </p>
               <Button
                 variant="secondary"
                 size="lg"
                 asChild
-                className="bg-primary-foreground text-primary hover:bg-primary-foreground/90"
+                className="w-full sm:w-auto bg-primary-foreground text-primary hover:bg-primary-foreground/90 h-11 sm:h-12"
               >
                 <a href="#contact" className="group">
                   Get Accurate Quote
-                  <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                  <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 group-hover:translate-x-1 transition-transform" />
                 </a>
               </Button>
             </motion.div>

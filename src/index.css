@@ -194,6 +194,46 @@
   .section-padding {
     @apply py-10 sm:py-14 md:py-20 lg:py-24;
   }
+  
+  /* Mobile touch-friendly utilities */
+  .touch-target {
+    @apply min-h-[44px] min-w-[44px];
+  }
+  
+  .safe-area-pb {
+    padding-bottom: env(safe-area-inset-bottom, 0px);
+  }
+  
+  .safe-area-pt {
+    padding-top: env(safe-area-inset-top, 0px);
+  }
+  
+  /* Mobile-optimized text sizing */
+  .text-mobile-friendly {
+    @apply text-base leading-relaxed;
+    -webkit-text-size-adjust: 100%;
+  }
+  
+  /* Improved tap highlighting */
+  .tap-highlight-none {
+    -webkit-tap-highlight-color: transparent;
+  }
+  
+  /* Smooth scroll on iOS */
+  .scroll-smooth-ios {
+    -webkit-overflow-scrolling: touch;
+    scroll-behavior: smooth;
+  }
+  
+  /* Better touch feedback */
+  .touch-feedback {
+    @apply active:scale-[0.98] transition-transform duration-100;
+  }
+  
+  /* Mobile-friendly line clamping */
+  .line-clamp-mobile {
+    @apply line-clamp-2 sm:line-clamp-none;
+  }
 }
 
 /* RTL Support */

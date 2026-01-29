@@ -29,16 +29,16 @@ export const TestimonialsSection = () => {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="text-center max-w-3xl mx-auto mb-12"
+          className="text-center max-w-3xl mx-auto mb-8 sm:mb-12"
         >
-          <span className="text-accent font-semibold text-sm uppercase tracking-wider">
+          <span className="text-accent font-semibold text-xs sm:text-sm uppercase tracking-wider">
             {t("testimonials.sectionLabel")}
           </span>
-          <h2 className="text-2xl md:text-3xl lg:text-4xl font-heading font-bold mt-3 mb-4">
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold mt-2 sm:mt-3 mb-3 sm:mb-4">
             {t("testimonials.title")}{" "}
             <span className="text-gradient">{t("testimonials.titleHighlight")}</span>
           </h2>
-          <p className="text-muted-foreground text-base md:text-lg">
+          <p className="text-muted-foreground text-sm sm:text-base md:text-lg px-4 sm:px-0">
             {t("testimonials.description")}
           </p>
         </motion.div>
@@ -52,7 +52,7 @@ export const TestimonialsSection = () => {
         >
           <CarouselContent className="-ml-2 md:-ml-4">
             {testimonialKeys.map((key, index) => (
-              <CarouselItem key={index} className="pl-2 md:pl-4 md:basis-1/2 lg:basis-1/3">
+              <CarouselItem key={index} className="pl-2 md:pl-4 basis-[85%] sm:basis-1/2 lg:basis-1/3">
                 <motion.div
                   initial={{ opacity: 0, y: 30 }}
                   whileInView={{ opacity: 1, y: 0 }}
@@ -61,29 +61,29 @@ export const TestimonialsSection = () => {
                   className="h-full"
                 >
                   <Card className="h-full bg-card border-none shadow-soft hover:shadow-medium transition-all duration-300">
-                    <CardContent className="p-6 flex flex-col h-full">
-                      <Quote className="w-10 h-10 text-primary/20 mb-4" />
+                    <CardContent className="p-4 sm:p-6 flex flex-col h-full">
+                      <Quote className="w-8 h-8 sm:w-10 sm:h-10 text-primary/20 mb-3 sm:mb-4" />
                       
-                      <div className="flex gap-1 mb-4">
+                      <div className="flex gap-0.5 sm:gap-1 mb-3 sm:mb-4">
                         {[...Array(5)].map((_, i) => (
-                          <Star key={i} className="w-4 h-4 fill-accent text-accent" />
+                          <Star key={i} className="w-3.5 h-3.5 sm:w-4 sm:h-4 fill-accent text-accent" />
                         ))}
                       </div>
                       
-                      <p className="text-muted-foreground flex-1 mb-6 italic">
+                      <p className="text-muted-foreground flex-1 mb-4 sm:mb-6 italic text-sm sm:text-base line-clamp-4 sm:line-clamp-none">
                         "{t(`${key}.quote`)}"
                       </p>
                       
-                      <div className="flex items-center gap-4 pt-4 border-t border-border">
-                        <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-primary font-bold text-lg">
+                      <div className="flex items-center gap-3 sm:gap-4 pt-3 sm:pt-4 border-t border-border">
+                        <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-primary/10 flex items-center justify-center text-primary font-bold text-base sm:text-lg flex-shrink-0">
                           {t(`${key}.name`).charAt(0)}
                         </div>
-                        <div>
-                          <div className="font-semibold">{t(`${key}.name`)}</div>
-                          <div className="text-sm text-muted-foreground">
+                        <div className="min-w-0">
+                          <div className="font-semibold text-sm sm:text-base truncate">{t(`${key}.name`)}</div>
+                          <div className="text-xs sm:text-sm text-muted-foreground truncate">
                             {t(`${key}.role`)} • {t(`${key}.company`)}
                           </div>
-                          <div className="text-xs text-accent font-medium">
+                          <div className="text-[10px] sm:text-xs text-accent font-medium">
                             {t(`${key}.location`)}
                           </div>
                         </div>
