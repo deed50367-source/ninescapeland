@@ -1,31 +1,44 @@
+import { Suspense, lazy } from "react";
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-
 import { BrowserRouter, Routes, Route, Navigate, useLocation } from "react-router-dom";
 import { ScrollToTop } from "@/components/ScrollToTop";
 import { LanguageWrapper } from "@/components/LanguageWrapper";
-import Index from "./pages/Index";
-import CaseStudies from "./pages/CaseStudies";
-import AboutUs from "./pages/AboutUs";
-import DynamicProducts from "./pages/DynamicProducts";
-import DynamicProductDetail from "./pages/DynamicProductDetail";
-import IndoorPlayground from "./pages/IndoorPlayground";
-import TrampolinePark from "./pages/TrampolinePark";
-import NinjaCourse from "./pages/NinjaCourse";
-import SoftPlay from "./pages/SoftPlay";
-import Process from "./pages/Process";
-import Projects from "./pages/Projects";
-import Contact from "./pages/Contact";
-import FAQ from "./pages/FAQ";
-import Blog from "./pages/Blog";
-import BlogPost from "./pages/BlogPost";
-import NotFound from "./pages/NotFound";
-import AdminLogin from "./pages/AdminLogin";
-import AdminDashboard from "./pages/AdminDashboard";
+import PageLoader from "@/components/PageLoader";
 
-const queryClient = new QueryClient();
+// Lazy load pages for code splitting
+const Index = lazy(() => import("./pages/Index"));
+const CaseStudies = lazy(() => import("./pages/CaseStudies"));
+const AboutUs = lazy(() => import("./pages/AboutUs"));
+const DynamicProducts = lazy(() => import("./pages/DynamicProducts"));
+const DynamicProductDetail = lazy(() => import("./pages/DynamicProductDetail"));
+const IndoorPlayground = lazy(() => import("./pages/IndoorPlayground"));
+const TrampolinePark = lazy(() => import("./pages/TrampolinePark"));
+const NinjaCourse = lazy(() => import("./pages/NinjaCourse"));
+const SoftPlay = lazy(() => import("./pages/SoftPlay"));
+const Process = lazy(() => import("./pages/Process"));
+const Projects = lazy(() => import("./pages/Projects"));
+const Contact = lazy(() => import("./pages/Contact"));
+const FAQ = lazy(() => import("./pages/FAQ"));
+const Blog = lazy(() => import("./pages/Blog"));
+const BlogPost = lazy(() => import("./pages/BlogPost"));
+const NotFound = lazy(() => import("./pages/NotFound"));
+const AdminLogin = lazy(() => import("./pages/AdminLogin"));
+const AdminDashboard = lazy(() => import("./pages/AdminDashboard"));
+
+// Configure QueryClient with caching
+const queryClient = new QueryClient({
+  defaultOptions: {
+    queries: {
+      staleTime: 5 * 60 * 1000, // 5 minutes
+      gcTime: 30 * 60 * 1000, // 30 minutes (formerly cacheTime)
+      refetchOnWindowFocus: false,
+      retry: 1,
+    },
+  },
+});
 
 // Redirect component for /en/* routes to remove the /en prefix
 const EnglishRedirect = () => {
@@ -62,28 +75,30 @@ const App = () => (
       <Sonner />
       <BrowserRouter>
         <ScrollToTop />
-        <Routes>
-          {/* Admin routes - no language prefix needed */}
-          <Route path="/admin" element={<AdminDashboard />} />
-          <Route path="/admin/login" element={<AdminLogin />} />
-          
-          {/* Redirect /en/* to root (English is default without prefix) */}
-          <Route path="/en" element={<EnglishRedirect />} />
-          <Route path="/en/*" element={<EnglishRedirect />} />
-          
-          {/* English routes (default, no prefix) */}
-          <Route path="/" element={<LanguageWrapper defaultLang="en" />}>
-            {pageRoutes}
-          </Route>
-          
-          {/* Other language-prefixed routes (ar, de, es, pt) */}
-          <Route path="/:lang" element={<LanguageWrapper />}>
-            {pageRoutes}
-          </Route>
-          
-          {/* Catch-all route */}
-          <Route path="*" element={<NotFound />} />
-        </Routes>
+        <Suspense fallback={<PageLoader />}>
+          <Routes>
+            {/* Admin routes - no language prefix needed */}
+            <Route path="/admin" element={<AdminDashboard />} />
+            <Route path="/admin/login" element={<AdminLogin />} />
+            
+            {/* Redirect /en/* to root (English is default without prefix) */}
+            <Route path="/en" element={<EnglishRedirect />} />
+            <Route path="/en/*" element={<EnglishRedirect />} />
+            
+            {/* English routes (default, no prefix) */}
+            <Route path="/" element={<LanguageWrapper defaultLang="en" />}>
+              {pageRoutes}
+            </Route>
+            
+            {/* Other language-prefixed routes (ar, de, es, pt) */}
+            <Route path="/:lang" element={<LanguageWrapper />}>
+              {pageRoutes}
+            </Route>
+            
+            {/* Catch-all route */}
+            <Route path="*" element={<NotFound />} />
+          </Routes>
+        </Suspense>
       </BrowserRouter>
     </TooltipProvider>
   </QueryClientProvider>
