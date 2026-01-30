@@ -7,6 +7,7 @@ import { BrowserRouter, Routes, Route, Navigate, useLocation } from "react-route
 import { ScrollToTop } from "@/components/ScrollToTop";
 import { LanguageWrapper } from "@/components/LanguageWrapper";
 import PageLoader from "@/components/PageLoader";
+import PWAPrompt from "@/components/PWAPrompt";
 
 // Lazy load pages for code splitting
 const Index = lazy(() => import("./pages/Index"));
@@ -99,6 +100,7 @@ const App = () => (
             <Route path="*" element={<NotFound />} />
           </Routes>
         </Suspense>
+        <PWAPrompt />
       </BrowserRouter>
     </TooltipProvider>
   </QueryClientProvider>

@@ -2,6 +2,7 @@ import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react-swc";
 import path from "path";
 import { componentTagger } from "lovable-tagger";
+import { VitePWA } from "vite-plugin-pwa";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
@@ -9,7 +10,149 @@ export default defineConfig(({ mode }) => ({
     host: "::",
     port: 8080,
   },
-  plugins: [react(), mode === "development" && componentTagger()].filter(Boolean),
+  plugins: [
+    react(),
+    mode === "development" && componentTagger(),
+    VitePWA({
+      registerType: "autoUpdate",
+      includeAssets: ["favicon.ico", "favicon.png", "logo.png"],
+      manifest: {
+        name: "NinescapeLand - Indoor Playground Equipment",
+        short_name: "NinescapeLand",
+        description: "Leading commercial indoor playground equipment manufacturer. Custom trampoline parks, ninja courses, soft play areas.",
+        theme_color: "#FF6B35",
+        background_color: "#ffffff",
+        display: "standalone",
+        orientation: "portrait-primary",
+        scope: "/",
+        start_url: "/",
+        icons: [
+          {
+            src: "/pwa-192x192.png",
+            sizes: "192x192",
+            type: "image/png",
+            purpose: "any",
+          },
+          {
+            src: "/pwa-512x512.png",
+            sizes: "512x512",
+            type: "image/png",
+            purpose: "any",
+          },
+          {
+            src: "/pwa-maskable-512x512.png",
+            sizes: "512x512",
+            type: "image/png",
+            purpose: "maskable",
+          },
+        ],
+        categories: ["business", "shopping"],
+        lang: "en",
+        dir: "ltr" as const,
+      },
+      workbox: {
+        // Cache strategies
+        runtimeCaching: [
+          {
+            // Cache page navigations
+            urlPattern: ({ request }) => request.mode === "navigate",
+            handler: "NetworkFirst",
+            options: {
+              cacheName: "pages-cache",
+              expiration: {
+                maxEntries: 50,
+                maxAgeSeconds: 24 * 60 * 60, // 24 hours
+              },
+              networkTimeoutSeconds: 3,
+            },
+          },
+          {
+            // Cache images
+            urlPattern: /\.(?:png|jpg|jpeg|svg|gif|webp|avif)$/,
+            handler: "CacheFirst",
+            options: {
+              cacheName: "images-cache",
+              expiration: {
+                maxEntries: 100,
+                maxAgeSeconds: 30 * 24 * 60 * 60, // 30 days
+              },
+            },
+          },
+          {
+            // Cache Google Fonts stylesheets
+            urlPattern: /^https:\/\/fonts\.googleapis\.com\/.*/i,
+            handler: "CacheFirst",
+            options: {
+              cacheName: "google-fonts-stylesheets",
+              expiration: {
+                maxEntries: 10,
+                maxAgeSeconds: 365 * 24 * 60 * 60, // 1 year
+              },
+            },
+          },
+          {
+            // Cache Google Fonts webfonts
+            urlPattern: /^https:\/\/fonts\.gstatic\.com\/.*/i,
+            handler: "CacheFirst",
+            options: {
+              cacheName: "google-fonts-webfonts",
+              expiration: {
+                maxEntries: 30,
+                maxAgeSeconds: 365 * 24 * 60 * 60, // 1 year
+              },
+            },
+          },
+          {
+            // Cache Supabase API responses
+            urlPattern: /^https:\/\/.*\.supabase\.co\/rest\/v1\/.*/i,
+            handler: "NetworkFirst",
+            options: {
+              cacheName: "api-cache",
+              expiration: {
+                maxEntries: 50,
+                maxAgeSeconds: 5 * 60, // 5 minutes
+              },
+              networkTimeoutSeconds: 5,
+            },
+          },
+          {
+            // Cache Supabase storage assets
+            urlPattern: /^https:\/\/.*\.supabase\.co\/storage\/v1\/.*/i,
+            handler: "CacheFirst",
+            options: {
+              cacheName: "storage-cache",
+              expiration: {
+                maxEntries: 200,
+                maxAgeSeconds: 7 * 24 * 60 * 60, // 7 days
+              },
+            },
+          },
+          {
+            // Cache JS and CSS
+            urlPattern: /\.(?:js|css)$/,
+            handler: "StaleWhileRevalidate",
+            options: {
+              cacheName: "static-resources",
+              expiration: {
+                maxEntries: 50,
+                maxAgeSeconds: 24 * 60 * 60, // 24 hours
+              },
+            },
+          },
+        ],
+        // Precache critical assets
+        globPatterns: ["**/*.{js,css,html,ico,png,svg,woff2}"],
+        // Skip waiting and claim clients immediately
+        skipWaiting: true,
+        clientsClaim: true,
+        // Clean old caches
+        cleanupOutdatedCaches: true,
+      },
+      devOptions: {
+        enabled: false, // Disable in development
+      },
+    }),
+  ].filter(Boolean),
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
