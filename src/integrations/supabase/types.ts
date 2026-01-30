@@ -290,6 +290,7 @@ export type Database = {
       }
       inquiries: {
         Row: {
+          assigned_to: string | null
           country: string
           created_at: string
           email: string
@@ -304,6 +305,7 @@ export type Database = {
           updated_at: string
         }
         Insert: {
+          assigned_to?: string | null
           country: string
           created_at?: string
           email: string
@@ -318,6 +320,7 @@ export type Database = {
           updated_at?: string
         }
         Update: {
+          assigned_to?: string | null
           country?: string
           created_at?: string
           email?: string
