@@ -738,7 +738,33 @@ export type Database = {
       }
     }
     Views: {
-      [_ in never]: never
+      chat_sessions_public: {
+        Row: {
+          created_at: string | null
+          id: string | null
+          last_message_at: string | null
+          session_id: string | null
+          status: string | null
+          updated_at: string | null
+        }
+        Insert: {
+          created_at?: string | null
+          id?: string | null
+          last_message_at?: string | null
+          session_id?: string | null
+          status?: string | null
+          updated_at?: string | null
+        }
+        Update: {
+          created_at?: string | null
+          id?: string | null
+          last_message_at?: string | null
+          session_id?: string | null
+          status?: string | null
+          updated_at?: string | null
+        }
+        Relationships: []
+      }
     }
     Functions: {
       has_permission: {
