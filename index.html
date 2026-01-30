@@ -5,7 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="/favicon.png" type="image/png" />
     
-    <!-- Google tag (gtag.js) -->
+    <!-- DNS Prefetch for external resources -->
+    <link rel="dns-prefetch" href="https://gianldlquknsdhfpqqfe.supabase.co" />
+    <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
+    
+    <!-- Preconnect for critical external resources -->
+    <link rel="preconnect" href="https://gianldlquknsdhfpqqfe.supabase.co" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    
+    <!-- Preload critical font -->
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" />
+    
+    <!-- Google tag (gtag.js) - defer for better performance -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-33HTW40RMQ"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -13,6 +26,7 @@
       gtag('js', new Date());
       gtag('config', 'G-33HTW40RMQ');
     </script>
+    
     <title>Indoor Playground Equipment Manufacturer | Commercial Playground Supplier | NinescapeLand</title>
     <meta name="description" content="Leading commercial indoor playground equipment manufacturer. Custom trampoline parks, ninja courses, soft play areas. ASTM & TUV certified. Global shipping, 3-year warranty. Get free design & quote!" />
     <meta name="keywords" content="indoor playground equipment manufacturer, commercial playground supplier, trampoline park manufacturer, trampoline park supplier, playground equipment factory, ninja warrior course equipment, soft play equipment manufacturer, FEC equipment, family entertainment center equipment, ASTM TUV certified playground, kids play area equipment, indoor play structures, commercial play equipment" />
@@ -29,10 +43,47 @@
     <meta name="twitter:image" content="https://indoorplaygroundsolution.com/og-image.png" />
     
     <link rel="canonical" href="https://indoorplaygroundsolution.com/" />
+    
+    <!-- Critical CSS inline for faster FCP -->
+    <style>
+      /* Critical above-the-fold styles */
+      *, *::before, *::after { box-sizing: border-box; }
+      html { line-height: 1.5; -webkit-text-size-adjust: 100%; }
+      body { margin: 0; font-family: system-ui, -apple-system, sans-serif; }
+      #root { min-height: 100vh; }
+      /* Loading state */
+      .page-loader { 
+        display: flex; 
+        align-items: center; 
+        justify-content: center; 
+        min-height: 100vh; 
+        background: #fff;
+      }
+      @media (prefers-color-scheme: dark) {
+        .page-loader { background: #0a0a0a; }
+      }
+    </style>
   </head>
 
   <body>
-    <div id="root"></div>
+    <div id="root">
+      <!-- Initial loading state shown before React hydrates -->
+      <div class="page-loader" id="initial-loader">
+        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="12" cy="12" r="10" opacity="0.25"/>
+          <path d="M12 2a10 10 0 0 1 10 10" stroke-linecap="round">
+            <animateTransform attributeName="transform" type="rotate" from="0 12 12" to="360 12 12" dur="1s" repeatCount="indefinite"/>
+          </path>
+        </svg>
+      </div>
+    </div>
     <script type="module" src="/src/main.tsx"></script>
+    <script>
+      // Remove initial loader once React mounts
+      window.addEventListener('load', function() {
+        var loader = document.getElementById('initial-loader');
+        if (loader) loader.style.display = 'none';
+      });
+    </script>
   </body>
 </html>
