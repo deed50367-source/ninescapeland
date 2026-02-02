@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import { supabase } from "@/integrations/supabase/client";
 import { useLocalizedPath } from "@/hooks/useLocalizedPath";
 import { useRTL } from "@/hooks/useRTL";
+import { useImagePreload } from "@/hooks/useImagePreload";
 import { Badge } from "./ui/badge";
 import { Button } from "./ui/button";
 import { Skeleton } from "./ui/skeleton";
@@ -43,6 +44,7 @@ export const RelatedProductsSection = ({
   const { t, i18n } = useTranslation();
   const { localizedPath } = useLocalizedPath();
   const { isRTL } = useRTL();
+  const { getPreloadProps } = useImagePreload();
   const [products, setProducts] = useState<Product[]>([]);
   const [isLoading, setIsLoading] = useState(true);
   const [categoryId, setCategoryId] = useState<string | null>(null);
@@ -169,6 +171,7 @@ export const RelatedProductsSection = ({
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.1 }}
+                {...(product.featured_image ? getPreloadProps(product.featured_image) : {})}
               >
                 <Link to={localizedPath(`/products/${product.slug}`)}>
                   <div className="group bg-card rounded-xl overflow-hidden border hover:shadow-lg transition-all duration-300">

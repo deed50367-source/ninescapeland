@@ -22,6 +22,7 @@ import { LiveChat } from "@/components/LiveChat";
 import MobileBottomNav from "@/components/MobileBottomNav";
 import { SEOHead } from "@/components/SEOHead";
 import { OrganizationSchema, LocalBusinessSchema, WebsiteSchema } from "@/components/StructuredData";
+import { ProductPreloader } from "@/components/ProductPreloader";
 
 const Index = () => {
   return (
@@ -54,6 +55,7 @@ const Index = () => {
       <FloatingCTA />
       <LiveChat />
       <MobileBottomNav />
+      <ProductPreloader />
     </div>
   );
 };
