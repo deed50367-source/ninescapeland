@@ -40,6 +40,9 @@ export const HeroSection = () => {
             src={getImageUrl("hero.home")}
             alt="Indoor Playground Equipment Manufacturer"
             className="w-full h-full object-cover"
+            loading="eager"
+            fetchPriority="high"
+            decoding="sync"
           />
         </motion.div>
         

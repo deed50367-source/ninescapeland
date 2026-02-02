@@ -48,6 +48,8 @@ export const AboutMascotIntro = () => {
               src={mascotWelcomeBg}
               alt="NinescapeLand Mascot"
               className="relative w-48 h-48 md:w-64 md:h-64 lg:w-80 lg:h-80 object-contain drop-shadow-2xl"
+              loading="lazy"
+              decoding="async"
               animate={{ 
                 y: [0, -15, 0],
                 rotate: [0, 2, -2, 0]

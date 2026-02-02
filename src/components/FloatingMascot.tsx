@@ -44,6 +44,8 @@ export const FloatingMascot = ({
         src={mascotImages[type]}
         alt="Click to contact us"
         onClick={handleClick}
+        loading="lazy"
+        decoding="async"
         className="w-20 h-20 md:w-28 md:h-28 lg:w-32 lg:h-32 object-contain drop-shadow-xl cursor-pointer hover:scale-110 transition-transform"
         animate={{ 
           y: [0, -10, 0],

@@ -645,6 +645,20 @@
   border-bottom-color: hsl(var(--primary));
 }
 
+/* Image lazy loading shimmer animation */
+@keyframes shimmer {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.animate-shimmer {
+  animation: shimmer 2s infinite;
+}
+
 /* Responsive adjustments */
 @media (max-width: 768px) {
   .blog-content {

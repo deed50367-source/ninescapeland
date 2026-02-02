@@ -46,6 +46,8 @@ export const ContactMascotBanner = () => {
               src={mascotContact}
               alt="Friendly mascot welcoming you"
               className="w-40 h-40 md:w-56 md:h-56 object-contain drop-shadow-xl"
+              loading="lazy"
+              decoding="async"
               animate={{ y: [0, -8, 0] }}
               transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
               whileHover={{ scale: 1.05 }}
