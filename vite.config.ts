@@ -182,6 +182,8 @@ export default defineConfig(({ mode }) => ({
       "react/jsx-runtime",
       "react/jsx-dev-runtime",
       "@tanstack/react-query",
+      "react-i18next",
+      "i18next",
     ],
   },
   optimizeDeps: {
@@ -193,6 +195,10 @@ export default defineConfig(({ mode }) => ({
       "react/jsx-runtime",
       "react/jsx-dev-runtime",
       "@tanstack/react-query",
+      "i18next",
+      "react-i18next",
+      "i18next-browser-languagedetector",
+      "i18next-http-backend",
     ],
   },
   build: {
