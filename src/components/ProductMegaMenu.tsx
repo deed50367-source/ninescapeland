@@ -5,6 +5,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { supabase } from "@/integrations/supabase/client";
 import { useLocalizedPath } from "@/hooks/useLocalizedPath";
 import { useRTL } from "@/hooks/useRTL";
+import { useImagePreload } from "@/hooks/useImagePreload";
 import { Badge } from "./ui/badge";
 import { 
   ChevronDown, 
@@ -38,6 +39,7 @@ export const ProductMegaMenu = () => {
   const { t, i18n } = useTranslation();
   const { localizedPath } = useLocalizedPath();
   const { isRTL } = useRTL();
+  const { preloadImages } = useImagePreload();
   const [isOpen, setIsOpen] = useState(false);
   const [categories, setCategories] = useState<ProductCategory[]>([]);
   const [featuredProducts, setFeaturedProducts] = useState<Product[]>([]);
@@ -88,7 +90,14 @@ export const ProductMegaMenu = () => {
       ]);
 
       if (categoriesRes.data) setCategories(categoriesRes.data);
-      if (productsRes.data) setFeaturedProducts(productsRes.data);
+      if (productsRes.data) {
+        setFeaturedProducts(productsRes.data);
+        // Preload featured product images when menu data loads
+        const imagesToPreload = productsRes.data
+          .map((p) => p.featured_image)
+          .filter(Boolean) as string[];
+        preloadImages(imagesToPreload);
+      }
       setIsLoading(false);
     };
 

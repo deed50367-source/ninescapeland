@@ -6,6 +6,7 @@ import { Button } from "./ui/button";
 import { useLocalizedPath } from "@/hooks/useLocalizedPath";
 import { useRTL } from "@/hooks/useRTL";
 import { useSiteImages } from "@/hooks/useSiteImages";
+import { useImagePreload } from "@/hooks/useImagePreload";
 import mascotPlayground from "@/assets/mascot-playground.png";
 import mascotTrampoline from "@/assets/mascot-trampoline.png";
 import mascotNinja from "@/assets/mascot-ninja.png";
@@ -30,6 +31,7 @@ export const ProductsSection = () => {
   const { localizedPath } = useLocalizedPath();
   const { isRTL } = useRTL();
   const { getImageUrl } = useSiteImages();
+  const { getPreloadProps } = useImagePreload();
 
   // Choose the correct arrow based on RTL
   const ArrowIcon = isRTL ? ArrowLeft : ArrowRight;
@@ -103,6 +105,7 @@ export const ProductsSection = () => {
               key={index}
               variants={item}
               className="group bg-card rounded-xl sm:rounded-2xl overflow-hidden shadow-soft hover:shadow-medium transition-all duration-300"
+              {...getPreloadProps(product.image)}
             >
               {/* Image */}
               <div className="relative h-48 sm:h-56 lg:h-64 overflow-hidden">
