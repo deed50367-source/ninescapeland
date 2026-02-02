@@ -140,6 +140,8 @@ export const ProjectsSection = () => {
                     src={project.image}
                     alt={project.title}
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    loading="lazy"
+                    decoding="async"
                   />
                   <div className="absolute top-4 left-4">
                     <span className="px-3 py-1 bg-primary text-primary-foreground rounded-full text-xs font-semibold">

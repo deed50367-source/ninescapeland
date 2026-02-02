@@ -110,6 +110,8 @@ export const ProductsSection = () => {
                   src={product.image}
                   alt={product.title}
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  loading="lazy"
+                  decoding="async"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-foreground/60 to-transparent" />
                 <div className="absolute bottom-3 left-3 right-3 sm:bottom-4 sm:left-4 sm:right-4 flex gap-1.5 sm:gap-2 flex-wrap">
@@ -131,6 +133,8 @@ export const ProductsSection = () => {
                   src={product.mascot}
                   alt="Ball mascot"
                   className="absolute -top-12 right-2 w-16 h-16 sm:w-20 sm:h-20 object-contain drop-shadow-lg pointer-events-none"
+                  loading="lazy"
+                  decoding="async"
                   animate={{ y: [0, -6, 0] }}
                   transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
                 />
