@@ -218,7 +218,8 @@ export default defineConfig(({ mode }) => ({
           // Animation library
           motion: ["framer-motion"],
           // i18n
-          i18n: ["i18next", "react-i18next", "i18next-browser-languagedetector"],
+          // i18n libraries - keep lightweight, translations loaded on demand
+          i18n: ["i18next", "react-i18next", "i18next-browser-languagedetector", "i18next-http-backend"],
           // Supabase
           supabase: ["@supabase/supabase-js"],
           // Rich text editor

@@ -1,0 +1,2138 @@
+{
+  "nav": {
+    "home": "Início",
+    "aboutUs": "Sobre Nós",
+    "about": "Sobre Nós",
+    "products": "Produtos",
+    "trampolinePark": "Parque de Trampolins",
+    "ninjaCourse": "Curso Ninja",
+    "process": "Processo",
+    "projects": "Projetos",
+    "blog": "Blog",
+    "contact": "Contato",
+    "faq": "FAQ",
+    "caseStudies": "Casos",
+    "more": "Mais",
+    "getFreeQuote": "Orçamento Grátis",
+    "coreProducts": "Produtos Principais",
+    "viewAllProducts": "Ver Todos os Produtos",
+    "categories": "Categorias",
+    "featuredProducts": "Destaques",
+    "noCategoriesYet": "Categorias em breve...",
+    "noFeaturedYet": "Produtos em destaque em breve...",
+    "megaMenuCta": "Precisa de soluções personalizadas?",
+    "megaMenuCtaDesc": "Obtenha uma consulta gratuita para seu projeto"
+  },
+  "relatedProducts": {
+    "badge": "Explorar Produtos",
+    "title": "Produtos Relacionados",
+    "titleHighlight": "Que Você Pode Gostar",
+    "description": "Descubra mais produtos nesta categoria para aprimorar seu projeto",
+    "viewAll": "Ver Todos os Produtos"
+  },
+  "blog": {
+    "readMore": "Ler Mais",
+    "noPosts": "Sem Publicações Ainda",
+    "noPostsDescription": "Volte mais tarde para as últimas notícias e artigos.",
+    "notFound": "Publicação Não Encontrada",
+    "notFoundDescription": "O artigo que você procura não existe ou foi removido.",
+    "backToBlog": "Voltar ao Blog",
+    "pageInfo": "Página {{current}} de {{total}}",
+    "showingPosts": "Mostrando {{from}}-{{to}} de {{total}} artigos",
+    "related": {
+      "badge": "Continue Lendo",
+      "title": "Artigos Relacionados",
+      "description": "Explore mais insights e guias sobre o negócio e design de playgrounds"
+    },
+    "categoryLabel": "Categoria",
+    "tagsLabel": "Tags",
+    "featuredPost": "Artigo em Destaque",
+    "latestArticles": "Últimas Atualizações",
+    "allPosts": "Todos os Artigos",
+    "allCategories": "Todas as Categorias",
+    "exploreTopics": "Explorar Tópicos",
+    "exploreTopicsDesc": "Descubra insights em várias categorias para ter sucesso na indústria de playgrounds",
+    "categories": {
+      "tips": "Dicas Profissionais",
+      "trends": "Tendências do Setor",
+      "guides": "Guias Práticos",
+      "design": "Ideias de Design",
+      "safety": "Normas de Segurança",
+      "business": "Crescimento do Negócio"
+    },
+    "stats": {
+      "articles": "Artigos Publicados",
+      "readers": "Leitores Mensais",
+      "countries": "Países Alcançados",
+      "experience": "Anos de Experiência"
+    },
+    "newsletter": {
+      "badge": "Fique Informado",
+      "title": "Assine Nossa Newsletter",
+      "description": "Receba os últimos insights do setor, dicas e conteúdo exclusivo diretamente na sua caixa de entrada.",
+      "placeholder": "Digite seu e-mail",
+      "subscribe": "Assinar",
+      "privacy": "Respeitamos sua privacidade. Cancele quando quiser.",
+      "success": "Bem-vindo!",
+      "successDesc": "Você se inscreveu com sucesso em nossa newsletter.",
+      "thankYou": "Obrigado por se inscrever!"
+    },
+    "sidebar": {
+      "search": "Pesquisar Artigos",
+      "searchPlaceholder": "Pesquisar...",
+      "categories": "Categorias",
+      "recentPosts": "Publicações Recentes",
+      "popularTags": "Tags Populares",
+      "newsletter": "Fique Atualizado",
+      "newsletterDesc": "Inscreva-se para receber os últimos insights diretamente no seu e-mail."
+    }
+  },
+  "pages": {
+    "blog": {
+      "title": "Perspectivas",
+      "titleHighlight": "e Notícias do Setor",
+      "description": "Fique atualizado com as últimas tendências, dicas e notícias na indústria de playgrounds e entretenimento familiar. Insights de especialistas para ajudá-lo a construir um negócio de sucesso."
+    },
+    "aboutUs": {
+      "title": "Sobre a",
+      "titleHighlight": "NinescapeLand",
+      "description": "Desde 2008, criamos alegria e aventura para famílias em todo o mundo. Como fabricante líder de playgrounds com mais de 15 anos de experiência, concluímos com sucesso mais de 2.000 projetos em mais de 50 países."
+    },
+    "products": {
+      "title": "Soluções",
+      "titleHighlight": "Premium de Playground",
+      "description": "De emocionantes parques de trampolins a criativos playgrounds indoor, cursos ninja a áreas de brinquedo macio seguras - descubra nossa linha completa de equipamentos comerciais certificados ASTM e TUV."
+    },
+    "process": {
+      "title": "Sua Jornada até a",
+      "titleHighlight": "Grande Inauguração",
+      "description": "Experimente nosso processo comprovado de 6 etapas: da consulta de design 3D gratuita à fabricação profissional, envio global e suporte de instalação. Cuidamos de tudo."
+    },
+    "projects": {
+      "title": "Histórias de",
+      "titleHighlight": "Sucesso Globais",
+      "description": "Explore mais de 2.000 instalações concluídas em todo o mundo. De centros de entretenimento familiar em Dubai a parques de trampolins nos EUA, cada projeto mostra nosso compromisso com a qualidade."
+    },
+    "contact": {
+      "title": "Comece Seu",
+      "titleHighlight": "Projeto Hoje",
+      "description": "Pronto para criar um espaço de diversão incrível? Receba um design 3D gratuito e orçamento competitivo em 24 horas. Nossa equipe de especialistas está pronta para dar vida à sua visão."
+    },
+    "faq": {
+      "title": "Dúvidas?",
+      "titleHighlight": "Temos Respostas",
+      "description": "Tudo o que você precisa saber sobre preços, prazos de entrega, envio, instalação, garantias e mais. Não encontrou o que procura? Nossa equipe está a uma mensagem de distância."
+    }
+  },
+  "topBar": {
+    "globalShipping": "Envio Global",
+    "warranty": "3 Anos de Garantia",
+    "customDesign": "Design Personalizado"
+  },
+  "hero": {
+    "badge": "🏭 Fabricante Líder de Playgrounds desde 2008 | Mais de 2.000 Projetos Globais",
+    "title": "Crie Experiências de Diversão",
+    "titleHighlight": "Inesquecíveis",
+    "description": "NinescapeLand é um fabricante e fornecedor profissional de equipamentos de playground com mais de 15 anos de experiência no setor. Somos especializados em projetar, fabricar e instalar soluções completas para playgrounds comerciais indoor, parques de trampolins, cursos ninja warrior, áreas de brinquedo macio e centros de entretenimento familiar. Nossa fábrica de última geração de 50.000 m² utiliza materiais premium e tecnologia de produção avançada para entregar equipamentos certificados ASTM e TUV que atendem aos mais altos padrões internacionais de segurança. Da consulta inicial e design 3D gratuito à fabricação profissional, envio global e suporte de instalação, cuidamos de cada aspecto do seu projeto. Com instalações bem-sucedidas em mais de 50 países, ajudamos milhares de empreendedores a criar ambientes de diversão rentáveis e seguros.",
+    "benefits": {
+      "customDesign": "Design 3D Gratuito",
+      "certified": "Certificado ASTM e TUV",
+      "globalShipping": "Envio para 50+ Países",
+      "warranty": "Garantia de 3 Anos"
+    },
+    "cta": {
+      "getQuote": "Obter Design e Orçamento Grátis",
+      "viewProducts": "Explorar Nossos Produtos"
+    },
+    "trustedCertifications": "Confiado por líderes da indústria em todo o mundo:",
+    "mascotGreeting": "Bem-vindo! 👋"
+  },
+  "products": {
+    "sectionLabel": "Nossos Produtos",
+    "title": "Soluções Comerciais de",
+    "titleHighlight": "Playground",
+    "description": "Do design à instalação, fornecemos soluções completas para centros de entretenimento indoor, centros de diversão familiar e parques de diversões em todo o mundo.",
+    "viewDetails": "Ver Detalhes",
+    "customCta": "Procurando algo específico? Oferecemos serviços de design personalizado.",
+    "discussProject": "Discutir Seu Projeto",
+    "items": {
+      "indoorPlayground": {
+        "title": "Equipamentos de Playground Indoor",
+        "description": "Estruturas de brincadeira multinível com escorregadores, piscinas de bolas, redes de escalada e elementos interativos para crianças de todas as idades.",
+        "features": ["Temas Personalizados", "Certificado de Segurança", "Todas as Idades"]
+      },
+      "trampolinePark": {
+        "title": "Parques de Trampolins",
+        "description": "Soluções completas de parques de trampolins com 12+ zonas de atividades: piscinas de espuma, enterradas, skyrider, bicicleta 360°, paredes de escalada e mais.",
+        "features": ["12+ Zonas de Atividade", "Alto Desempenho", "Design Modular"]
+      },
+      "ninjaCourse": {
+        "title": "Cursos Ninja Warrior",
+        "description": "Cursos de obstáculos ninja profissionais com desafios de altura, paredes de escalada, circuitos de cordas, barras de equilíbrio e obstáculos de aventura.",
+        "features": ["50+ Tipos de Obstáculos", "Design 3D", "Grau de Competição"]
+      },
+      "softPlay": {
+        "title": "Áreas de Brinquedo Macio",
+        "description": "Equipamentos de brinquedo macio seguros e envolventes projetados especificamente para bebês e crianças pequenas.",
+        "features": ["Seguro para Bebês", "Fácil Limpeza", "Modular"]
+      }
+    }
+  },
+  "whyUs": {
+    "sectionLabel": "Por Que Nos Escolher",
+    "title": "Seu Parceiro",
+    "titleHighlight": "Confiável",
+    "titleEnd": "em Diversão",
+    "description": "Com mais de 15 anos de experiência, ajudamos milhares de empresas a criar experiências de diversão excepcionais que impulsionam o crescimento e a satisfação do cliente.",
+    "stats": {
+      "experience": "Anos de Experiência",
+      "countries": "Países Atendidos",
+      "projects": "Projetos Concluídos",
+      "team": "Membros da Equipe"
+    },
+    "features": {
+      "customDesign": {
+        "title": "Design Personalizado",
+        "description": "Serviço de design 3D gratuito adaptado ao seu espaço e marca. Nossa equipe cria temas únicos que cativam os visitantes."
+      },
+      "safetyCertified": {
+        "title": "Certificado de Segurança",
+        "description": "Todos os produtos atendem aos padrões ASTM, TUV, CE e internacionais de segurança. A segurança dos seus visitantes é nossa prioridade."
+      },
+      "globalShipping": {
+        "title": "Envio Global",
+        "description": "Enviamos para mais de 50 países com suporte logístico profissional. Entrega porta a porta disponível em todo o mundo."
+      },
+      "warranty": {
+        "title": "Garantia de 3 Anos",
+        "description": "Garantia líder do setor de 3 anos com suporte técnico vitalício. Respaldamos nossa qualidade."
+      },
+      "support": {
+        "title": "Suporte 24/7",
+        "description": "Atendimento ao cliente 24 horas para ajudá-lo em cada etapa, do design à instalação."
+      },
+      "directFactory": {
+        "title": "Fábrica Direta",
+        "description": "Trate diretamente com o fabricante. Sem intermediários significa preços competitivos e controle de qualidade."
+      }
+    },
+    "certifications": {
+      "title": "Certificações e Padrões",
+      "description": "Nossos produtos cumprem os padrões internacionais de segurança e qualidade"
+    }
+  },
+  "process": {
+    "sectionLabel": "Nosso Processo",
+    "title": "Do Conceito à",
+    "titleHighlight": "Grande Inauguração",
+    "description": "Guiamos você em cada passo para criar seu playground indoor. Nosso processo otimizado garante resultados de qualidade e entrega pontual.",
+    "steps": {
+      "consultation": {
+        "title": "Consulta e Requisitos",
+        "description": "Compartilhe sua visão, dimensões do espaço e orçamento. Nossa equipe fornece consultoria especializada sobre otimização de layout e seleção de atrações."
+      },
+      "design": {
+        "title": "Design 3D Gratuito",
+        "description": "Receba renderizações 3D profissionais mostrando seu playground personalizado. Inclui plantas baixas, vistas de elevação e designs de conceito temáticos."
+      },
+      "manufacturing": {
+        "title": "Fabricação",
+        "description": "A produção começa usando materiais premium e rigoroso controle de qualidade. Atualizações regulares de progresso com fotos e vídeos durante a produção."
+      },
+      "shipping": {
+        "title": "Envio Global",
+        "description": "Embalagem profissional e coordenação logística. Entrega porta a porta ou porto a porto com rastreamento completo e suporte alfandegário."
+      },
+      "installation": {
+        "title": "Suporte de Instalação",
+        "description": "Guias de instalação completos com tutoriais em vídeo. Serviço de instalação no local opcional por nossos técnicos treinados disponível."
+      },
+      "afterSales": {
+        "title": "Serviço Pós-Venda",
+        "description": "Cobertura de garantia de 3 anos. Suporte técnico vitalício, fornecimento de peças de reposição e treinamento operacional para sua equipe."
+      }
+    },
+    "timeline": {
+      "production": "Tempo de Produção",
+      "shipping": "Tempo de Envio",
+      "installation": "Tempo de Instalação"
+    }
+  },
+  "contact": {
+    "sectionLabel": "Entre em Contato",
+    "title": "Solicite Seu",
+    "titleHighlight": "Orçamento Grátis",
+    "description": "Conte-nos sobre seu projeto e obtenha um design e orçamento grátis em 24 horas. Nossa equipe está pronta para ajudá-lo a criar o espaço de diversão perfeito.",
+    "form": {
+      "name": "Seu Nome",
+      "email": "Endereço de E-mail",
+      "phone": "Telefone / WhatsApp",
+      "country": "País",
+      "projectType": "Tipo de Projeto",
+      "message": "Detalhes do Projeto",
+      "messagePlaceholder": "Conte-nos sobre seu projeto: tamanho do espaço, preferências de tema, faixa de orçamento, cronograma...",
+      "submit": "Enviar Consulta",
+      "sending": "Enviando...",
+      "privacy": "Respeitamos sua privacidade. Suas informações nunca serão compartilhadas.",
+      "projectTypes": {
+        "select": "Selecionar tipo de projeto...",
+        "indoorPlayground": "Playground Indoor",
+        "trampolinePark": "Parque de Trampolins",
+        "ninjaCourse": "Curso Ninja Warrior",
+        "softPlay": "Área de Brinquedo Macio",
+        "fec": "Centro de Entretenimento Familiar",
+        "other": "Outro / Misto"
+      }
+    },
+    "info": {
+      "title": "Informações de Contato",
+      "phone": "Telefone / WhatsApp",
+      "email": "E-mail",
+      "factory": "Endereço da Fábrica",
+      "hours": "Horário de Atendimento",
+      "hoursValue": "Suporte 24/7 Disponível"
+    },
+    "whatsapp": {
+      "title": "Resposta Rápida?",
+      "description": "Converse conosco no WhatsApp",
+      "button": "Iniciar Chat no WhatsApp"
+    },
+    "response": {
+      "title": "Resposta Rápida Garantida",
+      "description": "Respondemos a todas as consultas em 24 horas. A maioria das solicitações recebe resposta em 2-4 horas durante o horário comercial."
+    },
+    "toast": {
+      "successTitle": "Mensagem Enviada!",
+      "successDescription": "Obrigado pela sua consulta. Responderemos em 24 horas.",
+      "errorTitle": "Erro",
+      "errorDescription": "Falha ao enviar sua mensagem. Por favor, tente novamente ou entre em contato conosco diretamente.",
+      "rateLimitTitle": "Muitas Solicitações",
+      "rateLimitDescription": "Por favor, aguarde {{time}} antes de enviar novamente.",
+      "validationErrorTitle": "Erro de Validação",
+      "validationErrorDescription": "Por favor, verifique os campos do formulário"
+    },
+    "rateLimit": {
+      "title": "Limite de Envios Atingido",
+      "description": "Por favor, aguarde {{time}} antes de enviar outra mensagem.",
+      "wait": "Aguarde {{time}}"
+    }
+  },
+  "coreValues": {
+    "sectionLabel": "Valores Fundamentais",
+    "title": "Nossos",
+    "titleHighlight": "Valores Fundamentais",
+    "description": "Estes princípios orientam tudo o que fazemos, do design de produtos ao atendimento ao cliente, garantindo excelência em cada etapa.",
+    "quality": {
+      "title": "Qualidade em Primeiro",
+      "description": "Nunca comprometemos a qualidade. Cada componente é cuidadosamente selecionado e testado para garantir durabilidade, segurança e desempenho duradouro."
+    },
+    "innovation": {
+      "title": "Inovação",
+      "description": "Continuamente superamos limites para criar novas experiências. Nossa equipe de P&D desenvolve atrações de ponta que fazem os visitantes voltarem."
+    },
+    "customerFirst": {
+      "title": "Cliente em Primeiro",
+      "description": "Seu sucesso é nosso sucesso. Fornecemos soluções personalizadas e suporte dedicado durante toda a jornada do seu projeto."
+    },
+    "excellence": {
+      "title": "Excelência",
+      "description": "Buscamos excelência em cada detalhe. Da precisão do design à perfeição da instalação, superamos expectativas em cada etapa."
+    },
+    "integrity": {
+      "title": "Integridade",
+      "description": "Construímos relacionamentos baseados em confiança e transparência. Comunicação honesta e práticas éticas são a base do nosso negócio."
+    },
+    "efficiency": {
+      "title": "Eficiência",
+      "description": "Respeitamos seu tempo e investimento. Nossos processos otimizados garantem entrega pontual e soluções econômicas."
+    }
+  },
+  "aboutMascot": {
+    "badge": "Bem-vindo ao NinescapeLand",
+    "title": "Conheça nossa amiga",
+    "titleHighlight": "Ball",
+    "description": "Ball é a embaixadora da marca NinescapeLand, uma menina de coração puro que transmite calor através de suas ações. Ela adora explorar o mundo dos playgrounds e vai guiá-lo através de nossos produtos e serviços, fornecendo orientação profissional para seu projeto.",
+    "trait1": "Coração Puro",
+    "trait2": "Transmite Calor",
+    "trait3": "Ama Explorar",
+    "feature1": "Design Profissional",
+    "feature2": "Certificado em Segurança",
+    "feature3": "Serviço Global"
+  },
+  "aboutTeam": {
+    "timelineLabel": "Nossa Jornada",
+    "timelineTitle": "Nossa História de Crescimento",
+    "mission": {
+      "title": "Nossa Missão",
+      "description": "Fornecer soluções de equipamentos de playground seguros, inovadores e de alta qualidade para clientes em todo o mundo, permitindo que cada criança desfrute de uma infância feliz."
+    },
+    "vision": {
+      "title": "Nossa Visão",
+      "description": "Tornar-se um líder global na fabricação de equipamentos de playground, liderando o desenvolvimento da indústria com tecnologia inovadora e excelente qualidade."
+    },
+    "milestone1": {
+      "title": "Fundação da Empresa",
+      "description": "Fundada em Wenzhou, China, focando na fabricação de equipamentos de playground infantil"
+    },
+    "milestone2": {
+      "title": "Expansão Internacional",
+      "description": "Começou a exportar para mercados do Sudeste Asiático e Oriente Médio"
+    },
+    "milestone3": {
+      "title": "Certificações Obtidas",
+      "description": "Obtivemos certificações de segurança internacionais ISO, CE, TUV"
+    },
+    "milestone4": {
+      "title": "Negócio Global",
+      "description": "Negócios em mais de 50 países com 1000+ projetos concluídos"
+    },
+    "teamTitle": "Equipe Profissional",
+    "teamDescription": "200+ profissionais incluindo designers, engenheiros, equipes de instalação e especialistas em pós-venda",
+    "designers": "Designers",
+    "engineers": "Engenheiros",
+    "support": "Equipe de Suporte"
+  },
+  "faq": {
+    "sectionLabel": "FAQ",
+    "title": "Perguntas",
+    "titleHighlight": "Frequentes",
+    "description": "Encontre respostas para perguntas comuns sobre nossos produtos, serviços e processo.",
+    "items": {
+      "leadTime": {
+        "question": "Qual é o prazo típico para equipamentos de playground?",
+        "answer": "A produção normalmente leva 25-35 dias dependendo do tamanho e complexidade do seu projeto. O tempo de envio varia conforme o destino - aproximadamente 20-35 dias para frete marítimo para a maioria dos portos internacionais. Podemos fornecer opções expeditas para projetos urgentes."
+      },
+      "customDesign": {
+        "question": "Vocês fornecem serviços de design personalizado?",
+        "answer": "Sim! Oferecemos serviços de design 3D gratuitos adaptados às dimensões do seu espaço e tema da marca. Nossa equipe de design trabalhará com você para criar um playground único que maximize seu espaço e atraia clientes. Basta fornecer sua planta baixa e requisitos para começar."
+      },
+      "safety": {
+        "question": "Quais certificações de segurança seus produtos têm?",
+        "answer": "Todos os nossos produtos cumprem os padrões de segurança internacionais incluindo ASTM F1918 (EUA), EN 1176 (Europa), AS 4685 (Austrália) e mais. Temos certificações ISO 9001, ISO 14001, ISO 45001 e somos membros da IAAPA. Certificados TUV e CE são fornecidos com cada projeto."
+      },
+      "warranty": {
+        "question": "Qual garantia vocês oferecem?",
+        "answer": "Fornecemos uma garantia abrangente de 3 anos em todos os equipamentos, que é a cobertura de garantia líder do setor. Isso inclui substituição gratuita de peças defeituosas. Também oferecemos suporte técnico vitalício e orientação de manutenção."
+      },
+      "installation": {
+        "question": "Vocês fornecem suporte de instalação?",
+        "answer": "Sim, oferecemos múltiplas opções de instalação: 1) Manuais de instalação detalhados com guias em vídeo para autoinstalação, 2) Orientação remota por vídeo durante a instalação, 3) Instalação no local por nossos técnicos treinados (disponível por uma taxa adicional). A maioria dos clientes se autoinstala com sucesso com nossa orientação."
+      },
+      "budget": {
+        "question": "Qual é a faixa de orçamento para um playground comercial?",
+        "answer": "O preço depende do tamanho, complexidade e recursos. Uma área de brinquedo macio básica começa em torno de $15.000, enquanto playgrounds multinível completos variam de $30.000-$200.000+. Parques de trampolins normalmente variam de $50.000-$500.000+. Fornecemos orçamentos detalhados com base em seus requisitos específicos."
+      },
+      "shipping": {
+        "question": "Vocês podem enviar para meu país?",
+        "answer": "Sim! Enviamos para mais de 50 países em todo o mundo incluindo EUA, Canadá, Reino Unido, Austrália, EAU, Sudeste Asiático, Europa e mais. Cuidamos de toda a documentação de exportação e podemos organizar entrega porta a porta ou porto a porto conforme sua preferência."
+      },
+      "materials": {
+        "question": "Quais materiais vocês usam?",
+        "answer": "Usamos materiais premium e ecológicos incluindo: tubos de aço galvanizado (2.2mm de espessura), acolchoamento de espuma revestido de PVC, plásticos LLDPE de grau comercial, tecidos retardantes de fogo e tintas não tóxicas. Todos os materiais são rigorosamente testados para segurança e durabilidade."
+      }
+    }
+  },
+  "footer": {
+    "description": "Fabricante profissional de equipamentos de playground comercial, parques de trampolins, cursos ninja e soluções de centros de entretenimento familiar. Atendendo clientes em todo o mundo desde 2008.",
+    "products": "Produtos",
+    "company": "Empresa",
+    "contactUs": "Contate-nos",
+    "links": {
+      "indoorPlayground": "Equipamentos de Playground Indoor",
+      "trampolinePark": "Equipamentos de Parque de Trampolins",
+      "ninjaCourse": "Curso Ninja Warrior",
+      "softPlay": "Equipamentos de Brinquedo Macio",
+      "customDesign": "Serviço de Design Personalizado",
+      "aboutUs": "Sobre Nós",
+      "projects": "Nossos Projetos",
+      "certifications": "Certificações",
+      "faq": "FAQ",
+      "contact": "Contate-nos"
+    },
+    "contact": {
+      "phone": "Telefone / WhatsApp",
+      "email": "E-mail",
+      "factory": "Fábrica"
+    },
+    "copyright": "© 2024 NinescapeLand. Todos os direitos reservados.",
+    "privacy": "Política de Privacidade",
+    "terms": "Termos de Serviço"
+  },
+"floatingCta": {
+    "scrollToTop": "Voltar ao topo",
+    "whatsapp": "Conversar no WhatsApp"
+  },
+  "trampolineFeatures": {
+    "sectionLabel": "Recursos do Parque de Trampolins",
+    "title": "Zonas de",
+    "titleHighlight": "Atração Completas",
+    "description": "Nossos parques de trampolins apresentam mais de 12 zonas de atividades diversas projetadas para máximo engajamento e visitas repetidas. Cada zona oferece experiências únicas para diferentes níveis e idades.",
+    "mixMatch": "Misture e combine zonas para criar o parque perfeito para seu espaço e orçamento",
+    "modularDesign": "Design Modular",
+    "customLayouts": "Layouts Personalizados",
+    "scalableSolutions": "Soluções Escaláveis",
+    "zones": {
+      "spongePlayZone": {
+        "title": "Zona de Esponja",
+        "description": "Mergulhe em cubos de espuma coloridos para pousos suaves e diversão sem fim. Perfeito para truques de trampolim e acrobacias seguras."
+      },
+      "plumBlossomPiles": {
+        "title": "Pilares Flor de Ameixa",
+        "description": "Design único de pilares que atrai atenção e proporciona experiências de exercício diversas para crianças de todos os níveis."
+      },
+      "inflatableFootball": {
+        "title": "Futebol Inflável",
+        "description": "Zona inovadora de treinamento de futebol que combina elementos de habilidade com entretenimento emocionante para uma experiência de aprendizado refrescante."
+      },
+      "slamDunkZone": {
+        "title": "Zona Slam Dunk",
+        "description": "Experimente enterradas estilo NBA! Use o salto do trampolim para voar e enterrar como um profissional de basquete."
+      },
+      "skyrider": {
+        "title": "Skyrider",
+        "description": "Atividade de tirolesa aérea oferecendo uma aventura de voo única. Deslize pelo parque para uma experiência de aventura emocionante."
+      },
+      "bicycle360": {
+        "title": "Bicicleta 360°",
+        "description": "Experiência revolucionária de bicicleta giratória. Liberte-se do ciclismo tradicional e aproveite a liberdade de 360 graus."
+      },
+      "climbingWall": {
+        "title": "Parede de Escalada",
+        "description": "Não apenas um esporte, mas uma forma de arte. Escale o 'balé de rocha' como o Homem-Aranha alcançando as estrelas."
+      },
+      "adventureChallenge": {
+        "title": "Desafio de Aventura",
+        "description": "Cursos de desafio únicos projetados para despertar curiosidade e criatividade. Supere obstáculos com trabalho em equipe."
+      },
+      "freeJumpZone": {
+        "title": "Zona de Salto Livre",
+        "description": "Grandes trampolins interconectados para saltos livres, caminhadas na parede e diversão desafiando a gravidade."
+      },
+      "proTrampolineZone": {
+        "title": "Zona de Trampolim Pro",
+        "description": "Trampolins de nível profissional com maior salto para treinamento de ginástica e manobras aéreas avançadas."
+      },
+      "battleStickArena": {
+        "title": "Arena de Bastões",
+        "description": "Arena de batalha com bastões de espuma combinando equilíbrio e combate. Armas acolchoadas seguras para duelos emocionantes."
+      },
+      "dodgeballZone": {
+        "title": "Zona de Dodgeball",
+        "description": "Dodgeball clássico em trampolim com dinâmica de salto elástico. Completo com acolchoamento de segurança para competições de equipes."
+      }
+    }
+  },
+  "ninjaFeatures": {
+    "sectionLabel": "Parque Ninja Indoor",
+    "title": "Desafie Alturas,",
+    "titleHighlight": "Conquiste Aventuras",
+    "description": "Nossos cursos ninja warrior combinam desafios de altura com obstáculos de aventura, proporcionando uma experiência inesquecível que constrói confiança e habilidades de trabalho em equipe.",
+    "features": {
+      "highAltitude": {
+        "title": "Desafios de Altura",
+        "description": "Supere seus limites com paredes de escalada, tirolesas e redes aéreas. Experimente aventuras emocionantes em um ambiente completamente seguro."
+      },
+      "adventureObstacles": {
+        "title": "Obstáculos de Aventura",
+        "description": "Explore cursos de desafio únicos cheios de sabedoria e diversão. Supere barreiras, resolva puzzles e trabalhe em equipe."
+      },
+      "teamBuilding": {
+        "title": "Trabalho em Equipe",
+        "description": "Perfeito para grupos que buscam aventura e colaboração. Cada módulo é cuidadosamente projetado para inspirar curiosidade e criatividade."
+      },
+      "physicalDevelopment": {
+        "title": "Desenvolvimento Físico",
+        "description": "Desafie-se com obstáculos que constroem força, agilidade e confiança. Adequado para todas as idades e níveis de condicionamento físico."
+      }
+    },
+    "stats": {
+      "obstacleTypes": "Tipos de Obstáculos",
+      "layoutDesign": "Design de Layout",
+      "custom": "Personalizado",
+      "suitableFor": "Adequado Para",
+      "allAges": "Todas as Idades",
+      "designRendering": "Renderização de Design"
+    }
+  },
+  "productDetail": {
+    "notFound": {
+      "title": "Produto não encontrado",
+      "description": "O produto que você procura não existe.",
+      "backToProducts": "Ver todos os produtos"
+    },
+    "breadcrumb": {
+      "home": "Início",
+      "products": "Produtos"
+    },
+    "backToProducts": "Voltar aos produtos",
+    "startingFrom": "A partir de",
+    "requestQuote": "Solicitar orçamento",
+    "usePriceCalculator": "Usar calculadora de preços",
+    "benefits": {
+      "free3DDesign": "Design 3D gratuito",
+      "worldwideShipping": "Envio mundial",
+      "installationSupport": "Suporte de instalação"
+    },
+    "tabs": {
+      "features": "Características",
+      "specifications": "Especificações",
+      "process": "Processo"
+    },
+    "keyFeatures": "Principais características",
+    "technicalSpecs": "Especificações técnicas",
+    "ourProcess": "Nosso processo",
+    "process": {
+      "consultation": {
+        "title": "Consulta",
+        "desc": "Discuta sua visão e requisitos"
+      },
+      "design": {
+        "title": "Design 3D",
+        "desc": "Receba propostas de design personalizadas"
+      },
+      "production": {
+        "title": "Produção",
+        "desc": "Equipamento fabricado conforme especificações"
+      },
+      "installation": {
+        "title": "Instalação",
+        "desc": "Suporte de instalação profissional"
+      }
+    },
+    "cta": {
+      "title": "Pronto para começar?",
+      "description": "Entre em contato conosco hoje para uma consulta gratuita e proposta de design 3D. Vamos dar vida à sua visão.",
+      "button": "Obter orçamento gratuito"
+    },
+    "specs": {
+      "ageRange": "Faixa etária",
+      "minSpace": "Espaço mín.",
+      "maxHeight": "Altura máx.",
+      "materials": "Materiais",
+      "warranty": "Garantia",
+      "installation": "Instalação",
+      "certification": "Certificação",
+      "leadTime": "Prazo de entrega"
+    },
+    "indoorPlayground": {
+      "title": "Equipamentos de playground indoor",
+      "subtitle": "Estruturas de jogo multinível",
+      "description": "Crie experiências de brincadeira mágicas com nossos equipamentos de playground indoor personalizados. De estruturas multinível a áreas de brincadeira temáticas, damos vida à imaginação com equipamentos certificados em segurança.",
+      "features": [
+        "Temas e designs personalizados",
+        "Estruturas de jogo multinível",
+        "Elementos interativos",
+        "Piscinas de bolinhas e escorregadores",
+        "Paredes e redes de escalada",
+        "Áreas de jogo sensorial",
+        "Zonas para crianças pequenas",
+        "Áreas de brincadeira de faz de conta"
+      ]
+    },
+    "trampolinePark": {
+      "title": "Equipamentos de parque de trampolins",
+      "subtitle": "Soluções completas para parques de salto",
+      "description": "Equipamentos profissionais para parques de trampolins com mais de 12 zonas de atividade. Nossos designs modulares maximizam diversão e segurança com piscinas de espuma, slam dunk, skyrider, bicicleta 360°, paredes de escalada e mais.",
+      "features": [
+        "Zonas de salto livre",
+        "Áreas de piscinas de espuma",
+        "Basquete slam dunk",
+        "Quadras de dodgeball",
+        "Sistemas skyrider",
+        "Bicicleta 360°",
+        "Obstáculos ninja",
+        "Pouso com airbag"
+      ]
+    },
+    "ninjaCourse": {
+      "title": "Circuito Ninja Warrior",
+      "subtitle": "Circuitos de obstáculos profissionais",
+      "description": "Os caçadores de desafios amam nossos circuitos ninja warrior. Com mais de 50 tipos de obstáculos incluindo paredes curvas, escadas de salmão, cordas de escalada, barras de equilíbrio e desafios personalizados para todos os níveis de habilidade.",
+      "features": [
+        "Paredes curvas",
+        "Escadas de salmão",
+        "Circuitos de cordas",
+        "Obstáculos de equilíbrio",
+        "Desafios de escalada",
+        "Balanços de anéis",
+        "Redes de carga",
+        "Pistas de competição"
+      ]
+    },
+    "softPlay": {
+      "title": "Equipamentos de soft play",
+      "subtitle": "Áreas de brincadeira seguras para crianças",
+      "description": "Projetado para os menores aventureiros, nosso equipamento de soft play oferece ambientes seguros e envolventes para crianças pequenas. Fácil de limpar, modular e construído com os mais altos padrões de segurança.",
+      "features": [
+        "Design seguro para crianças pequenas",
+        "Construção de espuma macia",
+        "Superfícies fáceis de limpar",
+        "Componentes modulares",
+        "Elementos sensoriais",
+        "Piscinas de bolinhas",
+        "Mini escorregadores",
+        "Painéis interativos"
+      ]
+    }
+  },
+  "productPages": {
+    "indoorPlayground": {
+      "title": "Equipamentos de",
+      "titleHighlight": "Playground Indoor",
+      "description": "Estruturas de jogo multinível com escorregadores, piscinas de bolinhas, redes de escalada e elementos interativos para crianças de todas as idades. Temas personalizados e certificados ASTM e TUV para máxima segurança.",
+      "featuresLabel": "Características Principais",
+      "featuresTitle": "Por Que Escolher Nossos",
+      "featuresTitleHighlight": "Playgrounds Indoor",
+      "features": {
+        "customTheme": {
+          "title": "Temas Personalizados",
+          "description": "Crie ambientes de marca únicos com cores, temas e designs de personagens personalizados."
+        },
+        "safety": {
+          "title": "Certificado de Segurança",
+          "description": "Todos os equipamentos atendem aos padrões de segurança ASTM, TUV, CE e internacionais."
+        },
+        "allAges": {
+          "title": "Todas as Idades",
+          "description": "Projetado para crianças de todas as idades com zonas e desafios apropriados para cada faixa etária."
+        },
+        "modular": {
+          "title": "Design Modular",
+          "description": "Layouts flexíveis que podem ser personalizados e expandidos conforme seu negócio cresce."
+        }
+      },
+      "galleryLabel": "Nossos Projetos",
+      "galleryTitle": "Galeria de",
+      "galleryTitleHighlight": "Playground Indoor",
+      "componentsLabel": "Componentes do Equipamento",
+      "componentsTitle": "Soluções Completas",
+      "componentsTitleHighlight": "de Diversão",
+      "componentsDescription": "Nossos playgrounds indoor apresentam uma grande variedade de elementos emocionantes que mantêm as crianças ativas e engajadas por horas.",
+      "components": {
+        "slides": "Escorregadores Espirais e de Onda",
+        "ballPits": "Piscinas de Bolinhas",
+        "climbingNets": "Redes de Escalada",
+        "tubes": "Tubos de Rastejamento",
+        "obstacles": "Circuitos de Obstáculos",
+        "interactiveGames": "Jogos Interativos",
+        "ropeElements": "Elementos de Cordas",
+        "softPlay": "Zonas de Soft Play"
+      },
+      "cta": "Design e Orçamento Grátis",
+      "premiumQuality": "Qualidade Premium",
+      "years": "Anos",
+      "commercial": "Comercial",
+      "stats": {
+        "projects": "Projetos Concluídos",
+        "countries": "Países Atendidos",
+        "years": "Anos de Experiência",
+        "customization": "Personalização"
+      },
+      "ageZonesLabel": "Design por Faixa Etária",
+      "ageZonesTitle": "Zonas de Diversão para",
+      "ageZonesTitleHighlight": "Cada Idade",
+      "ageZonesDescription": "Projetamos zonas específicas para cada faixa etária para garantir que cada criança tenha uma experiência de diversão segura e envolvente adaptada ao seu estágio de desenvolvimento.",
+      "ageZones": {
+        "toddler": {
+          "title": "Zona de Bebês",
+          "description": "Espaços macios e seguros com elementos sensoriais, mini escorregadores e áreas de brincadeira almofadadas para pequenos exploradores."
+        },
+        "kids": {
+          "title": "Aventura Infantil",
+          "description": "Estruturas multinível com redes de escalada, piscinas de bolinhas e jogos interativos que despertam a imaginação."
+        },
+        "juniors": {
+          "title": "Desafio Júnior",
+          "description": "Circuitos de obstáculos emocionantes, elementos de cordas e escaladas desafiadoras para aventureiros em crescimento."
+        },
+        "teens": {
+          "title": "Zona Teen",
+          "description": "Atividades de alta energia com elementos ninja, áreas de competição e espaços sociais."
+        }
+      },
+      "advantagesLabel": "Por Que NinescapeLand",
+      "advantagesTitle": "Nossas Vantagens",
+      "advantagesTitleHighlight": "Competitivas",
+      "advantages": {
+        "certified": {
+          "title": "Certificado Internacional",
+          "description": "Todos os produtos atendem aos padrões de segurança ASTM, TUV, CE, EN 1176 com documentação de certificação completa."
+        },
+        "fastDelivery": {
+          "title": "Produção Rápida",
+          "description": "Tempo de produção de 25-35 dias com atualizações regulares. Opções aceleradas disponíveis para projetos urgentes."
+        },
+        "globalShipping": {
+          "title": "Envio Mundial",
+          "description": "Entrega porta a porta ou porto a porto para mais de 50 países com suporte aduaneiro completo."
+        },
+        "installation": {
+          "title": "Suporte de Instalação",
+          "description": "Guias detalhados, tutoriais em vídeo e instalação opcional no local por nossa equipe especializada."
+        }
+      },
+      "casesLabel": "Histórias de Sucesso",
+      "casesTitle": "Projetos",
+      "casesTitleHighlight": "Destacados",
+      "cases": {
+        "case1": {
+          "title": "Centro de Aventuras Kingdom",
+          "location": "Houston, Texas, EUA"
+        },
+        "case2": {
+          "title": "Kids Wonder World",
+          "location": "Dubai, EAU"
+        }
+      },
+      "testimonialsLabel": "Depoimentos de Clientes",
+      "testimonialsTitle": "O Que Nossos Clientes",
+      "testimonialsTitleHighlight": "Dizem",
+      "testimonials": {
+        "sarah": "A qualidade superou nossas expectativas! A NinescapeLand entregou um playground impressionante que nossos clientes adoram absolutamente. A equipe de design foi incrivelmente criativa e o suporte de instalação foi fantástico.",
+        "ahmed": "Do conceito à instalação, a equipe da NinescapeLand foi profissional e responsiva. Nosso novo playground se tornou o destaque do nosso centro de entretenimento. Altamente recomendado!",
+        "emma": "Vimos um aumento de 40% nos visitantes desde a abertura do nosso novo playground indoor. A temática personalizada e a atenção aos detalhes realmente nos diferenciam da concorrência."
+      },
+      "ctaSection": {
+        "title": "Pronto para Criar o Playground dos Seus Sonhos?",
+        "description": "Receba um design 3D gratuito e um orçamento competitivo em 24 horas.",
+        "getQuote": "Obter Orçamento Grátis",
+        "viewProjects": "Ver Mais Projetos"
+      },
+      "themesLabel": "Designs Temáticos",
+      "themesTitle": "Temas Populares de",
+      "themesTitleHighlight": "Playgrounds",
+      "themesDescription": "Transforme seu espaço com nossos designs temáticos criativos.",
+      "themesCustomNote": "Não encontrou o tema ideal? Criamos designs personalizados baseados na sua visão.",
+      "themesDiscuss": "Discuta Seu Tema",
+      "themes": {
+        "jungle": { "title": "Aventura na Selva", "description": "Tema de floresta tropical com palmeiras e personagens de animais." },
+        "ocean": { "title": "Explorador do Oceano", "description": "Mundo submarino com criaturas marinhas e estruturas inspiradas em ondas." },
+        "castle": { "title": "Castelo de Conto de Fadas", "description": "Tema de reino mágico com torres e dragões." },
+        "space": { "title": "Estação Espacial", "description": "Tema espacial futurista com foguetes e planetas." }
+      },
+      "benefitsLabel": "Benefícios do Desenvolvimento",
+      "benefitsTitle": "Crescendo Através da",
+      "benefitsTitleHighlight": "Brincadeira",
+      "benefitsDescription": "Nossos playgrounds apoiam o desenvolvimento físico, cognitivo e social das crianças.",
+      "benefits": {
+        "cognitive": { "title": "Desenvolvimento Cognitivo", "description": "Atividades de resolução de problemas que estimulam o desenvolvimento cerebral." },
+        "physical": { "title": "Crescimento Físico", "description": "Atividades de escalada, salto e equilíbrio para força e coordenação." },
+        "motor": { "title": "Habilidades Motoras", "description": "Desenvolvimento de habilidades motoras finas e grossas." },
+        "social": { "title": "Habilidades Sociais", "description": "Áreas de brincadeira em grupo que ensinam compartilhamento e trabalho em equipe." }
+      },
+      "designProcessLabel": "Nosso Processo",
+      "designProcessTitle": "Do Conceito à",
+      "designProcessTitleHighlight": "Grande Inauguração",
+      "designProcessDescription": "Guiamos você em cada etapa para criar seu playground interno perfeito.",
+      "step": "Passo",
+      "designProcess": {
+        "consultation": { "title": "Consulta", "description": "Compartilhe sua visão, dimensões e orçamento." },
+        "design": { "title": "Design 3D", "description": "Receba renderizações 3D profissionais do seu playground." },
+        "production": { "title": "Fabricação", "description": "Produção com materiais premium e controle de qualidade rigoroso." },
+        "shipping": { "title": "Envio Global", "description": "Embalagem profissional e entrega porta a porta." },
+        "installation": { "title": "Instalação", "description": "Guias completos com tutoriais em vídeo." },
+        "support": { "title": "Pós-Venda", "description": "Garantia de 3 anos com suporte técnico vitalício." }
+      },
+      "safetyLabel": "Padrões de Segurança",
+      "safetyTitle": "Certificações",
+      "safetyTitleHighlight": "Internacionais",
+      "safetyDescription": "Segurança é nossa prioridade máxima. Todos os equipamentos atendem aos padrões internacionais.",
+      "safetyCertified": "100% Certificado",
+      "safety": {
+        "astm": { "title": "ASTM F1918", "description": "Padrão americano de segurança para playgrounds." },
+        "tuv": { "title": "Certificado TUV", "description": "Marca alemã de qualidade e segurança." },
+        "ce": { "title": "Marcação CE", "description": "Conformidade europeia para saúde e segurança." },
+        "en": { "title": "EN 1176", "description": "Padrão europeu de segurança para equipamentos de playground." }
+      }
+    },
+    "trampolinePark": {
+      "title": "Soluções para",
+      "titleHighlight": "Parques de Trampolim",
+      "description": "Soluções completas para parques de trampolim com 12+ zonas de atividade incluindo piscinas de espuma, áreas de slam dunk, circuitos ninja, quadras de dodgeball e mais. Equipamentos de alto desempenho projetados para máximo engajamento.",
+      "featuresLabel": "Características Principais",
+      "featuresTitle": "Por Que Escolher Nossos",
+      "featuresTitleHighlight": "Parques de Trampolim",
+      "features": {
+        "performance": {
+          "title": "Alto Desempenho",
+          "description": "Molas e lonas premium para salto superior, durabilidade e segurança."
+        },
+        "safety": {
+          "title": "Segurança em Primeiro",
+          "description": "Estruturas acolchoadas, redes de segurança e piscinas de espuma para pousos seguros."
+        },
+        "zones": {
+          "title": "12+ Zonas de Atividade",
+          "description": "Atrações diversas mantêm os visitantes engajados e incentivam visitas repetidas."
+        },
+        "modular": {
+          "title": "Layout Modular",
+          "description": "Designs flexíveis que se adaptam ao seu espaço e requisitos de orçamento."
+        }
+      },
+      "stats": {
+        "zones": "Zonas de Atividade",
+        "projects": "Projetos Concluídos",
+        "countries": "Países Atendidos",
+        "years": "Anos de Experiência"
+      },
+      "galleryLabel": "Nossos Projetos",
+      "galleryTitle": "Galeria de Parques",
+      "galleryTitleHighlight": "de Trampolim",
+      "cta": "Design e Orçamento Grátis",
+      "zonesLabel": "Zonas de Atividade",
+      "zonesTitle": "Zonas de Jogo",
+      "zonesTitleHighlight": "Emocionantes",
+      "zonesDescription": "Nossos parques de trampolim apresentam múltiplas zonas de atividade projetadas para envolver visitantes de todas as idades e níveis de habilidade.",
+      "zones": {
+        "freejump": {
+          "title": "Zona de Salto Livre",
+          "description": "Trampolins abertos para salto livre, piruetas e truques com acolchoamento de segurança em toda a área."
+        },
+        "foampit": {
+          "title": "Piscina de Espuma",
+          "description": "Zonas de pouso suave para praticar novos movimentos aéreos e treinamento seguro de truques."
+        },
+        "basketball": {
+          "title": "Slam Dunk",
+          "description": "Cestas de basquete assistidas por trampolim para enterradas espetaculares e competições."
+        },
+        "dodgeball": {
+          "title": "Arena de Dodgeball",
+          "description": "Quadras de dodgeball com trampolins para jogos em equipe e atividades em grupo emocionantes."
+        }
+      },
+      "advantagesLabel": "Nossas Vantagens",
+      "advantagesTitle": "Por Que Escolher",
+      "advantagesTitleHighlight": "NinescapeLand",
+      "advantages": {
+        "certified": {
+          "title": "Certificado Internacionalmente",
+          "description": "Equipamentos certificados ASTM, TUV, CE que atendem aos padrões de segurança globais."
+        },
+        "production": {
+          "title": "Produção Rápida",
+          "description": "Fabricação de 25-35 dias com atualizações regulares do progresso."
+        },
+        "shipping": {
+          "title": "Envio Global",
+          "description": "Entrega porta a porta para mais de 50 países em todo o mundo."
+        },
+        "installation": {
+          "title": "Suporte de Instalação",
+          "description": "Guias detalhados, suporte por vídeo ou instalação no local disponível."
+        }
+      },
+      "casesLabel": "Histórias de Sucesso",
+      "casesTitle": "Projetos",
+      "casesTitleHighlight": "Destacados",
+      "cases": {
+        "skypark": {
+          "title": "SkyJump Parque de Aventuras",
+          "location": "Los Angeles, EUA"
+        },
+        "jumpworld": {
+          "title": "JumpWorld Centro Familiar",
+          "location": "Londres, Reino Unido"
+        }
+      },
+      "testimonialsLabel": "Avaliações de Clientes",
+      "testimonialsTitle": "O Que Dizem",
+      "testimonialsTitleHighlight": "Nossos Clientes",
+      "testimonials": {
+        "james": {
+          "location": "Proprietário FEC, Texas, EUA",
+          "quote": "O equipamento do parque de trampolim superou nossas expectativas. Ótima qualidade, entrega pontual e excelente suporte ao cliente durante todo o processo."
+        },
+        "maria": {
+          "location": "Diretora de Centro de Entretenimento, Madri, Espanha",
+          "quote": "NinescapeLand entregou uma solução completa chave na mão. Do design à instalação, tudo foi tratado profissionalmente. Nosso parque foi um grande sucesso!"
+        },
+        "david": {
+          "location": "Proprietário de Negócio, Sydney, Austrália",
+          "quote": "Trabalhar com NinescapeLand foi tranquilo. A qualidade do equipamento é excepcional e o suporte pós-venda foi extraordinário. Altamente recomendado!"
+        }
+      },
+      "extendedZones": {
+        "bicycle": {
+          "title": "Bicicleta 360°",
+          "description": "Experiência revolucionária de bicicleta giratória com liberdade de movimento de 360 graus."
+        },
+        "airbag": {
+          "title": "Airbag Gigante",
+          "description": "Zona de aterrissagem segura para praticar saltos extremos e truques aéreos."
+        },
+        "battlebeam": {
+          "title": "Viga de Batalha",
+          "description": "Viga de equilíbrio elevada para emocionantes batalhas um contra um com bastões de espuma."
+        },
+        "ninja": {
+          "title": "Circuito Ninja",
+          "description": "Circuito de obstáculos desafiador combinando elementos de escalada, balanço e equilíbrio."
+        }
+      },
+      "ageZonesLabel": "Zonas por Idade",
+      "ageZonesTitle": "Diversão para",
+      "ageZonesTitleHighlight": "Todas as Idades",
+      "ageZonesDescription": "Projetamos zonas específicas por idade para garantir experiências seguras e envolventes.",
+      "ageZones": {
+        "toddler": {
+          "title": "Zona Infantil",
+          "description": "Trampolins macios e fechados com salto suave para os mais pequenos (3-6 anos)."
+        },
+        "kids": {
+          "title": "Aventura Crianças",
+          "description": "Zonas multi-atividade com piscinas de espuma e basquete para crianças (7-12 anos)."
+        },
+        "teens": {
+          "title": "Desafio Adolescente",
+          "description": "Zonas de alta energia com áreas de truques avançados e atividades competitivas (13-17 anos)."
+        },
+        "adults": {
+          "title": "Fitness Adultos",
+          "description": "Trampolins focados em fitness e zonas de desempenho para visitantes adultos (18+ anos)."
+        }
+      },
+      "safetyLabel": "Padrões de Segurança",
+      "safetyTitle": "Sua Segurança é",
+      "safetyTitleHighlight": "Nossa Prioridade",
+      "safetyDescription": "Implementamos os mais altos padrões de segurança em cada aspecto do design.",
+      "safety": {
+        "padding": {
+          "title": "Acolchoamento Premium",
+          "description": "Espuma de alta densidade em molduras, molas e áreas de aterrissagem."
+        },
+        "certification": {
+          "title": "Certificações Internacionais",
+          "description": "Todos os equipamentos atendem aos padrões ASTM F2970, TUV, CE e EN."
+        },
+        "materials": {
+          "title": "Materiais Comerciais",
+          "description": "Molas resistentes, tapetes reforçados e tecidos retardantes de fogo."
+        },
+        "inspection": {
+          "title": "Inspeção de Qualidade",
+          "description": "Testes e inspeção rigorosos em cada etapa de produção."
+        }
+      },
+      "benefitsLabel": "Saúde e Fitness",
+      "benefitsTitle": "Pule em Direção a uma",
+      "benefitsTitleHighlight": "Saúde Melhor",
+      "benefitsDescription": "O exercício em trampolim proporciona incríveis benefícios para a saúde.",
+      "benefits": {
+        "cardio": {
+          "title": "Saúde Cardiovascular",
+          "description": "10 minutos de salto equivalem a 30 minutos de corrida para a saúde do coração."
+        },
+        "strength": {
+          "title": "Construção Muscular",
+          "description": "Treino de corpo inteiro que trabalha pernas, core e braços."
+        },
+        "balance": {
+          "title": "Equilíbrio e Coordenação",
+          "description": "Melhora a propriocepção e habilidades motoras através do movimento dinâmico."
+        },
+        "stress": {
+          "title": "Alívio do Estresse",
+          "description": "Atividade divertida que libera endorfinas e reduz o estresse."
+        }
+      },
+      "processLabel": "Nosso Processo",
+      "processTitle": "Do Conceito à",
+      "processTitleHighlight": "Grande Inauguração",
+      "processDescription": "Guiamos você em cada passo para criar seu parque de trampolim de sucesso.",
+      "step": "Passo",
+      "process": {
+        "consultation": {
+          "title": "Consulta",
+          "description": "Compartilhe sua visão, dimensões e orçamento para assessoria especializada."
+        },
+        "design": {
+          "title": "Design 3D",
+          "description": "Receba renderizações 3D profissionais com layouts otimizados."
+        },
+        "production": {
+          "title": "Fabricação",
+          "description": "Produção de equipamentos premium com atualizações regulares."
+        },
+        "shipping": {
+          "title": "Envio Global",
+          "description": "Logística profissional com entrega porta a porta mundial."
+        },
+        "installation": {
+          "title": "Instalação",
+          "description": "Guias completos ou instalação no local pela nossa equipe."
+        },
+        "support": {
+          "title": "Pós-Venda",
+          "description": "Garantia de 3 anos com suporte técnico vitalício."
+        }
+      },
+      "ctaSection": {
+        "title": "Pronto para Construir Seu Parque de Trampolim?",
+        "description": "Receba um design 3D gratuito e orçamento competitivo em 24 horas. Nossa equipe especializada ajudará você a criar um parque de trampolim emocionante e lucrativo.",
+        "getQuote": "Obter Orçamento Grátis",
+        "viewProjects": "Ver Mais Projetos"
+      }
+    },
+    "ninjaCourse": {
+      "title": "Circuitos",
+      "titleHighlight": "Ninja Warrior",
+      "description": "Circuitos de obstáculos ninja profissionais com paredes curvas, escadas de salmão, paredes de escalada, circuitos de cordas e mais de 50 elementos de desafio. Equipamentos de nível competição para todos os níveis de habilidade.",
+      "featuresLabel": "Características Principais",
+      "featuresTitle": "Por Que Escolher Nossos",
+      "featuresTitleHighlight": "Circuitos Ninja",
+      "features": {
+        "obstacles": {
+          "title": "50+ Tipos de Obstáculos",
+          "description": "Ampla seleção de desafios desde iniciante até nível de competição profissional."
+        },
+        "safety": {
+          "title": "Sistemas de Segurança",
+          "description": "Colchões de impacto, cintos de segurança e superfícies acolchoadas para treino seguro."
+        },
+        "competition": {
+          "title": "Nível Competição",
+          "description": "Equipamentos projetados para atender aos padrões de programas de TV e competições."
+        },
+        "customizable": {
+          "title": "Totalmente Personalizável",
+          "description": "Projete circuitos adaptados ao seu espaço, público e níveis de habilidade."
+        }
+      },
+      "obstaclesLabel": "Obstáculos Populares",
+      "obstaclesTitle": "Elementos de",
+      "obstaclesTitleHighlight": "Desafio",
+      "obstaclesDescription": "Nossos circuitos ninja incluem uma ampla gama de obstáculos que testam força, agilidade e resistência. Combine para criar o desafio definitivo.",
+      "obstacles": {
+        "warped": "Parede Curva",
+        "salmon": "Escada de Salmão",
+        "rings": "Argolas Voadoras",
+        "cargo": "Redes de Carga",
+        "balance": "Barras de Equilíbrio",
+        "rope": "Balanços de Corda",
+        "monkey": "Barras de Macaco",
+        "climbing": "Paredes de Escalada"
+      },
+      "galleryLabel": "Nossos Projetos",
+      "galleryTitle": "Galeria de Circuitos",
+      "galleryTitleHighlight": "Ninja",
+      "cta": "Design e Orçamento Grátis",
+      "competitionGrade": "Nível Competição",
+      "days": "Dias",
+      "stats": {
+        "obstacles": "Tipos de Obstáculos",
+        "projects": "Projetos Concluídos",
+        "countries": "Países Atendidos",
+        "years": "Anos de Experiência"
+      },
+      "levelsLabel": "Níveis de Dificuldade",
+      "levelsTitle": "Níveis de",
+      "levelsTitleHighlight": "Dificuldade de Treino",
+      "levelsDescription": "Nossos circuitos ninja são projetados com múltiplos níveis de dificuldade para desafiar participantes desde iniciantes até atletas de elite.",
+      "levels": {
+        "beginner": {
+          "title": "Iniciante",
+          "description": "Perfeito para primeira vez. Obstáculos baixos com acolchoamento de segurança e pontos de apoio fáceis para ganhar confiança."
+        },
+        "intermediate": {
+          "title": "Intermediário",
+          "description": "Desafios moderados com maior complexidade. Alcances mais longos e elementos de equilíbrio para desenvolver habilidades."
+        },
+        "advanced": {
+          "title": "Avançado",
+          "description": "Obstáculos exigentes que requerem força e técnica. Elementos técnicos que testam atletas experientes."
+        },
+        "elite": {
+          "title": "Elite / Competição",
+          "description": "Dificuldade nível programa de TV. Máximo desafio para atletas ninja profissionais e treino de competição."
+        }
+      },
+      "advantagesLabel": "Nossas Vantagens",
+      "advantagesTitle": "Por Que Escolher",
+      "advantagesTitleHighlight": "NinescapeLand",
+      "advantages": {
+        "certified": {
+          "title": "Certificação Internacional",
+          "description": "Equipamentos certificados ASTM, TUV, CE que atendem aos padrões de segurança globais."
+        },
+        "production": {
+          "title": "Produção Rápida",
+          "description": "Fabricação de 25-35 dias com atualizações regulares de progresso."
+        },
+        "shipping": {
+          "title": "Envio Global",
+          "description": "Entrega porta a porta para mais de 50 países em todo o mundo."
+        },
+        "installation": {
+          "title": "Suporte de Instalação",
+          "description": "Guias detalhados, suporte por vídeo ou instalação no local disponível."
+        }
+      },
+      "casesLabel": "Casos de Sucesso",
+      "casesTitle": "Projetos",
+      "casesTitleHighlight": "Destacados",
+      "cases": {
+        "ninja1": {
+          "title": "Academia Ninja USA",
+          "location": "Denver, Colorado, EUA"
+        },
+        "ninja2": {
+          "title": "Treinamento Ultimate Warrior",
+          "location": "Toronto, Canadá"
+        }
+      },
+      "testimonialsLabel": "Avaliações de Clientes",
+      "testimonialsTitle": "O Que Clientes",
+      "testimonialsTitleHighlight": "Dizem Sobre Nós",
+      "testimonials": {
+        "mike": {
+          "location": "Dono de Academia, Califórnia, EUA",
+          "quote": "O equipamento do circuito ninja transformou nossa academia. Os membros adoram o desafio e se tornou nossa maior atração. A qualidade é excepcional e a instalação foi simples."
+        },
+        "lisa": {
+          "location": "Gerente de FEC, Vancouver, Canadá",
+          "quote": "Do design à instalação, a NinescapeLand superou nossas expectativas. O layout do circuito maximiza nosso espaço e a qualidade do equipamento é excelente."
+        },
+        "robert": {
+          "location": "Diretor de Parque de Aventuras, Melbourne, Austrália",
+          "quote": "Vimos um aumento significativo nas assinaturas desde que adicionamos o circuito ninja. Os obstáculos de nível competição atraem tanto atletas sérios quanto visitantes casuais."
+        }
+      },
+      "extendedObstacles": {
+        "quintSteps": { "title": "Passos Quíntuplos", "description": "Cinco plataformas anguladas que requerem velocidade, precisão e impulso." },
+        "spiderWall": { "title": "Parede Aranha", "description": "Corredor vertical estreito que requer escalada com braços e pernas." },
+        "swingRopes": { "title": "Cordas de Balanço", "description": "Série de cordas penduradas para balançar entre plataformas." },
+        "rollingLog": { "title": "Tronco Rolante", "description": "Cilindro giratório que requer equilíbrio e reflexos rápidos." },
+        "pegBoard": { "title": "Quadro de Pinos", "description": "Quadro vertical com buracos para pinos que testa força superior." },
+        "doorKnobs": { "title": "Maçanetas", "description": "Série de maçanetas giratórias que requerem força de pegada." },
+        "pipeFitter": { "title": "Barras de Tubos", "description": "Barras aéreas de diâmetros variados que desafiam transições de pegada." },
+        "cannonball": { "title": "Corredor de Bolas", "description": "Série de esferas penduradas que requerem técnica de balanço e pegada." }
+      },
+      "trainingBenefits": {
+        "sectionLabel": "Benefícios do Treino",
+        "title": "Construa Força",
+        "titleHighlight": "e Confiança",
+        "description": "O treinamento ninja proporciona benefícios de desenvolvimento físico e mental para todas as idades.",
+        "strength": { "title": "Força Corporal Total", "description": "Desenvolve músculos superiores, core e pernas através de movimentos funcionais." },
+        "grip": { "title": "Força de Pegada", "description": "Obstáculos de pendurar, balançar e escalar melhoram a força de mãos e antebraços." },
+        "agility": { "title": "Agilidade e Velocidade", "description": "Transições rápidas e cursos cronometrados desenvolvem músculos de fibra rápida." },
+        "mental": { "title": "Força Mental", "description": "Superar obstáculos desafiadores constrói perseverança e foco." },
+        "coordination": { "title": "Coordenação Corporal", "description": "Movimentos complexos melhoram a propriocepção e consciência espacial." },
+        "confidence": { "title": "Autoconfiança", "description": "Alcançar metas e superar medos constrói autoestima duradoura." }
+      },
+      "safetySection": {
+        "sectionLabel": "Padrões de Segurança",
+        "title": "Sua Segurança é",
+        "titleHighlight": "Nossa Prioridade",
+        "description": "Cada circuito ninja é projetado com recursos de segurança abrangentes.",
+        "crashMats": { "title": "Colchões de Impacto", "description": "Colchões de espuma de alta densidade sob todos os obstáculos." },
+        "harnesses": { "title": "Cintos de Segurança", "description": "Sistemas de cinto opcionais para elementos altos." },
+        "padding": { "title": "Superfícies Acolchoadas", "description": "Todas as molduras, postes e bordas cobertas com acolchoamento protetor." },
+        "certification": { "title": "Certificado Internacional", "description": "Todos os equipamentos atendem aos padrões ASTM, TUV, CE e EN." }
+      },
+      "ageGroups": {
+        "sectionLabel": "Design por Idades",
+        "title": "Circuitos para",
+        "titleHighlight": "Todas as Idades",
+        "description": "Projetamos seções de circuito separadas com desafios apropriados para a idade.",
+        "kids": { "age": "6-12", "title": "Ninjas Junior", "description": "Obstáculos escalonados com acolchoamento extra para construir confiança." },
+        "teens": { "age": "13-17", "title": "Guerreiros Adolescentes", "description": "Desafios intermediários com variedade completa de obstáculos." },
+        "adults": { "age": "18+", "title": "Atletas Adultos", "description": "Obstáculos de nível competição completo para treino sério." },
+        "family": { "age": "Todas", "title": "Circuitos Familiares", "description": "Seções de dificuldade mista onde famílias podem treinar juntas." }
+      },
+      "processSection": {
+        "sectionLabel": "Nosso Processo",
+        "title": "Do Conceito a",
+        "titleHighlight": "Pronto para Competir",
+        "description": "Guiamos você em cada passo de criar sua instalação ninja warrior profissional.",
+        "consultation": { "step": "1", "title": "Consulta", "description": "Compartilhe sua visão, dimensões e público-alvo." },
+        "design": { "step": "2", "title": "Design 3D", "description": "Receba renderizações 3D profissionais com posicionamento otimizado." },
+        "production": { "step": "3", "title": "Fabricação", "description": "Produção de equipamentos premium com materiais comerciais." },
+        "shipping": { "step": "4", "title": "Envio Global", "description": "Embalagem e logística profissional com entrega porta a porta." },
+        "installation": { "step": "5", "title": "Instalação", "description": "Guias detalhados com tutoriais em vídeo ou instalação no local." },
+        "support": { "step": "6", "title": "Pós-Venda", "description": "Garantia de 3 anos com suporte técnico vitalício." }
+      },
+      "ctaSection": {
+        "title": "Pronto para Construir Seu Circuito Ninja?",
+        "description": "Obtenha um design 3D gratuito e orçamento competitivo em 24 horas. Nossa equipe de especialistas ajudará você a criar uma instalação ninja warrior lucrativa e desafiadora.",
+        "getQuote": "Obter Orçamento Grátis",
+        "viewProjects": "Ver Mais Projetos"
+      }
+    },
+    "softPlay": {
+      "title": "Áreas de",
+      "titleHighlight": "Soft Play",
+      "description": "Equipamentos de soft play seguros e envolventes projetados especificamente para crianças pequenas. Fáceis de limpar, modulares e construídos com os mais altos padrões de segurança.",
+      "featuresLabel": "Características Principais",
+      "featuresTitle": "Por Que Escolher Nossos",
+      "featuresTitleHighlight": "Equipamentos Soft Play",
+      "features": {
+        "toddlerSafe": {
+          "title": "Seguro para Crianças",
+          "description": "Projetado especificamente para crianças de 0-5 anos com bordas arredondadas e superfícies macias."
+        },
+        "materials": {
+          "title": "Materiais Premium",
+          "description": "Espuma de alta densidade, couro PVC e materiais não tóxicos em todo o equipamento."
+        },
+        "easyClean": {
+          "title": "Fácil de Limpar",
+          "description": "Superfícies antibacterianas e capas removíveis para manutenção simples."
+        },
+        "modular": {
+          "title": "Sistema Modular",
+          "description": "Combine componentes para criar layouts personalizados para qualquer espaço."
+        }
+      },
+      "componentsLabel": "Tipos de Equipamentos",
+      "componentsTitle": "Componentes de",
+      "componentsTitleHighlight": "Soft Play",
+      "componentsDescription": "Nossos equipamentos de soft play incluem tudo o que é necessário para criar áreas de diversão seguras e envolventes para os visitantes mais jovens.",
+      "components": {
+        "ballPits": "Piscinas de Bolinhas",
+        "rockers": "Balanços Macios",
+        "slides": "Mini Escorregadores",
+        "tunnels": "Túneis de Rastejamento",
+        "shapes": "Formas Macias",
+        "mats": "Tapetes de Jogo",
+        "steps": "Degraus Macios",
+        "walls": "Paredes de Escalada"
+      },
+      "benefitsLabel": "Benefícios",
+      "benefitsTitle": "Benefícios do",
+      "benefitsTitleHighlight": "Desenvolvimento",
+      "benefits": {
+        "development": {
+          "title": "Desenvolvimento Motor",
+          "description": "Escalar, rastejar e equilibrar ajudam a desenvolver habilidades motoras grossas e coordenação."
+        },
+        "socialSkills": {
+          "title": "Interação Social",
+          "description": "Espaços de brincadeira compartilhados incentivam cooperação, comunicação e desenvolvimento social."
+        },
+        "sensory": {
+          "title": "Estimulação Sensorial",
+          "description": "Várias texturas, cores e elementos interativos estimulam o desenvolvimento sensorial."
+        }
+      },
+      "galleryLabel": "Nossos Projetos",
+      "galleryTitle": "Galeria de",
+      "galleryTitleHighlight": "Soft Play",
+      "cta": "Design e Orçamento Grátis",
+      "kidsFriendly": "Amigável para Crianças",
+      "stats": {
+        "projects": "Projetos Soft Play",
+        "countries": "Países Atendidos",
+        "experience": "Anos de Experiência",
+        "satisfaction": "Satisfação do Cliente"
+      },
+      "ageZonesLabel": "Design Apropriado por Idade",
+      "ageZonesTitle": "Projetado para",
+      "ageZonesTitleHighlight": "Todas as Idades",
+      "ageZonesDescription": "Nossas áreas de soft play são cuidadosamente projetadas para atender às necessidades de desenvolvimento de diferentes faixas etárias.",
+      "ageZones": {
+        "infant": {
+          "age": "0-12 Meses",
+          "title": "Zona Bebês",
+          "description": "Superfícies ultra macias, brinquedos sensoriais e atividades gentis para os menores exploradores."
+        },
+        "toddler": {
+          "age": "1-3 Anos",
+          "title": "Zona Crianças Pequenas",
+          "description": "Elementos de escalada baixos, piscinas de bolinhas e painéis interativos para desenvolvimento motor."
+        },
+        "preschool": {
+          "age": "3-5 Anos",
+          "title": "Zona Pré-Escolar",
+          "description": "Obstáculos mais desafiadores, escorregadores e elementos de brincadeira imaginativa."
+        },
+        "mixed": {
+          "age": "Todas as Idades",
+          "title": "Zona Familiar",
+          "description": "Áreas de brincadeira inclusivas onde irmãos podem brincar juntos com desafios apropriados."
+        }
+      },
+      "safetyLabel": "Segurança em Primeiro",
+      "safetyTitle": "Padrões de Segurança",
+      "safetyTitleHighlight": "Certificados",
+      "safetyDescription": "A segurança de seus filhos é nossa prioridade máxima. Cada elemento de soft play atende ou supera os padrões internacionais.",
+      "safetyCertified": "Certificado ASTM e EN",
+      "safety": {
+        "standards": {
+          "title": "Certificações Internacionais",
+          "description": "Todos os produtos atendem ASTM F1487, EN 1176 e TÜV para equipamentos comerciais."
+        },
+        "materials": {
+          "title": "Materiais Não Tóxicos",
+          "description": "Sem chumbo, sem ftalatos e retardantes de chamas, seguros para crianças de todas as idades."
+        },
+        "hygiene": {
+          "title": "Design Higiênico",
+          "description": "Superfícies antibacterianas e capas fáceis de limpar previnem acúmulo de germes."
+        }
+      },
+      "advantagesLabel": "Por Que Nos Escolher",
+      "advantagesTitle": "Nossas Vantagens",
+      "advantagesTitleHighlight": "Competitivas",
+      "advantages": {
+        "certified": {
+          "title": "Certificado em Segurança",
+          "description": "Todos os produtos atendem padrões ASTM, EN e TÜV internacionais."
+        },
+        "fast": {
+          "title": "Produção Rápida",
+          "description": "Fabricação em 15-25 dias com controle de qualidade rigoroso."
+        },
+        "shipping": {
+          "title": "Envio Global",
+          "description": "Entrega porta a porta para mais de 80 países com suporte alfandegário."
+        },
+        "support": {
+          "title": "Suporte de Instalação",
+          "description": "Manuais detalhados, vídeos guia e instalação no local opcional."
+        }
+      },
+      "caseStudiesLabel": "Histórias de Sucesso",
+      "caseStudiesTitle": "Projetos",
+      "caseStudiesTitleHighlight": "em Destaque",
+      "caseStudiesDescription": "Explore nossas instalações de soft play concluídas que encantam crianças e pais ao redor do mundo.",
+      "caseStudies": {
+        "case1": {
+          "title": "Centro de Jogos Kids Kingdom",
+          "location": "Dubai, EAU",
+          "size": "150 m²",
+          "feature1": "Estrutura Multinível",
+          "feature2": "Paraíso de Bolinhas",
+          "feature3": "Parede Sensorial"
+        },
+        "case2": {
+          "title": "Berçário Little Stars",
+          "location": "Londres, Reino Unido",
+          "size": "80 m²",
+          "feature1": "Zonas por Idade",
+          "feature2": "Tema Oceano",
+          "feature3": "Elementos Interativos"
+        }
+      },
+      "testimonialsLabel": "Avaliações de Clientes",
+      "testimonialsTitle": "O Que os Pais",
+      "testimonialsTitleHighlight": "Dizem",
+      "testimonials": {
+        "testimonial1": {
+          "quote": "A área de soft play tornou-se a atração mais popular. A qualidade é excepcional e as crianças adoram!",
+          "name": "Sara Johnson",
+          "location": "Londres, Reino Unido"
+        },
+        "testimonial2": {
+          "quote": "Equipe profissional do design à instalação. Os recursos de segurança dão tranquilidade aos pais.",
+          "name": "Ahmed Hassan",
+          "location": "Dubai, EAU"
+        },
+        "testimonial3": {
+          "quote": "Vimos um aumento de 40% nas reservas desde a instalação. Melhor investimento que fizemos!",
+          "name": "Maria Garcia",
+          "location": "Madrid, Espanha"
+        }
+      },
+      "ctaSection": {
+        "title": "Pronto para Criar sua Área Soft Play?",
+        "description": "Obtenha um design 3D gratuito e orçamento competitivo em 24 horas. Nossa equipe especializada ajudará você a criar um espaço de brincadeira seguro e envolvente.",
+        "getQuote": "Obter Orçamento Grátis",
+        "viewProjects": "Ver Mais Projetos"
+      }
+    }
+  },
+  "processDetail": {
+    "sectionLabel": "Processo Detalhado",
+    "title": "Cada Passo",
+    "titleHighlight": "Explicado",
+    "description": "Acreditamos em total transparência. Aqui está uma visão aprofundada de como transformamos sua visão em um local de entretenimento de sucesso, com suporte dedicado em cada marco para garantir que seu projeto supere as expectativas.",
+    "consultation": {
+      "title": "Fase de Consulta e Planejamento",
+      "description": "Nossa jornada começa entendendo sua visão única, mercado e objetivos de negócio. Nossos consultores experientes trabalham de perto com você para analisar seu público-alvo, concorrência local e condições do local.",
+      "feature1": "Análise de local e estudo de viabilidade grátis",
+      "feature2": "Pesquisa de mercado e análise de concorrência",
+      "feature3": "Planejamento de orçamento e projeções de ROI",
+      "feature4": "Orientação sobre conformidade regulatória"
+    },
+    "design": {
+      "title": "Design 3D Personalizado e Engenharia",
+      "description": "Nossa equipe de design premiada cria visualizações 3D impressionantes que dão vida ao seu conceito. Desenvolvemos plantas baixas, vistas de elevação e designs conceituais temáticos que otimizam o fluxo de tráfego.",
+      "feature1": "Renderizações 3D fotorrealistas",
+      "feature2": "Plantas baixas e elevações detalhadas",
+      "feature3": "Desenvolvimento de temas e integração de marca",
+      "feature4": "Múltiplas rodadas de revisão de design incluídas"
+    },
+    "manufacturing": {
+      "title": "Fabricação de Precisão",
+      "description": "A produção começa em nossa instalação de 50.000 m² com certificação ISO 9001. Cada componente é fabricado usando materiais premium, máquinas CNC avançadas e rigorosos processos de controle de qualidade.",
+      "feature1": "Materiais premium ecológicos",
+      "feature2": "Sistemas de inspeção de qualidade automatizados",
+      "feature3": "Atualizações de produção em tempo real com fotos",
+      "feature4": "Testes e certificação antes do envio"
+    }
+  },
+  "processGuarantee": {
+    "sectionLabel": "Nossas Garantias",
+    "title": "Seu Investimento",
+    "titleHighlight": "Protegido",
+    "description": "Apoiamos cada projeto com garantias líderes do setor e suporte abrangente. Seu sucesso é nosso sucesso, e estamos comprometidos em entregar excelência em cada etapa.",
+    "quality": {
+      "title": "Garantia de Qualidade",
+      "description": "Cada componente passa por testes e inspeções rigorosas. Usamos apenas materiais premium que atendem ou excedem os padrões internacionais de segurança."
+    },
+    "delivery": {
+      "title": "Entrega no Prazo",
+      "description": "Entendemos que o tempo é crítico para seu negócio. Nossos processos de produção e logística otimizados garantem que seu equipamento chegue no prazo."
+    },
+    "warranty": {
+      "title": "Garantia de 3 Anos",
+      "description": "Garantia abrangente líder do setor cobrindo todos os defeitos de fabricação. Fornecemos peças de reposição gratuitas e suporte dedicado durante o período de garantia."
+    },
+    "support": {
+      "title": "Suporte Técnico Vitalício",
+      "description": "Nosso relacionamento não termina na instalação. Fornecemos assistência técnica contínua, orientação de manutenção e consultoria operacional."
+    },
+    "replacement": {
+      "title": "Peças de Reposição Grátis",
+      "description": "Se qualquer componente falhar devido a defeitos de fabricação durante o período de garantia, enviaremos peças de reposição sem custo. Seu tempo de atividade e satisfação do cliente são nossas prioridades."
+    },
+    "satisfaction": {
+      "title": "Garantia de Satisfação",
+      "description": "Trabalhamos de perto com você durante todo o processo para garantir satisfação completa. Do design à instalação, fazemos ajustes até que sua visão seja realizada."
+    }
+  },
+  "processTestimonials": {
+    "sectionLabel": "Histórias de Sucesso",
+    "title": "O Que Dizem",
+    "titleHighlight": "Nossos Clientes",
+    "description": "Não apenas acredite em nossa palavra. Ouça proprietários de locais de entretenimento ao redor do mundo que se associaram à NinescapeLand para criar destinos de diversão bem-sucedidos e lucrativos.",
+    "items": [
+      {
+        "name": "Michael Anderson",
+        "role": "Proprietário de FEC",
+        "country": "Estados Unidos",
+        "content": "Da nossa primeira consulta até a inauguração, a equipe NinescapeLand foi excepcional. Os designs 3D foram impressionantes e a instalação final superou nossas expectativas. Nosso parque de trampolins está lotado desde o primeiro dia."
+      },
+      {
+        "name": "Sarah Mitchell",
+        "role": "Diretora de Centro de Entretenimento",
+        "country": "Reino Unido",
+        "content": "Trabalhar com a NinescapeLand foi uma experiência perfeita. Sua atenção aos detalhes e compromisso com a segurança nos impressionaram desde o início. O playground interno personalizado se tornou a atração mais popular."
+      },
+      {
+        "name": "Ahmed Hassan",
+        "role": "Gerente de Desenvolvimento de Negócios",
+        "country": "Emirados Árabes Unidos",
+        "content": "Nos associamos com a NinescapeLand em três projetos nos EAU. Sua consistência em qualidade, preços competitivos e entrega confiável os tornaram nosso fornecedor preferido."
+      }
+    ]
+  },
+  "processCTA": {
+    "title": "Pronto para Começar",
+    "titleHighlight": "Seu Projeto?",
+    "description": "Junte-se a milhares de proprietários bem-sucedidos de locais de entretenimento que confiaram na NinescapeLand. Obtenha seu design 3D personalizado gratuito e orçamento competitivo hoje.",
+    "getQuote": "Design e Orçamento Grátis",
+    "whatsapp": "Chat no WhatsApp",
+    "response": "Tempo de Resposta",
+    "design": "Serviço de Design 3D",
+    "countries": "Países Atendidos"
+  },
+  "processTimeline": {
+    "sectionLabel": "Cronograma do Projeto",
+    "title": "Cronograma Completo",
+    "titleHighlight": "do Projeto",
+    "description": "Uma visão transparente da jornada do seu projeto desde a consulta inicial até a grande inauguração. Cada fase é cuidadosamente gerenciada para garantir entrega de qualidade e conclusão no prazo.",
+    "totalTime": "Duração Total do Projeto",
+    "totalTimeDesc": "Da consulta até a inauguração",
+    "days": "Dias",
+    "months": "Meses",
+    "approximately": "Aproximadamente",
+    "note": "* O cronograma pode variar com base na complexidade do projeto, requisitos de personalização, destino de envio e escopo de instalação. Pedidos urgentes disponíveis para projetos urgentes.",
+    "phases": {
+      "inquiry": {
+        "phase": "Fase 1",
+        "title": "Consulta Inicial",
+        "duration": "1-3 Dias",
+        "task1": "Enviar requisitos do projeto e detalhes do espaço",
+        "task2": "Receber consulta preliminar e recomendações",
+        "task3": "Obter estimativa de orçamento inicial e opções"
+      },
+      "design": {
+        "phase": "Fase 2",
+        "title": "Design 3D",
+        "duration": "5-10 Dias",
+        "task1": "Design 3D personalizado baseado em suas especificações",
+        "task2": "Múltiplas revisões e refinamentos de design",
+        "task3": "Aprovação final do design e assinatura"
+      },
+      "confirmation": {
+        "phase": "Fase 3",
+        "title": "Confirmação do Pedido",
+        "duration": "3-5 Dias",
+        "task1": "Revisar e aprovar cotação final",
+        "task2": "Assinar contrato e acordo de produção",
+        "task3": "Processar pagamento de entrada (30-50%)"
+      },
+      "production": {
+        "phase": "Fase 4",
+        "title": "Fabricação",
+        "duration": "25-35 Dias",
+        "task1": "Preparação de materiais e inspeção de qualidade",
+        "task2": "Produção com atualizações regulares de fotos/vídeos",
+        "task3": "Controle de qualidade e inspeção pré-embarque"
+      },
+      "shipping": {
+        "phase": "Fase 5",
+        "title": "Envio Global",
+        "duration": "20-35 Dias",
+        "task1": "Embalagem profissional e carregamento de contêiner",
+        "task2": "Frete marítimo com rastreamento em tempo real",
+        "task3": "Desembaraço aduaneiro e coordenação de entrega"
+      },
+      "installation": {
+        "phase": "Fase 6",
+        "title": "Instalação",
+        "duration": "5-10 Dias",
+        "task1": "Guias de instalação detalhados e suporte de vídeo",
+        "task2": "Instalação no local por técnicos treinados (opcional)",
+        "task3": "Inspeção final, testes e entrega"
+      }
+    }
+  },
+  "projectsStats": {
+    "sectionLabel": "Impacto Global",
+    "title": "Nosso Histórico de",
+    "titleHighlight": "Excelência",
+    "description": "Números que falam do nosso compromisso com qualidade, inovação e sucesso do cliente. Cada estatística representa projetos reais, famílias reais e alegria real criada ao redor do mundo.",
+    "projectsCompleted": "Projetos Concluídos",
+    "countriesServed": "Países Atendidos",
+    "happyVisitors": "Visitantes Felizes Anualmente",
+    "yearsExperience": "Anos de Excelência",
+    "clientSatisfaction": "Taxa de Satisfação",
+    "sqmInstalled": "Metros Quadrados Instalados"
+  },
+  "projectsMap": {
+    "sectionLabel": "Presença Mundial",
+    "title": "Projetos",
+    "titleHighlight": "ao Redor do Mundo",
+    "description": "Da América do Norte ao Oriente Médio, da Europa à Ásia-Pacífico, nossos equipamentos de playground trazem alegria para famílias em todos os cantos do mundo.",
+    "projectsLabel": "Projetos",
+    "highlightsTitle": "Destaques do Serviço Global",
+    "regions": {
+      "northAmerica": {
+        "name": "América do Norte",
+        "countries": "EUA, Canadá, México"
+      },
+      "europe": {
+        "name": "Europa",
+        "countries": "Reino Unido, Alemanha, França, Espanha, Itália"
+      },
+      "middleEast": {
+        "name": "Oriente Médio",
+        "countries": "EAU, Arábia Saudita, Qatar, Kuwait"
+      },
+      "asiaPacific": {
+        "name": "Ásia-Pacífico",
+        "countries": "Austrália, Singapura, Malásia, Tailândia"
+      },
+      "latinAmerica": {
+        "name": "América Latina",
+        "countries": "Brasil, Argentina, Chile, Colômbia"
+      },
+      "africa": {
+        "name": "África",
+        "countries": "África do Sul, Egito, Nigéria, Quênia"
+      }
+    },
+    "highlights": {
+      "item1": "Gerentes de projeto locais em regiões-chave",
+      "item2": "Equipes de suporte multilíngues",
+      "item3": "Conformidade de segurança regional",
+      "item4": "Envio rápido para todos os continentes"
+    }
+  },
+  "projectsTestimonials": {
+    "sectionLabel": "Histórias de Sucesso dos Clientes",
+    "title": "Projetos Reais,",
+    "titleHighlight": "Resultados Reais",
+    "description": "Ouça proprietários e operadores de centros de entretenimento de todo o mundo que se associaram à NinescapeLand para criar destinos de lazer bem-sucedidos e lucrativos.",
+    "items": [
+      {
+        "name": "David Miller",
+        "role": "CEO, Adventure Zone Group",
+        "country": "Califórnia, EUA",
+        "project": "FEC de 5.000 m²",
+        "content": "A NinescapeLand entregou um incrível playground interno que se tornou a atração familiar mais bem avaliada em nossa área. A equipe de design entendeu nossa visão perfeitamente, e a qualidade do equipamento superou todas as expectativas. Nossa receita aumentou 40% no primeiro ano."
+      },
+      {
+        "name": "Emma Thompson",
+        "role": "Diretora de Operações",
+        "country": "Londres, Reino Unido",
+        "project": "Parque de Trampolins de 3.500 m²",
+        "content": "Da consulta inicial à inauguração, a experiência foi perfeita. A atenção aos detalhes de segurança, soluções de design criativas e comunicação responsiva tornaram esta nossa melhor parceria com fornecedores."
+      },
+      {
+        "name": "Mohammed Al-Rashid",
+        "role": "Sócio Gerente",
+        "country": "Dubai, EAU",
+        "project": "Playground Interno de 4.200 m²",
+        "content": "Concluímos três projetos com a NinescapeLand em toda a região do Golfo. Sua consistência, confiabilidade e compreensão das necessidades do nosso mercado é incomparável. O suporte pós-venda continua anos após a instalação."
+      },
+      {
+        "name": "Lisa Chen",
+        "role": "Proprietária de Franquia",
+        "country": "Sydney, Austrália",
+        "project": "Local Misto de 2.800 m²",
+        "content": "O playground temático personalizado que a NinescapeLand criou se tornou uma sensação no Instagram. Os pais adoram a atenção aos detalhes, as crianças não se cansam das atrações únicas."
+      }
+    ]
+  },
+  "projectsCTA": {
+    "title": "Pronto para Criar o Playground dos Seus Sonhos?",
+    "description": "Junte-se a mais de 2.000 centros de entretenimento bem-sucedidos em todo o mundo. Obtenha seu design 3D gratuito e orçamento competitivo em 24 horas.",
+    "getQuote": "Design e Orçamento Grátis",
+    "whatsapp": "Chat no WhatsApp",
+    "features": {
+      "freeConsultation": {
+        "title": "Consulta Gratuita",
+        "description": "Consultoria especializada sem custo"
+      },
+      "expertAdvice": {
+        "title": "Equipe Especializada",
+        "description": "15+ anos de experiência"
+      },
+      "fastResponse": {
+        "title": "Resposta Rápida",
+        "description": "Orçamento em 24 horas"
+      }
+    }
+  },
+  "projectTypes": {
+    "sectionLabel": "Categorias de Projetos",
+    "title": "O Que",
+    "titleHighlight": "Construímos",
+    "description": "De zonas de soft play íntimas a complexos de entretenimento massivos, projetamos e fabricamos soluções completas para todo tipo de local de recreação indoor.",
+    "learnMore": "Saiba Mais",
+    "items": {
+      "fec": {
+        "title": "Centros de Entretenimento Familiar",
+        "description": "Soluções FEC completas com estruturas de jogo multinível, atrações temáticas, salas de festas e layouts que maximizam receitas.",
+        "feature1": "Zonas multi-atração para todas as idades",
+        "feature2": "Espaços integrados para festas e eventos",
+        "feature3": "Plantas otimizadas para receita"
+      },
+      "trampolinePark": {
+        "title": "Parques de Trampolins",
+        "description": "Instalações de parques de trampolins de alta energia com trampolins de performance, fossas de espuma, quadras de dodgeball e atrações aéreas únicas.",
+        "feature1": "12+ opções de zonas de atividade",
+        "feature2": "Equipamento de nível competição",
+        "feature3": "Design modular e expansível"
+      },
+      "ninjaWarrior": {
+        "title": "Cursos Ninja Warrior",
+        "description": "Cursos de obstáculos profissionais inspirados em competições de TV. Perfeitos para academias, instalações de treinamento dedicadas ou adições a centros existentes.",
+        "feature1": "50+ tipos de obstáculos",
+        "feature2": "Níveis de dificuldade ajustáveis",
+        "feature3": "Layouts de competição e treinamento"
+      },
+      "softPlay": {
+        "title": "Áreas de Soft Play",
+        "description": "Ambientes de jogo seguros e envolventes projetados especificamente para bebês e crianças pequenas. Ideais para shopping centers, restaurantes e centros comunitários.",
+        "feature1": "Materiais seguros para crianças",
+        "feature2": "Superfícies fáceis de limpar",
+        "feature3": "Designs compactos e modulares"
+      }
+    }
+  },
+  "interactiveMap": {
+    "sectionLabel": "Mapa Mundial Interativo",
+    "title": "Explore Nosso",
+    "titleHighlight": "Alcance Mundial",
+    "description": "Clique em qualquer região para descobrir informações detalhadas sobre nossos projetos, clientes e histórias de sucesso naquela área. Construímos parcerias duradouras em todos os continentes.",
+    "clickHint": "Clique em uma região para ver informações detalhadas do projeto",
+    "selectRegion": "Selecione uma Região",
+    "selectRegionHint": "Clique em qualquer região no mapa ou use os botões abaixo para explorar nossa presença global e portfólio de projetos.",
+    "projectsLabel": "Projetos",
+    "clientsLabel": "Clientes Satisfeitos",
+    "featuredProject": "Projeto em Destaque",
+    "startProject": "Inicie Seu Projeto Aqui",
+    "globalStats": "Visão Global",
+    "totalProjects": "Total de Projetos",
+    "countriesServed": "Países Atendidos",
+    "regions": {
+      "northAmerica": {
+        "name": "América do Norte",
+        "countries": "EUA, Canadá, México",
+        "featured": "Mega Adventure Zone - Centro de entretenimento indoor de 8.000 m² em Los Angeles com 15 atrações únicas",
+        "description": "Nosso portfólio na América do Norte inclui alguns dos maiores e mais inovadores centros de entretenimento familiar da região. De costa a costa, fizemos parcerias com empreendedores para criar atrações que são destinos por si só."
+      },
+      "europe": {
+        "name": "Europa",
+        "countries": "Reino Unido, Alemanha, França, Espanha, Itália, Holanda",
+        "featured": "PlayWorld Hamburg - Playground de aventura multinível de 5.500 m² com design de ponta",
+        "description": "Os projetos europeus mostram nossa capacidade de atender aos padrões de segurança mais rigorosos enquanto entregamos designs criativos e envolventes. Nossas instalações atendem aos padrões de segurança EN."
+      },
+      "middleEast": {
+        "name": "Oriente Médio",
+        "countries": "EAU, Arábia Saudita, Catar, Kuwait, Bahrein",
+        "featured": "Kingdom Entertainment City - Instalação principal de 12.000 m² em Riad com mais de 20 atrações",
+        "description": "O Oriente Médio representa nosso mercado de crescimento mais rápido, onde entregamos inúmeros projetos premium para shoppings, hotéis e centros de entretenimento independentes."
+      },
+      "asiaPacific": {
+        "name": "Ásia-Pacífico",
+        "countries": "Austrália, Singapura, Malásia, Tailândia, Filipinas, Vietnã",
+        "featured": "Adventure Island Sydney - Playground indoor temático de 6.500 m² com integração de tecnologia interativa",
+        "description": "A Ásia-Pacífico mostra nossa versatilidade, desde instalações compactas em shoppings até atrações temáticas massivas."
+      },
+      "latinAmerica": {
+        "name": "América Latina",
+        "countries": "Brasil, Argentina, Chile, Colômbia, México",
+        "featured": "Parque Diversão - Centro de entretenimento familiar de 4.200 m² em São Paulo com sinalização bilíngue",
+        "description": "Nossos projetos na América Latina demonstram nosso compromisso em levar entretenimento de classe mundial para mercados emergentes."
+      },
+      "africa": {
+        "name": "África",
+        "countries": "África do Sul, Egito, Nigéria, Quênia, Marrocos",
+        "featured": "Safari Adventure Park - Playground temático de 3.800 m² na Cidade do Cabo com tema de vida selvagem africana",
+        "description": "A África apresenta oportunidades de crescimento empolgantes onde estabelecemos parcerias fortes. Nossos projetos nesta região frequentemente apresentam temas de inspiração local."
+      }
+    }
+  },
+  "productFAQ": {
+    "indoorPlayground": {
+      "sectionLabel": "Perguntas Frequentes",
+      "title": "Playground Indoor",
+      "titleHighlight": "FAQ",
+      "description": "Encontre respostas para perguntas comuns sobre equipamentos de playground indoor, instalação, padrões de segurança e mais.",
+      "items": {
+        "q1": {
+          "question": "Qual é o espaço mínimo necessário para um playground indoor?",
+          "answer": "Podemos projetar playgrounds indoor para espaços pequenos de 50 m² para áreas de brincar compactas, embora recomendemos pelo menos 100-200 m² para uma estrutura multinível significativa. Nossa equipe de design criará um layout personalizado que maximize seu espaço disponível enquanto garante zonas de brincar seguras e fluxo de tráfego."
+        },
+        "q2": {
+          "question": "Quanto tempo leva para fabricar e entregar um playground indoor?",
+          "answer": "A produção normalmente leva 25-35 dias após a aprovação do design, seguido de 20-35 dias para envio internacional. O prazo total de entrega geralmente é de 45-70 dias a partir da confirmação do pedido. Pedidos urgentes podem ser acomodados para projetos urgentes com acordo prévio."
+        },
+        "q3": {
+          "question": "Quais certificações de segurança seus playgrounds indoor atendem?",
+          "answer": "Todos os nossos equipamentos de playground indoor são certificados de acordo com ASTM F1918 (EUA), TUV, CE e EN 1176 (europeu). Usamos apenas materiais premium, livres de chumbo e não tóxicos que passaram por rigorosos testes de segurança para equipamentos infantis."
+        },
+        "q4": {
+          "question": "Vocês podem criar playgrounds indoor temáticos personalizados?",
+          "answer": "Absolutamente! Tematização personalizada é uma de nossas especialidades. Podemos criar qualquer tema que você imaginar - de aventuras na selva e mundos submarinos a exploração espacial e reinos de castelos. Nossa equipe de design fornece renderizações 3D gratuitas mostrando exatamente como seu playground temático ficará."
+        },
+        "q5": {
+          "question": "O que está incluído no suporte de instalação do playground indoor?",
+          "answer": "Fornecemos suporte de instalação abrangente incluindo manuais de montagem detalhados, tutoriais em vídeo passo a passo, etiquetagem de componentes numerados e suporte técnico 24/7 via WhatsApp. Instalação no local por nossos técnicos treinados está disponível por uma taxa adicional."
+        },
+        "q6": {
+          "question": "Qual garantia vocês oferecem em equipamentos de playground indoor?",
+          "answer": "Fornecemos uma garantia abrangente de 3 anos cobrindo defeitos de fabricação em todos os componentes estruturais, com peças de reposição gratuitas. Além disso, oferecemos suporte técnico vitalício e podemos fornecer peças de reposição para necessidades de manutenção durante toda a vida do seu playground."
+        }
+      }
+    },
+    "trampolinePark": {
+      "sectionLabel": "Perguntas Frequentes",
+      "title": "Parque de Trampolins",
+      "titleHighlight": "FAQ",
+      "description": "Tudo que você precisa saber sobre equipamentos de parque de trampolins, recursos de segurança, zonas de atividades e instalação.",
+      "items": {
+        "q1": {
+          "question": "Qual é o espaço mínimo necessário para um parque de trampolins?",
+          "answer": "Um parque de trampolins básico com 3-4 zonas de atividades requer pelo menos 500 m². Para um parque completo com mais de 10 zonas incluindo piscinas de espuma, quadras de dodgeball e cursos ninja, recomendamos 1.000-3.000 m². A altura do teto deve ser de pelo menos 4-6 metros para altura de salto ideal."
+        },
+        "q2": {
+          "question": "Quantas zonas de atividades vocês podem incluir em um parque de trampolins?",
+          "answer": "Oferecemos mais de 12 tipos diferentes de zonas de atividades incluindo: áreas de salto livre, zonas de salto em piscina de espuma, basquete slam dunk, quadras de dodgeball, paredes de escalada, cursos ninja, bicicletas 360°, tirolesas skyrider, vigas de batalha, saltos em airbag, trampolins de performance e zonas infantis."
+        },
+        "q3": {
+          "question": "Quais recursos de segurança estão incluídos com equipamentos de parque de trampolins?",
+          "answer": "Segurança é primordial. Nossos trampolins apresentam coberturas de estrutura acolchoadas, redes de segurança, zonas de aterrissagem absorventes de impacto e molas de grau comercial para uso intensivo. Todos os equipamentos atendem aos padrões ASTM F2970 para parques de trampolins, certificação TUV e requisitos internacionais de segurança."
+        },
+        "q4": {
+          "question": "Com que frequência os componentes do parque de trampolins precisam de substituição?",
+          "answer": "Com manutenção adequada, nossas camas de trampolim de grau comercial tipicamente duram 3-5 anos com alto tráfego, acolchoamento e piscinas de espuma 5-7 anos. Fornecemos guias de manutenção e podemos fornecer todas as peças de reposição. Listas de verificação de inspeção regular estão incluídas em cada instalação."
+        },
+        "q5": {
+          "question": "Vocês fornecem suporte de planejamento de negócios para parques de trampolins?",
+          "answer": "Sim! Além dos equipamentos, oferecemos orientação sobre otimização de layout para máxima capacidade e receita, recomendações de pessoal, sistemas de isenção, melhores práticas operacionais e podemos conectá-lo com proprietários de parques bem-sucedidos para mentoria. Queremos que seu negócio tenha sucesso."
+        },
+        "q6": {
+          "question": "Qual é a capacidade de peso dos seus trampolins?",
+          "answer": "Nossos trampolins comerciais são classificados para usuários de até 150 kg (330 lbs) por superfície de salto. As estruturas são projetadas para suportar atividade simultânea de múltiplos usuários em todos os trampolins conectados. Todas as classificações de peso excedem os padrões internacionais de uso comercial."
+        }
+      }
+    },
+    "ninjaCourse": {
+      "sectionLabel": "Perguntas Frequentes",
+      "title": "Curso Ninja",
+      "titleHighlight": "FAQ",
+      "description": "Aprenda sobre cursos de obstáculos ninja warrior, níveis de dificuldade, benefícios do treinamento e requisitos de instalação.",
+      "items": {
+        "q1": {
+          "question": "Quais obstáculos estão incluídos em um curso ninja warrior?",
+          "answer": "Oferecemos mais de 50 tipos de obstáculos incluindo paredes curvas, escadas de salmão, balanços de argolas, escalada de cordas, caminhadas de aranha, passos quíntuplos, painéis de pinos, penduradores de penhasco, troncos giratórios, barras voadoras, redes de carga e muito mais. Cada curso é personalizado com base no seu espaço, público-alvo e preferências de dificuldade."
+        },
+        "q2": {
+          "question": "Os cursos ninja podem ser ajustados para diferentes níveis de habilidade?",
+          "answer": "Absolutamente! Muitos dos nossos obstáculos apresentam configurações de dificuldade ajustáveis. Também podemos projetar cursos de múltiplas faixas com trilhas para iniciantes, intermediários e avançados funcionando em paralelo. Isso permite que as instalações acomodem todos, desde iniciantes até atletas competitivos."
+        },
+        "q3": {
+          "question": "Qual é o espaço mínimo necessário para um curso ninja?",
+          "answer": "Um curso ninja básico com 8-10 obstáculos precisa de aproximadamente 150-200 m² com alturas de teto de pelo menos 3,5 metros. Cursos de nível de competição tipicamente requerem 300-500 m². Podemos projetar soluções criativas para espaços menores ou de formatos irregulares."
+        },
+        "q4": {
+          "question": "Os cursos ninja são seguros para crianças?",
+          "answer": "Sim! Projetamos cursos apropriados para a idade para todos os níveis de habilidade. Cursos júnior (idades 6-12) apresentam alturas mais baixas, pegadas mais largas e distâncias mais curtas. Todos os cursos incluem colchões de impacto, acolchoamento de segurança e sistemas de arnês opcionais. Nossos equipamentos atendem a todos os padrões internacionais de segurança infantil."
+        },
+        "q5": {
+          "question": "Vocês podem criar cursos ninja de padrão de competição?",
+          "answer": "Sim, projetamos cursos de competição profissional seguindo especificações de programas de TV e requisitos de ligas de competição. Estes incluem sistemas de cronometragem, múltiplas faixas de dificuldade e considerações para espectadores. Muitas instalações de treinamento competitivo e produções de TV usam nossos equipamentos."
+        },
+        "q6": {
+          "question": "Qual manutenção é necessária para equipamentos de curso ninja?",
+          "answer": "Inspeções visuais diárias levam cerca de 10 minutos. Verificações detalhadas mensais de todos os pontos de conexão, acolchoamento e peças móveis são recomendadas. Fornecemos guias de manutenção abrangentes e podemos fornecer peças de reposição. Com cuidado adequado, componentes estruturais duram mais de 10 anos."
+        }
+      }
+    },
+    "softPlay": {
+      "sectionLabel": "Perguntas Frequentes",
+      "title": "Soft Play",
+      "titleHighlight": "FAQ",
+      "description": "Perguntas comuns sobre equipamentos de soft play para crianças pequenas, materiais de segurança, higiene e design apropriado para a idade.",
+      "items": {
+        "q1": {
+          "question": "Para qual faixa etária os equipamentos de soft play são projetados?",
+          "answer": "Nossos equipamentos de soft play são projetados especificamente para crianças de 6 meses a 5 anos. Criamos zonas apropriadas para a idade: áreas para bebês (6-18 meses) com elementos sensoriais, zonas para crianças pequenas (18 meses-3 anos) com escalada suave e escorregadores, e áreas pré-escolares (3-5 anos) com estruturas de brincar mais desafiadoras."
+        },
+        "q2": {
+          "question": "Quais materiais são usados em equipamentos de soft play?",
+          "answer": "Usamos couro PVC premium cobrindo núcleos de espuma de alta densidade. Todos os materiais são livres de chumbo, livres de ftalatos, retardantes de fogo (atende BS 5852) e fáceis de limpar. O revestimento de PVC é antimicrobiano e pode ser higienizado com soluções de limpeza padrão sem degradação."
+        },
+        "q3": {
+          "question": "Quão fácil é limpar e manter equipamentos de soft play?",
+          "answer": "Muito fácil! As superfícies lisas de PVC podem ser limpas com sabão suave e água ou soluções de higienização comerciais. Recomendamos limpeza de superfície diária e limpeza profunda semanal. Os materiais duráveis resistem a manchas e são projetados para higienização de alta frequência."
+        },
+        "q4": {
+          "question": "Qual é o espaço mínimo necessário para uma área de soft play?",
+          "answer": "Áreas de soft play podem ser projetadas para espaços compactos de 20 m² para uma piscina de bolinhas simples e zona de escalada. Instalações típicas variam de 50-200 m². Somos especializados em maximizar o valor do brincar em espaços pequenos - perfeito para cafés, restaurantes, igrejas e áreas de espera."
+        },
+        "q5": {
+          "question": "Os equipamentos de soft play podem ser personalizados para combinar com nossa marca?",
+          "answer": "Absolutamente! Oferecemos personalização completa de cores com uma ampla paleta de cores de couro PVC. Sua área de soft play pode combinar com as cores da sua marca, tema do local ou qualquer visão de design específica. Elementos impressos personalizados e sinalização de marca também podem ser incorporados."
+        },
+        "q6": {
+          "question": "Quanto tempo dura o equipamento de soft play?",
+          "answer": "Com cuidado adequado, nossos equipamentos de soft play de grau comercial duram mais de 8-10 anos em ambientes de alto tráfego. A espuma de alta densidade mantém sua forma e propriedades de amortecimento, enquanto o revestimento de PVC premium resiste a desgaste, desbotamento e rachaduras. Fornecemos uma garantia de fabricante de 3 anos."
+        }
+      }
+    }
+  },
+  "testimonials": {
+    "sectionLabel": "Depoimentos de Clientes",
+    "title": "Confiança de",
+    "titleHighlight": "Empresários em Todo o Mundo",
+    "description": "Ouça nossos clientes satisfeitos que transformaram seus espaços em destinos de entretenimento prósperos.",
+    "items": [
+      { "quote": "NinescapeLand superou nossas expectativas. O design 3D foi exatamente o que imaginamos.", "name": "Michael Chen", "role": "Proprietário", "company": "SkyJump Adventure Park", "location": "Califórnia, EUA" },
+      { "quote": "Da consulta inicial à instalação final, a equipe foi receptiva e prestativa.", "name": "Sarah Al-Hassan", "role": "CEO", "company": "FunZone Entertainment", "location": "Dubai, EAU" },
+      { "quote": "Trabalhamos com vários fabricantes, mas NinescapeLand se destaca pela atenção aos detalhes.", "name": "Thomas Müller", "role": "Diretor", "company": "KinderWelt GmbH", "location": "Munique, Alemanha" },
+      { "quote": "O curso ninja se tornou a atração principal do nosso centro de fitness.", "name": "Emma Thompson", "role": "Gerente", "company": "Elite Athletics Club", "location": "Londres, Reino Unido" },
+      { "quote": "Excelente custo-benefício! A área de soft play aumentou o tempo de permanência.", "name": "Carlos Rodriguez", "role": "Proprietário", "company": "Familia Bistro", "location": "Madrid, Espanha" },
+      { "quote": "A equipe nos ajudou a projetar um FEC completo com múltiplas zonas.", "name": "David Kim", "role": "Fundador", "company": "PlayWorld Adventures", "location": "Sydney, Austrália" }
+    ]
+  },
+  "partners": {
+    "sectionLabel": "Certificações e Parceiros",
+    "title": "Certificado Globalmente, Confiável Localmente",
+    "certifications": {
+      "iso": { "name": "ISO 9001:2015", "description": "Sistema de Gestão de Qualidade" },
+      "astm": { "name": "ASTM F1918", "description": "Padrões de Segurança dos EUA" },
+      "en": { "name": "EN 1176 & 1177", "description": "Segurança de Playgrounds Europeus" },
+      "tuv": { "name": "Certificado TÜV", "description": "Garantia de Qualidade Alemã" }
+    },
+    "clients": ["FunZone USA", "SkyPark EU", "JumpWorld", "KidsParadise", "Adventure Hub", "PlayNation", "FEC Global", "Happy Kids"]
+  },
+  "ctaBanner": {
+    "badge": "🚀 Pronto para Transformar seu Espaço?",
+    "title": "Vamos Construir Juntos seu Destino de Diversão dos Sonhos",
+    "description": "Obtenha um design 3D personalizado gratuito e orçamento competitivo em 24 horas.",
+    "getQuote": "Obter Design e Orçamento Grátis",
+    "whatsapp": "Conversar no WhatsApp"
+  },
+  "featuresGrid": {
+    "sectionLabel": "Por Que Nos Escolher",
+    "title": "A Solução",
+    "titleHighlight": "Chave na Mão Completa",
+    "description": "Do conceito à inauguração, cuidamos de tudo para o sucesso do seu projeto.",
+    "customDesign": { "title": "Design 3D Personalizado", "description": "Design profissional gratuito adaptado ao seu espaço" },
+    "safetyCertified": { "title": "Certificado de Segurança", "description": "Equipamento certificado ASTM, TÜV, EN, CE" },
+    "globalShipping": { "title": "Envio Global", "description": "Entrega porta a porta para mais de 50 países" },
+    "installation": { "title": "Suporte de Instalação", "description": "Orientação no local ou serviço de instalação completo" },
+    "support": { "title": "Suporte 24/7", "description": "Gerente de projeto dedicado e assistência técnica" },
+    "fastDelivery": { "title": "Produção Rápida", "description": "Fabricação de 20-35 dias com controle de qualidade" },
+    "warranty": { "title": "Garantia de 3 Anos", "description": "Cobertura completa com suporte de peças vitalício" },
+    "premiumMaterials": { "title": "Materiais Premium", "description": "Ecológicos, duráveis e fáceis de manter" }
+  },
+  "liveChat": {
+    "open": "Abrir chat",
+    "close": "Fechar chat",
+    "humanSupport": "Suporte ao Cliente",
+    "aiAssistant": "Assistente IA",
+    "online": "Online",
+    "available247": "Disponível 24/7",
+    "businessHours": "Horário: Seg-Sex 9:00-18:00 (Hora de Pequim)",
+    "welcomeHuman": "Olá! Bem-vindo à NinescapeLand. Nossa equipe de atendimento está online. Como podemos ajudá-lo hoje?",
+    "welcomeAI": "Olá! Bem-vindo à NinescapeLand. Sou seu assistente de IA. Nossa equipe está offline, mas estou aqui para ajudá-lo 24/7. Como posso auxiliá-lo?",
+    "humanWaiting": "Sua mensagem foi recebida. Nossa equipe responderá em breve. Você também pode nos contatar pelo WhatsApp para resposta mais rápida.",
+    "error": "Desculpe, algo deu errado. Por favor tente novamente ou entre em contato pelo WhatsApp.",
+    "placeholder": "Digite sua mensagem...",
+    "whatsappCTA": "Converse no WhatsApp para resposta mais rápida"
+  },
+  "seo": {
+    "defaultKeywords": "fabricante de equipamentos de playground indoor, equipamentos de playground indoor à venda, equipamentos de playground comercial à venda, fornecedor de equipamentos de parque de trampolins, parque de trampolins à venda, fabricante de playground comercial China, estruturas de diversão indoor, equipamentos de curso ninja warrior, fabricante de equipamentos de brinquedo macio, equipamentos de centro de entretenimento familiar FEC, playground certificado ASTM TUV, comprar equipamentos de playground, equipamentos de playground atacado",
+    "home": {
+      "title": "Fabricante de Equipamentos de Playground Indoor | Fornecedor de Playground Comercial Desde 2008",
+      "description": "NinescapeLand é o principal fabricante e fornecedor de equipamentos de playground indoor comercial com mais de 15 anos de experiência desde 2008. Somos especializados em projetar, fabricar e instalar soluções completas prontas para playgrounds comerciais indoor, parques de trampolins, cursos ninja warrior, áreas de brinquedo macio e centros de entretenimento familiar. Nossa fábrica de última geração de 50.000 m² utiliza materiais ecológicos premium e tecnologia de produção avançada para entregar equipamentos certificados ASTM e TUV que atendem aos mais altos padrões de segurança internacionais. Da consultoria de design 3D gratuita à fabricação profissional, envio global para mais de 50 países e suporte de instalação no local, cuidamos de cada aspecto do seu projeto. Com mais de 2.000 instalações bem-sucedidas em todo o mundo incluindo EUA, Reino Unido, Austrália, Emirados Árabes, Alemanha e toda a Ásia, ajudamos milhares de empreendedores a criar ambientes de diversão rentáveis, seguros e envolventes. Obtenha seu design personalizado gratuito e orçamento competitivo em 24 horas. Garantia líder de 3 anos com suporte técnico vitalício. Preços diretos de fábrica sem intermediários.",
+      "keywords": "fabricante de equipamentos de playground indoor, equipamentos de playground indoor à venda, comprar equipamentos de playground, fornecedor de playground comercial, fabricante de parque de trampolins, parque de trampolins comercial à venda, fornecedor de parque de trampolins, fábrica de equipamentos de diversão indoor, fornecedor de curso ninja warrior, equipamentos ninja à venda, fabricante de equipamentos de brinquedo macio, equipamentos de brinquedo macio à venda, fornecedor de equipamentos FEC, playground certificado ASTM TUV, preço de equipamentos de playground, equipamentos de playground atacado"
+    },
+    "aboutUs": {
+      "title": "Sobre a NinescapeLand | Fabricante de Playgrounds Desde 2008 | Mais de 15 Anos de Experiência",
+      "description": "Conheça a NinescapeLand, um fabricante pioneiro de equipamentos de playground indoor estabelecido em 2008 com mais de 15 anos de experiência líder no setor. Nossa moderna fábrica de 50.000 m² na China emprega mais de 200 profissionais qualificados incluindo designers, engenheiros e especialistas em instalação dedicados a criar experiências de diversão excepcionais. Concluímos com sucesso mais de 2.000 projetos em mais de 50 países abrangendo América do Norte, Europa, Oriente Médio, Ásia e Oceania. Nosso compromisso com a inovação nos valeu certificações ISO 9001, ASTM, TUV, CE e EN. Acreditamos que toda criança merece acesso a espaços de diversão seguros, envolventes e imaginativos que promovam o desenvolvimento físico, criatividade e habilidades sociais. Nossos valores fundamentais de qualidade em primeiro lugar, serviço centrado no cliente e inovação contínua guiam tudo o que fazemos.",
+      "keywords": "história da empresa NinescapeLand, fabricante de playground indoor sobre nós, fábrica de equipamentos de playground China, empresa de playground comercial, fabricante de playground 15 anos experiência, fábrica de playground certificada ISO"
+    },
+    "products": {
+      "title": "Equipamentos de Playground Comercial | Estruturas de Diversão Indoor | Parques de Trampolins | Cursos Ninja",
+      "description": "Descubra a linha completa de equipamentos de playground comercial premium da NinescapeLand projetados para máximo valor de entretenimento e segurança. Nossa linha de produtos inclui estruturas de playground indoor multinível com escorregadores espirais, escorregadores de tubo, piscinas de bolas, redes de escalada e elementos interativos adequados para todas as idades. Nossas soluções de parque de trampolins apresentam mais de 12 zonas de atividade incluindo áreas de salto em fosso de espuma, quadras de basquete slam dunk, tirolesas skyrider, bicicletas giratórias 360°, paredes de escalada profissionais, arenas de dodgeball e trampolins de performance. Nossos cursos ninja warrior oferecem mais de 50 tipos de obstáculos. Todos os equipamentos são fabricados usando materiais ecológicos premium em nossa fábrica de 50.000 m². Cada produto possui certificações ASTM, TUV, CE e EN.",
+      "keywords": "equipamentos de playground comercial, equipamentos de playground comercial à venda, estruturas de playground indoor, equipamentos de playground indoor à venda, equipamentos de parque de trampolins, parque de trampolins à venda, equipamentos de curso ninja warrior, equipamentos ninja à venda, equipamentos de brinquedo macio à venda, comprar equipamentos de playground, preço de equipamentos de playground, equipamentos de playground atacado"
+    },
+    "trampolinePark": {
+      "title": "Fabricante de Equipamentos de Parque de Trampolins | Sistemas de Trampolim Comercial | Mais de 12 Zonas de Atividade",
+      "description": "NinescapeLand é um fabricante profissional de equipamentos de parque de trampolins que fornece soluções completas de trampolim comercial com mais de 12 emocionantes zonas de atividade. Nossos pacotes completos de parque de trampolins incluem: zonas de salto em fosso de espuma para aterrizagem segura de truques, áreas de basquete slam dunk com aros ajustáveis, atrações de tirolesa skyrider, bicicletas giratórias revolucionárias de 360°, paredes de escalada desafiadoras com sistemas de auto-segurança, arenas competitivas de dodgeball, plataformas de batalha com bastões, trampolins interconectados de salto livre e zonas profissionais de performance para treinamento ginástico. Cada zona é projetada com sistemas de molas de alto desempenho de grau olímpico, esteiras de salto de grau comercial e acolchoamento de segurança que excede os padrões ASTM F2970. Nossa abordagem de design modular permite configurações flexíveis para maximizar seu espaço de 500 m² até instalações de mais de 5.000 m².",
+      "keywords": "fabricante de equipamentos de parque de trampolins, parque de trampolins comercial à venda, comprar equipamentos de parque de trampolins, sistemas de trampolim comercial, trampolins de fosso de espuma à venda, equipamentos de parque de trampolins indoor, preço de equipamentos de parque de trampolins, trampolins certificados ASTM, parque de trampolins modular, equipamentos de trampolim atacado"
+    },
+    "indoorPlayground": {
+      "title": "Equipamentos de Playground Indoor | Estruturas de Diversão Personalizadas Multinível | Piscinas de Bolas e Escorregadores",
+      "description": "NinescapeLand fabrica equipamentos de playground indoor personalizados com estruturas de diversão multinível projetadas para cativar crianças de todas as idades, de bebês a adolescentes. Nossos sistemas de playground indoor incluem emocionantes escorregadores espirais, escorregadores de onda, escorregadores de tubo e redes de túneis, expansivas piscinas de bolas com dezenas de milhares de bolas coloridas, desafiadoras redes de escalada, pontes de corda e paredes de rocha, painéis interativos ricos em sensações e elementos de diversão, decorações temáticas desde aventuras na selva até exploração espacial. Usamos apenas materiais premium incluindo tubos de aço galvanizado de 2,2mm de espessura para estabilidade estrutural, plásticos LLDPE de grau comercial resistentes ao desbotamento e rachaduras, acolchoamento de espuma revestido de PVC para segurança e tecidos retardantes de chamas que atendem padrões internacionais. Todos os designs cumprem os padrões ASTM F1918, EN 1176 e AS 4685.",
+      "keywords": "fabricante de equipamentos de playground indoor, equipamentos de playground indoor à venda, comprar equipamentos de playground indoor, estruturas de diversão personalizadas à venda, playground multinível, playground com piscina de bolas à venda, preço de equipamentos de playground indoor, equipamentos de playground indoor atacado, playground indoor comercial à venda"
+    },
+    "ninjaCourse": {
+      "title": "Equipamentos de Curso Ninja Warrior | Fabricante Profissional de Circuitos de Obstáculos | Mais de 50 Obstáculos",
+      "description": "NinescapeLand é um fabricante profissional de equipamentos de curso ninja warrior que oferece mais de 50 tipos de obstáculos projetados para desafiar participantes de todos os níveis de habilidade, de iniciantes a atletas competitivos. Nosso catálogo abrangente de obstáculos inclui paredes inclinadas distintivas em múltiplas alturas, escadas salmon para força do tronco superior, cursos de balanço de anéis, desafios de escalada de corda, travessias de pontes instáveis, obstáculos de tronco giratório, passos quíntuplos, paredes de aranha, barras de equilíbrio e elementos de marca personalizados. Perfeito para academias, parques de aventura, centros de entretenimento familiar e instalações dedicadas de treinamento ninja. Todos os equipamentos são construídos usando construção de aço resistente com configurações de dificuldade ajustáveis e acolchoamento de segurança em todo lugar.",
+      "keywords": "equipamentos de curso ninja warrior, curso ninja à venda, comprar equipamentos ninja warrior, parede inclinada à venda, equipamentos de academia ninja à venda, curso ninja indoor, equipamentos de treinamento ninja à venda, obstáculos ninja comerciais, preço de equipamentos ninja, equipamentos de curso ninja atacado"
+    },
+    "softPlay": {
+      "title": "Equipamentos de Brinquedo Macio | Fabricante de Áreas de Diversão para Bebês e Crianças Pequenas | Estruturas Acolchoadas Seguras",
+      "description": "NinescapeLand é especializada na fabricação de equipamentos de brinquedo macio, criando ambientes de diversão seguros, envolventes e apropriados para o desenvolvimento de bebês e crianças pequenas com menos de 5 anos. Nossas soluções de brinquedo macio incluem estruturas de escalada totalmente acolchoadas com inclinações suaves, mini escorregadores com áreas de aterrizagem seguras, piscinas de bolas coloridas com bolas antibacterianas, painéis de parede sensoriais para exploração tátil, blocos de construção macios e elementos interativos, e designs temáticos que estimulam a imaginação. Todos os equipamentos de brinquedo macio usam acolchoamento de espuma revestido de PVC retardante de chamas, superfícies de vinil fáceis de limpar com propriedades antibacterianas, cantos e bordas arredondados em todo lugar, e materiais não tóxicos e hipoalergênicos seguros para as crianças mais novas. Certificado ASTM e EN 1176.",
+      "keywords": "fabricante de equipamentos de brinquedo macio, equipamentos de brinquedo macio à venda, comprar equipamentos de brinquedo macio, equipamentos de área de diversão para crianças pequenas à venda, zona de diversão para bebês, estruturas de diversão acolchoadas à venda, preço de equipamentos de brinquedo macio, equipamentos de brinquedo macio atacado, área de brinquedo macio à venda"
+    },
+    "process": {
+      "title": "Nosso Processo | Design 3D Gratuito até Instalação | Soluções de Playground Chave na Mão",
+      "description": "NinescapeLand fornece um processo comprovado de 6 etapas chave na mão que leva seu projeto de playground do conceito inicial à inauguração com total tranquilidade. Etapa 1 - Consulta: Compartilhe sua visão, dimensões do espaço, público-alvo e orçamento. Etapa 2 - Design 3D Gratuito: Receba renderizações 3D profissionais mostrando seu playground personalizado de múltiplos ângulos. Etapa 3 - Fabricação: A produção começa em nossa fábrica de 50.000 m² usando materiais premium e rigoroso controle de qualidade. Etapa 4 - Envio Global: Embalagem profissional garante trânsito seguro. Entrega porta a porta ou porto a porto disponível para mais de 50 países. Etapa 5 - Suporte de Instalação: Manuais de instalação completos com tutoriais em vídeo. Etapa 6 - Serviço Pós-Venda: Cobertura de garantia líder de 3 anos, suporte técnico vitalício, fornecimento de peças de reposição e treinamento operacional para sua equipe.",
+      "keywords": "processo de instalação de playground, soluções de playground chave na mão, serviço de design de playground personalizado, processo de fabricação de playground, envio de playground mundial, suporte de instalação de playground, design 3D de playground"
+    },
+    "projects": {
+      "title": "Projetos Globais | Mais de 2.000 Instalações de Playground em Mais de 50 Países | Estudos de Caso",
+      "description": "Explore o portfólio da NinescapeLand de mais de 2.000 instalações de playground bem-sucedidas concluídas em mais de 50 países em todo o mundo desde 2008. Nossa experiência global de projetos abrange América do Norte (EUA, Canadá, México), Europa (Reino Unido, Alemanha, França, Espanha, Itália, Países Baixos), Oriente Médio (Emirados Árabes, Arábia Saudita, Catar, Kuwait), Ásia (Japão, Coreia do Sul, Singapura, Malásia, Tailândia, Indonésia, Filipinas), Oceania (Austrália, Nova Zelândia), América do Sul (Brasil, Argentina, Chile) e África (África do Sul, Egito, Nigéria). Os tipos de projeto incluem centros de entretenimento familiar em grande escala até 10.000 m², parques de trampolins urbanos em shopping centers, áreas de diversão infantil em resorts e hotéis.",
+      "keywords": "projetos de playground em todo o mundo, instalações de playground indoor, estudos de caso de parques de trampolins, exemplos de projetos FEC, portfólio de playground, instalações de playground comercial, projetos de playground internacionais"
+    },
+    "contact": {
+      "title": "Entre em Contato | Design 3D Gratuito e Orçamento em 24 Horas | NinescapeLand",
+      "description": "Entre em contato com a NinescapeLand hoje para começar seu projeto de playground indoor, parque de trampolins, curso ninja ou centro de entretenimento familiar. Obtenha um design 3D profissional gratuito e orçamento competitivo em 24 horas - a maioria das consultas recebe respostas em 2-4 horas durante o horário comercial. Múltiplas formas de nos contatar: envie nosso formulário de consulta online com os detalhes do seu projeto, conecte-se via WhatsApp para comunicação instantânea, envie-nos um e-mail diretamente ou ligue para nossa equipe de vendas internacional. Nossos representantes de atendimento ao cliente multilíngues falam inglês, espanhol, português, alemão, árabe e chinês para melhor atendê-lo. Enviamos para mais de 50 países com suporte logístico completo.",
+      "keywords": "contatar fabricante de playground, obter orçamento de playground, consulta de design de playground, consulta de playground indoor, consulta de playground WhatsApp, consulta de projeto FEC, contatar fabricante de playground China"
+    },
+    "faq": {
+      "title": "FAQ | Perguntas sobre Equipamentos de Playground Indoor | Informações de Preços, Envio e Garantia",
+      "description": "Encontre respostas abrangentes para perguntas frequentes sobre equipamentos de playground indoor, parques de trampolins, cursos ninja e projetos de centros de entretenimento familiar. Conheça nossa estrutura de preços baseada em tamanho, complexidade e características - desde áreas de brinquedo macio básicas a partir de $15.000 até instalações FEC completas que excedem $500.000. Entenda nosso cronograma de produção de 25-35 dias e opções de envio para mais de 50 países. Descubra nossa cobertura de garantia líder de 3 anos com suporte técnico vitalício. Obtenha detalhes sobre nosso serviço de design 3D gratuito, opções de suporte de instalação e compromisso de serviço pós-venda. Conheça nossas certificações de segurança incluindo ASTM F1918, TUV, CE, EN 1176 e ISO 9001.",
+      "keywords": "FAQ de playground indoor, preços de equipamentos de playground, tempo de envio de playground, garantia de playground, perguntas de instalação de playground, estimativas de custo FEC, FAQ de parque de trampolins"
+    },
+    "blog": {
+      "title": "Perspectivas e Notícias do Setor | Dicas de Negócio de Playground | Tendências FEC",
+      "description": "Fique informado com o blog do setor da NinescapeLand apresentando as últimas tendências, dicas de especialistas e insights de negócios para proprietários de playgrounds indoor, operadores de FEC e empreendedores do setor de entretenimento. Nossos artigos cobrem análise de mercado do setor de playground e previsões de crescimento, estratégias de planejamento de negócios FEC e otimização de ROI, tendências de design de playground e inspiração temática, atualizações de padrões de segurança e orientação de conformidade, estratégias de marketing para centros de entretenimento familiar, melhores práticas operacionais e dicas de treinamento de equipe.",
+      "keywords": "blog de playground indoor, notícias do setor FEC, dicas de negócio de playground, tendências de centros de entretenimento, estratégias de marketing de playground, dicas de operação FEC"
+    },
+    "caseStudies": {
+      "title": "Estudos de Caso | Histórias de Sucesso de Projetos de Playground | Galeria Antes e Depois",
+      "description": "Explore estudos de caso detalhados dos projetos de playground mais bem-sucedidos da NinescapeLand de todo o mundo. Cada estudo de caso fornece insights abrangentes incluindo visão geral do projeto e objetivos do cliente, processo de desenvolvimento de conceito de design e visualização 3D, destaques de fabricação e medidas de controle de qualidade, processo de instalação e cronograma, depoimentos de clientes e avaliações de satisfação, fotos de transformação antes e depois, métricas de ROI e dados de desempenho empresarial. Projetos em destaque incluem centros de entretenimento familiar em grande escala nos EUA e Emirados Árabes, parques de trampolins inovadores em shopping centers europeus, playgrounds indoor temáticos em hotéis resort asiáticos. Pronto para criar sua própria história de sucesso? Entre em contato hoje para uma consulta gratuita.",
+      "keywords": "estudos de caso de playground, histórias de sucesso FEC, exemplos de playground indoor, galeria de projetos de parques de trampolins, fotos de antes e depois de playground, exemplos de ROI de playground, depoimentos de clientes"
+    }
+  },
+  "caseStudies": {
+    "sectionLabel": "Nosso Portfólio",
+    "title": "Estudos de Caso",
+    "titleHighlight": "Globais",
+    "description": "Explore nossos projetos bem-sucedidos de todo o mundo. Cada projeto demonstra nosso compromisso com qualidade, inovação e satisfação do cliente.",
+    "filters": {
+      "allCountries": "Todos os Países",
+      "allTypes": "Todos os Tipos",
+      "clearFilters": "Limpar Filtros",
+      "noResults": "Nenhum estudo de caso encontrado que corresponda aos seus filtros.",
+      "projectsCount": "projetos"
+    },
+    "projectTypes": {
+      "indoor-playground": "Playground Indoor",
+      "trampoline-park": "Parque de Trampolins",
+      "ninja-course": "Curso Ninja",
+      "soft-play": "Soft Play",
+      "fec": "Centro de Entretenimento Familiar"
+    },
+    "cta": {
+      "title": "Pronto para Criar Sua História de Sucesso?",
+      "description": "Junte-se a centenas de clientes satisfeitos em todo o mundo. Vamos discutir seu projeto e transformar sua visão em realidade.",
+      "button": "Inicie Seu Projeto",
+      "similarProject": "Iniciar Projeto Similar"
+    },
+    "featured": "Destaque"
+  },
+  "projects": {
+    "sectionLabel": "Nossos Projetos",
+    "title": "Instalações",
+    "titleHighlight": "Bem-Sucedidas",
+    "subtitle": "Em Todo o Mundo",
+    "description": "Explore nosso portfólio de projetos concluídos em mais de 50 países. Cada instalação demonstra nosso compromisso com qualidade e inovação.",
+    "categories": {
+      "all": "Todos",
+      "indoorPlayground": "Playground Indoor",
+      "trampolinePark": "Parque de Trampolins",
+      "ninjaCourse": "Curso Ninja",
+      "softPlay": "Soft Play"
+    },
+    "cta": "Inicie Seu Projeto",
+    "size": "Tamanho"
+  },
+  "quoteCalculator": {
+    "sectionLabel": "Estimativa Instantânea",
+    "title": "Calculadora de",
+    "titleHighlight": "Cotações Online",
+    "description": "Obtenha uma estimativa instantânea para seu projeto. Selecione o tipo de equipamento e insira as dimensões do espaço para uma cotação aproximada.",
+    "step1": "Selecione o Tipo de Equipamento",
+    "step2": "Insira a Área do Espaço (m²)",
+    "step3": "Selecione o Nível de Qualidade",
+    "sqmLabel": "Metros Quadrados",
+    "calculateBtn": "Calcular Estimativa",
+    "resultTitle": "Faixa de Preço Estimada",
+    "resultNote": "O preço final depende da complexidade do design, tema e requisitos de instalação",
+    "ctaBtn": "Obter Cotação Precisa",
+    "productTypes": {
+      "indoor-playground": { "name": "Playground Indoor", "description": "Estruturas de jogo multinível" },
+      "trampoline-park": { "name": "Parque de Trampolins", "description": "Soluções completas de trampolim" },
+      "ninja-course": { "name": "Curso Ninja Warrior", "description": "Percursos de obstáculos profissionais" },
+      "soft-play": { "name": "Área de Soft Play", "description": "Equipamentos para crianças pequenas" },
+      "fec": { "name": "Centro de Entretenimento Familiar", "description": "Soluções FEC completas" }
+    },
+    "qualityLevels": {
+      "standard": "Padrão",
+      "premium": "Premium",
+      "luxury": "Luxo"
+    },
+    "quality": "Qualidade"
+  },
+  "extendedSections": {
+    "moreAttractions": "Mais Atrações",
+    "extendedActivityZones": "Zonas de Atividade Estendidas",
+    "moreObstacles": "Mais Obstáculos",
+    "extendedChallengeElements": "Elementos de Desafio Estendidos"
+  }
+}
