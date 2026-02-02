@@ -1,7 +1,8 @@
-import { useEffect } from "react";
+import { useEffect, useState, Suspense } from "react";
 import { useParams, useNavigate, useLocation, Outlet } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { languages } from "@/i18n/config";
+import PageLoader from "@/components/PageLoader";
 
 const supportedLangs = languages.map((l) => l.code) as readonly string[];
 const nonEnglishLangs = supportedLangs.filter((l) => l !== "en");
@@ -15,19 +16,38 @@ export const LanguageWrapper = ({ defaultLang }: LanguageWrapperProps) => {
   const { i18n } = useTranslation();
   const navigate = useNavigate();
   const location = useLocation();
+  const [isLanguageReady, setIsLanguageReady] = useState(false);
 
   // Determine current language: use defaultLang for root routes, otherwise use URL param
   const currentLang = defaultLang || lang;
 
+  // Load language bundle on mount/change
   useEffect(() => {
-    if (currentLang && supportedLangs.includes(currentLang)) {
-      if (i18n.language !== currentLang) {
-        i18n.changeLanguage(currentLang);
+    const loadLanguage = async () => {
+      if (currentLang && supportedLangs.includes(currentLang)) {
+        setIsLanguageReady(false);
+        
+        // Only change language if different
+        if (i18n.language !== currentLang) {
+          await i18n.changeLanguage(currentLang);
+        }
+        
+        // Ensure the language bundle is loaded
+        if (!i18n.hasResourceBundle(currentLang, 'translation')) {
+          await i18n.loadLanguages(currentLang);
+        }
+        
+        const langConfig = languages.find((l) => l.code === currentLang);
+        document.documentElement.dir = langConfig?.rtl ? "rtl" : "ltr";
+        document.documentElement.lang = currentLang;
+        
+        setIsLanguageReady(true);
+      } else {
+        setIsLanguageReady(true);
       }
-      const langConfig = languages.find((l) => l.code === currentLang);
-      document.documentElement.dir = langConfig?.rtl ? "rtl" : "ltr";
-      document.documentElement.lang = currentLang;
-    }
+    };
+
+    loadLanguage();
   }, [currentLang, i18n]);
 
   // For non-default routes, validate the lang param
@@ -71,5 +91,14 @@ export const LanguageWrapper = ({ defaultLang }: LanguageWrapperProps) => {
     return null; // Will be handled by 404 or redirect
   }
 
-  return <Outlet />;
+  // Show loader while language bundle is loading
+  if (!isLanguageReady) {
+    return <PageLoader />;
+  }
+
+  return (
+    <Suspense fallback={<PageLoader />}>
+      <Outlet />
+    </Suspense>
+  );
 };
