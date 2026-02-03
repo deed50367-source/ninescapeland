@@ -37,6 +37,8 @@
     "notFound": "Post Not Found",
     "notFoundDescription": "The article you're looking for doesn't exist or has been removed.",
     "backToBlog": "Back to Blog",
+    "readIn": "Read in:",
+    "availableInOtherLanguages": "This article is available in:",
     "featuredPost": "Featured Article",
     "latestArticles": "Latest Updates",
     "allPosts": "All Articles",

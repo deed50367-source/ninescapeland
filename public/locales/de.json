@@ -37,6 +37,8 @@
     "notFound": "Beitrag nicht gefunden",
     "notFoundDescription": "Der Artikel, den Sie suchen, existiert nicht oder wurde entfernt.",
     "backToBlog": "Zurück zum Blog",
+    "readIn": "Lesen in:",
+    "availableInOtherLanguages": "Dieser Artikel ist verfügbar in:",
     "pageInfo": "Seite {{current}} von {{total}}",
     "showingPosts": "Zeige {{from}}-{{to}} von {{total}} Artikeln",
     "related": {
