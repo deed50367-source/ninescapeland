@@ -241,7 +241,8 @@ export const LiveChat = () => {
         const { data, error } = await supabase.functions.invoke('ai-chat', {
           body: { 
             messages: conversationHistory,
-            language: i18n.language
+            language: i18n.language,
+            session_id: sessionId.current
           }
         });
 
