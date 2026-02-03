@@ -21,7 +21,8 @@ import {
   Send,
   Image as ImageIcon,
   Settings,
-  FileEdit
+  FileEdit,
+  ExternalLink
 } from "lucide-react";
 import { toast } from "sonner";
 import { format } from "date-fns";
@@ -73,6 +74,7 @@ const AdminBlogTab = () => {
   const [editingPost, setEditingPost] = useState<BlogPost | null>(null);
   const [isSaving, setIsSaving] = useState(false);
   const [isGalleryOpen, setIsGalleryOpen] = useState(false);
+  const [lastSavedPost, setLastSavedPost] = useState<{ slug: string; language: string; status: string } | null>(null);
 
   // Form state
   const [formData, setFormData] = useState({
@@ -238,6 +240,13 @@ const AdminBlogTab = () => {
         toast.success("文章已创建");
       }
 
+      // Store last saved post info for "View Published" button
+      setLastSavedPost({
+        slug: postData.slug,
+        language: postData.language,
+        status: postData.status
+      });
+
       setIsEditorOpen(false);
       fetchPosts();
     } catch (error: any) {
@@ -325,6 +334,18 @@ const AdminBlogTab = () => {
   const getLanguageLabel = (code: string) => {
     const lang = LANGUAGES.find(l => l.code === code);
     return lang ? `${lang.flag} ${lang.name}` : code;
+  };
+
+  // Generate the public blog post URL
+  const getBlogPostUrl = (slug: string, language: string) => {
+    const langPrefix = language === 'en' ? '' : `/${language}`;
+    return `${langPrefix}/blog/${slug}`;
+  };
+
+  // Open blog post in new tab
+  const handleViewPost = (slug: string, language: string) => {
+    const url = getBlogPostUrl(slug, language);
+    window.open(url, '_blank');
   };
 
   const getStatusBadge = (status: string) => {
@@ -462,6 +483,16 @@ const AdminBlogTab = () => {
                     </div>
                   </div>
                   <div className="flex items-center gap-2">
+                    {post.status === "published" && (
+                      <Button
+                        variant="ghost"
+                        size="icon"
+                        onClick={() => handleViewPost(post.slug, post.language)}
+                        title="查看已发布文章"
+                      >
+                        <ExternalLink className="w-4 h-4" />
+                      </Button>
+                    )}
                     <Button
                       variant="ghost"
                       size="icon"
@@ -753,6 +784,15 @@ const AdminBlogTab = () => {
             <Button variant="outline" onClick={() => setIsEditorOpen(false)}>
               取消
             </Button>
+            {editingPost && formData.status === "published" && (
+              <Button 
+                variant="outline" 
+                onClick={() => handleViewPost(formData.slug, formData.language)}
+              >
+                <ExternalLink className="w-4 h-4 mr-2" />
+                查看已发布
+              </Button>
+            )}
             <Button onClick={handleSave} disabled={isSaving}>
               {isSaving && <Loader2 className="w-4 h-4 mr-2 animate-spin" />}
               {editingPost ? "保存" : "创建"}
