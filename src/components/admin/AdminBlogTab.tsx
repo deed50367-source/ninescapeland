@@ -336,10 +336,12 @@ const AdminBlogTab = () => {
     return lang ? `${lang.flag} ${lang.name}` : code;
   };
 
-  // Generate the public blog post URL
+  // Generate the public blog post URL (always use production domain)
+  const PRODUCTION_DOMAIN = 'https://indoorplaygroundsolution.com';
+  
   const getBlogPostUrl = (slug: string, language: string) => {
     const langPrefix = language === 'en' ? '' : `/${language}`;
-    return `${langPrefix}/blog/${slug}`;
+    return `${PRODUCTION_DOMAIN}${langPrefix}/blog/${slug}`;
   };
 
   // Open blog post in new tab
