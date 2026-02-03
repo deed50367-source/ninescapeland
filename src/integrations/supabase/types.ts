@@ -809,6 +809,15 @@ export type Database = {
       }
     }
     Functions: {
+      get_staff_session_metadata: {
+        Args: { p_session_id: string }
+        Returns: {
+          created_at: string
+          customer_language: string
+          page_url: string
+          referrer: string
+        }[]
+      }
       has_permission: {
         Args: { _permission: string; _user_id: string }
         Returns: boolean
