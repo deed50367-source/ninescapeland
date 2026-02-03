@@ -8,6 +8,7 @@ import {
 } from 'lucide-react';
 import AdminStatsPanel from '@/components/AdminStatsPanel';
 import { Button } from '@/components/ui/button';
+import { useCurrentUserPermissions } from '@/hooks/useUserPermissions';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { Badge } from '@/components/ui/badge';
@@ -130,6 +131,7 @@ const STATUS_CONFIG = {
 };
 
 const AdminCustomerServiceTab = () => {
+  const { isAdmin } = useCurrentUserPermissions();
   const [sessions, setSessions] = useState<ChatSession[]>([]);
   const [selectedSession, setSelectedSession] = useState<string | null>(null);
   const [messages, setMessages] = useState<ChatMessage[]>([]);
@@ -372,22 +374,53 @@ const AdminCustomerServiceTab = () => {
       const statusInfo = sessionStatuses.get(sessionId);
       setSessionNotes(statusInfo?.notes || '');
       
-      const { data: sessionData, error: sessionError } = await supabase
-        .from('chat_sessions')
-        .select('customer_ip, customer_country, customer_city, customer_device, customer_browser, customer_os, customer_language, customer_timezone, page_url, referrer, created_at')
-        .eq('session_id', sessionId)
-        .single();
-      
-      if (!sessionError && sessionData) {
-        setCustomerMetadata(sessionData as CustomerMetadata);
+      // Admins get full metadata, Staff get restricted view (no IP, location, device details)
+      if (isAdmin) {
+        const { data: sessionData, error: sessionError } = await supabase
+          .from('chat_sessions')
+          .select('customer_ip, customer_country, customer_city, customer_device, customer_browser, customer_os, customer_language, customer_timezone, page_url, referrer, created_at')
+          .eq('session_id', sessionId)
+          .maybeSingle();
+        
+        if (!sessionError && sessionData) {
+          setCustomerMetadata(sessionData as CustomerMetadata);
+        } else {
+          setCustomerMetadata(null);
+        }
       } else {
-        setCustomerMetadata(null);
+        // Staff uses restricted view - only non-sensitive metadata
+        // Using raw SQL query since the view is not in TypeScript types yet
+        const { data: sessionData, error: sessionError } = await supabase
+          .rpc('get_staff_session_metadata' as any, { p_session_id: sessionId })
+          .maybeSingle();
+        
+        if (!sessionError && sessionData) {
+          const staffData = sessionData as { customer_language?: string; page_url?: string; referrer?: string; created_at?: string };
+          // Staff only sees language, page_url, referrer - no IP/location/device data
+          setCustomerMetadata({
+            customer_language: staffData.customer_language,
+            page_url: staffData.page_url,
+            referrer: staffData.referrer,
+            created_at: staffData.created_at,
+            // These fields are not accessible to staff
+            customer_ip: undefined,
+            customer_country: undefined,
+            customer_city: undefined,
+            customer_device: undefined,
+            customer_browser: undefined,
+            customer_os: undefined,
+            customer_timezone: undefined,
+          });
+        } else {
+          // Fallback: just get basic info from statuses
+          setCustomerMetadata(null);
+        }
       }
     } catch (error) {
       console.error('Error fetching messages:', error);
       toast.error('Failed to load messages');
     }
-  }, [sessionStatuses]);
+  }, [sessionStatuses, isAdmin]);
 
   useEffect(() => {
     if (selectedSession) {
