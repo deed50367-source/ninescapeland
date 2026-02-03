@@ -589,7 +589,7 @@ const AdminBlogTab = () => {
                     />
                   </div>
                   <p className="text-xs text-muted-foreground">
-                    输入英文标题后自动生成，也可手动修改
+                    输入英文标题后自动生成。<strong>多语言版本请使用相同的 Slug</strong>，前端会根据语言自动切换。
                   </p>
                 </div>
 

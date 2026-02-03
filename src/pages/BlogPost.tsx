@@ -1,5 +1,5 @@
 import { useTranslation } from "react-i18next";
-import { useParams, Link } from "react-router-dom";
+import { useParams, Link, useNavigate } from "react-router-dom";
 import { useQuery } from "@tanstack/react-query";
 import { supabase } from "@/integrations/supabase/client";
 import { Header } from "@/components/Header";
@@ -14,20 +14,31 @@ import { BlogCategoryTags } from "@/components/BlogCategoryTags";
 import { BlogSidebar } from "@/components/BlogSidebar";
 import { useLocalizedPath } from "@/hooks/useLocalizedPath";
 import { useIsMobile } from "@/hooks/use-mobile";
-import { Calendar, ArrowLeft, Clock, User, Share2 } from "lucide-react";
+import { Calendar, ArrowLeft, Clock, User, Share2, Globe } from "lucide-react";
 import { format } from "date-fns";
 import { Skeleton } from "@/components/ui/skeleton";
 import { Button } from "@/components/ui/button";
+import { useEffect } from "react";
+
+const LANGUAGES = [
+  { code: 'en', name: 'English', flag: '🇺🇸' },
+  { code: 'ar', name: 'العربية', flag: '🇸🇦' },
+  { code: 'de', name: 'Deutsch', flag: '🇩🇪' },
+  { code: 'es', name: 'Español', flag: '🇪🇸' },
+  { code: 'pt', name: 'Português', flag: '🇧🇷' },
+];
 
 const BlogPost = () => {
   const { t, i18n } = useTranslation();
   const { slug } = useParams();
   const { localizedPath } = useLocalizedPath();
   const isMobile = useIsMobile();
+  const navigate = useNavigate();
 
   // Get current language code
   const currentLang = i18n.language?.split('-')[0] || 'en';
 
+  // Query for the post in current language
   const { data: post, isLoading, error } = useQuery({
     queryKey: ["blog-post", slug, currentLang],
     queryFn: async () => {
@@ -38,6 +49,22 @@ const BlogPost = () => {
         .eq("status", "published")
         .eq("language", currentLang)
         .single();
+      
+      if (error) throw error;
+      return data;
+    },
+    enabled: !!slug,
+  });
+
+  // Query for available translations of this article (same slug, different languages)
+  const { data: availableTranslations } = useQuery({
+    queryKey: ["blog-post-translations", slug],
+    queryFn: async () => {
+      const { data, error } = await supabase
+        .from("blog_posts")
+        .select("language, title")
+        .eq("slug", slug)
+        .eq("status", "published");
       
       if (error) throw error;
       return data;
@@ -136,7 +163,23 @@ const BlogPost = () => {
     );
   }
 
+  // Helper function to get language path
+  const getLanguagePath = (langCode: string, postSlug: string) => {
+    if (langCode === 'en') {
+      return `/blog/${postSlug}`;
+    }
+    return `/${langCode}/blog/${postSlug}`;
+  };
+
+  // Get available language info
+  const getLanguageInfo = (code: string) => {
+    return LANGUAGES.find(l => l.code === code);
+  };
+
   if (error || !post) {
+    // Check if article exists in other languages
+    const otherLanguages = availableTranslations?.filter(t => t.language !== currentLang) || [];
+    
     return (
       <div className="min-h-screen flex flex-col">
         <Header />
@@ -144,20 +187,49 @@ const BlogPost = () => {
           <section className="container-wide text-center">
             <figure className="text-6xl mb-4" role="img" aria-label="Not found">😕</figure>
             <h1 className="text-3xl font-bold mb-4">{t("blog.notFound")}</h1>
-            <p className="text-muted-foreground mb-8">{t("blog.notFoundDescription")}</p>
-            <Button asChild>
-              <Link to={localizedPath("/blog")}>
-                <ArrowLeft className="w-4 h-4 mr-2" />
-                {t("blog.backToBlog")}
-              </Link>
-            </Button>
+            <p className="text-muted-foreground mb-4">{t("blog.notFoundDescription")}</p>
+            
+            {/* Show available translations if any */}
+            {otherLanguages.length > 0 && (
+              <div className="mb-8 p-4 bg-muted rounded-lg inline-block">
+                <p className="text-sm text-muted-foreground mb-3 flex items-center justify-center gap-2">
+                  <Globe className="w-4 h-4" />
+                  {t("blog.availableInOtherLanguages", "This article is available in:")}
+                </p>
+                <div className="flex flex-wrap justify-center gap-2">
+                  {otherLanguages.map(trans => {
+                    const langInfo = getLanguageInfo(trans.language);
+                    return (
+                      <Button
+                        key={trans.language}
+                        variant="outline"
+                        size="sm"
+                        asChild
+                      >
+                        <Link to={getLanguagePath(trans.language, slug || '')}>
+                          {langInfo?.flag} {langInfo?.name}
+                        </Link>
+                      </Button>
+                    );
+                  })}
+                </div>
+              </div>
+            )}
+            
+            <div>
+              <Button asChild>
+                <Link to={localizedPath("/blog")}>
+                  <ArrowLeft className="w-4 h-4 mr-2" />
+                  {t("blog.backToBlog")}
+                </Link>
+              </Button>
+            </div>
           </section>
         </main>
         <Footer />
       </div>
     );
   }
-
   const readingTime = getReadingTime(post.content);
   const wordCount = getWordCount(post.content);
   const articleUrl = `https://indoorplaygroundsolution.com${localizedPath(`/blog/${post.slug}`)}`;
@@ -243,6 +315,38 @@ const BlogPost = () => {
                   </li>
                 </ol>
               </nav>
+
+              {/* Language Switcher for article translations */}
+              {availableTranslations && availableTranslations.length > 1 && (
+                <div className="mb-6 flex items-center gap-2 flex-wrap">
+                  <span className="text-sm text-muted-foreground flex items-center gap-1.5">
+                    <Globe className="w-4 h-4" />
+                    {t("blog.readIn", "Read in:")}
+                  </span>
+                  {availableTranslations.map(trans => {
+                    const langInfo = getLanguageInfo(trans.language);
+                    const isCurrentLang = trans.language === currentLang;
+                    return (
+                      <Button
+                        key={trans.language}
+                        variant={isCurrentLang ? "default" : "outline"}
+                        size="sm"
+                        className="h-7 text-xs"
+                        asChild={!isCurrentLang}
+                        disabled={isCurrentLang}
+                      >
+                        {isCurrentLang ? (
+                          <span>{langInfo?.flag} {langInfo?.name}</span>
+                        ) : (
+                          <Link to={getLanguagePath(trans.language, slug || '')}>
+                            {langInfo?.flag} {langInfo?.name}
+                          </Link>
+                        )}
+                      </Button>
+                    );
+                  })}
+                </div>
+              )}
 
               {/* Article Header */}
               <header className="mb-8 md:mb-12">
