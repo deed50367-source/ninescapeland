@@ -4,6 +4,7 @@ name: Build and Deploy to Hostinger
 on:
   push:
     branches: [main]
+  workflow_dispatch: # Allow manual trigger
 
 jobs:
   build-and-deploy:
@@ -18,16 +19,18 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: '20'
+          cache: 'npm'
 
       - name: Install dependencies
-        run: npm install
+        run: npm ci
 
       - name: Build frontend
         run: npm run build
         env:
-          VITE_SUPABASE_URL: ${{ secrets.VITE_SUPABASE_URL }}
-          VITE_SUPABASE_PUBLISHABLE_KEY: ${{ secrets.VITE_SUPABASE_PUBLISHABLE_KEY }}
-          VITE_SUPABASE_PROJECT_ID: gianldlquknsdhfpqqfe
+          # These are PUBLISHABLE keys (safe to expose in client-side code)
+          VITE_SUPABASE_URL: "https://gianldlquknsdhfpqqfe.supabase.co"
+          VITE_SUPABASE_PUBLISHABLE_KEY: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImdpYW5sZGxxdWtuc2RoZnBxcWZlIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjgxODU5MzgsImV4cCI6MjA4Mzc2MTkzOH0.yEFhGkbyfDFqJNcKsS4QBo1ZSPV8MN9oAHpih3yOhak"
+          VITE_SUPABASE_PROJECT_ID: "gianldlquknsdhfpqqfe"
 
       - name: Deploy to Hostinger via FTP
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
