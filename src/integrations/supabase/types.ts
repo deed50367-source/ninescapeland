@@ -765,6 +765,48 @@ export type Database = {
         }
         Relationships: []
       }
+      chat_sessions_staff: {
+        Row: {
+          assigned_to: string | null
+          created_at: string | null
+          customer_language: string | null
+          id: string | null
+          last_message_at: string | null
+          notes: string | null
+          page_url: string | null
+          referrer: string | null
+          session_id: string | null
+          status: string | null
+          updated_at: string | null
+        }
+        Insert: {
+          assigned_to?: string | null
+          created_at?: string | null
+          customer_language?: string | null
+          id?: string | null
+          last_message_at?: string | null
+          notes?: string | null
+          page_url?: string | null
+          referrer?: string | null
+          session_id?: string | null
+          status?: string | null
+          updated_at?: string | null
+        }
+        Update: {
+          assigned_to?: string | null
+          created_at?: string | null
+          customer_language?: string | null
+          id?: string | null
+          last_message_at?: string | null
+          notes?: string | null
+          page_url?: string | null
+          referrer?: string | null
+          session_id?: string | null
+          status?: string | null
+          updated_at?: string | null
+        }
+        Relationships: []
+      }
     }
     Functions: {
       has_permission: {
