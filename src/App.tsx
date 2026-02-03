@@ -8,6 +8,7 @@ import { ScrollToTop } from "@/components/ScrollToTop";
 import { LanguageWrapper } from "@/components/LanguageWrapper";
 import PageLoader from "@/components/PageLoader";
 import PWAPrompt from "@/components/PWAPrompt";
+import AppErrorBoundary from "@/components/AppErrorBoundary";
 
 // Lazy load pages for code splitting
 const Index = lazy(() => import("./pages/Index"));
@@ -76,30 +77,32 @@ const App = () => (
       <Sonner />
       <BrowserRouter>
         <ScrollToTop />
-        <Suspense fallback={<PageLoader />}>
-          <Routes>
-            {/* Admin routes - no language prefix needed */}
-            <Route path="/admin" element={<AdminDashboard />} />
-            <Route path="/admin/login" element={<AdminLogin />} />
-            
-            {/* Redirect /en/* to root (English is default without prefix) */}
-            <Route path="/en" element={<EnglishRedirect />} />
-            <Route path="/en/*" element={<EnglishRedirect />} />
-            
-            {/* English routes (default, no prefix) */}
-            <Route path="/" element={<LanguageWrapper defaultLang="en" />}>
-              {pageRoutes}
-            </Route>
-            
-            {/* Other language-prefixed routes (ar, de, es, pt) */}
-            <Route path="/:lang" element={<LanguageWrapper />}>
-              {pageRoutes}
-            </Route>
-            
-            {/* Catch-all route */}
-            <Route path="*" element={<NotFound />} />
-          </Routes>
-        </Suspense>
+        <AppErrorBoundary>
+          <Suspense fallback={<PageLoader />}>
+            <Routes>
+              {/* Admin routes - no language prefix needed */}
+              <Route path="/admin" element={<AdminDashboard />} />
+              <Route path="/admin/login" element={<AdminLogin />} />
+
+              {/* Redirect /en/* to root (English is default without prefix) */}
+              <Route path="/en" element={<EnglishRedirect />} />
+              <Route path="/en/*" element={<EnglishRedirect />} />
+
+              {/* English routes (default, no prefix) */}
+              <Route path="/" element={<LanguageWrapper defaultLang="en" />}>
+                {pageRoutes}
+              </Route>
+
+              {/* Other language-prefixed routes (ar, de, es, pt) */}
+              <Route path="/:lang" element={<LanguageWrapper />}>
+                {pageRoutes}
+              </Route>
+
+              {/* Catch-all route */}
+              <Route path="*" element={<NotFound />} />
+            </Routes>
+          </Suspense>
+        </AppErrorBoundary>
         <PWAPrompt />
       </BrowserRouter>
     </TooltipProvider>
