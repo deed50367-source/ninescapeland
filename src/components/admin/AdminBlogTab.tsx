@@ -485,24 +485,25 @@ const AdminBlogTab = () => {
                     </div>
                   </div>
                   <div className="flex items-center gap-2">
-                    {post.status === "published" && (
-                      <Button
-                        variant="ghost"
-                        size="icon"
-                        onClick={() => handleViewPost(post.slug, post.language)}
-                        title="查看已发布文章"
-                      >
-                        <ExternalLink className="w-4 h-4" />
-                      </Button>
-                    )}
+                    {/* External link to view published article */}
+                    <Button
+                      variant="ghost"
+                      size="icon"
+                      onClick={() => handleViewPost(post.slug, post.language)}
+                      title="在新标签页中查看文章"
+                      className={post.status !== "published" ? "opacity-50" : "text-primary hover:text-primary"}
+                    >
+                      <ExternalLink className="w-4 h-4" />
+                    </Button>
+                    {/* Publish/Unpublish toggle */}
                     <Button
                       variant="ghost"
                       size="icon"
                       onClick={() => handlePublish(post)}
-                      title={post.status === "published" ? "下架" : "发布"}
+                      title={post.status === "published" ? "下架文章" : "发布文章"}
                     >
                       {post.status === "published" ? (
-                        <Eye className="w-4 h-4" />
+                        <Eye className="w-4 h-4 text-success" />
                       ) : (
                         <Send className="w-4 h-4" />
                       )}
