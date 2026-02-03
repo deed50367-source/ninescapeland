@@ -1,12 +1,15 @@
 import "https://deno.land/x/xhr@0.1.0/mod.ts";
 import { serve } from "https://deno.land/std@0.168.0/http/server.ts";
+import { createClient } from 'https://esm.sh/@supabase/supabase-js@2.49.1';
 
 const corsHeaders = {
   'Access-Control-Allow-Origin': '*',
-  'Access-Control-Allow-Headers': 'authorization, x-client-info, apikey, content-type',
+  'Access-Control-Allow-Headers': 'authorization, x-client-info, apikey, content-type, x-supabase-client-platform, x-supabase-client-platform-version, x-supabase-client-runtime, x-supabase-client-runtime-version',
 };
 
 const LOVABLE_API_KEY = Deno.env.get('LOVABLE_API_KEY');
+const SUPABASE_URL = Deno.env.get('SUPABASE_URL')!;
+const SUPABASE_ANON_KEY = Deno.env.get('SUPABASE_ANON_KEY')!;
 
 serve(async (req) => {
   // Handle CORS preflight requests
@@ -15,7 +18,60 @@ serve(async (req) => {
   }
 
   try {
-    const { messages, language = 'en' } = await req.json();
+    const { messages, language = 'en', session_id } = await req.json();
+
+    // Session validation - require valid session_id to prevent abuse
+    if (!session_id || typeof session_id !== 'string' || session_id.length < 10) {
+      return new Response(
+        JSON.stringify({ error: 'Invalid or missing session_id' }),
+        { status: 400, headers: { ...corsHeaders, 'Content-Type': 'application/json' } }
+      );
+    }
+
+    // Validate session exists in database
+    const supabase = createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
+    const { data: session, error: sessionError } = await supabase
+      .from('chat_sessions')
+      .select('id, status')
+      .eq('session_id', session_id)
+      .maybeSingle();
+
+    if (sessionError) {
+      console.error('Session lookup error:', sessionError);
+      return new Response(
+        JSON.stringify({ error: 'Session validation failed' }),
+        { status: 500, headers: { ...corsHeaders, 'Content-Type': 'application/json' } }
+      );
+    }
+
+    if (!session) {
+      return new Response(
+        JSON.stringify({ error: 'Session not found. Please refresh the page.' }),
+        { status: 403, headers: { ...corsHeaders, 'Content-Type': 'application/json' } }
+      );
+    }
+
+    // Optional: Check if session is closed/resolved
+    if (session.status === 'resolved') {
+      return new Response(
+        JSON.stringify({ error: 'This chat session has been closed.' }),
+        { status: 403, headers: { ...corsHeaders, 'Content-Type': 'application/json' } }
+      );
+    }
+
+    // Rate limiting: Check message count in last minute (simple anti-abuse)
+    const { count: recentMessageCount } = await supabase
+      .from('chat_messages')
+      .select('*', { count: 'exact', head: true })
+      .eq('session_id', session_id)
+      .gte('created_at', new Date(Date.now() - 60000).toISOString());
+
+    if (recentMessageCount && recentMessageCount > 10) {
+      return new Response(
+        JSON.stringify({ error: 'Too many messages. Please wait a moment.' }),
+        { status: 429, headers: { ...corsHeaders, 'Content-Type': 'application/json' } }
+      );
+    }
 
     if (!LOVABLE_API_KEY) {
       throw new Error('LOVABLE_API_KEY is not configured');
@@ -148,14 +204,14 @@ Your core mission is to naturally guide visitors to leave their contact informat
 
 Please answer customer questions in a friendly and professional manner while skillfully guiding them to provide contact information. Don't be too pushy—provide value while naturally collecting information.`;
 
-    const response = await fetch('https://api.lovable.dev/v1/chat/completions', {
+    const response = await fetch('https://ai.gateway.lovable.dev/v1/chat/completions', {
       method: 'POST',
       headers: {
         'Authorization': `Bearer ${LOVABLE_API_KEY}`,
         'Content-Type': 'application/json',
       },
       body: JSON.stringify({
-        model: 'openai/gpt-5-mini',
+        model: 'google/gemini-3-flash-preview',
         messages: [
           { role: 'system', content: systemPrompt },
           ...messages
@@ -168,6 +224,21 @@ Please answer customer questions in a friendly and professional manner while ski
     if (!response.ok) {
       const errorText = await response.text();
       console.error('Lovable AI API error:', errorText);
+      
+      // Handle specific error codes
+      if (response.status === 429) {
+        return new Response(
+          JSON.stringify({ error: 'AI service is busy. Please try again in a moment.' }),
+          { status: 429, headers: { ...corsHeaders, 'Content-Type': 'application/json' } }
+        );
+      }
+      if (response.status === 402) {
+        return new Response(
+          JSON.stringify({ error: 'AI service temporarily unavailable.' }),
+          { status: 503, headers: { ...corsHeaders, 'Content-Type': 'application/json' } }
+        );
+      }
+      
       throw new Error(`AI API error: ${response.status}`);
     }
 
