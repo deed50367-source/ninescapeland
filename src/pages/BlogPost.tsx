@@ -72,20 +72,56 @@ const BlogPost = () => {
     enabled: !!slug,
   });
 
-  // Fetch related posts and recent posts for sidebar
+  // Extract category from current post keywords
+  const getCurrentPostCategory = (keywords: string | null): string | null => {
+    if (!keywords) return null;
+    const categoryKeys = ['tips', 'trends', 'guides', 'design', 'safety', 'business'];
+    const keywordList = keywords.split(",").map(k => k.trim().toLowerCase());
+    return categoryKeys.find(cat => keywordList.includes(cat)) || null;
+  };
+
+  const currentPostCategory = post ? getCurrentPostCategory(post.seo_keywords) : null;
+
+  // Fetch related posts - prioritize same category, then recent posts
   const { data: relatedPosts } = useQuery({
-    queryKey: ["blog-related-posts", currentLang, post?.id],
+    queryKey: ["blog-related-posts", currentLang, post?.id, currentPostCategory],
     queryFn: async () => {
+      // First, fetch all published posts in current language (excluding current post)
       const { data, error } = await supabase
         .from("blog_posts")
-        .select("id, title, slug, excerpt, cover_image, published_at, content")
+        .select("id, title, slug, excerpt, cover_image, published_at, content, seo_keywords")
         .eq("status", "published")
         .eq("language", currentLang)
+        .neq("id", post?.id || '')
         .order("published_at", { ascending: false })
-        .limit(6);
+        .limit(20); // Fetch more to have options for category matching
       
       if (error) throw error;
-      return data;
+      if (!data) return [];
+
+      // If current post has a category, prioritize same-category posts
+      if (currentPostCategory) {
+        const sameCategoryPosts = data.filter(p => {
+          const postCategory = getCurrentPostCategory(p.seo_keywords);
+          return postCategory === currentPostCategory;
+        });
+        
+        const otherPosts = data.filter(p => {
+          const postCategory = getCurrentPostCategory(p.seo_keywords);
+          return postCategory !== currentPostCategory;
+        });
+
+        // Return up to 3 same-category posts + fill remaining with other posts
+        const result = [...sameCategoryPosts.slice(0, 3)];
+        const remaining = 6 - result.length;
+        if (remaining > 0) {
+          result.push(...otherPosts.slice(0, remaining));
+        }
+        return result;
+      }
+
+      // No category - just return recent posts
+      return data.slice(0, 6);
     },
     enabled: !!post?.id,
   });

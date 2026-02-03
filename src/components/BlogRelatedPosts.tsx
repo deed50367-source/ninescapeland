@@ -15,12 +15,22 @@ interface RelatedPost {
   cover_image: string | null;
   published_at: string | null;
   content: string | null;
+  seo_keywords?: string | null;
 }
 
 interface BlogRelatedPostsProps {
   posts: RelatedPost[];
   currentPostId: string;
 }
+
+const CATEGORIES = [
+  { key: 'tips', color: 'bg-amber-500' },
+  { key: 'trends', color: 'bg-emerald-500' },
+  { key: 'guides', color: 'bg-blue-500' },
+  { key: 'design', color: 'bg-pink-500' },
+  { key: 'safety', color: 'bg-violet-500' },
+  { key: 'business', color: 'bg-cyan-500' },
+];
 
 const containerVariants = {
   hidden: { opacity: 0 },
@@ -53,6 +63,13 @@ export const BlogRelatedPosts = ({ posts, currentPostId }: BlogRelatedPostsProps
     const plainText = content.replace(/<[^>]+>/g, '');
     const wordCount = plainText.split(/\s+/).length;
     return Math.max(1, Math.ceil(wordCount / 200));
+  };
+
+  // Get category from keywords
+  const getPostCategory = (keywords: string | null) => {
+    if (!keywords) return null;
+    const keywordList = keywords.split(",").map(k => k.trim().toLowerCase());
+    return CATEGORIES.find(cat => keywordList.includes(cat.key)) || null;
   };
 
   return (
@@ -107,8 +124,14 @@ export const BlogRelatedPosts = ({ posts, currentPostId }: BlogRelatedPostsProps
                     </div>
                   )}
                   <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
+                  
+                  {/* Category badge */}
+                  {getPostCategory(post.seo_keywords) && (
+                    <Badge className={`absolute top-3 left-3 ${getPostCategory(post.seo_keywords)?.color} text-white text-xs`}>
+                      {t(`blog.categories.${getPostCategory(post.seo_keywords)?.key}`)}
+                    </Badge>
+                  )}
                 </figure>
-
                 {/* Content */}
                 <div className="p-5 space-y-3">
                   {/* Meta */}
