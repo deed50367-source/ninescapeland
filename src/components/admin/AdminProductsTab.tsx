@@ -59,6 +59,7 @@ interface ProductCategory {
   name_de: string | null;
   name_es: string | null;
   name_pt: string | null;
+  name_fr: string | null;
   slug: string;
   description: string | null;
   image_url: string | null;
@@ -75,6 +76,7 @@ interface Product {
   name_de: string | null;
   name_es: string | null;
   name_pt: string | null;
+  name_fr: string | null;
   slug: string;
   short_description: string | null;
   description: string | null;
@@ -83,6 +85,7 @@ interface Product {
   description_de: string | null;
   description_es: string | null;
   description_pt: string | null;
+  description_fr: string | null;
   featured_image: string | null;
   gallery_images: string[];
   price_min: number | null;
