@@ -27,6 +27,7 @@ const LANGUAGES = [
   { code: 'de', name: 'Deutsch', flag: '🇩🇪' },
   { code: 'es', name: 'Español', flag: '🇪🇸' },
   { code: 'pt', name: 'Português', flag: '🇧🇷' },
+  { code: 'fr', name: 'Français', flag: '🇫🇷' },
 ];
 
 const BlogPost = () => {
@@ -405,7 +406,7 @@ const BlogPost = () => {
                   )}
                   <div className="flex items-center gap-2">
                     <Clock className="w-4 h-4" />
-                    <span>{readingTime} min read</span>
+                    <span>{readingTime} {t("blog.minRead", "min read")}</span>
                   </div>
                 </aside>
 
@@ -471,7 +472,7 @@ const BlogPost = () => {
                   <div className="flex items-center gap-4">
                     <span className="flex items-center gap-2 text-sm text-muted-foreground">
                       <Share2 className="w-4 h-4" />
-                      Share:
+                      {t("blog.share", "Share:")}
                     </span>
                     <a 
                       href={`https://twitter.com/intent/tweet?text=${encodeURIComponent(post.title)}&url=${encodeURIComponent(articleUrl)}`}
