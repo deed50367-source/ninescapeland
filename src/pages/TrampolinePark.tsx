@@ -95,12 +95,12 @@ const TrampolinePark = () => {
   
   // 静态后备图片
   const staticGalleryImages = [
-    getStorageUrl("88de2e3c-c85e-413b-878d-99b0d0aea8ed/1768294624727-6ia03.jpg"),
+    getStorageUrl("88de2e3c-c85e-413b-878d-99b0d0aea8ed/1768294627327-n8flbq.jpg"), // 2 (2).jpg - 滑道特写
     getStorageUrl("88de2e3c-c85e-413b-878d-99b0d0aea8ed/1768294617155-efd0q8.jpg"),
     getStorageUrl("88de2e3c-c85e-413b-878d-99b0d0aea8ed/1768294621773-h93mw.jpg"),
     getStorageUrl("88de2e3c-c85e-413b-878d-99b0d0aea8ed/1768294619294-xsbwg.jpg"),
     getStorageUrl("88de2e3c-c85e-413b-878d-99b0d0aea8ed/1768294614701-b5b7pw.jpg"),
-    getStorageUrl("88de2e3c-c85e-413b-878d-99b0d0aea8ed/1768294619294-xsbwg.jpg")
+    getStorageUrl("0d55c23f-ae63-47b1-b850-bb97872cf518/1768294349256-ahzwfa.jpg") // trampoline park basketball - 篮球区
   ];
   
   const galleryImages = dynamicGalleryImages.length >= 6 
