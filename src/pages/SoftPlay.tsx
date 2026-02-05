@@ -77,12 +77,12 @@ const SoftPlay = () => {
   
   // 静态后备图片
   const staticGalleryImages = [
-    getStorageUrl("dcbc5ed3-1863-4db6-bacf-59919b3abec6/1768294400190-bx9gha.jpg"),
-    getStorageUrl("dcbc5ed3-1863-4db6-bacf-59919b3abec6/1768294376731-g5jiv8.jpg"),
-    getStorageUrl("e781d029-b8d9-4101-8835-35d1d8938a12/1768294274127-w29hc.jpg"),
-    getStorageUrl("dcbc5ed3-1863-4db6-bacf-59919b3abec6/1768294381259-ig9ii.jpg"),
-    getStorageUrl("e781d029-b8d9-4101-8835-35d1d8938a12/1768294287219-kmtl6.jpg"),
-    getStorageUrl("dcbc5ed3-1863-4db6-bacf-59919b3abec6/1768294400190-bx9gha.jpg")
+    getStorageUrl("dcbc5ed3-1863-4db6-bacf-59919b3abec6/1768294400190-bx9gha.jpg"), // 软体游乐设备 6.png
+    getStorageUrl("dcbc5ed3-1863-4db6-bacf-59919b3abec6/1768294376731-g5jiv8.jpg"), // 软体游乐设备 1.png
+    getStorageUrl("dcbc5ed3-1863-4db6-bacf-59919b3abec6/1768294381259-ig9ii.jpg"), // 软体游乐设备 2-2.png
+    getStorageUrl("dcbc5ed3-1863-4db6-bacf-59919b3abec6/1768294385946-ns7thp.jpg"), // 软体游乐设备 5-1.png
+    getStorageUrl("dcbc5ed3-1863-4db6-bacf-59919b3abec6/1768294394975-0iw1f.jpg"), // 软体游乐设备 6-1.png
+    getStorageUrl("dcbc5ed3-1863-4db6-bacf-59919b3abec6/1768294404756-dg7aeb.jpg")  // 软体游乐设备 7-1.png
   ];
   
   const galleryImages = dynamicGalleryImages.length >= 6 

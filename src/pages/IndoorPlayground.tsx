@@ -60,7 +60,7 @@ const IndoorPlayground = () => {
   const { localizedPath } = useLocalizedPath();
   const { getProductGalleryImages, getImageUrl } = useSiteImages();
 
-  const heroImage = getStorageUrl("dcbc5ed3-1863-4db6-bacf-59919b3abec6/1768294376731-g5jiv8.jpg");
+  const heroImage = getStorageUrl("adaf5265-c979-48b7-b4c1-808e1e4b87b8/1768294592888-x69bgi.jpg"); // 淘气堡全景
 
   const features = [
     {
@@ -90,12 +90,12 @@ const IndoorPlayground = () => {
   
   // 静态后备图片
   const staticGalleryImages = [
-    getStorageUrl("dcbc5ed3-1863-4db6-bacf-59919b3abec6/1768294376731-g5jiv8.jpg"),
-    getStorageUrl("e781d029-b8d9-4101-8835-35d1d8938a12/1768294274127-w29hc.jpg"),
-    getStorageUrl("e781d029-b8d9-4101-8835-35d1d8938a12/1768294208983-svikya.jpg"),
-    getStorageUrl("e781d029-b8d9-4101-8835-35d1d8938a12/1768294282861-8dkfa.jpg"),
-    getStorageUrl("dcbc5ed3-1863-4db6-bacf-59919b3abec6/1768294381259-ig9ii.jpg"),
-    getStorageUrl("dcbc5ed3-1863-4db6-bacf-59919b3abec6/1768294400190-bx9gha.jpg")
+    getStorageUrl("adaf5265-c979-48b7-b4c1-808e1e4b87b8/1768294592888-x69bgi.jpg"), // 淘气堡全景 play zone equipment
+    getStorageUrl("39a9c37a-1063-4ba6-94d1-4e0cca1123e9/1768294471406-lp0vzf.jpg"), // 淘气堡 画板18
+    getStorageUrl("6e6b4c6d-2efc-446e-a7f4-8e98c91c81cc/1768294529825-ob7ylk.jpg"), // 淘气堡 画板10
+    getStorageUrl("39a9c37a-1063-4ba6-94d1-4e0cca1123e9/1768294475255-l18ht.jpg"), // 淘气堡 画板19
+    getStorageUrl("6e6b4c6d-2efc-446e-a7f4-8e98c91c81cc/1768294533711-96i5mp.jpg"), // 淘气堡 画板9
+    getStorageUrl("39a9c37a-1063-4ba6-94d1-4e0cca1123e9/1768294478686-5jk4bjt.jpg")  // 淘气堡 画板24
   ];
   
   // 使用动态图片，如果不足6张则用静态图片补充
