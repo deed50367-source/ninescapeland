@@ -169,7 +169,7 @@ const DynamicProductDetail = () => {
       if (data.category_id) {
         const { data: relatedData } = await supabase
           .from("products")
-          .select("id, name, name_en, name_ar, name_de, name_es, name_pt, slug, featured_image, price_min, price_unit")
+          .select("id, name, name_en, name_ar, name_de, name_es, name_pt, name_fr, slug, featured_image, price_min, price_unit")
           .eq("category_id", data.category_id)
           .eq("is_active", true)
           .neq("id", data.id)
