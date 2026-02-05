@@ -86,6 +86,7 @@ const PWAPrompt = () => {
             )}
 
             {/* Install Prompt */}
+            {/* Install prompt disabled - users can install via browser menu
             {isInstallable && !needRefresh && !offlineReady && (
               <div className="space-y-3">
                 <div className="flex items-start gap-3">
@@ -117,6 +118,7 @@ const PWAPrompt = () => {
                 </Button>
               </div>
             )}
+            */}
           </div>
         </motion.div>
       )}
