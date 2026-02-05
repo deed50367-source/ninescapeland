@@ -1686,6 +1686,16 @@ const AdminProductsTab = () => {
                     placeholder="Nome da categoria"
                   />
                 </div>
+                <div className="space-y-2">
+                  <Label className="text-sm">🇫🇷 法语</Label>
+                  <Input
+                    value={categoryForm.name_fr}
+                    onChange={(e) =>
+                      setCategoryForm({ ...categoryForm, name_fr: e.target.value })
+                    }
+                    placeholder="Nom de la catégorie"
+                  />
+                </div>
               </div>
             </div>
 
