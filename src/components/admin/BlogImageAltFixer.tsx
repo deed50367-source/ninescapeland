@@ -29,6 +29,7 @@
    de: { name: 'Deutsch', flag: '🇩🇪' },
    es: { name: 'Español', flag: '🇪🇸' },
    pt: { name: 'Português', flag: '🇧🇷' },
+  fr: { name: 'Français', flag: '🇫🇷' },
  };
  
  const BlogImageAltFixer = () => {
