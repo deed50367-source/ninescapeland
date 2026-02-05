@@ -60,7 +60,7 @@ const IndoorPlayground = () => {
   const { localizedPath } = useLocalizedPath();
   const { getProductGalleryImages, getImageUrl } = useSiteImages();
 
-  const heroImage = getStorageUrl("dcbc5ed3-1863-4db6-bacf-59919b3abec6/1768294376731-g5jiv8.jpg");
+  const heroImage = getStorageUrl("adaf5265-c979-48b7-b4c1-808e1e4b87b8/1768294592888-x69bgi.jpg"); // 淘气堡全景
 
   const features = [
     {
