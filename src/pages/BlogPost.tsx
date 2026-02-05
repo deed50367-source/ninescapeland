@@ -2,6 +2,7 @@ import { useTranslation } from "react-i18next";
 import { useParams, Link, useNavigate } from "react-router-dom";
 import { useQuery } from "@tanstack/react-query";
 import { supabase } from "@/integrations/supabase/client";
+import DOMPurify from "dompurify";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { LiveChat } from "@/components/LiveChat";
@@ -452,7 +453,7 @@ const BlogPost = () => {
                   prose-hr:my-12 prose-hr:border-border
                   prose-figure:my-8
                   prose-figcaption:text-center prose-figcaption:text-muted-foreground prose-figcaption:mt-2"
-                dangerouslySetInnerHTML={{ __html: post.content || "" }}
+                dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(post.content || "") }}
               />
 
               {/* Article Footer */}
