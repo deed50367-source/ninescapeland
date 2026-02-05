@@ -1274,6 +1274,34 @@ const AdminProductsTab = () => {
                     />
                   </div>
                 </div>
+
+                {/* French */}
+                <div className="border rounded-lg p-4 space-y-4">
+                  <h4 className="font-medium flex items-center gap-2">
+                    🇫🇷 法语 (French)
+                  </h4>
+                  <div className="space-y-2">
+                    <Label>产品名称 (法语)</Label>
+                    <Input
+                      value={productForm.name_fr}
+                      onChange={(e) =>
+                        setProductForm({ ...productForm, name_fr: e.target.value })
+                      }
+                      placeholder="Nom du produit"
+                    />
+                  </div>
+                  <div className="space-y-2">
+                    <Label>产品描述 (法语)</Label>
+                    <Textarea
+                      value={productForm.description_fr}
+                      onChange={(e) =>
+                        setProductForm({ ...productForm, description_fr: e.target.value })
+                      }
+                      placeholder="Description du produit..."
+                      rows={3}
+                    />
+                  </div>
+                </div>
               </div>
             </TabsContent>
 
