@@ -313,7 +313,7 @@ export const LiveChat = () => {
             animate={{ scale: 1, opacity: 1 }}
             exit={{ scale: 0, opacity: 0 }}
             onClick={() => setIsOpen(true)}
-            className="fixed bottom-24 right-4 z-50 w-14 h-14 bg-primary text-primary-foreground rounded-full shadow-lg flex items-center justify-center hover:bg-primary/90 transition-colors"
+            className="fixed bottom-36 right-4 md:bottom-24 z-50 w-14 h-14 bg-primary text-primary-foreground rounded-full shadow-lg flex items-center justify-center hover:bg-primary/90 transition-colors"
             aria-label={t('liveChat.open', 'Open chat')}
           >
             <MessageCircle className="w-6 h-6" />
