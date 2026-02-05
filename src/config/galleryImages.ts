@@ -71,8 +71,8 @@ export const productImages = {
   ninjaCourse: getStorageUrl("root/1768967512755-1708914619333.jpg"), // 忍者课程3D效果图 - 全景
   
   // 软体游乐 - "Soft Play Areas"
-  // 使用软体游乐全景
-  softPlay: getStorageUrl("dcbc5ed3-1863-4db6-bacf-59919b3abec6/1768294400190-bx9gha.jpg"), // 白底图 6.png - 软体游乐
+  // 使用软体游乐全景（幼儿软体设备）
+  softPlay: getStorageUrl("dcbc5ed3-1863-4db6-bacf-59919b3abec6/1768294376731-g5jiv8.jpg"), // 白底图 1.png - 软体游乐
 };
 
 /**
@@ -87,10 +87,16 @@ export const projectImages = {
   fecCenter: getStorageUrl("6e6b4c6d-2efc-446e-a7f4-8e98c91c81cc/1768294529825-ob7ylk.jpg"), // 变化_画板 1 副本 10 - 淘气堡局部
   
   // 室内游乐场项目 - 使用局部细节图
-  indoorProject: getStorageUrl("39a9c37a-1063-4ba6-94d1-4e0cca1123e9/1768294471406-lp0vzf.jpg"), // 变化_画板 1 副本 18 - 游乐场局部
+  indoorProject: getStorageUrl("39a9c37a-1063-4ba6-94d1-4e0cca1123e9/1768294475255-l18ht.jpg"), // 变化_画板 1 副本 19 - 淘气堡局部
   
   // 忍者挑战区项目 - 使用局部细节图
   ninjaProject: getStorageUrl("root/1768967509253-1708914541597.jpg"), // 忍者课程局部
+  
+  // 软体游乐项目 - 使用软体游乐局部
+  softPlayProject: getStorageUrl("dcbc5ed3-1863-4db6-bacf-59919b3abec6/1768294381259-ig9ii.jpg"), // 白底图 2-2.png - 软体游乐局部
+  
+  // 蹦床公园项目2 - 蹦床设计图
+  trampolineProject: getStorageUrl("88de2e3c-c85e-413b-878d-99b0d0aea8ed/1768294621773-h93mw.jpg"), // 蹦床设计图 12(4)
 };
 
 /**
