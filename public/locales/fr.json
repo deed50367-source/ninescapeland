@@ -779,6 +779,568 @@
      "totalPosts": "Total des Articles",
      "publishedPosts": "Articles Publiés",
      "totalUsers": "Total des Utilisateurs",
-     "activeUsers": "Utilisateurs Actifs"
-   }
- }
+    "activeUsers": "Utilisateurs Actifs"
+  },
+  "productPages": {
+    "indoorPlayground": {
+      "title": "Équipements",
+      "titleHighlight": "d'Aire de Jeux Intérieure",
+      "description": "Structures de jeux multi-niveaux avec toboggans, piscines à balles, filets d'escalade et éléments interactifs pour enfants de tous âges. Thèmes personnalisés et certifiés ASTM & TUV pour une sécurité maximale.",
+      "featuresLabel": "Caractéristiques Principales",
+      "featuresTitle": "Pourquoi Choisir Nos",
+      "featuresTitleHighlight": "Aires de Jeux Intérieures",
+      "features": {
+        "customTheme": {
+          "title": "Thèmes Personnalisés",
+          "description": "Créez des environnements de marque uniques avec des couleurs, thèmes et designs personnalisés adaptés à votre vision."
+        },
+        "safety": {
+          "title": "Certifié Sécurité",
+          "description": "Tous les équipements répondent aux normes ASTM, TUV, CE et internationales pour un jeu sans souci."
+        },
+        "allAges": {
+          "title": "Tous Âges",
+          "description": "Conçu pour les enfants de tous âges avec des zones et défis adaptés à chaque tranche d'âge."
+        },
+        "modular": {
+          "title": "Design Modulaire",
+          "description": "Agencements flexibles qui peuvent être personnalisés et étendus au fur et à mesure de la croissance de votre entreprise."
+        }
+      },
+      "galleryLabel": "Nos Projets",
+      "galleryTitle": "Galerie",
+      "galleryTitleHighlight": "Aire de Jeux Intérieure",
+      "componentsLabel": "Composants d'Équipement",
+      "componentsTitle": "Solutions de Jeu",
+      "componentsTitleHighlight": "Complètes",
+      "cta": "Obtenir un Design et Devis Gratuits",
+      "ctaSection": {
+        "title": "Prêt à Construire Votre Aire de Jeux Intérieure ?",
+        "description": "Obtenez un design 3D gratuit et un devis compétitif sous 24 heures. Notre équipe d'experts vous aidera à créer une aire de jeux engageante et rentable.",
+        "getQuote": "Obtenir un Devis Gratuit",
+        "viewProjects": "Voir Plus de Projets"
+      },
+      "themesLabel": "Designs Thématiques",
+      "themesTitle": "Thèmes d'Aires de Jeux",
+      "themesTitleHighlight": "Populaires",
+      "themesDescription": "Transformez votre espace avec nos designs thématiques créatifs.",
+      "themesCustomNote": "Vous ne trouvez pas votre thème idéal ? Nous créons des designs entièrement personnalisés.",
+      "themesDiscuss": "Discuter de Votre Thème",
+      "themes": {
+        "jungle": {
+          "title": "Aventure Jungle",
+          "description": "Thème forêt tropicale avec palmiers, personnages animaux et éléments de jeu inspirés de la nature."
+        },
+        "ocean": {
+          "title": "Explorateur Océan",
+          "description": "Monde sous-marin avec créatures marines, éléments de navire et structures inspirées des vagues."
+        },
+        "castle": {
+          "title": "Château de Conte de Fées",
+          "description": "Thème royaume magique avec tours, dragons et éléments princesse/chevalier."
+        },
+        "space": {
+          "title": "Station Spatiale",
+          "description": "Thème spatial futuriste avec fusées, planètes et aventures d'astronautes."
+        }
+      }
+    },
+    "trampolinePark": {
+      "title": "Solutions de",
+      "titleHighlight": "Parc de Trampolines",
+      "description": "Solutions complètes de parcs de trampolines avec plus de 12 zones d'activités incluant piscines à mousse, zones slam dunk, parcours ninja, terrains de dodgeball et plus.",
+      "featuresLabel": "Caractéristiques Principales",
+      "featuresTitle": "Pourquoi Choisir Nos",
+      "featuresTitleHighlight": "Parcs de Trampolines",
+      "features": {
+        "performance": {
+          "title": "Haute Performance",
+          "description": "Ressorts et tapis premium pour un rebond supérieur, durabilité et sécurité."
+        },
+        "safety": {
+          "title": "Sécurité Avant Tout",
+          "description": "Cadres rembourrés, filets de sécurité et piscines à mousse assurent des atterrissages et jeux sécurisés."
+        },
+        "zones": {
+          "title": "12+ Zones d'Activité",
+          "description": "Des attractions diverses maintiennent l'engagement des visiteurs et encouragent les visites répétées."
+        },
+        "modular": {
+          "title": "Agencement Modulaire",
+          "description": "Designs flexibles qui s'adaptent à votre espace et budget."
+        }
+      },
+      "stats": {
+        "zones": "Zones d'Activité",
+        "projects": "Projets Réalisés",
+        "countries": "Pays Desservis",
+        "years": "Années d'Expérience"
+      },
+      "galleryLabel": "Nos Projets",
+      "galleryTitle": "Galerie",
+      "galleryTitleHighlight": "Parc de Trampolines",
+      "cta": "Obtenir un Design et Devis Gratuits",
+      "ctaSection": {
+        "title": "Prêt à Construire Votre Parc de Trampolines ?",
+        "description": "Obtenez un design 3D gratuit et un devis compétitif sous 24 heures.",
+        "getQuote": "Obtenir un Devis Gratuit",
+        "viewProjects": "Voir Plus de Projets"
+      }
+    },
+    "ninjaCourse": {
+      "title": "Parcours",
+      "titleHighlight": "Ninja Warrior",
+      "description": "Parcours d'obstacles ninja professionnels avec murs incurvés, échelles à saumon, murs d'escalade, parcours de cordes et plus de 50 éléments de défi.",
+      "featuresLabel": "Caractéristiques Principales",
+      "featuresTitle": "Pourquoi Choisir Nos",
+      "featuresTitleHighlight": "Parcours Ninja",
+      "features": {
+        "obstacles": {
+          "title": "50+ Types d'Obstacles",
+          "description": "Vaste sélection de défis du niveau débutant au niveau compétition professionnel."
+        },
+        "safety": {
+          "title": "Systèmes de Sécurité",
+          "description": "Tapis de chute, harnais de sécurité et surfaces rembourrées pour un entraînement sécurisé."
+        },
+        "competition": {
+          "title": "Niveau Compétition",
+          "description": "Équipement conçu pour répondre aux standards des émissions TV et compétitions."
+        },
+        "customizable": {
+          "title": "Entièrement Personnalisable",
+          "description": "Concevez des parcours adaptés à votre espace, public et niveaux de compétence."
+        }
+      },
+      "stats": {
+        "obstacles": "Types d'Obstacles",
+        "projects": "Projets Réalisés",
+        "countries": "Pays Desservis",
+        "years": "Années d'Expérience"
+      },
+      "galleryLabel": "Nos Projets",
+      "galleryTitle": "Galerie",
+      "galleryTitleHighlight": "Parcours Ninja",
+      "cta": "Obtenir un Design et Devis Gratuits",
+      "competitionGrade": "Niveau Compétition",
+      "days": "Jours",
+      "ctaSection": {
+        "title": "Prêt à Construire Votre Parcours Ninja ?",
+        "description": "Obtenez un design 3D gratuit et un devis compétitif sous 24 heures.",
+        "getQuote": "Obtenir un Devis Gratuit",
+        "viewProjects": "Voir Plus de Projets"
+      }
+    },
+    "softPlay": {
+      "title": "Espaces de",
+      "titleHighlight": "Jeux Souples",
+      "description": "Équipements de jeux souples sûrs et attrayants conçus spécifiquement pour les tout-petits et jeunes enfants. Faciles à nettoyer, modulaires et construits avec les plus hauts standards de sécurité.",
+      "featuresLabel": "Caractéristiques Principales",
+      "featuresTitle": "Pourquoi Choisir Nos",
+      "featuresTitleHighlight": "Équipements de Jeux Souples",
+      "features": {
+        "toddlerSafe": {
+          "title": "Sécurité Tout-Petits",
+          "description": "Conçu spécifiquement pour les enfants de 0 à 5 ans avec bords arrondis et surfaces souples."
+        },
+        "materials": {
+          "title": "Matériaux Premium",
+          "description": "Mousse haute densité, cuir PVC et matériaux non toxiques partout."
+        },
+        "easyClean": {
+          "title": "Facile à Nettoyer",
+          "description": "Surfaces antibactériennes et housses amovibles pour un entretien simple."
+        },
+        "modular": {
+          "title": "Système Modulaire",
+          "description": "Mélangez et associez les composants pour créer des agencements personnalisés."
+        }
+      },
+      "stats": {
+        "projects": "Projets Jeux Souples",
+        "countries": "Pays Desservis",
+        "experience": "Années d'Expérience",
+        "satisfaction": "Satisfaction Client"
+      },
+      "galleryLabel": "Nos Projets",
+      "galleryTitle": "Galerie",
+      "galleryTitleHighlight": "Jeux Souples",
+      "cta": "Obtenir un Design et Devis Gratuits",
+      "kidsFriendly": "Adapté aux Enfants",
+      "ctaSection": {
+        "title": "Prêt à Créer Votre Espace de Jeux Souples ?",
+        "description": "Obtenez un design 3D gratuit et un devis compétitif sous 24 heures.",
+        "getQuote": "Obtenir un Devis Gratuit",
+        "viewProjects": "Voir Plus de Projets"
+      }
+    }
+  },
+  "processDetail": {
+    "sectionLabel": "Processus Détaillé",
+    "title": "Chaque Étape",
+    "titleHighlight": "Expliquée",
+    "description": "Nous croyons en une transparence totale. Voici un aperçu détaillé de la façon dont nous transformons votre vision en un lieu de divertissement réussi.",
+    "consultation": {
+      "title": "Phase de Consultation et Planification",
+      "description": "Notre parcours commence par la compréhension de votre vision unique, de votre marché et de vos objectifs commerciaux.",
+      "feature1": "Analyse de site gratuite et étude de faisabilité",
+      "feature2": "Étude de marché et analyse de la concurrence",
+      "feature3": "Planification budgétaire et projections ROI",
+      "feature4": "Conseils de conformité réglementaire"
+    },
+    "design": {
+      "title": "Design 3D Personnalisé et Ingénierie",
+      "description": "Notre équipe de design primée crée des visualisations 3D époustouflantes qui donnent vie à votre concept.",
+      "feature1": "Rendus 3D photoréalistes",
+      "feature2": "Plans d'étage et élévations détaillés",
+      "feature3": "Développement thématique et intégration de marque",
+      "feature4": "Plusieurs tours de révision de design inclus"
+    },
+    "manufacturing": {
+      "title": "Fabrication de Précision",
+      "description": "La production commence dans notre usine ultramoderne de 50 000 m² avec certification ISO 9001.",
+      "feature1": "Matériaux premium écologiques",
+      "feature2": "Systèmes d'inspection qualité automatisés",
+      "feature3": "Mises à jour de production en temps réel avec photos",
+      "feature4": "Tests et certification avant expédition"
+    }
+  },
+  "processGuarantee": {
+    "sectionLabel": "Nos Garanties",
+    "title": "Votre Investissement",
+    "titleHighlight": "Protégé",
+    "description": "Nous soutenons chaque projet avec des garanties leaders de l'industrie et un support complet.",
+    "quality": {
+      "title": "Garantie Qualité",
+      "description": "Chaque composant subit des tests et inspections rigoureux. Nous utilisons uniquement des matériaux premium conformes aux normes de sécurité internationales."
+    },
+    "delivery": {
+      "title": "Livraison à Temps",
+      "description": "Nous comprenons que le timing est crucial. Nos processus optimisés assurent une livraison dans les délais avec un suivi en temps réel."
+    },
+    "warranty": {
+      "title": "Garantie 3 Ans",
+      "description": "Garantie complète leader de l'industrie couvrant tous les défauts de fabrication. Nous fournissons des pièces de rechange gratuites."
+    },
+    "support": {
+      "title": "Support Technique à Vie",
+      "description": "Notre relation ne s'arrête pas à l'installation. Nous fournissons une assistance technique continue et des conseils de maintenance."
+    },
+    "replacement": {
+      "title": "Pièces de Rechange Gratuites",
+      "description": "Si un composant tombe en panne en raison de défauts de fabrication pendant la période de garantie, nous expédions les pièces de rechange sans frais."
+    },
+    "satisfaction": {
+      "title": "Garantie Satisfaction",
+      "description": "Nous travaillons étroitement avec vous tout au long du processus pour assurer une satisfaction complète."
+    }
+  },
+  "processTestimonials": {
+    "sectionLabel": "Histoires de Succès",
+    "title": "Ce Que Disent",
+    "titleHighlight": "Nos Clients",
+    "description": "Ne nous croyez pas sur parole. Écoutez les propriétaires de lieux de divertissement du monde entier."
+  },
+  "processCTA": {
+    "title": "Prêt à Démarrer",
+    "titleHighlight": "Votre Projet ?",
+    "description": "Rejoignez des milliers de propriétaires de lieux de divertissement qui ont fait confiance à NinescapeLand pour donner vie à leur vision.",
+    "getQuote": "Obtenir un Design et Devis Gratuits",
+    "whatsapp": "Chat sur WhatsApp",
+    "response": "Délai de Réponse",
+    "design": "Service de Design 3D",
+    "countries": "Pays Desservis"
+  },
+  "processTimeline": {
+    "sectionLabel": "Chronologie du Projet",
+    "title": "Chronologie Complète",
+    "titleHighlight": "du Projet",
+    "description": "Un aperçu transparent de votre parcours de projet, de la demande initiale à l'inauguration.",
+    "totalTime": "Durée Totale du Projet",
+    "totalTimeDesc": "De la demande à l'inauguration",
+    "days": "Jours",
+    "months": "Mois",
+    "approximately": "Environ",
+    "note": "* La chronologie peut varier selon la complexité du projet, les exigences de personnalisation et la destination d'expédition.",
+    "phases": {
+      "inquiry": {
+        "phase": "Phase 1",
+        "title": "Demande Initiale",
+        "duration": "1-3 Jours",
+        "task1": "Soumettre les exigences du projet et détails de l'espace",
+        "task2": "Recevoir une consultation préliminaire et recommandations",
+        "task3": "Obtenir une estimation budgétaire initiale"
+      },
+      "design": {
+        "phase": "Phase 2",
+        "title": "Design 3D",
+        "duration": "5-10 Jours",
+        "task1": "Design 3D personnalisé selon vos spécifications",
+        "task2": "Révisions et affinements multiples du design",
+        "task3": "Approbation finale du design"
+      },
+      "confirmation": {
+        "phase": "Phase 3",
+        "title": "Confirmation de Commande",
+        "duration": "3-5 Jours",
+        "task1": "Révision et approbation du devis final",
+        "task2": "Signature du contrat et accord de production",
+        "task3": "Traitement du dépôt (30-50%)"
+      },
+      "production": {
+        "phase": "Phase 4",
+        "title": "Fabrication",
+        "duration": "25-35 Jours",
+        "task1": "Préparation des matériaux et inspection qualité",
+        "task2": "Production avec mises à jour photos/vidéos régulières",
+        "task3": "Contrôle qualité et inspection avant expédition"
+      },
+      "shipping": {
+        "phase": "Phase 5",
+        "title": "Expédition Mondiale",
+        "duration": "20-35 Jours",
+        "task1": "Emballage professionnel et chargement conteneur",
+        "task2": "Fret maritime avec suivi en temps réel",
+        "task3": "Dédouanement et coordination de livraison"
+      },
+      "installation": {
+        "phase": "Phase 6",
+        "title": "Installation",
+        "duration": "5-10 Jours",
+        "task1": "Guides d'installation détaillés et support vidéo",
+        "task2": "Installation sur site par techniciens formés (optionnel)",
+        "task3": "Inspection finale, tests et remise"
+      }
+    }
+  },
+  "projectsStats": {
+    "sectionLabel": "Impact Mondial",
+    "title": "Notre Bilan",
+    "titleHighlight": "d'Excellence",
+    "description": "Des chiffres qui témoignent de notre engagement envers la qualité, l'innovation et le succès client.",
+    "projectsCompleted": "Projets Réalisés",
+    "countriesServed": "Pays Desservis",
+    "happyVisitors": "Visiteurs Heureux Annuellement",
+    "yearsExperience": "Années d'Excellence",
+    "clientSatisfaction": "Taux de Satisfaction Client",
+    "sqmInstalled": "Mètres Carrés Installés"
+  },
+  "projectsMap": {
+    "sectionLabel": "Présence Mondiale",
+    "title": "Projets",
+    "titleHighlight": "à Travers le Monde",
+    "description": "De l'Amérique du Nord au Moyen-Orient, de l'Europe à l'Asie-Pacifique, nos équipements apportent de la joie aux familles du monde entier.",
+    "projectsLabel": "Projets",
+    "highlightsTitle": "Points Forts du Service Mondial",
+    "regions": {
+      "northAmerica": {
+        "name": "Amérique du Nord",
+        "countries": "USA, Canada, Mexique"
+      },
+      "europe": {
+        "name": "Europe",
+        "countries": "UK, Allemagne, France, Espagne, Italie"
+      },
+      "middleEast": {
+        "name": "Moyen-Orient",
+        "countries": "EAU, Arabie Saoudite, Qatar, Koweït"
+      },
+      "asiaPacific": {
+        "name": "Asie-Pacifique",
+        "countries": "Australie, Singapour, Malaisie, Thaïlande"
+      },
+      "latinAmerica": {
+        "name": "Amérique Latine",
+        "countries": "Brésil, Argentine, Chili, Colombie"
+      },
+      "africa": {
+        "name": "Afrique",
+        "countries": "Afrique du Sud, Égypte, Nigeria, Kenya"
+      }
+    },
+    "highlights": {
+      "item1": "Chefs de projet locaux dans les régions majeures",
+      "item2": "Équipes de support multilingues",
+      "item3": "Conformité sécurité spécifique à chaque région",
+      "item4": "Expédition rapide vers tous les continents"
+    }
+  },
+  "projectsTestimonials": {
+    "sectionLabel": "Histoires de Succès Client",
+    "title": "Projets Réels,",
+    "titleHighlight": "Résultats Réels",
+    "description": "Écoutez les propriétaires et opérateurs de lieux de divertissement du monde entier qui ont choisi NinescapeLand."
+  },
+  "projectsCTA": {
+    "title": "Prêt à Créer Votre Aire de Jeux de Rêve ?",
+    "description": "Rejoignez plus de 2 000 lieux de divertissement réussis dans le monde. Obtenez votre design 3D personnalisé gratuit sous 24 heures.",
+    "getQuote": "Obtenir un Design et Devis Gratuits",
+    "whatsapp": "Chat sur WhatsApp",
+    "features": {
+      "freeConsultation": {
+        "title": "Consultation Gratuite",
+        "description": "Conseils d'experts sans frais"
+      },
+      "expertAdvice": {
+        "title": "Équipe d'Experts",
+        "description": "15+ ans d'expérience"
+      },
+      "fastResponse": {
+        "title": "Réponse Rapide",
+        "description": "Devis sous 24 heures"
+      }
+    }
+  },
+  "projectTypes": {
+    "sectionLabel": "Catégories de Projets",
+    "title": "Ce Que Nous",
+    "titleHighlight": "Construisons",
+    "description": "Des zones de jeux souples intimes aux complexes de divertissement massifs, nous concevons et fabriquons des solutions complètes.",
+    "learnMore": "En Savoir Plus",
+    "items": {
+      "fec": {
+        "title": "Centres de Divertissement Familial",
+        "description": "Solutions FEC complètes avec structures de jeux multi-niveaux, attractions thématiques et espaces événementiels.",
+        "feature1": "Zones multi-attractions pour tous les âges",
+        "feature2": "Espaces fêtes et événements intégrés",
+        "feature3": "Plans d'étage optimisant les revenus"
+      },
+      "trampolinePark": {
+        "title": "Parcs de Trampolines",
+        "description": "Installations haute énergie avec trampolines de performance, piscines à mousse et attractions aériennes uniques.",
+        "feature1": "12+ options de zones d'activité",
+        "feature2": "Équipement niveau compétition",
+        "feature3": "Design modulaire extensible"
+      },
+      "ninjaWarrior": {
+        "title": "Parcours Ninja Warrior",
+        "description": "Parcours d'obstacles professionnels inspirés des compétitions TV. Parfaits pour les centres de fitness et installations d'entraînement.",
+        "feature1": "50+ variétés d'obstacles",
+        "feature2": "Niveaux de difficulté ajustables",
+        "feature3": "Agencements compétition et entraînement"
+      },
+      "softPlay": {
+        "title": "Espaces de Jeux Souples",
+        "description": "Environnements de jeu sûrs et engageants conçus pour les tout-petits et jeunes enfants.",
+        "feature1": "Matériaux sécurisés pour tout-petits",
+        "feature2": "Surfaces faciles à nettoyer",
+        "feature3": "Designs compacts et modulaires"
+      }
+    }
+  },
+  "interactiveMap": {
+    "sectionLabel": "Carte Mondiale Interactive",
+    "title": "Explorez Notre",
+    "titleHighlight": "Portée Mondiale",
+    "description": "Cliquez sur n'importe quelle région pour découvrir des informations détaillées sur nos projets dans cette zone.",
+    "clickHint": "Cliquez sur une région pour voir les informations détaillées du projet",
+    "selectRegion": "Sélectionnez une Région",
+    "selectRegionHint": "Cliquez sur n'importe quelle région sur la carte ou utilisez les boutons ci-dessous.",
+    "projectsLabel": "Projets",
+    "clientsLabel": "Clients Satisfaits",
+    "featuredProject": "Projet Vedette",
+    "startProject": "Démarrez Votre Projet Ici",
+    "globalStats": "Aperçu Mondial",
+    "totalProjects": "Total des Projets",
+    "countriesServed": "Pays Desservis"
+  },
+  "productFAQ": {
+    "indoorPlayground": {
+      "sectionLabel": "Questions Fréquentes",
+      "title": "FAQ",
+      "titleHighlight": "Aire de Jeux Intérieure",
+      "description": "Réponses à vos questions sur les équipements d'aires de jeux intérieures.",
+      "items": {
+        "q1": {
+          "question": "Quels sont les délais de fabrication typiques ?",
+          "answer": "La production prend généralement 25-35 jours selon la complexité. L'expédition ajoute 20-35 jours selon la destination."
+        },
+        "q2": {
+          "question": "Quelles certifications de sécurité vos équipements possèdent-ils ?",
+          "answer": "Tous nos produits sont conformes aux normes ASTM F1918, EN 1176, TUV, CE et autres normes internationales."
+        }
+      }
+    },
+    "trampolinePark": {
+      "sectionLabel": "Questions Fréquentes",
+      "title": "FAQ",
+      "titleHighlight": "Parc de Trampolines",
+      "description": "Questions courantes sur les parcs de trampolines.",
+      "items": {
+        "q1": {
+          "question": "Quelle est la superficie minimale requise ?",
+          "answer": "Un parc de base nécessite environ 300-500 m² avec une hauteur sous plafond d'au moins 4,5 mètres."
+        },
+        "q2": {
+          "question": "Quelles caractéristiques de sécurité sont incluses ?",
+          "answer": "Nos trampolines disposent de couvertures de cadre rembourrées, filets de sécurité et zones d'atterrissage absorbant les chocs."
+        }
+      }
+    },
+    "ninjaCourse": {
+      "sectionLabel": "Questions Fréquentes",
+      "title": "FAQ",
+      "titleHighlight": "Parcours Ninja",
+      "description": "Apprenez-en plus sur nos parcours d'obstacles ninja.",
+      "items": {
+        "q1": {
+          "question": "Quels obstacles sont inclus dans un parcours ninja ?",
+          "answer": "Nous offrons 50+ types d'obstacles incluant murs incurvés, échelles à saumon, balançoires à anneaux et plus."
+        },
+        "q2": {
+          "question": "Les parcours peuvent-ils être ajustés pour différents niveaux ?",
+          "answer": "Absolument ! Beaucoup de nos obstacles offrent des réglages de difficulté ajustables."
+        }
+      }
+    },
+    "softPlay": {
+      "sectionLabel": "Questions Fréquentes",
+      "title": "FAQ",
+      "titleHighlight": "Jeux Souples",
+      "description": "Questions courantes sur les équipements de jeux souples.",
+      "items": {
+        "q1": {
+          "question": "Pour quelle tranche d'âge les jeux souples sont-ils conçus ?",
+          "answer": "Nos équipements sont conçus pour les enfants de 6 mois à 5 ans avec des zones adaptées à chaque âge."
+        },
+        "q2": {
+          "question": "Quels matériaux sont utilisés ?",
+          "answer": "Nous utilisons du cuir PVC premium couvrant des noyaux en mousse haute densité. Tous les matériaux sont sans plomb et ignifuges."
+        }
+      }
+    }
+  },
+  "extendedSections": {
+    "moreAttractions": "Plus d'Attractions",
+    "extendedActivityZones": "Zones d'Activité Étendues",
+    "moreObstacles": "Plus d'Obstacles",
+    "extendedChallengeElements": "Éléments de Défi Étendus"
+  },
+  "seo": {
+    "defaultKeywords": "fabricant d'équipements d'aires de jeux intérieures, équipements d'aires de jeux intérieures à vendre, équipements de jeux commerciaux, fournisseur d'équipements de parcs de trampolines, fabricant d'aires de jeux Chine, parcours ninja warrior, équipements de jeux souples, centre de divertissement familial FEC",
+    "home": {
+      "title": "Fabricant d'Équipements d'Aires de Jeux Intérieures | Fournisseur Commercial depuis 2008",
+      "description": "NinescapeLand est un fabricant leader d'équipements d'aires de jeux intérieures offrant des parcs de trampolines, parcours ninja et solutions de jeux souples. Design 3D gratuit, certifié ASTM & TUV, expédition mondiale."
+    },
+    "aboutUs": {
+      "title": "À Propos de NinescapeLand | Fabricant d'Aires de Jeux depuis 2008",
+      "description": "Découvrez NinescapeLand - 15+ ans d'expertise en fabrication d'équipements d'aires de jeux. 2000+ projets dans 50+ pays."
+    },
+    "products": {
+      "title": "Équipements d'Aires de Jeux Commerciales | Parcs de Trampolines & Parcours Ninja",
+      "description": "Explorez notre gamme complète d'équipements commerciaux certifiés ASTM & TUV pour aires de jeux intérieures."
+    },
+    "contact": {
+      "title": "Contactez-Nous | Obtenez un Devis Gratuit pour Votre Projet d'Aire de Jeux",
+      "description": "Contactez NinescapeLand pour un design 3D gratuit et un devis compétitif. Notre équipe répond sous 24 heures."
+    },
+    "blog": {
+      "title": "Blog Industrie des Aires de Jeux | Actualités, Tendances et Conseils",
+      "description": "Restez informé des dernières tendances de l'industrie des aires de jeux intérieures avec nos articles d'experts."
+    },
+    "faq": {
+      "title": "FAQ | Questions sur les Aires de Jeux Intérieures",
+      "description": "Trouvez les réponses aux questions fréquentes sur les prix, délais, expédition et installation."
+    }
+  }
+}
