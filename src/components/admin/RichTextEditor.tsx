@@ -29,6 +29,15 @@ import {
 } from "lucide-react";
 import { useState } from "react";
 import GalleryPicker from "./GalleryPicker";
+import {
+  Dialog,
+  DialogContent,
+  DialogHeader,
+  DialogTitle,
+  DialogFooter,
+} from "@/components/ui/dialog";
+import { Input } from "@/components/ui/input";
+import { Label } from "@/components/ui/label";
 
 interface RichTextEditorProps {
   content: string;
@@ -38,6 +47,8 @@ interface RichTextEditorProps {
 
 const RichTextEditor = ({ content, onChange, placeholder = "开始编写内容..." }: RichTextEditorProps) => {
   const [isGalleryOpen, setIsGalleryOpen] = useState(false);
+  const [pendingImageUrl, setPendingImageUrl] = useState<string | null>(null);
+  const [imageAlt, setImageAlt] = useState("");
 
   const editor = useEditor({
     extensions: [
@@ -79,9 +90,24 @@ const RichTextEditor = ({ content, onChange, placeholder = "开始编写内容..
     return null;
   }
 
-  const handleInsertImage = (url: string) => {
-    editor.chain().focus().setImage({ src: url }).run();
+  const handleSelectImage = (url: string) => {
+    setPendingImageUrl(url);
+    setImageAlt("");
     setIsGalleryOpen(false);
+  };
+
+  const handleConfirmImage = () => {
+    if (pendingImageUrl) {
+      const altText = imageAlt.trim() || "Blog image";
+      editor.chain().focus().setImage({ src: pendingImageUrl, alt: altText }).run();
+      setPendingImageUrl(null);
+      setImageAlt("");
+    }
+  };
+
+  const handleCancelImage = () => {
+    setPendingImageUrl(null);
+    setImageAlt("");
   };
 
   const handleAddLink = () => {
@@ -258,8 +284,47 @@ const RichTextEditor = ({ content, onChange, placeholder = "开始编写内容..
       <GalleryPicker
         open={isGalleryOpen}
         onOpenChange={setIsGalleryOpen}
-        onSelect={handleInsertImage}
+        onSelect={handleSelectImage}
       />
+
+      {/* Alt Text Dialog */}
+      <Dialog open={!!pendingImageUrl} onOpenChange={(open) => !open && handleCancelImage()}>
+        <DialogContent className="sm:max-w-md">
+          <DialogHeader>
+            <DialogTitle>添加图片描述 (Alt Text)</DialogTitle>
+          </DialogHeader>
+          <div className="space-y-4">
+            {pendingImageUrl && (
+              <img 
+                src={pendingImageUrl} 
+                alt="Preview" 
+                className="w-full h-32 object-cover rounded-lg"
+              />
+            )}
+            <div className="space-y-2">
+              <Label htmlFor="alt-text">图片描述 (用于SEO和无障碍访问)</Label>
+              <Input
+                id="alt-text"
+                value={imageAlt}
+                onChange={(e) => setImageAlt(e.target.value)}
+                placeholder="例如：儿童在蹦床公园玩耍"
+                autoFocus
+              />
+              <p className="text-xs text-muted-foreground">
+                请简洁描述图片内容，帮助搜索引擎理解图片并为视障用户提供信息
+              </p>
+            </div>
+          </div>
+          <DialogFooter>
+            <Button variant="outline" onClick={handleCancelImage}>
+              取消
+            </Button>
+            <Button onClick={handleConfirmImage}>
+              插入图片
+            </Button>
+          </DialogFooter>
+        </DialogContent>
+      </Dialog>
     </div>
   );
 };
