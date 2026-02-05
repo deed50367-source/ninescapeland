@@ -458,6 +458,7 @@ const AdminProductsTab = () => {
       description_de: productForm.description_de || null,
       description_es: productForm.description_es || null,
       description_pt: productForm.description_pt || null,
+      description_fr: productForm.description_fr || null,
       featured_image: productForm.featured_image || null,
       gallery_images: productForm.gallery_images,
       price_min: productForm.price_min ? parseFloat(productForm.price_min) : null,
