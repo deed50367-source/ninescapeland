@@ -37,6 +37,14 @@
     "notFound": "Publicación No Encontrada",
     "notFoundDescription": "El artículo que busca no existe o ha sido eliminado.",
     "backToBlog": "Volver al Blog",
+    "readIn": "Leer en:",
+    "availableInOtherLanguages": "Este artículo está disponible en:",
+    "share": "Compartir:",
+    "minRead": "min de lectura",
+    "toc": {
+      "title": "Tabla de Contenidos",
+      "progress": "Progreso"
+    },
     "pageInfo": "Página {{current}} de {{total}}",
     "showingPosts": "Mostrando {{from}}-{{to}} de {{total}} artículos",
     "related": {

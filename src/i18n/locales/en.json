@@ -39,6 +39,12 @@
     "backToBlog": "Back to Blog",
     "readIn": "Read in:",
     "availableInOtherLanguages": "This article is available in:",
+    "share": "Share:",
+    "minRead": "min read",
+    "toc": {
+      "title": "Table of Contents",
+      "progress": "Progress"
+    },
     "featuredPost": "Featured Article",
     "latestArticles": "Latest Updates",
     "allPosts": "All Articles",

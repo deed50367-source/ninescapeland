@@ -1,4 +1,5 @@
 import { useState, useEffect, useCallback } from "react";
+import { useTranslation } from "react-i18next";
 import { List, ChevronUp } from "lucide-react";
 import { cn } from "@/lib/utils";
 
@@ -14,6 +15,7 @@ interface BlogTableOfContentsProps {
 }
 
 export const BlogTableOfContents = ({ content, className }: BlogTableOfContentsProps) => {
+  const { t } = useTranslation();
   const [tocItems, setTocItems] = useState<TOCItem[]>([]);
   const [activeId, setActiveId] = useState<string>("");
   const [isCollapsed, setIsCollapsed] = useState(false);
@@ -117,7 +119,7 @@ export const BlogTableOfContents = ({ content, className }: BlogTableOfContentsP
       >
         <div className="flex items-center gap-2">
           <List className="w-4 h-4 text-primary" />
-          <span className="font-semibold text-sm">Table of Contents</span>
+          <span className="font-semibold text-sm">{t("blog.toc.title", "Table of Contents")}</span>
         </div>
         <ChevronUp 
           className={cn(
@@ -158,7 +160,7 @@ export const BlogTableOfContents = ({ content, className }: BlogTableOfContentsP
       {!isCollapsed && activeId && (
         <div className="mt-3 pt-3 border-t border-border">
           <div className="flex items-center justify-between text-xs text-muted-foreground">
-            <span>Progress</span>
+            <span>{t("blog.toc.progress", "Progress")}</span>
             <span>{Math.round((tocItems.findIndex(i => i.id === activeId) + 1) / tocItems.length * 100)}%</span>
           </div>
           <div className="mt-1 h-1 bg-muted rounded-full overflow-hidden">

@@ -37,6 +37,14 @@
     "notFound": "المقال غير موجود",
     "notFoundDescription": "المقال الذي تبحث عنه غير موجود أو تم إزالته.",
     "backToBlog": "العودة للمدونة",
+    "readIn": "اقرأ بـ:",
+    "availableInOtherLanguages": "هذا المقال متاح بـ:",
+    "share": "مشاركة:",
+    "minRead": "دقيقة للقراءة",
+    "toc": {
+      "title": "جدول المحتويات",
+      "progress": "التقدم"
+    },
     "pageInfo": "صفحة {{current}} من {{total}}",
     "showingPosts": "عرض {{from}}-{{to}} من {{total}} مقال",
     "related": {
