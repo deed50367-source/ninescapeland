@@ -7,7 +7,7 @@ const corsHeaders = {
 };
 
 const DOMAIN = "https://indoorplaygroundsolution.com";
-const LANGUAGES = ["", "es", "pt", "de", "ar"]; // "" = English (default, no prefix)
+const LANGUAGES = ["", "es", "pt", "de", "fr", "ar"]; // "" = English (default, no prefix)
 const TODAY = new Date().toISOString().split("T")[0];
 
 interface BlogPost {
