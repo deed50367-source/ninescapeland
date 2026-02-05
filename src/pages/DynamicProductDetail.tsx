@@ -190,6 +190,7 @@ const DynamicProductDetail = () => {
     name_de?: string | null;
     name_es?: string | null;
     name_pt?: string | null;
+    name_fr?: string | null;
   }) => {
     const lang = i18n.language;
     if (lang === "en" && item.name_en) return item.name_en;
@@ -197,6 +198,7 @@ const DynamicProductDetail = () => {
     if (lang === "de" && item.name_de) return item.name_de;
     if (lang === "es" && item.name_es) return item.name_es;
     if (lang === "pt" && item.name_pt) return item.name_pt;
+    if (lang === "fr" && item.name_fr) return item.name_fr;
     // Fallback to English, then default name
     return item.name_en || item.name;
   };
@@ -209,6 +211,7 @@ const DynamicProductDetail = () => {
     if (lang === "de" && product.description_de) return product.description_de;
     if (lang === "es" && product.description_es) return product.description_es;
     if (lang === "pt" && product.description_pt) return product.description_pt;
+    if (lang === "fr" && product.description_fr) return product.description_fr;
     // Fallback to English, then default description
     return product.description_en || product.description || "";
   };
