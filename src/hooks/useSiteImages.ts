@@ -18,16 +18,22 @@ const defaultImages: Record<string, string> = {
   "hero.projects": "e781d029-b8d9-4101-8835-35d1d8938a12/1768294282861-8dkfa.jpg",
   "hero.faq": "e781d029-b8d9-4101-8835-35d1d8938a12/1768294287219-kmtl6.jpg",
   "hero.contact": "e781d029-b8d9-4101-8835-35d1d8938a12/1768294300068-ysxbww.jpg",
-  // 产品图片
+  // 产品图片 - 按产品类型严格分类
+  // 淘气堡 (Indoor Playground) - 使用淘气堡文件夹素材
   "product.indoorPlayground": "adaf5265-c979-48b7-b4c1-808e1e4b87b8/1768294592888-x69bgi.jpg",
+  // 蹦床公园 (Trampoline Park) - 使用蹦床设计图文件夹素材
   "product.trampolinePark": "88de2e3c-c85e-413b-878d-99b0d0aea8ed/1768294617155-efd0q8.jpg",
+  // 忍者课程 (Ninja Course) - 使用忍者课程素材
   "product.ninjaCourse": "root/1768967512755-1708914619333.jpg",
-  "product.softPlay": "dcbc5ed3-1863-4db6-bacf-59919b3abec6/1768294400190-bx9gha.jpg",
+  // 软体游乐 (Soft Play) - 使用白底图/软体游乐素材
+  "product.softPlay": "dcbc5ed3-1863-4db6-bacf-59919b3abec6/1768294376731-g5jiv8.jpg",
   // 项目案例图片
-  "project.bouncePark": "0d55c23f-ae63-47b1-b850-bb97872cf518/1768294349256-ahzwfa.jpg",
-  "project.fecCenter": "6e6b4c6d-2efc-446e-a7f4-8e98c91c81cc/1768294529825-ob7ylk.jpg",
-  "project.indoorProject": "39a9c37a-1063-4ba6-94d1-4e0cca1123e9/1768294471406-lp0vzf.jpg",
+  "project.indoorProject": "39a9c37a-1063-4ba6-94d1-4e0cca1123e9/1768294475255-l18ht.jpg",
+  "project.trampolineProject": "88de2e3c-c85e-413b-878d-99b0d0aea8ed/1768294621773-h93mw.jpg",
   "project.ninjaProject": "root/1768967509253-1708914541597.jpg",
+  "project.softPlayProject": "dcbc5ed3-1863-4db6-bacf-59919b3abec6/1768294381259-ig9ii.jpg",
+  "project.fecCenter": "6e6b4c6d-2efc-446e-a7f4-8e98c91c81cc/1768294529825-ob7ylk.jpg",
+  "project.bouncePark": "0d55c23f-ae63-47b1-b850-bb97872cf518/1768294349256-ahzwfa.jpg",
   // 特性区图片
   "feature.trampoline": "88de2e3c-c85e-413b-878d-99b0d0aea8ed/1768294621773-h93mw.jpg",
   "feature.ninja": "root/1768967509253-1708914541597.jpg",
