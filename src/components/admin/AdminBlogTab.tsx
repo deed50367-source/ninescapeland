@@ -28,6 +28,12 @@ import { toast } from "sonner";
 import { format } from "date-fns";
 import RichTextEditor from "./RichTextEditor";
 import GalleryPicker from "./GalleryPicker";
+import BlogImageAltFixer from "./BlogImageAltFixer";
+import {
+  Collapsible,
+  CollapsibleContent,
+  CollapsibleTrigger,
+} from "@/components/ui/collapsible";
 
 interface BlogPost {
   id: string;
@@ -75,6 +81,7 @@ const AdminBlogTab = () => {
   const [isSaving, setIsSaving] = useState(false);
   const [isGalleryOpen, setIsGalleryOpen] = useState(false);
   const [lastSavedPost, setLastSavedPost] = useState<{ slug: string; language: string; status: string } | null>(null);
+  const [isAltFixerOpen, setIsAltFixerOpen] = useState(false);
 
   // Form state
   const [formData, setFormData] = useState({
@@ -365,6 +372,33 @@ const AdminBlogTab = () => {
 
   return (
     <div className="space-y-6">
+      {/* Image Alt Fixer Tool */}
+      <Collapsible open={isAltFixerOpen} onOpenChange={setIsAltFixerOpen}>
+        <Card className="border-amber-200 dark:border-amber-900">
+          <CollapsibleTrigger asChild>
+            <CardContent className="py-3 cursor-pointer hover:bg-muted/50 transition-colors">
+              <div className="flex items-center justify-between">
+                <div className="flex items-center gap-3">
+                  <ImageIcon className="w-5 h-5 text-amber-600" />
+                  <div>
+                    <p className="font-medium text-sm">图片 Alt 属性修复工具</p>
+                    <p className="text-xs text-muted-foreground">扫描并修复缺少 Alt 描述的图片</p>
+                  </div>
+                </div>
+                <Badge variant="outline" className="text-xs">
+                  {isAltFixerOpen ? "收起" : "展开"}
+                </Badge>
+              </div>
+            </CardContent>
+          </CollapsibleTrigger>
+          <CollapsibleContent>
+            <CardContent className="pt-0 border-t">
+              <BlogImageAltFixer />
+            </CardContent>
+          </CollapsibleContent>
+        </Card>
+      </Collapsible>
+
       {/* Header */}
       <div className="flex flex-col sm:flex-row gap-4 justify-between">
         <div className="flex gap-4 flex-1">
