@@ -59,6 +59,7 @@ interface ProductCategory {
   name_de: string | null;
   name_es: string | null;
   name_pt: string | null;
+  name_fr: string | null;
   slug: string;
   description: string | null;
   image_url: string | null;
@@ -75,6 +76,7 @@ interface Product {
   name_de: string | null;
   name_es: string | null;
   name_pt: string | null;
+  name_fr: string | null;
   slug: string;
   short_description: string | null;
   description: string | null;
@@ -83,6 +85,7 @@ interface Product {
   description_de: string | null;
   description_es: string | null;
   description_pt: string | null;
+  description_fr: string | null;
   featured_image: string | null;
   gallery_images: string[];
   price_min: number | null;
@@ -131,6 +134,7 @@ const AdminProductsTab = () => {
     name_de: "",
     name_es: "",
     name_pt: "",
+    name_fr: "",
     slug: "",
     category_id: "",
     short_description: "",
@@ -140,6 +144,7 @@ const AdminProductsTab = () => {
     description_de: "",
     description_es: "",
     description_pt: "",
+    description_fr: "",
     featured_image: "",
     gallery_images: [] as string[],
     price_min: "",
@@ -165,6 +170,7 @@ const AdminProductsTab = () => {
     name_de: "",
     name_es: "",
     name_pt: "",
+    name_fr: "",
     slug: "",
     description: "",
     image_url: "",
@@ -267,6 +273,7 @@ const AdminProductsTab = () => {
         name_de: category.name_de || "",
         name_es: category.name_es || "",
         name_pt: category.name_pt || "",
+        name_fr: category.name_fr || "",
         slug: category.slug,
         description: category.description || "",
         image_url: category.image_url || "",
@@ -282,6 +289,7 @@ const AdminProductsTab = () => {
         name_de: "",
         name_es: "",
         name_pt: "",
+        name_fr: "",
         slug: "",
         description: "",
         image_url: "",
@@ -305,6 +313,7 @@ const AdminProductsTab = () => {
       name_de: categoryForm.name_de || null,
       name_es: categoryForm.name_es || null,
       name_pt: categoryForm.name_pt || null,
+      name_fr: categoryForm.name_fr || null,
       slug: categoryForm.slug,
       description: categoryForm.description || null,
       image_url: categoryForm.image_url || null,
@@ -362,6 +371,7 @@ const AdminProductsTab = () => {
         name_de: product.name_de || "",
         name_es: product.name_es || "",
         name_pt: product.name_pt || "",
+        name_fr: product.name_fr || "",
         slug: product.slug,
         category_id: product.category_id || "",
         short_description: product.short_description || "",
@@ -371,6 +381,7 @@ const AdminProductsTab = () => {
         description_de: product.description_de || "",
         description_es: product.description_es || "",
         description_pt: product.description_pt || "",
+        description_fr: product.description_fr || "",
         featured_image: product.featured_image || "",
         gallery_images: product.gallery_images || [],
         price_min: product.price_min?.toString() || "",
@@ -395,6 +406,7 @@ const AdminProductsTab = () => {
         name_de: "",
         name_es: "",
         name_pt: "",
+        name_fr: "",
         slug: "",
         category_id: "",
         short_description: "",
@@ -404,6 +416,7 @@ const AdminProductsTab = () => {
         description_de: "",
         description_es: "",
         description_pt: "",
+        description_fr: "",
         featured_image: "",
         gallery_images: [],
         price_min: "",
@@ -445,6 +458,7 @@ const AdminProductsTab = () => {
       description_de: productForm.description_de || null,
       description_es: productForm.description_es || null,
       description_pt: productForm.description_pt || null,
+      description_fr: productForm.description_fr || null,
       featured_image: productForm.featured_image || null,
       gallery_images: productForm.gallery_images,
       price_min: productForm.price_min ? parseFloat(productForm.price_min) : null,
@@ -1260,6 +1274,34 @@ const AdminProductsTab = () => {
                     />
                   </div>
                 </div>
+
+                {/* French */}
+                <div className="border rounded-lg p-4 space-y-4">
+                  <h4 className="font-medium flex items-center gap-2">
+                    🇫🇷 法语 (French)
+                  </h4>
+                  <div className="space-y-2">
+                    <Label>产品名称 (法语)</Label>
+                    <Input
+                      value={productForm.name_fr}
+                      onChange={(e) =>
+                        setProductForm({ ...productForm, name_fr: e.target.value })
+                      }
+                      placeholder="Nom du produit"
+                    />
+                  </div>
+                  <div className="space-y-2">
+                    <Label>产品描述 (法语)</Label>
+                    <Textarea
+                      value={productForm.description_fr}
+                      onChange={(e) =>
+                        setProductForm({ ...productForm, description_fr: e.target.value })
+                      }
+                      placeholder="Description du produit..."
+                      rows={3}
+                    />
+                  </div>
+                </div>
               </div>
             </TabsContent>
 
@@ -1642,6 +1684,16 @@ const AdminProductsTab = () => {
                       setCategoryForm({ ...categoryForm, name_pt: e.target.value })
                     }
                     placeholder="Nome da categoria"
+                  />
+                </div>
+                <div className="space-y-2">
+                  <Label className="text-sm">🇫🇷 法语</Label>
+                  <Input
+                    value={categoryForm.name_fr}
+                    onChange={(e) =>
+                      setCategoryForm({ ...categoryForm, name_fr: e.target.value })
+                    }
+                    placeholder="Nom de la catégorie"
                   />
                 </div>
               </div>

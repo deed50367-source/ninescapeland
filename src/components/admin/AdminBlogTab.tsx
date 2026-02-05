@@ -58,6 +58,7 @@ const LANGUAGES = [
   { code: 'de', name: 'Deutsch', flag: '🇩🇪' },
   { code: 'es', name: 'Español', flag: '🇪🇸' },
   { code: 'pt', name: 'Português', flag: '🇧🇷' },
+  { code: 'fr', name: 'Français', flag: '🇫🇷' },
 ];
 
 const CATEGORIES = [

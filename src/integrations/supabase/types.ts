@@ -348,6 +348,7 @@ export type Database = {
           name_de: string | null
           name_en: string | null
           name_es: string | null
+          name_fr: string | null
           name_pt: string | null
           slug: string
           sort_order: number | null
@@ -364,6 +365,7 @@ export type Database = {
           name_de?: string | null
           name_en?: string | null
           name_es?: string | null
+          name_fr?: string | null
           name_pt?: string | null
           slug: string
           sort_order?: number | null
@@ -380,6 +382,7 @@ export type Database = {
           name_de?: string | null
           name_en?: string | null
           name_es?: string | null
+          name_fr?: string | null
           name_pt?: string | null
           slug?: string
           sort_order?: number | null
@@ -449,6 +452,7 @@ export type Database = {
           description_de: string | null
           description_en: string | null
           description_es: string | null
+          description_fr: string | null
           description_pt: string | null
           featured_image: string | null
           features: string[] | null
@@ -461,6 +465,7 @@ export type Database = {
           name_de: string | null
           name_en: string | null
           name_es: string | null
+          name_fr: string | null
           name_pt: string | null
           price_max: number | null
           price_min: number | null
@@ -482,6 +487,7 @@ export type Database = {
           description_de?: string | null
           description_en?: string | null
           description_es?: string | null
+          description_fr?: string | null
           description_pt?: string | null
           featured_image?: string | null
           features?: string[] | null
@@ -494,6 +500,7 @@ export type Database = {
           name_de?: string | null
           name_en?: string | null
           name_es?: string | null
+          name_fr?: string | null
           name_pt?: string | null
           price_max?: number | null
           price_min?: number | null
@@ -515,6 +522,7 @@ export type Database = {
           description_de?: string | null
           description_en?: string | null
           description_es?: string | null
+          description_fr?: string | null
           description_pt?: string | null
           featured_image?: string | null
           features?: string[] | null
@@ -527,6 +535,7 @@ export type Database = {
           name_de?: string | null
           name_en?: string | null
           name_es?: string | null
+          name_fr?: string | null
           name_pt?: string | null
           price_max?: number | null
           price_min?: number | null

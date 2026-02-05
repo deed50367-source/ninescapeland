@@ -37,6 +37,7 @@ interface ProductCategory {
   name_de: string | null;
   name_es: string | null;
   name_pt: string | null;
+  name_fr: string | null;
   slug: string;
 }
 
@@ -58,6 +59,7 @@ interface Product {
   name_de: string | null;
   name_es: string | null;
   name_pt: string | null;
+  name_fr: string | null;
   slug: string;
   short_description: string | null;
   description: string | null;
@@ -66,6 +68,7 @@ interface Product {
   description_de: string | null;
   description_es: string | null;
   description_pt: string | null;
+  description_fr: string | null;
   featured_image: string | null;
   gallery_images: string[];
   price_min: number | null;
@@ -89,6 +92,7 @@ interface RelatedProduct {
   name_de: string | null;
   name_es: string | null;
   name_pt: string | null;
+  name_fr: string | null;
   slug: string;
   featured_image: string | null;
   price_min: number | null;
@@ -165,7 +169,7 @@ const DynamicProductDetail = () => {
       if (data.category_id) {
         const { data: relatedData } = await supabase
           .from("products")
-          .select("id, name, name_en, name_ar, name_de, name_es, name_pt, slug, featured_image, price_min, price_unit")
+          .select("id, name, name_en, name_ar, name_de, name_es, name_pt, name_fr, slug, featured_image, price_min, price_unit")
           .eq("category_id", data.category_id)
           .eq("is_active", true)
           .neq("id", data.id)
@@ -190,6 +194,7 @@ const DynamicProductDetail = () => {
     name_de?: string | null;
     name_es?: string | null;
     name_pt?: string | null;
+    name_fr?: string | null;
   }) => {
     const lang = i18n.language;
     if (lang === "en" && item.name_en) return item.name_en;
@@ -197,6 +202,7 @@ const DynamicProductDetail = () => {
     if (lang === "de" && item.name_de) return item.name_de;
     if (lang === "es" && item.name_es) return item.name_es;
     if (lang === "pt" && item.name_pt) return item.name_pt;
+    if (lang === "fr" && item.name_fr) return item.name_fr;
     // Fallback to English, then default name
     return item.name_en || item.name;
   };
@@ -209,6 +215,7 @@ const DynamicProductDetail = () => {
     if (lang === "de" && product.description_de) return product.description_de;
     if (lang === "es" && product.description_es) return product.description_es;
     if (lang === "pt" && product.description_pt) return product.description_pt;
+    if (lang === "fr" && product.description_fr) return product.description_fr;
     // Fallback to English, then default description
     return product.description_en || product.description || "";
   };

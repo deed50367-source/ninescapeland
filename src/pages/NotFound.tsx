@@ -11,7 +11,7 @@ const NotFound = () => {
   const { t, i18n } = useTranslation();
   
   // Determine home path based on current language
-  const nonEnglishLangs = ["ar", "de", "es", "pt"];
+  const nonEnglishLangs = ["ar", "de", "es", "pt", "fr"];
   const pathLang = location.pathname.split("/")[1];
   
   let homePath = "/";
