@@ -326,13 +326,13 @@ export const LiveChat = () => {
       </AnimatePresence>
 
       {/* Chat Window */}
-      <AnimatePresence mode="wait">
+      <AnimatePresence mode="sync">
         {isOpen && (
           <motion.div
             initial={{ opacity: 0, y: 20, scale: 0.95 }}
             animate={{ opacity: 1, y: 0, scale: 1 }}
             exit={{ opacity: 0, y: 20, scale: 0.95 }}
-            transition={{ duration: 0.2 }}
+            transition={{ duration: 0.15, ease: "easeOut" }}
             className="fixed bottom-24 right-4 z-50 w-[360px] max-w-[calc(100vw-2rem)] h-[500px] max-h-[calc(100vh-8rem)] bg-background border border-border rounded-2xl shadow-2xl flex flex-col overflow-hidden"
           >
             {/* Header */}
