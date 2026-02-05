@@ -326,7 +326,7 @@ export const LiveChat = () => {
       </AnimatePresence>
 
       {/* Chat Window */}
-      <AnimatePresence>
+      <AnimatePresence mode="wait">
         {isOpen && (
           <motion.div
             initial={{ opacity: 0, y: 20, scale: 0.95 }}
