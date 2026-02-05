@@ -11,13 +11,14 @@ export const languages = [
   { code: "es", name: "Español", flag: "🇪🇸", rtl: false },
   { code: "pt", name: "Português", flag: "🇧🇷", rtl: false },
   { code: "de", name: "Deutsch", flag: "🇩🇪", rtl: false },
+  { code: "fr", name: "Français", flag: "🇫🇷", rtl: false },
   { code: "ar", name: "العربية", flag: "🇸🇦", rtl: true },
 ] as const;
 
 // Get detected language from URL path or localStorage
 const getInitialLanguage = (): string => {
   // Check URL path first (e.g., /ar/, /es/, /de/, /pt/)
-  const pathMatch = window.location.pathname.match(/^\/(ar|es|de|pt)(\/|$)/);
+  const pathMatch = window.location.pathname.match(/^\/(ar|es|de|pt|fr)(\/|$)/);
   if (pathMatch) {
     return pathMatch[1];
   }
