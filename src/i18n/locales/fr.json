@@ -39,6 +39,12 @@
      "backToBlog": "Retour au Blog",
      "readIn": "Lire en :",
      "availableInOtherLanguages": "Cet article est disponible en :",
+     "share": "Partager :",
+     "minRead": "min de lecture",
+     "toc": {
+       "title": "Table des Matières",
+       "progress": "Progression"
+     },
      "featuredPost": "Article Vedette",
      "latestArticles": "Dernières Actualités",
      "allPosts": "Tous les Articles",
