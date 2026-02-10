@@ -1,8 +1,8 @@
 import { Header } from "@/components/Header";
 import { HeroSection } from "@/components/HeroSection";
 import { PartnersSection } from "@/components/PartnersSection";
+import { CoreSolutionsSection } from "@/components/CoreSolutionsSection";
 import { ProductsSection } from "@/components/ProductsSection";
-import { FeaturesGridSection } from "@/components/FeaturesGridSection";
 import { TrampolineFeaturesSection } from "@/components/TrampolineFeaturesSection";
 import { NinjaFeaturesSection } from "@/components/NinjaFeaturesSection";
 import { QuoteCalculator } from "@/components/QuoteCalculator";
