@@ -2217,5 +2217,70 @@
     "extendedActivityZones": "Erweiterte Aktivitätszonen",
     "moreObstacles": "Mehr Hindernisse",
     "extendedChallengeElements": "Erweiterte Herausforderungselemente"
+  },
+  "activePlayRunning": {
+    "breadcrumb": "Aktive Spielgeräte für Laufanlagen",
+    "hero": {
+      "badge": "Hochenergie-Lösungen",
+      "title": "Beste aktive Spielgeräte für",
+      "titleHighlight": "Lauf- & Hochenergie-Einrichtungen",
+      "description": "Branchenführende Ninja-Warrior-Parcours und aktive Spielstrukturen für Hochgeschwindigkeits-Bewegung und sportliche Laufumgebungen.",
+      "cta": "Kostenloses Angebot",
+      "ctaSecondary": "Ninja-Parcours entdecken"
+    },
+    "section1": {
+      "badge": "Ninja-Warrior-Parcours",
+      "title": "Hochenergie-Einrichtungen aufwerten mit",
+      "titleHighlight": "Ninja-Warrior-Parcours",
+      "content": "Für Einrichtungen mit Fokus auf Hochgeschwindigkeits-Bewegung bieten wir branchenführende Ninja-Warrior-Parcours. Unsere Geräte sind mit Hochleistungspolsterung und verstärkten Stahlrahmen konstruiert.",
+      "features": {
+        "durability": "Hochleistungspolsterung für laufintensive Umgebungen",
+        "reinforced": "Verstärkte Stahlrahmen für Sicherheit bei schneller Bewegung",
+        "longevity": "Überlegene strukturelle Langlebigkeit für laufintensive Zonen",
+        "cardio": "Nahtlose Mischung aus Cardio-Aktivitäten und technischen Hindernissen"
+      }
+    },
+    "section2": {
+      "badge": "Strategisches Design",
+      "title": "Strategisches Design für Fluss und",
+      "titleHighlight": "Sicherheit in aktiven Zonen",
+      "content": "Die Gestaltung eines Laufbereichs erfordert einen strategischen Fluss. Mit unserem kostenlosen Designservice optimieren wir den Grundriss zur Vermeidung von Engpässen.",
+      "features": {
+        "flowOptimized": "Flussoptimierte Grundrisse zur Vermeidung von Engpässen",
+        "customLayout": "Individuelle Layouts angepasst an Ihre Raumform",
+        "safetyZones": "Dedizierte Sicherheitszonen mit stoßdämpfenden Materialien",
+        "qualityStandards": "Landezonenqualität nach australischen Sicherheitsstandards"
+      },
+      "cta": "Kostenloses Design anfordern"
+    },
+    "section3": {
+      "badge": "Investition & ROI",
+      "title": "Investition und ROI für",
+      "titleHighlight": "laufthematisierte Indoor-Spielplätze",
+      "content": "Die Investition in Hochenergie-Spielgeräte ist eine bedeutende Geschäftsentscheidung. Unser ROI-Rechner hilft bei der Schätzung der Amortisationszeit.",
+      "features": {
+        "roiCalculator": "ROI-Rechner zur Schätzung der Amortisationszeit",
+        "lowerMaintenance": "Langlebige Materialien für niedrigere Wartungskosten",
+        "warranty": "Umfassende After-Sales-Garantie für strukturelle Komponenten",
+        "sustainable": "Nachhaltiges Geschäftsmodell mit überlegener Qualität"
+      }
+    },
+    "faq": {
+      "badge": "FAQ",
+      "title": "Häufig gestellte",
+      "titleHighlight": "Fragen",
+      "q1": {
+        "question": "Wie schneidet Ihre Ausrüstung in stark frequentierten Laufzonen ab?",
+        "answer": "Unsere Marke zeichnet sich durch hohe Schlagfestigkeit und Anpassungsfähigkeit für aktives Spiel aus."
+      },
+      "q2": {
+        "question": "Bieten Sie individuelle Designs für Sporteinrichtungen an?",
+        "answer": "Ja, wir bieten einen kostenlosen individuellen Designservice. Unsere Ingenieure erstellen flussoptimierte Layouts."
+      },
+      "q3": {
+        "question": "Was ist der erwartete ROI für einen Abenteuerpark?",
+        "answer": "Die meisten Besitzer sehen eine vollständige Amortisation innerhalb von 12 bis 24 Monaten."
+      }
+    }
   }
 }
