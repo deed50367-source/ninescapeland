@@ -325,6 +325,29 @@
        "wait": "Attendre {{time}}"
      }
    },
+  "coreSolutions": {
+    "sectionLabel": "Ce que nous construisons",
+    "title": "Nos Solutions",
+    "titleHighlight": "Principales",
+    "subtitle": "Équipements de divertissement clés en main, approuvés par plus de 2 000 sites dans le monde.",
+    "learnMore": "En savoir plus",
+    "indoorPlayground": {
+      "title": "Aire de Jeux Intérieure",
+      "description": "Structures de jeu personnalisées multi-niveaux avec toboggans, piscines à balles et filets d'escalade pour tous les âges."
+    },
+    "trampolinePark": {
+      "title": "Parc de Trampolines",
+      "description": "Systèmes de trampolines commerciaux avec plus de 12 zones d'activité dont fosses en mousse et zones slam dunk."
+    },
+    "ninjaCourse": {
+      "title": "Parcours Ninja",
+      "description": "Parcours d'obstacles stimulants avec murs incurvés, barres de singe et éléments d'équilibre pour tous les niveaux."
+    },
+    "softPlay": {
+      "title": "Jeux Souples",
+      "description": "Environnements de jeu sûrs et rembourrés conçus spécialement pour les tout-petits et les jeunes enfants."
+    }
+  },
    "coreValues": {
      "sectionLabel": "Valeurs Fondamentales",
      "title": "Nos",

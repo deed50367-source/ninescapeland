@@ -325,6 +325,29 @@
       "wait": "Wait {{time}}"
     }
   },
+  "coreSolutions": {
+    "sectionLabel": "What We Build",
+    "title": "Our Core",
+    "titleHighlight": "Solutions",
+    "subtitle": "Turnkey entertainment equipment trusted by 2,000+ venues worldwide.",
+    "learnMore": "Learn More",
+    "indoorPlayground": {
+      "title": "Indoor Playground",
+      "description": "Multi-level custom play structures with slides, ball pits, and climbing nets for all ages."
+    },
+    "trampolinePark": {
+      "title": "Trampoline Park",
+      "description": "Commercial trampoline systems with 12+ activity zones including foam pits and slam dunk areas."
+    },
+    "ninjaCourse": {
+      "title": "Ninja Course",
+      "description": "Challenging obstacle courses with warped walls, monkey bars, and balance elements for all skill levels."
+    },
+    "softPlay": {
+      "title": "Soft Play",
+      "description": "Safe, padded play environments designed specifically for toddlers and young children."
+    }
+  },
   "coreValues": {
     "sectionLabel": "Core Values",
     "title": "Our Core",

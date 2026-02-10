@@ -325,6 +325,29 @@
       "wait": "Warten {{time}}"
     }
   },
+  "coreSolutions": {
+    "sectionLabel": "Was wir bauen",
+    "title": "Unsere Kern-",
+    "titleHighlight": "Lösungen",
+    "subtitle": "Schlüsselfertige Unterhaltungsausrüstung, der über 2.000 Veranstaltungsorte weltweit vertrauen.",
+    "learnMore": "Mehr erfahren",
+    "indoorPlayground": {
+      "title": "Indoor-Spielplatz",
+      "description": "Maßgeschneiderte mehrstöckige Spielstrukturen mit Rutschen, Bällebädern und Kletternetzen für alle Altersgruppen."
+    },
+    "trampolinePark": {
+      "title": "Trampolinpark",
+      "description": "Kommerzielle Trampolinsysteme mit über 12 Aktivitätszonen inkl. Schaumstoffgruben und Slam-Dunk-Bereichen."
+    },
+    "ninjaCourse": {
+      "title": "Ninja-Parcours",
+      "description": "Herausfordernde Hindernisparcours mit Warped Walls, Kletterstangen und Balanceelementen für alle Niveaus."
+    },
+    "softPlay": {
+      "title": "Soft Play",
+      "description": "Sichere, gepolsterte Spielumgebungen speziell für Kleinkinder und junge Kinder."
+    }
+  },
   "coreValues": {
     "sectionLabel": "Kernwerte",
     "title": "Unsere",
