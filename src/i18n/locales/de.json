@@ -2311,5 +2311,70 @@
         "answer": "Mit unserem ROI-Rechner sehen die meisten Besitzer eine vollständige Amortisation innerhalb von 12 bis 24 Monaten, abhängig von Standort und Einrichtungsgröße."
       }
     }
+  },
+  "officeWellness": {
+    "breadcrumb": "Büro-Wellness-Lösungen",
+    "hero": {
+      "badge": "Arbeitsplatz-Wellness",
+      "title": "Arbeitsplatz-Wellness und",
+      "titleHighlight": "Büro-Spielstrukturen",
+      "description": "Verwandeln Sie Ihre Büroumgebung mit maßgeschneiderten Spielstrukturen für Unternehmenswellness, Stressabbau und Teambuilding.",
+      "cta": "Kostenloses Angebot",
+      "ctaSecondary": "Über Uns"
+    },
+    "section1": {
+      "badge": "Modernes Bürospiel",
+      "title": "Revolutionierung des modernen Büros mit",
+      "titleHighlight": "spielerischen Wellness-Zonen",
+      "content": "Das Konzept des 'Spielerischen Büros' gewinnt weltweit an Bedeutung, und wir stehen an der Spitze dieser Bewegung. Wir bieten weltweit maßgeschneiderte Spielstrukturen, die speziell für Unternehmensumgebungen entwickelt wurden. Die Integration eines Softplay-Bereichs oder einer modularen Kletterstruktur in eine Arbeitsumgebung reduziert Stress und fördert Kreativität.",
+      "features": {
+        "stressReduction": "Spielbereiche, die nachweislich Arbeitsstress reduzieren und Kreativität steigern",
+        "corporateAesthetic": "Professionelle Verarbeitung und elegante Designs für moderne Unternehmensästhetik",
+        "multiGenerational": "Mehrgenerationen-Räume, in denen alle Mitarbeiter auftanken und sich vernetzen können",
+        "wellnessZones": "Verwandeln Sie ungenutzte Büroecken in lebendige Wellness-Zonen"
+      }
+    },
+    "section2": {
+      "badge": "Schlüsselfertige Lösungen",
+      "title": "Nahtlose Integration und",
+      "titleHighlight": "schlüsselfertige Unternehmenslösungen",
+      "content": "Für HR-Manager und Facility-Planer umfasst unsere schlüsselfertige Lösung alles von der Planung bis zur Installation. Wir verstehen, dass eine Arbeitsumgebung ein anderes Niveau an Lärmkontrolle und ästhetischer Integration erfordert. Unsere Sicherheitsstandards gelten auch für Unternehmensdesigns.",
+      "features": {
+        "turnkey": "Komplette schlüsselfertige Lösung von der ersten Designberatung bis zur Endinstallation",
+        "safetyCompliance": "Ungiftige, feuerhemmende Materialien, die strenge Unternehmenssicherheit erfüllen",
+        "ecoFriendly": "Umweltfreundliche Kunststoffe und nachhaltige Materialien für verantwortungsvolle Arbeitsplätze",
+        "detailedPlans": "Detaillierte Grundrisse für perfekte Passung in Bürodimensionen und Markenidentität"
+      },
+      "cta": "Kostenloses Design anfordern"
+    },
+    "section3": {
+      "badge": "Geschäftliche Auswirkung",
+      "title": "Der Business Case: ROI von",
+      "titleHighlight": "Büro-Spielbereichen",
+      "content": "Die Investition in Spielbereiche am Arbeitsplatz ist ein strategischer Schritt zur Talentbindung. Unser ROI-Rechner hilft Unternehmen, die indirekten Vorteile reduzierter Fluktuation und gesteigerter Produktivität zu erkennen. Wir bieten Mengenrabatte für Unternehmenszentralen.",
+      "features": {
+        "talentRetention": "Strategische Investition zur Reduzierung der Mitarbeiterfluktuation und Steigerung der Produktivität",
+        "bulkDiscount": "Wettbewerbsfähige Mengenrabatt-Pakete für Unternehmenszentralen mit mehreren Standorten",
+        "warranty": "Umfassende After-Sales-Garantie zum Schutz Ihrer Unternehmensinvestition",
+        "teamBuilding": "Ninja-Warrior-Kurse und Spielbereiche für Teambuilding-Veranstaltungen"
+      }
+    },
+    "faq": {
+      "badge": "FAQ",
+      "title": "Häufig gestellte",
+      "titleHighlight": "Fragen",
+      "q1": {
+        "question": "Können Sie Spielbereiche für kleine Büroräume gestalten?",
+        "answer": "Absolut. Mit unserem kostenlosen Design-Service spezialisieren wir uns auf kompakte, modulare Spiellösungen für Pausenräume oder Lobbys unter Maximierung des vertikalen Raums."
+      },
+      "q2": {
+        "question": "Ist die Ausrüstung für Erwachsene in einer Arbeitsumgebung geeignet?",
+        "answer": "Ja, wir bieten verstärkte Strukturen, die speziell für das Gewicht von Erwachsenen bei Teambuilding und Wellness-Zonen im Unternehmen ausgelegt sind."
+      },
+      "q3": {
+        "question": "Wie erhalte ich ein Angebot für eine Unternehmensinstallation?",
+        "answer": "Kontaktieren Sie unser Vertriebsteam oder laden Sie unseren aktuellen Katalog herunter. Wir bieten wettbewerbsfähige Preise und Mengenrabatte für Unternehmenskunden."
+      }
+    }
   }
 }
