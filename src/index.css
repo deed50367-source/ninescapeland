@@ -4,6 +4,12 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Prevent horizontal overflow on mobile (WeChat, iOS Safari) */
+html, body {
+  overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
+}
+
 @layer base {
   :root {
     /* Brand Purple - Primary */
