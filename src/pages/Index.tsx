@@ -2,6 +2,7 @@ import { Header } from "@/components/Header";
 import { HeroSection } from "@/components/HeroSection";
 import { PartnersSection } from "@/components/PartnersSection";
 import { CoreSolutionsSection } from "@/components/CoreSolutionsSection";
+import { FeaturesGridSection } from "@/components/FeaturesGridSection";
 import { ProductsSection } from "@/components/ProductsSection";
 import { TrampolineFeaturesSection } from "@/components/TrampolineFeaturesSection";
 import { NinjaFeaturesSection } from "@/components/NinjaFeaturesSection";
