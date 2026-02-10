@@ -325,6 +325,29 @@
       "wait": "Aguarde {{time}}"
     }
   },
+  "coreSolutions": {
+    "sectionLabel": "O que construímos",
+    "title": "Nossas Soluções",
+    "titleHighlight": "Principais",
+    "subtitle": "Equipamentos de entretenimento prontos para uso, confiáveis por mais de 2.000 locais em todo o mundo.",
+    "learnMore": "Saiba mais",
+    "indoorPlayground": {
+      "title": "Playground Indoor",
+      "description": "Estruturas de diversão personalizadas multinível com escorregadores, piscinas de bolinhas e redes de escalada para todas as idades."
+    },
+    "trampolinePark": {
+      "title": "Parque de Trampolins",
+      "description": "Sistemas de trampolins comerciais com mais de 12 zonas de atividade incluindo fossos de espuma e áreas de slam dunk."
+    },
+    "ninjaCourse": {
+      "title": "Curso Ninja",
+      "description": "Circuitos de obstáculos desafiadores com paredes curvadas, barras de macaco e elementos de equilíbrio para todos os níveis."
+    },
+    "softPlay": {
+      "title": "Brinquedo Macio",
+      "description": "Ambientes de diversão seguros e acolchoados projetados especialmente para bebês e crianças pequenas."
+    }
+  },
   "coreValues": {
     "sectionLabel": "Valores Fundamentais",
     "title": "Nossos",
