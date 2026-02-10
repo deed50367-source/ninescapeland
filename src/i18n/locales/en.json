@@ -2398,6 +2398,11 @@
       "title": "Best Active Play Equipment for Running Facilities | NinescapeLand",
       "description": "Discover the best adventure park equipment for high-energy running environments. Expert soft play equipment USA and ninja courses. Free custom design.",
       "keywords": "soft play equipment USA, ninja warrior course, adventure park equipment, active play equipment, running facility equipment, indoor playground solution"
+    },
+    "officeWellness": {
+      "title": "Workplace Play & Custom Structures | NinescapeLand",
+      "description": "Improve office morale with custom play structures. Top-rated soft play and indoor playground equipment for corporate wellness.",
+      "keywords": "custom play structures, office playground, corporate wellness, indoor playground equipment, workplace play area, office play structures"
     }
   },
   "activePlayRunning": {
@@ -2462,6 +2467,71 @@
       "q3": {
         "question": "What is the expected ROI for an adventure park?",
         "answer": "Using our ROI calculator, most owners see a full return on investment within 12 to 24 months, depending on location and facility size. Our adventure park equipment is designed for high throughput, maximizing daily revenue."
+      }
+    }
+  },
+  "officeWellness": {
+    "breadcrumb": "Office Wellness Solutions",
+    "hero": {
+      "badge": "Workplace Wellness",
+      "title": "Workplace Wellness and",
+      "titleHighlight": "Office Play Structures",
+      "description": "Transform your office environment with custom play structures designed for corporate wellness, stress reduction, and team building.",
+      "cta": "Get Free Quote",
+      "ctaSecondary": "About Us"
+    },
+    "section1": {
+      "badge": "Modern Office Play",
+      "title": "Revolutionizing the Modern Office with",
+      "titleHighlight": "Playful Wellness Zones",
+      "content": "The concept of the 'Playful Office' is gaining traction worldwide, and we are at the forefront of this movement. We provide custom play structures globally that are specifically designed for corporate environments. Integrating a soft play area or a modular climbing structure in a work environment reduces stress and fosters creativity. Our equipment is not just for kids; it's about creating a multi-generational space where employees can recharge. From high-end ball pits to sleek, modern slides, we help transform dull office corners into vibrant wellness zones.",
+      "features": {
+        "stressReduction": "Play areas scientifically proven to reduce workplace stress and boost creativity",
+        "corporateAesthetic": "Professional finish and sleek designs suitable for modern corporate aesthetics",
+        "multiGenerational": "Multi-generational spaces where all employees can recharge and connect",
+        "wellnessZones": "Transform underused office corners into vibrant, engaging wellness zones"
+      }
+    },
+    "section2": {
+      "badge": "Turnkey Solutions",
+      "title": "Seamless Integration and",
+      "titleHighlight": "Turnkey Corporate Solutions",
+      "content": "For HR managers and facility planners, our turnkey solution includes everything from design to installation. We understand that a work environment requires a different level of noise control and aesthetic integration. Our safety standards are applied even to corporate designs, ensuring all equipment is non-toxic and built to last. We prioritize high-grade fire-retardant materials and eco-friendly plastics, essential for indoor corporate safety compliance. Our team provides detailed floor plans through our free custom design service.",
+      "features": {
+        "turnkey": "Complete turnkey solution from initial design consultation to final installation",
+        "safetyCompliance": "Non-toxic, fire-retardant materials meeting strict corporate safety compliance",
+        "ecoFriendly": "Eco-friendly plastics and sustainable materials for responsible workplaces",
+        "detailedPlans": "Detailed floor plans ensuring equipment fits your office dimensions and brand"
+      },
+      "cta": "Request Free Design"
+    },
+    "section3": {
+      "badge": "Business Impact",
+      "title": "The Business Case: ROI of",
+      "titleHighlight": "Office Play Areas",
+      "content": "Investing in workplace play areas is a strategic move for talent retention. Our ROI calculator helps businesses see the indirect benefits of reduced turnover and increased productivity. We provide discount packages for corporate headquarters looking to outfit multiple locations. Our after-sales warranty policy ensures that your corporate investment is protected for years. Whether it's a small-scale ball pit or a large ninja warrior course for team building, we provide the quality and professionalism required for the modern workplace.",
+      "features": {
+        "talentRetention": "Strategic investment reducing employee turnover and boosting productivity",
+        "bulkDiscount": "Competitive bulk discount packages for multi-location corporate headquarters",
+        "warranty": "Comprehensive after-sales warranty protecting your corporate investment",
+        "teamBuilding": "Ninja warrior courses and play areas designed for corporate team-building events"
+      }
+    },
+    "faq": {
+      "badge": "FAQ",
+      "title": "Frequently Asked",
+      "titleHighlight": "Questions",
+      "q1": {
+        "question": "Can you design play areas for small office spaces?",
+        "answer": "Absolutely. Through our free custom design service, we specialize in creating compact, modular play solutions that fit into office breakrooms or lobbies while maximizing vertical space."
+      },
+      "q2": {
+        "question": "Is the equipment suitable for adults in a work environment?",
+        "answer": "Yes, we offer reinforced structures specifically designed to support adult weight for corporate team-building and wellness zones, in addition to our standard soft play equipment."
+      },
+      "q3": {
+        "question": "How do I get a quote for a corporate installation?",
+        "answer": "You can contact our sales team or download our latest catalog for turnkey solution pricing. We offer competitive pricing and bulk discounts for corporate clients."
       }
     }
   }

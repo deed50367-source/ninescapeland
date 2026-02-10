@@ -2230,5 +2230,70 @@
         "answer": "Com nossa calculadora de ROI, a maioria dos proprietários vê retorno completo do investimento em 12 a 24 meses, dependendo da localização e tamanho."
       }
     }
+  },
+  "officeWellness": {
+    "breadcrumb": "Soluções de Bem-Estar para Escritórios",
+    "hero": {
+      "badge": "Bem-Estar no Trabalho",
+      "title": "Bem-Estar no Local de Trabalho e",
+      "titleHighlight": "Estruturas de Jogo para Escritórios",
+      "description": "Transforme o ambiente do seu escritório com estruturas de jogo personalizadas projetadas para bem-estar corporativo, redução de estresse e team building.",
+      "cta": "Orçamento Gratuito",
+      "ctaSecondary": "Sobre Nós"
+    },
+    "section1": {
+      "badge": "Jogo no Escritório Moderno",
+      "title": "Revolucionando o Escritório Moderno com",
+      "titleHighlight": "Zonas de Bem-Estar Lúdicas",
+      "content": "O conceito do 'Escritório Lúdico' está ganhando força em todo o mundo, e estamos na vanguarda desse movimento. Fornecemos estruturas de jogo personalizadas globalmente, projetadas especificamente para ambientes corporativos. Integrar uma área de soft play ou uma estrutura modular de escalada no ambiente de trabalho reduz o estresse e estimula a criatividade.",
+      "features": {
+        "stressReduction": "Áreas de jogo cientificamente comprovadas para reduzir o estresse no trabalho e aumentar a criatividade",
+        "corporateAesthetic": "Acabamento profissional e designs elegantes adequados para a estética corporativa moderna",
+        "multiGenerational": "Espaços multigeracionais onde todos os funcionários podem recarregar e se conectar",
+        "wellnessZones": "Transforme cantos de escritório subutilizados em vibrantes zonas de bem-estar"
+      }
+    },
+    "section2": {
+      "badge": "Soluções Chave na Mão",
+      "title": "Integração Perfeita e",
+      "titleHighlight": "Soluções Corporativas Chave na Mão",
+      "content": "Para gerentes de RH e planejadores de instalações, nossa solução chave na mão inclui tudo, do design à instalação. Entendemos que um ambiente de trabalho requer um nível diferente de controle de ruído e integração estética.",
+      "features": {
+        "turnkey": "Solução completa chave na mão, da consultoria de design à instalação final",
+        "safetyCompliance": "Materiais não tóxicos e retardantes de chama que atendem rigorosos padrões de segurança corporativa",
+        "ecoFriendly": "Plásticos ecológicos e materiais sustentáveis para locais de trabalho responsáveis",
+        "detailedPlans": "Plantas detalhadas garantindo que o equipamento se adapte às dimensões e marca do seu escritório"
+      },
+      "cta": "Solicitar Design Gratuito"
+    },
+    "section3": {
+      "badge": "Impacto nos Negócios",
+      "title": "O Caso de Negócio: ROI de",
+      "titleHighlight": "Áreas de Jogo no Escritório",
+      "content": "Investir em áreas de jogo no local de trabalho é um movimento estratégico para retenção de talentos. Nossa calculadora de ROI ajuda empresas a ver os benefícios indiretos da redução de rotatividade e aumento de produtividade.",
+      "features": {
+        "talentRetention": "Investimento estratégico reduzindo a rotatividade de funcionários e aumentando a produtividade",
+        "bulkDiscount": "Pacotes de desconto por volume competitivos para sedes corporativas com múltiplas localizações",
+        "warranty": "Garantia pós-venda abrangente protegendo seu investimento corporativo",
+        "teamBuilding": "Cursos ninja e áreas de jogo projetados para eventos de team building corporativo"
+      }
+    },
+    "faq": {
+      "badge": "FAQ",
+      "title": "Perguntas",
+      "titleHighlight": "Frequentes",
+      "q1": {
+        "question": "Vocês podem projetar áreas de jogo para pequenos espaços de escritório?",
+        "answer": "Com certeza. Através do nosso serviço de design personalizado gratuito, somos especializados em criar soluções de jogo compactas e modulares para salas de descanso ou lobbies, maximizando o espaço vertical."
+      },
+      "q2": {
+        "question": "O equipamento é adequado para adultos em ambiente de trabalho?",
+        "answer": "Sim, oferecemos estruturas reforçadas projetadas especificamente para suportar o peso de adultos em zonas de team building e bem-estar corporativo."
+      },
+      "q3": {
+        "question": "Como obtenho um orçamento para uma instalação corporativa?",
+        "answer": "Você pode contatar nossa equipe de vendas ou baixar nosso último catálogo. Oferecemos preços competitivos e descontos por volume para clientes corporativos."
+      }
+    }
   }
 }

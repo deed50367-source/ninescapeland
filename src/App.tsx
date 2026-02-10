@@ -27,6 +27,7 @@ const FAQ = lazy(() => import("./pages/FAQ"));
 const Blog = lazy(() => import("./pages/Blog"));
 const BlogPost = lazy(() => import("./pages/BlogPost"));
 const ActivePlayRunning = lazy(() => import("./pages/ActivePlayRunning"));
+const OfficeWellness = lazy(() => import("./pages/OfficeWellness"));
 const NotFound = lazy(() => import("./pages/NotFound"));
 const AdminLogin = lazy(() => import("./pages/AdminLogin"));
 const AdminDashboard = lazy(() => import("./pages/AdminDashboard"));
@@ -69,6 +70,7 @@ const pageRoutes = (
     <Route path="blog" element={<Blog />} />
     <Route path="blog/:slug" element={<BlogPost />} />
     <Route path="best-indoorplaygroundsolution-active-play-for-running-facilities" element={<ActivePlayRunning />} />
+    <Route path="indoorplaygroundsolution-office-wellness-solutions" element={<OfficeWellness />} />
   </>
 );
 

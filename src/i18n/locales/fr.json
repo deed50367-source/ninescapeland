@@ -1376,6 +1376,11 @@
       "title": "Meilleurs Équipements de Jeu Actif pour Installations de Course | NinescapeLand",
       "description": "Découvrez les meilleurs équipements de parc d'aventure pour les environnements de course à haute énergie. Parcours ninja et soft play experts.",
       "keywords": "équipement soft play, parcours ninja guerrier, équipement parc aventure, jeu actif, installation de course"
+    },
+    "officeWellness": {
+      "title": "Jeu en Milieu de Travail & Structures Personnalisées | NinescapeLand",
+      "description": "Améliorez le moral au bureau avec des structures de jeu personnalisées. Équipement de soft play et aires de jeux pour le bien-être en entreprise.",
+      "keywords": "structures de jeu personnalisées, aire de jeux bureau, bien-être entreprise, équipement aire de jeux intérieure"
     }
   },
   "activePlayRunning": {
@@ -1440,6 +1445,71 @@
       "q3": {
         "question": "Quel est le ROI attendu pour un parc d'aventure ?",
         "answer": "Avec notre calculateur de ROI, la plupart des propriétaires voient un retour complet sur investissement en 12 à 24 mois, selon l'emplacement et la taille."
+      }
+    }
+  },
+  "officeWellness": {
+    "breadcrumb": "Solutions Bien-Être pour Bureaux",
+    "hero": {
+      "badge": "Bien-Être au Travail",
+      "title": "Bien-Être au Travail et",
+      "titleHighlight": "Structures de Jeu pour Bureaux",
+      "description": "Transformez votre environnement de bureau avec des structures de jeu personnalisées conçues pour le bien-être en entreprise, la réduction du stress et le team building.",
+      "cta": "Devis Gratuit",
+      "ctaSecondary": "À Propos"
+    },
+    "section1": {
+      "badge": "Jeu de Bureau Moderne",
+      "title": "Révolutionner le Bureau Moderne avec",
+      "titleHighlight": "des Zones de Bien-Être Ludiques",
+      "content": "Le concept du 'Bureau Ludique' gagne du terrain dans le monde entier, et nous sommes à l'avant-garde de ce mouvement. Nous fournissons des structures de jeu personnalisées conçues spécifiquement pour les environnements d'entreprise. L'intégration d'un espace de soft play ou d'une structure d'escalade modulaire dans un environnement de travail réduit le stress et favorise la créativité.",
+      "features": {
+        "stressReduction": "Espaces de jeu scientifiquement prouvés pour réduire le stress et stimuler la créativité",
+        "corporateAesthetic": "Finition professionnelle et designs élégants adaptés à l'esthétique d'entreprise moderne",
+        "multiGenerational": "Espaces multigénérationnels où tous les employés peuvent se ressourcer et se connecter",
+        "wellnessZones": "Transformez les coins de bureau inutilisés en zones de bien-être dynamiques"
+      }
+    },
+    "section2": {
+      "badge": "Solutions Clé en Main",
+      "title": "Intégration Transparente et",
+      "titleHighlight": "Solutions d'Entreprise Clé en Main",
+      "content": "Pour les responsables RH et les planificateurs d'installations, notre solution clé en main comprend tout, de la conception à l'installation. Nous comprenons qu'un environnement de travail nécessite un niveau différent de contrôle du bruit et d'intégration esthétique.",
+      "features": {
+        "turnkey": "Solution clé en main complète de la consultation de design à l'installation finale",
+        "safetyCompliance": "Matériaux non toxiques et ignifuges répondant aux normes strictes de sécurité d'entreprise",
+        "ecoFriendly": "Plastiques écologiques et matériaux durables pour des lieux de travail responsables",
+        "detailedPlans": "Plans détaillés garantissant que l'équipement s'adapte aux dimensions et à l'image de marque"
+      },
+      "cta": "Demander un Design Gratuit"
+    },
+    "section3": {
+      "badge": "Impact Commercial",
+      "title": "Le Business Case : ROI des",
+      "titleHighlight": "Espaces de Jeu au Bureau",
+      "content": "Investir dans des espaces de jeu au travail est un mouvement stratégique pour la rétention des talents. Notre calculateur de ROI aide les entreprises à voir les avantages indirects de la réduction du turnover et de l'augmentation de la productivité.",
+      "features": {
+        "talentRetention": "Investissement stratégique réduisant le turnover et augmentant la productivité",
+        "bulkDiscount": "Remises de volume compétitives pour les sièges sociaux multi-sites",
+        "warranty": "Garantie après-vente complète protégeant votre investissement d'entreprise",
+        "teamBuilding": "Parcours ninja et espaces de jeu conçus pour les événements de team building"
+      }
+    },
+    "faq": {
+      "badge": "FAQ",
+      "title": "Questions",
+      "titleHighlight": "Fréquentes",
+      "q1": {
+        "question": "Pouvez-vous concevoir des espaces de jeu pour de petits bureaux ?",
+        "answer": "Absolument. Grâce à notre service de design personnalisé gratuit, nous nous spécialisons dans la création de solutions de jeu compactes et modulaires pour les salles de repos ou les halls en maximisant l'espace vertical."
+      },
+      "q2": {
+        "question": "L'équipement est-il adapté aux adultes en environnement de travail ?",
+        "answer": "Oui, nous proposons des structures renforcées spécialement conçues pour supporter le poids des adultes pour les zones de team building et de bien-être en entreprise."
+      },
+      "q3": {
+        "question": "Comment obtenir un devis pour une installation en entreprise ?",
+        "answer": "Contactez notre équipe commerciale ou téléchargez notre dernier catalogue. Nous proposons des prix compétitifs et des remises de volume pour les clients entreprise."
       }
     }
   }
