@@ -1371,6 +1371,76 @@
     "faq": {
       "title": "FAQ | Questions sur les Aires de Jeux Intérieures",
       "description": "Trouvez les réponses aux questions fréquentes sur les prix, délais, expédition et installation."
+    },
+    "activePlayRunning": {
+      "title": "Meilleurs Équipements de Jeu Actif pour Installations de Course | NinescapeLand",
+      "description": "Découvrez les meilleurs équipements de parc d'aventure pour les environnements de course à haute énergie. Parcours ninja et soft play experts.",
+      "keywords": "équipement soft play, parcours ninja guerrier, équipement parc aventure, jeu actif, installation de course"
+    }
+  },
+  "activePlayRunning": {
+    "breadcrumb": "Jeu Actif pour Installations de Course",
+    "hero": {
+      "badge": "Solutions Haute Énergie",
+      "title": "Meilleurs Équipements de Jeu Actif pour",
+      "titleHighlight": "Installations de Course & Haute Énergie",
+      "description": "Parcours de ninja guerrier leaders du secteur et structures de jeu actif conçues pour les environnements de mouvement à haute vitesse et de course athlétique.",
+      "cta": "Devis Gratuit",
+      "ctaSecondary": "Explorer les Parcours Ninja"
+    },
+    "section1": {
+      "badge": "Parcours Ninja Guerrier",
+      "title": "Élevez les Installations Haute Énergie avec",
+      "titleHighlight": "les Parcours Ninja Guerrier",
+      "content": "Pour les installations axées sur le mouvement à haute vitesse et la course athlétique, nous fournissons des parcours de Ninja Guerrier leaders du secteur. Nos équipements sont conçus avec un rembourrage haute résistance et des cadres en acier renforcé, garantissant la sécurité des enfants et jeunes athlètes.",
+      "features": {
+        "durability": "Rembourrage haute résistance pour environnements intensifs de course",
+        "reinforced": "Cadres en acier renforcé pour la sécurité en mouvement rapide",
+        "longevity": "Longévité structurelle supérieure pour les zones de course intensive",
+        "cardio": "Mélange harmonieux d'activités cardio et d'obstacles techniques"
+      }
+    },
+    "section2": {
+      "badge": "Design Stratégique",
+      "title": "Design Stratégique pour le Flux et la",
+      "titleHighlight": "Sécurité dans les Zones Actives",
+      "content": "Concevoir un espace de course nécessite plus que placer des équipements ; cela demande un flux stratégique. Avec notre service de design personnalisé gratuit, nous optimisons le plan d'étage pour prévenir les goulots d'étranglement.",
+      "features": {
+        "flowOptimized": "Plans d'étage optimisés pour prévenir les goulots d'étranglement",
+        "customLayout": "Agencements personnalisés adaptés à la forme de votre installation",
+        "safetyZones": "Zones de sécurité dédiées avec matériaux absorbant les chocs",
+        "qualityStandards": "Qualité des zones d'atterrissage aux normes australiennes"
+      },
+      "cta": "Demander un Design Gratuit"
+    },
+    "section3": {
+      "badge": "Investissement & ROI",
+      "title": "Investissement et ROI pour",
+      "titleHighlight": "Aires de Jeux Thématiques Course",
+      "content": "Investir dans des équipements de jeu haute énergie est une décision commerciale importante. Notre calculateur de ROI vous aide à estimer votre période de récupération. Nos matériaux durables entraînent des coûts de maintenance réduits à long terme.",
+      "features": {
+        "roiCalculator": "Calculateur de ROI pour estimer la période de récupération",
+        "lowerMaintenance": "Matériaux durables pour des coûts de maintenance réduits",
+        "warranty": "Garantie après-vente complète pour les composants structurels",
+        "sustainable": "Modèle commercial durable supérieur en qualité et sécurité"
+      }
+    },
+    "faq": {
+      "badge": "FAQ",
+      "title": "Questions",
+      "titleHighlight": "Fréquentes",
+      "q1": {
+        "question": "Comment vos équipements se comparent-ils dans les zones de course à fort trafic ?",
+        "answer": "Notre marque excelle en durabilité haute performance et personnalisation pour le jeu actif. Nos matériaux sont spécifiquement testés pour une utilisation intensive dans les contextes de course et ninja guerrier."
+      },
+      "q2": {
+        "question": "Proposez-vous des designs personnalisés pour les installations athlétiques ?",
+        "answer": "Oui, nous proposons un service de design personnalisé gratuit. Nos ingénieurs travaillent avec les dimensions de votre site pour créer un agencement optimisé."
+      },
+      "q3": {
+        "question": "Quel est le ROI attendu pour un parc d'aventure ?",
+        "answer": "Avec notre calculateur de ROI, la plupart des propriétaires voient un retour complet sur investissement en 12 à 24 mois, selon l'emplacement et la taille."
+      }
     }
   }
 }

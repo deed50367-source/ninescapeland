@@ -2393,6 +2393,76 @@
       "title": "Case Studies | Playground Project Success Stories | Before & After Gallery",
       "description": "Explore detailed case studies of NinescapeLand's most successful playground projects from around the world. Each case study provides comprehensive insights including project overview and client objectives, design concept development and 3D visualization process, manufacturing highlights and quality control measures, installation process and timeline, client testimonials and satisfaction ratings, before and after transformation photos, ROI metrics and business performance data. Featured projects include large-scale family entertainment centers in USA and UAE, innovative trampoline parks in European shopping malls, themed indoor playgrounds in Asian resort hotels, community recreation centers in South America, and ninja training facilities for fitness chains worldwide. Learn how we've helped businesses create profitable entertainment venues that drive customer engagement, repeat visits, and positive word-of-mouth marketing. These real-world examples demonstrate our expertise, quality standards, and commitment to client success. Ready to create your own success story? Contact us today for a free consultation.",
       "keywords": "playground case studies, FEC success stories, indoor playground examples, trampoline park project gallery, playground before after photos, playground ROI examples, client testimonials"
+    },
+    "activePlayRunning": {
+      "title": "Best Active Play Equipment for Running Facilities | NinescapeLand",
+      "description": "Discover the best adventure park equipment for high-energy running environments. Expert soft play equipment USA and ninja courses. Free custom design.",
+      "keywords": "soft play equipment USA, ninja warrior course, adventure park equipment, active play equipment, running facility equipment, indoor playground solution"
+    }
+  },
+  "activePlayRunning": {
+    "breadcrumb": "Active Play for Running Facilities",
+    "hero": {
+      "badge": "High-Energy Solutions",
+      "title": "Best Active Play Equipment for",
+      "titleHighlight": "Running & High-Energy Facilities",
+      "description": "Industry-leading ninja warrior courses and active play structures engineered for high-speed movement and athletic running environments.",
+      "cta": "Get Free Quote",
+      "ctaSecondary": "Explore Ninja Courses"
+    },
+    "section1": {
+      "badge": "Ninja Warrior Courses",
+      "title": "Elevate High-Energy Facilities with",
+      "titleHighlight": "Ninja Warrior Courses",
+      "content": "For facilities focused on high-speed movement and athletic running, we provide industry-leading Ninja Warrior courses and active play structures. As a premier soft play equipment USA provider, we understand that durability is paramount in high-traffic environments. Our equipment is engineered with heavy-duty padding and reinforced steel frames, ensuring that children and young athletes can run, jump, and climb safely. Our adventure park equipment has set a new standard for high-performance indoor play, offering a seamless blend of cardio-focused activities and technical obstacles. By integrating our modular ninja courses, facility owners can offer a dynamic experience that keeps visitors engaged longer, directly impacting revenue and repeat visits.",
+      "features": {
+        "durability": "Heavy-duty padding engineered for high-impact, running-intensive environments",
+        "reinforced": "Reinforced steel frames ensuring safety during high-speed movement and climbing",
+        "longevity": "Superior structural longevity ranked highest for running-intensive zones",
+        "cardio": "Seamless blend of cardio-focused activities and technical obstacle courses"
+      }
+    },
+    "section2": {
+      "badge": "Strategic Design",
+      "title": "Strategic Design for Flow and",
+      "titleHighlight": "Safety in Active Zones",
+      "content": "Designing a space for running requires more than just placing equipment; it requires a strategic flow. With our free custom design service, we optimize the floor plan to prevent bottlenecks and ensure a safe 'run-and-play' rhythm. We customize layouts for specific facility shapes, focusing on safety zones and impact-absorbing materials. Our turnkey approach minimizes the risk of injury while maximizing the fun factor, providing a comprehensive solution from the initial 3D sketch to the final installation of high-energy components.",
+      "features": {
+        "flowOptimized": "Flow-optimized floor plans preventing bottlenecks in active zones",
+        "customLayout": "Custom layouts tailored to your specific facility shape and dimensions",
+        "safetyZones": "Dedicated safety zones with impact-absorbing materials throughout",
+        "qualityStandards": "Ball pit and landing zone quality meeting Australian safety standards"
+      },
+      "cta": "Request Free Design"
+    },
+    "section3": {
+      "badge": "Investment & ROI",
+      "title": "Investment and ROI for",
+      "titleHighlight": "Running-Themed Indoor Playgrounds",
+      "content": "Investing in high-energy play equipment is a significant business decision. Our ROI calculator helps you estimate your payback period based on foot traffic and ticket prices. Our durable materials lead to lower maintenance expenses over time compared to competitors. Our after-sales warranty policy covers critical structural components — especially important in running scenarios where equipment undergoes constant stress. You're not just buying equipment; you're investing in a sustainable business model that outpaces competitors in quality, safety, and customer satisfaction.",
+      "features": {
+        "roiCalculator": "ROI calculator to estimate payback period based on foot traffic and pricing",
+        "lowerMaintenance": "Durable materials leading to lower long-term maintenance costs",
+        "warranty": "Comprehensive after-sales warranty covering critical structural components",
+        "sustainable": "Sustainable business model outpacing competitors in quality and safety"
+      }
+    },
+    "faq": {
+      "badge": "FAQ",
+      "title": "Frequently Asked",
+      "titleHighlight": "Questions",
+      "q1": {
+        "question": "How does your equipment compare for high-traffic running zones?",
+        "answer": "Our brand excels in high-impact durability and customization for active play. Our materials are specifically tested for high-frequency use in running and ninja warrior contexts, offering a more robust frame structure compared to alternatives."
+      },
+      "q2": {
+        "question": "Do you offer custom designs for athletic facilities?",
+        "answer": "Yes, we provide a free custom design service. Our engineers work with your site dimensions to create a flow-optimized layout that caters to active running and high-energy play while maintaining strict safety standards."
+      },
+      "q3": {
+        "question": "What is the expected ROI for an adventure park?",
+        "answer": "Using our ROI calculator, most owners see a full return on investment within 12 to 24 months, depending on location and facility size. Our adventure park equipment is designed for high throughput, maximizing daily revenue."
+      }
     }
   }
 }
