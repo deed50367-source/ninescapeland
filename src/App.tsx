@@ -70,6 +70,7 @@ const pageRoutes = (
     <Route path="blog" element={<Blog />} />
     <Route path="blog/:slug" element={<BlogPost />} />
     <Route path="best-indoorplaygroundsolution-active-play-for-running-facilities" element={<ActivePlayRunning />} />
+    <Route path="indoorplaygroundsolution-office-wellness-solutions" element={<OfficeWellness />} />
   </>
 );
 
