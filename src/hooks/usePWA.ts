@@ -15,9 +15,22 @@ export const usePWA = (): PWAStatus => {
   const [registration, setRegistration] = useState<ServiceWorkerRegistration | null>(null);
 
   useEffect(() => {
-    // Dynamic import to handle SSR and missing module gracefully
-    const registerSW = async () => {
+    // iOS Safari has known issues with stale SW caches causing blank screens.
+    // We add defensive checks and force-unregister broken SWs.
+    const registerSWModule = async () => {
       try {
+        // First, detect and clean up broken service workers on iOS
+        if ("serviceWorker" in navigator) {
+          const registrations = await navigator.serviceWorker.getRegistrations();
+          for (const reg of registrations) {
+            // If a SW is in a broken "redundant" state, unregister it
+            if (reg.active?.state === "redundant") {
+              console.log("Removing redundant SW:", reg.scope);
+              await reg.unregister();
+            }
+          }
+        }
+
         const { registerSW } = await import("virtual:pwa-register");
         
         const updateSW = registerSW({
@@ -39,6 +52,13 @@ export const usePWA = (): PWAStatus => {
           },
           onRegisterError(error) {
             console.log("SW registration error", error);
+            // On iOS, a failed SW can cause blank screens on next visit.
+            // Unregister all SWs so the next load is clean.
+            if ("serviceWorker" in navigator) {
+              navigator.serviceWorker.getRegistrations().then((regs) => {
+                regs.forEach((reg) => reg.unregister());
+              });
+            }
           },
         });
       } catch (error) {
@@ -47,7 +67,7 @@ export const usePWA = (): PWAStatus => {
       }
     };
 
-    registerSW();
+    registerSWModule();
   }, []);
 
   const updateServiceWorker = useCallback(async (reloadPage = true) => {
