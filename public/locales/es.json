@@ -2136,5 +2136,70 @@
     "extendedActivityZones": "Zonas de Actividad Extendidas",
     "moreObstacles": "Más Obstáculos",
     "extendedChallengeElements": "Elementos de Desafío Extendidos"
+  },
+  "activePlayRunning": {
+    "breadcrumb": "Equipos de Juego Activo para Instalaciones de Running",
+    "hero": {
+      "badge": "Soluciones de Alta Energía",
+      "title": "Mejores Equipos de Juego Activo para",
+      "titleHighlight": "Instalaciones de Running y Alta Energía",
+      "description": "Circuitos de ninja guerrero líderes en la industria y estructuras de juego activo para entornos de alta velocidad.",
+      "cta": "Obtener Cotización Gratis",
+      "ctaSecondary": "Explorar Circuitos Ninja"
+    },
+    "section1": {
+      "badge": "Circuitos Ninja Guerrero",
+      "title": "Eleva las Instalaciones de Alta Energía con",
+      "titleHighlight": "Circuitos Ninja Guerrero",
+      "content": "Para instalaciones enfocadas en movimiento de alta velocidad, proporcionamos circuitos de Ninja Guerrero líderes. Nuestros equipos están diseñados con acolchado de alta resistencia y marcos de acero reforzado.",
+      "features": {
+        "durability": "Acolchado de alta resistencia para entornos intensivos de running",
+        "reinforced": "Marcos de acero reforzado para seguridad en movimiento rápido",
+        "longevity": "Longevidad estructural superior para zonas intensivas",
+        "cardio": "Mezcla perfecta de actividades cardiovasculares y obstáculos técnicos"
+      }
+    },
+    "section2": {
+      "badge": "Diseño Estratégico",
+      "title": "Diseño Estratégico para Flujo y",
+      "titleHighlight": "Seguridad en Zonas Activas",
+      "content": "Diseñar un espacio para running requiere un flujo estratégico. Con nuestro servicio de diseño personalizado gratuito, optimizamos el plano para prevenir cuellos de botella.",
+      "features": {
+        "flowOptimized": "Planos optimizados para prevenir cuellos de botella",
+        "customLayout": "Diseños personalizados según la forma de su instalación",
+        "safetyZones": "Zonas de seguridad con materiales absorbentes de impacto",
+        "qualityStandards": "Calidad de zonas de aterrizaje con estándares australianos"
+      },
+      "cta": "Solicitar Diseño Gratis"
+    },
+    "section3": {
+      "badge": "Inversión y ROI",
+      "title": "Inversión y ROI para",
+      "titleHighlight": "Parques Infantiles Temáticos de Running",
+      "content": "Invertir en equipos de alta energía es una decisión comercial significativa. Nuestra calculadora de ROI ayuda a estimar el período de recuperación.",
+      "features": {
+        "roiCalculator": "Calculadora de ROI para estimar el período de recuperación",
+        "lowerMaintenance": "Materiales duraderos para menores costos de mantenimiento",
+        "warranty": "Garantía postventa integral para componentes estructurales",
+        "sustainable": "Modelo de negocio sostenible superior en calidad y seguridad"
+      }
+    },
+    "faq": {
+      "badge": "Preguntas Frecuentes",
+      "title": "Preguntas",
+      "titleHighlight": "Frecuentes",
+      "q1": {
+        "question": "¿Cómo se compara su equipo en zonas de running de alto tráfico?",
+        "answer": "Nuestra marca sobresale en durabilidad y personalización para juego activo."
+      },
+      "q2": {
+        "question": "¿Ofrecen diseños personalizados para instalaciones atléticas?",
+        "answer": "Sí, proporcionamos un servicio de diseño personalizado gratuito."
+      },
+      "q3": {
+        "question": "¿Cuál es el ROI esperado para un parque de aventuras?",
+        "answer": "La mayoría de propietarios ven un retorno completo en 12 a 24 meses."
+      }
+    }
   }
 }

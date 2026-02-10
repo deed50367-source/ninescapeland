@@ -2165,5 +2165,70 @@
     "extendedActivityZones": "Zonas de Atividade Estendidas",
     "moreObstacles": "Mais Obstáculos",
     "extendedChallengeElements": "Elementos de Desafio Estendidos"
+  },
+  "activePlayRunning": {
+    "breadcrumb": "Equipamentos de Jogo Ativo para Instalações de Corrida",
+    "hero": {
+      "badge": "Soluções de Alta Energia",
+      "title": "Melhores Equipamentos de Jogo Ativo para",
+      "titleHighlight": "Instalações de Corrida e Alta Energia",
+      "description": "Percursos de ninja guerreiro líderes no setor e estruturas de jogo ativo projetadas para ambientes de movimento de alta velocidade e corrida atlética.",
+      "cta": "Obter Orçamento Grátis",
+      "ctaSecondary": "Explorar Percursos Ninja"
+    },
+    "section1": {
+      "badge": "Percursos Ninja Guerreiro",
+      "title": "Eleve Instalações de Alta Energia com",
+      "titleHighlight": "Percursos Ninja Guerreiro",
+      "content": "Para instalações focadas em movimento de alta velocidade e corrida atlética, fornecemos percursos de Ninja Guerreiro líderes no setor. Nossos equipamentos são projetados com acolchoamento de alta resistência e estruturas de aço reforçado, garantindo que crianças e jovens atletas possam correr, pular e escalar com segurança.",
+      "features": {
+        "durability": "Acolchoamento de alta resistência para ambientes intensivos de corrida",
+        "reinforced": "Estruturas de aço reforçado para segurança em movimento rápido",
+        "longevity": "Longevidade estrutural superior para zonas intensivas de corrida",
+        "cardio": "Combinação perfeita de atividades cardiovasculares e obstáculos técnicos"
+      }
+    },
+    "section2": {
+      "badge": "Design Estratégico",
+      "title": "Design Estratégico para Fluxo e",
+      "titleHighlight": "Segurança em Zonas Ativas",
+      "content": "Projetar um espaço para corrida requer mais do que apenas colocar equipamentos; requer um fluxo estratégico. Com nosso serviço gratuito de design personalizado, otimizamos a planta para prevenir gargalos e garantir um ritmo seguro de correr e brincar.",
+      "features": {
+        "flowOptimized": "Plantas otimizadas para prevenir gargalos em zonas ativas",
+        "customLayout": "Layouts personalizados conforme a forma da sua instalação",
+        "safetyZones": "Zonas de segurança dedicadas com materiais absorventes de impacto",
+        "qualityStandards": "Qualidade de zonas de aterrissagem com padrões australianos"
+      },
+      "cta": "Solicitar Design Grátis"
+    },
+    "section3": {
+      "badge": "Investimento e ROI",
+      "title": "Investimento e ROI para",
+      "titleHighlight": "Playgrounds Internos Temáticos de Corrida",
+      "content": "Investir em equipamentos de alta energia é uma decisão comercial significativa. Nossa calculadora de ROI ajuda a estimar o período de retorno. Nossos materiais duráveis resultam em menores despesas de manutenção a longo prazo.",
+      "features": {
+        "roiCalculator": "Calculadora de ROI para estimar período de retorno",
+        "lowerMaintenance": "Materiais duráveis para menores custos de manutenção",
+        "warranty": "Garantia pós-venda abrangente para componentes estruturais",
+        "sustainable": "Modelo de negócio sustentável superior em qualidade e segurança"
+      }
+    },
+    "faq": {
+      "badge": "Perguntas Frequentes",
+      "title": "Perguntas",
+      "titleHighlight": "Frequentes",
+      "q1": {
+        "question": "Como seus equipamentos se comparam em zonas de corrida de alto tráfego?",
+        "answer": "Nossa marca se destaca em durabilidade de alto impacto e personalização para jogo ativo. Nossos materiais são testados especificamente para uso de alta frequência em contextos de corrida e ninja guerreiro."
+      },
+      "q2": {
+        "question": "Vocês oferecem designs personalizados para instalações atléticas?",
+        "answer": "Sim, fornecemos um serviço gratuito de design personalizado. Nossos engenheiros trabalham com as dimensões do seu espaço para criar um layout otimizado de fluxo."
+      },
+      "q3": {
+        "question": "Qual é o ROI esperado para um parque de aventuras?",
+        "answer": "Com nossa calculadora de ROI, a maioria dos proprietários vê retorno completo do investimento em 12 a 24 meses, dependendo da localização e tamanho."
+      }
+    }
   }
 }
