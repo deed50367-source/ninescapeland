@@ -52,6 +52,28 @@ window.addEventListener("error", (event) => {
   }
 });
 
+// iOS Safari: Clear stale SW caches that may cause blank screens after deploy
+if ("serviceWorker" in navigator) {
+  navigator.serviceWorker.ready.then((reg) => {
+    // If the page is controlled but root element is empty after 5s, force SW reset
+    setTimeout(() => {
+      const root = document.getElementById("root");
+      if (root && root.children.length <= 1 && !root.querySelector("[data-reactroot]")) {
+        // Still showing the initial loader — likely a stale cache issue
+        console.warn("Possible stale SW cache detected, clearing caches");
+        if ("caches" in window) {
+          caches.keys().then((names) => {
+            names.forEach((name) => caches.delete(name));
+          });
+        }
+        reg.unregister().then(() => {
+          window.location.reload();
+        });
+      }
+    }, 5000);
+  }).catch(() => { /* no SW active, nothing to do */ });
+}
+
 createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
     <HelmetProvider>
