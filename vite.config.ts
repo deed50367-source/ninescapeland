@@ -248,7 +248,7 @@ export default defineConfig(({ mode }) => ({
     sourcemap: false,
     // Minification
     minify: "esbuild",
-    target: "es2020",
+    target: ["es2015", "safari12"],
     // CSS code splitting
     cssCodeSplit: true,
   },
