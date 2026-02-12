@@ -27,6 +27,8 @@ export const Footer = () => {
     { label: t("footer.links.trampolinePark"), href: localizedPath("/products/trampoline-park") },
     { label: t("footer.links.ninjaCourse"), href: localizedPath("/products/ninja-course") },
     { label: t("footer.links.softPlay"), href: localizedPath("/products/soft-play") },
+    { label: t("activePlayRunning.breadcrumb", "Active Play for Running"), href: localizedPath("/best-indoorplaygroundsolution-active-play-for-running-facilities") },
+    { label: t("officeWellness.breadcrumb", "Office Wellness"), href: localizedPath("/indoorplaygroundsolution-office-wellness-solutions") },
     { label: t("footer.links.customDesign"), href: localizedPath("/contact") },
   ];
 

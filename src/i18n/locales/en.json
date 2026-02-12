@@ -2111,6 +2111,9 @@
       }
     }
   },
+  "popularCategories": {
+    "title": "Popular Categories"
+  },
   "caseStudies": {
     "sectionLabel": "Our Portfolio",
     "title": "Global",

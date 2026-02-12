@@ -17,6 +17,7 @@ import { TestimonialsSection } from "@/components/TestimonialsSection";
 import { FAQSection } from "@/components/FAQSection";
 import { CTABannerSection } from "@/components/CTABannerSection";
 import { ContactSection } from "@/components/ContactSection";
+import { PopularCategoriesSection } from "@/components/PopularCategoriesSection";
 import { Footer } from "@/components/Footer";
 import { FloatingCTA } from "@/components/FloatingCTA";
 import { LiveChat } from "@/components/LiveChat";
@@ -51,6 +52,7 @@ const Index = () => {
         <TestimonialsSection />
         <FAQSection />
         <CTABannerSection />
+        <PopularCategoriesSection />
         <ContactSection />
       </main>
       <Footer />
