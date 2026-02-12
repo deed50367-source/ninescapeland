@@ -1,8 +1,11 @@
 import { useEffect, useState, Suspense } from "react";
 import { useParams, useNavigate, useLocation, Outlet } from "react-router-dom";
 import { useTranslation } from "react-i18next";
+import { Helmet } from "react-helmet-async";
 import { languages } from "@/i18n/config";
 import PageLoader from "@/components/PageLoader";
+
+const baseUrl = "https://indoorplaygroundsolution.com";
 
 const supportedLangs = languages.map((l) => l.code) as readonly string[];
 const nonEnglishLangs = supportedLangs.filter((l) => l !== "en");
@@ -96,9 +99,35 @@ export const LanguageWrapper = ({ defaultLang }: LanguageWrapperProps) => {
     return <PageLoader />;
   }
 
+  // Build hreflang alternate links from current path
+  const getPathWithoutLang = () => {
+    const pathname = location.pathname.replace(/\/$/, "") || "/";
+    if (!defaultLang && lang) {
+      return pathname.replace(/^\/[a-z]{2}/, "") || "/";
+    }
+    return pathname;
+  };
+
+  const pathWithoutLang = getPathWithoutLang();
+
+  const alternateLinks = languages.map((l) => ({
+    hrefLang: l.code,
+    href: l.code === "en"
+      ? `${baseUrl}${pathWithoutLang}`
+      : `${baseUrl}/${l.code}${pathWithoutLang === "/" ? "" : pathWithoutLang}`,
+  }));
+
   return (
-    <Suspense fallback={<PageLoader />}>
-      <Outlet />
-    </Suspense>
+    <>
+      <Helmet>
+        {alternateLinks.map((link) => (
+          <link key={link.hrefLang} rel="alternate" hrefLang={link.hrefLang} href={link.href} />
+        ))}
+        <link rel="alternate" hrefLang="x-default" href={`${baseUrl}${pathWithoutLang}`} />
+      </Helmet>
+      <Suspense fallback={<PageLoader />}>
+        <Outlet />
+      </Suspense>
+    </>
   );
 };
