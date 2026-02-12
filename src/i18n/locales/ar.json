@@ -478,13 +478,15 @@
       "projects": "مشاريعنا",
       "certifications": "الشهادات",
       "faq": "الأسئلة الشائعة",
-      "contact": "اتصل بنا"
+      "contact": "اتصل بنا",
+      "allArticles": "جميع المقالات"
     },
     "contact": {
       "phone": "الهاتف / واتساب",
       "email": "البريد الإلكتروني",
       "factory": "المصنع"
     },
+    "blog": "المدونة",
     "copyright": "© 2024 NinescapeLand. جميع الحقوق محفوظة.",
     "privacy": "سياسة الخصوصية",
     "terms": "شروط الخدمة"

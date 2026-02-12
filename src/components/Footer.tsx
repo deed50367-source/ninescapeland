@@ -5,6 +5,9 @@ import { useRTL } from "@/hooks/useRTL";
 import { useLocalizedPath } from "@/hooks/useLocalizedPath";
 import logo from "@/assets/logo.png";
 import { useWhatsAppTracking } from "@/hooks/useWhatsAppTracking";
+import { useQuery } from "@tanstack/react-query";
+import { supabase } from "@/integrations/supabase/client";
+import { useTranslation as useI18n } from "react-i18next";
 
 const socialLinks = [
   { icon: Facebook, href: "#", label: "Facebook" },
@@ -14,16 +17,16 @@ const socialLinks = [
 ];
 
 export const Footer = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   const { isRTL } = useRTL();
   const { localizedPath } = useLocalizedPath();
   const { openWhatsApp, getWhatsAppUrl } = useWhatsAppTracking();
 
   const productLinks = [
-    { label: t("footer.links.indoorPlayground"), href: localizedPath("/products") },
-    { label: t("footer.links.trampolinePark"), href: localizedPath("/products") },
-    { label: t("footer.links.ninjaCourse"), href: localizedPath("/products") },
-    { label: t("footer.links.softPlay"), href: localizedPath("/products") },
+    { label: t("footer.links.indoorPlayground"), href: localizedPath("/products/indoor-playground") },
+    { label: t("footer.links.trampolinePark"), href: localizedPath("/products/trampoline-park") },
+    { label: t("footer.links.ninjaCourse"), href: localizedPath("/products/ninja-course") },
+    { label: t("footer.links.softPlay"), href: localizedPath("/products/soft-play") },
     { label: t("footer.links.customDesign"), href: localizedPath("/contact") },
   ];
 
@@ -35,11 +38,27 @@ export const Footer = () => {
     { label: t("footer.links.contact"), href: localizedPath("/contact") },
   ];
 
+  // Fetch popular blog posts for the current language
+  const { data: blogPosts } = useQuery({
+    queryKey: ["footer-blog-posts", i18n.language],
+    queryFn: async () => {
+      const { data } = await supabase
+        .from("blog_posts")
+        .select("slug, title")
+        .eq("status", "published")
+        .eq("language", i18n.language)
+        .order("published_at", { ascending: false })
+        .limit(4);
+      return data || [];
+    },
+    staleTime: 1000 * 60 * 10,
+  });
+
   return (
     <footer className="bg-primary text-primary-foreground">
       {/* Main Footer */}
       <div className="container-wide py-10 sm:py-16">
-        <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 lg:gap-12">
+        <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-5 gap-6 sm:gap-8 lg:gap-10">
           {/* Company Info */}
           <div className="col-span-2 lg:col-span-1">
             <img src={logo} alt="NinescapeLand" className="h-14 sm:h-20 w-auto max-w-[200px] sm:max-w-[260px] mb-4 sm:mb-6" />
@@ -88,6 +107,31 @@ export const Footer = () => {
                     className="text-primary-foreground/80 hover:text-primary-foreground transition-colors text-xs sm:text-sm"
                   >
                     {link.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Blog */}
+          <div>
+            <h4 className="font-heading font-bold text-sm sm:text-lg mb-3 sm:mb-4">{t("footer.blog", "Blog")}</h4>
+            <ul className="space-y-2 sm:space-y-3">
+              <li>
+                <Link
+                  to={localizedPath("/blog")}
+                  className="text-primary-foreground/80 hover:text-primary-foreground transition-colors text-xs sm:text-sm font-medium"
+                >
+                  {t("footer.links.allArticles", "All Articles")}
+                </Link>
+              </li>
+              {blogPosts?.map((post) => (
+                <li key={post.slug}>
+                  <Link
+                    to={localizedPath(`/blog/${post.slug}`)}
+                    className="text-primary-foreground/80 hover:text-primary-foreground transition-colors text-xs sm:text-sm line-clamp-2"
+                  >
+                    {post.title}
                   </Link>
                 </li>
               ))}
