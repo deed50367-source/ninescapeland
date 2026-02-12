@@ -478,16 +478,18 @@
        "projects": "Nos Projets",
        "certifications": "Certifications",
        "faq": "FAQ",
-       "contact": "Contactez-Nous"
+      "contact": "Contactez-Nous",
+      "allArticles": "Tous les Articles"
      },
      "contact": {
        "phone": "Téléphone / WhatsApp",
        "email": "Email",
        "factory": "Usine"
      },
-     "copyright": "© 2024 NinescapeLand. Tous droits réservés.",
-     "privacy": "Politique de Confidentialité",
-     "terms": "Conditions d'Utilisation"
+    "blog": "Blog",
+    "copyright": "© 2024 NinescapeLand. Tous droits réservés.",
+    "privacy": "Politique de Confidentialité",
+    "terms": "Conditions d'Utilisation"
    },
    "floatingCta": {
      "scrollToTop": "Retour en haut",

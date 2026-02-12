@@ -478,13 +478,15 @@
       "projects": "Nuestros Proyectos",
       "certifications": "Certificaciones",
       "faq": "FAQ",
-      "contact": "Contáctanos"
+      "contact": "Contáctanos",
+      "allArticles": "Todos los Artículos"
     },
     "contact": {
       "phone": "Teléfono / WhatsApp",
       "email": "Correo",
       "factory": "Fábrica"
     },
+    "blog": "Blog",
     "copyright": "© 2024 NinescapeLand. Todos los derechos reservados.",
     "privacy": "Política de Privacidad",
     "terms": "Términos de Servicio"
