@@ -8,7 +8,7 @@ import { useSiteImages } from "@/hooks/useSiteImages";
 export const HeroSection = () => {
   const { t } = useTranslation();
   const { isRTL } = useRTL();
-  const { getImageUrl } = useSiteImages();
+  const { getOptimizedImageUrl } = useSiteImages();
 
   const benefits = [
     t("hero.benefits.customDesign"),
@@ -37,7 +37,7 @@ export const HeroSection = () => {
           }}
         >
           <img
-            src={getImageUrl("hero.home")}
+            src={getOptimizedImageUrl("hero.home", { width: 1920, quality: 75 })}
             alt="Indoor Playground Equipment Manufacturer"
             className="w-full h-full object-cover"
             loading="eager"

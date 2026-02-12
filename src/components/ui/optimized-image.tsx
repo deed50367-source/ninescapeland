@@ -103,7 +103,12 @@ export const OptimizedImage = ({
     
     // Check if it's a Supabase storage URL
     if (originalSrc.includes('supabase.co/storage')) {
-      const url = new URL(originalSrc);
+      // Use render endpoint for transformations
+      const renderSrc = originalSrc.replace(
+        '/storage/v1/object/public/',
+        '/storage/v1/render/image/public/'
+      );
+      const url = new URL(renderSrc);
       
       // Add WebP transformation if supported
       if (supportsWebP && !url.searchParams.has('format')) {
@@ -127,9 +132,15 @@ export const OptimizedImage = ({
       return undefined;
     }
 
+    // Use render endpoint
+    const renderSrc = originalSrc.replace(
+      '/storage/v1/object/public/',
+      '/storage/v1/render/image/public/'
+    );
+
     const widths = [320, 640, 960, 1280, 1920];
     const srcSetParts = widths.map((width) => {
-      const url = new URL(originalSrc);
+      const url = new URL(renderSrc);
       url.searchParams.set('width', width.toString());
       if (supportsWebP) {
         url.searchParams.set('format', 'webp');

@@ -71,6 +71,35 @@ const buildImageUrl = (path: string): string => {
   return `${STORAGE_URL}/${path}`;
 };
 
+// 构建带 Supabase Storage Transformation 参数的优化 URL
+interface ImageTransformOptions {
+  width?: number;
+  height?: number;
+  quality?: number;
+  format?: 'webp' | 'origin';
+}
+
+const buildOptimizedUrl = (baseUrl: string, options: ImageTransformOptions = {}): string => {
+  if (!baseUrl || baseUrl === "/placeholder.svg") return baseUrl;
+  
+  // Only apply transforms to Supabase storage URLs
+  if (!baseUrl.includes('supabase.co/storage')) return baseUrl;
+  
+  // Use render endpoint for transformations
+  const renderUrl = baseUrl.replace(
+    '/storage/v1/object/public/',
+    '/storage/v1/render/image/public/'
+  );
+  
+  const url = new URL(renderUrl);
+  if (options.width) url.searchParams.set('width', options.width.toString());
+  if (options.height) url.searchParams.set('height', options.height.toString());
+  url.searchParams.set('quality', (options.quality || 75).toString());
+  url.searchParams.set('format', options.format || 'webp');
+  
+  return url.toString();
+};
+
 export const getSiteImageUrl = (key: string): string => {
   const path = cachedImages?.[key] || defaultImages[key] || "";
   return buildImageUrl(path);
@@ -120,18 +149,22 @@ export const useSiteImages = () => {
     return buildImageUrl(path);
   }, [images]);
 
+  // 获取带优化参数的图片 URL（用于首屏大图）
+  const getOptimizedImageUrl = useCallback((key: string, options: ImageTransformOptions = {}): string => {
+    const rawUrl = getImageUrl(key);
+    return buildOptimizedUrl(rawUrl, options);
+  }, [getImageUrl]);
+
   // 获取产品图库图片数组
   const getProductGalleryImages = useCallback((productType: string, count: number = 6): string[] => {
     const galleryImages: string[] = [];
     
-    // 首先添加主图 (product.indoorPlayground)
     const mainKey = `product.${productType}`;
     const mainPath = images[mainKey] || defaultImages[mainKey];
     if (mainPath) {
       galleryImages.push(buildImageUrl(mainPath));
     }
     
-    // 然后添加其他图片 (product.indoorPlayground.2, .3, .4, etc.)
     for (let i = 2; i <= count; i++) {
       const key = `product.${productType}.${i}`;
       const path = images[key];
@@ -154,7 +187,7 @@ export const useSiteImages = () => {
     setIsLoading(false);
   }, []);
 
-  return { images, isLoading, getImageUrl, getProductGalleryImages, refresh };
+  return { images, isLoading, getImageUrl, getOptimizedImageUrl, getProductGalleryImages, refresh };
 };
 
 // 便捷函数 - 预加载图片配置

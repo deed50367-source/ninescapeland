@@ -21,10 +21,14 @@ export const PageHero = ({
 }: PageHeroProps) => {
   const { t } = useTranslation();
   const { isRTL } = useRTL();
-  const { getImageUrl } = useSiteImages();
+  const { getImageUrl, getOptimizedImageUrl } = useSiteImages();
 
-  // 优先使用动态配图
-  const bgImage = imageConfigKey ? getImageUrl(imageConfigKey) : backgroundImage;
+  // 优先使用动态配图，并应用 Supabase 图片优化
+  const rawBgImage = imageConfigKey ? getImageUrl(imageConfigKey) : backgroundImage;
+  // 对 Supabase 存储图片应用变换
+  const bgImage = rawBgImage && rawBgImage.includes('supabase.co/storage')
+    ? (imageConfigKey ? getOptimizedImageUrl(imageConfigKey, { width: 1920, quality: 75 }) : rawBgImage)
+    : rawBgImage;
 
   return (
     <section className="relative py-24 md:py-32 overflow-hidden">
