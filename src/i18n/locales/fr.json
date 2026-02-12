@@ -695,6 +695,9 @@
      },
      "quality": "Qualité"
    },
+   "popularCategories": {
+     "title": "Catégories Populaires"
+   },
    "caseStudies": {
      "sectionLabel": "Notre Portfolio",
      "title": "Études de Cas",

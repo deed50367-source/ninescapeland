@@ -69,6 +69,16 @@ export const ProductMegaMenu = () => {
       href: "/products/soft-play",
       icon: "🧸"
     },
+    { 
+      label: t("activePlayRunning.breadcrumb", "Active Play for Running"), 
+      href: "/best-indoorplaygroundsolution-active-play-for-running-facilities",
+      icon: "🏃"
+    },
+    { 
+      label: t("officeWellness.breadcrumb", "Office Wellness"), 
+      href: "/indoorplaygroundsolution-office-wellness-solutions",
+      icon: "🏢"
+    },
   ];
 
   useEffect(() => {

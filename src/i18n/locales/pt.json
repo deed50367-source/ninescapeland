@@ -2092,6 +2092,9 @@
       "keywords": "estudos de caso de playground, histórias de sucesso FEC, exemplos de playground indoor, galeria de projetos de parques de trampolins, fotos de antes e depois de playground, exemplos de ROI de playground, depoimentos de clientes"
     }
   },
+  "popularCategories": {
+    "title": "Categorias Populares"
+  },
   "caseStudies": {
     "sectionLabel": "Nosso Portfólio",
     "title": "Estudos de Caso",
