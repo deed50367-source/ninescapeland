@@ -1,3 +1,4 @@
+import { useTranslation } from "react-i18next";
 import { Header } from "@/components/Header";
 import { PageHero } from "@/components/PageHero";
 import { ProjectsSection } from "@/components/ProjectsSection";
@@ -11,11 +12,20 @@ import { Footer } from "@/components/Footer";
 import { FloatingCTA } from "@/components/FloatingCTA";
 import MobileBottomNav from "@/components/MobileBottomNav";
 import { SEOHead } from "@/components/SEOHead";
+import { BreadcrumbSchema } from "@/components/StructuredData";
 
 const Projects = () => {
+  const { t } = useTranslation();
+
+  const breadcrumbItems = [
+    { name: t("nav.home", "Home"), url: "https://indoorplaygroundsolution.com" },
+    { name: t("nav.projects", "Projects"), url: "https://indoorplaygroundsolution.com/projects" },
+  ];
+
   return (
     <div className="min-h-screen pb-16 md:pb-0">
       <SEOHead pageKey="projects" />
+      <BreadcrumbSchema items={breadcrumbItems} />
       <Header />
       <main>
         <PageHero
