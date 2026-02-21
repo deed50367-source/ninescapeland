@@ -228,6 +228,8 @@ export default defineConfig(({ mode }) => ({
           i18n: ["i18next", "react-i18next", "i18next-browser-languagedetector", "i18next-http-backend"],
           // Supabase
           supabase: ["@supabase/supabase-js"],
+          // Icons - prevent duplication across lazy chunks
+          icons: ["lucide-react"],
           // Rich text editor
           editor: [
             "@tiptap/react",
