@@ -3,17 +3,18 @@ import { useImagePreload } from "@/hooks/useImagePreload";
 import { useSiteImages } from "@/hooks/useSiteImages";
 
 /**
- * Invisible component that preloads product page images when mounted
- * Used on the homepage to prepare for product page navigation
+ * Invisible component that preloads product page images when mounted.
+ * Skipped on mobile (< 768px) to save bandwidth.
  */
 export const ProductPreloader = () => {
   const { preloadImages, addPreloadLink } = useImagePreload();
   const { getImageUrl } = useSiteImages();
 
   useEffect(() => {
-    // Small delay to not compete with initial page load
+    // Skip on mobile devices to save bandwidth
+    if (window.innerWidth < 768) return;
+
     const timer = setTimeout(() => {
-      // Preload product hero images
       const productImages = [
         getImageUrl("product.indoorPlayground"),
         getImageUrl("product.trampolinePark"),
@@ -23,17 +24,15 @@ export const ProductPreloader = () => {
 
       preloadImages(productImages);
 
-      // Add preload links for the most common product pages
-      // This uses the browser's native resource prioritization
       productImages.slice(0, 2).forEach((src) => {
         addPreloadLink(src);
       });
-    }, 2000); // Wait 2 seconds after page load
+    }, 3000); // Wait 3s on desktop
 
     return () => clearTimeout(timer);
   }, [preloadImages, addPreloadLink, getImageUrl]);
 
-  return null; // This component renders nothing
+  return null;
 };
 
 export default ProductPreloader;
