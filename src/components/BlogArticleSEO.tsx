@@ -59,28 +59,6 @@ export const BlogArticleSEO = ({
   const fullTitle = `${title} | ${siteName}`;
   const ogImage = image || `${baseUrl}/og-image.png`;
 
-  // Generate alternate links for all languages
-  const getPathWithoutLang = () => {
-    if (lang) {
-      return canonicalPath.replace(/^\/[a-z]{2}/, "");
-    }
-    return canonicalPath;
-  };
-  
-  const pathWithoutLang = getPathWithoutLang();
-  
-  const alternateLinks = languages.map((l) => {
-    if (l.code === "en") {
-      return {
-        hrefLang: l.code,
-        href: `${baseUrl}${pathWithoutLang || "/"}`,
-      };
-    }
-    return {
-      hrefLang: l.code,
-      href: `${baseUrl}/${l.code}${pathWithoutLang}`,
-    };
-  });
 
   const langConfig = languages.find((l) => l.code === currentLang);
   const isRTL = langConfig?.rtl || false;
@@ -135,11 +113,7 @@ export const BlogArticleSEO = ({
         </>
       )}
       
-      {/* Alternate language links */}
-      {alternateLinks.map((link) => (
-        <link key={link.hrefLang} rel="alternate" hrefLang={link.hrefLang} href={link.href} />
-      ))}
-      <link rel="alternate" hrefLang="x-default" href={`${baseUrl}${pathWithoutLang || "/"}`} />
+      {/* hreflang tags are managed globally by LanguageWrapper */}
     </Helmet>
   );
 };
