@@ -6,6 +6,7 @@ import { useTranslation } from "react-i18next";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { SEOHead } from "@/components/SEOHead";
+import { BreadcrumbSchema } from "@/components/StructuredData";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { supabase } from "@/integrations/supabase/client";
@@ -72,9 +73,15 @@ export default function CaseStudies() {
     return true;
   });
 
+  const breadcrumbItems = [
+    { name: t("nav.home", "Home"), url: "https://indoorplaygroundsolution.com" },
+    { name: t("caseStudies.sectionLabel", "Case Studies"), url: "https://indoorplaygroundsolution.com/case-studies" },
+  ];
+
   return (
     <div className="min-h-screen bg-background">
       <SEOHead pageKey="caseStudies" />
+      <BreadcrumbSchema items={breadcrumbItems} />
       <Header />
       
       <main className="pt-24">
