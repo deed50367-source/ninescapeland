@@ -67,37 +67,11 @@ export const SEOHead = ({
   };
   
   const canonicalUrl = getCanonicalUrl();
-  const canonicalPath = location.pathname.replace(/\/$/, "");
+  
   
   const langConfig = languages.find((l) => l.code === currentLang);
   const isRTL = langConfig?.rtl || false;
 
-  // Generate alternate links - English uses root, others use prefix
-  const getPathWithoutLang = () => {
-    if (lang) {
-      // Currently on a non-English route with prefix
-      return canonicalPath.replace(/^\/[a-z]{2}/, "");
-    }
-    // Currently on English route (no prefix)
-    return canonicalPath;
-  };
-  
-  const pathWithoutLang = getPathWithoutLang();
-  
-  const alternateLinks = languages.map((l) => {
-    if (l.code === "en") {
-      // English uses root path
-      return {
-        hrefLang: l.code,
-        href: `${baseUrl}${pathWithoutLang || "/"}`,
-      };
-    }
-    // Other languages use prefix
-    return {
-      hrefLang: l.code,
-      href: `${baseUrl}/${l.code}${pathWithoutLang}`,
-    };
-  });
 
   return (
     <Helmet>
@@ -131,12 +105,7 @@ export const SEOHead = ({
       <meta name="twitter:image" content={`${baseUrl}${ogImage || defaultOgImage}`} />
       <meta name="twitter:image:alt" content={fullTitle} />
       
-      {/* Alternate language links */}
-      {alternateLinks.map((link) => (
-        <link key={link.hrefLang} rel="alternate" hrefLang={link.hrefLang} href={link.href} />
-      ))}
-      {/* x-default points to English (root) */}
-      <link rel="alternate" hrefLang="x-default" href={`${baseUrl}${pathWithoutLang || "/"}`} />
+      {/* hreflang tags are managed globally by LanguageWrapper */}
     </Helmet>
   );
 };
