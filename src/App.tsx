@@ -30,6 +30,7 @@ const Blog = lazy(() => import("./pages/Blog"));
 const BlogPost = lazy(() => import("./pages/BlogPost"));
 const ActivePlayRunning = lazy(() => import("./pages/ActivePlayRunning"));
 const OfficeWellness = lazy(() => import("./pages/OfficeWellness"));
+const SoftPlayMallSolutions = lazy(() => import("./pages/SoftPlayMallSolutions"));
 const LocationPage = lazy(() => import("./pages/LocationPage"));
 const NotFound = lazy(() => import("./pages/NotFound"));
 const AdminLogin = lazy(() => import("./pages/AdminLogin"));
@@ -74,6 +75,7 @@ const pageRoutes = (
     <Route path="blog/:slug" element={<BlogPost />} />
     <Route path="best-indoorplaygroundsolution-active-play-for-running-facilities" element={<ActivePlayRunning />} />
     <Route path="indoorplaygroundsolution-office-wellness-solutions" element={<OfficeWellness />} />
+    <Route path="soft-play-equipment-shopping-mall-solutions" element={<SoftPlayMallSolutions />} />
     <Route path="locations/:slug" element={<LocationPage />} />
   </>
 );
