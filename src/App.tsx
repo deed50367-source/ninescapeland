@@ -10,6 +10,8 @@ import PageLoader from "@/components/PageLoader";
 import PWAPrompt from "@/components/PWAPrompt";
 import AppErrorBoundary from "@/components/AppErrorBoundary";
 
+const RecentInquiryNotification = lazy(() => import("@/components/RecentInquiryNotification"));
+
 // Lazy load pages for code splitting
 const Index = lazy(() => import("./pages/Index"));
 const CaseStudies = lazy(() => import("./pages/CaseStudies"));
@@ -108,6 +110,9 @@ const App = () => (
           </Suspense>
         </AppErrorBoundary>
         <PWAPrompt />
+        <Suspense fallback={null}>
+          <RecentInquiryNotification />
+        </Suspense>
       </BrowserRouter>
     </TooltipProvider>
   </QueryClientProvider>

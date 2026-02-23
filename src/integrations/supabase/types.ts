@@ -818,6 +818,13 @@ export type Database = {
       }
     }
     Functions: {
+      get_recent_inquiry_countries: {
+        Args: never
+        Returns: {
+          country: string
+          created_at: string
+        }[]
+      }
       get_staff_session_metadata: {
         Args: { p_session_id: string }
         Returns: {
