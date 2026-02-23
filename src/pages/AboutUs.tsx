@@ -9,7 +9,7 @@ import { FloatingCTA } from "@/components/FloatingCTA";
 import { AboutMascotIntro } from "@/components/AboutMascotIntro";
 import { AboutTeamSection } from "@/components/AboutTeamSection";
 import { SEOHead } from "@/components/SEOHead";
-import { BreadcrumbSchema } from "@/components/StructuredData";
+import { BreadcrumbSchema, OrganizationSchema } from "@/components/StructuredData";
 
 const AboutUs = () => {
   const { t } = useTranslation();
@@ -23,6 +23,7 @@ const AboutUs = () => {
     <div className="min-h-screen">
       <SEOHead pageKey="aboutUs" />
       <BreadcrumbSchema items={breadcrumbItems} />
+      <OrganizationSchema />
       <Header />
       <main>
         <PageHero
