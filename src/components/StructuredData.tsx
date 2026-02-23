@@ -1,6 +1,9 @@
 import { Helmet } from "react-helmet-async";
 
-// Organization Schema - for the company
+const SITE_URL = "https://indoorplaygroundsolution.com";
+const LOGO_URL = `${SITE_URL}/favicon.png`;
+
+// Organization + Manufacturer Schema with E-E-A-T signals
 export interface OrganizationSchemaProps {
   name?: string;
   url?: string;
@@ -19,9 +22,9 @@ export interface OrganizationSchemaProps {
 
 export const OrganizationSchema = ({
   name = "NinescapeLand",
-  url = "https://indoorplaygroundsolution.com",
-  logo = "https://indoorplaygroundsolution.com/favicon.png",
-  description = "Professional indoor playground equipment manufacturer specializing in custom indoor playgrounds, trampoline parks, ninja courses, and soft play equipment worldwide.",
+  url = SITE_URL,
+  logo = LOGO_URL,
+  description = "Professional indoor playground equipment manufacturer since 2008. Specializing in custom indoor playgrounds, trampoline parks, ninja courses, and soft play equipment. ASTM & TUV certified with 2,000+ projects in 50+ countries.",
   email = "sale@indoorplaygroundsolution.com",
   phone = "+86-150-5878-2901",
   address = {
@@ -33,25 +36,108 @@ export const OrganizationSchema = ({
 }: OrganizationSchemaProps) => {
   const schema = {
     "@context": "https://schema.org",
-    "@type": "Organization",
+    "@type": ["Organization", "Manufacturer"],
+    "@id": `${url}/#organization`,
     name,
     url,
-    logo,
+    logo: {
+      "@type": "ImageObject",
+      url: logo,
+      width: 512,
+      height: 512
+    },
     description,
     email,
     telephone: phone,
+    foundingDate: "2008",
+    foundingLocation: {
+      "@type": "Place",
+      name: "Wenzhou, Zhejiang, China"
+    },
+    founder: {
+      "@type": "Person",
+      name: "NinescapeLand Founder",
+      jobTitle: "CEO & Founder",
+      worksFor: { "@id": `${url}/#organization` }
+    },
+    numberOfEmployees: {
+      "@type": "QuantitativeValue",
+      minValue: 200,
+      maxValue: 300
+    },
     address: {
       "@type": "PostalAddress",
       ...address
     },
     sameAs,
-    contactPoint: {
-      "@type": "ContactPoint",
-      telephone: phone,
-      contactType: "sales",
-      email,
-      availableLanguage: ["English", "Chinese", "Spanish", "German", "Portuguese", "Arabic"]
-    }
+    contactPoint: [
+      {
+        "@type": "ContactPoint",
+        telephone: phone,
+        contactType: "sales",
+        email,
+        availableLanguage: ["English", "Chinese", "Spanish", "German", "Portuguese", "Arabic", "French"]
+      },
+      {
+        "@type": "ContactPoint",
+        telephone: phone,
+        contactType: "customer service",
+        email,
+        availableLanguage: ["English", "Chinese"]
+      }
+    ],
+    // E-E-A-T: Certifications & credentials
+    hasCredential: [
+      {
+        "@type": "EducationalOccupationalCredential",
+        credentialCategory: "certification",
+        name: "ASTM F1918 Certification",
+        description: "American Society for Testing and Materials standard for soft contained play equipment"
+      },
+      {
+        "@type": "EducationalOccupationalCredential",
+        credentialCategory: "certification",
+        name: "TUV SÜD Certification",
+        description: "German quality and safety certification for playground equipment"
+      },
+      {
+        "@type": "EducationalOccupationalCredential",
+        credentialCategory: "certification",
+        name: "EN 1176 Certification",
+        description: "European standard for playground equipment and surfacing"
+      },
+      {
+        "@type": "EducationalOccupationalCredential",
+        credentialCategory: "certification",
+        name: "ISO 9001:2015",
+        description: "Quality management systems certification"
+      }
+    ],
+    // Manufacturing details
+    makesOffer: [
+      { "@type": "Offer", itemOffered: { "@type": "Product", name: "Custom Indoor Playground Equipment" } },
+      { "@type": "Offer", itemOffered: { "@type": "Product", name: "Commercial Trampoline Park Equipment" } },
+      { "@type": "Offer", itemOffered: { "@type": "Product", name: "Ninja Warrior Course Equipment" } },
+      { "@type": "Offer", itemOffered: { "@type": "Product", name: "Soft Play Equipment" } }
+    ],
+    areaServed: {
+      "@type": "Place",
+      name: "Worldwide"
+    },
+    slogan: "Your Trusted Indoor Playground Equipment Manufacturer Since 2008",
+    knowsAbout: [
+      "Indoor Playground Design",
+      "Trampoline Park Engineering",
+      "Ninja Warrior Course Construction",
+      "Soft Play Manufacturing",
+      "FEC Equipment Solutions",
+      "Playground Safety Standards"
+    ],
+    award: [
+      "15+ Years Industry Experience",
+      "2,000+ Projects Completed Worldwide",
+      "50,000 sqm Manufacturing Facility"
+    ]
   };
 
   return (
