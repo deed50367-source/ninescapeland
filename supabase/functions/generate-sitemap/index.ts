@@ -131,6 +131,17 @@ Deno.serve(async (req) => {
       { path: "/faq", changefreq: "monthly", priority: "0.6" },
       { path: "/blog", changefreq: "daily", priority: "0.8" },
       { path: "/case-studies", changefreq: "weekly", priority: "0.7" },
+      // Location landing pages
+      { path: "/locations/indoor-playground-equipment-usa", changefreq: "monthly", priority: "0.8" },
+      { path: "/locations/indoor-playground-equipment-uk", changefreq: "monthly", priority: "0.8" },
+      { path: "/locations/indoor-playground-equipment-uae", changefreq: "monthly", priority: "0.8" },
+      { path: "/locations/indoor-playground-equipment-saudi-arabia", changefreq: "monthly", priority: "0.8" },
+      { path: "/locations/indoor-playground-equipment-australia", changefreq: "monthly", priority: "0.8" },
+      { path: "/locations/indoor-playground-equipment-canada", changefreq: "monthly", priority: "0.8" },
+      { path: "/locations/indoor-playground-equipment-germany", changefreq: "monthly", priority: "0.8" },
+      { path: "/locations/indoor-playground-equipment-india", changefreq: "monthly", priority: "0.8" },
+      { path: "/locations/indoor-playground-equipment-mexico", changefreq: "monthly", priority: "0.8" },
+      { path: "/locations/indoor-playground-equipment-brazil", changefreq: "monthly", priority: "0.8" },
     ];
 
     const staticUrlEntries = staticPages
