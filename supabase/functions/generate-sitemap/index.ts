@@ -142,6 +142,9 @@ Deno.serve(async (req) => {
       { path: "/locations/indoor-playground-equipment-india", changefreq: "monthly", priority: "0.8" },
       { path: "/locations/indoor-playground-equipment-mexico", changefreq: "monthly", priority: "0.8" },
       { path: "/locations/indoor-playground-equipment-brazil", changefreq: "monthly", priority: "0.8" },
+      // Industry niche landing pages
+      { path: "/soft-play-equipment-shopping-mall-solutions", changefreq: "monthly", priority: "0.7" },
+      { path: "/trampoline-park-fec-solutions", changefreq: "monthly", priority: "0.7" },
     ];
 
     const staticUrlEntries = staticPages
