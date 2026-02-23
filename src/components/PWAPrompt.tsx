@@ -20,7 +20,7 @@ const PWAPrompt = () => {
     }
   }, [offlineReady, close]);
 
-  const showPrompt = needRefresh || offlineReady || isInstallable;
+  const showPrompt = needRefresh || offlineReady;
 
   if (!showPrompt) return null;
 
