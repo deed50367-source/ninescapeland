@@ -26,6 +26,7 @@ const TestimonialsSection = lazy(() => import("@/components/TestimonialsSection"
 const FAQSection = lazy(() => import("@/components/FAQSection").then(m => ({ default: m.FAQSection })));
 const CTABannerSection = lazy(() => import("@/components/CTABannerSection").then(m => ({ default: m.CTABannerSection })));
 const PopularCategoriesSection = lazy(() => import("@/components/PopularCategoriesSection").then(m => ({ default: m.PopularCategoriesSection })));
+const FeaturedShowcaseSection = lazy(() => import("@/components/FeaturedShowcaseSection").then(m => ({ default: m.FeaturedShowcaseSection })));
 const ContactSection = lazy(() => import("@/components/ContactSection").then(m => ({ default: m.ContactSection })));
 const ProductPreloader = lazy(() => import("@/components/ProductPreloader"));
 
@@ -59,6 +60,7 @@ const Index = () => {
           <TestimonialsSection />
           <FAQSection />
           <CTABannerSection />
+          <FeaturedShowcaseSection />
           <PopularCategoriesSection />
           <ContactSection />
         </Suspense>
