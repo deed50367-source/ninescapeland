@@ -33,6 +33,7 @@ const OfficeWellness = lazy(() => import("./pages/OfficeWellness"));
 const SoftPlayMallSolutions = lazy(() => import("./pages/SoftPlayMallSolutions"));
 const TrampolineParkFEC = lazy(() => import("./pages/TrampolineParkFEC"));
 const IndoorPlaygroundROIUK = lazy(() => import("./pages/IndoorPlaygroundROIUK"));
+const IndoorPlaygroundROICanada = lazy(() => import("./pages/IndoorPlaygroundROICanada"));
 const LocationPage = lazy(() => import("./pages/LocationPage"));
 const NotFound = lazy(() => import("./pages/NotFound"));
 const AdminLogin = lazy(() => import("./pages/AdminLogin"));
@@ -80,6 +81,7 @@ const pageRoutes = (
     <Route path="soft-play-equipment-shopping-mall-solutions" element={<SoftPlayMallSolutions />} />
     <Route path="trampoline-park-fec-solutions" element={<TrampolineParkFEC />} />
     <Route path="indoor-playground-roi-analysis-uk" element={<IndoorPlaygroundROIUK />} />
+    <Route path="indoor-playground-roi-canada" element={<IndoorPlaygroundROICanada />} />
     <Route path="locations/:slug" element={<LocationPage />} />
   </>
 );
