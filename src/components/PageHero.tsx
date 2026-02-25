@@ -37,7 +37,7 @@ export const PageHero = ({
         <div className="absolute inset-0">
           <img
             src={bgImage}
-            alt=""
+            alt={`${t(titleKey)} ${t(titleHighlightKey)} - NinescapeLand`}
             className="w-full h-full object-cover"
             loading="eager"
             fetchPriority="high"
