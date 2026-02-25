@@ -45,7 +45,7 @@ export const HeroSection = () => {
               `${getOptimizedImageUrl("hero.home", { width: 1920, quality: 75 })} 1920w`,
             ].join(", ")}
             sizes="100vw"
-            alt="Indoor Playground Equipment Manufacturer"
+            alt="Custom Commercial Indoor Playground Equipment by NinescapeLand"
             className="w-full h-full object-cover"
             loading="eager"
             fetchPriority="high"

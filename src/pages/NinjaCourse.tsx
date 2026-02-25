@@ -412,7 +412,7 @@ const NinjaCourse = () => {
               >
                 <img 
                   src={galleryImages[1]}
-                  alt="Ninja warrior obstacles"
+                  alt="Professional Ninja Warrior Course Obstacles by NinescapeLand"
                   className="rounded-2xl shadow-2xl"
                 />
                 <div className="absolute -bottom-6 -right-6 bg-primary text-primary-foreground p-4 rounded-xl shadow-lg">
@@ -749,7 +749,7 @@ const NinjaCourse = () => {
                 >
                   <img 
                     src={image} 
-                    alt={`Ninja course ${index + 1}`}
+                    alt={`Custom Ninja Warrior Course Equipment ${index + 1} by NinescapeLand`}
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                   />
                   <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors" />

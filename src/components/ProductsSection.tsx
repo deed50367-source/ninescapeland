@@ -111,7 +111,7 @@ export const ProductsSection = () => {
               <div className="relative h-48 sm:h-56 lg:h-64 overflow-hidden">
                 <img
                   src={product.image}
-                  alt={product.title}
+                  alt={`${product.title} by NinescapeLand`}
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                   loading="lazy"
                   decoding="async"

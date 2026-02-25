@@ -582,7 +582,7 @@ const IndoorPlayground = () => {
                 <div key={index} className="relative aspect-[4/3] rounded-xl overflow-hidden group">
                   <img 
                     src={image} 
-                    alt={`Indoor playground ${index + 1}`}
+                    alt={`Custom Indoor Playground Equipment Design ${index + 1} by NinescapeLand`}
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                   />
                   <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors" />
@@ -628,7 +628,7 @@ const IndoorPlayground = () => {
               <div className="relative">
                 <img 
                   src={galleryImages[0]}
-                  alt="Indoor playground components"
+                  alt="Commercial Indoor Playground Components and Structures by NinescapeLand"
                   className="rounded-2xl shadow-2xl"
                 />
                 <div className="absolute -bottom-6 -left-6 bg-primary text-primary-foreground p-4 rounded-xl shadow-lg">
@@ -738,7 +738,7 @@ const IndoorPlayground = () => {
               >
                 <img 
                   src={galleryImages[2]}
-                  alt="Safety certified playground"
+                  alt="ASTM and TUV Safety Certified Indoor Playground Equipment by NinescapeLand"
                   className="rounded-2xl shadow-2xl"
                 />
                 <div className="absolute -bottom-6 -right-6 bg-green-500 text-white p-4 rounded-xl shadow-lg">

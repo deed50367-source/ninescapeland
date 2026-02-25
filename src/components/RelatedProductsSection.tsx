@@ -179,7 +179,7 @@ export const RelatedProductsSection = ({
                       {product.featured_image ? (
                         <img
                           src={product.featured_image}
-                          alt={getLocalizedName(product)}
+                          alt={`${getLocalizedName(product)} by NinescapeLand`}
                           className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                         />
                       ) : (
