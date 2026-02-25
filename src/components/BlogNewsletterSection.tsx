@@ -123,7 +123,8 @@ export const BlogNewsletterSection = () => {
               <Button
                 type="submit"
                 size="lg"
-                className="h-14 px-8 bg-accent hover:bg-accent/90 text-accent-foreground shadow-glow font-bold rounded-xl"
+                variant="hero"
+                className="h-14 px-8 rounded-xl"
               >
                 {t("blog.newsletter.subscribe")}
                 <Send className="w-5 h-5 ml-2" />

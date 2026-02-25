@@ -216,7 +216,7 @@ export const BlogSidebar = ({ recentPosts = [] }: BlogSidebarProps) => {
               className="pl-10 bg-white/90 border-0 text-foreground"
             />
           </div>
-          <Button className="w-full bg-accent hover:bg-accent/90 text-accent-foreground">
+          <Button variant="hero" className="w-full">
             {t("blog.newsletter.subscribe")}
           </Button>
         </div>
