@@ -91,7 +91,8 @@ export const CTABannerSection = () => {
             <Button
               onClick={handleNavigateContact}
               size="lg"
-              className="w-full sm:w-auto bg-accent hover:bg-accent/90 text-accent-foreground shadow-glow font-bold h-12 sm:h-14 text-sm sm:text-base"
+              variant="hero"
+              className="w-full sm:w-auto h-12 sm:h-14 text-sm sm:text-base"
             >
               {t("ctaBanner.getQuote")}
               <ArrowRight className={`w-4 h-4 sm:w-5 sm:h-5 ${isRTL ? 'rotate-180' : ''}`} />

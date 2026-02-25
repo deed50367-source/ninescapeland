@@ -93,7 +93,7 @@ const LocationPage = () => {
                 transition={{ delay: 0.3 }}
                 className="flex flex-col sm:flex-row gap-4 justify-center"
               >
-                <Button size="lg" variant="default" className="bg-accent hover:bg-accent/90 text-accent-foreground" asChild>
+                <Button size="lg" variant="hero" asChild>
                   <a href={localizedPath("/contact")}>
                     Get Free Quote <ArrowRight className="ml-2 w-4 h-4" />
                   </a>

@@ -772,7 +772,7 @@ const SoftPlay = () => {
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Link to={localizedPath("/contact")}>
-                  <Button size="lg" variant="secondary" className="group">
+                  <Button size="lg" variant="hero" className="group">
                     {t("productPages.softPlay.ctaSection.getQuote")}
                     <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
                   </Button>

@@ -915,7 +915,7 @@ const IndoorPlayground = () => {
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <Link to={localizedPath("/contact")}>
-                    <Button size="lg" variant="secondary" className="group w-full sm:w-auto">
+                    <Button size="lg" variant="hero" className="group w-full sm:w-auto">
                       {t("productPages.indoorPlayground.ctaSection.getQuote")}
                       <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
                     </Button>
