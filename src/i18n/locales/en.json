@@ -2704,6 +2704,11 @@
       "title": "Indoor Playground ROI Analysis UK | IPS",
       "description": "Discover the ROI of indoor playgrounds in the UK. Expert market insights and high-quality equipment for British entrepreneurs.",
       "keywords": "indoor playground ROI UK, indoor playground business UK, indoor playground investment United Kingdom, BS EN 1176"
+    },
+    "roiCanada": {
+      "title": "Indoor Playground ROI Canada | IPS",
+      "description": "Maximize your investment in Canada. Space-optimized designs for high-traffic Canadian family centers.",
+      "keywords": "indoor playground ROI Canada, indoor playground business Canada, indoor playground investment Canada, CSA Z614"
     }
   },
   "roiUK": {
@@ -2765,6 +2770,67 @@
       "q2": {
         "question": "What is the typical Indoor Playground Solution project turnaround time?",
         "answer": "From initial design to final installation, the process typically takes 8 to 12 weeks, depending on the complexity and size of the facility."
+      }
+    }
+  },
+  "roiCanada": {
+    "breadcrumb": "Indoor Playground ROI Canada",
+    "hero": {
+      "badge": "Canada ROI Analysis",
+      "title": "Capitalizing on Indoor Play Space Optimization",
+      "titleHighlight": "in Canada",
+      "description": "Maximize your investment in Canada. Indoor Playground Solution provides space-optimized designs for high-traffic Canadian family centers.",
+      "cta": "Get Free Quote",
+      "ctaSecondary": "View Products"
+    },
+    "stats": {
+      "winterSurge": "Winter Traffic Surge",
+      "trafficIncrease": "Winter Traffic vs Standard",
+      "compliance": "Canadian Safety Standard",
+      "maintenance": "Maintenance Plan Included"
+    },
+    "section1": {
+      "badge": "Market Insights",
+      "title": "Navigating the Canadian",
+      "titleHighlight": "Leisure Landscape",
+      "content": "In Canada, the climate plays a pivotal role in the success of indoor play centers. Indoor Playground Solution space Canada strategies focus on creating year-round revenue streams, particularly during the long winter months when outdoor play is limited. By choosing Indoor Playground Solution, investors benefit from equipment tested for extreme temperature shifts and high-intensity use. Our Canadian installations often see a 25% increase in winter traffic compared to standard leisure facilities. Our focus on multi-functional play zones—including toddler areas and ninja courses—allows for a broader demographic reach, ensuring that your facility remains a top choice for Canadian families.",
+      "features": {
+        "yearRound": "Year-round revenue streams with climate-optimized indoor play solutions",
+        "winterTraffic": "25% increase in winter traffic compared to standard leisure facilities",
+        "multiFunctional": "Multi-functional play zones including toddler areas and ninja courses",
+        "broadDemographic": "Broader demographic reach ensuring top choice for Canadian families"
+      }
+    },
+    "section2": {
+      "badge": "Value & Compliance",
+      "title": "Maximizing Value with",
+      "titleHighlight": "Equipment Incentives",
+      "content": "To support new entrepreneurs, we offer a comprehensive welcome package including floor plan design and a 12-month maintenance schedule. Our procurement team provides localized incentives that help offset shipping and import duties. We pride ourselves on transparency regarding license information and safety certifications (CSA Z614), ensuring your business meets all provincial requirements. Our mobile app allows owners to track equipment wear and tear in real-time, facilitating proactive maintenance and long-term asset protection.",
+      "features": {
+        "welcomePackage": "Comprehensive welcome package with floor plan design and 12-month maintenance",
+        "safetyCompliance": "Full CSA Z614 safety certification meeting all provincial requirements",
+        "mobileApp": "Real-time equipment monitoring via mobile app for proactive maintenance",
+        "localIncentives": "Localized incentives to offset shipping and import duties"
+      },
+      "cta": "Get Free Consultation"
+    },
+    "relatedTitle": "Related Resources",
+    "relatedLinks": {
+      "allProducts": "All Products",
+      "process": "Our Process",
+      "caseStudies": "Case Studies"
+    },
+    "faq": {
+      "badge": "FAQ",
+      "title": "Frequently Asked",
+      "titleHighlight": "Questions",
+      "q1": {
+        "question": "How does Indoor Playground Solution handle Canadian safety standards?",
+        "answer": "All our equipment for the Canadian market is manufactured to meet or exceed CSA Z614 standards, ensuring a safe environment and lower insurance premiums for owners."
+      },
+      "q2": {
+        "question": "Are there specific promotional offers for Canadian buyers?",
+        "answer": "Yes, we offer seasonal promotional packages for first-time buyers in Canada that can be applied to full-facility equipment packages."
       }
     }
   }
