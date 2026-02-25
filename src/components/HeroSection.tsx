@@ -169,12 +169,17 @@ export const HeroSection = () => {
             transition={{ duration: 0.6, delay: 0.4 }}
             className="flex flex-col sm:flex-row gap-3 sm:gap-4"
           >
-            <Button variant="hero" size="lg" className="sm:h-12 sm:px-8 sm:text-base lg:h-14 lg:px-10 lg:text-lg" asChild>
-              <a href="#contact" className="group">
-                {t("hero.cta.getQuote")}
-                <ArrowIcon className={`w-4 h-4 sm:w-5 sm:h-5 transition-transform ${isRTL ? 'group-hover:-translate-x-1' : 'group-hover:translate-x-1'}`} />
-              </a>
-            </Button>
+            <motion.div
+              animate={{ scale: [1, 1.04, 1] }}
+              transition={{ duration: 2.5, repeat: Infinity, ease: "easeInOut" }}
+            >
+              <Button variant="hero" size="lg" className="w-full sm:w-auto sm:h-14 sm:px-10 sm:text-lg lg:h-16 lg:px-12 lg:text-xl shadow-glow" asChild>
+                <a href="#contact" className="group">
+                  {t("hero.cta.getQuote")}
+                  <ArrowIcon className={`w-5 h-5 sm:w-6 sm:h-6 transition-transform ${isRTL ? 'group-hover:-translate-x-1' : 'group-hover:translate-x-1'}`} />
+                </a>
+              </Button>
+            </motion.div>
             <Button variant="heroOutline" size="lg" className="sm:h-12 sm:px-8 sm:text-base lg:h-14 lg:px-10 lg:text-lg" asChild>
               <a href="#products">{t("hero.cta.viewProducts")}</a>
             </Button>
