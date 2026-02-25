@@ -491,6 +491,15 @@
     "privacy": "Datenschutz",
     "terms": "Nutzungsbedingungen"
   },
+"globalTicker": {
+    "live": "LIVE",
+    "someoneFrom": "Jemand aus",
+    "requestedQuote": "hat ein Angebot angefragt",
+    "startedProject": "hat ein neues Projekt gestartet",
+    "inquiredEquipment": "hat sich über Spielplatzgeräte erkundigt",
+    "requested3D": "hat ein kostenloses 3D-Design angefragt",
+    "contactedTeam": "hat unser Team kontaktiert"
+  },
 "floatingCta": {
     "scrollToTop": "Nach oben",
     "whatsapp": "Auf WhatsApp chatten"

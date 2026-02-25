@@ -491,6 +491,15 @@
     "privacy": "Politique de Confidentialité",
     "terms": "Conditions d'Utilisation"
    },
+   "globalTicker": {
+    "live": "EN DIRECT",
+    "someoneFrom": "Quelqu'un de",
+    "requestedQuote": "a demandé un devis",
+    "startedProject": "a démarré un nouveau projet",
+    "inquiredEquipment": "s'est renseigné sur les équipements",
+    "requested3D": "a demandé un design 3D gratuit",
+    "contactedTeam": "a contacté notre équipe"
+  },
    "floatingCta": {
      "scrollToTop": "Retour en haut",
      "whatsapp": "Chat sur WhatsApp"

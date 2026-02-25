@@ -491,6 +491,15 @@
     "privacy": "Política de Privacidad",
     "terms": "Términos de Servicio"
   },
+"globalTicker": {
+    "live": "EN VIVO",
+    "someoneFrom": "Alguien de",
+    "requestedQuote": "solicitó un presupuesto",
+    "startedProject": "inició un nuevo proyecto",
+    "inquiredEquipment": "consultó sobre equipos de parque",
+    "requested3D": "solicitó un diseño 3D gratuito",
+    "contactedTeam": "contactó a nuestro equipo"
+  },
 "floatingCta": {
     "scrollToTop": "Volver arriba",
     "whatsapp": "Chatear en WhatsApp"

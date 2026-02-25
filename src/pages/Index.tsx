@@ -1,6 +1,7 @@
 import { lazy, Suspense } from "react";
 import { Header } from "@/components/Header";
 import { HeroSection } from "@/components/HeroSection";
+import { GlobalActivityTicker } from "@/components/GlobalActivityTicker";
 import { PartnersSection } from "@/components/PartnersSection";
 import { CoreSolutionsSection } from "@/components/CoreSolutionsSection";
 import { ProductsSection } from "@/components/ProductsSection";
@@ -41,6 +42,7 @@ const Index = () => {
       <main>
         {/* Above-the-fold: loaded eagerly */}
         <HeroSection />
+        <GlobalActivityTicker />
         <PartnersSection />
         <CoreSolutionsSection />
         <ProductsSection />
