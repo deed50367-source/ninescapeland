@@ -491,7 +491,16 @@
     "privacy": "Privacy Policy",
     "terms": "Terms of Service"
   },
-"floatingCta": {
+"globalTicker": {
+    "live": "LIVE",
+    "someoneFrom": "Someone from",
+    "requestedQuote": "requested a quote",
+    "startedProject": "started a new project",
+    "inquiredEquipment": "inquired about playground equipment",
+    "requested3D": "requested a free 3D design",
+    "contactedTeam": "contacted our team"
+  },
+  "floatingCta": {
     "scrollToTop": "Scroll to top",
     "whatsapp": "Chat on WhatsApp"
   },

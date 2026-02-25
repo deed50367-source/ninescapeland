@@ -491,6 +491,15 @@
     "privacy": "سياسة الخصوصية",
     "terms": "شروط الخدمة"
   },
+"globalTicker": {
+    "live": "مباشر",
+    "someoneFrom": "شخص من",
+    "requestedQuote": "طلب عرض أسعار",
+    "startedProject": "بدأ مشروعاً جديداً",
+    "inquiredEquipment": "استفسر عن معدات الملاعب",
+    "requested3D": "طلب تصميم ثلاثي الأبعاد مجاني",
+    "contactedTeam": "تواصل مع فريقنا"
+  },
 "floatingCta": {
     "scrollToTop": "العودة للأعلى",
     "whatsapp": "محادثة واتساب"
