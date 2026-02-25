@@ -498,7 +498,7 @@ const SoftPlay = () => {
               >
                 <img 
                   src={galleryImages[0]}
-                  alt="Soft play components"
+                  alt="Commercial Soft Play Equipment Components by NinescapeLand"
                   className="rounded-2xl shadow-2xl"
                 />
                 <div className="absolute -bottom-6 -left-6 bg-primary text-primary-foreground p-4 rounded-xl shadow-lg">
@@ -745,7 +745,7 @@ const SoftPlay = () => {
                 >
                   <img 
                     src={image} 
-                    alt={`Soft play ${index + 1}`}
+                    alt={`Custom Soft Play Area Design ${index + 1} by NinescapeLand`}
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                   />
                   <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors" />

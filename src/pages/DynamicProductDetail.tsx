@@ -356,7 +356,7 @@ const DynamicProductDetail = () => {
                   <>
                     <img
                       src={allImages[currentImageIndex]}
-                      alt={getLocalizedName(product)}
+                      alt={`${getLocalizedName(product)} by NinescapeLand`}
                       className="w-full h-full object-cover cursor-zoom-in"
                       onClick={() => setIsLightboxOpen(true)}
                     />
@@ -405,7 +405,7 @@ const DynamicProductDetail = () => {
                     >
                       <img
                         src={img}
-                        alt={`${getLocalizedName(product)} ${index + 1}`}
+                        alt={`${getLocalizedName(product)} ${index + 1} by NinescapeLand`}
                         className="w-full h-full object-cover"
                       />
                     </button>
@@ -614,7 +614,7 @@ const DynamicProductDetail = () => {
                       {relProduct.featured_image ? (
                         <img
                           src={relProduct.featured_image}
-                          alt={getLocalizedName(relProduct)}
+                          alt={`${getLocalizedName(relProduct)} by NinescapeLand`}
                           className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                         />
                       ) : (
@@ -668,7 +668,7 @@ const DynamicProductDetail = () => {
             </button>
             <img
               src={allImages[currentImageIndex]}
-              alt={getLocalizedName(product)}
+              alt={`${getLocalizedName(product)} by NinescapeLand`}
               className="max-w-[90vw] max-h-[90vh] object-contain"
               onClick={(e) => e.stopPropagation()}
             />

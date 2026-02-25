@@ -171,7 +171,7 @@ export const FeaturedShowcaseSection = () => {
                   <div className="relative h-28 sm:h-32 overflow-hidden">
                     <img
                       src={product.image}
-                      alt={product.title}
+                      alt={`${product.title} by NinescapeLand`}
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                       loading="lazy"
                       decoding="async"
