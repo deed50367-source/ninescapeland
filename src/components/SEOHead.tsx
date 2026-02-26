@@ -38,7 +38,7 @@ export const SEOHead = ({
     keywords?: string;
   } | undefined;
 
-  const title = dynamicTitle || seo?.title || t(`pages.${pageKey}.title`, "") + " " + t(`pages.${pageKey}.titleHighlight`, "") || siteName;
+  const title = dynamicTitle || seo?.title || [t(`pages.${pageKey}.title`, ""), t(`pages.${pageKey}.titleHighlight`, "")].filter(Boolean).join(" ") || siteName;
   const description = dynamicDescription || seo?.description || t(`pages.${pageKey}.description`, "");
   const keywords = dynamicKeywords || seo?.keywords || t("seo.defaultKeywords", "");
 
