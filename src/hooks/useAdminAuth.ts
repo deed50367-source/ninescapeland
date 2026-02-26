@@ -104,7 +104,7 @@ export const useAdminAuth = () => {
         // Only handle SIGNED_IN, not TOKEN_REFRESHED or other events
         if (session?.user) {
           setUser(session.user);
-          setIsLoading(true);
+          // Don't set isLoading=true here to avoid unmounting active UI
           const hasRole = await checkAdminRole(session.user.id);
           if (mounted) {
             setIsAdmin(hasRole);
