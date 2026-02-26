@@ -72,7 +72,7 @@ export const productImages = {
   
   // 软体游乐 - "Soft Play Areas"
   // 使用软体游乐全景（幼儿软体设备）
-  softPlay: getStorageUrl("dcbc5ed3-1863-4db6-bacf-59919b3abec6/1768294376731-g5jiv8.jpg"), // 白底图 1.png - 软体游乐
+  softPlay: getStorageUrl("dcbc5ed3-1863-4db6-bacf-59919b3abec6/1768294400190-bx9gha.jpg"), // 白底图 6.png - 软体游乐
 };
 
 /**
