@@ -577,7 +577,7 @@ const AdminBlogTab = () => {
         setIsEditorOpen(open);
       }}>
         <DialogContent 
-          className="max-w-5xl max-h-[95vh] overflow-hidden flex flex-col"
+          className="max-w-5xl max-h-[95vh] overflow-hidden flex flex-col [&>button:last-child]:hidden"
           onPointerDownOutside={(e) => e.preventDefault()}
           onInteractOutside={(e) => e.preventDefault()}
           onEscapeKeyDown={(e) => e.preventDefault()}
