@@ -53,8 +53,15 @@ const AdminDashboard = () => {
     { key: "users", icon: Users, label: "用户", permission: "user_management" as Permission },
   ];
 
-  // Get visible tabs based on permissions
-  const visibleTabs = tabs.filter(tab => hasPermission(tab.permission));
+  // Get visible tabs based on permissions - memoize to prevent unnecessary re-renders
+  const visibleTabs = useMemo(() => tabs.filter(tab => hasPermission(tab.permission)), [hasPermission]);
+
+  // Track initial load completion
+  useEffect(() => {
+    if (!authLoading && !permLoading) {
+      initialLoadDone.current = true;
+    }
+  }, [authLoading, permLoading]);
 
   // Set initial active tab to first available
   useEffect(() => {
