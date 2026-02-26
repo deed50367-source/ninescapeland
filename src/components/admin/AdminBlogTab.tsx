@@ -22,7 +22,8 @@ import {
   Image as ImageIcon,
   Settings,
   FileEdit,
-  ExternalLink
+  ExternalLink,
+  X
 } from "lucide-react";
 import { toast } from "sonner";
 import { format } from "date-fns";
@@ -566,13 +567,28 @@ const AdminBlogTab = () => {
         </div>
       )}
 
-      {/* Editor Dialog */}
-      <Dialog open={isEditorOpen} onOpenChange={setIsEditorOpen}>
-        <DialogContent className="max-w-5xl max-h-[95vh] overflow-hidden flex flex-col">
-          <DialogHeader>
+      {/* Editor Dialog - prevent accidental closing */}
+      <Dialog open={isEditorOpen} onOpenChange={(open) => {
+        // Only allow closing via explicit cancel/save buttons, not external events
+        if (!open) {
+          console.log("[BlogEditor] Dialog onOpenChange called with false - blocked");
+          return;
+        }
+        setIsEditorOpen(open);
+      }}>
+        <DialogContent 
+          className="max-w-5xl max-h-[95vh] overflow-hidden flex flex-col [&>button:last-child]:hidden"
+          onPointerDownOutside={(e) => e.preventDefault()}
+          onInteractOutside={(e) => e.preventDefault()}
+          onEscapeKeyDown={(e) => e.preventDefault()}
+        >
+          <DialogHeader className="flex flex-row items-center justify-between">
             <DialogTitle>
               {editingPost ? "编辑文章" : "新建文章"}
             </DialogTitle>
+            <Button variant="ghost" size="icon" className="h-8 w-8" onClick={() => setIsEditorOpen(false)}>
+              <X className="h-4 w-4" />
+            </Button>
           </DialogHeader>
           
           <Tabs defaultValue="content" className="flex-1 overflow-hidden flex flex-col">
