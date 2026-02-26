@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useMemo, useRef } from "react";
 import { useTranslation } from "react-i18next";
 import { useNavigate, Link } from "react-router-dom";
 import { useAdminAuth } from "@/hooks/useAdminAuth";
@@ -38,6 +38,7 @@ const AdminDashboard = () => {
   const { user, isAdmin, isLoading: authLoading, signOut } = useAdminAuth();
   const { permissions, isLoading: permLoading, hasPermission, canAccessBackend } = useCurrentUserPermissions();
   const [activeTab, setActiveTab] = useState("inquiries");
+  const initialLoadDone = useRef(false);
 
   const loadingTimedOut = useLoadingWatchdog(authLoading || permLoading, 12000);
 
@@ -52,8 +53,15 @@ const AdminDashboard = () => {
     { key: "users", icon: Users, label: "用户", permission: "user_management" as Permission },
   ];
 
-  // Get visible tabs based on permissions
-  const visibleTabs = tabs.filter(tab => hasPermission(tab.permission));
+  // Get visible tabs based on permissions - memoize to prevent unnecessary re-renders
+  const visibleTabs = useMemo(() => tabs.filter(tab => hasPermission(tab.permission)), [hasPermission]);
+
+  // Track initial load completion
+  useEffect(() => {
+    if (!authLoading && !permLoading) {
+      initialLoadDone.current = true;
+    }
+  }, [authLoading, permLoading]);
 
   // Set initial active tab to first available
   useEffect(() => {
@@ -81,7 +89,7 @@ const AdminDashboard = () => {
   };
 
   // Loading state
-  if (authLoading || permLoading) {
+  if ((authLoading || permLoading) && !initialLoadDone.current) {
     return (
       <div className="min-h-screen flex items-center justify-center bg-background">
         <div className="flex flex-col items-center gap-4">
