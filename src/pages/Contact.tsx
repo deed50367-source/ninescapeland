@@ -8,7 +8,7 @@ import { FloatingCTA } from "@/components/FloatingCTA";
 import { ContactMascotBanner } from "@/components/ContactMascotBanner";
 import { ContactTrustSection } from "@/components/ContactTrustSection";
 import { SEOHead } from "@/components/SEOHead";
-import { BreadcrumbSchema } from "@/components/StructuredData";
+import { BreadcrumbSchema, LocalBusinessSchema } from "@/components/StructuredData";
 
 const Contact = () => {
   const { t } = useTranslation();
@@ -22,6 +22,7 @@ const Contact = () => {
     <div className="min-h-screen">
       <SEOHead pageKey="contact" />
       <BreadcrumbSchema items={breadcrumbItems} />
+      <LocalBusinessSchema />
       <Header />
       <main>
         <PageHero
