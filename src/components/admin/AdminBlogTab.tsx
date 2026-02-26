@@ -581,10 +581,13 @@ const AdminBlogTab = () => {
           onInteractOutside={(e) => e.preventDefault()}
           onEscapeKeyDown={(e) => e.preventDefault()}
         >
-          <DialogHeader>
+          <DialogHeader className="flex flex-row items-center justify-between">
             <DialogTitle>
               {editingPost ? "编辑文章" : "新建文章"}
             </DialogTitle>
+            <Button variant="ghost" size="icon" className="h-8 w-8" onClick={() => setIsEditorOpen(false)}>
+              <X className="h-4 w-4" />
+            </Button>
           </DialogHeader>
           
           <Tabs defaultValue="content" className="flex-1 overflow-hidden flex flex-col">
