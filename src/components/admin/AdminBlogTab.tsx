@@ -566,9 +566,21 @@ const AdminBlogTab = () => {
         </div>
       )}
 
-      {/* Editor Dialog */}
-      <Dialog open={isEditorOpen} onOpenChange={setIsEditorOpen}>
-        <DialogContent className="max-w-5xl max-h-[95vh] overflow-hidden flex flex-col">
+      {/* Editor Dialog - prevent accidental closing */}
+      <Dialog open={isEditorOpen} onOpenChange={(open) => {
+        // Only allow closing via explicit cancel/save buttons, not external events
+        if (!open) {
+          console.log("[BlogEditor] Dialog onOpenChange called with false - blocked");
+          return;
+        }
+        setIsEditorOpen(open);
+      }}>
+        <DialogContent 
+          className="max-w-5xl max-h-[95vh] overflow-hidden flex flex-col"
+          onPointerDownOutside={(e) => e.preventDefault()}
+          onInteractOutside={(e) => e.preventDefault()}
+          onEscapeKeyDown={(e) => e.preventDefault()}
+        >
           <DialogHeader>
             <DialogTitle>
               {editingPost ? "编辑文章" : "新建文章"}
