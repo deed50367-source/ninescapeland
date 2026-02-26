@@ -22,6 +22,7 @@ const Contact = () => {
     <div className="min-h-screen">
       <SEOHead pageKey="contact" />
       <BreadcrumbSchema items={breadcrumbItems} />
+      <LocalBusinessSchema />
       <Header />
       <main>
         <PageHero
