@@ -270,6 +270,9 @@ const DynamicProducts = () => {
         {/* All Products Section */}
         <section className="py-16">
           <div className="container mx-auto px-4">
+            <h2 className="text-3xl font-bold mb-8">
+              {t("products.allProducts", "All Products")}
+            </h2>
             {/* Filters */}
             <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-4 mb-8">
               {/* Category Filter */}
