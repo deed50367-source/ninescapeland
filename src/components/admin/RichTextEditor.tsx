@@ -50,6 +50,9 @@ const RichTextEditor = ({ content, onChange, placeholder = "开始编写内容..
   const [pendingImageUrl, setPendingImageUrl] = useState<string | null>(null);
   const [imageAlt, setImageAlt] = useState("");
 
+  // Use a ref to store initial content so it doesn't cause editor re-creation
+  const initialContent = useRef(content);
+
   const editor = useEditor({
     extensions: [
       StarterKit.configure({
@@ -75,7 +78,8 @@ const RichTextEditor = ({ content, onChange, placeholder = "开始编写内容..
         types: ["heading", "paragraph"],
       }),
     ],
-    content,
+    content: initialContent.current,
+    immediatelyRender: false,
     onUpdate: ({ editor }) => {
       onChange(editor.getHTML());
     },
