@@ -27,7 +27,7 @@ import {
   Code,
   Minus,
 } from "lucide-react";
-import { useState } from "react";
+import { useState, useRef } from "react";
 import GalleryPicker from "./GalleryPicker";
 import {
   Dialog,
