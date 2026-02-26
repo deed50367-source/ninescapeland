@@ -38,6 +38,7 @@ const AdminDashboard = () => {
   const { user, isAdmin, isLoading: authLoading, signOut } = useAdminAuth();
   const { permissions, isLoading: permLoading, hasPermission, canAccessBackend } = useCurrentUserPermissions();
   const [activeTab, setActiveTab] = useState("inquiries");
+  const initialLoadDone = useRef(false);
 
   const loadingTimedOut = useLoadingWatchdog(authLoading || permLoading, 12000);
 
