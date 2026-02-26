@@ -2415,8 +2415,28 @@
     },
     "officeWellness": {
       "title": "Workplace Play & Custom Structures | NinescapeLand",
-      "description": "Improve office morale with custom play structures. Top-rated soft play and indoor playground equipment for corporate wellness.",
+      "description": "Transform your office with custom play structures for corporate wellness. Reduce stress, boost creativity & morale with safe, professional indoor play zones.",
       "keywords": "custom play structures, office playground, corporate wellness, indoor playground equipment, workplace play area, office play structures"
+    },
+    "softPlayMallSolutions": {
+      "title": "Soft Play Equipment for Shopping Malls | NinescapeLand",
+      "description": "Boost shopping mall foot traffic with premium soft play equipment. Custom-designed, durable & safe play zones that increase dwell time and tenant satisfaction.",
+      "keywords": "soft play equipment shopping mall, mall play area, commercial soft play, indoor playground shopping center"
+    },
+    "trampolineParkFEC": {
+      "title": "Trampoline Park Solutions for FECs | NinescapeLand",
+      "description": "Turnkey trampoline park solutions for Family Entertainment Centers. High-performance, safety-certified equipment with 12+ activity zones for maximum ROI.",
+      "keywords": "trampoline park FEC, family entertainment center trampoline, commercial trampoline park, FEC attractions"
+    },
+    "roiUK": {
+      "title": "Indoor Playground ROI Analysis UK | NinescapeLand",
+      "description": "Comprehensive ROI analysis for indoor playgrounds in the UK market. Expert insights on BS EN 1176 compliance, market trends & investment returns for entrepreneurs.",
+      "keywords": "indoor playground ROI UK, indoor playground business UK, indoor playground investment United Kingdom, BS EN 1176"
+    },
+    "roiCanada": {
+      "title": "Indoor Playground ROI Canada | NinescapeLand",
+      "description": "Maximize your indoor playground investment in Canada. Space-optimized designs, CSA Z614 certified equipment & ROI data for high-traffic Canadian family centers.",
+      "keywords": "indoor playground ROI Canada, indoor playground business Canada, indoor playground investment Canada, CSA Z614"
     }
   },
   "activePlayRunning": {
@@ -2687,28 +2707,6 @@
         "question": "How do you ensure safety in high-traffic trampoline parks?",
         "answer": "We incorporate redundant safety systems including secondary netting, thick padding that overlaps the spring zones, and high-impact absorbing airbeds, along with detailed safety manuals and staff training protocols."
       }
-    }
-  },
-  "seo": {
-    "softPlayMallSolutions": {
-      "title": "Soft Play Equipment Solutions for Shopping Malls | IPS",
-      "description": "Enhance shopping mall foot traffic with premium soft play equipment solutions. Durable, safe, and custom-designed.",
-      "keywords": "soft play equipment shopping mall, mall play area, commercial soft play, indoor playground shopping center"
-    },
-    "trampolineParkFEC": {
-      "title": "Commercial Trampoline Park Solutions for FECs | IPS",
-      "description": "Turnkey trampoline park solutions for Family Entertainment Centers. High-performance equipment for maximum safety.",
-      "keywords": "trampoline park FEC, family entertainment center trampoline, commercial trampoline park, FEC attractions"
-    },
-    "roiUK": {
-      "title": "Indoor Playground ROI Analysis UK | IPS",
-      "description": "Discover the ROI of indoor playgrounds in the UK. Expert market insights and high-quality equipment for British entrepreneurs.",
-      "keywords": "indoor playground ROI UK, indoor playground business UK, indoor playground investment United Kingdom, BS EN 1176"
-    },
-    "roiCanada": {
-      "title": "Indoor Playground ROI Canada | IPS",
-      "description": "Maximize your investment in Canada. Space-optimized designs for high-traffic Canadian family centers.",
-      "keywords": "indoor playground ROI Canada, indoor playground business Canada, indoor playground investment Canada, CSA Z614"
     }
   },
   "roiUK": {
