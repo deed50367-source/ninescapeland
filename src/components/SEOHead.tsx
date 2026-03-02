@@ -125,7 +125,17 @@ export const SEOHead = ({
       <meta name="twitter:image" content={`${baseUrl}${ogImage || defaultOgImage}`} />
       <meta name="twitter:image:alt" content={fullTitle} />
       
-      {/* hreflang tags are managed globally by LanguageWrapper */}
+      {/* Content freshness */}
+      {lastModified && <meta property="article:modified_time" content={lastModified} />}
+      
+      {/* Hreflang tags for international SEO */}
+      {languages.map((l) => {
+        const href = l.code === "en"
+          ? `${baseUrl}${pathWithoutLang}`
+          : `${baseUrl}/${l.code}${pathWithoutLang === "/" ? "" : pathWithoutLang}`;
+        return <link key={l.code} rel="alternate" hrefLang={l.code} href={href} />;
+      })}
+      <link rel="alternate" hrefLang="x-default" href={`${baseUrl}${pathWithoutLang}`} />
     </Helmet>
   );
 };
