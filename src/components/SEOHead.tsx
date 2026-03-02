@@ -11,6 +11,7 @@ interface SEOHeadProps {
   ogImage?: string;
   noIndex?: boolean;
   ogType?: "website" | "article";
+  lastModified?: string;
 }
 
 const baseUrl = "https://indoorplaygroundsolution.com";
