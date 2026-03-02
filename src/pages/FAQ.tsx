@@ -23,10 +23,16 @@ const FAQ = () => {
     { question: t("faq.items.materials.question"), answer: t("faq.items.materials.answer") },
   ];
 
+  const breadcrumbItems = [
+    { name: t("nav.home", "Home"), url: "https://indoorplaygroundsolution.com" },
+    { name: "FAQ", url: "https://indoorplaygroundsolution.com/faq" },
+  ];
+
   return (
     <div className="min-h-screen">
       <SEOHead pageKey="faq" />
       <FAQSchema items={faqItems} />
+      <BreadcrumbSchema items={breadcrumbItems} />
       <Header />
       <main>
         <PageHero

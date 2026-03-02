@@ -66,6 +66,12 @@ export const BlogArticleSEO = ({
   return (
     <Helmet>
       <html lang={currentLang} dir={isRTL ? "rtl" : "ltr"} />
+      
+      {/* Base meta tags for SPA hydration */}
+      <meta charSet="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="icon" href="/favicon.ico" />
+      
       <title>{fullTitle}</title>
       <meta name="description" content={description} />
       {keywords && <meta name="keywords" content={keywords} />}
