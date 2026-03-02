@@ -21,6 +21,7 @@ export const Footer = () => {
   const { isRTL } = useRTL();
   const { localizedPath } = useLocalizedPath();
   const { openWhatsApp, getWhatsAppUrl } = useWhatsAppTracking();
+  const { lang } = useParams<{ lang: string }>();
 
   const productLinks = [
     { label: t("footer.links.indoorPlayground"), href: localizedPath("/products/indoor-playground") },
