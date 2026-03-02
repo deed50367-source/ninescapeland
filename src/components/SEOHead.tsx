@@ -70,6 +70,14 @@ export const SEOHead = ({
   
   const canonicalUrl = getCanonicalUrl();
   
+  // Build path without language prefix for hreflang generation
+  const getPathWithoutLang = () => {
+    const pathname = location.pathname.replace(/\/$/, "") || "/";
+    // Remove any language prefix
+    const cleaned = pathname.replace(/^\/(en|es|pt|de|fr|ar)(\/|$)/, "/");
+    return cleaned === "" ? "/" : cleaned;
+  };
+  const pathWithoutLang = getPathWithoutLang();
   
   const langConfig = languages.find((l) => l.code === currentLang);
   const isRTL = langConfig?.rtl || false;
