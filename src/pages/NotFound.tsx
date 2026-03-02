@@ -33,6 +33,8 @@ const NotFound = () => {
         dynamicDescription="The page you are looking for does not exist."
         noIndex={true}
       />
+      {/* Signal to prerender services that this is a 404 */}
+      <meta name="prerender-status-code" content="404" />
       <div className="text-center px-4">
         <div className="text-8xl font-bold text-primary mb-4">404</div>
         <h1 className="mb-4 text-2xl md:text-3xl font-bold">{t("notFound.title", "Oops! Page not found")}</h1>

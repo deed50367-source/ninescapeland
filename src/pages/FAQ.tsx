@@ -6,7 +6,7 @@ import { ContactSection } from "@/components/ContactSection";
 import { Footer } from "@/components/Footer";
 import { FloatingCTA } from "@/components/FloatingCTA";
 import { SEOHead } from "@/components/SEOHead";
-import { FAQSchema } from "@/components/StructuredData";
+import { FAQSchema, BreadcrumbSchema } from "@/components/StructuredData";
 
 const FAQ = () => {
   const { t } = useTranslation();
@@ -23,10 +23,16 @@ const FAQ = () => {
     { question: t("faq.items.materials.question"), answer: t("faq.items.materials.answer") },
   ];
 
+  const breadcrumbItems = [
+    { name: t("nav.home", "Home"), url: "https://indoorplaygroundsolution.com" },
+    { name: "FAQ", url: "https://indoorplaygroundsolution.com/faq" },
+  ];
+
   return (
     <div className="min-h-screen">
       <SEOHead pageKey="faq" />
       <FAQSchema items={faqItems} />
+      <BreadcrumbSchema items={breadcrumbItems} />
       <Header />
       <main>
         <PageHero
