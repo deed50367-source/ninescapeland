@@ -6,7 +6,7 @@ import { ContactSection } from "@/components/ContactSection";
 import { Footer } from "@/components/Footer";
 import { FloatingCTA } from "@/components/FloatingCTA";
 import { SEOHead } from "@/components/SEOHead";
-import { FAQSchema } from "@/components/StructuredData";
+import { FAQSchema, BreadcrumbSchema } from "@/components/StructuredData";
 
 const FAQ = () => {
   const { t } = useTranslation();

@@ -319,7 +319,7 @@ const Blog = () => {
                             {post.cover_image ? (
                               <img
                                 src={post.cover_image}
-                                alt=""
+                                alt={post.title || "Blog post cover image"}
                                 className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                                 loading="lazy"
                               />
