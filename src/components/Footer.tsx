@@ -1,13 +1,13 @@
 import { useTranslation } from "react-i18next";
-import { Link } from "react-router-dom";
-import { Mail, Phone, MapPin, Facebook, Linkedin, Youtube, Instagram } from "lucide-react";
+import { Link, useLocation, useParams } from "react-router-dom";
+import { Mail, Phone, MapPin, Facebook, Linkedin, Youtube, Instagram, Globe } from "lucide-react";
 import { useRTL } from "@/hooks/useRTL";
 import { useLocalizedPath } from "@/hooks/useLocalizedPath";
 import logo from "@/assets/logo.png";
 import { useWhatsAppTracking } from "@/hooks/useWhatsAppTracking";
 import { useQuery } from "@tanstack/react-query";
 import { supabase } from "@/integrations/supabase/client";
-import { useTranslation as useI18n } from "react-i18next";
+import { languages } from "@/i18n/config";
 
 const socialLinks = [
   { icon: Facebook, href: "#", label: "Facebook" },
@@ -21,6 +21,7 @@ export const Footer = () => {
   const { isRTL } = useRTL();
   const { localizedPath } = useLocalizedPath();
   const { openWhatsApp, getWhatsAppUrl } = useWhatsAppTracking();
+  const { lang } = useParams<{ lang: string }>();
 
   const productLinks = [
     { label: t("footer.links.indoorPlayground"), href: localizedPath("/products/indoor-playground") },
@@ -181,6 +182,27 @@ export const Footer = () => {
               </li>
             </ul>
           </div>
+        </div>
+      </div>
+
+      {/* Language Links - crawlable <a> tags for SEO */}
+      <div className="border-t border-primary-foreground/10">
+        <div className="container-wide py-4 flex flex-wrap justify-center items-center gap-3 text-xs sm:text-sm">
+          <Globe className="w-4 h-4 text-primary-foreground/60" />
+          {languages.map((langItem, index) => {
+            const href = langItem.code === "en" ? "/" : `/${langItem.code}`;
+            const isCurrent = (lang || "en") === langItem.code;
+            return (
+              <a
+                key={langItem.code}
+                href={href}
+                className={`hover:text-primary-foreground transition-colors ${isCurrent ? "text-primary-foreground font-semibold" : "text-primary-foreground/60"}`}
+                hrefLang={langItem.code}
+              >
+                {langItem.flag} {langItem.name}
+              </a>
+            );
+          })}
         </div>
       </div>
 
