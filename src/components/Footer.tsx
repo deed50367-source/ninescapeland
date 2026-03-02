@@ -184,6 +184,27 @@ export const Footer = () => {
         </div>
       </div>
 
+      {/* Language Links - crawlable <a> tags for SEO */}
+      <div className="border-t border-primary-foreground/10">
+        <div className="container-wide py-4 flex flex-wrap justify-center items-center gap-3 text-xs sm:text-sm">
+          <Globe className="w-4 h-4 text-primary-foreground/60" />
+          {languages.map((langItem, index) => {
+            const href = langItem.code === "en" ? "/" : `/${langItem.code}`;
+            const isCurrent = (lang || "en") === langItem.code;
+            return (
+              <a
+                key={langItem.code}
+                href={href}
+                className={`hover:text-primary-foreground transition-colors ${isCurrent ? "text-primary-foreground font-semibold" : "text-primary-foreground/60"}`}
+                hrefLang={langItem.code}
+              >
+                {langItem.flag} {langItem.name}
+              </a>
+            );
+          })}
+        </div>
+      </div>
+
       {/* Bottom Bar */}
       <div className="border-t border-primary-foreground/10">
         <div className="container-wide py-4 sm:py-6 flex flex-col sm:flex-row justify-between items-center gap-3 sm:gap-4 text-xs sm:text-sm text-primary-foreground/60">
