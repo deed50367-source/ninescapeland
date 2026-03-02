@@ -213,6 +213,7 @@ export default function CaseStudies() {
                           src={caseStudy.images[0]}
                           alt={caseStudy.title}
                           className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                          loading="lazy"
                         />
                       ) : (
                         <div className="w-full h-full flex items-center justify-center text-4xl">
@@ -309,6 +310,7 @@ export default function CaseStudies() {
                   src={selectedCase.images[0]}
                   alt={selectedCase.title}
                   className="w-full h-full object-cover"
+                  loading="lazy"
                 />
                 <button
                   onClick={() => setSelectedCase(null)}
@@ -370,6 +372,7 @@ export default function CaseStudies() {
                       src={img}
                       alt={`${selectedCase.title} ${i + 2}`}
                       className="w-full h-24 object-cover rounded-lg"
+                      loading="lazy"
                     />
                   ))}
                 </div>
