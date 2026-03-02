@@ -1,13 +1,13 @@
 import { useTranslation } from "react-i18next";
-import { Link } from "react-router-dom";
-import { Mail, Phone, MapPin, Facebook, Linkedin, Youtube, Instagram } from "lucide-react";
+import { Link, useLocation, useParams } from "react-router-dom";
+import { Mail, Phone, MapPin, Facebook, Linkedin, Youtube, Instagram, Globe } from "lucide-react";
 import { useRTL } from "@/hooks/useRTL";
 import { useLocalizedPath } from "@/hooks/useLocalizedPath";
 import logo from "@/assets/logo.png";
 import { useWhatsAppTracking } from "@/hooks/useWhatsAppTracking";
 import { useQuery } from "@tanstack/react-query";
 import { supabase } from "@/integrations/supabase/client";
-import { useTranslation as useI18n } from "react-i18next";
+import { languages } from "@/i18n/config";
 
 const socialLinks = [
   { icon: Facebook, href: "#", label: "Facebook" },
