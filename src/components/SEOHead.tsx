@@ -26,6 +26,7 @@ export const SEOHead = ({
   ogImage,
   noIndex = false,
   ogType = "website",
+  lastModified,
 }: SEOHeadProps) => {
   const { t, i18n } = useTranslation();
   const { lang } = useParams<{ lang: string }>();
