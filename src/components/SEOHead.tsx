@@ -11,6 +11,7 @@ interface SEOHeadProps {
   ogImage?: string;
   noIndex?: boolean;
   ogType?: "website" | "article";
+  lastModified?: string;
 }
 
 const baseUrl = "https://indoorplaygroundsolution.com";
@@ -25,6 +26,7 @@ export const SEOHead = ({
   ogImage,
   noIndex = false,
   ogType = "website",
+  lastModified,
 }: SEOHeadProps) => {
   const { t, i18n } = useTranslation();
   const { lang } = useParams<{ lang: string }>();
@@ -68,6 +70,14 @@ export const SEOHead = ({
   
   const canonicalUrl = getCanonicalUrl();
   
+  // Build path without language prefix for hreflang generation
+  const getPathWithoutLang = () => {
+    const pathname = location.pathname.replace(/\/$/, "") || "/";
+    // Remove any language prefix
+    const cleaned = pathname.replace(/^\/(en|es|pt|de|fr|ar)(\/|$)/, "/");
+    return cleaned === "" ? "/" : cleaned;
+  };
+  const pathWithoutLang = getPathWithoutLang();
   
   const langConfig = languages.find((l) => l.code === currentLang);
   const isRTL = langConfig?.rtl || false;
@@ -115,7 +125,17 @@ export const SEOHead = ({
       <meta name="twitter:image" content={`${baseUrl}${ogImage || defaultOgImage}`} />
       <meta name="twitter:image:alt" content={fullTitle} />
       
-      {/* hreflang tags are managed globally by LanguageWrapper */}
+      {/* Content freshness */}
+      {lastModified && <meta property="article:modified_time" content={lastModified} />}
+      
+      {/* Hreflang tags for international SEO */}
+      {languages.map((l) => {
+        const href = l.code === "en"
+          ? `${baseUrl}${pathWithoutLang}`
+          : `${baseUrl}/${l.code}${pathWithoutLang === "/" ? "" : pathWithoutLang}`;
+        return <link key={l.code} rel="alternate" hrefLang={l.code} href={href} />;
+      })}
+      <link rel="alternate" hrefLang="x-default" href={`${baseUrl}${pathWithoutLang}`} />
     </Helmet>
   );
 };
