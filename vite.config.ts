@@ -3,6 +3,46 @@ import react from "@vitejs/plugin-react-swc";
 import path from "path";
 import { componentTagger } from "lovable-tagger";
 import { VitePWA } from "vite-plugin-pwa";
+// @ts-ignore - conditional import for prerendering
+import vitePrerender from "vite-plugin-prerender";
+
+// Generate all routes for prerendering (English + 5 other languages)
+const generatePrerenderRoutes = () => {
+  const coreRoutes = [
+    "/",
+    "/about-us",
+    "/products",
+    "/products/indoor-playground",
+    "/products/trampoline-park",
+    "/products/ninja-course",
+    "/products/soft-play",
+    "/process",
+    "/projects",
+    "/contact",
+    "/faq",
+    "/blog",
+    "/case-studies",
+    "/best-indoorplaygroundsolution-active-play-for-running-facilities",
+    "/indoorplaygroundsolution-office-wellness-solutions",
+    "/soft-play-equipment-shopping-mall-solutions",
+    "/trampoline-park-fec-solutions",
+    "/indoor-playground-roi-analysis-uk",
+    "/indoor-playground-roi-canada",
+  ];
+
+  const languages = ["es", "pt", "de", "fr", "ar"];
+  const allRoutes = [...coreRoutes];
+
+  for (const lang of languages) {
+    for (const route of coreRoutes) {
+      allRoutes.push(route === "/" ? `/${lang}` : `/${lang}${route}`);
+    }
+  }
+
+  return allRoutes;
+};
+
+const enablePrerender = process.env.PRERENDER === "true";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
@@ -152,6 +192,25 @@ export default defineConfig(({ mode }) => ({
         enabled: false, // Disable in development
       },
     }),
+    // Conditionally enable prerendering for static HTML generation
+    // Run with: PRERENDER=true npm run build (or npm run build:static)
+    enablePrerender &&
+      vitePrerender({
+        staticDir: path.join(__dirname, "dist"),
+        routes: generatePrerenderRoutes(),
+        renderer: {
+          renderAfterTime: 5000, // Wait 5s for dynamic content to load
+        },
+        postProcess(renderedRoute: any) {
+          // Fix trailing slashes
+          renderedRoute.route = renderedRoute.route.replace(/\/$/, "") || "/";
+          // Add doctype if missing
+          if (!renderedRoute.html.startsWith("<!")) {
+            renderedRoute.html = `<!DOCTYPE html>${renderedRoute.html}`;
+          }
+          return renderedRoute;
+        },
+      }),
   ].filter(Boolean),
   resolve: {
     alias: {
