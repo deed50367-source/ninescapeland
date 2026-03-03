@@ -3,6 +3,8 @@ import react from "@vitejs/plugin-react-swc";
 import path from "path";
 import { componentTagger } from "lovable-tagger";
 import { VitePWA } from "vite-plugin-pwa";
+// @ts-ignore - conditional import for prerendering
+import vitePrerender from "vite-plugin-prerender";
 
 // Generate all routes for prerendering (English + 5 other languages)
 const generatePrerenderRoutes = () => {
@@ -193,7 +195,7 @@ export default defineConfig(({ mode }) => ({
     // Conditionally enable prerendering for static HTML generation
     // Run with: PRERENDER=true npm run build (or npm run build:static)
     enablePrerender &&
-      (await import("vite-plugin-prerender")).default({
+      vitePrerender({
         staticDir: path.join(__dirname, "dist"),
         routes: generatePrerenderRoutes(),
         renderer: {
