@@ -24,8 +24,11 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Build frontend
-        run: npm run build
+      - name: Install Puppeteer for prerendering
+        run: npx puppeteer browsers install chrome
+
+      - name: Build and Prerender static HTML
+        run: npm run build:static
         env:
           # These are PUBLISHABLE keys (safe to expose in client-side code)
           VITE_SUPABASE_URL: "https://gianldlquknsdhfpqqfe.supabase.co"
