@@ -190,6 +190,25 @@ export default defineConfig(({ mode }) => ({
         enabled: false, // Disable in development
       },
     }),
+    // Conditionally enable prerendering for static HTML generation
+    // Run with: PRERENDER=true npm run build (or npm run build:static)
+    enablePrerender &&
+      (await import("vite-plugin-prerender")).default({
+        staticDir: path.join(__dirname, "dist"),
+        routes: generatePrerenderRoutes(),
+        renderer: {
+          renderAfterTime: 5000, // Wait 5s for dynamic content to load
+        },
+        postProcess(renderedRoute: any) {
+          // Fix trailing slashes
+          renderedRoute.route = renderedRoute.route.replace(/\/$/, "") || "/";
+          // Add doctype if missing
+          if (!renderedRoute.html.startsWith("<!")) {
+            renderedRoute.html = `<!DOCTYPE html>${renderedRoute.html}`;
+          }
+          return renderedRoute;
+        },
+      }),
   ].filter(Boolean),
   resolve: {
     alias: {
