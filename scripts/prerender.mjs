@@ -132,13 +132,11 @@ async function prerenderRoute(browser, route) {
     await page.waitForFunction(
       () => {
         const root = document.getElementById("root");
-        // Ensure the loader is gone and real content is present
-        return (
-          root &&
-          root.children.length > 0 &&
-          !document.getElementById("initial-loader")?.style?.display !== "none" &&
-          root.innerHTML.length > 500
-        );
+        if (!root || root.children.length === 0 || root.innerHTML.length < 500) return false;
+        // Ensure the initial loader is gone
+        const loader = document.getElementById("initial-loader");
+        if (loader && loader.style.display !== "none") return false;
+        return true;
       },
       { timeout: 15000 }
     ).catch(() => {
@@ -209,6 +207,36 @@ async function main() {
   server.close();
 
   console.log(`\n✨ Prerendering complete! ${routes.length} static HTML files generated.`);
+
+  // ── Post-build verification ──
+  console.log("\n🔍 Verifying prerendered HTML quality...\n");
+  let passCount = 0;
+  let failCount = 0;
+  const checks = [
+    { label: "Has <h1>", regex: /<h1[\s>]/i },
+    { label: "Has meta description", regex: /<meta[^>]+name=["']description["'][^>]+content=["'][^"']+["']/i },
+    { label: "Has JSON-LD", regex: /<script[^>]+type=["']application\/ld\+json["']/i },
+    { label: "Has hreflang", regex: /<link[^>]+hreflang=/i },
+    { label: "Has <img alt=", regex: /<img[^>]+alt=["'][^"']+["']/i },
+  ];
+
+  for (const route of CORE_ROUTES.slice(0, 5)) {
+    const filePath = route === "/"
+      ? join(DIST_DIR, "index.html")
+      : join(DIST_DIR, route, "index.html");
+    if (!existsSync(filePath)) {
+      console.log(`  ⚠️  ${route} — file missing`);
+      failCount++;
+      continue;
+    }
+    const html = readFileSync(filePath, "utf-8");
+    const results = checks.map((c) => c.regex.test(html) ? "✅" : "❌");
+    const allPass = results.every((r) => r === "✅");
+    if (allPass) passCount++; else failCount++;
+    console.log(`  ${allPass ? "✅" : "⚠️"} ${route}  ${checks.map((c, i) => `${results[i]} ${c.label}`).join("  ")}`);
+  }
+
+  console.log(`\n📊 Verification: ${passCount} passed, ${failCount} need review`);
   console.log("📁 Upload the dist/ folder to your hosting provider.\n");
 }
 
