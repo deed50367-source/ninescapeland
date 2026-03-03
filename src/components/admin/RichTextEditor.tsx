@@ -7,6 +7,7 @@ import TextAlign from "@tiptap/extension-text-align";
 import { Button } from "@/components/ui/button";
 import { Toggle } from "@/components/ui/toggle";
 import { Separator } from "@/components/ui/separator";
+import { Textarea } from "@/components/ui/textarea";
 import {
   Bold,
   Italic,
@@ -26,8 +27,12 @@ import {
   Heading3,
   Code,
   Minus,
+  Code2,
+  Eye,
+  FileCode,
+  FileText,
 } from "lucide-react";
-import { useState, useRef } from "react";
+import { useState, useRef, useCallback } from "react";
 import GalleryPicker from "./GalleryPicker";
 import {
   Dialog,
@@ -38,6 +43,7 @@ import {
 } from "@/components/ui/dialog";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
+import { marked } from "marked";
 
 interface RichTextEditorProps {
   content: string;
@@ -45,10 +51,37 @@ interface RichTextEditorProps {
   placeholder?: string;
 }
 
+// Detect if text is likely Markdown
+const isMarkdown = (text: string): boolean => {
+  const mdPatterns = [
+    /^#{1,6}\s/m,           // headings
+    /\*\*[^*]+\*\*/,        // bold
+    /\*[^*]+\*/,            // italic
+    /^\s*[-*+]\s/m,         // unordered list
+    /^\s*\d+\.\s/m,         // ordered list
+    /\[.+\]\(.+\)/,         // links
+    /!\[.*\]\(.+\)/,        // images
+    /^>\s/m,                // blockquote
+    /```[\s\S]*```/,        // code blocks
+    /^---$/m,               // horizontal rule
+  ];
+  const matches = mdPatterns.filter(p => p.test(text)).length;
+  return matches >= 2;
+};
+
+// Detect if text is likely HTML
+const isHTML = (text: string): boolean => {
+  return /<\/?(?:h[1-6]|p|div|ul|ol|li|a|img|strong|em|blockquote|br|hr|table|tr|td|th|span|section|article)[^>]*>/i.test(text);
+};
+
+type SourceMode = "wysiwyg" | "html" | "markdown";
+
 const RichTextEditor = ({ content, onChange, placeholder = "开始编写内容..." }: RichTextEditorProps) => {
   const [isGalleryOpen, setIsGalleryOpen] = useState(false);
   const [pendingImageUrl, setPendingImageUrl] = useState<string | null>(null);
   const [imageAlt, setImageAlt] = useState("");
+  const [sourceMode, setSourceMode] = useState<SourceMode>("wysiwyg");
+  const [sourceCode, setSourceCode] = useState("");
 
   // Use a ref to store initial content so it doesn't cause editor re-creation
   const initialContent = useRef(content);
@@ -90,6 +123,37 @@ const RichTextEditor = ({ content, onChange, placeholder = "开始编写内容..
     },
   });
 
+  const switchToSource = useCallback((mode: "html" | "markdown") => {
+    if (!editor) return;
+    if (mode === "html") {
+      setSourceCode(editor.getHTML());
+    } else {
+      // Show current HTML but user can paste MD here
+      setSourceCode("");
+    }
+    setSourceMode(mode);
+  }, [editor]);
+
+  const applySourceCode = useCallback(() => {
+    if (!editor) return;
+    const text = sourceCode.trim();
+    if (!text) {
+      setSourceMode("wysiwyg");
+      return;
+    }
+
+    let html = text;
+    if (sourceMode === "markdown" || (sourceMode === "html" && isMarkdown(text) && !isHTML(text))) {
+      // Convert Markdown to HTML
+      html = marked.parse(text, { async: false }) as string;
+    }
+
+    editor.commands.setContent(html);
+    onChange(editor.getHTML());
+    setSourceMode("wysiwyg");
+    setSourceCode("");
+  }, [editor, sourceCode, sourceMode, onChange]);
+
   if (!editor) {
     return null;
   }
@@ -125,164 +189,131 @@ const RichTextEditor = ({ content, onChange, placeholder = "开始编写内容..
     <div className="border rounded-lg overflow-hidden bg-background">
       {/* Toolbar */}
       <div className="flex flex-wrap items-center gap-1 p-2 border-b bg-muted/30">
-        {/* Text formatting */}
-        <Toggle
-          size="sm"
-          pressed={editor.isActive("bold")}
-          onPressedChange={() => editor.chain().focus().toggleBold().run()}
-        >
-          <Bold className="w-4 h-4" />
-        </Toggle>
-        <Toggle
-          size="sm"
-          pressed={editor.isActive("italic")}
-          onPressedChange={() => editor.chain().focus().toggleItalic().run()}
-        >
-          <Italic className="w-4 h-4" />
-        </Toggle>
-        <Toggle
-          size="sm"
-          pressed={editor.isActive("strike")}
-          onPressedChange={() => editor.chain().focus().toggleStrike().run()}
-        >
-          <Strikethrough className="w-4 h-4" />
-        </Toggle>
-        <Toggle
-          size="sm"
-          pressed={editor.isActive("code")}
-          onPressedChange={() => editor.chain().focus().toggleCode().run()}
-        >
-          <Code className="w-4 h-4" />
-        </Toggle>
+        {sourceMode === "wysiwyg" ? (
+          <>
+            {/* Text formatting */}
+            <Toggle size="sm" pressed={editor.isActive("bold")} onPressedChange={() => editor.chain().focus().toggleBold().run()}>
+              <Bold className="w-4 h-4" />
+            </Toggle>
+            <Toggle size="sm" pressed={editor.isActive("italic")} onPressedChange={() => editor.chain().focus().toggleItalic().run()}>
+              <Italic className="w-4 h-4" />
+            </Toggle>
+            <Toggle size="sm" pressed={editor.isActive("strike")} onPressedChange={() => editor.chain().focus().toggleStrike().run()}>
+              <Strikethrough className="w-4 h-4" />
+            </Toggle>
+            <Toggle size="sm" pressed={editor.isActive("code")} onPressedChange={() => editor.chain().focus().toggleCode().run()}>
+              <Code className="w-4 h-4" />
+            </Toggle>
 
-        <Separator orientation="vertical" className="h-6 mx-1" />
+            <Separator orientation="vertical" className="h-6 mx-1" />
 
-        {/* Headings */}
-        <Toggle
-          size="sm"
-          pressed={editor.isActive("heading", { level: 1 })}
-          onPressedChange={() => editor.chain().focus().toggleHeading({ level: 1 }).run()}
-        >
-          <Heading1 className="w-4 h-4" />
-        </Toggle>
-        <Toggle
-          size="sm"
-          pressed={editor.isActive("heading", { level: 2 })}
-          onPressedChange={() => editor.chain().focus().toggleHeading({ level: 2 }).run()}
-        >
-          <Heading2 className="w-4 h-4" />
-        </Toggle>
-        <Toggle
-          size="sm"
-          pressed={editor.isActive("heading", { level: 3 })}
-          onPressedChange={() => editor.chain().focus().toggleHeading({ level: 3 }).run()}
-        >
-          <Heading3 className="w-4 h-4" />
-        </Toggle>
+            {/* Headings */}
+            <Toggle size="sm" pressed={editor.isActive("heading", { level: 1 })} onPressedChange={() => editor.chain().focus().toggleHeading({ level: 1 }).run()}>
+              <Heading1 className="w-4 h-4" />
+            </Toggle>
+            <Toggle size="sm" pressed={editor.isActive("heading", { level: 2 })} onPressedChange={() => editor.chain().focus().toggleHeading({ level: 2 }).run()}>
+              <Heading2 className="w-4 h-4" />
+            </Toggle>
+            <Toggle size="sm" pressed={editor.isActive("heading", { level: 3 })} onPressedChange={() => editor.chain().focus().toggleHeading({ level: 3 }).run()}>
+              <Heading3 className="w-4 h-4" />
+            </Toggle>
 
-        <Separator orientation="vertical" className="h-6 mx-1" />
+            <Separator orientation="vertical" className="h-6 mx-1" />
 
-        {/* Alignment */}
-        <Toggle
-          size="sm"
-          pressed={editor.isActive({ textAlign: "left" })}
-          onPressedChange={() => editor.chain().focus().setTextAlign("left").run()}
-        >
-          <AlignLeft className="w-4 h-4" />
-        </Toggle>
-        <Toggle
-          size="sm"
-          pressed={editor.isActive({ textAlign: "center" })}
-          onPressedChange={() => editor.chain().focus().setTextAlign("center").run()}
-        >
-          <AlignCenter className="w-4 h-4" />
-        </Toggle>
-        <Toggle
-          size="sm"
-          pressed={editor.isActive({ textAlign: "right" })}
-          onPressedChange={() => editor.chain().focus().setTextAlign("right").run()}
-        >
-          <AlignRight className="w-4 h-4" />
-        </Toggle>
+            {/* Alignment */}
+            <Toggle size="sm" pressed={editor.isActive({ textAlign: "left" })} onPressedChange={() => editor.chain().focus().setTextAlign("left").run()}>
+              <AlignLeft className="w-4 h-4" />
+            </Toggle>
+            <Toggle size="sm" pressed={editor.isActive({ textAlign: "center" })} onPressedChange={() => editor.chain().focus().setTextAlign("center").run()}>
+              <AlignCenter className="w-4 h-4" />
+            </Toggle>
+            <Toggle size="sm" pressed={editor.isActive({ textAlign: "right" })} onPressedChange={() => editor.chain().focus().setTextAlign("right").run()}>
+              <AlignRight className="w-4 h-4" />
+            </Toggle>
 
-        <Separator orientation="vertical" className="h-6 mx-1" />
+            <Separator orientation="vertical" className="h-6 mx-1" />
 
-        {/* Lists */}
-        <Toggle
-          size="sm"
-          pressed={editor.isActive("bulletList")}
-          onPressedChange={() => editor.chain().focus().toggleBulletList().run()}
-        >
-          <List className="w-4 h-4" />
-        </Toggle>
-        <Toggle
-          size="sm"
-          pressed={editor.isActive("orderedList")}
-          onPressedChange={() => editor.chain().focus().toggleOrderedList().run()}
-        >
-          <ListOrdered className="w-4 h-4" />
-        </Toggle>
-        <Toggle
-          size="sm"
-          pressed={editor.isActive("blockquote")}
-          onPressedChange={() => editor.chain().focus().toggleBlockquote().run()}
-        >
-          <Quote className="w-4 h-4" />
-        </Toggle>
+            {/* Lists */}
+            <Toggle size="sm" pressed={editor.isActive("bulletList")} onPressedChange={() => editor.chain().focus().toggleBulletList().run()}>
+              <List className="w-4 h-4" />
+            </Toggle>
+            <Toggle size="sm" pressed={editor.isActive("orderedList")} onPressedChange={() => editor.chain().focus().toggleOrderedList().run()}>
+              <ListOrdered className="w-4 h-4" />
+            </Toggle>
+            <Toggle size="sm" pressed={editor.isActive("blockquote")} onPressedChange={() => editor.chain().focus().toggleBlockquote().run()}>
+              <Quote className="w-4 h-4" />
+            </Toggle>
 
-        <Separator orientation="vertical" className="h-6 mx-1" />
+            <Separator orientation="vertical" className="h-6 mx-1" />
 
-        {/* Media */}
-        <Button
-          type="button"
-          variant="ghost"
-          size="sm"
-          onClick={() => setIsGalleryOpen(true)}
-        >
-          <ImageIcon className="w-4 h-4" />
-        </Button>
-        <Button
-          type="button"
-          variant="ghost"
-          size="sm"
-          onClick={handleAddLink}
-        >
-          <LinkIcon className="w-4 h-4" />
-        </Button>
-        <Button
-          type="button"
-          variant="ghost"
-          size="sm"
-          onClick={() => editor.chain().focus().setHorizontalRule().run()}
-        >
-          <Minus className="w-4 h-4" />
-        </Button>
+            {/* Media */}
+            <Button type="button" variant="ghost" size="sm" onClick={() => setIsGalleryOpen(true)}>
+              <ImageIcon className="w-4 h-4" />
+            </Button>
+            <Button type="button" variant="ghost" size="sm" onClick={handleAddLink}>
+              <LinkIcon className="w-4 h-4" />
+            </Button>
+            <Button type="button" variant="ghost" size="sm" onClick={() => editor.chain().focus().setHorizontalRule().run()}>
+              <Minus className="w-4 h-4" />
+            </Button>
 
-        <Separator orientation="vertical" className="h-6 mx-1" />
+            <Separator orientation="vertical" className="h-6 mx-1" />
 
-        {/* History */}
-        <Button
-          type="button"
-          variant="ghost"
-          size="sm"
-          onClick={() => editor.chain().focus().undo().run()}
-          disabled={!editor.can().undo()}
-        >
-          <Undo className="w-4 h-4" />
-        </Button>
-        <Button
-          type="button"
-          variant="ghost"
-          size="sm"
-          onClick={() => editor.chain().focus().redo().run()}
-          disabled={!editor.can().redo()}
-        >
-          <Redo className="w-4 h-4" />
-        </Button>
+            {/* History */}
+            <Button type="button" variant="ghost" size="sm" onClick={() => editor.chain().focus().undo().run()} disabled={!editor.can().undo()}>
+              <Undo className="w-4 h-4" />
+            </Button>
+            <Button type="button" variant="ghost" size="sm" onClick={() => editor.chain().focus().redo().run()} disabled={!editor.can().redo()}>
+              <Redo className="w-4 h-4" />
+            </Button>
+
+            <Separator orientation="vertical" className="h-6 mx-1" />
+
+            {/* Source mode toggles */}
+            <Button type="button" variant="ghost" size="sm" onClick={() => switchToSource("html")} title="HTML 源码模式">
+              <FileCode className="w-4 h-4" />
+              <span className="ml-1 text-xs hidden sm:inline">HTML</span>
+            </Button>
+            <Button type="button" variant="ghost" size="sm" onClick={() => switchToSource("markdown")} title="Markdown 模式">
+              <FileText className="w-4 h-4" />
+              <span className="ml-1 text-xs hidden sm:inline">MD</span>
+            </Button>
+          </>
+        ) : (
+          <>
+            <div className="flex items-center gap-2 text-sm font-medium text-muted-foreground">
+              <Code2 className="w-4 h-4" />
+              {sourceMode === "html" ? "HTML 源码模式" : "Markdown 模式"}
+              <span className="text-xs">— 粘贴内容后点击「应用」，标题将自动转为 SEO 格式</span>
+            </div>
+            <div className="ml-auto flex gap-1">
+              <Button type="button" variant="outline" size="sm" onClick={() => { setSourceMode("wysiwyg"); setSourceCode(""); }}>
+                取消
+              </Button>
+              <Button type="button" size="sm" onClick={applySourceCode}>
+                <Eye className="w-4 h-4 mr-1" />
+                应用到编辑器
+              </Button>
+            </div>
+          </>
+        )}
       </div>
 
-      {/* Editor */}
-      <EditorContent editor={editor} />
+      {/* Editor / Source */}
+      {sourceMode === "wysiwyg" ? (
+        <EditorContent editor={editor} />
+      ) : (
+        <Textarea
+          value={sourceCode}
+          onChange={(e) => setSourceCode(e.target.value)}
+          placeholder={
+            sourceMode === "html"
+              ? "在此粘贴 HTML 代码，例如：\n<h2>标题</h2>\n<p>正文内容...</p>"
+              : "在此粘贴 Markdown 内容，例如：\n## 标题\n\n正文内容...\n\n- 列表项 1\n- 列表项 2"
+          }
+          className="min-h-[300px] rounded-none border-0 font-mono text-sm resize-y focus-visible:ring-0 focus-visible:ring-offset-0"
+        />
+      )}
 
       {/* Gallery Picker */}
       <GalleryPicker
