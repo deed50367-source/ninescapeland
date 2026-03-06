@@ -12,6 +12,7 @@ interface SEOHeadProps {
   noIndex?: boolean;
   ogType?: "website" | "article";
   lastModified?: string;
+  prerender404?: boolean;
 }
 
 const baseUrl = "https://indoorplaygroundsolution.com";
@@ -27,6 +28,7 @@ export const SEOHead = ({
   noIndex = false,
   ogType = "website",
   lastModified,
+  prerender404 = false,
 }: SEOHeadProps) => {
   const { t, i18n } = useTranslation();
   const { lang } = useParams<{ lang: string }>();
@@ -127,6 +129,9 @@ export const SEOHead = ({
       
       {/* Content freshness */}
       {lastModified && <meta property="article:modified_time" content={lastModified} />}
+      
+      {/* Signal to prerender services that this is a 404 */}
+      {prerender404 && <meta name="prerender-status-code" content="404" />}
       
       {/* Hreflang tags for international SEO */}
       {languages.map((l) => {

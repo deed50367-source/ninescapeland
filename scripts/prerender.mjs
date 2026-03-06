@@ -47,6 +47,17 @@ const CORE_ROUTES = [
   "/trampoline-park-fec-solutions",
   "/indoor-playground-roi-analysis-uk",
   "/indoor-playground-roi-canada",
+  // Location pages
+  "/locations/indoor-playground-equipment-usa",
+  "/locations/indoor-playground-equipment-uk",
+  "/locations/indoor-playground-equipment-uae",
+  "/locations/indoor-playground-equipment-saudi-arabia",
+  "/locations/indoor-playground-equipment-australia",
+  "/locations/indoor-playground-equipment-canada",
+  "/locations/indoor-playground-equipment-germany",
+  "/locations/indoor-playground-equipment-india",
+  "/locations/indoor-playground-equipment-mexico",
+  "/locations/indoor-playground-equipment-brazil",
 ];
 
 const LANGUAGES = ["es", "pt", "de", "fr", "ar"];
