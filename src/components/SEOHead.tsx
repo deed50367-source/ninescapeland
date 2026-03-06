@@ -12,6 +12,7 @@ interface SEOHeadProps {
   noIndex?: boolean;
   ogType?: "website" | "article";
   lastModified?: string;
+  prerender404?: boolean;
 }
 
 const baseUrl = "https://indoorplaygroundsolution.com";
@@ -27,6 +28,7 @@ export const SEOHead = ({
   noIndex = false,
   ogType = "website",
   lastModified,
+  prerender404 = false,
 }: SEOHeadProps) => {
   const { t, i18n } = useTranslation();
   const { lang } = useParams<{ lang: string }>();
