@@ -20,7 +20,7 @@ const Contact = () => {
 
   return (
     <div className="min-h-screen">
-      <SEOHead pageKey="contact" />
+      <SEOHead pageKey="contact" lastModified="2026-03-06" />
       <BreadcrumbSchema items={breadcrumbItems} />
       <LocalBusinessSchema />
       <Header />
