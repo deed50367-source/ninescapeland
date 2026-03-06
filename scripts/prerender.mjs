@@ -160,6 +160,38 @@ async function prerenderRoute(browser, route) {
     // Get the full rendered HTML
     let html = await page.content();
 
+    // ── Detailed SEO element audit for each route ──
+    const h1Matches = html.match(/<h1[\s>]/gi) || [];
+    const h2Matches = html.match(/<h2[\s>]/gi) || [];
+    const hasMetaDesc = /<meta[^>]+name=["']description["'][^>]+content=["'][^"']+["']/i.test(html);
+    const hasJsonLd = /<script[^>]+type=["']application\/ld\+json["']/i.test(html);
+    const hasHreflang = /<link[^>]+hreflang=/i.test(html);
+    const hasModifiedTime = /article:modified_time/i.test(html);
+    const imgTags = html.match(/<img[^>]*>/gi) || [];
+    const imgsWithLazy = imgTags.filter(t => /loading=["']lazy["']/i.test(t)).length;
+    const imgsWithoutLazy = imgTags.filter(t => !/loading=["']lazy["']/i.test(t) && !/fetchpriority=["']high["']/i.test(t));
+
+    console.log(`  📄 ${route}:`);
+    console.log(`     H1: ${h1Matches.length} tag(s) ${h1Matches.length === 1 ? '✅' : '⚠️'}  |  H2: ${h2Matches.length} tag(s)`);
+    console.log(`     Meta desc: ${hasMetaDesc ? '✅' : '❌'}  |  JSON-LD: ${hasJsonLd ? '✅' : '❌'}  |  Hreflang: ${hasHreflang ? '✅' : '❌'}  |  Modified time: ${hasModifiedTime ? '✅' : '❌'}`);
+    console.log(`     Images: ${imgTags.length} total, ${imgsWithLazy} lazy, ${imgTags.length - imgsWithLazy} eager/none`);
+    if (imgsWithoutLazy.length > 0) {
+      console.log(`     ⚠️  Non-lazy non-hero images:`);
+      imgsWithoutLazy.forEach(t => {
+        const srcMatch = t.match(/src=["']([^"']+)["']/);
+        console.log(`        - ${srcMatch ? srcMatch[1].substring(0, 80) : '(no src)'}`);
+      });
+    }
+
+    // Extract first H1 content for verification
+    if (h1Matches.length > 0) {
+      const h1Content = html.match(/<h1[^>]*>([\s\S]*?)<\/h1>/i);
+      if (h1Content) {
+        const text = h1Content[1].replace(/<[^>]+>/g, '').trim().substring(0, 80);
+        console.log(`     H1 content: "${text}"`);
+      }
+    }
+
     // Ensure doctype
     if (!html.startsWith("<!")) {
       html = `<!DOCTYPE html>\n${html}`;
@@ -178,7 +210,8 @@ async function prerenderRoute(browser, route) {
     }
 
     writeFileSync(outputPath, html, "utf-8");
-    console.log(`  ✅ ${route} → ${outputPath.replace(DIST_DIR, "dist")}`);
+    console.log(`     ✅ Saved → ${outputPath.replace(DIST_DIR, "dist")}`);
+    console.log('');
   } catch (err) {
     console.error(`  ❌ ${route} — ${err.message}`);
   } finally {
