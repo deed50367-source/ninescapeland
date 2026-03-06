@@ -31,6 +31,8 @@ const Contact = () => {
           descriptionKey="pages.contact.description"
           imageConfigKey="hero.contact"
         />
+      </main>
+      <SEOHead pageKey="contact" lastModified="2026-03-06" />
         <ContactMascotBanner />
         <ContactSection />
         <ContactTrustSection />
