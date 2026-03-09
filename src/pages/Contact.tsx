@@ -23,6 +23,7 @@ const Contact = () => {
       <SEOHead pageKey="contact" lastModified="2026-03-06" />
       <BreadcrumbSchema items={breadcrumbItems} />
       <LocalBusinessSchema />
+      <ContactPageSchema />
       <Header />
       <main>
         <PageHero
