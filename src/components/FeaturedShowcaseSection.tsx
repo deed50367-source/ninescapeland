@@ -25,12 +25,28 @@ const item = {
 };
 
 export const FeaturedShowcaseSection = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   const { localizedPath } = useLocalizedPath();
   const { isRTL } = useRTL();
   const { getImageUrl } = useSiteImages();
 
   const ArrowIcon = isRTL ? ArrowLeft : ArrowRight;
+
+  // Fetch recent blog posts for internal linking
+  const { data: recentBlogPosts } = useQuery({
+    queryKey: ["featured-blog-posts", i18n.language],
+    queryFn: async () => {
+      const { data } = await supabase
+        .from("blog_posts")
+        .select("slug, title, cover_image, excerpt")
+        .eq("status", "published")
+        .eq("language", i18n.language)
+        .order("published_at", { ascending: false })
+        .limit(4);
+      return data || [];
+    },
+    staleTime: 1000 * 60 * 10,
+  });
 
   const featuredProducts = [
     {
