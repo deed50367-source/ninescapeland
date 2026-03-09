@@ -13,13 +13,20 @@ import { FloatingCTA } from "@/components/FloatingCTA";
 import MobileBottomNav from "@/components/MobileBottomNav";
 import { SEOHead } from "@/components/SEOHead";
 import { BreadcrumbSchema } from "@/components/StructuredData";
+import { useLocalizedPath } from "@/hooks/useLocalizedPath";
 
 const Projects = () => {
   const { t } = useTranslation();
+  const { localizedPath } = useLocalizedPath();
 
   const breadcrumbItems = [
     { name: t("nav.home", "Home"), url: "https://indoorplaygroundsolution.com" },
     { name: t("nav.projects", "Projects"), url: "https://indoorplaygroundsolution.com/projects" },
+  ];
+
+  const heroBreadcrumbs = [
+    { label: t("nav.home", "Home"), href: localizedPath("/") },
+    { label: t("nav.projects", "Projects") },
   ];
 
   return (
@@ -33,6 +40,7 @@ const Projects = () => {
           titleHighlightKey="pages.projects.titleHighlight"
           descriptionKey="pages.projects.description"
           imageConfigKey="hero.projects"
+          breadcrumbs={heroBreadcrumbs}
         />
         <ProjectsStatsSection />
         <ProjectsSection />

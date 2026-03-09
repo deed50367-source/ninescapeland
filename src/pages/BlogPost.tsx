@@ -334,25 +334,13 @@ const BlogPost = () => {
             {/* Main Article Content */}
             <article className="flex-1 max-w-4xl min-w-0">
               {/* Breadcrumb Navigation */}
-              <nav aria-label="Breadcrumb" className="mb-6">
-                <ol className="flex items-center gap-2 text-sm text-muted-foreground flex-wrap">
-                  <li>
-                    <Link to={localizedPath("/")} className="hover:text-primary transition-colors">
-                      {t("nav.home")}
-                    </Link>
-                  </li>
-                  <li aria-hidden="true">/</li>
-                  <li>
-                    <Link to={localizedPath("/blog")} className="hover:text-primary transition-colors">
-                      {t("nav.blog")}
-                    </Link>
-                  </li>
-                  <li aria-hidden="true">/</li>
-                  <li className="text-foreground font-medium truncate max-w-[200px]" aria-current="page">
-                    {post.title}
-                  </li>
-                </ol>
-              </nav>
+              <div className="mb-6">
+                <VisualBreadcrumb items={[
+                  { label: t("nav.home"), href: localizedPath("/") },
+                  { label: t("nav.blog"), href: localizedPath("/blog") },
+                  { label: post.title },
+                ]} />
+              </div>
 
               {/* Language Switcher for article translations */}
               {availableTranslations && availableTranslations.length > 1 && (
