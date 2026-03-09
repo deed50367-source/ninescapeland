@@ -143,6 +143,8 @@ export const BlogSidebar = ({ recentPosts = [] }: BlogSidebarProps) => {
                       src={post.cover_image}
                       alt={post.title}
                       className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+                      loading="lazy"
+                      decoding="async"
                     />
                   ) : (
                     <div className="w-full h-full flex items-center justify-center bg-gradient-to-br from-primary/20 to-accent/10">
