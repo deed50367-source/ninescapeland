@@ -124,5 +124,6 @@ export const BlogArticleSEO = ({
       
       {/* hreflang tags are managed globally by LanguageWrapper */}
     </Helmet>
+    </>
   );
 };

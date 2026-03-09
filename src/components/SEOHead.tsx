@@ -87,6 +87,7 @@ export const SEOHead = ({
 
 
   return (
+    <>
     <Helmet>
       <html lang={currentLang} dir={isRTL ? "rtl" : "ltr"} />
       
