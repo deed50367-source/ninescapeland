@@ -2,6 +2,7 @@ import { Helmet } from "react-helmet-async";
 import { useTranslation } from "react-i18next";
 import { useParams, useLocation } from "react-router-dom";
 import { languages } from "@/i18n/config";
+import { WebsiteSchema } from "@/components/StructuredData";
 
 interface SEOHeadProps {
   pageKey: string;
@@ -86,6 +87,7 @@ export const SEOHead = ({
 
 
   return (
+    <>
     <Helmet>
       <html lang={currentLang} dir={isRTL ? "rtl" : "ltr"} />
       
@@ -142,5 +144,7 @@ export const SEOHead = ({
       })}
       <link rel="alternate" hrefLang="x-default" href={`${baseUrl}${pathWithoutLang}`} />
     </Helmet>
+    <WebsiteSchema />
+  </>
   );
 };
