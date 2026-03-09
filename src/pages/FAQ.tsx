@@ -7,9 +7,11 @@ import { Footer } from "@/components/Footer";
 import { FloatingCTA } from "@/components/FloatingCTA";
 import { SEOHead } from "@/components/SEOHead";
 import { FAQSchema, BreadcrumbSchema } from "@/components/StructuredData";
+import { useLocalizedPath } from "@/hooks/useLocalizedPath";
 
 const FAQ = () => {
   const { t } = useTranslation();
+  const { localizedPath } = useLocalizedPath();
 
   // FAQ items for structured data
   const faqItems = [
@@ -28,6 +30,11 @@ const FAQ = () => {
     { name: "FAQ", url: "https://indoorplaygroundsolution.com/faq" },
   ];
 
+  const heroBreadcrumbs = [
+    { label: t("nav.home", "Home"), href: localizedPath("/") },
+    { label: "FAQ" },
+  ];
+
   return (
     <div className="min-h-screen">
       <SEOHead pageKey="faq" />
@@ -40,6 +47,7 @@ const FAQ = () => {
           titleHighlightKey="pages.faq.titleHighlight"
           descriptionKey="pages.faq.description"
           imageConfigKey="hero.faq"
+          breadcrumbs={heroBreadcrumbs}
         />
         <FAQSection />
         <ContactSection />
