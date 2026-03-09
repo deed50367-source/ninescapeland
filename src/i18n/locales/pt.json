@@ -2106,9 +2106,9 @@
   },
   "caseStudies": {
     "sectionLabel": "Nosso Portfólio",
-    "title": "Estudos de Caso",
-    "titleHighlight": "Globais",
-    "description": "Explore nossos projetos bem-sucedidos de todo o mundo. Cada projeto demonstra nosso compromisso com qualidade, inovação e satisfação do cliente.",
+    "title": "Estudos de Caso de",
+    "titleHighlight": "Playgrounds Indoor",
+    "description": "Explore nossas <strong>instalações de playground indoor</strong> bem-sucedidas de todo o mundo. Cada projeto demonstra nosso compromisso com qualidade, inovação e satisfação do cliente.",
     "filters": {
       "allCountries": "Todos os Países",
       "allTypes": "Todos os Tipos",

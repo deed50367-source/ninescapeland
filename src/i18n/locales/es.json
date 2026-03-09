@@ -2106,9 +2106,9 @@
   },
   "caseStudies": {
     "sectionLabel": "Nuestro Portafolio",
-    "title": "Casos de Estudio",
-    "titleHighlight": "Globales",
-    "description": "Explora nuestros proyectos exitosos de todo el mundo. Cada proyecto demuestra nuestro compromiso con la calidad, la innovación y la satisfacción del cliente.",
+    "title": "Estudios de Caso de",
+    "titleHighlight": "Parques Infantiles",
+    "description": "Explora nuestras <strong>instalaciones de parques infantiles</strong> exitosas de todo el mundo. Cada proyecto demuestra nuestro compromiso con la calidad, la innovación y la satisfacción del cliente.",
     "filters": {
       "allCountries": "Todos los Países",
       "allTypes": "Todos los Tipos",
