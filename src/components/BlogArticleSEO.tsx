@@ -21,7 +21,7 @@ const twitterHandle = "@NinescapeLand";
 
 export const BlogArticleSEO = ({
   title,
-  description = "",
+  description: rawDescription = "",
   keywords,
   image,
   publishedAt,
