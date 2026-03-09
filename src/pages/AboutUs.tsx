@@ -10,13 +10,20 @@ import { AboutMascotIntro } from "@/components/AboutMascotIntro";
 import { AboutTeamSection } from "@/components/AboutTeamSection";
 import { SEOHead } from "@/components/SEOHead";
 import { BreadcrumbSchema, OrganizationSchema } from "@/components/StructuredData";
+import { useLocalizedPath } from "@/hooks/useLocalizedPath";
 
 const AboutUs = () => {
   const { t } = useTranslation();
+  const { localizedPath } = useLocalizedPath();
 
   const breadcrumbItems = [
     { name: t("nav.home", "Home"), url: "https://indoorplaygroundsolution.com" },
     { name: t("nav.aboutUs", "About Us"), url: "https://indoorplaygroundsolution.com/about-us" },
+  ];
+
+  const heroBreadcrumbs = [
+    { label: t("nav.home", "Home"), href: localizedPath("/") },
+    { label: t("nav.aboutUs", "About Us") },
   ];
 
   return (
@@ -31,6 +38,7 @@ const AboutUs = () => {
           titleHighlightKey="pages.aboutUs.titleHighlight"
           descriptionKey="pages.aboutUs.description"
           imageConfigKey="hero.aboutUs"
+          breadcrumbs={heroBreadcrumbs}
         />
         <AboutMascotIntro />
         <CoreValuesSection />

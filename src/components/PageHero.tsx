@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import DOMPurify from "dompurify";
 import { useRTL } from "@/hooks/useRTL";
 import { useSiteImages } from "@/hooks/useSiteImages";
+import { VisualBreadcrumb, type BreadcrumbNavItem } from "@/components/VisualBreadcrumb";
 
 interface PageHeroProps {
   titleKey: string;
@@ -11,6 +12,8 @@ interface PageHeroProps {
   backgroundImage?: string;
   /** 使用动态配图的 key，优先级高于 backgroundImage */
   imageConfigKey?: string;
+  /** Visual breadcrumb navigation items */
+  breadcrumbs?: BreadcrumbNavItem[];
 }
 
 export const PageHero = ({ 
@@ -19,6 +22,7 @@ export const PageHero = ({
   descriptionKey,
   backgroundImage,
   imageConfigKey,
+  breadcrumbs,
 }: PageHeroProps) => {
   const { t } = useTranslation();
   const { isRTL } = useRTL();
@@ -58,6 +62,13 @@ export const PageHero = ({
 
       {/* Content */}
       <div className="container-wide relative z-10">
+        {/* Breadcrumb */}
+        {breadcrumbs && breadcrumbs.length > 0 && (
+          <div className="mb-6">
+            <VisualBreadcrumb items={breadcrumbs} variant="hero" />
+          </div>
+        )}
+
         <div className="max-w-4xl mx-auto text-center">
           <motion.h1
             initial={{ opacity: 0, y: 30 }}

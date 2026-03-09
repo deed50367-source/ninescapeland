@@ -9,13 +9,20 @@ import { ContactMascotBanner } from "@/components/ContactMascotBanner";
 import { ContactTrustSection } from "@/components/ContactTrustSection";
 import { SEOHead } from "@/components/SEOHead";
 import { BreadcrumbSchema, LocalBusinessSchema, ContactPageSchema } from "@/components/StructuredData";
+import { useLocalizedPath } from "@/hooks/useLocalizedPath";
 
 const Contact = () => {
   const { t } = useTranslation();
+  const { localizedPath } = useLocalizedPath();
 
   const breadcrumbItems = [
     { name: t("nav.home", "Home"), url: "https://indoorplaygroundsolution.com" },
     { name: t("nav.contact", "Contact"), url: "https://indoorplaygroundsolution.com/contact" },
+  ];
+
+  const heroBreadcrumbs = [
+    { label: t("nav.home", "Home"), href: localizedPath("/") },
+    { label: t("nav.contact", "Contact") },
   ];
 
   return (
@@ -31,6 +38,7 @@ const Contact = () => {
           titleHighlightKey="pages.contact.titleHighlight"
           descriptionKey="pages.contact.description"
           imageConfigKey="hero.contact"
+          breadcrumbs={heroBreadcrumbs}
         />
         <ContactMascotBanner />
         <ContactSection />

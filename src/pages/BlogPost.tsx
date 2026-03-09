@@ -1,3 +1,4 @@
+import React from "react";
 import { useTranslation } from "react-i18next";
 import { useParams, Link, useNavigate } from "react-router-dom";
 import { useQuery } from "@tanstack/react-query";
@@ -12,6 +13,7 @@ import { BlogPostingSchema, BreadcrumbSchema } from "@/components/StructuredData
 import { BlogTableOfContents } from "@/components/BlogTableOfContents";
 import { BlogRelatedPosts } from "@/components/BlogRelatedPosts";
 import { BlogCategoryTags } from "@/components/BlogCategoryTags";
+import { VisualBreadcrumb } from "@/components/VisualBreadcrumb";
 import { BlogSidebar } from "@/components/BlogSidebar";
 import { useLocalizedPath } from "@/hooks/useLocalizedPath";
 import { useIsMobile } from "@/hooks/use-mobile";
@@ -40,6 +42,27 @@ const BlogPost = () => {
   // Get current language code
   const currentLang = i18n.language?.split('-')[0] || 'en';
 
+  // Check for slug redirect (old long URLs → new short URLs)
+  const { data: redirectData } = useQuery({
+    queryKey: ["blog-slug-redirect", slug],
+    queryFn: async () => {
+      const { data } = await supabase
+        .from("blog_slug_redirects")
+        .select("new_slug")
+        .eq("old_slug", slug)
+        .single();
+      return data;
+    },
+    enabled: !!slug,
+  });
+
+  // Redirect to new slug if found
+  React.useEffect(() => {
+    if (redirectData?.new_slug) {
+      navigate(localizedPath(`/blog/${redirectData.new_slug}`), { replace: true });
+    }
+  }, [redirectData, navigate, localizedPath]);
+
   // Query for the post in current language
   const { data: post, isLoading, error } = useQuery({
     queryKey: ["blog-post", slug, currentLang],
@@ -55,7 +78,7 @@ const BlogPost = () => {
       if (error) throw error;
       return data;
     },
-    enabled: !!slug,
+    enabled: !!slug && !redirectData?.new_slug,
   });
 
   // Query for available translations of this article (same slug, different languages)
@@ -334,25 +357,13 @@ const BlogPost = () => {
             {/* Main Article Content */}
             <article className="flex-1 max-w-4xl min-w-0">
               {/* Breadcrumb Navigation */}
-              <nav aria-label="Breadcrumb" className="mb-6">
-                <ol className="flex items-center gap-2 text-sm text-muted-foreground flex-wrap">
-                  <li>
-                    <Link to={localizedPath("/")} className="hover:text-primary transition-colors">
-                      {t("nav.home")}
-                    </Link>
-                  </li>
-                  <li aria-hidden="true">/</li>
-                  <li>
-                    <Link to={localizedPath("/blog")} className="hover:text-primary transition-colors">
-                      {t("nav.blog")}
-                    </Link>
-                  </li>
-                  <li aria-hidden="true">/</li>
-                  <li className="text-foreground font-medium truncate max-w-[200px]" aria-current="page">
-                    {post.title}
-                  </li>
-                </ol>
-              </nav>
+              <div className="mb-6">
+                <VisualBreadcrumb items={[
+                  { label: t("nav.home"), href: localizedPath("/") },
+                  { label: t("nav.blog"), href: localizedPath("/blog") },
+                  { label: post.title },
+                ]} />
+              </div>
 
               {/* Language Switcher for article translations */}
               {availableTranslations && availableTranslations.length > 1 && (

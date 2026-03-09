@@ -13,13 +13,20 @@ import { FloatingCTA } from "@/components/FloatingCTA";
 import MobileBottomNav from "@/components/MobileBottomNav";
 import { SEOHead } from "@/components/SEOHead";
 import { BreadcrumbSchema } from "@/components/StructuredData";
+import { useLocalizedPath } from "@/hooks/useLocalizedPath";
 
 const Process = () => {
   const { t } = useTranslation();
+  const { localizedPath } = useLocalizedPath();
 
   const breadcrumbItems = [
     { name: t("nav.home", "Home"), url: "https://indoorplaygroundsolution.com" },
     { name: t("nav.process", "Process"), url: "https://indoorplaygroundsolution.com/process" },
+  ];
+
+  const heroBreadcrumbs = [
+    { label: t("nav.home", "Home"), href: localizedPath("/") },
+    { label: t("nav.process", "Process") },
   ];
 
   return (
@@ -33,6 +40,7 @@ const Process = () => {
           titleHighlightKey="pages.process.titleHighlight"
           descriptionKey="pages.process.description"
           imageConfigKey="hero.process"
+          breadcrumbs={heroBreadcrumbs}
         />
         <ProcessSection />
         <ProcessTimelineSection />
