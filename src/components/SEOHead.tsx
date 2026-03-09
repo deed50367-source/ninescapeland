@@ -143,5 +143,7 @@ export const SEOHead = ({
       })}
       <link rel="alternate" hrefLang="x-default" href={`${baseUrl}${pathWithoutLang}`} />
     </Helmet>
+    <WebsiteSchema />
+  </>
   );
 };
