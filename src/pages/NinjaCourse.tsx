@@ -414,6 +414,8 @@ const NinjaCourse = () => {
                   src={galleryImages[1]}
                   alt="Professional Ninja Warrior Course Obstacles by NinescapeLand"
                   className="rounded-2xl shadow-2xl"
+                  loading="lazy"
+                  decoding="async"
                 />
                 <div className="absolute -bottom-6 -right-6 bg-primary text-primary-foreground p-4 rounded-xl shadow-lg">
                   <div className="flex items-center gap-2">
@@ -643,6 +645,8 @@ const NinjaCourse = () => {
                         src={caseItem.image} 
                         alt={t(caseItem.titleKey)}
                         className="w-full h-full object-cover"
+                        loading="lazy"
+                        decoding="async"
                       />
                       <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent" />
                       <div className="absolute bottom-4 left-4 right-4">
@@ -751,6 +755,8 @@ const NinjaCourse = () => {
                     src={image} 
                     alt={`Custom Ninja Warrior Course Equipment ${index + 1} by NinescapeLand`}
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                    loading="lazy"
+                    decoding="async"
                   />
                   <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors" />
                 </motion.div>

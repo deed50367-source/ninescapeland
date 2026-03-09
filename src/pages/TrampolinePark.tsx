@@ -700,6 +700,8 @@ const TrampolinePark = () => {
                         src={study.image} 
                         alt={t(study.titleKey)}
                         className="w-full h-full object-cover"
+                        loading="lazy"
+                        decoding="async"
                       />
                       <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent" />
                       <div className="absolute bottom-4 left-4 right-4 text-white">
@@ -809,6 +811,8 @@ const TrampolinePark = () => {
                     src={image} 
                     alt={`Custom Trampoline Park Design ${index + 1} by NinescapeLand`}
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                    loading="lazy"
+                    decoding="async"
                   />
                   <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors" />
                 </motion.div>

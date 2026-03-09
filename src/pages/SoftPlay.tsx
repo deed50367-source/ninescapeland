@@ -434,6 +434,8 @@ const SoftPlay = () => {
                   src={galleryImages[2]}
                   alt="Safety standards"
                   className="rounded-2xl shadow-2xl"
+                  loading="lazy"
+                  decoding="async"
                 />
                 <div className="absolute -bottom-6 -right-6 bg-green-500 text-white p-4 rounded-xl shadow-lg">
                   <div className="flex items-center gap-2">
@@ -500,6 +502,8 @@ const SoftPlay = () => {
                   src={galleryImages[0]}
                   alt="Commercial Soft Play Equipment Components by NinescapeLand"
                   className="rounded-2xl shadow-2xl"
+                  loading="lazy"
+                  decoding="async"
                 />
                 <div className="absolute -bottom-6 -left-6 bg-primary text-primary-foreground p-4 rounded-xl shadow-lg">
                   <div className="flex items-center gap-2">
@@ -632,6 +636,8 @@ const SoftPlay = () => {
                         src={study.image}
                         alt={t(study.titleKey)}
                         className="w-full h-full object-cover"
+                        loading="lazy"
+                        decoding="async"
                       />
                       <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
                       <div className="absolute bottom-4 left-4 text-white">
@@ -747,6 +753,8 @@ const SoftPlay = () => {
                     src={image} 
                     alt={`Custom Soft Play Area Design ${index + 1} by NinescapeLand`}
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                    loading="lazy"
+                    decoding="async"
                   />
                   <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors" />
                 </motion.div>
