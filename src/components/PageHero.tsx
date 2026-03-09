@@ -1,5 +1,6 @@
 import { useTranslation } from "react-i18next";
 import { motion } from "framer-motion";
+import DOMPurify from "dompurify";
 import { useRTL } from "@/hooks/useRTL";
 import { useSiteImages } from "@/hooks/useSiteImages";
 
