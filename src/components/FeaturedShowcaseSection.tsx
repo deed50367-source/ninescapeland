@@ -260,6 +260,53 @@ export const FeaturedShowcaseSection = () => {
             ))}
           </motion.div>
         </div>
+
+        {/* Latest Blog Articles - for internal linking & SEO */}
+        {recentBlogPosts && recentBlogPosts.length > 0 && (
+          <div className="mt-8">
+            <h3 className="text-lg font-heading font-bold mb-4 flex items-center gap-2">
+              <BookOpen className="w-5 h-5 text-accent" />
+              {t("featuredShowcase.blogHeading", "Latest Industry Insights")}
+            </h3>
+            <motion.div
+              variants={container}
+              initial="hidden"
+              whileInView="show"
+              viewport={{ once: true }}
+              className="grid grid-cols-2 sm:grid-cols-4 gap-3"
+            >
+              {recentBlogPosts.map((post, index) => (
+                <motion.div key={post.slug} variants={item}>
+                  <Link
+                    to={localizedPath(`/blog/${post.slug}`)}
+                    className="group block bg-card rounded-xl overflow-hidden shadow-soft hover:shadow-medium transition-all duration-300 h-full"
+                  >
+                    {post.cover_image && (
+                      <div className="relative h-28 sm:h-32 overflow-hidden">
+                        <img
+                          src={post.cover_image}
+                          alt={post.title}
+                          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                          loading="lazy"
+                          decoding="async"
+                        />
+                      </div>
+                    )}
+                    <div className="p-2.5">
+                      <h4 className="text-xs sm:text-sm font-semibold line-clamp-2 group-hover:text-primary transition-colors leading-tight">
+                        {post.title}
+                      </h4>
+                      <span className="inline-flex items-center gap-0.5 text-primary text-[10px] sm:text-xs font-semibold mt-1">
+                        {t("featuredShowcase.readArticle", "Read")}
+                        <ArrowIcon className={`w-3 h-3 transition-transform ${isRTL ? "group-hover:-translate-x-0.5" : "group-hover:translate-x-0.5"}`} />
+                      </span>
+                    </div>
+                  </Link>
+                </motion.div>
+              ))}
+            </motion.div>
+          </div>
+        )}
       </div>
     </section>
   );
