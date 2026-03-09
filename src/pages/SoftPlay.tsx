@@ -502,6 +502,8 @@ const SoftPlay = () => {
                   src={galleryImages[0]}
                   alt="Commercial Soft Play Equipment Components by NinescapeLand"
                   className="rounded-2xl shadow-2xl"
+                  loading="lazy"
+                  decoding="async"
                 />
                 <div className="absolute -bottom-6 -left-6 bg-primary text-primary-foreground p-4 rounded-xl shadow-lg">
                   <div className="flex items-center gap-2">
