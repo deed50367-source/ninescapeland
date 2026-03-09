@@ -1,6 +1,7 @@
 import { Helmet } from "react-helmet-async";
 import { useParams, useLocation } from "react-router-dom";
 import { languages } from "@/i18n/config";
+import { WebsiteSchema } from "@/components/StructuredData";
 
 interface BlogArticleSEOProps {
   title: string;
