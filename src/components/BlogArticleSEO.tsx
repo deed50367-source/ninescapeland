@@ -33,6 +33,8 @@ export const BlogArticleSEO = ({
   const { lang } = useParams<{ lang: string }>();
   const location = useLocation();
   const currentLang = lang || "en";
+  // Never output an empty meta description
+  const description = rawDescription?.trim() || `${title} - Expert insights from NinescapeLand, leading indoor playground equipment manufacturer since 2008.`;
 
   // Generate proper canonical URL
   // English pages should use root path (no /en prefix)
