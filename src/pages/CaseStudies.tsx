@@ -101,9 +101,10 @@ export default function CaseStudies() {
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold mt-3 mb-6">
                 {t("caseStudies.title")} <span className="text-gradient">{t("caseStudies.titleHighlight")}</span>
               </h1>
-              <p className="text-muted-foreground text-lg md:text-xl">
-                {t("caseStudies.description")}
-              </p>
+              <p
+                className="text-muted-foreground text-lg md:text-xl"
+                dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(t("caseStudies.description"), { ALLOWED_TAGS: ['strong', 'b', 'em'] }) }}
+              />
             </motion.div>
           </div>
         </section>
