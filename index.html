@@ -75,6 +75,39 @@
     <!-- Fallback canonical for non-JS crawlers (overridden by react-helmet-async per route) -->
     <link rel="canonical" href="https://indoorplaygroundsolution.com" />
 
+    <!-- Fallback JSON-LD for non-JS crawlers (react-helmet-async adds page-specific schemas per route) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": ["Organization", "Manufacturer"],
+      "@id": "https://indoorplaygroundsolution.com/#organization",
+      "name": "NinescapeLand",
+      "url": "https://indoorplaygroundsolution.com",
+      "logo": "https://indoorplaygroundsolution.com/favicon.png",
+      "description": "Professional indoor playground equipment manufacturer since 2008. Custom indoor playgrounds, trampoline parks, ninja courses & soft play. ASTM & TUV certified.",
+      "email": "sale@indoorplaygroundsolution.com",
+      "telephone": "+86-150-5878-2901",
+      "foundingDate": "2008",
+      "address": {"@type": "PostalAddress", "addressLocality": "Wenzhou", "addressRegion": "Zhejiang", "addressCountry": "CN"},
+      "areaServed": {"@type": "Place", "name": "Worldwide"},
+      "sameAs": []
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "NinescapeLand",
+      "url": "https://indoorplaygroundsolution.com",
+      "description": "Professional indoor playground equipment manufacturer",
+      "publisher": {"@type": "Organization", "name": "NinescapeLand"},
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": {"@type": "EntryPoint", "urlTemplate": "https://indoorplaygroundsolution.com/products?search={search_term_string}"},
+        "query-input": "required name=search_term_string"
+      }
+    }
+    </script>
 
     <!-- Critical CSS inline for faster FCP -->
     <style>
