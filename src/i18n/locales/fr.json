@@ -96,42 +96,42 @@
      "tagsLabel": "Tags"
    },
    "pages": {
-     "blog": {
-       "title": "Perspectives",
-       "titleHighlight": "et Actualités du Secteur",
-       "description": "Restez informé des dernières tendances, conseils et actualités de l'industrie des aires de jeux intérieures et du divertissement familial. Perspectives d'experts pour vous aider à bâtir une entreprise prospère."
-     },
-     "aboutUs": {
-       "title": "À Propos de",
-       "titleHighlight": "NinescapeLand",
-       "description": "Depuis 2008, nous créons joie et aventure pour les familles du monde entier. En tant que fabricant leader d'aires de jeux intérieures avec plus de 15 ans d'expertise, nous avons réalisé avec succès plus de 2 000 projets dans plus de 50 pays."
-     },
-     "products": {
-       "title": "Solutions",
-       "titleHighlight": "d'Aires de Jeux Premium",
-       "description": "Des parcs de trampolines passionnants aux aires de jeux intérieures créatives, parcours ninja aux espaces de jeux souples sécurisés - découvrez notre gamme complète d'équipements commerciaux certifiés ASTM et TUV."
-     },
-     "process": {
-       "title": "Votre Chemin vers",
-       "titleHighlight": "l'Inauguration",
-       "description": "Découvrez notre processus éprouvé en 6 étapes : de la consultation de design 3D gratuite à la fabrication professionnelle, l'expédition mondiale et le support d'installation. Nous gérons tout."
-     },
-     "projects": {
-       "title": "Histoires de",
-       "titleHighlight": "Succès Mondiales",
-       "description": "Explorez plus de 2 000 installations réalisées dans le monde entier. Des centres de divertissement familial à Dubaï aux parcs de trampolines aux États-Unis, chaque projet démontre notre engagement envers la qualité."
-     },
-     "contact": {
-       "title": "Démarrez Votre",
-       "titleHighlight": "Projet Aujourd'hui",
-       "description": "Prêt à créer un espace de jeu incroyable ? Obtenez un design 3D gratuit et un devis compétitif sous 24 heures. Notre équipe d'experts est prête à donner vie à votre vision."
-     },
-     "faq": {
-       "title": "Des Questions ?",
-       "titleHighlight": "Nous Avons les Réponses",
-       "description": "Tout ce que vous devez savoir sur les prix, délais de livraison, expédition, installation, garanties et plus encore. Vous ne trouvez pas ce que vous cherchez ? Notre équipe est à un message près."
-     }
-   },
+      "blog": {
+        "title": "Blog Aires de Jeux",
+        "titleHighlight": "Intérieures & Actualités",
+        "description": "Restez informé des dernières tendances, conseils et actualités de l'industrie des aires de jeux intérieures et du divertissement familial. Perspectives d'experts pour vous aider à bâtir une entreprise prospère."
+      },
+      "aboutUs": {
+        "title": "À Propos de",
+        "titleHighlight": "NinescapeLand",
+        "description": "Depuis 2008, nous créons joie et aventure pour les familles du monde entier. En tant que <strong>fabricant leader d'aires de jeux intérieures</strong> avec plus de 15 ans d'expertise, nous avons réalisé avec succès plus de <strong>2 000 projets</strong> dans plus de 50 pays."
+      },
+      "products": {
+        "title": "Équipements Commerciaux",
+        "titleHighlight": "d'Aires de Jeux",
+        "description": "Des <strong>parcs de trampolines</strong> passionnants aux <strong>aires de jeux intérieures</strong> créatives, parcours ninja aux espaces de jeux souples sécurisés - découvrez notre gamme complète d'équipements certifiés ASTM et TUV."
+      },
+      "process": {
+        "title": "Processus de Fabrication",
+        "titleHighlight": "et Installation",
+        "description": "Découvrez notre processus éprouvé en 6 étapes : de la <strong>consultation de design 3D gratuite</strong> à la fabrication professionnelle, l'expédition mondiale et le support d'installation."
+      },
+      "projects": {
+        "title": "2 000+ Projets d'Aires de Jeux",
+        "titleHighlight": "dans le Monde Entier",
+        "description": "Explorez plus de <strong>2 000 installations réalisées</strong> dans le monde entier. Des centres de divertissement familial à Dubaï aux parcs de trampolines aux États-Unis, chaque projet démontre notre engagement envers la qualité."
+      },
+      "contact": {
+        "title": "Contactez-Nous pour",
+        "titleHighlight": "Design Gratuit d'Aire de Jeux",
+        "description": "Prêt à créer un espace de jeu incroyable ? Obtenez un <strong>design 3D gratuit</strong> et un devis compétitif sous 24 heures. Notre équipe d'experts est prête à donner vie à votre vision."
+      },
+      "faq": {
+        "title": "Équipements d'Aires de Jeux",
+        "titleHighlight": "FAQ & Réponses",
+        "description": "Tout ce que vous devez savoir sur les <strong>prix des équipements</strong>, délais de livraison, expédition mondiale, <strong>installation</strong>, garanties et plus encore. Notre équipe est à un message près."
+      }
+    },
    "topBar": {
      "globalShipping": "Livraison Mondiale",
      "warranty": "Garantie 3 Ans",

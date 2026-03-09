@@ -97,39 +97,39 @@
   },
   "pages": {
     "blog": {
-      "title": "Branchen",
-      "titleHighlight": "Einblicke & News",
+      "title": "Indoor-Spielplatz",
+      "titleHighlight": "Branchen-Blog & News",
       "description": "Bleiben Sie auf dem Laufenden mit den neuesten Trends, Tipps und Neuigkeiten in der Indoor-Spielplatz- und Familienunterhaltungsbranche. Experteneinblicke für Ihren geschäftlichen Erfolg."
     },
     "aboutUs": {
       "title": "Über",
       "titleHighlight": "NinescapeLand",
-      "description": "Seit 2008 schaffen wir Freude und Abenteuer für Familien weltweit. Als führender Indoor-Spielplatz-Hersteller mit über 15 Jahren Erfahrung haben wir erfolgreich mehr als 2.000 Projekte in über 50 Ländern realisiert."
+      "description": "Seit 2008 schaffen wir Freude und Abenteuer für Familien weltweit. Als führender <strong>Indoor-Spielplatz-Hersteller</strong> mit über 15 Jahren Erfahrung haben wir erfolgreich mehr als <strong>2.000 Projekte</strong> in über 50 Ländern realisiert."
     },
     "products": {
-      "title": "Premium",
-      "titleHighlight": "Spielplatzlösungen",
-      "description": "Von aufregenden Trampolinparks über fantasievolle Indoor-Spielplätze bis zu Ninja-Parcours und sicheren Soft-Play-Bereichen - entdecken Sie unser komplettes Sortiment an ASTM & TUV-zertifizierten kommerziellen Spielplatzgeräten."
+      "title": "Kommerzielle Spielplatz",
+      "titleHighlight": "Ausrüstung & Lösungen",
+      "description": "Von aufregenden <strong>Trampolinparks</strong> über fantasievolle <strong>Indoor-Spielplätze</strong> bis zu Ninja-Parcours und sicheren Soft-Play-Bereichen - entdecken Sie unser komplettes Sortiment an ASTM & TUV-zertifizierten Spielplatzgeräten."
     },
     "process": {
-      "title": "Ihr Weg zur",
-      "titleHighlight": "Eröffnung",
-      "description": "Erleben Sie unseren bewährten 6-Stufen-Prozess: von der kostenlosen 3D-Designberatung über professionelle Fertigung bis zum weltweiten Versand und Installationsunterstützung. Wir kümmern uns um alles."
+      "title": "Spielplatz-Fertigung",
+      "titleHighlight": "Prozess & Installation",
+      "description": "Erleben Sie unseren bewährten 6-Stufen-Prozess: von der <strong>kostenlosen 3D-Designberatung</strong> über professionelle Fertigung bis zum weltweiten Versand und Installationsunterstützung."
     },
     "projects": {
-      "title": "Globale",
-      "titleHighlight": "Erfolgsgeschichten",
-      "description": "Entdecken Sie über 2.000 abgeschlossene Installationen weltweit. Von Familienunterhaltungszentren in Dubai bis zu Trampolinparks in den USA - jedes Projekt zeigt unser Engagement für Qualität."
+      "title": "2.000+ Spielplatzprojekte",
+      "titleHighlight": "Weltweit",
+      "description": "Entdecken Sie über <strong>2.000 abgeschlossene Installationen</strong> weltweit. Von Familienunterhaltungszentren in Dubai bis zu Trampolinparks in den USA - jedes Projekt zeigt unser Engagement für Qualität."
     },
     "contact": {
-      "title": "Starten Sie Ihr",
-      "titleHighlight": "Projekt Heute",
-      "description": "Bereit, einen erstaunlichen Spielbereich zu schaffen? Erhalten Sie ein kostenloses 3D-Design und ein wettbewerbsfähiges Angebot innerhalb von 24 Stunden. Unser Expertenteam steht bereit."
+      "title": "Kontaktieren Sie Uns für",
+      "titleHighlight": "Kostenloses Spielplatz-Design",
+      "description": "Bereit, einen erstaunlichen Spielbereich zu schaffen? Erhalten Sie ein <strong>kostenloses 3D-Design</strong> und ein wettbewerbsfähiges Angebot innerhalb von 24 Stunden. Unser Expertenteam steht bereit."
     },
     "faq": {
-      "title": "Fragen?",
-      "titleHighlight": "Wir Haben Antworten",
-      "description": "Alles, was Sie über Preise, Lieferzeiten, Versand, Installation, Garantien und mehr wissen müssen. Nicht gefunden, was Sie suchen? Unser Team ist nur eine Nachricht entfernt."
+      "title": "Indoor-Spielplatz-Ausrüstung",
+      "titleHighlight": "FAQ & Antworten",
+      "description": "Alles über <strong>Spielplatz-Preise</strong>, Lieferzeiten, weltweiten Versand, <strong>Installation</strong>, Garantien und mehr. Nicht gefunden, was Sie suchen? Unser Team ist nur eine Nachricht entfernt."
     }
   },
   "topBar": {

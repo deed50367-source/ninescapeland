@@ -97,39 +97,39 @@
   },
   "pages": {
     "blog": {
-      "title": "Perspectivas",
-      "titleHighlight": "e Noticias del Sector",
+      "title": "Blog de Parques",
+      "titleHighlight": "Infantiles y Noticias",
       "description": "Manténgase actualizado con las últimas tendencias, consejos y noticias en la industria de parques infantiles y entretenimiento familiar. Perspectivas de expertos para ayudarlo a construir un negocio exitoso."
     },
     "aboutUs": {
       "title": "Sobre",
       "titleHighlight": "NinescapeLand",
-      "description": "Desde 2008, creamos alegría y aventura para familias en todo el mundo. Como fabricante líder de parques infantiles con más de 15 años de experiencia, hemos completado exitosamente más de 2,000 proyectos en más de 50 países."
+      "description": "Desde 2008, creamos alegría y aventura para familias en todo el mundo. Como <strong>fabricante líder de parques infantiles</strong> con más de 15 años de experiencia, hemos completado exitosamente más de <strong>2,000 proyectos</strong> en más de 50 países."
     },
     "products": {
-      "title": "Soluciones de",
-      "titleHighlight": "Parques Premium",
-      "description": "Desde emocionantes parques de trampolines hasta creativos parques infantiles, cursos ninja hasta áreas de juego suave seguras - descubre nuestra gama completa de equipos comerciales certificados ASTM y TUV."
+      "title": "Equipos Comerciales de",
+      "titleHighlight": "Parques Infantiles",
+      "description": "Desde emocionantes <strong>parques de trampolines</strong> hasta creativos <strong>parques infantiles</strong>, cursos ninja hasta áreas de juego suave seguras - descubre nuestra gama completa de equipos comerciales certificados ASTM y TUV."
     },
     "process": {
-      "title": "Tu Camino a la",
-      "titleHighlight": "Gran Apertura",
-      "description": "Experimenta nuestro proceso probado de 6 pasos: desde consulta de diseño 3D gratuita hasta fabricación profesional, envío global y soporte de instalación. Nos encargamos de todo."
+      "title": "Proceso de Fabricación",
+      "titleHighlight": "e Instalación",
+      "description": "Experimenta nuestro proceso probado de 6 pasos: desde <strong>consulta de diseño 3D gratuita</strong> hasta fabricación profesional, envío global y soporte de instalación. Nos encargamos de todo."
     },
     "projects": {
-      "title": "Historias de",
-      "titleHighlight": "Éxito Globales",
-      "description": "Explora más de 2,000 instalaciones completadas en todo el mundo. Desde centros de entretenimiento familiar en Dubai hasta parques de trampolines en EE.UU., cada proyecto muestra nuestro compromiso con la calidad."
+      "title": "2,000+ Proyectos de Parques",
+      "titleHighlight": "en Todo el Mundo",
+      "description": "Explora más de <strong>2,000 instalaciones completadas</strong> en todo el mundo. Desde centros de entretenimiento familiar en Dubai hasta parques de trampolines en EE.UU., cada proyecto muestra nuestro compromiso con la calidad."
     },
     "contact": {
-      "title": "Comienza Tu",
-      "titleHighlight": "Proyecto Hoy",
-      "description": "¿Listo para crear un espacio de juego increíble? Obtén un diseño 3D gratuito y una cotización competitiva en 24 horas. Nuestro equipo experto está listo para dar vida a tu visión."
+      "title": "Contáctenos para",
+      "titleHighlight": "Diseño Gratuito de Parques",
+      "description": "¿Listo para crear un espacio de juego increíble? Obtén un <strong>diseño 3D gratuito</strong> y una cotización competitiva en 24 horas. Nuestro equipo experto está listo para dar vida a tu visión."
     },
     "faq": {
-      "title": "¿Preguntas?",
-      "titleHighlight": "Tenemos Respuestas",
-      "description": "Todo lo que necesitas saber sobre precios, tiempos de entrega, envío, instalación, garantías y más. ¿No encuentras lo que buscas? Nuestro equipo está a un mensaje de distancia."
+      "title": "Equipos de Parques Infantiles",
+      "titleHighlight": "Preguntas Frecuentes",
+      "description": "Todo lo que necesitas saber sobre <strong>precios de equipos</strong>, tiempos de entrega, envío global, <strong>instalación</strong>, garantías y más. ¿No encuentras lo que buscas? Nuestro equipo está a un mensaje de distancia."
     }
   },
   "topBar": {
