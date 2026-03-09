@@ -414,6 +414,8 @@ const NinjaCourse = () => {
                   src={galleryImages[1]}
                   alt="Professional Ninja Warrior Course Obstacles by NinescapeLand"
                   className="rounded-2xl shadow-2xl"
+                  loading="lazy"
+                  decoding="async"
                 />
                 <div className="absolute -bottom-6 -right-6 bg-primary text-primary-foreground p-4 rounded-xl shadow-lg">
                   <div className="flex items-center gap-2">
