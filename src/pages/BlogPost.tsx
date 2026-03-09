@@ -12,6 +12,7 @@ import { BlogPostingSchema, BreadcrumbSchema } from "@/components/StructuredData
 import { BlogTableOfContents } from "@/components/BlogTableOfContents";
 import { BlogRelatedPosts } from "@/components/BlogRelatedPosts";
 import { BlogCategoryTags } from "@/components/BlogCategoryTags";
+import { VisualBreadcrumb } from "@/components/VisualBreadcrumb";
 import { BlogSidebar } from "@/components/BlogSidebar";
 import { useLocalizedPath } from "@/hooks/useLocalizedPath";
 import { useIsMobile } from "@/hooks/use-mobile";
