@@ -29,6 +29,7 @@ const BASE_URL = `http://localhost:${PORT}`;
 // All core routes to prerender
 const CORE_ROUTES = [
   "/",
+  "/404",
   "/about-us",
   "/products",
   "/products/indoor-playground",
