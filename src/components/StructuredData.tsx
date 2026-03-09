@@ -598,6 +598,48 @@ export const LocalBusinessSchema = () => {
   );
 };
 
+// ContactPage Schema - for the contact page
+export const ContactPageSchema = () => {
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "ContactPage",
+    name: "Contact NinescapeLand",
+    description: "Contact NinescapeLand for a free 3D playground design & quote within 24 hours. Multilingual support, WhatsApp, email or phone.",
+    url: "https://indoorplaygroundsolution.com/contact",
+    mainEntity: {
+      "@type": "Organization",
+      name: "NinescapeLand",
+      url: "https://indoorplaygroundsolution.com",
+      telephone: "+86-150-5878-2901",
+      email: "sale@indoorplaygroundsolution.com",
+      contactPoint: [
+        {
+          "@type": "ContactPoint",
+          telephone: "+86-150-5878-2901",
+          contactType: "sales",
+          availableLanguage: ["English", "Chinese", "Spanish", "Portuguese", "German", "French", "Arabic"],
+          areaServed: "Worldwide"
+        },
+        {
+          "@type": "ContactPoint",
+          telephone: "+86-150-5878-2901",
+          contactType: "customer support",
+          availableLanguage: ["English", "Chinese"],
+          areaServed: "Worldwide"
+        }
+      ]
+    }
+  };
+
+  return (
+    <Helmet>
+      <script type="application/ld+json">
+        {JSON.stringify(schema)}
+      </script>
+    </Helmet>
+  );
+};
+
 // WebSite Schema with SearchAction
 export const WebsiteSchema = () => {
   const schema = {
