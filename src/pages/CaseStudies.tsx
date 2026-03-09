@@ -3,6 +3,8 @@ import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { MapPin, ArrowRight, Quote, Filter, X } from "lucide-react";
 import { useTranslation } from "react-i18next";
+import DOMPurify from "dompurify";
+import { useTranslation } from "react-i18next";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { SEOHead } from "@/components/SEOHead";
