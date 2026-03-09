@@ -434,6 +434,8 @@ const SoftPlay = () => {
                   src={galleryImages[2]}
                   alt="Safety standards"
                   className="rounded-2xl shadow-2xl"
+                  loading="lazy"
+                  decoding="async"
                 />
                 <div className="absolute -bottom-6 -right-6 bg-green-500 text-white p-4 rounded-xl shadow-lg">
                   <div className="flex items-center gap-2">
