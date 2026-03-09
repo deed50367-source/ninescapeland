@@ -97,39 +97,39 @@
   },
   "pages": {
     "blog": {
-      "title": "Perspectivas",
-      "titleHighlight": "e Notícias do Setor",
+      "title": "Blog de Playground",
+      "titleHighlight": "Indoor e Notícias",
       "description": "Fique atualizado com as últimas tendências, dicas e notícias na indústria de playgrounds e entretenimento familiar. Insights de especialistas para ajudá-lo a construir um negócio de sucesso."
     },
     "aboutUs": {
       "title": "Sobre a",
       "titleHighlight": "NinescapeLand",
-      "description": "Desde 2008, criamos alegria e aventura para famílias em todo o mundo. Como fabricante líder de playgrounds com mais de 15 anos de experiência, concluímos com sucesso mais de 2.000 projetos em mais de 50 países."
+      "description": "Desde 2008, criamos alegria e aventura para famílias em todo o mundo. Como <strong>fabricante líder de playgrounds</strong> com mais de 15 anos de experiência, concluímos com sucesso mais de <strong>2.000 projetos</strong> em mais de 50 países."
     },
     "products": {
-      "title": "Soluções",
-      "titleHighlight": "Premium de Playground",
-      "description": "De emocionantes parques de trampolins a criativos playgrounds indoor, cursos ninja a áreas de brinquedo macio seguras - descubra nossa linha completa de equipamentos comerciais certificados ASTM e TUV."
+      "title": "Equipamentos Comerciais de",
+      "titleHighlight": "Playground Indoor",
+      "description": "De emocionantes <strong>parques de trampolins</strong> a criativos <strong>playgrounds indoor</strong>, cursos ninja a áreas de brinquedo macio seguras - descubra nossa linha completa de equipamentos certificados ASTM e TUV."
     },
     "process": {
-      "title": "Sua Jornada até a",
-      "titleHighlight": "Grande Inauguração",
-      "description": "Experimente nosso processo comprovado de 6 etapas: da consulta de design 3D gratuita à fabricação profissional, envio global e suporte de instalação. Cuidamos de tudo."
+      "title": "Processo de Fabricação",
+      "titleHighlight": "e Instalação",
+      "description": "Experimente nosso processo comprovado de 6 etapas: da <strong>consulta de design 3D gratuita</strong> à fabricação profissional, envio global e suporte de instalação. Cuidamos de tudo."
     },
     "projects": {
-      "title": "Histórias de",
-      "titleHighlight": "Sucesso Globais",
-      "description": "Explore mais de 2.000 instalações concluídas em todo o mundo. De centros de entretenimento familiar em Dubai a parques de trampolins nos EUA, cada projeto mostra nosso compromisso com a qualidade."
+      "title": "2.000+ Projetos de Playground",
+      "titleHighlight": "no Mundo Todo",
+      "description": "Explore mais de <strong>2.000 instalações concluídas</strong> em todo o mundo. De centros de entretenimento familiar em Dubai a parques de trampolins nos EUA, cada projeto mostra nosso compromisso com a qualidade."
     },
     "contact": {
-      "title": "Comece Seu",
-      "titleHighlight": "Projeto Hoje",
-      "description": "Pronto para criar um espaço de diversão incrível? Receba um design 3D gratuito e orçamento competitivo em 24 horas. Nossa equipe de especialistas está pronta para dar vida à sua visão."
+      "title": "Entre em Contato para",
+      "titleHighlight": "Design Gratuito de Playground",
+      "description": "Pronto para criar um espaço de diversão incrível? Receba um <strong>design 3D gratuito</strong> e orçamento competitivo em 24 horas. Nossa equipe de especialistas está pronta para dar vida à sua visão."
     },
     "faq": {
-      "title": "Dúvidas?",
-      "titleHighlight": "Temos Respostas",
-      "description": "Tudo o que você precisa saber sobre preços, prazos de entrega, envio, instalação, garantias e mais. Não encontrou o que procura? Nossa equipe está a uma mensagem de distância."
+      "title": "Equipamentos de Playground",
+      "titleHighlight": "Perguntas Frequentes",
+      "description": "Tudo sobre <strong>preços de equipamentos</strong>, prazos de entrega, envio global, <strong>instalação</strong>, garantias e mais. Não encontrou o que procura? Nossa equipe está a uma mensagem de distância."
     }
   },
   "topBar": {
@@ -2106,9 +2106,9 @@
   },
   "caseStudies": {
     "sectionLabel": "Nosso Portfólio",
-    "title": "Estudos de Caso",
-    "titleHighlight": "Globais",
-    "description": "Explore nossos projetos bem-sucedidos de todo o mundo. Cada projeto demonstra nosso compromisso com qualidade, inovação e satisfação do cliente.",
+    "title": "Estudos de Caso de",
+    "titleHighlight": "Playgrounds Indoor",
+    "description": "Explore nossas <strong>instalações de playground indoor</strong> bem-sucedidas de todo o mundo. Cada projeto demonstra nosso compromisso com qualidade, inovação e satisfação do cliente.",
     "filters": {
       "allCountries": "Todos os Países",
       "allTypes": "Todos os Tipos",

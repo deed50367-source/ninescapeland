@@ -97,39 +97,39 @@
   },
   "pages": {
     "blog": {
-      "title": "Industry",
-      "titleHighlight": "Insights & News",
+      "title": "Indoor Playground",
+      "titleHighlight": "Industry Blog & News",
       "description": "Stay updated with the latest trends, tips, and news in the indoor playground and family entertainment industry. Expert insights to help you build a successful business."
     },
     "aboutUs": {
       "title": "About",
       "titleHighlight": "NinescapeLand",
-      "description": "Since 2008, we've been crafting joy and adventure for families worldwide. As a leading indoor playground manufacturer with 15+ years of expertise, we've successfully delivered 2,000+ projects across 50+ countries, turning dreams into unforgettable play experiences."
+      "description": "Since 2008, we've been crafting joy and adventure for families worldwide. As a leading <strong>indoor playground manufacturer</strong> with 15+ years of expertise, we've successfully delivered <strong>2,000+ projects</strong> across 50+ countries, turning dreams into unforgettable play experiences."
     },
     "products": {
-      "title": "Premium",
-      "titleHighlight": "Playground Solutions",
-      "description": "From thrilling trampoline parks to imaginative indoor playgrounds, ninja warrior courses to safe soft play areas - discover our complete range of ASTM & TUV certified commercial playground equipment designed for maximum fun and safety."
+      "title": "Commercial Playground",
+      "titleHighlight": "Equipment & Solutions",
+      "description": "From thrilling <strong>trampoline parks</strong> to imaginative <strong>indoor playgrounds</strong>, ninja warrior courses to safe soft play areas - discover our complete range of ASTM & TUV certified commercial playground equipment designed for maximum fun and safety."
     },
     "process": {
-      "title": "Your Journey to",
-      "titleHighlight": "Grand Opening",
-      "description": "Experience our proven 6-step turnkey process: from free 3D design consultation to professional manufacturing, global shipping, and installation support. We handle everything so you can focus on your business success."
+      "title": "Playground Manufacturing",
+      "titleHighlight": "Process & Installation",
+      "description": "Experience our proven 6-step turnkey process: from <strong>free 3D design</strong> consultation to professional manufacturing, global shipping, and installation support. We handle everything so you can focus on your business success."
     },
     "projects": {
-      "title": "Global",
-      "titleHighlight": "Success Stories",
-      "description": "Explore 2,000+ completed installations across the globe. From family entertainment centers in Dubai to trampoline parks in the USA, each project showcases our commitment to quality craftsmanship and customer satisfaction."
+      "title": "2,000+ Playground Projects",
+      "titleHighlight": "Worldwide",
+      "description": "Explore <strong>2,000+ completed installations</strong> across the globe. From family entertainment centers in Dubai to trampoline parks in the USA, each project showcases our commitment to quality craftsmanship and customer satisfaction."
     },
     "contact": {
-      "title": "Start Your",
-      "titleHighlight": "Project Today",
-      "description": "Ready to create an amazing play space? Get a free 3D design and competitive quote within 24 hours. Our expert team is standing by to bring your vision to life with personalized solutions tailored to your space and budget."
+      "title": "Contact Us for",
+      "titleHighlight": "Free Playground Design",
+      "description": "Ready to create an amazing play space? Get a <strong>free 3D design</strong> and competitive quote within 24 hours. Our expert team is standing by to bring your vision to life with personalized solutions tailored to your space and budget."
     },
     "faq": {
-      "title": "Questions?",
-      "titleHighlight": "We Have Answers",
-      "description": "Everything you need to know about pricing, lead times, shipping, installation, warranties, and more. Can't find what you're looking for? Our team is just a message away."
+      "title": "Indoor Playground Equipment",
+      "titleHighlight": "FAQ & Answers",
+      "description": "Everything you need to know about <strong>playground equipment pricing</strong>, lead times, global shipping, <strong>installation</strong>, warranties, and more. Can't find what you're looking for? Our team is just a message away."
     }
   },
   "topBar": {
@@ -2125,9 +2125,9 @@
   },
   "caseStudies": {
     "sectionLabel": "Our Portfolio",
-    "title": "Global",
-    "titleHighlight": "Case Studies",
-    "description": "Explore our successful projects from around the world. Each project showcases our commitment to quality, innovation, and client satisfaction.",
+    "title": "Indoor Playground",
+    "titleHighlight": "Project Case Studies",
+    "description": "Explore our successful <strong>indoor playground installations</strong> from around the world. Each project showcases our commitment to quality, innovation, and client satisfaction.",
     "filters": {
       "allCountries": "All Countries",
       "allTypes": "All Types",
