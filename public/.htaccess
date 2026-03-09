@@ -16,11 +16,22 @@
   RewriteCond %{DOCUMENT_ROOT}%{REQUEST_URI}/index.html -f
   RewriteRule ^(.*)$ /$1/index.html [L]
 
-  # Handle SPA routing - serve index.html for all routes
+  # SPA fallback ONLY for known dynamic route patterns (blog posts, dynamic products, locations, admin)
   RewriteCond %{REQUEST_FILENAME} !-f
   RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteCond %{DOCUMENT_ROOT}%{REQUEST_URI}/index.html !-f
+  RewriteCond %{REQUEST_URI} ^/(blog/.+|products/.+|locations/.+|admin|ar/(blog|products|locations)/.+|es/(blog|products|locations)/.+|de/(blog|products|locations)/.+|fr/(blog|products|locations)/.+|pt/(blog|products|locations)/.+) [NC]
   RewriteRule ^ index.html [L]
+
+  # Everything else that doesn't match a file or prerendered page → 404
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteCond %{DOCUMENT_ROOT}%{REQUEST_URI}/index.html !-f
+  RewriteRule ^ - [R=404,L]
 </IfModule>
+
+# Custom 404 error page with proper HTTP 404 status code
+ErrorDocument 404 /404/index.html
 
 # Enable compression for all text-based content
 <IfModule mod_deflate.c>
