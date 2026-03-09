@@ -94,6 +94,8 @@ export const ProjectTypesSection = () => {
                     src={type.image}
                     alt={type.title}
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    loading="lazy"
+                    decoding="async"
                   />
                 </div>
                 <div className="md:w-3/5 p-6">
