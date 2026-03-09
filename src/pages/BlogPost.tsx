@@ -41,6 +41,27 @@ const BlogPost = () => {
   // Get current language code
   const currentLang = i18n.language?.split('-')[0] || 'en';
 
+  // Check for slug redirect (old long URLs → new short URLs)
+  const { data: redirectData } = useQuery({
+    queryKey: ["blog-slug-redirect", slug],
+    queryFn: async () => {
+      const { data } = await supabase
+        .from("blog_slug_redirects")
+        .select("new_slug")
+        .eq("old_slug", slug)
+        .single();
+      return data;
+    },
+    enabled: !!slug,
+  });
+
+  // Redirect to new slug if found
+  React.useEffect(() => {
+    if (redirectData?.new_slug) {
+      navigate(localizedPath(`/blog/${redirectData.new_slug}`), { replace: true });
+    }
+  }, [redirectData, navigate, localizedPath]);
+
   // Query for the post in current language
   const { data: post, isLoading, error } = useQuery({
     queryKey: ["blog-post", slug, currentLang],
@@ -56,7 +77,7 @@ const BlogPost = () => {
       if (error) throw error;
       return data;
     },
-    enabled: !!slug,
+    enabled: !!slug && !redirectData?.new_slug,
   });
 
   // Query for available translations of this article (same slug, different languages)
