@@ -811,6 +811,8 @@ const TrampolinePark = () => {
                     src={image} 
                     alt={`Custom Trampoline Park Design ${index + 1} by NinescapeLand`}
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                    loading="lazy"
+                    decoding="async"
                   />
                   <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors" />
                 </motion.div>
