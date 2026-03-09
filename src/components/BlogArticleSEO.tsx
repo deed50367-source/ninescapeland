@@ -65,6 +65,8 @@ export const BlogArticleSEO = ({
   const isRTL = langConfig?.rtl || false;
 
   return (
+    <>
+    <WebsiteSchema />
     <Helmet>
       <html lang={currentLang} dir={isRTL ? "rtl" : "ltr"} />
       
