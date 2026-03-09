@@ -2125,9 +2125,9 @@
   },
   "caseStudies": {
     "sectionLabel": "Our Portfolio",
-    "title": "Global",
-    "titleHighlight": "Case Studies",
-    "description": "Explore our successful projects from around the world. Each project showcases our commitment to quality, innovation, and client satisfaction.",
+    "title": "Indoor Playground",
+    "titleHighlight": "Project Case Studies",
+    "description": "Explore our successful <strong>indoor playground installations</strong> from around the world. Each project showcases our commitment to quality, innovation, and client satisfaction.",
     "filters": {
       "allCountries": "All Countries",
       "allTypes": "All Types",
