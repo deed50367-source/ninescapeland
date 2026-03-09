@@ -2,6 +2,7 @@ import { Helmet } from "react-helmet-async";
 import { useTranslation } from "react-i18next";
 import { useParams, useLocation } from "react-router-dom";
 import { languages } from "@/i18n/config";
+import { WebsiteSchema } from "@/components/StructuredData";
 
 interface SEOHeadProps {
   pageKey: string;
