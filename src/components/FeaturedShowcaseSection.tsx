@@ -1,11 +1,14 @@
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import { ArrowRight, ArrowLeft, Star, MapPin, Sparkles } from "lucide-react";
+import { ArrowRight, ArrowLeft, Star, MapPin, Sparkles, BookOpen } from "lucide-react";
 import { useLocalizedPath } from "@/hooks/useLocalizedPath";
 import { useRTL } from "@/hooks/useRTL";
 import { useSiteImages } from "@/hooks/useSiteImages";
 import { productImages, projectImages } from "@/config/galleryImages";
+import { useQuery } from "@tanstack/react-query";
+import { supabase } from "@/integrations/supabase/client";
+import { useTranslation as useI18n } from "react-i18next";
 
 import productIndoorPlayground from "@/assets/product-indoor-playground.jpg";
 import productTrampolinePark from "@/assets/product-trampoline-park.jpg";
