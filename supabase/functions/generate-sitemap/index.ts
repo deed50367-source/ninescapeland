@@ -131,6 +131,14 @@ Deno.serve(async (req) => {
       { path: "/faq", changefreq: "monthly", priority: "0.6" },
       { path: "/blog", changefreq: "daily", priority: "0.8" },
       { path: "/case-studies", changefreq: "weekly", priority: "0.7" },
+      // Industry niche landing pages
+      { path: "/best-indoorplaygroundsolution-active-play-for-running-facilities", changefreq: "monthly", priority: "0.7" },
+      { path: "/indoorplaygroundsolution-office-wellness-solutions", changefreq: "monthly", priority: "0.7" },
+      { path: "/soft-play-equipment-shopping-mall-solutions", changefreq: "monthly", priority: "0.7" },
+      { path: "/trampoline-park-fec-solutions", changefreq: "monthly", priority: "0.7" },
+      // ROI analysis pages
+      { path: "/indoor-playground-roi-analysis-uk", changefreq: "monthly", priority: "0.7" },
+      { path: "/indoor-playground-roi-canada", changefreq: "monthly", priority: "0.7" },
       // Location landing pages
       { path: "/locations/indoor-playground-equipment-usa", changefreq: "monthly", priority: "0.8" },
       { path: "/locations/indoor-playground-equipment-uk", changefreq: "monthly", priority: "0.8" },
@@ -142,9 +150,6 @@ Deno.serve(async (req) => {
       { path: "/locations/indoor-playground-equipment-india", changefreq: "monthly", priority: "0.8" },
       { path: "/locations/indoor-playground-equipment-mexico", changefreq: "monthly", priority: "0.8" },
       { path: "/locations/indoor-playground-equipment-brazil", changefreq: "monthly", priority: "0.8" },
-      // Industry niche landing pages
-      { path: "/soft-play-equipment-shopping-mall-solutions", changefreq: "monthly", priority: "0.7" },
-      { path: "/trampoline-park-fec-solutions", changefreq: "monthly", priority: "0.7" },
     ];
 
     const staticUrlEntries = staticPages
