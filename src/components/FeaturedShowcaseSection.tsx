@@ -8,7 +8,6 @@ import { useSiteImages } from "@/hooks/useSiteImages";
 import { productImages, projectImages } from "@/config/galleryImages";
 import { useQuery } from "@tanstack/react-query";
 import { supabase } from "@/integrations/supabase/client";
-import { useTranslation as useI18n } from "react-i18next";
 
 import productIndoorPlayground from "@/assets/product-indoor-playground.jpg";
 import productTrampolinePark from "@/assets/product-trampoline-park.jpg";
