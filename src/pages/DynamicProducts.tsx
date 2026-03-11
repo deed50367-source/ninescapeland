@@ -548,7 +548,7 @@ const DynamicProducts = () => {
                 </h2>
               </motion.div>
 
-              <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
                 {categories.map((category, index) => {
                   const categoryProducts = products.filter(
                     (p) => p.category_id === category.id
