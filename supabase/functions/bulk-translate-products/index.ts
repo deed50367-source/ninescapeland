@@ -75,11 +75,13 @@ serve(async (req) => {
     const { batch = 0, batchSize = 3 } = await req.json().catch(() => ({}));
     const supabase = createClient(SUPABASE_URL, SUPABASE_SERVICE_ROLE_KEY);
 
+    // Get products missing at least one translation
     const { data: products, error } = await supabase
       .from('products')
       .select('id, slug, description, description_es, description_de, description_pt, description_ar, description_fr')
       .eq('is_active', true)
       .not('description', 'is', null)
+      .or('description_es.is.null,description_de.is.null,description_pt.is.null,description_ar.is.null,description_fr.is.null')
       .order('slug')
       .range(batch * batchSize, (batch + 1) * batchSize - 1);
 
