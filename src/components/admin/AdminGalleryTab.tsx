@@ -12,13 +12,26 @@ import {
 } from "lucide-react";
 import { toast } from "sonner";
 
-// Sanitize file/folder names for Supabase Storage keys (no Chinese/special chars)
+// Sanitize file/folder names for Supabase Storage keys
+// Strips all non-ASCII chars and keeps only safe characters
 const sanitizeStorageKey = (name: string): string => {
-  return name
-    .replace(/[^\x20-\x7E]/g, (ch) => encodeURIComponent(ch).replace(/%/g, '_'))
+  // Split extension
+  const dotIdx = name.lastIndexOf('.');
+  const baseName = dotIdx > 0 ? name.substring(0, dotIdx) : name;
+  const ext = dotIdx > 0 ? name.substring(dotIdx) : '';
+  
+  // Keep only alphanumeric, dash, underscore; collapse
+  let safe = baseName
+    .replace(/[^\x20-\x7E]/g, '') // remove non-ASCII
     .replace(/\s+/g, '_')
-    .replace(/[^a-zA-Z0-9_\-./]/g, '_')
-    .replace(/_+/g, '_');
+    .replace(/[^a-zA-Z0-9_\-]/g, '_')
+    .replace(/_+/g, '_')
+    .replace(/^_|_$/g, '');
+  
+  // If nothing left after sanitizing, use timestamp
+  if (!safe) safe = `file_${Date.now()}`;
+  
+  return safe + ext.toLowerCase();
 };
 
 interface AssetFolder {
