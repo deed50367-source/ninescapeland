@@ -16,7 +16,7 @@ serve(async (req) => {
   }
 
   try {
-    const { lang = 'es', offset = 0 } = await req.json().catch(() => ({}));
+    const { lang = 'es' } = await req.json().catch(() => ({}));
     
     const langMap: Record<string, { name: string; column: string }> = {
       es: { name: 'Spanish', column: 'description_es' },
@@ -31,7 +31,6 @@ serve(async (req) => {
 
     const supabase = createClient(SUPABASE_URL, SUPABASE_SERVICE_ROLE_KEY);
 
-    // Get ONE product missing this language's translation
     const { data: products, error } = await supabase
       .from('products')
       .select(`id, slug, description, ${target.column}`)
@@ -39,11 +38,11 @@ serve(async (req) => {
       .not('description', 'is', null)
       .is(target.column, null)
       .order('slug')
-      .range(offset, offset);
+      .limit(1);
 
     if (error) throw error;
     if (!products?.length) {
-      return new Response(JSON.stringify({ done: true, lang, message: `No more products need ${lang} translation` }), {
+      return new Response(JSON.stringify({ done: true, lang }), {
         headers: { ...corsHeaders, 'Content-Type': 'application/json' },
       });
     }
@@ -58,7 +57,7 @@ serve(async (req) => {
         'Content-Type': 'application/json',
       },
       body: JSON.stringify({
-        model: 'openai/gpt-5-nano',
+        model: 'google/gemini-2.5-flash-lite',
         messages: [
           {
             role: 'system',
@@ -66,8 +65,8 @@ serve(async (req) => {
           },
           { role: 'user', content: product.description }
         ],
-        max_completion_tokens: 3000,
-        temperature: 1,
+        max_tokens: 3000,
+        temperature: 0.3,
       }),
     });
 
@@ -78,7 +77,6 @@ serve(async (req) => {
 
     const data = await response.json();
     const translated = data.choices[0]?.message?.content?.trim();
-    
     if (!translated) throw new Error('Empty translation');
 
     const { error: updateError } = await supabase
@@ -88,8 +86,16 @@ serve(async (req) => {
 
     if (updateError) throw updateError;
 
+    // Count remaining
+    const { count } = await supabase
+      .from('products')
+      .select('id', { count: 'exact', head: true })
+      .eq('is_active', true)
+      .not('description', 'is', null)
+      .is(target.column, null);
+
     return new Response(
-      JSON.stringify({ slug: product.slug, lang, status: 'ok' }),
+      JSON.stringify({ slug: product.slug, lang, status: 'ok', remaining: count }),
       { headers: { ...corsHeaders, 'Content-Type': 'application/json' } }
     );
   } catch (error: unknown) {
