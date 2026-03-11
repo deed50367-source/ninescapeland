@@ -12,6 +12,15 @@ import {
 } from "lucide-react";
 import { toast } from "sonner";
 
+// Sanitize file/folder names for Supabase Storage keys (no Chinese/special chars)
+const sanitizeStorageKey = (name: string): string => {
+  return name
+    .replace(/[^\x20-\x7E]/g, (ch) => encodeURIComponent(ch).replace(/%/g, '_'))
+    .replace(/\s+/g, '_')
+    .replace(/[^a-zA-Z0-9_\-./]/g, '_')
+    .replace(/_+/g, '_');
+};
+
 interface AssetFolder {
   id: string;
   name: string;
