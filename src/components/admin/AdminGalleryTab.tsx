@@ -12,6 +12,15 @@ import {
 } from "lucide-react";
 import { toast } from "sonner";
 
+// Sanitize file/folder names for Supabase Storage keys (no Chinese/special chars)
+const sanitizeStorageKey = (name: string): string => {
+  return name
+    .replace(/[^\x20-\x7E]/g, (ch) => encodeURIComponent(ch).replace(/%/g, '_'))
+    .replace(/\s+/g, '_')
+    .replace(/[^a-zA-Z0-9_\-./]/g, '_')
+    .replace(/_+/g, '_');
+};
+
 interface AssetFolder {
   id: string;
   name: string;
@@ -224,7 +233,7 @@ const AdminGalleryTab = () => {
     setIsUploading(true);
     
     for (const file of Array.from(files)) {
-      const filePath = `${currentFolderId || "root"}/${Date.now()}-${file.name}`;
+      const filePath = `${currentFolderId || "root"}/${Date.now()}-${sanitizeStorageKey(file.name)}`;
       const { error } = await supabase.storage.from("assets").upload(filePath, file);
       if (!error) {
         await supabase.from("assets").insert({
@@ -291,7 +300,7 @@ const AdminGalleryTab = () => {
       ));
 
       try {
-        const filePath = `${targetFolderId || "root"}/${Date.now()}-${file.name}`;
+        const filePath = `${targetFolderId || "root"}/${Date.now()}-${sanitizeStorageKey(file.name)}`;
         
         setUploadItems(prev => prev.map((item, idx) => 
           idx === i ? { ...item, progress: 50 } : item
