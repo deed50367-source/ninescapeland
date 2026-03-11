@@ -26,7 +26,16 @@ import {
   Check,
   MessageCircle,
   Mail,
+  Shield,
+  Truck,
+  Clock,
 } from "lucide-react";
+import { ProductTrustBadges } from "@/components/product-detail/ProductTrustBadges";
+import { ProductWhyChooseUs } from "@/components/product-detail/ProductWhyChooseUs";
+import { ProductProcessSteps } from "@/components/product-detail/ProductProcessSteps";
+import { ProductGalleryShowcase } from "@/components/product-detail/ProductGalleryShowcase";
+import { ProductMidCTA } from "@/components/product-detail/ProductMidCTA";
+import { ProductFAQSection } from "@/components/product-detail/ProductFAQSection";
 
 interface ProductCategory {
   id: string;
