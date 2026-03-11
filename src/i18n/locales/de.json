@@ -2390,5 +2390,96 @@
         "answer": "Kontaktieren Sie unser Vertriebsteam oder laden Sie unseren aktuellen Katalog herunter. Wir bieten wettbewerbsfähige Preise und Mengenrabatte für Unternehmenskunden."
       }
     }
+  },
+  "dynamicProduct": {
+    "quick": {
+      "certified": "ASTM & TUV Zertifiziert",
+      "shipping": "Weltweiter Versand",
+      "leadTime": "30-45 Tage Lieferzeit"
+    },
+    "pricing": {
+      "hint": "Individuelle Preisgestaltung basierend auf Ihrem Projekt",
+      "free": "Kostenloses 3D-Design + Angebot"
+    },
+    "trust": {
+      "certified": "International Zertifiziert",
+      "certifiedDesc": "ASTM, EN1176, TUV-zertifiziert für globale Sicherheitsstandards",
+      "shipping": "Weltweite Lieferung",
+      "shippingDesc": "Tür-zu-Tür-Versand in über 80 Länder",
+      "support": "Lebenslanger Support",
+      "supportDesc": "Dedizierter Projektmanager ab dem ersten Tag",
+      "warranty": "Bis zu 5 Jahre Garantie",
+      "warrantyDesc": "Branchenführende Garantie auf alle Geräte",
+      "leadTime": "30-45 Tage Lieferzeit",
+      "leadTimeDesc": "Schnelle Produktion mit strenger Qualitätskontrolle",
+      "installation": "Installationsanleitung",
+      "installationDesc": "Vor-Ort- oder Ferninstallationsunterstützung inklusive"
+    },
+    "why": {
+      "badge": "Warum NinescapeLand",
+      "title": "Warum mit uns zusammenarbeiten?",
+      "subtitle": "Wir sind nicht nur Ausrüstungslieferanten — wir sind Ihr Full-Service-Partner für den Aufbau eines profitablen Unterhaltungsgeschäfts.",
+      "customDesign": "100% Individuelles Design",
+      "customDesignDesc": "Jedes Projekt wird einzigartig gestaltet, um sich an Ihre Raumgröße, Ihr Thema und Ihre Zielgruppe anzupassen. Unser hauseigenes Designteam erstellt beeindruckende 3D-Renderings vor Produktionsbeginn.",
+      "ownFactory": "Eigene 20.000m² Fabrik",
+      "ownFactoryDesc": "Direkte Fabrikpreise ohne Zwischenhändler. Unsere vertikal integrierte Fertigung gewährleistet Qualitätskontrolle von den Rohstoffen bis zur fertigen Installation.",
+      "global": "500+ Projekte in 60+ Ländern",
+      "globalDesc": "Vertraut von Betreibern weltweit — von den USA bis zum Nahen Osten, von Europa bis Südostasien. Unsere Erfahrung erstreckt sich über vielfältige Märkte und Vorschriften.",
+      "turnkey": "Schlüsselfertige Lösungen",
+      "turnkeyDesc": "Vom ersten Konzept über die Standortplanung bis zur Gerätefertigung, Versand und Installation — wir übernehmen den gesamten Prozess, damit Sie sich auf Ihr Geschäft konzentrieren können.",
+      "safety": "Sicherheit an Erster Stelle",
+      "safetyDesc": "Alle Produkte erfüllen internationale Sicherheitsstandards einschließlich ASTM F1918, EN1176 und TUV-Zertifizierungen. Sicherheit ist in unserer Designphilosophie nicht verhandelbar.",
+      "roi": "Maximieren Sie Ihren ROI",
+      "roiDesc": "Strategische Layoutplanung zur Maximierung von Kapazität und Umsatz pro Quadratmeter. Unsere Designs sind für betriebliche Effizienz und Kundenfluss optimiert."
+    },
+    "process": {
+      "badge": "So funktioniert es",
+      "title": "Vom Konzept zur Eröffnung",
+      "subtitle": "Unser bewährter 4-Schritte-Prozess hat über 500 Kunden weltweit beim Aufbau erfolgreicher Unterhaltungsstätten geholfen.",
+      "step1Title": "Kostenlose Beratung",
+      "step1Desc": "Teilen Sie Ihre Raummaße, Ihr Budget und Ihre Vision. Unsere Experten analysieren Ihren Raum und liefern professionelle Empfehlungen für Ihren Markt.",
+      "step1Detail": "Antwort innerhalb von 2 Stunden an Werktagen",
+      "step2Title": "3D-Design & Planung",
+      "step2Desc": "Erhalten Sie fotorealistische 3D-Renderings und CAD-Layouts Ihres individuellen Spielplatzes. Wir überarbeiten das Design, bis Sie 100% zufrieden sind — völlig kostenlos.",
+      "step2Detail": "Unbegrenzte Revisionen ohne Zusatzkosten",
+      "step3Title": "Fertigung & Qualitätskontrolle",
+      "step3Desc": "Die Produktion beginnt in unserer ISO-zertifizierten Fabrik mit strengen Qualitätsprüfpunkten. Wir senden Fortschrittsfotos und -videos während des gesamten Fertigungsprozesses.",
+      "step3Detail": "30-45 Tage Produktion mit wöchentlichen Updates",
+      "step4Title": "Versand & Installation",
+      "step4Desc": "Tür-zu-Tür-Lieferung mit vollständiger Versicherung. Unser Team bietet detaillierte Installationsanleitungen, Video-Tutorials oder Techniker vor Ort nach Ihren Wünschen.",
+      "step4Detail": "Vollversicherung + Installationsunterstützung inklusive",
+      "cta": "Starten Sie Ihre kostenlose Beratung"
+    },
+    "gallery": {
+      "badge": "Projektgalerie",
+      "title": "Sehen Sie es in Aktion",
+      "subtitle": "Durchstöbern Sie echte Projektfotos und 3D-Renderings, um sich Ihren eigenen Standort vorzustellen."
+    },
+    "midCta": {
+      "title": "Bereit, Ihren Traumstandort zu bauen?",
+      "desc": "Erhalten Sie ein kostenloses individuelles 3D-Design und ein wettbewerbsfähiges Angebot innerhalb von 24 Stunden. Keine Verpflichtung, keine versteckten Kosten — nur Expertenberatung von unserem Spezialistenteam.",
+      "social": "Schließen Sie sich über 500 erfolgreichen Betreibern an, die NinescapeLand als vertrauenswürdigen Partner gewählt haben.",
+      "whatsapp": "Auf WhatsApp chatten",
+      "inquiry": "Anfrage senden"
+    },
+    "faq": {
+      "badge": "FAQ",
+      "title": "Häufig Gestellte Fragen",
+      "subtitle": "Alles, was Sie wissen müssen, bevor Sie Ihr Projekt starten.",
+      "q1": "Was ist die Mindestbestellmenge (MOQ)?",
+      "a1": "Wir nehmen Bestellungen ab einem einzigen Projekt an. Ob Sie einen 50m² Soft-Play-Bereich oder einen 5.000m² Trampolinpark benötigen, wir können Ihre Anforderungen mit dem gleichen Qualitätsniveau erfüllen.",
+      "q2": "Was kostet ein individueller Spielplatz?",
+      "a2": "Der Preis variiert je nach Größe, Komplexität, Thematisierung und Geräteauswahl. Indoor-Spielplätze kosten in der Regel 150–400 $ pro m². Kontaktieren Sie uns mit Ihren Raummaßen für ein präzises, unverbindliches Angebot innerhalb von 24 Stunden.",
+      "q3": "Bieten Sie 3D-Designservices an?",
+      "a3": "Ja! Wir bieten kostenlose 3D-Design- und CAD-Layout-Services. Teilen Sie einfach Ihren Grundriss und Ihre Vorstellungen mit, und unser Designteam erstellt fotorealistische Renderings — absolut kostenlos und mit unbegrenzten Überarbeitungen.",
+      "q4": "Welche Sicherheitszertifizierungen erfüllen Ihre Produkte?",
+      "a4": "Alle unsere Produkte entsprechen internationalen Sicherheitsstandards einschließlich ASTM F1918 (USA), EN1176 (Europa), AS4685 (Australien) und CSA Z614 (Kanada). Wir besitzen auch TUV- und SGS-Zertifizierungen.",
+      "q5": "Können Sie in mein Land liefern?",
+      "a5": "Absolut! Wir liefern in über 80 Länder weltweit mit Tür-zu-Tür-Zustellung inklusive Vollversicherung. Unser Logistikteam übernimmt die Zollabfertigung und stellt alle erforderlichen Dokumente bereit.",
+      "q6": "Bieten Sie Installationsservices an?",
+      "a6": "Ja, wir bieten flexible Installationsunterstützung: detaillierte Handbücher mit nummerierten Teilen, Schritt-für-Schritt-Videoanleitungen, Fernunterstützung per Video oder Techniker vor Ort für größere Projekte.",
+      "moreQuestions": "Haben Sie noch Fragen? Unser Team ist bereit zu helfen.",
+      "askUs": "Fragen Sie uns alles"
+    }
   }
 }

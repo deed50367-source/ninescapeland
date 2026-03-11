@@ -2831,5 +2831,96 @@
         "answer": "Yes, we offer seasonal promotional packages for first-time buyers in Canada that can be applied to full-facility equipment packages."
       }
     }
+  },
+  "dynamicProduct": {
+    "quick": {
+      "certified": "ASTM & TUV Certified",
+      "shipping": "Worldwide Shipping",
+      "leadTime": "30-45 Day Lead Time"
+    },
+    "pricing": {
+      "hint": "Custom pricing based on your project",
+      "free": "Free 3D Design + Quote"
+    },
+    "trust": {
+      "certified": "Internationally Certified",
+      "certifiedDesc": "ASTM, EN1176, TUV certified for global safety standards",
+      "shipping": "Worldwide Delivery",
+      "shippingDesc": "Door-to-door shipping to 80+ countries",
+      "support": "Lifetime Support",
+      "supportDesc": "Dedicated project manager from day one",
+      "warranty": "Up to 5-Year Warranty",
+      "warrantyDesc": "Industry-leading warranty on all equipment",
+      "leadTime": "30-45 Day Lead Time",
+      "leadTimeDesc": "Fast production with strict quality control",
+      "installation": "Installation Guidance",
+      "installationDesc": "On-site or remote installation support included"
+    },
+    "why": {
+      "badge": "Why NinescapeLand",
+      "title": "Why Partner With Us?",
+      "subtitle": "We're not just equipment suppliers — we're your full-service partner in building a profitable entertainment business.",
+      "customDesign": "100% Custom Design",
+      "customDesignDesc": "Every project is uniquely designed to match your venue size, theme, and target demographics. Our in-house design team creates stunning 3D renderings before production begins.",
+      "ownFactory": "Own 20,000m² Factory",
+      "ownFactoryDesc": "Direct factory pricing with no middlemen. Our vertically integrated manufacturing ensures quality control from raw materials to finished installation.",
+      "global": "500+ Projects in 60+ Countries",
+      "globalDesc": "Trusted by operators worldwide from the USA to the Middle East, Europe to Southeast Asia. Our experience spans diverse markets and regulations.",
+      "turnkey": "Turnkey Solutions",
+      "turnkeyDesc": "From initial concept and venue planning to equipment manufacturing, shipping, and installation — we handle the entire process so you can focus on your business.",
+      "safety": "Safety First Approach",
+      "safetyDesc": "All products comply with international safety standards including ASTM F1918, EN1176, and TUV certifications. Safety is non-negotiable in our design philosophy.",
+      "roi": "Maximize Your ROI",
+      "roiDesc": "Strategic layout planning to maximize capacity and revenue per square meter. Our designs are optimized for operational efficiency and customer flow."
+    },
+    "process": {
+      "badge": "How It Works",
+      "title": "From Concept to Grand Opening",
+      "subtitle": "Our proven 4-step process has helped 500+ clients worldwide build successful entertainment venues.",
+      "step1Title": "Free Consultation",
+      "step1Desc": "Share your venue dimensions, budget, and vision. Our experts will analyze your space and provide professional recommendations tailored to your market.",
+      "step1Detail": "Response within 2 hours during business days",
+      "step2Title": "3D Design & Planning",
+      "step2Desc": "Receive photorealistic 3D renderings and CAD layouts of your custom playground. We'll iterate on the design until you're 100% satisfied — completely free of charge.",
+      "step2Detail": "Unlimited revisions at no extra cost",
+      "step3Title": "Manufacturing & QC",
+      "step3Desc": "Production begins in our ISO-certified factory with strict quality checkpoints. We send progress photos and videos throughout the manufacturing process.",
+      "step3Detail": "30-45 days production with weekly updates",
+      "step4Title": "Shipping & Installation",
+      "step4Desc": "Door-to-door delivery with full insurance coverage. Our team provides detailed installation guides, video tutorials, or on-site technicians based on your preference.",
+      "step4Detail": "Full insurance + installation support included",
+      "cta": "Start Your Free Consultation"
+    },
+    "gallery": {
+      "badge": "Project Gallery",
+      "title": "See It in Action",
+      "subtitle": "Browse real project photos and 3D renderings to envision your own venue."
+    },
+    "midCta": {
+      "title": "Ready to Build Your Dream Venue?",
+      "desc": "Get a free custom 3D design and competitive quote within 24 hours. No commitment, no hidden costs — just expert advice from our team of playground specialists.",
+      "social": "Join 500+ successful playground operators who chose NinescapeLand as their trusted equipment partner.",
+      "whatsapp": "Chat on WhatsApp",
+      "inquiry": "Send an Inquiry"
+    },
+    "faq": {
+      "badge": "FAQ",
+      "title": "Frequently Asked Questions",
+      "subtitle": "Everything you need to know before starting your project.",
+      "q1": "What is the minimum order quantity (MOQ)?",
+      "a1": "We accept orders starting from a single project. Whether you need a 50m² soft play area or a 5,000m² trampoline park, we can accommodate your needs with the same level of quality and attention to detail.",
+      "q2": "How much does a custom playground cost?",
+      "a2": "Pricing varies based on size, complexity, theming, and equipment selection. Generally, indoor playgrounds range from $150-$400 per m². Contact us with your venue dimensions for a precise, no-obligation quote within 24 hours.",
+      "q3": "Do you provide 3D design services?",
+      "a3": "Yes! We offer complimentary 3D design and CAD layout services. Simply share your floor plan and preferences, and our design team will create photorealistic renderings of your custom playground — absolutely free, with unlimited revisions.",
+      "q4": "What safety certifications do your products meet?",
+      "a4": "All our products comply with international safety standards including ASTM F1918 (USA), EN1176 (Europe), AS4685 (Australia), and CSA Z614 (Canada). We also hold TUV and SGS certifications. Safety documentation is provided with every order.",
+      "q5": "Can you ship to my country?",
+      "a5": "Absolutely! We ship to 80+ countries worldwide with door-to-door delivery, including full insurance coverage. Our logistics team handles customs clearance, and we provide all necessary documentation for smooth importation.",
+      "q6": "Do you offer installation services?",
+      "a6": "Yes, we provide flexible installation support: detailed installation manuals with numbered parts, step-by-step video guides, remote video assistance during installation, or on-site technicians for larger projects. Most installations can be completed in 5-20 days.",
+      "moreQuestions": "Still have questions? Our team is ready to help.",
+      "askUs": "Ask Us Anything"
+    }
   }
 }
