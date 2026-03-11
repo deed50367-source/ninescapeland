@@ -592,6 +592,24 @@ const DynamicProductDetail = () => {
           </Tabs>
         </section>
 
+        {/* Trust Badges */}
+        <ProductTrustBadges />
+
+        {/* Gallery Showcase */}
+        <ProductGalleryShowcase images={allImages} productName={getLocalizedName(product)} />
+
+        {/* Mid-page CTA */}
+        <ProductMidCTA productName={getLocalizedName(product)} />
+
+        {/* Why Choose Us */}
+        <ProductWhyChooseUs />
+
+        {/* Process Steps */}
+        <ProductProcessSteps productName={getLocalizedName(product)} />
+
+        {/* FAQ */}
+        <ProductFAQSection productName={getLocalizedName(product)} />
+
         {/* Related Products */}
         {relatedProducts.length > 0 && (
           <section className="container mx-auto px-4 py-12 border-t">
