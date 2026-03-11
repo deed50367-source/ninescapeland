@@ -116,7 +116,7 @@ serve(async (req) => {
             totalTranslated++;
           }
           // Delay between translations
-          await sleep(2000);
+          await sleep(1500);
         } catch (e) {
           console.error(`Failed: ${product.slug} → ${lang.code}:`, e);
         }
