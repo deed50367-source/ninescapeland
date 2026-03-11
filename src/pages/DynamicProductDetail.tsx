@@ -26,7 +26,16 @@ import {
   Check,
   MessageCircle,
   Mail,
+  Shield,
+  Truck,
+  Clock,
 } from "lucide-react";
+import { ProductTrustBadges } from "@/components/product-detail/ProductTrustBadges";
+import { ProductWhyChooseUs } from "@/components/product-detail/ProductWhyChooseUs";
+import { ProductProcessSteps } from "@/components/product-detail/ProductProcessSteps";
+import { ProductGalleryShowcase } from "@/components/product-detail/ProductGalleryShowcase";
+import { ProductMidCTA } from "@/components/product-detail/ProductMidCTA";
+import { ProductFAQSection } from "@/components/product-detail/ProductFAQSection";
 
 interface ProductCategory {
   id: string;
@@ -424,6 +433,22 @@ const DynamicProductDetail = () => {
                 </p>
               )}
 
+              {/* Quick Trust Indicators */}
+              <div className="flex flex-wrap gap-3 text-sm">
+                <span className="flex items-center gap-1.5 text-muted-foreground">
+                  <Shield className="w-4 h-4 text-primary" />
+                  {t("dynamicProduct.quick.certified", "ASTM & TUV Certified")}
+                </span>
+                <span className="flex items-center gap-1.5 text-muted-foreground">
+                  <Truck className="w-4 h-4 text-primary" />
+                  {t("dynamicProduct.quick.shipping", "Worldwide Shipping")}
+                </span>
+                <span className="flex items-center gap-1.5 text-muted-foreground">
+                  <Clock className="w-4 h-4 text-primary" />
+                  {t("dynamicProduct.quick.leadTime", "30-45 Day Lead Time")}
+                </span>
+              </div>
+
               {/* Features */}
               {product.features.length > 0 && (
                 <div className="space-y-3">
@@ -433,7 +458,7 @@ const DynamicProductDetail = () => {
                   <ul className="space-y-2">
                     {product.features.map((feature, index) => (
                       <li key={index} className="flex items-center gap-2">
-                        <Check className="w-5 h-5 text-green-500 flex-shrink-0" />
+                        <Check className="w-5 h-5 text-primary flex-shrink-0" />
                         <span>{feature}</span>
                       </li>
                     ))}
@@ -441,8 +466,18 @@ const DynamicProductDetail = () => {
                 </div>
               )}
 
+              {/* Price hint */}
+              <div className="bg-muted/60 rounded-xl p-4 border">
+                <p className="text-sm text-muted-foreground mb-1">
+                  {t("dynamicProduct.pricing.hint", "Custom pricing based on your project")}
+                </p>
+                <p className="font-semibold text-lg">
+                  {t("dynamicProduct.pricing.free", "Free 3D Design + Quote")}
+                </p>
+              </div>
+
               {/* CTA Buttons */}
-              <div className="flex flex-col sm:flex-row gap-3 pt-4">
+              <div className="flex flex-col sm:flex-row gap-3 pt-2">
                 <Button size="lg" className="flex-1" asChild>
                   <a 
                     href="#"
@@ -556,6 +591,24 @@ const DynamicProductDetail = () => {
             </TabsContent>
           </Tabs>
         </section>
+
+        {/* Trust Badges */}
+        <ProductTrustBadges />
+
+        {/* Gallery Showcase */}
+        <ProductGalleryShowcase images={allImages} productName={getLocalizedName(product)} />
+
+        {/* Mid-page CTA */}
+        <ProductMidCTA productName={getLocalizedName(product)} />
+
+        {/* Why Choose Us */}
+        <ProductWhyChooseUs />
+
+        {/* Process Steps */}
+        <ProductProcessSteps productName={getLocalizedName(product)} />
+
+        {/* FAQ */}
+        <ProductFAQSection productName={getLocalizedName(product)} />
 
         {/* Related Products */}
         {relatedProducts.length > 0 && (
