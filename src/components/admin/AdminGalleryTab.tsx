@@ -300,7 +300,7 @@ const AdminGalleryTab = () => {
       ));
 
       try {
-        const filePath = `${targetFolderId || "root"}/${Date.now()}-${file.name}`;
+        const filePath = `${targetFolderId || "root"}/${Date.now()}-${sanitizeStorageKey(file.name)}`;
         
         setUploadItems(prev => prev.map((item, idx) => 
           idx === i ? { ...item, progress: 50 } : item
