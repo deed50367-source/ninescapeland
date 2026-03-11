@@ -18,34 +18,52 @@ const LANGUAGES = [
   { code: 'fr', name: 'French', column: 'description_fr' },
 ];
 
-async function translateText(text: string, targetLang: string): Promise<string> {
-  const response = await fetch('https://ai.gateway.lovable.dev/v1/chat/completions', {
-    method: 'POST',
-    headers: {
-      'Authorization': `Bearer ${LOVABLE_API_KEY}`,
-      'Content-Type': 'application/json',
-    },
-    body: JSON.stringify({
-      model: 'google/gemini-2.5-flash',
-      messages: [
-        {
-          role: 'system',
-          content: `You are a professional translator for a commercial playground equipment company called NinescapeLand. Translate the following product description from English to ${targetLang}. Keep proper nouns (NinescapeLand, ASTM, TUV, CE, ISO) unchanged. Keep the same HTML formatting if any. Maintain a professional, marketing-oriented tone. Return ONLY the translated text.`
+async function sleep(ms: number) {
+  return new Promise(r => setTimeout(r, ms));
+}
+
+async function translateText(text: string, targetLang: string, retries = 3): Promise<string> {
+  for (let attempt = 0; attempt < retries; attempt++) {
+    try {
+      const response = await fetch('https://ai.gateway.lovable.dev/v1/chat/completions', {
+        method: 'POST',
+        headers: {
+          'Authorization': `Bearer ${LOVABLE_API_KEY}`,
+          'Content-Type': 'application/json',
         },
-        { role: 'user', content: text }
-      ],
-      max_tokens: 3000,
-      temperature: 0.2,
-    }),
-  });
+        body: JSON.stringify({
+          model: 'google/gemini-2.5-flash-lite',
+          messages: [
+            {
+              role: 'system',
+              content: `Translate this product description from English to ${targetLang}. Keep brand names (NinescapeLand, ASTM, TUV, CE, ISO) unchanged. Keep HTML tags. Professional marketing tone. Return ONLY translated text.`
+            },
+            { role: 'user', content: text }
+          ],
+          max_tokens: 3000,
+          temperature: 0.2,
+        }),
+      });
 
-  if (!response.ok) {
-    const errText = await response.text();
-    throw new Error(`AI API error ${response.status}: ${errText}`);
+      if (response.status === 429) {
+        const waitTime = (attempt + 1) * 5000;
+        console.log(`Rate limited, waiting ${waitTime}ms before retry ${attempt + 1}...`);
+        await sleep(waitTime);
+        continue;
+      }
+
+      if (!response.ok) {
+        throw new Error(`AI API error ${response.status}`);
+      }
+
+      const data = await response.json();
+      return data.choices[0]?.message?.content?.trim() || '';
+    } catch (e) {
+      if (attempt === retries - 1) throw e;
+      await sleep(3000);
+    }
   }
-
-  const data = await response.json();
-  return data.choices[0]?.message?.content?.trim() || '';
+  return '';
 }
 
 serve(async (req) => {
@@ -54,10 +72,9 @@ serve(async (req) => {
   }
 
   try {
-    const { batch = 0, batchSize = 5 } = await req.json().catch(() => ({}));
+    const { batch = 0, batchSize = 3 } = await req.json().catch(() => ({}));
     const supabase = createClient(SUPABASE_URL, SUPABASE_SERVICE_ROLE_KEY);
 
-    // Get products that have English description but missing translations
     const { data: products, error } = await supabase
       .from('products')
       .select('id, slug, description, description_es, description_de, description_pt, description_ar, description_fr')
@@ -68,38 +85,38 @@ serve(async (req) => {
 
     if (error) throw error;
     if (!products?.length) {
-      return new Response(JSON.stringify({ message: 'No products to translate' }), {
+      return new Response(JSON.stringify({ message: 'No more products', batch }), {
         headers: { ...corsHeaders, 'Content-Type': 'application/json' },
       });
     }
 
-    const results: { slug: string; status: string; languages: string[] }[] = [];
+    const results: { slug: string; translated: string[]; skipped: string[] }[] = [];
     let totalTranslated = 0;
 
     for (const product of products) {
       if (!product.description) continue;
-
       const updates: Record<string, string> = {};
-      const translatedLangs: string[] = [];
+      const translated: string[] = [];
+      const skipped: string[] = [];
 
-      // Translate to each language, skip if already done
       for (const lang of LANGUAGES) {
-        if (product[lang.column]) {
-          translatedLangs.push(lang.code + '(existed)');
+        // Skip if already translated
+        if ((product as Record<string, unknown>)[lang.column]) {
+          skipped.push(lang.code);
           continue;
         }
         try {
-          console.log(`Translating ${product.slug} to ${lang.code}...`);
-          const translated = await translateText(product.description, lang.name);
-          if (translated) {
-            updates[lang.column] = translated;
-            translatedLangs.push(lang.code);
+          console.log(`[batch ${batch}] Translating ${product.slug} → ${lang.code}...`);
+          const result = await translateText(product.description, lang.name);
+          if (result) {
+            updates[lang.column] = result;
+            translated.push(lang.code);
             totalTranslated++;
           }
-          // Small delay to avoid rate limits
-          await new Promise(r => setTimeout(r, 300));
+          // Delay between translations
+          await sleep(2000);
         } catch (e) {
-          console.error(`Failed to translate ${product.slug} to ${lang.code}:`, e);
+          console.error(`Failed: ${product.slug} → ${lang.code}:`, e);
         }
       }
 
@@ -110,20 +127,15 @@ serve(async (req) => {
           .eq('id', product.id);
 
         if (updateError) {
-          console.error(`Failed to save ${product.slug}:`, updateError);
-          results.push({ slug: product.slug, status: 'save_error', languages: translatedLangs });
-        } else {
-          results.push({ slug: product.slug, status: 'ok', languages: translatedLangs });
+          console.error(`Save failed for ${product.slug}:`, updateError);
         }
       }
+
+      results.push({ slug: product.slug, translated, skipped });
     }
 
     return new Response(
-      JSON.stringify({
-        message: `Translated ${totalTranslated} descriptions across ${results.length} products`,
-        totalTranslated,
-        results,
-      }),
+      JSON.stringify({ batch, totalTranslated, results, nextBatch: batch + 1 }),
       { headers: { ...corsHeaders, 'Content-Type': 'application/json' } }
     );
   } catch (error: unknown) {
