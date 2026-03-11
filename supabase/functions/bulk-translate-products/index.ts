@@ -67,7 +67,7 @@ serve(async (req) => {
           { role: 'user', content: product.description }
         ],
         max_completion_tokens: 3000,
-        temperature: 0.2,
+        temperature: 1,
       }),
     });
 
