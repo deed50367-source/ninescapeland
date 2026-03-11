@@ -56,6 +56,7 @@ const AdminGalleryTab = () => {
   const [uploadItems, setUploadItems] = useState<UploadItem[]>([]);
   const [isUploadMinimized, setIsUploadMinimized] = useState(false);
   const uploadCancelledRef = useRef(false);
+  const lastUploadFolderIdRef = useRef<string | null>(null);
   const folderInputRef = useRef<HTMLInputElement>(null);
   
   // Rename states
@@ -287,6 +288,7 @@ const AdminGalleryTab = () => {
         targetFolderId = newFolder.id;
       }
     }
+    lastUploadFolderIdRef.current = targetFolderId;
 
     // Upload files sequentially with progress
     for (let i = 0; i < fileArray.length; i++) {
@@ -337,6 +339,64 @@ const AdminGalleryTab = () => {
     fetchAssets();
     toast.success("Folder upload complete");
     e.target.value = "";
+  };
+
+  const handleRetryFailed = async () => {
+    const failedItems = uploadItems.filter(i => i.status === "error");
+    if (failedItems.length === 0) return;
+
+    uploadCancelledRef.current = false;
+    setIsUploading(true);
+    const targetFolderId = lastUploadFolderIdRef.current || currentFolderId;
+
+    // Reset failed items to pending
+    setUploadItems(prev => prev.map(item =>
+      item.status === "error" ? { ...item, status: "pending" as const, progress: 0, error: undefined } : item
+    ));
+
+    for (const failedItem of failedItems) {
+      if (uploadCancelledRef.current) break;
+
+      setUploadItems(prev => prev.map(item =>
+        item.id === failedItem.id ? { ...item, status: "uploading" as const, progress: 10 } : item
+      ));
+
+      try {
+        const filePath = `${targetFolderId || "root"}/${Date.now()}-${sanitizeStorageKey(failedItem.file.name)}`;
+
+        setUploadItems(prev => prev.map(item =>
+          item.id === failedItem.id ? { ...item, progress: 50 } : item
+        ));
+
+        const { error } = await supabase.storage.from("assets").upload(filePath, failedItem.file);
+
+        if (!error) {
+          await supabase.from("assets").insert({
+            folder_id: targetFolderId,
+            file_name: failedItem.file.name,
+            file_path: filePath,
+            file_size: failedItem.file.size,
+            mime_type: failedItem.file.type
+          });
+          setUploadItems(prev => prev.map(item =>
+            item.id === failedItem.id ? { ...item, status: "success" as const, progress: 100 } : item
+          ));
+        } else {
+          setUploadItems(prev => prev.map(item =>
+            item.id === failedItem.id ? { ...item, status: "error" as const, error: error.message } : item
+          ));
+        }
+      } catch (err: any) {
+        setUploadItems(prev => prev.map(item =>
+          item.id === failedItem.id ? { ...item, status: "error" as const, error: err.message } : item
+        ));
+      }
+    }
+
+    setIsUploading(false);
+    fetchFolders();
+    fetchAssets();
+    toast.success("Retry complete");
   };
 
   const filteredAssets = assets.filter(a => a.file_name.toLowerCase().includes(searchQuery.toLowerCase()));
@@ -448,6 +508,7 @@ const AdminGalleryTab = () => {
           onToggleMinimize={() => setIsUploadMinimized(!isUploadMinimized)} 
           onCancel={() => { uploadCancelledRef.current = true; }} 
           onClose={() => setUploadItems([])}
+          onRetryFailed={handleRetryFailed}
         />
       )}
 

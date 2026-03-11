@@ -1,11 +1,11 @@
 import { Progress } from "@/components/ui/progress";
-import { X, CheckCircle2, AlertCircle, Loader2 } from "lucide-react";
+import { X, CheckCircle2, AlertCircle, Loader2, RotateCcw } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 export interface UploadItem {
   id: string;
   file: File;
-  relativePath?: string; // For folder uploads
+  relativePath?: string;
   status: "pending" | "uploading" | "success" | "error";
   progress: number;
   error?: string;
@@ -15,6 +15,7 @@ interface UploadProgressProps {
   items: UploadItem[];
   onClose: () => void;
   onCancel?: () => void;
+  onRetryFailed?: () => void;
   isMinimized?: boolean;
   onToggleMinimize?: () => void;
 }
@@ -23,6 +24,7 @@ export const UploadProgress = ({
   items,
   onClose,
   onCancel,
+  onRetryFailed,
   isMinimized,
   onToggleMinimize,
 }: UploadProgressProps) => {
@@ -51,8 +53,8 @@ export const UploadProgress = ({
           <div>
             <p className="text-sm font-medium">
               {isComplete
-                ? `上传完成 ${completedCount}/${totalCount}`
-                : `上传中 ${completedCount}/${totalCount}`}
+                ? `Upload complete ${completedCount}/${totalCount}`
+                : `Uploading ${completedCount}/${totalCount}`}
             </p>
             {!isComplete && (
               <Progress value={overallProgress} className="w-32 h-1.5 mt-1" />
@@ -120,16 +122,24 @@ export const UploadProgress = ({
       {/* Summary */}
       {isComplete && (
         <div className="px-4 py-3 border-b bg-muted/30">
-          <div className="flex items-center gap-4 text-sm">
-            <span className="flex items-center gap-1 text-success">
-              <CheckCircle2 className="w-4 h-4" />
-              Success {completedCount}
-            </span>
-            {errorCount > 0 && (
-              <span className="flex items-center gap-1 text-destructive">
-                <AlertCircle className="w-4 h-4" />
-                Failed {errorCount}
+          <div className="flex items-center justify-between">
+            <div className="flex items-center gap-4 text-sm">
+              <span className="flex items-center gap-1 text-success">
+                <CheckCircle2 className="w-4 h-4" />
+                Success {completedCount}
               </span>
+              {errorCount > 0 && (
+                <span className="flex items-center gap-1 text-destructive">
+                  <AlertCircle className="w-4 h-4" />
+                  Failed {errorCount}
+                </span>
+              )}
+            </div>
+            {errorCount > 0 && onRetryFailed && (
+              <Button variant="outline" size="sm" onClick={onRetryFailed} className="gap-1.5">
+                <RotateCcw className="w-3.5 h-3.5" />
+                Retry Failed
+              </Button>
             )}
           </div>
         </div>
