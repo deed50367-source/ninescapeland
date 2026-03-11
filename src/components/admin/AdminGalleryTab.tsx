@@ -288,6 +288,7 @@ const AdminGalleryTab = () => {
         targetFolderId = newFolder.id;
       }
     }
+    lastUploadFolderIdRef.current = targetFolderId;
 
     // Upload files sequentially with progress
     for (let i = 0; i < fileArray.length; i++) {
