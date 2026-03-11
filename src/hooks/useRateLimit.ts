@@ -26,7 +26,7 @@ export const useRateLimit = (config: RateLimitConfig = {
   });
   
   const attemptsRef = useRef<number[]>([]);
-  const cooldownTimerRef = useRef<NodeJS.Timeout | null>(null);
+  const cooldownTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 
   const cleanOldAttempts = useCallback(() => {
     const now = Date.now();
