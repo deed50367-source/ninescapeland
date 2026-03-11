@@ -508,6 +508,7 @@ const AdminGalleryTab = () => {
           onToggleMinimize={() => setIsUploadMinimized(!isUploadMinimized)} 
           onCancel={() => { uploadCancelledRef.current = true; }} 
           onClose={() => setUploadItems([])}
+          onRetryFailed={handleRetryFailed}
         />
       )}
 
