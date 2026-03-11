@@ -233,7 +233,7 @@ const AdminGalleryTab = () => {
     setIsUploading(true);
     
     for (const file of Array.from(files)) {
-      const filePath = `${currentFolderId || "root"}/${Date.now()}-${file.name}`;
+      const filePath = `${currentFolderId || "root"}/${Date.now()}-${sanitizeStorageKey(file.name)}`;
       const { error } = await supabase.storage.from("assets").upload(filePath, file);
       if (!error) {
         await supabase.from("assets").insert({
