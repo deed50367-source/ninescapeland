@@ -56,6 +56,7 @@ const AdminGalleryTab = () => {
   const [uploadItems, setUploadItems] = useState<UploadItem[]>([]);
   const [isUploadMinimized, setIsUploadMinimized] = useState(false);
   const uploadCancelledRef = useRef(false);
+  const lastUploadFolderIdRef = useRef<string | null>(null);
   const folderInputRef = useRef<HTMLInputElement>(null);
   
   // Rename states
