@@ -253,6 +253,52 @@ const AdminGalleryTab = () => {
     e.target.value = "";
   };
 
+  // Helper: ensure a folder path exists in DB, returning the leaf folder ID
+  const ensureFolderPath = async (
+    pathParts: string[],
+    parentId: string | null,
+    cache: Map<string, string>
+  ): Promise<string | null> => {
+    let currentParent = parentId;
+    let cacheKey = parentId || "root";
+
+    for (const part of pathParts) {
+      cacheKey += "/" + part;
+      if (cache.has(cacheKey)) {
+        currentParent = cache.get(cacheKey)!;
+        continue;
+      }
+
+      // Check if folder already exists
+      let query = supabase
+        .from("asset_folders")
+        .select("id")
+        .eq("name", part);
+      if (currentParent) {
+        query = query.eq("parent_id", currentParent);
+      } else {
+        query = query.is("parent_id", null);
+      }
+      const { data: existing } = await query.maybeSingle();
+
+      if (existing) {
+        cache.set(cacheKey, existing.id);
+        currentParent = existing.id;
+      } else {
+        const { data: created } = await supabase
+          .from("asset_folders")
+          .insert({ name: part, parent_id: currentParent })
+          .select("id")
+          .single();
+        if (created) {
+          cache.set(cacheKey, created.id);
+          currentParent = created.id;
+        }
+      }
+    }
+    return currentParent;
+  };
+
   const handleFolderUpload = async (e: React.ChangeEvent<HTMLInputElement>) => {
     const files = e.target.files;
     if (!files || files.length === 0) return;
@@ -272,52 +318,64 @@ const AdminGalleryTab = () => {
     setIsUploadMinimized(false);
     setIsUploading(true);
 
-    // Get folder name from first file's path
-    const firstPath = (fileArray[0] as any).webkitRelativePath || "";
-    const folderName = firstPath.split("/")[0];
-    
-    // Create main folder if needed
-    let targetFolderId = currentFolderId;
-    if (folderName) {
-      const { data: newFolder } = await supabase
-        .from("asset_folders")
-        .insert({ name: folderName, parent_id: currentFolderId })
-        .select()
-        .single();
-      if (newFolder) {
-        targetFolderId = newFolder.id;
-      }
-    }
-    lastUploadFolderIdRef.current = targetFolderId;
+    // Cache for folder path -> folder ID mapping
+    const folderCache = new Map<string, string>();
 
-    // Upload files sequentially with progress
+    // Upload files sequentially with progress, preserving folder structure
     for (let i = 0; i < fileArray.length; i++) {
       if (uploadCancelledRef.current) break;
       
       const file = fileArray[i];
-      const relativePath = (file as any).webkitRelativePath || file.name;
+      const relativePath: string = (file as any).webkitRelativePath || file.name;
+      const pathParts = relativePath.split("/");
+      const fileName = pathParts.pop() || file.name; // actual file name
+      // pathParts now contains only folder segments
       
       setUploadItems(prev => prev.map((item, idx) => 
         idx === i ? { ...item, status: "uploading" as const, progress: 10 } : item
       ));
 
       try {
-        const filePath = `${targetFolderId || "root"}/${Date.now()}-${sanitizeStorageKey(file.name)}`;
+        // Create subfolder hierarchy in DB
+        const targetFolderId = pathParts.length > 0
+          ? await ensureFolderPath(pathParts, currentFolderId, folderCache)
+          : currentFolderId;
+
+        // Storage path: use folder ID + sanitized original name (no timestamp prefix)
+        const storagePath = `${targetFolderId || "root"}/${sanitizeStorageKey(fileName)}`;
         
         setUploadItems(prev => prev.map((item, idx) => 
           idx === i ? { ...item, progress: 50 } : item
         ));
         
-        const { error } = await supabase.storage.from("assets").upload(filePath, file);
+        const { error } = await supabase.storage.from("assets").upload(storagePath, file, {
+          upsert: true // overwrite if same name exists
+        });
         
         if (!error) {
-          await supabase.from("assets").insert({
-            folder_id: targetFolderId,
-            file_name: file.name,
-            file_path: filePath,
-            file_size: file.size,
-            mime_type: file.type
-          });
+          // Check if asset with same path already exists
+          const { data: existingAsset } = await supabase
+            .from("assets")
+            .select("id")
+            .eq("file_path", storagePath)
+            .maybeSingle();
+
+          if (existingAsset) {
+            await supabase.from("assets").update({
+              file_name: fileName,
+              file_size: file.size,
+              mime_type: file.type,
+              folder_id: targetFolderId
+            }).eq("id", existingAsset.id);
+          } else {
+            await supabase.from("assets").insert({
+              folder_id: targetFolderId,
+              file_name: fileName, // preserve original file name
+              file_path: storagePath,
+              file_size: file.size,
+              mime_type: file.type
+            });
+          }
           
           setUploadItems(prev => prev.map((item, idx) => 
             idx === i ? { ...item, status: "success" as const, progress: 100 } : item
@@ -333,6 +391,12 @@ const AdminGalleryTab = () => {
         ));
       }
     }
+
+    // Store the first folder created for retry purposes
+    const firstPath: string = (fileArray[0] as any).webkitRelativePath || "";
+    const topFolder = firstPath.split("/")[0];
+    const topCacheKey = (currentFolderId || "root") + "/" + topFolder;
+    lastUploadFolderIdRef.current = folderCache.get(topCacheKey) || currentFolderId;
 
     setIsUploading(false);
     fetchFolders();
