@@ -32,6 +32,11 @@ interface ProductCategory {
   id: string;
   name: string;
   name_en: string | null;
+  name_ar: string | null;
+  name_de: string | null;
+  name_es: string | null;
+  name_pt: string | null;
+  name_fr: string | null;
   slug: string;
   image_url: string | null;
 }
@@ -40,12 +45,14 @@ interface Product {
   id: string;
   name: string;
   name_en: string | null;
+  name_ar: string | null;
+  name_de: string | null;
+  name_es: string | null;
+  name_pt: string | null;
+  name_fr: string | null;
   slug: string;
   short_description: string | null;
   featured_image: string | null;
-  price_min: number | null;
-  price_max: number | null;
-  price_unit: string | null;
   features: string[];
   is_featured: boolean;
   category_id: string | null;
@@ -109,12 +116,24 @@ const DynamicProducts = () => {
     fetchData();
   }, []);
 
-  // Get localized name
-  const getLocalizedName = (item: { name: string; name_en?: string | null }) => {
-    if (i18n.language === "en" && item.name_en) {
-      return item.name_en;
-    }
-    return item.name;
+  // Get localized name with full language support
+  const getLocalizedName = (item: { 
+    name: string; 
+    name_en?: string | null;
+    name_ar?: string | null;
+    name_de?: string | null;
+    name_es?: string | null;
+    name_pt?: string | null;
+    name_fr?: string | null;
+  }) => {
+    const lang = i18n.language;
+    if (lang === "en" && item.name_en) return item.name_en;
+    if (lang === "ar" && item.name_ar) return item.name_ar;
+    if (lang === "de" && item.name_de) return item.name_de;
+    if (lang === "es" && item.name_es) return item.name_es;
+    if (lang === "pt" && item.name_pt) return item.name_pt;
+    if (lang === "fr" && item.name_fr) return item.name_fr;
+    return item.name_en || item.name;
   };
 
   // Handle category change
@@ -198,10 +217,10 @@ const DynamicProducts = () => {
               >
                 <Badge variant="secondary" className="mb-4">
                   <Star className="w-3 h-3 mr-1 fill-yellow-400 text-yellow-400" />
-                  {t("products.featured", "推荐产品")}
+                  {t("products.featured", "Featured Products")}
                 </Badge>
                 <h2 className="text-3xl font-bold">
-                  {t("products.featuredTitle", "热门推荐")}
+                  {t("products.featuredTitle", "Top Picks")}
                 </h2>
               </motion.div>
 
@@ -234,7 +253,7 @@ const DynamicProducts = () => {
                         <div className="absolute top-4 left-4">
                           <Badge className="bg-yellow-500 text-yellow-950">
                             <Star className="w-3 h-3 mr-1 fill-current" />
-                            {t("products.featured", "推荐")}
+                            {t("products.featured", "Featured")}
                           </Badge>
                         </div>
                         <div className="p-6">
@@ -246,17 +265,7 @@ const DynamicProducts = () => {
                               {product.short_description}
                             </p>
                           )}
-                          <div className="flex items-center justify-between mt-4">
-                            {product.price_min || product.price_max ? (
-                              <span className="text-primary font-semibold">
-                                {product.price_unit} {product.price_min}
-                                {product.price_max && ` - ${product.price_max}`}
-                              </span>
-                            ) : (
-                              <span className="text-muted-foreground text-sm">
-                                {t("products.contactForPrice", "询价")}
-                              </span>
-                            )}
+                          <div className="flex items-center justify-end mt-4">
                             <ArrowIcon className="w-5 h-5 text-primary group-hover:translate-x-1 transition-transform" />
                           </div>
                         </div>
@@ -285,7 +294,7 @@ const DynamicProducts = () => {
                   size="sm"
                   onClick={() => handleCategoryChange("all")}
                 >
-                  {t("products.allCategories", "全部")}
+                  {t("products.allCategories", "All")}
                 </Button>
                 {categories.map((category) => (
                   <Button
@@ -304,7 +313,7 @@ const DynamicProducts = () => {
                 <div className="relative flex-1 lg:w-64">
                   <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-muted-foreground" />
                   <Input
-                    placeholder={t("products.search", "搜索产品...")}
+                    placeholder={t("products.search", "Search products...")}
                     value={searchQuery}
                     onChange={(e) => setSearchQuery(e.target.value)}
                     className="pl-9 pr-9"
@@ -341,8 +350,8 @@ const DynamicProducts = () => {
 
             {/* Results count */}
             <p className="text-sm text-muted-foreground mb-6">
-              {t("products.showing", "显示")} {filteredProducts.length}{" "}
-              {t("products.items", "个产品")}
+              {t("products.showing", "Showing")} {filteredProducts.length}{" "}
+              {t("products.items", "products")}
               {selectedCategory !== "all" && (
                 <Button
                   variant="link"
@@ -350,7 +359,7 @@ const DynamicProducts = () => {
                   className="ml-2 h-auto p-0"
                   onClick={() => handleCategoryChange("all")}
                 >
-                  {t("products.clearFilter", "清除筛选")}
+                  {t("products.clearFilter", "Clear filter")}
                 </Button>
               )}
             </p>
@@ -419,7 +428,7 @@ const DynamicProducts = () => {
                                 {product.is_featured && (
                                   <Badge className="absolute top-3 left-3 bg-yellow-500 text-yellow-950">
                                     <Star className="w-3 h-3 mr-1 fill-current" />
-                                    {t("products.featured", "推荐")}
+                                    {t("products.featured", "Featured")}
                                   </Badge>
                                 )}
                               </div>
@@ -442,18 +451,6 @@ const DynamicProducts = () => {
                                     {product.short_description}
                                   </p>
                                 )}
-                                <div className="mt-3 pt-3 border-t">
-                                  {product.price_min || product.price_max ? (
-                                    <span className="text-primary font-semibold text-sm">
-                                      {product.price_unit} {product.price_min}
-                                      {product.price_max && ` - ${product.price_max}`}
-                                    </span>
-                                  ) : (
-                                    <span className="text-muted-foreground text-sm">
-                                      {t("products.contactForPrice", "询价")}
-                                    </span>
-                                  )}
-                                </div>
                               </div>
                             </div>
                           ) : (
@@ -481,7 +478,7 @@ const DynamicProducts = () => {
                                   {product.is_featured && (
                                     <Badge variant="secondary" className="text-xs">
                                       <Star className="w-3 h-3 mr-1 fill-yellow-400 text-yellow-400" />
-                                      {t("products.featured", "推荐")}
+                                      {t("products.featured", "Featured")}
                                     </Badge>
                                   )}
                                 </div>
@@ -494,18 +491,6 @@ const DynamicProducts = () => {
                                   <p className="text-sm text-muted-foreground mt-1 line-clamp-1">
                                     {product.short_description}
                                   </p>
-                                )}
-                              </div>
-                              <div className="text-right flex-shrink-0">
-                                {product.price_min || product.price_max ? (
-                                  <span className="text-primary font-semibold">
-                                    {product.price_unit} {product.price_min}
-                                    {product.price_max && ` - ${product.price_max}`}
-                                  </span>
-                                ) : (
-                                  <span className="text-muted-foreground text-sm">
-                                    {t("products.contactForPrice", "询价")}
-                                  </span>
                                 )}
                               </div>
                               <ArrowIcon className="w-5 h-5 text-primary group-hover:translate-x-1 transition-transform" />
@@ -523,12 +508,12 @@ const DynamicProducts = () => {
                   >
                     <Package className="w-16 h-16 mx-auto text-muted-foreground mb-4" />
                     <h3 className="text-lg font-semibold mb-2">
-                      {t("products.noProducts", "暂无产品")}
+                      {t("products.noProducts", "No products found")}
                     </h3>
                     <p className="text-muted-foreground mb-4">
                       {searchQuery
-                        ? t("products.noSearchResults", "没有找到匹配的产品")
-                        : t("products.emptyCategory", "该分类下暂无产品")}
+                        ? t("products.noSearchResults", "No matching products found")
+                        : t("products.emptyCategory", "No products in this category")}
                     </p>
                     {(searchQuery || selectedCategory !== "all") && (
                       <Button
@@ -538,7 +523,7 @@ const DynamicProducts = () => {
                           handleCategoryChange("all");
                         }}
                       >
-                        {t("products.viewAll", "查看全部产品")}
+                        {t("products.viewAll", "View All Products")}
                       </Button>
                     )}
                   </motion.div>
@@ -559,7 +544,7 @@ const DynamicProducts = () => {
                 className="text-center mb-10"
               >
                 <h2 className="text-3xl font-bold">
-                  {t("products.browseByCategory", "按分类浏览")}
+                  {t("products.browseByCategory", "Browse by Category")}
                 </h2>
               </motion.div>
 
@@ -601,7 +586,7 @@ const DynamicProducts = () => {
                             </h3>
                             <p className="text-sm text-white/70">
                               {categoryProducts.length}{" "}
-                              {t("products.items", "个产品")}
+                              {t("products.items", "products")}
                             </p>
                           </div>
                         </div>

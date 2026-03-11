@@ -21,13 +21,15 @@ interface Product {
   id: string;
   name: string;
   name_en: string | null;
+  name_ar: string | null;
+  name_de: string | null;
+  name_es: string | null;
+  name_pt: string | null;
+  name_fr: string | null;
   slug: string;
   short_description: string | null;
   featured_image: string | null;
   is_featured: boolean;
-  price_min: number | null;
-  price_max: number | null;
-  price_unit: string | null;
 }
 
 interface RelatedProductsSectionProps {
@@ -111,11 +113,23 @@ export const RelatedProductsSection = ({
     fetchProducts();
   }, [categorySlug]);
 
-  const getLocalizedName = (item: { name: string; name_en?: string | null }) => {
-    if (i18n.language === "en" && item.name_en) {
-      return item.name_en;
-    }
-    return item.name;
+  const getLocalizedName = (item: { 
+    name: string; 
+    name_en?: string | null;
+    name_ar?: string | null;
+    name_de?: string | null;
+    name_es?: string | null;
+    name_pt?: string | null;
+    name_fr?: string | null;
+  }) => {
+    const lang = i18n.language;
+    if (lang === "en" && item.name_en) return item.name_en;
+    if (lang === "ar" && item.name_ar) return item.name_ar;
+    if (lang === "de" && item.name_de) return item.name_de;
+    if (lang === "es" && item.name_es) return item.name_es;
+    if (lang === "pt" && item.name_pt) return item.name_pt;
+    if (lang === "fr" && item.name_fr) return item.name_fr;
+    return item.name_en || item.name;
   };
 
   // Don't render if no products
@@ -208,18 +222,6 @@ export const RelatedProductsSection = ({
                           {product.short_description}
                         </p>
                       )}
-                      <div className="mt-3 pt-3 border-t">
-                        {product.price_min || product.price_max ? (
-                          <span className="text-primary font-semibold text-sm">
-                            {product.price_unit} {product.price_min}
-                            {product.price_max && ` - ${product.price_max}`}
-                          </span>
-                        ) : (
-                          <span className="text-muted-foreground text-sm">
-                            {t("products.contactForPrice", "Contact for price")}
-                          </span>
-                        )}
-                      </div>
                     </div>
                   </div>
                 </Link>

@@ -25,7 +25,6 @@ import {
   X,
   Check,
   MessageCircle,
-  Phone,
   Mail,
 } from "lucide-react";
 
@@ -71,9 +70,6 @@ interface Product {
   description_fr: string | null;
   featured_image: string | null;
   gallery_images: string[];
-  price_min: number | null;
-  price_max: number | null;
-  price_unit: string | null;
   specifications: Record<string, string>;
   features: string[];
   seo_title: string | null;
@@ -95,8 +91,6 @@ interface RelatedProduct {
   name_fr: string | null;
   slug: string;
   featured_image: string | null;
-  price_min: number | null;
-  price_unit: string | null;
 }
 
 const DynamicProductDetail = () => {
@@ -169,7 +163,7 @@ const DynamicProductDetail = () => {
       if (data.category_id) {
         const { data: relatedData } = await supabase
           .from("products")
-          .select("id, name, name_en, name_ar, name_de, name_es, name_pt, name_fr, slug, featured_image, price_min, price_unit")
+          .select("id, name, name_en, name_ar, name_de, name_es, name_pt, name_fr, slug, featured_image")
           .eq("category_id", data.category_id)
           .eq("is_active", true)
           .neq("id", data.id)
@@ -203,7 +197,6 @@ const DynamicProductDetail = () => {
     if (lang === "es" && item.name_es) return item.name_es;
     if (lang === "pt" && item.name_pt) return item.name_pt;
     if (lang === "fr" && item.name_fr) return item.name_fr;
-    // Fallback to English, then default name
     return item.name_en || item.name;
   };
 
@@ -216,7 +209,6 @@ const DynamicProductDetail = () => {
     if (lang === "es" && product.description_es) return product.description_es;
     if (lang === "pt" && product.description_pt) return product.description_pt;
     if (lang === "fr" && product.description_fr) return product.description_fr;
-    // Fallback to English, then default description
     return product.description_en || product.description || "";
   };
 
@@ -265,15 +257,15 @@ const DynamicProductDetail = () => {
           <div className="container mx-auto px-4 py-20 text-center">
             <Package className="w-20 h-20 mx-auto text-muted-foreground mb-6" />
             <h1 className="text-3xl font-bold mb-4">
-              {t("products.notFound", "产品未找到")}
+              {t("products.notFound", "Product Not Found")}
             </h1>
             <p className="text-muted-foreground mb-8">
-              {t("products.notFoundDesc", "抱歉，该产品不存在或已下架")}
+              {t("products.notFoundDesc", "Sorry, this product does not exist or has been removed")}
             </p>
             <Button asChild>
               <Link to={localizedPath("/products")}>
                 <ArrowIcon className="w-4 h-4 mr-2 rotate-180" />
-                {t("products.backToProducts", "返回产品列表")}
+                {t("products.backToProducts", "Back to Products")}
               </Link>
             </Button>
           </div>
@@ -307,9 +299,6 @@ const DynamicProductDetail = () => {
         description={product.short_description || getLocalizedDescription()}
         image={product.featured_image || ""}
         category={product.category ? getLocalizedName(product.category) : "Products"}
-        offers={{
-          priceRange: product.price_min ? `${product.price_unit} ${product.price_min}${product.price_max ? ` - ${product.price_max}` : ""}` : undefined,
-        }}
       />
       <Header />
 
@@ -321,14 +310,14 @@ const DynamicProductDetail = () => {
               to={localizedPath("/")}
               className="text-muted-foreground hover:text-foreground"
             >
-              {t("nav.home", "首页")}
+              {t("nav.home", "Home")}
             </Link>
             <span className="text-muted-foreground">/</span>
             <Link
               to={localizedPath("/products")}
               className="text-muted-foreground hover:text-foreground"
             >
-              {t("nav.products", "产品")}
+              {t("nav.products", "Products")}
             </Link>
             {product.category && (
               <>
@@ -385,7 +374,7 @@ const DynamicProductDetail = () => {
                 {product.is_featured && (
                   <Badge className="absolute top-4 left-4 bg-yellow-500 text-yellow-950">
                     <Star className="w-3 h-3 mr-1 fill-current" />
-                    {t("products.featured", "推荐")}
+                    {t("products.featured", "Featured")}
                   </Badge>
                 )}
               </div>
@@ -435,34 +424,11 @@ const DynamicProductDetail = () => {
                 </p>
               )}
 
-              {/* Price */}
-              <div className="py-4 border-y">
-                {product.price_min || product.price_max ? (
-                  <div className="flex items-baseline gap-2">
-                    <span className="text-3xl font-bold text-primary">
-                      {product.price_unit} {product.price_min}
-                    </span>
-                    {product.price_max && (
-                      <>
-                        <span className="text-muted-foreground">-</span>
-                        <span className="text-3xl font-bold text-primary">
-                          {product.price_max}
-                        </span>
-                      </>
-                    )}
-                  </div>
-                ) : (
-                  <p className="text-lg text-muted-foreground">
-                    {t("products.contactForPrice", "请联系我们获取报价")}
-                  </p>
-                )}
-              </div>
-
               {/* Features */}
               {product.features.length > 0 && (
                 <div className="space-y-3">
                   <h3 className="font-semibold">
-                    {t("products.features", "产品特性")}
+                    {t("products.features", "Key Features")}
                   </h3>
                   <ul className="space-y-2">
                     {product.features.map((feature, index) => (
@@ -486,13 +452,13 @@ const DynamicProductDetail = () => {
                     }}
                   >
                     <MessageCircle className="w-5 h-5 mr-2" />
-                    {t("products.getQuote", "获取报价")}
+                    {t("products.getQuote", "Get a Quote")}
                   </a>
                 </Button>
                 <Button size="lg" variant="outline" className="flex-1" asChild>
                   <Link to={localizedPath("/contact")}>
                     <Mail className="w-5 h-5 mr-2" />
-                    {t("products.contactUs", "联系我们")}
+                    {t("products.contactUs", "Contact Us")}
                   </Link>
                 </Button>
               </div>
@@ -508,14 +474,14 @@ const DynamicProductDetail = () => {
                 value="description"
                 className="rounded-none border-b-2 border-transparent data-[state=active]:border-primary data-[state=active]:bg-transparent px-6 py-3"
               >
-                {t("products.description", "产品详情")}
+                {t("products.description", "Description")}
               </TabsTrigger>
               {Object.keys(product.specifications).length > 0 && (
                 <TabsTrigger
                   value="specifications"
                   className="rounded-none border-b-2 border-transparent data-[state=active]:border-primary data-[state=active]:bg-transparent px-6 py-3"
                 >
-                  {t("products.specifications", "规格参数")}
+                  {t("products.specifications", "Specifications")}
                 </TabsTrigger>
               )}
               {variants.length > 0 && (
@@ -523,7 +489,7 @@ const DynamicProductDetail = () => {
                   value="variants"
                   className="rounded-none border-b-2 border-transparent data-[state=active]:border-primary data-[state=active]:bg-transparent px-6 py-3"
                 >
-                  {t("products.variants", "产品变体")}
+                  {t("products.variants", "Variants")}
                 </TabsTrigger>
               )}
             </TabsList>
@@ -538,7 +504,7 @@ const DynamicProductDetail = () => {
                   />
                 ) : (
                   <p className="text-muted-foreground">
-                    {t("products.noDescription", "暂无详细描述")}
+                    {t("products.noDescription", "No detailed description available")}
                   </p>
                 )}
               </div>
@@ -583,11 +549,6 @@ const DynamicProductDetail = () => {
                           SKU: {variant.sku}
                         </p>
                       )}
-                      {variant.price && (
-                        <p className="text-primary font-semibold mt-1">
-                          {product.price_unit} {variant.price}
-                        </p>
-                      )}
                     </div>
                   </div>
                 ))}
@@ -600,7 +561,7 @@ const DynamicProductDetail = () => {
         {relatedProducts.length > 0 && (
           <section className="container mx-auto px-4 py-12 border-t">
             <h2 className="text-2xl font-bold mb-8">
-              {t("products.relatedProducts", "相关产品")}
+              {t("products.relatedProducts", "Related Products")}
             </h2>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
               {relatedProducts.map((relProduct) => (
@@ -627,11 +588,6 @@ const DynamicProductDetail = () => {
                       <h3 className="font-semibold group-hover:text-primary transition-colors line-clamp-2">
                         {getLocalizedName(relProduct)}
                       </h3>
-                      {relProduct.price_min && (
-                        <p className="text-primary font-semibold text-sm mt-1">
-                          {relProduct.price_unit} {relProduct.price_min}
-                        </p>
-                      )}
                     </div>
                   </div>
                 </Link>
