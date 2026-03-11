@@ -2309,5 +2309,96 @@
         "answer": "Puede contactar a nuestro equipo de ventas o descargar nuestro último catálogo. Ofrecemos precios competitivos y descuentos por volumen para clientes corporativos."
       }
     }
+  },
+  "dynamicProduct": {
+    "quick": {
+      "certified": "Certificación ASTM y TUV",
+      "shipping": "Envío Mundial",
+      "leadTime": "Plazo de 30-45 Días"
+    },
+    "pricing": {
+      "hint": "Precio personalizado según su proyecto",
+      "free": "Diseño 3D Gratis + Cotización"
+    },
+    "trust": {
+      "certified": "Certificación Internacional",
+      "certifiedDesc": "Certificados ASTM, EN1176, TUV para estándares de seguridad globales",
+      "shipping": "Entrega Mundial",
+      "shippingDesc": "Envío puerta a puerta a más de 80 países",
+      "support": "Soporte de por Vida",
+      "supportDesc": "Gerente de proyecto dedicado desde el primer día",
+      "warranty": "Garantía de hasta 5 Años",
+      "warrantyDesc": "Garantía líder en la industria para todos los equipos",
+      "leadTime": "Plazo de 30-45 Días",
+      "leadTimeDesc": "Producción rápida con estricto control de calidad",
+      "installation": "Guía de Instalación",
+      "installationDesc": "Soporte de instalación in situ o remoto incluido"
+    },
+    "why": {
+      "badge": "Por qué NinescapeLand",
+      "title": "¿Por Qué Asociarse Con Nosotros?",
+      "subtitle": "No somos solo proveedores de equipos — somos su socio integral para construir un negocio de entretenimiento rentable.",
+      "customDesign": "Diseño 100% Personalizado",
+      "customDesignDesc": "Cada proyecto se diseña de forma única para adaptarse al tamaño de su local, tema y demografía objetivo. Nuestro equipo de diseño interno crea impresionantes renderizados 3D antes de iniciar la producción.",
+      "ownFactory": "Fábrica Propia de 20.000m²",
+      "ownFactoryDesc": "Precios directos de fábrica sin intermediarios. Nuestra manufactura verticalmente integrada garantiza el control de calidad desde las materias primas hasta la instalación final.",
+      "global": "500+ Proyectos en 60+ Países",
+      "globalDesc": "La confianza de operadores en todo el mundo, desde EE.UU. hasta Oriente Medio, Europa hasta el Sudeste Asiático. Nuestra experiencia abarca mercados y regulaciones diversas.",
+      "turnkey": "Soluciones Llave en Mano",
+      "turnkeyDesc": "Desde el concepto inicial y la planificación del local hasta la fabricación de equipos, envío e instalación — nos encargamos de todo el proceso para que usted pueda enfocarse en su negocio.",
+      "safety": "La Seguridad es Primero",
+      "safetyDesc": "Todos los productos cumplen con estándares internacionales de seguridad incluyendo ASTM F1918, EN1176 y certificaciones TUV. La seguridad es innegociable en nuestra filosofía de diseño.",
+      "roi": "Maximice su ROI",
+      "roiDesc": "Planificación estratégica del diseño para maximizar la capacidad y los ingresos por metro cuadrado. Nuestros diseños están optimizados para la eficiencia operativa y el flujo de clientes."
+    },
+    "process": {
+      "badge": "Cómo Funciona",
+      "title": "Del Concepto a la Gran Apertura",
+      "subtitle": "Nuestro proceso probado de 4 pasos ha ayudado a más de 500 clientes en todo el mundo a construir centros de entretenimiento exitosos.",
+      "step1Title": "Consulta Gratuita",
+      "step1Desc": "Comparta las dimensiones de su local, presupuesto y visión. Nuestros expertos analizarán su espacio y proporcionarán recomendaciones profesionales adaptadas a su mercado.",
+      "step1Detail": "Respuesta en 2 horas durante días hábiles",
+      "step2Title": "Diseño y Planificación 3D",
+      "step2Desc": "Reciba renderizados 3D fotorrealistas y planos CAD de su parque infantil personalizado. Iteraremos el diseño hasta que esté 100% satisfecho — completamente gratis.",
+      "step2Detail": "Revisiones ilimitadas sin costo adicional",
+      "step3Title": "Fabricación y Control de Calidad",
+      "step3Desc": "La producción comienza en nuestra fábrica certificada ISO con estrictos puntos de control de calidad. Enviamos fotos y videos de progreso durante todo el proceso de fabricación.",
+      "step3Detail": "30-45 días de producción con actualizaciones semanales",
+      "step4Title": "Envío e Instalación",
+      "step4Desc": "Entrega puerta a puerta con cobertura de seguro completa. Nuestro equipo proporciona guías de instalación detalladas, video tutoriales o técnicos in situ según su preferencia.",
+      "step4Detail": "Seguro completo + soporte de instalación incluido",
+      "cta": "Inicie Su Consulta Gratuita"
+    },
+    "gallery": {
+      "badge": "Galería de Proyectos",
+      "title": "Véalo en Acción",
+      "subtitle": "Explore fotos reales de proyectos y renderizados 3D para visualizar su propio local."
+    },
+    "midCta": {
+      "title": "¿Listo Para Construir Su Local Soñado?",
+      "desc": "Obtenga un diseño 3D personalizado gratuito y una cotización competitiva en 24 horas. Sin compromiso, sin costos ocultos — solo asesoramiento experto de nuestro equipo de especialistas.",
+      "social": "Únase a más de 500 operadores exitosos que eligieron NinescapeLand como su socio de confianza.",
+      "whatsapp": "Chatear por WhatsApp",
+      "inquiry": "Enviar una Consulta"
+    },
+    "faq": {
+      "badge": "Preguntas Frecuentes",
+      "title": "Preguntas Frecuentes",
+      "subtitle": "Todo lo que necesita saber antes de iniciar su proyecto.",
+      "q1": "¿Cuál es la cantidad mínima de pedido (MOQ)?",
+      "a1": "Aceptamos pedidos desde un solo proyecto. Ya sea que necesite un área de juego suave de 50m² o un parque de trampolines de 5.000m², podemos satisfacer sus necesidades con el mismo nivel de calidad y atención al detalle.",
+      "q2": "¿Cuánto cuesta un parque infantil personalizado?",
+      "a2": "El precio varía según el tamaño, la complejidad, la temática y la selección de equipos. Generalmente, los parques infantiles cubiertos van de $150 a $400 por m². Contáctenos con las dimensiones de su local para una cotización precisa y sin compromiso en 24 horas.",
+      "q3": "¿Proporcionan servicios de diseño 3D?",
+      "a3": "¡Sí! Ofrecemos servicios gratuitos de diseño 3D y planos CAD. Simplemente comparta su plano y preferencias, y nuestro equipo de diseño creará renderizados fotorrealistas de su parque infantil personalizado — absolutamente gratis, con revisiones ilimitadas.",
+      "q4": "¿Qué certificaciones de seguridad cumplen sus productos?",
+      "a4": "Todos nuestros productos cumplen con estándares internacionales de seguridad incluyendo ASTM F1918 (EE.UU.), EN1176 (Europa), AS4685 (Australia) y CSA Z614 (Canadá). También contamos con certificaciones TUV y SGS.",
+      "q5": "¿Pueden enviar a mi país?",
+      "a5": "¡Por supuesto! Enviamos a más de 80 países en todo el mundo con entrega puerta a puerta, incluida cobertura de seguro completa. Nuestro equipo logístico gestiona el despacho de aduanas y proporcionamos toda la documentación necesaria.",
+      "q6": "¿Ofrecen servicios de instalación?",
+      "a6": "Sí, brindamos soporte de instalación flexible: manuales detallados con piezas numeradas, guías en video paso a paso, asistencia remota por video durante la instalación o técnicos in situ para proyectos más grandes.",
+      "moreQuestions": "¿Aún tiene preguntas? Nuestro equipo está listo para ayudarle.",
+      "askUs": "Pregúntenos lo que Sea"
+    }
   }
 }

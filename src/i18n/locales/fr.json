@@ -1526,5 +1526,96 @@
         "answer": "Contactez notre équipe commerciale ou téléchargez notre dernier catalogue. Nous proposons des prix compétitifs et des remises de volume pour les clients entreprise."
       }
     }
+  },
+  "dynamicProduct": {
+    "quick": {
+      "certified": "Certifié ASTM & TUV",
+      "shipping": "Livraison Mondiale",
+      "leadTime": "Délai de 30-45 Jours"
+    },
+    "pricing": {
+      "hint": "Tarification personnalisée selon votre projet",
+      "free": "Design 3D Gratuit + Devis"
+    },
+    "trust": {
+      "certified": "Certifié à l'International",
+      "certifiedDesc": "Certifié ASTM, EN1176, TUV pour les normes de sécurité mondiales",
+      "shipping": "Livraison Mondiale",
+      "shippingDesc": "Expédition porte-à-porte dans plus de 80 pays",
+      "support": "Support à Vie",
+      "supportDesc": "Chef de projet dédié dès le premier jour",
+      "warranty": "Garantie jusqu'à 5 Ans",
+      "warrantyDesc": "Garantie leader du secteur sur tous les équipements",
+      "leadTime": "Délai de 30-45 Jours",
+      "leadTimeDesc": "Production rapide avec contrôle qualité strict",
+      "installation": "Guide d'Installation",
+      "installationDesc": "Support d'installation sur site ou à distance inclus"
+    },
+    "why": {
+      "badge": "Pourquoi NinescapeLand",
+      "title": "Pourquoi Nous Choisir ?",
+      "subtitle": "Nous ne sommes pas de simples fournisseurs d'équipements — nous sommes votre partenaire complet pour bâtir une entreprise de divertissement rentable.",
+      "customDesign": "Design 100% Sur Mesure",
+      "customDesignDesc": "Chaque projet est conçu de manière unique pour s'adapter à la taille de votre espace, votre thème et votre public cible. Notre équipe de design interne crée des rendus 3D époustouflants avant le début de la production.",
+      "ownFactory": "Usine Propre de 20 000m²",
+      "ownFactoryDesc": "Prix directs d'usine sans intermédiaires. Notre fabrication intégrée verticalement garantit le contrôle qualité des matières premières à l'installation finale.",
+      "global": "500+ Projets dans 60+ Pays",
+      "globalDesc": "La confiance d'opérateurs du monde entier — des États-Unis au Moyen-Orient, de l'Europe à l'Asie du Sud-Est. Notre expérience couvre des marchés et réglementations diversifiés.",
+      "turnkey": "Solutions Clé en Main",
+      "turnkeyDesc": "Du concept initial à la planification de l'espace, en passant par la fabrication, l'expédition et l'installation — nous gérons l'ensemble du processus pour que vous puissiez vous concentrer sur votre activité.",
+      "safety": "La Sécurité Avant Tout",
+      "safetyDesc": "Tous les produits sont conformes aux normes de sécurité internationales, y compris ASTM F1918, EN1176 et certifications TUV. La sécurité est non négociable dans notre philosophie de conception.",
+      "roi": "Maximisez votre ROI",
+      "roiDesc": "Planification stratégique de l'aménagement pour maximiser la capacité et le chiffre d'affaires par mètre carré. Nos conceptions sont optimisées pour l'efficacité opérationnelle et le flux de clients."
+    },
+    "process": {
+      "badge": "Comment ça Marche",
+      "title": "Du Concept à l'Inauguration",
+      "subtitle": "Notre processus éprouvé en 4 étapes a aidé plus de 500 clients à travers le monde à construire des centres de divertissement prospères.",
+      "step1Title": "Consultation Gratuite",
+      "step1Desc": "Partagez les dimensions de votre espace, votre budget et votre vision. Nos experts analyseront votre espace et fourniront des recommandations professionnelles adaptées à votre marché.",
+      "step1Detail": "Réponse sous 2 heures les jours ouvrables",
+      "step2Title": "Design et Planification 3D",
+      "step2Desc": "Recevez des rendus 3D photoréalistes et des plans CAD de votre aire de jeux personnalisée. Nous itérons le design jusqu'à votre entière satisfaction — entièrement gratuit.",
+      "step2Detail": "Révisions illimitées sans frais supplémentaires",
+      "step3Title": "Fabrication et Contrôle Qualité",
+      "step3Desc": "La production démarre dans notre usine certifiée ISO avec des points de contrôle qualité stricts. Nous envoyons des photos et vidéos de progression tout au long du processus de fabrication.",
+      "step3Detail": "30-45 jours de production avec mises à jour hebdomadaires",
+      "step4Title": "Expédition et Installation",
+      "step4Desc": "Livraison porte-à-porte avec couverture d'assurance complète. Notre équipe fournit des guides d'installation détaillés, des tutoriels vidéo ou des techniciens sur site selon vos préférences.",
+      "step4Detail": "Assurance complète + support d'installation inclus",
+      "cta": "Démarrez Votre Consultation Gratuite"
+    },
+    "gallery": {
+      "badge": "Galerie de Projets",
+      "title": "Voyez-le en Action",
+      "subtitle": "Parcourez de vraies photos de projets et des rendus 3D pour imaginer votre propre espace."
+    },
+    "midCta": {
+      "title": "Prêt à Construire Votre Espace de Rêve ?",
+      "desc": "Obtenez un design 3D personnalisé gratuit et un devis compétitif sous 24 heures. Sans engagement, sans frais cachés — juste des conseils d'experts de notre équipe de spécialistes.",
+      "social": "Rejoignez plus de 500 opérateurs à succès qui ont choisi NinescapeLand comme partenaire de confiance.",
+      "whatsapp": "Discuter sur WhatsApp",
+      "inquiry": "Envoyer une Demande"
+    },
+    "faq": {
+      "badge": "FAQ",
+      "title": "Questions Fréquemment Posées",
+      "subtitle": "Tout ce que vous devez savoir avant de démarrer votre projet.",
+      "q1": "Quelle est la quantité minimum de commande (MOQ) ?",
+      "a1": "Nous acceptons les commandes dès un seul projet. Que vous ayez besoin d'un espace soft play de 50m² ou d'un parc de trampolines de 5 000m², nous pouvons répondre à vos besoins avec le même niveau de qualité et d'attention aux détails.",
+      "q2": "Combien coûte une aire de jeux personnalisée ?",
+      "a2": "Le prix varie selon la taille, la complexité, la thématisation et la sélection d'équipements. En général, les aires de jeux intérieures coûtent de 150 à 400 $ par m². Contactez-nous avec les dimensions de votre espace pour un devis précis et sans engagement sous 24 heures.",
+      "q3": "Proposez-vous des services de design 3D ?",
+      "a3": "Oui ! Nous offrons des services gratuits de design 3D et de plans CAD. Partagez simplement votre plan et vos préférences, et notre équipe de design créera des rendus photoréalistes — entièrement gratuit, avec des révisions illimitées.",
+      "q4": "Quelles certifications de sécurité vos produits respectent-ils ?",
+      "a4": "Tous nos produits sont conformes aux normes de sécurité internationales, notamment ASTM F1918 (États-Unis), EN1176 (Europe), AS4685 (Australie) et CSA Z614 (Canada). Nous détenons également les certifications TUV et SGS.",
+      "q5": "Pouvez-vous expédier dans mon pays ?",
+      "a5": "Absolument ! Nous expédions dans plus de 80 pays avec livraison porte-à-porte et assurance complète. Notre équipe logistique gère le dédouanement et fournit toute la documentation nécessaire.",
+      "q6": "Proposez-vous des services d'installation ?",
+      "a6": "Oui, nous fournissons un support d'installation flexible : manuels détaillés avec pièces numérotées, guides vidéo étape par étape, assistance vidéo à distance pendant l'installation ou techniciens sur site pour les grands projets.",
+      "moreQuestions": "Vous avez encore des questions ? Notre équipe est prête à vous aider.",
+      "askUs": "Posez-nous Vos Questions"
+    }
   }
 }
