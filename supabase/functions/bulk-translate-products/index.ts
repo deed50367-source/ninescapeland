@@ -82,8 +82,12 @@ serve(async (req) => {
       const updates: Record<string, string> = {};
       const translatedLangs: string[] = [];
 
-      // Translate to each language sequentially to avoid rate limits
+      // Translate to each language, skip if already done
       for (const lang of LANGUAGES) {
+        if (product[lang.column]) {
+          translatedLangs.push(lang.code + '(existed)');
+          continue;
+        }
         try {
           console.log(`Translating ${product.slug} to ${lang.code}...`);
           const translated = await translateText(product.description, lang.name);
