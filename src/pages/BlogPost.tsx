@@ -534,10 +534,12 @@ const BlogPost = () => {
 
         {/* Related Posts Section */}
         {relatedPosts && relatedPosts.length > 1 && (
-          <BlogRelatedPosts 
-            posts={relatedPosts} 
-            currentPostId={post.id} 
-          />
+          <LazySection minHeight="300px">
+            <BlogRelatedPosts 
+              posts={relatedPosts} 
+              currentPostId={post.id} 
+            />
+          </LazySection>
         )}
       </main>
 
