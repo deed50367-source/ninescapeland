@@ -36,6 +36,7 @@ import { ProductProcessSteps } from "@/components/product-detail/ProductProcessS
 import { ProductGalleryShowcase } from "@/components/product-detail/ProductGalleryShowcase";
 import { ProductMidCTA } from "@/components/product-detail/ProductMidCTA";
 import { ProductFAQSection } from "@/components/product-detail/ProductFAQSection";
+import { LazySection } from "@/components/LazySection";
 
 interface ProductCategory {
   id: string;
@@ -593,60 +594,74 @@ const DynamicProductDetail = () => {
         </section>
 
         {/* Trust Badges */}
-        <ProductTrustBadges />
+        <LazySection minHeight="200px">
+          <ProductTrustBadges />
+        </LazySection>
 
         {/* Gallery Showcase */}
-        <ProductGalleryShowcase images={allImages} productName={getLocalizedName(product)} />
+        <LazySection minHeight="300px">
+          <ProductGalleryShowcase images={allImages} productName={getLocalizedName(product)} />
+        </LazySection>
 
         {/* Mid-page CTA */}
-        <ProductMidCTA productName={getLocalizedName(product)} />
+        <LazySection minHeight="200px">
+          <ProductMidCTA productName={getLocalizedName(product)} />
+        </LazySection>
 
         {/* Why Choose Us */}
-        <ProductWhyChooseUs />
+        <LazySection minHeight="300px">
+          <ProductWhyChooseUs />
+        </LazySection>
 
         {/* Process Steps */}
-        <ProductProcessSteps productName={getLocalizedName(product)} />
+        <LazySection minHeight="300px">
+          <ProductProcessSteps productName={getLocalizedName(product)} />
+        </LazySection>
 
         {/* FAQ */}
-        <ProductFAQSection productName={getLocalizedName(product)} />
+        <LazySection minHeight="300px">
+          <ProductFAQSection productName={getLocalizedName(product)} />
+        </LazySection>
 
         {/* Related Products */}
         {relatedProducts.length > 0 && (
-          <section className="container mx-auto px-4 py-12 border-t">
-            <h2 className="text-2xl font-bold mb-8">
-              {t("products.relatedProducts", "Related Products")}
-            </h2>
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-              {relatedProducts.map((relProduct) => (
-                <Link
-                  key={relProduct.id}
-                  to={localizedPath(`/products/${relProduct.slug}`)}
-                  className="group"
-                >
-                  <div className="bg-card rounded-xl overflow-hidden border hover:shadow-lg transition-shadow">
-                    <div className="aspect-square overflow-hidden">
-                      {relProduct.featured_image ? (
-                        <img
-                          src={relProduct.featured_image}
-                          alt={`${getLocalizedName(relProduct)} by NinescapeLand`}
-                          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                        />
-                      ) : (
-                        <div className="w-full h-full bg-muted flex items-center justify-center">
-                          <Package className="w-12 h-12 text-muted-foreground" />
-                        </div>
-                      )}
+          <LazySection minHeight="200px">
+            <section className="container mx-auto px-4 py-12 border-t">
+              <h2 className="text-2xl font-bold mb-8">
+                {t("products.relatedProducts", "Related Products")}
+              </h2>
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+                {relatedProducts.map((relProduct) => (
+                  <Link
+                    key={relProduct.id}
+                    to={localizedPath(`/products/${relProduct.slug}`)}
+                    className="group"
+                  >
+                    <div className="bg-card rounded-xl overflow-hidden border hover:shadow-lg transition-shadow">
+                      <div className="aspect-square overflow-hidden">
+                        {relProduct.featured_image ? (
+                          <img
+                            src={relProduct.featured_image}
+                            alt={`${getLocalizedName(relProduct)} by NinescapeLand`}
+                            className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                          />
+                        ) : (
+                          <div className="w-full h-full bg-muted flex items-center justify-center">
+                            <Package className="w-12 h-12 text-muted-foreground" />
+                          </div>
+                        )}
+                      </div>
+                      <div className="p-4">
+                        <h3 className="font-semibold group-hover:text-primary transition-colors line-clamp-2">
+                          {getLocalizedName(relProduct)}
+                        </h3>
+                      </div>
                     </div>
-                    <div className="p-4">
-                      <h3 className="font-semibold group-hover:text-primary transition-colors line-clamp-2">
-                        {getLocalizedName(relProduct)}
-                      </h3>
-                    </div>
-                  </div>
-                </Link>
-              ))}
-            </div>
-          </section>
+                  </Link>
+                ))}
+              </div>
+            </section>
+          </LazySection>
         )}
       </main>
 

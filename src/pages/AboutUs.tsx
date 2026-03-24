@@ -11,6 +11,7 @@ import { AboutTeamSection } from "@/components/AboutTeamSection";
 import { SEOHead } from "@/components/SEOHead";
 import { BreadcrumbSchema, OrganizationSchema } from "@/components/StructuredData";
 import { useLocalizedPath } from "@/hooks/useLocalizedPath";
+import { LazySection } from "@/components/LazySection";
 
 const AboutUs = () => {
   const { t } = useTranslation();
@@ -43,8 +44,12 @@ const AboutUs = () => {
         <AboutMascotIntro />
         <CoreValuesSection />
         <AboutTeamSection />
-        <WhyUsSection />
-        <FAQSection />
+        <LazySection minHeight="400px">
+          <WhyUsSection />
+        </LazySection>
+        <LazySection minHeight="400px">
+          <FAQSection />
+        </LazySection>
       </main>
       <Footer />
       <FloatingCTA />

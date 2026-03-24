@@ -11,6 +11,7 @@ import { FloatingCTA } from "@/components/FloatingCTA";
 import { SEOHead } from "@/components/SEOHead";
 import { BreadcrumbSchema, OrganizationSchema } from "@/components/StructuredData";
 import { useLocalizedPath } from "@/hooks/useLocalizedPath";
+import { LazySection } from "@/components/LazySection";
 
 const Products = () => {
   const { t } = useTranslation();
@@ -41,10 +42,18 @@ const Products = () => {
           breadcrumbs={heroBreadcrumbs}
         />
         <ProductsSection />
-        <TrampolineFeaturesSection />
-        <NinjaFeaturesSection />
-        <QuoteCalculator />
-        <FAQSection />
+        <LazySection minHeight="400px">
+          <TrampolineFeaturesSection />
+        </LazySection>
+        <LazySection minHeight="400px">
+          <NinjaFeaturesSection />
+        </LazySection>
+        <LazySection minHeight="500px">
+          <QuoteCalculator />
+        </LazySection>
+        <LazySection minHeight="400px">
+          <FAQSection />
+        </LazySection>
       </main>
       <Footer />
       <FloatingCTA />

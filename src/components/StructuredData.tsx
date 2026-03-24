@@ -3,7 +3,7 @@ import { Helmet } from "react-helmet-async";
 const SITE_URL = "https://indoorplaygroundsolution.com";
 const LOGO_URL = `${SITE_URL}/favicon.png`;
 
-// Organization + Manufacturer Schema with E-E-A-T signals
+// Organization + Manufacturer Schema (trimmed for crawl-budget efficiency)
 export interface OrganizationSchemaProps {
   name?: string;
   url?: string;
@@ -24,7 +24,7 @@ export const OrganizationSchema = ({
   name = "NinescapeLand",
   url = SITE_URL,
   logo = LOGO_URL,
-  description = "Professional indoor playground equipment manufacturer since 2008. Specializing in custom indoor playgrounds, trampoline parks, ninja courses, and soft play equipment. ASTM & TUV certified with 2,000+ projects in 50+ countries.",
+  description = "Professional indoor playground equipment manufacturer since 2008. Custom indoor playgrounds, trampoline parks, ninja courses & soft play. ASTM & TUV certified.",
   email = "sale@indoorplaygroundsolution.com",
   phone = "+86-150-5878-2901",
   address = {
@@ -40,859 +40,328 @@ export const OrganizationSchema = ({
     "@id": `${url}/#organization`,
     name,
     url,
-    logo: {
-      "@type": "ImageObject",
-      url: logo,
-      width: 512,
-      height: 512
-    },
+    logo: { "@type": "ImageObject", url: logo, width: 512, height: 512 },
     description,
     email,
     telephone: phone,
     foundingDate: "2008",
-    foundingLocation: {
-      "@type": "Place",
-      name: "Wenzhou, Zhejiang, China"
-    },
-    founder: {
-      "@type": "Person",
-      name: "NinescapeLand Founder",
-      jobTitle: "CEO & Founder",
-      worksFor: { "@id": `${url}/#organization` }
-    },
-    numberOfEmployees: {
-      "@type": "QuantitativeValue",
-      minValue: 200,
-      maxValue: 300
-    },
-    address: {
-      "@type": "PostalAddress",
-      ...address
-    },
+    numberOfEmployees: { "@type": "QuantitativeValue", minValue: 200, maxValue: 300 },
+    address: { "@type": "PostalAddress", ...address },
     sameAs,
-    contactPoint: [
-      {
-        "@type": "ContactPoint",
-        telephone: phone,
-        contactType: "sales",
-        email,
-        availableLanguage: ["English", "Chinese", "Spanish", "German", "Portuguese", "Arabic", "French"]
-      },
-      {
-        "@type": "ContactPoint",
-        telephone: phone,
-        contactType: "customer service",
-        email,
-        availableLanguage: ["English", "Chinese"]
-      }
-    ],
-    // E-E-A-T: Certifications & credentials
-    hasCredential: [
-      {
-        "@type": "EducationalOccupationalCredential",
-        credentialCategory: "certification",
-        name: "ASTM F1918 Certification",
-        description: "American Society for Testing and Materials standard for soft contained play equipment"
-      },
-      {
-        "@type": "EducationalOccupationalCredential",
-        credentialCategory: "certification",
-        name: "TUV SÜD Certification",
-        description: "German quality and safety certification for playground equipment"
-      },
-      {
-        "@type": "EducationalOccupationalCredential",
-        credentialCategory: "certification",
-        name: "EN 1176 Certification",
-        description: "European standard for playground equipment and surfacing"
-      },
-      {
-        "@type": "EducationalOccupationalCredential",
-        credentialCategory: "certification",
-        name: "ISO 9001:2015",
-        description: "Quality management systems certification"
-      }
-    ],
-    // Manufacturing details
-    makesOffer: [
-      { "@type": "Offer", itemOffered: { "@type": "Product", name: "Custom Indoor Playground Equipment" } },
-      { "@type": "Offer", itemOffered: { "@type": "Product", name: "Commercial Trampoline Park Equipment" } },
-      { "@type": "Offer", itemOffered: { "@type": "Product", name: "Ninja Warrior Course Equipment" } },
-      { "@type": "Offer", itemOffered: { "@type": "Product", name: "Soft Play Equipment" } }
-    ],
-    areaServed: {
-      "@type": "Place",
-      name: "Worldwide"
+    contactPoint: {
+      "@type": "ContactPoint",
+      telephone: phone,
+      contactType: "sales",
+      email,
+      availableLanguage: ["English", "Chinese", "Spanish", "German", "Portuguese", "Arabic", "French"]
     },
-    slogan: "Your Trusted Indoor Playground Equipment Manufacturer Since 2008",
-    knowsAbout: [
-      "Indoor Playground Design",
-      "Trampoline Park Engineering",
-      "Ninja Warrior Course Construction",
-      "Soft Play Manufacturing",
-      "FEC Equipment Solutions",
-      "Playground Safety Standards"
-    ],
-    award: [
-      "15+ Years Industry Experience",
-      "2,000+ Projects Completed Worldwide",
-      "50,000 sqm Manufacturing Facility"
-    ]
+    areaServed: { "@type": "Place", name: "Worldwide" },
+    slogan: "Your Trusted Indoor Playground Equipment Manufacturer Since 2008"
   };
 
   return (
     <Helmet>
-      <script type="application/ld+json">
-        {JSON.stringify(schema)}
-      </script>
+      <script type="application/ld+json">{JSON.stringify(schema)}</script>
     </Helmet>
   );
 };
 
-// Product Schema - for product pages
+// Product Schema
 export interface ProductSchemaProps {
   name: string;
   description: string;
   image: string | string[];
   brand?: string;
   category?: string;
-  offers?: {
-    priceRange?: string;
-    availability?: string;
-  };
-  aggregateRating?: {
-    ratingValue: number;
-    reviewCount: number;
-  };
+  offers?: { priceRange?: string; availability?: string };
+  aggregateRating?: { ratingValue: number; reviewCount: number };
 }
 
 export const ProductSchema = ({
-  name,
-  description,
-  image,
-  brand = "NinescapeLand",
-  category,
-  offers,
-  aggregateRating
+  name, description, image, brand = "NinescapeLand", category, offers, aggregateRating
 }: ProductSchemaProps) => {
   const schema: Record<string, unknown> = {
     "@context": "https://schema.org",
     "@type": "Product",
-    name,
-    description,
+    name, description,
     image: Array.isArray(image) ? image : [image],
-    brand: {
-      "@type": "Brand",
-      name: brand
-    },
-    manufacturer: {
-      "@type": "Organization",
-      name: "NinescapeLand",
-      url: "https://indoorplaygroundsolution.com"
-    }
+    brand: { "@type": "Brand", name: brand },
+    manufacturer: { "@type": "Organization", name: "NinescapeLand", url: SITE_URL }
   };
-
-  if (category) {
-    schema.category = category;
-  }
-
+  if (category) schema.category = category;
   if (offers) {
     schema.offers = {
-      "@type": "AggregateOffer",
-      priceCurrency: "USD",
-      priceSpecification: {
-        "@type": "PriceSpecification",
-        price: offers.priceRange || "Contact for quote"
-      },
+      "@type": "AggregateOffer", priceCurrency: "USD",
+      priceSpecification: { "@type": "PriceSpecification", price: offers.priceRange || "Contact for quote" },
       availability: offers.availability || "https://schema.org/InStock",
-      seller: {
-        "@type": "Organization",
-        name: "NinescapeLand"
-      }
+      seller: { "@type": "Organization", name: "NinescapeLand" }
     };
   }
-
   if (aggregateRating) {
     schema.aggregateRating = {
       "@type": "AggregateRating",
       ratingValue: aggregateRating.ratingValue,
       reviewCount: aggregateRating.reviewCount,
-      bestRating: 5,
-      worstRating: 1
+      bestRating: 5, worstRating: 1
     };
   }
-
-  return (
-    <Helmet>
-      <script type="application/ld+json">
-        {JSON.stringify(schema)}
-      </script>
-    </Helmet>
-  );
+  return <Helmet><script type="application/ld+json">{JSON.stringify(schema)}</script></Helmet>;
 };
 
-// Article Schema - for blog posts
-export interface ArticleSchemaProps {
-  headline: string;
-  description?: string;
-  image?: string;
-  datePublished?: string;
-  dateModified?: string;
-  author?: string;
-  url?: string;
-}
-
-export const ArticleSchema = ({
-  headline,
-  description,
-  image,
-  datePublished,
-  dateModified,
-  author = "NinescapeLand Team",
-  url
-}: ArticleSchemaProps) => {
-  const schema: Record<string, unknown> = {
-    "@context": "https://schema.org",
-    "@type": "Article",
-    headline,
-    author: {
-      "@type": "Organization",
-      name: author
-    },
-    publisher: {
-      "@type": "Organization",
-      name: "NinescapeLand",
-      logo: {
-        "@type": "ImageObject",
-        url: "https://indoorplaygroundsolution.com/favicon.png"
-      }
-    }
-  };
-
-  if (description) schema.description = description;
-  if (image) schema.image = image;
-  if (datePublished) schema.datePublished = datePublished;
-  if (dateModified) schema.dateModified = dateModified;
-  if (url) schema.mainEntityOfPage = { "@type": "WebPage", "@id": url };
-
-  return (
-    <Helmet>
-      <script type="application/ld+json">
-        {JSON.stringify(schema)}
-      </script>
-    </Helmet>
-  );
-};
-
-// FAQ Schema - for FAQ sections
-export interface FAQItem {
-  question: string;
-  answer: string;
-}
-
-export interface FAQSchemaProps {
-  items: FAQItem[];
-}
+// FAQ Schema
+export interface FAQItem { question: string; answer: string; }
+export interface FAQSchemaProps { items: FAQItem[]; }
 
 export const FAQSchema = ({ items }: FAQSchemaProps) => {
   const schema = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
     mainEntity: items.map((item) => ({
-      "@type": "Question",
-      name: item.question,
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: item.answer
-      }
+      "@type": "Question", name: item.question,
+      acceptedAnswer: { "@type": "Answer", text: item.answer }
     }))
   };
-
-  return (
-    <Helmet>
-      <script type="application/ld+json">
-        {JSON.stringify(schema)}
-      </script>
-    </Helmet>
-  );
+  return <Helmet><script type="application/ld+json">{JSON.stringify(schema)}</script></Helmet>;
 };
 
-// Review Schema - for testimonials and reviews
-export interface ReviewItem {
-  author: string;
-  reviewBody: string;
-  ratingValue: number;
-  datePublished?: string;
-}
-
-export interface ReviewSchemaProps {
-  itemReviewed: {
-    type: string;
-    name: string;
-  };
-  reviews: ReviewItem[];
-}
+// Review Schema
+export interface ReviewItem { author: string; reviewBody: string; ratingValue: number; datePublished?: string; }
+export interface ReviewSchemaProps { itemReviewed: { type: string; name: string }; reviews: ReviewItem[]; }
 
 export const ReviewSchema = ({ itemReviewed, reviews }: ReviewSchemaProps) => {
   const schema = {
     "@context": "https://schema.org",
     "@type": "Product",
     name: itemReviewed.name,
-    review: reviews.map((review) => ({
+    review: reviews.map((r) => ({
       "@type": "Review",
-      author: {
-        "@type": "Person",
-        name: review.author
-      },
-      reviewBody: review.reviewBody,
-      reviewRating: {
-        "@type": "Rating",
-        ratingValue: review.ratingValue,
-        bestRating: 5,
-        worstRating: 1
-      },
-      datePublished: review.datePublished
+      author: { "@type": "Person", name: r.author },
+      reviewBody: r.reviewBody,
+      reviewRating: { "@type": "Rating", ratingValue: r.ratingValue, bestRating: 5, worstRating: 1 },
+      datePublished: r.datePublished
     })),
     aggregateRating: reviews.length > 0 ? {
       "@type": "AggregateRating",
-      ratingValue: (reviews.reduce((acc, r) => acc + r.ratingValue, 0) / reviews.length).toFixed(1),
-      reviewCount: reviews.length,
-      bestRating: 5,
-      worstRating: 1
+      ratingValue: (reviews.reduce((a, r) => a + r.ratingValue, 0) / reviews.length).toFixed(1),
+      reviewCount: reviews.length, bestRating: 5, worstRating: 1
     } : undefined
   };
-
-  return (
-    <Helmet>
-      <script type="application/ld+json">
-        {JSON.stringify(schema)}
-      </script>
-    </Helmet>
-  );
+  return <Helmet><script type="application/ld+json">{JSON.stringify(schema)}</script></Helmet>;
 };
 
-// HowTo Schema - for tutorial/guide articles
-export interface HowToStep {
-  name: string;
-  text: string;
-  image?: string;
-}
-
-export interface HowToSchemaProps {
-  name: string;
-  description: string;
-  steps: HowToStep[];
-  totalTime?: string;
-  image?: string;
-}
+// HowTo Schema
+export interface HowToStep { name: string; text: string; image?: string; }
+export interface HowToSchemaProps { name: string; description: string; steps: HowToStep[]; totalTime?: string; image?: string; }
 
 export const HowToSchema = ({ name, description, steps, totalTime, image }: HowToSchemaProps) => {
   const schema: Record<string, unknown> = {
-    "@context": "https://schema.org",
-    "@type": "HowTo",
-    name,
-    description,
-    step: steps.map((step, index) => ({
-      "@type": "HowToStep",
-      position: index + 1,
-      name: step.name,
-      text: step.text,
-      image: step.image
-    }))
+    "@context": "https://schema.org", "@type": "HowTo", name, description,
+    step: steps.map((s, i) => ({ "@type": "HowToStep", position: i + 1, name: s.name, text: s.text, image: s.image }))
   };
-
   if (totalTime) schema.totalTime = totalTime;
   if (image) schema.image = image;
-
-  return (
-    <Helmet>
-      <script type="application/ld+json">
-        {JSON.stringify(schema)}
-      </script>
-    </Helmet>
-  );
+  return <Helmet><script type="application/ld+json">{JSON.stringify(schema)}</script></Helmet>;
 };
 
-// BlogPosting Schema - enhanced Article for blog posts
+// BlogPosting Schema
 export interface BlogPostingSchemaProps {
-  headline: string;
-  description?: string;
-  image?: string;
-  datePublished?: string;
-  dateModified?: string;
-  author?: string;
-  url?: string;
-  keywords?: string;
-  wordCount?: number;
-  articleBody?: string;
+  headline: string; description?: string; image?: string; datePublished?: string;
+  dateModified?: string; author?: string; url?: string; keywords?: string;
+  wordCount?: number; articleBody?: string;
 }
 
 export const BlogPostingSchema = ({
-  headline,
-  description,
-  image,
-  datePublished,
-  dateModified,
-  author = "NinescapeLand Team",
-  url,
-  keywords,
-  wordCount,
-  articleBody
+  headline, description, image, datePublished, dateModified,
+  author = "NinescapeLand Team", url, keywords, wordCount, articleBody
 }: BlogPostingSchemaProps) => {
   const schema: Record<string, unknown> = {
-    "@context": "https://schema.org",
-    "@type": "BlogPosting",
-    headline,
-    author: {
-      "@type": "Organization",
-      name: author,
-      url: "https://indoorplaygroundsolution.com"
-    },
-    publisher: {
-      "@type": "Organization",
-      name: "NinescapeLand",
-      logo: {
-        "@type": "ImageObject",
-        url: "https://indoorplaygroundsolution.com/favicon.png",
-        width: 512,
-        height: 512
-      }
-    },
-    isAccessibleForFree: true,
-    inLanguage: "en"
+    "@context": "https://schema.org", "@type": "BlogPosting", headline,
+    author: { "@type": "Organization", name: author, url: SITE_URL },
+    publisher: { "@type": "Organization", name: "NinescapeLand", logo: { "@type": "ImageObject", url: LOGO_URL, width: 512, height: 512 } },
+    isAccessibleForFree: true, inLanguage: "en"
   };
-
   if (description) schema.description = description;
-  if (image) {
-    schema.image = {
-      "@type": "ImageObject",
-      url: image
-    };
-  }
+  if (image) schema.image = { "@type": "ImageObject", url: image };
   if (datePublished) schema.datePublished = datePublished;
   if (dateModified) schema.dateModified = dateModified;
   if (url) schema.mainEntityOfPage = { "@type": "WebPage", "@id": url };
   if (keywords) schema.keywords = keywords;
   if (wordCount) schema.wordCount = wordCount;
   if (articleBody) schema.articleBody = articleBody.substring(0, 500);
-
-  return (
-    <Helmet>
-      <script type="application/ld+json">
-        {JSON.stringify(schema)}
-      </script>
-    </Helmet>
-  );
+  return <Helmet><script type="application/ld+json">{JSON.stringify(schema)}</script></Helmet>;
 };
-export interface BreadcrumbItem {
-  name: string;
-  url: string;
-}
 
-export interface BreadcrumbSchemaProps {
-  items: BreadcrumbItem[];
-}
+// Breadcrumb Schema
+export interface BreadcrumbItem { name: string; url: string; }
+export interface BreadcrumbSchemaProps { items: BreadcrumbItem[]; }
 
 export const BreadcrumbSchema = ({ items }: BreadcrumbSchemaProps) => {
   const schema = {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
+    "@context": "https://schema.org", "@type": "BreadcrumbList",
     itemListElement: items.map((item, index) => ({
-      "@type": "ListItem",
-      position: index + 1,
-      name: item.name,
-      item: item.url
+      "@type": "ListItem", position: index + 1, name: item.name, item: item.url
     }))
   };
-
-  return (
-    <Helmet>
-      <script type="application/ld+json">
-        {JSON.stringify(schema)}
-      </script>
-    </Helmet>
-  );
+  return <Helmet><script type="application/ld+json">{JSON.stringify(schema)}</script></Helmet>;
 };
 
-// LocalBusiness Schema - enhanced organization for local SEO
+// LocalBusiness Schema (trimmed — no nested OfferCatalog)
 export const LocalBusinessSchema = () => {
   const schema = {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
-    "@id": "https://indoorplaygroundsolution.com",
+    "@id": `${SITE_URL}/#business`,
     name: "NinescapeLand",
-    description: "Professional indoor playground equipment manufacturer specializing in custom indoor playgrounds, trampoline parks, ninja courses, and soft play equipment. Factory direct sales with worldwide shipping.",
-    url: "https://indoorplaygroundsolution.com",
+    description: "Indoor playground equipment manufacturer. Custom playgrounds, trampoline parks, ninja courses & soft play. Worldwide shipping.",
+    url: SITE_URL,
     telephone: "+86-150-5878-2901",
     email: "sale@indoorplaygroundsolution.com",
-    image: "https://indoorplaygroundsolution.com/favicon.png",
+    image: LOGO_URL,
     priceRange: "$$$$",
-    address: {
-      "@type": "PostalAddress",
-      addressLocality: "Wenzhou",
-      addressRegion: "Zhejiang",
-      addressCountry: "CN"
-    },
-    geo: {
-      "@type": "GeoCoordinates",
-      latitude: "27.9939",
-      longitude: "120.6996"
-    },
+    address: { "@type": "PostalAddress", addressLocality: "Wenzhou", addressRegion: "Zhejiang", addressCountry: "CN" },
+    geo: { "@type": "GeoCoordinates", latitude: "27.9939", longitude: "120.6996" },
     openingHoursSpecification: {
       "@type": "OpeningHoursSpecification",
       dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-      opens: "09:00",
-      closes: "18:00"
-    },
-    areaServed: {
-      "@type": "GeoCircle",
-      geoMidpoint: {
-        "@type": "GeoCoordinates",
-        latitude: "0",
-        longitude: "0"
-      },
-      geoRadius: "40075000"
-    },
-    hasOfferCatalog: {
-      "@type": "OfferCatalog",
-      name: "Indoor Playground Equipment",
-      itemListElement: [
-        {
-          "@type": "OfferCatalog",
-          name: "Indoor Playgrounds",
-          itemListElement: [
-            { "@type": "Offer", itemOffered: { "@type": "Product", name: "Custom Indoor Playground" } }
-          ]
-        },
-        {
-          "@type": "OfferCatalog",
-          name: "Trampoline Parks",
-          itemListElement: [
-            { "@type": "Offer", itemOffered: { "@type": "Product", name: "Commercial Trampoline Park" } }
-          ]
-        },
-        {
-          "@type": "OfferCatalog",
-          name: "Ninja Courses",
-          itemListElement: [
-            { "@type": "Offer", itemOffered: { "@type": "Product", name: "Ninja Warrior Course" } }
-          ]
-        },
-        {
-          "@type": "OfferCatalog",
-          name: "Soft Play",
-          itemListElement: [
-            { "@type": "Offer", itemOffered: { "@type": "Product", name: "Soft Play Equipment" } }
-          ]
-        }
-      ]
+      opens: "09:00", closes: "18:00"
     }
   };
-
-  return (
-    <Helmet>
-      <script type="application/ld+json">
-        {JSON.stringify(schema)}
-      </script>
-    </Helmet>
-  );
+  return <Helmet><script type="application/ld+json">{JSON.stringify(schema)}</script></Helmet>;
 };
 
-// ContactPage Schema - for the contact page
+// ContactPage Schema
 export const ContactPageSchema = () => {
   const schema = {
     "@context": "https://schema.org",
     "@type": "ContactPage",
     name: "Contact NinescapeLand",
-    description: "Contact NinescapeLand for a free 3D playground design & quote within 24 hours. Multilingual support, WhatsApp, email or phone.",
-    url: "https://indoorplaygroundsolution.com/contact",
+    description: "Contact NinescapeLand for a free 3D playground design & quote within 24 hours.",
+    url: `${SITE_URL}/contact`,
     mainEntity: {
-      "@type": "Organization",
-      name: "NinescapeLand",
-      url: "https://indoorplaygroundsolution.com",
-      telephone: "+86-150-5878-2901",
-      email: "sale@indoorplaygroundsolution.com",
-      contactPoint: [
-        {
-          "@type": "ContactPoint",
-          telephone: "+86-150-5878-2901",
-          contactType: "sales",
-          availableLanguage: ["English", "Chinese", "Spanish", "Portuguese", "German", "French", "Arabic"],
-          areaServed: "Worldwide"
-        },
-        {
-          "@type": "ContactPoint",
-          telephone: "+86-150-5878-2901",
-          contactType: "customer support",
-          availableLanguage: ["English", "Chinese"],
-          areaServed: "Worldwide"
-        }
-      ]
+      "@type": "Organization", name: "NinescapeLand", url: SITE_URL,
+      telephone: "+86-150-5878-2901", email: "sale@indoorplaygroundsolution.com",
+      contactPoint: {
+        "@type": "ContactPoint", telephone: "+86-150-5878-2901",
+        contactType: "sales",
+        availableLanguage: ["English", "Chinese", "Spanish", "Portuguese", "German", "French", "Arabic"],
+        areaServed: "Worldwide"
+      }
     }
   };
-
-  return (
-    <Helmet>
-      <script type="application/ld+json">
-        {JSON.stringify(schema)}
-      </script>
-    </Helmet>
-  );
+  return <Helmet><script type="application/ld+json">{JSON.stringify(schema)}</script></Helmet>;
 };
 
 // WebSite Schema with SearchAction
 export const WebsiteSchema = () => {
   const schema = {
-    "@context": "https://schema.org",
-    "@type": "WebSite",
-    name: "NinescapeLand",
-    url: "https://indoorplaygroundsolution.com",
+    "@context": "https://schema.org", "@type": "WebSite",
+    name: "NinescapeLand", url: SITE_URL,
     description: "Professional indoor playground equipment manufacturer",
-    publisher: {
-      "@type": "Organization",
-      name: "NinescapeLand"
-    },
+    publisher: { "@type": "Organization", name: "NinescapeLand" },
     potentialAction: {
       "@type": "SearchAction",
-      target: {
-        "@type": "EntryPoint",
-        urlTemplate: "https://indoorplaygroundsolution.com/en/products?search={search_term_string}"
-      },
+      target: { "@type": "EntryPoint", urlTemplate: `${SITE_URL}/en/products?search={search_term_string}` },
       "query-input": "required name=search_term_string"
     }
   };
-
-  return (
-    <Helmet>
-      <script type="application/ld+json">
-        {JSON.stringify(schema)}
-      </script>
-    </Helmet>
-  );
+  return <Helmet><script type="application/ld+json">{JSON.stringify(schema)}</script></Helmet>;
 };
 
-// ItemList Schema - for product listing pages
-export interface ItemListItem {
-  position: number;
-  name: string;
-  url: string;
-  image?: string;
-  description?: string;
-}
+// ItemList Schema
+export interface ItemListItem { position: number; name: string; url: string; image?: string; description?: string; }
+export interface ItemListSchemaProps { name: string; description?: string; items: ItemListItem[]; itemListType?: "Product" | "ListItem"; }
 
-export interface ItemListSchemaProps {
-  name: string;
-  description?: string;
-  items: ItemListItem[];
-  itemListType?: "Product" | "ListItem";
-}
-
-export const ItemListSchema = ({
-  name,
-  description,
-  items,
-  itemListType = "ListItem"
-}: ItemListSchemaProps) => {
+export const ItemListSchema = ({ name, description, items, itemListType = "ListItem" }: ItemListSchemaProps) => {
   const schema = {
-    "@context": "https://schema.org",
-    "@type": "ItemList",
-    name,
-    description,
+    "@context": "https://schema.org", "@type": "ItemList", name, description,
     numberOfItems: items.length,
     itemListElement: items.map((item) => ({
-      "@type": itemListType,
-      position: item.position,
-      name: item.name,
-      url: item.url,
-      image: item.image,
-      description: item.description
+      "@type": itemListType, position: item.position, name: item.name,
+      url: item.url, image: item.image, description: item.description
     }))
   };
-
-  return (
-    <Helmet>
-      <script type="application/ld+json">
-        {JSON.stringify(schema)}
-      </script>
-    </Helmet>
-  );
+  return <Helmet><script type="application/ld+json">{JSON.stringify(schema)}</script></Helmet>;
 };
 
-// CollectionPage Schema - for product category pages
-export interface CollectionPageSchemaProps {
-  name: string;
-  description: string;
-  url: string;
-  image?: string;
-  numberOfItems?: number;
-}
+// CollectionPage Schema
+export interface CollectionPageSchemaProps { name: string; description: string; url: string; image?: string; numberOfItems?: number; }
 
-export const CollectionPageSchema = ({
-  name,
-  description,
-  url,
-  image,
-  numberOfItems
-}: CollectionPageSchemaProps) => {
+export const CollectionPageSchema = ({ name, description, url, image, numberOfItems }: CollectionPageSchemaProps) => {
   const schema: Record<string, unknown> = {
-    "@context": "https://schema.org",
-    "@type": "CollectionPage",
-    name,
-    description,
-    url,
-    mainEntity: {
-      "@type": "ItemList",
-      numberOfItems
-    },
-    publisher: {
-      "@type": "Organization",
-      name: "NinescapeLand",
-      url: "https://indoorplaygroundsolution.com"
-    }
+    "@context": "https://schema.org", "@type": "CollectionPage", name, description, url,
+    mainEntity: { "@type": "ItemList", numberOfItems },
+    publisher: { "@type": "Organization", name: "NinescapeLand", url: SITE_URL }
   };
-
   if (image) schema.image = image;
-
-  return (
-    <Helmet>
-      <script type="application/ld+json">
-        {JSON.stringify(schema)}
-      </script>
-    </Helmet>
-  );
+  return <Helmet><script type="application/ld+json">{JSON.stringify(schema)}</script></Helmet>;
 };
 
-// OfferCatalog Schema - for showcasing product categories
-export interface CatalogItem {
-  name: string;
-  description?: string;
-  url: string;
-}
+// OfferCatalog Schema
+export interface CatalogItem { name: string; description?: string; url: string; }
+export interface OfferCatalogSchemaProps { name: string; description?: string; items: CatalogItem[]; }
 
-export interface OfferCatalogSchemaProps {
-  name: string;
-  description?: string;
-  items: CatalogItem[];
-}
-
-export const OfferCatalogSchema = ({
-  name,
-  description,
-  items
-}: OfferCatalogSchemaProps) => {
+export const OfferCatalogSchema = ({ name, description, items }: OfferCatalogSchemaProps) => {
   const schema = {
-    "@context": "https://schema.org",
-    "@type": "OfferCatalog",
-    name,
-    description,
+    "@context": "https://schema.org", "@type": "OfferCatalog", name, description,
     itemListElement: items.map((item, index) => ({
-      "@type": "Offer",
-      position: index + 1,
-      itemOffered: {
-        "@type": "Product",
-        name: item.name,
-        description: item.description,
-        url: item.url
-      }
+      "@type": "Offer", position: index + 1,
+      itemOffered: { "@type": "Product", name: item.name, description: item.description, url: item.url }
     }))
   };
-
-  return (
-    <Helmet>
-      <script type="application/ld+json">
-        {JSON.stringify(schema)}
-      </script>
-    </Helmet>
-  );
+  return <Helmet><script type="application/ld+json">{JSON.stringify(schema)}</script></Helmet>;
 };
 
-// Blog Schema - for blog listing pages
-export interface BlogItem {
-  position: number;
-  title: string;
-  url: string;
-  image?: string;
-  datePublished?: string;
-  description?: string;
-}
+// Blog Schema
+export interface BlogItem { position: number; title: string; url: string; image?: string; datePublished?: string; description?: string; }
+export interface BlogSchemaProps { name: string; description: string; url: string; blogPosts: BlogItem[]; }
 
-export interface BlogSchemaProps {
-  name: string;
-  description: string;
-  url: string;
-  blogPosts: BlogItem[];
-}
-
-export const BlogSchema = ({
-  name,
-  description,
-  url,
-  blogPosts
-}: BlogSchemaProps) => {
+export const BlogSchema = ({ name, description, url, blogPosts }: BlogSchemaProps) => {
   const schema = {
-    "@context": "https://schema.org",
-    "@type": "Blog",
-    name,
-    description,
-    url,
-    publisher: {
-      "@type": "Organization",
-      name: "NinescapeLand",
-      url: "https://indoorplaygroundsolution.com",
-      logo: {
-        "@type": "ImageObject",
-        url: "https://indoorplaygroundsolution.com/favicon.png"
-      }
-    },
+    "@context": "https://schema.org", "@type": "Blog", name, description, url,
+    publisher: { "@type": "Organization", name: "NinescapeLand", url: SITE_URL, logo: { "@type": "ImageObject", url: LOGO_URL } },
     blogPost: blogPosts.map((post) => ({
-      "@type": "BlogPosting",
-      position: post.position,
-      headline: post.title,
-      url: post.url,
-      image: post.image,
-      datePublished: post.datePublished,
-      description: post.description,
-      author: {
-        "@type": "Organization",
-        name: "NinescapeLand Team"
-      }
+      "@type": "BlogPosting", position: post.position, headline: post.title, url: post.url,
+      image: post.image, datePublished: post.datePublished, description: post.description,
+      author: { "@type": "Organization", name: "NinescapeLand Team" }
     }))
   };
-
-  return (
-    <Helmet>
-      <script type="application/ld+json">
-        {JSON.stringify(schema)}
-      </script>
-    </Helmet>
-  );
+  return <Helmet><script type="application/ld+json">{JSON.stringify(schema)}</script></Helmet>;
 };
 
 // SearchAction Schema for Blog
-export interface BlogSearchActionSchemaProps {
-  blogUrl: string;
-}
+export interface BlogSearchActionSchemaProps { blogUrl: string; }
 
 export const BlogSearchActionSchema = ({ blogUrl }: BlogSearchActionSchemaProps) => {
   const schema = {
-    "@context": "https://schema.org",
-    "@type": "WebSite",
-    url: blogUrl,
+    "@context": "https://schema.org", "@type": "WebSite", url: blogUrl,
     potentialAction: {
       "@type": "SearchAction",
-      target: {
-        "@type": "EntryPoint",
-        urlTemplate: `${blogUrl}?search={search_term_string}`
-      },
+      target: { "@type": "EntryPoint", urlTemplate: `${blogUrl}?search={search_term_string}` },
       "query-input": "required name=search_term_string"
     }
   };
+  return <Helmet><script type="application/ld+json">{JSON.stringify(schema)}</script></Helmet>;
+};
 
-  return (
-    <Helmet>
-      <script type="application/ld+json">
-        {JSON.stringify(schema)}
-      </script>
-    </Helmet>
-  );
+// Article Schema
+export interface ArticleSchemaProps {
+  headline: string; description?: string; image?: string;
+  datePublished?: string; dateModified?: string; author?: string; url?: string;
+}
+
+export const ArticleSchema = ({
+  headline, description, image, datePublished, dateModified,
+  author = "NinescapeLand Team", url
+}: ArticleSchemaProps) => {
+  const schema: Record<string, unknown> = {
+    "@context": "https://schema.org", "@type": "Article", headline,
+    author: { "@type": "Organization", name: author },
+    publisher: { "@type": "Organization", name: "NinescapeLand", logo: { "@type": "ImageObject", url: LOGO_URL } }
+  };
+  if (description) schema.description = description;
+  if (image) schema.image = image;
+  if (datePublished) schema.datePublished = datePublished;
+  if (dateModified) schema.dateModified = dateModified;
+  if (url) schema.mainEntityOfPage = { "@type": "WebPage", "@id": url };
+  return <Helmet><script type="application/ld+json">{JSON.stringify(schema)}</script></Helmet>;
 };
