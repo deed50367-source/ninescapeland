@@ -36,6 +36,7 @@ import { ProductProcessSteps } from "@/components/product-detail/ProductProcessS
 import { ProductGalleryShowcase } from "@/components/product-detail/ProductGalleryShowcase";
 import { ProductMidCTA } from "@/components/product-detail/ProductMidCTA";
 import { ProductFAQSection } from "@/components/product-detail/ProductFAQSection";
+import { LazySection } from "@/components/LazySection";
 
 interface ProductCategory {
   id: string;
