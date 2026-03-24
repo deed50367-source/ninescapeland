@@ -140,6 +140,8 @@ export const CoreValuesSection = () => {
               src={mascotThinking}
               alt="NinescapeLand Mascot Thinking"
               className="w-64 h-64 xl:w-80 xl:h-80 object-contain relative z-10 drop-shadow-xl"
+              loading="lazy"
+              decoding="async"
               animate={{ 
                 y: [0, -10, 0],
               }}

@@ -71,6 +71,8 @@ export const AboutTeamSection = () => {
               src={mascotCelebrate}
               alt="Celebrating Mascot"
               className="absolute -bottom-4 -right-4 w-32 h-32 object-contain opacity-20 group-hover:opacity-40 transition-opacity"
+              loading="lazy"
+              decoding="async"
               animate={{ y: [0, -5, 0] }}
               transition={{ duration: 2, repeat: Infinity }}
             />
@@ -103,6 +105,8 @@ export const AboutTeamSection = () => {
               src={mascotPointing}
               alt="Pointing Mascot"
               className="absolute -bottom-4 -right-4 w-32 h-32 object-contain opacity-20 group-hover:opacity-40 transition-opacity"
+              loading="lazy"
+              decoding="async"
               animate={{ y: [0, -5, 0] }}
               transition={{ duration: 2, repeat: Infinity, delay: 0.5 }}
             />

@@ -357,6 +357,8 @@ const DynamicProductDetail = () => {
                       src={allImages[currentImageIndex]}
                       alt={`${getLocalizedName(product)} by NinescapeLand`}
                       className="w-full h-full object-cover cursor-zoom-in"
+                      loading="eager"
+                      decoding="async"
                       onClick={() => setIsLightboxOpen(true)}
                     />
                     {allImages.length > 1 && (
@@ -406,6 +408,8 @@ const DynamicProductDetail = () => {
                         src={img}
                         alt={`${getLocalizedName(product)} ${index + 1} by NinescapeLand`}
                         className="w-full h-full object-cover"
+                        loading="lazy"
+                        decoding="async"
                       />
                     </button>
                   ))}
@@ -572,6 +576,8 @@ const DynamicProductDetail = () => {
                         src={variant.image_url}
                         alt={variant.name}
                         className="w-16 h-16 object-cover rounded-lg"
+                        loading="lazy"
+                        decoding="async"
                       />
                     ) : (
                       <div className="w-16 h-16 bg-muted rounded-lg flex items-center justify-center">
@@ -644,6 +650,8 @@ const DynamicProductDetail = () => {
                             src={relProduct.featured_image}
                             alt={`${getLocalizedName(relProduct)} by NinescapeLand`}
                             className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                            loading="lazy"
+                            decoding="async"
                           />
                         ) : (
                           <div className="w-full h-full bg-muted flex items-center justify-center">
@@ -694,6 +702,8 @@ const DynamicProductDetail = () => {
               src={allImages[currentImageIndex]}
               alt={`${getLocalizedName(product)} by NinescapeLand`}
               className="max-w-[90vw] max-h-[90vh] object-contain"
+              loading="lazy"
+              decoding="async"
               onClick={(e) => e.stopPropagation()}
             />
             <button
