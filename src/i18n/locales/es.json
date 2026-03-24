@@ -167,22 +167,38 @@
       "indoorPlayground": {
         "title": "Equipos de Parque Infantil Interior",
         "description": "Estructuras de juego multinivel con toboganes, piscinas de bolas, redes de escalada y elementos interactivos para niños de todas las edades.",
-        "features": ["Temas Personalizados", "Certificado de Seguridad", "Todas las Edades"]
+        "features": [
+          "Temas Personalizados",
+          "Certificado de Seguridad",
+          "Todas las Edades"
+        ]
       },
       "trampolinePark": {
         "title": "Parques de Trampolines",
         "description": "Soluciones completas de parques de trampolines con más de 12 zonas de actividades: piscinas de espuma, canastas, skyrider, bicicleta 360°, muros de escalada y más.",
-        "features": ["12+ Zonas de Actividad", "Alto Rendimiento", "Diseño Modular"]
+        "features": [
+          "12+ Zonas de Actividad",
+          "Alto Rendimiento",
+          "Diseño Modular"
+        ]
       },
       "ninjaCourse": {
         "title": "Cursos Ninja Warrior",
         "description": "Cursos de obstáculos ninja profesionales con desafíos de altura, muros de escalada, circuitos de cuerdas, barras de equilibrio y obstáculos de aventura.",
-        "features": ["50+ Tipos de Obstáculos", "Diseño 3D", "Grado de Competencia"]
+        "features": [
+          "50+ Tipos de Obstáculos",
+          "Diseño 3D",
+          "Grado de Competencia"
+        ]
       },
       "softPlay": {
         "title": "Áreas de Juego Suave",
         "description": "Equipos de juego suave seguros y atractivos diseñados específicamente para bebés y niños pequeños.",
-        "features": ["Seguro para Bebés", "Fácil Limpieza", "Modular"]
+        "features": [
+          "Seguro para Bebés",
+          "Fácil Limpieza",
+          "Modular"
+        ]
       }
     }
   },
@@ -491,7 +507,7 @@
     "privacy": "Política de Privacidad",
     "terms": "Términos de Servicio"
   },
-"globalTicker": {
+  "globalTicker": {
     "live": "EN VIVO",
     "someoneFrom": "Alguien de",
     "requestedQuote": "solicitó un presupuesto",
@@ -500,7 +516,7 @@
     "requested3D": "solicitó un diseño 3D gratuito",
     "contactedTeam": "contactó a nuestro equipo"
   },
-"floatingCta": {
+  "floatingCta": {
     "scrollToTop": "Volver arriba",
     "whatsapp": "Chatear en WhatsApp"
   },
@@ -847,20 +863,44 @@
       "themesCustomNote": "¿No ves tu tema ideal? Creamos diseños personalizados basados en tu visión.",
       "themesDiscuss": "Discute Tu Tema",
       "themes": {
-        "jungle": { "title": "Aventura en la Selva", "description": "Tema de selva tropical con palmeras, personajes animales y elementos de juego inspirados en la naturaleza." },
-        "ocean": { "title": "Explorador del Océano", "description": "Mundo submarino con criaturas marinas, elementos de barcos y estructuras inspiradas en olas." },
-        "castle": { "title": "Castillo de Cuento de Hadas", "description": "Tema de reino mágico con torres, dragones y elementos de princesa/caballero." },
-        "space": { "title": "Estación Espacial", "description": "Tema espacial futurista con cohetes, planetas y aventuras de astronautas." }
+        "jungle": {
+          "title": "Aventura en la Selva",
+          "description": "Tema de selva tropical con palmeras, personajes animales y elementos de juego inspirados en la naturaleza."
+        },
+        "ocean": {
+          "title": "Explorador del Océano",
+          "description": "Mundo submarino con criaturas marinas, elementos de barcos y estructuras inspiradas en olas."
+        },
+        "castle": {
+          "title": "Castillo de Cuento de Hadas",
+          "description": "Tema de reino mágico con torres, dragones y elementos de princesa/caballero."
+        },
+        "space": {
+          "title": "Estación Espacial",
+          "description": "Tema espacial futurista con cohetes, planetas y aventuras de astronautas."
+        }
       },
       "benefitsLabel": "Beneficios del Desarrollo",
       "benefitsTitle": "Creciendo a Través del",
       "benefitsTitleHighlight": "Juego",
       "benefitsDescription": "Nuestros parques están diseñados para apoyar el desarrollo físico, cognitivo y social de los niños.",
       "benefits": {
-        "cognitive": { "title": "Desarrollo Cognitivo", "description": "Actividades de resolución de problemas y juegos interactivos que estimulan el desarrollo cerebral." },
-        "physical": { "title": "Crecimiento Físico", "description": "Actividades de escalada, salto y equilibrio que desarrollan fuerza y coordinación." },
-        "motor": { "title": "Habilidades Motoras", "description": "Desarrollo de habilidades motoras finas y gruesas a través de actividades variadas." },
-        "social": { "title": "Habilidades Sociales", "description": "Áreas de juego grupal que enseñan a compartir, trabajo en equipo y comunicación." }
+        "cognitive": {
+          "title": "Desarrollo Cognitivo",
+          "description": "Actividades de resolución de problemas y juegos interactivos que estimulan el desarrollo cerebral."
+        },
+        "physical": {
+          "title": "Crecimiento Físico",
+          "description": "Actividades de escalada, salto y equilibrio que desarrollan fuerza y coordinación."
+        },
+        "motor": {
+          "title": "Habilidades Motoras",
+          "description": "Desarrollo de habilidades motoras finas y gruesas a través de actividades variadas."
+        },
+        "social": {
+          "title": "Habilidades Sociales",
+          "description": "Áreas de juego grupal que enseñan a compartir, trabajo en equipo y comunicación."
+        }
       },
       "designProcessLabel": "Nuestro Proceso",
       "designProcessTitle": "Del Concepto a la",
@@ -868,12 +908,30 @@
       "designProcessDescription": "Te guiamos en cada paso para crear tu parque interior perfecto.",
       "step": "Paso",
       "designProcess": {
-        "consultation": { "title": "Consulta", "description": "Comparte tu visión, dimensiones y presupuesto." },
-        "design": { "title": "Diseño 3D", "description": "Recibe renderizados 3D profesionales de tu parque personalizado." },
-        "production": { "title": "Fabricación", "description": "Producción con materiales premium y control de calidad estricto." },
-        "shipping": { "title": "Envío Global", "description": "Empaque profesional y entrega puerta a puerta." },
-        "installation": { "title": "Instalación", "description": "Guías completas con tutoriales en video." },
-        "support": { "title": "Postventa", "description": "Garantía de 3 años con soporte técnico de por vida." }
+        "consultation": {
+          "title": "Consulta",
+          "description": "Comparte tu visión, dimensiones y presupuesto."
+        },
+        "design": {
+          "title": "Diseño 3D",
+          "description": "Recibe renderizados 3D profesionales de tu parque personalizado."
+        },
+        "production": {
+          "title": "Fabricación",
+          "description": "Producción con materiales premium y control de calidad estricto."
+        },
+        "shipping": {
+          "title": "Envío Global",
+          "description": "Empaque profesional y entrega puerta a puerta."
+        },
+        "installation": {
+          "title": "Instalación",
+          "description": "Guías completas con tutoriales en video."
+        },
+        "support": {
+          "title": "Postventa",
+          "description": "Garantía de 3 años con soporte técnico de por vida."
+        }
       },
       "safetyLabel": "Estándares de Seguridad",
       "safetyTitle": "Certificaciones",
@@ -881,10 +939,22 @@
       "safetyDescription": "La seguridad es nuestra máxima prioridad. Todos los equipos cumplen los estándares internacionales más estrictos.",
       "safetyCertified": "100% Certificado",
       "safety": {
-        "astm": { "title": "ASTM F1918", "description": "Estándar estadounidense para seguridad de parques." },
-        "tuv": { "title": "Certificado TUV", "description": "Marca alemana de calidad y seguridad." },
-        "ce": { "title": "Marcado CE", "description": "Conformidad europea para salud y seguridad." },
-        "en": { "title": "EN 1176", "description": "Estándar europeo de seguridad para parques." }
+        "astm": {
+          "title": "ASTM F1918",
+          "description": "Estándar estadounidense para seguridad de parques."
+        },
+        "tuv": {
+          "title": "Certificado TUV",
+          "description": "Marca alemana de calidad y seguridad."
+        },
+        "ce": {
+          "title": "Marcado CE",
+          "description": "Conformidad europea para salud y seguridad."
+        },
+        "en": {
+          "title": "EN 1176",
+          "description": "Estándar europeo de seguridad para parques."
+        }
       }
     },
     "trampolinePark": {
@@ -1242,58 +1312,152 @@
         }
       },
       "extendedObstacles": {
-        "quintSteps": { "title": "Pasos Quíntuples", "description": "Cinco plataformas anguladas que requieren velocidad, precisión e impulso." },
-        "spiderWall": { "title": "Pared Araña", "description": "Corredor vertical estrecho que requiere escalar con brazos y piernas." },
-        "swingRopes": { "title": "Cuerdas de Balanceo", "description": "Serie de cuerdas colgantes para balancearse entre plataformas." },
-        "rollingLog": { "title": "Tronco Rodante", "description": "Cilindro giratorio que requiere equilibrio y reflejos rápidos." },
-        "pegBoard": { "title": "Tablero de Clavijas", "description": "Tablero vertical con agujeros para clavijas que prueba la fuerza superior." },
-        "doorKnobs": { "title": "Pomos de Puerta", "description": "Serie de pomos giratorios que requieren fuerza de agarre." },
-        "pipeFitter": { "title": "Barras de Tubos", "description": "Barras aéreas de diámetros variados que desafían las transiciones de agarre." },
-        "cannonball": { "title": "Callejón de Balas", "description": "Serie de esferas colgantes que requieren técnica de balanceo y agarre." }
+        "quintSteps": {
+          "title": "Pasos Quíntuples",
+          "description": "Cinco plataformas anguladas que requieren velocidad, precisión e impulso."
+        },
+        "spiderWall": {
+          "title": "Pared Araña",
+          "description": "Corredor vertical estrecho que requiere escalar con brazos y piernas."
+        },
+        "swingRopes": {
+          "title": "Cuerdas de Balanceo",
+          "description": "Serie de cuerdas colgantes para balancearse entre plataformas."
+        },
+        "rollingLog": {
+          "title": "Tronco Rodante",
+          "description": "Cilindro giratorio que requiere equilibrio y reflejos rápidos."
+        },
+        "pegBoard": {
+          "title": "Tablero de Clavijas",
+          "description": "Tablero vertical con agujeros para clavijas que prueba la fuerza superior."
+        },
+        "doorKnobs": {
+          "title": "Pomos de Puerta",
+          "description": "Serie de pomos giratorios que requieren fuerza de agarre."
+        },
+        "pipeFitter": {
+          "title": "Barras de Tubos",
+          "description": "Barras aéreas de diámetros variados que desafían las transiciones de agarre."
+        },
+        "cannonball": {
+          "title": "Callejón de Balas",
+          "description": "Serie de esferas colgantes que requieren técnica de balanceo y agarre."
+        }
       },
       "trainingBenefits": {
         "sectionLabel": "Beneficios del Entrenamiento",
         "title": "Construye Fuerza",
         "titleHighlight": "y Confianza",
         "description": "El entrenamiento ninja proporciona beneficios de desarrollo físico y mental para todas las edades.",
-        "strength": { "title": "Fuerza Corporal Total", "description": "Desarrolla músculos superiores, core y piernas a través de movimientos funcionales." },
-        "grip": { "title": "Fuerza de Agarre", "description": "Obstáculos de colgarse, balancearse y escalar mejoran la fuerza de manos y antebrazos." },
-        "agility": { "title": "Agilidad y Velocidad", "description": "Transiciones rápidas y cursos cronometrados desarrollan músculos de fibra rápida." },
-        "mental": { "title": "Fortaleza Mental", "description": "Superar obstáculos desafiantes construye perseverancia y enfoque." },
-        "coordination": { "title": "Coordinación Corporal", "description": "Movimientos complejos mejoran la propiocepción y conciencia espacial." },
-        "confidence": { "title": "Autoconfianza", "description": "Lograr metas y superar miedos construye autoestima duradera." }
+        "strength": {
+          "title": "Fuerza Corporal Total",
+          "description": "Desarrolla músculos superiores, core y piernas a través de movimientos funcionales."
+        },
+        "grip": {
+          "title": "Fuerza de Agarre",
+          "description": "Obstáculos de colgarse, balancearse y escalar mejoran la fuerza de manos y antebrazos."
+        },
+        "agility": {
+          "title": "Agilidad y Velocidad",
+          "description": "Transiciones rápidas y cursos cronometrados desarrollan músculos de fibra rápida."
+        },
+        "mental": {
+          "title": "Fortaleza Mental",
+          "description": "Superar obstáculos desafiantes construye perseverancia y enfoque."
+        },
+        "coordination": {
+          "title": "Coordinación Corporal",
+          "description": "Movimientos complejos mejoran la propiocepción y conciencia espacial."
+        },
+        "confidence": {
+          "title": "Autoconfianza",
+          "description": "Lograr metas y superar miedos construye autoestima duradera."
+        }
       },
       "safetySection": {
         "sectionLabel": "Estándares de Seguridad",
         "title": "Tu Seguridad es",
         "titleHighlight": "Nuestra Prioridad",
         "description": "Cada circuito ninja está diseñado con características de seguridad completas.",
-        "crashMats": { "title": "Colchonetas de Impacto", "description": "Colchonetas de espuma de alta densidad bajo todos los obstáculos." },
-        "harnesses": { "title": "Arneses de Seguridad", "description": "Sistemas de arnés opcionales para elementos altos." },
-        "padding": { "title": "Superficies Acolchadas", "description": "Todos los marcos, postes y bordes cubiertos con acolchado protector." },
-        "certification": { "title": "Certificado Internacional", "description": "Todos los equipos cumplen estándares ASTM, TUV, CE y EN." }
+        "crashMats": {
+          "title": "Colchonetas de Impacto",
+          "description": "Colchonetas de espuma de alta densidad bajo todos los obstáculos."
+        },
+        "harnesses": {
+          "title": "Arneses de Seguridad",
+          "description": "Sistemas de arnés opcionales para elementos altos."
+        },
+        "padding": {
+          "title": "Superficies Acolchadas",
+          "description": "Todos los marcos, postes y bordes cubiertos con acolchado protector."
+        },
+        "certification": {
+          "title": "Certificado Internacional",
+          "description": "Todos los equipos cumplen estándares ASTM, TUV, CE y EN."
+        }
       },
       "ageGroups": {
         "sectionLabel": "Diseño por Edades",
         "title": "Circuitos para",
         "titleHighlight": "Todas las Edades",
         "description": "Diseñamos secciones de circuito separadas con desafíos apropiados para la edad.",
-        "kids": { "age": "6-12", "title": "Ninjas Junior", "description": "Obstáculos escalados con acolchado extra para construir confianza." },
-        "teens": { "age": "13-17", "title": "Guerreros Adolescentes", "description": "Desafíos intermedios con variedad completa de obstáculos." },
-        "adults": { "age": "18+", "title": "Atletas Adultos", "description": "Obstáculos de grado competición completo para entrenamiento serio." },
-        "family": { "age": "Todas", "title": "Circuitos Familiares", "description": "Secciones de dificultad mixta donde las familias pueden entrenar juntas." }
+        "kids": {
+          "age": "6-12",
+          "title": "Ninjas Junior",
+          "description": "Obstáculos escalados con acolchado extra para construir confianza."
+        },
+        "teens": {
+          "age": "13-17",
+          "title": "Guerreros Adolescentes",
+          "description": "Desafíos intermedios con variedad completa de obstáculos."
+        },
+        "adults": {
+          "age": "18+",
+          "title": "Atletas Adultos",
+          "description": "Obstáculos de grado competición completo para entrenamiento serio."
+        },
+        "family": {
+          "age": "Todas",
+          "title": "Circuitos Familiares",
+          "description": "Secciones de dificultad mixta donde las familias pueden entrenar juntas."
+        }
       },
       "processSection": {
         "sectionLabel": "Nuestro Proceso",
         "title": "Del Concepto a",
         "titleHighlight": "Listo para Competir",
         "description": "Te guiamos en cada paso de crear tu instalación ninja warrior profesional.",
-        "consultation": { "step": "1", "title": "Consulta", "description": "Comparte tu visión, dimensiones y audiencia objetivo." },
-        "design": { "step": "2", "title": "Diseño 3D", "description": "Recibe renderizados 3D profesionales con ubicación óptima de obstáculos." },
-        "production": { "step": "3", "title": "Fabricación", "description": "Producción de equipos premium con materiales comerciales." },
-        "shipping": { "step": "4", "title": "Envío Global", "description": "Empaque y logística profesional con entrega puerta a puerta." },
-        "installation": { "step": "5", "title": "Instalación", "description": "Guías detalladas con tutoriales en video o instalación en sitio." },
-        "support": { "step": "6", "title": "Postventa", "description": "Garantía de 3 años con soporte técnico de por vida." }
+        "consultation": {
+          "step": "1",
+          "title": "Consulta",
+          "description": "Comparte tu visión, dimensiones y audiencia objetivo."
+        },
+        "design": {
+          "step": "2",
+          "title": "Diseño 3D",
+          "description": "Recibe renderizados 3D profesionales con ubicación óptima de obstáculos."
+        },
+        "production": {
+          "step": "3",
+          "title": "Fabricación",
+          "description": "Producción de equipos premium con materiales comerciales."
+        },
+        "shipping": {
+          "step": "4",
+          "title": "Envío Global",
+          "description": "Empaque y logística profesional con entrega puerta a puerta."
+        },
+        "installation": {
+          "step": "5",
+          "title": "Instalación",
+          "description": "Guías detalladas con tutoriales en video o instalación en sitio."
+        },
+        "support": {
+          "step": "6",
+          "title": "Postventa",
+          "description": "Garantía de 3 años con soporte técnico de por vida."
+        }
       },
       "ctaSection": {
         "title": "¿Listo para Construir tu Circuito Ninja?",
@@ -1978,24 +2142,81 @@
     "titleHighlight": "Empresarios de Todo el Mundo",
     "description": "Escuche a nuestros clientes satisfechos que han transformado sus espacios en destinos de entretenimiento prósperos.",
     "items": [
-      { "quote": "NinescapeLand superó nuestras expectativas. El diseño 3D fue exactamente lo que imaginamos.", "name": "Michael Chen", "role": "Propietario", "company": "SkyJump Adventure Park", "location": "California, EE.UU." },
-      { "quote": "Desde la consulta inicial hasta la instalación final, el equipo fue receptivo y servicial.", "name": "Sarah Al-Hassan", "role": "CEO", "company": "FunZone Entertainment", "location": "Dubai, EAU" },
-      { "quote": "Hemos trabajado con varios fabricantes, pero NinescapeLand destaca por su atención al detalle.", "name": "Thomas Müller", "role": "Director", "company": "KinderWelt GmbH", "location": "Múnich, Alemania" },
-      { "quote": "El curso ninja se ha convertido en la atracción estrella de nuestro centro de fitness.", "name": "Emma Thompson", "role": "Gerente", "company": "Elite Athletics Club", "location": "Londres, Reino Unido" },
-      { "quote": "¡Excelente relación calidad-precio! El área de juego suave ha aumentado el tiempo de permanencia.", "name": "Carlos Rodriguez", "role": "Propietario", "company": "Familia Bistro", "location": "Madrid, España" },
-      { "quote": "El equipo nos ayudó a diseñar un FEC completo con múltiples zonas.", "name": "David Kim", "role": "Fundador", "company": "PlayWorld Adventures", "location": "Sídney, Australia" }
+      {
+        "quote": "NinescapeLand superó nuestras expectativas. El diseño 3D fue exactamente lo que imaginamos.",
+        "name": "Michael Chen",
+        "role": "Propietario",
+        "company": "SkyJump Adventure Park",
+        "location": "California, EE.UU."
+      },
+      {
+        "quote": "Desde la consulta inicial hasta la instalación final, el equipo fue receptivo y servicial.",
+        "name": "Sarah Al-Hassan",
+        "role": "CEO",
+        "company": "FunZone Entertainment",
+        "location": "Dubai, EAU"
+      },
+      {
+        "quote": "Hemos trabajado con varios fabricantes, pero NinescapeLand destaca por su atención al detalle.",
+        "name": "Thomas Müller",
+        "role": "Director",
+        "company": "KinderWelt GmbH",
+        "location": "Múnich, Alemania"
+      },
+      {
+        "quote": "El curso ninja se ha convertido en la atracción estrella de nuestro centro de fitness.",
+        "name": "Emma Thompson",
+        "role": "Gerente",
+        "company": "Elite Athletics Club",
+        "location": "Londres, Reino Unido"
+      },
+      {
+        "quote": "¡Excelente relación calidad-precio! El área de juego suave ha aumentado el tiempo de permanencia.",
+        "name": "Carlos Rodriguez",
+        "role": "Propietario",
+        "company": "Familia Bistro",
+        "location": "Madrid, España"
+      },
+      {
+        "quote": "El equipo nos ayudó a diseñar un FEC completo con múltiples zonas.",
+        "name": "David Kim",
+        "role": "Fundador",
+        "company": "PlayWorld Adventures",
+        "location": "Sídney, Australia"
+      }
     ]
   },
   "partners": {
     "sectionLabel": "Certificaciones y Socios",
     "title": "Certificado Globalmente, Confiable Localmente",
     "certifications": {
-      "iso": { "name": "ISO 9001:2015", "description": "Sistema de Gestión de Calidad" },
-      "astm": { "name": "ASTM F1918", "description": "Estándares de Seguridad de EE.UU." },
-      "en": { "name": "EN 1176 & 1177", "description": "Seguridad de Parques Infantiles Europeos" },
-      "tuv": { "name": "Certificado TÜV", "description": "Garantía de Calidad Alemana" }
+      "iso": {
+        "name": "ISO 9001:2015",
+        "description": "Sistema de Gestión de Calidad"
+      },
+      "astm": {
+        "name": "ASTM F1918",
+        "description": "Estándares de Seguridad de EE.UU."
+      },
+      "en": {
+        "name": "EN 1176 & 1177",
+        "description": "Seguridad de Parques Infantiles Europeos"
+      },
+      "tuv": {
+        "name": "Certificado TÜV",
+        "description": "Garantía de Calidad Alemana"
+      }
     },
-    "clients": ["FunZone USA", "SkyPark EU", "JumpWorld", "KidsParadise", "Adventure Hub", "PlayNation", "FEC Global", "Happy Kids"]
+    "clients": [
+      "FunZone USA",
+      "SkyPark EU",
+      "JumpWorld",
+      "KidsParadise",
+      "Adventure Hub",
+      "PlayNation",
+      "FEC Global",
+      "Happy Kids"
+    ]
   },
   "ctaBanner": {
     "badge": "🚀 ¿Listo para Transformar tu Espacio?",
@@ -2009,14 +2230,38 @@
     "title": "La Solución",
     "titleHighlight": "Llave en Mano Completa",
     "description": "Desde el concepto hasta la inauguración, manejamos todo para el éxito de tu proyecto.",
-    "customDesign": { "title": "Diseño 3D Personalizado", "description": "Diseño profesional gratuito adaptado a tu espacio" },
-    "safetyCertified": { "title": "Certificado de Seguridad", "description": "Equipo certificado ASTM, TÜV, EN, CE" },
-    "globalShipping": { "title": "Envío Global", "description": "Entrega puerta a puerta a más de 50 países" },
-    "installation": { "title": "Soporte de Instalación", "description": "Guía en sitio o servicio de instalación completo" },
-    "support": { "title": "Soporte 24/7", "description": "Gerente de proyecto dedicado y asistencia técnica" },
-    "fastDelivery": { "title": "Producción Rápida", "description": "Fabricación de 20-35 días con control de calidad" },
-    "warranty": { "title": "Garantía de 3 Años", "description": "Cobertura completa con soporte de piezas de por vida" },
-    "premiumMaterials": { "title": "Materiales Premium", "description": "Ecológicos, duraderos y fáciles de mantener" }
+    "customDesign": {
+      "title": "Diseño 3D Personalizado",
+      "description": "Diseño profesional gratuito adaptado a tu espacio"
+    },
+    "safetyCertified": {
+      "title": "Certificado de Seguridad",
+      "description": "Equipo certificado ASTM, TÜV, EN, CE"
+    },
+    "globalShipping": {
+      "title": "Envío Global",
+      "description": "Entrega puerta a puerta a más de 50 países"
+    },
+    "installation": {
+      "title": "Soporte de Instalación",
+      "description": "Guía en sitio o servicio de instalación completo"
+    },
+    "support": {
+      "title": "Soporte 24/7",
+      "description": "Gerente de proyecto dedicado y asistencia técnica"
+    },
+    "fastDelivery": {
+      "title": "Producción Rápida",
+      "description": "Fabricación de 20-35 días con control de calidad"
+    },
+    "warranty": {
+      "title": "Garantía de 3 Años",
+      "description": "Cobertura completa con soporte de piezas de por vida"
+    },
+    "premiumMaterials": {
+      "title": "Materiales Premium",
+      "description": "Ecológicos, duraderos y fáciles de mantener"
+    }
   },
   "liveChat": {
     "open": "Abrir chat",
@@ -2036,69 +2281,99 @@
   "seo": {
     "defaultKeywords": "fabricante de equipos de parque infantil interior, equipos de parque infantil en venta, equipos de parque comercial en venta, proveedor de equipos de parque de trampolines, parque de trampolines en venta, fabricante de parques comerciales China, estructuras de juego interior, equipos de curso ninja warrior, fabricante de equipos de juego suave, equipos de centro de entretenimiento familiar FEC, parque certificado ASTM TUV, comprar equipos de parque, equipos de parque al por mayor",
     "home": {
-      "title": "Fabricante y Proveedor de Equipos de Parque Infantil Interior | NinescapeLand",
-      "description": "Fabricante líder de parques infantiles interiores desde 2008. Trampolines, cursos ninja y juego suave. Certificado ASTM y TUV. Diseño 3D gratis.",
+      "title": "Fabricante de Parques Infantiles | NinescapeLand",
+      "description": "Fabricante líder de parques infantiles desde 2008. Trampolines, cursos ninja y zonas de juego suave. Certificado ASTM y TUV. ¡Diseño 3D gratis hoy!",
       "keywords": "fabricante de equipos de parque infantil interior, proveedor de parques comerciales, fabricante de parques de trampolines, equipos de curso ninja warrior, fabricante de equipos de juego suave, equipos FEC, parque certificado ASTM TUV, diseño de parque personalizado, equipos de parque al por mayor"
     },
     "aboutUs": {
-      "title": "Sobre NinescapeLand | Fabricante de Parques Infantiles Desde 2008 | Más de 15 Años de Experiencia",
-      "description": "NinescapeLand: 15+ años fabricando parques premium. Fábrica de 50.000 m², 200+ expertos, 2.000+ proyectos en 50+ países. Certificado ISO, ASTM y TUV.",
+      "title": "Sobre NinescapeLand — 15+ Años, 2000+ Proyectos",
+      "description": "NinescapeLand: 15+ años, fábrica de 50.000 m², 200+ expertos y 2.000+ proyectos en 50+ países. Certificado ISO, ASTM y TUV. ¡Asóciese con nosotros!",
       "keywords": "historia de la empresa NinescapeLand, fabricante de parques infantiles interiores sobre nosotros, fábrica de equipos de parques China, empresa de parques comerciales, fabricante de parques 15 años experiencia, fábrica de parques certificada ISO"
     },
     "products": {
-      "title": "Equipos de Parque Comercial | Estructuras de Juego Interior | Parques de Trampolines | Cursos Ninja",
-      "description": "Equipos premium: estructuras interiores, trampolines (12+ zonas), cursos ninja (50+ obstáculos) y juego suave. Certificado ASTM y TUV.",
+      "title": "Equipos de Parque Comercial en Venta | Catálogo",
+      "description": "Equipos de parque comercial: estructuras interiores, trampolines y cursos ninja. Certificado ASTM y TUV. ¡Solicite su cotización gratuita hoy!",
       "keywords": "equipos de parque comercial, equipos de parque comercial en venta, estructuras de parque infantil interior, equipos de parque infantil en venta, equipos de parque de trampolines, parque de trampolines en venta, equipos de curso ninja warrior, equipos ninja en venta, equipos de juego suave en venta, comprar equipos de parque, precio de equipos de parque, equipos de parque al por mayor"
     },
     "trampolinePark": {
-      "title": "Fabricante de Equipos de Parque de Trampolines | Sistemas de Trampolín Comercial | Más de 12 Zonas de Actividad",
-      "description": "Fabricante profesional de trampolines con 12+ zonas de actividad. Fosos de espuma, muros de escalada y más. Certificado ASTM F2970. Diseño modular.",
+      "title": "Parque de Trampolines | Sistemas de 12+ Zonas",
+      "description": "Equipos de parque de trampolines comercial con 12+ zonas de actividad: fosos de espuma, slam dunk y muros de escalada. Certificado ASTM F2970.",
       "keywords": "fabricante de equipos de parque de trampolines, parque de trampolines comercial en venta, comprar equipos de parque de trampolines, sistemas de trampolín comercial, trampolines de foso de espuma en venta, equipos de parque de trampolines interior, precio de equipos de parque de trampolines, trampolines certificados ASTM, parque de trampolines modular, equipos de trampolín al por mayor"
     },
     "indoorPlayground": {
-      "title": "Equipos de Parque Infantil Interior | Estructuras de Juego Personalizadas Multinivel | Piscinas de Bolas y Toboganes",
-      "description": "Equipos de parque infantil personalizados con estructuras multinivel, toboganes, piscinas de bolas y muros de escalada. Certificado ASTM y EN 1176.",
+      "title": "Parque Infantil Interior | Estructuras a Medida",
+      "description": "Parques infantiles interiores personalizados: estructuras multinivel, toboganes, piscinas de bolas y muros de escalada. Certificado ASTM y EN 1176.",
       "keywords": "fabricante de equipos de parque infantil interior, equipos de parque infantil en venta, comprar equipos de parque infantil, estructuras de juego personalizadas en venta, parque multinivel, parque con piscina de bolas en venta, precio de equipos de parque infantil, equipos de parque infantil al por mayor, parque infantil interior comercial en venta"
     },
     "ninjaCourse": {
-      "title": "Equipos de Curso Ninja Warrior | Fabricante Profesional de Circuitos de Obstáculos | Más de 50 Obstáculos",
-      "description": "Fabricante profesional de cursos ninja con 50+ tipos de obstáculos. Paredes curvadas, escaleras salmon y elementos personalizados. Para gimnasios y FECs.",
+      "title": "Curso Ninja Warrior | 50+ Obstáculos Profesionales",
+      "description": "Equipos profesionales de curso ninja warrior con 50+ tipos de obstáculos. Paredes curvadas y escaleras salmon. Ideal para gimnasios y FECs.",
       "keywords": "equipos de curso ninja warrior, curso ninja en venta, comprar equipos ninja warrior, pared curvada en venta, equipos de gimnasio ninja en venta, curso ninja interior, equipos de entrenamiento ninja en venta, obstáculos ninja comerciales, precio de equipos ninja, equipos de curso ninja al por mayor"
     },
     "softPlay": {
-      "title": "Equipos de Juego Suave | Fabricante de Áreas de Juego para Bebés y Niños Pequeños | Estructuras Acolchadas Seguras",
-      "description": "Equipos de juego suave seguros para niños menores de 5 años. Estructuras acolchadas, paneles sensoriales y piscinas de bolas. Certificado ASTM y EN 1176.",
+      "title": "Juego Suave | Áreas Seguras para Niños Pequeños",
+      "description": "Equipos de juego suave seguros para niños: estructuras acolchadas, paneles sensoriales y piscinas de bolas. Certificado ASTM y EN 1176. ¡Cotice gratis!",
       "keywords": "fabricante de equipos de juego suave, equipos de juego suave en venta, comprar equipos de juego suave, equipos de área de juego para niños pequeños en venta, zona de juego para bebés, estructuras de juego acolchadas en venta, precio de equipos de juego suave, equipos de juego suave al por mayor, área de juego suave en venta"
     },
     "process": {
-      "title": "Nuestro Proceso | Diseño 3D Gratuito hasta Instalación | Soluciones de Parque Llave en Mano",
-      "description": "Proceso llave en mano de 6 pasos: diseño 3D gratis, fabricación premium, envío global y soporte de instalación. Garantía de 3 años incluida.",
+      "title": "Nuestro Proceso | Diseño 3D a Instalación",
+      "description": "Proceso llave en mano de 6 pasos: diseño 3D gratis, fabricación premium, envío global e instalación in situ. Garantía de 3 años. ¡Comience ahora!",
       "keywords": "proceso de instalación de parque, soluciones de parque llave en mano, servicio de diseño de parque personalizado, proceso de fabricación de parques, envío de parques mundial, soporte de instalación de parques, diseño 3D de parque"
     },
     "projects": {
-      "title": "Proyectos Globales | Más de 2,000 Instalaciones de Parques en Más de 50 Países | Casos de Estudio",
-      "description": "Más de 2.000 instalaciones de parques exitosas en 50+ países desde 2008. FECs, trampolines, parques infantiles y cursos ninja en todo el mundo.",
+      "title": "2.000+ Proyectos de Parques en 50+ Países",
+      "description": "Más de 2.000 instalaciones de parques en 50+ países: FECs, trampolines y gimnasios ninja. Vea resultados reales. ¡Planifique su proyecto hoy!",
       "keywords": "proyectos de parques en todo el mundo, instalaciones de parques infantiles interiores, casos de estudio de parques de trampolines, ejemplos de proyectos FEC, portafolio de parques, instalaciones de parques comerciales, proyectos de parques internacionales"
     },
     "contact": {
-      "title": "Contáctanos | Diseño 3D Gratuito y Cotización en 24 Horas | NinescapeLand",
-      "description": "Diseño 3D gratis y cotización competitiva en 24 horas. Soporte multilingüe en 6 idiomas. WhatsApp, email o teléfono. Envío a 50+ países.",
+      "title": "Contacto | Cotización Gratis en 24h | NinescapeLand",
+      "description": "Contacte NinescapeLand para diseño 3D gratis y cotización en 24 horas. Soporte multilingüe por WhatsApp, email o teléfono. Envío a 50+ países.",
       "keywords": "contactar fabricante de parques, obtener cotización de parque, consulta de diseño de parque, consulta de parque infantil interior, consulta de parque WhatsApp, consulta de proyecto FEC, contactar fabricante de parques China"
     },
     "faq": {
-      "title": "FAQ | Preguntas sobre Equipos de Parque Infantil Interior | Información de Precios, Envío y Garantía",
-      "description": "Respuestas sobre precios, producción (25-35 días), envío a 50+ países, garantía de 3 años y certificaciones ASTM/TUV.",
+      "title": "FAQ | Precios, Envío y Garantía de Parques",
+      "description": "Respuestas sobre precios de parques, producción (25-35 días), envío global, garantía de 3 años y certificaciones ASTM/TUV. ¡Pregunte hoy!",
       "keywords": "FAQ de parque infantil interior, precios de equipos de parque, tiempo de envío de parques, garantía de parques, preguntas de instalación de parques, estimaciones de costo FEC, FAQ de parque de trampolines"
     },
     "blog": {
-      "title": "Perspectivas y Noticias del Sector | Consejos de Negocio de Parques Infantiles | Tendencias FEC",
-      "description": "Blog experto sobre tendencias de parques infantiles, estrategias FEC, inspiración de diseño y estándares de seguridad. Consejos prácticos.",
+      "title": "Blog | Tendencias FEC y Negocios de Parques",
+      "description": "Análisis experto sobre tendencias de parques infantiles, estrategias FEC y estándares de seguridad. Consejos para emprendedores del ocio. ¡Lea ahora!",
       "keywords": "blog de parque infantil interior, noticias de la industria FEC, consejos de negocio de parques, tendencias de centros de entretenimiento, estrategias de marketing de parques, consejos de operación FEC"
     },
     "caseStudies": {
-      "title": "Casos de Estudio | Historias de Éxito de Proyectos de Parques | Galería Antes y Después",
-      "description": "Casos de estudio detallados de proyectos exitosos en todo el mundo. Testimonios, fotos antes/después, datos de ROI y proceso de diseño.",
+      "title": "Casos de Éxito | Proyectos de Parques y ROI",
+      "description": "Casos de estudio reales con testimonios, fotos antes/después y datos de ROI de 50+ países. ¡Comience a planificar su proyecto hoy!",
       "keywords": "casos de estudio de parques, historias de éxito FEC, ejemplos de parques infantiles interiores, galería de proyectos de parques de trampolines, fotos de antes y después de parques, ejemplos de ROI de parques, testimonios de clientes"
+    },
+    "activePlayRunning": {
+      "title": "Equipos de Juego Activo para Instalaciones",
+      "description": "Equipos de parques de aventura y cursos ninja para instalaciones de alto rendimiento. Duraderos, seguros y personalizados. ¡Consulta de diseño gratis!",
+      "keywords": "equipos de juego activo, parque de aventura, curso ninja"
+    },
+    "officeWellness": {
+      "title": "Juego Corporativo y Bienestar | NinescapeLand",
+      "description": "Transforme su oficina con estructuras de juego para bienestar corporativo. Reduzca el estrés y aumente la creatividad con zonas de juego profesionales.",
+      "keywords": "bienestar corporativo, juego en oficina, estructuras corporativas"
+    },
+    "softPlayMallSolutions": {
+      "title": "Juego Suave para Centros Comerciales",
+      "description": "Aumente el tráfico de su centro comercial con equipos de juego suave premium. Zonas de juego seguras y personalizadas que incrementan la permanencia.",
+      "keywords": "juego suave centros comerciales, equipos para malls"
+    },
+    "trampolineParkFEC": {
+      "title": "Trampolines para Centros de Entretenimiento",
+      "description": "Soluciones de trampolines llave en mano para Centros de Entretenimiento Familiar. Equipos de alto rendimiento con 12+ zonas para máximo ROI.",
+      "keywords": "trampolines FEC, centro entretenimiento familiar"
+    },
+    "roiUK": {
+      "title": "Análisis ROI Parques Infantiles UK | Guía",
+      "description": "Análisis ROI para parques infantiles interiores en Reino Unido. Cumplimiento BS EN 1176, tendencias del mercado y retornos de inversión para emprendedores.",
+      "keywords": "ROI parques infantiles UK, BS EN 1176"
+    },
+    "roiCanada": {
+      "title": "ROI Parques Infantiles Canadá | NinescapeLand",
+      "description": "Maximice su inversión en parques infantiles en Canadá. Diseños optimizados, equipos certificados CSA Z614 y datos de ROI para centros familiares.",
+      "keywords": "ROI parques Canadá, CSA Z614"
     }
   },
   "popularCategories": {
@@ -2161,11 +2436,26 @@
     "resultNote": "El precio final depende de la complejidad del diseño, tema y requisitos de instalación",
     "ctaBtn": "Obtener Cotización Precisa",
     "productTypes": {
-      "indoor-playground": { "name": "Parque Infantil Interior", "description": "Estructuras de juego multinivel" },
-      "trampoline-park": { "name": "Parque de Trampolines", "description": "Soluciones completas de trampolín" },
-      "ninja-course": { "name": "Curso Ninja Warrior", "description": "Cursos de obstáculos profesionales" },
-      "soft-play": { "name": "Área de Juego Suave", "description": "Equipamiento para niños pequeños" },
-      "fec": { "name": "Centro de Entretenimiento Familiar", "description": "Soluciones FEC completas" }
+      "indoor-playground": {
+        "name": "Parque Infantil Interior",
+        "description": "Estructuras de juego multinivel"
+      },
+      "trampoline-park": {
+        "name": "Parque de Trampolines",
+        "description": "Soluciones completas de trampolín"
+      },
+      "ninja-course": {
+        "name": "Curso Ninja Warrior",
+        "description": "Cursos de obstáculos profesionales"
+      },
+      "soft-play": {
+        "name": "Área de Juego Suave",
+        "description": "Equipamiento para niños pequeños"
+      },
+      "fec": {
+        "name": "Centro de Entretenimiento Familiar",
+        "description": "Soluciones FEC completas"
+      }
     },
     "qualityLevels": {
       "standard": "Estándar",

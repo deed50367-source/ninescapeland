@@ -167,22 +167,38 @@
       "indoorPlayground": {
         "title": "Indoor-Spielplatzausrüstung",
         "description": "Mehrstöckige Spielstrukturen mit Rutschen, Bällebädern, Kletternetzen und interaktiven Elementen für Kinder jeden Alters.",
-        "features": ["Individuelle Themen", "Sicherheitszertifiziert", "Alle Altersgruppen"]
+        "features": [
+          "Individuelle Themen",
+          "Sicherheitszertifiziert",
+          "Alle Altersgruppen"
+        ]
       },
       "trampolinePark": {
         "title": "Trampolinparks",
         "description": "Komplette Trampolinpark-Lösungen mit 12+ Aktivitätszonen: Schaumstoffgruben, Slam Dunk, Skyrider, 360° Fahrrad, Kletterwände und mehr.",
-        "features": ["12+ Aktivitätszonen", "Hochleistung", "Modulares Design"]
+        "features": [
+          "12+ Aktivitätszonen",
+          "Hochleistung",
+          "Modulares Design"
+        ]
       },
       "ninjaCourse": {
         "title": "Ninja Warrior Parcours",
         "description": "Professionelle Ninja-Hindernisparcours mit Höhenherausforderungen, Kletterwänden, Seilkursen, Balancebalken und Abenteuerhindernissen.",
-        "features": ["50+ Hindernistypen", "3D-Design", "Wettkampfqualität"]
+        "features": [
+          "50+ Hindernistypen",
+          "3D-Design",
+          "Wettkampfqualität"
+        ]
       },
       "softPlay": {
         "title": "Soft-Play-Bereiche",
         "description": "Sichere und ansprechende Soft-Play-Ausrüstung speziell für Kleinkinder und junge Kinder entwickelt.",
-        "features": ["Kleinkindersicher", "Leicht zu reinigen", "Modular"]
+        "features": [
+          "Kleinkindersicher",
+          "Leicht zu reinigen",
+          "Modular"
+        ]
       }
     }
   },
@@ -491,7 +507,7 @@
     "privacy": "Datenschutz",
     "terms": "Nutzungsbedingungen"
   },
-"globalTicker": {
+  "globalTicker": {
     "live": "LIVE",
     "someoneFrom": "Jemand aus",
     "requestedQuote": "hat ein Angebot angefragt",
@@ -500,7 +516,7 @@
     "requested3D": "hat ein kostenloses 3D-Design angefragt",
     "contactedTeam": "hat unser Team kontaktiert"
   },
-"floatingCta": {
+  "floatingCta": {
     "scrollToTop": "Nach oben",
     "whatsapp": "Auf WhatsApp chatten"
   },
@@ -847,20 +863,44 @@
       "themesCustomNote": "Nicht das ideale Thema gefunden? Wir erstellen vollständig individuelle Designs.",
       "themesDiscuss": "Besprechen Sie Ihr Thema",
       "themes": {
-        "jungle": { "title": "Dschungelabenteuer", "description": "Tropisches Regenwaldthema mit Palmen und tierischen Charakteren." },
-        "ocean": { "title": "Ozeanentdecker", "description": "Unterwasserwelt mit Meeresbewohnern und welleninspirierten Strukturen." },
-        "castle": { "title": "Märchenschloss", "description": "Magisches Königreichthema mit Türmen und Drachen." },
-        "space": { "title": "Raumstation", "description": "Futuristisches Weltraumthema mit Raketen und Planeten." }
+        "jungle": {
+          "title": "Dschungelabenteuer",
+          "description": "Tropisches Regenwaldthema mit Palmen und tierischen Charakteren."
+        },
+        "ocean": {
+          "title": "Ozeanentdecker",
+          "description": "Unterwasserwelt mit Meeresbewohnern und welleninspirierten Strukturen."
+        },
+        "castle": {
+          "title": "Märchenschloss",
+          "description": "Magisches Königreichthema mit Türmen und Drachen."
+        },
+        "space": {
+          "title": "Raumstation",
+          "description": "Futuristisches Weltraumthema mit Raketen und Planeten."
+        }
       },
       "benefitsLabel": "Entwicklungsvorteile",
       "benefitsTitle": "Wachsen durch",
       "benefitsTitleHighlight": "Spielen",
       "benefitsDescription": "Unsere Spielplätze unterstützen die körperliche, kognitive und soziale Entwicklung von Kindern.",
       "benefits": {
-        "cognitive": { "title": "Kognitive Entwicklung", "description": "Problemlösungsaktivitäten, die die Gehirnentwicklung stimulieren." },
-        "physical": { "title": "Körperliches Wachstum", "description": "Klettern, Springen und Balance-Aktivitäten für Kraft und Koordination." },
-        "motor": { "title": "Motorische Fähigkeiten", "description": "Entwicklung fein- und grobmotorischer Fähigkeiten." },
-        "social": { "title": "Soziale Fähigkeiten", "description": "Gruppenspiel, das Teilen und Teamarbeit lehrt." }
+        "cognitive": {
+          "title": "Kognitive Entwicklung",
+          "description": "Problemlösungsaktivitäten, die die Gehirnentwicklung stimulieren."
+        },
+        "physical": {
+          "title": "Körperliches Wachstum",
+          "description": "Klettern, Springen und Balance-Aktivitäten für Kraft und Koordination."
+        },
+        "motor": {
+          "title": "Motorische Fähigkeiten",
+          "description": "Entwicklung fein- und grobmotorischer Fähigkeiten."
+        },
+        "social": {
+          "title": "Soziale Fähigkeiten",
+          "description": "Gruppenspiel, das Teilen und Teamarbeit lehrt."
+        }
       },
       "designProcessLabel": "Unser Prozess",
       "designProcessTitle": "Vom Konzept zur",
@@ -868,12 +908,30 @@
       "designProcessDescription": "Wir begleiten Sie durch jeden Schritt zur Erstellung Ihres perfekten Indoor-Spielplatzes.",
       "step": "Schritt",
       "designProcess": {
-        "consultation": { "title": "Beratung", "description": "Teilen Sie Ihre Vision, Maße und Budget." },
-        "design": { "title": "3D-Design", "description": "Professionelle 3D-Renderings Ihres Spielplatzes." },
-        "production": { "title": "Fertigung", "description": "Produktion mit Premium-Materialien und strenger Qualitätskontrolle." },
-        "shipping": { "title": "Weltweiter Versand", "description": "Professionelle Verpackung und Tür-zu-Tür-Lieferung." },
-        "installation": { "title": "Installation", "description": "Umfassende Anleitungen mit Video-Tutorials." },
-        "support": { "title": "After-Sales", "description": "3 Jahre Garantie mit lebenslangem technischen Support." }
+        "consultation": {
+          "title": "Beratung",
+          "description": "Teilen Sie Ihre Vision, Maße und Budget."
+        },
+        "design": {
+          "title": "3D-Design",
+          "description": "Professionelle 3D-Renderings Ihres Spielplatzes."
+        },
+        "production": {
+          "title": "Fertigung",
+          "description": "Produktion mit Premium-Materialien und strenger Qualitätskontrolle."
+        },
+        "shipping": {
+          "title": "Weltweiter Versand",
+          "description": "Professionelle Verpackung und Tür-zu-Tür-Lieferung."
+        },
+        "installation": {
+          "title": "Installation",
+          "description": "Umfassende Anleitungen mit Video-Tutorials."
+        },
+        "support": {
+          "title": "After-Sales",
+          "description": "3 Jahre Garantie mit lebenslangem technischen Support."
+        }
       },
       "safetyLabel": "Sicherheitsstandards",
       "safetyTitle": "Internationale",
@@ -881,10 +939,22 @@
       "safetyDescription": "Sicherheit hat höchste Priorität. Alle Geräte erfüllen internationale Standards.",
       "safetyCertified": "100% Zertifiziert",
       "safety": {
-        "astm": { "title": "ASTM F1918", "description": "US-Standard für Spielplatzsicherheit." },
-        "tuv": { "title": "TÜV-zertifiziert", "description": "Deutsches Qualitäts- und Sicherheitszeichen." },
-        "ce": { "title": "CE-Kennzeichnung", "description": "Europäische Konformität für Gesundheit und Sicherheit." },
-        "en": { "title": "EN 1176", "description": "Europäischer Sicherheitsstandard für Spielgeräte." }
+        "astm": {
+          "title": "ASTM F1918",
+          "description": "US-Standard für Spielplatzsicherheit."
+        },
+        "tuv": {
+          "title": "TÜV-zertifiziert",
+          "description": "Deutsches Qualitäts- und Sicherheitszeichen."
+        },
+        "ce": {
+          "title": "CE-Kennzeichnung",
+          "description": "Europäische Konformität für Gesundheit und Sicherheit."
+        },
+        "en": {
+          "title": "EN 1176",
+          "description": "Europäischer Sicherheitsstandard für Spielgeräte."
+        }
       }
     },
     "trampolinePark": {
@@ -1242,58 +1312,152 @@
         }
       },
       "extendedObstacles": {
-        "quintSteps": { "title": "Fünffach-Stufen", "description": "Fünf schräge Plattformen, die Geschwindigkeit, Präzision und Schwung erfordern." },
-        "spiderWall": { "title": "Spinnenwand", "description": "Enger vertikaler Korridor, der Klettern mit Armen und Beinen erfordert." },
-        "swingRopes": { "title": "Schwingseile", "description": "Serie von hängenden Seilen zum Schwingen zwischen Plattformen." },
-        "rollingLog": { "title": "Rollender Stamm", "description": "Rotierende Zylinder, die Gleichgewicht und schnelle Reflexe erfordern." },
-        "pegBoard": { "title": "Steckbrett", "description": "Vertikales Brett mit Löchern für Handgriffe, testet Oberkörperstärke." },
-        "doorKnobs": { "title": "Türknöpfe", "description": "Serie von rotierenden Knöpfen, die Griffstärke erfordern." },
-        "pipeFitter": { "title": "Rohrtrainer", "description": "Überkopfstangen mit verschiedenen Durchmessern für Griffwechsel." },
-        "cannonball": { "title": "Kanonenkugel-Gasse", "description": "Serie von hängenden Kugeln für Schwung- und Grifftechnik." }
+        "quintSteps": {
+          "title": "Fünffach-Stufen",
+          "description": "Fünf schräge Plattformen, die Geschwindigkeit, Präzision und Schwung erfordern."
+        },
+        "spiderWall": {
+          "title": "Spinnenwand",
+          "description": "Enger vertikaler Korridor, der Klettern mit Armen und Beinen erfordert."
+        },
+        "swingRopes": {
+          "title": "Schwingseile",
+          "description": "Serie von hängenden Seilen zum Schwingen zwischen Plattformen."
+        },
+        "rollingLog": {
+          "title": "Rollender Stamm",
+          "description": "Rotierende Zylinder, die Gleichgewicht und schnelle Reflexe erfordern."
+        },
+        "pegBoard": {
+          "title": "Steckbrett",
+          "description": "Vertikales Brett mit Löchern für Handgriffe, testet Oberkörperstärke."
+        },
+        "doorKnobs": {
+          "title": "Türknöpfe",
+          "description": "Serie von rotierenden Knöpfen, die Griffstärke erfordern."
+        },
+        "pipeFitter": {
+          "title": "Rohrtrainer",
+          "description": "Überkopfstangen mit verschiedenen Durchmessern für Griffwechsel."
+        },
+        "cannonball": {
+          "title": "Kanonenkugel-Gasse",
+          "description": "Serie von hängenden Kugeln für Schwung- und Grifftechnik."
+        }
       },
       "trainingBenefits": {
         "sectionLabel": "Trainingsvorteile",
         "title": "Kraft aufbauen",
         "titleHighlight": "& Selbstvertrauen",
         "description": "Ninja-Training bietet umfassende körperliche und mentale Entwicklungsvorteile.",
-        "strength": { "title": "Ganzkörperstärke", "description": "Entwickelt Oberkörper-, Rumpf- und Beinmuskeln durch funktionelle Bewegungen." },
-        "grip": { "title": "Griffstärke", "description": "Hängen, Schwingen und Klettern verbessern die Hand- und Unterarmstärke." },
-        "agility": { "title": "Beweglichkeit & Schnelligkeit", "description": "Schnelle Übergänge und zeitgesteuerte Kurse entwickeln schnelle Muskelfasern." },
-        "mental": { "title": "Mentale Stärke", "description": "Das Überwinden schwieriger Hindernisse baut Ausdauer und Fokus auf." },
-        "coordination": { "title": "Körperkoordination", "description": "Komplexe Bewegungen verbessern Propriozeption und räumliches Bewusstsein." },
-        "confidence": { "title": "Selbstvertrauen", "description": "Ziele erreichen und Ängste überwinden baut dauerhaftes Selbstwertgefühl auf." }
+        "strength": {
+          "title": "Ganzkörperstärke",
+          "description": "Entwickelt Oberkörper-, Rumpf- und Beinmuskeln durch funktionelle Bewegungen."
+        },
+        "grip": {
+          "title": "Griffstärke",
+          "description": "Hängen, Schwingen und Klettern verbessern die Hand- und Unterarmstärke."
+        },
+        "agility": {
+          "title": "Beweglichkeit & Schnelligkeit",
+          "description": "Schnelle Übergänge und zeitgesteuerte Kurse entwickeln schnelle Muskelfasern."
+        },
+        "mental": {
+          "title": "Mentale Stärke",
+          "description": "Das Überwinden schwieriger Hindernisse baut Ausdauer und Fokus auf."
+        },
+        "coordination": {
+          "title": "Körperkoordination",
+          "description": "Komplexe Bewegungen verbessern Propriozeption und räumliches Bewusstsein."
+        },
+        "confidence": {
+          "title": "Selbstvertrauen",
+          "description": "Ziele erreichen und Ängste überwinden baut dauerhaftes Selbstwertgefühl auf."
+        }
       },
       "safetySection": {
         "sectionLabel": "Sicherheitsstandards",
         "title": "Ihre Sicherheit ist",
         "titleHighlight": "Unsere Priorität",
         "description": "Jeder Ninja-Parcours ist mit umfassenden Sicherheitsmerkmalen konzipiert.",
-        "crashMats": { "title": "Fallmatten", "description": "Hochdichte Schaummatten unter allen Hindernissen für sichere Landungen." },
-        "harnesses": { "title": "Sicherheitsgurte", "description": "Optionale Gurtsysteme für hohe Elemente bieten zusätzliche Sicherheit." },
-        "padding": { "title": "Gepolsterte Oberflächen", "description": "Alle Rahmen, Stangen und Kanten sind mit Schutzpolsterung bedeckt." },
-        "certification": { "title": "International Zertifiziert", "description": "Alle Geräte erfüllen ASTM, TUV, CE und EN Standards." }
+        "crashMats": {
+          "title": "Fallmatten",
+          "description": "Hochdichte Schaummatten unter allen Hindernissen für sichere Landungen."
+        },
+        "harnesses": {
+          "title": "Sicherheitsgurte",
+          "description": "Optionale Gurtsysteme für hohe Elemente bieten zusätzliche Sicherheit."
+        },
+        "padding": {
+          "title": "Gepolsterte Oberflächen",
+          "description": "Alle Rahmen, Stangen und Kanten sind mit Schutzpolsterung bedeckt."
+        },
+        "certification": {
+          "title": "International Zertifiziert",
+          "description": "Alle Geräte erfüllen ASTM, TUV, CE und EN Standards."
+        }
       },
       "ageGroups": {
         "sectionLabel": "Altersgerechtes Design",
         "title": "Parcours für",
         "titleHighlight": "Alle Altersgruppen",
         "description": "Wir gestalten separate Parcoursabschnitte mit altersgerechten Herausforderungen.",
-        "kids": { "age": "6-12", "title": "Junior Ninjas", "description": "Skalierte Hindernisse mit extra Polsterung für Vertrauensaufbau." },
-        "teens": { "age": "13-17", "title": "Teen Krieger", "description": "Mittlere Herausforderungen mit voller Hindernisvielfalt." },
-        "adults": { "age": "18+", "title": "Erwachsene Athleten", "description": "Volle wettkampftaugliche Hindernisse für ernstes Training." },
-        "family": { "age": "Alle Alter", "title": "Familienparcours", "description": "Gemischte Schwierigkeitsabschnitte für gemeinsames Training." }
+        "kids": {
+          "age": "6-12",
+          "title": "Junior Ninjas",
+          "description": "Skalierte Hindernisse mit extra Polsterung für Vertrauensaufbau."
+        },
+        "teens": {
+          "age": "13-17",
+          "title": "Teen Krieger",
+          "description": "Mittlere Herausforderungen mit voller Hindernisvielfalt."
+        },
+        "adults": {
+          "age": "18+",
+          "title": "Erwachsene Athleten",
+          "description": "Volle wettkampftaugliche Hindernisse für ernstes Training."
+        },
+        "family": {
+          "age": "Alle Alter",
+          "title": "Familienparcours",
+          "description": "Gemischte Schwierigkeitsabschnitte für gemeinsames Training."
+        }
       },
       "processSection": {
         "sectionLabel": "Unser Prozess",
         "title": "Vom Konzept zur",
         "titleHighlight": "Wettkampfreife",
         "description": "Wir begleiten Sie durch jeden Schritt Ihrer professionellen Ninja Warrior-Anlage.",
-        "consultation": { "step": "1", "title": "Beratung", "description": "Teilen Sie Ihre Vision, Raummaße und Zielgruppe." },
-        "design": { "step": "2", "title": "3D-Design", "description": "Professionelle 3D-Renderings mit optimierter Hindernisplatzierung." },
-        "production": { "step": "3", "title": "Fertigung", "description": "Premium-Geräteproduktion mit kommerziellen Materialien." },
-        "shipping": { "step": "4", "title": "Weltweiter Versand", "description": "Professionelle Verpackung und Logistik mit Tür-zu-Tür-Lieferung." },
-        "installation": { "step": "5", "title": "Installation", "description": "Detaillierte Anleitungen mit Video-Tutorials oder Vor-Ort-Installation." },
-        "support": { "step": "6", "title": "After-Sales", "description": "3 Jahre Garantie mit lebenslangem technischen Support." }
+        "consultation": {
+          "step": "1",
+          "title": "Beratung",
+          "description": "Teilen Sie Ihre Vision, Raummaße und Zielgruppe."
+        },
+        "design": {
+          "step": "2",
+          "title": "3D-Design",
+          "description": "Professionelle 3D-Renderings mit optimierter Hindernisplatzierung."
+        },
+        "production": {
+          "step": "3",
+          "title": "Fertigung",
+          "description": "Premium-Geräteproduktion mit kommerziellen Materialien."
+        },
+        "shipping": {
+          "step": "4",
+          "title": "Weltweiter Versand",
+          "description": "Professionelle Verpackung und Logistik mit Tür-zu-Tür-Lieferung."
+        },
+        "installation": {
+          "step": "5",
+          "title": "Installation",
+          "description": "Detaillierte Anleitungen mit Video-Tutorials oder Vor-Ort-Installation."
+        },
+        "support": {
+          "step": "6",
+          "title": "After-Sales",
+          "description": "3 Jahre Garantie mit lebenslangem technischen Support."
+        }
       },
       "ctaSection": {
         "title": "Bereit, Ihren Ninja-Parcours zu Bauen?",
@@ -2117,69 +2281,99 @@
   "seo": {
     "defaultKeywords": "Indoor-Spielplatz-Ausrüstung Hersteller, Indoor-Spielplatz-Ausrüstung kaufen, kommerzielle Spielplatz-Ausrüstung zu verkaufen, kommerzieller Spielplatz-Lieferant, Trampolinpark-Ausrüstung Hersteller, Trampolinpark zu verkaufen, Indoor-Spielstrukturen, Ninja-Warrior-Parcours-Ausrüstung, Soft-Play-Ausrüstung Hersteller, Familienunterhaltungszentrum FEC Ausrüstung, ASTM TUV zertifizierter Spielplatz, Spielplatz-Ausrüstung Großhandel, Spielplatz-Ausrüstung online kaufen",
     "home": {
-      "title": "Indoor-Spielplatz-Ausrüstung Hersteller & Lieferant | NinescapeLand",
-      "description": "Führender Indoor-Spielplatz-Hersteller seit 2008. Trampolinparks, Ninja-Parcours & Soft-Play. ASTM & TUV zertifiziert. Kostenloses 3D-Design.",
+      "title": "Indoor-Spielplatz Hersteller | NinescapeLand",
+      "description": "Führender Indoor-Spielplatz-Hersteller seit 2008. Trampolinparks, Ninja-Parcours & Soft-Play. ASTM & TUV zertifiziert. Kostenloses 3D-Design heute!",
       "keywords": "Indoor-Spielplatz-Ausrüstung Hersteller, kommerzieller Spielplatz-Lieferant, Trampolinpark-Hersteller, Ninja-Warrior-Parcours-Ausrüstung, Soft-Play-Ausrüstung Hersteller, FEC-Ausrüstung, ASTM TUV zertifizierter Spielplatz, Spielplatz-Design, Spielplatz-Ausrüstung Großhandel"
     },
     "aboutUs": {
-      "title": "Über NinescapeLand | Indoor-Spielplatz-Hersteller Seit 2008 | Über 15 Jahre Erfahrung",
-      "description": "NinescapeLand: 15+ Jahre Premium-Spielplätze. 50.000 qm Fabrik, 200+ Experten, 2.000+ Projekte in 50+ Ländern. ISO, ASTM & TUV zertifiziert.",
+      "title": "Über NinescapeLand — 15+ Jahre, 2000+ Projekte",
+      "description": "NinescapeLand: 15+ Jahre, 50.000 qm Fabrik, 200+ Experten & 2.000+ Projekte in 50+ Ländern. ISO, ASTM & TUV zertifiziert. Ihr Partner heute!",
       "keywords": "NinescapeLand Unternehmensgeschichte, Indoor-Spielplatz-Hersteller über uns, Spielplatz-Ausrüstung Fabrik China, kommerzielle Spielplatz-Firma, Spielplatz-Hersteller 15 Jahre Erfahrung, ISO-zertifizierte Spielplatz-Fabrik"
     },
     "products": {
-      "title": "Kommerzielle Spielplatzgeräte | Indoor-Spielstrukturen | Trampolinparks | Ninja-Parcours",
-      "description": "Premium-Spielplatzgeräte: Indoor-Strukturen, Trampolinparks (12+ Zonen), Ninja-Parcours (50+ Hindernisse) & Soft-Play. ASTM & TUV zertifiziert.",
+      "title": "Spielplatz-Ausrüstung kaufen | Alle Produkte",
+      "description": "Kommerzielle Spielplatz-Ausrüstung: Indoor-Spielstrukturen, Trampolinparks & Ninja-Parcours. ASTM & TUV zertifiziert. Fordern Sie Ihr Angebot an!",
       "keywords": "kommerzielle Spielplatzgeräte, kommerzielle Spielplatz-Ausrüstung zu verkaufen, Indoor-Spielplatzstrukturen, Indoor-Spielplatz-Ausrüstung kaufen, Trampolinpark-Ausrüstung, kommerzieller Trampolinpark zu verkaufen, Ninja-Warrior-Parcours-Ausrüstung, Ninja-Ausrüstung kaufen, Soft-Play-Ausrüstung zu verkaufen, Spielplatz-Ausrüstung kaufen, Spielplatz-Ausrüstung Preis, Spielplatz-Ausrüstung Großhandel"
     },
     "trampolinePark": {
-      "title": "Trampolinpark-Ausrüstung Hersteller | Kommerzielle Trampolinsysteme | Über 12 Aktivitätszonen",
-      "description": "Professioneller Trampolinpark-Hersteller mit 12+ Aktivitätszonen. Schaumstoffgruben, Kletterwände & mehr. ASTM F2970 zertifiziert. Modulares Design.",
+      "title": "Trampolinpark-Ausrüstung | 12+ Aktivzonen",
+      "description": "Kommerzielle Trampolinpark-Ausrüstung mit 12+ Aktivzonen: Schaumgruben, Slam Dunk & Kletterwände. ASTM F2970 zertifiziert. Kostenloses Layout!",
       "keywords": "Trampolinpark-Ausrüstung Hersteller, kommerzieller Trampolinpark zu verkaufen, Trampolinpark-Ausrüstung kaufen, kommerzielle Trampolinsysteme, Schaumstoffgruben-Trampoline zu verkaufen, Indoor-Trampolinpark-Ausrüstung, Trampolinpark-Ausrüstung Preis, ASTM-zertifizierte Trampoline, modularer Trampolinpark, Trampolin-Ausrüstung Großhandel"
     },
     "indoorPlayground": {
-      "title": "Indoor-Spielplatz-Ausrüstung | Individuelle Mehrstöckige Spielstrukturen | Bällebäder & Rutschen",
-      "description": "Individuelle Indoor-Spielplatz-Ausrüstung mit mehrstöckigen Strukturen, Rutschen, Bällebädern & Kletterwänden. ASTM & EN 1176 zertifiziert.",
+      "title": "Indoor-Spielplatz | Individuelle Spielstrukturen",
+      "description": "Individuelle Indoor-Spielplätze: Mehrstöckige Strukturen, Rutschen, Bällebäder & Kletterwände. ASTM & EN 1176 zertifiziert. Kostenloses 3D-Design!",
       "keywords": "Indoor-Spielplatz-Ausrüstung Hersteller, Indoor-Spielplatz-Ausrüstung kaufen, individuelle Spielstrukturen zu verkaufen, mehrstöckiger Spielplatz, Bällebad-Spielplatz zu verkaufen, Indoor-Spielplatz Preis, Indoor-Spielplatz-Ausrüstung Großhandel, kommerzieller Indoor-Spielplatz zu verkaufen"
     },
     "ninjaCourse": {
-      "title": "Ninja-Warrior-Parcours-Ausrüstung | Professioneller Hindernisparcours-Hersteller | Über 50 Hindernisse",
-      "description": "Professioneller Ninja-Warrior-Parcours-Hersteller mit 50+ Hindernistypen. Warped Walls, Salmon Ladders & individuelle Elemente. Für Gyms & FECs.",
+      "title": "Ninja Warrior Parcours | 50+ Hindernisse",
+      "description": "Professionelle Ninja Warrior Parcours mit 50+ Hindernistypen. Warped Walls, Lachsleitern & mehr. Ideal für Fitnessstudios & FECs. Gratis Design!",
       "keywords": "Ninja-Warrior-Parcours-Ausrüstung, Ninja-Parcours zu verkaufen, Ninja-Warrior-Ausrüstung kaufen, Warped-Wall zu verkaufen, Ninja-Gym-Ausrüstung kaufen, Indoor-Ninja-Parcours, Ninja-Trainingsausrüstung zu verkaufen, kommerzielle Ninja-Hindernisse, Ninja-Ausrüstung Preis, Ninja-Parcours-Ausrüstung Großhandel"
     },
     "softPlay": {
-      "title": "Soft-Play-Ausrüstung | Kleinkind- und Baby-Spielbereich Hersteller | Sichere Gepolsterte Strukturen",
-      "description": "Sichere Soft-Play-Ausrüstung für Kleinkinder unter 5 Jahren. Gepolsterte Strukturen, Sensorik-Paneele & Bällebäder. ASTM & EN 1176 zertifiziert.",
+      "title": "Soft-Play Ausrüstung | Sichere Kleinkinderbereiche",
+      "description": "Sichere Soft-Play-Ausrüstung für Kleinkinder: Gepolsterte Strukturen, Sensorikpaneele & Bällebäder. ASTM & EN 1176 zertifiziert. Gratis Angebot!",
       "keywords": "Soft-Play-Ausrüstung Hersteller, Soft-Play-Ausrüstung zu verkaufen, Soft-Play-Ausrüstung kaufen, Kleinkind-Spielbereich-Ausrüstung zu verkaufen, Baby-Spielzone, gepolsterte Spielstrukturen zu verkaufen, Soft-Play Preis, Soft-Play-Ausrüstung Großhandel, Soft-Play-Bereich zu verkaufen"
     },
     "process": {
-      "title": "Unser Prozess | Kostenloses 3D-Design bis Installation | Schlüsselfertige Spielplatzlösungen",
-      "description": "Bewährter 6-Schritte-Prozess: kostenloses 3D-Design, Premium-Fertigung, weltweiter Versand & Installationsunterstützung. 3 Jahre Garantie inklusive.",
+      "title": "Unser Prozess | 3D-Design bis Installation",
+      "description": "Bewährter 6-Stufen-Prozess: Kostenloses 3D-Design, Premium-Fertigung, weltweiter Versand & Vor-Ort-Installation. 3 Jahre Garantie. Jetzt starten!",
       "keywords": "Spielplatz-Installationsprozess, schlüsselfertige Spielplatzlösungen, individueller Spielplatz-Designservice, Spielplatz-Fertigungsprozess, weltweiter Spielplatz-Versand, Spielplatz-Installationsunterstützung, 3D-Spielplatz-Design"
     },
     "projects": {
-      "title": "Globale Projekte | Über 2.000 Spielplatzinstallationen in Über 50 Ländern | Fallstudien",
-      "description": "Über 2.000 erfolgreiche Spielplatzinstallationen in 50+ Ländern seit 2008. FECs, Trampolinparks, Indoor-Spielplätze & Ninja-Gyms weltweit.",
+      "title": "2.000+ Spielplatz-Projekte in 50+ Ländern",
+      "description": "Über 2.000 Spielplatz-Installationen in 50+ Ländern: FECs, Trampolinparks & Ninja-Gyms. Echte Projektergebnisse. Planen Sie Ihr Projekt heute!",
       "keywords": "Spielplatzprojekte weltweit, Indoor-Spielplatz-Installationen, Trampolinpark-Fallstudien, FEC-Projektbeispiele, Spielplatz-Portfolio, kommerzielle Spielplatz-Installationen, internationale Spielplatzprojekte"
     },
     "contact": {
-      "title": "Kontakt | Kostenloses 3D-Design & Angebot in 24 Stunden | NinescapeLand",
-      "description": "Kostenloses 3D-Design und Angebot in 24 Stunden. Mehrsprachiger Support in 6 Sprachen. WhatsApp, E-Mail oder Telefon. Versand in 50+ Länder.",
+      "title": "Kontakt | Gratis Angebot in 24h | NinescapeLand",
+      "description": "Kontaktieren Sie NinescapeLand für kostenloses 3D-Design & Angebot in 24 Stunden. Mehrsprachiger Support per WhatsApp, E-Mail oder Telefon.",
       "keywords": "Spielplatz-Hersteller kontaktieren, Spielplatz-Angebot erhalten, Spielplatz-Design-Anfrage, Indoor-Spielplatz-Beratung, WhatsApp-Spielplatz-Anfrage, FEC-Projektberatung, Spielplatz-Hersteller China Kontakt"
     },
     "faq": {
-      "title": "FAQ | Indoor-Spielplatz-Ausrüstung Fragen | Preis-, Versand- & Garantie-Informationen",
-      "description": "Antworten zu Spielplatz-Preisen, Produktion (25-35 Tage), Versand in 50+ Länder, 3-Jahres-Garantie & ASTM/TUV-Zertifizierungen.",
+      "title": "FAQ | Preise, Versand & Garantie für Spielplätze",
+      "description": "Antworten zu Spielplatz-Preisen, Produktion (25-35 Tage), weltweiter Versand, 3-Jahres-Garantie & ASTM/TUV-Zertifizierungen. Fragen Sie uns!",
       "keywords": "Indoor-Spielplatz FAQ, Spielplatz-Ausrüstung Preise, Spielplatz-Versandzeit, Spielplatz-Garantie, Spielplatz-Installationsfragen, FEC-Kostenschätzungen, Trampolinpark FAQ"
     },
     "blog": {
-      "title": "Brancheneinblicke & Neuigkeiten | Indoor-Spielplatz-Business-Tipps | FEC-Trends",
-      "description": "Expertenblog zu Indoor-Spielplatz-Trends, FEC-Strategien, Design-Inspiration & Sicherheitsstandards. Praxistipps für Unterhaltungsunternehmer.",
+      "title": "Blog | Spielplatz-Tipps & FEC-Branchentrends",
+      "description": "Experteneinblicke zu Indoor-Spielplatz-Trends, FEC-Geschäftsstrategien & Sicherheitsstandards. Praxistipps für Unternehmer. Jetzt lesen!",
       "keywords": "Indoor-Spielplatz-Blog, FEC-Branchennachrichten, Spielplatz-Business-Tipps, Unterhaltungszentrum-Trends, Spielplatz-Marketingstrategien, FEC-Betriebstipps"
     },
     "caseStudies": {
-      "title": "Fallstudien | Spielplatzprojekt-Erfolgsgeschichten | Vorher-Nachher-Galerie",
-      "description": "Detaillierte Fallstudien erfolgreicher Spielplatzprojekte weltweit. Kundenstimmen, Vorher/Nachher-Fotos, ROI-Daten & Designprozess-Einblicke.",
+      "title": "Fallstudien | Spielplatz-Erfolge & ROI-Daten",
+      "description": "Echte Spielplatz-Fallstudien mit Kundenstimmen, Vorher-/Nachher-Fotos & ROI-Daten aus 50+ Ländern. Planen Sie Ihr Projekt heute!",
       "keywords": "Spielplatz-Fallstudien, FEC-Erfolgsgeschichten, Indoor-Spielplatz-Beispiele, Trampolinpark-Projektgalerie, Spielplatz-Vorher-Nachher-Fotos, Spielplatz-ROI-Beispiele, Kundenstimmen"
+    },
+    "activePlayRunning": {
+      "title": "Aktiv-Spielgeräte für Laufeinrichtungen",
+      "description": "Abenteuerpark- und Ninja-Parcours-Ausrüstung für energiegeladene Einrichtungen. Langlebig, sicher & individuell gestaltet. Gratis Designberatung!",
+      "keywords": "aktive Spielgeräte, Abenteuerpark, Ninja-Parcours"
+    },
+    "officeWellness": {
+      "title": "Arbeitsplatz-Spielbereiche | NinescapeLand",
+      "description": "Verwandeln Sie Ihr Büro mit individuellen Spielstrukturen für Corporate Wellness. Stressabbau & Kreativitätsförderung durch professionelle Spielzonen.",
+      "keywords": "Büro Wellness, Spielstrukturen Arbeitsplatz"
+    },
+    "softPlayMallSolutions": {
+      "title": "Soft-Play für Einkaufszentren | NinescapeLand",
+      "description": "Steigern Sie den Besucherstrom mit Premium-Soft-Play-Ausrüstung. Individuelle, sichere Spielzonen, die Verweildauer und Mieterzufriedenheit erhöhen.",
+      "keywords": "Soft-Play Einkaufszentren, Mall Spielbereiche"
+    },
+    "trampolineParkFEC": {
+      "title": "Trampolinpark-Lösungen für FECs",
+      "description": "Schlüsselfertige Trampolinpark-Lösungen für Familienunterhaltungszentren. Hochleistungsgeräte mit 12+ Aktivzonen für maximalen ROI. Jetzt anfragen!",
+      "keywords": "Trampolinpark FEC, Familienunterhaltung"
+    },
+    "roiUK": {
+      "title": "Indoor-Spielplatz ROI UK | Analyse & Leitfaden",
+      "description": "ROI-Analyse für Indoor-Spielplätze im britischen Markt. BS EN 1176 Konformität, Markttrends & Investitionsrenditen für Unternehmer in Großbritannien.",
+      "keywords": "ROI Indoor-Spielplatz UK, BS EN 1176"
+    },
+    "roiCanada": {
+      "title": "Indoor-Spielplatz ROI Kanada | NinescapeLand",
+      "description": "Maximieren Sie Ihre Indoor-Spielplatz-Investition in Kanada. Raumoptimierte Designs, CSA Z614 zertifiziert & ROI-Daten für kanadische Familienzentren.",
+      "keywords": "ROI Spielplatz Kanada, CSA Z614"
     }
   },
   "popularCategories": {
@@ -2242,11 +2436,26 @@
     "resultNote": "Der endgültige Preis hängt von Designkomplexität, Thema und Installationsanforderungen ab",
     "ctaBtn": "Genaues Angebot erhalten",
     "productTypes": {
-      "indoor-playground": { "name": "Indoor-Spielplatz", "description": "Mehrstöckige Spielstrukturen" },
-      "trampoline-park": { "name": "Trampolinpark", "description": "Komplette Trampolinlösungen" },
-      "ninja-course": { "name": "Ninja-Warrior-Parcours", "description": "Professionelle Hindernisparcours" },
-      "soft-play": { "name": "Soft-Play-Bereich", "description": "Kleinkindgerechte Ausstattung" },
-      "fec": { "name": "Familienunterhaltungszentrum", "description": "Komplette FEC-Lösungen" }
+      "indoor-playground": {
+        "name": "Indoor-Spielplatz",
+        "description": "Mehrstöckige Spielstrukturen"
+      },
+      "trampoline-park": {
+        "name": "Trampolinpark",
+        "description": "Komplette Trampolinlösungen"
+      },
+      "ninja-course": {
+        "name": "Ninja-Warrior-Parcours",
+        "description": "Professionelle Hindernisparcours"
+      },
+      "soft-play": {
+        "name": "Soft-Play-Bereich",
+        "description": "Kleinkindgerechte Ausstattung"
+      },
+      "fec": {
+        "name": "Familienunterhaltungszentrum",
+        "description": "Komplette FEC-Lösungen"
+      }
     },
     "qualityLevels": {
       "standard": "Standard",
