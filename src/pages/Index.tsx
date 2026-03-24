@@ -11,6 +11,7 @@ import { LiveChat } from "@/components/LiveChat";
 import MobileBottomNav from "@/components/MobileBottomNav";
 import { SEOHead } from "@/components/SEOHead";
 import { OrganizationSchema, LocalBusinessSchema, WebsiteSchema } from "@/components/StructuredData";
+import { LazySection } from "@/components/LazySection";
 
 // Lazy load below-fold sections to speed up initial render
 const FeaturesGridSection = lazy(() => import("@/components/FeaturesGridSection").then(m => ({ default: m.FeaturesGridSection })));
@@ -47,24 +48,56 @@ const Index = () => {
         <CoreSolutionsSection />
         <ProductsSection />
 
-        {/* Below-the-fold: lazy loaded */}
+        {/* Below-the-fold: deferred DOM mounting via IntersectionObserver */}
         <Suspense fallback={null}>
-          <FeaturesGridSection />
-          <TrampolineFeaturesSection />
-          <NinjaFeaturesSection />
-          <QuoteCalculator />
-          <WhyUsSection />
-          <CoreValuesSection />
-          <ProcessSection />
-          <ProjectsStatsSection />
-          <InteractiveWorldMap />
-          <ProjectsSection />
-          <TestimonialsSection />
-          <FAQSection />
-          <CTABannerSection />
-          <FeaturedShowcaseSection />
-          <PopularCategoriesSection />
-          <ContactSection />
+          <LazySection minHeight="400px">
+            <FeaturesGridSection />
+          </LazySection>
+          <LazySection minHeight="400px">
+            <TrampolineFeaturesSection />
+          </LazySection>
+          <LazySection minHeight="400px">
+            <NinjaFeaturesSection />
+          </LazySection>
+          <LazySection minHeight="500px">
+            <QuoteCalculator />
+          </LazySection>
+          <LazySection minHeight="400px">
+            <WhyUsSection />
+          </LazySection>
+          <LazySection minHeight="400px">
+            <CoreValuesSection />
+          </LazySection>
+          <LazySection minHeight="400px">
+            <ProcessSection />
+          </LazySection>
+          <LazySection minHeight="300px">
+            <ProjectsStatsSection />
+          </LazySection>
+          <LazySection minHeight="500px">
+            <InteractiveWorldMap />
+          </LazySection>
+          <LazySection minHeight="400px">
+            <ProjectsSection />
+          </LazySection>
+          <LazySection minHeight="300px">
+            <TestimonialsSection />
+          </LazySection>
+          <LazySection minHeight="400px">
+            <FAQSection />
+          </LazySection>
+          <LazySection minHeight="300px">
+            <CTABannerSection />
+          </LazySection>
+          <LazySection minHeight="400px">
+            <FeaturedShowcaseSection />
+          </LazySection>
+          <LazySection minHeight="300px">
+            <PopularCategoriesSection />
+          </LazySection>
+          <LazySection minHeight="500px">
+            <ContactSection />
+          </LazySection>
         </Suspense>
       </main>
       <Footer />
