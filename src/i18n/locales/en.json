@@ -167,22 +167,38 @@
       "indoorPlayground": {
         "title": "Indoor Playground Equipment",
         "description": "Our indoor playground systems feature multi-level play structures with exciting spiral slides, tube slides, wave slides, expansive ball pits, challenging climbing nets, rope bridges, and interactive elements designed to engage children of all ages from toddlers to teens. Each structure is custom designed to maximize your space and can be themed to match any concept from jungle adventures to space exploration.",
-        "features": ["Custom Themes", "Safety Certified", "All Ages"]
+        "features": [
+          "Custom Themes",
+          "Safety Certified",
+          "All Ages"
+        ]
       },
       "trampolinePark": {
         "title": "Trampoline Parks",
         "description": "Our complete trampoline park solutions include 12+ activity zones designed for maximum entertainment value: foam pit jump zones, professional slam dunk basketball areas, skyrider zip lines, 360° spinning bicycles, challenging climbing walls, dodgeball arenas, ninja courses, and performance trampolines. Each zone is engineered with high-performance spring systems and commercial-grade materials for durability and safety.",
-        "features": ["12+ Activity Zones", "High Performance", "Modular Design"]
+        "features": [
+          "12+ Activity Zones",
+          "High Performance",
+          "Modular Design"
+        ]
       },
       "ninjaCourse": {
         "title": "Ninja Warrior Courses",
         "description": "Professional-grade ninja warrior courses designed to challenge participants of all skill levels. Our courses feature over 50 obstacle types including warped walls, salmon ladders, ring swings, rope climbs, balance beams, spinning logs, and custom challenges. Perfect for fitness centers, adventure parks, and competitive training facilities.",
-        "features": ["50+ Obstacle Types", "3D Design", "Competition Grade"]
+        "features": [
+          "50+ Obstacle Types",
+          "3D Design",
+          "Competition Grade"
+        ]
       },
       "softPlay": {
         "title": "Soft Play Areas",
         "description": "Specially designed soft play equipment that provides safe, engaging play experiences for toddlers and young children under 5 years old. Our soft play areas feature padded climbing structures, mini slides, ball pools, sensory panels, and interactive elements that support early childhood development while ensuring maximum safety.",
-        "features": ["Toddler Safe", "Easy Clean", "Modular"]
+        "features": [
+          "Toddler Safe",
+          "Easy Clean",
+          "Modular"
+        ]
       }
     }
   },
@@ -491,7 +507,7 @@
     "privacy": "Privacy Policy",
     "terms": "Terms of Service"
   },
-"globalTicker": {
+  "globalTicker": {
     "live": "LIVE",
     "someoneFrom": "Someone from",
     "requestedQuote": "requested a quote",
@@ -1932,7 +1948,7 @@
         "description": "Safe, engaging play environments specifically designed for toddlers and young children. Ideal for shopping centers, restaurants, community centers, and family venues.",
         "feature1": "Toddler-safe materials",
         "feature2": "Easy-clean surfaces",
-      "feature3": "Compact and modular designs"
+        "feature3": "Compact and modular designs"
       }
     }
   },
@@ -2180,11 +2196,26 @@
     "resultNote": "Final price depends on design complexity, theme, and installation requirements",
     "ctaBtn": "Get Accurate Quote",
     "productTypes": {
-      "indoor-playground": { "name": "Indoor Playground", "description": "Multi-level play structures" },
-      "trampoline-park": { "name": "Trampoline Park", "description": "Complete trampoline solutions" },
-      "ninja-course": { "name": "Ninja Warrior Course", "description": "Professional obstacle courses" },
-      "soft-play": { "name": "Soft Play Area", "description": "Toddler-friendly equipment" },
-      "fec": { "name": "Family Entertainment Center", "description": "Complete FEC solutions" }
+      "indoor-playground": {
+        "name": "Indoor Playground",
+        "description": "Multi-level play structures"
+      },
+      "trampoline-park": {
+        "name": "Trampoline Park",
+        "description": "Complete trampoline solutions"
+      },
+      "ninja-course": {
+        "name": "Ninja Warrior Course",
+        "description": "Professional obstacle courses"
+      },
+      "soft-play": {
+        "name": "Soft Play Area",
+        "description": "Toddler-friendly equipment"
+      },
+      "fec": {
+        "name": "Family Entertainment Center",
+        "description": "Complete FEC solutions"
+      }
     },
     "qualityLevels": {
       "standard": "Standard",
@@ -2349,68 +2380,68 @@
       "keywords": "indoor playground equipment manufacturer, commercial playground supplier, trampoline park manufacturer, ninja warrior course equipment, soft play equipment manufacturer, FEC equipment, ASTM TUV certified playground, custom playground design, playground equipment wholesale"
     },
     "aboutUs": {
-      "title": "About NinescapeLand | Indoor Playground Manufacturer Since 2008 | 15+ Years Experience",
+      "title": "About NinescapeLand — 15+ Years, 2000+ Projects",
       "description": "Meet NinescapeLand: 15+ years, 50,000 sqm factory, 200+ experts & 2,000+ projects in 50+ countries. ISO, ASTM & TUV certified. Partner with us today!",
       "keywords": "NinescapeLand company, indoor playground manufacturer, playground equipment factory China, commercial playground company, playground manufacturer experience, ISO certified playground factory, playground equipment supplier, play equipment manufacturer, amusement equipment factory, children play equipment producer"
     },
     "products": {
-      "title": "Commercial Playground Equipment | Indoor Play Structures | Trampoline Parks | Ninja Courses",
-      "description": "Shop commercial playground equipment: indoor play structures, trampoline parks, ninja courses & soft play. ASTM & TUV certified. Request a free quote now!",
+      "title": "Commercial Playground Equipment for Sale | All Products",
+      "description": "Browse commercial playground equipment: indoor play structures, trampoline parks & ninja courses. ASTM & TUV certified. Request your free quote today!",
       "keywords": "commercial playground equipment, commercial playground equipment for sale, indoor playground structures, indoor playground equipment for sale, trampoline park equipment, commercial trampoline park for sale, ninja warrior course equipment, ninja course for sale, soft play equipment, soft play equipment for sale, multi-level play structures, climbing walls for sale, ball pits, tube slides, foam pit trampolines, dodgeball arena, FEC equipment for sale, children play equipment, playground equipment for sale, buy playground equipment, indoor play equipment wholesale, commercial play equipment supplier, amusement equipment for sale, kids play structures, playground equipment price list, bulk playground equipment"
     },
     "trampolinePark": {
-      "title": "Trampoline Park Equipment Manufacturer | Commercial Trampoline Systems | 12+ Activity Zones",
-      "description": "Buy commercial trampoline park equipment with 12+ activity zones: foam pits, slam dunk & climbing walls. ASTM F2970 certified. Get your free layout design!",
+      "title": "Trampoline Park Equipment | 12+ Zone Systems",
+      "description": "Commercial trampoline park equipment with 12+ activity zones: foam pits, slam dunk & climbing walls. ASTM F2970 certified. Get your free layout design!",
       "keywords": "trampoline park equipment manufacturer, commercial trampoline park for sale, trampoline park supplier, buy trampoline park equipment, commercial trampoline systems, foam pit trampolines for sale, slam dunk trampoline, indoor trampoline park equipment, trampoline park equipment for sale, trampoline park equipment price, ASTM certified trampolines, modular trampoline park, trampoline arena equipment, professional trampolines for sale, trampoline park builder, jump park equipment, trampoline equipment wholesale, start a trampoline park business, trampoline park franchise equipment"
     },
     "indoorPlayground": {
-      "title": "Indoor Playground Equipment | Custom Multi-Level Play Structures | Ball Pits & Slides",
-      "description": "Buy custom indoor playground equipment: multi-level structures, slides, ball pits & climbing walls. ASTM & EN 1176 certified. Get your free 3D design now!",
+      "title": "Indoor Playground Equipment | Custom Play Structures",
+      "description": "Custom indoor playground equipment: multi-level structures, slides, ball pits & climbing walls. ASTM & EN 1176 certified. Get your free 3D design now!",
       "keywords": "indoor playground equipment manufacturer, indoor playground equipment for sale, buy indoor playground equipment, indoor playground supplier, custom play structures for sale, multi-level playground, ball pit playground for sale, tube slides manufacturer, climbing playground equipment, themed indoor playground, commercial play area, children indoor play equipment for sale, soft play structures, indoor play center equipment, kids playground equipment for sale, play area equipment supplier, indoor playground price, indoor playground equipment wholesale, commercial indoor playground for sale"
     },
     "ninjaCourse": {
-      "title": "Ninja Warrior Course Equipment | Professional Obstacle Course Manufacturer | 50+ Obstacles",
-      "description": "Buy ninja warrior course equipment: 50+ obstacle types including warped walls & salmon ladders. Ideal for gyms & FECs. Request a free custom design today!",
+      "title": "Ninja Warrior Course Equipment | 50+ Obstacles",
+      "description": "Professional ninja warrior course equipment with 50+ obstacle types. Warped walls, salmon ladders & more. Ideal for gyms & FECs. Free custom design!",
       "keywords": "ninja warrior course equipment, ninja course for sale, buy ninja warrior equipment, ninja course manufacturer, ninja obstacle course supplier, warped wall for sale, ninja gym equipment for sale, indoor ninja course, adventure obstacle course, ninja training equipment for sale, commercial ninja obstacles, fitness obstacle course for sale, ninja warrior gym equipment, obstacle course builder, ninja park equipment, ninja warrior equipment price, ninja course equipment wholesale"
     },
     "softPlay": {
-      "title": "Soft Play Equipment | Toddler & Baby Play Area Manufacturer | Safe Padded Structures",
-      "description": "Shop safe soft play equipment for toddlers: padded structures, sensory panels & ball pools. ASTM & EN 1176 certified, antibacterial. Get a free quote today!",
+      "title": "Soft Play Equipment | Safe Toddler Play Areas",
+      "description": "Safe soft play equipment for toddlers: padded structures, sensory panels & ball pools. ASTM & EN 1176 certified, antibacterial. Get a free quote today!",
       "keywords": "soft play equipment manufacturer, soft play equipment for sale, buy soft play equipment, soft play supplier, toddler play area equipment for sale, baby play zone, padded play structures for sale, safe children play equipment, indoor soft play for sale, daycare playground equipment, soft play ball pit, sensory play equipment, kids soft play equipment, commercial soft play for sale, soft play equipment price, soft play equipment wholesale, soft play area for sale"
     },
     "process": {
-      "title": "Our Process | Free 3D Design to Installation | Turnkey Playground Solutions",
-      "description": "Our proven 6-step turnkey process: free 3D design, premium manufacturing, global shipping & on-site installation. 3-year warranty. Start your project now!",
+      "title": "Our Process | Free 3D Design to Installation",
+      "description": "Proven 6-step turnkey process: free 3D design, premium manufacturing, global shipping & on-site installation. 3-year warranty. Start your project now!",
       "keywords": "playground installation process, turnkey playground solutions, custom playground design service, playground manufacturing process, playground shipping worldwide, playground installation support, 3D playground design, playground project management"
     },
     "projects": {
-      "title": "Global Projects | 2,000+ Playground Installations in 50+ Countries | Case Studies",
-      "description": "Browse 2,000+ playground installations across 50+ countries: FECs, trampoline parks & ninja gyms. See real project results. Plan your project with us today!",
+      "title": "2,000+ Playground Projects in 50+ Countries",
+      "description": "Browse 2,000+ playground installations across 50+ countries: FECs, trampoline parks & ninja gyms. See real project results. Plan yours today!",
       "keywords": "playground projects worldwide, indoor playground installations, trampoline park case studies, FEC project examples, playground portfolio, commercial playground installations, international playground projects, playground success stories"
     },
     "contact": {
-      "title": "Contact Us | Free 3D Design & Quote in 24 Hours | NinescapeLand",
-      "description": "Contact NinescapeLand for a free 3D playground design & quote within 24 hours. Multilingual support, WhatsApp, email or phone. Ship to 50+ countries!",
+      "title": "Contact Us | Free Quote in 24h | NinescapeLand",
+      "description": "Contact NinescapeLand for a free 3D playground design & quote within 24 hours. Multilingual support via WhatsApp, email or phone. Ships to 50+ countries!",
       "keywords": "contact playground manufacturer, get playground quote, playground design inquiry, indoor playground consultation, WhatsApp playground inquiry, FEC project consultation, playground manufacturer China contact"
     },
     "faq": {
-      "title": "FAQ | Indoor Playground Equipment Questions | Pricing, Shipping & Warranty Info",
+      "title": "FAQ | Playground Pricing, Shipping & Warranty",
       "description": "Get answers on playground equipment pricing, production (25-35 days), global shipping, 3-year warranty & ASTM/TUV certifications. Ask us anything today!",
       "keywords": "indoor playground FAQ, playground equipment pricing, playground shipping time, playground warranty, playground installation questions, FEC cost estimates, trampoline park FAQ, playground safety certifications"
     },
     "blog": {
-      "title": "Industry Insights & News | Indoor Playground Business Tips | FEC Trends",
-      "description": "Read expert insights on indoor playground trends, FEC business strategies & safety standards. Actionable tips for entertainment entrepreneurs. Explore now!",
+      "title": "Blog | Playground Business Tips & FEC Trends",
+      "description": "Expert insights on indoor playground trends, FEC business strategies & safety standards. Actionable tips for entertainment entrepreneurs. Read now!",
       "keywords": "indoor playground blog, FEC industry news, playground business tips, entertainment center trends, playground marketing strategies, FEC operation advice, playground industry insights"
     },
     "caseStudies": {
-      "title": "Case Studies | Playground Project Success Stories | Before & After Gallery",
-      "description": "See real playground project case studies with client testimonials, before/after photos & ROI data from 50+ countries. Start planning your project with us!",
+      "title": "Case Studies | Playground Success Stories & ROI",
+      "description": "Real playground project case studies with client testimonials, before/after photos & ROI data from 50+ countries. Start planning your project today!",
       "keywords": "playground case studies, FEC success stories, indoor playground examples, trampoline park project gallery, playground before after photos, playground ROI examples, client testimonials"
     },
     "activePlayRunning": {
-      "title": "Best Active Play Equipment for Running Facilities | NinescapeLand",
-      "description": "Best adventure park & ninja course equipment for high-energy running facilities. Durable, safe & custom-designed. Get your free layout design consultation!",
+      "title": "Active Play Equipment for Running Facilities",
+      "description": "Adventure park & ninja course equipment for high-energy running facilities. Durable, safe & custom-designed. Get your free layout design consultation!",
       "keywords": "soft play equipment USA, ninja warrior course, adventure park equipment, active play equipment, running facility equipment, indoor playground solution"
     },
     "officeWellness": {
@@ -2419,23 +2450,23 @@
       "keywords": "custom play structures, office playground, corporate wellness, indoor playground equipment, workplace play area, office play structures"
     },
     "softPlayMallSolutions": {
-      "title": "Soft Play Equipment for Shopping Malls | NinescapeLand",
+      "title": "Soft Play for Shopping Malls | NinescapeLand",
       "description": "Boost shopping mall foot traffic with premium soft play equipment. Custom-designed, durable & safe play zones that increase dwell time and tenant satisfaction.",
       "keywords": "soft play equipment shopping mall, mall play area, commercial soft play, indoor playground shopping center"
     },
     "trampolineParkFEC": {
-      "title": "Trampoline Park Solutions for FECs | NinescapeLand",
+      "title": "Trampoline Park Solutions for FECs",
       "description": "Turnkey trampoline park solutions for Family Entertainment Centers. High-performance, safety-certified equipment with 12+ activity zones for maximum ROI.",
       "keywords": "trampoline park FEC, family entertainment center trampoline, commercial trampoline park, FEC attractions"
     },
     "roiUK": {
-      "title": "Indoor Playground ROI Analysis UK | NinescapeLand",
-      "description": "Comprehensive ROI analysis for indoor playgrounds in the UK market. Expert insights on BS EN 1176 compliance, market trends & investment returns for entrepreneurs.",
+      "title": "Indoor Playground ROI Analysis UK | Guide",
+      "description": "ROI analysis for indoor playgrounds in the UK. Expert insights on BS EN 1176 compliance, market trends & investment returns for UK entrepreneurs.",
       "keywords": "indoor playground ROI UK, indoor playground business UK, indoor playground investment United Kingdom, BS EN 1176"
     },
     "roiCanada": {
       "title": "Indoor Playground ROI Canada | NinescapeLand",
-      "description": "Maximize your indoor playground investment in Canada. Space-optimized designs, CSA Z614 certified equipment & ROI data for high-traffic Canadian family centers.",
+      "description": "Maximize your indoor playground investment in Canada. Space-optimized designs, CSA Z614 certified equipment & ROI data for Canadian family centers.",
       "keywords": "indoor playground ROI Canada, indoor playground business Canada, indoor playground investment Canada, CSA Z614"
     }
   },
