@@ -43,8 +43,12 @@ const Contact = () => {
         />
         <ContactMascotBanner />
         <ContactSection />
-        <ContactTrustSection />
-        <FAQSection />
+        <LazySection minHeight="200px">
+          <ContactTrustSection />
+        </LazySection>
+        <LazySection minHeight="400px">
+          <FAQSection />
+        </LazySection>
       </main>
       <Footer />
       <FloatingCTA />
