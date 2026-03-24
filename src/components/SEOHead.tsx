@@ -46,7 +46,7 @@ export const SEOHead = ({
   const title = (dynamicTitle || seo?.title || [t(`pages.${pageKey}.title`, ""), t(`pages.${pageKey}.titleHighlight`, "")].filter(Boolean).join(" ") || siteName).trim();
   const rawDescription = dynamicDescription || seo?.description || t(`pages.${pageKey}.description`, "");
   // Never output an empty meta description – fall back to a site-wide default
-  const description = rawDescription?.trim() || t("seo.home.description", "Top indoor playground equipment manufacturer since 2008. Custom trampoline parks, ninja courses & soft play. ASTM & TUV certified. Get a free 3D design today!");
+  const description = rawDescription?.trim() || t("seo.home.description", "Custom indoor playground equipment manufacturer & supplier since 2008. Trampoline parks, ninja courses, soft play & complete play center solutions. ASTM & TUV certified. Free 3D design!");
   const keywords = dynamicKeywords || seo?.keywords || t("seo.defaultKeywords", "");
 
   const fullTitle = title.includes(siteName) ? title : `${title} | ${siteName}`;
