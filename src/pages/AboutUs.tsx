@@ -44,8 +44,12 @@ const AboutUs = () => {
         <AboutMascotIntro />
         <CoreValuesSection />
         <AboutTeamSection />
-        <WhyUsSection />
-        <FAQSection />
+        <LazySection minHeight="400px">
+          <WhyUsSection />
+        </LazySection>
+        <LazySection minHeight="400px">
+          <FAQSection />
+        </LazySection>
       </main>
       <Footer />
       <FloatingCTA />
