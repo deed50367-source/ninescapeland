@@ -3,6 +3,10 @@ import { useParams, useLocation } from "react-router-dom";
 import { languages } from "@/i18n/config";
 import { WebsiteSchema } from "@/components/StructuredData";
 
+const baseUrl = "https://indoorplaygroundsolution.com";
+const siteName = "NinescapeLand";
+const twitterHandle = "@NinescapeLand";
+
 interface BlogArticleSEOProps {
   title: string;
   description?: string;
