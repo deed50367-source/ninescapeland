@@ -10,6 +10,7 @@ import { ContactTrustSection } from "@/components/ContactTrustSection";
 import { SEOHead } from "@/components/SEOHead";
 import { BreadcrumbSchema, LocalBusinessSchema, ContactPageSchema } from "@/components/StructuredData";
 import { useLocalizedPath } from "@/hooks/useLocalizedPath";
+import { LazySection } from "@/components/LazySection";
 
 const Contact = () => {
   const { t } = useTranslation();
