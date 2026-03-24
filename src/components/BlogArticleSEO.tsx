@@ -58,7 +58,14 @@ export const BlogArticleSEO = ({
   };
   
   const canonicalUrl = getCanonicalUrl();
-  const canonicalPath = location.pathname.replace(/\/$/, "");
+  
+  // Build path without language prefix for hreflang generation
+  const getPathWithoutLang = () => {
+    const pathname = location.pathname.replace(/\/$/, "") || "/";
+    const cleaned = pathname.replace(/^\/(en|es|pt|de|fr|ar)(\/|$)/, "/");
+    return cleaned === "" ? "/" : cleaned;
+  };
+  const pathWithoutLang = getPathWithoutLang();
   
   const fullTitle = `${title} | ${siteName}`;
   const ogImage = image || `${baseUrl}/og-image.png`;
