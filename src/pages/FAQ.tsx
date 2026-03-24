@@ -51,7 +51,9 @@ const FAQ = () => {
           breadcrumbs={heroBreadcrumbs}
         />
         <FAQSection />
-        <ContactSection />
+        <LazySection minHeight="500px">
+          <ContactSection />
+        </LazySection>
       </main>
       <Footer />
       <FloatingCTA />
