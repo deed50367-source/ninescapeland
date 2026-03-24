@@ -357,6 +357,8 @@ const DynamicProductDetail = () => {
                       src={allImages[currentImageIndex]}
                       alt={`${getLocalizedName(product)} by NinescapeLand`}
                       className="w-full h-full object-cover cursor-zoom-in"
+                      loading="eager"
+                      decoding="async"
                       onClick={() => setIsLightboxOpen(true)}
                     />
                     {allImages.length > 1 && (
