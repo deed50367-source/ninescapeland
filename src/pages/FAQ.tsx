@@ -8,6 +8,7 @@ import { FloatingCTA } from "@/components/FloatingCTA";
 import { SEOHead } from "@/components/SEOHead";
 import { FAQSchema, BreadcrumbSchema } from "@/components/StructuredData";
 import { useLocalizedPath } from "@/hooks/useLocalizedPath";
+import { LazySection } from "@/components/LazySection";
 
 const FAQ = () => {
   const { t } = useTranslation();
