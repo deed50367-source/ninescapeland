@@ -11,6 +11,7 @@ import { FloatingCTA } from "@/components/FloatingCTA";
 import { SEOHead } from "@/components/SEOHead";
 import { BreadcrumbSchema, OrganizationSchema } from "@/components/StructuredData";
 import { useLocalizedPath } from "@/hooks/useLocalizedPath";
+import { LazySection } from "@/components/LazySection";
 
 const Products = () => {
   const { t } = useTranslation();
