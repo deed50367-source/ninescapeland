@@ -132,7 +132,14 @@ export const BlogArticleSEO = ({
         </>
       )}
       
-      {/* hreflang tags are managed globally by LanguageWrapper */}
+      {/* Hreflang tags for international SEO */}
+      {languages.map((l) => {
+        const href = l.code === "en"
+          ? `${baseUrl}${pathWithoutLang}`
+          : `${baseUrl}/${l.code}${pathWithoutLang === "/" ? "" : pathWithoutLang}`;
+        return <link key={l.code} rel="alternate" hrefLang={l.code} href={href} />;
+      })}
+      <link rel="alternate" hrefLang="x-default" href={`${baseUrl}${pathWithoutLang}`} />
     </Helmet>
     </>
   );
