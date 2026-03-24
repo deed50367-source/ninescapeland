@@ -702,6 +702,8 @@ const DynamicProductDetail = () => {
               src={allImages[currentImageIndex]}
               alt={`${getLocalizedName(product)} by NinescapeLand`}
               className="max-w-[90vw] max-h-[90vh] object-contain"
+              loading="lazy"
+              decoding="async"
               onClick={(e) => e.stopPropagation()}
             />
             <button
