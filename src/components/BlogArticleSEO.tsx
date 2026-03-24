@@ -3,6 +3,10 @@ import { useParams, useLocation } from "react-router-dom";
 import { languages } from "@/i18n/config";
 import { WebsiteSchema } from "@/components/StructuredData";
 
+const baseUrl = "https://indoorplaygroundsolution.com";
+const siteName = "NinescapeLand";
+const twitterHandle = "@NinescapeLand";
+
 interface BlogArticleSEOProps {
   title: string;
   description?: string;
@@ -15,9 +19,6 @@ interface BlogArticleSEOProps {
   tags?: string[];
 }
 
-const baseUrl = "https://indoorplaygroundsolution.com";
-const siteName = "NinescapeLand";
-const twitterHandle = "@NinescapeLand";
 
 export const BlogArticleSEO = ({
   title,
@@ -57,7 +58,14 @@ export const BlogArticleSEO = ({
   };
   
   const canonicalUrl = getCanonicalUrl();
-  const canonicalPath = location.pathname.replace(/\/$/, "");
+  
+  // Build path without language prefix for hreflang generation
+  const getPathWithoutLang = () => {
+    const pathname = location.pathname.replace(/\/$/, "") || "/";
+    const cleaned = pathname.replace(/^\/(en|es|pt|de|fr|ar)(\/|$)/, "/");
+    return cleaned === "" ? "/" : cleaned;
+  };
+  const pathWithoutLang = getPathWithoutLang();
   
   const fullTitle = `${title} | ${siteName}`;
   const ogImage = image || `${baseUrl}/og-image.png`;
@@ -124,7 +132,14 @@ export const BlogArticleSEO = ({
         </>
       )}
       
-      {/* hreflang tags are managed globally by LanguageWrapper */}
+      {/* Hreflang tags for international SEO */}
+      {languages.map((l) => {
+        const href = l.code === "en"
+          ? `${baseUrl}${pathWithoutLang}`
+          : `${baseUrl}/${l.code}${pathWithoutLang === "/" ? "" : pathWithoutLang}`;
+        return <link key={l.code} rel="alternate" hrefLang={l.code} href={href} />;
+      })}
+      <link rel="alternate" hrefLang="x-default" href={`${baseUrl}${pathWithoutLang}`} />
     </Helmet>
     </>
   );
