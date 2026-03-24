@@ -576,6 +576,8 @@ const DynamicProductDetail = () => {
                         src={variant.image_url}
                         alt={variant.name}
                         className="w-16 h-16 object-cover rounded-lg"
+                        loading="lazy"
+                        decoding="async"
                       />
                     ) : (
                       <div className="w-16 h-16 bg-muted rounded-lg flex items-center justify-center">
