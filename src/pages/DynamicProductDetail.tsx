@@ -408,6 +408,8 @@ const DynamicProductDetail = () => {
                         src={img}
                         alt={`${getLocalizedName(product)} ${index + 1} by NinescapeLand`}
                         className="w-full h-full object-cover"
+                        loading="lazy"
+                        decoding="async"
                       />
                     </button>
                   ))}
