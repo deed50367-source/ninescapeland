@@ -650,6 +650,8 @@ const DynamicProductDetail = () => {
                             src={relProduct.featured_image}
                             alt={`${getLocalizedName(relProduct)} by NinescapeLand`}
                             className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                            loading="lazy"
+                            decoding="async"
                           />
                         ) : (
                           <div className="w-full h-full bg-muted flex items-center justify-center">
