@@ -19,9 +19,6 @@ interface BlogArticleSEOProps {
   tags?: string[];
 }
 
-const baseUrl = "https://indoorplaygroundsolution.com";
-const siteName = "NinescapeLand";
-const twitterHandle = "@NinescapeLand";
 
 export const BlogArticleSEO = ({
   title,
