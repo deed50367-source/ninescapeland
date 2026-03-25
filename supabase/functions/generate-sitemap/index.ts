@@ -139,6 +139,17 @@ Deno.serve(async (req) => {
       // ROI analysis pages
       { path: "/indoor-playground-roi-analysis-uk", changefreq: "monthly", priority: "0.7" },
       { path: "/indoor-playground-roi-canada", changefreq: "monthly", priority: "0.7" },
+      // Industry/market landing pages
+      { path: "/market/best-indoor-playground-solution-for-real-estate", changefreq: "monthly", priority: "0.7" },
+      { path: "/market/pediatric-indoor-playground-solution-for-healthcare", changefreq: "monthly", priority: "0.7" },
+      { path: "/market/educational-indoor-playground-solution-for-schools", changefreq: "monthly", priority: "0.7" },
+      { path: "/market/ecommerce-retailtainment-indoor-playground-solution", changefreq: "monthly", priority: "0.7" },
+      { path: "/market/finance-sector-indoor-playground-solution", changefreq: "monthly", priority: "0.7" },
+      { path: "/market/best-indoor-playground-solution-for-legal-offices", changefreq: "monthly", priority: "0.7" },
+      { path: "/market/experiential-marketing-indoor-playground-solutions", changefreq: "monthly", priority: "0.7" },
+      { path: "/market/hr-workplace-wellness-indoor-playground", changefreq: "monthly", priority: "0.7" },
+      { path: "/market/logistics-hub-indoor-playground-solutions", changefreq: "monthly", priority: "0.7" },
+      { path: "/market/manufacturing-facility-indoor-playground-safety", changefreq: "monthly", priority: "0.7" },
       // Location landing pages
       { path: "/locations/indoor-playground-equipment-usa", changefreq: "monthly", priority: "0.8" },
       { path: "/locations/indoor-playground-equipment-uk", changefreq: "monthly", priority: "0.8" },
