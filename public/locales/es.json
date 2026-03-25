@@ -161,22 +161,38 @@
       "indoorPlayground": {
         "title": "Equipos de Parque Infantil Interior",
         "description": "Estructuras de juego multinivel con toboganes, piscinas de bolas, redes de escalada y elementos interactivos para niños de todas las edades.",
-        "features": ["Temas Personalizados", "Certificado de Seguridad", "Todas las Edades"]
+        "features": [
+          "Temas Personalizados",
+          "Certificado de Seguridad",
+          "Todas las Edades"
+        ]
       },
       "trampolinePark": {
         "title": "Parques de Trampolines",
         "description": "Soluciones completas de parques de trampolines con más de 12 zonas de actividades: piscinas de espuma, canastas, skyrider, bicicleta 360°, muros de escalada y más.",
-        "features": ["12+ Zonas de Actividad", "Alto Rendimiento", "Diseño Modular"]
+        "features": [
+          "12+ Zonas de Actividad",
+          "Alto Rendimiento",
+          "Diseño Modular"
+        ]
       },
       "ninjaCourse": {
         "title": "Cursos Ninja Warrior",
         "description": "Cursos de obstáculos ninja profesionales con desafíos de altura, muros de escalada, circuitos de cuerdas, barras de equilibrio y obstáculos de aventura.",
-        "features": ["50+ Tipos de Obstáculos", "Diseño 3D", "Grado de Competencia"]
+        "features": [
+          "50+ Tipos de Obstáculos",
+          "Diseño 3D",
+          "Grado de Competencia"
+        ]
       },
       "softPlay": {
         "title": "Áreas de Juego Suave",
         "description": "Equipos de juego suave seguros y atractivos diseñados específicamente para bebés y niños pequeños.",
-        "features": ["Seguro para Bebés", "Fácil Limpieza", "Modular"]
+        "features": [
+          "Seguro para Bebés",
+          "Fácil Limpieza",
+          "Modular"
+        ]
       }
     }
   },
@@ -460,7 +476,7 @@
     "privacy": "Política de Privacidad",
     "terms": "Términos de Servicio"
   },
-"floatingCta": {
+  "floatingCta": {
     "scrollToTop": "Volver arriba",
     "whatsapp": "Chatear en WhatsApp"
   },
@@ -807,20 +823,44 @@
       "themesCustomNote": "¿No ves tu tema ideal? Creamos diseños personalizados basados en tu visión.",
       "themesDiscuss": "Discute Tu Tema",
       "themes": {
-        "jungle": { "title": "Aventura en la Selva", "description": "Tema de selva tropical con palmeras, personajes animales y elementos de juego inspirados en la naturaleza." },
-        "ocean": { "title": "Explorador del Océano", "description": "Mundo submarino con criaturas marinas, elementos de barcos y estructuras inspiradas en olas." },
-        "castle": { "title": "Castillo de Cuento de Hadas", "description": "Tema de reino mágico con torres, dragones y elementos de princesa/caballero." },
-        "space": { "title": "Estación Espacial", "description": "Tema espacial futurista con cohetes, planetas y aventuras de astronautas." }
+        "jungle": {
+          "title": "Aventura en la Selva",
+          "description": "Tema de selva tropical con palmeras, personajes animales y elementos de juego inspirados en la naturaleza."
+        },
+        "ocean": {
+          "title": "Explorador del Océano",
+          "description": "Mundo submarino con criaturas marinas, elementos de barcos y estructuras inspiradas en olas."
+        },
+        "castle": {
+          "title": "Castillo de Cuento de Hadas",
+          "description": "Tema de reino mágico con torres, dragones y elementos de princesa/caballero."
+        },
+        "space": {
+          "title": "Estación Espacial",
+          "description": "Tema espacial futurista con cohetes, planetas y aventuras de astronautas."
+        }
       },
       "benefitsLabel": "Beneficios del Desarrollo",
       "benefitsTitle": "Creciendo a Través del",
       "benefitsTitleHighlight": "Juego",
       "benefitsDescription": "Nuestros parques están diseñados para apoyar el desarrollo físico, cognitivo y social de los niños.",
       "benefits": {
-        "cognitive": { "title": "Desarrollo Cognitivo", "description": "Actividades de resolución de problemas y juegos interactivos que estimulan el desarrollo cerebral." },
-        "physical": { "title": "Crecimiento Físico", "description": "Actividades de escalada, salto y equilibrio que desarrollan fuerza y coordinación." },
-        "motor": { "title": "Habilidades Motoras", "description": "Desarrollo de habilidades motoras finas y gruesas a través de actividades variadas." },
-        "social": { "title": "Habilidades Sociales", "description": "Áreas de juego grupal que enseñan a compartir, trabajo en equipo y comunicación." }
+        "cognitive": {
+          "title": "Desarrollo Cognitivo",
+          "description": "Actividades de resolución de problemas y juegos interactivos que estimulan el desarrollo cerebral."
+        },
+        "physical": {
+          "title": "Crecimiento Físico",
+          "description": "Actividades de escalada, salto y equilibrio que desarrollan fuerza y coordinación."
+        },
+        "motor": {
+          "title": "Habilidades Motoras",
+          "description": "Desarrollo de habilidades motoras finas y gruesas a través de actividades variadas."
+        },
+        "social": {
+          "title": "Habilidades Sociales",
+          "description": "Áreas de juego grupal que enseñan a compartir, trabajo en equipo y comunicación."
+        }
       },
       "designProcessLabel": "Nuestro Proceso",
       "designProcessTitle": "Del Concepto a la",
@@ -828,12 +868,30 @@
       "designProcessDescription": "Te guiamos en cada paso para crear tu parque interior perfecto.",
       "step": "Paso",
       "designProcess": {
-        "consultation": { "title": "Consulta", "description": "Comparte tu visión, dimensiones y presupuesto." },
-        "design": { "title": "Diseño 3D", "description": "Recibe renderizados 3D profesionales de tu parque personalizado." },
-        "production": { "title": "Fabricación", "description": "Producción con materiales premium y control de calidad estricto." },
-        "shipping": { "title": "Envío Global", "description": "Empaque profesional y entrega puerta a puerta." },
-        "installation": { "title": "Instalación", "description": "Guías completas con tutoriales en video." },
-        "support": { "title": "Postventa", "description": "Garantía de 3 años con soporte técnico de por vida." }
+        "consultation": {
+          "title": "Consulta",
+          "description": "Comparte tu visión, dimensiones y presupuesto."
+        },
+        "design": {
+          "title": "Diseño 3D",
+          "description": "Recibe renderizados 3D profesionales de tu parque personalizado."
+        },
+        "production": {
+          "title": "Fabricación",
+          "description": "Producción con materiales premium y control de calidad estricto."
+        },
+        "shipping": {
+          "title": "Envío Global",
+          "description": "Empaque profesional y entrega puerta a puerta."
+        },
+        "installation": {
+          "title": "Instalación",
+          "description": "Guías completas con tutoriales en video."
+        },
+        "support": {
+          "title": "Postventa",
+          "description": "Garantía de 3 años con soporte técnico de por vida."
+        }
       },
       "safetyLabel": "Estándares de Seguridad",
       "safetyTitle": "Certificaciones",
@@ -841,10 +899,22 @@
       "safetyDescription": "La seguridad es nuestra máxima prioridad. Todos los equipos cumplen los estándares internacionales más estrictos.",
       "safetyCertified": "100% Certificado",
       "safety": {
-        "astm": { "title": "ASTM F1918", "description": "Estándar estadounidense para seguridad de parques." },
-        "tuv": { "title": "Certificado TUV", "description": "Marca alemana de calidad y seguridad." },
-        "ce": { "title": "Marcado CE", "description": "Conformidad europea para salud y seguridad." },
-        "en": { "title": "EN 1176", "description": "Estándar europeo de seguridad para parques." }
+        "astm": {
+          "title": "ASTM F1918",
+          "description": "Estándar estadounidense para seguridad de parques."
+        },
+        "tuv": {
+          "title": "Certificado TUV",
+          "description": "Marca alemana de calidad y seguridad."
+        },
+        "ce": {
+          "title": "Marcado CE",
+          "description": "Conformidad europea para salud y seguridad."
+        },
+        "en": {
+          "title": "EN 1176",
+          "description": "Estándar europeo de seguridad para parques."
+        }
       }
     },
     "trampolinePark": {
@@ -1202,58 +1272,152 @@
         }
       },
       "extendedObstacles": {
-        "quintSteps": { "title": "Pasos Quíntuples", "description": "Cinco plataformas anguladas que requieren velocidad, precisión e impulso." },
-        "spiderWall": { "title": "Pared Araña", "description": "Corredor vertical estrecho que requiere escalar con brazos y piernas." },
-        "swingRopes": { "title": "Cuerdas de Balanceo", "description": "Serie de cuerdas colgantes para balancearse entre plataformas." },
-        "rollingLog": { "title": "Tronco Rodante", "description": "Cilindro giratorio que requiere equilibrio y reflejos rápidos." },
-        "pegBoard": { "title": "Tablero de Clavijas", "description": "Tablero vertical con agujeros para clavijas que prueba la fuerza superior." },
-        "doorKnobs": { "title": "Pomos de Puerta", "description": "Serie de pomos giratorios que requieren fuerza de agarre." },
-        "pipeFitter": { "title": "Barras de Tubos", "description": "Barras aéreas de diámetros variados que desafían las transiciones de agarre." },
-        "cannonball": { "title": "Callejón de Balas", "description": "Serie de esferas colgantes que requieren técnica de balanceo y agarre." }
+        "quintSteps": {
+          "title": "Pasos Quíntuples",
+          "description": "Cinco plataformas anguladas que requieren velocidad, precisión e impulso."
+        },
+        "spiderWall": {
+          "title": "Pared Araña",
+          "description": "Corredor vertical estrecho que requiere escalar con brazos y piernas."
+        },
+        "swingRopes": {
+          "title": "Cuerdas de Balanceo",
+          "description": "Serie de cuerdas colgantes para balancearse entre plataformas."
+        },
+        "rollingLog": {
+          "title": "Tronco Rodante",
+          "description": "Cilindro giratorio que requiere equilibrio y reflejos rápidos."
+        },
+        "pegBoard": {
+          "title": "Tablero de Clavijas",
+          "description": "Tablero vertical con agujeros para clavijas que prueba la fuerza superior."
+        },
+        "doorKnobs": {
+          "title": "Pomos de Puerta",
+          "description": "Serie de pomos giratorios que requieren fuerza de agarre."
+        },
+        "pipeFitter": {
+          "title": "Barras de Tubos",
+          "description": "Barras aéreas de diámetros variados que desafían las transiciones de agarre."
+        },
+        "cannonball": {
+          "title": "Callejón de Balas",
+          "description": "Serie de esferas colgantes que requieren técnica de balanceo y agarre."
+        }
       },
       "trainingBenefits": {
         "sectionLabel": "Beneficios del Entrenamiento",
         "title": "Construye Fuerza",
         "titleHighlight": "y Confianza",
         "description": "El entrenamiento ninja proporciona beneficios de desarrollo físico y mental para todas las edades.",
-        "strength": { "title": "Fuerza Corporal Total", "description": "Desarrolla músculos superiores, core y piernas a través de movimientos funcionales." },
-        "grip": { "title": "Fuerza de Agarre", "description": "Obstáculos de colgarse, balancearse y escalar mejoran la fuerza de manos y antebrazos." },
-        "agility": { "title": "Agilidad y Velocidad", "description": "Transiciones rápidas y cursos cronometrados desarrollan músculos de fibra rápida." },
-        "mental": { "title": "Fortaleza Mental", "description": "Superar obstáculos desafiantes construye perseverancia y enfoque." },
-        "coordination": { "title": "Coordinación Corporal", "description": "Movimientos complejos mejoran la propiocepción y conciencia espacial." },
-        "confidence": { "title": "Autoconfianza", "description": "Lograr metas y superar miedos construye autoestima duradera." }
+        "strength": {
+          "title": "Fuerza Corporal Total",
+          "description": "Desarrolla músculos superiores, core y piernas a través de movimientos funcionales."
+        },
+        "grip": {
+          "title": "Fuerza de Agarre",
+          "description": "Obstáculos de colgarse, balancearse y escalar mejoran la fuerza de manos y antebrazos."
+        },
+        "agility": {
+          "title": "Agilidad y Velocidad",
+          "description": "Transiciones rápidas y cursos cronometrados desarrollan músculos de fibra rápida."
+        },
+        "mental": {
+          "title": "Fortaleza Mental",
+          "description": "Superar obstáculos desafiantes construye perseverancia y enfoque."
+        },
+        "coordination": {
+          "title": "Coordinación Corporal",
+          "description": "Movimientos complejos mejoran la propiocepción y conciencia espacial."
+        },
+        "confidence": {
+          "title": "Autoconfianza",
+          "description": "Lograr metas y superar miedos construye autoestima duradera."
+        }
       },
       "safetySection": {
         "sectionLabel": "Estándares de Seguridad",
         "title": "Tu Seguridad es",
         "titleHighlight": "Nuestra Prioridad",
         "description": "Cada circuito ninja está diseñado con características de seguridad completas.",
-        "crashMats": { "title": "Colchonetas de Impacto", "description": "Colchonetas de espuma de alta densidad bajo todos los obstáculos." },
-        "harnesses": { "title": "Arneses de Seguridad", "description": "Sistemas de arnés opcionales para elementos altos." },
-        "padding": { "title": "Superficies Acolchadas", "description": "Todos los marcos, postes y bordes cubiertos con acolchado protector." },
-        "certification": { "title": "Certificado Internacional", "description": "Todos los equipos cumplen estándares ASTM, TUV, CE y EN." }
+        "crashMats": {
+          "title": "Colchonetas de Impacto",
+          "description": "Colchonetas de espuma de alta densidad bajo todos los obstáculos."
+        },
+        "harnesses": {
+          "title": "Arneses de Seguridad",
+          "description": "Sistemas de arnés opcionales para elementos altos."
+        },
+        "padding": {
+          "title": "Superficies Acolchadas",
+          "description": "Todos los marcos, postes y bordes cubiertos con acolchado protector."
+        },
+        "certification": {
+          "title": "Certificado Internacional",
+          "description": "Todos los equipos cumplen estándares ASTM, TUV, CE y EN."
+        }
       },
       "ageGroups": {
         "sectionLabel": "Diseño por Edades",
         "title": "Circuitos para",
         "titleHighlight": "Todas las Edades",
         "description": "Diseñamos secciones de circuito separadas con desafíos apropiados para la edad.",
-        "kids": { "age": "6-12", "title": "Ninjas Junior", "description": "Obstáculos escalados con acolchado extra para construir confianza." },
-        "teens": { "age": "13-17", "title": "Guerreros Adolescentes", "description": "Desafíos intermedios con variedad completa de obstáculos." },
-        "adults": { "age": "18+", "title": "Atletas Adultos", "description": "Obstáculos de grado competición completo para entrenamiento serio." },
-        "family": { "age": "Todas", "title": "Circuitos Familiares", "description": "Secciones de dificultad mixta donde las familias pueden entrenar juntas." }
+        "kids": {
+          "age": "6-12",
+          "title": "Ninjas Junior",
+          "description": "Obstáculos escalados con acolchado extra para construir confianza."
+        },
+        "teens": {
+          "age": "13-17",
+          "title": "Guerreros Adolescentes",
+          "description": "Desafíos intermedios con variedad completa de obstáculos."
+        },
+        "adults": {
+          "age": "18+",
+          "title": "Atletas Adultos",
+          "description": "Obstáculos de grado competición completo para entrenamiento serio."
+        },
+        "family": {
+          "age": "Todas",
+          "title": "Circuitos Familiares",
+          "description": "Secciones de dificultad mixta donde las familias pueden entrenar juntas."
+        }
       },
       "processSection": {
         "sectionLabel": "Nuestro Proceso",
         "title": "Del Concepto a",
         "titleHighlight": "Listo para Competir",
         "description": "Te guiamos en cada paso de crear tu instalación ninja warrior profesional.",
-        "consultation": { "step": "1", "title": "Consulta", "description": "Comparte tu visión, dimensiones y audiencia objetivo." },
-        "design": { "step": "2", "title": "Diseño 3D", "description": "Recibe renderizados 3D profesionales con ubicación óptima de obstáculos." },
-        "production": { "step": "3", "title": "Fabricación", "description": "Producción de equipos premium con materiales comerciales." },
-        "shipping": { "step": "4", "title": "Envío Global", "description": "Empaque y logística profesional con entrega puerta a puerta." },
-        "installation": { "step": "5", "title": "Instalación", "description": "Guías detalladas con tutoriales en video o instalación en sitio." },
-        "support": { "step": "6", "title": "Postventa", "description": "Garantía de 3 años con soporte técnico de por vida." }
+        "consultation": {
+          "step": "1",
+          "title": "Consulta",
+          "description": "Comparte tu visión, dimensiones y audiencia objetivo."
+        },
+        "design": {
+          "step": "2",
+          "title": "Diseño 3D",
+          "description": "Recibe renderizados 3D profesionales con ubicación óptima de obstáculos."
+        },
+        "production": {
+          "step": "3",
+          "title": "Fabricación",
+          "description": "Producción de equipos premium con materiales comerciales."
+        },
+        "shipping": {
+          "step": "4",
+          "title": "Envío Global",
+          "description": "Empaque y logística profesional con entrega puerta a puerta."
+        },
+        "installation": {
+          "step": "5",
+          "title": "Instalación",
+          "description": "Guías detalladas con tutoriales en video o instalación en sitio."
+        },
+        "support": {
+          "step": "6",
+          "title": "Postventa",
+          "description": "Garantía de 3 años con soporte técnico de por vida."
+        }
       },
       "ctaSection": {
         "title": "¿Listo para Construir tu Circuito Ninja?",
@@ -1938,24 +2102,81 @@
     "titleHighlight": "Empresarios de Todo el Mundo",
     "description": "Escuche a nuestros clientes satisfechos que han transformado sus espacios en destinos de entretenimiento prósperos.",
     "items": [
-      { "quote": "NinescapeLand superó nuestras expectativas. El diseño 3D fue exactamente lo que imaginamos.", "name": "Michael Chen", "role": "Propietario", "company": "SkyJump Adventure Park", "location": "California, EE.UU." },
-      { "quote": "Desde la consulta inicial hasta la instalación final, el equipo fue receptivo y servicial.", "name": "Sarah Al-Hassan", "role": "CEO", "company": "FunZone Entertainment", "location": "Dubai, EAU" },
-      { "quote": "Hemos trabajado con varios fabricantes, pero NinescapeLand destaca por su atención al detalle.", "name": "Thomas Müller", "role": "Director", "company": "KinderWelt GmbH", "location": "Múnich, Alemania" },
-      { "quote": "El curso ninja se ha convertido en la atracción estrella de nuestro centro de fitness.", "name": "Emma Thompson", "role": "Gerente", "company": "Elite Athletics Club", "location": "Londres, Reino Unido" },
-      { "quote": "¡Excelente relación calidad-precio! El área de juego suave ha aumentado el tiempo de permanencia.", "name": "Carlos Rodriguez", "role": "Propietario", "company": "Familia Bistro", "location": "Madrid, España" },
-      { "quote": "El equipo nos ayudó a diseñar un FEC completo con múltiples zonas.", "name": "David Kim", "role": "Fundador", "company": "PlayWorld Adventures", "location": "Sídney, Australia" }
+      {
+        "quote": "NinescapeLand superó nuestras expectativas. El diseño 3D fue exactamente lo que imaginamos.",
+        "name": "Michael Chen",
+        "role": "Propietario",
+        "company": "SkyJump Adventure Park",
+        "location": "California, EE.UU."
+      },
+      {
+        "quote": "Desde la consulta inicial hasta la instalación final, el equipo fue receptivo y servicial.",
+        "name": "Sarah Al-Hassan",
+        "role": "CEO",
+        "company": "FunZone Entertainment",
+        "location": "Dubai, EAU"
+      },
+      {
+        "quote": "Hemos trabajado con varios fabricantes, pero NinescapeLand destaca por su atención al detalle.",
+        "name": "Thomas Müller",
+        "role": "Director",
+        "company": "KinderWelt GmbH",
+        "location": "Múnich, Alemania"
+      },
+      {
+        "quote": "El curso ninja se ha convertido en la atracción estrella de nuestro centro de fitness.",
+        "name": "Emma Thompson",
+        "role": "Gerente",
+        "company": "Elite Athletics Club",
+        "location": "Londres, Reino Unido"
+      },
+      {
+        "quote": "¡Excelente relación calidad-precio! El área de juego suave ha aumentado el tiempo de permanencia.",
+        "name": "Carlos Rodriguez",
+        "role": "Propietario",
+        "company": "Familia Bistro",
+        "location": "Madrid, España"
+      },
+      {
+        "quote": "El equipo nos ayudó a diseñar un FEC completo con múltiples zonas.",
+        "name": "David Kim",
+        "role": "Fundador",
+        "company": "PlayWorld Adventures",
+        "location": "Sídney, Australia"
+      }
     ]
   },
   "partners": {
     "sectionLabel": "Certificaciones y Socios",
     "title": "Certificado Globalmente, Confiable Localmente",
     "certifications": {
-      "iso": { "name": "ISO 9001:2015", "description": "Sistema de Gestión de Calidad" },
-      "astm": { "name": "ASTM F1918", "description": "Estándares de Seguridad de EE.UU." },
-      "en": { "name": "EN 1176 & 1177", "description": "Seguridad de Parques Infantiles Europeos" },
-      "tuv": { "name": "Certificado TÜV", "description": "Garantía de Calidad Alemana" }
+      "iso": {
+        "name": "ISO 9001:2015",
+        "description": "Sistema de Gestión de Calidad"
+      },
+      "astm": {
+        "name": "ASTM F1918",
+        "description": "Estándares de Seguridad de EE.UU."
+      },
+      "en": {
+        "name": "EN 1176 & 1177",
+        "description": "Seguridad de Parques Infantiles Europeos"
+      },
+      "tuv": {
+        "name": "Certificado TÜV",
+        "description": "Garantía de Calidad Alemana"
+      }
     },
-    "clients": ["FunZone USA", "SkyPark EU", "JumpWorld", "KidsParadise", "Adventure Hub", "PlayNation", "FEC Global", "Happy Kids"]
+    "clients": [
+      "FunZone USA",
+      "SkyPark EU",
+      "JumpWorld",
+      "KidsParadise",
+      "Adventure Hub",
+      "PlayNation",
+      "FEC Global",
+      "Happy Kids"
+    ]
   },
   "ctaBanner": {
     "badge": "🚀 ¿Listo para Transformar tu Espacio?",
@@ -1969,14 +2190,38 @@
     "title": "La Solución",
     "titleHighlight": "Llave en Mano Completa",
     "description": "Desde el concepto hasta la inauguración, manejamos todo para el éxito de tu proyecto.",
-    "customDesign": { "title": "Diseño 3D Personalizado", "description": "Diseño profesional gratuito adaptado a tu espacio" },
-    "safetyCertified": { "title": "Certificado de Seguridad", "description": "Equipo certificado ASTM, TÜV, EN, CE" },
-    "globalShipping": { "title": "Envío Global", "description": "Entrega puerta a puerta a más de 50 países" },
-    "installation": { "title": "Soporte de Instalación", "description": "Guía en sitio o servicio de instalación completo" },
-    "support": { "title": "Soporte 24/7", "description": "Gerente de proyecto dedicado y asistencia técnica" },
-    "fastDelivery": { "title": "Producción Rápida", "description": "Fabricación de 20-35 días con control de calidad" },
-    "warranty": { "title": "Garantía de 3 Años", "description": "Cobertura completa con soporte de piezas de por vida" },
-    "premiumMaterials": { "title": "Materiales Premium", "description": "Ecológicos, duraderos y fáciles de mantener" }
+    "customDesign": {
+      "title": "Diseño 3D Personalizado",
+      "description": "Diseño profesional gratuito adaptado a tu espacio"
+    },
+    "safetyCertified": {
+      "title": "Certificado de Seguridad",
+      "description": "Equipo certificado ASTM, TÜV, EN, CE"
+    },
+    "globalShipping": {
+      "title": "Envío Global",
+      "description": "Entrega puerta a puerta a más de 50 países"
+    },
+    "installation": {
+      "title": "Soporte de Instalación",
+      "description": "Guía en sitio o servicio de instalación completo"
+    },
+    "support": {
+      "title": "Soporte 24/7",
+      "description": "Gerente de proyecto dedicado y asistencia técnica"
+    },
+    "fastDelivery": {
+      "title": "Producción Rápida",
+      "description": "Fabricación de 20-35 días con control de calidad"
+    },
+    "warranty": {
+      "title": "Garantía de 3 Años",
+      "description": "Cobertura completa con soporte de piezas de por vida"
+    },
+    "premiumMaterials": {
+      "title": "Materiales Premium",
+      "description": "Ecológicos, duraderos y fáciles de mantener"
+    }
   },
   "liveChat": {
     "open": "Abrir chat",
@@ -2118,11 +2363,26 @@
     "resultNote": "El precio final depende de la complejidad del diseño, tema y requisitos de instalación",
     "ctaBtn": "Obtener Cotización Precisa",
     "productTypes": {
-      "indoor-playground": { "name": "Parque Infantil Interior", "description": "Estructuras de juego multinivel" },
-      "trampoline-park": { "name": "Parque de Trampolines", "description": "Soluciones completas de trampolín" },
-      "ninja-course": { "name": "Curso Ninja Warrior", "description": "Cursos de obstáculos profesionales" },
-      "soft-play": { "name": "Área de Juego Suave", "description": "Equipamiento para niños pequeños" },
-      "fec": { "name": "Centro de Entretenimiento Familiar", "description": "Soluciones FEC completas" }
+      "indoor-playground": {
+        "name": "Parque Infantil Interior",
+        "description": "Estructuras de juego multinivel"
+      },
+      "trampoline-park": {
+        "name": "Parque de Trampolines",
+        "description": "Soluciones completas de trampolín"
+      },
+      "ninja-course": {
+        "name": "Curso Ninja Warrior",
+        "description": "Cursos de obstáculos profesionales"
+      },
+      "soft-play": {
+        "name": "Área de Juego Suave",
+        "description": "Equipamiento para niños pequeños"
+      },
+      "fec": {
+        "name": "Centro de Entretenimiento Familiar",
+        "description": "Soluciones FEC completas"
+      }
     },
     "qualityLevels": {
       "standard": "Estándar",
@@ -2204,60 +2464,1213 @@
   },
   "officeWellness": {
     "breadcrumb": "Soluciones de Bienestar para Oficinas",
-    "hero": { "badge": "Bienestar Laboral", "title": "Bienestar Laboral y", "titleHighlight": "Estructuras de Juego para Oficinas", "description": "Transforma tu entorno de oficina con estructuras de juego personalizadas para bienestar corporativo.", "cta": "Cotización Gratuita", "ctaSecondary": "Sobre Nosotros" },
-    "section1": { "badge": "Juego de Oficina Moderno", "title": "Revolucionando la Oficina Moderna con", "titleHighlight": "Zonas de Bienestar Lúdicas", "content": "El concepto de la 'Oficina Lúdica' está ganando terreno a nivel mundial. Proporcionamos estructuras de juego personalizadas diseñadas para entornos corporativos.", "features": { "stressReduction": "Áreas de juego probadas para reducir el estrés laboral y aumentar la creatividad", "corporateAesthetic": "Acabado profesional y diseños elegantes para la estética corporativa moderna", "multiGenerational": "Espacios multigeneracionales donde todos los empleados pueden recargar energías", "wellnessZones": "Transforma rincones de oficina subutilizados en vibrantes zonas de bienestar" } },
-    "section2": { "badge": "Soluciones Llave en Mano", "title": "Integración Perfecta y", "titleHighlight": "Soluciones Corporativas Llave en Mano", "content": "Nuestra solución llave en mano incluye todo, desde el diseño hasta la instalación.", "features": { "turnkey": "Solución llave en mano completa desde la consulta de diseño hasta la instalación final", "safetyCompliance": "Materiales no tóxicos e ignífugos que cumplen normas de seguridad corporativa", "ecoFriendly": "Plásticos ecológicos y materiales sostenibles para lugares de trabajo responsables", "detailedPlans": "Planos detallados para ajuste perfecto a las dimensiones y marca de tu oficina" }, "cta": "Solicitar Diseño Gratuito" },
-    "section3": { "badge": "Impacto Empresarial", "title": "El Caso de Negocio: ROI de", "titleHighlight": "Áreas de Juego en Oficinas", "content": "Invertir en áreas de juego es un movimiento estratégico para la retención de talento.", "features": { "talentRetention": "Inversión estratégica que reduce la rotación y aumenta la productividad", "bulkDiscount": "Paquetes de descuento por volumen para sedes con múltiples ubicaciones", "warranty": "Garantía postventa integral que protege tu inversión corporativa", "teamBuilding": "Cursos ninja y áreas de juego para eventos de team building corporativo" } },
-    "faq": { "badge": "FAQ", "title": "Preguntas", "titleHighlight": "Frecuentes", "q1": { "question": "¿Pueden diseñar áreas de juego para espacios pequeños?", "answer": "Por supuesto. Nos especializamos en soluciones compactas y modulares para salas de descanso o vestíbulos." }, "q2": { "question": "¿El equipo es adecuado para adultos?", "answer": "Sí, ofrecemos estructuras reforzadas para soportar el peso de adultos en zonas de team building." }, "q3": { "question": "¿Cómo obtengo un presupuesto?", "answer": "Contacte a nuestro equipo de ventas o descargue nuestro catálogo. Ofrecemos descuentos por volumen." } }
+    "hero": {
+      "badge": "Bienestar Laboral",
+      "title": "Bienestar Laboral y",
+      "titleHighlight": "Estructuras de Juego para Oficinas",
+      "description": "Transforma tu entorno de oficina con estructuras de juego personalizadas para bienestar corporativo.",
+      "cta": "Cotización Gratuita",
+      "ctaSecondary": "Sobre Nosotros"
+    },
+    "section1": {
+      "badge": "Juego de Oficina Moderno",
+      "title": "Revolucionando la Oficina Moderna con",
+      "titleHighlight": "Zonas de Bienestar Lúdicas",
+      "content": "El concepto de la 'Oficina Lúdica' está ganando terreno a nivel mundial. Proporcionamos estructuras de juego personalizadas diseñadas para entornos corporativos.",
+      "features": {
+        "stressReduction": "Áreas de juego probadas para reducir el estrés laboral y aumentar la creatividad",
+        "corporateAesthetic": "Acabado profesional y diseños elegantes para la estética corporativa moderna",
+        "multiGenerational": "Espacios multigeneracionales donde todos los empleados pueden recargar energías",
+        "wellnessZones": "Transforma rincones de oficina subutilizados en vibrantes zonas de bienestar"
+      }
+    },
+    "section2": {
+      "badge": "Soluciones Llave en Mano",
+      "title": "Integración Perfecta y",
+      "titleHighlight": "Soluciones Corporativas Llave en Mano",
+      "content": "Nuestra solución llave en mano incluye todo, desde el diseño hasta la instalación.",
+      "features": {
+        "turnkey": "Solución llave en mano completa desde la consulta de diseño hasta la instalación final",
+        "safetyCompliance": "Materiales no tóxicos e ignífugos que cumplen normas de seguridad corporativa",
+        "ecoFriendly": "Plásticos ecológicos y materiales sostenibles para lugares de trabajo responsables",
+        "detailedPlans": "Planos detallados para ajuste perfecto a las dimensiones y marca de tu oficina"
+      },
+      "cta": "Solicitar Diseño Gratuito"
+    },
+    "section3": {
+      "badge": "Impacto Empresarial",
+      "title": "El Caso de Negocio: ROI de",
+      "titleHighlight": "Áreas de Juego en Oficinas",
+      "content": "Invertir en áreas de juego es un movimiento estratégico para la retención de talento.",
+      "features": {
+        "talentRetention": "Inversión estratégica que reduce la rotación y aumenta la productividad",
+        "bulkDiscount": "Paquetes de descuento por volumen para sedes con múltiples ubicaciones",
+        "warranty": "Garantía postventa integral que protege tu inversión corporativa",
+        "teamBuilding": "Cursos ninja y áreas de juego para eventos de team building corporativo"
+      }
+    },
+    "faq": {
+      "badge": "FAQ",
+      "title": "Preguntas",
+      "titleHighlight": "Frecuentes",
+      "q1": {
+        "question": "¿Pueden diseñar áreas de juego para espacios pequeños?",
+        "answer": "Por supuesto. Nos especializamos en soluciones compactas y modulares para salas de descanso o vestíbulos."
+      },
+      "q2": {
+        "question": "¿El equipo es adecuado para adultos?",
+        "answer": "Sí, ofrecemos estructuras reforzadas para soportar el peso de adultos en zonas de team building."
+      },
+      "q3": {
+        "question": "¿Cómo obtengo un presupuesto?",
+        "answer": "Contacte a nuestro equipo de ventas o descargue nuestro catálogo. Ofrecemos descuentos por volumen."
+      }
+    }
   },
   "softPlayMall": {
     "breadcrumb": "Soft Play para Centros Comerciales",
-    "hero": { "badge": "Soluciones para Centros Comerciales", "title": "Equipos Premium de Soft Play", "titleHighlight": "Soluciones para Centros Comerciales", "description": "Transforme espacios comerciales vacíos en centros familiares de alto tráfico con equipos de soft play profesionalmente diseñados, duraderos y seguros.", "cta": "Cotización Gratuita", "ctaSecondary": "Ver Productos de Soft Play" },
-    "stats": { "dwellTime": "Aumento promedio en el tiempo de permanencia por visita familiar", "friction": "Ciclos de fricción probados en materiales PVC personalizados", "parents": "Los padres prefieren centros comerciales con áreas de juego de calidad", "footfall": "Aumento de afluencia los fines de semana con zonas de juego dedicadas" },
-    "section1": { "badge": "Transformación Retail", "title": "Transformando Espacios Comerciales en", "titleHighlight": "Destinos Familiares", "content": "En el panorama cambiante del comercio minorista moderno, los centros comerciales están pasando de ser simples centros de transacciones a destinos de estilo de vida integrales. indoorplaygroundsolution ofrece equipos de soft play de última generación diseñados para cautivar a las familias jóvenes y aumentar significativamente el tiempo de permanencia. Al integrar un área de juego diseñada profesionalmente, los operadores de centros comerciales pueden ver una correlación directa entre el compromiso familiar y el aumento del gasto secundario en patios de comida y establecimientos minoristas cercanos. Nuestras soluciones se centran en estructuras de espuma de alta densidad cubiertas con PVC premium no tóxico, garantizando que el área de juego permanezca vibrante y segura incluso bajo las condiciones de alto tráfico típicas de los grandes centros comerciales. Invertir en una solución de soft play no es solo entretenimiento; es un movimiento estratégico para asegurar la lealtad a largo plazo del grupo demográfico más influyente: los padres.", "features": { "footfall": "Aumento del 20-30% en la afluencia de fin de semana para centros con zonas de juego de calidad", "themes": "Temas personalizados desde aventuras submarinas hasta estaciones espaciales futuristas", "safety": "Todas las instalaciones cumplen con estrictos estándares de seguridad ASTM y EN", "anchor": "Ancla estratégica que impulsa el tráfico peatonal y aumenta el tiempo de permanencia" } },
-    "section2": { "badge": "Durabilidad y ROI", "title": "Maximizando el ROI con", "titleHighlight": "Diseños Duraderos y de Bajo Mantenimiento", "content": "La durabilidad es la piedra angular de cualquier instalación de juego comercial exitosa. indoorplaygroundsolution utiliza técnicas de fabricación avanzadas para crear equipos que resisten el desgaste y la decoloración. Nuestros componentes de soft play están diseñados para una limpieza fácil, vital para mantener la higiene en espacios públicos. El retorno de inversión se realiza a través del aumento de visitas recurrentes. Ofrecemos servicios llave en mano completos, incluyendo evaluación del sitio, diseño CAD personalizado, fabricación e instalación profesional.", "features": { "manufacturing": "Técnicas de fabricación avanzadas para resistencia al desgaste y decoloración", "cleaning": "Componentes fáciles de limpiar, vitales para la higiene en espacios públicos", "layout": "Diseños estratégicos que optimizan el flujo de tráfico en el ecosistema del centro comercial", "turnkey": "Servicios llave en mano: evaluación del sitio, diseño CAD, fabricación e instalación" }, "cta": "Inicie la Transformación de su Centro Comercial" },
+    "hero": {
+      "badge": "Soluciones para Centros Comerciales",
+      "title": "Equipos Premium de Soft Play",
+      "titleHighlight": "Soluciones para Centros Comerciales",
+      "description": "Transforme espacios comerciales vacíos en centros familiares de alto tráfico con equipos de soft play profesionalmente diseñados, duraderos y seguros.",
+      "cta": "Cotización Gratuita",
+      "ctaSecondary": "Ver Productos de Soft Play"
+    },
+    "stats": {
+      "dwellTime": "Aumento promedio en el tiempo de permanencia por visita familiar",
+      "friction": "Ciclos de fricción probados en materiales PVC personalizados",
+      "parents": "Los padres prefieren centros comerciales con áreas de juego de calidad",
+      "footfall": "Aumento de afluencia los fines de semana con zonas de juego dedicadas"
+    },
+    "section1": {
+      "badge": "Transformación Retail",
+      "title": "Transformando Espacios Comerciales en",
+      "titleHighlight": "Destinos Familiares",
+      "content": "En el panorama cambiante del comercio minorista moderno, los centros comerciales están pasando de ser simples centros de transacciones a destinos de estilo de vida integrales. indoorplaygroundsolution ofrece equipos de soft play de última generación diseñados para cautivar a las familias jóvenes y aumentar significativamente el tiempo de permanencia. Al integrar un área de juego diseñada profesionalmente, los operadores de centros comerciales pueden ver una correlación directa entre el compromiso familiar y el aumento del gasto secundario en patios de comida y establecimientos minoristas cercanos. Nuestras soluciones se centran en estructuras de espuma de alta densidad cubiertas con PVC premium no tóxico, garantizando que el área de juego permanezca vibrante y segura incluso bajo las condiciones de alto tráfico típicas de los grandes centros comerciales. Invertir en una solución de soft play no es solo entretenimiento; es un movimiento estratégico para asegurar la lealtad a largo plazo del grupo demográfico más influyente: los padres.",
+      "features": {
+        "footfall": "Aumento del 20-30% en la afluencia de fin de semana para centros con zonas de juego de calidad",
+        "themes": "Temas personalizados desde aventuras submarinas hasta estaciones espaciales futuristas",
+        "safety": "Todas las instalaciones cumplen con estrictos estándares de seguridad ASTM y EN",
+        "anchor": "Ancla estratégica que impulsa el tráfico peatonal y aumenta el tiempo de permanencia"
+      }
+    },
+    "section2": {
+      "badge": "Durabilidad y ROI",
+      "title": "Maximizando el ROI con",
+      "titleHighlight": "Diseños Duraderos y de Bajo Mantenimiento",
+      "content": "La durabilidad es la piedra angular de cualquier instalación de juego comercial exitosa. indoorplaygroundsolution utiliza técnicas de fabricación avanzadas para crear equipos que resisten el desgaste y la decoloración. Nuestros componentes de soft play están diseñados para una limpieza fácil, vital para mantener la higiene en espacios públicos. El retorno de inversión se realiza a través del aumento de visitas recurrentes. Ofrecemos servicios llave en mano completos, incluyendo evaluación del sitio, diseño CAD personalizado, fabricación e instalación profesional.",
+      "features": {
+        "manufacturing": "Técnicas de fabricación avanzadas para resistencia al desgaste y decoloración",
+        "cleaning": "Componentes fáciles de limpiar, vitales para la higiene en espacios públicos",
+        "layout": "Diseños estratégicos que optimizan el flujo de tráfico en el ecosistema del centro comercial",
+        "turnkey": "Servicios llave en mano: evaluación del sitio, diseño CAD, fabricación e instalación"
+      },
+      "cta": "Inicie la Transformación de su Centro Comercial"
+    },
     "relatedTitle": "Soluciones Relacionadas",
-    "relatedLinks": { "softPlay": "Equipos de Soft Play", "process": "Nuestro Proceso", "caseStudies": "Casos de Estudio", "allProducts": "Todos los Productos" },
-    "faq": { "badge": "FAQ", "title": "Preguntas", "titleHighlight": "Frecuentes", "q1": { "question": "¿Cuánto tiempo tarda la instalación de un área de soft play en un centro comercial?", "answer": "Dependiendo de la complejidad y el tamaño, la mayoría de las instalaciones tardan entre 7 y 14 días. Trabajamos fuera del horario de operación del centro comercial para minimizar las interrupciones." }, "q2": { "question": "¿Sus materiales de soft play son ignífugos?", "answer": "Sí, todos los materiales que utilizamos, incluyendo espuma de alta densidad y cubiertas de vinilo, cumplen con estándares internacionales de seguridad contra incendios como BS 5852 y California Technical Bulletin 117." }, "q3": { "question": "¿Qué tipo de ROI puede esperar un centro comercial?", "answer": "Los datos indican que los centros comerciales con zonas de juego dedicadas y de alta calidad experimentan un aumento del 20-30% en la afluencia de fin de semana. El período promedio de ROI es de 18-24 meses." }, "q4": { "question": "¿Pueden personalizar el tema para que coincida con la marca del centro comercial?", "answer": "Por supuesto. Nos especializamos en crear temas personalizados—desde aventuras submarinas hasta estaciones espaciales futuristas—que se alinean con la marca y requisitos estéticos de su centro comercial." } }
+    "relatedLinks": {
+      "softPlay": "Equipos de Soft Play",
+      "process": "Nuestro Proceso",
+      "caseStudies": "Casos de Estudio",
+      "allProducts": "Todos los Productos"
+    },
+    "faq": {
+      "badge": "FAQ",
+      "title": "Preguntas",
+      "titleHighlight": "Frecuentes",
+      "q1": {
+        "question": "¿Cuánto tiempo tarda la instalación de un área de soft play en un centro comercial?",
+        "answer": "Dependiendo de la complejidad y el tamaño, la mayoría de las instalaciones tardan entre 7 y 14 días. Trabajamos fuera del horario de operación del centro comercial para minimizar las interrupciones."
+      },
+      "q2": {
+        "question": "¿Sus materiales de soft play son ignífugos?",
+        "answer": "Sí, todos los materiales que utilizamos, incluyendo espuma de alta densidad y cubiertas de vinilo, cumplen con estándares internacionales de seguridad contra incendios como BS 5852 y California Technical Bulletin 117."
+      },
+      "q3": {
+        "question": "¿Qué tipo de ROI puede esperar un centro comercial?",
+        "answer": "Los datos indican que los centros comerciales con zonas de juego dedicadas y de alta calidad experimentan un aumento del 20-30% en la afluencia de fin de semana. El período promedio de ROI es de 18-24 meses."
+      },
+      "q4": {
+        "question": "¿Pueden personalizar el tema para que coincida con la marca del centro comercial?",
+        "answer": "Por supuesto. Nos especializamos en crear temas personalizados—desde aventuras submarinas hasta estaciones espaciales futuristas—que se alinean con la marca y requisitos estéticos de su centro comercial."
+      }
+    }
   },
   "trampolineParkFEC": {
     "breadcrumb": "Parque de Trampolines para FECs",
-    "hero": { "badge": "Soluciones para FEC", "title": "Parques de Trampolines de Alto Rendimiento", "titleHighlight": "Soluciones para Centros de Entretenimiento Familiar", "description": "Módulos completos de parques de trampolines llave en mano que se integran perfectamente en centros de entretenimiento, impulsando visitas repetidas y maximizando ingresos.", "cta": "Cotización Gratuita", "ctaSecondary": "Ver Parques de Trampolines" },
-    "stats": { "revenue": "Mayores ingresos por m² vs. espacios de arcade tradicionales", "lifespan": "Vida útil extendida con marcos de acero con recubrimiento antioxidante", "impact": "Reducción de fuerza de impacto con tecnología patentada de foso de espuma", "fecRevenue": "Aumento general de ingresos del FEC con integración de parque de trampolines" },
-    "section1": { "badge": "Atracciones de Alta Energía", "title": "Elevando la Experiencia FEC con", "titleHighlight": "Atracciones de Alta Energía", "content": "Los Centros de Entretenimiento Familiar requieren atracciones de alta capacidad y alta energía para mantenerse competitivos. indoorplaygroundsolution ofrece módulos integrales de parques de trampolines que se integran perfectamente en centros de entretenimiento más grandes. Nuestros sistemas están diseñados para atender a un amplio rango de edades, desde niños pequeños en zonas de salto dedicadas hasta adolescentes y adultos que buscan acción de salto de pared a pared. Priorizamos la integridad estructural y la seguridad—nuestros marcos están construidos con acero galvanizado de alta resistencia. Al incorporar elementos diversos como canchas de dodgeball, zonas de slam dunk y fosos de espuma, ayudamos a crear una experiencia multifacética que fomenta las visitas repetidas.", "features": { "zones": "Zonas multifacéticas: canchas de dodgeball, zonas de slam dunk y fosos de espuma", "steel": "Marcos de acero galvanizado de alta resistencia con colchonetas de salto de clase mundial", "footage": "Máximo metraje 'saltable' con estrictos márgenes de seguridad", "ageRange": "Diseñado para amplio rango de edades desde niños pequeños hasta adultos" } },
-    "section2": { "badge": "Seguridad y Rentabilidad", "title": "Ingeniería de Seguridad y", "titleHighlight": "Métricas de Rentabilidad", "content": "La seguridad es la preocupación principal para cualquier operador de parque de trampolines. indoorplaygroundsolution va más allá de lo básico, incorporando sistemas de seguridad redundantes incluyendo redes secundarias, acolchado grueso que superpone las zonas de resortes y camas de aire de alto impacto. Proporcionamos manuales de seguridad detallados y protocolos de capacitación del personal. Desde el punto de vista de la rentabilidad, nuestros diseños se centran en el 'flujo'—minimizando tiempos de espera y maximizando el número de saltadores por hora. Nuestros diseños modulares permiten futuras expansiones.", "features": { "redundant": "Sistemas de seguridad redundantes: redes secundarias, acolchado superpuesto y camas de aire", "flow": "Diseños optimizados para el flujo que minimizan tiempos de espera y maximizan saltadores por hora", "modular": "Diseños modulares que permiten futuras expansiones a medida que su negocio crece", "digital": "Compatibilidad con sistemas de check-in digital y gestión de exenciones" }, "cta": "Obtener Consulta Gratuita" },
+    "hero": {
+      "badge": "Soluciones para FEC",
+      "title": "Parques de Trampolines de Alto Rendimiento",
+      "titleHighlight": "Soluciones para Centros de Entretenimiento Familiar",
+      "description": "Módulos completos de parques de trampolines llave en mano que se integran perfectamente en centros de entretenimiento, impulsando visitas repetidas y maximizando ingresos.",
+      "cta": "Cotización Gratuita",
+      "ctaSecondary": "Ver Parques de Trampolines"
+    },
+    "stats": {
+      "revenue": "Mayores ingresos por m² vs. espacios de arcade tradicionales",
+      "lifespan": "Vida útil extendida con marcos de acero con recubrimiento antioxidante",
+      "impact": "Reducción de fuerza de impacto con tecnología patentada de foso de espuma",
+      "fecRevenue": "Aumento general de ingresos del FEC con integración de parque de trampolines"
+    },
+    "section1": {
+      "badge": "Atracciones de Alta Energía",
+      "title": "Elevando la Experiencia FEC con",
+      "titleHighlight": "Atracciones de Alta Energía",
+      "content": "Los Centros de Entretenimiento Familiar requieren atracciones de alta capacidad y alta energía para mantenerse competitivos. indoorplaygroundsolution ofrece módulos integrales de parques de trampolines que se integran perfectamente en centros de entretenimiento más grandes. Nuestros sistemas están diseñados para atender a un amplio rango de edades, desde niños pequeños en zonas de salto dedicadas hasta adolescentes y adultos que buscan acción de salto de pared a pared. Priorizamos la integridad estructural y la seguridad—nuestros marcos están construidos con acero galvanizado de alta resistencia. Al incorporar elementos diversos como canchas de dodgeball, zonas de slam dunk y fosos de espuma, ayudamos a crear una experiencia multifacética que fomenta las visitas repetidas.",
+      "features": {
+        "zones": "Zonas multifacéticas: canchas de dodgeball, zonas de slam dunk y fosos de espuma",
+        "steel": "Marcos de acero galvanizado de alta resistencia con colchonetas de salto de clase mundial",
+        "footage": "Máximo metraje 'saltable' con estrictos márgenes de seguridad",
+        "ageRange": "Diseñado para amplio rango de edades desde niños pequeños hasta adultos"
+      }
+    },
+    "section2": {
+      "badge": "Seguridad y Rentabilidad",
+      "title": "Ingeniería de Seguridad y",
+      "titleHighlight": "Métricas de Rentabilidad",
+      "content": "La seguridad es la preocupación principal para cualquier operador de parque de trampolines. indoorplaygroundsolution va más allá de lo básico, incorporando sistemas de seguridad redundantes incluyendo redes secundarias, acolchado grueso que superpone las zonas de resortes y camas de aire de alto impacto. Proporcionamos manuales de seguridad detallados y protocolos de capacitación del personal. Desde el punto de vista de la rentabilidad, nuestros diseños se centran en el 'flujo'—minimizando tiempos de espera y maximizando el número de saltadores por hora. Nuestros diseños modulares permiten futuras expansiones.",
+      "features": {
+        "redundant": "Sistemas de seguridad redundantes: redes secundarias, acolchado superpuesto y camas de aire",
+        "flow": "Diseños optimizados para el flujo que minimizan tiempos de espera y maximizan saltadores por hora",
+        "modular": "Diseños modulares que permiten futuras expansiones a medida que su negocio crece",
+        "digital": "Compatibilidad con sistemas de check-in digital y gestión de exenciones"
+      },
+      "cta": "Obtener Consulta Gratuita"
+    },
     "relatedTitle": "Soluciones Relacionadas",
-    "relatedLinks": { "trampolinePark": "Equipos de Parque de Trampolines", "process": "Nuestro Proceso", "caseStudies": "Casos de Estudio", "allProducts": "Todos los Productos" },
-    "faq": { "badge": "FAQ", "title": "Preguntas", "titleHighlight": "Frecuentes", "q1": { "question": "¿Cuál es el ROI típico para una instalación de parque de trampolines?", "answer": "La mayoría de los operadores de FEC reportan un retorno completo de la inversión en 12 a 18 meses, dependiendo de la ubicación y los esfuerzos de marketing." }, "q2": { "question": "¿Pueden personalizar los parques para edificios con formas irregulares?", "answer": "Absolutamente. Nos especializamos en diseños a medida que utilizan cada centímetro cuadrado disponible, independientemente de columnas estructurales o planos irregulares." }, "q3": { "question": "¿Qué grupos de edad pueden usar el parque de trampolines?", "answer": "Nuestros sistemas atienden a un amplio rango de edades, desde niños pequeños en zonas dedicadas hasta adolescentes y adultos que buscan acción de salto de alto rendimiento." }, "q4": { "question": "¿Cómo garantizan la seguridad en parques de alto tráfico?", "answer": "Incorporamos sistemas de seguridad redundantes incluyendo redes secundarias, acolchado grueso y camas de aire de alto impacto, junto con manuales de seguridad detallados y protocolos de capacitación." } }
+    "relatedLinks": {
+      "trampolinePark": "Equipos de Parque de Trampolines",
+      "process": "Nuestro Proceso",
+      "caseStudies": "Casos de Estudio",
+      "allProducts": "Todos los Productos"
+    },
+    "faq": {
+      "badge": "FAQ",
+      "title": "Preguntas",
+      "titleHighlight": "Frecuentes",
+      "q1": {
+        "question": "¿Cuál es el ROI típico para una instalación de parque de trampolines?",
+        "answer": "La mayoría de los operadores de FEC reportan un retorno completo de la inversión en 12 a 18 meses, dependiendo de la ubicación y los esfuerzos de marketing."
+      },
+      "q2": {
+        "question": "¿Pueden personalizar los parques para edificios con formas irregulares?",
+        "answer": "Absolutamente. Nos especializamos en diseños a medida que utilizan cada centímetro cuadrado disponible, independientemente de columnas estructurales o planos irregulares."
+      },
+      "q3": {
+        "question": "¿Qué grupos de edad pueden usar el parque de trampolines?",
+        "answer": "Nuestros sistemas atienden a un amplio rango de edades, desde niños pequeños en zonas dedicadas hasta adolescentes y adultos que buscan acción de salto de alto rendimiento."
+      },
+      "q4": {
+        "question": "¿Cómo garantizan la seguridad en parques de alto tráfico?",
+        "answer": "Incorporamos sistemas de seguridad redundantes incluyendo redes secundarias, acolchado grueso y camas de aire de alto impacto, junto con manuales de seguridad detallados y protocolos de capacitación."
+      }
+    }
   },
   "roiUK": {
     "breadcrumb": "Análisis ROI de Parques Infantiles en Reino Unido",
-    "hero": { "badge": "Análisis ROI - Reino Unido", "title": "Análisis Estratégico de ROI para Parques Infantiles", "titleHighlight": "en el Reino Unido", "description": "Descubra el ROI de los parques infantiles interiores en el Reino Unido. Perspectivas de mercado expertas y equipos de alta calidad para empresarios británicos.", "cta": "Cotización Gratuita", "ctaSecondary": "Ver Productos" },
-    "stats": { "marketValue": "Valor del Mercado de Juego Interior del Reino Unido", "roiMonths": "Meses Periodo Promedio de ROI", "compliance": "Estándar de Seguridad UK", "turnaround": "Plazo de Ejecución" },
-    "section1": { "badge": "Tendencias del Mercado", "title": "El Mercado de Juego Interior del Reino Unido:", "titleHighlight": "Tendencias y Oportunidades", "content": "La industria de juego interior del Reino Unido ha experimentado un aumento significativo en la demanda ya que los padres buscan entornos de alta calidad e independientes del clima para los niños. Con el modelo de negocio de Indoor Playground Solution UK, los inversores pueden acceder a un mercado valorado en más de £1 mil millones. Los parques infantiles interiores ofrecen una afluencia constante durante todo el año. Nos especializamos en maximizar sus ingresos por metro cuadrado. Nuestros datos indican que los centros británicos que utilizan nuestras estructuras de soft play personalizadas obtienen un ROI un 20% más rápido. Integramos conceptos 'comer y jugar' donde los servicios de cafetería de alto margen complementan el área de juego.", "features": { "eatAndPlay": "Conceptos integrados 'comer y jugar' con servicios de cafetería de alto margen", "fasterROI": "ROI un 20% más rápido con estructuras de soft play diseñadas a medida", "revenuePerSqft": "Ingresos maximizados por metro cuadrado con afluencia constante todo el año", "modularDesign": "Diseños modulares para actualizaciones fáciles y costos de mantenimiento reducidos" } },
-    "section2": { "badge": "Eficiencia Operativa", "title": "Optimización de Costos Operativos e", "titleHighlight": "Incentivos de Inversión", "content": "Operar en el Reino Unido requiere atención a la eficiencia energética y el cumplimiento de seguridad (BS EN 1176). Proporcionamos iluminación eficiente y materiales sostenibles que reducen las facturas de servicios. Nuestro equipo de gestión de proyectos garantiza una finalización rápida, un 15% más rápida que el promedio de la industria.", "features": { "energyEfficient": "Iluminación eficiente y materiales sostenibles que reducen facturas de servicios", "safetyCompliance": "Cumplimiento total de seguridad BS EN 1176 con orientación sobre regulaciones locales", "fasterCompletion": "Finalización de proyecto un 15% más rápida que el promedio de la industria", "localTeam": "Equipo específico del Reino Unido para regulaciones locales de zonificación y seguridad" }, "cta": "Obtener Consulta Gratuita" },
+    "hero": {
+      "badge": "Análisis ROI - Reino Unido",
+      "title": "Análisis Estratégico de ROI para Parques Infantiles",
+      "titleHighlight": "en el Reino Unido",
+      "description": "Descubra el ROI de los parques infantiles interiores en el Reino Unido. Perspectivas de mercado expertas y equipos de alta calidad para empresarios británicos.",
+      "cta": "Cotización Gratuita",
+      "ctaSecondary": "Ver Productos"
+    },
+    "stats": {
+      "marketValue": "Valor del Mercado de Juego Interior del Reino Unido",
+      "roiMonths": "Meses Periodo Promedio de ROI",
+      "compliance": "Estándar de Seguridad UK",
+      "turnaround": "Plazo de Ejecución"
+    },
+    "section1": {
+      "badge": "Tendencias del Mercado",
+      "title": "El Mercado de Juego Interior del Reino Unido:",
+      "titleHighlight": "Tendencias y Oportunidades",
+      "content": "La industria de juego interior del Reino Unido ha experimentado un aumento significativo en la demanda ya que los padres buscan entornos de alta calidad e independientes del clima para los niños. Con el modelo de negocio de Indoor Playground Solution UK, los inversores pueden acceder a un mercado valorado en más de £1 mil millones. Los parques infantiles interiores ofrecen una afluencia constante durante todo el año. Nos especializamos en maximizar sus ingresos por metro cuadrado. Nuestros datos indican que los centros británicos que utilizan nuestras estructuras de soft play personalizadas obtienen un ROI un 20% más rápido. Integramos conceptos 'comer y jugar' donde los servicios de cafetería de alto margen complementan el área de juego.",
+      "features": {
+        "eatAndPlay": "Conceptos integrados 'comer y jugar' con servicios de cafetería de alto margen",
+        "fasterROI": "ROI un 20% más rápido con estructuras de soft play diseñadas a medida",
+        "revenuePerSqft": "Ingresos maximizados por metro cuadrado con afluencia constante todo el año",
+        "modularDesign": "Diseños modulares para actualizaciones fáciles y costos de mantenimiento reducidos"
+      }
+    },
+    "section2": {
+      "badge": "Eficiencia Operativa",
+      "title": "Optimización de Costos Operativos e",
+      "titleHighlight": "Incentivos de Inversión",
+      "content": "Operar en el Reino Unido requiere atención a la eficiencia energética y el cumplimiento de seguridad (BS EN 1176). Proporcionamos iluminación eficiente y materiales sostenibles que reducen las facturas de servicios. Nuestro equipo de gestión de proyectos garantiza una finalización rápida, un 15% más rápida que el promedio de la industria.",
+      "features": {
+        "energyEfficient": "Iluminación eficiente y materiales sostenibles que reducen facturas de servicios",
+        "safetyCompliance": "Cumplimiento total de seguridad BS EN 1176 con orientación sobre regulaciones locales",
+        "fasterCompletion": "Finalización de proyecto un 15% más rápida que el promedio de la industria",
+        "localTeam": "Equipo específico del Reino Unido para regulaciones locales de zonificación y seguridad"
+      },
+      "cta": "Obtener Consulta Gratuita"
+    },
     "relatedTitle": "Recursos Relacionados",
-    "relatedLinks": { "ukMarket": "Guía del Mercado UK", "allProducts": "Todos los Productos", "process": "Nuestro Proceso", "caseStudies": "Casos de Estudio" },
-    "faq": { "badge": "FAQ", "title": "Preguntas", "titleHighlight": "Frecuentes", "q1": { "question": "¿Es legítimo el modelo de negocio de Indoor Playground Solution para el mercado del Reino Unido?", "answer": "Absolutamente. Indoor Playground Solution es un proveedor reconocido mundialmente de equipos de juego comerciales, totalmente conforme con los estándares de seguridad británicos BS EN 1176 y las regulaciones de construcción locales." }, "q2": { "question": "¿Cuál es el plazo típico de un proyecto de Indoor Playground Solution?", "answer": "Desde el diseño inicial hasta la instalación final, el proceso suele durar de 8 a 12 semanas, dependiendo de la complejidad y tamaño de la instalación." } }
+    "relatedLinks": {
+      "ukMarket": "Guía del Mercado UK",
+      "allProducts": "Todos los Productos",
+      "process": "Nuestro Proceso",
+      "caseStudies": "Casos de Estudio"
+    },
+    "faq": {
+      "badge": "FAQ",
+      "title": "Preguntas",
+      "titleHighlight": "Frecuentes",
+      "q1": {
+        "question": "¿Es legítimo el modelo de negocio de Indoor Playground Solution para el mercado del Reino Unido?",
+        "answer": "Absolutamente. Indoor Playground Solution es un proveedor reconocido mundialmente de equipos de juego comerciales, totalmente conforme con los estándares de seguridad británicos BS EN 1176 y las regulaciones de construcción locales."
+      },
+      "q2": {
+        "question": "¿Cuál es el plazo típico de un proyecto de Indoor Playground Solution?",
+        "answer": "Desde el diseño inicial hasta la instalación final, el proceso suele durar de 8 a 12 semanas, dependiendo de la complejidad y tamaño de la instalación."
+      }
+    }
   },
   "roiCanada": {
     "breadcrumb": "Análisis ROI de Parques Infantiles en Canadá",
-    "hero": { "badge": "Análisis ROI - Canadá", "title": "Optimización de Espacios de Juego Interior", "titleHighlight": "en Canadá", "description": "Maximice su inversión en Canadá. Diseños optimizados para centros familiares canadienses de alto tráfico.", "cta": "Cotización Gratuita", "ctaSecondary": "Ver Productos" },
-    "stats": { "winterSurge": "Aumento de Tráfico Invernal", "trafficIncrease": "Tráfico Invernal vs Estándar", "compliance": "Estándar de Seguridad Canadiense", "maintenance": "Plan de Mantenimiento Incluido" },
-    "section1": { "badge": "Perspectivas del Mercado", "title": "Navegando el Panorama Recreativo", "titleHighlight": "Canadiense", "content": "En Canadá, el clima juega un papel fundamental en el éxito de los centros de juego interior. Nuestras estrategias se centran en crear fuentes de ingresos durante todo el año, especialmente durante los largos meses de invierno. Los inversores se benefician de equipos probados para cambios extremos de temperatura. Nuestras instalaciones canadienses ven un aumento del 25% en el tráfico invernal. Nuestro enfoque en zonas de juego multifuncionales garantiza un alcance demográfico más amplio.", "features": { "yearRound": "Fuentes de ingresos durante todo el año con soluciones de juego optimizadas para el clima", "winterTraffic": "Aumento del 25% en tráfico invernal comparado con instalaciones recreativas estándar", "multiFunctional": "Zonas de juego multifuncionales incluyendo áreas para niños pequeños y cursos ninja", "broadDemographic": "Alcance demográfico más amplio como primera opción para familias canadienses" } },
-    "section2": { "badge": "Valor y Cumplimiento", "title": "Maximizando el Valor con", "titleHighlight": "Incentivos de Equipamiento", "content": "Para apoyar a nuevos emprendedores, ofrecemos un paquete de bienvenida integral que incluye diseño de planta y un programa de mantenimiento de 12 meses. Nuestro equipo proporciona incentivos localizados para compensar costos de envío y aranceles. Nos enorgullecemos de la transparencia en certificaciones de seguridad (CSA Z614). Nuestra app permite a los propietarios monitorear el estado del equipo en tiempo real.", "features": { "welcomePackage": "Paquete de bienvenida integral con diseño de planta y mantenimiento de 12 meses", "safetyCompliance": "Certificación de seguridad CSA Z614 completa cumpliendo todos los requisitos provinciales", "mobileApp": "Monitoreo de equipos en tiempo real vía app para mantenimiento proactivo", "localIncentives": "Incentivos localizados para compensar costos de envío y aranceles" }, "cta": "Obtener Consulta Gratuita" },
+    "hero": {
+      "badge": "Análisis ROI - Canadá",
+      "title": "Optimización de Espacios de Juego Interior",
+      "titleHighlight": "en Canadá",
+      "description": "Maximice su inversión en Canadá. Diseños optimizados para centros familiares canadienses de alto tráfico.",
+      "cta": "Cotización Gratuita",
+      "ctaSecondary": "Ver Productos"
+    },
+    "stats": {
+      "winterSurge": "Aumento de Tráfico Invernal",
+      "trafficIncrease": "Tráfico Invernal vs Estándar",
+      "compliance": "Estándar de Seguridad Canadiense",
+      "maintenance": "Plan de Mantenimiento Incluido"
+    },
+    "section1": {
+      "badge": "Perspectivas del Mercado",
+      "title": "Navegando el Panorama Recreativo",
+      "titleHighlight": "Canadiense",
+      "content": "En Canadá, el clima juega un papel fundamental en el éxito de los centros de juego interior. Nuestras estrategias se centran en crear fuentes de ingresos durante todo el año, especialmente durante los largos meses de invierno. Los inversores se benefician de equipos probados para cambios extremos de temperatura. Nuestras instalaciones canadienses ven un aumento del 25% en el tráfico invernal. Nuestro enfoque en zonas de juego multifuncionales garantiza un alcance demográfico más amplio.",
+      "features": {
+        "yearRound": "Fuentes de ingresos durante todo el año con soluciones de juego optimizadas para el clima",
+        "winterTraffic": "Aumento del 25% en tráfico invernal comparado con instalaciones recreativas estándar",
+        "multiFunctional": "Zonas de juego multifuncionales incluyendo áreas para niños pequeños y cursos ninja",
+        "broadDemographic": "Alcance demográfico más amplio como primera opción para familias canadienses"
+      }
+    },
+    "section2": {
+      "badge": "Valor y Cumplimiento",
+      "title": "Maximizando el Valor con",
+      "titleHighlight": "Incentivos de Equipamiento",
+      "content": "Para apoyar a nuevos emprendedores, ofrecemos un paquete de bienvenida integral que incluye diseño de planta y un programa de mantenimiento de 12 meses. Nuestro equipo proporciona incentivos localizados para compensar costos de envío y aranceles. Nos enorgullecemos de la transparencia en certificaciones de seguridad (CSA Z614). Nuestra app permite a los propietarios monitorear el estado del equipo en tiempo real.",
+      "features": {
+        "welcomePackage": "Paquete de bienvenida integral con diseño de planta y mantenimiento de 12 meses",
+        "safetyCompliance": "Certificación de seguridad CSA Z614 completa cumpliendo todos los requisitos provinciales",
+        "mobileApp": "Monitoreo de equipos en tiempo real vía app para mantenimiento proactivo",
+        "localIncentives": "Incentivos localizados para compensar costos de envío y aranceles"
+      },
+      "cta": "Obtener Consulta Gratuita"
+    },
     "relatedTitle": "Recursos Relacionados",
-    "relatedLinks": { "allProducts": "Todos los Productos", "process": "Nuestro Proceso", "caseStudies": "Casos de Estudio" },
-    "faq": { "badge": "FAQ", "title": "Preguntas", "titleHighlight": "Frecuentes", "q1": { "question": "¿Cómo maneja Indoor Playground Solution los estándares de seguridad canadienses?", "answer": "Todos nuestros equipos para el mercado canadiense se fabrican para cumplir o superar los estándares CSA Z614, garantizando un entorno seguro y primas de seguro más bajas." }, "q2": { "question": "¿Hay ofertas promocionales específicas para compradores canadienses?", "answer": "Sí, ofrecemos paquetes promocionales estacionales para compradores primerizos en Canadá que se pueden aplicar a paquetes completos de equipamiento." } }
+    "relatedLinks": {
+      "allProducts": "Todos los Productos",
+      "process": "Nuestro Proceso",
+      "caseStudies": "Casos de Estudio"
+    },
+    "faq": {
+      "badge": "FAQ",
+      "title": "Preguntas",
+      "titleHighlight": "Frecuentes",
+      "q1": {
+        "question": "¿Cómo maneja Indoor Playground Solution los estándares de seguridad canadienses?",
+        "answer": "Todos nuestros equipos para el mercado canadiense se fabrican para cumplir o superar los estándares CSA Z614, garantizando un entorno seguro y primas de seguro más bajas."
+      },
+      "q2": {
+        "question": "¿Hay ofertas promocionales específicas para compradores canadienses?",
+        "answer": "Sí, ofrecemos paquetes promocionales estacionales para compradores primerizos en Canadá que se pueden aplicar a paquetes completos de equipamiento."
+      }
+    }
   },
   "dynamicProduct": {
-    "quick": { "certified": "Certificación ASTM y TUV", "shipping": "Envío Mundial", "leadTime": "Plazo de 30-45 Días" },
-    "pricing": { "hint": "Precio personalizado según su proyecto", "free": "Diseño 3D Gratis + Cotización" },
-    "trust": { "certified": "Certificación Internacional", "certifiedDesc": "Certificados ASTM, EN1176, TUV para estándares de seguridad globales", "shipping": "Entrega Mundial", "shippingDesc": "Envío puerta a puerta a más de 80 países", "support": "Soporte de por Vida", "supportDesc": "Gerente de proyecto dedicado desde el primer día", "warranty": "Garantía de hasta 5 Años", "warrantyDesc": "Garantía líder en la industria para todos los equipos", "leadTime": "Plazo de 30-45 Días", "leadTimeDesc": "Producción rápida con estricto control de calidad", "installation": "Guía de Instalación", "installationDesc": "Soporte de instalación in situ o remoto incluido" },
-    "why": { "badge": "Por qué NinescapeLand", "title": "¿Por Qué Asociarse Con Nosotros?", "subtitle": "No somos solo proveedores de equipos — somos su socio integral para construir un negocio de entretenimiento rentable.", "customDesign": "Diseño 100% Personalizado", "customDesignDesc": "Cada proyecto se diseña de forma única para adaptarse al tamaño de su local, tema y demografía objetivo. Nuestro equipo de diseño interno crea impresionantes renderizados 3D antes de iniciar la producción.", "ownFactory": "Fábrica Propia de 20.000m²", "ownFactoryDesc": "Precios directos de fábrica sin intermediarios. Nuestra manufactura verticalmente integrada garantiza el control de calidad desde las materias primas hasta la instalación final.", "global": "500+ Proyectos en 60+ Países", "globalDesc": "La confianza de operadores en todo el mundo, desde EE.UU. hasta Oriente Medio, Europa hasta el Sudeste Asiático.", "turnkey": "Soluciones Llave en Mano", "turnkeyDesc": "Desde el concepto inicial y la planificación del local hasta la fabricación de equipos, envío e instalación — nos encargamos de todo el proceso.", "safety": "La Seguridad es Primero", "safetyDesc": "Todos los productos cumplen con estándares internacionales de seguridad incluyendo ASTM F1918, EN1176 y certificaciones TUV.", "roi": "Maximice su ROI", "roiDesc": "Planificación estratégica del diseño para maximizar la capacidad y los ingresos por metro cuadrado." },
-    "process": { "badge": "Cómo Funciona", "title": "Del Concepto a la Gran Apertura", "subtitle": "Nuestro proceso probado de 4 pasos ha ayudado a más de 500 clientes en todo el mundo a construir centros de entretenimiento exitosos.", "step1Title": "Consulta Gratuita", "step1Desc": "Comparta las dimensiones de su local, presupuesto y visión. Nuestros expertos analizarán su espacio y proporcionarán recomendaciones profesionales adaptadas a su mercado.", "step1Detail": "Respuesta en 2 horas durante días hábiles", "step2Title": "Diseño y Planificación 3D", "step2Desc": "Reciba renderizados 3D fotorrealistas y planos CAD de su parque infantil personalizado. Iteraremos el diseño hasta que esté 100% satisfecho — completamente gratis.", "step2Detail": "Revisiones ilimitadas sin costo adicional", "step3Title": "Fabricación y Control de Calidad", "step3Desc": "La producción comienza en nuestra fábrica certificada ISO con estrictos puntos de control de calidad.", "step3Detail": "30-45 días de producción con actualizaciones semanales", "step4Title": "Envío e Instalación", "step4Desc": "Entrega puerta a puerta con cobertura de seguro completa. Nuestro equipo proporciona guías de instalación detalladas o técnicos in situ.", "step4Detail": "Seguro completo + soporte de instalación incluido", "cta": "Inicie Su Consulta Gratuita" },
-    "gallery": { "badge": "Galería de Proyectos", "title": "Véalo en Acción", "subtitle": "Explore fotos reales de proyectos y renderizados 3D para visualizar su propio local." },
-    "midCta": { "title": "¿Listo Para Construir Su Local Soñado?", "desc": "Obtenga un diseño 3D personalizado gratuito y una cotización competitiva en 24 horas. Sin compromiso, sin costos ocultos.", "social": "Únase a más de 500 operadores exitosos que eligieron NinescapeLand como su socio de confianza.", "whatsapp": "Chatear por WhatsApp", "inquiry": "Enviar una Consulta" },
-    "faq": { "badge": "Preguntas Frecuentes", "title": "Preguntas Frecuentes", "subtitle": "Todo lo que necesita saber antes de iniciar su proyecto.", "q1": "¿Cuál es la cantidad mínima de pedido (MOQ)?", "a1": "Aceptamos pedidos desde un solo proyecto. Ya sea que necesite un área de juego suave de 50m² o un parque de trampolines de 5.000m², podemos satisfacer sus necesidades.", "q2": "¿Cuánto cuesta un parque infantil personalizado?", "a2": "El precio varía según el tamaño, la complejidad, la temática y la selección de equipos. Generalmente van de $150 a $400 por m². Contáctenos para una cotización sin compromiso en 24 horas.", "q3": "¿Proporcionan servicios de diseño 3D?", "a3": "¡Sí! Ofrecemos servicios gratuitos de diseño 3D y planos CAD con revisiones ilimitadas.", "q4": "¿Qué certificaciones de seguridad cumplen sus productos?", "a4": "ASTM F1918 (EE.UU.), EN1176 (Europa), AS4685 (Australia) y CSA Z614 (Canadá). También contamos con certificaciones TUV y SGS.", "q5": "¿Pueden enviar a mi país?", "a5": "¡Por supuesto! Enviamos a más de 80 países con entrega puerta a puerta incluida cobertura de seguro completa.", "q6": "¿Ofrecen servicios de instalación?", "a6": "Sí, brindamos soporte de instalación flexible: manuales detallados, guías en video, asistencia remota o técnicos in situ.", "moreQuestions": "¿Aún tiene preguntas? Nuestro equipo está listo para ayudarle.", "askUs": "Pregúntenos lo que Sea" }
+    "quick": {
+      "certified": "Certificación ASTM y TUV",
+      "shipping": "Envío Mundial",
+      "leadTime": "Plazo de 30-45 Días"
+    },
+    "pricing": {
+      "hint": "Precio personalizado según su proyecto",
+      "free": "Diseño 3D Gratis + Cotización"
+    },
+    "trust": {
+      "certified": "Certificación Internacional",
+      "certifiedDesc": "Certificados ASTM, EN1176, TUV para estándares de seguridad globales",
+      "shipping": "Entrega Mundial",
+      "shippingDesc": "Envío puerta a puerta a más de 80 países",
+      "support": "Soporte de por Vida",
+      "supportDesc": "Gerente de proyecto dedicado desde el primer día",
+      "warranty": "Garantía de hasta 5 Años",
+      "warrantyDesc": "Garantía líder en la industria para todos los equipos",
+      "leadTime": "Plazo de 30-45 Días",
+      "leadTimeDesc": "Producción rápida con estricto control de calidad",
+      "installation": "Guía de Instalación",
+      "installationDesc": "Soporte de instalación in situ o remoto incluido"
+    },
+    "why": {
+      "badge": "Por qué NinescapeLand",
+      "title": "¿Por Qué Asociarse Con Nosotros?",
+      "subtitle": "No somos solo proveedores de equipos — somos su socio integral para construir un negocio de entretenimiento rentable.",
+      "customDesign": "Diseño 100% Personalizado",
+      "customDesignDesc": "Cada proyecto se diseña de forma única para adaptarse al tamaño de su local, tema y demografía objetivo. Nuestro equipo de diseño interno crea impresionantes renderizados 3D antes de iniciar la producción.",
+      "ownFactory": "Fábrica Propia de 20.000m²",
+      "ownFactoryDesc": "Precios directos de fábrica sin intermediarios. Nuestra manufactura verticalmente integrada garantiza el control de calidad desde las materias primas hasta la instalación final.",
+      "global": "500+ Proyectos en 60+ Países",
+      "globalDesc": "La confianza de operadores en todo el mundo, desde EE.UU. hasta Oriente Medio, Europa hasta el Sudeste Asiático.",
+      "turnkey": "Soluciones Llave en Mano",
+      "turnkeyDesc": "Desde el concepto inicial y la planificación del local hasta la fabricación de equipos, envío e instalación — nos encargamos de todo el proceso.",
+      "safety": "La Seguridad es Primero",
+      "safetyDesc": "Todos los productos cumplen con estándares internacionales de seguridad incluyendo ASTM F1918, EN1176 y certificaciones TUV.",
+      "roi": "Maximice su ROI",
+      "roiDesc": "Planificación estratégica del diseño para maximizar la capacidad y los ingresos por metro cuadrado."
+    },
+    "process": {
+      "badge": "Cómo Funciona",
+      "title": "Del Concepto a la Gran Apertura",
+      "subtitle": "Nuestro proceso probado de 4 pasos ha ayudado a más de 500 clientes en todo el mundo a construir centros de entretenimiento exitosos.",
+      "step1Title": "Consulta Gratuita",
+      "step1Desc": "Comparta las dimensiones de su local, presupuesto y visión. Nuestros expertos analizarán su espacio y proporcionarán recomendaciones profesionales adaptadas a su mercado.",
+      "step1Detail": "Respuesta en 2 horas durante días hábiles",
+      "step2Title": "Diseño y Planificación 3D",
+      "step2Desc": "Reciba renderizados 3D fotorrealistas y planos CAD de su parque infantil personalizado. Iteraremos el diseño hasta que esté 100% satisfecho — completamente gratis.",
+      "step2Detail": "Revisiones ilimitadas sin costo adicional",
+      "step3Title": "Fabricación y Control de Calidad",
+      "step3Desc": "La producción comienza en nuestra fábrica certificada ISO con estrictos puntos de control de calidad.",
+      "step3Detail": "30-45 días de producción con actualizaciones semanales",
+      "step4Title": "Envío e Instalación",
+      "step4Desc": "Entrega puerta a puerta con cobertura de seguro completa. Nuestro equipo proporciona guías de instalación detalladas o técnicos in situ.",
+      "step4Detail": "Seguro completo + soporte de instalación incluido",
+      "cta": "Inicie Su Consulta Gratuita"
+    },
+    "gallery": {
+      "badge": "Galería de Proyectos",
+      "title": "Véalo en Acción",
+      "subtitle": "Explore fotos reales de proyectos y renderizados 3D para visualizar su propio local."
+    },
+    "midCta": {
+      "title": "¿Listo Para Construir Su Local Soñado?",
+      "desc": "Obtenga un diseño 3D personalizado gratuito y una cotización competitiva en 24 horas. Sin compromiso, sin costos ocultos.",
+      "social": "Únase a más de 500 operadores exitosos que eligieron NinescapeLand como su socio de confianza.",
+      "whatsapp": "Chatear por WhatsApp",
+      "inquiry": "Enviar una Consulta"
+    },
+    "faq": {
+      "badge": "Preguntas Frecuentes",
+      "title": "Preguntas Frecuentes",
+      "subtitle": "Todo lo que necesita saber antes de iniciar su proyecto.",
+      "q1": "¿Cuál es la cantidad mínima de pedido (MOQ)?",
+      "a1": "Aceptamos pedidos desde un solo proyecto. Ya sea que necesite un área de juego suave de 50m² o un parque de trampolines de 5.000m², podemos satisfacer sus necesidades.",
+      "q2": "¿Cuánto cuesta un parque infantil personalizado?",
+      "a2": "El precio varía según el tamaño, la complejidad, la temática y la selección de equipos. Generalmente van de $150 a $400 por m². Contáctenos para una cotización sin compromiso en 24 horas.",
+      "q3": "¿Proporcionan servicios de diseño 3D?",
+      "a3": "¡Sí! Ofrecemos servicios gratuitos de diseño 3D y planos CAD con revisiones ilimitadas.",
+      "q4": "¿Qué certificaciones de seguridad cumplen sus productos?",
+      "a4": "ASTM F1918 (EE.UU.), EN1176 (Europa), AS4685 (Australia) y CSA Z614 (Canadá). También contamos con certificaciones TUV y SGS.",
+      "q5": "¿Pueden enviar a mi país?",
+      "a5": "¡Por supuesto! Enviamos a más de 80 países con entrega puerta a puerta incluida cobertura de seguro completa.",
+      "q6": "¿Ofrecen servicios de instalación?",
+      "a6": "Sí, brindamos soporte de instalación flexible: manuales detallados, guías en video, asistencia remota o técnicos in situ.",
+      "moreQuestions": "¿Aún tiene preguntas? Nuestro equipo está listo para ayudarle.",
+      "askUs": "Pregúntenos lo que Sea"
+    }
+  },
+  "industryPages": {
+    "realEstate": {
+      "seo": {
+        "title": "Soluciones de Parques Infantiles para Desarrolladores Inmobiliarios",
+        "description": "Aumente el valor de su propiedad con áreas de juego infantil premium. Espacios de juego personalizados para complejos residenciales, desarrollos de uso mixto y proyectos hoteleros. Certificación ASTM.",
+        "keywords": "parque infantil inmobiliario, equipos de juego residencial, amenidades de propiedad parque infantil, área de juego comercial, desarrollo de uso mixto"
+      },
+      "breadcrumb": "Soluciones Inmobiliarias",
+      "hero": {
+        "badge": "Inmobiliario y Desarrollo",
+        "title": "Soluciones Premium de Parques Infantiles",
+        "titleHighlight": "para Desarrollos Inmobiliarios Modernos",
+        "description": "Diferencie sus propiedades con áreas de juego infantil de clase mundial. NinescapeLand diseña y fabrica soluciones de juego personalizadas que aumentan las tasas de ocupación y el valor de las propiedades.",
+        "cta": "Solicitar Propuesta Gratuita",
+        "ctaSecondary": "Ver Parques Infantiles"
+      },
+      "stats": {
+        "s1": {
+          "value": "+15%",
+          "label": "Aumento del Valor"
+        },
+        "s2": {
+          "value": "2,000+",
+          "label": "Proyectos Completados"
+        },
+        "s3": {
+          "value": "95%",
+          "label": "Satisfacción del Inquilino"
+        },
+        "s4": {
+          "value": "50+",
+          "label": "Países Atendidos"
+        }
+      },
+      "section1": {
+        "badge": "Valor de Propiedad",
+        "title": "Aumentando el Valor Inmobiliario con",
+        "titleHighlight": "Espacios de Juego Estratégicos",
+        "content": "En el competitivo mercado inmobiliario actual, las amenidades premium son el diferenciador clave. Los parques infantiles atraen familias, aumentan el tiempo de permanencia y crean comunidades vibrantes dentro de desarrollos residenciales y de uso mixto.",
+        "features": {
+          "f1": "Aumente la valoración de propiedades un 10-15% con amenidades de juego premium",
+          "f2": "Diseños temáticos personalizados que complementan su visión arquitectónica",
+          "f3": "Equipos certificados ASTM y TUV que cumplen estándares internacionales de seguridad",
+          "f4": "Cree amenidades ancla que impulsen el tráfico hacia espacios comerciales"
+        }
+      },
+      "section2": {
+        "badge": "Soluciones Llave en Mano",
+        "title": "Diseño Personalizado e",
+        "titleHighlight": "Implementación Estratégica",
+        "content": "Desde el concepto hasta la finalización, NinescapeLand proporciona soluciones integrales de parques infantiles para desarrolladores inmobiliarios. Nuestro equipo trabaja con arquitectos y gerentes de proyecto para entregar espacios de juego alineados con su cronograma y presupuesto.",
+        "features": {
+          "f1": "Fabricación directa de fábrica con plazos de 60-90 días",
+          "f2": "Renders 3D integrados con planos arquitectónicos",
+          "f3": "Análisis de ROI y estudios de viabilidad para inversores",
+          "f4": "Instalación rápida con mínima interrupción de la construcción"
+        },
+        "cta": "Solicitar Propuesta Inmobiliaria"
+      },
+      "relatedTitle": "Soluciones Relacionadas",
+      "relatedLinks": {
+        "product": "Parques Infantiles",
+        "process": "Nuestro Proceso",
+        "caseStudies": "Casos de Estudio",
+        "allProducts": "Todos los Productos"
+      },
+      "faq": {
+        "badge": "Preguntas Frecuentes",
+        "title": "Preguntas",
+        "titleHighlight": "Frecuentes",
+        "q1": {
+          "question": "¿Cómo aumenta un parque infantil el valor de la propiedad?",
+          "answer": "Los parques infantiles sirven como amenidades premium que diferencian las propiedades. Los desarrollos familiares con amenidades de juego logran valoraciones 10-15% más altas, tasas de alquiler más rápidas y mayor retención de inquilinos."
+        },
+        "q2": {
+          "question": "¿Pueden trabajar con nuestros arquitectos y contratistas?",
+          "answer": "Por supuesto. Colaboramos regularmente con firmas de arquitectura y contratistas generales en todo el mundo. Proporcionamos archivos CAD, renders 3D, especificaciones de carga estructural y coordinamos la programación de instalación."
+        }
+      }
+    },
+    "healthcare": {
+      "seo": {
+        "title": "Parque Infantil Terapéutico para Instalaciones Médicas",
+        "description": "Cree entornos pediátricos libres de estrés con equipos de juego infantil de grado hospitalario. Materiales antimicrobianos, zonas de juego sensorial y diseños terapéuticos. Certificación ASTM.",
+        "keywords": "equipos de juego hospitalarios, área de juego pediátrica, parque infantil médico, juego terapéutico, zona de juego para hospitales"
+      },
+      "breadcrumb": "Soluciones para Salud",
+      "hero": {
+        "badge": "Salud y Pediatría",
+        "title": "Soluciones de Juego Terapéutico",
+        "titleHighlight": "para Instalaciones Médicas",
+        "description": "Transforme las salas de espera pediátricas en entornos de sanación. NinescapeLand crea espacios de juego antimicrobianos y sensoriales que reducen la ansiedad del paciente y mejoran los resultados clínicos.",
+        "cta": "Solicitar Propuesta Médica",
+        "ctaSecondary": "Ver Equipos Soft Play"
+      },
+      "stats": {
+        "s1": {
+          "value": "-40%",
+          "label": "Reducción de Ansiedad"
+        },
+        "s2": {
+          "value": "100%",
+          "label": "Materiales Antimicrobianos"
+        },
+        "s3": {
+          "value": "98%",
+          "label": "Satisfacción de Padres"
+        },
+        "s4": {
+          "value": "ISO 9001",
+          "label": "Certificación de Calidad"
+        }
+      },
+      "section1": {
+        "badge": "Experiencia del Paciente",
+        "title": "Creando Entornos Libres de Estrés",
+        "titleHighlight": "para Pacientes Pediátricos",
+        "content": "Los entornos hospitalarios pueden ser intimidantes para los niños. Nuestros espacios de juego terapéutico están diseñados en colaboración con especialistas pediátricos para reducir la ansiedad, promover la curación y crear asociaciones positivas con las visitas médicas.",
+        "features": {
+          "f1": "Materiales antimicrobianos y fáciles de desinfectar",
+          "f2": "Elementos de juego sensorial diseñados con psicólogos infantiles",
+          "f3": "Estructuras suaves y acolchadas que cumplen requisitos de seguridad médica",
+          "f4": "Diseños inclusivos para niños de todas las capacidades"
+        }
+      },
+      "section2": {
+        "badge": "Seguridad y Cumplimiento",
+        "title": "Diseños Personalizados y",
+        "titleHighlight": "Estándares de Seguridad",
+        "content": "Nuestras soluciones de juego para salud cumplen con los más estrictos estándares de higiene y seguridad. Desde protocolos de control de infecciones hasta diseños inclusivos compatibles con ADA.",
+        "features": {
+          "f1": "Cumplimiento con protocolos de control de infecciones hospitalarias",
+          "f2": "Materiales certificados ignífugos y no tóxicos",
+          "f3": "Diseños modulares para acceso fácil a limpieza profunda",
+          "f4": "Certificados ASTM F1918, EN 1176 y TUV SÜD"
+        },
+        "cta": "Solicitar Consulta Médica"
+      },
+      "relatedTitle": "Soluciones Relacionadas",
+      "relatedLinks": {
+        "product": "Equipos Soft Play",
+        "process": "Nuestro Proceso",
+        "caseStudies": "Casos de Estudio",
+        "allProducts": "Todos los Productos"
+      },
+      "faq": {
+        "badge": "Preguntas Frecuentes",
+        "title": "Preguntas",
+        "titleHighlight": "Frecuentes",
+        "q1": {
+          "question": "¿Qué materiales antimicrobianos utilizan?",
+          "answer": "Utilizamos PVC antimicrobiano de grado hospitalario, espuma resistente a UV con tratamiento antimicrobiano y herrajes de acero inoxidable. Todas las superficies cuentan con recubrimientos que inhiben el 99.9% de las bacterias."
+        },
+        "q2": {
+          "question": "¿Pueden diseñar para niños con necesidades especiales?",
+          "answer": "Sí, nos especializamos en diseños de juego inclusivos. Nuestros parques infantiles incluyen elementos accesibles para sillas de ruedas, zonas de calma sensorial, paneles táctiles y elementos de altura ajustable."
+        }
+      }
+    },
+    "education": {
+      "seo": {
+        "title": "Soluciones de Parques Infantiles para Escuelas y Preescolares",
+        "description": "Mejore el desarrollo físico con equipos de juego educativos. Diseños apropiados para escuelas, preescolares y guarderías. Certificación ASTM y EN 1176.",
+        "keywords": "parque infantil escolar, equipos de juego preescolar, equipos de juego educativo, parque infantil guardería, gimnasio escolar"
+      },
+      "breadcrumb": "Soluciones Educativas",
+      "hero": {
+        "badge": "Educación y Desarrollo Infantil",
+        "title": "Soluciones Innovadoras de Parques Infantiles",
+        "titleHighlight": "para Instituciones Educativas",
+        "description": "Integre el juego activo en su currículo con parques infantiles diseñados a medida. NinescapeLand diseña entornos de juego enfocados en el desarrollo para escuelas, preescolares y guarderías en todo el mundo.",
+        "cta": "Solicitar Propuesta Escolar",
+        "ctaSecondary": "Ver Parques Infantiles"
+      },
+      "stats": {
+        "s1": {
+          "value": "+25%",
+          "label": "Aumento Actividad Física"
+        },
+        "s2": {
+          "value": "500+",
+          "label": "Escuelas Equipadas"
+        },
+        "s3": {
+          "value": "3-12",
+          "label": "Rango de Edad"
+        },
+        "s4": {
+          "value": "EN 1176",
+          "label": "Certificación de Seguridad"
+        }
+      },
+      "section1": {
+        "badge": "Aprendizaje Activo",
+        "title": "Integrando la Actividad Física",
+        "titleHighlight": "en el Currículo",
+        "content": "La investigación demuestra que la actividad física mejora el desarrollo cognitivo, la concentración y el rendimiento académico. Nuestros sistemas de juego educativos están diseñados para complementar los programas de educación física.",
+        "features": {
+          "f1": "Zonas segmentadas por edad para preescolar (3-5) y primaria (6-12)",
+          "f2": "Elementos enfocados en desarrollo: escalada, equilibrio, coordinación",
+          "f3": "Soluciones interiores para programas de educación física todo el año",
+          "f4": "Diseños inclusivos que cumplen requisitos de accesibilidad"
+        }
+      },
+      "section2": {
+        "badge": "Planificación y Presupuesto",
+        "title": "Planificación y Presupuesto",
+        "titleHighlight": "para Áreas de Juego Escolares",
+        "content": "Entendemos los procesos únicos de presupuesto y adquisición de instituciones educativas. Nuestro equipo proporciona propuestas detalladas, opciones de instalación por fases y financiamiento flexible.",
+        "features": {
+          "f1": "Fabricación flexible para cualquier aula o gimnasio",
+          "f2": "Planes de instalación por fases alineados con calendarios escolares",
+          "f3": "Precios competitivos con descuentos para instituciones educativas",
+          "f4": "Garantía de 15 años con mantenimiento mínimo"
+        },
+        "cta": "Solicitar Propuesta Educativa"
+      },
+      "relatedTitle": "Soluciones Relacionadas",
+      "relatedLinks": {
+        "product": "Parques Infantiles",
+        "process": "Nuestro Proceso",
+        "caseStudies": "Casos de Estudio",
+        "allProducts": "Todos los Productos"
+      },
+      "faq": {
+        "badge": "Preguntas Frecuentes",
+        "title": "Preguntas",
+        "titleHighlight": "Frecuentes",
+        "q1": {
+          "question": "¿Qué grupos de edad soportan sus parques escolares?",
+          "answer": "Diseñamos áreas de juego segmentadas por edad para todos los niveles: zonas para niños pequeños (1-3 años), áreas preescolares (3-5 años) con elementos sensoriales y motores, y zonas de primaria (6-12 años) con equipos más desafiantes."
+        },
+        "q2": {
+          "question": "¿Se puede instalar durante las vacaciones escolares?",
+          "answer": "Por supuesto. Programamos las instalaciones durante vacaciones de verano, invierno o fines de semana para minimizar la interrupción. La mayoría de las instalaciones escolares se completan en 5-10 días."
+        }
+      }
+    },
+    "ecommerce": {
+      "seo": {
+        "title": "Parques Infantiles para Retail y Centros de E-commerce",
+        "description": "Impulse el tráfico peatonal con soluciones de juego retailtainment. Áreas de juego personalizadas para centros comerciales y hubs de e-commerce experiencial. Diseño 3D gratuito.",
+        "keywords": "parque infantil retailtainment, parque infantil centro comercial, e-commerce centro experiencial, área de juego comercial retail"
+      },
+      "breadcrumb": "Soluciones E-commerce y Retail",
+      "hero": {
+        "badge": "E-commerce y Retailtainment",
+        "title": "Soluciones Estratégicas de Parques Infantiles",
+        "titleHighlight": "para E-commerce y Centros Retail",
+        "description": "En la era de las compras en línea, el retail físico debe ofrecer experiencias inolvidables. NinescapeLand crea zonas de juego retailtainment que impulsan el tráfico, aumentan el tiempo de permanencia y convierten visitantes en clientes leales.",
+        "cta": "Solicitar Propuesta Retail",
+        "ctaSecondary": "Ver Equipos Soft Play"
+      },
+      "stats": {
+        "s1": {
+          "value": "+40%",
+          "label": "Aumento de Tráfico"
+        },
+        "s2": {
+          "value": "+35 min",
+          "label": "Tiempo de Permanencia"
+        },
+        "s3": {
+          "value": "92%",
+          "label": "Tasa de Retorno"
+        },
+        "s4": {
+          "value": "12-18 meses",
+          "label": "Período de ROI"
+        }
+      },
+      "section1": {
+        "badge": "Estrategia Retailtainment",
+        "title": "El Auge del Retailtainment",
+        "titleHighlight": "en la Era Digital",
+        "content": "A medida que el e-commerce transforma el retail, las ubicaciones físicas deben convertirse en destinos experienciales. Los parques infantiles crean atracciones ancla que atraen familias, aumentan el gasto por visita un 25-40% y generan ingresos recurrentes.",
+        "features": {
+          "f1": "Aumente el tráfico peatonal un 30-40% con atracciones familiares",
+          "f2": "Diseños temáticos de marca que refuerzan su identidad",
+          "f3": "Ubicación estratégica para dirigir el flujo hacia zonas retail",
+          "f4": "Generación de ingresos mediante modelos de pago por uso o membresía"
+        }
+      },
+      "section2": {
+        "badge": "Modelo de Negocio",
+        "title": "Estrategias de Negocio Rentables",
+        "titleHighlight": "para Zonas de Juego Retail",
+        "content": "Nuestras soluciones de parques retail están diseñadas como centros de beneficio, no centros de costo. Proporcionamos planificación empresarial completa incluyendo proyecciones de ingresos y modelos operativos.",
+        "features": {
+          "f1": "Soluciones llave en mano desde el concepto hasta la inauguración",
+          "f2": "Modelado de ingresos y consultoría de estrategia de precios",
+          "f3": "Diseños eficientes optimizados para espacios retail de alta renta",
+          "f4": "Opciones modulares y temporales para activaciones estacionales"
+        },
+        "cta": "Solicitar Consulta Retail"
+      },
+      "relatedTitle": "Soluciones Relacionadas",
+      "relatedLinks": {
+        "product": "Equipos Soft Play",
+        "process": "Nuestro Proceso",
+        "caseStudies": "Casos de Estudio",
+        "allProducts": "Todos los Productos"
+      },
+      "faq": {
+        "badge": "Preguntas Frecuentes",
+        "title": "Preguntas",
+        "titleHighlight": "Frecuentes",
+        "q1": {
+          "question": "¿Cuál es el ROI típico de un parque retail?",
+          "answer": "La mayoría de las zonas de juego retail alcanzan ROI positivo en 12-18 meses. Las fuentes de ingresos incluyen tarifas de admisión, reservas de fiestas, membresías y ventas adicionales de alimentos y bebidas."
+        },
+        "q2": {
+          "question": "¿Pueden crear instalaciones temporales o pop-up?",
+          "answer": "Sí, ofrecemos sistemas modulares que pueden ensamblarse y desmontarse para activaciones retail temporales y eventos estacionales. Estos sistemas están diseñados para montaje rápido manteniendo el cumplimiento total de seguridad."
+        }
+      }
+    },
+    "finance": {
+      "seo": {
+        "title": "Parques Infantiles Premium para Instituciones Financieras",
+        "description": "Eleve la experiencia del cliente en bancos y oficinas de gestión patrimonial con áreas de juego premium. Diseños profesionales para entornos de clientes de alto valor. Certificación ASTM.",
+        "keywords": "parque infantil bancario, área de juego gestión patrimonial, parque infantil oficina financiera, parque infantil premium, área de juego VIP"
+      },
+      "breadcrumb": "Soluciones Sector Financiero",
+      "hero": {
+        "badge": "Servicios Financieros",
+        "title": "Soluciones de Parques Infantiles de Alta Gama",
+        "titleHighlight": "para el Sector Financiero",
+        "description": "Cree experiencias premium para clientes que distingan a su institución financiera. NinescapeLand diseña espacios de juego sofisticados y elegantes para bancos, firmas de gestión patrimonial y centros de servicios financieros.",
+        "cta": "Solicitar Propuesta Premium",
+        "ctaSecondary": "Ver Equipos Soft Play"
+      },
+      "stats": {
+        "s1": {
+          "value": "+30%",
+          "label": "Satisfacción del Cliente"
+        },
+        "s2": {
+          "value": "Premium",
+          "label": "Calidad de Diseño"
+        },
+        "s3": {
+          "value": "99%",
+          "label": "Aprobación de Padres"
+        },
+        "s4": {
+          "value": "ASTM",
+          "label": "Certificación de Seguridad"
+        }
+      },
+      "section1": {
+        "badge": "Experiencia del Cliente",
+        "title": "Mejorando la Experiencia del Cliente",
+        "titleHighlight": "en Gestión Patrimonial",
+        "content": "Los clientes de alto valor esperan entornos de servicio excepcionales. Un área de juego premium demuestra atención a las necesidades familiares, extiende el tiempo de consulta y crea asociaciones positivas de marca.",
+        "features": {
+          "f1": "Estética de diseño de lujo que coincide con su identidad corporativa",
+          "f2": "Zonas de juego tranquilas y supervisadas junto a áreas de consulta",
+          "f3": "Materiales premium: acabados en madera, tejidos de diseño, acentos LED",
+          "f4": "Opciones de espacio compacto para oficinas y pisos ejecutivos"
+        }
+      },
+      "section2": {
+        "badge": "Valor de Inversión",
+        "title": "Análisis de Inversión y",
+        "titleHighlight": "Valor a Largo Plazo",
+        "content": "Agregar un área de juego premium es una inversión estratégica en relaciones con clientes. Proporcionamos análisis detallados de costo-beneficio que muestran cómo las amenidades familiares mejoran la adquisición y retención de clientes.",
+        "features": {
+          "f1": "Diseños a medida para complementar interiores de lujo",
+          "f2": "Proyecciones de ROI para mejora de retención de clientes",
+          "f3": "Construcción de bajo mantenimiento y alta durabilidad para entornos profesionales",
+          "f4": "Cumplimiento total con códigos de construcción comercial y estándares ADA"
+        },
+        "cta": "Solicitar Consulta Premium"
+      },
+      "relatedTitle": "Soluciones Relacionadas",
+      "relatedLinks": {
+        "product": "Equipos Soft Play",
+        "process": "Nuestro Proceso",
+        "caseStudies": "Casos de Estudio",
+        "allProducts": "Todos los Productos"
+      },
+      "faq": {
+        "badge": "Preguntas Frecuentes",
+        "title": "Preguntas",
+        "titleHighlight": "Frecuentes",
+        "q1": {
+          "question": "¿Cómo aseguran que el diseño coincida con nuestra imagen corporativa?",
+          "answer": "Nuestro equipo de diseño crea conceptos completamente personalizados usando los colores de su marca, materiales y directrices estéticas. Proporcionamos renders 3D fotorrealistas para aprobación."
+        },
+        "q2": {
+          "question": "¿Cuál es el impacto del nivel de ruido en entornos de oficina?",
+          "answer": "Nuestras áreas de juego premium incorporan ingeniería acústica: materiales absorbentes de sonido, particiones estratégicas y estructuras con amortiguación de caucho para mantener los niveles de ruido por debajo de 45dB."
+        }
+      }
+    },
+    "legal": {
+      "seo": {
+        "title": "Soluciones de Parques Infantiles para Bufetes de Abogados",
+        "description": "Soluciones premium de parques infantiles para lobbies de bufetes y oficinas legales. Áreas de juego seguras y profesionales que mejoran la experiencia del cliente. Certificación ASTM y TUV.",
+        "keywords": "parque infantil bufete de abogados, área de juego oficina legal, área infantil despacho jurídico, parque infantil profesional lobby"
+      },
+      "breadcrumb": "Soluciones Sector Legal",
+      "hero": {
+        "badge": "Legal y Servicios Profesionales",
+        "title": "Soluciones Premium de Parques Infantiles",
+        "titleHighlight": "para la Industria Legal",
+        "description": "Mejore la experiencia del cliente de su bufete con áreas de juego profesionales y sofisticadas. NinescapeLand crea entornos premium donde los niños están seguros mientras los padres se concentran en consultas legales importantes.",
+        "cta": "Solicitar Propuesta Profesional",
+        "ctaSecondary": "Ver Equipos Soft Play"
+      },
+      "stats": {
+        "s1": {
+          "value": "+25%",
+          "label": "Satisfacción del Cliente"
+        },
+        "s2": {
+          "value": "100%",
+          "label": "Cumplimiento de Seguridad"
+        },
+        "s3": {
+          "value": "Premium",
+          "label": "Estándar de Diseño"
+        },
+        "s4": {
+          "value": "5 Años",
+          "label": "Garantía"
+        }
+      },
+      "section1": {
+        "badge": "Experiencia del Cliente",
+        "title": "Mejorando la Experiencia del Cliente",
+        "titleHighlight": "en Entornos Legales",
+        "content": "Las consultas de derecho familiar, planificación patrimonial e inmigración a menudo requieren que los padres traigan a sus hijos. Un área de juego profesional reduce el estrés tanto para padres como para niños.",
+        "features": {
+          "f1": "Diseños sofisticados que complementan la estética de oficinas profesionales",
+          "f2": "Zonas de juego silenciosas que no interrumpen salas de reuniones",
+          "f3": "Elementos apropiados para niños de 1 a 8 años",
+          "f4": "Diseños compactos optimizados para planos de oficina"
+        }
+      },
+      "section2": {
+        "badge": "Cumplimiento",
+        "title": "Cumplimiento y Seguridad:",
+        "titleHighlight": "El Estándar de la Industria Legal",
+        "content": "Entendemos que los profesionales legales exigen los más altos estándares. Cada parque infantil que construimos cumple o supera las certificaciones internacionales de seguridad.",
+        "features": {
+          "f1": "Paquete de documentación completo para responsabilidad y seguros",
+          "f2": "Equipos certificados ASTM F1918 y EN 1176",
+          "f3": "Materiales de grado profesional con propiedades antimicrobianas",
+          "f4": "Protocolos integrales de mantenimiento e inspección"
+        },
+        "cta": "Solicitar Consulta Profesional"
+      },
+      "relatedTitle": "Soluciones Relacionadas",
+      "relatedLinks": {
+        "product": "Equipos Soft Play",
+        "process": "Nuestro Proceso",
+        "caseStudies": "Casos de Estudio",
+        "allProducts": "Todos los Productos"
+      },
+      "faq": {
+        "badge": "Preguntas Frecuentes",
+        "title": "Preguntas",
+        "titleHighlight": "Frecuentes",
+        "q1": {
+          "question": "¿Qué documentación de responsabilidad proporcionan?",
+          "answer": "Proporcionamos documentación integral que incluye certificados de seguridad (ASTM, TUV, EN 1176), hojas de datos de seguridad de materiales, registros de cumplimiento de instalación y directrices de seguros recomendadas."
+        },
+        "q2": {
+          "question": "¿Cuánto espacio se necesita para un área de juego en oficina legal?",
+          "answer": "Nuestros diseños compactos pueden instalarse en espacios de tan solo 15-20 metros cuadrados. Creamos diseños eficientes que maximizan el valor de juego en planos de oficina limitados."
+        }
+      }
+    },
+    "marketing": {
+      "seo": {
+        "title": "Parques Infantiles para Marketing de Marca y Activaciones",
+        "description": "Cree experiencias de marca memorables con instalaciones de parques infantiles personalizados. Perfecto para eventos de marketing, retail pop-up y campañas experienciales. Diseño 3D gratuito.",
+        "keywords": "parque infantil activación de marca, parque infantil marketing experiencial, parque infantil pop-up, área de juego evento marketing"
+      },
+      "breadcrumb": "Soluciones de Marketing",
+      "hero": {
+        "badge": "Marketing y Activación de Marca",
+        "title": "Soluciones Innovadoras de Parques Infantiles",
+        "titleHighlight": "para Marketing y Activación de Marca",
+        "description": "Cree experiencias de marca inolvidables a través de instalaciones de juego interactivas. NinescapeLand construye parques infantiles personalizados para campañas de marketing experiencial y activaciones de marca.",
+        "cta": "Solicitar Propuesta de Campaña",
+        "ctaSecondary": "Ver Parques Infantiles"
+      },
+      "stats": {
+        "s1": {
+          "value": "10x",
+          "label": "Engagement en Redes Sociales"
+        },
+        "s2": {
+          "value": "+60%",
+          "label": "Recordación de Marca"
+        },
+        "s3": {
+          "value": "Custom",
+          "label": "Temática de Marca"
+        },
+        "s4": {
+          "value": "48hr",
+          "label": "Montaje Pop-up"
+        }
+      },
+      "section1": {
+        "badge": "Experiencia de Marca",
+        "title": "Creando Experiencias",
+        "titleHighlight": "de Marca Memorables",
+        "content": "Las instalaciones de juego interactivas generan 10 veces más engagement en redes sociales que el marketing tradicional. Nuestros parques personalizados crean momentos compartibles que amplifican el alcance de su campaña.",
+        "features": {
+          "f1": "Diseños completamente personalizados con su logo, colores y tema de campaña",
+          "f2": "Instalaciones diseñadas para compartir en Instagram",
+          "f3": "Elementos interactivos que comunican mensajes de marca",
+          "f4": "Experiencias multisensoriales que crean impresiones duraderas"
+        }
+      },
+      "section2": {
+        "badge": "Soluciones Escalables",
+        "title": "Soluciones Escalables para",
+        "titleHighlight": "Pop-ups y Retail",
+        "content": "Ya sea un pop-up de fin de semana o un centro de experiencia permanente, ofrecemos soluciones flexibles que se adaptan a sus necesidades de campaña. Nuestros sistemas modulares pueden ensamblarse en 48 horas.",
+        "features": {
+          "f1": "Sistemas modulares para montaje y desmontaje rápido",
+          "f2": "Diseños transportables para giras de campaña multiciudad",
+          "f3": "Instalaciones permanentes de centros de experiencia",
+          "f4": "Personalización por evento y temática estacional"
+        },
+        "cta": "Solicitar Consulta de Campaña"
+      },
+      "relatedTitle": "Soluciones Relacionadas",
+      "relatedLinks": {
+        "product": "Parques Infantiles",
+        "process": "Nuestro Proceso",
+        "caseStudies": "Casos de Estudio",
+        "allProducts": "Todos los Productos"
+      },
+      "faq": {
+        "badge": "Preguntas Frecuentes",
+        "title": "Preguntas",
+        "titleHighlight": "Frecuentes",
+        "q1": {
+          "question": "¿Pueden ajustarse a nuestras directrices de marca exactas?",
+          "answer": "Sí, trabajamos con su manual de marca para coincidir con colores Pantone exactos, ubicación de logo, tipografía y lenguaje de diseño. Nuestro equipo crea renders 3D fotorrealistas para aprobación."
+        },
+        "q2": {
+          "question": "¿Cuál es el plazo para un parque pop-up?",
+          "answer": "Para sistemas pop-up modulares, podemos entregar en 30-45 días. Los pedidos urgentes pueden completarse en tan solo 20 días. El montaje in situ toma 1-2 días."
+        }
+      }
+    },
+    "hr": {
+      "seo": {
+        "title": "Parques Infantiles Corporativos para Bienestar Laboral",
+        "description": "Aumente la retención de empleados con soluciones de parques infantiles corporativos. Áreas de juego para cuidado infantil in situ y espacios de bienestar para lugares de trabajo modernos. Certificación ASTM.",
+        "keywords": "parque infantil corporativo, bienestar laboral parque infantil, guardería corporativa, parque infantil oficina, amenidad bienestar corporativo"
+      },
+      "breadcrumb": "Soluciones HR y Trabajo",
+      "hero": {
+        "badge": "HR y Bienestar Corporativo",
+        "title": "Transformando la Cultura Corporativa",
+        "titleHighlight": "con Soluciones de Parques Infantiles",
+        "description": "Apoye el equilibrio vida-trabajo de los empleados con áreas de juego para cuidado infantil y espacios de bienestar. NinescapeLand ayuda a las empresas a atraer y retener talento con amenidades familiares.",
+        "cta": "Solicitar Propuesta Corporativa",
+        "ctaSecondary": "Ver Parques Infantiles"
+      },
+      "stats": {
+        "s1": {
+          "value": "+30%",
+          "label": "Retención de Empleados"
+        },
+        "s2": {
+          "value": "-45%",
+          "label": "Reducción Ausentismo"
+        },
+        "s3": {
+          "value": "92%",
+          "label": "Satisfacción del Empleado"
+        },
+        "s4": {
+          "value": "Top",
+          "label": "Marca Empleador"
+        }
+      },
+      "section1": {
+        "badge": "Equilibrio Vida-Trabajo",
+        "title": "Apoyando el Equilibrio Vida-Trabajo",
+        "titleHighlight": "para Empleados Modernos",
+        "content": "Las empresas con cuidado infantil y amenidades familiares in situ experimentan un 30% más de retención de empleados. Los espacios de juego reducen el estrés parental y posicionan a su empresa como un empleador top.",
+        "features": {
+          "f1": "Zonas de juego para cuidado infantil in situ",
+          "f2": "Espacios de bienestar para descanso que promueven la salud mental",
+          "f3": "Áreas de eventos familiares para reuniones y team building",
+          "f4": "Entornos de reducción de estrés respaldados por investigación"
+        }
+      },
+      "section2": {
+        "badge": "Calidad Laboral",
+        "title": "Seguridad y Calidad",
+        "titleHighlight": "en el Lugar de Trabajo",
+        "content": "Nuestras soluciones de parques corporativos cumplen los más altos estándares de seguridad requeridos para entornos laborales. Cada instalación incluye documentación completa para cumplimiento de HR y requisitos de seguros.",
+        "features": {
+          "f1": "Paquete completo de documentación de cumplimiento HR",
+          "f2": "Certificaciones de seguridad compatibles con seguros (ASTM, TUV)",
+          "f3": "Diseños de bajo ruido adecuados para entornos de oficina",
+          "f4": "Materiales hipoalergénicos y fáciles de limpiar"
+        },
+        "cta": "Solicitar Consulta Corporativa"
+      },
+      "relatedTitle": "Soluciones Relacionadas",
+      "relatedLinks": {
+        "product": "Parques Infantiles",
+        "process": "Nuestro Proceso",
+        "caseStudies": "Casos de Estudio",
+        "allProducts": "Todos los Productos"
+      },
+      "faq": {
+        "badge": "Preguntas Frecuentes",
+        "title": "Preguntas",
+        "titleHighlight": "Frecuentes",
+        "q1": {
+          "question": "¿Cuánto espacio de oficina se necesita?",
+          "answer": "Nuestras áreas de juego corporativas pueden diseñarse para espacios de tan solo 20-30 metros cuadrados para un rincón infantil compacto, o escalarse a más de 200 m² para instalaciones completas de cuidado infantil."
+        },
+        "q2": {
+          "question": "¿Afecta un parque in situ los costos de seguro?",
+          "answer": "Con las certificaciones de seguridad adecuadas (que proporcionamos), la mayoría de las aseguradoras agregan primas mínimas. Muchas empresas encuentran el costo compensado por la reducción de rotación y ausentismo."
+        }
+      }
+    },
+    "logistics": {
+      "seo": {
+        "title": "Parques Infantiles para Centros Logísticos",
+        "description": "Zonas de juego familiares para centros logísticos y de fulfillment. Equipos de juego de grado industrial y alta durabilidad para instalaciones de alto tráfico. Certificación ASTM.",
+        "keywords": "parque infantil centro logístico, parque infantil almacén, zona familiar industrial, parque infantil centro distribución"
+      },
+      "breadcrumb": "Soluciones Logísticas",
+      "hero": {
+        "badge": "Logística e Industrial",
+        "title": "Soluciones Estratégicas de Parques Infantiles",
+        "titleHighlight": "para Centros Logísticos",
+        "description": "Cree zonas familiares en centros logísticos y de fulfillment. NinescapeLand construye espacios de juego duraderos de grado industrial que mejoran la satisfacción de los empleados.",
+        "cta": "Solicitar Propuesta de Instalación",
+        "ctaSecondary": "Ver Parques Infantiles"
+      },
+      "stats": {
+        "s1": {
+          "value": "Industrial",
+          "label": "Grado de Durabilidad"
+        },
+        "s2": {
+          "value": "+25%",
+          "label": "Retención de Empleados"
+        },
+        "s3": {
+          "value": "50,000+",
+          "label": "Ciclos de Uso Probados"
+        },
+        "s4": {
+          "value": "+20%",
+          "label": "Aumento Productividad"
+        }
+      },
+      "section1": {
+        "badge": "Zonas Familiares",
+        "title": "Zonas Familiares en",
+        "titleHighlight": "Centros Logísticos de Alto Tráfico",
+        "content": "Los grandes centros logísticos ofrecen cada vez más amenidades familiares para atraer y retener trabajadores en mercados laborales competitivos. Los parques infantiles proporcionan soluciones de cuidado infantil de emergencia y mejoran la moral.",
+        "features": {
+          "f1": "Materiales de grado industrial para uso diario intenso",
+          "f2": "Diseños con seguridad primero que cumplen requisitos de almacén",
+          "f3": "Configuraciones modulares adaptables a planos de almacén",
+          "f4": "Zonas de bienestar para relajación en descansos"
+        }
+      },
+      "section2": {
+        "badge": "Durabilidad",
+        "title": "Diseño Duradero para",
+        "titleHighlight": "Entornos Industriales",
+        "content": "Nuestros parques para instalaciones logísticas están construidos con materiales de grado industrial que resisten variaciones extremas de temperatura, patrones de uso intenso y exigentes programas de mantenimiento.",
+        "features": {
+          "f1": "Materiales resistentes a temperatura para entornos de almacén",
+          "f2": "Tratamientos superficiales antiestáticos y resistentes al polvo",
+          "f3": "Estructuras de acero resistente con recubrimientos industriales",
+          "f4": "Diseño modular de reparación rápida para mínimo tiempo de inactividad"
+        },
+        "cta": "Solicitar Consulta de Instalación"
+      },
+      "relatedTitle": "Soluciones Relacionadas",
+      "relatedLinks": {
+        "product": "Parques Infantiles",
+        "process": "Nuestro Proceso",
+        "caseStudies": "Casos de Estudio",
+        "allProducts": "Todos los Productos"
+      },
+      "faq": {
+        "badge": "Preguntas Frecuentes",
+        "title": "Preguntas",
+        "titleHighlight": "Frecuentes",
+        "q1": {
+          "question": "¿Pueden sus equipos soportar temperaturas extremas de almacén?",
+          "answer": "Sí, nuestros materiales de grado industrial están clasificados para entornos de -10°C a +50°C. Utilizamos materiales estabilizados a UV y espumas resistentes a la temperatura."
+        },
+        "q2": {
+          "question": "¿Cómo manejan la instalación en instalaciones activas?",
+          "answer": "Coordinamos con su equipo de operaciones para programar la instalación durante horas de menor actividad. Nuestros sistemas modulares permiten instalación por fases, completando típicamente en 3-5 días."
+        }
+      }
+    },
+    "manufacturing": {
+      "seo": {
+        "title": "Parques Infantiles para Plantas de Manufactura",
+        "description": "Soluciones de parques infantiles con seguridad primero para plantas de manufactura y fábricas. Equipos duraderos que cumplen estándares de seguridad industrial. Certificación ASTM y TUV.",
+        "keywords": "parque infantil fábrica, parque infantil planta manufactura, área de juego instalación industrial, guardería fábrica"
+      },
+      "breadcrumb": "Soluciones de Manufactura",
+      "hero": {
+        "badge": "Manufactura e Industria",
+        "title": "Soluciones Seguras y Duraderas",
+        "titleHighlight": "para Plantas de Manufactura",
+        "description": "Integre amenidades familiares en entornos de manufactura con soluciones de parques infantiles con seguridad primero. NinescapeLand construye espacios de juego de grado industrial que cumplen los más estrictos requisitos de seguridad.",
+        "cta": "Solicitar Propuesta de Fábrica",
+        "ctaSecondary": "Ver Parques Infantiles"
+      },
+      "stats": {
+        "s1": {
+          "value": "Industrial",
+          "label": "Grado de Seguridad"
+        },
+        "s2": {
+          "value": "100%",
+          "label": "Tasa de Cumplimiento"
+        },
+        "s3": {
+          "value": "+20%",
+          "label": "Satisfacción del Trabajador"
+        },
+        "s4": {
+          "value": "ISO 9001",
+          "label": "Certificación de Calidad"
+        }
+      },
+      "section1": {
+        "badge": "Seguridad Familiar",
+        "title": "Integrando la Seguridad Familiar",
+        "titleHighlight": "en la Manufactura",
+        "content": "Las instalaciones de manufactura con amenidades familiares reportan tasas de rotación significativamente más bajas. Nuestros parques de grado industrial están diseñados específicamente para entornos fabriles con características de seguridad mejoradas.",
+        "features": {
+          "f1": "Construcción de grado industrial que supera estándares de seguridad de fábrica",
+          "f2": "Diseños cerrados y climatizados separados de zonas de producción",
+          "f3": "Materiales resistentes a contaminantes industriales",
+          "f4": "Diseños que cumplen con planes de evacuación de emergencia"
+        }
+      },
+      "section2": {
+        "badge": "Control de Calidad",
+        "title": "Cumplimiento y",
+        "titleHighlight": "Control de Calidad",
+        "content": "Cada parque infantil para manufactura pasa por rigurosos procesos de control de calidad que reflejan los estándares de la industria manufacturera. Proporcionamos documentación completa de cumplimiento y protocolos de inspección.",
+        "features": {
+          "f1": "Auditorías de seguridad de terceros y documentación de certificación",
+          "f2": "Recomendaciones de protocolo de inspección trimestral",
+          "f3": "Trazabilidad de materiales y hojas de datos de seguridad",
+          "f4": "Certificados ASTM F1918, EN 1176 e ISO 9001"
+        },
+        "cta": "Solicitar Consulta de Fábrica"
+      },
+      "relatedTitle": "Soluciones Relacionadas",
+      "relatedLinks": {
+        "product": "Parques Infantiles",
+        "process": "Nuestro Proceso",
+        "caseStudies": "Casos de Estudio",
+        "allProducts": "Todos los Productos"
+      },
+      "faq": {
+        "badge": "Preguntas Frecuentes",
+        "title": "Preguntas",
+        "titleHighlight": "Frecuentes",
+        "q1": {
+          "question": "¿Cómo aseguran la seguridad del parque en un entorno de fábrica?",
+          "answer": "Nuestros parques para fábricas son zonas completamente cerradas y climatizadas, separadas de áreas de producción. Cuentan con filtración de aire industrial, materiales ignífugos y rutas de evacuación de emergencia conformes con OSHA."
+        },
+        "q2": {
+          "question": "¿Qué mantenimiento se requiere en un entorno industrial?",
+          "answer": "Proporcionamos programas de mantenimiento personalizados que incluyen desinfección semanal de superficies, inspecciones estructurales mensuales y protocolos de limpieza profunda trimestrales. Nuestro diseño modular permite reemplazar componentes individuales."
+        }
+      }
+    }
   }
 }
