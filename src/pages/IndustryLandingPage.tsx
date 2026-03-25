@@ -151,7 +151,7 @@ const IndustryLandingPage = () => {
                 ))}
               </div>
               <div className="mt-8 text-center">
-                <Button variant="hero" asChild><Link to={localizedPath("/contact")}>{t(`${ns}.section2.cta`)}<ArrowRight className="ml-2 h-4 w-4" /></Link></Button>
+                <Button variant="hero" asChild><a href="#contact">{t(`${ns}.section2.cta`)}<ArrowRight className="ml-2 h-4 w-4" /></a></Button>
               </div>
             </motion.div>
           </div>
