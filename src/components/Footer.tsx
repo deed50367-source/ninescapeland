@@ -127,6 +127,22 @@ export const Footer = () => {
             </ul>
           </div>
 
+          {/* Industry Solutions */}
+          <div>
+            <h4 className="font-heading font-bold text-sm sm:text-lg mb-3 sm:mb-4">{t("footer.industrySolutions")}</h4>
+            <ul className="space-y-2 sm:space-y-3">
+              {[...industryLinks, ...industryLinks2].map((link, index) => (
+                <li key={index}>
+                  <Link
+                    to={link.href}
+                    className="text-primary-foreground/80 hover:text-primary-foreground transition-colors text-xs sm:text-sm"
+                  >
+                    {link.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
           {/* Blog */}
           <div>
             <h4 className="font-heading font-bold text-sm sm:text-lg mb-3 sm:mb-4">{t("footer.blog", "Blog")}</h4>
