@@ -42,6 +42,16 @@ export const Footer = () => {
     { label: t("footer.links.contact"), href: localizedPath("/contact") },
   ];
 
+  const industryLinks = industryPages.slice(0, 5).map((page) => ({
+    label: t(`footer.industryLinks.${page.i18nKey}`),
+    href: localizedPath(`/market/${page.slug}`),
+  }));
+
+  const industryLinks2 = industryPages.slice(5).map((page) => ({
+    label: t(`footer.industryLinks.${page.i18nKey}`),
+    href: localizedPath(`/market/${page.slug}`),
+  }));
+
   // Fetch popular blog posts for the current language
   const { data: blogPosts } = useQuery({
     queryKey: ["footer-blog-posts", i18n.language],
