@@ -2690,5 +2690,797 @@
       "moreQuestions": "Haben Sie noch Fragen? Unser Team ist bereit zu helfen.",
       "askUs": "Fragen Sie uns alles"
     }
+  },
+  "industryPages": {
+    "realEstate": {
+      "seo": {
+        "title": "Indoor-Spielplatz-Lösungen für Immobilienentwickler",
+        "description": "Steigern Sie den Immobilienwert mit Premium-Indoor-Spielplätzen. Maßgeschneiderte Spielbereiche für Wohnanlagen, Mischnutzungsprojekte und Hotelprojekte. ASTM-zertifiziert.",
+        "keywords": "Indoor-Spielplatz Immobilien, Wohnanlage Spielplatz, Immobilien-Amenität Spielplatz, gewerblicher Spielbereich"
+      },
+      "breadcrumb": "Immobilienlösungen",
+      "hero": {
+        "badge": "Immobilien & Projektentwicklung",
+        "title": "Premium Indoor-Spielplatz-Lösungen",
+        "titleHighlight": "für moderne Immobilienprojekte",
+        "description": "Differenzieren Sie Ihre Immobilien mit erstklassigen Indoor-Spielbereichen. NinescapeLand entwirft und fertigt maßgeschneiderte Spielplatzlösungen, die Belegungsraten und Immobilienwerte steigern.",
+        "cta": "Kostenlose Beratung anfordern",
+        "ctaSecondary": "Indoor-Spielplätze ansehen"
+      },
+      "stats": {
+        "s1": {
+          "value": "+15%",
+          "label": "Wertsteigerung"
+        },
+        "s2": {
+          "value": "2.000+",
+          "label": "Abgeschlossene Projekte"
+        },
+        "s3": {
+          "value": "95%",
+          "label": "Mieterzufriedenheit"
+        },
+        "s4": {
+          "value": "50+",
+          "label": "Länder bedient"
+        }
+      },
+      "section1": {
+        "badge": "Immobilienwert",
+        "title": "Immobilienwert steigern durch",
+        "titleHighlight": "strategische Spielbereiche",
+        "content": "Auf dem heutigen wettbewerbsintensiven Immobilienmarkt sind Premium-Amenitäten der entscheidende Differenzierungsfaktor. Indoor-Spielplätze ziehen Familien an, erhöhen die Verweildauer und schaffen lebendige Gemeinschaften.",
+        "features": {
+          "f1": "Immobilienbewertung um 10-15% steigern mit Premium-Spielbereichen",
+          "f2": "Maßgeschneiderte Themendesigns passend zu Ihrer architektonischen Vision",
+          "f3": "ASTM- und TÜV-zertifizierte Geräte nach internationalen Sicherheitsstandards",
+          "f4": "Anker-Amenitäten schaffen, die den Fußverkehr zu Gewerbeflächen lenken"
+        }
+      },
+      "section2": {
+        "badge": "Schlüsselfertige Lösungen",
+        "title": "Individuelles Design &",
+        "titleHighlight": "Strategische Umsetzung",
+        "content": "Vom Konzept bis zur Fertigstellung bietet NinescapeLand End-to-End-Spielplatzlösungen für Immobilienentwickler. Unser Team arbeitet mit Architekten und Projektmanagern zusammen.",
+        "features": {
+          "f1": "Direktfertigung mit 60-90 Tagen Lieferzeit",
+          "f2": "3D-Renders integriert in Architekturpläne",
+          "f3": "ROI-Analysen und Machbarkeitsstudien für Investoren",
+          "f4": "Schnelle Installation mit minimaler Bauunterbrechung"
+        },
+        "cta": "Immobilienvorschlag anfordern"
+      },
+      "relatedTitle": "Verwandte Lösungen",
+      "relatedLinks": {
+        "product": "Indoor-Spielplätze",
+        "process": "Unser Prozess",
+        "caseStudies": "Fallstudien",
+        "allProducts": "Alle Produkte"
+      },
+      "faq": {
+        "badge": "FAQ",
+        "title": "Häufig gestellte",
+        "titleHighlight": "Fragen",
+        "q1": {
+          "question": "Wie steigert ein Indoor-Spielplatz den Immobilienwert?",
+          "answer": "Indoor-Spielplätze dienen als Premium-Amenitäten, die Immobilien differenzieren. Familienfreundliche Anlagen mit Spielbereichen erzielen 10-15% höhere Bewertungen, schnellere Vermietungsraten und stärkere Mieterbindung."
+        },
+        "q2": {
+          "question": "Können Sie mit unseren Architekten und Bauunternehmen zusammenarbeiten?",
+          "answer": "Selbstverständlich. Wir arbeiten regelmäßig mit Architekturbüros und Generalunternehmen weltweit zusammen. Wir liefern CAD-Dateien, 3D-Renders, strukturelle Belastungsspezifikationen und koordinieren die Installationsplanung."
+        }
+      }
+    },
+    "healthcare": {
+      "seo": {
+        "title": "Therapeutischer Indoor-Spielplatz für Gesundheitseinrichtungen",
+        "description": "Schaffen Sie stressfreie pädiatrische Umgebungen mit medizinischem Indoor-Spielplatzequipment. Antimikrobielle Materialien, sensorische Spielzonen und therapeutische Designs. ASTM-zertifiziert.",
+        "keywords": "Krankenhaus Spielplatz, pädiatrischer Spielbereich, Gesundheitswesen Indoor-Spielplatz, therapeutischer Spielplatz"
+      },
+      "breadcrumb": "Gesundheitswesen-Lösungen",
+      "hero": {
+        "badge": "Gesundheitswesen & Pädiatrie",
+        "title": "Therapeutische Indoor-Spielplatz-Lösungen",
+        "titleHighlight": "für Gesundheitseinrichtungen",
+        "description": "Verwandeln Sie pädiatrische Wartebereiche in heilende Umgebungen. NinescapeLand entwickelt antimikrobielle, sinnesfreundliche Spielräume, die Patientenangst reduzieren und klinische Ergebnisse verbessern.",
+        "cta": "Gesundheitsberatung anfordern",
+        "ctaSecondary": "Soft Play Equipment ansehen"
+      },
+      "stats": {
+        "s1": {
+          "value": "-40%",
+          "label": "Angstreduktion"
+        },
+        "s2": {
+          "value": "100%",
+          "label": "Antimikrobielle Materialien"
+        },
+        "s3": {
+          "value": "98%",
+          "label": "Elternzufriedenheit"
+        },
+        "s4": {
+          "value": "ISO 9001",
+          "label": "Qualitätszertifiziert"
+        }
+      },
+      "section1": {
+        "badge": "Patientenerfahrung",
+        "title": "Stressfreie Umgebungen schaffen",
+        "titleHighlight": "für pädiatrische Patienten",
+        "content": "Klinikumgebungen können für Kinder einschüchternd sein. Unsere therapeutischen Spielräume wurden in Zusammenarbeit mit Kinderärzten entwickelt, um Angst zu reduzieren, Heilung zu fördern und positive Assoziationen mit Arztbesuchen zu schaffen.",
+        "features": {
+          "f1": "Antimikrobielle und leicht zu desinfizierende Materialien",
+          "f2": "Sensorische Spielelemente, entwickelt mit Kinderpsychologen",
+          "f3": "Weiche, gepolsterte Strukturen für medizinische Sicherheitsanforderungen",
+          "f4": "Inklusive Designs für Kinder aller Fähigkeiten"
+        }
+      },
+      "section2": {
+        "badge": "Sicherheit & Compliance",
+        "title": "Maßgeschneiderte Healthcare-Designs &",
+        "titleHighlight": "Sicherheitsstandards",
+        "content": "Unsere Healthcare-Spiellösungen erfüllen die strengsten Hygiene- und Sicherheitsstandards. Von Infektionskontrollprotokollen bis zu ADA-konformen inklusiven Designs.",
+        "features": {
+          "f1": "Einhaltung von Krankenhaus-Infektionskontrollprotokollen",
+          "f2": "Flammhemmende und ungiftige zertifizierte Materialien",
+          "f3": "Modulare Designs für einfachen Zugang zur Tiefenreinigung",
+          "f4": "ASTM F1918, EN 1176 & TÜV SÜD zertifiziert"
+        },
+        "cta": "Healthcare-Beratung anfordern"
+      },
+      "relatedTitle": "Verwandte Lösungen",
+      "relatedLinks": {
+        "product": "Soft Play Equipment",
+        "process": "Unser Prozess",
+        "caseStudies": "Fallstudien",
+        "allProducts": "Alle Produkte"
+      },
+      "faq": {
+        "badge": "FAQ",
+        "title": "Häufig gestellte",
+        "titleHighlight": "Fragen",
+        "q1": {
+          "question": "Welche antimikrobiellen Materialien verwenden Sie?",
+          "answer": "Wir verwenden medizinisches antimikrobielles PVC, UV-beständigen Schaum mit antimikrobieller Behandlung und Edelstahl-Hardware. Alle Oberflächen hemmen 99,9% der Bakterien."
+        },
+        "q2": {
+          "question": "Können Sie für Kinder mit besonderen Bedürfnissen entwerfen?",
+          "answer": "Ja, wir sind auf inklusive Spieldesigns spezialisiert. Unsere Spielplätze umfassen rollstuhlgerechte Elemente, sensorische Beruhigungszonen, taktile Panels und höhenverstellbare Funktionen."
+        }
+      }
+    },
+    "education": {
+      "seo": {
+        "title": "Indoor-Spielplatz-Lösungen für Schulen und Kindergärten",
+        "description": "Fördern Sie die körperliche Entwicklung mit pädagogischen Indoor-Spielgeräten. Altersgerechte Designs für Schulen, Kindergärten und Kindertagesstätten. ASTM & EN 1176 zertifiziert.",
+        "keywords": "Schulspielplatz Indoor, Kindergarten Spielgeräte, pädagogische Spielgeräte, Kindertagesstätte Spielplatz"
+      },
+      "breadcrumb": "Bildungslösungen",
+      "hero": {
+        "badge": "Bildung & Kindesentwicklung",
+        "title": "Innovative Indoor-Spielplatz-Lösungen",
+        "titleHighlight": "für Bildungseinrichtungen",
+        "description": "Integrieren Sie aktives Spielen in Ihren Lehrplan mit maßgeschneiderten Indoor-Spielplätzen. NinescapeLand entwirft entwicklungsfördernde Spielumgebungen für Schulen und Kindergärten weltweit.",
+        "cta": "Schulvorschlag anfordern",
+        "ctaSecondary": "Indoor-Spielplätze ansehen"
+      },
+      "stats": {
+        "s1": {
+          "value": "+25%",
+          "label": "Mehr körperliche Aktivität"
+        },
+        "s2": {
+          "value": "500+",
+          "label": "Ausgestattete Schulen"
+        },
+        "s3": {
+          "value": "3-12",
+          "label": "Altersbereich"
+        },
+        "s4": {
+          "value": "EN 1176",
+          "label": "Sicherheitszertifiziert"
+        }
+      },
+      "section1": {
+        "badge": "Aktives Lernen",
+        "title": "Körperliche Aktivität integrieren",
+        "titleHighlight": "in den Lehrplan",
+        "content": "Forschung zeigt, dass körperliche Aktivität kognitive Entwicklung, Konzentration und schulische Leistung verbessert. Unsere pädagogischen Spielsysteme ergänzen den Sportunterricht und bieten ganzjährige Spielmöglichkeiten.",
+        "features": {
+          "f1": "Alterssegmentierte Zonen für Kindergarten (3-5) und Grundschule (6-12)",
+          "f2": "Entwicklungsfördernde Elemente: Klettern, Balancieren, Koordination",
+          "f3": "Indoor-Lösungen für ganzjährige Sportunterrichtsprogramme",
+          "f4": "Inklusive Designs, die Barrierefreiheitsanforderungen erfüllen"
+        }
+      },
+      "section2": {
+        "badge": "Planung & Budget",
+        "title": "Planung und Budgetierung",
+        "titleHighlight": "für Schulspielplätze",
+        "content": "Wir verstehen die einzigartigen Budget- und Beschaffungsprozesse von Bildungseinrichtungen. Unser Team bietet detaillierte Angebote, phasenweise Installation und flexible Finanzierung.",
+        "features": {
+          "f1": "Flexible Fertigung für jeden Klassenraum oder jede Turnhalle",
+          "f2": "Phasenweise Installation abgestimmt auf Schulkalender",
+          "f3": "Wettbewerbsfähige Preise mit Bildungsrabatten",
+          "f4": "15 Jahre Garantie bei minimalem Wartungsaufwand"
+        },
+        "cta": "Bildungsvorschlag anfordern"
+      },
+      "relatedTitle": "Verwandte Lösungen",
+      "relatedLinks": {
+        "product": "Indoor-Spielplätze",
+        "process": "Unser Prozess",
+        "caseStudies": "Fallstudien",
+        "allProducts": "Alle Produkte"
+      },
+      "faq": {
+        "badge": "FAQ",
+        "title": "Häufig gestellte",
+        "titleHighlight": "Fragen",
+        "q1": {
+          "question": "Welche Altersgruppen unterstützen Ihre Schulspielplätze?",
+          "answer": "Wir entwerfen alterssegmentierte Spielbereiche für alle Stufen: Kleinkinderzonen (1-3 Jahre), Kindergartenbereiche (3-5 Jahre) mit sensorischen und motorischen Elementen, und Grundschulzonen (6-12 Jahre) mit anspruchsvolleren Geräten."
+        },
+        "q2": {
+          "question": "Kann die Installation während der Schulferien erfolgen?",
+          "answer": "Selbstverständlich. Wir planen Installationen während der Sommer-, Winterferien oder an Wochenenden. Die meisten Schulinstallationen werden in 5-10 Tagen abgeschlossen."
+        }
+      }
+    },
+    "ecommerce": {
+      "seo": {
+        "title": "Indoor-Spielplatz für Retail und E-Commerce-Zentren",
+        "description": "Steigern Sie den Fußverkehr mit Retailtainment-Spielplatzlösungen. Maßgeschneiderte Indoor-Spielbereiche für Einkaufszentren und E-Commerce-Erlebniszentren. Kostenloses 3D-Design.",
+        "keywords": "Retailtainment Spielplatz, Einkaufszentrum Spielplatz, Retail Indoor-Spielplatz, E-Commerce Erlebniszentrum"
+      },
+      "breadcrumb": "E-Commerce & Retail-Lösungen",
+      "hero": {
+        "badge": "E-Commerce & Retailtainment",
+        "title": "Strategische Indoor-Spielplatz-Lösungen",
+        "titleHighlight": "für E-Commerce & Retail-Zentren",
+        "description": "Im Zeitalter des Online-Shoppings muss der stationäre Handel unvergessliche Erlebnisse bieten. NinescapeLand schafft Retailtainment-Spielzonen, die Fußverkehr steigern und Besucher zu treuen Kunden machen.",
+        "cta": "Retail-Beratung anfordern",
+        "ctaSecondary": "Soft Play Equipment ansehen"
+      },
+      "stats": {
+        "s1": {
+          "value": "+40%",
+          "label": "Mehr Fußverkehr"
+        },
+        "s2": {
+          "value": "+35 Min.",
+          "label": "Längere Verweildauer"
+        },
+        "s3": {
+          "value": "92%",
+          "label": "Wiederkehrrate"
+        },
+        "s4": {
+          "value": "12-18 Mo.",
+          "label": "ROI-Zeitraum"
+        }
+      },
+      "section1": {
+        "badge": "Retailtainment-Strategie",
+        "title": "Der Aufstieg des Retailtainment",
+        "titleHighlight": "im digitalen Zeitalter",
+        "content": "Da E-Commerce den Einzelhandel verändert, müssen physische Standorte zu Erlebnisdestinationen werden. Indoor-Spielplätze schaffen kraftvolle Anker-Attraktionen, die Familien anziehen und den Pro-Besuch-Umsatz um 25-40% steigern.",
+        "features": {
+          "f1": "Fußverkehr um 30-40% steigern mit familienfreundlichen Attraktionen",
+          "f2": "Markenthematisierte Spielplatzdesigns, die Ihre Identität stärken",
+          "f3": "Strategische Platzierung zur Steuerung des Verkehrsflusses",
+          "f4": "Umsatzgenerierung durch Pay-per-Play- oder Mitgliedschaftsmodelle"
+        }
+      },
+      "section2": {
+        "badge": "Geschäftsmodell",
+        "title": "Profitable Geschäftsstrategien",
+        "titleHighlight": "für Retail-Spielzonen",
+        "content": "Unsere Retail-Spielplatzlösungen sind als Profitcenter konzipiert. Wir bieten komplette Geschäftsplanung einschließlich Umsatzprognosen und Betriebsmodellen.",
+        "features": {
+          "f1": "Schlüsselfertige Lösungen vom Konzept bis zur Eröffnung",
+          "f2": "Umsatzmodellierung und Preisstrategie-Beratung",
+          "f3": "Platzeffiziente Designs für hochpreisige Retail-Umgebungen",
+          "f4": "Modulare und saisonale Pop-up-Optionen"
+        },
+        "cta": "Retail-Beratung anfordern"
+      },
+      "relatedTitle": "Verwandte Lösungen",
+      "relatedLinks": {
+        "product": "Soft Play Equipment",
+        "process": "Unser Prozess",
+        "caseStudies": "Fallstudien",
+        "allProducts": "Alle Produkte"
+      },
+      "faq": {
+        "badge": "FAQ",
+        "title": "Häufig gestellte",
+        "titleHighlight": "Fragen",
+        "q1": {
+          "question": "Was ist der typische ROI für einen Retail-Spielplatz?",
+          "answer": "Die meisten Retail-Spielzonen erreichen einen positiven ROI innerhalb von 12-18 Monaten. Einnahmequellen umfassen Eintrittsgebühren, Partybuchungen, Mitgliedschaften und Gastronomie-Upsells."
+        },
+        "q2": {
+          "question": "Können Sie Pop-up- oder temporäre Installationen erstellen?",
+          "answer": "Ja, wir bieten modulare Systeme, die für temporäre Retail-Aktivierungen und saisonale Events auf- und abgebaut werden können. Diese Systeme sind für schnellen Aufbau bei voller Sicherheitskonformität ausgelegt."
+        }
+      }
+    },
+    "finance": {
+      "seo": {
+        "title": "Premium Indoor-Spielplatz für Finanzinstitute",
+        "description": "Verbessern Sie das Kundenerlebnis in Banken und Vermögensverwaltungen mit Premium-Indoor-Spielbereichen. Professionelle Designs für High-Net-Worth-Kundenumgebungen. ASTM-zertifiziert.",
+        "keywords": "Banklobby Spielplatz, Vermögensverwaltung Spielbereich, Finanzamt Spielplatz, Premium Indoor-Spielplatz"
+      },
+      "breadcrumb": "Finanzsektor-Lösungen",
+      "hero": {
+        "badge": "Finanzdienstleistungen",
+        "title": "High-End Indoor-Spielplatz-Lösungen",
+        "titleHighlight": "für den Finanzsektor",
+        "description": "Schaffen Sie Premium-Kundenerlebnisse, die Ihr Finanzinstitut hervorheben. NinescapeLand entwirft anspruchsvolle, elegante Spielräume für Banken und Vermögensverwaltungen weltweit.",
+        "cta": "Premium-Beratung anfordern",
+        "ctaSecondary": "Soft Play Equipment ansehen"
+      },
+      "stats": {
+        "s1": {
+          "value": "+30%",
+          "label": "Kundenzufriedenheit"
+        },
+        "s2": {
+          "value": "Premium",
+          "label": "Designqualität"
+        },
+        "s3": {
+          "value": "99%",
+          "label": "Elternzustimmung"
+        },
+        "s4": {
+          "value": "ASTM",
+          "label": "Sicherheitszertifiziert"
+        }
+      },
+      "section1": {
+        "badge": "Kundenerlebnis",
+        "title": "Das Kundenerlebnis verbessern",
+        "titleHighlight": "in der Vermögensverwaltung",
+        "content": "Vermögende Kunden erwarten außergewöhnliche Serviceumgebungen. Ein Premium-Spielbereich demonstriert Aufmerksamkeit für Familienbedürfnisse und verlängert die Beratungszeit.",
+        "features": {
+          "f1": "Luxuriöse Design-Ästhetik passend zu Ihrer Unternehmensidentität",
+          "f2": "Ruhige, betreute Spielzonen neben Beratungsräumen",
+          "f3": "Premium-Materialien: Holzoberflächen, Designer-Stoffe, LED-Akzente",
+          "f4": "Kompakte Optionen für Filialen und Chefetagen"
+        }
+      },
+      "section2": {
+        "badge": "Investitionswert",
+        "title": "Investitionsanalyse &",
+        "titleHighlight": "Langfristiger Wert",
+        "content": "Ein Premium-Spielbereich ist eine strategische Investition in Kundenbeziehungen. Wir liefern detaillierte Kosten-Nutzen-Analysen.",
+        "features": {
+          "f1": "Maßgeschneiderte Designs für Luxus-Innenausstattung",
+          "f2": "ROI-Prognosen für verbesserte Kundenbindung",
+          "f3": "Wartungsarme, hochbelastbare Konstruktion für professionelle Umgebungen",
+          "f4": "Vollständige Einhaltung von Bauvorschriften und ADA-Standards"
+        },
+        "cta": "Premium-Beratung anfordern"
+      },
+      "relatedTitle": "Verwandte Lösungen",
+      "relatedLinks": {
+        "product": "Soft Play Equipment",
+        "process": "Unser Prozess",
+        "caseStudies": "Fallstudien",
+        "allProducts": "Alle Produkte"
+      },
+      "faq": {
+        "badge": "FAQ",
+        "title": "Häufig gestellte",
+        "titleHighlight": "Fragen",
+        "q1": {
+          "question": "Wie stellen Sie sicher, dass das Design zu unserem Corporate Image passt?",
+          "answer": "Unser Designteam erstellt vollständig individuelle Konzepte mit Ihren Markenfarben, Materialien und ästhetischen Richtlinien. Wir liefern fotorealistische 3D-Renders zur Freigabe."
+        },
+        "q2": {
+          "question": "Wie wirkt sich der Geräuschpegel auf Büroumgebungen aus?",
+          "answer": "Unsere Premium-Spielbereiche integrieren Akustik-Engineering: schallabsorbierende Materialien, strategische Trennwände und gummidämpfte Strukturen für Lärmpegel unter 45dB."
+        }
+      }
+    },
+    "legal": {
+      "seo": {
+        "title": "Indoor-Spielplatz-Lösungen für Anwaltskanzleien",
+        "description": "Premium Indoor-Spielplatz-Lösungen für Kanzlei-Lobbys und Rechtsanwaltsbüros. Professionelle, sichere Spielbereiche für verbesserte Kundenerfahrung. ASTM & TÜV zertifiziert.",
+        "keywords": "Anwaltskanzlei Spielplatz, Rechtsanwaltsbüro Spielbereich, Kanzlei Kinderbereich, professioneller Lobby-Spielplatz"
+      },
+      "breadcrumb": "Rechtsbranche-Lösungen",
+      "hero": {
+        "badge": "Recht & Professionelle Dienste",
+        "title": "Premium Indoor-Spielplatz-Lösungen",
+        "titleHighlight": "für die Rechtsbranche",
+        "description": "Verbessern Sie das Kundenerlebnis Ihrer Kanzlei mit professionellen, anspruchsvollen Spielbereichen. NinescapeLand schafft Premium-Umgebungen, in denen Kinder sicher betreut werden, während Eltern sich auf wichtige Rechtsberatungen konzentrieren.",
+        "cta": "Professionelle Beratung anfordern",
+        "ctaSecondary": "Soft Play Equipment ansehen"
+      },
+      "stats": {
+        "s1": {
+          "value": "+25%",
+          "label": "Kundenzufriedenheit"
+        },
+        "s2": {
+          "value": "100%",
+          "label": "Sicherheitskonform"
+        },
+        "s3": {
+          "value": "Premium",
+          "label": "Designstandard"
+        },
+        "s4": {
+          "value": "5 Jahre",
+          "label": "Garantie"
+        }
+      },
+      "section1": {
+        "badge": "Kundenerlebnis",
+        "title": "Kundenerlebnis verbessern",
+        "titleHighlight": "in Rechtsumgebungen",
+        "content": "Familienrecht, Nachlassplanung und Einwanderungsberatung erfordern oft, dass Eltern ihre Kinder mitbringen. Ein professioneller Spielbereich reduziert Stress für Eltern und Kinder.",
+        "features": {
+          "f1": "Anspruchsvolle Designs passend zur professionellen Büroästhetik",
+          "f2": "Ruhige Spielzonen, die Besprechungsräume nicht stören",
+          "f3": "Altersgerechte Elemente für Kinder von 1-8 Jahren",
+          "f4": "Kompakte Designs optimiert für Bürogrundrisse"
+        }
+      },
+      "section2": {
+        "badge": "Compliance",
+        "title": "Compliance und Sicherheit:",
+        "titleHighlight": "Der Branchenstandard",
+        "content": "Wir verstehen, dass Rechtsanwälte höchste Standards verlangen. Jeder von uns gebaute Spielplatz erfüllt oder übertrifft internationale Sicherheitszertifizierungen.",
+        "features": {
+          "f1": "Vollständiges Dokumentationspaket für Haftung und Versicherung",
+          "f2": "ASTM F1918 & EN 1176 zertifizierte Geräte",
+          "f3": "Professionelle Materialien mit antimikrobiellen Eigenschaften",
+          "f4": "Umfassende Wartungs- und Inspektionsprotokolle"
+        },
+        "cta": "Professionelle Beratung anfordern"
+      },
+      "relatedTitle": "Verwandte Lösungen",
+      "relatedLinks": {
+        "product": "Soft Play Equipment",
+        "process": "Unser Prozess",
+        "caseStudies": "Fallstudien",
+        "allProducts": "Alle Produkte"
+      },
+      "faq": {
+        "badge": "FAQ",
+        "title": "Häufig gestellte",
+        "titleHighlight": "Fragen",
+        "q1": {
+          "question": "Welche Haftungsdokumentation stellen Sie bereit?",
+          "answer": "Wir liefern umfassende Dokumentation einschließlich Sicherheitszertifikate (ASTM, TÜV, EN 1176), Materialsicherheitsdatenblätter, Installationskonformitätsaufzeichnungen und empfohlene Versicherungsrichtlinien."
+        },
+        "q2": {
+          "question": "Wie viel Platz wird für einen Spielbereich in einer Kanzlei benötigt?",
+          "answer": "Unsere kompakten Designs passen in Räume ab 15-20 Quadratmetern. Wir schaffen effiziente Layouts, die den Spielwert in begrenzten Bürogrundrissen maximieren."
+        }
+      }
+    },
+    "marketing": {
+      "seo": {
+        "title": "Indoor-Spielplatz für Markenmarketing & Aktivierungen",
+        "description": "Schaffen Sie unvergessliche Markenerlebnisse mit maßgeschneiderten Indoor-Spielplatzinstallationen. Perfekt für Marketing-Events, Pop-up-Retail und Erlebniskampagnen. Kostenloses 3D-Design.",
+        "keywords": "Markenaktivierung Spielplatz, Erlebnismarketing Spielplatz, Pop-up Spielplatz, Marketing-Event Spielbereich"
+      },
+      "breadcrumb": "Marketing-Lösungen",
+      "hero": {
+        "badge": "Marketing & Markenaktivierung",
+        "title": "Innovative Indoor-Spielplatz-Lösungen",
+        "titleHighlight": "für Marketing & Markenaktivierung",
+        "description": "Schaffen Sie unvergessliche Markenerlebnisse durch interaktive Spielinstallationen. NinescapeLand baut maßgeschneiderte Markenspielplätze für Erlebnismarketing-Kampagnen und Markenaktivierungen weltweit.",
+        "cta": "Kampagnenberatung anfordern",
+        "ctaSecondary": "Indoor-Spielplätze ansehen"
+      },
+      "stats": {
+        "s1": {
+          "value": "10x",
+          "label": "Social-Media-Engagement"
+        },
+        "s2": {
+          "value": "+60%",
+          "label": "Markenwiedererkennung"
+        },
+        "s3": {
+          "value": "Custom",
+          "label": "Markenthematisierung"
+        },
+        "s4": {
+          "value": "48 Std.",
+          "label": "Pop-up-Aufbau"
+        }
+      },
+      "section1": {
+        "badge": "Markenerlebnis",
+        "title": "Unvergessliche",
+        "titleHighlight": "Markenerlebnisse schaffen",
+        "content": "Interaktive Spielinstallationen erzeugen 10x mehr Social-Media-Engagement als traditionelles Marketing. Unsere markenindividuellen Spielplätze schaffen teilbare Momente, die Ihre Kampagnenreichweite verstärken.",
+        "features": {
+          "f1": "Vollständig gebrandete Designs mit Ihrem Logo, Farben und Kampagnenthema",
+          "f2": "Instagram-taugliche Installationen für Social Sharing",
+          "f3": "Interaktive Elemente, die Markenbotschaften vermitteln",
+          "f4": "Multisensorische Erlebnisse für bleibende Markeneindrücke"
+        }
+      },
+      "section2": {
+        "badge": "Skalierbare Lösungen",
+        "title": "Skalierbare Lösungen für",
+        "titleHighlight": "Pop-ups und Retail",
+        "content": "Ob Weekend-Pop-up oder permanentes Erlebniszentrum – wir bieten flexible Spielplatzlösungen, die sich an Ihre Kampagnenanforderungen anpassen. Unsere modularen Systeme können in 48 Stunden aufgebaut werden.",
+        "features": {
+          "f1": "Modulare Systeme für schnellen Auf- und Abbau",
+          "f2": "Transportable Designs für Multi-City-Kampagnentouren",
+          "f3": "Permanente Erlebniszentrum-Installationen",
+          "f4": "Event-spezifische Anpassung und saisonale Thematisierung"
+        },
+        "cta": "Kampagnenberatung anfordern"
+      },
+      "relatedTitle": "Verwandte Lösungen",
+      "relatedLinks": {
+        "product": "Indoor-Spielplätze",
+        "process": "Unser Prozess",
+        "caseStudies": "Fallstudien",
+        "allProducts": "Alle Produkte"
+      },
+      "faq": {
+        "badge": "FAQ",
+        "title": "Häufig gestellte",
+        "titleHighlight": "Fragen",
+        "q1": {
+          "question": "Können Sie unsere exakten Markenrichtlinien einhalten?",
+          "answer": "Ja, wir arbeiten nach Ihrem Markenhandbuch, um exakte Pantone-Farben, Logo-Platzierung, Typografie und Designsprache abzustimmen. Unser Team erstellt fotorealistische 3D-Renders zur Freigabe."
+        },
+        "q2": {
+          "question": "Was ist die Vorlaufzeit für einen Pop-up-Spielplatz?",
+          "answer": "Für modulare Pop-up-Systeme können wir innerhalb von 30-45 Tagen liefern. Eilaufträge für einfachere Konfigurationen in nur 20 Tagen. Der Vor-Ort-Aufbau dauert 1-2 Tage."
+        }
+      }
+    },
+    "hr": {
+      "seo": {
+        "title": "Firmen-Indoor-Spielplatz für Mitarbeiter-Wellness",
+        "description": "Steigern Sie die Mitarbeiterbindung mit firmeneigenen Indoor-Spielplatzlösungen. Betriebliche Kinderbetreuungs-Spielbereiche und Wellness-Räume für moderne Arbeitsplätze. ASTM-zertifiziert.",
+        "keywords": "Firmenspielplatz, Mitarbeiter-Wellness Spielplatz, betriebliche Kinderbetreuung, Büro Indoor-Spielplatz"
+      },
+      "breadcrumb": "HR & Arbeitsplatz-Lösungen",
+      "hero": {
+        "badge": "HR & Corporate Wellness",
+        "title": "Unternehmenskultur transformieren",
+        "titleHighlight": "mit Indoor-Spielplatz-Lösungen",
+        "description": "Unterstützen Sie die Work-Life-Balance Ihrer Mitarbeiter mit betrieblichen Kinderbetreuungs-Spielbereichen und Wellness-Räumen. NinescapeLand hilft Unternehmen, Top-Talente mit familienfreundlichen Arbeitsplatz-Amenitäten zu gewinnen und zu halten.",
+        "cta": "Firmenberatung anfordern",
+        "ctaSecondary": "Indoor-Spielplätze ansehen"
+      },
+      "stats": {
+        "s1": {
+          "value": "+30%",
+          "label": "Mitarbeiterbindung"
+        },
+        "s2": {
+          "value": "-45%",
+          "label": "Weniger Fehlzeiten"
+        },
+        "s3": {
+          "value": "92%",
+          "label": "Mitarbeiterzufriedenheit"
+        },
+        "s4": {
+          "value": "Top",
+          "label": "Arbeitgebermarke"
+        }
+      },
+      "section1": {
+        "badge": "Work-Life-Balance",
+        "title": "Work-Life-Balance unterstützen",
+        "titleHighlight": "für moderne Mitarbeiter",
+        "content": "Unternehmen mit betrieblicher Kinderbetreuung und Familien-Amenitäten verzeichnen 30% höhere Mitarbeiterbindung. Indoor-Spielräume reduzieren elterlichen Stress und positionieren Ihr Unternehmen als Top-Arbeitgeber.",
+        "features": {
+          "f1": "Betriebliche Kinderbetreuungs-Spielzonen für Mitarbeiterkinder",
+          "f2": "Wellness-Bereiche in Pausen zur Förderung der psychischen Gesundheit",
+          "f3": "Familien-Eventbereiche für Firmenfeiern und Teambuilding",
+          "f4": "Stressabbau-Umgebungen, gestützt durch Arbeitsplatzforschung"
+        }
+      },
+      "section2": {
+        "badge": "Arbeitsplatzqualität",
+        "title": "Sicherheit und Qualität",
+        "titleHighlight": "am Arbeitsplatz",
+        "content": "Unsere Firmenspielplatz-Lösungen erfüllen die höchsten Sicherheitsstandards für Arbeitsumgebungen. Jede Installation umfasst vollständige HR-Compliance-Dokumentation und Versicherungsanforderungen.",
+        "features": {
+          "f1": "Vollständiges HR-Compliance-Dokumentationspaket",
+          "f2": "Versicherungsfreundliche Sicherheitszertifizierungen (ASTM, TÜV)",
+          "f3": "Geräuscharme Designs für Büroumgebungen",
+          "f4": "Leicht zu reinigende, hypoallergene Materialien"
+        },
+        "cta": "Firmenberatung anfordern"
+      },
+      "relatedTitle": "Verwandte Lösungen",
+      "relatedLinks": {
+        "product": "Indoor-Spielplätze",
+        "process": "Unser Prozess",
+        "caseStudies": "Fallstudien",
+        "allProducts": "Alle Produkte"
+      },
+      "faq": {
+        "badge": "FAQ",
+        "title": "Häufig gestellte",
+        "titleHighlight": "Fragen",
+        "q1": {
+          "question": "Wie viel Bürofläche wird benötigt?",
+          "answer": "Unsere Firmenspielplätze können für Räume ab 20-30 Quadratmetern für eine kompakte Kinderecke konzipiert werden, oder auf über 200 m² für vollwertige Kinderbetreuungseinrichtungen skaliert werden."
+        },
+        "q2": {
+          "question": "Beeinflusst ein Firmenspielplatz die Versicherungskosten?",
+          "answer": "Mit ordnungsgemäßen Sicherheitszertifizierungen (die wir bereitstellen) erheben die meisten Versicherer minimale Aufschläge. Viele Unternehmen stellen fest, dass die Kosten durch reduzierte Fluktuation und Fehlzeiten kompensiert werden."
+        }
+      }
+    },
+    "logistics": {
+      "seo": {
+        "title": "Indoor-Spielplatz für Logistik- und Fulfillment-Zentren",
+        "description": "Familienfreundliche Indoor-Spielzonen für Logistik-Hubs und Fulfillment-Center. Langlebige, industrietaugliche Spielgeräte für Hochfrequenz-Einrichtungen. ASTM-zertifiziert.",
+        "keywords": "Logistikzentrum Spielplatz, Fulfillment-Center Spielplatz, Lager Familienzone, industrieller Indoor-Spielplatz"
+      },
+      "breadcrumb": "Logistik-Lösungen",
+      "hero": {
+        "badge": "Logistik & Industrie",
+        "title": "Strategische Indoor-Spielplatz-Lösungen",
+        "titleHighlight": "für Logistik-Hubs",
+        "description": "Schaffen Sie familienfreundliche Zonen in Logistik- und Fulfillment-Zentren. NinescapeLand baut langlebige, industrietaugliche Spielräume, die die Mitarbeiterzufriedenheit verbessern.",
+        "cta": "Anlagenberatung anfordern",
+        "ctaSecondary": "Indoor-Spielplätze ansehen"
+      },
+      "stats": {
+        "s1": {
+          "value": "Industriell",
+          "label": "Belastbarkeit"
+        },
+        "s2": {
+          "value": "+25%",
+          "label": "Mitarbeiterbindung"
+        },
+        "s3": {
+          "value": "50.000+",
+          "label": "Getestete Nutzungszyklen"
+        },
+        "s4": {
+          "value": "+20%",
+          "label": "Produktivitätssteigerung"
+        }
+      },
+      "section1": {
+        "badge": "Familienzonen",
+        "title": "Familienzonen in",
+        "titleHighlight": "Hochfrequenz-Logistikzentren",
+        "content": "Große Logistik- und Fulfillment-Zentren bieten zunehmend Familien-Amenitäten an, um Mitarbeiter in wettbewerbsintensiven Arbeitsmärkten zu gewinnen und zu halten.",
+        "features": {
+          "f1": "Industrietaugliche Materialien für intensiven täglichen Gebrauch",
+          "f2": "Sicherheitsorientierte Designs für Lagerumgebungen",
+          "f3": "Modulare Konfigurationen anpassbar an Lagergrundrisse",
+          "f4": "Mitarbeiter-Wellness-Zonen für Pausenentspannung"
+        }
+      },
+      "section2": {
+        "badge": "Langlebigkeit",
+        "title": "Langlebiges Design für",
+        "titleHighlight": "Industrieumgebungen",
+        "content": "Unsere Logistik-Spielplätze sind mit industrietauglichen Materialien gebaut, die extremen Temperaturschwankungen, intensiven Nutzungsmustern und anspruchsvollen Wartungsplänen standhalten.",
+        "features": {
+          "f1": "Temperaturbeständige Materialien für Lagerumgebungen",
+          "f2": "Antistatische und staubresistente Oberflächenbehandlungen",
+          "f3": "Schwerlast-Stahlstrukturen mit Industriebeschichtungen",
+          "f4": "Modulares Schnellreparatur-Design für minimale Ausfallzeiten"
+        },
+        "cta": "Anlagenberatung anfordern"
+      },
+      "relatedTitle": "Verwandte Lösungen",
+      "relatedLinks": {
+        "product": "Indoor-Spielplätze",
+        "process": "Unser Prozess",
+        "caseStudies": "Fallstudien",
+        "allProducts": "Alle Produkte"
+      },
+      "faq": {
+        "badge": "FAQ",
+        "title": "Häufig gestellte",
+        "titleHighlight": "Fragen",
+        "q1": {
+          "question": "Können Ihre Geräte extreme Lagertemperaturen aushalten?",
+          "answer": "Ja, unsere industrietauglichen Materialien sind für Umgebungen von -10°C bis +50°C ausgelegt. Wir verwenden UV-stabilisierte Materialien und temperaturbeständige Schaumstoffe."
+        },
+        "q2": {
+          "question": "Wie handhaben Sie die Installation in aktiven Einrichtungen?",
+          "answer": "Wir koordinieren mit Ihrem Betriebsteam, um die Installation in Nebenzeiten zu planen. Unsere modularen Systeme ermöglichen phasenweise Installation, typischerweise in 3-5 Tagen abgeschlossen."
+        }
+      }
+    },
+    "manufacturing": {
+      "seo": {
+        "title": "Indoor-Spielplatz für Fertigungs- und Fabrikeinrichtungen",
+        "description": "Sicherheitsorientierte Indoor-Spielplatzlösungen für Fertigungsbetriebe und Fabriken. Langlebige Geräte nach industriellen Sicherheitsstandards. ASTM & TÜV zertifiziert.",
+        "keywords": "Fabrik Indoor-Spielplatz, Fertigungsbetrieb Spielplatz, Industrieanlage Spielbereich, Fabrik Kinderbetreuung"
+      },
+      "breadcrumb": "Fertigungslösungen",
+      "hero": {
+        "badge": "Fertigung & Industrie",
+        "title": "Sichere und langlebige Indoor-Spielplatz-Lösungen",
+        "titleHighlight": "für Fertigungsbetriebe",
+        "description": "Integrieren Sie familienfreundliche Amenitäten in Fertigungsumgebungen mit sicherheitsorientierten Indoor-Spielplatzlösungen. NinescapeLand baut industrietaugliche Spielräume, die strengste Sicherheitsanforderungen erfüllen.",
+        "cta": "Fabrikberatung anfordern",
+        "ctaSecondary": "Indoor-Spielplätze ansehen"
+      },
+      "stats": {
+        "s1": {
+          "value": "Industriell",
+          "label": "Sicherheitsstufe"
+        },
+        "s2": {
+          "value": "100%",
+          "label": "Compliance-Rate"
+        },
+        "s3": {
+          "value": "+20%",
+          "label": "Mitarbeiterzufriedenheit"
+        },
+        "s4": {
+          "value": "ISO 9001",
+          "label": "Qualitätszertifiziert"
+        }
+      },
+      "section1": {
+        "badge": "Familiensicherheit",
+        "title": "Familiensicherheit integrieren",
+        "titleHighlight": "in der Fertigung",
+        "content": "Fertigungsbetriebe mit betrieblichen Familien-Amenitäten berichten von deutlich niedrigeren Fluktuationsraten. Unsere industrietauglichen Spielplätze sind speziell für Fabrikumgebungen konzipiert.",
+        "features": {
+          "f1": "Industrietaugliche Konstruktion über Fabrik-Sicherheitsstandards hinaus",
+          "f2": "Geschlossene, klimatisierte Designs getrennt von Produktionszonen",
+          "f3": "Schwerlast-Materialien beständig gegen industrielle Verunreinigungen",
+          "f4": "Evakuierungskonforme Layouts und Beschilderung"
+        }
+      },
+      "section2": {
+        "badge": "Qualitätskontrolle",
+        "title": "Compliance und",
+        "titleHighlight": "Qualitätskontrolle",
+        "content": "Jeder Fertigungs-Spielplatz durchläuft strenge Qualitätskontrollprozesse. Wir liefern vollständige Compliance-Dokumentation und regelmäßige Inspektionsprotokolle.",
+        "features": {
+          "f1": "Drittanbieter-Sicherheitsaudits und Zertifizierungsdokumentation",
+          "f2": "Vierteljährliche Inspektionsprotokoll-Empfehlungen",
+          "f3": "Materialnachverfolgbarkeit und Sicherheitsdatenblätter",
+          "f4": "ASTM F1918, EN 1176 & ISO 9001 zertifiziert"
+        },
+        "cta": "Fabrikberatung anfordern"
+      },
+      "relatedTitle": "Verwandte Lösungen",
+      "relatedLinks": {
+        "product": "Indoor-Spielplätze",
+        "process": "Unser Prozess",
+        "caseStudies": "Fallstudien",
+        "allProducts": "Alle Produkte"
+      },
+      "faq": {
+        "badge": "FAQ",
+        "title": "Häufig gestellte",
+        "titleHighlight": "Fragen",
+        "q1": {
+          "question": "Wie gewährleisten Sie Spielplatzsicherheit in einer Fabrikumgebung?",
+          "answer": "Unsere Fabrikspielplätze sind vollständig geschlossene, klimatisierte Zonen, komplett getrennt von Produktionsbereichen. Sie verfügen über industrielle Luftfilterung, feuerfeste Materialien und OSHA-konforme Evakuierungswege."
+        },
+        "q2": {
+          "question": "Welche Wartung ist in einer industriellen Umgebung erforderlich?",
+          "answer": "Wir bieten individualisierte Wartungspläne mit wöchentlicher Oberflächendesinfektion, monatlichen Strukturinspektionen und vierteljährlichen Tiefenreinigungsprotokollen. Unser modulares Design ermöglicht den Austausch einzelner Komponenten."
+        }
+      }
+    }
   }
 }
