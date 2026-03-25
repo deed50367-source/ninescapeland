@@ -1705,5 +1705,797 @@
       "moreQuestions": "Vous avez encore des questions ? Notre équipe est prête à vous aider.",
       "askUs": "Posez-nous Vos Questions"
     }
+  },
+  "industryPages": {
+    "realEstate": {
+      "seo": {
+        "title": "Solutions d'Aires de Jeux Intérieures pour Promoteurs Immobiliers",
+        "description": "Augmentez la valeur immobilière avec des aires de jeux intérieures premium. Espaces de jeux personnalisés pour résidences, projets mixtes et hôteliers. Certification ASTM.",
+        "keywords": "aire de jeux intérieure immobilier, équipement de jeux résidentiel, aménagement immobilier aire de jeux"
+      },
+      "breadcrumb": "Solutions Immobilières",
+      "hero": {
+        "badge": "Immobilier & Promotion",
+        "title": "Solutions Premium d'Aires de Jeux Intérieures",
+        "titleHighlight": "pour les Projets Immobiliers Modernes",
+        "description": "Démarquez vos propriétés avec des aires de jeux intérieures de classe mondiale. NinescapeLand conçoit et fabrique des solutions sur mesure qui augmentent les taux d'occupation et la valeur des biens.",
+        "cta": "Obtenir une Proposition Gratuite",
+        "ctaSecondary": "Voir les Aires de Jeux"
+      },
+      "stats": {
+        "s1": {
+          "value": "+15%",
+          "label": "Valorisation Immobilière"
+        },
+        "s2": {
+          "value": "2 000+",
+          "label": "Projets Réalisés"
+        },
+        "s3": {
+          "value": "95%",
+          "label": "Satisfaction des Locataires"
+        },
+        "s4": {
+          "value": "50+",
+          "label": "Pays Desservis"
+        }
+      },
+      "section1": {
+        "badge": "Valeur Immobilière",
+        "title": "Augmenter la Valeur Immobilière grâce à",
+        "titleHighlight": "des Espaces de Jeux Stratégiques",
+        "content": "Sur le marché immobilier concurrentiel d'aujourd'hui, les aménagements premium font la différence. Les aires de jeux intérieures attirent les familles et créent des communautés dynamiques.",
+        "features": {
+          "f1": "Augmentez la valorisation de 10-15% avec des aires de jeux premium",
+          "f2": "Designs thématiques personnalisés complétant votre vision architecturale",
+          "f3": "Équipements certifiés ASTM et TUV aux normes internationales de sécurité",
+          "f4": "Créez des aménagements phares qui génèrent du trafic vers les espaces commerciaux"
+        }
+      },
+      "section2": {
+        "badge": "Solutions Clé en Main",
+        "title": "Design Sur Mesure et",
+        "titleHighlight": "Mise en Œuvre Stratégique",
+        "content": "Du concept à la livraison, NinescapeLand fournit des solutions complètes d'aires de jeux pour les promoteurs immobiliers.",
+        "features": {
+          "f1": "Fabrication directe avec délais de 60-90 jours",
+          "f2": "Rendus 3D intégrés aux plans architecturaux",
+          "f3": "Analyses ROI et études de faisabilité pour investisseurs",
+          "f4": "Installation rapide avec perturbation minimale du chantier"
+        },
+        "cta": "Demander une Proposition Immobilière"
+      },
+      "relatedTitle": "Solutions Associées",
+      "relatedLinks": {
+        "product": "Aires de Jeux Intérieures",
+        "process": "Notre Processus",
+        "caseStudies": "Études de Cas",
+        "allProducts": "Tous les Produits"
+      },
+      "faq": {
+        "badge": "FAQ",
+        "title": "Questions",
+        "titleHighlight": "Fréquentes",
+        "q1": {
+          "question": "Comment une aire de jeux intérieure augmente-t-elle la valeur immobilière ?",
+          "answer": "Les aires de jeux servent d'aménagements premium qui différencient les propriétés. Les développements familiaux avec aires de jeux obtiennent des valorisations 10-15% supérieures."
+        },
+        "q2": {
+          "question": "Pouvez-vous travailler avec nos architectes et entrepreneurs ?",
+          "answer": "Absolument. Nous collaborons régulièrement avec des cabinets d'architecture et des entrepreneurs dans le monde entier. Nous fournissons fichiers CAD, rendus 3D et spécifications structurelles."
+        }
+      }
+    },
+    "healthcare": {
+      "seo": {
+        "title": "Aire de Jeux Thérapeutique pour Établissements de Santé",
+        "description": "Créez des environnements pédiatriques sans stress avec des équipements de jeux de grade hospitalier. Matériaux antimicrobiens et designs thérapeutiques. Certification ASTM.",
+        "keywords": "équipement de jeux hôpital, aire de jeux pédiatrique, aire de jeux santé, jeux thérapeutiques"
+      },
+      "breadcrumb": "Solutions Santé",
+      "hero": {
+        "badge": "Santé & Pédiatrie",
+        "title": "Solutions d'Aires de Jeux Thérapeutiques",
+        "titleHighlight": "pour les Établissements de Santé",
+        "description": "Transformez les salles d'attente pédiatriques en environnements de guérison. NinescapeLand crée des espaces antimicrobiens et sensoriels qui réduisent l'anxiété des patients.",
+        "cta": "Obtenir une Proposition Santé",
+        "ctaSecondary": "Voir les Équipements Soft Play"
+      },
+      "stats": {
+        "s1": {
+          "value": "-40%",
+          "label": "Réduction de l'Anxiété"
+        },
+        "s2": {
+          "value": "100%",
+          "label": "Matériaux Antimicrobiens"
+        },
+        "s3": {
+          "value": "98%",
+          "label": "Satisfaction des Parents"
+        },
+        "s4": {
+          "value": "ISO 9001",
+          "label": "Certification Qualité"
+        }
+      },
+      "section1": {
+        "badge": "Expérience Patient",
+        "title": "Créer des Environnements Sans Stress",
+        "titleHighlight": "pour les Patients Pédiatriques",
+        "content": "Les environnements médicaux peuvent être intimidants pour les enfants. Nos espaces thérapeutiques sont conçus avec des spécialistes pédiatriques pour réduire l'anxiété.",
+        "features": {
+          "f1": "Matériaux antimicrobiens et faciles à désinfecter",
+          "f2": "Éléments sensoriels conçus avec des psychologues pour enfants",
+          "f3": "Structures souples et rembourrées répondant aux normes médicales",
+          "f4": "Designs inclusifs pour enfants de toutes capacités"
+        }
+      },
+      "section2": {
+        "badge": "Sécurité & Conformité",
+        "title": "Designs Santé Personnalisés et",
+        "titleHighlight": "Normes de Sécurité",
+        "content": "Nos solutions santé répondent aux normes d'hygiène et de sécurité les plus strictes.",
+        "features": {
+          "f1": "Conformité aux protocoles de contrôle des infections",
+          "f2": "Matériaux certifiés ignifuges et non toxiques",
+          "f3": "Designs modulaires pour un nettoyage en profondeur facile",
+          "f4": "Certifications ASTM F1918, EN 1176 et TÜV SÜD"
+        },
+        "cta": "Demander une Consultation Santé"
+      },
+      "relatedTitle": "Solutions Associées",
+      "relatedLinks": {
+        "product": "Équipements Soft Play",
+        "process": "Notre Processus",
+        "caseStudies": "Études de Cas",
+        "allProducts": "Tous les Produits"
+      },
+      "faq": {
+        "badge": "FAQ",
+        "title": "Questions",
+        "titleHighlight": "Fréquentes",
+        "q1": {
+          "question": "Quels matériaux antimicrobiens utilisez-vous ?",
+          "answer": "Nous utilisons du PVC antimicrobien de grade hospitalier, de la mousse anti-UV avec traitement antimicrobien. Toutes les surfaces inhibent 99,9% des bactéries."
+        },
+        "q2": {
+          "question": "Pouvez-vous concevoir pour les enfants à besoins spéciaux ?",
+          "answer": "Oui, nous sommes spécialisés dans les designs inclusifs avec éléments accessibles en fauteuil roulant, zones sensorielles apaisantes et panneaux tactiles."
+        }
+      }
+    },
+    "education": {
+      "seo": {
+        "title": "Solutions d'Aires de Jeux pour Écoles et Maternelles",
+        "description": "Améliorez le développement physique avec des équipements éducatifs. Designs adaptés pour écoles, maternelles et crèches. Certification ASTM et EN 1176.",
+        "keywords": "aire de jeux scolaire, équipement maternelle, équipement éducatif, aire de jeux crèche"
+      },
+      "breadcrumb": "Solutions Éducation",
+      "hero": {
+        "badge": "Éducation & Développement de l'Enfant",
+        "title": "Solutions Innovantes d'Aires de Jeux",
+        "titleHighlight": "pour les Institutions Éducatives",
+        "description": "Intégrez le jeu actif dans votre programme avec des aires de jeux sur mesure. NinescapeLand conçoit des environnements de jeux développementaux pour écoles et crèches.",
+        "cta": "Obtenir une Proposition Scolaire",
+        "ctaSecondary": "Voir les Aires de Jeux"
+      },
+      "stats": {
+        "s1": {
+          "value": "+25%",
+          "label": "Plus d'Activité Physique"
+        },
+        "s2": {
+          "value": "500+",
+          "label": "Écoles Équipées"
+        },
+        "s3": {
+          "value": "3-12",
+          "label": "Tranche d'Âge"
+        },
+        "s4": {
+          "value": "EN 1176",
+          "label": "Certification Sécurité"
+        }
+      },
+      "section1": {
+        "badge": "Apprentissage Actif",
+        "title": "Intégrer l'Activité Physique",
+        "titleHighlight": "au Programme Scolaire",
+        "content": "La recherche montre que l'activité physique améliore le développement cognitif, la concentration et les performances académiques.",
+        "features": {
+          "f1": "Zones segmentées par âge : maternelle (3-5) et primaire (6-12)",
+          "f2": "Éléments de développement : escalade, équilibre, coordination",
+          "f3": "Solutions intérieures pour l'éducation physique toute l'année",
+          "f4": "Designs inclusifs répondant aux exigences d'accessibilité"
+        }
+      },
+      "section2": {
+        "badge": "Planification & Budget",
+        "title": "Planification et Budget",
+        "titleHighlight": "pour les Aires de Jeux Scolaires",
+        "content": "Nous comprenons les processus budgétaires des institutions éducatives. Notre équipe propose des devis détaillés et des installations par phases.",
+        "features": {
+          "f1": "Fabrication flexible pour toute salle de classe ou gymnase",
+          "f2": "Plans d'installation alignés sur le calendrier scolaire",
+          "f3": "Prix compétitifs avec remises pour établissements éducatifs",
+          "f4": "Garantie 15 ans avec maintenance minimale"
+        },
+        "cta": "Demander une Proposition Éducation"
+      },
+      "relatedTitle": "Solutions Associées",
+      "relatedLinks": {
+        "product": "Aires de Jeux Intérieures",
+        "process": "Notre Processus",
+        "caseStudies": "Études de Cas",
+        "allProducts": "Tous les Produits"
+      },
+      "faq": {
+        "badge": "FAQ",
+        "title": "Questions",
+        "titleHighlight": "Fréquentes",
+        "q1": {
+          "question": "Quels groupes d'âge vos aires scolaires supportent-elles ?",
+          "answer": "Nous concevons des zones segmentées par âge : tout-petits (1-3), maternelle (3-5) avec éléments sensoriels, et primaire (6-12) avec équipements plus challengeants."
+        },
+        "q2": {
+          "question": "L'installation peut-elle se faire pendant les vacances scolaires ?",
+          "answer": "Absolument. Nous planifions les installations pendant les vacances d'été, d'hiver ou les week-ends. La plupart sont terminées en 5-10 jours."
+        }
+      }
+    },
+    "ecommerce": {
+      "seo": {
+        "title": "Aires de Jeux pour le Retail et Centres E-commerce",
+        "description": "Augmentez le trafic avec des solutions retailtainment. Aires de jeux pour centres commerciaux et hubs e-commerce. Design 3D gratuit.",
+        "keywords": "aire de jeux retailtainment, aire de jeux centre commercial, e-commerce expérientiel"
+      },
+      "breadcrumb": "Solutions E-commerce & Retail",
+      "hero": {
+        "badge": "E-commerce & Retailtainment",
+        "title": "Solutions Stratégiques d'Aires de Jeux",
+        "titleHighlight": "pour l'E-commerce et le Retail",
+        "description": "À l'ère du shopping en ligne, le retail physique doit offrir des expériences inoubliables. NinescapeLand crée des zones retailtainment qui augmentent le trafic et fidélisent les clients.",
+        "cta": "Obtenir une Proposition Retail",
+        "ctaSecondary": "Voir les Équipements Soft Play"
+      },
+      "stats": {
+        "s1": {
+          "value": "+40%",
+          "label": "Augmentation du Trafic"
+        },
+        "s2": {
+          "value": "+35 min",
+          "label": "Temps de Visite"
+        },
+        "s3": {
+          "value": "92%",
+          "label": "Taux de Retour"
+        },
+        "s4": {
+          "value": "12-18 mois",
+          "label": "Période de ROI"
+        }
+      },
+      "section1": {
+        "badge": "Stratégie Retailtainment",
+        "title": "L'Essor du Retailtainment",
+        "titleHighlight": "à l'Ère Numérique",
+        "content": "Le e-commerce transforme le retail. Les aires de jeux créent des attractions phares qui attirent les familles et augmentent les dépenses de 25-40%.",
+        "features": {
+          "f1": "Augmentez le trafic de 30-40% avec des attractions familiales",
+          "f2": "Designs de marque qui renforcent votre identité",
+          "f3": "Positionnement stratégique pour orienter le flux vers les zones de vente",
+          "f4": "Génération de revenus par abonnements ou paiement à l'usage"
+        }
+      },
+      "section2": {
+        "badge": "Modèle d'Affaires",
+        "title": "Stratégies Commerciales Rentables",
+        "titleHighlight": "pour les Zones de Jeux Retail",
+        "content": "Nos solutions retail sont conçues comme des centres de profit. Nous fournissons une planification commerciale complète.",
+        "features": {
+          "f1": "Solutions clé en main du concept à l'ouverture",
+          "f2": "Modélisation des revenus et conseil en stratégie tarifaire",
+          "f3": "Designs optimisés pour les espaces retail à loyer élevé",
+          "f4": "Options modulaires et temporaires pour activations saisonnières"
+        },
+        "cta": "Demander une Consultation Retail"
+      },
+      "relatedTitle": "Solutions Associées",
+      "relatedLinks": {
+        "product": "Équipements Soft Play",
+        "process": "Notre Processus",
+        "caseStudies": "Études de Cas",
+        "allProducts": "Tous les Produits"
+      },
+      "faq": {
+        "badge": "FAQ",
+        "title": "Questions",
+        "titleHighlight": "Fréquentes",
+        "q1": {
+          "question": "Quel est le ROI typique d'une aire de jeux retail ?",
+          "answer": "La plupart des zones de jeux atteignent un ROI positif en 12-18 mois via entrées, fêtes, abonnements et restauration."
+        },
+        "q2": {
+          "question": "Pouvez-vous créer des installations temporaires ou pop-up ?",
+          "answer": "Oui, nous proposons des systèmes modulaires pour activations temporaires, conçus pour un montage rapide en toute conformité."
+        }
+      }
+    },
+    "finance": {
+      "seo": {
+        "title": "Aire de Jeux Premium pour Institutions Financières",
+        "description": "Améliorez l'expérience client dans les banques et cabinets de gestion de patrimoine avec des aires de jeux premium. Certification ASTM.",
+        "keywords": "aire de jeux lobby banque, gestion de patrimoine aire de jeux, bureau financier aire de jeux premium"
+      },
+      "breadcrumb": "Solutions Secteur Financier",
+      "hero": {
+        "badge": "Services Financiers",
+        "title": "Solutions Haut de Gamme d'Aires de Jeux",
+        "titleHighlight": "pour le Secteur Financier",
+        "description": "Créez des expériences client premium qui distinguent votre institution financière. NinescapeLand conçoit des espaces de jeux sophistiqués pour banques et gestionnaires de patrimoine.",
+        "cta": "Obtenir une Proposition Premium",
+        "ctaSecondary": "Voir les Équipements Soft Play"
+      },
+      "stats": {
+        "s1": {
+          "value": "+30%",
+          "label": "Satisfaction Client"
+        },
+        "s2": {
+          "value": "Premium",
+          "label": "Qualité de Design"
+        },
+        "s3": {
+          "value": "99%",
+          "label": "Approbation des Parents"
+        },
+        "s4": {
+          "value": "ASTM",
+          "label": "Certification Sécurité"
+        }
+      },
+      "section1": {
+        "badge": "Expérience Client",
+        "title": "Améliorer l'Expérience Client",
+        "titleHighlight": "en Gestion de Patrimoine",
+        "content": "Les clients fortunés attendent des environnements de service exceptionnels. Une aire de jeux premium montre l'attention aux besoins familiaux.",
+        "features": {
+          "f1": "Esthétique de luxe adaptée à votre identité corporate",
+          "f2": "Zones de jeux calmes et supervisées près des espaces de conseil",
+          "f3": "Matériaux premium : bois, tissus design, éclairages LED",
+          "f4": "Options compactes pour agences et étages directeurs"
+        }
+      },
+      "section2": {
+        "badge": "Valeur d'Investissement",
+        "title": "Analyse d'Investissement et",
+        "titleHighlight": "Valeur à Long Terme",
+        "content": "Ajouter une aire de jeux premium est un investissement stratégique dans les relations client.",
+        "features": {
+          "f1": "Designs sur mesure pour intérieurs de luxe",
+          "f2": "Projections ROI pour la rétention client",
+          "f3": "Construction durable et faible maintenance",
+          "f4": "Conformité totale aux codes de construction et normes ADA"
+        },
+        "cta": "Demander une Consultation Premium"
+      },
+      "relatedTitle": "Solutions Associées",
+      "relatedLinks": {
+        "product": "Équipements Soft Play",
+        "process": "Notre Processus",
+        "caseStudies": "Études de Cas",
+        "allProducts": "Tous les Produits"
+      },
+      "faq": {
+        "badge": "FAQ",
+        "title": "Questions",
+        "titleHighlight": "Fréquentes",
+        "q1": {
+          "question": "Comment assurez-vous que le design correspond à notre image corporate ?",
+          "answer": "Notre équipe crée des concepts entièrement personnalisés avec vos couleurs de marque, matériaux et directives esthétiques. Nous fournissons des rendus 3D photoréalistes."
+        },
+        "q2": {
+          "question": "Quel est l'impact sonore sur les environnements de bureau ?",
+          "answer": "Nos aires premium intègrent l'ingénierie acoustique : matériaux absorbants, cloisons stratégiques et structures amorties pour un niveau sonore inférieur à 45dB."
+        }
+      }
+    },
+    "legal": {
+      "seo": {
+        "title": "Solutions d'Aires de Jeux pour Cabinets d'Avocats",
+        "description": "Solutions premium d'aires de jeux pour halls de cabinets juridiques. Aires de jeux sûres et professionnelles. Certification ASTM et TUV.",
+        "keywords": "aire de jeux cabinet avocats, espace enfants bureau juridique"
+      },
+      "breadcrumb": "Solutions Secteur Juridique",
+      "hero": {
+        "badge": "Juridique & Services Professionnels",
+        "title": "Solutions Premium d'Aires de Jeux",
+        "titleHighlight": "pour le Secteur Juridique",
+        "description": "Améliorez l'expérience client de votre cabinet avec des aires de jeux professionnelles. NinescapeLand crée des environnements premium où les enfants sont en sécurité pendant que les parents se concentrent.",
+        "cta": "Obtenir une Proposition Professionnelle",
+        "ctaSecondary": "Voir les Équipements Soft Play"
+      },
+      "stats": {
+        "s1": {
+          "value": "+25%",
+          "label": "Satisfaction Client"
+        },
+        "s2": {
+          "value": "100%",
+          "label": "Conformité Sécurité"
+        },
+        "s3": {
+          "value": "Premium",
+          "label": "Standard de Design"
+        },
+        "s4": {
+          "value": "5 Ans",
+          "label": "Garantie"
+        }
+      },
+      "section1": {
+        "badge": "Expérience Client",
+        "title": "Améliorer l'Expérience Client",
+        "titleHighlight": "dans les Environnements Juridiques",
+        "content": "Les consultations en droit familial et succession nécessitent souvent que les parents amènent leurs enfants. Une aire professionnelle réduit le stress pour tous.",
+        "features": {
+          "f1": "Designs sophistiqués adaptés à l'esthétique de bureau professionnel",
+          "f2": "Zones de jeux calmes qui ne perturbent pas les salles de réunion",
+          "f3": "Éléments adaptés aux enfants de 1 à 8 ans",
+          "f4": "Designs compacts optimisés pour les plans de bureau"
+        }
+      },
+      "section2": {
+        "badge": "Conformité",
+        "title": "Conformité et Sécurité :",
+        "titleHighlight": "Le Standard du Secteur Juridique",
+        "content": "Nous comprenons que les professionnels du droit exigent les plus hauts standards. Chaque installation respecte les certifications internationales.",
+        "features": {
+          "f1": "Documentation complète pour responsabilité et assurance",
+          "f2": "Équipements certifiés ASTM F1918 et EN 1176",
+          "f3": "Matériaux professionnels avec propriétés antimicrobiennes",
+          "f4": "Protocoles complets de maintenance et d'inspection"
+        },
+        "cta": "Demander une Consultation Professionnelle"
+      },
+      "relatedTitle": "Solutions Associées",
+      "relatedLinks": {
+        "product": "Équipements Soft Play",
+        "process": "Notre Processus",
+        "caseStudies": "Études de Cas",
+        "allProducts": "Tous les Produits"
+      },
+      "faq": {
+        "badge": "FAQ",
+        "title": "Questions",
+        "titleHighlight": "Fréquentes",
+        "q1": {
+          "question": "Quelle documentation de responsabilité fournissez-vous ?",
+          "answer": "Documentation complète : certificats de sécurité (ASTM, TUV, EN 1176), fiches de données de sécurité, registres de conformité et directives d'assurance."
+        },
+        "q2": {
+          "question": "Combien d'espace faut-il dans un cabinet juridique ?",
+          "answer": "Nos designs compacts s'adaptent à des espaces de 15-20 m². Nous créons des agencements efficaces maximisant la valeur de jeu."
+        }
+      }
+    },
+    "marketing": {
+      "seo": {
+        "title": "Aires de Jeux pour Marketing de Marque et Activations",
+        "description": "Créez des expériences de marque mémorables avec des installations de jeux personnalisées. Parfait pour événements marketing et campagnes expérientielles. Design 3D gratuit.",
+        "keywords": "aire de jeux activation de marque, marketing expérientiel aire de jeux, aire de jeux pop-up"
+      },
+      "breadcrumb": "Solutions Marketing",
+      "hero": {
+        "badge": "Marketing & Activation de Marque",
+        "title": "Solutions Innovantes d'Aires de Jeux",
+        "titleHighlight": "pour le Marketing et l'Activation de Marque",
+        "description": "Créez des expériences de marque inoubliables à travers des installations de jeux interactives. NinescapeLand construit des aires personnalisées pour campagnes marketing expérientielles.",
+        "cta": "Obtenir une Proposition Campagne",
+        "ctaSecondary": "Voir les Aires de Jeux"
+      },
+      "stats": {
+        "s1": {
+          "value": "10x",
+          "label": "Engagement Réseaux Sociaux"
+        },
+        "s2": {
+          "value": "+60%",
+          "label": "Mémorisation de Marque"
+        },
+        "s3": {
+          "value": "Custom",
+          "label": "Thématique de Marque"
+        },
+        "s4": {
+          "value": "48h",
+          "label": "Montage Pop-up"
+        }
+      },
+      "section1": {
+        "badge": "Expérience de Marque",
+        "title": "Créer des Expériences",
+        "titleHighlight": "de Marque Mémorables",
+        "content": "Les installations interactives génèrent 10x plus d'engagement sur les réseaux sociaux que le marketing traditionnel.",
+        "features": {
+          "f1": "Designs entièrement personnalisés avec votre logo, couleurs et thème de campagne",
+          "f2": "Installations conçues pour le partage Instagram",
+          "f3": "Éléments interactifs communiquant les messages de marque",
+          "f4": "Expériences multisensorielles créant des impressions durables"
+        }
+      },
+      "section2": {
+        "badge": "Solutions Évolutives",
+        "title": "Solutions Évolutives pour",
+        "titleHighlight": "Pop-ups et Retail",
+        "content": "Qu'il s'agisse d'un pop-up week-end ou d'un centre d'expérience permanent, nous proposons des solutions flexibles avec montage en 48 heures.",
+        "features": {
+          "f1": "Systèmes modulaires pour montage et démontage rapides",
+          "f2": "Designs transportables pour tournées multi-villes",
+          "f3": "Installations permanentes de centres d'expérience",
+          "f4": "Personnalisation par événement et thématique saisonnière"
+        },
+        "cta": "Demander une Consultation Campagne"
+      },
+      "relatedTitle": "Solutions Associées",
+      "relatedLinks": {
+        "product": "Aires de Jeux Intérieures",
+        "process": "Notre Processus",
+        "caseStudies": "Études de Cas",
+        "allProducts": "Tous les Produits"
+      },
+      "faq": {
+        "badge": "FAQ",
+        "title": "Questions",
+        "titleHighlight": "Fréquentes",
+        "q1": {
+          "question": "Pouvez-vous respecter nos directives de marque exactes ?",
+          "answer": "Oui, nous travaillons à partir de votre charte graphique pour reproduire couleurs Pantone, logo, typographie et langage de design. Rendus 3D photoréalistes fournis."
+        },
+        "q2": {
+          "question": "Quel est le délai pour une aire pop-up ?",
+          "answer": "Pour les systèmes modulaires pop-up : 30-45 jours. Commandes urgentes en 20 jours. Le montage sur site prend 1-2 jours."
+        }
+      }
+    },
+    "hr": {
+      "seo": {
+        "title": "Aire de Jeux Corporate pour le Bien-être des Employés",
+        "description": "Améliorez la rétention des employés avec des solutions d'aires de jeux corporate. Espaces de garde d'enfants et bien-être pour les entreprises modernes. Certification ASTM.",
+        "keywords": "aire de jeux corporate, bien-être employés aire de jeux, garde d'enfants entreprise"
+      },
+      "breadcrumb": "Solutions RH & Travail",
+      "hero": {
+        "badge": "RH & Bien-être Corporate",
+        "title": "Transformer la Culture d'Entreprise",
+        "titleHighlight": "avec des Solutions d'Aires de Jeux",
+        "description": "Soutenez l'équilibre vie-travail de vos employés avec des espaces de garde et de bien-être. NinescapeLand aide les entreprises à attirer et retenir les talents.",
+        "cta": "Obtenir une Proposition Corporate",
+        "ctaSecondary": "Voir les Aires de Jeux"
+      },
+      "stats": {
+        "s1": {
+          "value": "+30%",
+          "label": "Rétention des Employés"
+        },
+        "s2": {
+          "value": "-45%",
+          "label": "Réduction Absentéisme"
+        },
+        "s3": {
+          "value": "92%",
+          "label": "Satisfaction Employés"
+        },
+        "s4": {
+          "value": "Top",
+          "label": "Marque Employeur"
+        }
+      },
+      "section1": {
+        "badge": "Équilibre Vie-Travail",
+        "title": "Soutenir l'Équilibre Vie-Travail",
+        "titleHighlight": "pour les Employés Modernes",
+        "content": "Les entreprises avec garde d'enfants sur site enregistrent 30% de rétention en plus.",
+        "features": {
+          "f1": "Zones de garde pour les enfants des employés",
+          "f2": "Espaces de bien-être pendant les pauses pour la santé mentale",
+          "f3": "Aires d'événements familiaux pour team building",
+          "f4": "Environnements anti-stress basés sur la recherche"
+        }
+      },
+      "section2": {
+        "badge": "Qualité au Travail",
+        "title": "Sécurité et Qualité",
+        "titleHighlight": "au Travail",
+        "content": "Nos solutions corporate respectent les plus hauts standards de sécurité pour les environnements de travail.",
+        "features": {
+          "f1": "Documentation complète de conformité RH",
+          "f2": "Certifications de sécurité compatibles assurance (ASTM, TUV)",
+          "f3": "Designs à faible bruit adaptés aux bureaux",
+          "f4": "Matériaux hypoallergéniques faciles à nettoyer"
+        },
+        "cta": "Demander une Consultation Corporate"
+      },
+      "relatedTitle": "Solutions Associées",
+      "relatedLinks": {
+        "product": "Aires de Jeux Intérieures",
+        "process": "Notre Processus",
+        "caseStudies": "Études de Cas",
+        "allProducts": "Tous les Produits"
+      },
+      "faq": {
+        "badge": "FAQ",
+        "title": "Questions",
+        "titleHighlight": "Fréquentes",
+        "q1": {
+          "question": "Combien d'espace de bureau faut-il ?",
+          "answer": "Nos aires corporate s'adaptent à des espaces de 20-30 m² pour un coin enfants compact, ou plus de 200 m² pour une garderie complète."
+        },
+        "q2": {
+          "question": "Une aire de jeux affecte-t-elle les coûts d'assurance ?",
+          "answer": "Avec les certifications appropriées (que nous fournissons), la plupart des assureurs ajoutent des primes minimales. Le coût est souvent compensé par la réduction du turnover."
+        }
+      }
+    },
+    "logistics": {
+      "seo": {
+        "title": "Aires de Jeux pour Centres Logistiques et de Fulfillment",
+        "description": "Zones familiales pour centres logistiques. Équipements de grade industriel et haute durabilité. Certification ASTM.",
+        "keywords": "aire de jeux centre logistique, aire de jeux entrepôt, zone familiale industrielle"
+      },
+      "breadcrumb": "Solutions Logistique",
+      "hero": {
+        "badge": "Logistique & Industrie",
+        "title": "Solutions Stratégiques d'Aires de Jeux",
+        "titleHighlight": "pour les Centres Logistiques",
+        "description": "Créez des zones familiales dans les centres logistiques et de fulfillment. NinescapeLand construit des espaces durables de grade industriel qui améliorent la satisfaction des employés.",
+        "cta": "Obtenir une Proposition Installation",
+        "ctaSecondary": "Voir les Aires de Jeux"
+      },
+      "stats": {
+        "s1": {
+          "value": "Industriel",
+          "label": "Grade de Durabilité"
+        },
+        "s2": {
+          "value": "+25%",
+          "label": "Rétention des Employés"
+        },
+        "s3": {
+          "value": "50 000+",
+          "label": "Cycles d'Utilisation Testés"
+        },
+        "s4": {
+          "value": "+20%",
+          "label": "Gain de Productivité"
+        }
+      },
+      "section1": {
+        "badge": "Zones Familiales",
+        "title": "Zones Familiales dans",
+        "titleHighlight": "les Centres Logistiques à Fort Trafic",
+        "content": "Les grands centres logistiques proposent de plus en plus d'aménagements familiaux pour attirer et retenir les travailleurs.",
+        "features": {
+          "f1": "Matériaux de grade industriel pour utilisation intensive quotidienne",
+          "f2": "Designs sécuritaires pour environnements d'entrepôt",
+          "f3": "Configurations modulaires adaptables aux plans d'entrepôt",
+          "f4": "Zones de bien-être pour la détente pendant les pauses"
+        }
+      },
+      "section2": {
+        "badge": "Durabilité",
+        "title": "Design Durable pour",
+        "titleHighlight": "les Environnements Industriels",
+        "content": "Nos aires logistiques sont construites avec des matériaux industriels résistant aux variations de température extrêmes et à l'utilisation intensive.",
+        "features": {
+          "f1": "Matériaux résistants à la température pour entrepôts",
+          "f2": "Traitements antistatiques et anti-poussière",
+          "f3": "Structures en acier lourd avec revêtements industriels",
+          "f4": "Design modulaire pour réparation rapide et minimum de temps d'arrêt"
+        },
+        "cta": "Demander une Consultation Installation"
+      },
+      "relatedTitle": "Solutions Associées",
+      "relatedLinks": {
+        "product": "Aires de Jeux Intérieures",
+        "process": "Notre Processus",
+        "caseStudies": "Études de Cas",
+        "allProducts": "Tous les Produits"
+      },
+      "faq": {
+        "badge": "FAQ",
+        "title": "Questions",
+        "titleHighlight": "Fréquentes",
+        "q1": {
+          "question": "Vos équipements résistent-ils aux températures extrêmes ?",
+          "answer": "Oui, nos matériaux industriels sont conçus pour des environnements de -10°C à +50°C avec des matériaux stabilisés UV."
+        },
+        "q2": {
+          "question": "Comment gérez-vous l'installation dans des sites actifs ?",
+          "answer": "Nous coordonnons avec votre équipe pour installer en heures creuses. Nos systèmes modulaires permettent une installation par phases en 3-5 jours."
+        }
+      }
+    },
+    "manufacturing": {
+      "seo": {
+        "title": "Aires de Jeux pour Usines et Sites de Production",
+        "description": "Solutions sécuritaires d'aires de jeux pour usines et sites industriels. Équipements durables aux normes de sécurité industrielle. Certification ASTM et TUV.",
+        "keywords": "aire de jeux usine, site de production aire de jeux, installation industrielle espace enfants"
+      },
+      "breadcrumb": "Solutions Industrie",
+      "hero": {
+        "badge": "Industrie & Production",
+        "title": "Solutions Sûres et Durables d'Aires de Jeux",
+        "titleHighlight": "pour les Sites de Production",
+        "description": "Intégrez des aménagements familiaux dans les environnements industriels avec des solutions axées sur la sécurité. NinescapeLand construit des espaces de grade industriel conformes aux exigences les plus strictes.",
+        "cta": "Obtenir une Proposition Usine",
+        "ctaSecondary": "Voir les Aires de Jeux"
+      },
+      "stats": {
+        "s1": {
+          "value": "Industriel",
+          "label": "Grade de Sécurité"
+        },
+        "s2": {
+          "value": "100%",
+          "label": "Taux de Conformité"
+        },
+        "s3": {
+          "value": "+20%",
+          "label": "Satisfaction des Travailleurs"
+        },
+        "s4": {
+          "value": "ISO 9001",
+          "label": "Certification Qualité"
+        }
+      },
+      "section1": {
+        "badge": "Sécurité Familiale",
+        "title": "Intégrer la Sécurité Familiale",
+        "titleHighlight": "dans l'Industrie",
+        "content": "Les sites industriels avec aménagements familiaux rapportent des taux de rotation nettement inférieurs.",
+        "features": {
+          "f1": "Construction industrielle dépassant les normes de sécurité en usine",
+          "f2": "Designs fermés et climatisés séparés des zones de production",
+          "f3": "Matériaux résistants aux contaminants industriels",
+          "f4": "Agencements conformes aux plans d'évacuation d'urgence"
+        }
+      },
+      "section2": {
+        "badge": "Contrôle Qualité",
+        "title": "Conformité et",
+        "titleHighlight": "Contrôle Qualité",
+        "content": "Chaque aire de jeux industrielle passe par des contrôles qualité rigoureux. Documentation complète de conformité et protocoles d'inspection fournis.",
+        "features": {
+          "f1": "Audits de sécurité tiers et documentation de certification",
+          "f2": "Recommandations de protocole d'inspection trimestriel",
+          "f3": "Traçabilité des matériaux et fiches de données de sécurité",
+          "f4": "Certifications ASTM F1918, EN 1176 et ISO 9001"
+        },
+        "cta": "Demander une Consultation Usine"
+      },
+      "relatedTitle": "Solutions Associées",
+      "relatedLinks": {
+        "product": "Aires de Jeux Intérieures",
+        "process": "Notre Processus",
+        "caseStudies": "Études de Cas",
+        "allProducts": "Tous les Produits"
+      },
+      "faq": {
+        "badge": "FAQ",
+        "title": "Questions",
+        "titleHighlight": "Fréquentes",
+        "q1": {
+          "question": "Comment assurez-vous la sécurité dans un environnement d'usine ?",
+          "answer": "Nos aires sont des zones fermées et climatisées, séparées de la production, avec filtration d'air industrielle, matériaux ignifuges et évacuations conformes OSHA."
+        },
+        "q2": {
+          "question": "Quelle maintenance est requise en milieu industriel ?",
+          "answer": "Nous fournissons des plannings personnalisés : désinfection hebdomadaire, inspections structurelles mensuelles et nettoyage profond trimestriel. Le design modulaire permet le remplacement de composants individuels."
+        }
+      }
+    }
   }
 }

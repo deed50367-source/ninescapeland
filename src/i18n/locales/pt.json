@@ -2689,5 +2689,797 @@
       "moreQuestions": "Ainda tem perguntas? Nossa equipe está pronta para ajudar.",
       "askUs": "Pergunte-nos Qualquer Coisa"
     }
+  },
+  "industryPages": {
+    "realEstate": {
+      "seo": {
+        "title": "Soluções de Playground Indoor para Incorporadoras Imobiliárias",
+        "description": "Aumente o valor do imóvel com playgrounds indoor premium. Espaços de diversão personalizados para condomínios, empreendimentos de uso misto e projetos hoteleiros. Certificação ASTM.",
+        "keywords": "playground indoor imobiliário, equipamentos residenciais, playground amenidade, área de lazer comercial"
+      },
+      "breadcrumb": "Soluções Imobiliárias",
+      "hero": {
+        "badge": "Imobiliário & Desenvolvimento",
+        "title": "Soluções Premium de Playground Indoor",
+        "titleHighlight": "para Empreendimentos Imobiliários Modernos",
+        "description": "Diferencie seus imóveis com áreas de lazer infantil de classe mundial. A NinescapeLand projeta e fabrica soluções de playground personalizadas que aumentam taxas de ocupação e valorização.",
+        "cta": "Solicitar Proposta Gratuita",
+        "ctaSecondary": "Ver Playgrounds Indoor"
+      },
+      "stats": {
+        "s1": {
+          "value": "+15%",
+          "label": "Valorização do Imóvel"
+        },
+        "s2": {
+          "value": "2.000+",
+          "label": "Projetos Concluídos"
+        },
+        "s3": {
+          "value": "95%",
+          "label": "Satisfação do Inquilino"
+        },
+        "s4": {
+          "value": "50+",
+          "label": "Países Atendidos"
+        }
+      },
+      "section1": {
+        "badge": "Valor Imobiliário",
+        "title": "Aumentando o Valor do Imóvel com",
+        "titleHighlight": "Espaços de Lazer Estratégicos",
+        "content": "No competitivo mercado imobiliário atual, amenidades premium são o diferencial decisivo. Playgrounds indoor atraem famílias, aumentam o tempo de permanência e criam comunidades vibrantes.",
+        "features": {
+          "f1": "Aumente a valorização em 10-15% com amenidades de lazer premium",
+          "f2": "Designs temáticos que complementam sua visão arquitetônica",
+          "f3": "Equipamentos certificados ASTM e TUV com padrões internacionais",
+          "f4": "Crie amenidades âncora que direcionem tráfego para espaços comerciais"
+        }
+      },
+      "section2": {
+        "badge": "Soluções Turnkey",
+        "title": "Design Personalizado e",
+        "titleHighlight": "Implementação Estratégica",
+        "content": "Do conceito à conclusão, a NinescapeLand fornece soluções completas de playground para incorporadoras. Nossa equipe trabalha com arquitetos e gerentes de projeto.",
+        "features": {
+          "f1": "Fabricação direta com prazos de 60-90 dias",
+          "f2": "Renders 3D integrados aos projetos arquitetônicos",
+          "f3": "Análises de ROI e estudos de viabilidade para investidores",
+          "f4": "Instalação rápida com mínima interrupção da obra"
+        },
+        "cta": "Solicitar Proposta Imobiliária"
+      },
+      "relatedTitle": "Soluções Relacionadas",
+      "relatedLinks": {
+        "product": "Playgrounds Indoor",
+        "process": "Nosso Processo",
+        "caseStudies": "Estudos de Caso",
+        "allProducts": "Todos os Produtos"
+      },
+      "faq": {
+        "badge": "FAQ",
+        "title": "Perguntas",
+        "titleHighlight": "Frequentes",
+        "q1": {
+          "question": "Como um playground indoor aumenta o valor do imóvel?",
+          "answer": "Playgrounds indoor servem como amenidades premium que diferenciam propriedades. Empreendimentos familiares com áreas de lazer alcançam valorização 10-15% maior, locação mais rápida e maior retenção de inquilinos."
+        },
+        "q2": {
+          "question": "Vocês podem trabalhar com nossos arquitetos e empreiteiros?",
+          "answer": "Com certeza. Colaboramos regularmente com escritórios de arquitetura e empreiteiros em todo o mundo. Fornecemos arquivos CAD, renders 3D, especificações estruturais e coordenamos o cronograma de instalação."
+        }
+      }
+    },
+    "healthcare": {
+      "seo": {
+        "title": "Playground Terapêutico Indoor para Instalações de Saúde",
+        "description": "Crie ambientes pediátricos livres de estresse com equipamentos de playground de grau hospitalar. Materiais antimicrobianos, zonas sensoriais e designs terapêuticos. Certificação ASTM.",
+        "keywords": "playground hospitalar, área de lazer pediátrica, playground saúde, playground terapêutico"
+      },
+      "breadcrumb": "Soluções para Saúde",
+      "hero": {
+        "badge": "Saúde & Pediatria",
+        "title": "Soluções de Playground Terapêutico Indoor",
+        "titleHighlight": "para Instalações de Saúde",
+        "description": "Transforme salas de espera pediátricas em ambientes de cura. A NinescapeLand cria espaços de lazer antimicrobianos e sensoriais que reduzem a ansiedade do paciente e melhoram resultados clínicos.",
+        "cta": "Solicitar Proposta Médica",
+        "ctaSecondary": "Ver Equipamentos Soft Play"
+      },
+      "stats": {
+        "s1": {
+          "value": "-40%",
+          "label": "Redução de Ansiedade"
+        },
+        "s2": {
+          "value": "100%",
+          "label": "Materiais Antimicrobianos"
+        },
+        "s3": {
+          "value": "98%",
+          "label": "Satisfação dos Pais"
+        },
+        "s4": {
+          "value": "ISO 9001",
+          "label": "Certificação de Qualidade"
+        }
+      },
+      "section1": {
+        "badge": "Experiência do Paciente",
+        "title": "Criando Ambientes Livres de Estresse",
+        "titleHighlight": "para Pacientes Pediátricos",
+        "content": "Ambientes hospitalares podem ser intimidadores para crianças. Nossos espaços terapêuticos são projetados com especialistas pediátricos para reduzir ansiedade e promover a cura.",
+        "features": {
+          "f1": "Materiais antimicrobianos e fáceis de higienizar",
+          "f2": "Elementos sensoriais projetados com psicólogos infantis",
+          "f3": "Estruturas macias e acolchoadas para segurança médica",
+          "f4": "Designs inclusivos para crianças de todas as habilidades"
+        }
+      },
+      "section2": {
+        "badge": "Segurança & Conformidade",
+        "title": "Designs Personalizados e",
+        "titleHighlight": "Padrões de Segurança",
+        "content": "Nossas soluções para saúde atendem aos mais rígidos padrões de higiene e segurança. De protocolos de controle de infecção a designs inclusivos compatíveis com ADA.",
+        "features": {
+          "f1": "Conformidade com protocolos de controle de infecção hospitalar",
+          "f2": "Materiais certificados retardantes de chama e não tóxicos",
+          "f3": "Designs modulares para acesso fácil à limpeza profunda",
+          "f4": "Certificados ASTM F1918, EN 1176 e TÜV SÜD"
+        },
+        "cta": "Solicitar Consultoria Médica"
+      },
+      "relatedTitle": "Soluções Relacionadas",
+      "relatedLinks": {
+        "product": "Equipamentos Soft Play",
+        "process": "Nosso Processo",
+        "caseStudies": "Estudos de Caso",
+        "allProducts": "Todos os Produtos"
+      },
+      "faq": {
+        "badge": "FAQ",
+        "title": "Perguntas",
+        "titleHighlight": "Frequentes",
+        "q1": {
+          "question": "Quais materiais antimicrobianos vocês usam?",
+          "answer": "Usamos PVC antimicrobiano hospitalar, espuma resistente a UV com tratamento antimicrobiano e ferragens em aço inoxidável. Todas as superfícies inibem 99,9% das bactérias."
+        },
+        "q2": {
+          "question": "Vocês podem projetar para crianças com necessidades especiais?",
+          "answer": "Sim, somos especializados em designs inclusivos. Nossos playgrounds incluem elementos acessíveis para cadeiras de rodas, zonas sensoriais calmantes, painéis táteis e recursos de altura ajustável."
+        }
+      }
+    },
+    "education": {
+      "seo": {
+        "title": "Soluções de Playground Indoor para Escolas e Pré-escolas",
+        "description": "Melhore o desenvolvimento físico com equipamentos de playground educacionais. Designs apropriados para escolas, pré-escolas e creches. Certificação ASTM e EN 1176.",
+        "keywords": "playground escolar indoor, equipamentos pré-escola, equipamentos educacionais, playground creche"
+      },
+      "breadcrumb": "Soluções Educacionais",
+      "hero": {
+        "badge": "Educação & Desenvolvimento Infantil",
+        "title": "Soluções Inovadoras de Playground Indoor",
+        "titleHighlight": "para Instituições de Ensino",
+        "description": "Integre brincadeiras ativas ao currículo com playgrounds indoor sob medida. A NinescapeLand projeta ambientes de lazer focados no desenvolvimento para escolas e creches no mundo todo.",
+        "cta": "Solicitar Proposta Escolar",
+        "ctaSecondary": "Ver Playgrounds Indoor"
+      },
+      "stats": {
+        "s1": {
+          "value": "+25%",
+          "label": "Aumento Atividade Física"
+        },
+        "s2": {
+          "value": "500+",
+          "label": "Escolas Equipadas"
+        },
+        "s3": {
+          "value": "3-12",
+          "label": "Faixa Etária"
+        },
+        "s4": {
+          "value": "EN 1176",
+          "label": "Certificação de Segurança"
+        }
+      },
+      "section1": {
+        "badge": "Aprendizado Ativo",
+        "title": "Integrando Atividade Física",
+        "titleHighlight": "ao Currículo",
+        "content": "Pesquisas mostram que atividade física melhora o desenvolvimento cognitivo, concentração e desempenho acadêmico. Nossos sistemas educacionais complementam programas de educação física.",
+        "features": {
+          "f1": "Zonas segmentadas por idade: pré-escola (3-5) e fundamental (6-12)",
+          "f2": "Elementos de desenvolvimento: escalada, equilíbrio, coordenação",
+          "f3": "Soluções indoor para programas de educação física o ano todo",
+          "f4": "Designs inclusivos que atendem requisitos de acessibilidade"
+        }
+      },
+      "section2": {
+        "badge": "Planejamento & Orçamento",
+        "title": "Planejamento e Orçamento",
+        "titleHighlight": "para Áreas de Lazer Escolares",
+        "content": "Entendemos os processos únicos de orçamento e compras de instituições educacionais. Nossa equipe oferece propostas detalhadas, instalação por fases e financiamento flexível.",
+        "features": {
+          "f1": "Fabricação flexível para qualquer sala de aula ou ginásio",
+          "f2": "Instalação por fases alinhada ao calendário escolar",
+          "f3": "Preços competitivos com descontos para instituições de ensino",
+          "f4": "Garantia de 15 anos com manutenção mínima"
+        },
+        "cta": "Solicitar Proposta Educacional"
+      },
+      "relatedTitle": "Soluções Relacionadas",
+      "relatedLinks": {
+        "product": "Playgrounds Indoor",
+        "process": "Nosso Processo",
+        "caseStudies": "Estudos de Caso",
+        "allProducts": "Todos os Produtos"
+      },
+      "faq": {
+        "badge": "FAQ",
+        "title": "Perguntas",
+        "titleHighlight": "Frequentes",
+        "q1": {
+          "question": "Quais faixas etárias seus playgrounds escolares atendem?",
+          "answer": "Projetamos áreas segmentadas por idade: zonas para bebês (1-3 anos), áreas pré-escolares (3-5 anos) com elementos sensoriais e motores, e zonas de ensino fundamental (6-12 anos) com equipamentos mais desafiadores."
+        },
+        "q2": {
+          "question": "A instalação pode ser feita durante as férias escolares?",
+          "answer": "Com certeza. Agendamos instalações durante férias de verão, inverno ou finais de semana. A maioria das instalações escolares é concluída em 5-10 dias."
+        }
+      }
+    },
+    "ecommerce": {
+      "seo": {
+        "title": "Playground Indoor para Varejo e Centros de E-commerce",
+        "description": "Aumente o tráfego com soluções de playground retailtainment. Áreas de lazer personalizadas para shopping centers e hubs de e-commerce experiencial. Design 3D gratuito.",
+        "keywords": "playground retailtainment, playground shopping center, playground varejo, centro experiencial e-commerce"
+      },
+      "breadcrumb": "Soluções E-commerce & Varejo",
+      "hero": {
+        "badge": "E-commerce & Retailtainment",
+        "title": "Soluções Estratégicas de Playground Indoor",
+        "titleHighlight": "para E-commerce & Centros de Varejo",
+        "description": "Na era das compras online, o varejo físico precisa oferecer experiências inesquecíveis. A NinescapeLand cria zonas de retailtainment que aumentam tráfego, tempo de permanência e fidelização.",
+        "cta": "Solicitar Proposta Varejo",
+        "ctaSecondary": "Ver Equipamentos Soft Play"
+      },
+      "stats": {
+        "s1": {
+          "value": "+40%",
+          "label": "Aumento de Tráfego"
+        },
+        "s2": {
+          "value": "+35 min",
+          "label": "Tempo de Permanência"
+        },
+        "s3": {
+          "value": "92%",
+          "label": "Taxa de Retorno"
+        },
+        "s4": {
+          "value": "12-18 meses",
+          "label": "Período de ROI"
+        }
+      },
+      "section1": {
+        "badge": "Estratégia Retailtainment",
+        "title": "A Ascensão do Retailtainment",
+        "titleHighlight": "na Era Digital",
+        "content": "Com o e-commerce transformando o varejo, lojas físicas precisam ser destinos experienciais. Playgrounds indoor criam atrações âncora que atraem famílias e aumentam gastos por visita em 25-40%.",
+        "features": {
+          "f1": "Aumente o tráfego em 30-40% com atrações familiares",
+          "f2": "Designs temáticos de marca que reforçam sua identidade",
+          "f3": "Posicionamento estratégico para direcionar fluxo às zonas de varejo",
+          "f4": "Geração de receita por modelos de pay-per-play ou assinatura"
+        }
+      },
+      "section2": {
+        "badge": "Modelo de Negócio",
+        "title": "Estratégias de Negócio Lucrativas",
+        "titleHighlight": "para Zonas de Lazer no Varejo",
+        "content": "Nossas soluções de playground para varejo são projetadas como centros de lucro. Oferecemos planejamento completo com projeções de receita e modelos operacionais.",
+        "features": {
+          "f1": "Soluções turnkey do conceito à inauguração",
+          "f2": "Modelagem de receita e consultoria de estratégia de preços",
+          "f3": "Designs eficientes para espaços de varejo de alto custo",
+          "f4": "Opções modulares e temporárias para ativações sazonais"
+        },
+        "cta": "Solicitar Consultoria Varejo"
+      },
+      "relatedTitle": "Soluções Relacionadas",
+      "relatedLinks": {
+        "product": "Equipamentos Soft Play",
+        "process": "Nosso Processo",
+        "caseStudies": "Estudos de Caso",
+        "allProducts": "Todos os Produtos"
+      },
+      "faq": {
+        "badge": "FAQ",
+        "title": "Perguntas",
+        "titleHighlight": "Frequentes",
+        "q1": {
+          "question": "Qual é o ROI típico de um playground no varejo?",
+          "answer": "A maioria das zonas de lazer alcança ROI positivo em 12-18 meses. Fontes de receita incluem ingressos, festas, assinaturas e vendas de alimentos e bebidas."
+        },
+        "q2": {
+          "question": "Vocês podem criar instalações temporárias ou pop-up?",
+          "answer": "Sim, oferecemos sistemas modulares para ativações temporárias e eventos sazonais. Esses sistemas são projetados para montagem rápida mantendo total conformidade de segurança."
+        }
+      }
+    },
+    "finance": {
+      "seo": {
+        "title": "Playground Indoor Premium para Instituições Financeiras",
+        "description": "Eleve a experiência do cliente em bancos e escritórios de gestão patrimonial com áreas de lazer premium. Designs profissionais para ambientes de clientes de alto patrimônio. Certificação ASTM.",
+        "keywords": "playground lobby banco, área de lazer gestão patrimonial, playground escritório financeiro, playground premium"
+      },
+      "breadcrumb": "Soluções Setor Financeiro",
+      "hero": {
+        "badge": "Serviços Financeiros",
+        "title": "Soluções de Playground Indoor de Alto Padrão",
+        "titleHighlight": "para o Setor Financeiro",
+        "description": "Crie experiências premium que diferenciem sua instituição financeira. A NinescapeLand projeta espaços de lazer sofisticados e elegantes para bancos e gestoras de patrimônio.",
+        "cta": "Solicitar Proposta Premium",
+        "ctaSecondary": "Ver Equipamentos Soft Play"
+      },
+      "stats": {
+        "s1": {
+          "value": "+30%",
+          "label": "Satisfação do Cliente"
+        },
+        "s2": {
+          "value": "Premium",
+          "label": "Qualidade do Design"
+        },
+        "s3": {
+          "value": "99%",
+          "label": "Aprovação dos Pais"
+        },
+        "s4": {
+          "value": "ASTM",
+          "label": "Certificação de Segurança"
+        }
+      },
+      "section1": {
+        "badge": "Experiência do Cliente",
+        "title": "Melhorando a Experiência do Cliente",
+        "titleHighlight": "na Gestão Patrimonial",
+        "content": "Clientes de alto patrimônio esperam ambientes de serviço excepcionais. Uma área de lazer premium demonstra atenção às necessidades familiares e cria associações positivas com a marca.",
+        "features": {
+          "f1": "Estética de design de luxo alinhada à identidade corporativa",
+          "f2": "Zonas de lazer silenciosas e supervisionadas junto a áreas de consultoria",
+          "f3": "Materiais premium: acabamentos em madeira, tecidos de design, acentos LED",
+          "f4": "Opções compactas para agências e andares executivos"
+        }
+      },
+      "section2": {
+        "badge": "Valor do Investimento",
+        "title": "Análise de Investimento e",
+        "titleHighlight": "Valor a Longo Prazo",
+        "content": "Adicionar uma área de lazer premium é um investimento estratégico em relacionamento com clientes. Fornecemos análises detalhadas de custo-benefício.",
+        "features": {
+          "f1": "Designs sob medida para complementar interiores de luxo",
+          "f2": "Projeções de ROI para melhoria na retenção de clientes",
+          "f3": "Construção durável e de baixa manutenção para ambientes profissionais",
+          "f4": "Total conformidade com códigos de construção comercial e padrões ADA"
+        },
+        "cta": "Solicitar Consultoria Premium"
+      },
+      "relatedTitle": "Soluções Relacionadas",
+      "relatedLinks": {
+        "product": "Equipamentos Soft Play",
+        "process": "Nosso Processo",
+        "caseStudies": "Estudos de Caso",
+        "allProducts": "Todos os Produtos"
+      },
+      "faq": {
+        "badge": "FAQ",
+        "title": "Perguntas",
+        "titleHighlight": "Frequentes",
+        "q1": {
+          "question": "Como vocês garantem que o design combine com nossa imagem corporativa?",
+          "answer": "Nossa equipe de design cria conceitos totalmente personalizados usando cores da marca, materiais e diretrizes estéticas. Fornecemos renders 3D fotorrealistas para aprovação."
+        },
+        "q2": {
+          "question": "Qual o impacto do nível de ruído em ambientes de escritório?",
+          "answer": "Nossas áreas premium incorporam engenharia acústica: materiais absorventes de som, divisórias estratégicas e estruturas com amortecimento de borracha para níveis abaixo de 45dB."
+        }
+      }
+    },
+    "legal": {
+      "seo": {
+        "title": "Soluções de Playground Indoor para Escritórios de Advocacia",
+        "description": "Soluções premium de playground indoor para lobbies de escritórios de advocacia. Áreas de lazer seguras e profissionais. Certificação ASTM e TUV.",
+        "keywords": "playground escritório advocacia, área de lazer escritório jurídico, espaço infantil escritório legal"
+      },
+      "breadcrumb": "Soluções Setor Jurídico",
+      "hero": {
+        "badge": "Jurídico & Serviços Profissionais",
+        "title": "Soluções Premium de Playground Indoor",
+        "titleHighlight": "para o Setor Jurídico",
+        "description": "Melhore a experiência do cliente do seu escritório com áreas de lazer profissionais e sofisticadas. A NinescapeLand cria ambientes premium onde crianças ficam seguras enquanto pais focam em consultas.",
+        "cta": "Solicitar Proposta Profissional",
+        "ctaSecondary": "Ver Equipamentos Soft Play"
+      },
+      "stats": {
+        "s1": {
+          "value": "+25%",
+          "label": "Satisfação do Cliente"
+        },
+        "s2": {
+          "value": "100%",
+          "label": "Conformidade de Segurança"
+        },
+        "s3": {
+          "value": "Premium",
+          "label": "Padrão de Design"
+        },
+        "s4": {
+          "value": "5 Anos",
+          "label": "Garantia"
+        }
+      },
+      "section1": {
+        "badge": "Experiência do Cliente",
+        "title": "Melhorando a Experiência do Cliente",
+        "titleHighlight": "em Ambientes Jurídicos",
+        "content": "Consultas de direito de família, planejamento patrimonial e imigração frequentemente exigem que pais tragam crianças. Uma área de lazer profissional reduz o estresse para ambos.",
+        "features": {
+          "f1": "Designs sofisticados que complementam a estética de escritórios profissionais",
+          "f2": "Zonas de lazer silenciosas que não perturbam salas de reunião",
+          "f3": "Elementos apropriados para crianças de 1 a 8 anos",
+          "f4": "Designs compactos otimizados para plantas de escritório"
+        }
+      },
+      "section2": {
+        "badge": "Conformidade",
+        "title": "Conformidade e Segurança:",
+        "titleHighlight": "O Padrão do Setor Jurídico",
+        "content": "Entendemos que profissionais jurídicos exigem os mais altos padrões. Cada playground atende ou supera certificações internacionais de segurança.",
+        "features": {
+          "f1": "Pacote completo de documentação para responsabilidade e seguros",
+          "f2": "Equipamentos certificados ASTM F1918 e EN 1176",
+          "f3": "Materiais de grau profissional com propriedades antimicrobianas",
+          "f4": "Protocolos abrangentes de manutenção e inspeção"
+        },
+        "cta": "Solicitar Consultoria Profissional"
+      },
+      "relatedTitle": "Soluções Relacionadas",
+      "relatedLinks": {
+        "product": "Equipamentos Soft Play",
+        "process": "Nosso Processo",
+        "caseStudies": "Estudos de Caso",
+        "allProducts": "Todos os Produtos"
+      },
+      "faq": {
+        "badge": "FAQ",
+        "title": "Perguntas",
+        "titleHighlight": "Frequentes",
+        "q1": {
+          "question": "Que documentação de responsabilidade vocês fornecem?",
+          "answer": "Fornecemos documentação abrangente incluindo certificados de segurança (ASTM, TUV, EN 1176), fichas de dados de segurança de materiais, registros de conformidade de instalação e diretrizes de seguro."
+        },
+        "q2": {
+          "question": "Quanto espaço é necessário para uma área de lazer em escritório jurídico?",
+          "answer": "Nossos designs compactos cabem em espaços de apenas 15-20 metros quadrados. Criamos layouts eficientes que maximizam o valor de lazer em plantas de escritório limitadas."
+        }
+      }
+    },
+    "marketing": {
+      "seo": {
+        "title": "Playground Indoor para Marketing de Marca e Ativações",
+        "description": "Crie experiências de marca memoráveis com instalações de playground personalizadas. Perfeito para eventos de marketing, pop-up retail e campanhas experienciais. Design 3D gratuito.",
+        "keywords": "playground ativação de marca, playground marketing experiencial, playground pop-up, evento marketing área de lazer"
+      },
+      "breadcrumb": "Soluções de Marketing",
+      "hero": {
+        "badge": "Marketing & Ativação de Marca",
+        "title": "Soluções Inovadoras de Playground Indoor",
+        "titleHighlight": "para Marketing & Ativação de Marca",
+        "description": "Crie experiências de marca inesquecíveis através de instalações interativas de lazer. A NinescapeLand constrói playgrounds personalizados para campanhas de marketing experiencial e ativações de marca.",
+        "cta": "Solicitar Proposta de Campanha",
+        "ctaSecondary": "Ver Playgrounds Indoor"
+      },
+      "stats": {
+        "s1": {
+          "value": "10x",
+          "label": "Engajamento em Redes Sociais"
+        },
+        "s2": {
+          "value": "+60%",
+          "label": "Recall de Marca"
+        },
+        "s3": {
+          "value": "Custom",
+          "label": "Temática de Marca"
+        },
+        "s4": {
+          "value": "48h",
+          "label": "Montagem Pop-up"
+        }
+      },
+      "section1": {
+        "badge": "Experiência de Marca",
+        "title": "Criando Experiências",
+        "titleHighlight": "de Marca Memoráveis",
+        "content": "Instalações interativas geram 10x mais engajamento em redes sociais que marketing tradicional. Nossos playgrounds criam momentos compartilháveis que amplificam o alcance da campanha.",
+        "features": {
+          "f1": "Designs totalmente personalizados com logo, cores e tema da campanha",
+          "f2": "Instalações instagramáveis projetadas para compartilhamento social",
+          "f3": "Elementos interativos que comunicam mensagens da marca",
+          "f4": "Experiências multissensoriais que criam impressões duradouras"
+        }
+      },
+      "section2": {
+        "badge": "Soluções Escaláveis",
+        "title": "Soluções Escaláveis para",
+        "titleHighlight": "Pop-ups e Varejo",
+        "content": "Seja um pop-up de fim de semana ou centro de experiência permanente, oferecemos soluções flexíveis. Nossos sistemas modulares podem ser montados em 48 horas.",
+        "features": {
+          "f1": "Sistemas modulares para montagem e desmontagem rápida",
+          "f2": "Designs transportáveis para turnês de campanha multicitadinas",
+          "f3": "Instalações permanentes de centros de experiência",
+          "f4": "Personalização por evento e temática sazonal"
+        },
+        "cta": "Solicitar Consultoria de Campanha"
+      },
+      "relatedTitle": "Soluções Relacionadas",
+      "relatedLinks": {
+        "product": "Playgrounds Indoor",
+        "process": "Nosso Processo",
+        "caseStudies": "Estudos de Caso",
+        "allProducts": "Todos os Produtos"
+      },
+      "faq": {
+        "badge": "FAQ",
+        "title": "Perguntas",
+        "titleHighlight": "Frequentes",
+        "q1": {
+          "question": "Vocês podem seguir nossas diretrizes de marca exatas?",
+          "answer": "Sim, trabalhamos com seu manual de marca para combinar cores Pantone exatas, posição do logo, tipografia e linguagem de design. Nossa equipe cria renders 3D fotorrealistas para aprovação."
+        },
+        "q2": {
+          "question": "Qual o prazo para um playground pop-up?",
+          "answer": "Para sistemas pop-up modulares, podemos entregar em 30-45 dias. Pedidos urgentes para configurações simples em até 20 dias. A montagem no local leva 1-2 dias."
+        }
+      }
+    },
+    "hr": {
+      "seo": {
+        "title": "Playground Corporativo Indoor para Bem-estar dos Funcionários",
+        "description": "Aumente a retenção de funcionários com soluções de playground corporativo. Áreas de lazer para cuidado infantil e espaços de bem-estar para ambientes de trabalho modernos. Certificação ASTM.",
+        "keywords": "playground corporativo, bem-estar funcionários playground, creche corporativa, playground escritório"
+      },
+      "breadcrumb": "Soluções RH & Trabalho",
+      "hero": {
+        "badge": "RH & Bem-estar Corporativo",
+        "title": "Transformando a Cultura Corporativa",
+        "titleHighlight": "com Soluções de Playground Indoor",
+        "description": "Apoie o equilíbrio vida-trabalho dos funcionários com áreas de lazer infantil e espaços de bem-estar. A NinescapeLand ajuda empresas a atrair e reter talentos com amenidades familiares.",
+        "cta": "Solicitar Proposta Corporativa",
+        "ctaSecondary": "Ver Playgrounds Indoor"
+      },
+      "stats": {
+        "s1": {
+          "value": "+30%",
+          "label": "Retenção de Funcionários"
+        },
+        "s2": {
+          "value": "-45%",
+          "label": "Redução de Absenteísmo"
+        },
+        "s3": {
+          "value": "92%",
+          "label": "Satisfação do Funcionário"
+        },
+        "s4": {
+          "value": "Top",
+          "label": "Marca Empregadora"
+        }
+      },
+      "section1": {
+        "badge": "Equilíbrio Vida-Trabalho",
+        "title": "Apoiando o Equilíbrio Vida-Trabalho",
+        "titleHighlight": "para Funcionários Modernos",
+        "content": "Empresas com creches e amenidades familiares no local registram 30% mais retenção de funcionários. Espaços de lazer reduzem o estresse parental e posicionam sua empresa como empregador top.",
+        "features": {
+          "f1": "Zonas de lazer infantil para filhos de funcionários",
+          "f2": "Espaços de bem-estar para pausas que promovem saúde mental",
+          "f3": "Áreas de eventos familiares para confraternizações e team building",
+          "f4": "Ambientes de redução de estresse baseados em pesquisas"
+        }
+      },
+      "section2": {
+        "badge": "Qualidade no Trabalho",
+        "title": "Segurança e Qualidade",
+        "titleHighlight": "no Ambiente de Trabalho",
+        "content": "Nossas soluções de playground corporativo atendem os mais altos padrões de segurança para ambientes de trabalho. Cada instalação inclui documentação completa para conformidade de RH e seguros.",
+        "features": {
+          "f1": "Pacote completo de documentação de conformidade RH",
+          "f2": "Certificações de segurança compatíveis com seguros (ASTM, TUV)",
+          "f3": "Designs de baixo ruído adequados para ambientes de escritório",
+          "f4": "Materiais hipoalergênicos e fáceis de limpar"
+        },
+        "cta": "Solicitar Consultoria Corporativa"
+      },
+      "relatedTitle": "Soluções Relacionadas",
+      "relatedLinks": {
+        "product": "Playgrounds Indoor",
+        "process": "Nosso Processo",
+        "caseStudies": "Estudos de Caso",
+        "allProducts": "Todos os Produtos"
+      },
+      "faq": {
+        "badge": "FAQ",
+        "title": "Perguntas",
+        "titleHighlight": "Frequentes",
+        "q1": {
+          "question": "Quanto espaço de escritório é necessário?",
+          "answer": "Nossas áreas corporativas podem ser projetadas para espaços de 20-30 metros quadrados para um canto infantil compacto, ou escaladas para mais de 200 m² para instalações completas de cuidado infantil."
+        },
+        "q2": {
+          "question": "Um playground no local afeta custos de seguro?",
+          "answer": "Com as certificações adequadas (que fornecemos), a maioria das seguradoras cobra prêmios mínimos adicionais. Muitas empresas descobrem que o custo é compensado pela redução de rotatividade e absenteísmo."
+        }
+      }
+    },
+    "logistics": {
+      "seo": {
+        "title": "Playground Indoor para Centros Logísticos e de Fulfillment",
+        "description": "Zonas de lazer familiares para centros logísticos e de fulfillment. Equipamentos de playground de grau industrial e alta durabilidade. Certificação ASTM.",
+        "keywords": "playground centro logístico, playground fulfillment, zona familiar industrial, playground centro distribuição"
+      },
+      "breadcrumb": "Soluções Logísticas",
+      "hero": {
+        "badge": "Logística & Industrial",
+        "title": "Soluções Estratégicas de Playground Indoor",
+        "titleHighlight": "para Centros Logísticos",
+        "description": "Crie zonas familiares em centros logísticos e de fulfillment. A NinescapeLand constrói espaços de lazer duráveis e de grau industrial que melhoram a satisfação dos funcionários.",
+        "cta": "Solicitar Proposta de Instalação",
+        "ctaSecondary": "Ver Playgrounds Indoor"
+      },
+      "stats": {
+        "s1": {
+          "value": "Industrial",
+          "label": "Grau de Durabilidade"
+        },
+        "s2": {
+          "value": "+25%",
+          "label": "Retenção de Funcionários"
+        },
+        "s3": {
+          "value": "50.000+",
+          "label": "Ciclos de Uso Testados"
+        },
+        "s4": {
+          "value": "+20%",
+          "label": "Aumento de Produtividade"
+        }
+      },
+      "section1": {
+        "badge": "Zonas Familiares",
+        "title": "Zonas Familiares em",
+        "titleHighlight": "Centros Logísticos de Alto Tráfego",
+        "content": "Grandes centros logísticos estão cada vez mais oferecendo amenidades familiares para atrair e reter trabalhadores em mercados competitivos.",
+        "features": {
+          "f1": "Materiais de grau industrial para uso diário intenso",
+          "f2": "Designs focados em segurança para ambientes de armazém",
+          "f3": "Configurações modulares adaptáveis a plantas de armazém",
+          "f4": "Zonas de bem-estar para relaxamento nas pausas"
+        }
+      },
+      "section2": {
+        "badge": "Durabilidade",
+        "title": "Design Durável para",
+        "titleHighlight": "Ambientes Industriais",
+        "content": "Nossos playgrounds para logística são construídos com materiais industriais que resistem a variações extremas de temperatura, uso intenso e cronogramas exigentes de manutenção.",
+        "features": {
+          "f1": "Materiais resistentes a temperatura para ambientes de armazém",
+          "f2": "Tratamentos superficiais antiestáticos e resistentes a poeira",
+          "f3": "Estruturas de aço pesado com revestimentos industriais",
+          "f4": "Design modular de reparo rápido para mínimo tempo de inatividade"
+        },
+        "cta": "Solicitar Consultoria de Instalação"
+      },
+      "relatedTitle": "Soluções Relacionadas",
+      "relatedLinks": {
+        "product": "Playgrounds Indoor",
+        "process": "Nosso Processo",
+        "caseStudies": "Estudos de Caso",
+        "allProducts": "Todos os Produtos"
+      },
+      "faq": {
+        "badge": "FAQ",
+        "title": "Perguntas",
+        "titleHighlight": "Frequentes",
+        "q1": {
+          "question": "Seus equipamentos suportam temperaturas extremas de armazém?",
+          "answer": "Sim, nossos materiais industriais são classificados para ambientes de -10°C a +50°C. Usamos materiais estabilizados UV e espumas resistentes à temperatura."
+        },
+        "q2": {
+          "question": "Como vocês lidam com instalação em instalações ativas?",
+          "answer": "Coordenamos com sua equipe de operações para agendar durante horários de menor movimento. Nossos sistemas modulares permitem instalação por fases, concluindo tipicamente em 3-5 dias."
+        }
+      }
+    },
+    "manufacturing": {
+      "seo": {
+        "title": "Playground Indoor para Fábricas e Instalações de Manufatura",
+        "description": "Soluções de playground com segurança prioritária para fábricas e instalações de manufatura. Equipamentos duráveis que atendem padrões de segurança industrial. Certificação ASTM e TUV.",
+        "keywords": "playground fábrica indoor, playground planta manufatura, área de lazer instalação industrial, creche fábrica"
+      },
+      "breadcrumb": "Soluções de Manufatura",
+      "hero": {
+        "badge": "Manufatura & Indústria",
+        "title": "Soluções Seguras e Duráveis de Playground Indoor",
+        "titleHighlight": "para Plantas de Manufatura",
+        "description": "Integre amenidades familiares em ambientes de manufatura com soluções de playground focadas em segurança. A NinescapeLand constrói espaços de lazer industriais que atendem os requisitos mais rigorosos.",
+        "cta": "Solicitar Proposta de Fábrica",
+        "ctaSecondary": "Ver Playgrounds Indoor"
+      },
+      "stats": {
+        "s1": {
+          "value": "Industrial",
+          "label": "Grau de Segurança"
+        },
+        "s2": {
+          "value": "100%",
+          "label": "Taxa de Conformidade"
+        },
+        "s3": {
+          "value": "+20%",
+          "label": "Satisfação do Trabalhador"
+        },
+        "s4": {
+          "value": "ISO 9001",
+          "label": "Certificação de Qualidade"
+        }
+      },
+      "section1": {
+        "badge": "Segurança Familiar",
+        "title": "Integrando Segurança Familiar",
+        "titleHighlight": "na Manufatura",
+        "content": "Instalações de manufatura com amenidades familiares reportam taxas de rotatividade significativamente menores. Nossos playgrounds industriais são projetados especificamente para ambientes fabris.",
+        "features": {
+          "f1": "Construção industrial que supera padrões de segurança de fábrica",
+          "f2": "Designs fechados e climatizados separados de zonas de produção",
+          "f3": "Materiais resistentes a contaminantes industriais",
+          "f4": "Layouts conformes com planos de evacuação de emergência"
+        }
+      },
+      "section2": {
+        "badge": "Controle de Qualidade",
+        "title": "Conformidade e",
+        "titleHighlight": "Controle de Qualidade",
+        "content": "Cada playground de manufatura passa por rigorosos processos de controle de qualidade. Fornecemos documentação completa de conformidade e protocolos de inspeção regulares.",
+        "features": {
+          "f1": "Auditorias de segurança de terceiros e documentação de certificação",
+          "f2": "Recomendações de protocolo de inspeção trimestral",
+          "f3": "Rastreabilidade de materiais e fichas de dados de segurança",
+          "f4": "Certificados ASTM F1918, EN 1176 e ISO 9001"
+        },
+        "cta": "Solicitar Consultoria de Fábrica"
+      },
+      "relatedTitle": "Soluções Relacionadas",
+      "relatedLinks": {
+        "product": "Playgrounds Indoor",
+        "process": "Nosso Processo",
+        "caseStudies": "Estudos de Caso",
+        "allProducts": "Todos os Produtos"
+      },
+      "faq": {
+        "badge": "FAQ",
+        "title": "Perguntas",
+        "titleHighlight": "Frequentes",
+        "q1": {
+          "question": "Como vocês garantem a segurança do playground em ambiente de fábrica?",
+          "answer": "Nossos playgrounds para fábricas são zonas totalmente fechadas e climatizadas, separadas das áreas de produção. Incluem filtragem de ar industrial, materiais à prova de fogo e rotas de evacuação conformes com OSHA."
+        },
+        "q2": {
+          "question": "Que manutenção é necessária em ambiente industrial?",
+          "answer": "Fornecemos cronogramas de manutenção personalizados incluindo desinfecção semanal, inspeções estruturais mensais e limpeza profunda trimestral. Nosso design modular permite substituição de componentes individuais."
+        }
+      }
+    }
   }
 }
