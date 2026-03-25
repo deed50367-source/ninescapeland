@@ -503,6 +503,19 @@
       "factory": "Factory"
     },
     "blog": "Blog",
+    "industrySolutions": "Industry Solutions",
+    "industryLinks": {
+      "realEstate": "Real Estate",
+      "healthcare": "Healthcare",
+      "education": "Education",
+      "ecommerce": "E-commerce & Retail",
+      "finance": "Finance",
+      "legal": "Legal",
+      "marketing": "Marketing",
+      "hr": "HR & Workplace",
+      "logistics": "Logistics",
+      "manufacturing": "Manufacturing"
+    },
     "copyright": "© 2024 NinescapeLand. All rights reserved.",
     "privacy": "Privacy Policy",
     "terms": "Terms of Service"
