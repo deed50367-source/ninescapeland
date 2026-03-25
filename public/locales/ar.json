@@ -474,7 +474,20 @@
     },
     "copyright": "© 2024 NinescapeLand. جميع الحقوق محفوظة.",
     "privacy": "سياسة الخصوصية",
-    "terms": "شروط الخدمة"
+    "terms": "شروط الخدمة",
+    "industrySolutions": "حلول القطاعات",
+    "industryLinks": {
+      "realEstate": "العقارات",
+      "healthcare": "الرعاية الصحية",
+      "education": "التعليم",
+      "ecommerce": "التجارة الإلكترونية",
+      "finance": "المالية",
+      "legal": "القانون",
+      "marketing": "التسويق",
+      "hr": "الموارد البشرية",
+      "logistics": "الخدمات اللوجستية",
+      "manufacturing": "التصنيع"
+    }
   },
   "floatingCta": {
     "scrollToTop": "العودة للأعلى",

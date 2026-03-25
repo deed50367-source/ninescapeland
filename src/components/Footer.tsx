@@ -2,6 +2,7 @@ import { useTranslation } from "react-i18next";
 import { Link, useLocation, useParams } from "react-router-dom";
 import { Mail, Phone, MapPin, Facebook, Linkedin, Youtube, Instagram, Globe } from "lucide-react";
 import { useRTL } from "@/hooks/useRTL";
+import { industryPages } from "@/config/industryPages";
 import { useLocalizedPath } from "@/hooks/useLocalizedPath";
 import logo from "@/assets/logo.png";
 import { useWhatsAppTracking } from "@/hooks/useWhatsAppTracking";
@@ -41,6 +42,16 @@ export const Footer = () => {
     { label: t("footer.links.contact"), href: localizedPath("/contact") },
   ];
 
+  const industryLinks = industryPages.slice(0, 5).map((page) => ({
+    label: t(`footer.industryLinks.${page.i18nKey}`),
+    href: localizedPath(`/market/${page.slug}`),
+  }));
+
+  const industryLinks2 = industryPages.slice(5).map((page) => ({
+    label: t(`footer.industryLinks.${page.i18nKey}`),
+    href: localizedPath(`/market/${page.slug}`),
+  }));
+
   // Fetch popular blog posts for the current language
   const { data: blogPosts } = useQuery({
     queryKey: ["footer-blog-posts", i18n.language],
@@ -61,7 +72,7 @@ export const Footer = () => {
     <footer className="bg-primary text-primary-foreground">
       {/* Main Footer */}
       <div className="container-wide py-10 sm:py-16">
-        <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-5 gap-6 sm:gap-8 lg:gap-10">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 sm:gap-8 lg:gap-10">
           {/* Company Info */}
           <div className="col-span-2 lg:col-span-1">
             <img src={logo} alt="NinescapeLand" className="h-14 sm:h-20 w-auto max-w-[200px] sm:max-w-[260px] mb-4 sm:mb-6" loading="lazy" decoding="async" width="260" height="80" />
@@ -116,6 +127,22 @@ export const Footer = () => {
             </ul>
           </div>
 
+          {/* Industry Solutions */}
+          <div>
+            <h4 className="font-heading font-bold text-sm sm:text-lg mb-3 sm:mb-4">{t("footer.industrySolutions")}</h4>
+            <ul className="space-y-2 sm:space-y-3">
+              {[...industryLinks, ...industryLinks2].map((link, index) => (
+                <li key={index}>
+                  <Link
+                    to={link.href}
+                    className="text-primary-foreground/80 hover:text-primary-foreground transition-colors text-xs sm:text-sm"
+                  >
+                    {link.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
           {/* Blog */}
           <div>
             <h4 className="font-heading font-bold text-sm sm:text-lg mb-3 sm:mb-4">{t("footer.blog", "Blog")}</h4>
