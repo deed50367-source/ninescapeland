@@ -84,6 +84,7 @@ const pageRoutes = (
     <Route path="indoor-playground-roi-analysis-uk" element={<IndoorPlaygroundROIUK />} />
     <Route path="indoor-playground-roi-canada" element={<IndoorPlaygroundROICanada />} />
     <Route path="locations/:slug" element={<LocationPage />} />
+    <Route path="market/:slug" element={<IndustryLandingPage />} />
   </>
 );
 
