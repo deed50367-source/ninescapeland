@@ -59,6 +59,17 @@ const CORE_ROUTES = [
   "/locations/indoor-playground-equipment-india",
   "/locations/indoor-playground-equipment-mexico",
   "/locations/indoor-playground-equipment-brazil",
+  // Industry/market landing pages
+  "/market/best-indoor-playground-solution-for-real-estate",
+  "/market/pediatric-indoor-playground-solution-for-healthcare",
+  "/market/educational-indoor-playground-solution-for-schools",
+  "/market/ecommerce-retailtainment-indoor-playground-solution",
+  "/market/finance-sector-indoor-playground-solution",
+  "/market/best-indoor-playground-solution-for-legal-offices",
+  "/market/experiential-marketing-indoor-playground-solutions",
+  "/market/hr-workplace-wellness-indoor-playground",
+  "/market/logistics-hub-indoor-playground-solutions",
+  "/market/manufacturing-facility-indoor-playground-safety",
 ];
 
 const LANGUAGES = ["es", "pt", "de", "fr", "ar"];
