@@ -474,7 +474,20 @@
     },
     "copyright": "© 2024 NinescapeLand. Alle Rechte vorbehalten.",
     "privacy": "Datenschutz",
-    "terms": "Nutzungsbedingungen"
+    "terms": "Nutzungsbedingungen",
+    "industrySolutions": "Branchenlösungen",
+    "industryLinks": {
+      "realEstate": "Immobilien",
+      "healthcare": "Gesundheit",
+      "education": "Bildung",
+      "ecommerce": "E-Commerce & Handel",
+      "finance": "Finanzen",
+      "legal": "Recht",
+      "marketing": "Marketing",
+      "hr": "HR & Arbeitsplatz",
+      "logistics": "Logistik",
+      "manufacturing": "Fertigung"
+    }
   },
   "floatingCta": {
     "scrollToTop": "Nach oben",
