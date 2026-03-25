@@ -35,6 +35,7 @@ const TrampolineParkFEC = lazy(() => import("./pages/TrampolineParkFEC"));
 const IndoorPlaygroundROIUK = lazy(() => import("./pages/IndoorPlaygroundROIUK"));
 const IndoorPlaygroundROICanada = lazy(() => import("./pages/IndoorPlaygroundROICanada"));
 const LocationPage = lazy(() => import("./pages/LocationPage"));
+const IndustryLandingPage = lazy(() => import("./pages/IndustryLandingPage"));
 const NotFound = lazy(() => import("./pages/NotFound"));
 const AdminLogin = lazy(() => import("./pages/AdminLogin"));
 const AdminDashboard = lazy(() => import("./pages/AdminDashboard"));
