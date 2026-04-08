@@ -37,7 +37,8 @@ export const Footer = () => {
   const companyLinks = [
     { label: t("footer.links.aboutUs"), href: localizedPath("/about-us") },
     { label: t("footer.links.projects"), href: localizedPath("/projects") },
-    { label: t("footer.links.certifications"), href: localizedPath("/about-us") },
+    { label: t("footer.links.caseStudies", "Case Studies"), href: localizedPath("/case-studies") },
+    { label: t("footer.links.process", "Our Process"), href: localizedPath("/process") },
     { label: t("footer.links.faq"), href: localizedPath("/faq") },
     { label: t("footer.links.contact"), href: localizedPath("/contact") },
   ];
