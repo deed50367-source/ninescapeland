@@ -89,6 +89,7 @@ export const BlogArticleSEO = ({
       <meta name="description" content={description} />
       {keywords && <meta name="keywords" content={keywords} />}
       <meta name="author" content={author} />
+      <meta name="robots" content="index, follow, max-image-preview:large" />
       <link rel="canonical" href={canonicalUrl} />
       
       {/* Open Graph - Article specific */}
