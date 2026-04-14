@@ -93,19 +93,27 @@ export const ProductFAQSection = ({ productName }: Props) => {
             initial={{ opacity: 0, y: 15 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-center mt-8"
+            className="text-center mt-8 flex flex-col sm:flex-row gap-3 justify-center items-center"
           >
-            <p className="text-muted-foreground mb-4">
+            <p className="text-muted-foreground mb-2 sm:mb-0 sm:mr-4">
               {t("dynamicProduct.faq.moreQuestions", "Still have questions? Our team is ready to help.")}
             </p>
-            <Button
-              variant="outline"
-              size="lg"
-              onClick={() => openWhatsApp("product_detail", { productName })}
-            >
-              <MessageCircle className="w-5 h-5 mr-2" />
-              {t("dynamicProduct.faq.askUs", "Ask Us Anything")}
-            </Button>
+            <div className="flex gap-3">
+              <Button
+                variant="outline"
+                size="lg"
+                onClick={() => openWhatsApp("product_detail", { productName })}
+              >
+                <MessageCircle className="w-5 h-5 mr-2" />
+                {t("dynamicProduct.faq.askUs", "Ask Us Anything")}
+              </Button>
+              <Button
+                size="lg"
+                onClick={() => document.getElementById("inquiry-form")?.scrollIntoView({ behavior: "smooth", block: "start" })}
+              >
+                {t("dynamicProduct.inquiry.submit", "Get Free Quote")}
+              </Button>
+            </div>
           </motion.div>
         </div>
       </div>
