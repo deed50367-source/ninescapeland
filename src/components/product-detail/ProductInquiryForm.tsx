@@ -29,7 +29,7 @@ export const ProductInquiryForm = ({ productName, productSlug }: Props) => {
   const { t } = useTranslation();
   const { toast } = useToast();
   const { openWhatsApp } = useWhatsAppTracking();
-  const { isLimited, remainingTime, recordAction } = useRateLimit("product_inquiry", 3, 300000);
+  const { isLimited, timeUntilReset, recordAttempt } = useRateLimit({ maxAttempts: 3, windowMs: 60000, cooldownMs: 300000 });
 
   const [formData, setFormData] = useState({
     name: "",
