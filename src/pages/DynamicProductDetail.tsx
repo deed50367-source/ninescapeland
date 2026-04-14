@@ -36,6 +36,7 @@ import { ProductProcessSteps } from "@/components/product-detail/ProductProcessS
 import { ProductGalleryShowcase } from "@/components/product-detail/ProductGalleryShowcase";
 import { ProductMidCTA } from "@/components/product-detail/ProductMidCTA";
 import { ProductFAQSection } from "@/components/product-detail/ProductFAQSection";
+import { ProductInquiryForm } from "@/components/product-detail/ProductInquiryForm";
 import { LazySection } from "@/components/LazySection";
 
 interface ProductCategory {
@@ -627,6 +628,11 @@ const DynamicProductDetail = () => {
         {/* FAQ */}
         <LazySection minHeight="300px">
           <ProductFAQSection productName={getLocalizedName(product)} />
+        </LazySection>
+
+        {/* Inquiry Form */}
+        <LazySection minHeight="400px">
+          <ProductInquiryForm productName={getLocalizedName(product)} productSlug={product.slug} />
         </LazySection>
 
         {/* Related Products */}
