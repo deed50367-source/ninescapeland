@@ -122,7 +122,6 @@ export const LiveChat = () => {
 
   // Hide on admin pages
   const isAdminPage = location.pathname.startsWith('/admin');
-  if (isAdminPage) return null;
 
   const scrollToBottom = useCallback(() => {
     messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
