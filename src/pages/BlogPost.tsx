@@ -6,7 +6,7 @@ import { supabase } from "@/integrations/supabase/client";
 import DOMPurify from "dompurify";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
-import { LiveChat } from "@/components/LiveChat";
+
 import { LazySection } from "@/components/LazySection";
 import MobileBottomNav from "@/components/MobileBottomNav";
 import { BlogArticleSEO } from "@/components/BlogArticleSEO";
@@ -544,7 +544,7 @@ const BlogPost = () => {
       </main>
 
       <Footer />
-      <LiveChat />
+      
       <MobileBottomNav />
     </div>
   );
