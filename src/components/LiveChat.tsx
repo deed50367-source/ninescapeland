@@ -308,6 +308,8 @@ export const LiveChat = () => {
     openWhatsAppTracking("live_chat");
   };
 
+  if (isAdminPage) return null;
+
   return (
     <>
       {/* Chat Toggle Button */}
