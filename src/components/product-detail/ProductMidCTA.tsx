@@ -1,10 +1,8 @@
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 import { Button } from "@/components/ui/button";
-import { MessageCircle, FileText, ArrowRight } from "lucide-react";
+import { MessageCircle, FileText, ArrowDown } from "lucide-react";
 import { useWhatsAppTracking } from "@/hooks/useWhatsAppTracking";
-import { Link } from "react-router-dom";
-import { useLocalizedPath } from "@/hooks/useLocalizedPath";
 
 interface Props {
   productName: string;
@@ -13,7 +11,11 @@ interface Props {
 export const ProductMidCTA = ({ productName }: Props) => {
   const { t } = useTranslation();
   const { openWhatsApp } = useWhatsAppTracking();
-  const { localizedPath } = useLocalizedPath();
+
+  const scrollToForm = () => {
+    const el = document.getElementById("inquiry-form");
+    if (el) el.scrollIntoView({ behavior: "smooth", block: "start" });
+  };
 
   return (
     <section className="py-16 md:py-20 bg-primary text-primary-foreground">
@@ -47,13 +49,11 @@ export const ProductMidCTA = ({ productName }: Props) => {
               size="lg"
               variant="outline"
               className="border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10"
-              asChild
+              onClick={scrollToForm}
             >
-              <Link to={localizedPath("/contact")}>
-                <FileText className="w-5 h-5 mr-2" />
-                {t("dynamicProduct.midCta.inquiry", "Send an Inquiry")}
-                <ArrowRight className="w-4 h-4 ml-2" />
-              </Link>
+              <FileText className="w-5 h-5 mr-2" />
+              {t("dynamicProduct.midCta.inquiry", "Send an Inquiry")}
+              <ArrowDown className="w-4 h-4 ml-2" />
             </Button>
           </div>
         </motion.div>
