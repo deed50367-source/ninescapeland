@@ -7,7 +7,7 @@ import { CoreSolutionsSection } from "@/components/CoreSolutionsSection";
 import { ProductsSection } from "@/components/ProductsSection";
 import { Footer } from "@/components/Footer";
 import { FloatingCTA } from "@/components/FloatingCTA";
-import { LiveChat } from "@/components/LiveChat";
+
 import MobileBottomNav from "@/components/MobileBottomNav";
 import { SEOHead } from "@/components/SEOHead";
 import { OrganizationSchema, LocalBusinessSchema, WebsiteSchema } from "@/components/StructuredData";
@@ -102,7 +102,7 @@ const Index = () => {
       </main>
       <Footer />
       <FloatingCTA />
-      <LiveChat />
+      
       <MobileBottomNav />
       {/* Skip preloader on mobile to save bandwidth */}
       <Suspense fallback={null}>

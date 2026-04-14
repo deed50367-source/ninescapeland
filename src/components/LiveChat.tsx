@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef, useCallback } from 'react';
+import { useLocation } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { MessageCircle, X, Send, Clock, Bot, User, Loader2, Phone, CheckCircle } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
@@ -108,6 +109,7 @@ const saveSessionMetadata = async (sessionId: string, language: string) => {
 
 export const LiveChat = () => {
   const { t, i18n } = useTranslation();
+  const location = useLocation();
   const [isOpen, setIsOpen] = useState(false);
   const [messages, setMessages] = useState<Message[]>([]);
   const [input, setInput] = useState('');
@@ -117,6 +119,9 @@ export const LiveChat = () => {
   const messagesEndRef = useRef<HTMLDivElement>(null);
   const sessionId = useRef(getSessionId());
   const { openWhatsApp: openWhatsAppTracking } = useWhatsAppTracking();
+
+  // Hide on admin pages
+  const isAdminPage = location.pathname.startsWith('/admin');
 
   const scrollToBottom = useCallback(() => {
     messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
@@ -302,6 +307,8 @@ export const LiveChat = () => {
   const openWhatsApp = () => {
     openWhatsAppTracking("live_chat");
   };
+
+  if (isAdminPage) return null;
 
   return (
     <>

@@ -7,7 +7,7 @@ import { supabase } from "@/integrations/supabase/client";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { PageHero } from "@/components/PageHero";
-import { LiveChat } from "@/components/LiveChat";
+
 import { FloatingCTA } from "@/components/FloatingCTA";
 import MobileBottomNav from "@/components/MobileBottomNav";
 import { BlogFeaturedPost } from "@/components/BlogFeaturedPost";
@@ -481,7 +481,7 @@ const Blog = () => {
 
       <Footer />
       <FloatingCTA />
-      <LiveChat />
+      
       <MobileBottomNav />
     </div>
   );
