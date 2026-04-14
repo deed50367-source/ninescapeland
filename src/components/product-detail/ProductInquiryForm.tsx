@@ -77,7 +77,7 @@ export const ProductInquiryForm = ({ productName, productSlug }: Props) => {
       });
 
       if (error) throw error;
-      recordAction();
+      recordAttempt();
       toast({ title: t("contact.successTitle", "Inquiry Sent!"), description: t("contact.successDesc", "We'll get back to you within 24 hours.") });
       setFormData({ name: "", email: "", phone: "", country: "", message: "" });
       setErrors({});
@@ -149,10 +149,10 @@ export const ProductInquiryForm = ({ productName, productSlug }: Props) => {
                 </div>
 
                 {isLimited && (
-                  <div className="flex items-center gap-2 text-sm text-amber-600 bg-amber-50 p-3 rounded-lg">
-                    <AlertTriangle className="w-4 h-4 shrink-0" />
-                    {t("contact.rateLimitWait", `Please wait ${Math.ceil(remainingTime / 1000)}s`)}
-                  </div>
+                <div className="flex items-center gap-2 text-sm text-destructive bg-destructive/10 p-3 rounded-lg">
+                  <AlertTriangle className="w-4 h-4 shrink-0" />
+                  {t("contact.rateLimitWait", `Please wait ${Math.ceil(timeUntilReset / 1000)}s`)}
+                </div>
                 )}
 
                 <Button type="submit" size="lg" className="w-full" disabled={isSubmitting || isLimited}>
