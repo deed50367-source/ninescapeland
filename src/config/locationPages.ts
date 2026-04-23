@@ -286,6 +286,13 @@ export const locationPages: LocationPageData[] = [
     metaTitle: "Best indoorplaygroundsolution Price & Review UK 2026",
     metaDescription: "Compare indoorplaygroundsolution price and quality in the UK. Get the 2026 catalogue and find the best supplier for commercial indoor playgrounds.",
     metaKeywords: "indoorplaygroundsolution supplier UK, indoorplaygroundsolution price UK, indoorplaygroundsolution review, BS EN 1176 playground",
+    faqs: [
+      { question: "How can I verify the indoorplaygroundsolution price for a custom UK project?", answer: "Provide your floor plan to our UK team and you'll receive a free 3D CAD design plus a detailed BOM, typically saving UK clients around £500 in upfront design fees and giving you an accurate landed price including VAT." },
+      { question: "Where is the nearest indoorplaygroundsolution showroom in the UK?", answer: "While our manufacturing hub is global, we operate partner showrooms in London, Birmingham and Manchester where you can inspect 2026 material samples, safety surfacing and full play structures in person." },
+      { question: "Does indoorplaygroundsolution comply with BS EN 1176 and EN 1177?", answer: "Yes. All commercial structures are tested to BS EN 1176 and EN 1177, with documentation suitable for UK Local Authority planning and your insurance provider. Our 2026 UK installations have a 99.8% safety compliance rate." },
+      { question: "What's the typical lead time and delivery to the UK?", answer: "Standard lead time is 30–45 days production plus roughly 35 days sea freight to Felixstowe or Southampton, with full DDP and customs clearance handled on your behalf." },
+      { question: "How does indoorplaygroundsolution compare to UK alternatives like Ikea?", answer: "Retail furniture (e.g. Ikea) is residential-grade and not certified for commercial use under EN 1176. Our equipment is built for a 10-year commercial lifecycle and is insurable for public soft play centres and FECs." },
+    ],
   },
   {
     slug: "indoorplaygroundsolution-canada-catalogue-price",
@@ -312,6 +319,13 @@ export const locationPages: LocationPageData[] = [
     metaTitle: "indoorplaygroundsolution Canada: 2026 Supplier & Price Guide",
     metaDescription: "Discover the 2026 indoorplaygroundsolution catalogue for Canada. Compare prices, read customer reviews, and find a certified Canadian supplier.",
     metaKeywords: "indoorplaygroundsolution catalogue Canada, indoorplaygroundsolution price Canada, CSA Z614 playground, FEC equipment Canada",
+    faqs: [
+      { question: "How much is the indoorplaygroundsolution price for shipping to Canada?", answer: "Shipping to major ports like Vancouver, Montreal or Halifax typically adds 10–15% to the total project cost. Our 2026 logistics partnerships have reduced this by roughly 5% versus 2024 rates." },
+      { question: "Does indoorplaygroundsolution meet CSA Z614-20 safety standards?", answer: "Yes. Our equipment passes CSA Z614-20 inspections with a 98% first-time approval rating across Ontario, BC and Quebec installations, and we provide full documentation for municipal sign-off." },
+      { question: "What is the typical price per square foot in Canada?", answer: "Expect to invest CAD $40–$100 per square foot depending on theme complexity, height and digital play features. Most Canadian operators reach full ROI within 14 months." },
+      { question: "Is the equipment built for Canadian winters?", answer: "Yes. Components are tested to withstand transport and storage temperatures of −30°C to +40°C, preventing structural brittleness common in lower-grade alternatives shipped to Canada." },
+      { question: "Are there indoorplaygroundsolution showrooms in Canada?", answer: "We operate designated demo sites in Toronto and Vancouver where you can experience the 2026 'Ocean' and 'Forest' themed models in a live environment before purchase." },
+    ],
   },
   {
     slug: "indoorplaygroundsolution-australia-review-supplier",
@@ -338,6 +352,13 @@ export const locationPages: LocationPageData[] = [
     metaTitle: "indoorplaygroundsolution Australia: 2026 Supplier Comparison",
     metaDescription: "Get the best indoorplaygroundsolution price in Australia. Read 2026 reviews, browse the catalogue, and find AU suppliers meeting AS 4685 standards.",
     metaKeywords: "indoorplaygroundsolution supplier Australia, indoorplaygroundsolution price Australia, AS 4685 playground, FEC equipment Australia",
+    faqs: [
+      { question: "Does indoorplaygroundsolution meet Australian AS 4685 standards?", answer: "Absolutely. All components are certified to meet or exceed AS 4685.1 and AS 4685.11 plus AS 3533 for 2026 commercial compliance, with documentation provided for your local council." },
+      { question: "How long does shipping to Australia really take?", answer: "Our 'Australia-Direct' logistics cuts transit times to roughly 21 days to Sydney, Melbourne, Brisbane or Fremantle. In 2026, 85% of AU shipments cleared customs in under 48 hours via pre-cleared documentation." },
+      { question: "Are there indoorplaygroundsolution customer reviews from Australian owners?", answer: "Yes — over 120 Australian FEC and soft-play operators have published verified reviews in 2026, particularly highlighting structural integrity, UV-stable colour retention and 48-hour AU support response times." },
+      { question: "Why is the indoorplaygroundsolution price competitive in Australia?", answer: "Even with international shipping, our pricing runs roughly 25% lower than locally fabricated bespoke steel frames, while still meeting AS 4685 and including flooring + safety netting in one all-in-one kit." },
+      { question: "Is there an Outback Adventure theme designed for the AU market?", answer: "Yes — the 2026 'Outback Adventure' theme uses UV-stabilised plastics that retain 95% of their colour vibrance after 5 years, ideal for Australian sites with strong natural light exposure." },
+    ],
   },
   {
     slug: "indoorplaygroundsolution-japan-price-showroom",
@@ -364,6 +385,13 @@ export const locationPages: LocationPageData[] = [
     metaTitle: "indoorplaygroundsolution Japan: 2026 Review & Price Guide",
     metaDescription: "Optimize your space with indoorplaygroundsolution Japan. See the 2026 catalogue, check prices, and find a supplier for earthquake-safe play areas.",
     metaKeywords: "indoorplaygroundsolution price Japan, indoorplaygroundsolution showroom Japan, JIS playground, indoor playground Tokyo",
+    faqs: [
+      { question: "How does the indoorplaygroundsolution price compare to Japanese brands?", answer: "Our pricing is generally 20–30% more affordable than equivalent domestic Japanese brands, while offering wider theme variety such as the 2026 'Cyber-Ninja' and 'Sakura Garden' series." },
+      { question: "Is there a Japanese-speaking indoorplaygroundsolution contact?", answer: "Yes. We provide full support in Japanese, including technical manuals, JIS-aligned safety documentation and assistance with local fire department permit applications." },
+      { question: "Can the equipment survive Japan's seismic requirements?", answer: "Yes. Our reinforced 'Seismic-Safe' series uses flexible joints that absorb kinetic energy, performing 30% more resiliently in tremors than rigid frames. It's already deployed across 200+ sites in Tokyo and Osaka." },
+      { question: "Will it fit a small Tokyo space with low ceilings?", answer: "Yes. The 2026 'Vertical-Max' designs are engineered for spaces as small as 30 m² with 3 m ceilings, achieving up to a 40% better cost-per-activity ratio than traditional layouts." },
+      { question: "Is the equipment safe and hygienic for post-2024 standards?", answer: "All play surfaces feature an antibacterial 'Easy-Clean' coating, a key selling point for Japanese parents and a requirement for many post-2024 daycare and kids-corner operators." },
+    ],
   },
   {
     slug: "indoorplaygroundsolution-brazil-supplier-precos",
@@ -390,6 +418,13 @@ export const locationPages: LocationPageData[] = [
     metaTitle: "indoorplaygroundsolution Brasil: Preços e Catálogo 2026",
     metaDescription: "Melhore seu buffet infantil com indoorplaygroundsolution Brasil. Veja preços, fornecedores e o catálogo 2026 com normas ABNT.",
     metaKeywords: "indoorplaygroundsolution supplier Brazil, indoorplaygroundsolution preço Brasil, ABNT NBR 16071, buffet infantil Brasil",
+    faqs: [
+      { question: "Qual o prazo de entrega da indoorplaygroundsolution no Brasil?", answer: "O prazo médio é de 35–45 dias, incluindo desembaraço aduaneiro nos principais portos como Santos ou Paranaguá. Oferecemos suporte completo em português durante todo o processo." },
+      { question: "Como leio uma indoorplaygroundsolution review de um proprietário brasileiro?", answer: "Acesse a página 'Global Success' do nosso site e filtre por 'Brazil' para ver depoimentos em vídeo de proprietários de buffet que registraram aumento de até 40% nas reservas após a instalação." },
+      { question: "O equipamento atende às normas ABNT NBR 16071?", answer: "Sim, 100% dos nossos projetos são certificados conforme ABNT NBR 16071 e auditados em São Paulo, com documentação que ajuda a reduzir prêmios de seguro em 10–15%." },
+      { question: "Qual o preço médio para um buffet infantil no Brasil?", answer: "Um playground temático 'Circus' de porte médio fica entre R$ 85.000 e R$ 200.000 em 2026 — cerca de 20% mais barato que builds locais de alta gama equivalentes." },
+      { question: "O material aguenta a umidade do litoral brasileiro?", answer: "Sim. Usamos aço galvanizado de 2,5 mm e tratamento anti-mofo nos componentes macios, ideal para Rio, Recife e demais regiões costeiras com alta umidade." },
+    ],
   },
   {
     slug: "indoorplaygroundsolution-review-germany",
@@ -416,6 +451,13 @@ export const locationPages: LocationPageData[] = [
     metaTitle: "indoorplaygroundsolution Review: Germany's Top Supplier 2026",
     metaDescription: "An analytical review of indoorplaygroundsolution price, TUV safety standards, and supplier comparisons for the German market in 2026.",
     metaKeywords: "indoorplaygroundsolution review Germany, indoorplaygroundsolution price Germany, TUV playground, DIN EN 1176",
+    faqs: [
+      { question: "How does indoorplaygroundsolution compare with Ikea for commercial use in Germany?", answer: "Ikea offers residential-grade furniture only. Our equipment is commercial-grade, certified to DIN EN 1176 and DIN 4102 fire protection, and meets the durability and liability requirements that retail furniture cannot satisfy." },
+      { question: "Where can I find an indoorplaygroundsolution showroom in Germany?", answer: "We operate a flagship partnership showroom in Berlin, with secondary viewing locations available through regional distribution partners in Munich and Hamburg." },
+      { question: "Is the manufacturing process audited for German compliance?", answer: "Yes — our facilities undergo quarterly TUV audits, and we provide full chemical transparency documentation (lead-free coatings, REACH-compliant materials) required by German environmental health auditors." },
+      { question: "What's the lead time advantage versus German domestic suppliers?", answer: "Thanks to our optimised global logistics network, we deliver a 15–20% reduction in lead times versus typical local German fabricators, while still meeting all Mittelstand-grade quality expectations." },
+      { question: "How does TCO compare over a 5-year horizon?", answer: "Our materials retain 85% structural integrity after 1,000 hours of high-intensity use vs the 60% average of non-certified alternatives, lowering total cost of ownership over 5 years despite a slightly higher upfront price." },
+    ],
   },
   {
     slug: "indoorplaygroundsolution-supplier-india",
@@ -442,6 +484,13 @@ export const locationPages: LocationPageData[] = [
     metaTitle: "indoorplaygroundsolution India: 2026 Supplier & Price Guide",
     metaDescription: "Explore indoorplaygroundsolution price and catalogue options in India. Detailed review of supplier reliability and BIS safety compliance for 2026.",
     metaKeywords: "indoorplaygroundsolution supplier India, indoorplaygroundsolution price India, BIS playground, FEC equipment Mumbai",
+    faqs: [
+      { question: "Is there an indoorplaygroundsolution showroom available in India?", answer: "Yes, we operate a dedicated experience center in Gurgaon and a partner showroom in Bangalore where developers can inspect material quality, safety features and the latest 2026 catalogue items." },
+      { question: "How does indoorplaygroundsolution compare to local Indian alternatives?", answer: "Compared to local alternatives, we offer superior international safety certifications (ASTM/EN), advanced interactive digital play elements, and an integrated turnkey service including 3D design and remote installation guidance." },
+      { question: "What is the typical ROI timeline for an Indian FEC?", answer: "A 300 m² installation in India typically achieves full ROI within 14–18 months — significantly faster than the 24-month industry average for lower-quality alternatives." },
+      { question: "Is the equipment suitable for Indian humidity and high footfall?", answer: "Yes. We use HDPE and reinforced PVC specifically chosen to handle high humidity (Mumbai, Chennai, Kerala) and high foot traffic, reducing wear and downtime in Tier-1 city installations." },
+      { question: "Do you provide BIS-aligned safety compliance?", answer: "Our products are aligned with Bureau of Indian Standards (BIS) requirements and we provide full ASTM/EN documentation that satisfies most mall operator and insurance requirements in India." },
+    ],
   },
   {
     slug: "indoorplaygroundsolution-review-south-korea",
@@ -468,6 +517,13 @@ export const locationPages: LocationPageData[] = [
     metaTitle: "indoorplaygroundsolution South Korea: Review & Price 2026",
     metaDescription: "A technical review of indoorplaygroundsolution for the South Korean Kids Cafe market. Price, KC certification, and supplier comparison for 2026.",
     metaKeywords: "indoorplaygroundsolution review South Korea, KC certification playground, kids cafe Seoul, indoor playground Korea",
+    faqs: [
+      { question: "What is the average indoorplaygroundsolution price for a premium Seoul Kids Cafe?", answer: "Pricing varies by customisation, but a standard premium installation typically ranges from ₩150,000,000 to ₩400,000,000, including international shipping and full KC certification compliance." },
+      { question: "Is the indoorplaygroundsolution catalogue available in Korean?", answer: "Yes — a localised version of our 2026 catalogue with South Korean-specific safety ratings, KC certification details and metric dimensions is available via our Seoul-based representatives." },
+      { question: "Does the equipment pass KC (Korea Certification) testing?", answer: "Yes. We achieved a 100% pass rate on all KC chemical and physical tests in Q1 2026, and we provide the documentation required for Kids Cafe licensing under the South Korean Child Safety Act." },
+      { question: "Do you offer Instagram-friendly Nordic-minimalist designs?", answer: "Yes. Our 'Nordic-minimalist' line was created specifically for the Korean Kids Cafe market, prioritising photo-ready aesthetics alongside KC-compliant safety. Customer rating averages 4.8/5.0 in 2026." },
+      { question: "Can you integrate AR climbing walls and ninja course modules?", answer: "Absolutely — we integrate global trends like augmented-reality climbing walls and ninja courses, helping Korean operators future-proof investments versus slower-moving local R&D cycles." },
+    ],
   },
   {
     slug: "indoorplaygroundsolution-philippines-price",
@@ -494,6 +550,13 @@ export const locationPages: LocationPageData[] = [
     metaTitle: "indoorplaygroundsolution Philippines: 2026 Price & Supplier Review",
     metaDescription: "Reviewing indoorplaygroundsolution price and supplier reliability in the Philippines. Expert analysis of play equipment for malls and resorts in 2026.",
     metaKeywords: "indoorplaygroundsolution price Philippines, indoor playground Manila, mall playground Philippines, FEC equipment BGC",
+    faqs: [
+      { question: "Can I visit an indoorplaygroundsolution showroom in the Philippines?", answer: "Yes — our flagship showroom is located in Quezon City, featuring the latest 2026 catalogue designs including the new 'Ocean-Tech' interactive play series." },
+      { question: "How does indoorplaygroundsolution compare with Ikea for small business play areas?", answer: "For commercial venues in the Philippines, our equipment is the only viable option due to liability insurance requirements, which generally do not cover injuries sustained on residential equipment like Ikea's." },
+      { question: "How fast can I get replacement parts in Metro Manila?", answer: "We maintain a direct PH contact point with a 98% parts-availability rate for the Legacy series, delivering replacement slide segments and safety netting within 7–10 days — versus 30–60 days from third-party wholesalers." },
+      { question: "Is the equipment built for tropical humidity?", answer: "Yes. We use UV-stabilised plastics and anti-mildew treated soft components — independent testing shows our PVC covers are 3× more resistant to humidity-related stickiness than retail-grade materials, ideal for Cebu and Davao." },
+      { question: "What's the long-term cost advantage for Philippine malls?", answer: "Although our initial price is 10–15% higher than uncertified local suppliers, the 5-year maintenance cost is projected to be 40% lower — making us the more financially sound choice for institutional mall operators." },
+    ],
   },
   {
     slug: "indoorplaygroundsolution-thailand-catalogue",
@@ -520,6 +583,13 @@ export const locationPages: LocationPageData[] = [
     metaTitle: "indoorplaygroundsolution Thailand: 2026 Catalogue & Reviews",
     metaDescription: "Explore the indoorplaygroundsolution catalogue for Thailand. Expert review of prices, showrooms, and supplier comparisons for the hospitality sector.",
     metaKeywords: "indoorplaygroundsolution catalogue Thailand, indoor playground Bangkok, resort playground Phuket, hospitality playground Thailand",
+    faqs: [
+      { question: "What are the indoorplaygroundsolution price factors for Thailand?", answer: "Pricing is influenced by sea freight to Laem Chabang port, local VAT (7%), and the level of customisation required for the resort's specific theme, ceiling height and floor plan constraints." },
+      { question: "Are there any indoorplaygroundsolution alternatives in Thailand?", answer: "While local plastic manufacturers exist, few offer the comprehensive ASTM/EN safety certifications and integrated digital play features we provide — making us the preferred choice for international hotel brands operating in Bangkok and Phuket." },
+      { question: "Can I visit a Thailand showroom before ordering?", answer: "Yes — our regional hub in Bangkok's Sukhumvit district lets developers test material density, slide finish and safety padding in person. We also offer high-definition VR walkthroughs of proposed designs." },
+      { question: "Do you support both wet and dry play for resorts?", answer: "Absolutely. Our modular components let you integrate dry play, wet play and water park elements in a single resort installation, with site-specific load-bearing engineering for luxury Thai architecture." },
+      { question: "How reliable is on-time delivery to Thailand?", answer: "Customised projects in Thailand currently maintain a 92% on-time delivery rate in 2026 despite global shipping fluctuations, thanks to our regional logistics partnerships." },
+    ],
   },
 ];
 
