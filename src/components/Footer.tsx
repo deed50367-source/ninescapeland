@@ -166,6 +166,23 @@ export const Footer = () => {
                   </Link>
                 </li>
               ))}
+              {/* Featured articles - always linked for SEO crawl coverage */}
+              <li>
+                <Link
+                  to={localizedPath("/blog/premium-residential-indoor-playground-climbers-for-homes")}
+                  className="text-primary-foreground/80 hover:text-primary-foreground transition-colors text-xs sm:text-sm line-clamp-2"
+                >
+                  {t("footer.links.featuredResidentialClimbers", "Premium Residential Indoor Playground Climbers")}
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to={localizedPath("/blog/contact-ninescapeland-partner")}
+                  className="text-primary-foreground/80 hover:text-primary-foreground transition-colors text-xs sm:text-sm line-clamp-2"
+                >
+                  {t("footer.links.featuredPartnerWithUs", "Partner With NinescapeLand")}
+                </Link>
+              </li>
             </ul>
           </div>
 
