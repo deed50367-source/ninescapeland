@@ -10,6 +10,7 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import { useWhatsAppTracking } from "@/hooks/useWhatsAppTracking";
+import { FAQSchema } from "@/components/StructuredData";
 
 interface Props {
   productName: string;
@@ -48,6 +49,7 @@ export const ProductFAQSection = ({ productName }: Props) => {
 
   return (
     <section className="py-16 md:py-20 bg-muted/30">
+      <FAQSchema items={faqs.map(f => ({ question: f.q, answer: f.a }))} />
       <div className="container mx-auto px-4">
         <div className="max-w-3xl mx-auto">
           <motion.div

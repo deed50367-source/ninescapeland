@@ -6,6 +6,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "./ui/accordion";
+import { FAQSchema } from "./StructuredData";
 
 export const FAQSection = () => {
   const { t } = useTranslation();
@@ -47,6 +48,7 @@ export const FAQSection = () => {
 
   return (
     <section id="faq" className="section-padding bg-muted">
+      <FAQSchema items={faqs.map(f => ({ question: f.question, answer: f.answer }))} />
       <div className="container-wide">
         {/* Section Header */}
         <motion.div
