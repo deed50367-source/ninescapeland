@@ -1,15 +1,16 @@
 import { useParams, Navigate } from "react-router-dom";
 import { motion } from "framer-motion";
-import { MapPin, CheckCircle, ArrowRight, Phone, Globe, Shield, Award, Factory, Truck } from "lucide-react";
+import { MapPin, CheckCircle, ArrowRight, Phone, Globe, Shield, Award, Factory, Truck, HelpCircle } from "lucide-react";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { FloatingCTA } from "@/components/FloatingCTA";
 import { SEOHead } from "@/components/SEOHead";
-import { BreadcrumbSchema, OrganizationSchema } from "@/components/StructuredData";
+import { BreadcrumbSchema, OrganizationSchema, FAQSchema } from "@/components/StructuredData";
 import { ProductsSection } from "@/components/ProductsSection";
 import { QuoteCalculator } from "@/components/QuoteCalculator";
 import { CTABannerSection } from "@/components/CTABannerSection";
 import { FAQSection } from "@/components/FAQSection";
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Button } from "@/components/ui/button";
 import { useLocalizedPath } from "@/hooks/useLocalizedPath";
 import { useWhatsAppTracking } from "@/hooks/useWhatsAppTracking";
@@ -186,7 +187,48 @@ const LocationPage = () => {
         </section>
 
         <QuoteCalculator />
-        <FAQSection />
+
+        {/* Country-specific FAQ + JSON-LD (long-tail SEO). Falls back to global FAQSection. */}
+        {location.faqs && location.faqs.length > 0 ? (
+          <section className="py-16 md:py-20" aria-labelledby="location-faq-heading">
+            <FAQSchema items={location.faqs} />
+            <div className="container-wide">
+              <div className="max-w-3xl mx-auto">
+                <div className="text-center mb-10">
+                  <div className="inline-flex items-center gap-2 bg-accent/10 text-accent px-4 py-2 rounded-full text-sm font-medium mb-4">
+                    <HelpCircle className="w-4 h-4" />
+                    <span>{location.flag} {location.country} FAQ</span>
+                  </div>
+                  <h2 id="location-faq-heading" className="text-3xl md:text-4xl font-heading font-bold mb-3">
+                    {location.country} Buyer Questions, Answered
+                  </h2>
+                  <p className="text-muted-foreground text-lg">
+                    Everything operators in {location.country} ask about pricing, certification and delivery before placing an order.
+                  </p>
+                </div>
+                <Accordion type="single" collapsible className="w-full space-y-3">
+                  {location.faqs.map((faq, i) => (
+                    <AccordionItem
+                      key={i}
+                      value={`faq-${i}`}
+                      className="border border-border rounded-lg px-5 bg-background"
+                    >
+                      <AccordionTrigger className="text-left font-semibold hover:no-underline py-4">
+                        {faq.question}
+                      </AccordionTrigger>
+                      <AccordionContent className="text-muted-foreground leading-relaxed pb-4">
+                        {faq.answer}
+                      </AccordionContent>
+                    </AccordionItem>
+                  ))}
+                </Accordion>
+              </div>
+            </div>
+          </section>
+        ) : (
+          <FAQSection />
+        )}
+
         <CTABannerSection />
       </main>
 
