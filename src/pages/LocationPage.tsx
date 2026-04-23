@@ -75,10 +75,11 @@ const LocationPage = () => {
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.1 }}
-                className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-heading font-bold text-primary-foreground leading-tight mb-4 break-words [overflow-wrap:anywhere] hyphens-auto"
+                className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-heading font-bold text-primary-foreground leading-tight mb-4"
+                style={{ wordBreak: "break-word", overflowWrap: "anywhere" }}
               >
                 {location.heroTitle}
-                <span className="block text-accent mt-2 break-words [overflow-wrap:anywhere]">{location.heroHighlight}</span>
+                <span className="block text-accent mt-2" style={{ wordBreak: "break-word", overflowWrap: "anywhere" }}>{location.heroHighlight}</span>
               </motion.h1>
               <motion.p
                 initial={{ opacity: 0, y: 30 }}
