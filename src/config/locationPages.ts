@@ -1,3 +1,8 @@
+export interface LocationFAQ {
+  question: string;
+  answer: string;
+}
+
 export interface LocationPageData {
   slug: string;
   country: string;
@@ -11,6 +16,7 @@ export interface LocationPageData {
   metaTitle: string;
   metaDescription: string;
   metaKeywords: string;
+  faqs?: LocationFAQ[];
 }
 
 export const locationPages: LocationPageData[] = [
