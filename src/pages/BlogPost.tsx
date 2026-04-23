@@ -404,21 +404,37 @@ const BlogPost = () => {
                   {post.title}
                 </h1>
 
-                {/* Meta Information */}
-                <aside className="flex flex-wrap items-center gap-4 md:gap-6 text-muted-foreground border-b border-border pb-6">
-                  <address className="flex items-center gap-2 not-italic">
-                    <User className="w-4 h-4" />
-                    <span>NinescapeLand Team</span>
+                {/* Author Byline Card — E-E-A-T signal */}
+                <aside className="flex flex-wrap items-start gap-4 border-y border-border py-5">
+                  <div className="w-12 h-12 rounded-full bg-gradient-to-br from-primary to-primary/60 text-primary-foreground flex items-center justify-center font-bold text-lg flex-shrink-0">
+                    NL
+                  </div>
+                  <address className="not-italic flex-1 min-w-[200px]">
+                    <div className="flex items-center gap-2 text-foreground font-semibold">
+                      <User className="w-4 h-4" />
+                      <span>NinescapeLand Team</span>
+                    </div>
+                    <p className="text-xs text-muted-foreground mt-1 leading-snug">
+                      {t("blog.authorBio", "Senior Indoor Playground Design Specialists · 16+ years (since 2008) designing 2,000+ commercial play projects across 50+ countries. ASTM F1918 & EN 1176 certified.")}
+                    </p>
                   </address>
-                  {post.published_at && (
-                    <time dateTime={post.published_at} className="flex items-center gap-2">
-                      <Calendar className="w-4 h-4" />
-                      {format(new Date(post.published_at), "MMMM d, yyyy")}
-                    </time>
-                  )}
-                  <div className="flex items-center gap-2">
-                    <Clock className="w-4 h-4" />
-                    <span>{readingTime} {t("blog.minRead", "min read")}</span>
+                  <div className="flex flex-col gap-1.5 text-sm text-muted-foreground">
+                    {post.published_at && (
+                      <time dateTime={post.published_at} className="flex items-center gap-2">
+                        <Calendar className="w-4 h-4" />
+                        <span>{t("blog.published", "Published")}: {format(new Date(post.published_at), "MMM d, yyyy")}</span>
+                      </time>
+                    )}
+                    {post.updated_at && post.published_at && new Date(post.updated_at).getTime() > new Date(post.published_at).getTime() + 86400000 && (
+                      <time dateTime={post.updated_at} className="flex items-center gap-2 text-xs">
+                        <Calendar className="w-3.5 h-3.5" />
+                        <span>{t("blog.updated", "Last updated")}: {format(new Date(post.updated_at), "MMM d, yyyy")}</span>
+                      </time>
+                    )}
+                    <div className="flex items-center gap-2">
+                      <Clock className="w-4 h-4" />
+                      <span>{readingTime} {t("blog.minRead", "min read")}</span>
+                    </div>
                   </div>
                 </aside>
 
