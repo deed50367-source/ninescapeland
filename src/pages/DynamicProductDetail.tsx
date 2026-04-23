@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import DOMPurify from "dompurify";
 import { useParams, Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { motion, AnimatePresence } from "framer-motion";
@@ -540,7 +541,10 @@ const DynamicProductDetail = () => {
                 {getLocalizedDescription() ? (
                   <div
                     dangerouslySetInnerHTML={{
-                      __html: getLocalizedDescription().replace(/\n/g, "<br />"),
+                      __html: DOMPurify.sanitize(
+                        getLocalizedDescription().replace(/\n/g, "<br />"),
+                        { ALLOWED_TAGS: ["br", "strong", "b", "em", "p", "ul", "ol", "li"] }
+                      ),
                     }}
                   />
                 ) : (
