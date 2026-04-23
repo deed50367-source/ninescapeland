@@ -176,7 +176,22 @@ export const BlogPostingSchema = ({
 }: BlogPostingSchemaProps) => {
   const schema: Record<string, unknown> = {
     "@context": "https://schema.org", "@type": "BlogPosting", headline,
-    author: { "@type": "Organization", name: author, url: SITE_URL },
+    author: {
+      "@type": "Person",
+      name: author,
+      jobTitle: "Senior Indoor Playground Design Specialist",
+      worksFor: { "@type": "Organization", name: "NinescapeLand", url: SITE_URL },
+      url: `${SITE_URL}/about-us`,
+      image: `${SITE_URL}/favicon-180.png`,
+      knowsAbout: [
+        "Indoor Playground Equipment",
+        "Trampoline Park Design",
+        "Ninja Warrior Course Engineering",
+        "Soft Play Safety Standards (ASTM F1918, EN 1176)",
+        "FEC Business ROI Analysis"
+      ],
+      description: "16+ years (since 2008) designing commercial indoor playgrounds, trampoline parks and FEC equipment for 2,000+ projects across 50+ countries."
+    },
     publisher: { "@type": "Organization", name: "NinescapeLand", logo: { "@type": "ImageObject", url: LOGO_URL, width: 512, height: 512 } },
     isAccessibleForFree: true, inLanguage: "en"
   };
