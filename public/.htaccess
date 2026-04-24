@@ -24,7 +24,7 @@ AddType text/plain .txt
   RewriteCond %{REQUEST_FILENAME} !-f
   RewriteCond %{REQUEST_FILENAME} !-d
   RewriteCond %{DOCUMENT_ROOT}%{REQUEST_URI}/index.html !-f
-  RewriteCond %{REQUEST_URI} ^/(blog/.+|products/.+|locations/.+|admin|ar/(blog|products|locations)/.+|es/(blog|products|locations)/.+|de/(blog|products|locations)/.+|fr/(blog|products|locations)/.+|pt/(blog|products|locations)/.+) [NC]
+  RewriteCond %{REQUEST_URI} ^/(blog/.+|products/.+|locations/.+|market/.+|admin|ar/(blog|products|locations|market)/.+|es/(blog|products|locations|market)/.+|de/(blog|products|locations|market)/.+|fr/(blog|products|locations|market)/.+|pt/(blog|products|locations|market)/.+) [NC]
   RewriteRule ^ index.html [L]
 
   # Everything else that doesn't match a file or prerendered page → 404
