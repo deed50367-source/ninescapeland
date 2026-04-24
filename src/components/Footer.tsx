@@ -11,10 +11,10 @@ import { supabase } from "@/integrations/supabase/client";
 import { languages } from "@/i18n/config";
 
 const socialLinks = [
-  { icon: Facebook, href: "#", label: "Facebook" },
-  { icon: Youtube, href: "#", label: "YouTube" },
-  { icon: Linkedin, href: "#", label: "LinkedIn" },
-  { icon: Instagram, href: "#", label: "Instagram" },
+  { icon: Facebook, href: "https://www.facebook.com/ninescapeland", label: "Facebook" },
+  { icon: Youtube, href: "https://www.youtube.com/@ninescapeland", label: "YouTube" },
+  { icon: Linkedin, href: "https://www.linkedin.com/company/ninescapeland", label: "LinkedIn" },
+  { icon: Instagram, href: "https://www.instagram.com/ninescapeland", label: "Instagram" },
 ];
 
 export const Footer = () => {
@@ -85,6 +85,8 @@ export const Footer = () => {
                 <a
                   key={index}
                   href={social.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   aria-label={social.label}
                   className="w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-primary-foreground/10 flex items-center justify-center hover:bg-primary-foreground/20 transition-colors"
                 >
