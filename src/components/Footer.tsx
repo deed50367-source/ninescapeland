@@ -85,6 +85,8 @@ export const Footer = () => {
                 <a
                   key={index}
                   href={social.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   aria-label={social.label}
                   className="w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-primary-foreground/10 flex items-center justify-center hover:bg-primary-foreground/20 transition-colors"
                 >
