@@ -48,6 +48,14 @@ const CORE_ROUTES = [
   "/trampoline-park-fec-solutions",
   "/indoor-playground-roi-analysis-uk",
   "/indoor-playground-roi-canada",
+  // Investment / ROI hub + per-country guides
+  "/investment-opportunity",
+  "/investment-opportunity/indoor-playground-investment-australia",
+  "/investment-opportunity/indoor-playground-investment-new-zealand",
+  "/investment-opportunity/indoor-playground-investment-uae",
+  "/investment-opportunity/indoor-playground-investment-saudi-arabia",
+  "/investment-opportunity/indoor-playground-investment-mexico",
+  "/investment-opportunity/indoor-playground-investment-brazil",
   // Location pages
   "/locations/indoor-playground-equipment-usa",
   "/locations/indoor-playground-equipment-uk",

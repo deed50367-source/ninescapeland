@@ -35,6 +35,8 @@ const SoftPlayMallSolutions = lazy(() => import("./pages/SoftPlayMallSolutions")
 const TrampolineParkFEC = lazy(() => import("./pages/TrampolineParkFEC"));
 const IndoorPlaygroundROIUK = lazy(() => import("./pages/IndoorPlaygroundROIUK"));
 const IndoorPlaygroundROICanada = lazy(() => import("./pages/IndoorPlaygroundROICanada"));
+const InvestmentOpportunity = lazy(() => import("./pages/InvestmentOpportunity"));
+const InvestmentROIPage = lazy(() => import("./pages/InvestmentROIPage"));
 const LocationPage = lazy(() => import("./pages/LocationPage"));
 const IndustryLandingPage = lazy(() => import("./pages/IndustryLandingPage"));
 const NotFound = lazy(() => import("./pages/NotFound"));
@@ -84,6 +86,8 @@ const pageRoutes = (
     <Route path="trampoline-park-fec-solutions" element={<TrampolineParkFEC />} />
     <Route path="indoor-playground-roi-analysis-uk" element={<IndoorPlaygroundROIUK />} />
     <Route path="indoor-playground-roi-canada" element={<IndoorPlaygroundROICanada />} />
+    <Route path="investment-opportunity" element={<InvestmentOpportunity />} />
+    <Route path="investment-opportunity/:slug" element={<InvestmentROIPage />} />
     <Route path="locations/:slug" element={<LocationPage />} />
     <Route path="market/:slug" element={<IndustryLandingPage />} />
   </>
