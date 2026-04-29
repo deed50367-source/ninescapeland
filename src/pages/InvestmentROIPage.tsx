@@ -26,12 +26,10 @@ import {
   Globe2,
 } from "lucide-react";
 import { useLocalizedPath } from "@/hooks/useLocalizedPath";
-import { useTranslation } from "react-i18next";
 import { getROIPageBySlug, roiPages } from "@/config/roiPages";
 
 const InvestmentROIPage = () => {
   const { slug } = useParams<{ slug: string }>();
-  const { t } = useTranslation();
   const { localizedPath } = useLocalizedPath();
   const data = slug ? getROIPageBySlug(slug) : undefined;
 
