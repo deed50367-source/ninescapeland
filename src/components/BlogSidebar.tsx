@@ -145,6 +145,8 @@ export const BlogSidebar = ({ recentPosts = [] }: BlogSidebarProps) => {
                       className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
                       loading="lazy"
                       decoding="async"
+                      width="64"
+                      height="64"
                     />
                   ) : (
                     <div className="w-full h-full flex items-center justify-center bg-gradient-to-br from-primary/20 to-accent/10">

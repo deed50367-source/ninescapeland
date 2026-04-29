@@ -213,6 +213,9 @@ export const ProductMegaMenu = () => {
                             src={category.image_url}
                             alt={getLocalizedName(category)}
                             className="w-8 h-8 rounded-md object-cover"
+                            width="32"
+                            height="32"
+                            loading="lazy"
                           />
                         ) : (
                           <div className="w-8 h-8 rounded-md bg-muted flex items-center justify-center">
@@ -260,6 +263,9 @@ export const ProductMegaMenu = () => {
                             src={product.featured_image}
                             alt={getLocalizedName(product)}
                             className="w-12 h-12 rounded-lg object-cover"
+                            width="48"
+                            height="48"
+                            loading="lazy"
                           />
                         ) : (
                           <div className="w-12 h-12 rounded-lg bg-muted flex items-center justify-center">
