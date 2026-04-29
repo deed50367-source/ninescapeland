@@ -117,6 +117,9 @@ export const BlogRelatedPosts = ({ posts, currentPostId }: BlogRelatedPostsProps
                       alt=""
                       className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                       loading="lazy"
+                      decoding="async"
+                      width="640"
+                      height="400"
                     />
                   ) : (
                     <div className="w-full h-full flex items-center justify-center bg-gradient-to-br from-primary/20 via-primary/10 to-accent/10">
