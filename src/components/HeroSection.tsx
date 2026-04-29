@@ -50,6 +50,8 @@ export const HeroSection = () => {
             loading="eager"
             fetchPriority="high"
             decoding="sync"
+            width="1920"
+            height="1080"
           />
         </motion.div>
         

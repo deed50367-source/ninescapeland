@@ -47,6 +47,8 @@ export const PageHero = ({
             loading="eager"
             fetchPriority="high"
             decoding="sync"
+            width="1920"
+            height="600"
           />
           <div className={`absolute inset-0 ${isRTL ? 'bg-gradient-to-l' : 'bg-gradient-to-r'} from-primary/95 via-primary/85 to-primary/70`} />
         </div>
