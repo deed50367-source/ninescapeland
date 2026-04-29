@@ -174,7 +174,7 @@ export const Footer = () => {
                   to={localizedPath("/blog/premium-residential-indoor-playground-climbers-for-homes")}
                   className="text-primary-foreground/80 hover:text-primary-foreground transition-colors text-xs sm:text-sm line-clamp-2"
                 >
-                  {t("footer.links.featuredResidentialClimbers", "Premium Residential Indoor Playground Climbers")}
+                  {t("footer.links.featuredResidentialClimbers", "Guide: Residential Climbers for Home Playrooms")}
                 </Link>
               </li>
               <li>
@@ -182,7 +182,7 @@ export const Footer = () => {
                   to={localizedPath("/blog/contact-ninescapeland-partner")}
                   className="text-primary-foreground/80 hover:text-primary-foreground transition-colors text-xs sm:text-sm line-clamp-2"
                 >
-                  {t("footer.links.featuredPartnerWithUs", "Partner With NinescapeLand")}
+                  {t("footer.links.featuredPartnerWithUs", "Become a NinescapeLand Distributor (Article)")}
                 </Link>
               </li>
             </ul>
