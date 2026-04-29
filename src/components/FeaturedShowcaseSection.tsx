@@ -193,6 +193,8 @@ export const FeaturedShowcaseSection = () => {
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                       loading="lazy"
                       decoding="async"
+                      width="400"
+                      height="300"
                     />
                     <span className="absolute top-1.5 left-1.5 rtl:left-auto rtl:right-1.5 bg-accent/90 text-accent-foreground text-[10px] font-bold px-1.5 py-0.5 rounded">
                       {product.tag}
@@ -239,6 +241,8 @@ export const FeaturedShowcaseSection = () => {
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                       loading="lazy"
                       decoding="async"
+                      width="400"
+                      height="300"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-foreground/50 to-transparent" />
                     <span className="absolute bottom-1.5 left-2 rtl:left-auto rtl:right-2 text-white text-[10px] font-medium flex items-center gap-1">
@@ -289,6 +293,8 @@ export const FeaturedShowcaseSection = () => {
                           className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                           loading="lazy"
                           decoding="async"
+                          width="400"
+                          height="300"
                         />
                       </div>
                     )}
