@@ -2,7 +2,7 @@ import { useTranslation } from "react-i18next";
 import { motion } from "framer-motion";
 import { Shield, Lightbulb, Users, Award, Heart, Zap } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
-import mascotThinking from "@/assets/mascot-thinking.png";
+import mascotThinking from "@/assets/mascot-thinking.webp";
 
 const coreValues = [
   {

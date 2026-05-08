@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 import { Sparkles, Heart, MessageCircle } from "lucide-react";
-import mascotContact from "@/assets/mascot-contact.png";
+import mascotContact from "@/assets/mascot-contact.webp";
 
 export const ContactMascotBanner = () => {
   const { t } = useTranslation();

@@ -1,6 +1,6 @@
 import { useTranslation } from "react-i18next";
 import { motion } from "framer-motion";
-import mascotWelcomeBg from "@/assets/mascot-welcome-bg.png";
+import mascotWelcomeBg from "@/assets/mascot-welcome-bg.webp";
 
 export const AboutMascotIntro = () => {
   const { t } = useTranslation();
