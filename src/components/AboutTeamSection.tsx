@@ -1,8 +1,8 @@
 import { useTranslation } from "react-i18next";
 import { motion } from "framer-motion";
 import { Users, Target, Rocket, Globe } from "lucide-react";
-import mascotCelebrate from "@/assets/mascot-celebrate.png";
-import mascotPointing from "@/assets/mascot-pointing.png";
+import mascotCelebrate from "@/assets/mascot-celebrate.webp";
+import mascotPointing from "@/assets/mascot-pointing.webp";
 
 export const AboutTeamSection = () => {
   const { t } = useTranslation();

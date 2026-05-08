@@ -1,8 +1,8 @@
 import { motion } from "framer-motion";
-import mascotPlayground from "@/assets/mascot-playground.png";
-import mascotTrampoline from "@/assets/mascot-trampoline.png";
-import mascotNinja from "@/assets/mascot-ninja.png";
-import mascotSoftplay from "@/assets/mascot-softplay.png";
+import mascotPlayground from "@/assets/mascot-playground.webp";
+import mascotTrampoline from "@/assets/mascot-trampoline.webp";
+import mascotNinja from "@/assets/mascot-ninja.webp";
+import mascotSoftplay from "@/assets/mascot-softplay.webp";
 import { useWhatsAppTracking } from "@/hooks/useWhatsAppTracking";
 
 const mascotImages = {

@@ -7,10 +7,10 @@ import { useLocalizedPath } from "@/hooks/useLocalizedPath";
 import { useRTL } from "@/hooks/useRTL";
 import { useSiteImages } from "@/hooks/useSiteImages";
 import { useImagePreload } from "@/hooks/useImagePreload";
-import mascotPlayground from "@/assets/mascot-playground.png";
-import mascotTrampoline from "@/assets/mascot-trampoline.png";
-import mascotNinja from "@/assets/mascot-ninja.png";
-import mascotSoftplay from "@/assets/mascot-softplay.png";
+import mascotPlayground from "@/assets/mascot-playground.webp";
+import mascotTrampoline from "@/assets/mascot-trampoline.webp";
+import mascotNinja from "@/assets/mascot-ninja.webp";
+import mascotSoftplay from "@/assets/mascot-softplay.webp";
 const container = {
   hidden: { opacity: 0 },
   show: {
