@@ -12,6 +12,7 @@ import MobileBottomNav from "@/components/MobileBottomNav";
 import { SEOHead } from "@/components/SEOHead";
 import { OrganizationSchema, LocalBusinessSchema, WebsiteSchema } from "@/components/StructuredData";
 import { LazySection } from "@/components/LazySection";
+import { TrustHubLinks } from "@/components/TrustHubLinks";
 
 // Lazy load below-fold sections to speed up initial render
 const FeaturesGridSection = lazy(() => import("@/components/FeaturesGridSection").then(m => ({ default: m.FeaturesGridSection })));
@@ -64,6 +65,9 @@ const Index = () => {
           </LazySection>
           <LazySection minHeight="400px">
             <WhyUsSection />
+          </LazySection>
+          <LazySection minHeight="300px">
+            <TrustHubLinks />
           </LazySection>
           <LazySection minHeight="400px">
             <CoreValuesSection />
