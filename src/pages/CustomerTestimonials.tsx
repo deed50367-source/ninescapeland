@@ -118,6 +118,7 @@ const CustomerTestimonials = () => {
         dynamicTitle="Indoor Playground Client Testimonials & Case Reviews"
         dynamicDescription="Verified B2B testimonials from indoor playground operators in malls, hotels, schools & FECs across 50+ countries. Real ROI, foot-traffic uplift & rating data."
         dynamicKeywords="indoor playground client testimonials, indoor playground reviews, soft play case studies, FEC client reviews"
+        ogImage="/og-customer-testimonials.jpg"
       />
       <Helmet>
         <script type="application/ld+json">{JSON.stringify(reviewSchema)}</script>

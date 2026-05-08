@@ -39,6 +39,7 @@ import { ProductMidCTA } from "@/components/product-detail/ProductMidCTA";
 import { ProductFAQSection } from "@/components/product-detail/ProductFAQSection";
 import { ProductInquiryForm } from "@/components/product-detail/ProductInquiryForm";
 import { LazySection } from "@/components/LazySection";
+import { TrustHubLinks } from "@/components/TrustHubLinks";
 
 interface ProductCategory {
   id: string;
@@ -681,6 +682,9 @@ const DynamicProductDetail = () => {
             </section>
           </LazySection>
         )}
+        <LazySection minHeight="300px">
+          <TrustHubLinks />
+        </LazySection>
       </main>
 
       {/* Lightbox */}

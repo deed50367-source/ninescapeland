@@ -496,7 +496,10 @@
       "process": "Our Process",
       "faq": "FAQ",
       "contact": "Contact Us",
-      "allArticles": "All Articles"
+      "allArticles": "All Articles",
+      "testimonials": "Client Testimonials",
+      "safety": "Safety & Certifications",
+      "maintenance": "Maintenance & Warranty"
     },
     "contact": {
       "phone": "Phone / WhatsApp",
@@ -2985,10 +2988,22 @@
         "ctaSecondary": "View Indoor Playgrounds"
       },
       "stats": {
-        "s1": { "value": "+15%", "label": "Property Value Increase" },
-        "s2": { "value": "2,000+", "label": "Projects Completed" },
-        "s3": { "value": "95%", "label": "Tenant Satisfaction" },
-        "s4": { "value": "50+", "label": "Countries Served" }
+        "s1": {
+          "value": "+15%",
+          "label": "Property Value Increase"
+        },
+        "s2": {
+          "value": "2,000+",
+          "label": "Projects Completed"
+        },
+        "s3": {
+          "value": "95%",
+          "label": "Tenant Satisfaction"
+        },
+        "s4": {
+          "value": "50+",
+          "label": "Countries Served"
+        }
       },
       "section1": {
         "badge": "Property Value",
@@ -3026,8 +3041,14 @@
         "badge": "FAQ",
         "title": "Frequently Asked",
         "titleHighlight": "Questions",
-        "q1": { "question": "How does an indoor playground increase property value?", "answer": "Indoor playgrounds serve as premium amenities that differentiate properties. Studies show family-friendly developments with play amenities achieve 10-15% higher valuations, faster lease-up rates, and stronger tenant retention compared to properties without such facilities." },
-        "q2": { "question": "Can you work with our architects and contractors?", "answer": "Absolutely. We regularly collaborate with architectural firms and general contractors worldwide. We provide CAD files, 3D renders, structural load specifications, and coordinate installation scheduling to align with your construction timeline." }
+        "q1": {
+          "question": "How does an indoor playground increase property value?",
+          "answer": "Indoor playgrounds serve as premium amenities that differentiate properties. Studies show family-friendly developments with play amenities achieve 10-15% higher valuations, faster lease-up rates, and stronger tenant retention compared to properties without such facilities."
+        },
+        "q2": {
+          "question": "Can you work with our architects and contractors?",
+          "answer": "Absolutely. We regularly collaborate with architectural firms and general contractors worldwide. We provide CAD files, 3D renders, structural load specifications, and coordinate installation scheduling to align with your construction timeline."
+        }
       }
     },
     "healthcare": {
@@ -3046,10 +3067,22 @@
         "ctaSecondary": "View Soft Play Equipment"
       },
       "stats": {
-        "s1": { "value": "-40%", "label": "Patient Anxiety Reduction" },
-        "s2": { "value": "100%", "label": "Antimicrobial Materials" },
-        "s3": { "value": "98%", "label": "Parent Satisfaction" },
-        "s4": { "value": "ISO 9001", "label": "Quality Certified" }
+        "s1": {
+          "value": "-40%",
+          "label": "Patient Anxiety Reduction"
+        },
+        "s2": {
+          "value": "100%",
+          "label": "Antimicrobial Materials"
+        },
+        "s3": {
+          "value": "98%",
+          "label": "Parent Satisfaction"
+        },
+        "s4": {
+          "value": "ISO 9001",
+          "label": "Quality Certified"
+        }
       },
       "section1": {
         "badge": "Patient Experience",
@@ -3087,8 +3120,14 @@
         "badge": "FAQ",
         "title": "Frequently Asked",
         "titleHighlight": "Questions",
-        "q1": { "question": "What antimicrobial materials do you use?", "answer": "We use hospital-grade antimicrobial PVC, UV-resistant foam with antimicrobial treatment, and stainless steel hardware. All surfaces feature antimicrobial coatings that inhibit 99.9% of bacteria, meeting healthcare facility hygiene requirements." },
-        "q2": { "question": "Can you design for children with special needs?", "answer": "Yes, we specialize in inclusive play designs. Our healthcare playgrounds include wheelchair-accessible elements, sensory-calming zones, tactile panels, and adjustable-height features to accommodate children of all abilities and medical conditions." }
+        "q1": {
+          "question": "What antimicrobial materials do you use?",
+          "answer": "We use hospital-grade antimicrobial PVC, UV-resistant foam with antimicrobial treatment, and stainless steel hardware. All surfaces feature antimicrobial coatings that inhibit 99.9% of bacteria, meeting healthcare facility hygiene requirements."
+        },
+        "q2": {
+          "question": "Can you design for children with special needs?",
+          "answer": "Yes, we specialize in inclusive play designs. Our healthcare playgrounds include wheelchair-accessible elements, sensory-calming zones, tactile panels, and adjustable-height features to accommodate children of all abilities and medical conditions."
+        }
       }
     },
     "education": {
@@ -3107,10 +3146,22 @@
         "ctaSecondary": "View Indoor Playgrounds"
       },
       "stats": {
-        "s1": { "value": "+25%", "label": "Physical Activity Increase" },
-        "s2": { "value": "500+", "label": "Schools Equipped" },
-        "s3": { "value": "3-12", "label": "Age Range Coverage" },
-        "s4": { "value": "EN 1176", "label": "Safety Certified" }
+        "s1": {
+          "value": "+25%",
+          "label": "Physical Activity Increase"
+        },
+        "s2": {
+          "value": "500+",
+          "label": "Schools Equipped"
+        },
+        "s3": {
+          "value": "3-12",
+          "label": "Age Range Coverage"
+        },
+        "s4": {
+          "value": "EN 1176",
+          "label": "Safety Certified"
+        }
       },
       "section1": {
         "badge": "Active Learning",
@@ -3148,8 +3199,14 @@
         "badge": "FAQ",
         "title": "Frequently Asked",
         "titleHighlight": "Questions",
-        "q1": { "question": "What age groups do your school playgrounds support?", "answer": "We design age-segmented play areas for all levels: toddler zones (1-3 years) for daycare, preschool areas (3-5 years) with sensory and motor skill elements, and primary school zones (6-12 years) with more challenging climbing and ninja-style equipment." },
-        "q2": { "question": "Can installation be done during school breaks?", "answer": "Absolutely. We schedule installations during summer breaks, winter holidays, or weekends to minimize disruption. Most school playground installations are completed within 5-10 days depending on scope." }
+        "q1": {
+          "question": "What age groups do your school playgrounds support?",
+          "answer": "We design age-segmented play areas for all levels: toddler zones (1-3 years) for daycare, preschool areas (3-5 years) with sensory and motor skill elements, and primary school zones (6-12 years) with more challenging climbing and ninja-style equipment."
+        },
+        "q2": {
+          "question": "Can installation be done during school breaks?",
+          "answer": "Absolutely. We schedule installations during summer breaks, winter holidays, or weekends to minimize disruption. Most school playground installations are completed within 5-10 days depending on scope."
+        }
       }
     },
     "ecommerce": {
@@ -3168,10 +3225,22 @@
         "ctaSecondary": "View Soft Play Equipment"
       },
       "stats": {
-        "s1": { "value": "+40%", "label": "Foot Traffic Increase" },
-        "s2": { "value": "+35 min", "label": "Extended Dwell Time" },
-        "s3": { "value": "92%", "label": "Return Visit Rate" },
-        "s4": { "value": "12-18 mo", "label": "Average ROI Period" }
+        "s1": {
+          "value": "+40%",
+          "label": "Foot Traffic Increase"
+        },
+        "s2": {
+          "value": "+35 min",
+          "label": "Extended Dwell Time"
+        },
+        "s3": {
+          "value": "92%",
+          "label": "Return Visit Rate"
+        },
+        "s4": {
+          "value": "12-18 mo",
+          "label": "Average ROI Period"
+        }
       },
       "section1": {
         "badge": "Retailtainment Strategy",
@@ -3209,8 +3278,14 @@
         "badge": "FAQ",
         "title": "Frequently Asked",
         "titleHighlight": "Questions",
-        "q1": { "question": "What's the typical ROI for a retail playground?", "answer": "Most retail play zones achieve positive ROI within 12-18 months. Revenue streams include admission fees, party bookings, memberships, and F&B upsells. We provide detailed financial projections tailored to your location and market." },
-        "q2": { "question": "Can you create pop-up or temporary playground installations?", "answer": "Yes, we offer modular playground systems that can be assembled and disassembled for temporary retail activations, seasonal events, or brand pop-ups. These systems are designed for quick setup while maintaining full safety compliance." }
+        "q1": {
+          "question": "What's the typical ROI for a retail playground?",
+          "answer": "Most retail play zones achieve positive ROI within 12-18 months. Revenue streams include admission fees, party bookings, memberships, and F&B upsells. We provide detailed financial projections tailored to your location and market."
+        },
+        "q2": {
+          "question": "Can you create pop-up or temporary playground installations?",
+          "answer": "Yes, we offer modular playground systems that can be assembled and disassembled for temporary retail activations, seasonal events, or brand pop-ups. These systems are designed for quick setup while maintaining full safety compliance."
+        }
       }
     },
     "finance": {
@@ -3229,10 +3304,22 @@
         "ctaSecondary": "View Soft Play Equipment"
       },
       "stats": {
-        "s1": { "value": "+30%", "label": "Client Satisfaction Increase" },
-        "s2": { "value": "Premium", "label": "Design Quality" },
-        "s3": { "value": "99%", "label": "Parent Approval" },
-        "s4": { "value": "ASTM", "label": "Safety Certified" }
+        "s1": {
+          "value": "+30%",
+          "label": "Client Satisfaction Increase"
+        },
+        "s2": {
+          "value": "Premium",
+          "label": "Design Quality"
+        },
+        "s3": {
+          "value": "99%",
+          "label": "Parent Approval"
+        },
+        "s4": {
+          "value": "ASTM",
+          "label": "Safety Certified"
+        }
       },
       "section1": {
         "badge": "Client Experience",
@@ -3270,8 +3357,14 @@
         "badge": "FAQ",
         "title": "Frequently Asked",
         "titleHighlight": "Questions",
-        "q1": { "question": "How do you ensure the design matches our corporate image?", "answer": "Our design team creates fully customized concepts using your brand colors, materials, and aesthetic guidelines. We provide photorealistic 3D renders for approval and work iteratively until the design perfectly complements your interior environment." },
-        "q2": { "question": "What's the noise level impact on office environments?", "answer": "Our premium play areas incorporate acoustic engineering: sound-absorbing materials, strategic partitioning, and rubber-dampened structures to keep noise levels below 45dB at the boundary — comparable to a quiet office conversation." }
+        "q1": {
+          "question": "How do you ensure the design matches our corporate image?",
+          "answer": "Our design team creates fully customized concepts using your brand colors, materials, and aesthetic guidelines. We provide photorealistic 3D renders for approval and work iteratively until the design perfectly complements your interior environment."
+        },
+        "q2": {
+          "question": "What's the noise level impact on office environments?",
+          "answer": "Our premium play areas incorporate acoustic engineering: sound-absorbing materials, strategic partitioning, and rubber-dampened structures to keep noise levels below 45dB at the boundary — comparable to a quiet office conversation."
+        }
       }
     },
     "legal": {
@@ -3290,10 +3383,22 @@
         "ctaSecondary": "View Soft Play Equipment"
       },
       "stats": {
-        "s1": { "value": "+25%", "label": "Client Satisfaction" },
-        "s2": { "value": "100%", "label": "Safety Compliant" },
-        "s3": { "value": "Premium", "label": "Design Standard" },
-        "s4": { "value": "5-Year", "label": "Warranty" }
+        "s1": {
+          "value": "+25%",
+          "label": "Client Satisfaction"
+        },
+        "s2": {
+          "value": "100%",
+          "label": "Safety Compliant"
+        },
+        "s3": {
+          "value": "Premium",
+          "label": "Design Standard"
+        },
+        "s4": {
+          "value": "5-Year",
+          "label": "Warranty"
+        }
       },
       "section1": {
         "badge": "Client Experience",
@@ -3331,8 +3436,14 @@
         "badge": "FAQ",
         "title": "Frequently Asked",
         "titleHighlight": "Questions",
-        "q1": { "question": "What liability documentation do you provide?", "answer": "We provide comprehensive documentation including safety certification certificates (ASTM, TUV, EN 1176), material safety data sheets, installation compliance records, and recommended insurance guidelines — everything your firm needs for risk management." },
-        "q2": { "question": "How much space is needed for a law office play area?", "answer": "Our compact designs can fit into spaces as small as 15-20 square meters. We create efficient layouts that maximize play value within limited office floor plans, including corner installations and modular wall-mounted elements." }
+        "q1": {
+          "question": "What liability documentation do you provide?",
+          "answer": "We provide comprehensive documentation including safety certification certificates (ASTM, TUV, EN 1176), material safety data sheets, installation compliance records, and recommended insurance guidelines — everything your firm needs for risk management."
+        },
+        "q2": {
+          "question": "How much space is needed for a law office play area?",
+          "answer": "Our compact designs can fit into spaces as small as 15-20 square meters. We create efficient layouts that maximize play value within limited office floor plans, including corner installations and modular wall-mounted elements."
+        }
       }
     },
     "marketing": {
@@ -3351,10 +3462,22 @@
         "ctaSecondary": "View Indoor Playgrounds"
       },
       "stats": {
-        "s1": { "value": "10x", "label": "Social Media Engagement" },
-        "s2": { "value": "+60%", "label": "Brand Recall Rate" },
-        "s3": { "value": "Custom", "label": "Brand Theming" },
-        "s4": { "value": "48hr", "label": "Pop-up Assembly" }
+        "s1": {
+          "value": "10x",
+          "label": "Social Media Engagement"
+        },
+        "s2": {
+          "value": "+60%",
+          "label": "Brand Recall Rate"
+        },
+        "s3": {
+          "value": "Custom",
+          "label": "Brand Theming"
+        },
+        "s4": {
+          "value": "48hr",
+          "label": "Pop-up Assembly"
+        }
       },
       "section1": {
         "badge": "Brand Experience",
@@ -3392,8 +3515,14 @@
         "badge": "FAQ",
         "title": "Frequently Asked",
         "titleHighlight": "Questions",
-        "q1": { "question": "Can you match our exact brand guidelines?", "answer": "Yes, we work from your brand book to match exact Pantone colors, logo placement, typography, and design language. Our in-house design team creates photorealistic 3D renders for approval before manufacturing begins." },
-        "q2": { "question": "What's the lead time for a pop-up playground?", "answer": "For modular pop-up systems, we can deliver within 30-45 days. Rush orders for simpler configurations can be completed in as little as 20 days. On-site assembly typically takes 1-2 days depending on complexity." }
+        "q1": {
+          "question": "Can you match our exact brand guidelines?",
+          "answer": "Yes, we work from your brand book to match exact Pantone colors, logo placement, typography, and design language. Our in-house design team creates photorealistic 3D renders for approval before manufacturing begins."
+        },
+        "q2": {
+          "question": "What's the lead time for a pop-up playground?",
+          "answer": "For modular pop-up systems, we can deliver within 30-45 days. Rush orders for simpler configurations can be completed in as little as 20 days. On-site assembly typically takes 1-2 days depending on complexity."
+        }
       }
     },
     "hr": {
@@ -3412,10 +3541,22 @@
         "ctaSecondary": "View Indoor Playgrounds"
       },
       "stats": {
-        "s1": { "value": "+30%", "label": "Employee Retention" },
-        "s2": { "value": "-45%", "label": "Absenteeism Reduction" },
-        "s3": { "value": "92%", "label": "Employee Satisfaction" },
-        "s4": { "value": "Top", "label": "Employer Branding" }
+        "s1": {
+          "value": "+30%",
+          "label": "Employee Retention"
+        },
+        "s2": {
+          "value": "-45%",
+          "label": "Absenteeism Reduction"
+        },
+        "s3": {
+          "value": "92%",
+          "label": "Employee Satisfaction"
+        },
+        "s4": {
+          "value": "Top",
+          "label": "Employer Branding"
+        }
       },
       "section1": {
         "badge": "Work-Life Balance",
@@ -3453,8 +3594,14 @@
         "badge": "FAQ",
         "title": "Frequently Asked",
         "titleHighlight": "Questions",
-        "q1": { "question": "How much office space is needed?", "answer": "Our corporate play areas can be designed for spaces as small as 20-30 square meters for a compact children's corner, or scaled up to 200+ sqm for full on-site childcare facilities. We optimize every square meter for maximum engagement." },
-        "q2": { "question": "Does an on-site playground affect insurance costs?", "answer": "With proper safety certifications (which we provide), most insurers add minimal premiums. Many companies find the cost offset by reduced employee turnover and absenteeism. We provide all documentation needed for your insurance provider." }
+        "q1": {
+          "question": "How much office space is needed?",
+          "answer": "Our corporate play areas can be designed for spaces as small as 20-30 square meters for a compact children's corner, or scaled up to 200+ sqm for full on-site childcare facilities. We optimize every square meter for maximum engagement."
+        },
+        "q2": {
+          "question": "Does an on-site playground affect insurance costs?",
+          "answer": "With proper safety certifications (which we provide), most insurers add minimal premiums. Many companies find the cost offset by reduced employee turnover and absenteeism. We provide all documentation needed for your insurance provider."
+        }
       }
     },
     "logistics": {
@@ -3473,10 +3620,22 @@
         "ctaSecondary": "View Indoor Playgrounds"
       },
       "stats": {
-        "s1": { "value": "Industrial", "label": "Grade Durability" },
-        "s2": { "value": "+25%", "label": "Employee Retention" },
-        "s3": { "value": "50,000+", "label": "Use Cycles Tested" },
-        "s4": { "value": "+20%", "label": "Productivity Boost" }
+        "s1": {
+          "value": "Industrial",
+          "label": "Grade Durability"
+        },
+        "s2": {
+          "value": "+25%",
+          "label": "Employee Retention"
+        },
+        "s3": {
+          "value": "50,000+",
+          "label": "Use Cycles Tested"
+        },
+        "s4": {
+          "value": "+20%",
+          "label": "Productivity Boost"
+        }
       },
       "section1": {
         "badge": "Family Zones",
@@ -3514,8 +3673,14 @@
         "badge": "FAQ",
         "title": "Frequently Asked",
         "titleHighlight": "Questions",
-        "q1": { "question": "Can your equipment handle extreme warehouse temperatures?", "answer": "Yes, our industrial-grade materials are rated for -10°C to +50°C environments. We use UV-stabilized materials and temperature-resistant foams that maintain structural integrity and safety in warehouse conditions year-round." },
-        "q2": { "question": "How do you handle installation in active facilities?", "answer": "We coordinate with your operations team to schedule installation during off-peak hours or shutdowns. Our modular systems allow phased installation to minimize operational disruption, typically completing in 3-5 days." }
+        "q1": {
+          "question": "Can your equipment handle extreme warehouse temperatures?",
+          "answer": "Yes, our industrial-grade materials are rated for -10°C to +50°C environments. We use UV-stabilized materials and temperature-resistant foams that maintain structural integrity and safety in warehouse conditions year-round."
+        },
+        "q2": {
+          "question": "How do you handle installation in active facilities?",
+          "answer": "We coordinate with your operations team to schedule installation during off-peak hours or shutdowns. Our modular systems allow phased installation to minimize operational disruption, typically completing in 3-5 days."
+        }
       }
     },
     "manufacturing": {
@@ -3534,10 +3699,22 @@
         "ctaSecondary": "View Indoor Playgrounds"
       },
       "stats": {
-        "s1": { "value": "Industrial", "label": "Safety Grade" },
-        "s2": { "value": "100%", "label": "Compliance Rate" },
-        "s3": { "value": "+20%", "label": "Worker Satisfaction" },
-        "s4": { "value": "ISO 9001", "label": "Quality Certified" }
+        "s1": {
+          "value": "Industrial",
+          "label": "Safety Grade"
+        },
+        "s2": {
+          "value": "100%",
+          "label": "Compliance Rate"
+        },
+        "s3": {
+          "value": "+20%",
+          "label": "Worker Satisfaction"
+        },
+        "s4": {
+          "value": "ISO 9001",
+          "label": "Quality Certified"
+        }
       },
       "section1": {
         "badge": "Family Safety",
@@ -3575,8 +3752,14 @@
         "badge": "FAQ",
         "title": "Frequently Asked",
         "titleHighlight": "Questions",
-        "q1": { "question": "How do you ensure playground safety in a factory environment?", "answer": "Our factory playgrounds are designed as fully enclosed, climate-controlled zones completely separated from production areas. They feature industrial-grade air filtration, fireproof materials, and emergency evacuation routes compliant with OSHA and local safety regulations." },
-        "q2": { "question": "What maintenance is required in an industrial setting?", "answer": "We provide customized maintenance schedules for industrial environments, including weekly surface sanitization, monthly structural inspections, and quarterly deep-cleaning protocols. Our modular design allows individual component replacement without closing the entire play area." }
+        "q1": {
+          "question": "How do you ensure playground safety in a factory environment?",
+          "answer": "Our factory playgrounds are designed as fully enclosed, climate-controlled zones completely separated from production areas. They feature industrial-grade air filtration, fireproof materials, and emergency evacuation routes compliant with OSHA and local safety regulations."
+        },
+        "q2": {
+          "question": "What maintenance is required in an industrial setting?",
+          "answer": "We provide customized maintenance schedules for industrial environments, including weekly surface sanitization, monthly structural inspections, and quarterly deep-cleaning protocols. Our modular design allows individual component replacement without closing the entire play area."
+        }
       }
     }
   }

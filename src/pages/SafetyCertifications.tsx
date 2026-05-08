@@ -68,6 +68,7 @@ const SafetyCertifications = () => {
         dynamicTitle="Indoor Playground Safety Standards & Certifications"
         dynamicDescription="ASTM F1918, EN 1176, AS/NZS 4685, CSA Z614, ABNT, SASO & TÜV — full indoor playground safety standards, materials testing and compliance certificates."
         dynamicKeywords="indoor playground safety standards, ASTM F1918, EN 1176, playground certification, soft play safety, TUV indoor playground"
+        ogImage="/og-safety-certifications.jpg"
       />
       <BreadcrumbSchema items={breadcrumbItems} />
       <FAQSchema items={faqs} />
