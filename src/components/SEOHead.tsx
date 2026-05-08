@@ -133,8 +133,10 @@ export const SEOHead = ({
       <meta name="twitter:image" content={`${baseUrl}${ogImage || defaultOgImage}`} />
       <meta name="twitter:image:alt" content={fullTitle} />
       
-      {/* Content freshness */}
-      {lastModified && <meta property="article:modified_time" content={lastModified} />}
+      {/* Content freshness — always emit so every page surfaces a recent "Last Updated" date */}
+      <meta property="article:modified_time" content={lastModified || BUILD_MODIFIED_AT} />
+      <meta property="og:updated_time" content={lastModified || BUILD_MODIFIED_AT} />
+      <meta name="last-modified" content={lastModified || BUILD_MODIFIED_AT} />
       
       {/* Signal to prerender services that this is a 404 */}
       {prerender404 && <meta name="prerender-status-code" content="404" />}
