@@ -102,7 +102,7 @@ export const SEOHead = ({
       
       <title>{fullTitle}</title>
       <meta name="description" content={description} />
-      {keywords && <meta name="keywords" content={keywords} />}
+      {/* Meta keywords intentionally omitted — Google ignores them; emitting them is flagged as legacy/over-optimization in SEO audits */}
       <meta name="author" content={siteName} />
       <link rel="canonical" href={canonicalUrl} />
       

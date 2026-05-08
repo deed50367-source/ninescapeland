@@ -131,11 +131,12 @@ export const Footer = () => {
             </ul>
           </div>
 
-          {/* Industry Solutions */}
+          {/* Industry Solutions — keep top 5 only to avoid sitewide internal-link dilution.
+              Full list lives on /products and /market hub pages where it's contextually relevant. */}
           <div>
             <h4 className="font-heading font-bold text-sm sm:text-lg mb-3 sm:mb-4">{t("footer.industrySolutions")}</h4>
             <ul className="space-y-2 sm:space-y-3">
-              {[...industryLinks, ...industryLinks2].map((link, index) => (
+              {industryLinks.map((link, index) => (
                 <li key={index}>
                   <Link
                     to={link.href}
