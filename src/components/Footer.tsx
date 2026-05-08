@@ -38,8 +38,9 @@ export const Footer = () => {
     { label: t("footer.links.aboutUs"), href: localizedPath("/about-us") },
     { label: t("footer.links.projects"), href: localizedPath("/projects") },
     { label: t("footer.links.caseStudies", "Case Studies"), href: localizedPath("/case-studies") },
-    { label: t("footer.links.process", "Our Process"), href: localizedPath("/process") },
-    { label: t("footer.links.faq"), href: localizedPath("/faq") },
+    { label: t("footer.links.testimonials", "Client Testimonials"), href: localizedPath("/customer-testimonials") },
+    { label: t("footer.links.safety", "Safety & Certifications"), href: localizedPath("/safety-certifications") },
+    { label: t("footer.links.maintenance", "Maintenance & Warranty"), href: localizedPath("/maintenance-warranty") },
     { label: t("footer.links.investmentOpportunity", "Investment & ROI Hub"), href: localizedPath("/investment-opportunity") },
     { label: t("footer.links.contact"), href: localizedPath("/contact") },
   ];

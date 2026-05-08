@@ -56,6 +56,10 @@ const CORE_ROUTES = [
   "/investment-opportunity/indoor-playground-investment-saudi-arabia",
   "/investment-opportunity/indoor-playground-investment-mexico",
   "/investment-opportunity/indoor-playground-investment-brazil",
+  // Trust hub pages
+  "/safety-certifications",
+  "/customer-testimonials",
+  "/maintenance-warranty",
   // Location pages
   "/locations/indoor-playground-equipment-usa",
   "/locations/indoor-playground-equipment-uk",
