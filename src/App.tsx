@@ -39,6 +39,9 @@ const InvestmentOpportunity = lazy(() => import("./pages/InvestmentOpportunity")
 const InvestmentROIPage = lazy(() => import("./pages/InvestmentROIPage"));
 const LocationPage = lazy(() => import("./pages/LocationPage"));
 const IndustryLandingPage = lazy(() => import("./pages/IndustryLandingPage"));
+const SafetyCertifications = lazy(() => import("./pages/SafetyCertifications"));
+const CustomerTestimonials = lazy(() => import("./pages/CustomerTestimonials"));
+const MaintenanceWarranty = lazy(() => import("./pages/MaintenanceWarranty"));
 const NotFound = lazy(() => import("./pages/NotFound"));
 const AdminLogin = lazy(() => import("./pages/AdminLogin"));
 const AdminDashboard = lazy(() => import("./pages/AdminDashboard"));
@@ -90,6 +93,9 @@ const pageRoutes = (
     <Route path="investment-opportunity/:slug" element={<InvestmentROIPage />} />
     <Route path="locations/:slug" element={<LocationPage />} />
     <Route path="market/:slug" element={<IndustryLandingPage />} />
+    <Route path="safety-certifications" element={<SafetyCertifications />} />
+    <Route path="customer-testimonials" element={<CustomerTestimonials />} />
+    <Route path="maintenance-warranty" element={<MaintenanceWarranty />} />
   </>
 );
 
