@@ -91,6 +91,7 @@ const MaintenanceWarranty = () => {
         dynamicTitle="Indoor Playground Maintenance, Warranty & Spare Parts"
         dynamicDescription="Full indoor playground warranty matrix (1–5 years), maintenance schedule, EN 1176 inspections and 10-year spare-part guarantee. Care+ & Enterprise support plans."
         dynamicKeywords="indoor playground maintenance services, indoor playground warranty, soft play spare parts, EN 1176 inspection"
+        ogImage="/og-maintenance-warranty.jpg"
       />
       <BreadcrumbSchema items={breadcrumbItems} />
       <FAQSchema items={faqs} />
