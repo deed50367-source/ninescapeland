@@ -19,6 +19,8 @@ interface SEOHeadProps {
 const baseUrl = "https://indoorplaygroundsolution.com";
 const defaultOgImage = "/og-image.png";
 const siteName = "NinescapeLand";
+// Build-time timestamp injected at every deploy so every page advertises a fresh "Last Updated" date
+const BUILD_MODIFIED_AT = "2026-05-08T07:47:30Z";
 
 export const SEOHead = ({
   pageKey,
