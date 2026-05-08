@@ -496,7 +496,10 @@
       "process": "Notre Processus",
       "faq": "FAQ",
       "contact": "Contactez-Nous",
-      "allArticles": "Tous les Articles"
+      "allArticles": "Tous les Articles",
+      "testimonials": "Témoignages Clients",
+      "safety": "Sécurité et Certifications",
+      "maintenance": "Maintenance et Garantie"
     },
     "contact": {
       "phone": "Téléphone / WhatsApp",
