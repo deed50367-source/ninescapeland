@@ -100,7 +100,7 @@ const TrampolineParkFEC = () => {
               <p className="text-lg md:text-xl text-primary-foreground/80 mb-8 max-w-3xl mx-auto">{t("trampolineParkFEC.hero.description")}</p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button size="lg" variant="hero" asChild>
-                  <a href="#contact">{t("trampolineParkFEC.hero.cta")} <ArrowRight className="ml-2 h-4 w-4" /></Link>
+                  <a href="#contact">{t("trampolineParkFEC.hero.cta")} <ArrowRight className="ml-2 h-4 w-4" /></a>
                 </Button>
                 <Button size="lg" variant="outline" className="border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10" asChild>
                   <Link to={localizedPath("/products/trampoline-park")}>{t("trampolineParkFEC.hero.ctaSecondary")}</Link>
@@ -166,10 +166,10 @@ const TrampolineParkFEC = () => {
             <div className="max-w-4xl mx-auto">
               <h3 className="text-lg font-heading font-semibold mb-4 text-center">{t("trampolineParkFEC.relatedTitle")}</h3>
               <div className="flex flex-wrap justify-center gap-3">
-                <Button variant="outline" size="sm" asChild><Link to={localizedPath("/products/trampoline-park")}>{t("trampolineParkFEC.relatedLinks.trampolinePark")}</a></Button>
-                <Button variant="outline" size="sm" asChild><Link to={localizedPath("/process")}>{t("trampolineParkFEC.relatedLinks.process")}</a></Button>
-                <Button variant="outline" size="sm" asChild><Link to={localizedPath("/case-studies")}>{t("trampolineParkFEC.relatedLinks.caseStudies")}</a></Button>
-                <Button variant="outline" size="sm" asChild><Link to={localizedPath("/products")}>{t("trampolineParkFEC.relatedLinks.allProducts")}</a></Button>
+                <Button variant="outline" size="sm" asChild><Link to={localizedPath("/products/trampoline-park")}>{t("trampolineParkFEC.relatedLinks.trampolinePark")}</Link></Button>
+                <Button variant="outline" size="sm" asChild><Link to={localizedPath("/process")}>{t("trampolineParkFEC.relatedLinks.process")}</Link></Button>
+                <Button variant="outline" size="sm" asChild><Link to={localizedPath("/case-studies")}>{t("trampolineParkFEC.relatedLinks.caseStudies")}</Link></Button>
+                <Button variant="outline" size="sm" asChild><Link to={localizedPath("/products")}>{t("trampolineParkFEC.relatedLinks.allProducts")}</Link></Button>
               </div>
             </div>
           </div>
