@@ -100,7 +100,7 @@ const TrampolineParkFEC = () => {
               <p className="text-lg md:text-xl text-primary-foreground/80 mb-8 max-w-3xl mx-auto">{t("trampolineParkFEC.hero.description")}</p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button size="lg" variant="hero" asChild>
-                  <Link to={localizedPath("/contact")}>{t("trampolineParkFEC.hero.cta")} <ArrowRight className="ml-2 h-4 w-4" /></Link>
+                  <a href="#contact">{t("trampolineParkFEC.hero.cta")} <ArrowRight className="ml-2 h-4 w-4" /></a>
                 </Button>
                 <Button size="lg" variant="outline" className="border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10" asChild>
                   <Link to={localizedPath("/products/trampoline-park")}>{t("trampolineParkFEC.hero.ctaSecondary")}</Link>
@@ -154,7 +154,7 @@ const TrampolineParkFEC = () => {
                 ))}
               </div>
               <div className="mt-8 text-center">
-                <Button variant="hero" asChild><Link to={localizedPath("/contact")}>{t("trampolineParkFEC.section2.cta")}<ArrowRight className="ml-2 h-4 w-4" /></Link></Button>
+                <Button variant="hero" asChild><a href="#contact">{t("trampolineParkFEC.section2.cta")}<ArrowRight className="ml-2 h-4 w-4" /></a></Button>
               </div>
             </motion.div>
           </div>

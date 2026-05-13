@@ -148,7 +148,7 @@ const ActivePlayRunning = () => {
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button size="lg" asChild>
-                  <Link to={localizedPath("/contact")}>
+                  <a href="#contact">
                     {t("activePlayRunning.hero.cta")}
                     <ArrowRight className="ml-2 h-4 w-4" />
                   </Link>
@@ -237,7 +237,7 @@ const ActivePlayRunning = () => {
               </div>
               <div className="mt-8 text-center">
                 <Button variant="outline" asChild>
-                  <Link to={localizedPath("/contact")}>
+                  <a href="#contact">
                     {t("activePlayRunning.section2.cta")}
                     <ArrowRight className="ml-2 h-4 w-4" />
                   </Link>
