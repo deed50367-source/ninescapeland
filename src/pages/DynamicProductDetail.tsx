@@ -106,6 +106,15 @@ interface RelatedProduct {
   featured_image: string | null;
 }
 
+const productDetailTabLabels: Record<string, Record<"description" | "specifications" | "variants", string>> = {
+  en: { description: "Description", specifications: "Specifications", variants: "Variants" },
+  es: { description: "Descripción", specifications: "Especificaciones", variants: "Variantes" },
+  pt: { description: "Descrição", specifications: "Especificações", variants: "Variantes" },
+  de: { description: "Beschreibung", specifications: "Spezifikationen", variants: "Varianten" },
+  fr: { description: "Description", specifications: "Spécifications", variants: "Variantes" },
+  ar: { description: "الوصف", specifications: "المواصفات", variants: "المتغيرات" },
+};
+
 const DynamicProductDetail = () => {
   const { slug } = useParams<{ slug: string }>();
   const { t, i18n } = useTranslation();
@@ -124,6 +133,7 @@ const DynamicProductDetail = () => {
   const [isLightboxOpen, setIsLightboxOpen] = useState(false);
 
   const ArrowIcon = isRTL ? ArrowLeft : ArrowRight;
+  const tabLabels = productDetailTabLabels[i18n.language.split("-")[0]] || productDetailTabLabels.en;
 
   // Fetch product data
   useEffect(() => {
@@ -517,14 +527,14 @@ const DynamicProductDetail = () => {
                 value="description"
                 className="shrink-0 rounded-none border-b-2 border-transparent data-[state=active]:border-primary data-[state=active]:bg-transparent px-6 py-3"
               >
-                {t("dynamicProduct.tabs.description", { defaultValue: "Description" })}
+                {tabLabels.description}
               </TabsTrigger>
               {Object.keys(product.specifications).length > 0 && (
                 <TabsTrigger
                   value="specifications"
                   className="shrink-0 rounded-none border-b-2 border-transparent data-[state=active]:border-primary data-[state=active]:bg-transparent px-6 py-3"
                 >
-                  {t("dynamicProduct.tabs.specifications", { defaultValue: "Specifications" })}
+                  {tabLabels.specifications}
                 </TabsTrigger>
               )}
               {variants.length > 0 && (
@@ -532,7 +542,7 @@ const DynamicProductDetail = () => {
                   value="variants"
                   className="shrink-0 rounded-none border-b-2 border-transparent data-[state=active]:border-primary data-[state=active]:bg-transparent px-6 py-3"
                 >
-                  {t("dynamicProduct.tabs.variants", { defaultValue: "Variants" })}
+                  {tabLabels.variants}
                 </TabsTrigger>
               )}
             </TabsList>
