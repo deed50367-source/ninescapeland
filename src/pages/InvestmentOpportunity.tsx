@@ -127,7 +127,7 @@ const InvestmentOpportunity = () => {
                 <Button size="lg" variant="hero" asChild>
                   <a href="#contact">
                     Request Custom ROI Model <ArrowRight className="ml-2 h-4 w-4" />
-                  </Link>
+                  </a>
                 </Button>
                 <Button
                   size="lg"

@@ -13,66 +13,27 @@ import { motion } from "framer-motion";
 import { RelatedResources } from "@/components/RelatedResources";
 
 const warrantyMatrix = [
-  { component: "Galvanised Steel Structure", warranty: "5 years", coverage: "Manufacturing defects, weld failure, structural integrity" },
-  { component: "Soft-Play Vinyl & Foam Padding", warranty: "2 years", coverage: "Seam failure, foam compression, premature wear under normal commercial use" },
-  { component: "Plastic Slides & Components", warranty: "3 years", coverage: "Cracking, UV fade, colour-fastness" },
+  { component: "Galvanised Steel Structure", warranty: "3 years", coverage: "Manufacturing defects, weld failure, structural integrity under normal commercial use" },
+  { component: "Soft-Play Vinyl & Foam Padding", warranty: "1 year", coverage: "Seam failure, foam compression, premature wear under normal commercial use" },
+  { component: "Plastic Slides & Components", warranty: "1 year", coverage: "Cracking, UV fade, colour-fastness" },
   { component: "Trampoline Beds & Springs", warranty: "1 year", coverage: "Spring fatigue, bed-mat seam failure" },
   { component: "Electrical / Interactive Systems", warranty: "1 year", coverage: "Sensors, controllers, lighting drivers, projection units" },
   { component: "Cargo Nets & Climbing Ropes", warranty: "1 year", coverage: "Stitching, knot integrity, abrasion under spec load" },
-  { component: "Surfacing (Rubber Tile / PIP)", warranty: "2 years", coverage: "Adhesive bond, edge curling, impact attenuation per EN 1177" },
 ];
 
 const maintenanceSchedule = [
   { freq: "Daily", tasks: ["Visual safety walkthrough", "Wipe-down of high-touch padding & vinyl", "Check ball-pit ball levels", "Confirm exits & emergency stops clear"] },
   { freq: "Weekly", tasks: ["Tighten visible bolts & fasteners", "Disinfect ball pits, foam pits, padded floors", "Inspect netting for fraying", "Vacuum / steam-clean carpet zones"] },
   { freq: "Monthly", tasks: ["Operational inspection per EN 1176-7 §5", "Lubricate moving joints (swings, see-saws)", "Test interactive sensors & game scoring", "Photograph wear log for warranty file"] },
-  { freq: "Annual", tasks: ["Independent main inspection by qualified inspector", "Replace consumables: foam top-layer, ball-pit balls, netting", "Re-test surfacing impact attenuation", "Renew compliance certificate"] },
-];
-
-const supportPlans = [
-  {
-    name: "Standard Warranty",
-    price: "Included with every purchase",
-    features: [
-      "Full component warranty (1–5 years per matrix)",
-      "Free phone & email technical support",
-      "Spare-part availability for 10 years post-purchase",
-      "Annual inspection checklist & wear-log template",
-      "Access to operator training videos",
-    ],
-  },
-  {
-    name: "Care+ Annual Plan",
-    price: "From US$2,400 / year",
-    features: [
-      "Everything in Standard, plus:",
-      "Two scheduled on-site inspections per year",
-      "Priority 24-hour parts dispatch",
-      "Free EN 1176-7 main inspection report",
-      "10% discount on consumable replacements",
-      "Operator re-training for new staff (online)",
-    ],
-    highlighted: true,
-  },
-  {
-    name: "Enterprise / Multi-site",
-    price: "Custom quote",
-    features: [
-      "Dedicated account manager across all sites",
-      "Quarterly on-site audits with KPI reporting",
-      "Local spare-parts stock (in-country)",
-      "SLA-backed response times (4h critical / 24h standard)",
-      "Custom training programme & franchise rollout support",
-    ],
-  },
+  { freq: "Annual", tasks: ["Independent main inspection by a locally qualified inspector", "Replace consumables: foam top-layer, ball-pit balls, netting", "Re-test surfacing impact attenuation", "Renew local compliance certificate"] },
 ];
 
 const faqs = [
-  { question: "What is the standard warranty on NinescapeLand indoor playgrounds?", answer: "Steel structures carry a 5-year warranty; plastic components 3 years; soft-play vinyl, foam and surfacing 2 years; trampoline beds, electricals and ropes 1 year. Full warranty matrix and exclusions are sent with every order confirmation." },
+  { question: "What is the standard warranty on NinescapeLand indoor playgrounds?", answer: "Galvanised steel structures carry a 3-year warranty; soft-play vinyl, foam padding, plastic components, trampoline beds, electricals and ropes carry a 1-year warranty. Full warranty matrix and exclusions are sent with every order confirmation." },
   { question: "Do you offer spare parts for older installations?", answer: "Yes. We guarantee spare-part availability for 10 years from the date of original purchase for every component we manufacture in-house. Standard fasteners, foams and vinyls are sourced to international specs and can be supplied indefinitely." },
-  { question: "How fast can replacement parts be delivered?", answer: "Standard parts ship from our Wenzhou factory within 5–10 working days. Care+ subscribers get priority 24-hour dispatch on critical safety components. Enterprise / multi-site clients can hold local in-country stock for same-day swap-out." },
-  { question: "Do you provide on-site maintenance and inspection?", answer: "We deliver scheduled inspections via our installer partner network in 35+ countries. Care+ includes two visits per year; Enterprise includes quarterly audits with EN 1176-7 / ASTM F1487 main-inspection reports." },
-  { question: "Will my insurance company accept your inspection reports?", answer: "Yes. Our inspection reports follow EN 1176-7, ASTM F1487 and AS/NZS 4685 templates and are accepted by major commercial-line insurers in EU, UK, US, AU/NZ and GCC. We can provide sample reports for your underwriter on request." },
+  { question: "How fast can replacement parts be delivered?", answer: "Standard parts ship from our Wenzhou factory within 5–10 working days after order confirmation. Air freight is available for urgent safety-critical components on request." },
+  { question: "Do you provide on-site maintenance and inspection?", answer: "Routine inspection and maintenance are the operator's responsibility — every project ships with a maintenance checklist, EN 1176-7 wear-log template and operator training videos. We recommend engaging a locally qualified inspector for the annual main inspection. We provide remote technical support by phone, email and WhatsApp throughout the warranty period." },
+  { question: "Will my insurance company accept your inspection reports?", answer: "Our factory test reports follow EN 1176, ASTM F1487 and AS/NZS 4685 templates and are accepted by major commercial-line insurers in EU, UK, US, AU/NZ and GCC. We can provide sample reports for your underwriter on request." },
   { question: "What happens if I move premises or expand the playground?", answer: "We re-quote disassembly, transport and re-installation at preferential rates for existing clients. Adding new modules to an existing structure is straightforward — same connector system across our entire catalogue." },
 ];
 
@@ -87,7 +48,7 @@ const MaintenanceWarranty = () => {
       <SEOHead
         pageKey="maintenanceWarranty"
         dynamicTitle="Indoor Playground Maintenance, Warranty & Spare Parts"
-        dynamicDescription="Full indoor playground warranty matrix (1–5 years), maintenance schedule, EN 1176 inspections and 10-year spare-part guarantee. Care+ & Enterprise support plans."
+        dynamicDescription="NinescapeLand indoor playground warranty: 3-year structural, 1-year soft-play & components, 10-year spare-part guarantee, EN 1176-7 maintenance checklist."
         dynamicKeywords="indoor playground maintenance services, indoor playground warranty, soft play spare parts, EN 1176 inspection"
         ogImage="/og-maintenance-warranty.jpg"
       />
@@ -109,11 +70,11 @@ const MaintenanceWarranty = () => {
                 Indoor Playground <span className="text-accent">Maintenance, Warranty & Spare Parts</span>
               </h1>
               <p className="text-lg md:text-xl text-primary-foreground/90 mb-8 max-w-3xl mx-auto">
-                Up to <strong className="text-accent-foreground">5-year structural warranty</strong>, 10-year spare-part guarantee and EN 1176 inspection support — your playground stays compliant and revenue-positive for the long haul.
+                <strong className="text-accent-foreground">3-year structural warranty</strong>, 1-year soft-play & components warranty and a 10-year spare-part guarantee — clear, written terms sent with every order confirmation.
               </p>
               <Button size="lg" variant="hero" asChild>
                 <a href="#contact">
-                  Get a Care+ Quote
+                  Request Warranty Pack
                   <ArrowRight className="w-5 h-5 ml-2" />
                 </a>
               </Button>
@@ -181,39 +142,7 @@ const MaintenanceWarranty = () => {
           </div>
         </section>
 
-        {/* Support plans */}
-        <section className="py-16 md:py-20 bg-background">
-          <div className="container mx-auto px-4 max-w-6xl">
-            <div className="text-center max-w-3xl mx-auto mb-12">
-              <h2 className="text-3xl md:text-4xl font-bold mb-4">Choose Your <strong>Support Plan</strong></h2>
-              <p className="text-muted-foreground text-lg">From standard warranty to full enterprise SLA — pick what fits your operation.</p>
-            </div>
-            <div className="grid md:grid-cols-3 gap-6">
-              {supportPlans.map((p) => (
-                <Card key={p.name} className={p.highlighted ? "border-accent border-2 shadow-xl relative" : ""}>
-                  {p.highlighted && (
-                    <Badge className="absolute -top-3 left-1/2 -translate-x-1/2 bg-accent text-accent-foreground">Most Popular</Badge>
-                  )}
-                  <CardContent className="p-6">
-                    <h3 className="font-bold text-xl mb-2">{p.name}</h3>
-                    <p className="text-accent font-bold mb-4">{p.price}</p>
-                    <ul className="space-y-2 mb-6">
-                      {p.features.map((f) => (
-                        <li key={f} className="flex items-start gap-2 text-sm">
-                          <CheckCircle2 className="w-4 h-4 text-accent flex-shrink-0 mt-0.5" />
-                          <span>{f}</span>
-                        </li>
-                      ))}
-                    </ul>
-                    <Button variant={p.highlighted ? "default" : "outline"} className="w-full" asChild>
-                      <a href="#contact">Request Quote</a>
-                    </Button>
-                  </CardContent>
-                </Card>
-              ))}
-            </div>
-          </div>
-        </section>
+        {/* Support plans section removed — on-site inspection plans not offered */}
 
         {/* Spare parts */}
         <section className="py-16 md:py-20 bg-muted/30">
