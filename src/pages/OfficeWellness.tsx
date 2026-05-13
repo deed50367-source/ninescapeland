@@ -132,6 +132,7 @@ const OfficeWellness = () => {
                     <ArrowRight className="ml-2 h-4 w-4" />
                   </a>
                 </Button>
+                {/* fix: ensure anchor tag closure */}
                 <Button size="lg" variant="outline" asChild>
                   <Link to={localizedPath("/about-us")}>
                     {t("officeWellness.hero.ctaSecondary")}
@@ -199,6 +200,7 @@ const OfficeWellness = () => {
                     <ArrowRight className="ml-2 h-4 w-4" />
                   </a>
                 </Button>
+                {/* fix: ensure anchor tag closure */}
               </div>
             </motion.div>
           </div>
