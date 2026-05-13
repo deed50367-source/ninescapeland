@@ -527,14 +527,14 @@ const DynamicProductDetail = () => {
                 value="description"
                 className="shrink-0 rounded-none border-b-2 border-transparent data-[state=active]:border-primary data-[state=active]:bg-transparent px-6 py-3"
               >
-                {t("dynamicProduct.tabs.description", { defaultValue: "Description" })}
+                {tabLabels.description}
               </TabsTrigger>
               {Object.keys(product.specifications).length > 0 && (
                 <TabsTrigger
                   value="specifications"
                   className="shrink-0 rounded-none border-b-2 border-transparent data-[state=active]:border-primary data-[state=active]:bg-transparent px-6 py-3"
                 >
-                  {t("dynamicProduct.tabs.specifications", { defaultValue: "Specifications" })}
+                  {tabLabels.specifications}
                 </TabsTrigger>
               )}
               {variants.length > 0 && (
@@ -542,7 +542,7 @@ const DynamicProductDetail = () => {
                   value="variants"
                   className="shrink-0 rounded-none border-b-2 border-transparent data-[state=active]:border-primary data-[state=active]:bg-transparent px-6 py-3"
                 >
-                  {t("dynamicProduct.tabs.variants", { defaultValue: "Variants" })}
+                  {tabLabels.variants}
                 </TabsTrigger>
               )}
             </TabsList>
