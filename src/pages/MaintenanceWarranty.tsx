@@ -9,9 +9,8 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Wrench, ShieldCheck, Clock, Package, ArrowRight, CheckCircle2, Phone, AlertTriangle } from "lucide-react";
-import { Link } from "react-router-dom";
-import { useLocalizedPath } from "@/hooks/useLocalizedPath";
 import { motion } from "framer-motion";
+import { RelatedResources } from "@/components/RelatedResources";
 
 const warrantyMatrix = [
   { component: "Galvanised Steel Structure", warranty: "5 years", coverage: "Manufacturing defects, weld failure, structural integrity" },
@@ -83,7 +82,6 @@ const breadcrumbItems = [
 ];
 
 const MaintenanceWarranty = () => {
-  const { localizedPath } = useLocalizedPath();
   return (
     <div className="min-h-screen">
       <SEOHead
@@ -114,10 +112,10 @@ const MaintenanceWarranty = () => {
                 Up to <strong className="text-accent-foreground">5-year structural warranty</strong>, 10-year spare-part guarantee and EN 1176 inspection support — your playground stays compliant and revenue-positive for the long haul.
               </p>
               <Button size="lg" variant="hero" asChild>
-                <Link to={localizedPath("/contact")}>
+                <a href="#contact">
                   Get a Care+ Quote
                   <ArrowRight className="w-5 h-5 ml-2" />
-                </Link>
+                </a>
               </Button>
             </motion.div>
           </div>
@@ -208,7 +206,7 @@ const MaintenanceWarranty = () => {
                       ))}
                     </ul>
                     <Button variant={p.highlighted ? "default" : "outline"} className="w-full" asChild>
-                      <Link to={localizedPath("/contact")}>Request Quote</Link>
+                      <a href="#contact">Request Quote</a>
                     </Button>
                   </CardContent>
                 </Card>
@@ -227,10 +225,10 @@ const MaintenanceWarranty = () => {
                   <h2 className="text-2xl md:text-3xl font-bold mb-3"><strong>10-Year Spare Parts Guarantee</strong></h2>
                   <p className="text-muted-foreground mb-4">Every component we manufacture in-house — steel platforms, plastic slides, custom theming pieces — is supported with replacement parts for a full decade. Standard consumables (foam, vinyl, netting, fasteners) are stocked indefinitely.</p>
                   <Button asChild>
-                    <Link to={localizedPath("/contact")}>
+                    <a href="#contact">
                       <Phone className="w-4 h-4 mr-2" />
                       Order a Spare Part
-                    </Link>
+                    </a>
                   </Button>
                 </div>
               </CardContent>
@@ -252,6 +250,19 @@ const MaintenanceWarranty = () => {
             </Accordion>
           </div>
         </section>
+
+        <RelatedResources
+          heading="Plan, Certify and Operate"
+          intro="Resources that pair with our warranty and after-sales programme."
+          items={[
+            { title: "Safety Standards & Certifications", desc: "ASTM, EN 1176, TÜV documentation behind the warranty.", href: "/safety-certifications" },
+            { title: "Manufacturing & QC Process", desc: "How our 5-stage QC keeps warranty claims rare.", href: "/process" },
+            { title: "Project Case Studies", desc: "Long-running installations — operational data 3+ years post-launch.", href: "/case-studies" },
+            { title: "FAQ", desc: "Operator FAQ on inspections, parts and lifecycle.", href: "/faq" },
+            { title: "Indoor Playground Equipment", desc: "Browse warranty-covered product categories.", href: "/products/indoor-playground" },
+            { title: "About NinescapeLand", desc: "Why operators trust us with 10-year lifecycle support.", href: "/about-us" },
+          ]}
+        />
 
         <ContactSection />
       </main>
