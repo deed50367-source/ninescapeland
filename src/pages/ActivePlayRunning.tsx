@@ -151,7 +151,7 @@ const ActivePlayRunning = () => {
                   <a href="#contact">
                     {t("activePlayRunning.hero.cta")}
                     <ArrowRight className="ml-2 h-4 w-4" />
-                  </Link>
+                  </a>
                 </Button>
                 <Button size="lg" variant="outline" asChild>
                   <Link to={localizedPath("/products/ninja-course")}>
@@ -240,7 +240,7 @@ const ActivePlayRunning = () => {
                   <a href="#contact">
                     {t("activePlayRunning.section2.cta")}
                     <ArrowRight className="ml-2 h-4 w-4" />
-                  </Link>
+                  </a>
                 </Button>
               </div>
             </motion.div>

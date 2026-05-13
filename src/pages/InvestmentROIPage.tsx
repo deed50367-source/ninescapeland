@@ -89,7 +89,7 @@ const InvestmentROIPage = () => {
                 <Button size="lg" variant="hero" asChild>
                   <a href="#contact">
                     Get Investment Quote <ArrowRight className="ml-2 h-4 w-4" />
-                  </Link>
+                  </a>
                 </Button>
                 <Button
                   size="lg"
@@ -237,7 +237,7 @@ const InvestmentROIPage = () => {
                 <Button variant="hero" size="lg" asChild>
                   <a href="#contact">
                     Request a Custom {data.country} ROI Model <ArrowRight className="ml-2 h-4 w-4" />
-                  </Link>
+                  </a>
                 </Button>
               </div>
             </motion.div>
