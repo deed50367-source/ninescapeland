@@ -10,9 +10,8 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Star, Quote, Building2, GraduationCap, Hotel, ShoppingBag, ArrowRight, Users } from "lucide-react";
-import { Link } from "react-router-dom";
-import { useLocalizedPath } from "@/hooks/useLocalizedPath";
 import { motion } from "framer-motion";
+import { RelatedResources } from "@/components/RelatedResources";
 
 type Segment = "mall" | "hotel" | "school" | "fec";
 
@@ -109,8 +108,6 @@ const reviewSchema = {
 };
 
 const CustomerTestimonials = () => {
-  const { localizedPath } = useLocalizedPath();
-
   return (
     <div className="min-h-screen">
       <SEOHead
@@ -144,10 +141,10 @@ const CustomerTestimonials = () => {
                 What mall operators, hotel GMs, school principals and FEC owners say after opening with NinescapeLand — including verified KPIs.
               </p>
               <Button size="lg" variant="hero" asChild>
-                <Link to={localizedPath("/contact")}>
+                <a href="#contact">
                   Request a Reference Call
                   <ArrowRight className="w-5 h-5 ml-2" />
-                </Link>
+                </a>
               </Button>
             </motion.div>
           </div>
@@ -218,6 +215,19 @@ const CustomerTestimonials = () => {
             </Accordion>
           </div>
         </section>
+
+        <RelatedResources
+          heading="Dive Deeper Into Real Projects"
+          intro="Explore the case studies, market guides and product lines behind these testimonials."
+          items={[
+            { title: "Project Case Studies", desc: "Walk-throughs of mall, hotel, school and FEC installations.", href: "/case-studies" },
+            { title: "Project Gallery", desc: "Photo gallery of 2,000+ delivered projects worldwide.", href: "/projects" },
+            { title: "Shopping Mall Solutions", desc: "Anchor-tenant playgrounds that drive mall foot-traffic.", href: "/soft-play-equipment-shopping-mall-solutions" },
+            { title: "Trampoline Park & FEC", desc: "Turn-key family entertainment centre solutions.", href: "/trampoline-park-fec-solutions" },
+            { title: "Investment & ROI", desc: "Payback timelines and revenue models for new operators.", href: "/investment-opportunity" },
+            { title: "Indoor Playground Products", desc: "Browse the equipment catalogue chosen by these clients.", href: "/products/indoor-playground" },
+          ]}
+        />
 
         <ContactSection />
       </main>
