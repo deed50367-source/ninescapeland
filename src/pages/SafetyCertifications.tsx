@@ -9,9 +9,8 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { ShieldCheck, FileCheck2, Globe2, FlaskConical, ArrowRight, CheckCircle2 } from "lucide-react";
-import { Link } from "react-router-dom";
-import { useLocalizedPath } from "@/hooks/useLocalizedPath";
 import { motion } from "framer-motion";
+import { RelatedResources } from "@/components/RelatedResources";
 
 const certifications = [
   { code: "ASTM F1918 / F1487", region: "USA", scope: "Soft-contained play structures & public-use playground equipment", body: "ASTM International" },
@@ -60,7 +59,6 @@ const breadcrumbItems = [
 ];
 
 const SafetyCertifications = () => {
-  const { localizedPath } = useLocalizedPath();
   return (
     <div className="min-h-screen">
       <SEOHead
@@ -92,10 +90,10 @@ const SafetyCertifications = () => {
                 Every NinescapeLand build is engineered, tested and documented to the international safety standard your market requires — <strong className="text-accent-foreground">ASTM, EN, AS/NZS, CSA, ABNT, SASO and TÜV</strong>.
               </p>
               <Button size="lg" variant="hero" asChild>
-                <Link to={localizedPath("/contact")}>
+                <a href="#contact">
                   Request Compliance Pack
                   <ArrowRight className="w-5 h-5 ml-2" />
-                </Link>
+                </a>
               </Button>
             </motion.div>
           </div>
@@ -196,6 +194,19 @@ const SafetyCertifications = () => {
             </Accordion>
           </div>
         </section>
+
+        <RelatedResources
+          heading="Explore Safety in Action"
+          intro="See how our certified equipment performs across product lines, real projects and our QC process."
+          items={[
+            { title: "Indoor Playground Equipment", desc: "EN 1176 / ASTM-tested soft-play, climbing and themed structures.", href: "/products/indoor-playground" },
+            { title: "Trampoline Park Equipment", desc: "ASTM F2970-compliant trampoline beds, padding and enclosures.", href: "/products/trampoline-park" },
+            { title: "Ninja Course Equipment", desc: "Engineered obstacles for commercial FEC and training facilities.", href: "/products/ninja-course" },
+            { title: "Soft Play Equipment", desc: "Lead-free, phthalate-free padded play for malls and pre-schools.", href: "/products/soft-play" },
+            { title: "Manufacturing & QC Process", desc: "Our 5-stage quality gate from raw material to on-site sign-off.", href: "/process" },
+            { title: "Project Case Studies", desc: "2,000+ delivered installations with compliance certificates.", href: "/case-studies" },
+          ]}
+        />
 
         <ContactSection />
       </main>
