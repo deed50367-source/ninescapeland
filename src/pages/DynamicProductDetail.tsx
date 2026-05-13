@@ -350,7 +350,7 @@ const DynamicProductDetail = () => {
 
         {/* Product Hero */}
         <section className="container mx-auto px-4 py-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 min-w-0">
             {/* Gallery */}
             <div className="space-y-4">
               <div className="relative aspect-square rounded-2xl overflow-hidden bg-muted">
@@ -421,7 +421,7 @@ const DynamicProductDetail = () => {
             </div>
 
             {/* Product Info */}
-            <div className="space-y-6">
+            <div className="space-y-6 min-w-0">
               {product.category && (
                 <Link
                   to={localizedPath(`/products?category=${product.category.id}`)}
@@ -511,36 +511,37 @@ const DynamicProductDetail = () => {
 
         {/* Product Details Tabs */}
         <section className="container mx-auto px-4 py-12">
-          <Tabs defaultValue="description" className="w-full">
-            <TabsList className="w-full justify-start border-b rounded-none bg-transparent h-auto p-0 mb-8">
+            <Tabs defaultValue="description" className="w-full min-w-0">
+            <TabsList className="w-full max-w-full justify-start overflow-x-auto border-b rounded-none bg-transparent h-auto p-0 mb-8">
               <TabsTrigger
                 value="description"
-                className="rounded-none border-b-2 border-transparent data-[state=active]:border-primary data-[state=active]:bg-transparent px-6 py-3"
+                className="shrink-0 rounded-none border-b-2 border-transparent data-[state=active]:border-primary data-[state=active]:bg-transparent px-6 py-3"
               >
-                {t("dynamicProduct.tabs.description", "Description")}
+                {t("dynamicProduct.tabs.description", { defaultValue: "Description" })}
               </TabsTrigger>
               {Object.keys(product.specifications).length > 0 && (
                 <TabsTrigger
                   value="specifications"
-                  className="rounded-none border-b-2 border-transparent data-[state=active]:border-primary data-[state=active]:bg-transparent px-6 py-3"
+                  className="shrink-0 rounded-none border-b-2 border-transparent data-[state=active]:border-primary data-[state=active]:bg-transparent px-6 py-3"
                 >
-                  {t("dynamicProduct.tabs.specifications", "Specifications")}
+                  {t("dynamicProduct.tabs.specifications", { defaultValue: "Specifications" })}
                 </TabsTrigger>
               )}
               {variants.length > 0 && (
                 <TabsTrigger
                   value="variants"
-                  className="rounded-none border-b-2 border-transparent data-[state=active]:border-primary data-[state=active]:bg-transparent px-6 py-3"
+                  className="shrink-0 rounded-none border-b-2 border-transparent data-[state=active]:border-primary data-[state=active]:bg-transparent px-6 py-3"
                 >
-                  {t("dynamicProduct.tabs.variants", "Variants")}
+                  {t("dynamicProduct.tabs.variants", { defaultValue: "Variants" })}
                 </TabsTrigger>
               )}
             </TabsList>
 
             <TabsContent value="description" className="mt-0">
-              <div className="prose prose-lg max-w-none">
+              <div className="prose prose-lg max-w-none overflow-hidden break-words [overflow-wrap:anywhere] [&_*]:max-w-full">
                 {getLocalizedDescription() ? (
                   <div
+                    className="whitespace-normal break-words [overflow-wrap:anywhere]"
                     dangerouslySetInnerHTML={{
                       __html: DOMPurify.sanitize(
                         getLocalizedDescription().replace(/\n/g, "<br />"),
