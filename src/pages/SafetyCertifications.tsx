@@ -9,9 +9,8 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { ShieldCheck, FileCheck2, Globe2, FlaskConical, ArrowRight, CheckCircle2 } from "lucide-react";
-import { Link } from "react-router-dom";
-import { useLocalizedPath } from "@/hooks/useLocalizedPath";
 import { motion } from "framer-motion";
+import { RelatedResources } from "@/components/RelatedResources";
 
 const certifications = [
   { code: "ASTM F1918 / F1487", region: "USA", scope: "Soft-contained play structures & public-use playground equipment", body: "ASTM International" },
