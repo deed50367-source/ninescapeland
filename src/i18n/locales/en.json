@@ -2969,6 +2969,11 @@
       "a6": "Yes, we provide flexible installation support: detailed installation manuals with numbered parts, step-by-step video guides, remote video assistance during installation, or on-site technicians for larger projects. Most installations can be completed in 5-20 days.",
       "moreQuestions": "Still have questions? Our team is ready to help.",
       "askUs": "Ask Us Anything"
+    },
+    "tabs": {
+      "description": "Description",
+      "specifications": "Specifications",
+      "variants": "Variants"
     }
   },
   "industryPages": {

@@ -1721,6 +1721,11 @@
       "a6": "Oui, nous fournissons un support d'installation flexible : manuels détaillés avec pièces numérotées, guides vidéo étape par étape, assistance vidéo à distance pendant l'installation ou techniciens sur site pour les grands projets.",
       "moreQuestions": "Vous avez encore des questions ? Notre équipe est prête à vous aider.",
       "askUs": "Posez-nous Vos Questions"
+    },
+    "tabs": {
+      "description": "Description",
+      "specifications": "Spécifications",
+      "variants": "Variantes"
     }
   },
   "industryPages": {

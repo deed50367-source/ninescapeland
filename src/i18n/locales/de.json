@@ -2706,6 +2706,11 @@
       "a6": "Ja, wir bieten flexible Installationsunterstützung: detaillierte Handbücher mit nummerierten Teilen, Schritt-für-Schritt-Videoanleitungen, Fernunterstützung per Video oder Techniker vor Ort für größere Projekte.",
       "moreQuestions": "Haben Sie noch Fragen? Unser Team ist bereit zu helfen.",
       "askUs": "Fragen Sie uns alles"
+    },
+    "tabs": {
+      "description": "Beschreibung",
+      "specifications": "Spezifikationen",
+      "variants": "Varianten"
     }
   },
   "industryPages": {
