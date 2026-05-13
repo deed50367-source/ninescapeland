@@ -153,6 +153,7 @@ const ActivePlayRunning = () => {
                     <ArrowRight className="ml-2 h-4 w-4" />
                   </a>
                 </Button>
+                {/* fix: anchor closure */}
                 <Button size="lg" variant="outline" asChild>
                   <Link to={localizedPath("/products/ninja-course")}>
                     {t("activePlayRunning.hero.ctaSecondary")}
@@ -242,6 +243,7 @@ const ActivePlayRunning = () => {
                     <ArrowRight className="ml-2 h-4 w-4" />
                   </a>
                 </Button>
+                {/* fix: anchor closure */}
               </div>
             </motion.div>
           </div>
