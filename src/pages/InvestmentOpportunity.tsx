@@ -125,7 +125,7 @@ const InvestmentOpportunity = () => {
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button size="lg" variant="hero" asChild>
-                  <Link to={localizedPath("/contact")}>
+                  <a href="#contact">
                     Request Custom ROI Model <ArrowRight className="ml-2 h-4 w-4" />
                   </Link>
                 </Button>
