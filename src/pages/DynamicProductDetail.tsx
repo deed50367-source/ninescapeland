@@ -538,9 +538,10 @@ const DynamicProductDetail = () => {
             </TabsList>
 
             <TabsContent value="description" className="mt-0">
-              <div className="prose prose-lg max-w-none">
+              <div className="prose prose-lg max-w-none overflow-hidden break-words [overflow-wrap:anywhere] [&_*]:max-w-full">
                 {getLocalizedDescription() ? (
                   <div
+                    className="whitespace-normal break-words [overflow-wrap:anywhere]"
                     dangerouslySetInnerHTML={{
                       __html: DOMPurify.sanitize(
                         getLocalizedDescription().replace(/\n/g, "<br />"),
