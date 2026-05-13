@@ -129,6 +129,7 @@ const InvestmentOpportunity = () => {
                     Request Custom ROI Model <ArrowRight className="ml-2 h-4 w-4" />
                   </a>
                 </Button>
+                {/* fix: anchor closure */}
                 <Button
                   size="lg"
                   variant="outline"

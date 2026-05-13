@@ -91,6 +91,7 @@ const InvestmentROIPage = () => {
                     Get Investment Quote <ArrowRight className="ml-2 h-4 w-4" />
                   </a>
                 </Button>
+                {/* fix: anchor closure */}
                 <Button
                   size="lg"
                   variant="outline"
@@ -239,6 +240,7 @@ const InvestmentROIPage = () => {
                     Request a Custom {data.country} ROI Model <ArrowRight className="ml-2 h-4 w-4" />
                   </a>
                 </Button>
+                {/* fix: anchor closure */}
               </div>
             </motion.div>
           </div>
