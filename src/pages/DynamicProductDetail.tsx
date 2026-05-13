@@ -106,6 +106,15 @@ interface RelatedProduct {
   featured_image: string | null;
 }
 
+const productDetailTabLabels: Record<string, Record<"description" | "specifications" | "variants", string>> = {
+  en: { description: "Description", specifications: "Specifications", variants: "Variants" },
+  es: { description: "Descripción", specifications: "Especificaciones", variants: "Variantes" },
+  pt: { description: "Descrição", specifications: "Especificações", variants: "Variantes" },
+  de: { description: "Beschreibung", specifications: "Spezifikationen", variants: "Varianten" },
+  fr: { description: "Description", specifications: "Spécifications", variants: "Variantes" },
+  ar: { description: "الوصف", specifications: "المواصفات", variants: "المتغيرات" },
+};
+
 const DynamicProductDetail = () => {
   const { slug } = useParams<{ slug: string }>();
   const { t, i18n } = useTranslation();
@@ -124,6 +133,7 @@ const DynamicProductDetail = () => {
   const [isLightboxOpen, setIsLightboxOpen] = useState(false);
 
   const ArrowIcon = isRTL ? ArrowLeft : ArrowRight;
+  const tabLabels = productDetailTabLabels[i18n.language.split("-")[0]] || productDetailTabLabels.en;
 
   // Fetch product data
   useEffect(() => {
