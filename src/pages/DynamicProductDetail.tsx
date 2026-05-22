@@ -40,6 +40,7 @@ import { ProductFAQSection } from "@/components/product-detail/ProductFAQSection
 import { ProductInquiryForm } from "@/components/product-detail/ProductInquiryForm";
 import { LazySection } from "@/components/LazySection";
 import { TrustHubLinks } from "@/components/TrustHubLinks";
+import { EEATSignature } from "@/components/EEATSignature";
 
 interface ProductCategory {
   id: string;
