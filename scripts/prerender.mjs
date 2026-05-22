@@ -46,6 +46,7 @@ const CORE_ROUTES = [
   "/indoorplaygroundsolution-office-wellness-solutions",
   "/soft-play-equipment-shopping-mall-solutions",
   "/trampoline-park-fec-solutions",
+  "/gamified-attractions-manufacturer",
   "/indoor-playground-roi-analysis-uk",
   "/indoor-playground-roi-canada",
   // Investment / ROI hub + per-country guides
