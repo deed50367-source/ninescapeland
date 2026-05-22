@@ -88,6 +88,9 @@ const Index = () => {
           <LazySection minHeight="300px">
             <TestimonialsSection />
           </LazySection>
+          <LazySection minHeight="300px">
+            <EEATSignature />
+          </LazySection>
           <LazySection minHeight="400px">
             <FAQSection />
           </LazySection>
