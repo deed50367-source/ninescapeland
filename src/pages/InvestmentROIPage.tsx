@@ -15,6 +15,7 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import { motion } from "framer-motion";
+import { EEATSignature } from "@/components/EEATSignature";
 import {
   TrendingUp,
   Shield,
@@ -319,6 +320,7 @@ const InvestmentROIPage = () => {
         </section>
 
         <ContactSection />
+        <EEATSignature />
       </main>
       <Footer />
       <FloatingCTA />
