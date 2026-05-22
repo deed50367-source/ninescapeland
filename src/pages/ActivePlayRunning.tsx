@@ -11,6 +11,7 @@ import { useTranslation } from "react-i18next";
 import { useLocalizedPath } from "@/hooks/useLocalizedPath";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
+import { EEATSignature } from "@/components/EEATSignature";
 import {
   Accordion,
   AccordionContent,
@@ -330,6 +331,7 @@ const ActivePlayRunning = () => {
 
         {/* CTA / Contact */}
         <ContactSection />
+        <EEATSignature />
       </main>
       <Footer />
       <FloatingCTA />

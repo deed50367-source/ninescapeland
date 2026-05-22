@@ -40,6 +40,7 @@ import { ProductFAQSection } from "@/components/product-detail/ProductFAQSection
 import { ProductInquiryForm } from "@/components/product-detail/ProductInquiryForm";
 import { LazySection } from "@/components/LazySection";
 import { TrustHubLinks } from "@/components/TrustHubLinks";
+import { EEATSignature } from "@/components/EEATSignature";
 
 interface ProductCategory {
   id: string;
@@ -639,6 +640,11 @@ const DynamicProductDetail = () => {
         {/* Process Steps */}
         <LazySection minHeight="300px">
           <ProductProcessSteps productName={getLocalizedName(product)} />
+        </LazySection>
+
+        {/* Designer signature for E-E-A-T */}
+        <LazySection minHeight="280px">
+          <EEATSignature context={getLocalizedName(product)} />
         </LazySection>
 
         {/* FAQ */}
