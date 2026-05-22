@@ -752,6 +752,21 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
+
+  <!-- GAMIFIED ATTRACTIONS -->
+  <url>
+    <loc>https://indoorplaygroundsolution.com/gamified-attractions-manufacturer</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://indoorplaygroundsolution.com/gamified-attractions-manufacturer"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://indoorplaygroundsolution.com/es/gamified-attractions-manufacturer"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://indoorplaygroundsolution.com/pt/gamified-attractions-manufacturer"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://indoorplaygroundsolution.com/de/gamified-attractions-manufacturer"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://indoorplaygroundsolution.com/fr/gamified-attractions-manufacturer"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://indoorplaygroundsolution.com/ar/gamified-attractions-manufacturer"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://indoorplaygroundsolution.com/gamified-attractions-manufacturer"/>
+    <lastmod>2026-05-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
   <url>
     <loc>https://indoorplaygroundsolution.com/es/trampoline-park-fec-solutions</loc>
     <lastmod>2026-04-14</lastmod>
