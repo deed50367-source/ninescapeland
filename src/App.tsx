@@ -88,6 +88,7 @@ const pageRoutes = (
     <Route path="indoorplaygroundsolution-office-wellness-solutions" element={<OfficeWellness />} />
     <Route path="soft-play-equipment-shopping-mall-solutions" element={<SoftPlayMallSolutions />} />
     <Route path="trampoline-park-fec-solutions" element={<TrampolineParkFEC />} />
+    <Route path="gamified-attractions-manufacturer" element={<GamifiedAttractionsManufacturer />} />
     <Route path="indoor-playground-roi-analysis-uk" element={<IndoorPlaygroundROIUK />} />
     <Route path="indoor-playground-roi-canada" element={<IndoorPlaygroundROICanada />} />
     <Route path="investment-opportunity" element={<InvestmentOpportunity />} />
