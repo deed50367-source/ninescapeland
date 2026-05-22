@@ -13,6 +13,7 @@ import { SEOHead } from "@/components/SEOHead";
 import { OrganizationSchema, LocalBusinessSchema, WebsiteSchema } from "@/components/StructuredData";
 import { LazySection } from "@/components/LazySection";
 import { TrustHubLinks } from "@/components/TrustHubLinks";
+import { EEATSignature } from "@/components/EEATSignature";
 
 // Lazy load below-fold sections to speed up initial render
 const FeaturesGridSection = lazy(() => import("@/components/FeaturesGridSection").then(m => ({ default: m.FeaturesGridSection })));
