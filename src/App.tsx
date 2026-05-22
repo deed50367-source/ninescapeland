@@ -33,6 +33,7 @@ const ActivePlayRunning = lazy(() => import("./pages/ActivePlayRunning"));
 const OfficeWellness = lazy(() => import("./pages/OfficeWellness"));
 const SoftPlayMallSolutions = lazy(() => import("./pages/SoftPlayMallSolutions"));
 const TrampolineParkFEC = lazy(() => import("./pages/TrampolineParkFEC"));
+const GamifiedAttractionsManufacturer = lazy(() => import("./pages/GamifiedAttractionsManufacturer"));
 const IndoorPlaygroundROIUK = lazy(() => import("./pages/IndoorPlaygroundROIUK"));
 const IndoorPlaygroundROICanada = lazy(() => import("./pages/IndoorPlaygroundROICanada"));
 const InvestmentOpportunity = lazy(() => import("./pages/InvestmentOpportunity"));
