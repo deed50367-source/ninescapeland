@@ -642,6 +642,11 @@ const DynamicProductDetail = () => {
           <ProductProcessSteps productName={getLocalizedName(product)} />
         </LazySection>
 
+        {/* Designer signature for E-E-A-T */}
+        <LazySection minHeight="280px">
+          <EEATSignature context={getLocalizedName(product)} />
+        </LazySection>
+
         {/* FAQ */}
         <LazySection minHeight="300px">
           <ProductFAQSection productName={getLocalizedName(product)} />
