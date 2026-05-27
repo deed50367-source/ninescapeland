@@ -767,6 +767,21 @@
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
+
+  <!-- IAAPA ASIA 2026 HONG KONG -->
+  <url>
+    <loc>https://indoorplaygroundsolution.com/iaapa-asia-2026-hong-kong</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://indoorplaygroundsolution.com/iaapa-asia-2026-hong-kong"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://indoorplaygroundsolution.com/es/iaapa-asia-2026-hong-kong"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://indoorplaygroundsolution.com/pt/iaapa-asia-2026-hong-kong"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://indoorplaygroundsolution.com/de/iaapa-asia-2026-hong-kong"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://indoorplaygroundsolution.com/fr/iaapa-asia-2026-hong-kong"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://indoorplaygroundsolution.com/ar/iaapa-asia-2026-hong-kong"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://indoorplaygroundsolution.com/iaapa-asia-2026-hong-kong"/>
+    <lastmod>2026-05-27</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
   <url>
     <loc>https://indoorplaygroundsolution.com/es/trampoline-park-fec-solutions</loc>
     <lastmod>2026-04-14</lastmod>
