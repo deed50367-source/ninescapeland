@@ -13,7 +13,7 @@ const DISMISS_KEY = "iaapa-asia-2026-banner-dismissed";
 export const IAAPAFloatingBanner = () => {
   const { t } = useTranslation();
   const { isRTL } = useRTL();
-  const localizedPath = useLocalizedPath();
+  const { localizedPath } = useLocalizedPath();
   const [visible, setVisible] = useState(false);
 
   useEffect(() => {
