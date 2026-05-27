@@ -34,6 +34,7 @@ const OfficeWellness = lazy(() => import("./pages/OfficeWellness"));
 const SoftPlayMallSolutions = lazy(() => import("./pages/SoftPlayMallSolutions"));
 const TrampolineParkFEC = lazy(() => import("./pages/TrampolineParkFEC"));
 const GamifiedAttractionsManufacturer = lazy(() => import("./pages/GamifiedAttractionsManufacturer"));
+const IAAPAAsia2026 = lazy(() => import("./pages/IAAPAAsia2026"));
 const IndoorPlaygroundROIUK = lazy(() => import("./pages/IndoorPlaygroundROIUK"));
 const IndoorPlaygroundROICanada = lazy(() => import("./pages/IndoorPlaygroundROICanada"));
 const InvestmentOpportunity = lazy(() => import("./pages/InvestmentOpportunity"));
@@ -89,6 +90,7 @@ const pageRoutes = (
     <Route path="soft-play-equipment-shopping-mall-solutions" element={<SoftPlayMallSolutions />} />
     <Route path="trampoline-park-fec-solutions" element={<TrampolineParkFEC />} />
     <Route path="gamified-attractions-manufacturer" element={<GamifiedAttractionsManufacturer />} />
+    <Route path="iaapa-asia-2026-hong-kong" element={<IAAPAAsia2026 />} />
     <Route path="indoor-playground-roi-analysis-uk" element={<IndoorPlaygroundROIUK />} />
     <Route path="indoor-playground-roi-canada" element={<IndoorPlaygroundROICanada />} />
     <Route path="investment-opportunity" element={<InvestmentOpportunity />} />
