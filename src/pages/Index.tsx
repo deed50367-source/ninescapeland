@@ -7,6 +7,7 @@ import { CoreSolutionsSection } from "@/components/CoreSolutionsSection";
 import { ProductsSection } from "@/components/ProductsSection";
 import { Footer } from "@/components/Footer";
 import { FloatingCTA } from "@/components/FloatingCTA";
+import { IAAPAFloatingBanner } from "@/components/IAAPAFloatingBanner";
 
 import MobileBottomNav from "@/components/MobileBottomNav";
 import { SEOHead } from "@/components/SEOHead";
@@ -110,6 +111,7 @@ const Index = () => {
       </main>
       <Footer />
       <FloatingCTA />
+      <IAAPAFloatingBanner />
       
       <MobileBottomNav />
       {/* Skip preloader on mobile to save bandwidth */}
