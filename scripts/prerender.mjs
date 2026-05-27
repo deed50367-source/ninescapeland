@@ -47,6 +47,7 @@ const CORE_ROUTES = [
   "/soft-play-equipment-shopping-mall-solutions",
   "/trampoline-park-fec-solutions",
   "/gamified-attractions-manufacturer",
+  "/iaapa-asia-2026-hong-kong",
   "/indoor-playground-roi-analysis-uk",
   "/indoor-playground-roi-canada",
   // Investment / ROI hub + per-country guides
