@@ -109,8 +109,6 @@ const ThemedIndoorPlaygroundDesign = () => {
     <div className="min-h-screen">
       <SEOHead
         pageKey="themedPlaygroundDesign"
-        dynamicTitle="Themed Indoor Playground Design Ideas & Inspiration"
-        dynamicDescription="12 indoor playground themes, multi-level structure formats, trampoline park design ideas and small-space layouts from 2,000+ delivered NinescapeLand projects."
         ogType="website"
       />
       <BreadcrumbSchema items={breadcrumbItems} />

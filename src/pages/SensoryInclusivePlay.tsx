@@ -99,8 +99,6 @@ const SensoryInclusivePlay = () => {
     <div className="min-h-screen">
       <SEOHead
         pageKey="sensoryInclusivePlay"
-        dynamicTitle="Sensory-Inclusive Play Equipment for Special Needs"
-        dynamicDescription="Sensory-inclusive playground design: calm rooms, tactile panels, cocoon swings, autism-friendly zones. EN 1176 / ASTM certified for FECs, hospitals & schools."
         ogType="website"
       />
       <BreadcrumbSchema items={breadcrumbItems} />
