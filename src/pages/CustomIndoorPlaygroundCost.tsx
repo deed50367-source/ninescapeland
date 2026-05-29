@@ -121,8 +121,6 @@ const CustomIndoorPlaygroundCost = () => {
     <div className="min-h-screen">
       <SEOHead
         pageKey="customPlaygroundCost"
-        dynamicTitle="Custom Indoor Playground Cost & Free 3D Design"
-        dynamicDescription="2026 custom indoor playground equipment cost guide. 3 budget tiers, 6 cost drivers, free 3D design in 10 days. Full-service manufacturer since 2008."
         ogType="website"
       />
       <BreadcrumbSchema items={breadcrumbItems} />

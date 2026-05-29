@@ -65,9 +65,6 @@ const SafetyCertifications = () => {
     <div className="min-h-screen">
       <SEOHead
         pageKey="safetyCertifications"
-        dynamicTitle="ASTM TUV Certified Playground Equipment | Safety Standards"
-        dynamicDescription="ASTM F1918 vs TÜV vs EN 1176 vs AS/NZS — full comparison, certified materials and compliance docs for every shipment. ISO 9001 manufacturer since 2008."
-        dynamicKeywords="ASTM TUV certified playground equipment, indoor playground safety standards, ASTM F1918, EN 1176, TUV playground, CSA Z614, soft play safety"
         ogImage="/og-safety-certifications.jpg"
       />
       <BreadcrumbSchema items={breadcrumbItems} />

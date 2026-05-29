@@ -89,12 +89,7 @@ const InvestmentOpportunity = () => {
 
   return (
     <div className="min-h-screen">
-      <SEOHead
-        pageKey="investmentOpportunity"
-        dynamicTitle="Indoor Playground Investment Opportunity & ROI Guide"
-        dynamicDescription="Complete investment guide for indoor playground & FEC operators. ROI models, payback periods and CAPEX breakdowns for Australia, NZ, UAE, Saudi, Mexico, Brazil, UK and Canada."
-        dynamicKeywords="indoor playground investment, indoor playground business opportunity, FEC investment, family entertainment centre ROI, soft play business plan"
-      />
+      <SEOHead pageKey="investmentOpportunity" />
       <BreadcrumbSchema items={breadcrumbItems} />
       <FAQSchema items={hubFaqs} />
       <OrganizationSchema />
