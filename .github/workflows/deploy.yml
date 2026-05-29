@@ -27,7 +27,14 @@ jobs:
       - name: Install Puppeteer Chrome for prerendering
         run: |
           rm -rf /home/runner/.cache/puppeteer
-          npx puppeteer browsers install chrome --path /home/runner/.cache/puppeteer
+          # Pin to a known-stable Chrome build to avoid broken/missing executable issues
+          # (recent chrome@148.x archives have been failing extraction on the runner)
+          for i in 1 2 3; do
+            npx puppeteer browsers install chrome@stable --path /home/runner/.cache/puppeteer && break
+            echo "Attempt $i failed, retrying..."
+            rm -rf /home/runner/.cache/puppeteer
+            sleep 5
+          done
 
       - name: Build and Prerender static HTML
         run: npm run build:static
