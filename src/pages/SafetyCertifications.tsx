@@ -170,7 +170,7 @@ const SafetyCertifications = () => {
                       <TableRow key={i} className="hover:bg-muted/30">
                         <TableCell className="font-semibold align-top">{row.c}</TableCell>
                         {(["a", "e", "t"] as const).map((k) => {
-                          const v = row[k];
+                          const v = (row as Record<string, string | boolean>)[k];
                           return (
                             <TableCell key={k} className="align-top text-sm text-muted-foreground">
                               {v === true ? (
