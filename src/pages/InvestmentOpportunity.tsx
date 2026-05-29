@@ -212,6 +212,64 @@ const InvestmentOpportunity = () => {
           </div>
         </section>
 
+        {/* 10-Step Launch Playbook */}
+        <section className="py-16 md:py-20 bg-background border-t">
+          <div className="container mx-auto px-4 max-w-6xl">
+            <div className="text-center max-w-3xl mx-auto mb-12">
+              <Badge variant="secondary" className="mb-4">
+                <Rocket className="w-3 h-3 mr-1" /> The Operator Playbook
+              </Badge>
+              <h2 className="text-2xl md:text-4xl font-heading font-bold mb-4">
+                How to <span className="text-primary">Start an Indoor Playground Business</span> — 10-Step Launch Plan
+              </h2>
+              <p className="text-muted-foreground text-lg">
+                The exact sequence we walk our clients through — from first market study to opening day. Most centres reach grand opening in 6–9 months.
+              </p>
+            </div>
+
+            <div className="grid md:grid-cols-2 gap-5">
+              {[
+                { n: "01", t: "Market & Catchment Study", d: "Drive-time analysis, household density, competitor mapping, weekday vs weekend demand. Decide between mall pad, big-box retail, or standalone format.", w: "Weeks 1–3" },
+                { n: "02", t: "Concept & Revenue Model", d: "Pick your four-stream mix (admission, parties, F&B, memberships) and define target ticket price, party package tiers, and capacity-per-hour.", w: "Weeks 3–5" },
+                { n: "03", t: "Site Selection & LOI", d: "Shortlist 3–5 sites. Negotiate rent, fit-out contribution, exclusivity clauses, ceiling height ≥4.5 m, sprinkler & ventilation specs.", w: "Weeks 4–8" },
+                { n: "04", t: "Free 3D Design & Equipment Spec", d: "NinescapeLand produces a free 3D rendering and equipment matrix sized to your floor plan, age mix, and budget tier.", w: "Weeks 6–9" },
+                { n: "05", t: "Financial Model & Funding", d: "Build the 5-year P&L with country-specific CAPEX, payback (15–32 mo) and IRR. Use it to secure SBA loans, family-office equity, or franchise commitments.", w: "Weeks 8–12" },
+                { n: "06", t: "Certification & Permits", d: "Confirm equipment certified to ASTM F1918 / EN 1176 / AS 4685 / CSA Z614 per market. File building permit, fire marshal approval, and child-safety bond.", w: "Weeks 10–14" },
+                { n: "07", t: "Manufacturing & Shipping", d: "45–60 day production window. We pre-assemble in factory, photograph against your 3D, then disassemble and ship FOB / DAP / DDP per your incoterms.", w: "Weeks 12–22" },
+                { n: "08", t: "Fit-Out & Installation", d: "Flooring, electrical, HVAC, washrooms and POS go in first. NinescapeLand supervisors install equipment in 10–18 days and hand over a signed Compliance Certificate.", w: "Weeks 20–26" },
+                { n: "09", t: "Staff Training & Soft Launch", d: "Hire 6–14 staff per shift. Train on safety SOPs, party hosting, POS, and emergency drills. Run a 7-day soft launch with friends-and-family pricing.", w: "Weeks 24–28" },
+                { n: "10", t: "Grand Opening & Marketing", d: "Activate paid social, school partnerships, mall co-promo, influencer day, and an opening-week ticket bundle. Target 60% capacity by week 4.", w: "Weeks 26–32" },
+              ].map((s) => (
+                <Card key={s.n} className="border-l-4 border-l-primary hover:shadow-md transition-shadow">
+                  <CardContent className="p-5 flex gap-4">
+                    <div className="text-3xl font-bold text-primary/30 leading-none">{s.n}</div>
+                    <div className="flex-1">
+                      <div className="flex items-start justify-between gap-2 mb-1.5">
+                        <h3 className="font-heading font-semibold text-base">{s.t}</h3>
+                        <Badge variant="outline" className="text-xs whitespace-nowrap shrink-0">{s.w}</Badge>
+                      </div>
+                      <p className="text-sm text-muted-foreground leading-relaxed">{s.d}</p>
+                    </div>
+                  </CardContent>
+                </Card>
+              ))}
+            </div>
+
+            <div className="mt-10 bg-primary/5 border border-primary/15 rounded-2xl p-6 md:p-8 text-center">
+              <ListChecks className="w-10 h-10 text-primary mx-auto mb-3" />
+              <h3 className="text-xl md:text-2xl font-heading font-bold mb-2">
+                Want this playbook customised for your city & budget?
+              </h3>
+              <p className="text-muted-foreground mb-5 max-w-2xl mx-auto">
+                Send us your target floor area, budget tier and country — we'll return a free 3D concept, equipment matrix and 5-year P&L within 7 working days.
+              </p>
+              <Button size="lg" variant="hero" asChild>
+                <a href="#contact">Request My Custom Launch Plan <ArrowRight className="ml-2 h-4 w-4" /></a>
+              </Button>
+            </div>
+          </div>
+        </section>
+
         {/* Markets grid */}
         <section id="markets" className="py-16 md:py-20 bg-muted/30 scroll-mt-20">
           <div className="container mx-auto px-4">
