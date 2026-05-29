@@ -27,6 +27,8 @@ import {
   HelpCircle,
   Target,
   CheckCircle2,
+  Rocket,
+  ListChecks,
 } from "lucide-react";
 import { useLocalizedPath } from "@/hooks/useLocalizedPath";
 import { roiPages } from "@/config/roiPages";
