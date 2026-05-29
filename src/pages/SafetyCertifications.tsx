@@ -8,7 +8,8 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { ShieldCheck, FileCheck2, Globe2, FlaskConical, ArrowRight, CheckCircle2, Scale } from "lucide-react";
+import { ShieldCheck, FileCheck2, Globe2, FlaskConical, ArrowRight, CheckCircle2, Scale, X } from "lucide-react";
+import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 import { motion } from "framer-motion";
 import { RelatedResources } from "@/components/RelatedResources";
 
