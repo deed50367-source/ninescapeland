@@ -128,6 +128,97 @@ const SafetyCertifications = () => {
           </div>
         </section>
 
+        {/* ASTM vs TUV vs EN 1176 comparison */}
+        <section className="py-16 md:py-20 bg-gradient-to-b from-background to-muted/20">
+          <div className="container mx-auto px-4 max-w-6xl">
+            <div className="text-center max-w-3xl mx-auto mb-12">
+              <Badge className="mb-4 bg-accent/15 text-accent-foreground border-accent/30">
+                <Scale className="w-4 h-4 mr-2" /> Standards Comparison
+              </Badge>
+              <h2 className="text-3xl md:text-4xl font-bold mb-4">
+                <strong>ASTM vs TÜV vs EN 1176</strong> — Which Certification Does Your Market Need?
+              </h2>
+              <p className="text-muted-foreground text-lg">
+                The three most-requested certification frameworks for indoor playground equipment compared side-by-side.
+              </p>
+            </div>
+
+            <Card className="overflow-hidden shadow-lg">
+              <div className="overflow-x-auto">
+                <Table>
+                  <TableHeader>
+                    <TableRow className="bg-muted/50">
+                      <TableHead className="font-bold text-foreground w-[180px]">Criteria</TableHead>
+                      <TableHead className="font-bold text-foreground">ASTM F1918 / F1487</TableHead>
+                      <TableHead className="font-bold text-foreground">EN 1176-1 to -11</TableHead>
+                      <TableHead className="font-bold text-foreground">TÜV (SÜD / Rheinland)</TableHead>
+                    </TableRow>
+                  </TableHeader>
+                  <TableBody>
+                    {[
+                      { c: "Issuing Body", a: "ASTM International (USA)", e: "CEN — European Committee for Standardization", t: "TÜV — independent German type-test bodies" },
+                      { c: "Primary Markets", a: "USA, Canada (often parallel), Latin America imports, Middle East projects requesting US spec", e: "EU, UK, Norway, Switzerland, Russia, AU/NZ (aligned with AS 4685), most international FEC projects", t: "Recognised globally as an independent stamp on top of ASTM or EN 1176" },
+                      { c: "Document Type", a: "Voluntary consensus standard (often legally mandated by states/cities)", e: "Harmonised European standard, legally binding in EU member states", t: "Independent type-test certificate + factory audit" },
+                      { c: "Coverage", a: "Soft-contained play (F1918), public-use playground equipment (F1487), trampoline parks (F2970)", e: "11 parts: general safety, swings, slides, climbing, surfacing, installation, inspection", t: "Verifies compliance with EN 1176, ASTM, or both — adds factory production-control audit" },
+                      { c: "Impact Surfacing", a: "ASTM F1292 — critical fall height test (CFH)", e: "EN 1177 — HIC ≤ 1000 attenuation test", t: "Issues independent F1292 / EN 1177 test reports" },
+                      { c: "Inspection Cadence", a: "Annual main inspection recommended; some states require monthly logs", a2: false, e: "EN 1176-7 — quarterly operational + annual main inspection mandated", t: "Factory re-audit every 12 months for ongoing certification" },
+                      { c: "Indoor Soft-Play Specific", a: true, e: true, t: true },
+                      { c: "Trampoline Parks", a: "Yes — ASTM F2970 (mandatory in most US states)", e: "Yes — EN 13219 partial; many EU parks adopt ASTM F2970 voluntarily", t: "Yes — TÜV certifies to F2970 / DIN EN 13219" },
+                      { c: "Typical Cost to Certify", a: "US$3-8k per structure type", e: "€2.5-7k per structure type", t: "€4-12k incl. factory audit (in addition to ASTM/EN test)" },
+                      { c: "NinescapeLand Delivers", a: true, e: true, t: true },
+                    ].map((row, i) => (
+                      <TableRow key={i} className="hover:bg-muted/30">
+                        <TableCell className="font-semibold align-top">{row.c}</TableCell>
+                        {(["a", "e", "t"] as const).map((k) => {
+                          const v = row[k];
+                          return (
+                            <TableCell key={k} className="align-top text-sm text-muted-foreground">
+                              {v === true ? (
+                                <span className="inline-flex items-center gap-1.5 text-green-600 font-semibold">
+                                  <CheckCircle2 className="w-4 h-4" /> Included
+                                </span>
+                              ) : v === false ? (
+                                <span className="inline-flex items-center gap-1.5 text-muted-foreground/60">
+                                  <X className="w-4 h-4" /> Not covered
+                                </span>
+                              ) : (
+                                v
+                              )}
+                            </TableCell>
+                          );
+                        })}
+                      </TableRow>
+                    ))}
+                  </TableBody>
+                </Table>
+              </div>
+            </Card>
+
+            <div className="grid md:grid-cols-3 gap-4 mt-8">
+              {[
+                { title: "Selling into the USA?", body: "Order to ASTM F1918 (soft-play) or F1487 (outdoor) — and F2970 if your build includes trampolines. Many municipalities also require a third-party inspection report from a licensed CPSI." },
+                { title: "Selling into Europe / UK / GCC?", body: "EN 1176 is the default — TÜV or SGS type-test reports are usually required by mall landlords and insurers before opening day." },
+                { title: "Want a global trust stamp?", body: "Layer TÜV SÜD or Rheinland certification on top of ASTM/EN. It signals independent verification to investors, franchisees and insurance underwriters worldwide." },
+              ].map((item) => (
+                <Card key={item.title} className="border-l-4 border-l-accent">
+                  <CardContent className="p-5">
+                    <h3 className="font-bold mb-2 text-foreground">{item.title}</h3>
+                    <p className="text-sm text-muted-foreground leading-relaxed">{item.body}</p>
+                  </CardContent>
+                </Card>
+              ))}
+            </div>
+
+            <div className="text-center mt-10">
+              <Button size="lg" variant="hero" asChild>
+                <a href="#contact">
+                  Get a Compliance Pack for My Market <ArrowRight className="w-5 h-5 ml-2" />
+                </a>
+              </Button>
+            </div>
+          </div>
+        </section>
+
         {/* Materials table */}
         <section className="py-16 md:py-20 bg-muted/30">
           <div className="container mx-auto px-4 max-w-6xl">
