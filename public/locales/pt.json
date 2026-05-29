@@ -2319,20 +2319,20 @@
       "description": "Estudos de caso detalhados de projetos bem-sucedidos no mundo todo. Depoimentos, fotos antes/depois, dados de ROI e processo de design.",
       "keywords": "estudos de caso de playground, histórias de sucesso FEC, exemplos de playground indoor, galeria de projetos de parques de trampolins, fotos de antes e depois de playground, exemplos de ROI de playground, depoimentos de clientes"
     },
-    "customIndoorPlaygroundCost": {
-      "title": "Custo playground indoor & design 3D gratuito 2026",
-      "description": "Custo equipamento playground: $30k–$650k. 6 fatores de custo, renderização 3D grátis em 10 dias. Fabricante certificado ASTM/TÜV.",
-      "keywords": "custo playground indoor, preço equipamento playground, design 3D gratuito, orçamento playground, playground 2026"
-    },
-    "themedIndoorPlaygroundDesign": {
-      "title": "Design playground temático — 12 temas e ideias",
-      "description": "12 temas prontos: oceano, espaço, cyber-neon, floresta. Estruturas multinível, espaços pequenos, renderização 3D gratuita.",
-      "keywords": "playground temático, design playground, playground multinível, playground pequeno indoor, design 3D playground"
-    },
     "sensoryInclusivePlay": {
       "title": "Equipamento de jogo inclusivo sensorial & autismo",
       "description": "Equipamento inclusivo para SEN, autismo e necessidades sensoriais. 8 princípios de design, zoneamento acústico, salas sensoriais OT.",
       "keywords": "playground inclusivo, equipamento autismo, equipamento SEN, sala sensorial, design playground inclusivo"
+    },
+    "customPlaygroundCost": {
+      "title": "Custo playground indoor & design 3D gratuito 2026",
+      "description": "Custo equipamento playground: $30k–$650k. 6 fatores de custo, renderização 3D grátis em 10 dias. Fabricante certificado ASTM/TÜV.",
+      "keywords": "custo playground indoor, preço equipamento playground, design 3D gratuito, orçamento playground, playground 2026"
+    },
+    "themedPlaygroundDesign": {
+      "title": "Design playground temático — 12 temas e ideias",
+      "description": "12 temas prontos: oceano, espaço, cyber-neon, floresta. Estruturas multinível, espaços pequenos, renderização 3D gratuita.",
+      "keywords": "playground temático, design playground, playground multinível, playground pequeno indoor, design 3D playground"
     }
   },
   "caseStudies": {
