@@ -266,6 +266,7 @@ async function main() {
   // Launch browser
   const browser = await launch({
     headless: "new",
+    executablePath: process.env.PUPPETEER_EXECUTABLE_PATH || undefined,
     args: ["--no-sandbox", "--disable-setuid-sandbox", "--disable-gpu"],
   });
 
