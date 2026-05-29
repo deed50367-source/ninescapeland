@@ -24,8 +24,10 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Install Puppeteer for prerendering
-        run: npx puppeteer browsers install chrome
+      - name: Install Puppeteer Chrome for prerendering
+        run: |
+          rm -rf /home/runner/.cache/puppeteer
+          npx puppeteer browsers install chrome --path /home/runner/.cache/puppeteer
 
       - name: Build and Prerender static HTML
         run: npm run build:static
