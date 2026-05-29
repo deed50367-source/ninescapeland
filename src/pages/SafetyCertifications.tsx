@@ -8,7 +8,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { ShieldCheck, FileCheck2, Globe2, FlaskConical, ArrowRight, CheckCircle2 } from "lucide-react";
+import { ShieldCheck, FileCheck2, Globe2, FlaskConical, ArrowRight, CheckCircle2, Scale } from "lucide-react";
 import { motion } from "framer-motion";
 import { RelatedResources } from "@/components/RelatedResources";
 
@@ -63,9 +63,9 @@ const SafetyCertifications = () => {
     <div className="min-h-screen">
       <SEOHead
         pageKey="safetyCertifications"
-        dynamicTitle="Indoor Playground Safety Standards & Certifications"
-        dynamicDescription="ASTM F1918, EN 1176, AS/NZS 4685, CSA Z614, ABNT, SASO & TÜV — full indoor playground safety standards, materials testing and compliance certificates."
-        dynamicKeywords="indoor playground safety standards, ASTM F1918, EN 1176, playground certification, soft play safety, TUV indoor playground"
+        dynamicTitle="ASTM TUV Certified Playground Equipment | Safety Standards"
+        dynamicDescription="ASTM F1918 vs TÜV vs EN 1176 vs AS/NZS — full comparison, certified materials and compliance docs for every shipment. ISO 9001 manufacturer since 2008."
+        dynamicKeywords="ASTM TUV certified playground equipment, indoor playground safety standards, ASTM F1918, EN 1176, TUV playground, CSA Z614, soft play safety"
         ogImage="/og-safety-certifications.jpg"
       />
       <BreadcrumbSchema items={breadcrumbItems} />
