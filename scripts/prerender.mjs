@@ -189,6 +189,30 @@ async function prerenderRoute(browser, route) {
     // Get the full rendered HTML
     let html = await page.content();
 
+    // ── Strip Framer Motion's initial inline styles ──
+    // Prerender captures the pre-animation state (opacity:0, transform:translateY/X/scale)
+    // which SEO scanners flag as "hidden text" (Google Spam Policy #5). After hydration
+    // these animate normally on the client, so removing the inline style is safe.
+    html = html.replace(/\s*style="([^"]*)"/gi, (match, styleStr) => {
+      // Remove opacity:0 / visibility:hidden / font-size:0 / text-indent:-9999 / transform:* declarations
+      const cleaned = styleStr
+        .split(";")
+        .map((d) => d.trim())
+        .filter((d) => {
+          if (!d) return false;
+          const lower = d.toLowerCase().replace(/\s+/g, "");
+          if (/^opacity:0(\.0+)?$/.test(lower)) return false;
+          if (/^visibility:hidden$/.test(lower)) return false;
+          if (/^font-size:0(px|em|rem)?$/.test(lower)) return false;
+          if (/^text-indent:-?\d{4,}/.test(lower)) return false;
+          if (/^transform:translate/.test(lower)) return false;
+          return true;
+        })
+        .join("; ");
+      return cleaned ? ` style="${cleaned}"` : "";
+    });
+
+
     // ── Detailed SEO element audit for each route ──
     const h1Matches = html.match(/<h1[\s>]/gi) || [];
     const h2Matches = html.match(/<h2[\s>]/gi) || [];
