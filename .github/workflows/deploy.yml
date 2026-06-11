@@ -39,8 +39,19 @@ jobs:
           VITE_SUPABASE_PUBLISHABLE_KEY: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImdpYW5sZGxxdWtuc2RoZnBxcWZlIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjgxODU5MzgsImV4cCI6MjA4Mzc2MTkzOH0.yEFhGkbyfDFqJNcKsS4QBo1ZSPV8MN9oAHpih3yOhak"
           VITE_SUPABASE_PROJECT_ID: "gianldlquknsdhfpqqfe"
 
-      - name: Deploy to Hostinger via SFTP
-        if: ${{ secrets.SFTP_HOST != '' }}
+      - name: Check deploy method
+        id: deploy_method
+        env:
+          SFTP_HOST: ${{ secrets.SFTP_HOST }}
+        run: |
+          if [ -n "$SFTP_HOST" ]; then
+            echo "method=sftp" >> $GITHUB_OUTPUT
+          else
+            echo "method=ftps" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Deploy to Hostinger via SFTP (port 22)
+        if: steps.deploy_method.outputs.method == 'sftp'
         uses: wlixcc/SFTP-Deploy-Action@v1.2.4
         with:
           server: ${{ secrets.SFTP_HOST }}
@@ -52,8 +63,8 @@ jobs:
           sftp_only: true
           delete_remote_files: false
 
-      - name: Fallback Deploy to Hostinger via FTPS
-        if: ${{ secrets.SFTP_HOST == '' }}
+      - name: Fallback Deploy to Hostinger via FTPS (port 21)
+        if: steps.deploy_method.outputs.method == 'ftps'
         uses: SamKirkland/FTP-Deploy-Action@v4.3.6
         with:
           server: ${{ secrets.FTP_SERVER }}
