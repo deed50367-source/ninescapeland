@@ -202,6 +202,10 @@ export default defineConfig(({ mode }) => ({
     ],
   },
   build: {
+    modulePreload: {
+      polyfill: false,
+      resolveDependencies: () => [],
+    },
     // Enable code splitting
     rollupOptions: {
       output: {
