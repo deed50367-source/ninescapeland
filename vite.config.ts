@@ -264,7 +264,7 @@ export default defineConfig(({ mode }) => ({
     },
 
     // Optimize chunk size
-    chunkSizeWarningLimit: 500,
+    chunkSizeWarningLimit: 1500,
     // Enable source maps for production debugging
     sourcemap: false,
     // Minification
