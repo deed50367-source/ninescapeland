@@ -156,10 +156,12 @@ const App = () => (
                 {pageRoutes}
               </Route>
 
-              {/* Other language-prefixed routes (ar, de, es, pt) */}
-              <Route path="/:lang" element={<LanguageWrapper />}>
-                {pageRoutes}
-              </Route>
+              {/* Other language-prefixed routes */}
+              {(["es", "pt", "de", "fr", "ar"] as const).map((lang) => (
+                <Route key={lang} path={`/${lang}`} element={<LanguageWrapper defaultLang={lang} />}>
+                  {pageRoutes}
+                </Route>
+              ))}
 
               {/* Catch-all route */}
               <Route path="*" element={<NotFound />} />
