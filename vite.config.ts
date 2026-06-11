@@ -107,13 +107,11 @@ export default defineConfig(({ mode }) => ({
           }
           return undefined;
         },
-        // Use stable JS/CSS filenames on the self-hosted domain. Hostinger/LiteSpeed
-        // and visitor browsers can keep old HTML for too long; if that stale HTML
-        // points at an old hashed app chunk, newly added routes render blank while
-        // global floating widgets still mount. Stable names + no-cache headers let
-        // every navigation fetch the current app code.
-        chunkFileNames: "assets/[name].js",
-        entryFileNames: "assets/[name].js",
+        // Use a dated bundle suffix so browsers that cached the earlier stable
+        // app.js bundle cannot keep using a route table from before these pages
+        // were restored. The .htaccess rules below redirect older names here.
+        chunkFileNames: "assets/r20260611-[name].js",
+        entryFileNames: "assets/r20260611-[name].js",
         assetFileNames: (assetInfo) => {
           if (assetInfo.name?.endsWith(".css")) return "assets/[name][extname]";
           return "assets/[name]-[hash][extname]";
