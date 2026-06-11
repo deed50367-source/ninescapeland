@@ -23,19 +23,19 @@ AddType text/plain .txt
   # Stale HTML from previous deployments may request old app/vendor chunks.
   # Send those requests to the current dated bundles so old route tables cannot
   # keep returning a blank main page while floating widgets still appear.
-  RewriteRule ^assets/index(?:-[A-Za-z0-9_-]+)?\.js$ /assets/r20260611-app.js [L]
-  RewriteRule ^assets/app(?:-[A-Za-z0-9_-]+)?\.js$ /assets/r20260611-app.js [L]
-  RewriteRule ^assets/vendor(?:-[A-Za-z0-9_-]+)?\.js$ /assets/r20260611-vendor.js [L]
-  RewriteRule ^assets/deps(?:-[A-Za-z0-9_-]+)?\.js$ /assets/r20260611-deps.js [L]
-  RewriteRule ^assets/ui(?:-[A-Za-z0-9_-]+)?\.js$ /assets/r20260611-ui.js [L]
-  RewriteRule ^assets/i18n(?:-[A-Za-z0-9_-]+)?\.js$ /assets/r20260611-i18n.js [L]
-  RewriteRule ^assets/query(?:-[A-Za-z0-9_-]+)?\.js$ /assets/r20260611-query.js [L]
-  RewriteRule ^assets/motion(?:-[A-Za-z0-9_-]+)?\.js$ /assets/r20260611-motion.js [L]
-  RewriteRule ^assets/helmet(?:-[A-Za-z0-9_-]+)?\.js$ /assets/r20260611-helmet.js [L]
-  RewriteRule ^assets/supabase(?:-[A-Za-z0-9_-]+)?\.js$ /assets/r20260611-supabase.js [L]
-  RewriteRule ^assets/editor(?:-[A-Za-z0-9_-]+)?\.js$ /assets/r20260611-editor.js [L]
-  RewriteRule ^assets/exceljs(?:-[A-Za-z0-9_-]+)?\.js$ /assets/r20260611-exceljs.js [L]
-  RewriteRule ^assets/charts(?:-[A-Za-z0-9_-]+)?\.js$ /assets/r20260611-charts.js [L]
+  RewriteRule ^assets/index(?:-[A-Za-z0-9_-]+)?\.js$ /assets/r20260611b-app.js [L]
+  RewriteRule ^assets/app(?:-[A-Za-z0-9_-]+)?\.js$ /assets/r20260611b-app.js [L]
+  RewriteRule ^assets/vendor(?:-[A-Za-z0-9_-]+)?\.js$ /assets/r20260611b-vendor.js [L]
+  RewriteRule ^assets/deps(?:-[A-Za-z0-9_-]+)?\.js$ /assets/r20260611b-deps.js [L]
+  RewriteRule ^assets/ui(?:-[A-Za-z0-9_-]+)?\.js$ /assets/r20260611b-ui.js [L]
+  RewriteRule ^assets/i18n(?:-[A-Za-z0-9_-]+)?\.js$ /assets/r20260611b-i18n.js [L]
+  RewriteRule ^assets/query(?:-[A-Za-z0-9_-]+)?\.js$ /assets/r20260611b-query.js [L]
+  RewriteRule ^assets/motion(?:-[A-Za-z0-9_-]+)?\.js$ /assets/r20260611b-motion.js [L]
+  RewriteRule ^assets/helmet(?:-[A-Za-z0-9_-]+)?\.js$ /assets/r20260611b-helmet.js [L]
+  RewriteRule ^assets/supabase(?:-[A-Za-z0-9_-]+)?\.js$ /assets/r20260611b-supabase.js [L]
+  RewriteRule ^assets/editor(?:-[A-Za-z0-9_-]+)?\.js$ /assets/r20260611b-editor.js [L]
+  RewriteRule ^assets/exceljs(?:-[A-Za-z0-9_-]+)?\.js$ /assets/r20260611b-exceljs.js [L]
+  RewriteRule ^assets/charts(?:-[A-Za-z0-9_-]+)?\.js$ /assets/r20260611b-charts.js [L]
 
   # SPA fallback ONLY for known dynamic route patterns (blog posts, dynamic products, locations, admin)
   RewriteCond %{REQUEST_FILENAME} !-f

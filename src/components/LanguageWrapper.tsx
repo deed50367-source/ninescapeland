@@ -19,7 +19,7 @@ export const LanguageWrapper = ({ defaultLang }: LanguageWrapperProps) => {
   const { i18n } = useTranslation();
   const navigate = useNavigate();
   const location = useLocation();
-  const [isLanguageReady, setIsLanguageReady] = useState(false);
+  const [isLanguageReady, setIsLanguageReady] = useState(true);
 
   // Determine current language: use defaultLang for root routes, otherwise use URL param
   const currentLang = defaultLang || lang;
@@ -28,23 +28,26 @@ export const LanguageWrapper = ({ defaultLang }: LanguageWrapperProps) => {
   useEffect(() => {
     const loadLanguage = async () => {
       if (currentLang && supportedLangs.includes(currentLang)) {
-        setIsLanguageReady(false);
-        
-        // Only change language if different
-        if (i18n.language !== currentLang) {
-          await i18n.changeLanguage(currentLang);
+        const needsRemoteBundle = currentLang !== "en" && !i18n.hasResourceBundle(currentLang, "translation");
+        if (needsRemoteBundle) setIsLanguageReady(false);
+
+        try {
+          if (i18n.language !== currentLang) {
+            await i18n.changeLanguage(currentLang);
+          }
+
+          if (needsRemoteBundle) {
+            await i18n.loadLanguages(currentLang);
+          }
+
+          const langConfig = languages.find((l) => l.code === currentLang);
+          document.documentElement.dir = langConfig?.rtl ? "rtl" : "ltr";
+          document.documentElement.lang = currentLang;
+        } catch (error) {
+          console.error("Language bundle failed to load:", error);
+        } finally {
+          setIsLanguageReady(true);
         }
-        
-        // Ensure the language bundle is loaded
-        if (!i18n.hasResourceBundle(currentLang, 'translation')) {
-          await i18n.loadLanguages(currentLang);
-        }
-        
-        const langConfig = languages.find((l) => l.code === currentLang);
-        document.documentElement.dir = langConfig?.rtl ? "rtl" : "ltr";
-        document.documentElement.lang = currentLang;
-        
-        setIsLanguageReady(true);
       } else {
         setIsLanguageReady(true);
       }
