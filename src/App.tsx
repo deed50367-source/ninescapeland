@@ -7,7 +7,6 @@ import { BrowserRouter, Routes, Route, Navigate, useLocation } from "react-route
 import { ScrollToTop } from "@/components/ScrollToTop";
 import { LanguageWrapper } from "@/components/LanguageWrapper";
 import PageLoader from "@/components/PageLoader";
-import PWAPrompt from "@/components/PWAPrompt";
 import AppErrorBoundary from "@/components/AppErrorBoundary";
 
 // Resilient lazy: if a chunk fails to load (e.g. Hostinger 429), render nothing
@@ -167,7 +166,6 @@ const App = () => (
             </Routes>
           </Suspense>
         </AppErrorBoundary>
-        <PWAPrompt />
         <Suspense fallback={null}>
           <LiveChat />
           <RecentInquiryNotification />
