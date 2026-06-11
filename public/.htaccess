@@ -23,6 +23,7 @@ AddType text/plain .txt
   # Stale HTML from previous deployments may request old app/vendor chunks.
   # Send those requests to the current dated bundles so old route tables cannot
   # keep returning a blank main page while floating widgets still appear.
+  RewriteRule ^assets/index(?:-[A-Za-z0-9_-]+)?\.js$ /assets/r20260611-app.js [L]
   RewriteRule ^assets/app(?:-[A-Za-z0-9_-]+)?\.js$ /assets/r20260611-app.js [L]
   RewriteRule ^assets/vendor(?:-[A-Za-z0-9_-]+)?\.js$ /assets/r20260611-vendor.js [L]
   RewriteRule ^assets/deps(?:-[A-Za-z0-9_-]+)?\.js$ /assets/r20260611-deps.js [L]

@@ -153,6 +153,14 @@
       (function () {
         if (!('serviceWorker' in navigator) || !('caches' in window)) return;
         if (window.top !== window.self) return;
+        function allSettled(promises) {
+          return Promise.all(promises.map(function (promise) {
+            return Promise.resolve(promise).then(
+              function (value) { return { status: 'fulfilled', value: value }; },
+              function (reason) { return { status: 'rejected', reason: reason }; }
+            );
+          }));
+        }
         var key = '__ninescape_sw_cache_cleanup_v2';
         try {
           if (sessionStorage.getItem(key) === '1') return;
@@ -161,10 +169,10 @@
         window.addEventListener('load', function () {
           Promise.all([
             navigator.serviceWorker.getRegistrations().then(function (regs) {
-              return Promise.allSettled(regs.map(function (reg) { return reg.unregister(); }));
+              return allSettled(regs.map(function (reg) { return reg.unregister(); }));
             }),
             caches.keys().then(function (names) {
-              return Promise.allSettled(names.filter(function (name) {
+              return allSettled(names.filter(function (name) {
                 return /workbox|precache|runtime|ninescape|vite-pwa|offline/i.test(name);
               }).map(function (name) { return caches.delete(name); }));
             })
