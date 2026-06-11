@@ -1,4 +1,4 @@
-import { Suspense, lazy } from "react";
+import { Suspense, lazy, type ComponentType } from "react";
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -12,8 +12,9 @@ import AppErrorBoundary from "@/components/AppErrorBoundary";
 
 const RecentInquiryNotification = lazy(() => import("@/components/RecentInquiryNotification"));
 const LiveChat = lazy(() =>
-  import("@/components/LiveChat").then((module) => ({
-    default: module.LiveChat ?? module.default,
+  import("@/components/LiveChat").then((module) => {
+    const liveChatModule = module as typeof module & { default?: ComponentType };
+    return { default: liveChatModule.LiveChat ?? liveChatModule.default! };
   }))
 );
 
