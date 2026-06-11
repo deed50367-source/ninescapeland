@@ -52,26 +52,19 @@ window.addEventListener("error", (event) => {
   }
 });
 
-// iOS Safari: Clear stale SW caches that may cause blank screens after deploy
+// Retire the old PWA service worker. It cached navigations and JS/CSS on the
+// live domain, which can leave repeat visitors with stale chunks and a blank
+// page after deployment.
 if ("serviceWorker" in navigator) {
-  navigator.serviceWorker.ready.then((reg) => {
-    // If the page is controlled but root element is empty after 5s, force SW reset
-    setTimeout(() => {
-      const root = document.getElementById("root");
-      if (root && root.children.length <= 1 && !root.querySelector("[data-reactroot]")) {
-        // Still showing the initial loader — likely a stale cache issue
-        console.warn("Possible stale SW cache detected, clearing caches");
-        if ("caches" in window) {
-          caches.keys().then((names) => {
-            names.forEach((name) => caches.delete(name));
-          });
-        }
-        reg.unregister().then(() => {
-          window.location.reload();
-        });
+  navigator.serviceWorker.getRegistrations()
+    .then((registrations) => Promise.all(registrations.map((reg) => reg.unregister())))
+    .then(() => {
+      if ("caches" in window) {
+        return caches.keys().then((names) => Promise.all(names.map((name) => caches.delete(name))));
       }
-    }, 5000);
-  }).catch(() => { /* no SW active, nothing to do */ });
+      return undefined;
+    })
+    .catch(() => { /* no SW active, nothing to do */ });
 }
 
 createRoot(document.getElementById("root")!).render(
