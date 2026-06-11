@@ -37,6 +37,10 @@ const GamifiedAttractionsManufacturer = lazy(() => import("./pages/GamifiedAttra
 const CustomIndoorPlaygroundCost = lazy(() => import("./pages/CustomIndoorPlaygroundCost"));
 const ThemedIndoorPlaygroundDesign = lazy(() => import("./pages/ThemedIndoorPlaygroundDesign"));
 const SensoryInclusivePlay = lazy(() => import("./pages/SensoryInclusivePlay"));
+const IndoorPEEquipmentForSchools = lazy(() => import("./pages/IndoorPEEquipmentForSchools"));
+const MontessoriIndoorPlaygroundDesign = lazy(() => import("./pages/MontessoriIndoorPlaygroundDesign"));
+const HomeschoolCoopIndoorPlay = lazy(() => import("./pages/HomeschoolCoopIndoorPlay"));
+const IndoorSummerCampPlayground = lazy(() => import("./pages/IndoorSummerCampPlayground"));
 const IAAPAAsia2026 = lazy(() => import("./pages/IAAPAAsia2026"));
 const IndoorPlaygroundROIUK = lazy(() => import("./pages/IndoorPlaygroundROIUK"));
 const IndoorPlaygroundROICanada = lazy(() => import("./pages/IndoorPlaygroundROICanada"));
