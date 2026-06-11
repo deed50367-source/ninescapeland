@@ -149,6 +149,33 @@
         .page-loader { background: #0a0a0a; }
       }
     </style>
+    <script>
+      (function () {
+        if (!('serviceWorker' in navigator) || !('caches' in window)) return;
+        if (window.top !== window.self) return;
+        var key = '__ninescape_sw_cache_cleanup_v2';
+        try {
+          if (sessionStorage.getItem(key) === '1') return;
+          sessionStorage.setItem(key, '1');
+        } catch (e) {}
+        window.addEventListener('load', function () {
+          Promise.all([
+            navigator.serviceWorker.getRegistrations().then(function (regs) {
+              return Promise.allSettled(regs.map(function (reg) { return reg.unregister(); }));
+            }),
+            caches.keys().then(function (names) {
+              return Promise.allSettled(names.filter(function (name) {
+                return /workbox|precache|runtime|ninescape|vite-pwa|offline/i.test(name);
+              }).map(function (name) { return caches.delete(name); }));
+            })
+          ]).then(function (results) {
+            var hadRegistrations = results[0] && results[0].value && results[0].value.length > 0;
+            var hadCaches = results[1] && results[1].value && results[1].value.length > 0;
+            if (hadRegistrations || hadCaches) window.location.replace(window.location.href);
+          }).catch(function () {});
+        });
+      })();
+    </script>
   </head>
 
   <body>

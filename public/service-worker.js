@@ -1,7 +1,5 @@
 // Retired app-shell service worker.
-// Old Workbox/PWA caches can keep repeat visitors on a stale blank page. This
-// replacement worker activates once, clears only app-shell caches, reloads open
-// tabs from the network, then unregisters itself even if cleanup partially fails.
+// Kept for one release in case an older PWA build registered this filename.
 function isAppShellCache(name) {
   const isWorkboxCache = /(^|-)precache-v\d+-|(^|-)runtime-|(^|-)googleAnalytics-/.test(name);
   const isNinescapeCache = /ninescape|vite-pwa|workbox|offline/i.test(name);
