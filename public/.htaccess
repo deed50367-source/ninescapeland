@@ -17,20 +17,20 @@ AddType text/plain .txt
   # Serve prerendered static HTML if it exists (e.g., /about-us → /about-us/index.html)
   RewriteCond %{REQUEST_FILENAME} !-f
   RewriteCond %{REQUEST_FILENAME} !-d
-  RewriteCond %{DOCUMENT_ROOT}%{REQUEST_URI}/index.html -f
+  RewriteCond %{DOCUMENT_ROOT}/$1/index.html -f
   RewriteRule ^(.*)$ /$1/index.html [L]
 
   # SPA fallback ONLY for known dynamic route patterns (blog posts, dynamic products, locations, admin)
   RewriteCond %{REQUEST_FILENAME} !-f
   RewriteCond %{REQUEST_FILENAME} !-d
-  RewriteCond %{DOCUMENT_ROOT}%{REQUEST_URI}/index.html !-f
+  RewriteCond %{DOCUMENT_ROOT}/$1/index.html !-f
   RewriteCond %{REQUEST_URI} ^/(blog/.+|products/.+|locations/.+|market/.+|admin|ar/(blog|products|locations|market)/.+|es/(blog|products|locations|market)/.+|de/(blog|products|locations|market)/.+|fr/(blog|products|locations|market)/.+|pt/(blog|products|locations|market)/.+) [NC]
   RewriteRule ^ index.html [L]
 
   # Everything else that doesn't match a file or prerendered page → 404
   RewriteCond %{REQUEST_FILENAME} !-f
   RewriteCond %{REQUEST_FILENAME} !-d
-  RewriteCond %{DOCUMENT_ROOT}%{REQUEST_URI}/index.html !-f
+  RewriteCond %{DOCUMENT_ROOT}/$1/index.html !-f
   RewriteRule ^ - [R=404,L]
 </IfModule>
 
