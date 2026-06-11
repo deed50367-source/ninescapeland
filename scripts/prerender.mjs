@@ -193,6 +193,14 @@ async function prerenderRoute(browser, route) {
     // Get the full rendered HTML
     let html = await page.content();
 
+    // Hostinger can rate-limit pages that fan out dozens of concurrent chunk requests.
+    // During prerender, Vite injects <link rel="modulepreload"> tags for every lazy chunk
+    // touched by the route; saving those tags makes later visitors request all chunks at once
+    // and can produce HTTP 429 blank pages. Keep the rendered HTML, but let the browser load
+    // chunks naturally from the module graph instead of preloading them all in parallel.
+    html = html.replace(/\s*<link\b[^>]*\brel=["']modulepreload["'][^>]*>/gi, "");
+    html = html.replace(/\s*<link\b[^>]*\brel=["'][^"']*\bmodulepreload\b[^"']*["'][^>]*>/gi, "");
+
     // ── Strip Framer Motion's initial inline styles ──
     // Prerender captures the pre-animation state (opacity:0, transform:translateY/X/scale)
     // which SEO scanners flag as "hidden text" (Google Spam Policy #5). After hydration

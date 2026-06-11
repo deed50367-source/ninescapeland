@@ -140,8 +140,8 @@ export default defineConfig(({ mode }) => ({
             },
           },
         ],
-        // Precache critical assets
-        globPatterns: ["**/*.{js,css,html,ico,png,svg,woff2}"],
+        // Avoid preloading/caching every route chunk at once on constrained shared hosting.
+        globPatterns: ["index.html", "assets/index-*.css", "favicon.ico", "favicon.png", "logo.png"],
         // Skip waiting and claim clients immediately
         skipWaiting: true,
         clientsClaim: true,
@@ -202,6 +202,10 @@ export default defineConfig(({ mode }) => ({
     ],
   },
   build: {
+    modulePreload: {
+      polyfill: false,
+      resolveDependencies: () => [],
+    },
     // Enable code splitting
     rollupOptions: {
       output: {
