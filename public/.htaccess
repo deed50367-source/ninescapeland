@@ -20,6 +20,22 @@ AddType text/plain .txt
   RewriteCond %{DOCUMENT_ROOT}/$1/index.html -f
   RewriteRule ^(.*)$ /$1/index.html [L]
 
+  # Stale HTML from previous deployments may request old hashed app/vendor chunks.
+  # Send those requests to the current stable bundle names instead of returning an
+  # outdated route table or a missing chunk, which appears as a blank page.
+  RewriteRule ^assets/app-[A-Za-z0-9_-]+\.js$ /assets/app.js [L]
+  RewriteRule ^assets/vendor-[A-Za-z0-9_-]+\.js$ /assets/vendor.js [L]
+  RewriteRule ^assets/deps-[A-Za-z0-9_-]+\.js$ /assets/deps.js [L]
+  RewriteRule ^assets/ui-[A-Za-z0-9_-]+\.js$ /assets/ui.js [L]
+  RewriteRule ^assets/i18n-[A-Za-z0-9_-]+\.js$ /assets/i18n.js [L]
+  RewriteRule ^assets/query-[A-Za-z0-9_-]+\.js$ /assets/query.js [L]
+  RewriteRule ^assets/motion-[A-Za-z0-9_-]+\.js$ /assets/motion.js [L]
+  RewriteRule ^assets/helmet-[A-Za-z0-9_-]+\.js$ /assets/helmet.js [L]
+  RewriteRule ^assets/supabase-[A-Za-z0-9_-]+\.js$ /assets/supabase.js [L]
+  RewriteRule ^assets/editor-[A-Za-z0-9_-]+\.js$ /assets/editor.js [L]
+  RewriteRule ^assets/exceljs-[A-Za-z0-9_-]+\.js$ /assets/exceljs.js [L]
+  RewriteRule ^assets/charts-[A-Za-z0-9_-]+\.js$ /assets/charts.js [L]
+
   # SPA fallback ONLY for known dynamic route patterns (blog posts, dynamic products, locations, admin)
   RewriteCond %{REQUEST_FILENAME} !-f
   RewriteCond %{REQUEST_FILENAME} !-d
@@ -68,10 +84,11 @@ ErrorDocument 404 /404/index.html
   ExpiresByType application/font-woff "access plus 1 year"
   ExpiresByType application/font-woff2 "access plus 1 year"
   
-  # JS/CSS with hash in filename - long cache (1 year)
-  ExpiresByType text/css "access plus 1 year"
-  ExpiresByType application/javascript "access plus 1 year"
-  ExpiresByType text/javascript "access plus 1 year"
+  # JS/CSS must revalidate because this app now uses stable bundle filenames to
+  # avoid stale route tables on the self-hosted domain.
+  ExpiresByType text/css "access plus 0 seconds"
+  ExpiresByType application/javascript "access plus 0 seconds"
+  ExpiresByType text/javascript "access plus 0 seconds"
   
   # Documents
   ExpiresByType application/pdf "access plus 1 month"
@@ -83,9 +100,11 @@ ErrorDocument 404 /404/index.html
 
 # Cache-Control headers for hashed assets
 <IfModule mod_headers.c>
-  # Immutable cache for hashed assets (JS/CSS chunks)
+  # Revalidate JS/CSS on every visit; stale route bundles caused blank pages.
   <FilesMatch "\.(js|css)$">
-    Header set Cache-Control "public, max-age=31536000, immutable"
+    Header set Cache-Control "no-cache, no-store, must-revalidate"
+    Header set Pragma "no-cache"
+    Header set Expires 0
   </FilesMatch>
   
   # Long cache for images and fonts

@@ -107,10 +107,17 @@ export default defineConfig(({ mode }) => ({
           }
           return undefined;
         },
-        // Use content hash for better caching
-        chunkFileNames: "assets/[name]-[hash].js",
-        entryFileNames: "assets/[name]-[hash].js",
-        assetFileNames: "assets/[name]-[hash].[ext]",
+        // Use stable JS/CSS filenames on the self-hosted domain. Hostinger/LiteSpeed
+        // and visitor browsers can keep old HTML for too long; if that stale HTML
+        // points at an old hashed app chunk, newly added routes render blank while
+        // global floating widgets still mount. Stable names + no-cache headers let
+        // every navigation fetch the current app code.
+        chunkFileNames: "assets/[name].js",
+        entryFileNames: "assets/[name].js",
+        assetFileNames: (assetInfo) => {
+          if (assetInfo.name?.endsWith(".css")) return "assets/[name][extname]";
+          return "assets/[name]-[hash][extname]";
+        },
       },
     },
 
