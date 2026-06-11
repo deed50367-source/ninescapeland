@@ -219,12 +219,10 @@ export default defineConfig(({ mode }) => ({
 
           // ---- node_modules: split a few stable vendor chunks ----
           if (id.includes("node_modules")) {
-            if (
-              id.includes("/react/") ||
-              id.includes("/react-dom/") ||
-              id.includes("/react-router") ||
-              id.includes("/scheduler/")
-            ) {
+            // Match only the real React packages. A loose `/react/` match also
+            // catches packages like `@tiptap/react`, which creates a circular
+            // dependency between vendor/deps chunks and crashes the live page.
+            if (/node_modules\/(react|react-dom|react-router|react-router-dom|scheduler)\//.test(id)) {
               return "vendor";
             }
             if (id.includes("@radix-ui") || id.includes("lucide-react") || id.includes("cmdk") || id.includes("vaul")) {
