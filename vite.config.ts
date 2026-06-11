@@ -141,7 +141,7 @@ export default defineConfig(({ mode }) => ({
           },
         ],
         // Avoid preloading/caching every route chunk at once on constrained shared hosting.
-        globPatterns: ["index.html", "assets/index-*.css", "favicon.ico", "favicon.png", "logo.png"],
+        globPatterns: ["index.html", "assets/*.css", "favicon.ico", "favicon.png", "logo.png"],
         // Skip waiting and claim clients immediately
         skipWaiting: true,
         clientsClaim: true,
