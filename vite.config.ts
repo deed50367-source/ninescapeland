@@ -107,11 +107,10 @@ export default defineConfig(({ mode }) => ({
           }
           return undefined;
         },
-        // Use a dated bundle suffix so browsers that cached the earlier stable
-        // app.js bundle cannot keep using a route table from before these pages
-        // were restored. The .htaccess rules below redirect older names here.
-        chunkFileNames: "assets/r20260611-[name].js",
-        entryFileNames: "assets/r20260611-[name].js",
+        // Use a dated bundle suffix so browsers that cached earlier app bundles
+        // cannot keep using a route table that clears these restored pages.
+        chunkFileNames: "assets/r20260611b-[name].js",
+        entryFileNames: "assets/r20260611b-[name].js",
         assetFileNames: (assetInfo) => {
           if (assetInfo.name?.endsWith(".css")) return "assets/[name][extname]";
           return "assets/[name]-[hash][extname]";

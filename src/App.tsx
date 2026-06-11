@@ -8,6 +8,10 @@ import { ScrollToTop } from "@/components/ScrollToTop";
 import { LanguageWrapper } from "@/components/LanguageWrapper";
 import PageLoader from "@/components/PageLoader";
 import AppErrorBoundary from "@/components/AppErrorBoundary";
+import IndoorPEEquipmentForSchools from "./pages/IndoorPEEquipmentForSchools";
+import MontessoriIndoorPlaygroundDesign from "./pages/MontessoriIndoorPlaygroundDesign";
+import HomeschoolCoopIndoorPlay from "./pages/HomeschoolCoopIndoorPlay";
+import IndoorSummerCampPlayground from "./pages/IndoorSummerCampPlayground";
 
 // Resilient lazy: if a chunk fails to load (e.g. Hostinger 429), render nothing
 // instead of crashing the whole app.
@@ -56,10 +60,6 @@ const SensoryInclusivePlay = lazy(() => import("./pages/SensoryInclusivePlay"));
 const IAAPAAsia2026 = lazy(() => import("./pages/IAAPAAsia2026"));
 const IndoorPlaygroundROIUK = lazy(() => import("./pages/IndoorPlaygroundROIUK"));
 const IndoorPlaygroundROICanada = lazy(() => import("./pages/IndoorPlaygroundROICanada"));
-const IndoorPEEquipmentForSchools = lazy(() => import("./pages/IndoorPEEquipmentForSchools"));
-const MontessoriIndoorPlaygroundDesign = lazy(() => import("./pages/MontessoriIndoorPlaygroundDesign"));
-const HomeschoolCoopIndoorPlay = lazy(() => import("./pages/HomeschoolCoopIndoorPlay"));
-const IndoorSummerCampPlayground = lazy(() => import("./pages/IndoorSummerCampPlayground"));
 const InvestmentOpportunity = lazy(() => import("./pages/InvestmentOpportunity"));
 const InvestmentROIPage = lazy(() => import("./pages/InvestmentROIPage"));
 const LocationPage = lazy(() => import("./pages/LocationPage"));
