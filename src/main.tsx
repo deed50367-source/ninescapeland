@@ -52,25 +52,47 @@ window.addEventListener("error", (event) => {
   }
 });
 
-// Retire the old PWA service worker. It cached navigations and JS/CSS on the
-// live domain, which can leave repeat visitors with stale chunks and a blank
-// page after deployment.
-if ("serviceWorker" in navigator) {
-  navigator.serviceWorker.getRegistrations()
-    .then((registrations) => Promise.all(registrations.map((reg) => reg.unregister())))
-    .then(() => {
-      if ("caches" in window) {
-        return caches.keys().then((names) => Promise.all(names.map((name) => caches.delete(name))));
-      }
-      return undefined;
-    })
-    .catch(() => { /* no SW active, nothing to do */ });
-}
+const renderApp = () => {
+  createRoot(document.getElementById("root")!).render(
+    <React.StrictMode>
+      <HelmetProvider>
+        <App />
+      </HelmetProvider>
+    </React.StrictMode>
+  );
+};
 
-createRoot(document.getElementById("root")!).render(
-  <React.StrictMode>
-    <HelmetProvider>
-      <App />
-    </HelmetProvider>
-  </React.StrictMode>
-);
+// Retire the old PWA service worker before React mounts. Returning visitors can
+// be controlled by a stale Workbox worker that serves an old app shell: LiveChat
+// appears, but the route content stays blank. If we find stale SW/cache state,
+// remove it first and force one clean network reload.
+const retireStaleAppShell = async () => {
+  let cleaned = false;
+
+  if ("serviceWorker" in navigator) {
+    const registrations = await navigator.serviceWorker.getRegistrations();
+    if (registrations.length > 0) cleaned = true;
+    await Promise.allSettled(registrations.map((reg) => reg.unregister()));
+  }
+
+  if ("caches" in window) {
+    const names = await caches.keys();
+    const appCaches = names.filter((name) => /workbox|precache|runtime|ninescape|vite-pwa|offline/i.test(name));
+    if (appCaches.length > 0) cleaned = true;
+    await Promise.allSettled(appCaches.map((name) => caches.delete(name)));
+  }
+
+  return cleaned;
+};
+
+retireStaleAppShell()
+  .then((cleaned) => {
+    const reloadKey = "__ninescape_stale_shell_cleaned";
+    if (cleaned && sessionStorage.getItem(reloadKey) !== "1") {
+      sessionStorage.setItem(reloadKey, "1");
+      window.location.replace(window.location.href);
+      return;
+    }
+    renderApp();
+  })
+  .catch(() => renderApp());
