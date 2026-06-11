@@ -10,13 +10,25 @@ import PageLoader from "@/components/PageLoader";
 import PWAPrompt from "@/components/PWAPrompt";
 import AppErrorBoundary from "@/components/AppErrorBoundary";
 
-const RecentInquiryNotification = lazy(() => import("@/components/RecentInquiryNotification"));
-const LiveChat = lazy(() =>
+// Resilient lazy: if a chunk fails to load (e.g. Hostinger 429), render nothing
+// instead of crashing the whole app.
+const safeLazy = <T,>(loader: () => Promise<{ default: ComponentType<T> }>) =>
+  lazy(() =>
+    loader().catch((err) => {
+      console.error("[lazy chunk failed]", err);
+      return { default: (() => null) as unknown as ComponentType<T> };
+    })
+  );
+
+const RecentInquiryNotification = safeLazy(() => import("@/components/RecentInquiryNotification"));
+const LiveChat = safeLazy(() =>
   import("@/components/LiveChat").then((module) => {
     const liveChatModule = module as typeof module & { default?: ComponentType };
-    return { default: liveChatModule.LiveChat ?? liveChatModule.default! };
+    const Comp = liveChatModule.LiveChat ?? liveChatModule.default;
+    return { default: (Comp ?? (() => null)) as ComponentType };
   })
 );
+
 
 // Lazy load pages for code splitting
 const Index = lazy(() => import("./pages/Index"));

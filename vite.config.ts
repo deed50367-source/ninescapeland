@@ -209,38 +209,52 @@ export default defineConfig(({ mode }) => ({
     // Enable code splitting
     rollupOptions: {
       output: {
-        // Manual chunks for better caching
-        manualChunks: {
-          // Vendor chunk - core libraries that rarely change
-          vendor: ["react", "react-dom", "react-router-dom"],
-          // UI components - shadcn/radix components
-          ui: [
-            "@radix-ui/react-dialog",
-            "@radix-ui/react-dropdown-menu",
-            "@radix-ui/react-tabs",
-            "@radix-ui/react-accordion",
-            "@radix-ui/react-select",
-            "@radix-ui/react-tooltip",
-            "@radix-ui/react-popover",
-          ],
-          // Query and state management
-          query: ["@tanstack/react-query"],
-          // Animation library
-          motion: ["framer-motion"],
-          // i18n
-          // i18n libraries - keep lightweight, translations loaded on demand
-          i18n: ["i18next", "react-i18next", "i18next-browser-languagedetector", "i18next-http-backend"],
-          // Supabase
-          supabase: ["@supabase/supabase-js"],
-          // Icons - prevent duplication across lazy chunks
-          icons: ["lucide-react"],
-          // Rich text editor
-          editor: [
-            "@tiptap/react",
-            "@tiptap/starter-kit",
-            "@tiptap/extension-link",
-            "@tiptap/extension-image",
-          ],
+        // IMPORTANT: Hostinger shared hosting rate-limits parallel requests
+        // (returns HTTP 429 when too many JS chunks load at once). We
+        // deliberately consolidate chunks here to keep the request count low.
+        manualChunks(id) {
+          if (!id.includes("node_modules") && !id.includes("/src/")) {
+            return undefined;
+          }
+
+          // ---- node_modules: split a few stable vendor chunks ----
+          if (id.includes("node_modules")) {
+            if (
+              id.includes("/react/") ||
+              id.includes("/react-dom/") ||
+              id.includes("/react-router") ||
+              id.includes("/scheduler/")
+            ) {
+              return "vendor";
+            }
+            if (id.includes("@radix-ui") || id.includes("lucide-react") || id.includes("cmdk") || id.includes("vaul")) {
+              return "ui";
+            }
+            if (id.includes("framer-motion")) return "motion";
+            if (id.includes("@supabase")) return "supabase";
+            if (id.includes("i18next") || id.includes("react-i18next")) return "i18n";
+            if (id.includes("@tanstack")) return "query";
+            if (id.includes("@tiptap") || id.includes("prosemirror")) return "editor";
+            if (id.includes("recharts") || id.includes("d3-")) return "charts";
+            if (id.includes("exceljs")) return "exceljs";
+            if (id.includes("react-helmet")) return "helmet";
+            return "deps";
+          }
+
+          // ---- src/: collapse lazy route/component chunks into a handful ----
+          if (id.includes("/src/pages/admin/") || id.includes("/src/components/admin/")) {
+            return "admin";
+          }
+          if (id.includes("/src/pages/")) {
+            return "pages";
+          }
+          if (id.includes("/src/components/")) {
+            return "components";
+          }
+          if (id.includes("/src/hooks/") || id.includes("/src/lib/") || id.includes("/src/utils/")) {
+            return "shared";
+          }
+          return undefined;
         },
         // Use content hash for better caching
         chunkFileNames: "assets/[name]-[hash].js",
@@ -248,8 +262,9 @@ export default defineConfig(({ mode }) => ({
         assetFileNames: "assets/[name]-[hash].[ext]",
       },
     },
+
     // Optimize chunk size
-    chunkSizeWarningLimit: 500,
+    chunkSizeWarningLimit: 1500,
     // Enable source maps for production debugging
     sourcemap: false,
     // Minification
