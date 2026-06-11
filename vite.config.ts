@@ -239,18 +239,11 @@ export default defineConfig(({ mode }) => ({
             return "deps";
           }
 
-          // ---- src/: collapse lazy route/component chunks into a handful ----
-          if (id.includes("/src/pages/admin/") || id.includes("/src/components/admin/")) {
-            return "admin";
-          }
-          if (id.includes("/src/pages/")) {
-            return "pages";
-          }
-          if (id.includes("/src/components/")) {
-            return "components";
-          }
-          if (id.includes("/src/hooks/") || id.includes("/src/lib/") || id.includes("/src/utils/")) {
-            return "shared";
+          // ---- src/: keep business code in one chunk ----
+          // This avoids circular lazy chunks such as components -> shared -> components
+          // and keeps Hostinger from rate-limiting many parallel route requests.
+          if (id.includes("/src/")) {
+            return "app";
           }
           return undefined;
         },
