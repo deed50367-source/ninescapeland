@@ -15,7 +15,7 @@ const LiveChat = lazy(() =>
   import("@/components/LiveChat").then((module) => {
     const liveChatModule = module as typeof module & { default?: ComponentType };
     return { default: liveChatModule.LiveChat ?? liveChatModule.default! };
-  }))
+  })
 );
 
 // Lazy load pages for code splitting
