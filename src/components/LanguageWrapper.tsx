@@ -1,5 +1,5 @@
 import { useEffect, useState, Suspense } from "react";
-import { useParams, useNavigate, useLocation, Outlet } from "react-router-dom";
+import { useParams, useNavigate, useLocation, Outlet, Navigate } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { Helmet } from "react-helmet-async";
 import { languages } from "@/i18n/config";
@@ -91,7 +91,7 @@ export const LanguageWrapper = ({ defaultLang }: LanguageWrapperProps) => {
 
   // For non-default language routes, validate the lang param
   if (!defaultLang && lang && !nonEnglishLangs.includes(lang)) {
-    return null; // Will be handled by 404 or redirect
+    return <Navigate to="/404" replace />;
   }
 
   // Show loader while language bundle is loading

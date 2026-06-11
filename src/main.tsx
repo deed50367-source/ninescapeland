@@ -53,7 +53,10 @@ window.addEventListener("error", (event) => {
 });
 
 const renderApp = () => {
-  createRoot(document.getElementById("root")!).render(
+  const root = document.getElementById("root");
+  if (!root) return;
+
+  createRoot(root).render(
     <React.StrictMode>
       <HelmetProvider>
         <App />
@@ -61,6 +64,16 @@ const renderApp = () => {
     </React.StrictMode>
   );
 };
+
+const allSettledCompat = <T,>(promises: Promise<T>[]) =>
+  Promise.all(
+    promises.map((promise) =>
+      Promise.resolve(promise).then(
+        (value) => ({ status: "fulfilled" as const, value }),
+        (reason) => ({ status: "rejected" as const, reason })
+      )
+    )
+  );
 
 // Retire the old PWA service worker before React mounts. Returning visitors can
 // be controlled by a stale Workbox worker that serves an old app shell: LiveChat
@@ -76,14 +89,14 @@ const retireStaleAppShell = async () => {
   if ("serviceWorker" in navigator) {
     const registrations = await navigator.serviceWorker.getRegistrations();
     if (registrations.length > 0) cleaned = true;
-    await Promise.allSettled(registrations.map((reg) => reg.unregister()));
+    await allSettledCompat(registrations.map((reg) => reg.unregister()));
   }
 
   if ("caches" in window) {
     const names = await caches.keys();
     const appCaches = names.filter((name) => /workbox|precache|runtime|ninescape|vite-pwa|offline/i.test(name));
     if (appCaches.length > 0) cleaned = true;
-    await Promise.allSettled(appCaches.map((name) => caches.delete(name)));
+    await allSettledCompat(appCaches.map((name) => caches.delete(name)));
   }
 
   return cleaned;
