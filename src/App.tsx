@@ -11,7 +11,11 @@ import PWAPrompt from "@/components/PWAPrompt";
 import AppErrorBoundary from "@/components/AppErrorBoundary";
 
 const RecentInquiryNotification = lazy(() => import("@/components/RecentInquiryNotification"));
-const LiveChat = lazy(() => import("@/components/LiveChat").then(m => ({ default: m.LiveChat })));
+const LiveChat = lazy(() =>
+  import("@/components/LiveChat").then((module) => ({
+    default: module.LiveChat ?? module.default,
+  }))
+);
 
 // Lazy load pages for code splitting
 const Index = lazy(() => import("./pages/Index"));
