@@ -56,6 +56,10 @@ const SensoryInclusivePlay = lazy(() => import("./pages/SensoryInclusivePlay"));
 const IAAPAAsia2026 = lazy(() => import("./pages/IAAPAAsia2026"));
 const IndoorPlaygroundROIUK = lazy(() => import("./pages/IndoorPlaygroundROIUK"));
 const IndoorPlaygroundROICanada = lazy(() => import("./pages/IndoorPlaygroundROICanada"));
+const IndoorPEEquipmentForSchools = lazy(() => import("./pages/IndoorPEEquipmentForSchools"));
+const MontessoriIndoorPlaygroundDesign = lazy(() => import("./pages/MontessoriIndoorPlaygroundDesign"));
+const HomeschoolCoopIndoorPlay = lazy(() => import("./pages/HomeschoolCoopIndoorPlay"));
+const IndoorSummerCampPlayground = lazy(() => import("./pages/IndoorSummerCampPlayground"));
 const InvestmentOpportunity = lazy(() => import("./pages/InvestmentOpportunity"));
 const InvestmentROIPage = lazy(() => import("./pages/InvestmentROIPage"));
 const LocationPage = lazy(() => import("./pages/LocationPage"));
@@ -115,6 +119,10 @@ const pageRoutes = (
     <Route path="iaapa-asia-2026-hong-kong" element={<IAAPAAsia2026 />} />
     <Route path="indoor-playground-roi-analysis-uk" element={<IndoorPlaygroundROIUK />} />
     <Route path="indoor-playground-roi-canada" element={<IndoorPlaygroundROICanada />} />
+    <Route path="indoor-pe-equipment-for-schools" element={<IndoorPEEquipmentForSchools />} />
+    <Route path="montessori-indoor-playground-design" element={<MontessoriIndoorPlaygroundDesign />} />
+    <Route path="homeschool-coop-indoor-play-solutions" element={<HomeschoolCoopIndoorPlay />} />
+    <Route path="indoor-summer-camp-playground-ideas" element={<IndoorSummerCampPlayground />} />
     <Route path="investment-opportunity" element={<InvestmentOpportunity />} />
     <Route path="investment-opportunity/:slug" element={<InvestmentROIPage />} />
     <Route path="locations/:slug" element={<LocationPage />} />
