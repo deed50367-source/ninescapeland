@@ -67,6 +67,10 @@ const renderApp = () => {
 // appears, but the route content stays blank. If we find stale SW/cache state,
 // remove it first and force one clean network reload.
 const retireStaleAppShell = async () => {
+  if (!import.meta.env.PROD || window.self !== window.top) {
+    return false;
+  }
+
   let cleaned = false;
 
   if ("serviceWorker" in navigator) {
@@ -85,7 +89,13 @@ const retireStaleAppShell = async () => {
   return cleaned;
 };
 
-retireStaleAppShell()
+const withTimeout = <T,>(promise: Promise<T>, fallback: T, timeoutMs = 2500) =>
+  Promise.race([
+    promise,
+    new Promise<T>((resolve) => window.setTimeout(() => resolve(fallback), timeoutMs)),
+  ]);
+
+withTimeout(retireStaleAppShell(), false)
   .then((cleaned) => {
     const reloadKey = "__ninescape_stale_shell_cleaned";
     if (cleaned) {
