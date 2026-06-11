@@ -141,7 +141,7 @@ export default defineConfig(({ mode }) => ({
           },
         ],
         // Avoid preloading/caching every route chunk at once on constrained shared hosting.
-        globPatterns: ["index.html", "assets/index-*.css", "favicon.ico", "favicon.png", "logo.png"],
+        globPatterns: ["index.html", "assets/*.css", "favicon.ico", "favicon.png", "logo.png"],
         // Skip waiting and claim clients immediately
         skipWaiting: true,
         clientsClaim: true,
@@ -219,12 +219,10 @@ export default defineConfig(({ mode }) => ({
 
           // ---- node_modules: split a few stable vendor chunks ----
           if (id.includes("node_modules")) {
-            if (
-              id.includes("/react/") ||
-              id.includes("/react-dom/") ||
-              id.includes("/react-router") ||
-              id.includes("/scheduler/")
-            ) {
+            // Match only the real React packages. A loose `/react/` match also
+            // catches packages like `@tiptap/react`, which creates a circular
+            // dependency between vendor/deps chunks and crashes the live page.
+            if (/node_modules\/(react|react-dom|react-router|react-router-dom|scheduler)\//.test(id)) {
               return "vendor";
             }
             if (id.includes("@radix-ui") || id.includes("lucide-react") || id.includes("cmdk") || id.includes("vaul")) {
@@ -241,18 +239,11 @@ export default defineConfig(({ mode }) => ({
             return "deps";
           }
 
-          // ---- src/: collapse lazy route/component chunks into a handful ----
-          if (id.includes("/src/pages/admin/") || id.includes("/src/components/admin/")) {
-            return "admin";
-          }
-          if (id.includes("/src/pages/")) {
-            return "pages";
-          }
-          if (id.includes("/src/components/")) {
-            return "components";
-          }
-          if (id.includes("/src/hooks/") || id.includes("/src/lib/") || id.includes("/src/utils/")) {
-            return "shared";
+          // ---- src/: keep business code in one chunk ----
+          // This avoids circular lazy chunks such as components -> shared -> components
+          // and keeps Hostinger from rate-limiting many parallel route requests.
+          if (id.includes("/src/")) {
+            return "app";
           }
           return undefined;
         },
