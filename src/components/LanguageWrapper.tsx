@@ -102,7 +102,7 @@ export const LanguageWrapper = ({ defaultLang }: LanguageWrapperProps) => {
   // Build hreflang alternate links from current path
   const getPathWithoutLang = () => {
     const pathname = location.pathname.replace(/\/$/, "") || "/";
-    if (!defaultLang && lang) {
+    if ((!defaultLang && lang) || nonEnglishLangs.some((code) => pathname === `/${code}` || pathname.startsWith(`/${code}/`))) {
       return pathname.replace(/^\/[a-z]{2}/, "") || "/";
     }
     return pathname;
