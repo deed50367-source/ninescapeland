@@ -88,10 +88,17 @@ const retireStaleAppShell = async () => {
 retireStaleAppShell()
   .then((cleaned) => {
     const reloadKey = "__ninescape_stale_shell_cleaned";
-    if (cleaned && sessionStorage.getItem(reloadKey) !== "1") {
-      sessionStorage.setItem(reloadKey, "1");
-      window.location.replace(window.location.href);
-      return;
+    if (cleaned) {
+      try {
+        if (sessionStorage.getItem(reloadKey) !== "1") {
+          sessionStorage.setItem(reloadKey, "1");
+          window.location.replace(window.location.href);
+          return;
+        }
+      } catch {
+        window.location.replace(window.location.href);
+        return;
+      }
     }
     renderApp();
   })
