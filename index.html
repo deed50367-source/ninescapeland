@@ -199,6 +199,29 @@
       </div>
     </div>
 
+    <script>
+      // Production failsafe: if a returning visitor still runs an old cached JS
+      // bundle, that bundle can wipe the prerendered page and leave only widgets.
+      // Keep a copy of the prerendered HTML and restore it if React blanks #root.
+      (function () {
+        var root = document.getElementById('root');
+        if (!root || !root.querySelector('main')) return;
+        var prerenderedRoot = root.innerHTML;
+        function restoreIfBlank() {
+          var currentRoot = document.getElementById('root');
+          if (!currentRoot || currentRoot.querySelector('main')) return;
+          var text = (currentRoot.textContent || '').trim();
+          if (text.length < 120) currentRoot.innerHTML = prerenderedRoot;
+        }
+        window.__ninescapeRestorePrerender = restoreIfBlank;
+        window.addEventListener('load', function () {
+          setTimeout(restoreIfBlank, 300);
+          setTimeout(restoreIfBlank, 1500);
+          setTimeout(restoreIfBlank, 3500);
+        });
+      })();
+    </script>
+
     <!-- SEO: Crawlable site navigation for search engines that don't execute JavaScript -->
     <noscript>
       <div style="max-width:1200px;margin:0 auto;padding:40px 20px;font-family:system-ui,sans-serif;line-height:1.8">
