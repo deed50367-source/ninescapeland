@@ -1,5 +1,5 @@
 import React from "react";
-import { createRoot } from "react-dom/client";
+import { createRoot, hydrateRoot } from "react-dom/client";
 import { HelmetProvider } from "react-helmet-async";
 import App from "./App.tsx";
 import "./index.css";
@@ -56,13 +56,26 @@ const renderApp = () => {
   const root = document.getElementById("root");
   if (!root) return;
 
-  createRoot(root).render(
+  const app = (
     <React.StrictMode>
       <HelmetProvider>
         <App />
       </HelmetProvider>
     </React.StrictMode>
   );
+
+  const hasPrerenderedApp = root.querySelector("main, header, footer, [data-reactroot]");
+
+  if (hasPrerenderedApp) {
+    try {
+      hydrateRoot(root, app);
+      return;
+    } catch (error) {
+      console.error("Hydration failed, falling back to client render:", error);
+    }
+  }
+
+  createRoot(root).render(app);
 };
 
 const allSettledCompat = <T,>(promises: Promise<T>[]) =>
@@ -75,10 +88,9 @@ const allSettledCompat = <T,>(promises: Promise<T>[]) =>
     )
   );
 
-// Retire the old PWA service worker before React mounts. Returning visitors can
-// be controlled by a stale Workbox worker that serves an old app shell: LiveChat
-// appears, but the route content stays blank. If we find stale SW/cache state,
-// remove it first and force one clean network reload.
+// Retire old PWA/app-shell caches after the page is already rendered. This must
+// not block React mounting, otherwise a slow/buggy browser cache API can leave
+// users staring at an empty #root.
 const retireStaleAppShell = async () => {
   if (!import.meta.env.PROD || window.self !== window.top) {
     return false;
@@ -108,8 +120,10 @@ const withTimeout = <T,>(promise: Promise<T>, fallback: T, timeoutMs = 2500) =>
     new Promise<T>((resolve) => window.setTimeout(() => resolve(fallback), timeoutMs)),
   ]);
 
-withTimeout(retireStaleAppShell(), false)
-  .then((cleaned) => {
+renderApp();
+
+window.setTimeout(() => {
+  withTimeout(retireStaleAppShell(), false, 4000).then((cleaned) => {
     const reloadKey = "__ninescape_stale_shell_cleaned";
     if (cleaned) {
       try {
@@ -120,9 +134,7 @@ withTimeout(retireStaleAppShell(), false)
         }
       } catch {
         window.location.replace(window.location.href);
-        return;
       }
     }
-    renderApp();
-  })
-  .catch(() => renderApp());
+  }).catch(() => undefined);
+}, 1000);
