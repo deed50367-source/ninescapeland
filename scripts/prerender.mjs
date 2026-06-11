@@ -53,6 +53,10 @@ const CORE_ROUTES = [
   "/iaapa-asia-2026-hong-kong",
   "/indoor-playground-roi-analysis-uk",
   "/indoor-playground-roi-canada",
+  "/indoor-pe-equipment-for-schools",
+  "/montessori-indoor-playground-design",
+  "/homeschool-coop-indoor-play-solutions",
+  "/indoor-summer-camp-playground-ideas",
   // Investment / ROI hub + per-country guides
   "/investment-opportunity",
   "/investment-opportunity/indoor-playground-investment-australia",
