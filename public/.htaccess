@@ -108,12 +108,16 @@ ErrorDocument 404 /404/index.html
   
   # Performance hints
   Header set X-DNS-Prefetch-Control "on"
+
+  # Hostinger/LiteSpeed may advertise HTTP/3 (Alt-Svc) even when some client
+  # networks close QUIC connections. Chrome then shows ERR_CONNECTION_CLOSED
+  # before the React app can run. Force normal HTTPS instead.
+  Header always unset Alt-Svc
+  Header unset Alt-Svc
 </IfModule>
 
-# Enable Keep-Alive for persistent connections
-<IfModule mod_headers.c>
-  Header set Connection keep-alive
-</IfModule>
+# Do not set the hop-by-hop `Connection` header from .htaccess. LiteSpeed
+# already manages keep-alive, and forcing this header can break HTTP/2/HTTP/3.
 
 # ETags for validation caching
 <IfModule mod_headers.c>
