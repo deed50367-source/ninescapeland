@@ -107,14 +107,6 @@ export default defineConfig(({ mode }) => ({
           }
           return undefined;
         },
-        // Use a dated bundle suffix so browsers that cached earlier app bundles
-        // cannot keep using a route table that clears these restored pages.
-        chunkFileNames: "assets/r20260612b-[name].js",
-        entryFileNames: "assets/r20260612b-[name].js",
-        assetFileNames: (assetInfo) => {
-          if (assetInfo.name?.endsWith(".css")) return "assets/[name][extname]";
-          return "assets/[name]-[hash][extname]";
-        },
       },
     },
 
