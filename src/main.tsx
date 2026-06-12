@@ -1,5 +1,5 @@
 import React from "react";
-import { createRoot, hydrateRoot } from "react-dom/client";
+import { createRoot } from "react-dom/client";
 import { HelmetProvider } from "react-helmet-async";
 import App from "./App.tsx";
 import "./index.css";
@@ -64,17 +64,12 @@ const renderApp = () => {
     </React.StrictMode>
   );
 
-  const hasPrerenderedApp = root.querySelector("main, header, footer, [data-reactroot]");
-
-  if (hasPrerenderedApp) {
-    try {
-      hydrateRoot(root, app);
-      return;
-    } catch (error) {
-      console.error("Hydration failed, falling back to client render:", error);
-    }
-  }
-
+  // The production pages are prerendered for crawlers, but some route-level
+  // widgets render time/user-specific markup. Hydrating that stale HTML can
+  // throw React #418 and leave returning visitors with an empty root. Use a
+  // normal client mount for browsers; crawlers still receive the prerendered
+  // HTML before JavaScript runs.
+  root.replaceChildren();
   createRoot(root).render(app);
 };
 
