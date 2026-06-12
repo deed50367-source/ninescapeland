@@ -172,9 +172,7 @@
               return allSettled(regs.map(function (reg) { return reg.unregister(); }));
             }),
             caches.keys().then(function (names) {
-              return allSettled(names.filter(function (name) {
-                return /workbox|precache|runtime|ninescape|vite-pwa|offline/i.test(name);
-              }).map(function (name) { return caches.delete(name); }));
+              return allSettled(names.map(function (name) { return caches.delete(name); }));
             })
           ]).then(function (results) {
             var hadRegistrations = results[0] && results[0].value && results[0].value.length > 0;
