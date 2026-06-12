@@ -71,6 +71,13 @@ export const ProductsSection = () => {
     },
   ];
 
+  const solutionPages = [
+    { title: "Indoor PE Equipment", href: "/indoor-pe-equipment-for-schools" },
+    { title: "Montessori Play Design", href: "/montessori-indoor-playground-design" },
+    { title: "Homeschool Co-op Play", href: "/homeschool-coop-indoor-play-solutions" },
+    { title: "Summer Camp Play Ideas", href: "/indoor-summer-camp-playground-ideas" },
+  ];
+
   return (
     <section id="products" className="section-padding bg-background">
       <div className="container-wide">
@@ -160,6 +167,18 @@ export const ProductsSection = () => {
             </motion.article>
           ))}
         </motion.div>
+
+        <div className="mt-10 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
+          {solutionPages.map((page) => (
+            <Link
+              key={page.href}
+              to={localizedPath(page.href)}
+              className="rounded-lg border border-border bg-card p-4 text-sm font-semibold text-foreground transition-colors hover:border-primary hover:text-primary"
+            >
+              {page.title}
+            </Link>
+          ))}
+        </div>
 
         {/* CTA */}
         <motion.div
