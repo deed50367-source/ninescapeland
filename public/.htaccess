@@ -121,6 +121,13 @@ ErrorDocument 404 /404/index.html
     Header set Pragma "no-cache"
     Header set Expires 0
   </FilesMatch>
+
+  # Emergency stale-PWA cleanup: when Chrome checks the retired service worker,
+  # clear this origin's old Cache Storage / SW state that can keep serving a
+  # blank cached app shell.
+  <FilesMatch "^(sw|service-worker)\.js$">
+    Header set Clear-Site-Data "\"cache\", \"storage\""
+  </FilesMatch>
   
   # Security headers
   Header set X-Content-Type-Options "nosniff"
