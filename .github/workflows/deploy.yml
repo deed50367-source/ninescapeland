@@ -58,8 +58,24 @@ jobs:
           username: ${{ secrets.SFTP_USERNAME }}
           password: ${{ secrets.SFTP_PASSWORD }}
           port: ${{ secrets.SFTP_PORT || 22 }}
-          local_path: './dist/*'
+          # Use the directory path instead of './dist/*' so hidden files like
+          # .htaccess are uploaded. The previous glob skipped .htaccess, leaving
+          # stale Hostinger headers live even after successful deploys.
+          local_path: './dist/'
           remote_path: '/public_html/'
+          sftp_only: true
+          delete_remote_files: false
+
+      - name: Force upload .htaccess via SFTP
+        if: steps.deploy_method.outputs.method == 'sftp'
+        uses: wlixcc/SFTP-Deploy-Action@v1.2.4
+        with:
+          server: ${{ secrets.SFTP_HOST }}
+          username: ${{ secrets.SFTP_USERNAME }}
+          password: ${{ secrets.SFTP_PASSWORD }}
+          port: ${{ secrets.SFTP_PORT || 22 }}
+          local_path: './dist/.htaccess'
+          remote_path: '/public_html/.htaccess'
           sftp_only: true
           delete_remote_files: false
 
