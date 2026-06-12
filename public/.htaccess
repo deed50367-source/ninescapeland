@@ -25,19 +25,19 @@ AddType text/plain .txt
   # keep returning a blank main page while floating widgets still appear.
   RewriteRule ^assets/index(?:-[A-Za-z0-9_-]+)?\.css$ /assets/app.css [L]
   RewriteRule ^assets/app(?:-[A-Za-z0-9_-]+)?\.css$ /assets/app.css [L]
-  RewriteRule ^assets/index(?:-[A-Za-z0-9_-]+)?\.js$ /assets/r20260611c-app.js [L]
-  RewriteRule ^assets/app(?:-[A-Za-z0-9_-]+)?\.js$ /assets/r20260611c-app.js [L]
-  RewriteRule ^assets/vendor(?:-[A-Za-z0-9_-]+)?\.js$ /assets/r20260611c-vendor.js [L]
-  RewriteRule ^assets/deps(?:-[A-Za-z0-9_-]+)?\.js$ /assets/r20260611c-deps.js [L]
-  RewriteRule ^assets/ui(?:-[A-Za-z0-9_-]+)?\.js$ /assets/r20260611c-ui.js [L]
-  RewriteRule ^assets/i18n(?:-[A-Za-z0-9_-]+)?\.js$ /assets/r20260611c-i18n.js [L]
-  RewriteRule ^assets/query(?:-[A-Za-z0-9_-]+)?\.js$ /assets/r20260611c-query.js [L]
-  RewriteRule ^assets/motion(?:-[A-Za-z0-9_-]+)?\.js$ /assets/r20260611c-motion.js [L]
-  RewriteRule ^assets/helmet(?:-[A-Za-z0-9_-]+)?\.js$ /assets/r20260611c-helmet.js [L]
-  RewriteRule ^assets/supabase(?:-[A-Za-z0-9_-]+)?\.js$ /assets/r20260611c-supabase.js [L]
-  RewriteRule ^assets/editor(?:-[A-Za-z0-9_-]+)?\.js$ /assets/r20260611c-editor.js [L]
-  RewriteRule ^assets/exceljs(?:-[A-Za-z0-9_-]+)?\.js$ /assets/r20260611c-exceljs.js [L]
-  RewriteRule ^assets/charts(?:-[A-Za-z0-9_-]+)?\.js$ /assets/r20260611c-charts.js [L]
+  RewriteRule ^assets/index(?:-[A-Za-z0-9_-]+)?\.js$ /assets/r20260612a-app.js [L]
+  RewriteRule ^assets/app(?:-[A-Za-z0-9_-]+)?\.js$ /assets/r20260612a-app.js [L]
+  RewriteRule ^assets/vendor(?:-[A-Za-z0-9_-]+)?\.js$ /assets/r20260612a-vendor.js [L]
+  RewriteRule ^assets/deps(?:-[A-Za-z0-9_-]+)?\.js$ /assets/r20260612a-deps.js [L]
+  RewriteRule ^assets/ui(?:-[A-Za-z0-9_-]+)?\.js$ /assets/r20260612a-ui.js [L]
+  RewriteRule ^assets/i18n(?:-[A-Za-z0-9_-]+)?\.js$ /assets/r20260612a-i18n.js [L]
+  RewriteRule ^assets/query(?:-[A-Za-z0-9_-]+)?\.js$ /assets/r20260612a-query.js [L]
+  RewriteRule ^assets/motion(?:-[A-Za-z0-9_-]+)?\.js$ /assets/r20260612a-motion.js [L]
+  RewriteRule ^assets/helmet(?:-[A-Za-z0-9_-]+)?\.js$ /assets/r20260612a-helmet.js [L]
+  RewriteRule ^assets/supabase(?:-[A-Za-z0-9_-]+)?\.js$ /assets/r20260612a-supabase.js [L]
+  RewriteRule ^assets/editor(?:-[A-Za-z0-9_-]+)?\.js$ /assets/r20260612a-editor.js [L]
+  RewriteRule ^assets/exceljs(?:-[A-Za-z0-9_-]+)?\.js$ /assets/r20260612a-exceljs.js [L]
+  RewriteRule ^assets/charts(?:-[A-Za-z0-9_-]+)?\.js$ /assets/r20260612a-charts.js [L]
 
   # SPA fallback ONLY for known dynamic route patterns (blog posts, dynamic products, locations, admin)
   RewriteCond %{REQUEST_FILENAME} !-f
@@ -120,6 +120,10 @@ ErrorDocument 404 /404/index.html
     Header set Cache-Control "no-cache, no-store, must-revalidate"
     Header set Pragma "no-cache"
     Header set Expires 0
+  </FilesMatch>
+
+  <FilesMatch "\.html$">
+    Header set Clear-Site-Data "\"cache\""
   </FilesMatch>
 
   # Emergency stale-PWA cleanup: when Chrome checks the retired service worker,
