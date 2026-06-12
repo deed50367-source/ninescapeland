@@ -2,6 +2,10 @@ import React from "react";
 import { createRoot } from "react-dom/client";
 import { HelmetProvider } from "react-helmet-async";
 import App from "./App.tsx";
+import HomeschoolCoopIndoorPlay from "./pages/HomeschoolCoopIndoorPlay";
+import IndoorPEEquipmentForSchools from "./pages/IndoorPEEquipmentForSchools";
+import IndoorSummerCampPlayground from "./pages/IndoorSummerCampPlayground";
+import MontessoriIndoorPlaygroundDesign from "./pages/MontessoriIndoorPlaygroundDesign";
 import "./index.css";
 import "./i18n/config";
 
@@ -56,10 +60,22 @@ const renderApp = () => {
   const root = document.getElementById("root");
   if (!root) return;
 
+  const stablePages = {
+    "indoor-pe-equipment-for-schools": IndoorPEEquipmentForSchools,
+    "montessori-indoor-playground-design": MontessoriIndoorPlaygroundDesign,
+    "homeschool-coop-indoor-play-solutions": HomeschoolCoopIndoorPlay,
+    "indoor-summer-camp-playground-ideas": IndoorSummerCampPlayground,
+  } as const;
+  const normalizedPath = window.location.pathname
+    .replace(/^\/(en|es|pt|de|fr|ar)(?=\/)/, "")
+    .replace(/^\//, "")
+    .replace(/\/$/, "");
+  const DirectStablePage = stablePages[normalizedPath as keyof typeof stablePages];
+
   const app = (
     <React.StrictMode>
       <HelmetProvider>
-        <App />
+        {DirectStablePage ? <DirectStablePage /> : <App />}
       </HelmetProvider>
     </React.StrictMode>
   );
