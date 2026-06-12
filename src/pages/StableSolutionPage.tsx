@@ -1,4 +1,7 @@
 import { useEffect } from "react";
+import { Header } from "@/components/Header";
+import { Footer } from "@/components/Footer";
+import { FloatingCTA } from "@/components/FloatingCTA";
 
 type Metric = {
   value: string;
@@ -132,18 +135,7 @@ export const StableSolutionPage = ({
   return (
     <div className="min-h-screen bg-background text-foreground">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
-      <header className="border-b border-border bg-background">
-        <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 md:px-6">
-          <a href="/" className="font-heading text-lg font-bold text-primary" aria-label="NinescapeLand home">
-            NinescapeLand
-          </a>
-          <nav className="flex items-center gap-4 text-sm text-muted-foreground" aria-label="Main navigation">
-            <a className="hover:text-primary" href="/products">Products</a>
-            <a className="hover:text-primary" href="/case-studies">Projects</a>
-            <a className="hover:text-primary" href="/contact">Contact</a>
-          </nav>
-        </div>
-      </header>
+      <Header />
 
       <main>
         <section className="bg-primary py-16 md:py-24">
@@ -274,12 +266,8 @@ export const StableSolutionPage = ({
         </section>
       </main>
 
-      <footer className="border-t border-border bg-background py-8">
-        <div className="mx-auto flex max-w-7xl flex-col gap-3 px-4 text-sm text-muted-foreground md:flex-row md:items-center md:justify-between md:px-6">
-          <p>© {new Date().getFullYear()} NinescapeLand. Indoor playground equipment manufacturer.</p>
-          <a className="hover:text-primary" href="/contact">Contact NinescapeLand</a>
-        </div>
-      </footer>
+      <Footer />
+      <FloatingCTA />
     </div>
   );
 };
