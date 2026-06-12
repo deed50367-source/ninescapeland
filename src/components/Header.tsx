@@ -24,6 +24,10 @@ export const Header = () => {
     { label: t("products.items.trampolinePark.title"), href: localizedPath("/products/trampoline-park") },
     { label: t("products.items.ninjaCourse.title"), href: localizedPath("/products/ninja-course") },
     { label: t("products.items.softPlay.title"), href: localizedPath("/products/soft-play") },
+    { label: "Indoor PE Equipment", href: localizedPath("/indoor-pe-equipment-for-schools") },
+    { label: "Montessori Play Design", href: localizedPath("/montessori-indoor-playground-design") },
+    { label: "Homeschool Co-op Play", href: localizedPath("/homeschool-coop-indoor-play-solutions") },
+    { label: "Summer Camp Play Ideas", href: localizedPath("/indoor-summer-camp-playground-ideas") },
     { label: t("activePlayRunning.breadcrumb", "Active Play for Running"), href: localizedPath("/best-indoorplaygroundsolution-active-play-for-running-facilities") },
     { label: t("officeWellness.breadcrumb", "Office Wellness"), href: localizedPath("/indoorplaygroundsolution-office-wellness-solutions") },
   ];
