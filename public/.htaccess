@@ -123,6 +123,10 @@ ErrorDocument 404 /404/index.html
   </FilesMatch>
 
   # Security headers
+  # Force-remove broken Clear-Site-Data headers from older deploys/server rules.
+  # Chrome receives them as \"cache\" and reports "No recognized types specified".
+  Header always unset Clear-Site-Data
+  Header unset Clear-Site-Data
   Header set X-Content-Type-Options "nosniff"
   Header set X-Frame-Options "SAMEORIGIN"
   Header set X-XSS-Protection "1; mode=block"
