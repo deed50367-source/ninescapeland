@@ -69,6 +69,26 @@ export const ProductMegaMenu = () => {
       href: "/products/soft-play",
       icon: "🧸"
     },
+    {
+      label: "Indoor PE Equipment",
+      href: "/indoor-pe-equipment-for-schools",
+      icon: "🏫"
+    },
+    {
+      label: "Montessori Play Design",
+      href: "/montessori-indoor-playground-design",
+      icon: "🌿"
+    },
+    {
+      label: "Homeschool Co-op Play",
+      href: "/homeschool-coop-indoor-play-solutions",
+      icon: "👨‍👩‍👧‍👦"
+    },
+    {
+      label: "Summer Camp Play Ideas",
+      href: "/indoor-summer-camp-playground-ideas",
+      icon: "🏕️"
+    },
     { 
       label: t("activePlayRunning.breadcrumb", "Active Play for Running"), 
       href: "/best-indoorplaygroundsolution-active-play-for-running-facilities",
