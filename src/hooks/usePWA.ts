@@ -31,36 +31,11 @@ export const usePWA = (): PWAStatus => {
           }
         }
 
-        const { registerSW } = await import("virtual:pwa-register");
-        
-        const updateSW = registerSW({
-          onNeedRefresh() {
-            setNeedRefresh(true);
-          },
-          onOfflineReady() {
-            setOfflineReady(true);
-          },
-          onRegisteredSW(swUrl, r) {
-            console.log("SW Registered:", swUrl);
-            setRegistration(r || null);
-            // Check for updates every hour
-            if (r) {
-              setInterval(() => {
-                r.update();
-              }, 60 * 60 * 1000);
-            }
-          },
-          onRegisterError(error) {
-            console.log("SW registration error", error);
-            // On iOS, a failed SW can cause blank screens on next visit.
-            // Unregister all SWs so the next load is clean.
-            if ("serviceWorker" in navigator) {
-              navigator.serviceWorker.getRegistrations().then((regs) => {
-                regs.forEach((reg) => reg.unregister());
-              });
-            }
-          },
-        });
+        // PWA registration is intentionally disabled. The old app-shell service
+        // worker is the reason returning visitors can keep seeing a blank page.
+        setNeedRefresh(false);
+        setOfflineReady(false);
+        setRegistration(null);
       } catch (error) {
         // PWA not available in dev mode or module not found
         console.log("PWA registration skipped:", error);
