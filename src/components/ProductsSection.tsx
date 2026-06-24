@@ -76,6 +76,10 @@ export const ProductsSection = () => {
     { title: "Montessori Play Design", href: "/montessori-indoor-playground-design" },
     { title: "Homeschool Co-op Play", href: "/homeschool-coop-indoor-play-solutions" },
     { title: "Summer Camp Play Ideas", href: "/indoor-summer-camp-playground-ideas" },
+    { title: "Educational Benefits of Play Centers", href: "/educational-benefits-of-indoor-play-centers" },
+    { title: "Trampoline Equipment Safety Standards", href: "/safety-standards-for-trampoline-park-equipment" },
+    { title: "Custom Soft Play for Schools", href: "/custom-soft-play-equipment-manufacturer-for-schools" },
+    { title: "Educational Activities by Age", href: "/indoor-play-center-educational-activities-by-age" },
   ];
 
   return (

@@ -89,6 +89,26 @@ export const ProductMegaMenu = () => {
       href: "/indoor-summer-camp-playground-ideas",
       icon: "🏕️"
     },
+    {
+      label: "Educational Benefits of Play Centers",
+      href: "/educational-benefits-of-indoor-play-centers",
+      icon: "🎓"
+    },
+    {
+      label: "Trampoline Safety Standards",
+      href: "/safety-standards-for-trampoline-park-equipment",
+      icon: "🛡️"
+    },
+    {
+      label: "Custom Soft Play for Schools",
+      href: "/custom-soft-play-equipment-manufacturer-for-schools",
+      icon: "🏗️"
+    },
+    {
+      label: "Activities by Age",
+      href: "/indoor-play-center-educational-activities-by-age",
+      icon: "📚"
+    },
     { 
       label: t("activePlayRunning.breadcrumb", "Active Play for Running"), 
       href: "/best-indoorplaygroundsolution-active-play-for-running-facilities",

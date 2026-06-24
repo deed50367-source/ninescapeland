@@ -12,6 +12,10 @@ import IndoorPEEquipmentForSchools from "./pages/IndoorPEEquipmentForSchools";
 import MontessoriIndoorPlaygroundDesign from "./pages/MontessoriIndoorPlaygroundDesign";
 import HomeschoolCoopIndoorPlay from "./pages/HomeschoolCoopIndoorPlay";
 import IndoorSummerCampPlayground from "./pages/IndoorSummerCampPlayground";
+import EducationalBenefitsOfIndoorPlayCenters from "./pages/EducationalBenefitsOfIndoorPlayCenters";
+import SafetyStandardsForTrampolineParkEquipment from "./pages/SafetyStandardsForTrampolineParkEquipment";
+import CustomSoftPlayEquipmentManufacturerForSchools from "./pages/CustomSoftPlayEquipmentManufacturerForSchools";
+import IndoorPlayCenterEducationalActivitiesByAge from "./pages/IndoorPlayCenterEducationalActivitiesByAge";
 
 // Resilient lazy: if a chunk fails to load (e.g. Hostinger 429), render nothing
 // instead of crashing the whole app.
@@ -123,6 +127,10 @@ const pageRoutes = (
     <Route path="montessori-indoor-playground-design" element={<MontessoriIndoorPlaygroundDesign />} />
     <Route path="homeschool-coop-indoor-play-solutions" element={<HomeschoolCoopIndoorPlay />} />
     <Route path="indoor-summer-camp-playground-ideas" element={<IndoorSummerCampPlayground />} />
+    <Route path="educational-benefits-of-indoor-play-centers" element={<EducationalBenefitsOfIndoorPlayCenters />} />
+    <Route path="safety-standards-for-trampoline-park-equipment" element={<SafetyStandardsForTrampolineParkEquipment />} />
+    <Route path="custom-soft-play-equipment-manufacturer-for-schools" element={<CustomSoftPlayEquipmentManufacturerForSchools />} />
+    <Route path="indoor-play-center-educational-activities-by-age" element={<IndoorPlayCenterEducationalActivitiesByAge />} />
     <Route path="investment-opportunity" element={<InvestmentOpportunity />} />
     <Route path="investment-opportunity/:slug" element={<InvestmentROIPage />} />
     <Route path="locations/:slug" element={<LocationPage />} />
