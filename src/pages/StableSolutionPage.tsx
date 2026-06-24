@@ -2,6 +2,8 @@ import { useEffect } from "react";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { FloatingCTA } from "@/components/FloatingCTA";
+import { ProductInquiryForm } from "@/components/product-detail/ProductInquiryForm";
+
 
 type Metric = {
   value: string;
