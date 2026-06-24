@@ -1,101 +1,78 @@
-## 本周新增聚合页面方案（4个）
+## 调整说明
 
-### 去重说明
-已查询现有路由，以下关键词**已有页面，本次不重复建**：
-- `cost of building a custom indoor playground` → 已有 `/custom-indoor-playground-cost`
-- `inclusive indoor playground design for autism` / sensory → 已有 `/sensory-inclusive-play`、`/indoor-pe-equipment-for-schools`
-- Montessori / Homeschool / Summer Camp / PE → 已有上周4个页面
+根据补充的三份蓝海度报告，本周新增聚合页面方案做如下调整：**完全锁定 0 真实竞品的蓝海词**，Title / H1 / URL slug / canonical 全部精确匹配关键词原文（不改写、不打散词序），最大化 7–14 天内拿到前排的概率。
 
-下面4个页面对应文档中尚未覆盖、且潜力 S/A 的关键词，全部为新主题、新文案、新内部链接锚点。
+之前提案中的「How to start an indoor playground business」竞争激烈（非蓝海），本轮**移除**；保留并改造其余 3 页，新增 1 页。
 
 ---
 
-### 1. `/how-to-start-an-indoor-playground-business`
-- **目标关键词**：how to start an indoor playground business（S，commercial，low comp）
-- **H1**：How to Start an Indoor Playground Business in 2026 — Step-by-Step Guide
-- **Title (<60)**：How to Start an Indoor Playground Business | 2026 Guide
-- **Meta (<160)**：Step-by-step plan to launch an indoor playground: budget, site, ASTM/TUV-certified equipment, ROI, licensing. Free 3D design support.
-- **布局**：
-  1. Hero：痛点 + "Get Free 3D Design" CTA（WhatsApp 8615058782901）
-  2. 9-step roadmap（市场调研 → 选址 → 预算 → 设备采购 → 认证 → 装修 → 营销 → 开业 → 运营）
-  3. Startup Cost Breakdown 表格（小/中/大型）
-  4. Equipment Checklist（按区域：soft play / ninja / trampoline / toddler）
-  5. Licensing & Insurance（美/英/加/澳常见要求）
-  6. ROI 预期（链接到现有 ROI 页）
-  7. FAQ（10条）+ FAQPage JSON-LD
-  8. 内链 CTA：Custom Cost、Trampoline Park FEC、Investment Opportunity
+## 本周 4 个新增聚合页面（最终版）
 
-### 2. `/educational-benefits-of-indoor-play-centers`
-- **目标关键词**：educational benefits of indoor play centers（A，informational，low comp）
-- **H1**：Educational Benefits of Indoor Play Centers — Research-Backed Guide for Schools & Operators
-- **Title**：Educational Benefits of Indoor Play Centers | Research Guide
-- **Meta**：Discover how indoor play centers boost cognitive, social, and motor development. Evidence-based equipment recommendations for schools and operators.
-- **布局**：
-  1. Hero + key stat 模块（4个核心收益）
-  2. 5 Developmental Domains（Cognitive / Social-Emotional / Physical / Sensory / Language）—— 每块配设备示例
-  3. Age-band benefit matrix（0-3 / 3-6 / 6-12）
-  4. Case Snippets（学校/早教/社区）
-  5. Equipment-to-Benefit Map（链到现有 PE / Montessori / Sensory 页）
-  6. FAQ + Article JSON-LD
-  7. CTA：定制方案
+### ① `/educational-benefits-of-indoor-play-centers`  ⭐ 蓝海词
+- **目标词**：`educational benefits of indoor play centers`（intitle 真实竞品 = 0）
+- **Title（<60）**：`Educational Benefits of Indoor Play Centers (2026 Guide)`
+- **Meta Desc（<160）**：`Research-backed educational benefits of indoor play centers — cognitive, social, motor & sensory gains by age band, plus equipment that drives each outcome.`
+- **H1**：完整包含目标词原文
+- **URL slug**：精确匹配
+- **内容大纲**（区别于已有 `educational-play-equipment` 等页面，聚焦"play center 场景下的教育收益"而非产品本身）：
+  1. Hero：研究数据钩子（如 AAP / NAEYC 引用）
+  2. 5 大发展维度：Cognitive · Social-Emotional · Physical · Sensory · Language
+  3. **年龄段收益矩阵**（0–2 / 3–5 / 6–8 / 9–12）
+  4. Play Center vs Outdoor / Home play 对比表
+  5. Operator 视角：教育属性如何提升复购 & 客单
+  6. Equipment → Benefit 映射表（链接到现有产品页）
+  7. FAQ（6 条）+ FAQPage / Article JSON-LD
 
-### 3. `/trampoline-park-safety-standards`
-- **目标关键词**：safety standards for trampoline park equipment（A，informational，medium comp）
-- **H1**：Trampoline Park Safety Standards — ASTM F2970, TUV & EN 13219 Explained
-- **Title**：Trampoline Park Safety Standards (ASTM, TUV, EN) 2026
-- **Meta**：Complete compliance guide to trampoline park equipment: ASTM F2970, TUV, EN 13219. Inspection checklists, padding specs, operator duties.
-- **布局**：
-  1. Hero + 认证徽章
-  2. Standards Overview 表（ASTM F2970 / TUV / EN 13219 / IAAPA）
-  3. Equipment-level requirements（bed, springs, pads, walls, foam pit, dodgeball, ninja addon）
-  4. Operator compliance checklist（下载锚点）
-  5. Common violations & how to fix
-  6. Why NinescapeLand —— 我们的全套认证证书
-  7. FAQ + Article + BreadcrumbList JSON-LD
-  8. 内链：Trampoline Park、Trampoline Park FEC、Safety Certifications
+### ② `/safety-standards-for-trampoline-park-equipment`  ⭐ 真·零供给
+- **目标词**：`safety standards for trampoline park equipment`（intitle 全球 0 结果）
+- **Title（<60）**：`Safety Standards for Trampoline Park Equipment 2026`
+- **Meta Desc（<160）**：`ASTM F2970, EN 13219 & TÜV safety standards for trampoline park equipment — compliance checklist, common violations & manufacturer certifications.`
+- **URL slug**：精确匹配（替代原方案的 `trampoline-park-safety-standards`，调整词序以精确命中）
+- **内容大纲**：
+  1. 标准总览：ASTM F2970-20 / EN 13219 / TÜV / GB 19272
+  2. **设备级要求**：床面、护网、海绵池、Foam pit、Dodgeball 区
+  3. 制造商合规清单（焊接 / 钢材 / 弹簧 / 阻燃）
+  4. Operator 日常巡检表（可下载 PDF anchor）
+  5. 全球 6 大常见违规案例
+  6. NinescapeLand 认证矩阵（CE / TÜV / ASTM 报告号占位）
+  7. FAQ + BreadcrumbList + Article JSON-LD
 
-### 4. `/custom-soft-play-equipment-manufacturer-for-schools`
-- **目标关键词**：custom soft play equipment manufacturer for education（A，transactional，low comp）+ "sensory play equipment for schools" 长尾
-- **H1**：Custom Soft Play Equipment Manufacturer for Schools & Education Centers
-- **Title**：Custom Soft Play Manufacturer for Schools | NinescapeLand
-- **Meta**：Direct-from-factory custom soft play equipment for schools, SEN units & education centers. ASTM/TUV certified, free 3D design, 30-day delivery.
-- **布局**：
-  1. Hero + "Free Custom 3D Design" CTA
-  2. Why schools choose us（4 USP：定制 / 认证 / 工期 / 售后）
-  3. 6类定制产品（Soft Play / Sensory Wall / Climbing / Ball Pit / Toddler Zone / Quiet Pod）
-  4. Customization Process（5步 timeline 图）
-  5. Materials & Safety Specs（CMHR foam, antibacterial PVC 等）
-  6. School Case Gallery（3-5 项目缩略图，链到 Projects）
-  7. Lead Time & MOQ 表
-  8. FAQ + Product/Organization JSON-LD
-  9. 内链：PE Equipment、Sensory Inclusive、Montessori、Homeschool
+### ③ `/custom-soft-play-equipment-manufacturer-for-schools`
+- **保留**（商业意图强，导流到询盘）
+- Title：`Custom Soft Play Equipment Manufacturer for Schools`
+- 内容：6 类定制产品 · 5 步定制流程 · 材料 / 安规 · 学校案例 · MOQ & 交期
+- 交叉链接：PE / Montessori / Homeschool / Summer Camp / Sensory 5 个现有解决方案页
+
+### ④ `/indoor-play-center-educational-activities-by-age`  🆕 长尾辅页
+- **目的**：承接 ① 的内链权重 + 吃下"educational activities indoor play center"系列长尾，避免 ① 成为孤儿
+- Title：`Indoor Play Center Educational Activities by Age (Toddler–Tween)`
+- 内容：4 个年龄段 × 每段 5 个活动方案 + 所需设备清单
+- 互链：返回 ①、链接到 Montessori / Homeschool / PE 三页
 
 ---
 
-### SEO 规则遵守
-- 每页 `<Helmet>` 动态 title/desc/canonical/og:url 自指；title<60 / desc<160 并 `.trim()`
-- 单 H1；语义化（header/main/section/article）
-- Article 或 FAQPage + BreadcrumbList JSON-LD
-- 图片 alt + 懒加载；不引入静态 canonical
-- 受 LazySection 限制，单页 HTML <125KB
+## SEO 与防孤儿规则（保持不变）
 
-### 防孤儿页 — 内链落点（与上周同样的位置全部加）
-1. `src/components/Header.tsx` 顶部 Resources/Solutions 下拉新增 4 条
-2. `src/components/ProductMegaMenu.tsx` 新增 4 个 mega menu item（icon：📘 🎓 🛡️ 🏭）
-3. `src/components/Footer.tsx` `productLinks` 加 4 条
-4. `src/components/ProductsSection.tsx` `solutionPages` 数组扩展 4 张卡片
-5. 相互内链：4 个新页之间互链 + 与上周 4 页交叉链
-6. `public/sitemap.xml` 新增 4 条 `<url>`，priority 0.8
-
-### 路由注册
-- `src/App.tsx` 添加 4 条 `<Route>`，使用 `StableSolutionPage`-同款无 Suspense 直接加载组件（避免上次空白屏问题）
-- 不引入新的 LanguageWrapper 包装
-
-### 技术结构
-- 复用 `StableSolutionPage` 的 Header/Footer/FloatingCTA 框架（上周已验证可正常渲染）
-- 每页一个独立组件文件 `src/pages/HowToStartIndoorPlaygroundBusiness.tsx` 等
-- 文案全英文（站点默认 EN），不做多语切换以避免空白屏
+- 每页：`<Helmet>` 动态 title / desc / canonical / og:url（self-reference）；单 H1；Article + FAQPage + BreadcrumbList JSON-LD；图片 alt + lazy；单页 <125 KB
+- 所有 4 页相互交叉链接 + 链接至现有 4 个 solution 页 + 在 Header / Footer / ProductsSection 三处出现
+- 在 `src/App.tsx` 用 `StableSolutionPage` 模式注册（不套 `LanguageWrapper`，避免空白屏）
+- 加入 `public/sitemap.xml`，priority 0.8
 
 ---
 
-确认这 4 个页面 + URL + 内链方式后，我再开始写代码。
+## 改动文件清单（确认后再执行）
+
+```text
+新增  src/pages/EducationalBenefitsOfIndoorPlayCenters.tsx
+新增  src/pages/SafetyStandardsForTrampolineParkEquipment.tsx
+新增  src/pages/CustomSoftPlayEquipmentManufacturerForSchools.tsx
+新增  src/pages/IndoorPlayCenterEducationalActivitiesByAge.tsx
+改   src/App.tsx                    （注册 4 条路由）
+改   src/components/Header.tsx      （加入 4 个菜单项）
+改   src/components/ProductMegaMenu.tsx
+改   src/components/Footer.tsx
+改   src/components/ProductsSection.tsx（卡片网格追加 4 项）
+改   public/sitemap.xml
+```
+
+确认后我立即开始搭建。如有页面需要替换 / 砍掉，告诉我即可。
