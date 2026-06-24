@@ -39,10 +39,19 @@ export type StableSolutionPageProps = {
   audience: PageItem[];
   related: RelatedLink[];
   faq: PageItem[];
+  /** Override the auto-built <title>; capped at 60 chars. */
+  metaTitle?: string;
+  /** Override the meta description; capped at 158 chars. */
+  metaDescription?: string;
+  /** Primary + secondary target keywords for this page. */
+  keywords?: string[];
+  /** Absolute or root-relative OG/Twitter share image URL. */
+  ogImage?: string;
 };
 
 const siteName = "NinescapeLand";
 const baseUrl = "https://indoorplaygroundsolution.com";
+const defaultOgImage = `${baseUrl}/og-image.jpg`;
 const whatsappUrl = "https://wa.me/8615058782901";
 
 const upsertMeta = (selector: string, create: () => HTMLMetaElement, content: string) => {
@@ -58,6 +67,12 @@ const upsertLink = (selector: string, href: string) => {
   link.setAttribute("rel", "canonical");
   link.setAttribute("href", href);
   if (!existing) document.head.appendChild(link);
+};
+
+const buildTitle = (title: string, override?: string) => {
+  if (override) return override.slice(0, 60).trim();
+  const branded = `${title} | ${siteName}`;
+  return (branded.length <= 60 ? branded : title).slice(0, 60).trim();
 };
 
 export const StableSolutionPage = ({
@@ -79,47 +94,44 @@ export const StableSolutionPage = ({
   audience,
   related,
   faq,
+  metaTitle,
+  metaDescription,
+  keywords,
+  ogImage,
 }: StableSolutionPageProps) => {
   const canonicalUrl = `${baseUrl}/${slug}`;
-  const pageTitle = `${title} | ${siteName}`.slice(0, 58).trim();
-  const pageDescription = description.slice(0, 158).trim();
+  const pageTitle = buildTitle(title, metaTitle);
+  const pageDescription = (metaDescription ?? description).slice(0, 158).trim();
+  const shareImage = ogImage
+    ? (ogImage.startsWith("http") ? ogImage : `${baseUrl}${ogImage.startsWith("/") ? "" : "/"}${ogImage}`)
+    : defaultOgImage;
+  const keywordList = (keywords ?? []).map((k) => k.trim()).filter(Boolean);
 
   useEffect(() => {
     document.documentElement.lang = "en";
     document.documentElement.dir = "ltr";
     document.title = pageTitle;
-    upsertMeta('meta[name="description"]', () => {
-      const meta = document.createElement("meta");
-      meta.setAttribute("name", "description");
-      return meta;
-    }, pageDescription);
-    upsertMeta('meta[property="og:title"]', () => {
-      const meta = document.createElement("meta");
-      meta.setAttribute("property", "og:title");
-      return meta;
-    }, pageTitle);
-    upsertMeta('meta[property="og:description"]', () => {
-      const meta = document.createElement("meta");
-      meta.setAttribute("property", "og:description");
-      return meta;
-    }, pageDescription);
-    upsertMeta('meta[property="og:url"]', () => {
-      const meta = document.createElement("meta");
-      meta.setAttribute("property", "og:url");
-      return meta;
-    }, canonicalUrl);
-    upsertMeta('meta[name="twitter:title"]', () => {
-      const meta = document.createElement("meta");
-      meta.setAttribute("name", "twitter:title");
-      return meta;
-    }, pageTitle);
-    upsertMeta('meta[name="twitter:description"]', () => {
-      const meta = document.createElement("meta");
-      meta.setAttribute("name", "twitter:description");
-      return meta;
-    }, pageDescription);
+    const m = (attr: "name" | "property", key: string, value: string) => {
+      upsertMeta(`meta[${attr}="${key}"]`, () => {
+        const el = document.createElement("meta");
+        el.setAttribute(attr, key);
+        return el;
+      }, value);
+    };
+    m("name", "description", pageDescription);
+    if (keywordList.length) m("name", "keywords", keywordList.join(", "));
+    m("property", "og:title", pageTitle);
+    m("property", "og:description", pageDescription);
+    m("property", "og:url", canonicalUrl);
+    m("property", "og:type", "article");
+    m("property", "og:site_name", siteName);
+    m("property", "og:image", shareImage);
+    m("name", "twitter:card", "summary_large_image");
+    m("name", "twitter:title", pageTitle);
+    m("name", "twitter:description", pageDescription);
+    m("name", "twitter:image", shareImage);
     upsertLink('link[rel="canonical"]', canonicalUrl);
-  }, [canonicalUrl, pageDescription, pageTitle]);
+  }, [canonicalUrl, pageDescription, pageTitle, shareImage, keywordList]);
 
   const faqSchema = {
     "@context": "https://schema.org",
@@ -127,11 +139,35 @@ export const StableSolutionPage = ({
     mainEntity: faq.map((item) => ({
       "@type": "Question",
       name: item.title,
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: item.desc,
-      },
+      acceptedAnswer: { "@type": "Answer", text: item.desc },
     })),
+  };
+
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Home", item: `${baseUrl}/` },
+      { "@type": "ListItem", position: 2, name: "Solutions", item: `${baseUrl}/solutions` },
+      { "@type": "ListItem", position: 3, name: title, item: canonicalUrl },
+    ],
+  };
+
+  const articleSchema = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: title,
+    description: pageDescription,
+    image: shareImage,
+    mainEntityOfPage: canonicalUrl,
+    inLanguage: "en",
+    author: { "@type": "Organization", name: siteName, url: baseUrl },
+    publisher: {
+      "@type": "Organization",
+      name: siteName,
+      logo: { "@type": "ImageObject", url: `${baseUrl}/logo.png` },
+    },
+    keywords: keywordList.join(", ") || undefined,
   };
 
   return (
