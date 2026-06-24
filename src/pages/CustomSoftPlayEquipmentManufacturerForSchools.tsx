@@ -4,6 +4,14 @@ const CustomSoftPlayEquipmentManufacturerForSchools = () => (
   <StableSolutionPage
     slug="custom-soft-play-equipment-manufacturer-for-schools"
     title="Custom Soft Play Equipment Manufacturer for Schools"
+    metaTitle="Custom Soft Play Equipment Manufacturer for Schools"
+    keywords={[
+      "custom soft play equipment manufacturer for schools",
+      "school soft play equipment supplier",
+      "bespoke soft play for schools",
+      "EN 1176 soft play manufacturer",
+      "K-12 indoor soft play equipment",
+    ]}
     kicker="K-12 · Preschool · District RFP · 45-day lead time"
     description="Custom soft play equipment manufacturer for schools — bespoke foam structures, sensory walls and PE soft circuits with EN 1176, ASTM F1487 and CE certification, district-ready drawings."
     primaryCta="Get a School Soft Play Quote"

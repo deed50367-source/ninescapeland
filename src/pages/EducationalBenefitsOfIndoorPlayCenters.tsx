@@ -4,6 +4,14 @@ const EducationalBenefitsOfIndoorPlayCenters = () => (
   <StableSolutionPage
     slug="educational-benefits-of-indoor-play-centers"
     title="Educational Benefits of Indoor Play Centers"
+    metaTitle="Educational Benefits of Indoor Play Centers | Guide"
+    keywords={[
+      "educational benefits of indoor play centers",
+      "learning benefits of indoor playgrounds",
+      "indoor play center child development",
+      "indoor playground developmental domains",
+      "indoor play sensory integration",
+    ]}
     kicker="Research · Curriculum · Operator ROI"
     description="Research-backed educational benefits of indoor play centers — cognitive, social, motor and sensory gains by age band, plus the equipment mix that drives each learning outcome."
     primaryCta="Plan a Learning-Driven Play Center"

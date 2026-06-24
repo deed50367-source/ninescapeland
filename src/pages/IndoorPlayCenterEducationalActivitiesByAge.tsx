@@ -4,6 +4,14 @@ const IndoorPlayCenterEducationalActivitiesByAge = () => (
   <StableSolutionPage
     slug="indoor-play-center-educational-activities-by-age"
     title="Indoor Play Center Educational Activities by Age"
+    metaTitle="Indoor Play Center Educational Activities by Age"
+    keywords={[
+      "indoor play center educational activities by age",
+      "indoor playground activities by age",
+      "toddler indoor play activities",
+      "preschool indoor learning activities",
+      "school-age indoor play games",
+    ]}
     kicker="Toddler · Preschool · School-age · Tween"
     description="Indoor play center educational activities by age — 20 ready-to-run activity plans across toddler, preschool, school-age and tween, mapped to equipment, duration and learning goals."
     primaryCta="Get the Activity Planning Kit"

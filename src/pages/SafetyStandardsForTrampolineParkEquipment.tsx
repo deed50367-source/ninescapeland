@@ -4,6 +4,14 @@ const SafetyStandardsForTrampolineParkEquipment = () => (
   <StableSolutionPage
     slug="safety-standards-for-trampoline-park-equipment"
     title="Safety Standards for Trampoline Park Equipment"
+    metaTitle="Trampoline Park Equipment Safety Standards Guide"
+    keywords={[
+      "safety standards for trampoline park equipment",
+      "trampoline park ASTM F2970",
+      "EN 13219 trampoline standard",
+      "trampoline park compliance checklist",
+      "TÜV certified trampoline equipment",
+    ]}
     kicker="ASTM F2970 · EN 13219 · TÜV · GB 19272"
     description="ASTM F2970, EN 13219 and TÜV safety standards for trampoline park equipment — compliance checklist, common violations, manufacturer certifications and operator inspection routine."
     primaryCta="Request Compliance Documents"
