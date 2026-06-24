@@ -259,17 +259,8 @@ export const StableSolutionPage = ({
           </div>
         </section>
 
-        <section className="bg-primary py-12">
-          <div className="mx-auto flex max-w-7xl flex-col gap-5 px-4 md:flex-row md:items-center md:justify-between md:px-6">
-            <div>
-              <h2 className="font-heading text-2xl font-bold text-primary-foreground">Request a stable project plan</h2>
-              <p className="mt-2 text-primary-foreground/85">Share the room size, age group and target opening date for a practical layout proposal.</p>
-            </div>
-            <a className="inline-flex min-h-11 items-center justify-center rounded-md bg-accent px-5 py-3 text-sm font-semibold text-accent-foreground hover:opacity-90" href={whatsappUrl}>
-              Contact WhatsApp
-            </a>
-          </div>
-        </section>
+        <ProductInquiryForm productName={title} productSlug={slug} />
+
       </main>
 
       <Footer />
