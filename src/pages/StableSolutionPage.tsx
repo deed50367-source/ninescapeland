@@ -151,13 +151,17 @@ export const StableSolutionPage = ({
                 {description}
               </p>
               <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-                <a className="inline-flex min-h-11 items-center justify-center rounded-md bg-accent px-5 py-3 text-sm font-semibold text-accent-foreground hover:opacity-90" href={whatsappUrl}>
+                <a className="inline-flex min-h-11 items-center justify-center rounded-md bg-accent px-5 py-3 text-sm font-semibold text-accent-foreground hover:opacity-90" href="#inquiry-form">
                   {primaryCta}
+                </a>
+                <a className="inline-flex min-h-11 items-center justify-center rounded-md border border-primary-foreground/35 px-5 py-3 text-sm font-semibold text-primary-foreground hover:bg-primary-foreground/10" href={whatsappUrl}>
+                  Chat on WhatsApp
                 </a>
                 <a className="inline-flex min-h-11 items-center justify-center rounded-md border border-primary-foreground/35 px-5 py-3 text-sm font-semibold text-primary-foreground hover:bg-primary-foreground/10" href="#framework">
                   {secondaryCta}
                 </a>
               </div>
+
             </div>
           </div>
         </section>
