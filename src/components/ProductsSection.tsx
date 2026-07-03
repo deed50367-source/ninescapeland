@@ -80,6 +80,10 @@ export const ProductsSection = () => {
     { title: "Trampoline Equipment Safety Standards", href: "/safety-standards-for-trampoline-park-equipment" },
     { title: "Custom Soft Play for Schools", href: "/custom-soft-play-equipment-manufacturer-for-schools" },
     { title: "Educational Activities by Age", href: "/indoor-play-center-educational-activities-by-age" },
+    { title: "Active Learning Environment", href: "/how-to-create-active-learning-environment" },
+    { title: "Kinesthetic Learning Equipment", href: "/kinesthetic-learning-equipment-benefits" },
+    { title: "Sensory Play Area Design", href: "/designing-sensory-play-areas-for-education" },
+    { title: "Trampoline Park for Schools", href: "/indoor-trampoline-park-business-for-schools" },
   ];
 
   return (
