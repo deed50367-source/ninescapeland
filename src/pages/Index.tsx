@@ -42,6 +42,19 @@ const Index = () => {
       <OrganizationSchema />
       <LocalBusinessSchema />
       <WebsiteSchema />
+      <BreadcrumbSchema
+        items={[{ name: "Home", url: "https://indoorplaygroundsolution.com/" }]}
+      />
+      <ItemListSchema
+        name="Indoor Playground Equipment Categories"
+        description="Custom commercial indoor playground equipment categories manufactured by NinescapeLand"
+        items={[
+          { position: 1, name: "Indoor Playground Equipment", url: "https://indoorplaygroundsolution.com/products/indoor-playground" },
+          { position: 2, name: "Trampoline Park Equipment", url: "https://indoorplaygroundsolution.com/products/trampoline-park" },
+          { position: 3, name: "Ninja Warrior Course", url: "https://indoorplaygroundsolution.com/products/ninja-course" },
+          { position: 4, name: "Soft Play Equipment", url: "https://indoorplaygroundsolution.com/products/soft-play" },
+        ]}
+      />
       <Header />
       <main>
         {/* Above-the-fold: loaded eagerly */}
