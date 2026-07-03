@@ -141,9 +141,19 @@ export const HeroSection = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="text-sm sm:text-base md:text-lg lg:text-xl text-primary-foreground/90 mb-6 sm:mb-8 max-w-2xl"
+            className="text-sm sm:text-base md:text-lg lg:text-xl text-primary-foreground/90 mb-4 sm:mb-6 max-w-2xl"
           >
             {t("hero.description")}
+          </motion.p>
+
+          {/* Keyword-emphasized SEO line (semantic <strong> for topical relevance) */}
+          <motion.p
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.25 }}
+            className="text-xs sm:text-sm md:text-base text-primary-foreground/80 mb-6 sm:mb-8 max-w-2xl leading-relaxed"
+          >
+            <strong className="text-accent-foreground font-semibold">Custom indoor playground equipment manufacturer</strong> serving 50+ countries since 2008 — <strong className="text-accent-foreground font-semibold">ASTM &amp; TUV certified</strong> commercial-grade play structures, trampoline parks, ninja courses and soft play systems shipped worldwide.
           </motion.p>
 
           {/* Benefits */}
