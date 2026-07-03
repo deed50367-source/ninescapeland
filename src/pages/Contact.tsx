@@ -8,7 +8,7 @@ import { FloatingCTA } from "@/components/FloatingCTA";
 import { ContactMascotBanner } from "@/components/ContactMascotBanner";
 import { ContactTrustSection } from "@/components/ContactTrustSection";
 import { SEOHead } from "@/components/SEOHead";
-import { BreadcrumbSchema, LocalBusinessSchema, ContactPageSchema } from "@/components/StructuredData";
+import { BreadcrumbSchema, LocalBusinessSchema, ContactPageSchema, OrganizationSchema } from "@/components/StructuredData";
 import { useLocalizedPath } from "@/hooks/useLocalizedPath";
 import { LazySection } from "@/components/LazySection";
 
@@ -30,6 +30,7 @@ const Contact = () => {
     <div className="min-h-screen">
       <SEOHead pageKey="contact" lastModified="2026-03-06" />
       <BreadcrumbSchema items={breadcrumbItems} />
+      <OrganizationSchema />
       <LocalBusinessSchema />
       <ContactPageSchema />
       <Header />

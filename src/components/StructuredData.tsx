@@ -32,7 +32,12 @@ export const OrganizationSchema = ({
     addressRegion: "Zhejiang",
     addressCountry: "CN"
   },
-  sameAs = []
+  sameAs = [
+    "https://www.facebook.com/ninescapeland",
+    "https://www.youtube.com/@ninescapeland",
+    "https://www.linkedin.com/company/ninescapeland",
+    "https://www.instagram.com/ninescapeland"
+  ]
 }: OrganizationSchemaProps) => {
   const schema = {
     "@context": "https://schema.org",
