@@ -11,7 +11,7 @@ import { IAAPAFloatingBanner } from "@/components/IAAPAFloatingBanner";
 
 import MobileBottomNav from "@/components/MobileBottomNav";
 import { SEOHead } from "@/components/SEOHead";
-import { OrganizationSchema, LocalBusinessSchema, WebsiteSchema } from "@/components/StructuredData";
+import { OrganizationSchema, LocalBusinessSchema, WebsiteSchema, BreadcrumbSchema, ItemListSchema } from "@/components/StructuredData";
 import { LazySection } from "@/components/LazySection";
 import { TrustHubLinks } from "@/components/TrustHubLinks";
 import { EEATSignature } from "@/components/EEATSignature";
@@ -42,6 +42,19 @@ const Index = () => {
       <OrganizationSchema />
       <LocalBusinessSchema />
       <WebsiteSchema />
+      <BreadcrumbSchema
+        items={[{ name: "Home", url: "https://indoorplaygroundsolution.com/" }]}
+      />
+      <ItemListSchema
+        name="Indoor Playground Equipment Categories"
+        description="Custom commercial indoor playground equipment categories manufactured by NinescapeLand"
+        items={[
+          { position: 1, name: "Indoor Playground Equipment", url: "https://indoorplaygroundsolution.com/products/indoor-playground" },
+          { position: 2, name: "Trampoline Park Equipment", url: "https://indoorplaygroundsolution.com/products/trampoline-park" },
+          { position: 3, name: "Ninja Warrior Course", url: "https://indoorplaygroundsolution.com/products/ninja-course" },
+          { position: 4, name: "Soft Play Equipment", url: "https://indoorplaygroundsolution.com/products/soft-play" },
+        ]}
+      />
       <Header />
       <main>
         {/* Above-the-fold: loaded eagerly */}
