@@ -49,6 +49,10 @@ const Contact = () => {
         <LazySection minHeight="400px">
           <FAQSection />
         </LazySection>
+        <div className="container-wide py-6 text-center text-xs text-muted-foreground">
+          Last updated:{" "}
+          <time dateTime="2026-03-06">March 6, 2026</time>
+        </div>
       </main>
       <Footer />
       <FloatingCTA />
