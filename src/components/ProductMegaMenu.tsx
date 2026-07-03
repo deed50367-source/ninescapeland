@@ -109,6 +109,26 @@ export const ProductMegaMenu = () => {
       href: "/indoor-play-center-educational-activities-by-age",
       icon: "📚"
     },
+    {
+      label: "Active Learning Environment",
+      href: "/how-to-create-active-learning-environment",
+      icon: "🧠"
+    },
+    {
+      label: "Kinesthetic Learning Equipment",
+      href: "/kinesthetic-learning-equipment-benefits",
+      icon: "🤸"
+    },
+    {
+      label: "Sensory Play Area Design",
+      href: "/designing-sensory-play-areas-for-education",
+      icon: "🌈"
+    },
+    {
+      label: "Trampoline Park for Schools",
+      href: "/indoor-trampoline-park-business-for-schools",
+      icon: "🏫"
+    },
     { 
       label: t("activePlayRunning.breadcrumb", "Active Play for Running"), 
       href: "/best-indoorplaygroundsolution-active-play-for-running-facilities",

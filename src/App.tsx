@@ -16,6 +16,10 @@ import EducationalBenefitsOfIndoorPlayCenters from "./pages/EducationalBenefitsO
 import SafetyStandardsForTrampolineParkEquipment from "./pages/SafetyStandardsForTrampolineParkEquipment";
 import CustomSoftPlayEquipmentManufacturerForSchools from "./pages/CustomSoftPlayEquipmentManufacturerForSchools";
 import IndoorPlayCenterEducationalActivitiesByAge from "./pages/IndoorPlayCenterEducationalActivitiesByAge";
+import HowToCreateActiveLearningEnvironment from "./pages/HowToCreateActiveLearningEnvironment";
+import KinestheticLearningEquipmentBenefits from "./pages/KinestheticLearningEquipmentBenefits";
+import DesigningSensoryPlayAreasForEducation from "./pages/DesigningSensoryPlayAreasForEducation";
+import IndoorTrampolineParkBusinessForSchools from "./pages/IndoorTrampolineParkBusinessForSchools";
 
 // Resilient lazy: if a chunk fails to load (e.g. Hostinger 429), render nothing
 // instead of crashing the whole app.
@@ -131,6 +135,10 @@ const pageRoutes = (
     <Route path="safety-standards-for-trampoline-park-equipment" element={<SafetyStandardsForTrampolineParkEquipment />} />
     <Route path="custom-soft-play-equipment-manufacturer-for-schools" element={<CustomSoftPlayEquipmentManufacturerForSchools />} />
     <Route path="indoor-play-center-educational-activities-by-age" element={<IndoorPlayCenterEducationalActivitiesByAge />} />
+    <Route path="how-to-create-active-learning-environment" element={<HowToCreateActiveLearningEnvironment />} />
+    <Route path="kinesthetic-learning-equipment-benefits" element={<KinestheticLearningEquipmentBenefits />} />
+    <Route path="designing-sensory-play-areas-for-education" element={<DesigningSensoryPlayAreasForEducation />} />
+    <Route path="indoor-trampoline-park-business-for-schools" element={<IndoorTrampolineParkBusinessForSchools />} />
     <Route path="investment-opportunity" element={<InvestmentOpportunity />} />
     <Route path="investment-opportunity/:slug" element={<InvestmentROIPage />} />
     <Route path="locations/:slug" element={<LocationPage />} />
