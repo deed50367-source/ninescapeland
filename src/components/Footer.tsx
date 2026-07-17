@@ -2,7 +2,7 @@ import { useTranslation } from "react-i18next";
 import { Link, useLocation, useParams } from "react-router-dom";
 import { Mail, Phone, MapPin, Facebook, Linkedin, Youtube, Instagram, Globe } from "lucide-react";
 import { useRTL } from "@/hooks/useRTL";
-import { industryPages } from "@/config/industryPages";
+
 import { useLocalizedPath } from "@/hooks/useLocalizedPath";
 import logo from "@/assets/logo.png";
 import { useWhatsAppTracking } from "@/hooks/useWhatsAppTracking";
@@ -24,48 +24,22 @@ export const Footer = () => {
   const { openWhatsApp, getWhatsAppUrl } = useWhatsAppTracking();
   const { lang } = useParams<{ lang: string }>();
 
+  // Slimmed Footer: 4 core product categories only. Long-tail solution pages live in the
+  // Header MegaMenu and on /products; keeping them out of the sitewide footer prevents
+  // internal-link dilution (per SEO audit 2026-07-17, prev. 53 sitewide links → target <15).
   const productLinks = [
     { label: t("footer.links.indoorPlayground"), href: localizedPath("/products/indoor-playground") },
     { label: t("footer.links.trampolinePark"), href: localizedPath("/products/trampoline-park") },
     { label: t("footer.links.ninjaCourse"), href: localizedPath("/products/ninja-course") },
     { label: t("footer.links.softPlay"), href: localizedPath("/products/soft-play") },
-    { label: "Indoor PE Equipment", href: localizedPath("/indoor-pe-equipment-for-schools") },
-    { label: "Montessori Play Design", href: localizedPath("/montessori-indoor-playground-design") },
-    { label: "Homeschool Co-op Play", href: localizedPath("/homeschool-coop-indoor-play-solutions") },
-    { label: "Summer Camp Play Ideas", href: localizedPath("/indoor-summer-camp-playground-ideas") },
-    { label: "Educational Benefits of Play Centers", href: localizedPath("/educational-benefits-of-indoor-play-centers") },
-    { label: "Trampoline Equipment Safety Standards", href: localizedPath("/safety-standards-for-trampoline-park-equipment") },
-    { label: "Custom Soft Play for Schools", href: localizedPath("/custom-soft-play-equipment-manufacturer-for-schools") },
-    { label: "Activities by Age", href: localizedPath("/indoor-play-center-educational-activities-by-age") },
-    { label: "Active Learning Environment", href: localizedPath("/how-to-create-active-learning-environment") },
-    { label: "Kinesthetic Learning Equipment", href: localizedPath("/kinesthetic-learning-equipment-benefits") },
-    { label: "Sensory Play Area Design", href: localizedPath("/designing-sensory-play-areas-for-education") },
-    { label: "Trampoline Park for Schools", href: localizedPath("/indoor-trampoline-park-business-for-schools") },
-    { label: t("activePlayRunning.breadcrumb", "Active Play for Running"), href: localizedPath("/best-indoorplaygroundsolution-active-play-for-running-facilities") },
-    { label: t("officeWellness.breadcrumb", "Office Wellness"), href: localizedPath("/indoorplaygroundsolution-office-wellness-solutions") },
-    { label: t("footer.links.customDesign"), href: localizedPath("/contact#inquiry-form") },
   ];
 
   const companyLinks = [
     { label: t("footer.links.aboutUs"), href: localizedPath("/about-us") },
     { label: t("footer.links.projects"), href: localizedPath("/projects") },
-    { label: t("footer.links.caseStudies", "Case Studies"), href: localizedPath("/case-studies") },
-    { label: t("footer.links.testimonials", "Client Testimonials"), href: localizedPath("/customer-testimonials") },
-    { label: t("footer.links.safety", "Safety & Certifications"), href: localizedPath("/safety-certifications") },
-    { label: t("footer.links.maintenance", "Maintenance & Warranty"), href: localizedPath("/maintenance-warranty") },
     { label: t("footer.links.investmentOpportunity", "Investment & ROI Hub"), href: localizedPath("/investment-opportunity") },
     { label: t("footer.links.contact"), href: localizedPath("/contact") },
   ];
-
-  const industryLinks = industryPages.slice(0, 5).map((page) => ({
-    label: t(`footer.industryLinks.${page.i18nKey}`),
-    href: localizedPath(`/market/${page.slug}`),
-  }));
-
-  const industryLinks2 = industryPages.slice(5).map((page) => ({
-    label: t(`footer.industryLinks.${page.i18nKey}`),
-    href: localizedPath(`/market/${page.slug}`),
-  }));
 
   // Fetch popular blog posts for the current language
   const { data: blogPosts } = useQuery({
@@ -87,7 +61,7 @@ export const Footer = () => {
     <footer className="bg-primary text-primary-foreground">
       {/* Main Footer */}
       <div className="container-wide py-10 sm:py-16">
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 sm:gap-8 lg:gap-10">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 sm:gap-8 lg:gap-10">
           {/* Company Info */}
           <div className="col-span-2 lg:col-span-1">
             <img src={logo} alt="NinescapeLand" className="h-14 sm:h-20 w-auto max-w-[200px] sm:max-w-[260px] mb-4 sm:mb-6" loading="lazy" decoding="async" width="260" height="80" />
@@ -144,24 +118,7 @@ export const Footer = () => {
             </ul>
           </div>
 
-          {/* Industry Solutions — keep top 5 only to avoid sitewide internal-link dilution.
-              Full list lives on /products and /market hub pages where it's contextually relevant. */}
-          <div>
-            <h4 className="font-heading font-bold text-sm sm:text-lg mb-3 sm:mb-4">{t("footer.industrySolutions")}</h4>
-            <ul className="space-y-2 sm:space-y-3">
-              {industryLinks.map((link, index) => (
-                <li key={index}>
-                  <Link
-                    to={link.href}
-                    className="text-primary-foreground/80 hover:text-primary-foreground transition-colors text-xs sm:text-sm"
-                  >
-                    {link.label}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-          {/* Blog */}
+          {/* Blog — link only to hub; individual posts covered by /sitemap.xml + blog listing. */}
           <div>
             <h4 className="font-heading font-bold text-sm sm:text-lg mb-3 sm:mb-4">{t("footer.blog", "Blog")}</h4>
             <ul className="space-y-2 sm:space-y-3">
@@ -173,7 +130,7 @@ export const Footer = () => {
                   {t("footer.links.allArticles", "All Articles")}
                 </Link>
               </li>
-              {blogPosts?.map((post) => (
+              {blogPosts?.slice(0, 2).map((post) => (
                 <li key={post.slug}>
                   <Link
                     to={localizedPath(`/blog/${post.slug}`)}
@@ -183,21 +140,12 @@ export const Footer = () => {
                   </Link>
                 </li>
               ))}
-              {/* Featured articles - always linked for SEO crawl coverage */}
               <li>
                 <Link
-                  to={localizedPath("/blog/premium-residential-indoor-playground-climbers-for-homes")}
-                  className="text-primary-foreground/80 hover:text-primary-foreground transition-colors text-xs sm:text-sm line-clamp-2"
+                  to={localizedPath("/faq")}
+                  className="text-primary-foreground/80 hover:text-primary-foreground transition-colors text-xs sm:text-sm"
                 >
-                  {t("footer.links.featuredResidentialClimbers", "Guide: Residential Climbers for Home Playrooms")}
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to={localizedPath("/blog/contact-ninescapeland-partner")}
-                  className="text-primary-foreground/80 hover:text-primary-foreground transition-colors text-xs sm:text-sm line-clamp-2"
-                >
-                  {t("footer.links.featuredPartnerWithUs", "Become a NinescapeLand Distributor (Article)")}
+                  {t("footer.links.faq", "FAQ")}
                 </Link>
               </li>
             </ul>
