@@ -118,24 +118,7 @@ export const Footer = () => {
             </ul>
           </div>
 
-          {/* Industry Solutions — keep top 5 only to avoid sitewide internal-link dilution.
-              Full list lives on /products and /market hub pages where it's contextually relevant. */}
-          <div>
-            <h4 className="font-heading font-bold text-sm sm:text-lg mb-3 sm:mb-4">{t("footer.industrySolutions")}</h4>
-            <ul className="space-y-2 sm:space-y-3">
-              {industryLinks.map((link, index) => (
-                <li key={index}>
-                  <Link
-                    to={link.href}
-                    className="text-primary-foreground/80 hover:text-primary-foreground transition-colors text-xs sm:text-sm"
-                  >
-                    {link.label}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-          {/* Blog */}
+          {/* Blog — link only to hub; individual posts covered by /sitemap.xml + blog listing. */}
           <div>
             <h4 className="font-heading font-bold text-sm sm:text-lg mb-3 sm:mb-4">{t("footer.blog", "Blog")}</h4>
             <ul className="space-y-2 sm:space-y-3">
@@ -147,7 +130,7 @@ export const Footer = () => {
                   {t("footer.links.allArticles", "All Articles")}
                 </Link>
               </li>
-              {blogPosts?.map((post) => (
+              {blogPosts?.slice(0, 2).map((post) => (
                 <li key={post.slug}>
                   <Link
                     to={localizedPath(`/blog/${post.slug}`)}
@@ -157,21 +140,12 @@ export const Footer = () => {
                   </Link>
                 </li>
               ))}
-              {/* Featured articles - always linked for SEO crawl coverage */}
               <li>
                 <Link
-                  to={localizedPath("/blog/premium-residential-indoor-playground-climbers-for-homes")}
-                  className="text-primary-foreground/80 hover:text-primary-foreground transition-colors text-xs sm:text-sm line-clamp-2"
+                  to={localizedPath("/faq")}
+                  className="text-primary-foreground/80 hover:text-primary-foreground transition-colors text-xs sm:text-sm"
                 >
-                  {t("footer.links.featuredResidentialClimbers", "Guide: Residential Climbers for Home Playrooms")}
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to={localizedPath("/blog/contact-ninescapeland-partner")}
-                  className="text-primary-foreground/80 hover:text-primary-foreground transition-colors text-xs sm:text-sm line-clamp-2"
-                >
-                  {t("footer.links.featuredPartnerWithUs", "Become a NinescapeLand Distributor (Article)")}
+                  {t("footer.links.faq", "FAQ")}
                 </Link>
               </li>
             </ul>
