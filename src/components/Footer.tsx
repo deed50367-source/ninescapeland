@@ -24,48 +24,22 @@ export const Footer = () => {
   const { openWhatsApp, getWhatsAppUrl } = useWhatsAppTracking();
   const { lang } = useParams<{ lang: string }>();
 
+  // Slimmed Footer: 4 core product categories only. Long-tail solution pages live in the
+  // Header MegaMenu and on /products; keeping them out of the sitewide footer prevents
+  // internal-link dilution (per SEO audit 2026-07-17, prev. 53 sitewide links → target <15).
   const productLinks = [
     { label: t("footer.links.indoorPlayground"), href: localizedPath("/products/indoor-playground") },
     { label: t("footer.links.trampolinePark"), href: localizedPath("/products/trampoline-park") },
     { label: t("footer.links.ninjaCourse"), href: localizedPath("/products/ninja-course") },
     { label: t("footer.links.softPlay"), href: localizedPath("/products/soft-play") },
-    { label: "Indoor PE Equipment", href: localizedPath("/indoor-pe-equipment-for-schools") },
-    { label: "Montessori Play Design", href: localizedPath("/montessori-indoor-playground-design") },
-    { label: "Homeschool Co-op Play", href: localizedPath("/homeschool-coop-indoor-play-solutions") },
-    { label: "Summer Camp Play Ideas", href: localizedPath("/indoor-summer-camp-playground-ideas") },
-    { label: "Educational Benefits of Play Centers", href: localizedPath("/educational-benefits-of-indoor-play-centers") },
-    { label: "Trampoline Equipment Safety Standards", href: localizedPath("/safety-standards-for-trampoline-park-equipment") },
-    { label: "Custom Soft Play for Schools", href: localizedPath("/custom-soft-play-equipment-manufacturer-for-schools") },
-    { label: "Activities by Age", href: localizedPath("/indoor-play-center-educational-activities-by-age") },
-    { label: "Active Learning Environment", href: localizedPath("/how-to-create-active-learning-environment") },
-    { label: "Kinesthetic Learning Equipment", href: localizedPath("/kinesthetic-learning-equipment-benefits") },
-    { label: "Sensory Play Area Design", href: localizedPath("/designing-sensory-play-areas-for-education") },
-    { label: "Trampoline Park for Schools", href: localizedPath("/indoor-trampoline-park-business-for-schools") },
-    { label: t("activePlayRunning.breadcrumb", "Active Play for Running"), href: localizedPath("/best-indoorplaygroundsolution-active-play-for-running-facilities") },
-    { label: t("officeWellness.breadcrumb", "Office Wellness"), href: localizedPath("/indoorplaygroundsolution-office-wellness-solutions") },
-    { label: t("footer.links.customDesign"), href: localizedPath("/contact#inquiry-form") },
   ];
 
   const companyLinks = [
     { label: t("footer.links.aboutUs"), href: localizedPath("/about-us") },
     { label: t("footer.links.projects"), href: localizedPath("/projects") },
-    { label: t("footer.links.caseStudies", "Case Studies"), href: localizedPath("/case-studies") },
-    { label: t("footer.links.testimonials", "Client Testimonials"), href: localizedPath("/customer-testimonials") },
-    { label: t("footer.links.safety", "Safety & Certifications"), href: localizedPath("/safety-certifications") },
-    { label: t("footer.links.maintenance", "Maintenance & Warranty"), href: localizedPath("/maintenance-warranty") },
     { label: t("footer.links.investmentOpportunity", "Investment & ROI Hub"), href: localizedPath("/investment-opportunity") },
     { label: t("footer.links.contact"), href: localizedPath("/contact") },
   ];
-
-  const industryLinks = industryPages.slice(0, 5).map((page) => ({
-    label: t(`footer.industryLinks.${page.i18nKey}`),
-    href: localizedPath(`/market/${page.slug}`),
-  }));
-
-  const industryLinks2 = industryPages.slice(5).map((page) => ({
-    label: t(`footer.industryLinks.${page.i18nKey}`),
-    href: localizedPath(`/market/${page.slug}`),
-  }));
 
   // Fetch popular blog posts for the current language
   const { data: blogPosts } = useQuery({
