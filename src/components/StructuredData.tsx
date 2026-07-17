@@ -61,7 +61,13 @@ export const OrganizationSchema = ({
       availableLanguage: ["English", "Chinese", "Spanish", "German", "Portuguese", "Arabic", "French"]
     },
     areaServed: { "@type": "Place", name: "Worldwide" },
-    slogan: "Your Trusted Indoor Playground Equipment Manufacturer Since 2008"
+    slogan: "Your Trusted Indoor Playground Equipment Manufacturer Since 2008",
+    // Speakable markup helps voice assistants (Google Assistant, Alexa) extract
+    // concise answers from the page for spoken responses (AEO / voice-search).
+    speakable: {
+      "@type": "SpeakableSpecification",
+      cssSelector: ["h1", "h2", ".hero-description", "meta[name='description']"]
+    }
   };
 
   return (
