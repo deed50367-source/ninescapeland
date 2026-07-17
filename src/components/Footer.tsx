@@ -2,7 +2,7 @@ import { useTranslation } from "react-i18next";
 import { Link, useLocation, useParams } from "react-router-dom";
 import { Mail, Phone, MapPin, Facebook, Linkedin, Youtube, Instagram, Globe } from "lucide-react";
 import { useRTL } from "@/hooks/useRTL";
-import { industryPages } from "@/config/industryPages";
+
 import { useLocalizedPath } from "@/hooks/useLocalizedPath";
 import logo from "@/assets/logo.png";
 import { useWhatsAppTracking } from "@/hooks/useWhatsAppTracking";
