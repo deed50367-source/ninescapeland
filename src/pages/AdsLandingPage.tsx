@@ -15,7 +15,7 @@ import {
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import NotFound from "@/pages/NotFound";
-import { getAdsLandingConfig } from "@/config/adsLandingPages";
+import { getAdsLandingConfig, heroAboutUs } from "@/config/adsLandingPages";
 import { AdsInquiryForm, trackAdsMicroConversion } from "@/components/ads/AdsInquiryForm";
 
 const WHATSAPP_URL = "https://wa.me/8615058782901";
