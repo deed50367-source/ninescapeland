@@ -167,6 +167,7 @@ const App = () => (
 
               {/* Google Ads landing pages — noindex, no language prefix */}
               <Route path="/lp/:slug" element={<AdsLandingPage />} />
+              <Route path="/lp/privacy" element={<AdsPrivacy />} />
 
 
               {/* Redirect /en/* to root (English is default without prefix) */}
