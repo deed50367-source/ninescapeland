@@ -1,6 +1,19 @@
 // Ads landing page configuration.
 // One entry per Google Ads product line. All pages share AdsLandingPage template.
 
+import heroPlayground from "@/assets/hero-playground.jpg";
+import heroProjects from "@/assets/hero-projects.jpg";
+import heroAboutUs from "@/assets/hero-about-us.jpg";
+import productIndoor from "@/assets/product-indoor-playground.jpg";
+import productTrampoline from "@/assets/product-trampoline-park.jpg";
+import productNinja from "@/assets/product-ninja-course.jpg";
+import productSoftPlay from "@/assets/product-soft-play.jpg";
+import projectFec from "@/assets/project-fec-center.jpg";
+import projectBounce from "@/assets/project-bounce-park.jpg";
+
+export { heroAboutUs };
+
+
 export interface AdsProductLineCard {
   title: string;
   description: string;
