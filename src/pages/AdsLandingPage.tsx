@@ -310,14 +310,23 @@ const AdsLandingPage = () => {
           </div>
           <div className="grid md:grid-cols-3 gap-5">
             {config.cases.map((c) => (
-              <div key={c.title} className="bg-card rounded-2xl border p-6">
-                <div className="text-3xl">{c.flag}</div>
-                <div className="mt-2 text-xs uppercase tracking-wide text-muted-foreground font-semibold">
-                  {c.country}
+              <div key={c.title} className="bg-card rounded-2xl border overflow-hidden shadow-sm">
+                {c.image && (
+                  <div className="aspect-[16/10] overflow-hidden bg-muted">
+                    <img src={c.image} alt={c.title} loading="lazy" className="w-full h-full object-cover" />
+                  </div>
+                )}
+                <div className="p-6">
+                  <div className="flex items-center gap-2">
+                    <span className="text-2xl">{c.flag}</span>
+                    <span className="text-xs uppercase tracking-wide text-muted-foreground font-semibold">
+                      {c.country}
+                    </span>
+                  </div>
+                  <h3 className="font-bold mt-2 mb-3">{c.title}</h3>
+                  <p className="text-sm text-muted-foreground italic">"{c.quote}"</p>
+                  <p className="text-xs text-muted-foreground mt-3 font-semibold">— {c.client}</p>
                 </div>
-                <h3 className="font-bold mt-1 mb-3">{c.title}</h3>
-                <p className="text-sm text-muted-foreground italic">"{c.quote}"</p>
-                <p className="text-xs text-muted-foreground mt-3 font-semibold">— {c.client}</p>
               </div>
             ))}
           </div>
