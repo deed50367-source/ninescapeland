@@ -422,6 +422,7 @@ const AdsLandingPage = () => {
               <Link to="/products" className="hover:text-primary">Products</Link>
               <Link to="/contact" className="hover:text-primary">Contact</Link>
               <Link to="/safety-certifications" className="hover:text-primary">Warranty</Link>
+              <Link to="/lp/privacy" className="hover:text-primary">Privacy Policy</Link>
               <a
                 href={`mailto:${EMAIL}`}
                 onClick={onEmail}
