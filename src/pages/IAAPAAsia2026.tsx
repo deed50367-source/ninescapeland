@@ -29,7 +29,7 @@ const EVENT = {
   booth: "2328",
   startISO: "2026-06-10T10:00:00+08:00",
   endISO: "2026-06-12T18:00:00+08:00",
-  whatsapp: "8615058782901",
+  whatsapp: "18969753002",
 };
 
 function useCountdown(targetISO: string) {

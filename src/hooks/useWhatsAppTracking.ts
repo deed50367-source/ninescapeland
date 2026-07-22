@@ -23,7 +23,7 @@ interface TrackingOptions {
   pageName?: string;
 }
 
-const WHATSAPP_NUMBER = "8615058782901";
+const WHATSAPP_NUMBER = "18969753002";
 const WHATSAPP_BASE_URL = "https://wa.me/";
 
 // Pre-filled messages for different sources/contexts

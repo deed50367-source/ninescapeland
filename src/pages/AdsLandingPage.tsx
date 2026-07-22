@@ -18,7 +18,7 @@ import NotFound from "@/pages/NotFound";
 import { getAdsLandingConfig, heroAboutUs } from "@/config/adsLandingPages";
 import { AdsInquiryForm, trackAdsMicroConversion } from "@/components/ads/AdsInquiryForm";
 
-const WHATSAPP_URL = "https://wa.me/8615058782901";
+const WHATSAPP_URL = "https://wa.me/18969753002";
 const EMAIL = "sale@indoorplaygroundsolution.com";
 const baseUrl = "https://indoorplaygroundsolution.com";
 

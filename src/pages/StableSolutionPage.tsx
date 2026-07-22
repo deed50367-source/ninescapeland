@@ -52,7 +52,7 @@ export type StableSolutionPageProps = {
 const siteName = "NinescapeLand";
 const baseUrl = "https://indoorplaygroundsolution.com";
 const defaultOgImage = `${baseUrl}/og-image.jpg`;
-const whatsappUrl = "https://wa.me/8615058782901";
+const whatsappUrl = "https://wa.me/18969753002";
 
 const upsertMeta = (selector: string, create: () => HTMLMetaElement, content: string) => {
   const existing = document.head.querySelector<HTMLMetaElement>(selector);
