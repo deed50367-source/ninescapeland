@@ -120,9 +120,22 @@ const AdsLandingPage = () => {
         </div>
       </header>
 
-      {/* 3. Hero + Inline Form */}
-      <section id="inquiry" className="relative bg-gradient-to-br from-primary/5 via-background to-background py-10 md:py-16">
-        <div className="container mx-auto px-4 grid lg:grid-cols-2 gap-10 items-start">
+      {/* 3. Hero + Inline Form (with campaign background image) */}
+      <section id="inquiry" className="relative py-10 md:py-16 overflow-hidden">
+        {config.heroImage && (
+          <>
+            <img
+              src={config.heroImage}
+              alt=""
+              aria-hidden="true"
+              className="absolute inset-0 w-full h-full object-cover"
+              loading="eager"
+              fetchPriority="high"
+            />
+            <div className="absolute inset-0 bg-gradient-to-br from-background/95 via-background/85 to-background/70" />
+          </>
+        )}
+        <div className="relative container mx-auto px-4 grid lg:grid-cols-2 gap-10 items-start">
           <div>
             <Badge variant="secondary" className="mb-4">
               15+ Years · 2,000+ Projects · 50+ Countries
