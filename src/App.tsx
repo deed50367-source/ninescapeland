@@ -164,6 +164,10 @@ const App = () => (
               <Route path="/admin" element={<AdminDashboard />} />
               <Route path="/admin/login" element={<AdminLogin />} />
 
+              {/* Google Ads landing pages — noindex, no language prefix */}
+              <Route path="/lp/:slug" element={<AdsLandingPage />} />
+
+
               {/* Redirect /en/* to root (English is default without prefix) */}
               <Route path="/en" element={<EnglishRedirect />} />
               <Route path="/en/*" element={<EnglishRedirect />} />
