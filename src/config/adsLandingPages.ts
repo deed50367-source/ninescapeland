@@ -43,28 +43,34 @@ const commonProductLines: AdsProductLineCard[] = [
     title: "Indoor Playground Equipment",
     description: "Multi-level soft play structures, ball pits, slides, and toddler zones.",
     href: "/products/indoor-playground",
+    image: "/src-assets/product-indoor-playground.jpg",
   },
   {
     title: "Trampoline Park Equipment",
     description: "Olympic-grade jump beds, foam pits, dodgeball courts and wall runners.",
     href: "/products/trampoline-park",
+    image: "/src-assets/product-trampoline-park.jpg",
   },
   {
     title: "Ninja Warrior Course",
     description: "Modular obstacle courses for kids, teens and adult competitions.",
     href: "/products/ninja-course",
+    image: "/src-assets/product-ninja-course.jpg",
   },
   {
     title: "Soft Play Equipment",
     description: "Toddler-safe foam blocks, shapes and role-play sets for ages 1-5.",
     href: "/products/soft-play",
+    image: "/src-assets/product-soft-play.jpg",
   },
   {
     title: "FEC Attractions",
     description: "Turnkey Family Entertainment Center packages combining all attractions.",
     href: "/products",
+    image: "/src-assets/project-fec-center.jpg",
   },
 ];
+
 
 const commonWhyUs = [
   { title: "Direct-from-Factory Pricing", desc: "50,000㎡ own factory in Wenzhou. No middlemen. Save 20-35% vs trading companies." },
