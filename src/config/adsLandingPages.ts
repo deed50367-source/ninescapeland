@@ -52,11 +52,17 @@ export interface AdsLandingConfig {
   faqs: AdsFAQ[];
 }
 
+// Category IDs correspond to product_categories rows in Supabase.
+// Cards deep-link to /products?category=<uuid> so users land on a pre-filtered catalog.
+const CATEGORY_INDOOR = "f2a21be1-e63c-4feb-b611-de6865437a95";
+const CATEGORY_TRAMPOLINE = "018529e4-d7b6-4c31-a4c8-72a4e0614fc5";
+const CATEGORY_SOFT_PLAY = "a5a15154-84e6-4e4f-b716-bfb8cb6e6045";
+
 const commonProductLines: AdsProductLineCard[] = [
-  { title: "Indoor Playground Equipment", description: "Multi-level soft play structures, ball pits, slides, and toddler zones.", href: "/products/indoor-playground", image: productIndoor },
-  { title: "Trampoline Park Equipment", description: "Olympic-grade jump beds, foam pits, dodgeball courts and wall runners.", href: "/products/trampoline-park", image: productTrampoline },
-  { title: "Ninja Warrior Course", description: "Modular obstacle courses for kids, teens and adult competitions.", href: "/products/ninja-course", image: productNinja },
-  { title: "Soft Play Equipment", description: "Toddler-safe foam blocks, shapes and role-play sets for ages 1-5.", href: "/products/soft-play", image: productSoftPlay },
+  { title: "Indoor Playground Equipment", description: "Multi-level soft play structures, ball pits, slides, and toddler zones.", href: `/products?category=${CATEGORY_INDOOR}`, image: productIndoor },
+  { title: "Trampoline Park Equipment", description: "Olympic-grade jump beds, foam pits, dodgeball courts and wall runners.", href: `/products?category=${CATEGORY_TRAMPOLINE}`, image: productTrampoline },
+  { title: "Ninja Warrior Course", description: "Modular obstacle courses for kids, teens and adult competitions.", href: `/products?category=${CATEGORY_INDOOR}`, image: productNinja },
+  { title: "Soft Play Equipment", description: "Toddler-safe foam blocks, shapes and role-play sets for ages 1-5.", href: `/products?category=${CATEGORY_SOFT_PLAY}`, image: productSoftPlay },
   { title: "FEC Attractions", description: "Turnkey Family Entertainment Center packages combining all attractions.", href: "/products", image: projectFec },
 ];
 
