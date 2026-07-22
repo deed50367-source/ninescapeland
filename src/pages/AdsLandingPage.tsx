@@ -257,9 +257,17 @@ const AdsLandingPage = () => {
         </div>
       </section>
 
-      {/* 7. Why us */}
-      <section className="py-14 md:py-20 bg-background">
-        <div className="container mx-auto px-4">
+      {/* 7. Why us — with factory backdrop */}
+      <section className="relative py-14 md:py-20 overflow-hidden">
+        <img
+          src={heroAboutUs}
+          alt=""
+          aria-hidden="true"
+          loading="lazy"
+          className="absolute inset-0 w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 bg-background/92" />
+        <div className="relative container mx-auto px-4">
           <div className="text-center max-w-2xl mx-auto mb-10">
             <h2 className="text-2xl md:text-4xl font-bold">Why NinescapeLand</h2>
             <p className="text-muted-foreground mt-3">
