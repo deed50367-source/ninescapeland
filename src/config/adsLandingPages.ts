@@ -32,6 +32,7 @@ export interface AdsCaseStudy {
   title: string;
   quote: string;
   client: string;
+  image?: string;
 }
 
 export interface AdsLandingConfig {
