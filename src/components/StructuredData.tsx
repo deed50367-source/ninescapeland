@@ -26,7 +26,7 @@ export const OrganizationSchema = ({
   logo = LOGO_URL,
   description = "Professional indoor playground equipment manufacturer since 2008. Custom indoor playgrounds, trampoline parks, ninja courses & soft play. ASTM & TUV certified.",
   email = "sale@indoorplaygroundsolution.com",
-  phone = "+86-150-5878-2901",
+  phone = "+86-189-6975-3002",
   address = {
     addressLocality: "Wenzhou",
     addressRegion: "Zhejiang",
@@ -240,7 +240,7 @@ export const LocalBusinessSchema = () => {
     name: "NinescapeLand",
     description: "Indoor playground equipment manufacturer. Custom playgrounds, trampoline parks, ninja courses & soft play. Worldwide shipping.",
     url: SITE_URL,
-    telephone: "+86-150-5878-2901",
+    telephone: "+86-189-6975-3002",
     email: "sale@indoorplaygroundsolution.com",
     image: LOGO_URL,
     priceRange: "$$$$",
@@ -265,9 +265,9 @@ export const ContactPageSchema = () => {
     url: `${SITE_URL}/contact`,
     mainEntity: {
       "@type": "Organization", name: "NinescapeLand", url: SITE_URL,
-      telephone: "+86-150-5878-2901", email: "sale@indoorplaygroundsolution.com",
+      telephone: "+86-189-6975-3002", email: "sale@indoorplaygroundsolution.com",
       contactPoint: {
-        "@type": "ContactPoint", telephone: "+86-150-5878-2901",
+        "@type": "ContactPoint", telephone: "+86-189-6975-3002",
         contactType: "sales",
         availableLanguage: ["English", "Chinese", "Spanish", "Portuguese", "German", "French", "Arabic"],
         areaServed: "Worldwide"
