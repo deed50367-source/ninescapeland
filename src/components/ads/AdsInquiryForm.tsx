@@ -285,8 +285,12 @@ export const AdsInquiryForm = ({ campaign, projectTypes, variant = "hero" }: Pro
         )}
       </Button>
 
-      <p className="text-[11px] text-muted-foreground text-center">
-        By submitting, you agree to be contacted by NinescapeLand about your project.
+      <p className="text-[11px] text-muted-foreground text-center leading-relaxed">
+        By submitting, you agree to be contacted by NinescapeLand about your project. See our{" "}
+        <a href="/lp/privacy" target="_blank" rel="noopener" className="underline hover:text-primary">
+          Privacy Policy
+        </a>
+        .
       </p>
     </form>
   );
