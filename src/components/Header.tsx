@@ -116,7 +116,7 @@ export const Header = () => {
               }}
             >
               <Phone className="w-4 h-4" />
-              +86 150 5878 2901
+              +86 189 6975 3002
             </a>
           </div>
           <div className="flex items-center gap-4">

@@ -200,7 +200,7 @@ export const ProductInquiryForm = ({ productName, productSlug }: Props) => {
                 </div>
                 <div className="flex items-start gap-3 text-sm">
                   <Phone className="w-4 h-4 text-primary mt-0.5 shrink-0" />
-                  <span className="text-muted-foreground">+86 150-5878-2901</span>
+                  <span className="text-muted-foreground">+86 189-6975-3002</span>
                 </div>
                 <div className="flex items-start gap-3 text-sm">
                   <MapPin className="w-4 h-4 text-primary mt-0.5 shrink-0" />

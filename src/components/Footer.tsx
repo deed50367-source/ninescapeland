@@ -170,7 +170,7 @@ export const Footer = () => {
                       openWhatsApp("footer");
                     }}
                   >
-                    +86 150 5878 2901
+                    +86 189 6975 3002
                   </a>
                 </div>
               </li>

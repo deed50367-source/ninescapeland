@@ -123,7 +123,7 @@ export const CTABannerSection = () => {
               className="flex items-center justify-center gap-2 hover:text-primary-foreground transition-colors py-2"
             >
               <Phone className="w-4 h-4" />
-              <span dir="ltr">+86 150 5878 2901</span>
+              <span dir="ltr">+86 189 6975 3002</span>
             </a>
             <a 
               href="mailto:sale@indoorplaygroundsolution.com"

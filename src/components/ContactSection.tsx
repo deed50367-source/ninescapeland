@@ -78,7 +78,7 @@ export const ContactSection = () => {
     {
       icon: Phone,
       label: t("contact.info.phone"),
-      value: "+86 150 5878 2901",
+      value: "+86 189 6975 3002",
       href: getWhatsAppUrl("contact_section"),
       isWhatsApp: true,
     },
