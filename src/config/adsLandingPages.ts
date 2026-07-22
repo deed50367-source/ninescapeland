@@ -61,7 +61,7 @@ const CATEGORY_SOFT_PLAY = "a5a15154-84e6-4e4f-b716-bfb8cb6e6045";
 const commonProductLines: AdsProductLineCard[] = [
   { title: "Indoor Playground Equipment", description: "Multi-level soft play structures, ball pits, slides, and toddler zones.", href: `/products?category=${CATEGORY_INDOOR}`, image: productIndoor },
   { title: "Trampoline Park Equipment", description: "Olympic-grade jump beds, foam pits, dodgeball courts and wall runners.", href: `/products?category=${CATEGORY_TRAMPOLINE}`, image: productTrampoline },
-  { title: "Ninja Warrior Course", description: "Modular obstacle courses for kids, teens and adult competitions.", href: `/products?category=${CATEGORY_INDOOR}`, image: productNinja },
+  { title: "Ninja Warrior Course", description: "Modular obstacle courses for kids, teens and adult competitions.", href: "/products", image: productNinja },
   { title: "Soft Play Equipment", description: "Toddler-safe foam blocks, shapes and role-play sets for ages 1-5.", href: `/products?category=${CATEGORY_SOFT_PLAY}`, image: productSoftPlay },
   { title: "FEC Attractions", description: "Turnkey Family Entertainment Center packages combining all attractions.", href: "/products", image: projectFec },
 ];
