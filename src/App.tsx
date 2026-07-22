@@ -79,6 +79,7 @@ const NotFound = lazy(() => import("./pages/NotFound"));
 const AdminLogin = lazy(() => import("./pages/AdminLogin"));
 const AdminDashboard = lazy(() => import("./pages/AdminDashboard"));
 const AdsLandingPage = lazy(() => import("./pages/AdsLandingPage"));
+const AdsPrivacy = lazy(() => import("./pages/AdsPrivacy"));
 
 // Configure QueryClient with caching
 const queryClient = new QueryClient({
