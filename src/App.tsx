@@ -78,6 +78,7 @@ const MaintenanceWarranty = lazy(() => import("./pages/MaintenanceWarranty"));
 const NotFound = lazy(() => import("./pages/NotFound"));
 const AdminLogin = lazy(() => import("./pages/AdminLogin"));
 const AdminDashboard = lazy(() => import("./pages/AdminDashboard"));
+const AdsLandingPage = lazy(() => import("./pages/AdsLandingPage"));
 
 // Configure QueryClient with caching
 const queryClient = new QueryClient({
@@ -162,6 +163,10 @@ const App = () => (
               {/* Admin routes - no language prefix needed */}
               <Route path="/admin" element={<AdminDashboard />} />
               <Route path="/admin/login" element={<AdminLogin />} />
+
+              {/* Google Ads landing pages — noindex, no language prefix */}
+              <Route path="/lp/:slug" element={<AdsLandingPage />} />
+
 
               {/* Redirect /en/* to root (English is default without prefix) */}
               <Route path="/en" element={<EnglishRedirect />} />
