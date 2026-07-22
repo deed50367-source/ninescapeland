@@ -86,6 +86,7 @@ export const adsLandingPages: Record<string, AdsLandingConfig> = {
     seoDescription: "Custom commercial indoor playground equipment from a certified factory. Free 3D design, 25-day production, ASTM & TUV. Get your quote in 24 hours.",
     h1: "Custom Indoor Playground Equipment Manufacturer",
     subhead: "Turnkey commercial indoor playground solutions for FECs, malls, schools and community centers. Direct from our 50,000㎡ factory in China.",
+    heroImage: heroPlayground,
     heroBullets: [
       "Free 3D design & floor plan in 3-5 days",
       "ASTM · TUV · EN1176 · CE certified",
@@ -105,9 +106,9 @@ export const adsLandingPages: Record<string, AdsLandingConfig> = {
     whyUs: commonWhyUs,
     process: commonProcess,
     cases: [
-      { country: "United States", flag: "🇺🇸", title: "1,200㎡ FEC in Texas", quote: "The 3D design saved us three months of back-and-forth with local architects. Kids traffic doubled in month one.", client: "Jason M., FEC Owner" },
-      { country: "United Kingdom", flag: "🇬🇧", title: "800㎡ Mall Play Area, Manchester", quote: "TUV reports were accepted by the council without a single question. Install team was on-site within a week of arrival.", client: "Sarah L., Operations Director" },
-      { country: "Canada", flag: "🇨🇦", title: "600㎡ Community Center, Toronto", quote: "Best pricing we found after quoting 6 suppliers. Quality exceeded a European brand we used previously.", client: "Marc D., Program Manager" },
+      { country: "United States", flag: "🇺🇸", title: "1,200㎡ FEC in Texas", quote: "The 3D design saved us three months of back-and-forth with local architects. Kids traffic doubled in month one.", client: "Jason M., FEC Owner", image: projectFec },
+      { country: "United Kingdom", flag: "🇬🇧", title: "800㎡ Mall Play Area, Manchester", quote: "TUV reports were accepted by the council without a single question. Install team was on-site within a week of arrival.", client: "Sarah L., Operations Director", image: productIndoor },
+      { country: "Canada", flag: "🇨🇦", title: "600㎡ Community Center, Toronto", quote: "Best pricing we found after quoting 6 suppliers. Quality exceeded a European brand we used previously.", client: "Marc D., Program Manager", image: heroProjects },
     ],
     faqs: [
       { q: "What is the minimum order value for a custom indoor playground?", a: "There is no strict MOQ. Most projects range from USD 15,000 for a small 50㎡ toddler zone to USD 250,000+ for a full 1,000㎡ FEC. We quote per project after receiving your floor plan." },
@@ -125,6 +126,7 @@ export const adsLandingPages: Record<string, AdsLandingConfig> = {
     seoDescription: "Commercial trampoline park equipment direct from factory. ASTM F2970 compliant, free 3D design, 25-day production. Turnkey packages worldwide.",
     h1: "Commercial Trampoline Park Equipment Manufacturer",
     subhead: "Complete trampoline park solutions — jump courts, foam pits, dodgeball, wall runners, ninja lines and slam-dunk zones. Turnkey from design to install.",
+    heroImage: projectBounce,
     heroBullets: [
       "ASTM F2970 & EN 13219 compliant",
       "Free 3D park layout & business plan",
@@ -143,9 +145,9 @@ export const adsLandingPages: Record<string, AdsLandingConfig> = {
     whyUs: commonWhyUs,
     process: commonProcess,
     cases: [
-      { country: "Australia", flag: "🇦🇺", title: "1,800㎡ Trampoline Park, Sydney", quote: "ASTM F2970 documentation was flawless. Our insurance underwriter approved us in a single review.", client: "David C., Park Owner" },
-      { country: "UAE", flag: "🇦🇪", title: "2,400㎡ Mega Park, Dubai", quote: "Delivered on time despite Ramadan shipping delays. Installation team handled the entire fit-out in 18 days.", client: "Ahmed R., Managing Director" },
-      { country: "Germany", flag: "🇩🇪", title: "1,000㎡ Family Trampoline Park", quote: "EN 13219 test reports matched exactly what TÜV auditors requested. Best supplier communication we experienced.", client: "Klaus H., Operations Manager" },
+      { country: "Australia", flag: "🇦🇺", title: "1,800㎡ Trampoline Park, Sydney", quote: "ASTM F2970 documentation was flawless. Our insurance underwriter approved us in a single review.", client: "David C., Park Owner", image: productTrampoline },
+      { country: "UAE", flag: "🇦🇪", title: "2,400㎡ Mega Park, Dubai", quote: "Delivered on time despite Ramadan shipping delays. Installation team handled the entire fit-out in 18 days.", client: "Ahmed R., Managing Director", image: projectBounce },
+      { country: "Germany", flag: "🇩🇪", title: "1,000㎡ Family Trampoline Park", quote: "EN 13219 test reports matched exactly what TÜV auditors requested. Best supplier communication we experienced.", client: "Klaus H., Operations Manager", image: heroPlayground },
     ],
     faqs: [
       { q: "Is your trampoline park equipment ASTM F2970 certified?", a: "Yes. Every trampoline court is engineered to ASTM F2970 (USA) and EN 13219 (Europe). We provide test reports, load calculations and material certificates for permit and insurance approval." },
