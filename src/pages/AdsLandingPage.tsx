@@ -229,15 +229,27 @@ const AdsLandingPage = () => {
               <Link
                 key={p.title}
                 to={p.href}
-                className="group bg-card rounded-2xl border p-6 hover:border-primary hover:shadow-lg transition-all"
+                className="group bg-card rounded-2xl border overflow-hidden hover:border-primary hover:shadow-lg transition-all flex flex-col"
               >
-                <h3 className="text-lg font-bold mb-2 group-hover:text-primary transition-colors">
-                  {p.title}
-                </h3>
-                <p className="text-sm text-muted-foreground">{p.description}</p>
-                <div className="mt-4 text-sm font-semibold text-primary inline-flex items-center gap-1">
-                  View products
-                  <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />
+                {p.image && (
+                  <div className="aspect-[16/10] overflow-hidden bg-muted">
+                    <img
+                      src={p.image}
+                      alt={p.title}
+                      loading="lazy"
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    />
+                  </div>
+                )}
+                <div className="p-6 flex-1 flex flex-col">
+                  <h3 className="text-lg font-bold mb-2 group-hover:text-primary transition-colors">
+                    {p.title}
+                  </h3>
+                  <p className="text-sm text-muted-foreground flex-1">{p.description}</p>
+                  <div className="mt-4 text-sm font-semibold text-primary inline-flex items-center gap-1">
+                    View products
+                    <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />
+                  </div>
                 </div>
               </Link>
             ))}
