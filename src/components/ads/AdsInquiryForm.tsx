@@ -111,15 +111,12 @@ export const AdsInquiryForm = ({ campaign, projectTypes, variant = "hero" }: Pro
       if (error) throw error;
 
       recordAttempt();
-      fireGtag("lp_form_submit", {
-        campaign_slug: campaign,
-        value: 50,
-        currency: "USD",
-      });
+      // GA4 recommended event — single source of truth for form conversion.
       fireGtag("generate_lead", {
-        campaign_slug: campaign,
-        value: 50,
         currency: "USD",
+        value: 50,
+        lp_campaign: campaign,
+        method: "form",
       });
 
       toast({
@@ -301,15 +298,16 @@ export const trackAdsMicroConversion = (
   kind: "whatsapp" | "email",
   campaign: string,
 ) => {
-  const event = kind === "whatsapp" ? "lp_whatsapp_click" : "lp_email_click";
+  const event = kind === "whatsapp" ? "whatsapp_click" : "email_click";
   if (typeof window === "undefined") return;
   const w = window as unknown as { gtag?: (...args: unknown[]) => void; dataLayer?: unknown[] };
+  const params = { lp_campaign: campaign, value: 10, currency: "USD" };
   try {
     if (typeof w.gtag === "function") {
-      w.gtag("event", event, { campaign_slug: campaign, value: 10, currency: "USD" });
+      w.gtag("event", event, params);
     }
     if (Array.isArray(w.dataLayer)) {
-      w.dataLayer.push({ event, campaign_slug: campaign, value: 10, currency: "USD" });
+      w.dataLayer.push({ event, ...params });
     }
   } catch {
     /* no-op */

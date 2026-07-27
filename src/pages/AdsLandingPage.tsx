@@ -38,12 +38,13 @@ const AdsLandingPage = () => {
   useEffect(() => {
     if (config && typeof window !== "undefined") {
       const w = window as unknown as { gtag?: (...args: unknown[]) => void; dataLayer?: unknown[] };
+      const params = { lp_campaign: config.campaign };
       try {
         if (typeof w.gtag === "function") {
-          w.gtag("event", "lp_view", { campaign_slug: config.campaign });
+          w.gtag("event", "landing_page_view", params);
         }
         if (Array.isArray(w.dataLayer)) {
-          w.dataLayer.push({ event: "lp_view", campaign_slug: config.campaign });
+          w.dataLayer.push({ event: "landing_page_view", ...params });
         }
       } catch {
         /* no-op */
