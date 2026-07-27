@@ -111,15 +111,12 @@ export const AdsInquiryForm = ({ campaign, projectTypes, variant = "hero" }: Pro
       if (error) throw error;
 
       recordAttempt();
-      fireGtag("lp_form_submit", {
-        campaign_slug: campaign,
-        value: 50,
-        currency: "USD",
-      });
+      // GA4 recommended event — single source of truth for form conversion.
       fireGtag("generate_lead", {
-        campaign_slug: campaign,
-        value: 50,
         currency: "USD",
+        value: 50,
+        lp_campaign: campaign,
+        method: "form",
       });
 
       toast({
