@@ -78,6 +78,17 @@ export const ProductInquiryForm = ({ productName, productSlug }: Props) => {
 
       if (error) throw error;
       recordAttempt();
+
+      // GA4 / Google Ads conversion tracking
+      if (typeof window !== "undefined" && typeof (window as any).gtag === "function") {
+        (window as any).gtag("event", "generate_lead", {
+          form_location: "product_detail",
+          product_name: productName,
+          product_slug: productSlug,
+          country: result.data.country,
+        });
+      }
+
       toast({ title: t("contact.successTitle", "Inquiry Sent!"), description: t("contact.successDesc", "We'll get back to you within 24 hours.") });
       setFormData({ name: "", email: "", phone: "", country: "", message: "" });
       setErrors({});
