@@ -95,6 +95,13 @@ const CORE_ROUTES = [
 
 const LANGUAGES = ["es", "pt", "de", "fr", "ar"];
 
+// Google Ads landing pages — English only (no language variants)
+const ENGLISH_ONLY_ROUTES = [
+  "/lp/indoor-playground-equipment",
+  "/lp/trampoline-park-equipment",
+  "/lp/privacy",
+];
+
 // Generate all routes (English + other languages)
 function generateAllRoutes() {
   const routes = [...CORE_ROUTES];
@@ -103,6 +110,7 @@ function generateAllRoutes() {
       routes.push(route === "/" ? `/${lang}` : `/${lang}${route}`);
     }
   }
+  routes.push(...ENGLISH_ONLY_ROUTES);
   return routes;
 }
 
