@@ -36,7 +36,7 @@ const DEFAULT_MODELS: Record<string, Record<AiTask, string>> = {
   deepseek: { chat: "deepseek-chat", translate: "deepseek-chat" },
   siliconflow: {
     chat: "deepseek-ai/DeepSeek-V3",
-    translate: "Qwen/Qwen2.5-7B-Instruct",
+    translate: "deepseek-ai/DeepSeek-V3",
   },
   lovable: {
     chat: "google/gemini-3-flash-preview",
