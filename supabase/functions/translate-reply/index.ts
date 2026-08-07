@@ -1,12 +1,13 @@
 import { serve } from "https://deno.land/std@0.168.0/http/server.ts";
 import { createClient } from "https://esm.sh/@supabase/supabase-js@2.45.0";
+import { resolveAiProvider } from "../_shared/ai-provider.ts";
 
 const corsHeaders = {
   'Access-Control-Allow-Origin': '*',
   'Access-Control-Allow-Headers': 'authorization, x-client-info, apikey, content-type',
 };
 
-const LOVABLE_API_KEY = Deno.env.get('LOVABLE_API_KEY');
+
 const SUPABASE_URL = Deno.env.get('SUPABASE_URL')!;
 const SUPABASE_ANON_KEY = Deno.env.get('SUPABASE_ANON_KEY')!;
 
@@ -108,9 +109,8 @@ serve(async (req) => {
       );
     }
 
-    if (!LOVABLE_API_KEY) {
-      throw new Error('LOVABLE_API_KEY is not configured');
-    }
+    const aiProvider = resolveAiProvider('translate');
+    console.log(`Using AI provider: ${aiProvider.name} (${aiProvider.model})`);
 
     const targetLangName = getLanguageName(targetLanguage);
     const sourceLangName = sourceLanguage ? getLanguageName(sourceLanguage) : 'any language';
@@ -136,14 +136,14 @@ Rules:
 5. Adapt cultural expressions appropriately for the target language
 6. Return ONLY the translated text, no explanations or quotes`;
 
-    const response = await fetch('https://ai.gateway.lovable.dev/v1/chat/completions', {
+    const response = await fetch(aiProvider.url, {
       method: 'POST',
       headers: {
-        'Authorization': `Bearer ${LOVABLE_API_KEY}`,
+        'Authorization': `Bearer ${aiProvider.apiKey}`,
         'Content-Type': 'application/json',
       },
       body: JSON.stringify({
-        model: 'google/gemini-3-flash-preview',
+        model: aiProvider.model,
         messages: [
           { role: 'system', content: systemPrompt },
           { role: 'user', content: text }
