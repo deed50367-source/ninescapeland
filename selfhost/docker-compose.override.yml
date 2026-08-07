@@ -1,0 +1,30 @@
+# 放到 /opt/supabase/docker-compose.override.yml
+# 作用：把本仓库的 supabase/functions 挂载进 functions 容器，并注入 AI Key
+services:
+  functions:
+    volumes:
+      - /opt/app/supabase/functions:/home/deno/functions:ro
+    environment:
+      SUPABASE_URL: http://kong:8000
+      SUPABASE_ANON_KEY: ${ANON_KEY}
+      SUPABASE_SERVICE_ROLE_KEY: ${SERVICE_ROLE_KEY}
+      SUPABASE_DB_URL: postgres://postgres:${POSTGRES_PASSWORD}@db:5432/postgres
+      AI_PROVIDER: ${AI_PROVIDER}
+      SILICONFLOW_API_KEY: ${SILICONFLOW_API_KEY}
+      OPENAI_API_KEY: ${OPENAI_API_KEY:-}
+      DEEPSEEK_API_KEY: ${DEEPSEEK_API_KEY:-}
+      # 自建实例不做平台级 JWT 校验，函数内部自行校验
+      VERIFY_JWT: "false"
+
+  db:
+    # 数据库只监听本机，绝不暴露公网
+    ports:
+      - "127.0.0.1:5432:5432"
+
+  storage:
+    environment:
+      FILE_SIZE_LIMIT: 52428800
+
+  kong:
+    ports:
+      - "127.0.0.1:8000:8000"
