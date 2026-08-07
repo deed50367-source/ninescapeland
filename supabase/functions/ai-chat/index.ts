@@ -30,7 +30,7 @@ serve(async (req) => {
     }
 
     // Validate session exists in database
-    const supabase = createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
+    const supabase = createClient(SUPABASE_URL, SUPABASE_SERVICE_ROLE_KEY);
     const { data: session, error: sessionError } = await supabase
       .from('chat_sessions')
       .select('id, status')
