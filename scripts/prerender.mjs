@@ -100,6 +100,15 @@ const ENGLISH_ONLY_ROUTES = [
   "/lp/indoor-playground-equipment",
   "/lp/trampoline-park-equipment",
   "/lp/privacy",
+  // Weekly education/solution aggregation pages (English only)
+  "/educational-benefits-of-indoor-play-centers",
+  "/safety-standards-for-trampoline-park-equipment",
+  "/custom-soft-play-equipment-manufacturer-for-schools",
+  "/indoor-play-center-educational-activities-by-age",
+  "/how-to-create-active-learning-environment",
+  "/kinesthetic-learning-equipment-benefits",
+  "/designing-sensory-play-areas-for-education",
+  "/indoor-trampoline-park-business-for-schools",
 ];
 
 // Generate all routes (English + other languages)

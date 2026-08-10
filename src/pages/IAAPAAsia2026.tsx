@@ -106,7 +106,7 @@ export default function IAAPAAsia2026() {
         {/* HERO */}
         <section className="relative overflow-hidden bg-gradient-to-br from-[hsl(20_95%_55%)] via-[hsl(15_90%_50%)] to-[hsl(350_75%_45%)] text-white">
           <div className="absolute inset-0 opacity-30 mix-blend-overlay">
-            <img src={invitationLandscape} alt="" aria-hidden="true" className="w-full h-full object-cover" />
+            <img src={invitationLandscape} alt="" aria-hidden="true" width={1920} height={1080} loading="lazy" decoding="async" className="w-full h-full object-cover" />
           </div>
           <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent" />
 

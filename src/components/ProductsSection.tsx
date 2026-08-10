@@ -166,11 +166,12 @@ export const ProductsSection = () => {
                   {product.description}
                 </p>
                 <Button variant="outline" size="sm" asChild className="group/btn text-xs sm:text-sm">
-                  <Link to={localizedPath(`products/${product.slug}`)}>
-                    {t("products.viewDetails")}
+                  <Link to={localizedPath(`products/${product.slug}`)} aria-label={`${t("products.viewDetails")}: ${product.title}`}>
+                    {`${t("products.viewDetails")}: ${product.title}`}
                     <ArrowIcon className={`w-3.5 h-3.5 sm:w-4 sm:h-4 transition-transform ${isRTL ? 'group-hover/btn:-translate-x-1' : 'group-hover/btn:translate-x-1'}`} />
                   </Link>
                 </Button>
+
               </div>
             </motion.article>
           ))}
