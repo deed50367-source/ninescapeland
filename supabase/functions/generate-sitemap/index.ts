@@ -163,6 +163,22 @@ Deno.serve(async (req) => {
       { path: "/locations/indoor-playground-equipment-brazil", changefreq: "monthly", priority: "0.8" },
     ];
 
+    // English-only aggregation pages (no localized variants)
+    const englishOnlyPages = [
+      "/educational-benefits-of-indoor-play-centers",
+      "/safety-standards-for-trampoline-park-equipment",
+      "/custom-soft-play-equipment-manufacturer-for-schools",
+      "/indoor-play-center-educational-activities-by-age",
+      "/how-to-create-active-learning-environment",
+      "/kinesthetic-learning-equipment-benefits",
+      "/designing-sensory-play-areas-for-education",
+      "/indoor-trampoline-park-business-for-schools",
+    ];
+
+    const englishOnlyUrlEntries = englishOnlyPages
+      .map((path) => generateUrlEntry(path, null, "monthly", "0.8", false))
+      .join("\n");
+
     const staticUrlEntries = staticPages
       .map((page) => generateMultiLangUrls(page.path, null, page.changefreq, page.priority))
       .join("\n\n");
@@ -215,6 +231,8 @@ Deno.serve(async (req) => {
 
   <!-- ==================== STATIC PAGES ==================== -->
 ${staticUrlEntries}
+
+${englishOnlyUrlEntries}
 
   <!-- ==================== DYNAMIC PRODUCTS ==================== -->
 ${productUrlEntries}
