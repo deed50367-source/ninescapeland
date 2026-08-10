@@ -8,7 +8,6 @@ const corsHeaders = {
 
 const DOMAIN = "https://indoorplaygroundsolution.com";
 const LANGUAGES = ["", "es", "pt", "de", "fr", "ar"]; // "" = English (default, no prefix)
-const TODAY = new Date().toISOString().split("T")[0];
 
 interface BlogPost {
   slug: string;
@@ -45,9 +44,12 @@ const generateHreflangLinks = (path: string): string => {
 };
 
 // Generate a single URL entry
+const lastmodTag = (lastmod?: string | null): string =>
+  lastmod ? `\n    <lastmod>${lastmod}</lastmod>` : "";
+
 const generateUrlEntry = (
   path: string,
-  lastmod: string,
+  lastmod: string | null | undefined,
   changefreq: string,
   priority: string,
   includeHreflang: boolean = true
@@ -55,8 +57,7 @@ const generateUrlEntry = (
   const hreflangLinks = includeHreflang ? `\n${generateHreflangLinks(path)}` : "";
   
   return `  <url>
-    <loc>${getUrl(path, "")}</loc>${hreflangLinks}
-    <lastmod>${lastmod}</lastmod>
+    <loc>${getUrl(path, "")}</loc>${hreflangLinks}${lastmodTag(lastmod)}
     <changefreq>${changefreq}</changefreq>
     <priority>${priority}</priority>
   </url>`;
@@ -65,7 +66,7 @@ const generateUrlEntry = (
 // Generate URL entries for all languages
 const generateMultiLangUrls = (
   path: string,
-  lastmod: string,
+  lastmod: string | null | undefined,
   changefreq: string,
   priority: string
 ): string => {
@@ -74,8 +75,7 @@ const generateMultiLangUrls = (
   
   // Additional language entries (without hreflang to avoid duplication)
   const langEntries = LANGUAGES.filter(lang => lang !== "").map(lang => `  <url>
-    <loc>${getUrl(path, lang)}</loc>
-    <lastmod>${lastmod}</lastmod>
+    <loc>${getUrl(path, lang)}</loc>${lastmodTag(lastmod)}
     <changefreq>${changefreq}</changefreq>
     <priority>${priority}</priority>
   </url>`);
@@ -164,13 +164,13 @@ Deno.serve(async (req) => {
     ];
 
     const staticUrlEntries = staticPages
-      .map((page) => generateMultiLangUrls(page.path, TODAY, page.changefreq, page.priority))
+      .map((page) => generateMultiLangUrls(page.path, null, page.changefreq, page.priority))
       .join("\n\n");
 
     // ==================== DYNAMIC PRODUCT PAGES ====================
     const productUrlEntries = (products || [])
       .map((product: Product) => {
-        const lastmod = product.updated_at?.split("T")[0] || TODAY;
+        const lastmod = product.updated_at?.split("T")[0] || null;
         return generateMultiLangUrls(`/products/${product.slug}`, lastmod, "weekly", "0.8");
       })
       .join("\n\n");
@@ -189,10 +189,11 @@ Deno.serve(async (req) => {
     blogPostsBySlug.forEach((posts, slug) => {
       // Get the most recent update date across all language versions
       const lastmod = posts
-        .map(p => p.updated_at || p.published_at || TODAY)
+        .map(p => p.updated_at || p.published_at)
+        .filter((d): d is string => Boolean(d))
         .sort()
         .reverse()[0]
-        ?.split("T")[0] || TODAY;
+        ?.split("T")[0] || null;
 
       // Generate entries for each language version that exists
       posts.forEach((post) => {
@@ -200,8 +201,7 @@ Deno.serve(async (req) => {
         const url = getUrl(`/blog/${slug}`, lang);
         
         blogUrlEntries.push(`  <url>
-    <loc>${url}</loc>
-    <lastmod>${lastmod}</lastmod>
+    <loc>${url}</loc>${lastmodTag(lastmod)}
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>`);
