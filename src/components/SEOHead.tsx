@@ -3,6 +3,8 @@ import { useTranslation } from "react-i18next";
 import { useParams, useLocation } from "react-router-dom";
 import { languages } from "@/i18n/config";
 import { WebsiteSchema } from "@/components/StructuredData";
+import { AutoPageSchema } from "@/components/AutoPageSchema";
+import { getContentDate } from "@/config/contentDates";
 
 interface SEOHeadProps {
   pageKey: string;
@@ -14,13 +16,14 @@ interface SEOHeadProps {
   ogType?: "website" | "article";
   lastModified?: string;
   prerender404?: boolean;
+  /** Disable the auto Service entity (contact / utility / 404 pages) */
+  serviceSchema?: boolean;
 }
 
 const baseUrl = "https://indoorplaygroundsolution.com";
 const defaultOgImage = "/og-image.png";
 const siteName = "NinescapeLand";
-// Build-time timestamp injected at every deploy so every page advertises a fresh "Last Updated" date
-const BUILD_MODIFIED_AT = "2026-05-08T07:47:30Z";
+
 
 export const SEOHead = ({
   pageKey,
@@ -32,12 +35,17 @@ export const SEOHead = ({
   ogType = "website",
   lastModified,
   prerender404 = false,
+  serviceSchema = true,
 }: SEOHeadProps) => {
   const { t, i18n } = useTranslation();
   const { lang } = useParams<{ lang: string }>();
   const location = useLocation();
   // If no lang param, we're on English (default)
   const currentLang = lang || "en";
+  // Real content-revision date for this route (never a build timestamp)
+  const contentModifiedAt = lastModified || getContentDate(location.pathname);
+  
+
   
   const seo = t(`seo.${pageKey}`, { returnObjects: true }) as {
     title?: string;
@@ -133,10 +141,11 @@ export const SEOHead = ({
       <meta name="twitter:image" content={`${baseUrl}${ogImage || defaultOgImage}`} />
       <meta name="twitter:image:alt" content={fullTitle} />
       
-      {/* Content freshness — always emit so every page surfaces a recent "Last Updated" date */}
-      <meta property="article:modified_time" content={lastModified || BUILD_MODIFIED_AT} />
-      <meta property="og:updated_time" content={lastModified || BUILD_MODIFIED_AT} />
-      <meta name="last-modified" content={lastModified || BUILD_MODIFIED_AT} />
+      {/* Content freshness — real per-route content revision date, not a build timestamp */}
+      <meta property="article:modified_time" content={contentModifiedAt} />
+      <meta property="og:updated_time" content={contentModifiedAt} />
+      <meta name="last-modified" content={contentModifiedAt} />
+
       
       {/* Signal to prerender services that this is a 404 */}
       {prerender404 && <meta name="prerender-status-code" content="404" />}
@@ -151,6 +160,16 @@ export const SEOHead = ({
       <link rel="alternate" hrefLang="x-default" href={`${baseUrl}${pathWithoutLang}`} />
     </Helmet>
     <WebsiteSchema />
+    <AutoPageSchema
+      name={fullTitle}
+      description={description}
+      canonicalUrl={canonicalUrl}
+      lang={currentLang}
+      dateModified={contentModifiedAt}
+      service={serviceSchema && !noIndex}
+      homeLabel={t("nav.home", "Home")}
+    />
   </>
+
   );
 };

@@ -43,7 +43,95 @@ User-agent: DuckDuckBot
 Allow: /
 Crawl-delay: 2
 
+# ==================== AI / LLM CRAWLERS ====================
+# Explicit policy: AI assistants and answer engines are allowed to crawl and
+# cite all public content. Admin and API paths remain blocked.
+
+# OpenAI
+User-agent: GPTBot
+Allow: /
+Disallow: /admin
+
+User-agent: OAI-SearchBot
+Allow: /
+Disallow: /admin
+
+User-agent: ChatGPT-User
+Allow: /
+Disallow: /admin
+
+# Perplexity
+User-agent: PerplexityBot
+Allow: /
+Disallow: /admin
+
+User-agent: Perplexity-User
+Allow: /
+Disallow: /admin
+
+# Anthropic
+User-agent: ClaudeBot
+Allow: /
+Disallow: /admin
+
+User-agent: Claude-Web
+Allow: /
+Disallow: /admin
+
+User-agent: anthropic-ai
+Allow: /
+Disallow: /admin
+
+# Google AI (Gemini / AI Overviews training & grounding)
+User-agent: Google-Extended
+Allow: /
+Disallow: /admin
+
+# Apple
+User-agent: Applebot
+Allow: /
+Disallow: /admin
+
+User-agent: Applebot-Extended
+Allow: /
+Disallow: /admin
+
+# Common Crawl (feeds many LLM datasets)
+User-agent: CCBot
+Allow: /
+Disallow: /admin
+
+# Others
+User-agent: Amazonbot
+Allow: /
+Disallow: /admin
+
+User-agent: meta-externalagent
+Allow: /
+Disallow: /admin
+
+User-agent: Bytespider
+Allow: /
+Disallow: /admin
+
+User-agent: cohere-ai
+Allow: /
+Disallow: /admin
+
+User-agent: YouBot
+Allow: /
+Disallow: /admin
+
+User-agent: DuckAssistBot
+Allow: /
+Disallow: /admin
+
+User-agent: MistralAI-User
+Allow: /
+Disallow: /admin
+
 # ==================== SOCIAL MEDIA BOTS ====================
+
 
 User-agent: Twitterbot
 Allow: /
