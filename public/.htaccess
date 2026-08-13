@@ -2,6 +2,24 @@
 AddType application/xml .xml
 AddType text/plain .txt
 
+# ==================== AI CRAWLER ACCESS ====================
+# GAS audit found GPTBot receiving HTTP 429 / empty body while browser UAs got
+# full HTML. Explicitly whitelist AI crawlers so they reach prerendered HTML.
+<IfModule mod_setenvif.c>
+  SetEnvIfNoCase User-Agent "(GPTBot|OAI-SearchBot|ChatGPT-User|PerplexityBot|Perplexity-User|ClaudeBot|Claude-Web|anthropic-ai|Google-Extended|CCBot|Applebot|Applebot-Extended|Amazonbot|Bytespider|meta-externalagent|cohere-ai|YouBot|DuckAssistBot|MistralAI-User)" ai_crawler=1
+  # Never rate-limit or challenge whitelisted AI crawlers
+  SetEnvIf ai_crawler 1 noabort=1
+  SetEnvIf ai_crawler 1 no-gzip=0
+</IfModule>
+
+# Disable mod_security rules for AI crawlers (common source of 403/429 on shared hosting)
+<IfModule mod_security.c>
+  <IfModule mod_setenvif.c>
+    SecRuleRemoveById 1
+  </IfModule>
+</IfModule>
+
+
 <IfModule mod_rewrite.c>
   RewriteEngine On
   RewriteBase /
