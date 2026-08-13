@@ -80,6 +80,8 @@ const AdminLogin = lazy(() => import("./pages/AdminLogin"));
 const AdminDashboard = lazy(() => import("./pages/AdminDashboard"));
 const AdsLandingPage = lazy(() => import("./pages/AdsLandingPage"));
 const AdsPrivacy = lazy(() => import("./pages/AdsPrivacy"));
+const PrivacyPolicy = lazy(() => import("./pages/PrivacyPolicy"));
+const TermsOfService = lazy(() => import("./pages/TermsOfService"));
 
 // Configure QueryClient with caching
 const queryClient = new QueryClient({
@@ -148,6 +150,8 @@ const pageRoutes = (
     <Route path="safety-certifications" element={<SafetyCertifications />} />
     <Route path="customer-testimonials" element={<CustomerTestimonials />} />
     <Route path="maintenance-warranty" element={<MaintenanceWarranty />} />
+    <Route path="privacy" element={<PrivacyPolicy />} />
+    <Route path="terms" element={<TermsOfService />} />
   </>
 );
 

@@ -30,6 +30,8 @@ export const CONTENT_DATES: Record<string, string> = {
   "/customer-testimonials": "2026-07-23",
   "/investment-opportunity": "2026-07-23",
   "/iaapa-asia-2026": "2026-08-06",
+  "/privacy": "2026-08-13",
+  "/terms": "2026-08-13",
 
   // Solution / vertical pages
   "/trampoline-park-fec-solutions": "2026-07-16",
