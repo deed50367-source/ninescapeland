@@ -36,7 +36,22 @@ const FeaturedShowcaseSection = lazy(() => import("@/components/FeaturedShowcase
 const ContactSection = lazy(() => import("@/components/ContactSection").then(m => ({ default: m.ContactSection })));
 const ProductPreloader = lazy(() => import("@/components/ProductPreloader"));
 
+const FAQ_KEYS = ["leadTime", "customDesign", "safety", "warranty", "installation", "budget", "shipping", "materials"] as const;
+const PROCESS_KEYS = ["consultation", "design", "manufacturing", "shipping", "installation", "afterSales"] as const;
+
 const Index = () => {
+  const { t } = useTranslation();
+
+  const faqItems = FAQ_KEYS.map((key) => ({
+    question: t(`faq.items.${key}.question`),
+    answer: t(`faq.items.${key}.answer`),
+  })).filter((i) => i.question && i.answer && !i.question.startsWith("faq."));
+
+  const howToSteps = PROCESS_KEYS.map((key) => ({
+    name: t(`process.steps.${key}.title`),
+    text: t(`process.steps.${key}.description`),
+  })).filter((s) => s.name && s.text && !s.name.startsWith("process."));
+
   return (
     <div className="min-h-screen pb-16 md:pb-0">
       <SEOHead pageKey="home" />
