@@ -12,7 +12,7 @@ import { IAAPAFloatingBanner } from "@/components/IAAPAFloatingBanner";
 
 import MobileBottomNav from "@/components/MobileBottomNav";
 import { SEOHead } from "@/components/SEOHead";
-import { OrganizationSchema, LocalBusinessSchema, WebsiteSchema, BreadcrumbSchema, ItemListSchema } from "@/components/StructuredData";
+import { OrganizationSchema, LocalBusinessSchema, WebsiteSchema, BreadcrumbSchema, ItemListSchema, FAQSchema, HowToSchema } from "@/components/StructuredData";
 import { LazySection } from "@/components/LazySection";
 import { TrustHubLinks } from "@/components/TrustHubLinks";
 import { EEATSignature } from "@/components/EEATSignature";
