@@ -1,108 +1,49 @@
+# GEO/AI 可见性整改方案（GAS 20/100 → 目标 65+）
 
-# Google Ads 落地页方案（NinescapeLand · 2026-07-22）
+两份报告是同一次 GAS-2.4 审计（CSV 是明细，MD 是整改清单）。抽样 10 页，17 项未通过。按"可回收分值 / 实施难度"排序，分四批执行。
 
-投放前的核心目标：**广告 ↔ 落地页 1:1 对齐，质量得分拉高，询盘 CPA < $80**。基于上传的模版 HTML 和沟通截图，方案如下。
+## 诊断要点
 
----
+报告里最致命的一条不是 schema，而是 **AI 爬虫拿到 0 字符正文（HTTP 429）**：GPTBot UA 抓首页返回空壳，而浏览器 UA 拿到 9112 字符。这说明服务器边缘层在限流 AI UA。这一项不修，后面所有结构化数据、问句标题、表格对 AI 引擎都等于不存在。
 
-## 一、总原则（对齐甲方沟通确认点）
+第二个系统性问题：未通过页面高度集中在 **非英语路由（/es/、/fr/、/de/、/ar/）和 /market/ 行业页**。这些页面缺 Breadcrumb/FAQ/Article schema、正文不足 1200 词、无作者实体——说明结构化数据与深度内容只做在了英文主路由上，多语言与行业页是薄壳。
 
-1. **5 条产品线各建 1 个专属落地页**，本次先做 Indoor Playground + Trampoline Park 两条（重点投放方向），Ninja / Soft Play / FEC 同模板批量克隆备用。
-2. **承接落地页 = 站内聚合页**，不做外部独立站，保持与官网品牌/风格/Header/Footer 一致（甲方明确"会和官网一致的"）。
-3. **落地页顶部产品线卡片链接产品页**（甲方明确"直接链接产品页，做站内链接"），并非跳到锚点表单。
-4. **表单直接内嵌在落地页首屏右侧**，不用点击跳转。表单 / WhatsApp / Email 分别独立埋 3 个转化事件（甲方明确"分别设置一个跟踪转化"）。
-5. **URL 结构**：`/lp/indoor-playground-equipment`、`/lp/trampoline-park-equipment` 等，`/lp/*` 前缀区分自然流量与付费流量，方便 GA4 分渠道分析、也避免污染 SEO 主聚合页。
-6. **`/lp/*` 加 `noindex`**，广告落地页不参与 SEO 排名，避免与官网 `/products/*` 内容重复被判低质。
+第三：上一轮为了合规我把 sitemap 里 261 处伪造 lastmod 全清了，GAS 反而扣了"sitemap 含 lastmod 0 条 / 最近更新在 90 天内"两项。要用**真实**的内容修改时间补回，而不是构造日期。
 
----
+## 第一批：机器可读性（可回收 36 分，最高优先）
 
-## 二、页面结构（沿用上传模版 + 官网组件）
+1. **解除 AI 爬虫 429 拦截** — 在 `public/.htaccess` 中为 GPTBot / PerplexityBot / ClaudeBot / Google-Extended / CCBot / Bytespider 等 UA 显式放行，跳过任何限流与挑战规则，并确认这些 UA 能命中预渲染后的静态 HTML（而非空 SPA 骨架）。修完用 `curl -A 'GPTBot/1.0'` 自检字符数是否接近浏览器 UA。
+2. **robots.txt 显式声明 AI 规则** — 在 `public/robots.txt` 增加 GPTBot、PerplexityBot、ClaudeBot、Google-Extended、CCBot、Applebot-Extended 独立 User-agent 段落（Allow: /，Disallow: /admin），并保留现有搜索引擎段落。
 
-每张落地页按以下 12 个模块，从上到下：
+## 第二批：结构化数据（可回收 80 分）
 
-```text
-1  TopBar：认证徽章条（ASTM · TUV · EN1176 · CE · ISO9001）
-2  Nav：官网 Header（简化版，无多语言切换器，保留主要导航 + 顶部 CTA）
-3  Hero 首屏：
-   ├─ 左：H1 + 副标 + 4 个信任点 + 双 CTA（Get Free Quote / WhatsApp）
-   └─ 右：内嵌询盘表单（Name / Email / Country / Project Type / Message）
-4  Trust Bar：15+ Years · 2,000+ Projects · 50+ Countries · 50,000㎡ 工厂
-5  Certifications Logos：6 枚认证 Logo
-6  Product Lines：5 张产品线卡片（点击 → 对应产品页；非表单锚点）
-7  Why NinescapeLand：8 项差异化卖点（工厂直供 / 3D 设计 / 25 天交付 / 3 年质保…）
-8  Process：5 步交付流程（Consult → 3D Design → Manufacture → Ship → Install）
-9  Case Studies：3 条国际客户证言 + 项目实拍（带国旗）
-10 FAQ：6 条采购决策 FAQ（MOQ / 交期 / 付款 / 认证 / 售后 / 定制）
-11 Bottom CTA：再次表单 + WA + Email 三键并列
-12 Footer：与官网一致（精简版：产品 / 关于 / 联系 / Privacy / Terms）
-   + Mobile Sticky CTA（WhatsApp + Get Quote 双按钮）
-```
+3. **BreadcrumbList 全站覆盖** — 目前只有部分英文页有。改为在共享布局层按当前路径 + 当前语言自动生成，非英语路由用带语言前缀的 URL，覆盖 /market/、/products/、/blog/、行业与 ROI 页。
+4. **Article / Product / Service schema** — 抽样 0 页通过。产品详情页输出 Product（含 brand、manufacturer、offers 询价语义），行业/市场页与解决方案页输出 Service，博客与聚合页输出 Article。
+5. **FAQPage / HowTo 下沉到内页** — 首页已有，扩展到产品页、行业页、多语言页（用各语言已翻译的 FAQ 文案，不新造英文内容）。
+6. **sameAs 外部身份** — Organization schema 的 `sameAs` 目前是空的。填入真实存在的官方档案：LinkedIn 公司页、YouTube 频道、Facebook、Alibaba/公司名录页。需要你提供实际链接，我不会编造。
+7. **schema dateModified** — 所有 Article/Product/Service/WebPage schema 输出 `dateModified`，取值来自数据库 `updated_at`（动态内容）或该页面代码的真实最后修改时间（静态页），不使用构建时间戳。
 
----
+## 第三批：答案可提取性 + 深度（可回收 51 分）
 
-## 三、转化追踪（3 事件独立埋点）
+8. **问句式 H2 小标题** — 各主要页面把至少 2–3 个 H2 改成问句形式（What / How / Why + 各语言对应译法），文案自然融入现有段落，不做关键词堆砌。
+9. **对比表格** — 抽样 0 页有 `<table>`。在产品页与行业页加语义化对比表（规格 / 材质 / 认证 / 适用面积 / 交期对照），用真实产品参数；表格同时是 AI 抽取率最高的内容形态。
+10. **非英语页与行业页正文扩充至 1200+ 词** — 报告点名 /es/、/fr/contact、/de/office-wellness、/de/trampoline-park-fec、/es/market/healthcare。做法是补齐这些路由的翻译缺口（很多是英文段落未翻译导致渲染为空），而不是灌水。
+11. **作者/人物实体** — 现有 EEATSignature 只出现在首页。下沉到内页与多语言页，输出 Person schema（真实署名，需你确认可用姓名与职称）。
 
-| 事件 | 触发点 | Google Ads 转化 | GA4 事件 | 计价 |
-|---|---|---|---|---|
-| `lp_form_submit` | 表单成功提交后 | **主转化 ✓** | `generate_lead` | $50 |
-| `lp_whatsapp_click` | 任意 WA 按钮点击 | 微转化 | `whatsapp_click` | $10 |
-| `lp_email_click` | mailto 点击 | 微转化 | `email_click` | $10 |
+## 第四批：引用信号与新鲜度
 
-- Google Ads 里只把 `lp_form_submit` 勾为 **Primary**，其余为 Secondary，避免智能出价被水化。
-- Enhanced Conversions 开启（email/phone hash 回传），B2B 长决策周期必备。
-- GTM 里给 3 个事件都带上 `campaign_slug`（如 `indoor-playground` / `trampoline-park`），后续按产品线分析 CPA。
+12. **信任页** — 站点缺独立隐私政策与服务条款页（目前只有 /lp/n 的广告隐私页）。新建 `/privacy`、`/terms`，并在页脚全站链接。
+13. **权威外链** — 在安全认证、标准相关页面引用 ASTM、TÜV、EN 1176、CPSC 等官方标准页面（真实 URL，`rel="noopener"`），既是引用信号也是 E-E-A-T 证据。
+14. **来源标注区块** — 在引用了标准/数据的页面底部加 "Sources / References" 区块，列出所引用的标准与出处。
+15. **sitemap lastmod 恢复（合规做法）** — 动态内容用数据库 `updated_at`；静态页维护一份"内容真实修改日期"映射，随内容改动更新。不使用构建时间或统一填充当天日期。
+16. **站龄** — archive.org 首个存档 2026-05-17，报告按新站封顶，这一项无法优化，只能按月复跑 GAS 留曲线。
 
----
+## 需要你先确认的三件事
 
-## 四、本次交付范围（本周动手）
+- **sameAs 链接**：LinkedIn / YouTube / Facebook / 名录页的真实 URL。
+- **作者署名**：内页 Person schema 用哪个姓名与职称。
+- **429 是谁拦的**：如果 Hostinger 面板上开了机器人防护 / WAF，.htaccess 放行可能被面板规则覆盖，需要你在主机面板确认一次。
 
-**第 1 批（本周上线，广告直投）**
-- `/lp/indoor-playground-equipment`
-- `/lp/trampoline-park-equipment`
+## 建议执行顺序
 
-**第 2 批（后续 1–2 周补齐）**
-- `/lp/ninja-warrior-course-equipment`
-- `/lp/soft-play-equipment`
-- `/lp/fec-equipment`
-
-统一使用一个新组件 `AdsLandingPage`（参数化：产品线名 / H1 / 卖点 / 产品线卡片 / FAQ / 图片），5 个 URL 全部走同一模板注入不同数据，避免维护 5 份重复代码。
-
----
-
-## 五、SEO / 干扰隔离
-
-- `/lp/*` 全部 `<meta name="robots" content="noindex,nofollow">`。
-- 不进 `sitemap.xml`，不进 Header/Footer/MegaMenu（不与官网 SEO 页面竞争，也不做孤儿页面问题——它本来就不追求自然收录）。
-- Canonical 指向自身（防误抓取被并入 `/products/*`）。
-- 官网主 Header 保留 Products 下的产品页正常入口，广告流量与自然流量互不干扰。
-
----
-
-## 六、投放前必修（沿用参考文档）
-
-- [ ] Privacy / Terms / Warranty / Factory Address 4 页可访问（Google Ads 审查硬门槛）
-- [ ] Hero 图压到 < 200KB，LCP < 2.5s
-- [ ] 修正官网首页 `PlaygroundManufacturer` 拼写、移除 emoji 装饰
-- [ ] 表单事件 `lp_form_submit` 绑 GA4 + Google Ads 转化，测通再上线
-- [ ] Mobile Sticky CTA 不遮挡表单和 FAQ 内容
-
----
-
-## 七、技术实现摘要（不涉及业务改动）
-
-- 新增组件：`src/pages/AdsLandingPage.tsx`（通用模板）
-- 新增 5 个数据文件：`src/config/adsLandingPages/{slug}.ts`（每个产品线一份数据）
-- 路由：`src/App.tsx` 增加 `/lp/:slug` 路由（先注册 5 个 slug）
-- 表单：复用现有 `ProductInquiryForm`（已接 Supabase inquiries 表），加参数 `source="ads_lp_{slug}"`
-- 埋点：在表单提交 / WA / Email 三处调用 `window.gtag('event', ...)`；GTM 事件名单独注册
-
----
-
-## 八、请甲方最终确认
-
-1. **URL 前缀用 `/lp/`** 是否 OK？（也可用 `/ads/` 或 `/get-quote/`，`/lp/` 最短、语义最中性）
-2. **本周先做 Indoor Playground + Trampoline Park 两个页面**，其余 3 个下周批量克隆，确认？
-3. **落地页 Footer 精简版**（只保留产品 / 关于 / 联系 / Privacy / Terms）vs **与官网完全一致的完整 Footer**，选哪个？沟通截图里说"和官网一致"，我建议 **精简版**（付费流量落地页原则：减少一切与转化无关的链接），确认？
-4. **首屏表单字段**：Name / Email / Country / Project Type / Message，5 项够用？Phone / WhatsApp 是否要设为必填？（B2B 建议 Phone 选填、WhatsApp 单独字段选填，降低填写摩擦。）
-
-回复确认后（尤其 3、4 两条），我就直接搭建第 1 批 2 个页面。
+第一批（爬虫可达性）单独一次部署并当场 curl 验证 → 第二批 schema → 第三批内容与表格 → 第四批信任页与引用。第一批不通，其余全部白做。
