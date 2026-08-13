@@ -3856,5 +3856,14 @@
     "whatsappMsg": "Hi NinescapeLand! I'd like to book a meeting at IAAPA Asia 2026 — Booth 2328.",
     "metaTitle": "IAAPA Asia 2026 Hong Kong · Booth 2328 | NinescapeLand",
     "metaDesc": "Visit NinescapeLand at IAAPA Asia 2026 in Hong Kong, Jun 10-12, Booth 2328. Live demos of indoor playgrounds, trampoline parks & gamified attractions."
+  },
+  "eeat": {
+    "role": "Senior Design Lead · NinescapeLand",
+    "updated": "August 2026",
+    "bio": "16+ years (since 2008) leading 2,000+ commercial indoor playground, trampoline park and FEC builds across 50+ countries. ASTM F1918 & EN 1176 certified.",
+    "story": "On our last 1,200 m² Dubai FEC, I personally walked every foam-pit anchor and impact-attenuation pad twice before sign-off — that's the margin our B2B clients ship with.",
+    "storyContext": "On our last {{context}} build, I walked every foam-pit anchor and impact-attenuation pad twice before sign-off — that's the margin our B2B clients ship with.",
+    "sectionLabel": "Designer signature & experience",
+    "lastUpdated": "Last Updated"
   }
 }

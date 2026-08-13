@@ -3755,5 +3755,14 @@
     "whatsappMsg": "Hallo NinescapeLand! Ich möchte einen Termin auf der IAAPA Asia 2026 — Stand 2328 vereinbaren.",
     "metaTitle": "IAAPA Asia 2026 Hongkong · Stand 2328 | NinescapeLand",
     "metaDesc": "Besuchen Sie uns auf der IAAPA Asia 2026 in Hongkong, 10.–12. Juni, Stand 2328. Live-Demos von Indoor-Spielplätzen und FEC-Lösungen."
+  },
+  "eeat": {
+    "role": "Senior Design Lead · NinescapeLand",
+    "updated": "August 2026",
+    "bio": "Über 16 Jahre (seit 2008) Leitung von mehr als 2.000 kommerziellen Indoor-Spielplatz-, Trampolinpark- und FEC-Projekten in über 50 Ländern. ASTM F1918 und EN 1176 zertifiziert.",
+    "story": "Bei unserem letzten 1.200 m² FEC in Dubai habe ich jeden Schaumstoffgruben-Anker und jede stoßdämpfende Matte persönlich zweimal geprüft, bevor abgenommen wurde — mit dieser Sicherheitsmarge liefern wir an unsere B2B-Kunden.",
+    "storyContext": "Bei unserem letzten {{context}}-Projekt habe ich jeden Schaumstoffgruben-Anker und jede stoßdämpfende Matte zweimal geprüft, bevor abgenommen wurde — mit dieser Sicherheitsmarge liefern wir an unsere B2B-Kunden.",
+    "sectionLabel": "Designer-Signatur & Erfahrung",
+    "lastUpdated": "Letzte Aktualisierung"
   }
 }
