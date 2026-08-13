@@ -3,6 +3,8 @@ import { useTranslation } from "react-i18next";
 import { useParams, useLocation } from "react-router-dom";
 import { languages } from "@/i18n/config";
 import { WebsiteSchema } from "@/components/StructuredData";
+import { AutoPageSchema } from "@/components/AutoPageSchema";
+import { getContentDate } from "@/config/contentDates";
 
 interface SEOHeadProps {
   pageKey: string;
@@ -14,13 +16,14 @@ interface SEOHeadProps {
   ogType?: "website" | "article";
   lastModified?: string;
   prerender404?: boolean;
+  /** Disable the auto Service entity (contact / utility / 404 pages) */
+  serviceSchema?: boolean;
 }
 
 const baseUrl = "https://indoorplaygroundsolution.com";
 const defaultOgImage = "/og-image.png";
 const siteName = "NinescapeLand";
-// Build-time timestamp injected at every deploy so every page advertises a fresh "Last Updated" date
-const BUILD_MODIFIED_AT = "2026-05-08T07:47:30Z";
+
 
 export const SEOHead = ({
   pageKey,
