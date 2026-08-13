@@ -1,4 +1,5 @@
 import { lazy, Suspense } from "react";
+import { useTranslation } from "react-i18next";
 import { Header } from "@/components/Header";
 import { HeroSection } from "@/components/HeroSection";
 import { GlobalActivityTicker } from "@/components/GlobalActivityTicker";
@@ -11,7 +12,7 @@ import { IAAPAFloatingBanner } from "@/components/IAAPAFloatingBanner";
 
 import MobileBottomNav from "@/components/MobileBottomNav";
 import { SEOHead } from "@/components/SEOHead";
-import { OrganizationSchema, LocalBusinessSchema, WebsiteSchema, BreadcrumbSchema, ItemListSchema } from "@/components/StructuredData";
+import { OrganizationSchema, LocalBusinessSchema, WebsiteSchema, BreadcrumbSchema, ItemListSchema, FAQSchema, HowToSchema } from "@/components/StructuredData";
 import { LazySection } from "@/components/LazySection";
 import { TrustHubLinks } from "@/components/TrustHubLinks";
 import { EEATSignature } from "@/components/EEATSignature";
@@ -35,7 +36,22 @@ const FeaturedShowcaseSection = lazy(() => import("@/components/FeaturedShowcase
 const ContactSection = lazy(() => import("@/components/ContactSection").then(m => ({ default: m.ContactSection })));
 const ProductPreloader = lazy(() => import("@/components/ProductPreloader"));
 
+const FAQ_KEYS = ["leadTime", "customDesign", "safety", "warranty", "installation", "budget", "shipping", "materials"] as const;
+const PROCESS_KEYS = ["consultation", "design", "manufacturing", "shipping", "installation", "afterSales"] as const;
+
 const Index = () => {
+  const { t } = useTranslation();
+
+  const faqItems = FAQ_KEYS.map((key) => ({
+    question: t(`faq.items.${key}.question`),
+    answer: t(`faq.items.${key}.answer`),
+  })).filter((i) => i.question && i.answer && !i.question.startsWith("faq."));
+
+  const howToSteps = PROCESS_KEYS.map((key) => ({
+    name: t(`process.steps.${key}.title`),
+    text: t(`process.steps.${key}.description`),
+  })).filter((s) => s.name && s.text && !s.name.startsWith("process."));
+
   return (
     <div className="min-h-screen pb-16 md:pb-0">
       <SEOHead pageKey="home" />
@@ -55,6 +71,15 @@ const Index = () => {
           { position: 4, name: "Soft Play Equipment", url: "https://indoorplaygroundsolution.com/products/soft-play" },
         ]}
       />
+      {faqItems.length > 0 && <FAQSchema items={faqItems} />}
+      {howToSteps.length > 0 && (
+        <HowToSchema
+          name={t("process.title") + " " + t("process.titleHighlight")}
+          description={t("process.description")}
+          steps={howToSteps}
+          totalTime="P60D"
+        />
+      )}
       <Header />
       <main>
         {/* Above-the-fold: loaded eagerly */}
