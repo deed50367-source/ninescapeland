@@ -91,6 +91,9 @@ const CORE_ROUTES = [
   "/market/hr-workplace-wellness-indoor-playground",
   "/market/logistics-hub-indoor-playground-solutions",
   "/market/manufacturing-facility-indoor-playground-safety",
+  // Trust pages
+  "/privacy",
+  "/terms",
 ];
 
 const LANGUAGES = ["es", "pt", "de", "fr", "ar"];

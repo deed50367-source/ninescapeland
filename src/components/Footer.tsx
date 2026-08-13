@@ -222,12 +222,12 @@ export const Footer = () => {
         <div className="container-wide py-4 sm:py-6 flex flex-col sm:flex-row justify-between items-center gap-3 sm:gap-4 text-xs sm:text-sm text-primary-foreground/60">
           <p className="text-center sm:text-left">{t("footer.copyright")}</p>
           <div className="flex gap-4 sm:gap-6">
-            <a href="#" className="hover:text-primary-foreground transition-colors">
+            <Link to={localizedPath("/privacy")} className="hover:text-primary-foreground transition-colors">
               {t("footer.privacy")}
-            </a>
-            <a href="#" className="hover:text-primary-foreground transition-colors">
+            </Link>
+            <Link to={localizedPath("/terms")} className="hover:text-primary-foreground transition-colors">
               {t("footer.terms")}
-            </a>
+            </Link>
           </div>
         </div>
       </div>
