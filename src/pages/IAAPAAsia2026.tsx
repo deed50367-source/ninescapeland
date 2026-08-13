@@ -232,7 +232,7 @@ export default function IAAPAAsia2026() {
                         ? "Bring your floorplan — we'll sketch a revenue-optimised layout (trampoline + soft play + ninja + gamified attractions) on the spot."
                         : c.key === "card2"
                         ? "Lock in IAAPA-exclusive package pricing on container-loaded turnkey FECs. Valid only through June 12."
-                        : "Greey, our 16-year senior designer (2,000+ builds, 50+ countries), is on-booth for private consultations.")}
+                        : "Gerry, our 16-year senior designer (2,000+ builds, 50+ countries), is on-booth for private consultations.")}
                   </p>
                 </motion.div>
               ))}
