@@ -3738,7 +3738,7 @@
     "card2Title": "Preços exclusivos da feira",
     "card2Body": "Garanta preços exclusivos IAAPA em FECs turnkey por contêiner. Válido apenas até 12 de junho.",
     "card3Title": "Conheça o designer-chefe",
-    "card3Body": "Greey, nosso designer sênior com 16 anos (2.000+ projetos, 50+ países), estará no estande para consultorias privadas.",
+    "card3Body": "Gerry, nosso designer sênior com 16 anos (2.000+ projetos, 50+ países), estará no estande para consultorias privadas.",
     "planTitle": "Planeje sua visita",
     "boothLabel": "Número do estande",
     "boothHall": "Pavilhão principal",
@@ -3755,5 +3755,14 @@
     "whatsappMsg": "Olá NinescapeLand! Quero agendar uma reunião na IAAPA Asia 2026 — Estande 2328.",
     "metaTitle": "IAAPA Asia 2026 Hong Kong · Estande 2328 | NinescapeLand",
     "metaDesc": "Visite-nos na IAAPA Asia 2026, Hong Kong, 10-12 jun, Estande 2328. Demos ao vivo de playgrounds, trampolins e atrações gamificadas."
+  },
+  "eeat": {
+    "role": "Líder Sênior de Design · NinescapeLand",
+    "updated": "Agosto de 2026",
+    "bio": "Mais de 16 anos (desde 2008) liderando mais de 2.000 projetos comerciais de playgrounds indoor, parques de trampolim e FECs em mais de 50 países. Certificado ASTM F1918 e EN 1176.",
+    "story": "No nosso último FEC de 1.200 m² em Dubai, verifiquei pessoalmente cada ancoragem do fosso de espuma e cada placa de amortecimento duas vezes antes da entrega — é essa a margem com que os nossos clientes B2B trabalham.",
+    "storyContext": "No nosso último projeto de {{context}}, verifiquei cada ancoragem do fosso de espuma e cada placa de amortecimento duas vezes antes da entrega — é essa a margem com que os nossos clientes B2B trabalham.",
+    "sectionLabel": "Assinatura e experiência do designer",
+    "lastUpdated": "Última atualização"
   }
 }

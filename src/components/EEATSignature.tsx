@@ -15,12 +15,12 @@ interface EEATSignatureProps {
  * Boosts E-E-A-T (Experience, Expertise, Authoritativeness, Trustworthiness)
  * signals required by Google Discover 2026 and AI search engines.
  *
- * Author: Greey · NinescapeLand Senior Design Lead (16+ years, since 2008)
+ * Author: Gerry · NinescapeLand Senior Design Lead (16+ years, since 2008)
  */
 export const EEATSignature = ({ context, lastUpdated }: EEATSignatureProps) => {
   const { t, i18n } = useTranslation();
 
-  const author = "Greey";
+  const author = "Gerry";
   const role = t(
     "eeat.role",
     "Senior Design Lead · NinescapeLand",

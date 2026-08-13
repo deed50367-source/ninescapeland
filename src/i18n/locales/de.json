@@ -3504,5 +3504,14 @@
         }
       }
     }
+  },
+  "eeat": {
+    "role": "Senior Design Lead · NinescapeLand",
+    "updated": "August 2026",
+    "bio": "Über 16 Jahre (seit 2008) Leitung von mehr als 2.000 kommerziellen Indoor-Spielplatz-, Trampolinpark- und FEC-Projekten in über 50 Ländern. ASTM F1918 und EN 1176 zertifiziert.",
+    "story": "Bei unserem letzten 1.200 m² FEC in Dubai habe ich jeden Schaumstoffgruben-Anker und jede stoßdämpfende Matte persönlich zweimal geprüft, bevor abgenommen wurde — mit dieser Sicherheitsmarge liefern wir an unsere B2B-Kunden.",
+    "storyContext": "Bei unserem letzten {{context}}-Projekt habe ich jeden Schaumstoffgruben-Anker und jede stoßdämpfende Matte zweimal geprüft, bevor abgenommen wurde — mit dieser Sicherheitsmarge liefern wir an unsere B2B-Kunden.",
+    "sectionLabel": "Designer-Signatur & Erfahrung",
+    "lastUpdated": "Letzte Aktualisierung"
   }
 }

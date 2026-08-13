@@ -3503,5 +3503,14 @@
         }
       }
     }
+  },
+  "eeat": {
+    "role": "Líder Sênior de Design · NinescapeLand",
+    "updated": "Agosto de 2026",
+    "bio": "Mais de 16 anos (desde 2008) liderando mais de 2.000 projetos comerciais de playgrounds indoor, parques de trampolim e FECs em mais de 50 países. Certificado ASTM F1918 e EN 1176.",
+    "story": "No nosso último FEC de 1.200 m² em Dubai, verifiquei pessoalmente cada ancoragem do fosso de espuma e cada placa de amortecimento duas vezes antes da entrega — é essa a margem com que os nossos clientes B2B trabalham.",
+    "storyContext": "No nosso último projeto de {{context}}, verifiquei cada ancoragem do fosso de espuma e cada placa de amortecimento duas vezes antes da entrega — é essa a margem com que os nossos clientes B2B trabalham.",
+    "sectionLabel": "Assinatura e experiência do designer",
+    "lastUpdated": "Última atualização"
   }
 }
