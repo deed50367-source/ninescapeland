@@ -1804,4 +1804,30 @@
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
+
+  <!-- TRUST PAGES -->
+  <url>
+    <loc>https://indoorplaygroundsolution.com/privacy</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://indoorplaygroundsolution.com/privacy"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://indoorplaygroundsolution.com/es/privacy"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://indoorplaygroundsolution.com/pt/privacy"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://indoorplaygroundsolution.com/de/privacy"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://indoorplaygroundsolution.com/fr/privacy"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://indoorplaygroundsolution.com/ar/privacy"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://indoorplaygroundsolution.com/privacy"/>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://indoorplaygroundsolution.com/terms</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://indoorplaygroundsolution.com/terms"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://indoorplaygroundsolution.com/es/terms"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://indoorplaygroundsolution.com/pt/terms"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://indoorplaygroundsolution.com/de/terms"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://indoorplaygroundsolution.com/fr/terms"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://indoorplaygroundsolution.com/ar/terms"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://indoorplaygroundsolution.com/terms"/>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
 </urlset>
