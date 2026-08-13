@@ -12,12 +12,7 @@ AddType text/plain .txt
   SetEnvIf ai_crawler 1 no-gzip=0
 </IfModule>
 
-# Disable mod_security rules for AI crawlers (common source of 403/429 on shared hosting)
-<IfModule mod_security.c>
-  <IfModule mod_setenvif.c>
-    SecRuleRemoveById 1
-  </IfModule>
-</IfModule>
+
 
 
 <IfModule mod_rewrite.c>
