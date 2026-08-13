@@ -35,12 +35,17 @@ export const SEOHead = ({
   ogType = "website",
   lastModified,
   prerender404 = false,
+  serviceSchema = true,
 }: SEOHeadProps) => {
   const { t, i18n } = useTranslation();
   const { lang } = useParams<{ lang: string }>();
   const location = useLocation();
   // If no lang param, we're on English (default)
   const currentLang = lang || "en";
+  // Real content-revision date for this route (never a build timestamp)
+  const contentModifiedAt = lastModified || getContentDate(location.pathname);
+  
+
   
   const seo = t(`seo.${pageKey}`, { returnObjects: true }) as {
     title?: string;
