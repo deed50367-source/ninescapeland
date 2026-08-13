@@ -1,4 +1,5 @@
 import { lazy, Suspense } from "react";
+import { useTranslation } from "react-i18next";
 import { Header } from "@/components/Header";
 import { HeroSection } from "@/components/HeroSection";
 import { GlobalActivityTicker } from "@/components/GlobalActivityTicker";
