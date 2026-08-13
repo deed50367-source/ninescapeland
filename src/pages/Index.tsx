@@ -71,6 +71,15 @@ const Index = () => {
           { position: 4, name: "Soft Play Equipment", url: "https://indoorplaygroundsolution.com/products/soft-play" },
         ]}
       />
+      {faqItems.length > 0 && <FAQSchema items={faqItems} />}
+      {howToSteps.length > 0 && (
+        <HowToSchema
+          name={t("process.title") + " " + t("process.titleHighlight")}
+          description={t("process.description")}
+          steps={howToSteps}
+          totalTime="P60D"
+        />
+      )}
       <Header />
       <main>
         {/* Above-the-fold: loaded eagerly */}
