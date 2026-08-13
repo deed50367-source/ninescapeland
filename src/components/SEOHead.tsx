@@ -160,6 +160,16 @@ export const SEOHead = ({
       <link rel="alternate" hrefLang="x-default" href={`${baseUrl}${pathWithoutLang}`} />
     </Helmet>
     <WebsiteSchema />
+    <AutoPageSchema
+      name={fullTitle}
+      description={description}
+      canonicalUrl={canonicalUrl}
+      lang={currentLang}
+      dateModified={contentModifiedAt}
+      service={serviceSchema && !noIndex}
+      homeLabel={t("nav.home", "Home")}
+    />
   </>
+
   );
 };
