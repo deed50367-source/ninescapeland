@@ -12,6 +12,8 @@ import { ShieldCheck, FileCheck2, Globe2, FlaskConical, ArrowRight, CheckCircle2
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 import { motion } from "framer-motion";
 import { RelatedResources } from "@/components/RelatedResources";
+import { SourcesReferences } from "@/components/SourcesReferences";
+import { SpecComparisonTable } from "@/components/SpecComparisonTable";
 
 const certifications = [
   { code: "ASTM F1918 / F1487", region: "USA", scope: "Soft-contained play structures & public-use playground equipment", body: "ASTM International" },
@@ -270,6 +272,23 @@ const SafetyCertifications = () => {
           </div>
         </section>
 
+        <SpecComparisonTable
+          heading="Which Safety Standard Applies to Your Project?"
+          intro="Requirements differ by region and by equipment type. Use this comparison when specifying equipment or briefing your local inspector."
+          caption="Comparison of ASTM, EN, AS/NZS and GB safety standards covering indoor play, soft play and trampoline equipment by region, scope and required documentation."
+          columns={["Standard", "Region", "Equipment covered", "Key requirements", "Documentation we supply"]}
+          rows={[
+            ["ASTM F1487", "USA / Canada / LATAM", "Playground structures, climbers, slides", "Entrapment gaps, protrusions, fall height vs. surfacing, structural load", "Factory test report + material certificates"],
+            ["ASTM F1918", "USA / Canada", "Soft contained play equipment", "Padding coverage, netting strength, access/egress, flammability", "Batch test report + flame-retardance certificate"],
+            ["ASTM F2970", "USA / Middle East", "Trampoline courts, foam pits, airbags", "Bed tension, frame padding, pit depth, spring shielding, signage", "Serial-numbered compliance certificate"],
+            ["EN 1176 / EN 1177", "EU / UK", "Play structures + impact surfacing", "Structural strength, entrapment, HIC impact attenuation, inspection regime", "TÜV or SGS report + EN 1176-7 inspection log"],
+            ["EN 13219", "EU / UK", "Commercial trampolines", "Frame strength, spring shielding, mat tension, access control", "TÜV or SGS report"],
+            ["AS/NZS 4685", "Australia / New Zealand", "Playground equipment and surfacing", "Local fall-height and surfacing rules, materials", "Test report mapped to AS/NZS clauses"],
+            ["GB 19272", "China (manufacture)", "Fitness and play equipment production", "Raw material, welding, surface finish, coating", "Mill certificates + in-house QC records"],
+          ]}
+          footnote="Certificates are issued per order with equipment serial numbers, so your insurer and municipal inspector can match documents to the installed units."
+        />
+
         {/* FAQ */}
         <section className="py-16 md:py-20 bg-muted/30">
           <div className="container mx-auto px-4 max-w-4xl">
@@ -295,6 +314,17 @@ const SafetyCertifications = () => {
             { title: "Soft Play Equipment", desc: "Lead-free, phthalate-free padded play for malls and pre-schools.", href: "/products/soft-play" },
             { title: "Manufacturing & QC Process", desc: "Our 5-stage quality gate from raw material to on-site sign-off.", href: "/process" },
             { title: "Project Case Studies", desc: "2,000+ delivered installations with compliance certificates.", href: "/case-studies" },
+          ]}
+        />
+
+        <SourcesReferences
+          sources={[
+            { label: "ASTM F1487 — Standard Consumer Safety Performance Specification for Playground Equipment for Public Use", publisher: "ASTM International", url: "https://www.astm.org/f1487-21.html", note: "Governs entrapment, protrusion, fall-height and structural requirements for our climbing and play structures." },
+            { label: "ASTM F2970 — Standard Practice for Design, Manufacture, Installation, Operation, Maintenance, Inspection and Major Modification of Trampoline Courts", publisher: "ASTM International", url: "https://www.astm.org/f2970-20.html", note: "Primary US standard behind our trampoline bed, padding, foam pit and enclosure specifications." },
+            { label: "EN 1176 — Playground equipment and surfacing", publisher: "European Committee for Standardization (CEN)", url: "https://standards.cencenelec.eu/dyn/www/f?p=205:110:0::::FSP_PROJECT,FSP_ORG_ID:22030,6023", note: "European design and inspection standard; part 7 defines the operator inspection regime we ship with each project." },
+            { label: "Public Playground Safety Handbook (CPSC Publication 325)", publisher: "U.S. Consumer Product Safety Commission", url: "https://www.cpsc.gov/s3fs-public/325.pdf", note: "US regulator guidance on layout, surfacing and supervision referenced in our design reviews." },
+            { label: "TÜV Rheinland — Playground and leisure equipment testing", publisher: "TÜV Rheinland", url: "https://www.tuv.com/world/en/playground-equipment.html", note: "Third-party lab that certifies our structures for European and Middle East insurers." },
+            { label: "SGS — Toys and juvenile products testing services", publisher: "SGS", url: "https://www.sgs.com/en/services/toys-and-juvenile-products-services", note: "Independent testing for material safety, phthalate and heavy-metal limits." },
           ]}
         />
 
