@@ -23,7 +23,7 @@ const HygienicIndoorPlaygroundForInfants = () => (
     frameworkTitle="Hygiene Designed Into the Equipment, Not Added Afterwards"
     frameworkIntro="Parents judge an infant play area by how clean it looks and smells within ten seconds. Hygiene has to be built into materials, seams and layout before the first opening day, because retrofit cleaning cannot fix porous fabric or hidden crevices."
     framework={[
-      { title: "Non-porous skins", title2: undefined as never, desc: "Closed-cell PVC and PU leatherette skins on all crawl, climb and cushion surfaces so spills, saliva and milk sit on top and wipe away instead of soaking in." } as never,
+      { title: "Non-porous skins", desc: "Closed-cell PVC and PU leatherette skins on all crawl, climb and cushion surfaces so spills, saliva and milk sit on top and wipe away instead of soaking in." },
       { title: "Sealed, welded seams", desc: "High-frequency welded seams replace stitched joints on infant padding, removing thread channels where dust, crumbs and bacteria collect." },
       { title: "Removable washable covers", desc: "Ball pit liners, crawl mats and nursing-corner cushions use zip-off covers that go into a 60 °C machine wash on a weekly rotation." },
       { title: "Cleanable circulation", desc: "Open sightlines, 90 cm service gaps and lift-out floor mats let a single staff member mop and sanitise the full zone in under 30 minutes." },
