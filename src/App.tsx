@@ -10,6 +10,10 @@ import PageLoader from "@/components/PageLoader";
 import AppErrorBoundary from "@/components/AppErrorBoundary";
 import IndoorPEEquipmentForSchools from "./pages/IndoorPEEquipmentForSchools";
 import MontessoriIndoorPlaygroundDesign from "./pages/MontessoriIndoorPlaygroundDesign";
+import HygienicIndoorPlaygroundForInfants from "./pages/HygienicIndoorPlaygroundForInfants";
+import HomePlayroomDesignForToddlers from "./pages/HomePlayroomDesignForToddlers";
+import SafeIndoorPlaygroundEquipmentForSmallSpaces from "./pages/SafeIndoorPlaygroundEquipmentForSmallSpaces";
+import AccessibleIndoorPlaygroundDesign from "./pages/AccessibleIndoorPlaygroundDesign";
 import HomeschoolCoopIndoorPlay from "./pages/HomeschoolCoopIndoorPlay";
 import IndoorSummerCampPlayground from "./pages/IndoorSummerCampPlayground";
 import EducationalBenefitsOfIndoorPlayCenters from "./pages/EducationalBenefitsOfIndoorPlayCenters";
@@ -133,6 +137,10 @@ const pageRoutes = (
     <Route path="indoor-playground-roi-canada" element={<IndoorPlaygroundROICanada />} />
     <Route path="indoor-pe-equipment-for-schools" element={<IndoorPEEquipmentForSchools />} />
     <Route path="montessori-indoor-playground-design" element={<MontessoriIndoorPlaygroundDesign />} />
+    <Route path="hygienic-indoor-playground-for-infants" element={<HygienicIndoorPlaygroundForInfants />} />
+    <Route path="home-playroom-design-for-toddlers" element={<HomePlayroomDesignForToddlers />} />
+    <Route path="safe-indoor-playground-equipment-for-small-spaces" element={<SafeIndoorPlaygroundEquipmentForSmallSpaces />} />
+    <Route path="accessible-indoor-playground-design-for-disabilities" element={<AccessibleIndoorPlaygroundDesign />} />
     <Route path="homeschool-coop-indoor-play-solutions" element={<HomeschoolCoopIndoorPlay />} />
     <Route path="indoor-summer-camp-playground-ideas" element={<IndoorSummerCampPlayground />} />
     <Route path="educational-benefits-of-indoor-play-centers" element={<EducationalBenefitsOfIndoorPlayCenters />} />

@@ -8,7 +8,7 @@
  * (the last site-wide content revision).
  */
 
-export const SITE_CONTENT_UPDATED_AT = "2026-08-13";
+export const SITE_CONTENT_UPDATED_AT = "2026-08-14";
 
 /** Path (no language prefix, no trailing slash) → ISO date of last content revision. */
 export const CONTENT_DATES: Record<string, string> = {
@@ -60,6 +60,12 @@ export const CONTENT_DATES: Record<string, string> = {
   "/custom-indoor-playground-cost": "2026-08-06",
   "/indoor-playground-roi-uk": "2026-07-23",
   "/indoor-playground-roi-canada": "2026-07-23",
+
+  // Weekly aggregation pages (batch 3)
+  "/hygienic-indoor-playground-for-infants": "2026-08-14",
+  "/home-playroom-design-for-toddlers": "2026-08-14",
+  "/safe-indoor-playground-equipment-for-small-spaces": "2026-08-14",
+  "/accessible-indoor-playground-design-for-disabilities": "2026-08-14",
 
   // Trust pages
   "/privacy-policy": "2026-08-13",

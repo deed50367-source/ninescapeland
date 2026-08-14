@@ -83,6 +83,10 @@ export const ProductsSection = () => {
     { title: "Active Learning Environment", href: "/how-to-create-active-learning-environment" },
     { title: "Kinesthetic Learning Equipment", href: "/kinesthetic-learning-equipment-benefits" },
     { title: "Sensory Play Area Design", href: "/designing-sensory-play-areas-for-education" },
+    { title: "Hygienic Infant Play Area", href: "/hygienic-indoor-playground-for-infants" },
+    { title: "Home Playroom for Toddlers", href: "/home-playroom-design-for-toddlers" },
+    { title: "Play Equipment for Small Spaces", href: "/safe-indoor-playground-equipment-for-small-spaces" },
+    { title: "Accessible Playground Design", href: "/accessible-indoor-playground-design-for-disabilities" },
     { title: "Trampoline Park for Schools", href: "/indoor-trampoline-park-business-for-schools" },
   ];
 

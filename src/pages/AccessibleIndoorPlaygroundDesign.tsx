@@ -18,7 +18,7 @@ const AccessibleIndoorPlaygroundDesign = () => (
       { value: "915 mm", label: "Minimum clear route width" },
       { value: "1:12", label: "Maximum ramp gradient" },
       { value: "50%+", label: "Play value at ground level" },
-      { value: "1.5 m", label: "Turning circle at每 decision point" },
+      { value: "1.5 m", label: "Turning circle at decision points" },
     ]}
     frameworkTitle="Access Is a Route, a Transfer and a Reason to Stay"
     frameworkIntro="Accessible design fails when a venue adds one ramp and calls the job done. Real access means a child using a wheelchair can reach the play area, get onto or alongside equipment, and find activities worth doing once there — with siblings and carers beside them."
