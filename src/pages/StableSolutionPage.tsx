@@ -47,7 +47,11 @@ export type StableSolutionPageProps = {
   keywords?: string[];
   /** Absolute or root-relative OG/Twitter share image URL. */
   ogImage?: string;
-};
+  /** Hero illustration from the media library (absolute URL). */
+  heroImage?: string;
+  /** Alt text for the hero illustration. */
+  heroImageAlt?: string;
+
 
 const siteName = "NinescapeLand";
 const baseUrl = "https://indoorplaygroundsolution.com";
