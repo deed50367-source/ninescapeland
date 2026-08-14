@@ -189,28 +189,42 @@ export const StableSolutionPage = ({
       <main>
         <section className="bg-primary py-16 md:py-24">
           <div className="mx-auto max-w-7xl px-4 md:px-6">
-            <div className="max-w-4xl">
-              <p className="mb-4 text-sm font-semibold uppercase tracking-wide text-primary-foreground/80">{kicker}</p>
-              <h1 className="font-heading text-3xl font-bold leading-tight text-primary-foreground md:text-5xl">
-                {title}
-              </h1>
-              <p className="mt-6 max-w-3xl text-base leading-8 text-primary-foreground/90 md:text-lg">
-                {description}
-              </p>
-              <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-                <a className="inline-flex min-h-11 items-center justify-center rounded-md bg-accent px-5 py-3 text-sm font-semibold text-accent-foreground hover:opacity-90" href="#inquiry-form">
-                  {primaryCta}
-                </a>
-                <a className="inline-flex min-h-11 items-center justify-center rounded-md border border-primary-foreground/35 px-5 py-3 text-sm font-semibold text-primary-foreground hover:bg-primary-foreground/10" href={whatsappUrl}>
-                  Chat on WhatsApp
-                </a>
-                <a className="inline-flex min-h-11 items-center justify-center rounded-md border border-primary-foreground/35 px-5 py-3 text-sm font-semibold text-primary-foreground hover:bg-primary-foreground/10" href="#framework">
-                  {secondaryCta}
-                </a>
+            <div className={heroImage ? "grid items-center gap-10 lg:grid-cols-2" : ""}>
+              <div className="max-w-4xl">
+                <p className="mb-4 text-sm font-semibold uppercase tracking-wide text-primary-foreground/80">{kicker}</p>
+                <h1 className="font-heading text-3xl font-bold leading-tight text-primary-foreground md:text-5xl">
+                  {title}
+                </h1>
+                <p className="mt-6 max-w-3xl text-base leading-8 text-primary-foreground/90 md:text-lg">
+                  {description}
+                </p>
+                <div className="mt-8 flex flex-col gap-3 sm:flex-row">
+                  <a className="inline-flex min-h-11 items-center justify-center rounded-md bg-accent px-5 py-3 text-sm font-semibold text-accent-foreground hover:opacity-90" href="#inquiry-form">
+                    {primaryCta}
+                  </a>
+                  <a className="inline-flex min-h-11 items-center justify-center rounded-md border border-primary-foreground/35 px-5 py-3 text-sm font-semibold text-primary-foreground hover:bg-primary-foreground/10" href={whatsappUrl}>
+                    Chat on WhatsApp
+                  </a>
+                  <a className="inline-flex min-h-11 items-center justify-center rounded-md border border-primary-foreground/35 px-5 py-3 text-sm font-semibold text-primary-foreground hover:bg-primary-foreground/10" href="#framework">
+                    {secondaryCta}
+                  </a>
+                </div>
               </div>
 
+              {heroImage && (
+                <img
+                  src={heroImage}
+                  alt={heroImageAlt || `${title} by NinescapeLand`}
+                  width="1200"
+                  height="800"
+                  loading="eager"
+                  decoding="async"
+                  className="w-full rounded-lg border border-primary-foreground/20 object-cover shadow-lg"
+                />
+              )}
             </div>
           </div>
+
         </section>
 
         <section className="border-b border-border bg-muted/40 py-8" aria-label="Project metrics">
