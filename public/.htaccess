@@ -33,18 +33,19 @@ AddType text/plain .txt
   RewriteCond %{DOCUMENT_ROOT}/$1/index.html -f
   RewriteRule ^(.*)$ /$1/index.html [L]
 
-  # SPA fallback ONLY for known dynamic route patterns (ads landing pages, blog posts, dynamic products, locations, admin)
+  # SPA fallback for any navigation-like request (no file extension) that has no prerendered page.
+  # This guarantees new routes never hard-404 even before prerendered HTML is uploaded.
   RewriteCond %{REQUEST_FILENAME} !-f
   RewriteCond %{REQUEST_FILENAME} !-d
   RewriteCond %{DOCUMENT_ROOT}/$1/index.html !-f
-  RewriteCond %{REQUEST_URI} ^/(lp(/.*)?|blog/.+|products/.+|locations/.+|market/.+|admin|ar/(blog|products|locations|market)/.+|es/(blog|products|locations|market)/.+|de/(blog|products|locations|market)/.+|fr/(blog|products|locations|market)/.+|pt/(blog|products|locations|market)/.+) [NC]
+  RewriteCond %{REQUEST_URI} !\.[a-zA-Z0-9]{2,5}$
   RewriteRule ^ index.html [L]
 
-  # Everything else that doesn't match a file or prerendered page → 404
+  # Asset-like requests (with extension) that don't exist → real 404
   RewriteCond %{REQUEST_FILENAME} !-f
   RewriteCond %{REQUEST_FILENAME} !-d
-  RewriteCond %{DOCUMENT_ROOT}/$1/index.html !-f
   RewriteRule ^ - [R=404,L]
+
 </IfModule>
 
 # Custom 404 error page with proper HTTP 404 status code
