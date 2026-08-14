@@ -57,6 +57,10 @@ const CORE_ROUTES = [
   "/montessori-indoor-playground-design",
   "/homeschool-coop-indoor-play-solutions",
   "/indoor-summer-camp-playground-ideas",
+  "/hygienic-indoor-playground-for-infants",
+  "/home-playroom-design-for-toddlers",
+  "/safe-indoor-playground-equipment-for-small-spaces",
+  "/accessible-indoor-playground-design-for-disabilities",
   // Investment / ROI hub + per-country guides
   "/investment-opportunity",
   "/investment-opportunity/indoor-playground-investment-australia",
