@@ -51,6 +51,8 @@ export type StableSolutionPageProps = {
   heroImage?: string;
   /** Alt text for the hero illustration. */
   heroImageAlt?: string;
+};
+
 
 
 const siteName = "NinescapeLand";
