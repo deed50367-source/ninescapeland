@@ -104,6 +104,9 @@ export const StableSolutionPage = ({
   metaDescription,
   keywords,
   ogImage,
+  heroImage,
+  heroImageAlt,
+
 }: StableSolutionPageProps) => {
   const canonicalUrl = `${baseUrl}/${slug}`;
   const pageTitle = buildTitle(title, metaTitle);
