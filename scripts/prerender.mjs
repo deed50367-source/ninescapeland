@@ -61,6 +61,9 @@ const CORE_ROUTES = [
   "/home-playroom-design-for-toddlers",
   "/safe-indoor-playground-equipment-for-small-spaces",
   "/accessible-indoor-playground-design-for-disabilities",
+  "/commercial-indoor-playground-flooring-and-mats",
+  "/indoor-playground-business-plan",
+  "/family-entertainment-center-business-plan",
   // Investment / ROI hub + per-country guides
   "/investment-opportunity",
   "/investment-opportunity/indoor-playground-investment-australia",
