@@ -87,6 +87,9 @@ export const ProductsSection = () => {
     { title: "Home Playroom for Toddlers", href: "/home-playroom-design-for-toddlers" },
     { title: "Play Equipment for Small Spaces", href: "/safe-indoor-playground-equipment-for-small-spaces" },
     { title: "Accessible Playground Design", href: "/accessible-indoor-playground-design-for-disabilities" },
+    { title: "Playground Flooring & Mats", href: "/commercial-indoor-playground-flooring-and-mats" },
+    { title: "Indoor Playground Business Plan", href: "/indoor-playground-business-plan" },
+    { title: "FEC Business Plan", href: "/family-entertainment-center-business-plan" },
     { title: "Trampoline Park for Schools", href: "/indoor-trampoline-park-business-for-schools" },
   ];
 

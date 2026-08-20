@@ -14,6 +14,9 @@ import HygienicIndoorPlaygroundForInfants from "./pages/HygienicIndoorPlayground
 import HomePlayroomDesignForToddlers from "./pages/HomePlayroomDesignForToddlers";
 import SafeIndoorPlaygroundEquipmentForSmallSpaces from "./pages/SafeIndoorPlaygroundEquipmentForSmallSpaces";
 import AccessibleIndoorPlaygroundDesign from "./pages/AccessibleIndoorPlaygroundDesign";
+import CommercialIndoorPlaygroundFlooring from "./pages/CommercialIndoorPlaygroundFlooring";
+import IndoorPlaygroundBusinessPlan from "./pages/IndoorPlaygroundBusinessPlan";
+import FamilyEntertainmentCenterBusinessPlan from "./pages/FamilyEntertainmentCenterBusinessPlan";
 import HomeschoolCoopIndoorPlay from "./pages/HomeschoolCoopIndoorPlay";
 import IndoorSummerCampPlayground from "./pages/IndoorSummerCampPlayground";
 import EducationalBenefitsOfIndoorPlayCenters from "./pages/EducationalBenefitsOfIndoorPlayCenters";
@@ -141,6 +144,9 @@ const pageRoutes = (
     <Route path="home-playroom-design-for-toddlers" element={<HomePlayroomDesignForToddlers />} />
     <Route path="safe-indoor-playground-equipment-for-small-spaces" element={<SafeIndoorPlaygroundEquipmentForSmallSpaces />} />
     <Route path="accessible-indoor-playground-design-for-disabilities" element={<AccessibleIndoorPlaygroundDesign />} />
+    <Route path="commercial-indoor-playground-flooring-and-mats" element={<CommercialIndoorPlaygroundFlooring />} />
+    <Route path="indoor-playground-business-plan" element={<IndoorPlaygroundBusinessPlan />} />
+    <Route path="family-entertainment-center-business-plan" element={<FamilyEntertainmentCenterBusinessPlan />} />
     <Route path="homeschool-coop-indoor-play-solutions" element={<HomeschoolCoopIndoorPlay />} />
     <Route path="indoor-summer-camp-playground-ideas" element={<IndoorSummerCampPlayground />} />
     <Route path="educational-benefits-of-indoor-play-centers" element={<EducationalBenefitsOfIndoorPlayCenters />} />
