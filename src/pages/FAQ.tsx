@@ -9,6 +9,7 @@ import { SEOHead } from "@/components/SEOHead";
 import { FAQSchema, BreadcrumbSchema } from "@/components/StructuredData";
 import { useLocalizedPath } from "@/hooks/useLocalizedPath";
 import { LazySection } from "@/components/LazySection";
+import { GeoAnswerBlock } from "@/components/GeoAnswerBlock";
 
 const FAQ = () => {
   const { t } = useTranslation();
@@ -51,6 +52,7 @@ const FAQ = () => {
           breadcrumbs={heroBreadcrumbs}
         />
         <FAQSection />
+        <GeoAnswerBlock />
         <LazySection minHeight="500px">
           <ContactSection />
         </LazySection>

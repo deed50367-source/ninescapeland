@@ -3764,5 +3764,66 @@
     "storyContext": "Bei unserem letzten {{context}}-Projekt habe ich jeden Schaumstoffgruben-Anker und jede stoßdämpfende Matte zweimal geprüft, bevor abgenommen wurde — mit dieser Sicherheitsmarge liefern wir an unsere B2B-Kunden.",
     "sectionLabel": "Designer-Signatur & Erfahrung",
     "lastUpdated": "Letzte Aktualisierung"
+  },
+  "geo": {
+    "heading": "Zentrale Fragen von Indoor-Spielplatz-Betreibern",
+    "questions": {
+      "cost": {
+        "q": "Was kostet der Bau eines Indoor-Spielplatzes?",
+        "a": "Ein schlüsselfertiger kommerzieller Indoor-Spielplatz kostet in der Regel 90–220 USD pro Quadratmeter Spielfläche; ein 300 m² großes Familien-Entertainment-Center liegt damit bei 27.000 bis 66.000 USD für die Ausrüstung, zuzüglich Bodenbelag, Fracht und Montage. Soft-Play für Kleinkinder liegt am unteren Ende, Trampolinparks und Ninja-Parcours mit Stahlkonstruktion am oberen."
+      },
+      "leadTime": {
+        "q": "Wie lange dauern Produktion und Montage?",
+        "a": "Die kostenlose 3D-Planung dauert 3–5 Arbeitstage, die Produktion 25–35 Tage nach Freigabe von Layout und Anzahlung, der Seetransport 20–40 Tage je Zielhafen und die betreute Montage vor Ort 7–20 Tage je Projektgröße."
+      },
+      "standards": {
+        "q": "Welche Sicherheitsnormen muss gewerbliche Spielgeräteausrüstung erfüllen?",
+        "a": "Geräte für den öffentlichen Gebrauch werden nach ASTM F1487 (USA) und EN 1176 (Europa) gefertigt; Trampolinparks folgen ASTM F2970. Polsterschaum ist CMHR-schwerentflammbar, Stahl ist galvanisiert und pulverbeschichtet, alle Soft-Play-Stoffe sind phthalatfrei. TÜV- und SGS-Berichte werden pro Auftrag ausgestellt."
+      },
+      "space": {
+        "q": "Wie viel Fläche braucht ein Indoor-Spielplatz oder Trampolinpark?",
+        "a": "Ein wirtschaftlich tragfähiger Indoor-Spielplatz beginnt bei etwa 150 m² mit 3,5 m lichter Höhe; Trampolinparks benötigen mindestens 400 m² und 4,5–5,5 m lichte Höhe. Spielräume für Zuhause und Schulen funktionieren ab 30 m² mit niedrigen modularen Strukturen."
+      }
+    },
+    "table": {
+      "heading": "Vergleich von Indoor-Spielplatz-Projekten",
+      "intro": "Planungsrichtwerte für die vier von uns gefertigten Projekttypen, basierend auf realisierten Installationen in über 60 Ländern.",
+      "caption": "Vergleich von Fläche, Ausrüstungsbudget und Lieferzeit nach Projekttyp",
+      "col1": "Projekttyp",
+      "col2": "Typische Fläche",
+      "col3": "Ausrüstungsbudget (USD)",
+      "col4": "Lieferzeit",
+      "footnote": "Die Angaben betreffen nur die Ausrüstung und enthalten keine Fracht, Zölle oder Bauleistungen. Für einen Festpreis fordern Sie ein Angebot an.",
+      "rows": {
+        "softPlay": {
+          "name": "Soft-Play-Bereich (Kleinkinder)",
+          "area": "30–150 m²",
+          "budget": "4.000–20.000",
+          "lead": "20–30 Tage"
+        },
+        "playground": {
+          "name": "Indoor-Spielplatz / FEC",
+          "area": "150–800 m²",
+          "budget": "18.000–150.000",
+          "lead": "25–35 Tage"
+        },
+        "trampoline": {
+          "name": "Trampolinpark",
+          "area": "400–2.000 m²",
+          "budget": "60.000–400.000",
+          "lead": "30–45 Tage"
+        },
+        "ninja": {
+          "name": "Ninja-Warrior-Parcours",
+          "area": "80–500 m²",
+          "budget": "15.000–90.000",
+          "lead": "25–40 Tage"
+        }
+      }
+    },
+    "sources": {
+      "heading": "Quellen und Referenzen",
+      "intro": "Sicherheits- und Konformitätsaussagen auf dieser Seite verweisen auf die folgenden Normen und behördlichen Publikationen."
+    }
   }
 }

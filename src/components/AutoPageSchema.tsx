@@ -80,11 +80,27 @@ export const AutoPageSchema = ({
     description,
     inLanguage: lang,
     dateModified: modified,
+    datePublished: modified,
     isPartOf: { "@type": "WebSite", "@id": `${SITE_URL}/#website`, name: "NinescapeLand", url: SITE_URL },
     publisher: { "@type": "Organization", "@id": `${SITE_URL}/#organization`, name: "NinescapeLand" },
+    // Author entity on EVERY route (GAS audit found /es/ and /market/ pages with no person entity)
+    author: {
+      "@type": "Person",
+      "@id": `${SITE_URL}/#gerry`,
+      name: "Gerry",
+      jobTitle: "Senior Indoor Playground Designer",
+      worksFor: { "@type": "Organization", "@id": `${SITE_URL}/#organization`, name: "NinescapeLand" },
+      knowsAbout: [
+        "Commercial indoor playground design",
+        "Trampoline park engineering",
+        "ASTM F1487 and EN 1176 compliance",
+      ],
+    },
+    reviewedBy: { "@id": `${SITE_URL}/#gerry` },
     breadcrumb: { "@id": `${canonicalUrl}#breadcrumb` },
     primaryImageOfPage: { "@type": "ImageObject", url: LOGO_URL },
   };
+
 
   const serviceSchema = {
     "@context": "https://schema.org",

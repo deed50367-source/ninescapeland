@@ -3512,5 +3512,66 @@
     "storyContext": "No nosso último projeto de {{context}}, verifiquei cada ancoragem do fosso de espuma e cada placa de amortecimento duas vezes antes da entrega — é essa a margem com que os nossos clientes B2B trabalham.",
     "sectionLabel": "Assinatura e experiência do designer",
     "lastUpdated": "Última atualização"
+  },
+  "geo": {
+    "heading": "Perguntas principais dos operadores de playgrounds indoor",
+    "questions": {
+      "cost": {
+        "q": "Quanto custa construir um playground indoor?",
+        "a": "Um playground comercial turnkey custa normalmente entre USD 90 e 220 por metro quadrado de área de brincar, ou seja, um centro de 300 m² fica entre USD 27.000 e 66.000 em equipamentos, além de piso, frete e instalação. O soft play para bebés fica na faixa inferior; parques de trampolim e circuitos ninja com estrutura de aço, na superior."
+      },
+      "leadTime": {
+        "q": "Quanto tempo levam a fabricação e a instalação?",
+        "a": "O projeto 3D gratuito leva de 3 a 5 dias úteis, a produção de 25 a 35 dias após a aprovação do layout e do sinal, o frete marítimo de 20 a 40 dias conforme o destino, e a instalação supervisionada no local de 7 a 20 dias conforme o tamanho do projeto."
+      },
+      "standards": {
+        "q": "Quais normas de segurança o equipamento comercial deve cumprir?",
+        "a": "Equipamentos de uso público são fabricados conforme ASTM F1487 (EUA) e EN 1176 (Europa); parques de trampolim seguem a ASTM F2970. A espuma é CMHR retardante de chama, o aço é galvanizado e pintado a pó, e os tecidos são livres de ftalatos. Relatórios TÜV e SGS são emitidos por pedido."
+      },
+      "space": {
+        "q": "Quanto espaço é necessário para um playground indoor ou parque de trampolim?",
+        "a": "Um playground comercial viável começa em cerca de 150 m² com 3,5 m de altura livre; parques de trampolim exigem no mínimo 400 m² e 4,5 a 5,5 m de altura livre. Salas de brincar residenciais e escolares funcionam a partir de 30 m² com estruturas modulares de baixa altura."
+      }
+    },
+    "table": {
+      "heading": "Comparação de projetos de playground indoor",
+      "intro": "Referências de planejamento para os quatro tipos de projeto que fabricamos, com base em instalações concluídas em mais de 60 países.",
+      "caption": "Comparação de área, orçamento de equipamentos e prazo por tipo de projeto",
+      "col1": "Tipo de projeto",
+      "col2": "Área típica",
+      "col3": "Orçamento de equipamentos (USD)",
+      "col4": "Prazo",
+      "footnote": "Os valores referem-se apenas a equipamentos e excluem frete, impostos e obras civis. Solicite uma cotação para preço fechado.",
+      "rows": {
+        "softPlay": {
+          "name": "Área de soft play (bebés)",
+          "area": "30–150 m²",
+          "budget": "4.000–20.000",
+          "lead": "20–30 dias"
+        },
+        "playground": {
+          "name": "Playground indoor / FEC",
+          "area": "150–800 m²",
+          "budget": "18.000–150.000",
+          "lead": "25–35 dias"
+        },
+        "trampoline": {
+          "name": "Parque de trampolim",
+          "area": "400–2.000 m²",
+          "budget": "60.000–400.000",
+          "lead": "30–45 dias"
+        },
+        "ninja": {
+          "name": "Circuito ninja warrior",
+          "area": "80–500 m²",
+          "budget": "15.000–90.000",
+          "lead": "25–40 dias"
+        }
+      }
+    },
+    "sources": {
+      "heading": "Fontes e referências",
+      "intro": "As afirmações de segurança e conformidade desta página referenciam as normas e publicações oficiais abaixo."
+    }
   }
 }

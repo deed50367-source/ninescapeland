@@ -16,6 +16,7 @@ import { OrganizationSchema, LocalBusinessSchema, WebsiteSchema, BreadcrumbSchem
 import { LazySection } from "@/components/LazySection";
 import { TrustHubLinks } from "@/components/TrustHubLinks";
 import { EEATSignature } from "@/components/EEATSignature";
+import { GeoAnswerBlock } from "@/components/GeoAnswerBlock";
 
 // Lazy load below-fold sections to speed up initial render
 const FeaturesGridSection = lazy(() => import("@/components/FeaturesGridSection").then(m => ({ default: m.FeaturesGridSection })));
@@ -88,6 +89,9 @@ const Index = () => {
         <PartnersSection />
         <CoreSolutionsSection />
         <ProductsSection />
+
+        {/* GEO: eagerly rendered Q&A + table + citations so prerendered HTML carries them */}
+        <GeoAnswerBlock />
 
         {/* Below-the-fold: deferred DOM mounting via IntersectionObserver */}
         <Suspense fallback={null}>

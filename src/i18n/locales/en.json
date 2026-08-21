@@ -3865,5 +3865,66 @@
     "storyContext": "On our last {{context}} build, I walked every foam-pit anchor and impact-attenuation pad twice before sign-off — that's the margin our B2B clients ship with.",
     "sectionLabel": "Designer signature & experience",
     "lastUpdated": "Last Updated"
+  },
+  "geo": {
+    "heading": "Key questions from indoor playground operators",
+    "questions": {
+      "cost": {
+        "q": "How much does it cost to build an indoor playground?",
+        "a": "A turnkey commercial indoor playground typically costs USD 90–220 per square metre of play area, so a 300 sqm family entertainment centre lands between USD 27,000 and 66,000 for equipment, plus flooring, freight and installation. Soft play for toddlers is at the lower end; trampoline parks and ninja courses with steel structures sit at the higher end."
+      },
+      "leadTime": {
+        "q": "How long does manufacturing and installation take?",
+        "a": "Free 3D layout design takes 3–5 working days, production runs 25–35 days after the layout and deposit are confirmed, sea freight adds 20–40 days depending on destination, and on-site installation by our supervised team takes 7–20 days according to project size."
+      },
+      "standards": {
+        "q": "Which safety standards must commercial playground equipment meet?",
+        "a": "Equipment for public use is manufactured to ASTM F1487 (USA) and EN 1176 (Europe); trampoline courts follow ASTM F2970. Padding foam is CMHR fire-rated, steel is powder-coated and galvanised, and all soft-play fabrics are phthalate-free. TÜV and SGS reports are issued per order."
+      },
+      "space": {
+        "q": "How much space do you need for an indoor playground or trampoline park?",
+        "a": "A viable commercial indoor playground starts at about 150 sqm with a 3.5 m clear ceiling height; trampoline parks need at least 400 sqm and 4.5–5.5 m clear height. Home and school playrooms work from 30 sqm using low-height modular structures."
+      }
+    },
+    "table": {
+      "heading": "Indoor playground project comparison",
+      "intro": "Planning benchmarks for the four project types we manufacture, based on completed installations in 60+ countries.",
+      "caption": "Comparison of typical area, equipment budget and lead time by indoor playground project type",
+      "col1": "Project type",
+      "col2": "Typical area",
+      "col3": "Equipment budget (USD)",
+      "col4": "Lead time",
+      "footnote": "Figures are equipment-only planning ranges and exclude freight, duties and site construction. Request a quotation for a fixed price.",
+      "rows": {
+        "softPlay": {
+          "name": "Soft play area (toddlers)",
+          "area": "30–150 sqm",
+          "budget": "4,000–20,000",
+          "lead": "20–30 days"
+        },
+        "playground": {
+          "name": "Indoor playground / FEC",
+          "area": "150–800 sqm",
+          "budget": "18,000–150,000",
+          "lead": "25–35 days"
+        },
+        "trampoline": {
+          "name": "Trampoline park",
+          "area": "400–2,000 sqm",
+          "budget": "60,000–400,000",
+          "lead": "30–45 days"
+        },
+        "ninja": {
+          "name": "Ninja warrior course",
+          "area": "80–500 sqm",
+          "budget": "15,000–90,000",
+          "lead": "25–40 days"
+        }
+      }
+    },
+    "sources": {
+      "heading": "Sources & References",
+      "intro": "Safety and compliance statements on this page reference the following primary standards and regulatory publications."
+    }
   }
 }

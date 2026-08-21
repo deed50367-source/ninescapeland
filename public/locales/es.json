@@ -3764,5 +3764,66 @@
     "storyContext": "En nuestro último proyecto de {{context}}, revisé cada anclaje del foso de espuma y cada colchoneta de amortiguación dos veces antes de la entrega: ese es el margen con el que trabajan nuestros clientes B2B.",
     "sectionLabel": "Firma y experiencia del diseñador",
     "lastUpdated": "Última actualización"
+  },
+  "geo": {
+    "heading": "Preguntas clave de los operadores de parques infantiles",
+    "questions": {
+      "cost": {
+        "q": "¿Cuánto cuesta construir un parque infantil de interior?",
+        "a": "Un parque infantil comercial llave en mano cuesta habitualmente entre 90 y 220 USD por metro cuadrado de zona de juego, por lo que un centro de 300 m² se sitúa entre 27.000 y 66.000 USD en equipamiento, más suelo, flete e instalación. El soft play para bebés está en la franja baja; los parques de trampolines y circuitos ninja con estructura de acero, en la alta."
+      },
+      "leadTime": {
+        "q": "¿Cuánto tardan la fabricación y la instalación?",
+        "a": "El diseño 3D gratuito tarda de 3 a 5 días laborables, la producción de 25 a 35 días tras confirmar el plano y el anticipo, el flete marítimo de 20 a 40 días según destino, y la instalación supervisada en obra de 7 a 20 días según el tamaño del proyecto."
+      },
+      "standards": {
+        "q": "¿Qué normas de seguridad debe cumplir el equipamiento comercial?",
+        "a": "El equipamiento de uso público se fabrica conforme a ASTM F1487 (EE. UU.) y EN 1176 (Europa); los parques de trampolines siguen ASTM F2970. La espuma es CMHR ignífuga, el acero está galvanizado y con pintura en polvo, y los tejidos no contienen ftalatos. Emitimos informes TÜV y SGS por pedido."
+      },
+      "space": {
+        "q": "¿Cuánto espacio se necesita para un parque infantil o de trampolines?",
+        "a": "Un parque infantil comercial viable parte de unos 150 m² con 3,5 m de altura libre; un parque de trampolines requiere al menos 400 m² y de 4,5 a 5,5 m de altura libre. Las salas de juego domésticas y escolares funcionan desde 30 m² con estructuras modulares de baja altura."
+      }
+    },
+    "table": {
+      "heading": "Comparativa de proyectos de parques infantiles de interior",
+      "intro": "Referencias de planificación para los cuatro tipos de proyecto que fabricamos, basadas en instalaciones completadas en más de 60 países.",
+      "caption": "Comparativa de superficie, presupuesto de equipamiento y plazo por tipo de proyecto",
+      "col1": "Tipo de proyecto",
+      "col2": "Superficie habitual",
+      "col3": "Presupuesto de equipamiento (USD)",
+      "col4": "Plazo",
+      "footnote": "Las cifras corresponden solo al equipamiento y excluyen flete, aranceles y obra civil. Solicite una cotización para un precio fijo.",
+      "rows": {
+        "softPlay": {
+          "name": "Zona de soft play (bebés)",
+          "area": "30–150 m²",
+          "budget": "4.000–20.000",
+          "lead": "20–30 días"
+        },
+        "playground": {
+          "name": "Parque infantil / FEC",
+          "area": "150–800 m²",
+          "budget": "18.000–150.000",
+          "lead": "25–35 días"
+        },
+        "trampoline": {
+          "name": "Parque de trampolines",
+          "area": "400–2.000 m²",
+          "budget": "60.000–400.000",
+          "lead": "30–45 días"
+        },
+        "ninja": {
+          "name": "Circuito ninja warrior",
+          "area": "80–500 m²",
+          "budget": "15.000–90.000",
+          "lead": "25–40 días"
+        }
+      }
+    },
+    "sources": {
+      "heading": "Fuentes y referencias",
+      "intro": "Las afirmaciones sobre seguridad y cumplimiento de esta página se basan en las siguientes normas y publicaciones oficiales."
+    }
   }
 }
