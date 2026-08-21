@@ -35,7 +35,7 @@ import AdminUsersTab from "@/components/admin/AdminUsersTab";
 const AdminDashboard = () => {
   const { t } = useTranslation();
   const navigate = useNavigate();
-  const { user, isAdmin, isLoading: authLoading, signOut } = useAdminAuth();
+  const { user, isAdmin, isLoading: authLoading, checkFailed, signOut } = useAdminAuth();
   const { permissions, isLoading: permLoading, hasPermission, canAccessBackend } = useCurrentUserPermissions();
   const [activeTab, setActiveTab] = useState("inquiries");
   const initialLoadDone = useRef(false);
