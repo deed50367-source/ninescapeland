@@ -8,22 +8,22 @@
  * (the last site-wide content revision).
  */
 
-export const SITE_CONTENT_UPDATED_AT = "2026-08-20";
+export const SITE_CONTENT_UPDATED_AT = "2026-08-21";
 
 /** Path (no language prefix, no trailing slash) → ISO date of last content revision. */
 export const CONTENT_DATES: Record<string, string> = {
-  "/": "2026-08-13",
-  "/products": "2026-08-06",
-  "/products/indoor-playground": "2026-08-06",
-  "/products/trampoline-park": "2026-08-06",
-  "/products/ninja-course": "2026-08-06",
-  "/products/soft-play": "2026-08-06",
+  "/": "2026-08-21",
+  "/products": "2026-08-21",
+  "/products/indoor-playground": "2026-08-21",
+  "/products/trampoline-park": "2026-08-21",
+  "/products/ninja-course": "2026-08-21",
+  "/products/soft-play": "2026-08-21",
   "/about-us": "2026-07-30",
   "/contact": "2026-08-13",
   "/process": "2026-07-30",
   "/projects": "2026-07-30",
   "/blog": "2026-08-13",
-  "/faq": "2026-08-06",
+  "/faq": "2026-08-21",
   "/safety-certifications": "2026-08-13",
   "/maintenance-warranty": "2026-07-23",
   "/case-studies": "2026-07-23",
