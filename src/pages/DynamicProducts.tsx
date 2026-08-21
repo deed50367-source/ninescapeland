@@ -6,6 +6,7 @@ import { supabase } from "@/integrations/supabase/client";
 import { Header } from "@/components/Header";
 import { PageHero } from "@/components/PageHero";
 import { Footer } from "@/components/Footer";
+import { GeoAnswerBlock } from "@/components/GeoAnswerBlock";
 import { FloatingCTA } from "@/components/FloatingCTA";
 import { SEOHead } from "@/components/SEOHead";
 import { CollectionPageSchema, ItemListSchema, BreadcrumbSchema } from "@/components/StructuredData";
@@ -598,6 +599,7 @@ const DynamicProducts = () => {
             </div>
           </section>
         )}
+        <GeoAnswerBlock />
       </main>
       <Footer />
       <FloatingCTA />
