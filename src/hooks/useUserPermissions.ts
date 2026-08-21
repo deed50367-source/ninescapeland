@@ -118,21 +118,17 @@ export const useCurrentUserPermissions = () => {
 
         setUser({ id: session.user.id });
 
-        // Check admin role
-        const { data: roleData } = await withTimeout(
+        // Check admin/staff role via security-definer function (RLS-proof)
+        const { data: isAdminRole } = await withTimeout(
           Promise.resolve(
-            supabase
-              .from("user_roles")
-              .select("role")
-              .eq("user_id", session.user.id)
-              .eq("role", "admin")
-              .limit(1)
+            supabase.rpc("has_role", { _user_id: session.user.id, _role: "admin" })
           ) as Promise<any>,
           8000,
           "[useCurrentUserPermissions] role check"
         );
 
-        const hasAdminRole = !!(roleData && roleData.length > 0);
+        const hasAdminRole = isAdminRole === true;
+
         
         if (!mounted) return;
         setIsAdmin(hasAdminRole);

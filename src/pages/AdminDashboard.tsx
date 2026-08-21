@@ -35,7 +35,7 @@ import AdminUsersTab from "@/components/admin/AdminUsersTab";
 const AdminDashboard = () => {
   const { t } = useTranslation();
   const navigate = useNavigate();
-  const { user, isAdmin, isLoading: authLoading, signOut } = useAdminAuth();
+  const { user, isAdmin, isLoading: authLoading, checkFailed, signOut } = useAdminAuth();
   const { permissions, isLoading: permLoading, hasPermission, canAccessBackend } = useCurrentUserPermissions();
   const [activeTab, setActiveTab] = useState("inquiries");
   const initialLoadDone = useRef(false);
@@ -136,17 +136,27 @@ const AdminDashboard = () => {
           <div className="w-16 h-16 bg-warning/10 rounded-full flex items-center justify-center mx-auto mb-6">
             <Lock className="w-8 h-8 text-warning" />
           </div>
-          <h2 className="text-2xl font-bold text-foreground mb-2">等待授权</h2>
+          <h2 className="text-2xl font-bold text-foreground mb-2">
+            {checkFailed ? "权限校验失败" : "等待授权"}
+          </h2>
           <p className="text-muted-foreground mb-2">
-            您的账号尚未获得后台访问权限
+            {checkFailed
+              ? "无法读取您的权限信息（网络或后端请求异常），并不代表账号没有权限"
+              : "您的账号尚未获得后台访问权限"}
           </p>
           <p className="text-sm text-muted-foreground mb-6 bg-muted px-3 py-2 rounded-md">
             {user.email}
           </p>
           <p className="text-sm text-muted-foreground mb-6">
-            请联系管理员授予您相应的访问权限
+            {checkFailed ? "请点击下方“刷新重试”，若仍失败请联系技术支持" : "请联系管理员授予您相应的访问权限"}
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
+            {checkFailed && (
+              <Button variant="outline" onClick={() => window.location.reload()} className="w-full sm:w-auto">
+                刷新重试
+              </Button>
+            )}
+
             <Button variant="outline" onClick={handleSwitchAccount} className="w-full sm:w-auto">
               切换账号
             </Button>

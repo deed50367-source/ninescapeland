@@ -25,33 +25,34 @@ export const useAdminAuth = () => {
   const [user, setUser] = useState<User | null>(null);
   const [isAdmin, setIsAdmin] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
+  const [checkFailed, setCheckFailed] = useState(false);
 
   const checkAdminRole = useCallback(async (userId: string): Promise<boolean> => {
-    try {
-      const { data, error } = await withTimeout(
-        Promise.resolve(
-          supabase
-            .from("user_roles")
-            .select("role")
-            .eq("user_id", userId)
-            .in("role", ["admin", "staff"])
-            .limit(1)
-        ) as Promise<any>,
-        8000,
-        "[useAdminAuth] role check"
-      );
+    // Use the security-definer has_role() function: it bypasses RLS quirks
+    // and returns a plain boolean, so a signed-in admin is always recognised.
+    const probe = async () => {
+      const [admin, staff] = await Promise.all([
+        supabase.rpc("has_role", { _user_id: userId, _role: "admin" }),
+        supabase.rpc("has_role", { _user_id: userId, _role: "staff" }),
+      ]);
+      if (admin.error || staff.error) throw admin.error || staff.error;
+      return admin.data === true || staff.data === true;
+    };
 
-      if (error) {
-        console.error("[useAdminAuth] role check error:", error);
-        return false;
+    for (let attempt = 0; attempt < 2; attempt++) {
+      try {
+        const result = await withTimeout(probe(), 8000, "[useAdminAuth] role check");
+        setCheckFailed(false);
+        return result;
+      } catch (err) {
+        console.error("[useAdminAuth] role check failed (attempt " + (attempt + 1) + "):", err);
       }
-
-      return !!(data && data.length > 0);
-    } catch (err) {
-      console.error("[useAdminAuth] unexpected error", err);
-      return false;
     }
+
+    setCheckFailed(true);
+    return false;
   }, []);
+
 
   useEffect(() => {
     let mounted = true;
@@ -124,6 +125,6 @@ export const useAdminAuth = () => {
     await supabase.auth.signOut();
   }, []);
 
-  return { user, isAdmin, isLoading, signOut };
+  return { user, isAdmin, isLoading, checkFailed, signOut };
 };
 
