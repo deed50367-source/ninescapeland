@@ -125,6 +125,6 @@ export const useAdminAuth = () => {
     await supabase.auth.signOut();
   }, []);
 
-  return { user, isAdmin, isLoading, signOut };
+  return { user, isAdmin, isLoading, checkFailed, signOut };
 };
 
