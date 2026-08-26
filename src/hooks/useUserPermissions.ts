@@ -92,6 +92,7 @@ export const useUserPermissions = (userId?: string) => {
 export const useCurrentUserPermissions = () => {
   const [user, setUser] = useState<{ id: string } | null>(null);
   const [isAdmin, setIsAdmin] = useState(false);
+  const [hasStaffRole, setHasStaffRole] = useState(false);
   const [permissions, setPermissions] = useState<Permission[]>([]);
   const [isLoading, setIsLoading] = useState(true);
 
@@ -111,6 +112,7 @@ export const useCurrentUserPermissions = () => {
         if (!session?.user) {
           setUser(null);
           setIsAdmin(false);
+          setHasStaffRole(false);
           setPermissions([]);
           setIsLoading(false);
           return;
@@ -119,19 +121,24 @@ export const useCurrentUserPermissions = () => {
         setUser({ id: session.user.id });
 
         // Check admin/staff role via security-definer function (RLS-proof)
-        const { data: isAdminRole } = await withTimeout(
-          Promise.resolve(
-            supabase.rpc("has_role", { _user_id: session.user.id, _role: "admin" })
-          ) as Promise<any>,
+        const [adminRes, staffRes] = await withTimeout(
+          Promise.all([
+            supabase.rpc("has_role", { _user_id: session.user.id, _role: "admin" }),
+            supabase.rpc("has_role", { _user_id: session.user.id, _role: "staff" }),
+          ]),
           8000,
           "[useCurrentUserPermissions] role check"
         );
 
-        const hasAdminRole = isAdminRole === true;
+        if (adminRes.error || staffRes.error) throw adminRes.error || staffRes.error;
+
+        const hasAdminRole = adminRes.data === true;
+        const hasStaffRoleValue = staffRes.data === true;
 
         
         if (!mounted) return;
         setIsAdmin(hasAdminRole);
+        setHasStaffRole(hasStaffRoleValue);
 
         // If admin, they have all permissions
         if (hasAdminRole) {
@@ -160,6 +167,7 @@ export const useCurrentUserPermissions = () => {
         if (mounted) {
           setUser(null);
           setIsAdmin(false);
+          setHasStaffRole(false);
           setPermissions([]);
           setIsLoading(false);
         }
@@ -187,12 +195,13 @@ export const useCurrentUserPermissions = () => {
   }, [isAdmin, permissions]);
 
   const canAccessBackend = useCallback((): boolean => {
-    return isAdmin || permissions.includes('backend_access');
-  }, [isAdmin, permissions]);
+    return isAdmin || hasStaffRole || permissions.includes('backend_access');
+  }, [isAdmin, hasStaffRole, permissions]);
 
   return { 
     user, 
     isAdmin, 
+    hasStaffRole,
     permissions, 
     isLoading, 
     hasPermission, 
