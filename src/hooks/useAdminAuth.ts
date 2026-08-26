@@ -105,7 +105,7 @@ export const useAdminAuth = () => {
 
     initAuth();
 
-    const { data: { subscription } } = supabase.auth.onAuthStateChange(async (event, session) => {
+    const { data: { subscription } } = supabase.auth.onAuthStateChange((event, session) => {
       if (!mounted) return;
       
       if (event === "SIGNED_OUT") {
@@ -115,14 +115,15 @@ export const useAdminAuth = () => {
         // Only handle SIGNED_IN, not TOKEN_REFRESHED or other events
         if (session?.user) {
           setUser(session.user);
-          // Don't set isLoading=true here to avoid unmounting active UI
-          const roleState = await checkAdminRole(session.user.id);
-          if (mounted) {
-            setIsAdmin(roleState.canAccess);
-            setHasAdminRole(roleState.isAdminRole);
-            setHasStaffRole(roleState.isStaffRole);
-            setIsLoading(false);
-          }
+          window.setTimeout(async () => {
+            const roleState = await checkAdminRole(session.user.id);
+            if (mounted) {
+              setIsAdmin(roleState.canAccess);
+              setHasAdminRole(roleState.isAdminRole);
+              setHasStaffRole(roleState.isStaffRole);
+              setIsLoading(false);
+            }
+          }, 0);
         }
       }
     });
