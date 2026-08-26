@@ -24,10 +24,12 @@ const withTimeout = async <T,>(
 export const useAdminAuth = () => {
   const [user, setUser] = useState<User | null>(null);
   const [isAdmin, setIsAdmin] = useState(false);
+  const [hasAdminRole, setHasAdminRole] = useState(false);
+  const [hasStaffRole, setHasStaffRole] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
   const [checkFailed, setCheckFailed] = useState(false);
 
-  const checkAdminRole = useCallback(async (userId: string): Promise<boolean> => {
+  const checkAdminRole = useCallback(async (userId: string): Promise<{ canAccess: boolean; isAdminRole: boolean; isStaffRole: boolean }> => {
     // Use the security-definer has_role() function: it bypasses RLS quirks
     // and returns a plain boolean, so a signed-in admin is always recognised.
     const probe = async () => {
@@ -36,7 +38,9 @@ export const useAdminAuth = () => {
         supabase.rpc("has_role", { _user_id: userId, _role: "staff" }),
       ]);
       if (admin.error || staff.error) throw admin.error || staff.error;
-      return admin.data === true || staff.data === true;
+      const isAdminRole = admin.data === true;
+      const isStaffRole = staff.data === true;
+      return { canAccess: isAdminRole || isStaffRole, isAdminRole, isStaffRole };
     };
 
     for (let attempt = 0; attempt < 2; attempt++) {
@@ -50,7 +54,14 @@ export const useAdminAuth = () => {
     }
 
     setCheckFailed(true);
-    return false;
+    return { canAccess: false, isAdminRole: false, isStaffRole: false };
+  }, []);
+
+  const clearAuthState = useCallback(() => {
+    setUser(null);
+    setIsAdmin(false);
+    setHasAdminRole(false);
+    setHasStaffRole(false);
   }, []);
 
 
@@ -68,25 +79,25 @@ export const useAdminAuth = () => {
         if (!mounted) return;
         
         if (!session?.user) {
-          setUser(null);
-          setIsAdmin(false);
+          clearAuthState();
           setIsLoading(false);
           return;
         }
 
         setUser(session.user);
         
-        const hasRole = await checkAdminRole(session.user.id);
+        const roleState = await checkAdminRole(session.user.id);
         
         if (!mounted) return;
         
-        setIsAdmin(hasRole);
+        setIsAdmin(roleState.canAccess);
+        setHasAdminRole(roleState.isAdminRole);
+        setHasStaffRole(roleState.isStaffRole);
         setIsLoading(false);
       } catch (error) {
         console.error("[useAdminAuth] init error:", error);
         if (mounted) {
-          setUser(null);
-          setIsAdmin(false);
+          clearAuthState();
           setIsLoading(false);
         }
       }
@@ -94,23 +105,25 @@ export const useAdminAuth = () => {
 
     initAuth();
 
-    const { data: { subscription } } = supabase.auth.onAuthStateChange(async (event, session) => {
+    const { data: { subscription } } = supabase.auth.onAuthStateChange((event, session) => {
       if (!mounted) return;
       
       if (event === "SIGNED_OUT") {
-        setUser(null);
-        setIsAdmin(false);
+        clearAuthState();
         setIsLoading(false);
       } else if (event === "SIGNED_IN") {
         // Only handle SIGNED_IN, not TOKEN_REFRESHED or other events
         if (session?.user) {
           setUser(session.user);
-          // Don't set isLoading=true here to avoid unmounting active UI
-          const hasRole = await checkAdminRole(session.user.id);
-          if (mounted) {
-            setIsAdmin(hasRole);
-            setIsLoading(false);
-          }
+          window.setTimeout(async () => {
+            const roleState = await checkAdminRole(session.user.id);
+            if (mounted) {
+              setIsAdmin(roleState.canAccess);
+              setHasAdminRole(roleState.isAdminRole);
+              setHasStaffRole(roleState.isStaffRole);
+              setIsLoading(false);
+            }
+          }, 0);
         }
       }
     });
@@ -119,12 +132,12 @@ export const useAdminAuth = () => {
       mounted = false;
       subscription.unsubscribe();
     };
-  }, [checkAdminRole]);
+  }, [checkAdminRole, clearAuthState]);
 
   const signOut = useCallback(async () => {
     await supabase.auth.signOut();
   }, []);
 
-  return { user, isAdmin, isLoading, checkFailed, signOut };
+  return { user, isAdmin, hasAdminRole, hasStaffRole, isLoading, checkFailed, signOut };
 };
 
