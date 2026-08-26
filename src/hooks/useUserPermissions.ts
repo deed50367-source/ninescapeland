@@ -165,7 +165,6 @@ export const useCurrentUserPermissions = () => {
       } catch (error) {
         console.error("[useCurrentUserPermissions] error:", error);
         if (mounted) {
-          setUser(null);
           setIsAdmin(false);
           setHasStaffRole(false);
           setPermissions([]);
@@ -178,8 +177,18 @@ export const useCurrentUserPermissions = () => {
 
     const { data: { subscription } } = supabase.auth.onAuthStateChange((event) => {
       // Only re-init on actual sign in/out, not token refresh
-      if (mounted && (event === "SIGNED_IN" || event === "SIGNED_OUT")) {
-        init();
+      if (!mounted) return;
+
+      if (event === "SIGNED_OUT") {
+        setUser(null);
+        setIsAdmin(false);
+        setHasStaffRole(false);
+        setPermissions([]);
+        setIsLoading(false);
+      } else if (event === "SIGNED_IN") {
+        window.setTimeout(() => {
+          if (mounted) init();
+        }, 0);
       }
     });
 
