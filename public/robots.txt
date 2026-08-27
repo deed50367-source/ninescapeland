@@ -51,19 +51,23 @@ Crawl-delay: 2
 User-agent: GPTBot
 Allow: /
 Disallow: /admin
+Crawl-delay: 2
 
 User-agent: OAI-SearchBot
 Allow: /
 Disallow: /admin
+Crawl-delay: 2
 
 User-agent: ChatGPT-User
 Allow: /
 Disallow: /admin
+Crawl-delay: 2
 
 # Perplexity
 User-agent: PerplexityBot
 Allow: /
 Disallow: /admin
+Crawl-delay: 2
 
 User-agent: Perplexity-User
 Allow: /
@@ -73,6 +77,7 @@ Disallow: /admin
 User-agent: ClaudeBot
 Allow: /
 Disallow: /admin
+Crawl-delay: 2
 
 User-agent: Claude-Web
 Allow: /
@@ -91,6 +96,7 @@ Disallow: /admin
 User-agent: Applebot
 Allow: /
 Disallow: /admin
+Crawl-delay: 2
 
 User-agent: Applebot-Extended
 Allow: /
@@ -100,15 +106,18 @@ Disallow: /admin
 User-agent: CCBot
 Allow: /
 Disallow: /admin
+Crawl-delay: 2
 
 # Others
 User-agent: Amazonbot
 Allow: /
 Disallow: /admin
+Crawl-delay: 2
 
 User-agent: meta-externalagent
 Allow: /
 Disallow: /admin
+Crawl-delay: 2
 
 User-agent: Bytespider
 Allow: /
