@@ -123,6 +123,10 @@ export const StableSolutionPage = ({
   ogImage,
   heroImage,
   heroImageAlt,
+  gallery,
+  specTable,
+  sources,
+
 
 }: StableSolutionPageProps) => {
   const canonicalUrl = `${baseUrl}/${slug}`;
