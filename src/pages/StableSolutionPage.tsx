@@ -295,6 +295,45 @@ export const StableSolutionPage = ({
           </div>
         </section>
 
+        {gallery && gallery.length > 0 && (
+          <section className="py-14 md:py-20" aria-label="Project photo gallery">
+            <div className="mx-auto max-w-7xl px-4 md:px-6">
+              <h2 className="font-heading text-2xl font-bold md:text-4xl">Reference Builds</h2>
+              <div className="mt-8 grid gap-5 md:grid-cols-3">
+                {gallery.map((img) => (
+                  <figure key={img.src} className="overflow-hidden rounded-md border border-border bg-background">
+                    <img
+                      src={img.src}
+                      alt={img.alt}
+                      width="800"
+                      height="600"
+                      loading="lazy"
+                      decoding="async"
+                      className="h-56 w-full object-cover"
+                    />
+                    {img.caption && (
+                      <figcaption className="px-4 py-3 text-sm leading-6 text-muted-foreground">{img.caption}</figcaption>
+                    )}
+                  </figure>
+                ))}
+              </div>
+            </div>
+          </section>
+        )}
+
+        {specTable && (
+          <SpecComparisonTable
+            heading={specTable.heading}
+            intro={specTable.intro}
+            caption={specTable.caption}
+            columns={specTable.columns}
+            rows={specTable.rows}
+            footnote={specTable.footnote}
+          />
+        )}
+
+
+
         <section className="py-14 md:py-20">
           <div className="mx-auto max-w-7xl px-4 md:px-6">
             <div className="max-w-3xl">
