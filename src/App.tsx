@@ -27,6 +27,10 @@ import HowToCreateActiveLearningEnvironment from "./pages/HowToCreateActiveLearn
 import KinestheticLearningEquipmentBenefits from "./pages/KinestheticLearningEquipmentBenefits";
 import DesigningSensoryPlayAreasForEducation from "./pages/DesigningSensoryPlayAreasForEducation";
 import IndoorTrampolineParkBusinessForSchools from "./pages/IndoorTrampolineParkBusinessForSchools";
+import InclusivePlayCenterDesign from "./pages/InclusivePlayCenterDesign";
+import PreschoolPlaygroundEquipment from "./pages/PreschoolPlaygroundEquipment";
+import TuvCertifiedPlaygroundSupplier from "./pages/TuvCertifiedPlaygroundSupplier";
+import SafeIndoorPlayAreasForSixYearOlds from "./pages/SafeIndoorPlayAreasForSixYearOlds";
 
 // Resilient lazy: if a chunk fails to load (e.g. Hostinger 429), render nothing
 // instead of crashing the whole app.
