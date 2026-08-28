@@ -161,6 +161,10 @@ const pageRoutes = (
     <Route path="kinesthetic-learning-equipment-benefits" element={<KinestheticLearningEquipmentBenefits />} />
     <Route path="designing-sensory-play-areas-for-education" element={<DesigningSensoryPlayAreasForEducation />} />
     <Route path="indoor-trampoline-park-business-for-schools" element={<IndoorTrampolineParkBusinessForSchools />} />
+    <Route path="inclusive-play-center-design-for-children" element={<InclusivePlayCenterDesign />} />
+    <Route path="preschool-playground-equipment-and-soft-play-design" element={<PreschoolPlaygroundEquipment />} />
+    <Route path="tuv-certified-playground-equipment-supplier" element={<TuvCertifiedPlaygroundSupplier />} />
+    <Route path="safe-indoor-play-areas-for-6-year-olds" element={<SafeIndoorPlayAreasForSixYearOlds />} />
     <Route path="investment-opportunity" element={<InvestmentOpportunity />} />
     <Route path="investment-opportunity/:slug" element={<InvestmentROIPage />} />
     <Route path="locations/:slug" element={<LocationPage />} />
