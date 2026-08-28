@@ -380,7 +380,10 @@ export const StableSolutionPage = ({
           </div>
         </section>
 
+        {sources && sources.length > 0 && <SourcesReferences sources={sources} />}
+
         <ProductInquiryForm productName={title} productSlug={slug} />
+
 
       </main>
 
