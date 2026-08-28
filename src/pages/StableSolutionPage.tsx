@@ -3,6 +3,9 @@ import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { FloatingCTA } from "@/components/FloatingCTA";
 import { ProductInquiryForm } from "@/components/product-detail/ProductInquiryForm";
+import { SpecComparisonTable } from "@/components/SpecComparisonTable";
+import { SourcesReferences, type SourceItem } from "@/components/SourcesReferences";
+
 
 
 type Metric = {
