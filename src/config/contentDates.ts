@@ -71,6 +71,10 @@ export const CONTENT_DATES: Record<string, string> = {
   "/commercial-indoor-playground-flooring-and-mats": "2026-08-20",
   "/indoor-playground-business-plan": "2026-08-20",
   "/family-entertainment-center-business-plan": "2026-08-20",
+  "/inclusive-play-center-design-for-children": "2026-08-28",
+  "/preschool-playground-equipment-and-soft-play-design": "2026-08-28",
+  "/tuv-certified-playground-equipment-supplier": "2026-08-28",
+  "/safe-indoor-play-areas-for-6-year-olds": "2026-08-28",
 
   // Trust pages
   "/privacy-policy": "2026-08-13",
