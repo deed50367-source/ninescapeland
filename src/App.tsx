@@ -27,6 +27,10 @@ import HowToCreateActiveLearningEnvironment from "./pages/HowToCreateActiveLearn
 import KinestheticLearningEquipmentBenefits from "./pages/KinestheticLearningEquipmentBenefits";
 import DesigningSensoryPlayAreasForEducation from "./pages/DesigningSensoryPlayAreasForEducation";
 import IndoorTrampolineParkBusinessForSchools from "./pages/IndoorTrampolineParkBusinessForSchools";
+import InclusivePlayCenterDesign from "./pages/InclusivePlayCenterDesign";
+import PreschoolPlaygroundEquipment from "./pages/PreschoolPlaygroundEquipment";
+import TuvCertifiedPlaygroundSupplier from "./pages/TuvCertifiedPlaygroundSupplier";
+import SafeIndoorPlayAreasForSixYearOlds from "./pages/SafeIndoorPlayAreasForSixYearOlds";
 
 // Resilient lazy: if a chunk fails to load (e.g. Hostinger 429), render nothing
 // instead of crashing the whole app.
@@ -157,6 +161,10 @@ const pageRoutes = (
     <Route path="kinesthetic-learning-equipment-benefits" element={<KinestheticLearningEquipmentBenefits />} />
     <Route path="designing-sensory-play-areas-for-education" element={<DesigningSensoryPlayAreasForEducation />} />
     <Route path="indoor-trampoline-park-business-for-schools" element={<IndoorTrampolineParkBusinessForSchools />} />
+    <Route path="inclusive-play-center-design-for-children" element={<InclusivePlayCenterDesign />} />
+    <Route path="preschool-playground-equipment-and-soft-play-design" element={<PreschoolPlaygroundEquipment />} />
+    <Route path="tuv-certified-playground-equipment-supplier" element={<TuvCertifiedPlaygroundSupplier />} />
+    <Route path="safe-indoor-play-areas-for-6-year-olds" element={<SafeIndoorPlayAreasForSixYearOlds />} />
     <Route path="investment-opportunity" element={<InvestmentOpportunity />} />
     <Route path="investment-opportunity/:slug" element={<InvestmentROIPage />} />
     <Route path="locations/:slug" element={<LocationPage />} />

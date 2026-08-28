@@ -43,6 +43,10 @@ export const Header = () => {
     { label: "Indoor Playground Business Plan", href: localizedPath("/indoor-playground-business-plan") },
     { label: "FEC Business Plan", href: localizedPath("/family-entertainment-center-business-plan") },
     { label: "Trampoline Park for Schools", href: localizedPath("/indoor-trampoline-park-business-for-schools") },
+    { label: "Inclusive Play Center Design", href: localizedPath("/inclusive-play-center-design-for-children") },
+    { label: "Preschool Playground Equipment", href: localizedPath("/preschool-playground-equipment-and-soft-play-design") },
+    { label: "TUV Certified Supplier Check", href: localizedPath("/tuv-certified-playground-equipment-supplier") },
+    { label: "Play Areas for 6 Year Olds", href: localizedPath("/safe-indoor-play-areas-for-6-year-olds") },
     { label: t("activePlayRunning.breadcrumb", "Active Play for Running"), href: localizedPath("/best-indoorplaygroundsolution-active-play-for-running-facilities") },
     { label: t("officeWellness.breadcrumb", "Office Wellness"), href: localizedPath("/indoorplaygroundsolution-office-wellness-solutions") },
   ];
