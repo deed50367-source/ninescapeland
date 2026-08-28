@@ -64,6 +64,10 @@ const CORE_ROUTES = [
   "/commercial-indoor-playground-flooring-and-mats",
   "/indoor-playground-business-plan",
   "/family-entertainment-center-business-plan",
+  "/inclusive-play-center-design-for-children",
+  "/preschool-playground-equipment-and-soft-play-design",
+  "/tuv-certified-playground-equipment-supplier",
+  "/safe-indoor-play-areas-for-6-year-olds",
   // Investment / ROI hub + per-country guides
   "/investment-opportunity",
   "/investment-opportunity/indoor-playground-investment-australia",
