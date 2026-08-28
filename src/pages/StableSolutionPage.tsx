@@ -54,7 +54,21 @@ export type StableSolutionPageProps = {
   heroImage?: string;
   /** Alt text for the hero illustration. */
   heroImageAlt?: string;
+  /** Optional image gallery (3 images recommended). */
+  gallery?: { src: string; alt: string; caption?: string }[];
+  /** Optional GEO spec-comparison table. */
+  specTable?: {
+    heading: string;
+    intro?: string;
+    caption: string;
+    columns: string[];
+    rows: string[][];
+    footnote?: string;
+  };
+  /** Optional outbound citations to primary standards / regulators. */
+  sources?: SourceItem[];
 };
+
 
 
 
