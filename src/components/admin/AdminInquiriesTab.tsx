@@ -349,7 +349,7 @@ const AdminInquiriesTab = () => {
 
       {/* Detail Dialog */}
       <Dialog open={isDetailOpen} onOpenChange={setIsDetailOpen}>
-        <DialogContent className="max-w-lg">
+        <DialogContent className="max-w-2xl max-h-[85vh] overflow-y-auto">
           <DialogHeader>
             <DialogTitle>Inquiry Details</DialogTitle>
           </DialogHeader>
@@ -426,11 +426,12 @@ const AdminInquiriesTab = () => {
               {selectedInquiry.message && (
                 <div>
                   <h4 className="font-medium mb-2">Customer Message</h4>
-                  <p className="text-sm text-muted-foreground bg-muted p-4 rounded-lg whitespace-pre-wrap">
+                  <div className="text-sm text-muted-foreground bg-muted p-4 rounded-lg whitespace-pre-wrap break-words max-h-[45vh] overflow-y-auto leading-relaxed">
                     {selectedInquiry.message}
-                  </p>
+                  </div>
                 </div>
               )}
+
 
               {/* Status Change */}
               <div className="flex items-center justify-between pt-4 border-t">
