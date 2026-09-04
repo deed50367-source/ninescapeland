@@ -50,6 +50,7 @@ const KinestheticLearningEquipmentBenefits = () => (
       { title: "Homeschool Co-ops & Micro-Schools", desc: "One shared kinesthetic zone lets 8–20 families deliver the movement standards their curricula assume." },
     ]}
     related={[
+      { label: "Interactive learning play equipment", href: "/interactive-play-equipment-for-learning-centers" },
       { label: "How to Create an Active Learning Environment", href: "/how-to-create-active-learning-environment" },
       { label: "Educational Activities by Age", href: "/indoor-play-center-educational-activities-by-age" },
       { label: "Indoor PE Equipment for Schools", href: "/indoor-pe-equipment-for-schools" },

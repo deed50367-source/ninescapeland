@@ -88,6 +88,7 @@ const PreschoolPlaygroundEquipment = () => (
       },
     ]}
     related={[
+      { label: "Early childhood centre equipment specs", href: "/indoor-playground-equipment-for-early-childhood-centers" },
       { label: "Custom soft play for schools", href: "/custom-soft-play-equipment-manufacturer-for-schools" },
       { label: "Montessori indoor playground design", href: "/montessori-indoor-playground-design" },
       { label: "TUV certified playground equipment supplier", href: "/tuv-certified-playground-equipment-supplier" },

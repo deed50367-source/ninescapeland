@@ -51,6 +51,7 @@ const DesigningSensoryPlayAreasForEducation = () => (
       { title: "Mainstream K-8 Schools", desc: "A shared sensory suite serving 4–6 classrooms handles overflow needs of ADHD, autism and anxious learners without pull-out logistics." },
     ]}
     related={[
+      { label: "How to design an educational play area", href: "/how-to-design-an-educational-indoor-play-area" },
       { label: "Sensory Inclusive Play Equipment", href: "/sensory-inclusive-play-equipment" },
       { label: "Montessori Indoor Playground Design", href: "/montessori-indoor-playground-design" },
       { label: "How to Create an Active Learning Environment", href: "/how-to-create-active-learning-environment" },

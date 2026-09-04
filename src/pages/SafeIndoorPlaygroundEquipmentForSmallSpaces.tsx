@@ -48,6 +48,7 @@ const SafeIndoorPlaygroundEquipmentForSmallSpaces = () => (
       { title: "First-time operators", desc: "Pilot venues testing a market at lower capital exposure before committing to a full park." },
     ]}
     related={[
+      { label: "Modular reconfigurable play equipment", href: "/modular-reconfigurable-indoor-play-equipment" },
       { label: "Indoor playground equipment", href: "/products/indoor-playground" },
       { label: "Hygienic infant play area", href: "/hygienic-indoor-playground-for-infants" },
       { label: "Playground cost and free 3D design", href: "/custom-indoor-playground-cost-free-3d-design" },
