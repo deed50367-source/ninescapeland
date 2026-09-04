@@ -68,6 +68,10 @@ const CORE_ROUTES = [
   "/preschool-playground-equipment-and-soft-play-design",
   "/tuv-certified-playground-equipment-supplier",
   "/safe-indoor-play-areas-for-6-year-olds",
+  "/how-to-design-an-educational-indoor-play-area",
+  "/indoor-playground-equipment-for-early-childhood-centers",
+  "/interactive-play-equipment-for-learning-centers",
+  "/modular-reconfigurable-indoor-play-equipment",
   // Investment / ROI hub + per-country guides
   "/investment-opportunity",
   "/investment-opportunity/indoor-playground-investment-australia",
