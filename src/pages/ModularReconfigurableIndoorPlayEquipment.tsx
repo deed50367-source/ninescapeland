@@ -58,15 +58,53 @@ const ModularReconfigurableIndoorPlayEquipment = () => (
       { src: heroImages.projects, alt: "Multi-use indoor hall with repositionable play equipment", caption: "Wall-side storage band sized so the floor clears within the hour." },
     ]}
     specTable={{
-      heading: "Fixed vs Modular Play Equipment"
-      }
-      intro=""
-      caption=""
-      columns={[]}
-      rows={[]}
-    }
-    related={[]}
-    faq={[]}
+      heading: "Fixed vs Modular Play Equipment",
+      intro: "What changes when a layout can be rotated rather than built once.",
+      caption: "Comparison of fixed and modular indoor play equipment across change, storage, room use and inspection",
+      columns: ["Criterion", "Fixed structure", "Modular set"],
+      rows: [
+        ["Layout change", "Capital project", "Two staff, under 60 minutes"],
+        ["Engagement over time", "Declines after ~6 weeks", "Restored each rotation"],
+        ["Room availability", "Play only", "Play, class, hall, event"],
+        ["Storage need", "None", "8–12% of floor area"],
+        ["Inspection", "One configuration", "One check per documented variant"],
+        ["Cost per play hour", "Lower if room is play-only", "Lower where the room has two jobs"],
+      ],
+      footnote: "Each documented variant needs its own fall-height and clearance confirmation; pre-verified module combinations keep that a five-minute check rather than a re-survey.",
+    }}
+    sources={[
+      {
+        label: "ASTM F1487-21 — Playground Equipment for Public Use",
+        publisher: "ASTM International",
+        url: "https://www.astm.org/f1487-21.html",
+        note: "Referenced for clearance, entrapment and fall-height requirements that apply to every configuration.",
+      },
+      {
+        label: "ASTM F1292 — Impact Attenuation of Surfacing Materials",
+        publisher: "ASTM International",
+        url: "https://www.astm.org/f1292-22.html",
+      },
+      {
+        label: "EN 1176 — Playground Equipment and Surfacing",
+        publisher: "European Committee for Standardization",
+        url: "https://www.en-standard.eu/csn-en-1176-1-playground-equipment-and-surfacing-part-1-general-safety-requirements-and-test-methods/",
+      },
+    ]}
+    related={[
+      { label: "How to design an educational play area", href: "/how-to-design-an-educational-indoor-play-area" },
+      { label: "Interactive learning play equipment", href: "/interactive-play-equipment-for-learning-centers" },
+      { label: "Early childhood centre equipment specs", href: "/indoor-playground-equipment-for-early-childhood-centers" },
+      { label: "Play equipment for small spaces", href: "/safe-indoor-playground-equipment-for-small-spaces" },
+      { label: "Homeschool co-op play spaces", href: "/homeschool-coop-indoor-play-solutions" },
+      { label: "Soft play equipment", href: "/products/soft-play" },
+    ]}
+    faq={[
+      { title: "What is modular indoor play equipment?", desc: "Equipment built as separate units on a common connection grid — interlocking soft forms, castor-mounted frames, nesting platforms and folding panels — so the layout can be rebuilt as several different configurations instead of one permanent structure." },
+      { title: "How often should a modular layout be rotated?", desc: "Once per term is the practical rhythm. Engagement on a fixed layout typically declines after about six weeks, and rotating one or two modules restores it without new capital spend. Prepare three or four documented variants so staff are not improvising." },
+      { title: "How much storage does a modular set need?", desc: "Allocate 8–12% of floor area as a wall-side storage band, and confirm stack heights against the ceiling and sprinkler plane. Nesting and stacking only help if that volume was reserved at design stage." },
+      { title: "Is modular equipment as safe as a fixed structure?", desc: "Yes, provided each configuration is checked. Every variant needs its own fall-height and clearance confirmation; specifying fixed platform heights and pre-verified module combinations turns that into a short confirmation instead of a fresh survey." },
+      { title: "Can a school hall go back to normal use the same day?", desc: "That is the design target — a full clear-down by two staff in under an hour. It depends on castors with brakes or sled bases, tool-free couplers, folding wall panels and rolling storage units being specified from the start." },
+    ]}
   />
 );
 
