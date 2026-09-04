@@ -31,6 +31,10 @@ import InclusivePlayCenterDesign from "./pages/InclusivePlayCenterDesign";
 import PreschoolPlaygroundEquipment from "./pages/PreschoolPlaygroundEquipment";
 import TuvCertifiedPlaygroundSupplier from "./pages/TuvCertifiedPlaygroundSupplier";
 import SafeIndoorPlayAreasForSixYearOlds from "./pages/SafeIndoorPlayAreasForSixYearOlds";
+import EducationalIndoorPlayAreaDesign from "./pages/EducationalIndoorPlayAreaDesign";
+import EarlyChildhoodCenterPlaygroundEquipment from "./pages/EarlyChildhoodCenterPlaygroundEquipment";
+import InteractivePlayEquipmentForLearningCenters from "./pages/InteractivePlayEquipmentForLearningCenters";
+import ModularReconfigurableIndoorPlayEquipment from "./pages/ModularReconfigurableIndoorPlayEquipment";
 
 // Resilient lazy: if a chunk fails to load (e.g. Hostinger 429), render nothing
 // instead of crashing the whole app.
@@ -165,6 +169,10 @@ const pageRoutes = (
     <Route path="preschool-playground-equipment-and-soft-play-design" element={<PreschoolPlaygroundEquipment />} />
     <Route path="tuv-certified-playground-equipment-supplier" element={<TuvCertifiedPlaygroundSupplier />} />
     <Route path="safe-indoor-play-areas-for-6-year-olds" element={<SafeIndoorPlayAreasForSixYearOlds />} />
+    <Route path="how-to-design-an-educational-indoor-play-area" element={<EducationalIndoorPlayAreaDesign />} />
+    <Route path="indoor-playground-equipment-for-early-childhood-centers" element={<EarlyChildhoodCenterPlaygroundEquipment />} />
+    <Route path="interactive-play-equipment-for-learning-centers" element={<InteractivePlayEquipmentForLearningCenters />} />
+    <Route path="modular-reconfigurable-indoor-play-equipment" element={<ModularReconfigurableIndoorPlayEquipment />} />
     <Route path="investment-opportunity" element={<InvestmentOpportunity />} />
     <Route path="investment-opportunity/:slug" element={<InvestmentROIPage />} />
     <Route path="locations/:slug" element={<LocationPage />} />

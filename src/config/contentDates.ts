@@ -76,6 +76,12 @@ export const CONTENT_DATES: Record<string, string> = {
   "/tuv-certified-playground-equipment-supplier": "2026-08-28",
   "/safe-indoor-play-areas-for-6-year-olds": "2026-08-28",
 
+  // Weekly aggregation pages (batch 5)
+  "/how-to-design-an-educational-indoor-play-area": "2026-09-04",
+  "/indoor-playground-equipment-for-early-childhood-centers": "2026-09-04",
+  "/interactive-play-equipment-for-learning-centers": "2026-09-04",
+  "/modular-reconfigurable-indoor-play-equipment": "2026-09-04",
+
   // Trust pages
   "/privacy-policy": "2026-08-13",
   "/terms-of-service": "2026-08-13",

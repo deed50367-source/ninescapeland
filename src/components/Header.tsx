@@ -47,6 +47,10 @@ export const Header = () => {
     { label: "Preschool Playground Equipment", href: localizedPath("/preschool-playground-equipment-and-soft-play-design") },
     { label: "TUV Certified Supplier Check", href: localizedPath("/tuv-certified-playground-equipment-supplier") },
     { label: "Play Areas for 6 Year Olds", href: localizedPath("/safe-indoor-play-areas-for-6-year-olds") },
+    { label: "Educational Play Area Design", href: localizedPath("/how-to-design-an-educational-indoor-play-area") },
+    { label: "Early Childhood Centre Equipment", href: localizedPath("/indoor-playground-equipment-for-early-childhood-centers") },
+    { label: "Interactive Learning Play Equipment", href: localizedPath("/interactive-play-equipment-for-learning-centers") },
+    { label: "Modular Reconfigurable Play", href: localizedPath("/modular-reconfigurable-indoor-play-equipment") },
     { label: t("activePlayRunning.breadcrumb", "Active Play for Running"), href: localizedPath("/best-indoorplaygroundsolution-active-play-for-running-facilities") },
     { label: t("officeWellness.breadcrumb", "Office Wellness"), href: localizedPath("/indoorplaygroundsolution-office-wellness-solutions") },
   ];
