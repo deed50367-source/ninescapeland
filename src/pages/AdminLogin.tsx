@@ -61,7 +61,7 @@ const AdminLogin = () => {
 
 
         toast.success("Login successful");
-        navigate("/admin");
+        navigate("/admin", { replace: true });
       }
     } catch (error) {
       toast.error("Login failed, please try again");
@@ -95,7 +95,7 @@ const AdminLogin = () => {
         email,
         password,
         options: {
-          emailRedirectTo: `${window.location.origin}/admin-login`
+          emailRedirectTo: `${window.location.origin}/admin/login`
         }
       });
 
