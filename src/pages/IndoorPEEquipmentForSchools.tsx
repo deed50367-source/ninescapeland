@@ -41,6 +41,7 @@ const IndoorPEEquipmentForSchools = () => (
       { title: "District rollouts", desc: "Repeatable equipment packages, per-school drawings and staged delivery for multi-campus contracts." },
     ]}
     related={[
+      { label: "After-school programme play equipment", href: "/after-school-program-indoor-play-equipment" },
       { label: "Educational market solution", href: "/market/educational-indoor-playground-solution-for-schools" },
       { label: "Indoor playground equipment", href: "/products/indoor-playground" },
       { label: "Safety certifications", href: "/safety-certifications" },
