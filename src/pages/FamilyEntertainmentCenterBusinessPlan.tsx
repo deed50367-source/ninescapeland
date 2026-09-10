@@ -52,6 +52,7 @@ const FamilyEntertainmentCenterBusinessPlan = () => (
       { title: "Resort and hospitality groups", desc: "Hotels and resorts building an all-weather family attraction to extend guest stay." },
     ]}
     related={[
+      { label: "10-year cost of ownership", href: "/indoor-playground-total-cost-of-ownership" },
       { label: "Trampoline park and FEC solutions", href: "/trampoline-park-fec-solutions" },
       { label: "Indoor playground business plan", href: "/indoor-playground-business-plan" },
       { label: "Gamified attractions manufacturer", href: "/gamified-attractions-manufacturer" },
