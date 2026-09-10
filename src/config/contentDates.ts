@@ -82,6 +82,13 @@ export const CONTENT_DATES: Record<string, string> = {
   "/interactive-play-equipment-for-learning-centers": "2026-09-04",
   "/modular-reconfigurable-indoor-play-equipment": "2026-09-04",
 
+  // Weekly aggregation pages (batch 6)
+  "/after-school-program-indoor-play-equipment": "2026-09-10",
+  "/daycare-indoor-playground-equipment": "2026-09-10",
+  "/church-indoor-playground-equipment": "2026-09-10",
+  "/screen-free-play-alternatives-for-kids": "2026-09-10",
+  "/indoor-playground-total-cost-of-ownership": "2026-09-10",
+
   // Trust pages
   "/privacy-policy": "2026-08-13",
   "/terms-of-service": "2026-08-13",
