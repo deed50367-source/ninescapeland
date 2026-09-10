@@ -35,6 +35,11 @@ import EducationalIndoorPlayAreaDesign from "./pages/EducationalIndoorPlayAreaDe
 import EarlyChildhoodCenterPlaygroundEquipment from "./pages/EarlyChildhoodCenterPlaygroundEquipment";
 import InteractivePlayEquipmentForLearningCenters from "./pages/InteractivePlayEquipmentForLearningCenters";
 import ModularReconfigurableIndoorPlayEquipment from "./pages/ModularReconfigurableIndoorPlayEquipment";
+import AfterSchoolProgramPlayEquipment from "./pages/AfterSchoolProgramPlayEquipment";
+import DaycareIndoorPlaygroundEquipment from "./pages/DaycareIndoorPlaygroundEquipment";
+import ChurchIndoorPlaygroundEquipment from "./pages/ChurchIndoorPlaygroundEquipment";
+import ScreenFreePlayAlternatives from "./pages/ScreenFreePlayAlternatives";
+import IndoorPlaygroundTotalCostOfOwnership from "./pages/IndoorPlaygroundTotalCostOfOwnership";
 
 // Resilient lazy: if a chunk fails to load (e.g. Hostinger 429), render nothing
 // instead of crashing the whole app.
@@ -173,6 +178,11 @@ const pageRoutes = (
     <Route path="indoor-playground-equipment-for-early-childhood-centers" element={<EarlyChildhoodCenterPlaygroundEquipment />} />
     <Route path="interactive-play-equipment-for-learning-centers" element={<InteractivePlayEquipmentForLearningCenters />} />
     <Route path="modular-reconfigurable-indoor-play-equipment" element={<ModularReconfigurableIndoorPlayEquipment />} />
+    <Route path="after-school-program-indoor-play-equipment" element={<AfterSchoolProgramPlayEquipment />} />
+    <Route path="daycare-indoor-playground-equipment" element={<DaycareIndoorPlaygroundEquipment />} />
+    <Route path="church-indoor-playground-equipment" element={<ChurchIndoorPlaygroundEquipment />} />
+    <Route path="screen-free-play-alternatives-for-kids" element={<ScreenFreePlayAlternatives />} />
+    <Route path="indoor-playground-total-cost-of-ownership" element={<IndoorPlaygroundTotalCostOfOwnership />} />
     <Route path="investment-opportunity" element={<InvestmentOpportunity />} />
     <Route path="investment-opportunity/:slug" element={<InvestmentROIPage />} />
     <Route path="locations/:slug" element={<LocationPage />} />

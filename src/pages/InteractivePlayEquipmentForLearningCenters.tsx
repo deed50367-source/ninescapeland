@@ -91,6 +91,7 @@ const InteractivePlayEquipmentForLearningCenters = () => (
       },
     ]}
     related={[
+      { label: "Screen-free play alternatives", href: "/screen-free-play-alternatives-for-kids" },
       { label: "How to design an educational play area", href: "/how-to-design-an-educational-indoor-play-area" },
       { label: "Modular reconfigurable play equipment", href: "/modular-reconfigurable-indoor-play-equipment" },
       { label: "Gamified attractions manufacturing", href: "/gamified-attractions-manufacturer" },

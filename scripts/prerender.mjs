@@ -72,6 +72,12 @@ const CORE_ROUTES = [
   "/indoor-playground-equipment-for-early-childhood-centers",
   "/interactive-play-equipment-for-learning-centers",
   "/modular-reconfigurable-indoor-play-equipment",
+  // Weekly aggregation pages (batch 6)
+  "/after-school-program-indoor-play-equipment",
+  "/daycare-indoor-playground-equipment",
+  "/church-indoor-playground-equipment",
+  "/screen-free-play-alternatives-for-kids",
+  "/indoor-playground-total-cost-of-ownership",
   // Investment / ROI hub + per-country guides
   "/investment-opportunity",
   "/investment-opportunity/indoor-playground-investment-australia",

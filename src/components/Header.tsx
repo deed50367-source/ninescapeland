@@ -51,6 +51,11 @@ export const Header = () => {
     { label: "Early Childhood Centre Equipment", href: localizedPath("/indoor-playground-equipment-for-early-childhood-centers") },
     { label: "Interactive Learning Play Equipment", href: localizedPath("/interactive-play-equipment-for-learning-centers") },
     { label: "Modular Reconfigurable Play", href: localizedPath("/modular-reconfigurable-indoor-play-equipment") },
+    { label: "After-School Program Play Equipment", href: localizedPath("/after-school-program-indoor-play-equipment") },
+    { label: "Daycare Playground Equipment", href: localizedPath("/daycare-indoor-playground-equipment") },
+    { label: "Church Playground Equipment", href: localizedPath("/church-indoor-playground-equipment") },
+    { label: "Screen-Free Play Alternatives", href: localizedPath("/screen-free-play-alternatives-for-kids") },
+    { label: "10-Year Cost of Ownership", href: localizedPath("/indoor-playground-total-cost-of-ownership") },
     { label: t("activePlayRunning.breadcrumb", "Active Play for Running"), href: localizedPath("/best-indoorplaygroundsolution-active-play-for-running-facilities") },
     { label: t("officeWellness.breadcrumb", "Office Wellness"), href: localizedPath("/indoorplaygroundsolution-office-wellness-solutions") },
   ];

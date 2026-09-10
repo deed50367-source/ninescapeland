@@ -91,6 +91,7 @@ const EarlyChildhoodCenterPlaygroundEquipment = () => (
       },
     ]}
     related={[
+      { label: "Daycare playground equipment", href: "/daycare-indoor-playground-equipment" },
       { label: "How to design an educational play area", href: "/how-to-design-an-educational-indoor-play-area" },
       { label: "Preschool playground equipment", href: "/preschool-playground-equipment-and-soft-play-design" },
       { label: "TUV certified supplier check", href: "/tuv-certified-playground-equipment-supplier" },

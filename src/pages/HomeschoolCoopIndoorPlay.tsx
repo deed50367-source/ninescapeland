@@ -41,6 +41,7 @@ const HomeschoolCoopIndoorPlay = () => (
       { title: "Micro-schools", desc: "Compact movement rooms for small private learning groups in flexible spaces." },
     ]}
     related={[
+      { label: "Church playground equipment", href: "/church-indoor-playground-equipment" },
       { label: "Indoor PE equipment", href: "/indoor-pe-equipment-for-schools" },
       { label: "Soft play equipment", href: "/products/soft-play" },
       { label: "Office wellness play", href: "/indoorplaygroundsolution-office-wellness-solutions" },
