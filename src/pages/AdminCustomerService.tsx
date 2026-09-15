@@ -34,6 +34,7 @@ import {
 } from "@/components/ui/popover";
 import { supabase } from '@/integrations/supabase/client';
 import { useAdminAuth } from '@/hooks/useAdminAuth';
+import { useCurrentUserPermissions } from '@/hooks/useUserPermissions';
 import { toast } from 'sonner';
 
 interface QuickReplyTemplate {
@@ -93,7 +94,11 @@ const STATUS_CONFIG = {
 
 const AdminCustomerService = () => {
   const navigate = useNavigate();
-  const { isAdmin, isLoading: authLoading } = useAdminAuth();
+  const { user, hasAdminRole, hasStaffRole, isLoading: adminLoading } = useAdminAuth();
+  const { hasPermission, isLoading: permLoading } = useCurrentUserPermissions(user?.id, true);
+  const authLoading = adminLoading || permLoading;
+  // Access is granted by role or by the customer-service module permission.
+  const isAdmin = hasAdminRole || hasStaffRole || hasPermission('customer_service');
   const [sessions, setSessions] = useState<ChatSession[]>([]);
   const [selectedSession, setSelectedSession] = useState<string | null>(null);
   const [messages, setMessages] = useState<ChatMessage[]>([]);
