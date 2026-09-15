@@ -42,18 +42,19 @@ const AdminLogin = () => {
       }
 
       if (data.user) {
-        // Check if user has admin/staff role (security-definer function, RLS-proof)
-        const [adminRes, staffRes] = await Promise.all([
+        // Check admin/staff role OR granted backend access permission
+        const [adminRes, staffRes, backendRes] = await Promise.all([
           supabase.rpc("has_role", { _user_id: data.user.id, _role: "admin" }),
           supabase.rpc("has_role", { _user_id: data.user.id, _role: "staff" }),
+          supabase.rpc("has_permission", { _user_id: data.user.id, _permission: "backend_access" }),
         ]);
 
-        if (adminRes.error || staffRes.error) {
+        if (adminRes.error || staffRes.error || backendRes.error) {
           toast.error("权限校验失败，请重试");
           return;
         }
 
-        if (adminRes.data !== true && staffRes.data !== true) {
+        if (adminRes.data !== true && staffRes.data !== true && backendRes.data !== true) {
           await supabase.auth.signOut();
           toast.error("You do not have admin privileges");
           return;
