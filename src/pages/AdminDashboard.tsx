@@ -36,7 +36,7 @@ const AdminDashboard = () => {
   const { t } = useTranslation();
   const navigate = useNavigate();
   const { user, isAdmin, isLoading: authLoading, checkFailed, signOut } = useAdminAuth();
-  const { permissions, isLoading: permLoading, hasPermission, canAccessBackend } = useCurrentUserPermissions();
+  const { permissions, isLoading: permLoading, checkFailed: permissionCheckFailed, hasPermission, canAccessBackend } = useCurrentUserPermissions(user?.id);
   const [activeTab, setActiveTab] = useState("inquiries");
   const initialLoadDone = useRef(false);
 
@@ -72,10 +72,10 @@ const AdminDashboard = () => {
 
   // Auto-redirect to login if not authenticated (after loading completes)
   useEffect(() => {
-    if (!authLoading && !user) {
+    if (!authLoading && !permLoading && !checkFailed && !user) {
       navigate("/admin/login", { replace: true });
     }
-  }, [authLoading, user, navigate]);
+  }, [authLoading, permLoading, checkFailed, user, navigate]);
 
   const handleSignOut = async () => {
     await signOut();
@@ -130,6 +130,7 @@ const AdminDashboard = () => {
 
   // Logged in but no backend access permission (not admin and no backend_access permission)
   if (!isAdmin && !canAccessBackend()) {
+    const accessCheckFailed = checkFailed || permissionCheckFailed;
     return (
       <div className="min-h-screen flex items-center justify-center bg-background">
         <div className="text-center max-w-md mx-auto px-4">
@@ -137,10 +138,10 @@ const AdminDashboard = () => {
             <Lock className="w-8 h-8 text-warning" />
           </div>
           <h2 className="text-2xl font-bold text-foreground mb-2">
-            {checkFailed ? "权限校验失败" : "等待授权"}
+            {accessCheckFailed ? "权限校验失败" : "等待授权"}
           </h2>
           <p className="text-muted-foreground mb-2">
-            {checkFailed
+            {accessCheckFailed
               ? "无法读取您的权限信息（网络或后端请求异常），并不代表账号没有权限"
               : "您的账号尚未获得后台访问权限"}
           </p>
@@ -148,10 +149,10 @@ const AdminDashboard = () => {
             {user.email}
           </p>
           <p className="text-sm text-muted-foreground mb-6">
-            {checkFailed ? "请点击下方“刷新重试”，若仍失败请联系技术支持" : "请联系管理员授予您相应的访问权限"}
+            {accessCheckFailed ? "请点击下方“刷新重试”，若仍失败请联系技术支持" : "请联系管理员授予您相应的访问权限"}
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
-            {checkFailed && (
+            {accessCheckFailed && (
               <Button variant="outline" onClick={() => window.location.reload()} className="w-full sm:w-auto">
                 刷新重试
               </Button>

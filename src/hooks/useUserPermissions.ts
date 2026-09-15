@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 import { supabase } from "@/integrations/supabase/client";
 
 const withTimeout = async <T,>(
@@ -89,27 +89,28 @@ export const useUserPermissions = (userId?: string) => {
   return { permissions, isLoading, hasPermission, refetch: fetchPermissions };
 };
 
-export const useCurrentUserPermissions = () => {
+export const useCurrentUserPermissions = (knownUserId?: string) => {
   const [user, setUser] = useState<{ id: string } | null>(null);
   const [isAdmin, setIsAdmin] = useState(false);
   const [hasStaffRole, setHasStaffRole] = useState(false);
   const [permissions, setPermissions] = useState<Permission[]>([]);
   const [isLoading, setIsLoading] = useState(true);
+  const [checkFailed, setCheckFailed] = useState(false);
+  const generationRef = useRef(0);
 
   useEffect(() => {
     let mounted = true;
 
     const init = async () => {
+      const generation = ++generationRef.current;
       try {
-        const { data: { session } } = await withTimeout(
-          supabase.auth.getSession(),
-          8000,
-          "[useCurrentUserPermissions] getSession"
-        );
+        const sessionUserId = knownUserId || (await withTimeout(
+          supabase.auth.getSession(), 8000, "[useCurrentUserPermissions] getSession"
+        )).data.session?.user.id;
         
-        if (!mounted) return;
+        if (!mounted || generation !== generationRef.current) return;
         
-        if (!session?.user) {
+        if (!sessionUserId) {
           setUser(null);
           setIsAdmin(false);
           setHasStaffRole(false);
@@ -118,13 +119,13 @@ export const useCurrentUserPermissions = () => {
           return;
         }
 
-        setUser({ id: session.user.id });
+        setUser({ id: sessionUserId });
 
         // Check admin/staff role via security-definer function (RLS-proof)
         const [adminRes, staffRes] = await withTimeout(
           Promise.all([
-            supabase.rpc("has_role", { _user_id: session.user.id, _role: "admin" }),
-            supabase.rpc("has_role", { _user_id: session.user.id, _role: "staff" }),
+            supabase.rpc("has_role", { _user_id: sessionUserId, _role: "admin" }),
+            supabase.rpc("has_role", { _user_id: sessionUserId, _role: "staff" }),
           ]),
           8000,
           "[useCurrentUserPermissions] role check"
@@ -136,7 +137,7 @@ export const useCurrentUserPermissions = () => {
         const hasStaffRoleValue = staffRes.data === true;
 
         
-        if (!mounted) return;
+        if (!mounted || generation !== generationRef.current) return;
         setIsAdmin(hasAdminRole);
         setHasStaffRole(hasStaffRoleValue);
 
@@ -153,21 +154,22 @@ export const useCurrentUserPermissions = () => {
             supabase
               .from("user_permissions")
               .select("permission")
-              .eq("user_id", session.user.id)
+              .eq("user_id", sessionUserId)
           ) as Promise<any>,
           8000,
           "[useCurrentUserPermissions] permissions fetch"
         );
 
-        if (!mounted) return;
+        if (!mounted || generation !== generationRef.current) return;
         setPermissions((permData || []).map(d => d.permission as Permission));
+        setCheckFailed(false);
         setIsLoading(false);
       } catch (error) {
         console.error("[useCurrentUserPermissions] error:", error);
-        if (mounted) {
-          setIsAdmin(false);
-          setHasStaffRole(false);
-          setPermissions([]);
+        if (mounted && generation === generationRef.current) {
+          // Keep the current permissions on transient failures; never turn a
+          // timeout into a false "permission denied" result.
+          setCheckFailed(true);
           setIsLoading(false);
         }
       }
@@ -175,17 +177,25 @@ export const useCurrentUserPermissions = () => {
 
     init();
 
+    if (knownUserId) {
+      return () => {
+        mounted = false;
+        generationRef.current += 1;
+      };
+    }
+
     const { data: { subscription } } = supabase.auth.onAuthStateChange((event) => {
       // Only re-init on actual sign in/out, not token refresh
       if (!mounted) return;
 
       if (event === "SIGNED_OUT") {
+        generationRef.current += 1;
         setUser(null);
         setIsAdmin(false);
         setHasStaffRole(false);
         setPermissions([]);
         setIsLoading(false);
-      } else if (event === "SIGNED_IN") {
+      } else if (event === "SIGNED_IN" || event === "TOKEN_REFRESHED") {
         window.setTimeout(() => {
           if (mounted) init();
         }, 0);
@@ -194,9 +204,10 @@ export const useCurrentUserPermissions = () => {
 
     return () => {
       mounted = false;
+      generationRef.current += 1;
       subscription.unsubscribe();
     };
-  }, []);
+  }, [knownUserId]);
 
   const hasPermission = useCallback((permission: Permission): boolean => {
     if (isAdmin) return true;
@@ -213,6 +224,7 @@ export const useCurrentUserPermissions = () => {
     hasStaffRole,
     permissions, 
     isLoading, 
+    checkFailed,
     hasPermission, 
     canAccessBackend 
   };

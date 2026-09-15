@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 import { supabase } from "@/integrations/supabase/client";
 import type { User } from "@supabase/supabase-js";
 
@@ -29,7 +29,9 @@ export const useAdminAuth = () => {
   const [isLoading, setIsLoading] = useState(true);
   const [checkFailed, setCheckFailed] = useState(false);
 
-  const checkAdminRole = useCallback(async (userId: string): Promise<{ canAccess: boolean; isAdminRole: boolean; isStaffRole: boolean }> => {
+  const generationRef = useRef(0);
+
+  const checkAdminRole = useCallback(async (userId: string): Promise<{ canAccess: boolean; isAdminRole: boolean; isStaffRole: boolean; failed: boolean }> => {
     // Use the security-definer has_role() function: it bypasses RLS quirks
     // and returns a plain boolean, so a signed-in admin is always recognised.
     const probe = async () => {
@@ -46,15 +48,13 @@ export const useAdminAuth = () => {
     for (let attempt = 0; attempt < 2; attempt++) {
       try {
         const result = await withTimeout(probe(), 8000, "[useAdminAuth] role check");
-        setCheckFailed(false);
-        return result;
+        return { ...result, failed: false };
       } catch (err) {
         console.error("[useAdminAuth] role check failed (attempt " + (attempt + 1) + "):", err);
       }
     }
 
-    setCheckFailed(true);
-    return { canAccess: false, isAdminRole: false, isStaffRole: false };
+    return { canAccess: false, isAdminRole: false, isStaffRole: false, failed: true };
   }, []);
 
   const clearAuthState = useCallback(() => {
@@ -69,6 +69,7 @@ export const useAdminAuth = () => {
     let mounted = true;
 
     const initAuth = async () => {
+      const generation = ++generationRef.current;
       try {
         const { data: { session } } = await withTimeout(
           supabase.auth.getSession(),
@@ -76,7 +77,7 @@ export const useAdminAuth = () => {
           "[useAdminAuth] getSession"
         );
         
-        if (!mounted) return;
+        if (!mounted || generation !== generationRef.current) return;
         
         if (!session?.user) {
           clearAuthState();
@@ -85,19 +86,37 @@ export const useAdminAuth = () => {
         }
 
         setUser(session.user);
-        
+
+        // Revalidate with the auth server when available. A temporary network
+        // failure must not destroy a valid locally persisted session.
+        try {
+          const { data, error } = await withTimeout(
+            supabase.auth.getUser(),
+            8000,
+            "[useAdminAuth] getUser"
+          );
+          if (!mounted || generation !== generationRef.current) return;
+          if (!error && data.user) setUser(data.user);
+        } catch (error) {
+          console.warn("[useAdminAuth] session revalidation deferred:", error);
+        }
+
         const roleState = await checkAdminRole(session.user.id);
         
-        if (!mounted) return;
+        if (!mounted || generation !== generationRef.current) return;
         
-        setIsAdmin(roleState.canAccess);
-        setHasAdminRole(roleState.isAdminRole);
-        setHasStaffRole(roleState.isStaffRole);
+        setCheckFailed(roleState.failed);
+        if (!roleState.failed) {
+          setIsAdmin(roleState.canAccess);
+          setHasAdminRole(roleState.isAdminRole);
+          setHasStaffRole(roleState.isStaffRole);
+        }
         setIsLoading(false);
       } catch (error) {
         console.error("[useAdminAuth] init error:", error);
-        if (mounted) {
-          clearAuthState();
+        if (mounted && generation === generationRef.current) {
+          // A timeout is not proof of logout. Keep any known user and offer retry.
+          setCheckFailed(true);
           setIsLoading(false);
         }
       }
@@ -109,18 +128,24 @@ export const useAdminAuth = () => {
       if (!mounted) return;
       
       if (event === "SIGNED_OUT") {
+        generationRef.current += 1;
         clearAuthState();
+        setCheckFailed(false);
         setIsLoading(false);
-      } else if (event === "SIGNED_IN") {
-        // Only handle SIGNED_IN, not TOKEN_REFRESHED or other events
+      } else if (event === "SIGNED_IN" || event === "TOKEN_REFRESHED") {
         if (session?.user) {
+          const generation = ++generationRef.current;
           setUser(session.user);
+          setIsLoading(true);
           window.setTimeout(async () => {
             const roleState = await checkAdminRole(session.user.id);
-            if (mounted) {
-              setIsAdmin(roleState.canAccess);
-              setHasAdminRole(roleState.isAdminRole);
-              setHasStaffRole(roleState.isStaffRole);
+            if (mounted && generation === generationRef.current) {
+              setCheckFailed(roleState.failed);
+              if (!roleState.failed) {
+                setIsAdmin(roleState.canAccess);
+                setHasAdminRole(roleState.isAdminRole);
+                setHasStaffRole(roleState.isStaffRole);
+              }
               setIsLoading(false);
             }
           }, 0);
@@ -130,6 +155,7 @@ export const useAdminAuth = () => {
 
     return () => {
       mounted = false;
+      generationRef.current += 1;
       subscription.unsubscribe();
     };
   }, [checkAdminRole, clearAuthState]);
