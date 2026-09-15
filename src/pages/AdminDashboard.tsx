@@ -36,7 +36,7 @@ const AdminDashboard = () => {
   const { t } = useTranslation();
   const navigate = useNavigate();
   const { user, isAdmin, isLoading: authLoading, checkFailed, signOut } = useAdminAuth();
-  const { permissions, isLoading: permLoading, checkFailed: permissionCheckFailed, hasPermission, canAccessBackend } = useCurrentUserPermissions(user?.id);
+  const { permissions, isLoading: permLoading, checkFailed: permissionCheckFailed, hasPermission, canAccessBackend } = useCurrentUserPermissions(user?.id, true);
   const [activeTab, setActiveTab] = useState("inquiries");
   const initialLoadDone = useRef(false);
 
@@ -122,7 +122,17 @@ const AdminDashboard = () => {
       <div className="min-h-screen flex items-center justify-center bg-background">
         <div className="flex flex-col items-center gap-4">
           <UserX className="w-12 h-12 text-muted-foreground" />
-          <p className="text-muted-foreground">正在跳转到登录页...</p>
+          <p className="text-muted-foreground">
+            {checkFailed ? "登录状态检查超时，账号不会被自动退出" : "正在跳转到登录页..."}
+          </p>
+          {checkFailed && (
+            <div className="flex gap-3">
+              <Button variant="outline" onClick={() => window.location.reload()}>
+                刷新重试
+              </Button>
+              <Button onClick={handleSwitchAccount}>重新登录</Button>
+            </div>
+          )}
         </div>
       </div>
     );

@@ -89,7 +89,7 @@ export const useUserPermissions = (userId?: string) => {
   return { permissions, isLoading, hasPermission, refetch: fetchPermissions };
 };
 
-export const useCurrentUserPermissions = (knownUserId?: string) => {
+export const useCurrentUserPermissions = (knownUserId?: string, waitForKnownUser = false) => {
   const [user, setUser] = useState<{ id: string } | null>(null);
   const [isAdmin, setIsAdmin] = useState(false);
   const [hasStaffRole, setHasStaffRole] = useState(false);
@@ -100,6 +100,14 @@ export const useCurrentUserPermissions = (knownUserId?: string) => {
 
   useEffect(() => {
     let mounted = true;
+
+    if (waitForKnownUser && !knownUserId) {
+      setIsLoading(true);
+      return () => {
+        mounted = false;
+        generationRef.current += 1;
+      };
+    }
 
     const init = async () => {
       const generation = ++generationRef.current;
@@ -207,7 +215,7 @@ export const useCurrentUserPermissions = (knownUserId?: string) => {
       generationRef.current += 1;
       subscription.unsubscribe();
     };
-  }, [knownUserId]);
+  }, [knownUserId, waitForKnownUser]);
 
   const hasPermission = useCallback((permission: Permission): boolean => {
     if (isAdmin) return true;
