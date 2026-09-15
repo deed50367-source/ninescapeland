@@ -35,14 +35,15 @@ export const useAdminAuth = () => {
     // Use the security-definer has_role() function: it bypasses RLS quirks
     // and returns a plain boolean, so a signed-in admin is always recognised.
     const probe = async () => {
-      const [admin, staff] = await Promise.all([
+      const [admin, staff, backend] = await Promise.all([
         supabase.rpc("has_role", { _user_id: userId, _role: "admin" }),
         supabase.rpc("has_role", { _user_id: userId, _role: "staff" }),
+        supabase.rpc("has_permission", { _user_id: userId, _permission: "backend_access" }),
       ]);
-      if (admin.error || staff.error) throw admin.error || staff.error;
+      if (admin.error || staff.error || backend.error) throw admin.error || staff.error || backend.error;
       const isAdminRole = admin.data === true;
       const isStaffRole = staff.data === true;
-      return { canAccess: isAdminRole || isStaffRole, isAdminRole, isStaffRole };
+      return { canAccess: isAdminRole || isStaffRole || backend.data === true, isAdminRole, isStaffRole };
     };
 
     for (let attempt = 0; attempt < 2; attempt++) {
