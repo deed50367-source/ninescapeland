@@ -34,6 +34,7 @@ import {
 } from "@/components/ui/popover";
 import { supabase } from '@/integrations/supabase/client';
 import { useAdminAuth } from '@/hooks/useAdminAuth';
+import { useCurrentUserPermissions } from '@/hooks/useUserPermissions';
 import { toast } from 'sonner';
 
 interface QuickReplyTemplate {
