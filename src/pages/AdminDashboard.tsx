@@ -140,22 +140,35 @@ const AdminDashboard = () => {
 
 
 
-  // No visible tabs (has backend access but no specific permissions)
+  // Signed in, but no module has been opened for this account yet.
   if (visibleTabs.length === 0) {
+    const accessCheckFailed = checkFailed || permissionCheckFailed;
     return (
       <div className="min-h-screen flex items-center justify-center bg-background">
         <div className="text-center max-w-md mx-auto px-4">
           <div className="w-16 h-16 bg-muted rounded-full flex items-center justify-center mx-auto mb-6">
             <ShieldX className="w-8 h-8 text-muted-foreground" />
           </div>
-          <h2 className="text-2xl font-bold text-foreground mb-2">权限不足</h2>
-          <p className="text-muted-foreground mb-6">
-            您没有任何模块的访问权限，请联系管理员
+          <h2 className="text-2xl font-bold text-foreground mb-2">
+            {accessCheckFailed ? "权限读取失败" : "等待开放模块"}
+          </h2>
+          <p className="text-sm text-muted-foreground mb-4 bg-muted px-3 py-2 rounded-md">
+            {user.email}
           </p>
-          <Button onClick={handleSignOut}>
-            <LogOut className="w-4 h-4 mr-2" />
-            退出登录
-          </Button>
+          <p className="text-muted-foreground mb-6">
+            {accessCheckFailed
+              ? "暂时无法读取您的权限信息，这不代表账号没有权限，请点击刷新重试"
+              : "账号已登录，但管理员还没有为您开放任何模块"}
+          </p>
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
+            <Button variant="outline" onClick={() => window.location.reload()} className="w-full sm:w-auto">
+              刷新重试
+            </Button>
+            <Button onClick={handleSignOut} className="w-full sm:w-auto">
+              <LogOut className="w-4 h-4 mr-2" />
+              退出登录
+            </Button>
+          </div>
         </div>
       </div>
     );
