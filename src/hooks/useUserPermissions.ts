@@ -89,130 +89,124 @@ export const useUserPermissions = (userId?: string) => {
   return { permissions, isLoading, hasPermission, refetch: fetchPermissions };
 };
 
+/**
+ * Current user's module permissions.
+ *
+ * Renders instantly from the local access cache and refreshes in the
+ * background. A slow or failing backend query never hides modules the user
+ * already had, and never logs anyone out.
+ */
 export const useCurrentUserPermissions = (knownUserId?: string, waitForKnownUser = false) => {
-  const [user, setUser] = useState<{ id: string } | null>(null);
+  const [user, setUser] = useState<{ id: string } | null>(knownUserId ? { id: knownUserId } : null);
   const [isAdmin, setIsAdmin] = useState(false);
   const [hasStaffRole, setHasStaffRole] = useState(false);
   const [permissions, setPermissions] = useState<Permission[]>([]);
   const [isLoading, setIsLoading] = useState(true);
   const [checkFailed, setCheckFailed] = useState(false);
-  const generationRef = useRef(0);
+  const mountedRef = useRef(true);
 
   useEffect(() => {
-    let mounted = true;
+    mountedRef.current = true;
 
     if (waitForKnownUser && !knownUserId) {
       setIsLoading(true);
       return () => {
-        mounted = false;
-        generationRef.current += 1;
+        mountedRef.current = false;
       };
     }
 
-    const init = async () => {
-      const generation = ++generationRef.current;
+    const applyCache = (userId: string) => {
+      const cached = readAccessCache(userId);
+      if (!cached) return false;
+      setIsAdmin(cached.isAdmin);
+      setHasStaffRole(cached.isStaff);
+      setPermissions(
+        cached.isAdmin
+          ? ALL_PERMISSIONS.map((p) => p.key)
+          : (cached.permissions as Permission[])
+      );
+      return true;
+    };
+
+    const refresh = async (userId: string) => {
       try {
-        const sessionUserId = knownUserId || (await withTimeout(
-          supabase.auth.getSession(), 8000, "[useCurrentUserPermissions] getSession"
-        )).data.session?.user.id;
-        
-        if (!mounted || generation !== generationRef.current) return;
-        
-        if (!sessionUserId) {
-          setUser(null);
-          setIsAdmin(false);
-          setHasStaffRole(false);
-          setPermissions([]);
-          setIsLoading(false);
-          return;
-        }
-
-        setUser({ id: sessionUserId });
-
-        // Check admin/staff role via security-definer function (RLS-proof)
-        const [adminRes, staffRes] = await withTimeout(
-          Promise.all([
-            supabase.rpc("has_role", { _user_id: sessionUserId, _role: "admin" }),
-            supabase.rpc("has_role", { _user_id: sessionUserId, _role: "staff" }),
-          ]),
-          8000,
-          "[useCurrentUserPermissions] role check"
-        );
+        const [adminRes, staffRes, permRes] = await Promise.all([
+          supabase.rpc("has_role", { _user_id: userId, _role: "admin" }),
+          supabase.rpc("has_role", { _user_id: userId, _role: "staff" }),
+          supabase.from("user_permissions").select("permission").eq("user_id", userId),
+        ]);
 
         if (adminRes.error || staffRes.error) throw adminRes.error || staffRes.error;
+        if (!mountedRef.current) return;
 
         const hasAdminRole = adminRes.data === true;
         const hasStaffRoleValue = staffRes.data === true;
-
-        
-        if (!mounted || generation !== generationRef.current) return;
-        setIsAdmin(hasAdminRole);
-        setHasStaffRole(hasStaffRoleValue);
-
-        // If admin, they have all permissions
-        if (hasAdminRole) {
-          setPermissions(ALL_PERMISSIONS.map(p => p.key));
-          setIsLoading(false);
-          return;
-        }
-
-        // Fetch user permissions
-        const { data: permData } = await withTimeout(
-          Promise.resolve(
-            supabase
-              .from("user_permissions")
-              .select("permission")
-              .eq("user_id", sessionUserId)
-          ) as Promise<any>,
-          8000,
-          "[useCurrentUserPermissions] permissions fetch"
+        const granted = ((permRes.data || []) as { permission: string }[]).map(
+          (d) => d.permission as Permission
         );
 
-        if (!mounted || generation !== generationRef.current) return;
-        setPermissions((permData || []).map(d => d.permission as Permission));
+        setIsAdmin(hasAdminRole);
+        setHasStaffRole(hasStaffRoleValue);
+        setPermissions(hasAdminRole ? ALL_PERMISSIONS.map((p) => p.key) : granted);
         setCheckFailed(false);
-        setIsLoading(false);
+
+        writeAccessCache({
+          userId,
+          isAdmin: hasAdminRole,
+          isStaff: hasStaffRoleValue,
+          permissions: granted,
+        });
       } catch (error) {
-        console.error("[useCurrentUserPermissions] error:", error);
-        if (mounted && generation === generationRef.current) {
-          // Keep the current permissions on transient failures; never turn a
-          // timeout into a false "permission denied" result.
-          setCheckFailed(true);
-          setIsLoading(false);
-        }
+        console.warn("[useCurrentUserPermissions] background refresh failed:", error);
+        if (mountedRef.current) setCheckFailed(!readAccessCache(userId));
       }
     };
 
-    init();
-
-    if (knownUserId) {
-      return () => {
-        mounted = false;
-        generationRef.current += 1;
-      };
-    }
-
-    const { data: { subscription } } = supabase.auth.onAuthStateChange((event) => {
-      // Only re-init on actual sign in/out, not token refresh
-      if (!mounted) return;
-
-      if (event === "SIGNED_OUT") {
-        generationRef.current += 1;
+    const start = (userId?: string) => {
+      if (!mountedRef.current) return;
+      if (!userId) {
         setUser(null);
         setIsAdmin(false);
         setHasStaffRole(false);
         setPermissions([]);
         setIsLoading(false);
-      } else if (event === "SIGNED_IN" || event === "TOKEN_REFRESHED") {
-        window.setTimeout(() => {
-          if (mounted) init();
-        }, 0);
+        return;
+      }
+      setUser({ id: userId });
+      applyCache(userId);
+      setIsLoading(false);
+      void refresh(userId);
+    };
+
+    if (knownUserId) {
+      start(knownUserId);
+    } else {
+      supabase.auth
+        .getSession()
+        .then(({ data }) => start(data.session?.user.id))
+        .catch(() => {
+          if (mountedRef.current) setIsLoading(false);
+        });
+    }
+
+    if (knownUserId) {
+      return () => {
+        mountedRef.current = false;
+      };
+    }
+
+    const { data: { subscription } } = supabase.auth.onAuthStateChange((event, session) => {
+      if (!mountedRef.current) return;
+
+      if (event === "SIGNED_OUT") {
+        start(undefined);
+      } else if (event === "SIGNED_IN" && session?.user) {
+        start(session.user.id);
       }
     });
 
     return () => {
-      mounted = false;
-      generationRef.current += 1;
+      mountedRef.current = false;
       subscription.unsubscribe();
     };
   }, [knownUserId, waitForKnownUser]);
