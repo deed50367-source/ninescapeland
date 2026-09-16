@@ -30,6 +30,12 @@ const AdminLogin = () => {
 
     setIsLoading(true);
 
+    // The auth service can occasionally answer slowly. Reassure instead of
+    // letting the user assume the login failed and retry (which piles up sessions).
+    const slowHint = window.setTimeout(() => {
+      toast.info("Signing in is taking longer than usual, please wait...");
+    }, 6000);
+
     try {
       const { data, error } = await supabase.auth.signInWithPassword({
         email,
@@ -49,6 +55,7 @@ const AdminLogin = () => {
     } catch (error) {
       toast.error("Login failed, please try again");
     } finally {
+      window.clearTimeout(slowHint);
       setIsLoading(false);
     }
   };

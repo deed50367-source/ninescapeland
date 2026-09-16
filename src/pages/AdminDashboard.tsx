@@ -72,10 +72,10 @@ const AdminDashboard = () => {
 
   // Auto-redirect to login if not authenticated (after loading completes)
   useEffect(() => {
-    if (!authLoading && !permLoading && !checkFailed && !user) {
+    if (!authLoading && !user) {
       navigate("/admin/login", { replace: true });
     }
-  }, [authLoading, permLoading, checkFailed, user, navigate]);
+  }, [authLoading, user, navigate]);
 
   const handleSignOut = async () => {
     await signOut();
@@ -89,7 +89,7 @@ const AdminDashboard = () => {
   };
 
   // Loading state
-  if ((authLoading || permLoading) && !initialLoadDone.current) {
+  if ((authLoading || (!!user && permLoading)) && !initialLoadDone.current) {
     return (
       <div className="min-h-screen flex items-center justify-center bg-background">
         <div className="flex flex-col items-center gap-4">
