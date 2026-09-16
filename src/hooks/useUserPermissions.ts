@@ -1,5 +1,6 @@
 import { useCallback, useEffect, useRef, useState } from "react";
 import { supabase } from "@/integrations/supabase/client";
+import { readAccessCache, writeAccessCache } from "@/lib/adminAccessCache";
 
 const withTimeout = async <T,>(
   promise: Promise<T>,
