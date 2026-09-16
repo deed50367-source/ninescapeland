@@ -89,7 +89,7 @@ const AdminDashboard = () => {
   };
 
   // Loading state
-  if ((authLoading || permLoading) && !initialLoadDone.current) {
+  if ((authLoading || (!!user && permLoading)) && !initialLoadDone.current) {
     return (
       <div className="min-h-screen flex items-center justify-center bg-background">
         <div className="flex flex-col items-center gap-4">
