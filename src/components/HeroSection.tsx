@@ -37,12 +37,12 @@ export const HeroSection = () => {
           }}
         >
           <img
-            src={getOptimizedImageUrl("hero.home", { width: 1920, quality: 75 })}
+            src={getOptimizedImageUrl("hero.home", { width: 1440, quality: 72 })}
             srcSet={[
               `${getOptimizedImageUrl("hero.home", { width: 640, quality: 60 })} 640w`,
-              `${getOptimizedImageUrl("hero.home", { width: 960, quality: 70 })} 960w`,
-              `${getOptimizedImageUrl("hero.home", { width: 1280, quality: 75 })} 1280w`,
-              `${getOptimizedImageUrl("hero.home", { width: 1920, quality: 75 })} 1920w`,
+              `${getOptimizedImageUrl("hero.home", { width: 960, quality: 68 })} 960w`,
+              `${getOptimizedImageUrl("hero.home", { width: 1280, quality: 70 })} 1280w`,
+              `${getOptimizedImageUrl("hero.home", { width: 1440, quality: 72 })} 1440w`,
             ].join(", ")}
             sizes="100vw"
             alt="Custom Commercial Indoor Playground Equipment by NinescapeLand"
