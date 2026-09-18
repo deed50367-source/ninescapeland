@@ -23,6 +23,9 @@ import { fileURLToPath } from "url";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const DIST_DIR = join(__dirname, "..", "dist");
+// CSS that Vite injects as inline <style> for async chunks. Collected across all routes
+// and written once to dist/assets/prerender-styles.css so each static HTML stays small.
+const EXTRACTED_CSS = new Set();
 const PORT = 4173;
 const BASE_URL = `http://localhost:${PORT}`;
 
