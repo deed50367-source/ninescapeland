@@ -56,6 +56,13 @@ export const Header = () => {
     { label: "Church Playground Equipment", href: localizedPath("/church-indoor-playground-equipment") },
     { label: "Screen-Free Play Alternatives", href: localizedPath("/screen-free-play-alternatives-for-kids") },
     { label: "10-Year Cost of Ownership", href: localizedPath("/indoor-playground-total-cost-of-ownership") },
+    { label: "School Playground Funding Guide", href: localizedPath("/how-to-fund-school-playground-equipment") },
+    { label: "Special Education Play Equipment", href: localizedPath("/inclusive-indoor-play-equipment-special-education") },
+    { label: "Free 3D Play Center Design", href: localizedPath("/free-3d-design-for-indoor-play-center") },
+    { label: "Durable Soft Play for Title I", href: localizedPath("/durable-soft-play-equipment-title-1-schools") },
+    { label: "ASTM Trampoline Supplier", href: localizedPath("/astm-certified-commercial-trampoline-park-supplier") },
+    { label: "Ninja Courses for Education", href: localizedPath("/ninja-course-equipment-indoor-education-centers") },
+    { label: "Complete Play Center Solutions", href: localizedPath("/complete-indoor-play-center-solutions") },
     { label: t("activePlayRunning.breadcrumb", "Active Play for Running"), href: localizedPath("/best-indoorplaygroundsolution-active-play-for-running-facilities") },
     { label: t("officeWellness.breadcrumb", "Office Wellness"), href: localizedPath("/indoorplaygroundsolution-office-wellness-solutions") },
   ];

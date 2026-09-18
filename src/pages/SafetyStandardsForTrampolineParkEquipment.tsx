@@ -49,6 +49,7 @@ const SafetyStandardsForTrampolineParkEquipment = () => (
       { title: "Equipment manufacturers", desc: "Reputable factories test welding, springs, mats and finished assemblies in-house and provide batch-level certification with every shipment." },
     ]}
     related={[
+      { label: "ASTM trampoline park supplier checklist", href: "/astm-certified-commercial-trampoline-park-supplier" },
       { label: "Trampoline park manufacturer", href: "/products/trampoline-park" },
       { label: "Trampoline park FEC solutions", href: "/trampoline-park-fec-solutions" },
       { label: "Safety certifications & test reports", href: "/safety-certifications" },

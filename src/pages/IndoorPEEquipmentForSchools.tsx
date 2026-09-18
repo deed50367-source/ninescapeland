@@ -41,6 +41,8 @@ const IndoorPEEquipmentForSchools = () => (
       { title: "District rollouts", desc: "Repeatable equipment packages, per-school drawings and staged delivery for multi-campus contracts." },
     ]}
     related={[
+      { label: "School playground funding guide", href: "/how-to-fund-school-playground-equipment" },
+      { label: "Ninja courses for education centers", href: "/ninja-course-equipment-indoor-education-centers" },
       { label: "After-school programme play equipment", href: "/after-school-program-indoor-play-equipment" },
       { label: "Educational market solution", href: "/market/educational-indoor-playground-solution-for-schools" },
       { label: "Indoor playground equipment", href: "/products/indoor-playground" },

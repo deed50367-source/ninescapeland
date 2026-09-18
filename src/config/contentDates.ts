@@ -89,6 +89,15 @@ export const CONTENT_DATES: Record<string, string> = {
   "/screen-free-play-alternatives-for-kids": "2026-09-10",
   "/indoor-playground-total-cost-of-ownership": "2026-09-10",
 
+  // Weekly aggregation pages (batch 7)
+  "/how-to-fund-school-playground-equipment": "2026-09-18",
+  "/inclusive-indoor-play-equipment-special-education": "2026-09-18",
+  "/free-3d-design-for-indoor-play-center": "2026-09-18",
+  "/durable-soft-play-equipment-title-1-schools": "2026-09-18",
+  "/astm-certified-commercial-trampoline-park-supplier": "2026-09-18",
+  "/ninja-course-equipment-indoor-education-centers": "2026-09-18",
+  "/complete-indoor-play-center-solutions": "2026-09-18",
+
   // Trust pages
   "/privacy-policy": "2026-08-13",
   "/terms-of-service": "2026-08-13",
