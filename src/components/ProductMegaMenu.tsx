@@ -129,6 +129,41 @@ export const ProductMegaMenu = () => {
       href: "/indoor-trampoline-park-business-for-schools",
       icon: "🏫"
     },
+    {
+      label: "School Playground Funding",
+      href: "/how-to-fund-school-playground-equipment",
+      icon: "📋"
+    },
+    {
+      label: "Special Education Play",
+      href: "/inclusive-indoor-play-equipment-special-education",
+      icon: "♿"
+    },
+    {
+      label: "Free 3D Design",
+      href: "/free-3d-design-for-indoor-play-center",
+      icon: "📐"
+    },
+    {
+      label: "Durable Title I Soft Play",
+      href: "/durable-soft-play-equipment-title-1-schools",
+      icon: "🧸"
+    },
+    {
+      label: "ASTM Trampoline Supplier",
+      href: "/astm-certified-commercial-trampoline-park-supplier",
+      icon: "✅"
+    },
+    {
+      label: "Education Ninja Courses",
+      href: "/ninja-course-equipment-indoor-education-centers",
+      icon: "🥷"
+    },
+    {
+      label: "Complete Play Center Solutions",
+      href: "/complete-indoor-play-center-solutions",
+      icon: "🔑"
+    },
     { 
       label: t("activePlayRunning.breadcrumb", "Active Play for Running"), 
       href: "/best-indoorplaygroundsolution-active-play-for-running-facilities",

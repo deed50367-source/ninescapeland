@@ -5,6 +5,7 @@ import { FloatingCTA } from "@/components/FloatingCTA";
 import { ProductInquiryForm } from "@/components/product-detail/ProductInquiryForm";
 import { SpecComparisonTable } from "@/components/SpecComparisonTable";
 import { SourcesReferences, type SourceItem } from "@/components/SourcesReferences";
+import { getContentDate } from "@/config/contentDates";
 
 
 
@@ -136,6 +137,7 @@ export const StableSolutionPage = ({
     ? (ogImage.startsWith("http") ? ogImage : `${baseUrl}${ogImage.startsWith("/") ? "" : "/"}${ogImage}`)
     : defaultOgImage;
   const keywordList = (keywords ?? []).map((k) => k.trim()).filter(Boolean);
+  const contentDate = getContentDate(`/${slug}`);
 
   useEffect(() => {
     document.documentElement.lang = "en";
@@ -191,6 +193,8 @@ export const StableSolutionPage = ({
     image: shareImage,
     mainEntityOfPage: canonicalUrl,
     inLanguage: "en",
+    datePublished: contentDate,
+    dateModified: contentDate,
     author: { "@type": "Organization", name: siteName, url: baseUrl },
     publisher: {
       "@type": "Organization",
