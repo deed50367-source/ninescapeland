@@ -23,6 +23,9 @@ import { fileURLToPath } from "url";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const DIST_DIR = join(__dirname, "..", "dist");
+// CSS that Vite injects as inline <style> for async chunks. Collected across all routes
+// and written once to dist/assets/prerender-styles.css so each static HTML stays small.
+const EXTRACTED_CSS = new Set();
 const PORT = 4173;
 const BASE_URL = `http://localhost:${PORT}`;
 
@@ -241,6 +244,28 @@ async function prerenderRoute(browser, route) {
     // chunks naturally from the module graph instead of preloading them all in parallel.
     html = html.replace(/\s*<link\b[^>]*\brel=["']modulepreload["'][^>]*>/gi, "");
     html = html.replace(/\s*<link\b[^>]*\brel=["'][^"']*\bmodulepreload\b[^"']*["'][^>]*>/gi, "");
+
+    // ── Move JS-injected chunk CSS out of the static HTML ──
+    // Vite injects the CSS of every async chunk as an inline <style> block during prerender
+    // (~15KB per page), which pushes the static HTML past the 125KB crawl budget flagged by
+    // the SEO audit. Extract those blocks into one shared stylesheet and link it instead.
+    // The small critical-CSS block from index.html (<2KB) stays inline for FCP.
+    html = html.replace(/<style\b[^>]*>([\s\S]*?)<\/style>/gi, (match, css) => {
+      if (css.trim().length < 2000) return match;
+      EXTRACTED_CSS.add(css.trim());
+      return "";
+    });
+    if (EXTRACTED_CSS.size > 0) {
+      const cssPath = join(DIST_DIR, "assets", "prerender-styles.css");
+      mkdirSync(dirname(cssPath), { recursive: true });
+      writeFileSync(cssPath, [...EXTRACTED_CSS].join("\n"), "utf-8");
+      if (!/prerender-styles\.css/.test(html)) {
+        html = html.replace(
+          /<\/head>/i,
+          '  <link rel="stylesheet" href="/assets/prerender-styles.css" />\n  </head>'
+        );
+      }
+    }
 
     // ── Strip Framer Motion's initial inline styles ──
     // Prerender captures the pre-animation state (opacity:0, transform:translateY/X/scale)
