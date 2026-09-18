@@ -180,7 +180,7 @@ export const StableSolutionPage = ({
     "@type": "BreadcrumbList",
     itemListElement: [
       { "@type": "ListItem", position: 1, name: "Home", item: `${baseUrl}/` },
-      { "@type": "ListItem", position: 2, name: "Solutions", item: `${baseUrl}/solutions` },
+      { "@type": "ListItem", position: 2, name: "Products & Solutions", item: `${baseUrl}/products` },
       { "@type": "ListItem", position: 3, name: title, item: canonicalUrl },
     ],
   };

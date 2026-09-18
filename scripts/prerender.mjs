@@ -81,14 +81,6 @@ const CORE_ROUTES = [
   "/church-indoor-playground-equipment",
   "/screen-free-play-alternatives-for-kids",
   "/indoor-playground-total-cost-of-ownership",
-  // Weekly aggregation pages (batch 7, English originals)
-  "/how-to-fund-school-playground-equipment",
-  "/inclusive-indoor-play-equipment-special-education",
-  "/free-3d-design-for-indoor-play-center",
-  "/durable-soft-play-equipment-title-1-schools",
-  "/astm-certified-commercial-trampoline-park-supplier",
-  "/ninja-course-equipment-indoor-education-centers",
-  "/complete-indoor-play-center-solutions",
   // Investment / ROI hub + per-country guides
   "/investment-opportunity",
   "/investment-opportunity/indoor-playground-investment-australia",
@@ -144,6 +136,14 @@ const ENGLISH_ONLY_ROUTES = [
   "/kinesthetic-learning-equipment-benefits",
   "/designing-sensory-play-areas-for-education",
   "/indoor-trampoline-park-business-for-schools",
+  // Weekly aggregation pages (batch 7, English originals)
+  "/how-to-fund-school-playground-equipment",
+  "/inclusive-indoor-play-equipment-special-education",
+  "/free-3d-design-for-indoor-play-center",
+  "/durable-soft-play-equipment-title-1-schools",
+  "/astm-certified-commercial-trampoline-park-supplier",
+  "/ninja-course-equipment-indoor-education-centers",
+  "/complete-indoor-play-center-solutions",
 ];
 
 // Generate all routes (English + other languages)
