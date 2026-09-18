@@ -53,6 +53,21 @@ const Index = () => {
     text: t(`process.steps.${key}.description`),
   })).filter((s) => s.name && s.text && !s.name.startsWith("process."));
 
+  // Review schema built from the SAME testimonials rendered on the page, so the
+  // structured data always matches visible text (SEO audit 2026-09-18: Review missing).
+  const testimonialItems = t("testimonials.items", { returnObjects: true }) as
+    | { quote?: string; name?: string; company?: string }[]
+    | string;
+  const reviews = Array.isArray(testimonialItems)
+    ? testimonialItems
+        .filter((item) => item?.quote && item?.name)
+        .map((item) => ({
+          author: item.company ? `${item.name}, ${item.company}` : (item.name as string),
+          reviewBody: item.quote as string,
+          ratingValue: 5,
+        }))
+    : [];
+
   return (
     <div className="min-h-screen pb-16 md:pb-0">
       <SEOHead pageKey="home" />
