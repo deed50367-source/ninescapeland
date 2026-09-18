@@ -88,6 +88,12 @@ const Index = () => {
         ]}
       />
       {faqItems.length > 0 && <FAQSchema items={faqItems} />}
+      {reviews.length > 0 && (
+        <ReviewSchema
+          itemReviewed={{ name: "NinescapeLand Custom Indoor Playground Equipment" }}
+          reviews={reviews}
+        />
+      )}
       {howToSteps.length > 0 && (
         <HowToSchema
           name={t("process.title") + " " + t("process.titleHighlight")}
