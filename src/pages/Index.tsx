@@ -90,7 +90,7 @@ const Index = () => {
       {faqItems.length > 0 && <FAQSchema items={faqItems} />}
       {reviews.length > 0 && (
         <ReviewSchema
-          itemReviewed={{ name: "NinescapeLand Custom Indoor Playground Equipment" }}
+          itemReviewed={{ type: "Product", name: "NinescapeLand Custom Indoor Playground Equipment" }}
           reviews={reviews}
         />
       )}
