@@ -18,6 +18,7 @@ import { Link } from "react-router-dom";
 import { getStorageUrl } from "@/config/galleryImages";
 import { useSiteImages } from "@/hooks/useSiteImages";
 import { motion } from "framer-motion";
+import { GeoAnswerBlock } from "@/components/GeoAnswerBlock";
 import { 
   Target, 
   Shield, 
@@ -800,6 +801,7 @@ const NinjaCourse = () => {
         <RelatedProductsSection categorySlug="ninja-course" />
         <ProductFAQ productType="ninjaCourse" />
         <QuoteCalculator />
+        <GeoAnswerBlock />
       </main>
       <Footer />
       <FloatingCTA />

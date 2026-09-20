@@ -15,6 +15,8 @@ interface SourcesReferencesProps {
   heading?: string;
   intro?: string;
   sources: SourceItem[];
+  /** Human-readable "data as of" stamp shown under the intro */
+  asOf?: string;
 }
 
 /**
@@ -28,6 +30,7 @@ export const SourcesReferences = ({
   heading = "Sources & References",
   intro = "Safety and compliance claims on this page reference the following primary standards and regulatory publications.",
   sources,
+  asOf = "September 2026",
 }: SourcesReferencesProps) => {
   if (!sources.length) return null;
 
@@ -37,7 +40,11 @@ export const SourcesReferences = ({
         <h2 id="sources-heading" className="text-2xl md:text-3xl font-bold mb-3">
           {heading}
         </h2>
-        <p className="text-muted-foreground mb-6">{intro}</p>
+        <p className="text-muted-foreground mb-2">{intro}</p>
+        {/* Answer engines check that cited figures carry an explicit cut-off date */}
+        <p className="text-sm text-muted-foreground mb-6">
+          Source data as of {asOf} · 数据截至 {asOf}
+        </p>
         <ol className="space-y-4 list-decimal list-inside">
           {sources.map((s) => (
             <li key={s.url} className="text-sm md:text-base leading-relaxed">

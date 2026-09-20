@@ -155,6 +155,11 @@ function generateAllRoutes() {
     }
   }
   routes.push(...ENGLISH_ONLY_ROUTES);
+  // PRERENDER_ONLY="/,/faq" renders just those routes (local smoke test).
+  if (process.env.PRERENDER_ONLY) {
+    const only = process.env.PRERENDER_ONLY.split(",").map((r) => r.trim());
+    return routes.filter((r) => only.includes(r));
+  }
   return routes;
 }
 
@@ -175,12 +180,22 @@ function startServer() {
     ".webmanifest": "application/manifest+json",
   };
 
-  const server = createServer((req, res) => {
-    let filePath = join(DIST_DIR, req.url === "/" ? "index.html" : req.url);
+  // Snapshot the ORIGINAL Vite shell before any route is written.
+  // Prerendering "/" overwrites dist/index.html; if later routes were served that
+  // already-prerendered homepage as their SPA shell, the homepage markup got restored
+  // by the in-page failsafe and every remaining route was saved with the HOMEPAGE
+  // body and an unflushed <head>.
+  const ORIGINAL_SHELL = readFileSync(join(DIST_DIR, "index.html"));
 
-    // SPA fallback: if file doesn't exist, serve index.html
-    if (!existsSync(filePath) || !extname(filePath)) {
-      filePath = join(DIST_DIR, "index.html");
+  const server = createServer((req, res) => {
+    const urlPath = (req.url || "/").split("?")[0];
+    let filePath = join(DIST_DIR, urlPath === "/" ? "index.html" : urlPath);
+
+    // SPA fallback: always hand back the pristine shell, never a prerendered page
+    if (urlPath === "/" || !existsSync(filePath) || !extname(filePath)) {
+      res.writeHead(200, { "Content-Type": "text/html" });
+      res.end(ORIGINAL_SHELL);
+      return;
     }
 
     try {
@@ -241,6 +256,28 @@ async function prerenderRoute(browser, route) {
 
     // Extra wait for lazy-loaded content
     await new Promise((r) => setTimeout(r, 2000));
+
+    // ── Wait for react-helmet-async to flush <head> ──
+    // Helmet applies its tags through requestAnimationFrame. Chrome throttles rAF in
+    // pages that are not the foreground tab, so with parallel prerendering the head of
+    // most routes was saved WITHOUT title / description / canonical / JSON-LD.
+    // That single bug made the GEO audit report "no BreadcrumbList / no dateModified /
+    // no FAQPage / no author" on pages whose code does emit them.
+    const helmetReady = () =>
+      page.waitForFunction(
+        () => document.querySelectorAll("head [data-rh]").length > 5,
+        { timeout: 12000 }
+      );
+    let helmetOk = await helmetReady().then(() => true).catch(() => false);
+    if (!helmetOk) {
+      // Bring the page to the foreground so rAF resumes, then retry once.
+      await page.bringToFront().catch(() => {});
+      await new Promise((r) => setTimeout(r, 500));
+      helmetOk = await helmetReady().then(() => true).catch(() => false);
+    }
+    if (!helmetOk) {
+      console.warn(`     ⚠️  ${route} — head tags (title/meta/JSON-LD) not flushed`);
+    }
 
     // Get the full rendered HTML
     let html = await page.content();
@@ -373,15 +410,27 @@ async function main() {
   // Start local server
   const server = await startServer();
 
-  // Launch browser
+  // Launch browser.
+  // The backgrounding/throttling flags are REQUIRED: without them Chrome pauses
+  // requestAnimationFrame in non-foreground pages, and react-helmet-async never
+  // writes <title>, canonical, hreflang or JSON-LD into the saved HTML.
   const browser = await launch({
     headless: "new",
     executablePath: process.env.PUPPETEER_EXECUTABLE_PATH || undefined,
-    args: ["--no-sandbox", "--disable-setuid-sandbox", "--disable-gpu"],
+    args: [
+      "--no-sandbox",
+      "--disable-setuid-sandbox",
+      "--disable-gpu",
+      "--disable-background-timer-throttling",
+      "--disable-backgrounding-occluded-windows",
+      "--disable-renderer-backgrounding",
+      "--disable-features=CalculateNativeWinOcclusion",
+      "--window-size=1280,1024",
+    ],
   });
 
-  // Process routes in batches of 5 for speed
-  const BATCH_SIZE = 5;
+  // Process routes in small batches (smaller = less rAF contention per page)
+  const BATCH_SIZE = 3;
   for (let i = 0; i < routes.length; i += BATCH_SIZE) {
     const batch = routes.slice(i, i + BATCH_SIZE);
     await Promise.all(batch.map((route) => prerenderRoute(browser, route)));
@@ -402,7 +451,22 @@ async function main() {
     { label: "Has JSON-LD", regex: /<script[^>]+type=["']application\/ld\+json["']/i },
     { label: "Has hreflang", regex: /<link[^>]+hreflang=/i },
     { label: "Has <img alt=", regex: /<img[^>]+alt=["'][^"']+["']/i },
+    { label: "Head flushed", regex: /data-rh=/i },
+    { label: "dateModified", regex: /dateModified/i },
   ];
+
+  // Sample the head-flush check across every generated file so a regression
+  // (head saved without Helmet tags) can never ship silently again.
+  let headMissing = 0;
+  for (const route of routes) {
+    const fp = route === "/" ? join(DIST_DIR, "index.html") : join(DIST_DIR, route, "index.html");
+    if (!existsSync(fp)) continue;
+    if (!/data-rh=/i.test(readFileSync(fp, "utf-8"))) {
+      headMissing++;
+      console.log(`  ❌ head tags missing → ${route}`);
+    }
+  }
+  console.log(`\n  Head-tag flush: ${routes.length - headMissing}/${routes.length} files OK\n`);
 
   for (const route of CORE_ROUTES.slice(0, 5)) {
     const filePath = route === "/"

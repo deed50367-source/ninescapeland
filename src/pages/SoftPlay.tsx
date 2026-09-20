@@ -17,6 +17,7 @@ import { Link } from "react-router-dom";
 import { getStorageUrl } from "@/config/galleryImages";
 import { useSiteImages } from "@/hooks/useSiteImages";
 import { motion } from "framer-motion";
+import { GeoAnswerBlock } from "@/components/GeoAnswerBlock";
 import { 
   Baby, 
   Shield, 
@@ -798,6 +799,7 @@ const SoftPlay = () => {
         <RelatedProductsSection categorySlug="soft-play" />
         <ProductFAQ productType="softPlay" />
         <QuoteCalculator />
+        <GeoAnswerBlock />
       </main>
       <Footer />
       <FloatingCTA />

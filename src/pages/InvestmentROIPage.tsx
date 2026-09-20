@@ -28,6 +28,7 @@ import {
 } from "lucide-react";
 import { useLocalizedPath } from "@/hooks/useLocalizedPath";
 import { getROIPageBySlug, roiPages } from "@/config/roiPages";
+import { GeoAnswerBlock } from "@/components/GeoAnswerBlock";
 
 const InvestmentROIPage = () => {
   const { slug } = useParams<{ slug: string }>();
@@ -321,6 +322,7 @@ const InvestmentROIPage = () => {
 
         <ContactSection />
         <EEATSignature />
+        <GeoAnswerBlock />
       </main>
       <Footer />
       <FloatingCTA />
