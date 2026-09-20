@@ -436,7 +436,22 @@ async function main() {
     { label: "Has JSON-LD", regex: /<script[^>]+type=["']application\/ld\+json["']/i },
     { label: "Has hreflang", regex: /<link[^>]+hreflang=/i },
     { label: "Has <img alt=", regex: /<img[^>]+alt=["'][^"']+["']/i },
+    { label: "Head flushed", regex: /data-rh=/i },
+    { label: "dateModified", regex: /dateModified/i },
   ];
+
+  // Sample the head-flush check across every generated file so a regression
+  // (head saved without Helmet tags) can never ship silently again.
+  let headMissing = 0;
+  for (const route of routes) {
+    const fp = route === "/" ? join(DIST_DIR, "index.html") : join(DIST_DIR, route, "index.html");
+    if (!existsSync(fp)) continue;
+    if (!/data-rh=/i.test(readFileSync(fp, "utf-8"))) {
+      headMissing++;
+      console.log(`  ❌ head tags missing → ${route}`);
+    }
+  }
+  console.log(`\n  Head-tag flush: ${routes.length - headMissing}/${routes.length} files OK\n`);
 
   for (const route of CORE_ROUTES.slice(0, 5)) {
     const filePath = route === "/"
