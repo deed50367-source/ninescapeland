@@ -17,6 +17,7 @@ import { Link } from "react-router-dom";
 import { getStorageUrl } from "@/config/galleryImages";
 import { useSiteImages } from "@/hooks/useSiteImages";
 import { motion } from "framer-motion";
+import { GeoAnswerBlock } from "@/components/GeoAnswerBlock";
 import { 
   Palette, 
   Shield, 
@@ -938,6 +939,7 @@ const IndoorPlayground = () => {
         <RelatedProductsSection categorySlug="indoor-playground" />
         <ProductFAQ productType="indoorPlayground" />
         <QuoteCalculator />
+        <GeoAnswerBlock />
       </main>
       <Footer />
       <FloatingCTA />

@@ -15,6 +15,8 @@ import { Button } from "@/components/ui/button";
 import { useLocalizedPath } from "@/hooks/useLocalizedPath";
 import { useWhatsAppTracking } from "@/hooks/useWhatsAppTracking";
 import { getLocationBySlug } from "@/config/locationPages";
+import { GeoAnswerBlock } from "@/components/GeoAnswerBlock";
+import { EEATSignature } from "@/components/EEATSignature";
 
 const processSteps = [
   { icon: Phone, label: "Free Consultation" },
@@ -231,6 +233,8 @@ const LocationPage = () => {
         )}
 
         <CTABannerSection />
+        <GeoAnswerBlock />
+        <EEATSignature />
       </main>
 
       <Footer />

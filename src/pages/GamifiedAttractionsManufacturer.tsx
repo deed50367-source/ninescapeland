@@ -11,6 +11,7 @@ import { useLocalizedPath } from "@/hooks/useLocalizedPath";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { EEATSignature } from "@/components/EEATSignature";
+import { GeoAnswerBlock } from "@/components/GeoAnswerBlock";
 import {
   Accordion,
   AccordionContent,
@@ -490,6 +491,7 @@ const GamifiedAttractionsManufacturer = () => {
 
         <ContactSection />
         <EEATSignature context="gamified attractions" />
+        <GeoAnswerBlock />
       </main>
       <Footer />
       <FloatingCTA />

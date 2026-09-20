@@ -19,6 +19,8 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import { getIndustryPageBySlug } from "@/config/industryPages";
+import { GeoAnswerBlock } from "@/components/GeoAnswerBlock";
+import { EEATSignature } from "@/components/EEATSignature";
 
 const IndustryLandingPage = () => {
   const { slug } = useParams<{ slug: string }>();
@@ -193,6 +195,8 @@ const IndustryLandingPage = () => {
         </section>
 
         <ContactSection />
+        <GeoAnswerBlock />
+        <EEATSignature />
       </main>
       <Footer />
       <FloatingCTA />
