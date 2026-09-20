@@ -155,6 +155,11 @@ function generateAllRoutes() {
     }
   }
   routes.push(...ENGLISH_ONLY_ROUTES);
+  // PRERENDER_ONLY="/,/faq" renders just those routes (local smoke test).
+  if (process.env.PRERENDER_ONLY) {
+    const only = process.env.PRERENDER_ONLY.split(",").map((r) => r.trim());
+    return routes.filter((r) => only.includes(r));
+  }
   return routes;
 }
 
