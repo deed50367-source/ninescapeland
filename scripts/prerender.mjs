@@ -180,12 +180,22 @@ function startServer() {
     ".webmanifest": "application/manifest+json",
   };
 
-  const server = createServer((req, res) => {
-    let filePath = join(DIST_DIR, req.url === "/" ? "index.html" : req.url);
+  // Snapshot the ORIGINAL Vite shell before any route is written.
+  // Prerendering "/" overwrites dist/index.html; if later routes were served that
+  // already-prerendered homepage as their SPA shell, the homepage markup got restored
+  // by the in-page failsafe and every remaining route was saved with the HOMEPAGE
+  // body and an unflushed <head>.
+  const ORIGINAL_SHELL = readFileSync(join(DIST_DIR, "index.html"));
 
-    // SPA fallback: if file doesn't exist, serve index.html
-    if (!existsSync(filePath) || !extname(filePath)) {
-      filePath = join(DIST_DIR, "index.html");
+  const server = createServer((req, res) => {
+    const urlPath = (req.url || "/").split("?")[0];
+    let filePath = join(DIST_DIR, urlPath === "/" ? "index.html" : urlPath);
+
+    // SPA fallback: always hand back the pristine shell, never a prerendered page
+    if (urlPath === "/" || !existsSync(filePath) || !extname(filePath)) {
+      res.writeHead(200, { "Content-Type": "text/html" });
+      res.end(ORIGINAL_SHELL);
+      return;
     }
 
     try {
