@@ -242,6 +242,28 @@ async function prerenderRoute(browser, route) {
     // Extra wait for lazy-loaded content
     await new Promise((r) => setTimeout(r, 2000));
 
+    // ── Wait for react-helmet-async to flush <head> ──
+    // Helmet applies its tags through requestAnimationFrame. Chrome throttles rAF in
+    // pages that are not the foreground tab, so with parallel prerendering the head of
+    // most routes was saved WITHOUT title / description / canonical / JSON-LD.
+    // That single bug made the GEO audit report "no BreadcrumbList / no dateModified /
+    // no FAQPage / no author" on pages whose code does emit them.
+    const helmetReady = () =>
+      page.waitForFunction(
+        () => document.querySelectorAll("head [data-rh]").length > 5,
+        { timeout: 12000 }
+      );
+    let helmetOk = await helmetReady().then(() => true).catch(() => false);
+    if (!helmetOk) {
+      // Bring the page to the foreground so rAF resumes, then retry once.
+      await page.bringToFront().catch(() => {});
+      await new Promise((r) => setTimeout(r, 500));
+      helmetOk = await helmetReady().then(() => true).catch(() => false);
+    }
+    if (!helmetOk) {
+      console.warn(`     ⚠️  ${route} — head tags (title/meta/JSON-LD) not flushed`);
+    }
+
     // Get the full rendered HTML
     let html = await page.content();
 
