@@ -395,15 +395,27 @@ async function main() {
   // Start local server
   const server = await startServer();
 
-  // Launch browser
+  // Launch browser.
+  // The backgrounding/throttling flags are REQUIRED: without them Chrome pauses
+  // requestAnimationFrame in non-foreground pages, and react-helmet-async never
+  // writes <title>, canonical, hreflang or JSON-LD into the saved HTML.
   const browser = await launch({
     headless: "new",
     executablePath: process.env.PUPPETEER_EXECUTABLE_PATH || undefined,
-    args: ["--no-sandbox", "--disable-setuid-sandbox", "--disable-gpu"],
+    args: [
+      "--no-sandbox",
+      "--disable-setuid-sandbox",
+      "--disable-gpu",
+      "--disable-background-timer-throttling",
+      "--disable-backgrounding-occluded-windows",
+      "--disable-renderer-backgrounding",
+      "--disable-features=CalculateNativeWinOcclusion",
+      "--window-size=1280,1024",
+    ],
   });
 
-  // Process routes in batches of 5 for speed
-  const BATCH_SIZE = 5;
+  // Process routes in small batches (smaller = less rAF contention per page)
+  const BATCH_SIZE = 3;
   for (let i = 0; i < routes.length; i += BATCH_SIZE) {
     const batch = routes.slice(i, i + BATCH_SIZE);
     await Promise.all(batch.map((route) => prerenderRoute(browser, route)));
