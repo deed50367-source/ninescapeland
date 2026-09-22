@@ -89,6 +89,13 @@ export const ProductInquiryForm = ({ productName, productSlug }: Props) => {
         });
       }
 
+      // 23seogeo AI 可见性转化
+      if (typeof window !== "undefined" && typeof (window as any).geoAI === "function") {
+        (window as any).geoAI("event", "lead_form");
+      }
+
+
+
       toast({ title: t("contact.successTitle", "Inquiry Sent!"), description: t("contact.successDesc", "We'll get back to you within 24 hours.") });
       setFormData({ name: "", email: "", phone: "", country: "", message: "" });
       setErrors({});
