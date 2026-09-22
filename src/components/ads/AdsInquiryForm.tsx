@@ -119,6 +119,13 @@ export const AdsInquiryForm = ({ campaign, projectTypes, variant = "hero" }: Pro
         method: "form",
       });
 
+      // 23seogeo AI 可见性转化
+      if (typeof window !== "undefined" && typeof (window as any).geoAI === "function") {
+        (window as any).geoAI("event", "lead_form");
+      }
+
+
+
       toast({
         title: "Quote request received!",
         description: "Our team will reply within 24 hours with a free 3D design proposal.",
