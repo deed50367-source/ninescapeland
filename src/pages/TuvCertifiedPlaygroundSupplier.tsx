@@ -93,6 +93,7 @@ const TuvCertifiedPlaygroundSupplier = () => (
       },
     ]}
     related={[
+      { label: "Manufacturer certification checklist", href: "/custom-playground-manufacturer-certification-checklist" },
       { label: "Our safety certifications", href: "/safety-certifications" },
       { label: "Trampoline park equipment safety standards", href: "/safety-standards-for-trampoline-park-equipment" },
       { label: "Maintenance and warranty programme", href: "/maintenance-warranty" },

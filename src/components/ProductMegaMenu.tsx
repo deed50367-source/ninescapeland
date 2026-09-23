@@ -164,6 +164,41 @@ export const ProductMegaMenu = () => {
       href: "/complete-indoor-play-center-solutions",
       icon: "🔑"
     },
+    {
+      label: "Factory-Direct Price Guide",
+      href: "/indoor-playground-equipment-factory-direct-price",
+      icon: "🏭"
+    },
+    {
+      label: "Play Center Profit Margin",
+      href: "/commercial-indoor-playground-profit-margin",
+      icon: "📈"
+    },
+    {
+      label: "Education Combo Layout",
+      href: "/kids-education-combo-play-center-layout-ideas",
+      icon: "🗺️"
+    },
+    {
+      label: "Trampoline & Ninja Builder",
+      href: "/trampoline-park-and-ninja-course-builder",
+      icon: "🏗️"
+    },
+    {
+      label: "Soft Play Cost Breakdown",
+      href: "/soft-play-equipment-supplier-cost-breakdown",
+      icon: "🧮"
+    },
+    {
+      label: "Manufacturer Certification Check",
+      href: "/custom-playground-manufacturer-certification-checklist",
+      icon: "🔍"
+    },
+    {
+      label: "ASTM Play Structures",
+      href: "/astm-certified-indoor-playground-structures",
+      icon: "📏"
+    },
     { 
       label: t("activePlayRunning.breadcrumb", "Active Play for Running"), 
       href: "/best-indoorplaygroundsolution-active-play-for-running-facilities",

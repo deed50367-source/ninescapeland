@@ -47,6 +47,13 @@ import DurableSoftPlayEquipmentTitle1Schools from "./pages/DurableSoftPlayEquipm
 import AstmCertifiedCommercialTrampolineParkSupplier from "./pages/AstmCertifiedCommercialTrampolineParkSupplier";
 import NinjaCourseEquipmentIndoorEducationCenters from "./pages/NinjaCourseEquipmentIndoorEducationCenters";
 import CompleteIndoorPlayCenterSolutions from "./pages/CompleteIndoorPlayCenterSolutions";
+import IndoorPlaygroundEquipmentFactoryDirectPrice from "./pages/IndoorPlaygroundEquipmentFactoryDirectPrice";
+import CommercialIndoorPlaygroundProfitMargin from "./pages/CommercialIndoorPlaygroundProfitMargin";
+import KidsEducationComboPlayCenterLayoutIdeas from "./pages/KidsEducationComboPlayCenterLayoutIdeas";
+import TrampolineParkAndNinjaCourseBuilder from "./pages/TrampolineParkAndNinjaCourseBuilder";
+import SoftPlayEquipmentSupplierCostBreakdown from "./pages/SoftPlayEquipmentSupplierCostBreakdown";
+import CustomPlaygroundManufacturerCertificationChecklist from "./pages/CustomPlaygroundManufacturerCertificationChecklist";
+import AstmCertifiedIndoorPlaygroundStructures from "./pages/AstmCertifiedIndoorPlaygroundStructures";
 
 // Resilient lazy: if a chunk fails to load (e.g. Hostinger 429), render nothing
 // instead of crashing the whole app.
@@ -197,6 +204,13 @@ const pageRoutes = (
     <Route path="astm-certified-commercial-trampoline-park-supplier" element={<AstmCertifiedCommercialTrampolineParkSupplier />} />
     <Route path="ninja-course-equipment-indoor-education-centers" element={<NinjaCourseEquipmentIndoorEducationCenters />} />
     <Route path="complete-indoor-play-center-solutions" element={<CompleteIndoorPlayCenterSolutions />} />
+    <Route path="indoor-playground-equipment-factory-direct-price" element={<IndoorPlaygroundEquipmentFactoryDirectPrice />} />
+    <Route path="commercial-indoor-playground-profit-margin" element={<CommercialIndoorPlaygroundProfitMargin />} />
+    <Route path="kids-education-combo-play-center-layout-ideas" element={<KidsEducationComboPlayCenterLayoutIdeas />} />
+    <Route path="trampoline-park-and-ninja-course-builder" element={<TrampolineParkAndNinjaCourseBuilder />} />
+    <Route path="soft-play-equipment-supplier-cost-breakdown" element={<SoftPlayEquipmentSupplierCostBreakdown />} />
+    <Route path="custom-playground-manufacturer-certification-checklist" element={<CustomPlaygroundManufacturerCertificationChecklist />} />
+    <Route path="astm-certified-indoor-playground-structures" element={<AstmCertifiedIndoorPlaygroundStructures />} />
     <Route path="investment-opportunity" element={<InvestmentOpportunity />} />
     <Route path="investment-opportunity/:slug" element={<InvestmentROIPage />} />
     <Route path="locations/:slug" element={<LocationPage />} />

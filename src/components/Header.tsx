@@ -63,6 +63,13 @@ export const Header = () => {
     { label: "ASTM Trampoline Supplier", href: localizedPath("/astm-certified-commercial-trampoline-park-supplier") },
     { label: "Ninja Courses for Education", href: localizedPath("/ninja-course-equipment-indoor-education-centers") },
     { label: "Complete Play Center Solutions", href: localizedPath("/complete-indoor-play-center-solutions") },
+    { label: "Factory-Direct Equipment Price", href: localizedPath("/indoor-playground-equipment-factory-direct-price") },
+    { label: "Play Center Profit Margin", href: localizedPath("/commercial-indoor-playground-profit-margin") },
+    { label: "Education Combo Layout Ideas", href: localizedPath("/kids-education-combo-play-center-layout-ideas") },
+    { label: "Trampoline & Ninja Builder", href: localizedPath("/trampoline-park-and-ninja-course-builder") },
+    { label: "Soft Play Cost Breakdown", href: localizedPath("/soft-play-equipment-supplier-cost-breakdown") },
+    { label: "Manufacturer Certification Check", href: localizedPath("/custom-playground-manufacturer-certification-checklist") },
+    { label: "ASTM Play Structures", href: localizedPath("/astm-certified-indoor-playground-structures") },
     { label: t("activePlayRunning.breadcrumb", "Active Play for Running"), href: localizedPath("/best-indoorplaygroundsolution-active-play-for-running-facilities") },
     { label: t("officeWellness.breadcrumb", "Office Wellness"), href: localizedPath("/indoorplaygroundsolution-office-wellness-solutions") },
   ];

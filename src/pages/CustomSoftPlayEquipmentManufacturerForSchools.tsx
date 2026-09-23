@@ -50,6 +50,7 @@ const CustomSoftPlayEquipmentManufacturerForSchools = () => (
       { title: "International schools & academies", desc: "EN 1176 + ASTM F1487 dual certification, multi-currency invoicing and English-language documentation." },
     ]}
     related={[
+      { label: "Soft play cost breakdown", href: "/soft-play-equipment-supplier-cost-breakdown" },
       { label: "Durable soft play for Title I schools", href: "/durable-soft-play-equipment-title-1-schools" },
       { label: "Special education indoor play equipment", href: "/inclusive-indoor-play-equipment-special-education" },
       { label: "Indoor PE equipment for schools", href: "/indoor-pe-equipment-for-schools" },
