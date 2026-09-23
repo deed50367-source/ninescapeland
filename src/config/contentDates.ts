@@ -98,6 +98,15 @@ export const CONTENT_DATES: Record<string, string> = {
   "/ninja-course-equipment-indoor-education-centers": "2026-09-18",
   "/complete-indoor-play-center-solutions": "2026-09-18",
 
+  // Weekly aggregation pages (batch 8)
+  "/indoor-playground-equipment-factory-direct-price": "2026-09-23",
+  "/commercial-indoor-playground-profit-margin": "2026-09-23",
+  "/kids-education-combo-play-center-layout-ideas": "2026-09-23",
+  "/trampoline-park-and-ninja-course-builder": "2026-09-23",
+  "/soft-play-equipment-supplier-cost-breakdown": "2026-09-23",
+  "/custom-playground-manufacturer-certification-checklist": "2026-09-23",
+  "/astm-certified-indoor-playground-structures": "2026-09-23",
+
   // Trust pages
   "/privacy-policy": "2026-08-13",
   "/terms-of-service": "2026-08-13",

@@ -144,6 +144,14 @@ const ENGLISH_ONLY_ROUTES = [
   "/astm-certified-commercial-trampoline-park-supplier",
   "/ninja-course-equipment-indoor-education-centers",
   "/complete-indoor-play-center-solutions",
+  // Weekly aggregation pages (batch 8, English originals)
+  "/indoor-playground-equipment-factory-direct-price",
+  "/commercial-indoor-playground-profit-margin",
+  "/kids-education-combo-play-center-layout-ideas",
+  "/trampoline-park-and-ninja-course-builder",
+  "/soft-play-equipment-supplier-cost-breakdown",
+  "/custom-playground-manufacturer-certification-checklist",
+  "/astm-certified-indoor-playground-structures",
 ];
 
 // Generate all routes (English + other languages)
