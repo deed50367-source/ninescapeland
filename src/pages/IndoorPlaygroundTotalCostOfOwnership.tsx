@@ -93,6 +93,7 @@ const IndoorPlaygroundTotalCostOfOwnership = () => (
       },
     ]}
     related={[
+      { label: "Factory-direct equipment price", href: "/indoor-playground-equipment-factory-direct-price" },
       { label: "Custom indoor playground cost", href: "/custom-indoor-playground-cost" },
       { label: "Maintenance & warranty", href: "/maintenance-warranty" },
       { label: "Indoor playground business plan", href: "/indoor-playground-business-plan" },

@@ -52,6 +52,7 @@ const CommercialIndoorPlaygroundFlooring = () => (
       { title: "Mall and hotel fit-out contractors", desc: "Contractors working to a landlord specification who need documented test references for approval." },
     ]}
     related={[
+      { label: "ASTM-compliant play structures", href: "/astm-certified-indoor-playground-structures" },
       { label: "Indoor playground equipment range", href: "/products/indoor-playground" },
       { label: "Trampoline park equipment", href: "/products/trampoline-park" },
       { label: "Safety certifications and standards", href: "/safety-certifications" },

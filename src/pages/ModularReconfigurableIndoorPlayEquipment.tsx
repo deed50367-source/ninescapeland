@@ -91,6 +91,7 @@ const ModularReconfigurableIndoorPlayEquipment = () => (
       },
     ]}
     related={[
+      { label: "Education combo layout ideas", href: "/kids-education-combo-play-center-layout-ideas" },
       { label: "How to design an educational play area", href: "/how-to-design-an-educational-indoor-play-area" },
       { label: "Interactive learning play equipment", href: "/interactive-play-equipment-for-learning-centers" },
       { label: "Early childhood centre equipment specs", href: "/indoor-playground-equipment-for-early-childhood-centers" },
