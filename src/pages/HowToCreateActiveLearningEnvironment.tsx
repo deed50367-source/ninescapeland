@@ -53,6 +53,7 @@ const HowToCreateActiveLearningEnvironment = () => (
       { label: "Benefits of Kinesthetic Learning Equipment", href: "/kinesthetic-learning-equipment-benefits" },
       { label: "Designing Sensory Play Areas for Education", href: "/designing-sensory-play-areas-for-education" },
       { label: "Indoor PE Equipment for Schools", href: "/indoor-pe-equipment-for-schools" },
+      { label: "Active Play Curriculum", href: "/active-play-curriculum-for-indoor-play-centers" },
       { label: "Educational Benefits of Play Centers", href: "/educational-benefits-of-indoor-play-centers" },
       { label: "Montessori Indoor Playground Design", href: "/montessori-indoor-playground-design" },
     ]}

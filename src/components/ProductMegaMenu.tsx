@@ -180,6 +180,26 @@ export const ProductMegaMenu = () => {
       icon: "🗺️"
     },
     {
+      label: "Gross Motor Preschool Equipment",
+      href: "/gross-motor-play-equipment-for-preschoolers",
+      icon: "🤸"
+    },
+    {
+      label: "Homeschool Gym Programmes",
+      href: "/homeschool-gym-indoor-play-facility",
+      icon: "🏫"
+    },
+    {
+      label: "Sensory Equipment by System",
+      href: "/sensory-playground-equipment-by-sensory-system",
+      icon: "🌈"
+    },
+    {
+      label: "Active Play Curriculum",
+      href: "/active-play-curriculum-for-indoor-play-centers",
+      icon: "📋"
+    },
+    {
       label: "Trampoline & Ninja Builder",
       href: "/trampoline-park-and-ninja-course-builder",
       icon: "🏗️"

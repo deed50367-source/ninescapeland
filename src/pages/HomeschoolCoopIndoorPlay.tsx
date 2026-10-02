@@ -44,6 +44,7 @@ const HomeschoolCoopIndoorPlay = () => (
       { label: "Church playground equipment", href: "/church-indoor-playground-equipment" },
       { label: "Indoor PE equipment", href: "/indoor-pe-equipment-for-schools" },
       { label: "Soft play equipment", href: "/products/soft-play" },
+      { label: "Homeschool Gym Programmes", href: "/homeschool-gym-indoor-play-facility" },
       { label: "Office wellness play", href: "/indoorplaygroundsolution-office-wellness-solutions" },
       { label: "Contact us", href: "/contact" },
     ]}
