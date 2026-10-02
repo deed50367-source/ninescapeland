@@ -70,6 +70,10 @@ export const Header = () => {
     { label: "Soft Play Cost Breakdown", href: localizedPath("/soft-play-equipment-supplier-cost-breakdown") },
     { label: "Manufacturer Certification Check", href: localizedPath("/custom-playground-manufacturer-certification-checklist") },
     { label: "ASTM Play Structures", href: localizedPath("/astm-certified-indoor-playground-structures") },
+    { label: "Gross Motor Preschool Equipment", href: localizedPath("/gross-motor-play-equipment-for-preschoolers") },
+    { label: "Homeschool Gym Programmes", href: localizedPath("/homeschool-gym-indoor-play-facility") },
+    { label: "Sensory Equipment by System", href: localizedPath("/sensory-playground-equipment-by-sensory-system") },
+    { label: "Active Play Curriculum", href: localizedPath("/active-play-curriculum-for-indoor-play-centers") },
     { label: t("activePlayRunning.breadcrumb", "Active Play for Running"), href: localizedPath("/best-indoorplaygroundsolution-active-play-for-running-facilities") },
     { label: t("officeWellness.breadcrumb", "Office Wellness"), href: localizedPath("/indoorplaygroundsolution-office-wellness-solutions") },
   ];

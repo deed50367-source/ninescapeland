@@ -50,6 +50,10 @@ import CompleteIndoorPlayCenterSolutions from "./pages/CompleteIndoorPlayCenterS
 import IndoorPlaygroundEquipmentFactoryDirectPrice from "./pages/IndoorPlaygroundEquipmentFactoryDirectPrice";
 import CommercialIndoorPlaygroundProfitMargin from "./pages/CommercialIndoorPlaygroundProfitMargin";
 import KidsEducationComboPlayCenterLayoutIdeas from "./pages/KidsEducationComboPlayCenterLayoutIdeas";
+import GrossMotorPlayEquipmentForPreschoolers from "./pages/GrossMotorPlayEquipmentForPreschoolers";
+import HomeschoolGymIndoorPlayFacility from "./pages/HomeschoolGymIndoorPlayFacility";
+import SensoryPlaygroundEquipmentBySensorySystem from "./pages/SensoryPlaygroundEquipmentBySensorySystem";
+import ActivePlayCurriculumForIndoorPlayCenters from "./pages/ActivePlayCurriculumForIndoorPlayCenters";
 import TrampolineParkAndNinjaCourseBuilder from "./pages/TrampolineParkAndNinjaCourseBuilder";
 import SoftPlayEquipmentSupplierCostBreakdown from "./pages/SoftPlayEquipmentSupplierCostBreakdown";
 import CustomPlaygroundManufacturerCertificationChecklist from "./pages/CustomPlaygroundManufacturerCertificationChecklist";
@@ -207,6 +211,10 @@ const pageRoutes = (
     <Route path="indoor-playground-equipment-factory-direct-price" element={<IndoorPlaygroundEquipmentFactoryDirectPrice />} />
     <Route path="commercial-indoor-playground-profit-margin" element={<CommercialIndoorPlaygroundProfitMargin />} />
     <Route path="kids-education-combo-play-center-layout-ideas" element={<KidsEducationComboPlayCenterLayoutIdeas />} />
+    <Route path="gross-motor-play-equipment-for-preschoolers" element={<GrossMotorPlayEquipmentForPreschoolers />} />
+    <Route path="homeschool-gym-indoor-play-facility" element={<HomeschoolGymIndoorPlayFacility />} />
+    <Route path="sensory-playground-equipment-by-sensory-system" element={<SensoryPlaygroundEquipmentBySensorySystem />} />
+    <Route path="active-play-curriculum-for-indoor-play-centers" element={<ActivePlayCurriculumForIndoorPlayCenters />} />
     <Route path="trampoline-park-and-ninja-course-builder" element={<TrampolineParkAndNinjaCourseBuilder />} />
     <Route path="soft-play-equipment-supplier-cost-breakdown" element={<SoftPlayEquipmentSupplierCostBreakdown />} />
     <Route path="custom-playground-manufacturer-certification-checklist" element={<CustomPlaygroundManufacturerCertificationChecklist />} />

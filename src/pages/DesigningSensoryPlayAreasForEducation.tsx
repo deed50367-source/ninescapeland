@@ -53,6 +53,7 @@ const DesigningSensoryPlayAreasForEducation = () => (
     related={[
       { label: "How to design an educational play area", href: "/how-to-design-an-educational-indoor-play-area" },
       { label: "Sensory Inclusive Play Equipment", href: "/sensory-inclusive-play-equipment" },
+      { label: "Sensory Equipment by System", href: "/sensory-playground-equipment-by-sensory-system" },
       { label: "Montessori Indoor Playground Design", href: "/montessori-indoor-playground-design" },
       { label: "How to Create an Active Learning Environment", href: "/how-to-create-active-learning-environment" },
       { label: "Educational Benefits of Play Centers", href: "/educational-benefits-of-indoor-play-centers" },
