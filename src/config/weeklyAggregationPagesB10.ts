@@ -80,7 +80,7 @@ export const weeklyAggregationPagesB10: Record<string, StableSolutionPageProps> 
     description: "Design and price get most of the attention, but projects are won or lost on site. This guide covers the part that starts when containers arrive: what the building must be ready for, how many installers you need, how long each equipment type takes, and the inspection checklist you sign before opening day.",
     primaryCta: "Plan My Installation",
     secondaryCta: "See the Install Timeline",
-    heroImage: heroImages.indoorPlayground,
+    heroImage: productImages.indoorPlayground,
     heroImageAlt: "3D perspective render of a multi-level indoor playground structure during final installation",
     metrics: [
       { value: "7–21 days", label: "Typical on-site install window" },
@@ -248,7 +248,7 @@ export const weeklyAggregationPagesB10: Record<string, StableSolutionPageProps> 
     description: "Kids want the TV ninja experience, but a 5-year-old and an 11-year-old need very different obstacles. This page splits a kids ninja warrior course into three age bands, lists the obstacles, heights and mats for each, and shows how timed runs and birthday parties turn the course into steady revenue inside an indoor playground.",
     primaryCta: "Design My Kids Ninja Course",
     secondaryCta: "See Age-Band Obstacles",
-    heroImage: heroImages.ninjaCourse,
+    heroImage: productImages.ninjaCourse,
     heroImageAlt: "3D perspective render of a kids ninja warrior course with swinging rings and balance steps",
     metrics: [
       { value: "3 bands", label: "4–6, 7–9 and 10–12 years" },
@@ -329,7 +329,7 @@ export const weeklyAggregationPagesB10: Record<string, StableSolutionPageProps> 
     description: "The same budget can produce a busy park or an empty one depending on the floor plan. This guide shows how to lay out an indoor trampoline park at three common hall sizes: which zones to include, how much area each one takes, how guests move from check-in to court, and the clearances that keep it safe.",
     primaryCta: "Get My Trampoline Park Layout",
     secondaryCta: "See Layouts by Size",
-    heroImage: heroImages.trampolinePark,
+    heroImage: productImages.trampolinePark,
     heroImageAlt: "3D perspective render of an indoor trampoline park layout with main court, dodgeball and foam pit",
     metrics: [
       { value: "55–65%", label: "Share of floor for jump zones" },
