@@ -5,3 +5,6 @@
 
 - [x] Batch 10 (2026-10-08): 5 aggregation pages built and registered
 - [ ] Publish Batch 10
+
+- [x] Navigation: clear multi-column desktop menu, sliding highlight and single-open mobile groups
+- [x] Verify navigation links, viewport bounds, keyboard controls and reduced motion

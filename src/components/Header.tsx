@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
-import { Link } from "react-router-dom";
-import { motion, AnimatePresence } from "framer-motion";
+import { Link, useLocation } from "react-router-dom";
+import { motion, AnimatePresence, LayoutGroup, useReducedMotion, MotionConfig } from "framer-motion";
 import { Menu, X, Phone, Mail, ChevronDown, ChevronRight, ChevronLeft, Package } from "lucide-react";
 import logo from "@/assets/logo.png";
 import { Button } from "./ui/button";
@@ -9,10 +9,15 @@ import { LanguageSwitcher } from "./LanguageSwitcher";
 import { useLocalizedPath } from "@/hooks/useLocalizedPath";
 import { useRTL } from "@/hooks/useRTL";
 import { ProductMegaMenu } from "./ProductMegaMenu";
+import { MobileProductGroups } from "./MobileProductGroups";
 import { useWhatsAppTracking } from "@/hooks/useWhatsAppTracking";
 
 export const Header = () => {
   const { t } = useTranslation();
+  const { pathname } = useLocation();
+  const reducedMotion = useReducedMotion();
+  const [hoveredNav, setHoveredNav] = useState<string | null>(null);
+  const [megaOpen, setMegaOpen] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
   const [isProductsOpen, setIsProductsOpen] = useState(false);
   const { localizedPath } = useLocalizedPath();
@@ -139,7 +144,7 @@ export const Header = () => {
   const DirectionalChevron = isRTL ? ChevronLeft : ChevronRight;
 
   return (
-    <>
+    <MotionConfig reducedMotion="user">
       {/* Top Bar */}
       <div className="hidden md:block bg-primary text-primary-foreground py-2">
         <div className="container-wide flex justify-between items-center text-sm">
@@ -178,61 +183,23 @@ export const Header = () => {
             </Link>
 
             {/* Desktop Navigation */}
-            <nav className="hidden lg:flex items-center gap-6">
-              <Link
-                to={localizedPath("/")}
-                className="text-foreground/80 hover:text-primary font-medium transition-colors relative group"
-              >
-                {t("nav.home")}
-                <span className="absolute -bottom-1 start-0 w-0 h-0.5 bg-primary transition-all group-hover:w-full" />
-              </Link>
-
-              <Link
-                to={localizedPath("/process")}
-                className="text-foreground/80 hover:text-primary font-medium transition-colors relative group"
-              >
-                {t("nav.process")}
-                <span className="absolute -bottom-1 start-0 w-0 h-0.5 bg-primary transition-all group-hover:w-full" />
-              </Link>
-
-              <Link
-                to={localizedPath("/projects")}
-                className="text-foreground/80 hover:text-primary font-medium transition-colors relative group"
-              >
-                {t("nav.projects")}
-                <span className="absolute -bottom-1 start-0 w-0 h-0.5 bg-primary transition-all group-hover:w-full" />
-              </Link>
-
-              {/* Products Mega Menu */}
-              <ProductMegaMenu />
-
-              <Link
-                to={localizedPath("/blog")}
-                className="text-foreground/80 hover:text-primary font-medium transition-colors relative group"
-              >
-                {t("nav.blog")}
-                <span className="absolute -bottom-1 start-0 w-0 h-0.5 bg-primary transition-all group-hover:w-full" />
-              </Link>
-
-              <Link
-                to={localizedPath("/about-us")}
-                className="text-foreground/80 hover:text-primary font-medium transition-colors relative group"
-              >
-                {t("nav.aboutUs")}
-                <span className="absolute -bottom-1 start-0 w-0 h-0.5 bg-primary transition-all group-hover:w-full" />
-              </Link>
-
-              <Link
-                to={localizedPath("/contact")}
-                className="text-foreground/80 hover:text-primary font-medium transition-colors relative group"
-              >
-                {t("nav.contact")}
-                <span className="absolute -bottom-1 start-0 w-0 h-0.5 bg-primary transition-all group-hover:w-full" />
-              </Link>
-            </nav>
+            <LayoutGroup id="header-navigation">
+              <nav className="hidden xl:flex items-center gap-0.5 rounded-full bg-muted/50 p-1" onMouseLeave={() => setHoveredNav(null)}>
+                {[...navItems.slice(0, 3), { label: t("nav.products"), href: "products-menu" }, ...navItems.slice(3)].map(item => {
+                  const active = item.href === "products-menu" ? productItems.some(product => product.href === pathname) || pathname.includes("/products") : pathname.replace(/\/$/, "") === item.href.replace(/\/$/, "");
+                  const selected = hoveredNav ? hoveredNav === item.href : megaOpen ? item.href === "products-menu" : active;
+                  const highlight = selected ? <motion.span layoutId="navigation-highlight" className="absolute inset-0 rounded-full bg-card shadow-soft" transition={reducedMotion ? { duration: 0 } : { type: "spring", stiffness: 420, damping: 30 }} /> : null;
+                  return <div key={item.href} onMouseEnter={() => setHoveredNav(item.href)}>
+                    {item.href === "products-menu" ? <ProductMegaMenu items={productItems} highlight={highlight} onOpenChange={setMegaOpen} /> : <Button variant="ghost" asChild className="relative h-10 px-3 font-medium hover:bg-transparent hover:text-primary">
+                      <Link to={item.href} aria-current={active ? "page" : undefined} onFocus={() => setHoveredNav(item.href)} onBlur={() => setHoveredNav(null)}>{highlight}<span className="relative z-10">{item.label}</span></Link>
+                    </Button>}
+                  </div>;
+                })}
+              </nav>
+            </LayoutGroup>
 
             {/* CTA Button & Language Switcher */}
-            <div className="hidden md:flex items-center gap-3">
+            <div className="hidden xl:flex items-center gap-3">
               <LanguageSwitcher />
               <Button variant="hero" size="default" asChild>
                 <Link to={localizedPath("/contact")}>{t("nav.getFreeQuote")}</Link>
@@ -240,13 +207,12 @@ export const Header = () => {
             </div>
 
             {/* Mobile Menu Button */}
-            <div className="lg:hidden flex items-center gap-2">
+            <div className="xl:hidden flex items-center gap-2">
               <LanguageSwitcher />
-              <motion.button
+              <Button variant="ghost" aria-expanded={isOpen}
                 className="p-2 text-foreground rounded-lg hover:bg-muted transition-colors"
                 onClick={() => setIsOpen(!isOpen)}
                 aria-label="Toggle menu"
-                whileTap={{ scale: 0.95 }}
               >
                 <AnimatePresence mode="wait">
                   {isOpen ? (
@@ -271,7 +237,7 @@ export const Header = () => {
                     </motion.div>
                   )}
                 </AnimatePresence>
-              </motion.button>
+              </Button>
             </div>
           </div>
         </div>
@@ -284,7 +250,7 @@ export const Header = () => {
               initial="closed"
               animate="open"
               exit="closed"
-              className="lg:hidden bg-card border-t border-border overflow-hidden"
+              className="xl:hidden bg-card border-t border-border overflow-y-auto max-h-[calc(100dvh-160px)] overscroll-contain"
             >
               <nav className="container-wide py-4 flex flex-col gap-1">
                 {/* Home, Process, Projects */}
@@ -292,7 +258,8 @@ export const Header = () => {
                   <motion.div key={item.label} variants={itemVariants}>
                     <Link
                       to={item.href}
-                      className="py-3 px-4 text-foreground hover:bg-primary/10 hover:text-primary rounded-xl transition-all font-medium flex items-center justify-between active:scale-[0.98] block"
+                      aria-current={pathname === item.href ? "page" : undefined}
+                       className={`py-3 px-4 hover:bg-primary/10 hover:text-primary rounded-lg transition-all font-medium flex items-center justify-between ${pathname === item.href ? "bg-primary/10 text-primary" : "text-foreground"}`}
                       onClick={() => setIsOpen(false)}
                     >
                       {item.label}
@@ -303,18 +270,18 @@ export const Header = () => {
                 
                 {/* Products Accordion */}
                 <motion.div variants={itemVariants}>
-                  <button
+                  <Button variant="ghost" aria-expanded={isProductsOpen}
                     className="w-full py-3 px-4 text-foreground hover:bg-primary/10 hover:text-primary rounded-xl transition-all font-medium flex items-center justify-between active:scale-[0.98]"
                     onClick={() => setIsProductsOpen(!isProductsOpen)}
                   >
                     <span>{t("nav.products")}</span>
                     <motion.div
-                      animate={{ rotate: isProductsOpen ? 180 : 0 }}
+                      animate={{ rotate: isProductsOpen ? 90 : 0 }}
                       transition={{ duration: 0.2 }}
                     >
-                      <ChevronDown className="w-4 h-4" />
+                      <ChevronRight className="w-4 h-4" />
                     </motion.div>
-                  </button>
+                  </Button>
                   
                   <AnimatePresence>
                     {isProductsOpen && (
@@ -325,21 +292,7 @@ export const Header = () => {
                         exit="closed"
                         className={`overflow-hidden ${isRTL ? 'mr-2 border-r-2' : 'ml-2 border-l-2'} border-primary/20`}
                       >
-                        {productItems.map((item) => (
-                          <motion.div key={item.label} variants={itemVariants}>
-                            <Link
-                              to={item.href}
-                              className="py-2.5 px-4 text-foreground/80 hover:text-primary hover:bg-primary/5 rounded-lg transition-all text-sm flex items-center gap-2 active:scale-[0.98] block"
-                              onClick={() => {
-                                setIsOpen(false);
-                                setIsProductsOpen(false);
-                              }}
-                            >
-                              <span className="w-1.5 h-1.5 rounded-full bg-primary/40" />
-                              {item.label}
-                            </Link>
-                          </motion.div>
-                        ))}
+                        <MobileProductGroups items={productItems} onNavigate={() => { setIsOpen(false); setIsProductsOpen(false); }} />
                       </motion.div>
                     )}
                   </AnimatePresence>
@@ -350,7 +303,8 @@ export const Header = () => {
                   <motion.div key={item.label} variants={itemVariants}>
                     <Link
                       to={item.href}
-                      className="py-3 px-4 text-foreground hover:bg-primary/10 hover:text-primary rounded-xl transition-all font-medium flex items-center justify-between active:scale-[0.98] block"
+                      aria-current={pathname === item.href ? "page" : undefined}
+                       className={`py-3 px-4 hover:bg-primary/10 hover:text-primary rounded-lg transition-all font-medium flex items-center justify-between ${pathname === item.href ? "bg-primary/10 text-primary" : "text-foreground"}`}
                       onClick={() => setIsOpen(false)}
                     >
                       {item.label}
@@ -374,6 +328,6 @@ export const Header = () => {
           )}
         </AnimatePresence>
       </header>
-    </>
+    </MotionConfig>
   );
 };
