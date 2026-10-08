@@ -278,6 +278,7 @@ export const weeklyAggregationPages: Record<string, StableSolutionPageProps> = {
     },
     sources: [sources.cpsc, sources.astmF1918, sources.astmF2970, sources.ada],
     related: [
+      { label: "Turnkey installation services", href: "/turnkey-indoor-playground-installation-services" },
       { label: "Custom playground cost guide", href: "/custom-indoor-playground-cost-free-3d-design" },
       { label: "Complete play center solutions", href: "/complete-indoor-play-center-solutions" },
       { label: "Themed indoor playground design", href: "/themed-indoor-playground-design" },
@@ -515,6 +516,7 @@ export const weeklyAggregationPages: Record<string, StableSolutionPageProps> = {
     },
     sources: [sources.shape, sources.cpsc, sources.astmF1487],
     related: [
+      { label: "Ninja warrior course for kids", href: "/ninja-warrior-course-for-kids-indoor-playground" },
       { label: "Ninja course equipment", href: "/products/ninja-course" },
       { label: "Indoor PE equipment for schools", href: "/indoor-pe-equipment-for-schools" },
       { label: "After-school program equipment", href: "/after-school-program-indoor-play-equipment" },

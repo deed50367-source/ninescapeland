@@ -74,6 +74,11 @@ export const Header = () => {
     { label: "Homeschool Gym Programmes", href: localizedPath("/homeschool-gym-indoor-play-facility") },
     { label: "Sensory Equipment by System", href: localizedPath("/sensory-playground-equipment-by-sensory-system") },
     { label: "Active Play Curriculum", href: localizedPath("/active-play-curriculum-for-indoor-play-centers") },
+    { label: "Turnkey Installation Services", href: localizedPath("/turnkey-indoor-playground-installation-services") },
+    { label: "Maintenance & Cleaning Guide", href: localizedPath("/indoor-playground-maintenance-and-cleaning-guide") },
+    { label: "Kids Ninja Warrior Course", href: localizedPath("/ninja-warrior-course-for-kids-indoor-playground") },
+    { label: "Trampoline Park Layout Design", href: localizedPath("/indoor-trampoline-park-layout-design") },
+    { label: "Start a Playground Business 2026", href: localizedPath("/how-to-start-an-indoor-playground-business-2026") },
     { label: t("activePlayRunning.breadcrumb", "Active Play for Running"), href: localizedPath("/best-indoorplaygroundsolution-active-play-for-running-facilities") },
     { label: t("officeWellness.breadcrumb", "Office Wellness"), href: localizedPath("/indoorplaygroundsolution-office-wellness-solutions") },
   ];
