@@ -51,6 +51,11 @@ import IndoorPlaygroundEquipmentFactoryDirectPrice from "./pages/IndoorPlaygroun
 import CommercialIndoorPlaygroundProfitMargin from "./pages/CommercialIndoorPlaygroundProfitMargin";
 import KidsEducationComboPlayCenterLayoutIdeas from "./pages/KidsEducationComboPlayCenterLayoutIdeas";
 import GrossMotorPlayEquipmentForPreschoolers from "./pages/GrossMotorPlayEquipmentForPreschoolers";
+import TurnkeyIndoorPlaygroundInstallationServices from "./pages/TurnkeyIndoorPlaygroundInstallationServices";
+import IndoorPlaygroundMaintenanceAndCleaningGuide from "./pages/IndoorPlaygroundMaintenanceAndCleaningGuide";
+import NinjaWarriorCourseForKidsIndoorPlayground from "./pages/NinjaWarriorCourseForKidsIndoorPlayground";
+import IndoorTrampolineParkLayoutDesign from "./pages/IndoorTrampolineParkLayoutDesign";
+import HowToStartAnIndoorPlaygroundBusiness2026 from "./pages/HowToStartAnIndoorPlaygroundBusiness2026";
 import HomeschoolGymIndoorPlayFacility from "./pages/HomeschoolGymIndoorPlayFacility";
 import SensoryPlaygroundEquipmentBySensorySystem from "./pages/SensoryPlaygroundEquipmentBySensorySystem";
 import ActivePlayCurriculumForIndoorPlayCenters from "./pages/ActivePlayCurriculumForIndoorPlayCenters";
@@ -212,6 +217,11 @@ const pageRoutes = (
     <Route path="commercial-indoor-playground-profit-margin" element={<CommercialIndoorPlaygroundProfitMargin />} />
     <Route path="kids-education-combo-play-center-layout-ideas" element={<KidsEducationComboPlayCenterLayoutIdeas />} />
     <Route path="gross-motor-play-equipment-for-preschoolers" element={<GrossMotorPlayEquipmentForPreschoolers />} />
+    <Route path="turnkey-indoor-playground-installation-services" element={<TurnkeyIndoorPlaygroundInstallationServices />} />
+    <Route path="indoor-playground-maintenance-and-cleaning-guide" element={<IndoorPlaygroundMaintenanceAndCleaningGuide />} />
+    <Route path="ninja-warrior-course-for-kids-indoor-playground" element={<NinjaWarriorCourseForKidsIndoorPlayground />} />
+    <Route path="indoor-trampoline-park-layout-design" element={<IndoorTrampolineParkLayoutDesign />} />
+    <Route path="how-to-start-an-indoor-playground-business-2026" element={<HowToStartAnIndoorPlaygroundBusiness2026 />} />
     <Route path="homeschool-gym-indoor-play-facility" element={<HomeschoolGymIndoorPlayFacility />} />
     <Route path="sensory-playground-equipment-by-sensory-system" element={<SensoryPlaygroundEquipmentBySensorySystem />} />
     <Route path="active-play-curriculum-for-indoor-play-centers" element={<ActivePlayCurriculumForIndoorPlayCenters />} />

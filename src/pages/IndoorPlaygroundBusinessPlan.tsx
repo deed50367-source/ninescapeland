@@ -52,6 +52,7 @@ const IndoorPlaygroundBusinessPlan = () => (
       { title: "Existing FEC owners expanding", desc: "Operators opening a second site who need a repeatable capex and layout template." },
     ]}
     related={[
+      { label: "How to start an indoor playground business", href: "/how-to-start-an-indoor-playground-business-2026" },
       { label: "Play center profit margin", href: "/commercial-indoor-playground-profit-margin" },
       { label: "10-year cost of ownership", href: "/indoor-playground-total-cost-of-ownership" },
       { label: "Custom indoor playground cost guide", href: "/custom-indoor-playground-cost-free-3d-design" },

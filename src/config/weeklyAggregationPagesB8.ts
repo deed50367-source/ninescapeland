@@ -371,6 +371,7 @@ export const weeklyAggregationPagesB8: Record<string, StableSolutionPageProps> =
     },
     sources: [sources.astmF2970, sources.astmF1487, sources.astmF1292, sources.nfpa101],
     related: [
+      { label: "Trampoline park layout design", href: "/indoor-trampoline-park-layout-design" },
       { label: "ASTM trampoline park supplier", href: "/astm-certified-commercial-trampoline-park-supplier" },
       { label: "Ninja courses for education centers", href: "/ninja-course-equipment-indoor-education-centers" },
       { label: "ASTM-compliant play structures", href: "/astm-certified-indoor-playground-structures" },

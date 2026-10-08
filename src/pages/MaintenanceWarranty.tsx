@@ -186,6 +186,7 @@ const MaintenanceWarranty = () => {
           items={[
             { title: "Safety Standards & Certifications", desc: "ASTM, EN 1176, TÜV documentation behind the warranty.", href: "/safety-certifications" },
             { title: "Manufacturing & QC Process", desc: "How our 5-stage QC keeps warranty claims rare.", href: "/process" },
+            { title: "Maintenance & Cleaning Guide", desc: "Daily, weekly and monthly cleaning and inspection routines.", href: "/indoor-playground-maintenance-and-cleaning-guide" },
             { title: "Project Case Studies", desc: "Long-running installations — operational data 3+ years post-launch.", href: "/case-studies" },
             { title: "FAQ", desc: "Operator FAQ on inspections, parts and lifecycle.", href: "/faq" },
             { title: "Indoor Playground Equipment", desc: "Browse warranty-covered product categories.", href: "/products/indoor-playground" },

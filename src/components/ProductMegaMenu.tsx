@@ -200,6 +200,31 @@ export const ProductMegaMenu = () => {
       icon: "📋"
     },
     {
+      label: "Turnkey Installation Services",
+      href: "/turnkey-indoor-playground-installation-services",
+      icon: "🔧"
+    },
+    {
+      label: "Maintenance & Cleaning Guide",
+      href: "/indoor-playground-maintenance-and-cleaning-guide",
+      icon: "🧽"
+    },
+    {
+      label: "Kids Ninja Warrior Course",
+      href: "/ninja-warrior-course-for-kids-indoor-playground",
+      icon: "🥷"
+    },
+    {
+      label: "Trampoline Park Layout Design",
+      href: "/indoor-trampoline-park-layout-design",
+      icon: "📐"
+    },
+    {
+      label: "Start a Playground Business 2026",
+      href: "/how-to-start-an-indoor-playground-business-2026",
+      icon: "🚀"
+    },
+    {
       label: "Trampoline & Ninja Builder",
       href: "/trampoline-park-and-ninja-course-builder",
       icon: "🏗️"
