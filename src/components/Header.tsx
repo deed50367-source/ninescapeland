@@ -213,7 +213,6 @@ export const Header = () => {
                 className="p-2 text-foreground rounded-lg hover:bg-muted transition-colors"
                 onClick={() => setIsOpen(!isOpen)}
                 aria-label="Toggle menu"
-                whileTap={{ scale: 0.95 }}
               >
                 <AnimatePresence mode="wait">
                   {isOpen ? (
