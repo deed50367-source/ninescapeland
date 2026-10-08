@@ -1,7 +1,6 @@
 import { useTranslation } from "react-i18next";
-import { motion } from "framer-motion";
+import { motion, MotionConfig } from "framer-motion";
 import DOMPurify from "dompurify";
-import { useRTL } from "@/hooks/useRTL";
 import { useSiteImages } from "@/hooks/useSiteImages";
 import { VisualBreadcrumb, type BreadcrumbNavItem } from "@/components/VisualBreadcrumb";
 
@@ -25,7 +24,6 @@ export const PageHero = ({
   breadcrumbs,
 }: PageHeroProps) => {
   const { t } = useTranslation();
-  const { isRTL } = useRTL();
   const { getImageUrl, getOptimizedImageUrl } = useSiteImages();
 
   // 优先使用动态配图，并应用 Supabase 图片优化
@@ -36,7 +34,8 @@ export const PageHero = ({
     : rawBgImage;
 
   return (
-    <section className="relative py-24 md:py-32 overflow-hidden">
+    <MotionConfig reducedMotion="user">
+    <section className="relative py-16 md:py-24 bg-hero overflow-hidden">
       {/* Background */}
       {bgImage ? (
         <div className="absolute inset-0">
@@ -50,18 +49,12 @@ export const PageHero = ({
             width="1920"
             height="600"
           />
-          <div className={`absolute inset-0 ${isRTL ? 'bg-gradient-to-l' : 'bg-gradient-to-r'} from-primary/95 via-primary/85 to-primary/70`} />
+          <div className="absolute inset-0 hero-overlay" />
         </div>
       ) : (
-        <div className="absolute inset-0 bg-gradient-to-br from-primary via-primary/95 to-primary/90" />
+        <div className="absolute inset-0 bg-hero" />
       )}
       
-      {/* Decorative elements */}
-      <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute -top-1/4 -right-1/4 w-1/2 h-1/2 bg-accent/10 rounded-full blur-3xl" />
-        <div className="absolute -bottom-1/4 -left-1/4 w-1/2 h-1/2 bg-accent/5 rounded-full blur-3xl" />
-      </div>
-
       {/* Content */}
       <div className="container-wide relative z-10">
         {/* Breadcrumb */}
@@ -71,12 +64,12 @@ export const PageHero = ({
           </div>
         )}
 
-        <div className="max-w-4xl mx-auto text-center">
+        <div className="max-w-4xl text-start">
           <motion.h1
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
-            className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-primary-foreground leading-tight mb-6"
+            className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-hero-foreground leading-tight mb-6"
           >
             {t(titleKey)}
             <span className="block text-accent mt-2">{t(titleHighlightKey)}</span>
@@ -86,11 +79,12 @@ export const PageHero = ({
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="text-lg md:text-xl text-primary-foreground/80 max-w-2xl mx-auto"
+            className="text-lg md:text-xl text-hero-foreground/80 max-w-2xl leading-relaxed"
             dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(t(descriptionKey), { ALLOWED_TAGS: ['strong', 'b', 'em'] }) }}
           />
         </div>
       </div>
     </section>
+    </MotionConfig>
   );
 };

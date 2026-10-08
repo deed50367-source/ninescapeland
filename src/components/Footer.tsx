@@ -59,14 +59,14 @@ export const Footer = () => {
   });
 
   return (
-    <footer className="bg-primary text-primary-foreground">
+    <footer className="bg-hero text-hero-foreground">
       {/* Main Footer */}
       <div className="container-wide py-10 sm:py-16">
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 sm:gap-8 lg:gap-10">
           {/* Company Info */}
           <div className="col-span-2 lg:col-span-1">
             <img src={logo} alt="NinescapeLand" className="h-14 sm:h-20 w-auto max-w-[200px] sm:max-w-[260px] mb-4 sm:mb-6" loading="lazy" decoding="async" width="260" height="80" />
-            <p className="text-primary-foreground/80 text-sm sm:text-base mb-4 sm:mb-6">
+            <p className="text-hero-foreground/80 text-sm sm:text-base mb-4 sm:mb-6">
               {t("footer.description")}
             </p>
             <div className="flex gap-3 sm:gap-4">
@@ -77,7 +77,7 @@ export const Footer = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label={social.label}
-                  className="w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-primary-foreground/10 flex items-center justify-center hover:bg-primary-foreground/20 transition-colors"
+                  className="w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-hero-foreground/10 flex items-center justify-center hover:bg-hero-foreground/20 transition-colors"
                 >
                   <social.icon className="w-4 h-4 sm:w-5 sm:h-5" />
                 </a>
@@ -93,7 +93,7 @@ export const Footer = () => {
                 <li key={index}>
                   <Link
                     to={link.href}
-                    className="text-primary-foreground/80 hover:text-primary-foreground transition-colors text-xs sm:text-sm"
+                    className="text-hero-foreground/80 hover:text-hero-foreground transition-colors text-xs sm:text-sm"
                   >
                     {link.label}
                   </Link>
@@ -110,7 +110,7 @@ export const Footer = () => {
                 <li key={index}>
                   <Link
                     to={link.href}
-                    className="text-primary-foreground/80 hover:text-primary-foreground transition-colors text-xs sm:text-sm"
+                    className="text-hero-foreground/80 hover:text-hero-foreground transition-colors text-xs sm:text-sm"
                   >
                     {link.label}
                   </Link>
@@ -126,7 +126,7 @@ export const Footer = () => {
               <li>
                 <Link
                   to={localizedPath("/blog")}
-                  className="text-primary-foreground/80 hover:text-primary-foreground transition-colors text-xs sm:text-sm font-medium"
+                  className="text-hero-foreground/80 hover:text-hero-foreground transition-colors text-xs sm:text-sm font-medium"
                 >
                   {t("footer.links.allArticles", "All Articles")}
                 </Link>
@@ -135,7 +135,7 @@ export const Footer = () => {
                 <li key={post.slug}>
                   <Link
                     to={localizedPath(`/blog/${post.slug}`)}
-                    className="text-primary-foreground/80 hover:text-primary-foreground transition-colors text-xs sm:text-sm line-clamp-2"
+                    className="text-hero-foreground/80 hover:text-hero-foreground transition-colors text-xs sm:text-sm line-clamp-2"
                   >
                     {post.title}
                   </Link>
@@ -144,7 +144,7 @@ export const Footer = () => {
               <li>
                 <Link
                   to={localizedPath("/faq")}
-                  className="text-primary-foreground/80 hover:text-primary-foreground transition-colors text-xs sm:text-sm"
+                  className="text-hero-foreground/80 hover:text-hero-foreground transition-colors text-xs sm:text-sm"
                 >
                   {t("footer.links.faq", "FAQ")}
                 </Link>
@@ -159,7 +159,7 @@ export const Footer = () => {
               <li className={`flex items-start gap-2 sm:gap-3 ${isRTL ? 'flex-row-reverse text-right' : ''}`}>
                 <Phone className="w-4 h-4 sm:w-5 sm:h-5 mt-0.5 flex-shrink-0" />
                 <div>
-                  <p className="text-primary-foreground/60 text-xs sm:text-sm">{t("footer.contact.phone")}</p>
+                  <p className="text-hero-foreground/75 text-xs sm:text-sm">{t("footer.contact.phone")}</p>
                   <a 
                     href={getWhatsAppUrl("footer")}
                     target="_blank" 
@@ -178,7 +178,7 @@ export const Footer = () => {
               <li className={`flex items-start gap-2 sm:gap-3 ${isRTL ? 'flex-row-reverse text-right' : ''}`}>
                 <Mail className="w-4 h-4 sm:w-5 sm:h-5 mt-0.5 flex-shrink-0" />
                 <div>
-                  <p className="text-primary-foreground/60 text-xs sm:text-sm">{t("footer.contact.email")}</p>
+                  <p className="text-hero-foreground/75 text-xs sm:text-sm">{t("footer.contact.email")}</p>
                   <a href="mailto:sale@indoorplaygroundsolution.com" className="hover:opacity-80 text-xs sm:text-sm break-all" dir="ltr">
                     sale@indoorplaygroundsolution.com
                   </a>
@@ -187,7 +187,7 @@ export const Footer = () => {
               <li className={`flex items-start gap-2 sm:gap-3 ${isRTL ? 'flex-row-reverse text-right' : ''}`}>
                 <MapPin className="w-4 h-4 sm:w-5 sm:h-5 mt-0.5 flex-shrink-0" />
                 <div>
-                  <p className="text-primary-foreground/60 text-xs sm:text-sm">{t("footer.contact.factory")}</p>
+                  <p className="text-hero-foreground/75 text-xs sm:text-sm">{t("footer.contact.factory")}</p>
                   <span className="text-xs sm:text-sm">Wenzhou, Zhejiang, China</span>
                 </div>
               </li>
@@ -197,9 +197,9 @@ export const Footer = () => {
       </div>
 
       {/* Language Links - crawlable <a> tags for SEO */}
-      <div className="border-t border-primary-foreground/10">
+      <div className="border-t border-hero-foreground/10">
         <div className="container-wide py-4 flex flex-wrap justify-center items-center gap-3 text-xs sm:text-sm">
-          <Globe className="w-4 h-4 text-primary-foreground/60" />
+          <Globe className="w-4 h-4 text-hero-foreground/75" />
           {languages.map((langItem, index) => {
             const href = langItem.code === "en" ? "/" : `/${langItem.code}`;
             const isCurrent = (lang || "en") === langItem.code;
@@ -207,7 +207,7 @@ export const Footer = () => {
               <a
                 key={langItem.code}
                 href={href}
-                className={`hover:text-primary-foreground transition-colors ${isCurrent ? "text-primary-foreground font-semibold" : "text-primary-foreground/60"}`}
+                className={`hover:text-hero-foreground transition-colors ${isCurrent ? "text-hero-foreground font-semibold" : "text-hero-foreground/75"}`}
                 hrefLang={langItem.code}
               >
                 {langItem.flag} {langItem.name}
@@ -218,14 +218,14 @@ export const Footer = () => {
       </div>
 
       {/* Bottom Bar */}
-      <div className="border-t border-primary-foreground/10">
-        <div className="container-wide py-4 sm:py-6 flex flex-col sm:flex-row justify-between items-center gap-3 sm:gap-4 text-xs sm:text-sm text-primary-foreground/60">
+      <div className="border-t border-hero-foreground/10">
+        <div className="container-wide py-4 sm:py-6 flex flex-col sm:flex-row justify-between items-center gap-3 sm:gap-4 text-xs sm:text-sm text-hero-foreground/75">
           <p className="text-center sm:text-left">{t("footer.copyright")}</p>
           <div className="flex gap-4 sm:gap-6">
-            <Link to={localizedPath("/privacy")} className="hover:text-primary-foreground transition-colors">
+            <Link to={localizedPath("/privacy")} className="hover:text-hero-foreground transition-colors">
               {t("footer.privacy")}
             </Link>
-            <Link to={localizedPath("/terms")} className="hover:text-primary-foreground transition-colors">
+            <Link to={localizedPath("/terms")} className="hover:text-hero-foreground transition-colors">
               {t("footer.terms")}
             </Link>
           </div>

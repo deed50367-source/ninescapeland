@@ -6,7 +6,6 @@ import { format } from "date-fns";
 import { useLocalizedPath } from "@/hooks/useLocalizedPath";
 import { useRTL } from "@/hooks/useRTL";
 import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
 
 interface BlogFeaturedPostProps {
   post: {
@@ -30,12 +29,8 @@ export const BlogFeaturedPost = ({ post }: BlogFeaturedPostProps) => {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ duration: 0.6 }}
-      className="relative py-12 md:py-20 bg-gradient-to-br from-primary/5 via-background to-accent/5 overflow-hidden"
+      className="relative py-12 md:py-20 bg-background overflow-hidden"
     >
-      {/* Decorative elements */}
-      <div className="absolute top-0 left-0 w-96 h-96 bg-primary/10 rounded-full blur-3xl -translate-x-1/2 -translate-y-1/2" />
-      <div className="absolute bottom-0 right-0 w-80 h-80 bg-accent/10 rounded-full blur-3xl translate-x-1/2 translate-y-1/2" />
-      
       <div className="container-wide relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -59,7 +54,7 @@ export const BlogFeaturedPost = ({ post }: BlogFeaturedPostProps) => {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.2 }}
-              className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-medium"
+              className="relative aspect-[4/3] rounded-lg overflow-hidden shadow-medium"
             >
               {post.cover_image ? (
                 <img
@@ -72,11 +67,11 @@ export const BlogFeaturedPost = ({ post }: BlogFeaturedPostProps) => {
                   height="600"
                 />
               ) : (
-                <div className="w-full h-full flex items-center justify-center bg-gradient-to-br from-primary/30 to-accent/20">
+                <div className="w-full h-full flex items-center justify-center bg-muted">
                   <span className="text-8xl">📝</span>
                 </div>
               )}
-              <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-t from-hero/20 via-transparent to-transparent" />
               
               {/* Floating badge */}
               <Badge className="absolute top-4 left-4 bg-accent text-accent-foreground shadow-lg">
@@ -120,10 +115,10 @@ export const BlogFeaturedPost = ({ post }: BlogFeaturedPostProps) => {
                 </p>
               )}
 
-              <Button size="lg" className="group/btn">
+              <span className="inline-flex items-center gap-2 rounded-lg bg-accent px-6 py-3 text-accent-foreground font-semibold group/btn">
                 {t("blog.readMore")}
                 <ArrowRight className={`w-5 h-5 group-hover/btn:translate-x-1 transition-transform ${isRTL ? 'rotate-180' : ''}`} />
-              </Button>
+              </span>
             </motion.div>
           </div>
         </Link>

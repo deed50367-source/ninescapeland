@@ -3,10 +3,10 @@ import { Mountain, Target, Users, Zap } from "lucide-react";
 import { useTranslation } from "react-i18next";
 
 const featureKeys = [
-  { key: "highAltitude", icon: Mountain, color: "from-purple-600 to-indigo-700" },
-  { key: "adventureObstacles", icon: Target, color: "from-orange-500 to-amber-600" },
-  { key: "teamBuilding", icon: Users, color: "from-pink-500 to-rose-600" },
-  { key: "physicalDevelopment", icon: Zap, color: "from-cyan-500 to-blue-600" },
+  { key: "highAltitude", icon: Mountain, color: "bg-secondary text-primary" },
+  { key: "adventureObstacles", icon: Target, color: "bg-secondary text-primary" },
+  { key: "teamBuilding", icon: Users, color: "bg-secondary text-primary" },
+  { key: "physicalDevelopment", icon: Zap, color: "bg-secondary text-primary" },
 ] as const;
 
 const container = {
@@ -28,7 +28,7 @@ export const NinjaFeaturesSection = () => {
   const { t } = useTranslation();
 
   return (
-    <section id="ninja-features" className="section-padding bg-gradient-to-br from-primary/10 via-background to-accent/10">
+    <section id="ninja-features" className="section-padding bg-muted/50">
       <div className="container-wide">
         {/* Section Header */}
         <motion.div
@@ -60,11 +60,11 @@ export const NinjaFeaturesSection = () => {
             <motion.div
               key={feature.key}
               variants={item}
-              className="group relative bg-card rounded-2xl p-8 shadow-soft hover:shadow-medium transition-all duration-300 text-center"
+              className="group relative bg-card rounded-lg p-8 border border-border hover:shadow-soft transition-all duration-300 text-center"
             >
               {/* Icon */}
-              <div className={`w-16 h-16 mx-auto mb-6 rounded-2xl bg-gradient-to-br ${feature.color} flex items-center justify-center transform group-hover:scale-110 transition-transform duration-300`}>
-                <feature.icon className="w-8 h-8 text-white" />
+              <div className={`w-16 h-16 mx-auto mb-6 rounded-lg ${feature.color} flex items-center justify-center `}>
+                <feature.icon className="w-8 h-8 text-primary" />
               </div>
               
               {/* Content */}
@@ -73,8 +73,6 @@ export const NinjaFeaturesSection = () => {
                 {t(`ninjaFeatures.features.${feature.key}.description`)}
               </p>
 
-              {/* Hover Effect */}
-              <div className={`absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r ${feature.color} transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 rounded-b-2xl`} />
             </motion.div>
           ))}
         </motion.div>

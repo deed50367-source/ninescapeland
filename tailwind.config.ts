@@ -14,10 +14,11 @@ export default {
     },
     extend: {
       fontFamily: {
-        heading: ["Montserrat", "sans-serif"],
-        body: ["Open Sans", "sans-serif"],
+        heading: ["Space Grotesk", "Noto Sans Arabic", "sans-serif"],
+        body: ["DM Sans", "Noto Sans Arabic", "sans-serif"],
       },
       colors: {
+        hero: { DEFAULT: "hsl(var(--hero-surface))", foreground: "hsl(var(--hero-foreground))" },
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",

@@ -27,8 +27,6 @@ export const BlogStatsSection = () => {
 
   return (
     <section className="py-16 bg-muted/50 relative overflow-hidden">
-      {/* Decorative background */}
-      <div className="absolute inset-0 bg-gradient-to-r from-primary/5 via-transparent to-accent/5" />
       
       <div className="container-wide relative z-10">
         <motion.div
@@ -44,17 +42,17 @@ export const BlogStatsSection = () => {
               <motion.div
                 key={stat.key}
                 variants={itemVariants}
-                className="text-center group"
+                className="text-center group bg-card border border-border rounded-lg p-6"
               >
-                <div className="w-16 h-16 mx-auto mb-4 rounded-2xl bg-gradient-to-br from-primary to-primary/70 flex items-center justify-center shadow-soft group-hover:scale-110 transition-transform">
-                  <Icon className="w-8 h-8 text-primary-foreground" />
+                <div className="w-12 h-12 mx-auto mb-4 rounded-lg bg-secondary flex items-center justify-center ">
+                  <Icon className="w-6 h-6 text-primary" />
                 </div>
                 <motion.div
                   initial={{ scale: 0.5 }}
                   whileInView={{ scale: 1 }}
                   viewport={{ once: true }}
                   transition={{ delay: 0.2 + index * 0.1 }}
-                  className="text-3xl md:text-4xl font-bold text-foreground mb-2"
+                  className="text-3xl md:text-4xl font-heading font-bold text-primary mb-2"
                 >
                   {stat.value}
                 </motion.div>
