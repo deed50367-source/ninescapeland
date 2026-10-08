@@ -8,3 +8,5 @@
 
 - [x] Navigation: clear multi-column desktop menu, sliding highlight and single-open mobile groups
 - [x] Verify navigation links, viewport bounds, keyboard controls and reduced motion
+- [ ] Apply approved Modern Enterprise Manufacturer direction to shared theme, heroes, blog, product and admin surfaces
+- [ ] Verify representative pages, existing navigation and multilingual rendering
