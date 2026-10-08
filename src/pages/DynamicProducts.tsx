@@ -208,7 +208,7 @@ const DynamicProducts = () => {
 
         {/* Featured Products Section */}
         {featuredProducts.length > 0 && (
-          <section className="py-16 bg-gradient-to-b from-background to-muted/30">
+          <section className="py-16 bg-muted/40">
             <div className="container mx-auto px-4">
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
@@ -566,7 +566,7 @@ const DynamicProducts = () => {
                         onClick={() => handleCategoryChange(category.id)}
                         className="w-full group"
                       >
-                        <div className="relative aspect-square rounded-xl overflow-hidden bg-card border">
+                        <div className="relative aspect-[4/3] rounded-lg overflow-hidden bg-card border">
                           {category.image_url ? (
                             <img
                               src={category.image_url}
@@ -576,16 +576,16 @@ const DynamicProducts = () => {
                               decoding="async"
                             />
                           ) : (
-                            <div className="w-full h-full bg-gradient-to-br from-primary/10 to-primary/5 flex items-center justify-center">
+                            <div className="w-full h-full bg-muted flex items-center justify-center">
                               <Package className="w-12 h-12 text-primary" />
                             </div>
                           )}
-                          <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
-                          <div className="absolute bottom-0 left-0 right-0 p-4 text-white">
+                          <div className="absolute inset-0 bg-gradient-to-t from-hero/90 via-hero/10 to-transparent" />
+                          <div className="absolute bottom-0 left-0 right-0 p-4 text-hero-foreground">
                             <h3 className="font-semibold">
                               {getLocalizedName(category)}
                             </h3>
-                            <p className="text-sm text-white/70">
+                            <p className="text-sm text-hero-foreground/85">
                               {categoryProducts.length}{" "}
                               {t("products.items", "products")}
                             </p>

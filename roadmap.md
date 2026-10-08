@@ -8,3 +8,5 @@
 
 - [x] Navigation: clear multi-column desktop menu, sliding highlight and single-open mobile groups
 - [x] Verify navigation links, viewport bounds, keyboard controls and reduced motion
+- [x] Apply approved Modern Enterprise Manufacturer direction to shared theme, heroes, blog, product and admin surfaces
+- [x] Verify representative pages at 1280px and 390px, 65 desktop navigation destinations, Escape closure and multilingual rendering; current build OK

@@ -1,3 +1,4 @@
+import { heroImages } from "@/config/galleryImages";
 import { useParams, Navigate } from "react-router-dom";
 import { motion } from "framer-motion";
 import { MapPin, CheckCircle, ArrowRight, Phone, Globe, Shield, Award, Factory, Truck, HelpCircle } from "lucide-react";
@@ -58,13 +59,12 @@ const LocationPage = () => {
       <main>
         {/* Hero */}
         <section className="relative py-24 md:py-32 overflow-hidden">
-          <div className="absolute inset-0 bg-gradient-to-br from-primary via-primary/95 to-primary/85" />
-          <div className="absolute inset-0 overflow-hidden">
-            <div className="absolute -top-1/4 -right-1/4 w-1/2 h-1/2 bg-accent/10 rounded-full blur-3xl" />
-            <div className="absolute -bottom-1/4 -left-1/4 w-1/2 h-1/2 bg-accent/5 rounded-full blur-3xl" />
+          <div className="absolute inset-0 bg-hero">
+            <img src={heroImages.products} alt="NinescapeLand commercial playground render" width="1440" height="810" loading="eager" className="h-full w-full object-cover" />
+            <div className="absolute inset-0 hero-overlay" />
           </div>
           <div className="container-wide relative z-10">
-            <div className="max-w-4xl mx-auto text-center">
+            <div className="max-w-4xl text-start">
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -77,7 +77,7 @@ const LocationPage = () => {
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.1 }}
-                className="text-[1.25rem] xs:text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-heading font-bold text-primary-foreground leading-tight mb-4"
+                className="text-[1.25rem] xs:text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-heading font-bold text-hero-foreground leading-tight mb-4"
                 style={{ wordBreak: "break-word", overflowWrap: "anywhere", hyphens: "auto" }}
               >
                 {location.heroTitle}
@@ -87,7 +87,7 @@ const LocationPage = () => {
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.2 }}
-                className="text-lg md:text-xl text-primary-foreground/80 max-w-2xl mx-auto mb-8"
+                className="text-lg md:text-xl text-hero-foreground/80 max-w-2xl mx-auto mb-8"
               >
                 {location.heroDescription}
               </motion.p>
@@ -102,7 +102,7 @@ const LocationPage = () => {
                     Get Free Quote <ArrowRight className="ml-2 w-4 h-4" />
                   </a>
                 </Button>
-                <Button size="lg" variant="outline" className="border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10" onClick={() => openWhatsApp("other", { pageName: `Location - ${location.country}` })}>
+                <Button size="lg" variant="outline" className="border-hero-foreground/30 text-hero-foreground hover:bg-hero-foreground/10" onClick={() => openWhatsApp("other", { pageName: `Location - ${location.country}` })}>
                   <Phone className="mr-2 w-4 h-4" /> WhatsApp Us
                 </Button>
               </motion.div>
@@ -121,7 +121,7 @@ const LocationPage = () => {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ delay: i * 0.1 }}
-                  className="text-center p-6 bg-background rounded-xl shadow-sm"
+                  className="text-center p-6 bg-card rounded-lg border border-border shadow-none"
                 >
                   <div className="text-3xl md:text-4xl font-bold text-primary mb-1">{stat.value}</div>
                   <div className="text-sm text-muted-foreground">{stat.label}</div>

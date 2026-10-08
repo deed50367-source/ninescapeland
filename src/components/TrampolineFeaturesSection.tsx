@@ -17,21 +17,6 @@ const zoneKeys = [
   "dodgeballZone",
 ] as const;
 
-const zoneColors = [
-  "from-cyan-500 to-blue-600",
-  "from-purple-600 to-indigo-700",
-  "from-green-500 to-emerald-600",
-  "from-orange-500 to-amber-600",
-  "from-yellow-500 to-orange-600",
-  "from-pink-500 to-rose-600",
-  "from-violet-600 to-purple-700",
-  "from-fuchsia-500 to-pink-600",
-  "from-blue-600 to-cyan-600",
-  "from-red-600 to-orange-600",
-  "from-teal-500 to-green-600",
-  "from-amber-500 to-yellow-600",
-];
-
 const container = {
   hidden: { opacity: 0 },
   show: {
@@ -51,7 +36,7 @@ export const TrampolineFeaturesSection = () => {
   const { t } = useTranslation();
 
   return (
-    <section id="features" className="section-padding bg-gradient-to-br from-primary/5 via-background to-accent/5">
+    <section id="features" className="section-padding bg-muted/50">
       <div className="container-wide">
         {/* Section Header */}
         <motion.div
@@ -79,15 +64,12 @@ export const TrampolineFeaturesSection = () => {
           viewport={{ once: true }}
           className="grid md:grid-cols-2 lg:grid-cols-4 gap-6"
         >
-          {zoneKeys.map((zoneKey, index) => (
+          {zoneKeys.map((zoneKey) => (
             <motion.div
               key={zoneKey}
               variants={item}
-              className="group relative bg-card rounded-2xl p-6 shadow-soft hover:shadow-medium transition-all duration-300 overflow-hidden"
+              className="group relative bg-card rounded-lg p-6 border border-border hover:shadow-soft transition-all duration-300 overflow-hidden"
             >
-              {/* Gradient Background */}
-              <div className={`absolute inset-0 bg-gradient-to-br ${zoneColors[index]} opacity-0 group-hover:opacity-5 transition-opacity duration-300`} />
-              
               {/* Content */}
               <div className="relative z-10">
                 <div className="flex items-center justify-between mb-3">
@@ -99,8 +81,6 @@ export const TrampolineFeaturesSection = () => {
                 </p>
               </div>
 
-              {/* Hover Effect Border */}
-              <div className={`absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r ${zoneColors[index]} transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300`} />
             </motion.div>
           ))}
         </motion.div>

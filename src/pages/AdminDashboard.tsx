@@ -175,12 +175,12 @@ const AdminDashboard = () => {
   }
 
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-muted/40">
       {/* Header */}
       <header className="sticky top-0 z-50 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 border-b">
         <div className="container mx-auto px-4 h-16 flex items-center justify-between">
           <div className="flex items-center gap-4">
-            <Link to="/" className="flex items-center gap-2">
+            <Link to="/" className="flex min-h-11 shrink-0 items-center gap-2 px-4 data-[state=active]:bg-primary data-[state=active]:text-primary-foreground">
               <img src={logo} alt="Logo" className="h-8" />
             </Link>
             <span className="text-muted-foreground">/</span>
@@ -200,13 +200,13 @@ const AdminDashboard = () => {
       </header>
 
       {/* Main Content */}
-      <main className="container mx-auto px-4 py-6">
+      <main className="container-wide py-8">
         <Tabs value={activeTab} onValueChange={setActiveTab} className="w-full">
-          <TabsList className={`grid w-full max-w-4xl mb-6`} style={{ gridTemplateColumns: `repeat(${visibleTabs.length}, 1fr)` }}>
+          <TabsList className="flex h-auto w-full justify-start gap-1 overflow-x-auto mb-8 rounded-lg border border-border bg-card p-1.5">
             {visibleTabs.map(tab => (
-              <TabsTrigger key={tab.key} value={tab.key} className="flex items-center gap-2">
+              <TabsTrigger key={tab.key} value={tab.key} className="flex min-h-11 shrink-0 items-center gap-2 px-4 data-[state=active]:bg-primary data-[state=active]:text-primary-foreground">
                 <tab.icon className="w-4 h-4" />
-                <span className="hidden sm:inline">{tab.label}</span>
+                <span>{tab.label}</span>
               </TabsTrigger>
             ))}
           </TabsList>

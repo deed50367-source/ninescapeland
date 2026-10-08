@@ -3,21 +3,19 @@ import { motion } from "framer-motion";
 import { 
   Lightbulb, 
   TrendingUp, 
-  Settings, 
   Palette, 
   Shield, 
-  Users,
   Rocket,
   BookOpen
 } from "lucide-react";
 
 const categories = [
-  { key: "tips", icon: Lightbulb, color: "from-amber-500 to-orange-500" },
-  { key: "trends", icon: TrendingUp, color: "from-emerald-500 to-teal-500" },
-  { key: "guides", icon: BookOpen, color: "from-blue-500 to-indigo-500" },
-  { key: "design", icon: Palette, color: "from-pink-500 to-rose-500" },
-  { key: "safety", icon: Shield, color: "from-violet-500 to-purple-500" },
-  { key: "business", icon: Rocket, color: "from-cyan-500 to-blue-500" },
+  { key: "tips", icon: Lightbulb, color: "bg-accent/10 text-accent" },
+  { key: "trends", icon: TrendingUp, color: "bg-category-emerald/10 text-category-emerald" },
+  { key: "guides", icon: BookOpen, color: "bg-category-blue/10 text-category-blue" },
+  { key: "design", icon: Palette, color: "bg-category-pink/10 text-category-pink" },
+  { key: "safety", icon: Shield, color: "bg-primary/10 text-primary" },
+  { key: "business", icon: Rocket, color: "bg-category-blue/10 text-category-blue" },
 ];
 
 const containerVariants = {
@@ -58,26 +56,23 @@ export const BlogCategoriesSection = () => {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4"
+          className="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-6 gap-4"
         >
           {categories.map((category) => {
             const Icon = category.icon;
             return (
-              <motion.button
+              <div
                 key={category.key}
-                variants={itemVariants}
-                className="group relative p-6 bg-card rounded-2xl border hover:border-primary/50 transition-all duration-300 hover:shadow-soft"
+                className="group relative p-6 bg-card rounded-lg border hover:border-primary/50 transition-all duration-300 hover:shadow-soft"
               >
-                <div className={`w-12 h-12 mx-auto mb-4 rounded-xl bg-gradient-to-br ${category.color} flex items-center justify-center shadow-md group-hover:scale-110 transition-transform`}>
-                  <Icon className="w-6 h-6 text-white" />
+                <div className={`w-12 h-12 mx-auto mb-4 rounded-lg ${category.color} flex items-center justify-center `}>
+                  <Icon className="w-6 h-6 " />
                 </div>
                 <h3 className="font-semibold text-sm group-hover:text-primary transition-colors">
                   {t(`blog.categories.${category.key}`)}
                 </h3>
                 
-                {/* Hover glow effect */}
-                <div className={`absolute inset-0 rounded-2xl bg-gradient-to-br ${category.color} opacity-0 group-hover:opacity-5 transition-opacity`} />
-              </motion.button>
+              </div>
             );
           })}
         </motion.div>

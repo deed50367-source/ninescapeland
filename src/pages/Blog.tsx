@@ -2,7 +2,7 @@ import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 import { useQuery } from "@tanstack/react-query";
-import { motion } from "framer-motion";
+import { motion, MotionConfig } from "framer-motion";
 import { supabase } from "@/integrations/supabase/client";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
@@ -23,6 +23,7 @@ import { format } from "date-fns";
 import { Skeleton } from "@/components/ui/skeleton";
 import { SEOHead } from "@/components/SEOHead";
 import { BreadcrumbSchema, BlogSchema, CollectionPageSchema } from "@/components/StructuredData";
+import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import {
   Pagination,
@@ -37,12 +38,12 @@ import {
 const POSTS_PER_PAGE = 9;
 
 const CATEGORIES = [
-  { key: 'tips', name: 'tips', color: 'bg-amber-500' },
-  { key: 'trends', name: 'trends', color: 'bg-emerald-500' },
-  { key: 'guides', name: 'guides', color: 'bg-blue-500' },
-  { key: 'design', name: 'design', color: 'bg-pink-500' },
-  { key: 'safety', name: 'safety', color: 'bg-violet-500' },
-  { key: 'business', name: 'business', color: 'bg-cyan-500' },
+  { key: 'tips', name: 'tips', color: 'bg-category-amber' },
+  { key: 'trends', name: 'trends', color: 'bg-category-emerald' },
+  { key: 'guides', name: 'guides', color: 'bg-category-blue' },
+  { key: 'design', name: 'design', color: 'bg-category-pink' },
+  { key: 'safety', name: 'safety', color: 'bg-primary' },
+  { key: 'business', name: 'business', color: 'bg-category-cyan' },
 ];
 
 const containerVariants = {
@@ -161,6 +162,7 @@ const Blog = () => {
   })) || [];
 
   return (
+    <MotionConfig reducedMotion="user">
     <div className="min-h-screen flex flex-col">
       <SEOHead pageKey="blog" />
       <BreadcrumbSchema items={breadcrumbItems} />
@@ -189,7 +191,7 @@ const Blog = () => {
         titleKey="pages.blog.title"
         titleHighlightKey="pages.blog.titleHighlight"
         descriptionKey="pages.blog.description"
-        backgroundImage="https://images.unsplash.com/photo-1499750310107-5fef28a66643?w=1920"
+        imageConfigKey="hero.products"
       />
 
       <main className="flex-1">
@@ -217,14 +219,10 @@ const Blog = () => {
           aria-labelledby="all-posts-heading"
           className="py-16 md:py-24 bg-background relative overflow-hidden"
         >
-          {/* Decorative elements */}
-          <div className="absolute top-0 right-0 w-96 h-96 bg-primary/5 rounded-full blur-3xl" aria-hidden="true" />
-          <div className="absolute bottom-0 left-0 w-80 h-80 bg-accent/5 rounded-full blur-3xl" aria-hidden="true" />
-          
           <div className="container-wide relative z-10">
             <div className="flex flex-col lg:flex-row gap-12">
               {/* Main Content */}
-              <div className="flex-1">
+              <div className="flex-1 min-w-0">
                 {/* Section Header */}
                 <motion.header
                   initial={{ opacity: 0, y: 20 }}
@@ -248,21 +246,21 @@ const Blog = () => {
                   
                   {/* Category Filter */}
                   <div className="flex flex-wrap gap-2">
-                    <button
+                    <Button variant="secondary"
                       onClick={() => handleCategoryChange("all")}
-                      className={`px-4 py-2 rounded-full text-sm font-medium transition-all ${
+                      className={`px-4 py-2 rounded-lg text-sm font-medium transition-all ${
                         selectedCategory === "all"
                           ? "bg-primary text-primary-foreground shadow-md"
                           : "bg-muted hover:bg-muted/80 text-foreground"
                       }`}
                     >
                       {t("blog.allCategories")}
-                    </button>
+                    </Button>
                     {CATEGORIES.map((cat) => (
-                      <button
+                      <Button variant="secondary"
                         key={cat.key}
                         onClick={() => handleCategoryChange(cat.key)}
-                        className={`px-4 py-2 rounded-full text-sm font-medium transition-all flex items-center gap-2 ${
+                        className={`px-4 py-2 rounded-lg text-sm font-medium transition-all flex items-center gap-2 ${
                           selectedCategory === cat.key
                             ? "bg-primary text-primary-foreground shadow-md"
                             : "bg-muted hover:bg-muted/80 text-foreground"
@@ -270,7 +268,7 @@ const Blog = () => {
                       >
                         <span className={`w-2 h-2 rounded-full ${cat.color}`}></span>
                         {t(`blog.categories.${cat.name}`)}
-                      </button>
+                      </Button>
                     ))}
                   </div>
                 </motion.header>
@@ -283,7 +281,7 @@ const Blog = () => {
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ delay: i * 0.1 }}
-                        className="bg-card rounded-2xl overflow-hidden border shadow-soft"
+                        className="bg-card rounded-lg overflow-hidden border shadow-soft"
                       >
                         <Skeleton className="h-52 w-full" />
                         <div className="p-6 space-y-4">
@@ -311,7 +309,7 @@ const Blog = () => {
                       <motion.article
                         key={post.id}
                         variants={itemVariants}
-                        className="group bg-card rounded-2xl overflow-hidden border hover:border-primary/30 shadow-soft hover:shadow-medium transition-all duration-500"
+                        className="group bg-card rounded-lg overflow-hidden border hover:border-primary/30 shadow-none hover:shadow-soft transition-all duration-500"
                       >
                         <Link to={localizedPath(`/blog/${post.slug}`)}>
                           {/* Image */}
@@ -320,17 +318,17 @@ const Blog = () => {
                               <img
                                 src={post.cover_image}
                                 alt={post.title || "Blog post cover image"}
-                                className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                                className="w-full h-full object-cover group-hover:scale-[1.03] transition-transform duration-700"
                                 loading="lazy"
                               />
                             ) : (
-                              <div className="w-full h-full flex items-center justify-center bg-gradient-to-br from-primary/20 via-primary/10 to-accent/10">
-                                <span className="text-6xl group-hover:scale-110 transition-transform" aria-hidden="true">📝</span>
+                              <div className="w-full h-full flex items-center justify-center bg-muted">
+                                <span className="text-6xl group-hover:scale-[1.03] transition-transform" aria-hidden="true">📝</span>
                               </div>
                             )}
                             
                             {/* Gradient overlay */}
-                            <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity" aria-hidden="true" />
+                            <div className="absolute inset-0 bg-gradient-to-t from-hero/30 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity" aria-hidden="true" />
                             
                             {/* New badge for recent posts */}
                             {index < 3 && (
@@ -389,7 +387,7 @@ const Blog = () => {
                   <motion.div
                     initial={{ opacity: 0, scale: 0.95 }}
                     animate={{ opacity: 1, scale: 1 }}
-                    className="text-center py-20 bg-muted/30 rounded-3xl border-2 border-dashed border-muted-foreground/20"
+                    className="text-center py-20 bg-muted/30 rounded-lg border-2 border-dashed border-muted-foreground/20"
                   >
                     <motion.div
                       animate={{ y: [0, -10, 0] }}
@@ -484,6 +482,7 @@ const Blog = () => {
       
       <MobileBottomNav />
     </div>
+    </MotionConfig>
   );
 };
 
