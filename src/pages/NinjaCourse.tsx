@@ -297,7 +297,7 @@ const NinjaCourse = () => {
         />
 
         {/* Stats Section */}
-        <section className="py-12 bg-primary">
+        <section className="py-12 bg-muted/50">
           <div className="container mx-auto px-4">
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
               {stats.map((stat, index) => (
@@ -309,10 +309,10 @@ const NinjaCourse = () => {
                   transition={{ delay: index * 0.1 }}
                   className="text-center"
                 >
-                  <div className="text-4xl md:text-5xl font-bold text-primary-foreground mb-2">
+                  <div className="text-4xl md:text-5xl font-bold text-primary mb-2">
                     {stat.value}
                   </div>
-                  <div className="text-primary-foreground/80 text-sm md:text-base">
+                  <div className="text-muted-foreground text-sm md:text-base">
                     {t(stat.labelKey)}
                   </div>
                 </motion.div>
@@ -385,7 +385,7 @@ const NinjaCourse = () => {
                 >
                   <Card className="border-0 shadow-lg hover:shadow-xl transition-all hover:-translate-y-1 h-full">
                     <CardContent className="p-6">
-                      <div className={`w-12 h-12 ${level.color} rounded-xl flex items-center justify-center mb-4`}>
+                      <div className={`w-12 h-12 ${level.color} rounded-lg flex items-center justify-center mb-4`}>
                         <level.icon className="w-6 h-6 text-white" />
                       </div>
                       <h3 className="text-xl font-bold mb-2">{t(level.level)}</h3>
@@ -414,11 +414,11 @@ const NinjaCourse = () => {
                 <img 
                   src={galleryImages[1]}
                   alt="Professional Ninja Warrior Course Obstacles by NinescapeLand"
-                  className="rounded-2xl shadow-2xl"
+                  className="rounded-lg shadow-2xl"
                   loading="lazy"
                   decoding="async"
                 />
-                <div className="absolute -bottom-6 -right-6 bg-primary text-primary-foreground p-4 rounded-xl shadow-lg">
+                <div className="absolute -bottom-6 -right-6 bg-primary text-primary-foreground p-4 rounded-lg shadow-lg">
                   <div className="flex items-center gap-2">
                     <Trophy className="w-5 h-5" />
                     <span className="font-semibold">{t("productPages.ninjaCourse.competitionGrade")}</span>
@@ -512,7 +512,7 @@ const NinjaCourse = () => {
         </section>
 
         {/* Safety Section */}
-        <section className="py-20 bg-primary text-primary-foreground">
+        <section className="py-20 bg-hero text-primary-foreground">
           <div className="container mx-auto px-4">
             <motion.div className="text-center mb-12" initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
               <Badge variant="secondary" className="mb-4 bg-white/20 text-white">{t("productPages.ninjaCourse.safetySection.sectionLabel")}</Badge>
@@ -746,7 +746,7 @@ const NinjaCourse = () => {
               {galleryImages.map((image, index) => (
                 <motion.div 
                   key={index} 
-                  className="relative aspect-[4/3] rounded-xl overflow-hidden group"
+                  className="relative aspect-[4/3] rounded-lg overflow-hidden group"
                   initial={{ opacity: 0, scale: 0.9 }}
                   whileInView={{ opacity: 1, scale: 1 }}
                   viewport={{ once: true }}
@@ -767,7 +767,7 @@ const NinjaCourse = () => {
         </section>
 
         {/* CTA Section */}
-        <section className="py-20 bg-primary">
+        <section className="py-20 bg-hero">
           <div className="container mx-auto px-4">
             <motion.div 
               className="text-center max-w-3xl mx-auto"

@@ -126,7 +126,7 @@ export const ProductsSection = () => {
             <motion.article
               key={index}
               variants={item}
-              className="group bg-card rounded-xl sm:rounded-2xl overflow-hidden shadow-soft hover:shadow-medium transition-all duration-300"
+              className="group bg-card rounded-lg overflow-hidden shadow-none hover:shadow-soft transition-all duration-300"
               {...getPreloadProps(product.image)}
             >
               {/* Image */}

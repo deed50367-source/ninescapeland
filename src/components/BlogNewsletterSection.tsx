@@ -26,44 +26,14 @@ export const BlogNewsletterSection = () => {
 
   return (
     <section className="relative py-16 md:py-24 overflow-hidden">
-      {/* Background gradient */}
-      <div className="absolute inset-0 bg-gradient-to-br from-primary via-primary/90 to-accent/80" />
-      
-      {/* Pattern overlay */}
-      <div className="absolute inset-0 opacity-10">
-        <div 
-          className="absolute inset-0"
-          style={{
-            backgroundImage: `url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23ffffff' fill-opacity='0.3' fill-rule='evenodd'%3E%3Ccircle cx='20' cy='20' r='3'/%3E%3C/g%3E%3C/svg%3E")`,
-          }}
-        />
-      </div>
-      
-      {/* Animated decorations */}
-      <motion.div
-        className="absolute top-10 left-10 w-72 h-72 rounded-full bg-white/10 blur-3xl"
-        animate={{
-          scale: [1, 1.2, 1],
-          opacity: [0.3, 0.5, 0.3],
-        }}
-        transition={{ duration: 6, repeat: Infinity }}
-      />
-      <motion.div
-        className="absolute bottom-10 right-10 w-96 h-96 rounded-full bg-accent/20 blur-3xl"
-        animate={{
-          scale: [1.2, 1, 1.2],
-          opacity: [0.2, 0.4, 0.2],
-        }}
-        transition={{ duration: 8, repeat: Infinity }}
-      />
-
+      <div className="absolute inset-0 bg-hero" />
       <div className="container-wide relative z-10">
         <div className="max-w-3xl mx-auto text-center">
           <motion.div
             initial={{ opacity: 0, scale: 0.9 }}
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
-            className="inline-flex items-center gap-2 px-4 py-2 bg-white/10 rounded-full text-primary-foreground text-sm font-medium mb-6"
+            className="inline-flex items-center gap-2 px-4 py-2 bg-hero-foreground/10 rounded-full text-hero-foreground text-sm font-medium mb-6"
           >
             <Sparkles className="w-4 h-4" />
             {t("blog.newsletter.badge")}
@@ -74,7 +44,7 @@ export const BlogNewsletterSection = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.1 }}
-            className="text-2xl md:text-3xl lg:text-4xl font-bold text-primary-foreground mb-4"
+            className="text-2xl md:text-3xl lg:text-4xl font-bold text-hero-foreground mb-4"
           >
             {t("blog.newsletter.title")}
           </motion.h2>
@@ -84,7 +54,7 @@ export const BlogNewsletterSection = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.2 }}
-            className="text-lg text-primary-foreground/80 mb-8 max-w-xl mx-auto"
+            className="text-lg text-hero-foreground/80 mb-8 max-w-xl mx-auto"
           >
             {t("blog.newsletter.description")}
           </motion.p>
@@ -93,10 +63,10 @@ export const BlogNewsletterSection = () => {
             <motion.div
               initial={{ opacity: 0, scale: 0.9 }}
               animate={{ opacity: 1, scale: 1 }}
-              className="flex items-center justify-center gap-3 bg-white/20 rounded-2xl p-6"
+              className="flex items-center justify-center gap-3 bg-hero-foreground/10 rounded-lg p-6"
             >
               <CheckCircle className="w-8 h-8 text-success" />
-              <span className="text-lg font-medium text-primary-foreground">
+              <span className="text-lg font-medium text-hero-foreground">
                 {t("blog.newsletter.thankYou")}
               </span>
             </motion.div>
@@ -116,7 +86,7 @@ export const BlogNewsletterSection = () => {
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   placeholder={t("blog.newsletter.placeholder")}
-                  className="pl-12 h-14 bg-white/90 border-0 text-foreground placeholder:text-muted-foreground rounded-xl"
+                  className="pl-12 h-14 bg-background border-0 text-foreground placeholder:text-muted-foreground rounded-lg"
                   required
                 />
               </div>
@@ -124,7 +94,7 @@ export const BlogNewsletterSection = () => {
                 type="submit"
                 size="lg"
                 variant="hero"
-                className="h-14 px-8 rounded-xl"
+                className="h-14 px-8 rounded-lg"
               >
                 {t("blog.newsletter.subscribe")}
                 <Send className="w-5 h-5 ml-2" />
@@ -137,7 +107,7 @@ export const BlogNewsletterSection = () => {
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
             transition={{ delay: 0.4 }}
-            className="mt-6 text-sm text-primary-foreground/60"
+            className="mt-6 text-sm text-hero-foreground/80"
           >
             {t("blog.newsletter.privacy")}
           </motion.p>

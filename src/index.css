@@ -1,4 +1,29 @@
 @font-face {
+  font-family: 'Noto Sans Arabic';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: normal;
+  font-display: swap;
+  src: url(/fonts/noto-sans-arabic-400.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Noto Sans Arabic';
+  font-style: normal;
+  font-weight: 600;
+  font-stretch: normal;
+  font-display: swap;
+  src: url(/fonts/noto-sans-arabic-600.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Noto Sans Arabic';
+  font-style: normal;
+  font-weight: 700;
+  font-stretch: normal;
+  font-display: swap;
+  src: url(/fonts/noto-sans-arabic-700.ttf) format('truetype');
+}
+
+@font-face {
   font-family: 'DM Sans';
   font-style: normal;
   font-weight: 400;
@@ -762,3 +787,6 @@ html { scrollbar-color: hsl(var(--muted-foreground) / .5) hsl(var(--muted)); }
   html { scroll-behavior: auto; }
   *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
 }
+
+[dir="rtl"] body, [dir="rtl"] .font-body, [dir="rtl"] .blog-content { font-family: 'Noto Sans Arabic', 'DM Sans', sans-serif; }
+[dir="rtl"] .font-heading { font-family: 'Noto Sans Arabic', 'Space Grotesk', sans-serif; }

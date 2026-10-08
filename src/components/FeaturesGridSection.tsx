@@ -56,8 +56,8 @@ export const FeaturesGridSection = () => {
               transition={{ delay: index * 0.05 }}
               className="group relative overflow-hidden"
             >
-              <div className="bg-card rounded-xl sm:rounded-2xl p-4 sm:p-5 md:p-6 text-center shadow-soft hover:shadow-medium transition-all duration-300 h-full border border-transparent hover:border-primary/20">
-                <div className="w-11 h-11 sm:w-14 sm:h-14 mx-auto rounded-lg sm:rounded-xl bg-gradient-to-br from-primary/10 to-accent/10 flex items-center justify-center mb-3 sm:mb-4 group-hover:scale-110 transition-transform duration-300">
+              <div className="bg-card rounded-lg p-4 sm:p-5 md:p-6 text-center shadow-none hover:shadow-soft transition-all duration-300 h-full border border-border hover:border-primary/20">
+                <div className="w-11 h-11 sm:w-14 sm:h-14 mx-auto rounded-lg bg-secondary flex items-center justify-center mb-3 sm:mb-4 group-hover:scale-105 transition-transform duration-300">
                   <feature.icon className="w-5 h-5 sm:w-7 sm:h-7 text-primary" />
                 </div>
                 <h3 className="font-semibold text-xs sm:text-sm md:text-base mb-1.5 sm:mb-2 leading-tight">

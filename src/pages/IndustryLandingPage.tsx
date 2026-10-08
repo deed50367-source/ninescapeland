@@ -1,3 +1,4 @@
+import { heroImages } from "@/config/galleryImages";
 import { useParams, Link, Navigate } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { motion } from "framer-motion";
@@ -81,27 +82,26 @@ const IndustryLandingPage = () => {
       <main>
         {/* Hero */}
         <section className="relative py-20 md:py-28 overflow-hidden">
-          <div className="absolute inset-0 bg-gradient-to-br from-primary via-primary/95 to-primary/85" />
-          <div className="absolute inset-0 overflow-hidden">
-            <div className="absolute -top-1/4 -right-1/4 w-1/2 h-1/2 bg-accent/10 rounded-full blur-3xl" />
-            <div className="absolute -bottom-1/4 -left-1/4 w-1/2 h-1/2 bg-accent/5 rounded-full blur-3xl" />
+          <div className="absolute inset-0 bg-hero">
+            <img src={heroImages.products} alt="NinescapeLand commercial playground render" width="1440" height="810" loading="eager" className="h-full w-full object-cover" />
+            <div className="absolute inset-0 hero-overlay" />
           </div>
           <div className="container mx-auto px-4 relative z-10">
-            <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }} className="max-w-4xl mx-auto text-center">
+            <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }} className="max-w-4xl text-start">
               <Badge className="mb-4 bg-accent/20 text-accent border-accent/30">
                 <HeroIcon className="w-3 h-3 mr-1" />
                 {t(`${ns}.hero.badge`)}
               </Badge>
-              <h1 className="text-3xl md:text-5xl lg:text-6xl font-heading font-bold mb-6 leading-tight text-primary-foreground">
+              <h1 className="text-3xl md:text-5xl lg:text-6xl font-heading font-bold mb-6 leading-tight text-hero-foreground">
                 {t(`${ns}.hero.title`)}{" "}
                 <span className="block text-accent mt-2">{t(`${ns}.hero.titleHighlight`)}</span>
               </h1>
-              <p className="text-lg md:text-xl text-primary-foreground/80 mb-8 max-w-3xl mx-auto">{t(`${ns}.hero.description`)}</p>
+              <p className="text-lg md:text-xl text-hero-foreground/80 mb-8 max-w-3xl mx-auto">{t(`${ns}.hero.description`)}</p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button size="lg" variant="hero" asChild>
                   <a href="#contact">{t(`${ns}.hero.cta`)} <ArrowRight className="ml-2 h-4 w-4" /></a>
                 </Button>
-                <Button size="lg" variant="outline" className="border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10" asChild>
+                <Button size="lg" variant="outline" className="border-hero-foreground/30 text-hero-foreground hover:bg-hero-foreground/10" asChild>
                   <Link to={localizedPath(`/products/${config.relatedProductSlug}`)}>{t(`${ns}.hero.ctaSecondary`)}</Link>
                 </Button>
               </div>
@@ -114,7 +114,7 @@ const IndustryLandingPage = () => {
           <div className="container mx-auto px-4">
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
               {stats.map((stat, i) => (
-                <motion.div key={i} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.1 }} className="text-center p-6 bg-background rounded-xl shadow-sm">
+                <motion.div key={i} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.1 }} className="text-center p-6 bg-card rounded-lg border border-border shadow-none">
                   <div className="w-10 h-10 mx-auto mb-3 rounded-full bg-primary/10 flex items-center justify-center"><stat.icon className="w-5 h-5 text-primary" /></div>
                   <div className="text-2xl md:text-3xl font-bold text-primary mb-1">{stat.value}</div>
                   <div className="text-xs sm:text-sm text-muted-foreground">{stat.label}</div>
@@ -133,7 +133,7 @@ const IndustryLandingPage = () => {
               <p className="text-muted-foreground text-lg mb-8 leading-relaxed">{t(`${ns}.section1.content`)}</p>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 {section1Features.map((f, i) => (
-                  <Card key={i} className="border-0 shadow-md"><CardContent className="p-4 flex items-start gap-3"><div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center shrink-0"><f.icon className="w-5 h-5 text-primary" /></div><p className="text-sm text-foreground">{f.text}</p></CardContent></Card>
+                  <Card key={i} className="border-border shadow-none"><CardContent className="p-4 flex items-start gap-3"><div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center shrink-0"><f.icon className="w-5 h-5 text-primary" /></div><p className="text-sm text-foreground">{f.text}</p></CardContent></Card>
                 ))}
               </div>
             </motion.div>
@@ -149,7 +149,7 @@ const IndustryLandingPage = () => {
               <p className="text-muted-foreground text-lg mb-8 leading-relaxed">{t(`${ns}.section2.content`)}</p>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 {section2Features.map((f, i) => (
-                  <Card key={i} className="border-0 shadow-md"><CardContent className="p-4 flex items-start gap-3"><div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center shrink-0"><f.icon className="w-5 h-5 text-primary" /></div><p className="text-sm text-foreground">{f.text}</p></CardContent></Card>
+                  <Card key={i} className="border-border shadow-none"><CardContent className="p-4 flex items-start gap-3"><div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center shrink-0"><f.icon className="w-5 h-5 text-primary" /></div><p className="text-sm text-foreground">{f.text}</p></CardContent></Card>
                 ))}
               </div>
               <div className="mt-8 text-center">
@@ -184,7 +184,7 @@ const IndustryLandingPage = () => {
             <div className="max-w-3xl mx-auto">
               <Accordion type="single" collapsible className="space-y-4">
                 {faqItems.map((faq, index) => (
-                  <AccordionItem key={index} value={`item-${index}`} className="bg-card rounded-xl px-6 shadow-soft border-none">
+                  <AccordionItem key={index} value={`item-${index}`} className="bg-card rounded-lg px-6 shadow-soft border-none">
                     <AccordionTrigger className="text-start font-heading font-semibold hover:text-primary transition-colors py-5">{faq.question}</AccordionTrigger>
                     <AccordionContent className="text-muted-foreground pb-5 leading-relaxed">{faq.answer}</AccordionContent>
                   </AccordionItem>
