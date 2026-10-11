@@ -135,7 +135,7 @@ export const InteractiveWorldMap = () => {
 
         <div className="grid lg:grid-cols-[minmax(0,2.3fr)_minmax(280px,1fr)] gap-8 items-start">
           <div className="relative min-w-0 overflow-hidden rounded-lg border border-border bg-muted/40">
-            <svg viewBox="0 0 900 420" className="block w-full h-auto" role="img" aria-label={t("interactiveMap.title")}>
+            <svg viewBox="0 0 900 420" className="block w-full h-auto" role="group" aria-label={t("interactiveMap.title")}>
               <title>{t("interactiveMap.title")} {t("interactiveMap.titleHighlight")}</title>
               <g className="fill-border stroke-background" strokeWidth="0.65" strokeLinejoin="round">
                 {worldMapPaths.map(country => <path key={country.id} d={country.path} />)}
@@ -154,7 +154,13 @@ export const InteractiveWorldMap = () => {
               {Object.entries(markers).map(([id, point]) => {
                 const region = regions[id];
                 const active = selectedRegion === id || hoveredRegion === id;
-                return <g key={id} className="pointer-events-none">
+                return <g key={id} role="button" tabIndex={0} aria-label={region.name} aria-pressed={selectedRegion === id}
+                  className="cursor-pointer outline-none focus-visible:stroke-primary"
+                  onClick={() => handleRegionClick(id)}
+                  onMouseEnter={() => setHoveredRegion(id)} onMouseLeave={() => setHoveredRegion(null)}
+                  onFocus={() => setHoveredRegion(id)} onBlur={() => setHoveredRegion(null)}
+                  onKeyDown={event => { if (event.key === "Enter" || event.key === " ") { event.preventDefault(); handleRegionClick(id); } }}>
+                  <circle cx={point.x} cy={point.y} r="22" fill="transparent" />
                   <circle cx={point.x} cy={point.y} r={active ? 10 : 7} className="fill-primary stroke-background" strokeWidth="3" />
                   <g className="hidden sm:block">
                     <rect x={point.x - 40} y={point.y + 15} width="80" height="33" rx="6"
@@ -197,7 +203,7 @@ export const InteractiveWorldMap = () => {
                 >
                   <div className="flex items-start justify-between mb-4">
                     <div className="flex items-center gap-3">
-                      <span className="text-4xl">{selectedData.flag}</span>
+                      <MapPin className="w-7 h-7 text-primary shrink-0" aria-hidden="true" />
                       <div>
                         <h3 className="font-heading font-bold text-xl">{selectedData.name}</h3>
                         <p className="text-sm text-muted-foreground">{selectedData.countries}</p>
@@ -213,19 +219,19 @@ export const InteractiveWorldMap = () => {
                   </p>
 
                   <div className="grid grid-cols-2 gap-4 mb-6">
-                    <div className="bg-muted/50 rounded-xl p-4 text-center">
+                    <div className="bg-muted/50 rounded-lg p-4 text-center">
                       <Building2 className="w-5 h-5 text-primary mx-auto mb-2" />
                       <div className="text-2xl font-bold text-primary">{selectedData.projects}</div>
                       <div className="text-xs text-muted-foreground">{t("interactiveMap.projectsLabel")}</div>
                     </div>
-                    <div className="bg-muted/50 rounded-xl p-4 text-center">
+                    <div className="bg-muted/50 rounded-lg p-4 text-center">
                       <Users className="w-5 h-5 text-accent mx-auto mb-2" />
                       <div className="text-2xl font-bold text-accent">{selectedData.clients}</div>
                       <div className="text-xs text-muted-foreground">{t("interactiveMap.clientsLabel")}</div>
                     </div>
                   </div>
 
-                  <div className="bg-primary/10 rounded-xl p-4 mb-6">
+                  <div className="bg-primary/10 rounded-lg p-4 mb-6">
                     <div className="flex items-center gap-2 mb-2">
                       <Award className="w-4 h-4 text-primary" />
                       <span className="text-sm font-semibold">{t("interactiveMap.featuredProject")}</span>
