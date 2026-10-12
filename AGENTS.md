@@ -6,3 +6,4 @@
 - Selected web fonts are served locally from public/fonts; avoid external font requests for the active typography to keep rendering stable.
 
 - The interactive world map uses simplified local Natural Earth country outlines and shared region selectors; this keeps geographic rendering deterministic and independent of remote map services.
+- Lazy sections with public hash destinations retain placeholder IDs and reveal on hash navigation, so consultation and calculator links work before content mounts.

@@ -125,7 +125,7 @@ const Index = () => {
           <LazySection minHeight="400px">
             <NinjaFeaturesSection />
           </LazySection>
-          <LazySection minHeight="500px">
+          <LazySection minHeight="500px" id="quote-calculator">
             <QuoteCalculator />
           </LazySection>
           <LazySection minHeight="400px">
@@ -167,7 +167,7 @@ const Index = () => {
           <LazySection minHeight="300px">
             <PopularCategoriesSection />
           </LazySection>
-          <LazySection minHeight="500px">
+          <LazySection minHeight="500px" id="contact">
             <ContactSection />
           </LazySection>
         </Suspense>

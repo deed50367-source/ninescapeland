@@ -1,4 +1,14 @@
 import { ExternalLink } from "lucide-react";
+import { useTranslation } from "react-i18next";
+
+const sourceDateLabels: Record<string, string> = {
+  en: "Source data as of",
+  es: "Datos de las fuentes a fecha de",
+  pt: "Dados das fontes em",
+  de: "Quellenstand",
+  fr: "Données des sources au",
+  ar: "بيانات المصادر حتى",
+};
 
 export interface SourceItem {
   /** Standard / publication name, e.g. "ASTM F1487-21" */
@@ -32,6 +42,13 @@ export const SourcesReferences = ({
   sources,
   asOf = "September 2026",
 }: SourcesReferencesProps) => {
+  const { i18n } = useTranslation();
+  const language = i18n.resolvedLanguage?.split("-")[0] || "en";
+  const dateMatch = asOf.match(/^([A-Za-z]+) (\d{4})$/);
+  const parsedDate = dateMatch ? new Date(`${dateMatch[1]} 1, ${dateMatch[2]} 12:00:00 UTC`) : null;
+  const localizedDate = parsedDate && Number.isFinite(parsedDate.getTime())
+    ? new Intl.DateTimeFormat(language, { month: "long", year: "numeric", timeZone: "UTC" }).format(parsedDate)
+    : asOf;
   if (!sources.length) return null;
 
   return (
@@ -43,7 +60,7 @@ export const SourcesReferences = ({
         <p className="text-muted-foreground mb-2">{intro}</p>
         {/* Answer engines check that cited figures carry an explicit cut-off date */}
         <p className="text-sm text-muted-foreground mb-6">
-          Source data as of {asOf} · 数据截至 {asOf}
+          {sourceDateLabels[language] || sourceDateLabels.en} {localizedDate}
         </p>
         <ol className="space-y-4 list-decimal list-inside">
           {sources.map((s) => (
