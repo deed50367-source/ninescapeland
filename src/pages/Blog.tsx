@@ -14,7 +14,6 @@ import { BlogFeaturedPost } from "@/components/BlogFeaturedPost";
 import { BlogCategoriesSection } from "@/components/BlogCategoriesSection";
 import { BlogNewsletterSection } from "@/components/BlogNewsletterSection";
 import { BlogStatsSection } from "@/components/BlogStatsSection";
-import { BlogLanguageStats } from "@/components/BlogLanguageStats";
 import { BlogSidebar } from "@/components/BlogSidebar";
 import { useLocalizedPath } from "@/hooks/useLocalizedPath";
 import { useRTL } from "@/hooks/useRTL";
@@ -198,8 +197,6 @@ const Blog = () => {
         {/* Stats Section */}
         <BlogStatsSection />
 
-        {/* Language Stats */}
-        <BlogLanguageStats />
 
         {/* Categories Section */}
         <section aria-labelledby="blog-categories-heading">
@@ -299,10 +296,10 @@ const Blog = () => {
                   </div>
                 ) : remainingPosts && remainingPosts.length > 0 ? (
                   <motion.div
+                    key={`${selectedCategory}-${currentPage}`}
                     variants={containerVariants}
                     initial="hidden"
-                    whileInView="visible"
-                    viewport={{ once: true }}
+                    animate="visible"
                     className="grid md:grid-cols-2 gap-8"
                   >
                     {remainingPosts.map((post, index) => (

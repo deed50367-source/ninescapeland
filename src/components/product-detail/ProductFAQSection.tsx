@@ -1,3 +1,4 @@
+import { scrollToInquiryForm } from "@/components/product-detail/ProductMidCTA";
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 import { Badge } from "@/components/ui/badge";
@@ -111,7 +112,7 @@ export const ProductFAQSection = ({ productName }: Props) => {
               </Button>
               <Button
                 size="lg"
-                onClick={() => document.getElementById("inquiry-form")?.scrollIntoView({ behavior: "smooth", block: "start" })}
+                onClick={() => scrollToInquiryForm()}
               >
                 {t("dynamicProduct.inquiry.submit", "Get Free Quote")}
               </Button>

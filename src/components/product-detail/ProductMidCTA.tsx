@@ -4,6 +4,19 @@ import { Button } from "@/components/ui/button";
 import { MessageCircle, FileText, ArrowDown } from "lucide-react";
 import { useWhatsAppTracking } from "@/hooks/useWhatsAppTracking";
 
+/** Scrolls to the product inquiry form, revealing its lazy placeholder first if needed. */
+export const scrollToInquiryForm = () => {
+  const el = document.getElementById("inquiry-form");
+  if (el && el.getAttribute("aria-hidden") !== "true") {
+    el.scrollIntoView({ behavior: "smooth", block: "start" });
+    return;
+  }
+  if (window.location.hash === "#inquiry-form") {
+    history.replaceState(null, "", window.location.pathname + window.location.search);
+  }
+  window.location.hash = "inquiry-form";
+};
+
 interface Props {
   productName: string;
 }
@@ -12,10 +25,7 @@ export const ProductMidCTA = ({ productName }: Props) => {
   const { t } = useTranslation();
   const { openWhatsApp } = useWhatsAppTracking();
 
-  const scrollToForm = () => {
-    const el = document.getElementById("inquiry-form");
-    if (el) el.scrollIntoView({ behavior: "smooth", block: "start" });
-  };
+  const scrollToForm = () => scrollToInquiryForm();
 
   return (
     <section className="py-16 md:py-20 bg-primary text-primary-foreground">

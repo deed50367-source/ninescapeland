@@ -653,7 +653,7 @@ const DynamicProductDetail = () => {
         </LazySection>
 
         {/* Inquiry Form */}
-        <LazySection minHeight="400px">
+        <LazySection minHeight="400px" id="inquiry-form">
           <ProductInquiryForm productName={getLocalizedName(product)} productSlug={product.slug} />
         </LazySection>
 
