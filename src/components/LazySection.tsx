@@ -9,6 +9,8 @@ interface LazySectionProps {
   /** HTML tag for the placeholder */
   as?: "section" | "div";
   className?: string;
+  /** Preserve hash destinations before their content is mounted. */
+  id?: string;
 }
 
 /**
@@ -25,9 +27,36 @@ export const LazySection = ({
   minHeight = "100px",
   as: Tag = "div",
   className,
+  id,
 }: LazySectionProps) => {
   const ref = useRef<HTMLDivElement>(null);
   const [visible, setVisible] = useState(false);
+
+  useEffect(() => {
+    if (!id) return;
+    const revealHashTarget = () => {
+      if (window.location.hash === `#${id}`) setVisible(true);
+    };
+    revealHashTarget();
+    window.addEventListener("hashchange", revealHashTarget);
+    return () => window.removeEventListener("hashchange", revealHashTarget);
+  }, [id]);
+
+  useEffect(() => {
+    if (!visible || !id || window.location.hash !== `#${id}`) return;
+    const scrollToContent = () => {
+      const target = document.getElementById(id);
+      if (!target || target.getAttribute("aria-hidden") === "true") return false;
+      target.scrollIntoView({ block: "start", behavior: "instant" });
+      return true;
+    };
+    if (scrollToContent()) return;
+    const observer = new MutationObserver(() => {
+      if (scrollToContent()) observer.disconnect();
+    });
+    observer.observe(document.body, { childList: true, subtree: true });
+    return () => observer.disconnect();
+  }, [visible, id]);
 
   useEffect(() => {
     const el = ref.current;
@@ -59,6 +88,7 @@ export const LazySection = ({
 
   return (
     <Tag
+      id={id}
       ref={ref as any}
       className={className}
       style={{ minHeight }}

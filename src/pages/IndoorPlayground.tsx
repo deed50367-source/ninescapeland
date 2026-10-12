@@ -15,6 +15,7 @@ import { useTranslation } from "react-i18next";
 import { useLocalizedPath } from "@/hooks/useLocalizedPath";
 import { Link } from "react-router-dom";
 import { getStorageUrl } from "@/config/galleryImages";
+import indoorPlaygroundBanner from "@/assets/product-indoor-playground.jpg";
 import { useSiteImages } from "@/hooks/useSiteImages";
 import { motion } from "framer-motion";
 import { GeoAnswerBlock } from "@/components/GeoAnswerBlock";
@@ -61,7 +62,7 @@ const IndoorPlayground = () => {
   const { localizedPath } = useLocalizedPath();
   const { getProductGalleryImages, getImageUrl } = useSiteImages();
 
-  const heroImage = getStorageUrl("adaf5265-c979-48b7-b4c1-808e1e4b87b8/1768294592888-x69bgi.jpg"); // 淘气堡全景
+  const heroImage = indoorPlaygroundBanner;
 
   const features = [
     {

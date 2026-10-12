@@ -16,6 +16,7 @@ import { useTranslation } from "react-i18next";
 import { useLocalizedPath } from "@/hooks/useLocalizedPath";
 import { Link } from "react-router-dom";
 import { getStorageUrl } from "@/config/galleryImages";
+import trampolineBanner from "@/assets/product-trampoline-park.jpg";
 import { useSiteImages } from "@/hooks/useSiteImages";
 import { motion } from "framer-motion";
 import { GeoAnswerBlock } from "@/components/GeoAnswerBlock";
@@ -66,7 +67,7 @@ const TrampolinePark = () => {
   const { localizedPath } = useLocalizedPath();
   const { getProductGalleryImages } = useSiteImages();
 
-  const heroImage = getStorageUrl("88de2e3c-c85e-413b-878d-99b0d0aea8ed/1768294624727-6ia03.jpg");
+  const heroImage = trampolineBanner;
 
   const features = [
     {

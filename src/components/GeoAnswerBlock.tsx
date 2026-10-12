@@ -71,14 +71,14 @@ export const GeoAnswerBlock = () => {
     <>
       {questions.length > 0 && (
         <section className="py-14 md:py-20 bg-background" aria-labelledby="geo-answers-heading">
-          <div className="container mx-auto px-4 max-w-4xl">
+          <div className="container mx-auto px-4 max-w-5xl">
             <h2 id="geo-answers-heading" className="text-3xl md:text-4xl font-bold mb-8">
               {t("geo.heading", "Key questions from playground operators")}
             </h2>
             <div className="space-y-8">
               {questions.map((item) => (
                 <article key={item.q}>
-                  <h2 className="text-xl md:text-2xl font-bold mb-2">{item.q}</h2>
+                  <h2 className="text-xl font-bold leading-snug mb-2 text-start">{item.q}</h2>
                   <p className="text-muted-foreground leading-relaxed">{item.a}</p>
                 </article>
               ))}
