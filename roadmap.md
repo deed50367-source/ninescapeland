@@ -1,7 +1,7 @@
 # Roadmap
 
-- [ ] Replace indoor playground and trampoline product banners with relevant site images
-- [ ] Repair homepage consultation anchors, FAQ wrapping, localized sources and quote calculator; browser-verify
+- [x] Replace indoor playground and trampoline product banners with relevant site images
+- [x] Repair homepage consultation anchors, FAQ wrapping, localized sources and quote calculator; browser-verified consultation, default/custom prices, invalid area, localized text and loaded banners
 
 - [x] Batch 9 (2026-10-02): 4 SEO/GEO aggregation pages built, linked from menus and older pages, registered in sitemap/prerender/content dates, browser-verified
 - [ ] Publish so the live site picks up the pages
