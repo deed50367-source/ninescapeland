@@ -32,7 +32,8 @@ export const BlogTableOfContents = ({ content, className }: BlogTableOfContentsP
     headings.forEach((heading, index) => {
       const text = heading.textContent?.trim() || "";
       if (text) {
-        const id = `heading-${index}-${text.toLowerCase().replace(/[^a-z0-9]+/g, "-").slice(0, 30)}`;
+        // Keep author-defined IDs so in-article anchor links (href="#...") keep working.
+        const id = heading.id || `heading-${index}-${text.toLowerCase().replace(/[^a-z0-9]+/g, "-").slice(0, 30)}`;
         items.push({
           id,
           text,
@@ -54,7 +55,7 @@ export const BlogTableOfContents = ({ content, className }: BlogTableOfContentsP
     const headings = articleContent.querySelectorAll("h2, h3");
     headings.forEach((heading, index) => {
       const item = tocItems[index];
-      if (item) {
+      if (item && !heading.id) {
         heading.id = item.id;
       }
     });

@@ -111,7 +111,7 @@ export const ProductFAQSection = ({ productName }: Props) => {
               </Button>
               <Button
                 size="lg"
-                onClick={() => document.getElementById("inquiry-form")?.scrollIntoView({ behavior: "smooth", block: "start" })}
+                onClick={() => scrollToInquiryForm()}
               >
                 {t("dynamicProduct.inquiry.submit", "Get Free Quote")}
               </Button>

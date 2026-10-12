@@ -214,7 +214,7 @@ export const ProductInquiryForm = ({ productName, productSlug }: Props) => {
                 </h3>
                 <div className="flex items-start gap-3 text-sm">
                   <Mail className="w-4 h-4 text-primary mt-0.5 shrink-0" />
-                  <span className="text-muted-foreground">sale@indoorplaygroundsolution.com</span>
+                  <a href="mailto:sale@indoorplaygroundsolution.com" className="text-muted-foreground hover:text-primary underline-offset-4 hover:underline break-all">sale@indoorplaygroundsolution.com</a>
                 </div>
                 <div className="flex items-start gap-3 text-sm">
                   <Phone className="w-4 h-4 text-primary mt-0.5 shrink-0" />
