@@ -1,4 +1,7 @@
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
+import { useTranslation } from "react-i18next";
+import { Link } from "react-router-dom";
+import { useLocalizedPath } from "@/hooks/useLocalizedPath";
 import { motion } from "framer-motion";
 import { Calculator, ArrowRight, Check, Info } from "lucide-react";
 import { Button } from "./ui/button";
@@ -55,16 +58,26 @@ const qualityLevels = [
 ];
 
 export const QuoteCalculator = () => {
-  const [selectedType, setSelectedType] = useState<string>("");
+  const { t, i18n } = useTranslation();
+  const { localizedPath } = useLocalizedPath();
+  const resultRef = useRef<HTMLDivElement>(null);
+  const [selectedType, setSelectedType] = useState<string>("indoor-playground");
   const [area, setArea] = useState<number>(200);
   const [qualityLevel, setQualityLevel] = useState<string>("standard");
   const [showResult, setShowResult] = useState(false);
 
-  const selectedProduct = productTypes.find((p) => p.id === selectedType);
-  const selectedQuality = qualityLevels.find((q) => q.id === qualityLevel);
+  const localizedProducts = productTypes.map((product) => ({ ...product, name: t(`quoteCalculator.productTypes.${product.id}.name`), description: t(`quoteCalculator.productTypes.${product.id}.description`) }));
+  const localizedQualities = qualityLevels.map((level) => ({ ...level, name: t(`quoteCalculator.qualityLevels.${level.id}`) }));
+
+  useEffect(() => {
+    if (showResult) resultRef.current?.scrollIntoView({ block: "nearest", behavior: "instant" });
+  }, [showResult]);
+
+  const selectedProduct = localizedProducts.find((p) => p.id === selectedType);
+  const selectedQuality = localizedQualities.find((q) => q.id === qualityLevel);
 
   const calculatePrice = (): PriceRange | null => {
-    if (!selectedProduct || !selectedQuality) return null;
+    if (!selectedProduct || !selectedQuality || !Number.isFinite(area) || area < 50 || area > 5000) return null;
 
     const min = Math.round(
       selectedProduct.pricePerSqm.min * area * selectedQuality.multiplier
@@ -79,7 +92,7 @@ export const QuoteCalculator = () => {
   const price = calculatePrice();
 
   const formatPrice = (value: number) => {
-    return new Intl.NumberFormat("en-US", {
+    return new Intl.NumberFormat(i18n.resolvedLanguage || "en", {
       style: "currency",
       currency: "USD",
       maximumFractionDigits: 0,
@@ -87,7 +100,7 @@ export const QuoteCalculator = () => {
   };
 
   const handleCalculate = () => {
-    if (selectedType && area > 0) {
+    if (price) {
       setShowResult(true);
     }
   };
@@ -102,22 +115,22 @@ export const QuoteCalculator = () => {
           className="text-center max-w-3xl mx-auto mb-12"
         >
           <span className="text-accent font-semibold text-sm uppercase tracking-wider">
-            Instant Estimate
+            {t("quoteCalculator.sectionLabel")}
           </span>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold mt-3 mb-6">
-            Online <span className="text-gradient">Quote Calculator</span>
+            {t("quoteCalculator.title")} <span className="text-gradient">{t("quoteCalculator.titleHighlight")}</span>
           </h2>
           <p className="text-muted-foreground text-lg">
-            Get an instant estimate for your project. Select your equipment type and
-            enter your space dimensions for a ballpark quote.
+            {t("quoteCalculator.description")}
           </p>
         </motion.div>
 
-        <motion.div
+        <motion.form
+          onSubmit={(event) => { event.preventDefault(); handleCalculate(); }}
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="max-w-4xl mx-auto bg-card rounded-xl sm:rounded-2xl p-4 sm:p-6 md:p-10 shadow-medium"
+          className="max-w-4xl mx-auto bg-card rounded-lg p-4 sm:p-6 md:p-10 shadow-medium"
         >
           {/* Step 1: Select Product Type */}
           <div className="mb-6 sm:mb-8">
@@ -125,28 +138,31 @@ export const QuoteCalculator = () => {
               <span className="w-7 h-7 sm:w-8 sm:h-8 rounded-full bg-primary text-primary-foreground flex items-center justify-center text-xs sm:text-sm flex-shrink-0">
                 1
               </span>
-              <span className="text-sm sm:text-base">Select Equipment Type</span>
+              <span className="text-sm sm:text-base">{t("quoteCalculator.step1")}</span>
             </h3>
             <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 gap-2 sm:gap-3">
-              {productTypes.map((product) => (
-                <button
+              {localizedProducts.map((product) => (
+                <Button
+                  type="button"
+                  variant="ghost"
+                  aria-pressed={selectedType === product.id}
                   key={product.id}
                   onClick={() => {
                     setSelectedType(product.id);
                     setShowResult(false);
                   }}
-                  className={`p-3 sm:p-4 rounded-lg sm:rounded-xl border-2 text-left transition-all active:scale-[0.98] ${
+                  className={`h-auto min-h-32 flex-col items-start gap-1 p-3 sm:p-4 rounded-lg border-2 text-start transition-all active:scale-[0.98] ${
                     selectedType === product.id
                       ? "border-primary bg-primary/5"
                       : "border-border hover:border-primary/50"
                   }`}
                 >
                   <span className="text-xl sm:text-2xl mb-1 sm:mb-2 block">{product.icon}</span>
-                  <h4 className="font-semibold text-xs sm:text-sm leading-tight">{product.name}</h4>
-                  <p className="text-[10px] sm:text-xs text-muted-foreground line-clamp-1 mt-0.5">
+                  <span className="font-semibold text-xs sm:text-sm leading-tight">{product.name}</span>
+                  <span className="text-[10px] sm:text-xs text-muted-foreground mt-0.5">
                     {product.description}
-                  </p>
-                </button>
+                  </span>
+                </Button>
               ))}
             </div>
           </div>
@@ -157,28 +173,32 @@ export const QuoteCalculator = () => {
               <span className="w-7 h-7 sm:w-8 sm:h-8 rounded-full bg-primary text-primary-foreground flex items-center justify-center text-xs sm:text-sm flex-shrink-0">
                 2
               </span>
-              <span className="text-sm sm:text-base">Enter Space Area (m²)</span>
+              <span className="text-sm sm:text-base">{t("quoteCalculator.step2")}</span>
             </h3>
             <div className="flex flex-col sm:flex-row sm:items-center gap-4 sm:gap-6">
               <div className="flex-1 order-2 sm:order-1">
                 <Slider
-                  value={[area]}
+                  value={[Number.isFinite(area) ? Math.max(50, Math.min(5000, area)) : 50]}
+                  aria-label={t("quoteCalculator.sqmLabel")}
                   onValueChange={(value) => {
-                    setArea(value[0]);
+                    setArea(value[0] ?? 50);
                     setShowResult(false);
                   }}
                   min={50}
-                  max={2000}
+                  max={5000}
                   step={10}
                   className="py-4"
                 />
                 <div className="flex justify-between text-xs sm:text-sm text-muted-foreground mt-1">
                   <span>50 m²</span>
-                  <span>2,000 m²</span>
+                  <span>5,000 m²</span>
                 </div>
               </div>
               <div className="w-full sm:w-32 order-1 sm:order-2">
                 <Input
+                  id="quote-area"
+                  aria-label={t("quoteCalculator.sqmLabel")}
+                  required
                   type="number"
                   value={area}
                   onChange={(e) => {
@@ -191,7 +211,7 @@ export const QuoteCalculator = () => {
                   inputMode="numeric"
                 />
                 <span className="text-xs text-muted-foreground block text-center mt-1">
-                  Square Meters
+                  {t("quoteCalculator.sqmLabel")}
                 </span>
               </div>
             </div>
@@ -203,29 +223,32 @@ export const QuoteCalculator = () => {
               <span className="w-7 h-7 sm:w-8 sm:h-8 rounded-full bg-primary text-primary-foreground flex items-center justify-center text-xs sm:text-sm flex-shrink-0">
                 3
               </span>
-              <span className="text-sm sm:text-base">Select Quality Level</span>
+              <span className="text-sm sm:text-base">{t("quoteCalculator.step3")}</span>
             </h3>
             <div className="grid grid-cols-3 gap-2 sm:gap-3">
-              {qualityLevels.map((level) => (
-                <button
+              {localizedQualities.map((level) => (
+                <Button
+                  type="button"
+                  variant="ghost"
+                  aria-pressed={qualityLevel === level.id}
                   key={level.id}
                   onClick={() => {
                     setQualityLevel(level.id);
                     setShowResult(false);
                   }}
-                  className={`p-3 sm:p-4 rounded-lg sm:rounded-xl border-2 text-center transition-all active:scale-[0.98] ${
+                  className={`h-auto min-h-20 flex-col p-3 sm:p-4 rounded-lg border-2 text-center transition-all active:scale-[0.98] ${
                     qualityLevel === level.id
                       ? "border-primary bg-primary/5"
                       : "border-border hover:border-primary/50"
                   }`}
                 >
-                  <h4 className="font-semibold text-xs sm:text-base">{level.name}</h4>
+                  <span className="font-semibold text-xs sm:text-base">{level.name}</span>
                   {level.id !== "standard" && (
                     <p className="text-[10px] sm:text-xs text-muted-foreground">
                       +{Math.round((level.multiplier - 1) * 100)}%
                     </p>
                   )}
-                </button>
+                </Button>
               ))}
             </div>
           </div>
@@ -235,23 +258,25 @@ export const QuoteCalculator = () => {
             <Button
               variant="hero"
               size="lg"
-              onClick={handleCalculate}
-              disabled={!selectedType || area < 50}
+              type="submit"
               className="w-full sm:w-auto sm:min-w-64 h-12 sm:h-14 text-sm sm:text-base"
             >
               <Calculator className="w-4 h-4 sm:w-5 sm:h-5" />
-              Calculate Estimate
+              {t("quoteCalculator.calculateBtn")}
             </Button>
           </div>
 
           {/* Result */}
           {showResult && price && (
             <motion.div
+              ref={resultRef}
+              role="status"
+              aria-live="polite"
               initial={{ opacity: 0, scale: 0.95 }}
               animate={{ opacity: 1, scale: 1 }}
               className="bg-gradient-to-br from-primary to-primary/80 text-primary-foreground rounded-xl sm:rounded-2xl p-4 sm:p-6 md:p-8 text-center"
             >
-              <h3 className="text-base sm:text-xl font-heading mb-2">Estimated Price Range</h3>
+              <h3 className="text-base sm:text-xl font-heading mb-2">{t("quoteCalculator.resultTitle")}</h3>
               <div className="text-2xl sm:text-4xl md:text-5xl font-heading font-bold mb-3 sm:mb-4">
                 {formatPrice(price.min)} - {formatPrice(price.max)}
               </div>
@@ -271,7 +296,7 @@ export const QuoteCalculator = () => {
               </div>
               <p className="text-primary-foreground/80 text-xs sm:text-sm mb-4 sm:mb-6 flex items-start sm:items-center justify-center gap-2 text-left sm:text-center">
                 <Info className="w-4 h-4 flex-shrink-0 mt-0.5 sm:mt-0" />
-                <span>Final price depends on design complexity, theme, and installation requirements</span>
+                <span>{t("quoteCalculator.resultNote")}</span>
               </p>
               <Button
                 variant="secondary"
@@ -279,14 +304,14 @@ export const QuoteCalculator = () => {
                 asChild
                 className="w-full sm:w-auto bg-primary-foreground text-primary hover:bg-primary-foreground/90 h-11 sm:h-12"
               >
-                <a href="#contact" className="group">
-                  Get Accurate Quote
+                <Link to={localizedPath("/contact")} className="group">
+                  {t("quoteCalculator.ctaBtn")}
                   <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 group-hover:translate-x-1 transition-transform" />
-                </a>
+                </Link>
               </Button>
             </motion.div>
           )}
-        </motion.div>
+        </motion.form>
       </div>
     </section>
   );
