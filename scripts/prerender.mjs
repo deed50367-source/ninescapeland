@@ -44,6 +44,12 @@ const CORE_ROUTES = [
   "/contact",
   "/faq",
   "/blog",
+  // Weekly blog originals share a slug across all six language versions.
+  "/blog/toddler-indoor-playground",
+  "/blog/autism-friendly-indoor-playground-equipment",
+  "/blog/paid-indoor-playground-vs-free-indoor-playground",
+  "/blog/indoor-playground-renovation",
+  "/blog/mall-indoor-playground",
   "/case-studies",
   "/best-indoorplaygroundsolution-active-play-for-running-facilities",
   "/indoorplaygroundsolution-office-wellness-solutions",
