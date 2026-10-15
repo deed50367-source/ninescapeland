@@ -1,8 +1,9 @@
 # Roadmap
 
 - [x] Save five uploaded October 15 English blog drafts with site cover images and two inline gallery images each; remove unsupported case-study, pricing and safety claims
-- [ ] Complete 25 translations through the configured SiliconFlow provider and publish all six language versions together
-- [ ] Verify October 15 public article pages and authenticated blog administration — drafts await translations; requesting user has no matching preview auth account
+- [x] Complete 25 translations through configured SiliconFlow DeepSeek; all 30 six-language records published, with site cover and inline images
+- [x] Verify all 30 public article pages, loaded images, blog listing and five exact six-language sets in authenticated blog administration using the user-selected account
+- [x] Register all 30 blog routes in prerendering and sitemap; syntax/XML checks and current preview build passed
 
 - [x] Replace indoor playground and trampoline product banners with relevant site images
 - [x] Repair homepage consultation anchors, FAQ wrapping, localized sources and quote calculator; browser-verified consultation, default/custom prices, invalid area, localized text and loaded banners
