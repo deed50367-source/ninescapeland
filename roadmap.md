@@ -1,5 +1,8 @@
 # Roadmap
 
+- [ ] Import the five uploaded October 15 blog articles with site cover/inline images and six complete language versions
+- [ ] Verify October 15 blog records in public article pages and authenticated blog administration
+
 - [x] Replace indoor playground and trampoline product banners with relevant site images
 - [x] Repair homepage consultation anchors, FAQ wrapping, localized sources and quote calculator; browser-verified consultation, default/custom prices, invalid area, localized text and loaded banners
 
