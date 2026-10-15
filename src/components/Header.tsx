@@ -84,6 +84,11 @@ export const Header = () => {
     { label: "Kids Ninja Warrior Course", href: localizedPath("/ninja-warrior-course-for-kids-indoor-playground") },
     { label: "Trampoline Park Layout Design", href: localizedPath("/indoor-trampoline-park-layout-design") },
     { label: "Start a Playground Business 2026", href: localizedPath("/how-to-start-an-indoor-playground-business-2026") },
+    { label: "Play Café Business Model", href: localizedPath("/indoor-playground-cafe-business-model") },
+    { label: "Restaurant Play Area Layout", href: localizedPath("/restaurant-indoor-playground-layout-design") },
+    { label: "Equipment for Sale: New vs Used", href: localizedPath("/commercial-indoor-playground-equipment-for-sale") },
+    { label: "Franchise vs Independent", href: localizedPath("/indoor-playground-franchise-vs-independent") },
+    { label: "Toddler Soft Play Zone Design", href: localizedPath("/toddler-soft-play-area-design") },
     { label: t("activePlayRunning.breadcrumb", "Active Play for Running"), href: localizedPath("/best-indoorplaygroundsolution-active-play-for-running-facilities") },
     { label: t("officeWellness.breadcrumb", "Office Wellness"), href: localizedPath("/indoorplaygroundsolution-office-wellness-solutions") },
   ];
