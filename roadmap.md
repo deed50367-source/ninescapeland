@@ -1,5 +1,9 @@
 # Roadmap
 
+- [x] Save five uploaded October 15 English blog drafts with site cover images and two inline gallery images each; remove unsupported case-study, pricing and safety claims
+- [ ] Complete 25 translations and publish all six language versions together — blocked by AI Gateway 402 (workspace credits exhausted)
+- [ ] Verify October 15 public article pages and authenticated blog administration — drafts await translations; requesting user has no matching preview auth account
+
 - [x] Replace indoor playground and trampoline product banners with relevant site images
 - [x] Repair homepage consultation anchors, FAQ wrapping, localized sources and quote calculator; browser-verified consultation, default/custom prices, invalid area, localized text and loaded banners
 
