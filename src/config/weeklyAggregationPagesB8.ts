@@ -133,6 +133,7 @@ export const weeklyAggregationPagesB8: Record<string, StableSolutionPageProps> =
       { label: "Custom indoor playground cost", href: "/custom-indoor-playground-cost" },
       { label: "Complete play center solutions", href: "/complete-indoor-play-center-solutions" },
       { label: "Profit margin structure", href: "/commercial-indoor-playground-profit-margin" },
+      { label: "Toddler soft play area design", href: "/toddler-soft-play-area-design" },
     ],
     faq: [
       { title: "Is factory-direct always cheaper?", desc: "Equipment cost is usually lower, but freight, customs, installation and site work move to your side of the table. Compare landed and installed cost, not the quoted equipment figure alone." },
@@ -210,6 +211,8 @@ export const weeklyAggregationPagesB8: Record<string, StableSolutionPageProps> =
     sources: [sources.sba, sources.cpsc, sources.astmF1487, sources.nfpa101],
     related: [
       { label: "Indoor playground business plan", href: "/indoor-playground-business-plan" },
+      { label: "Commercial playground equipment for sale", href: "/commercial-indoor-playground-equipment-for-sale" },
+      { label: "Restaurant indoor playground layout", href: "/restaurant-indoor-playground-layout-design" },
       { label: "Total cost of ownership", href: "/indoor-playground-total-cost-of-ownership" },
       { label: "Education combo layout ideas", href: "/kids-education-combo-play-center-layout-ideas" },
       { label: "Factory-direct equipment price", href: "/indoor-playground-equipment-factory-direct-price" },

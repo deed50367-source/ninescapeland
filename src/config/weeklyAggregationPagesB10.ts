@@ -477,6 +477,8 @@ export const weeklyAggregationPagesB10: Record<string, StableSolutionPageProps> 
       cluster.maintenance,
       cluster.kidsNinja,
       { label: "Indoor playground business plan", href: "/indoor-playground-business-plan" },
+      { label: "Franchise vs independent playground", href: "/indoor-playground-franchise-vs-independent" },
+      { label: "Indoor playground café business model", href: "/indoor-playground-cafe-business-model" },
       { label: "Custom indoor playground cost", href: "/custom-indoor-playground-cost-free-3d-design" },
     ],
     faq: [
