@@ -9,6 +9,7 @@ import { ProductsSection } from "@/components/ProductsSection";
 import { Footer } from "@/components/Footer";
 import { FloatingCTA } from "@/components/FloatingCTA";
 import { IAAPAFloatingBanner } from "@/components/IAAPAFloatingBanner";
+import { TaapeFloatingBanner } from "@/components/TaapeFloatingBanner";
 
 import MobileBottomNav from "@/components/MobileBottomNav";
 import { SEOHead } from "@/components/SEOHead";
@@ -175,6 +176,7 @@ const Index = () => {
       <Footer />
       <FloatingCTA />
       <IAAPAFloatingBanner />
+      <TaapeFloatingBanner />
       
       <MobileBottomNav />
       {/* Skip preloader on mobile to save bandwidth */}
