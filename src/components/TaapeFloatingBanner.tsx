@@ -6,9 +6,8 @@ import { useTranslation } from "react-i18next";
 import { useRTL } from "@/hooks/useRTL";
 import { useLocalizedPath } from "@/hooks/useLocalizedPath";
 import taapeImage from "@/assets/taape-2026-thailand.jpg";
+import { useTaapeActive } from "@/hooks/useTaapeActive";
 
-// Hide after October 31, 2026 (end of show)
-const EXPIRY = new Date("2026-10-31T23:59:59+07:00").getTime();
 const DISMISS_KEY = "taape-2026-banner-dismissed";
 
 export const TaapeFloatingBanner = () => {
@@ -16,13 +15,14 @@ export const TaapeFloatingBanner = () => {
   const { isRTL } = useRTL();
   const { localizedPath } = useLocalizedPath();
   const [visible, setVisible] = useState(false);
+  const active = useTaapeActive();
 
   useEffect(() => {
-    if (Date.now() > EXPIRY) return;
+    if (!active) return;
     if (typeof window !== "undefined" && sessionStorage.getItem(DISMISS_KEY)) return;
     const timer = setTimeout(() => setVisible(true), 1500);
     return () => clearTimeout(timer);
-  }, []);
+  }, [active]);
 
   const handleClose = (e: React.MouseEvent) => {
     e.preventDefault();
@@ -31,7 +31,7 @@ export const TaapeFloatingBanner = () => {
     setVisible(false);
   };
 
-  if (Date.now() > EXPIRY) return null;
+  if (!active) return null;
 
   const sideClass = isRTL ? "right-4 sm:right-6" : "left-4 sm:left-6";
 

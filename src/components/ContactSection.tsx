@@ -1,4 +1,6 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
+import { useLocation } from "react-router-dom";
+import { useTaapeActive } from "@/hooks/useTaapeActive";
 import { useTranslation } from "react-i18next";
 import { motion } from "framer-motion";
 import { Send, Phone, Mail, MapPin, Clock, MessageCircle, AlertTriangle } from "lucide-react";
@@ -66,21 +68,33 @@ export const ContactSection = () => {
   
   // Honeypot field - bots will fill this, humans won't see it
   const [honeypot, setHoneypot] = useState("");
+  const { search } = useLocation();
+  const taapeActive = useTaapeActive();
+  const expoPrefill = useRef("");
 
   // Prefill inquiry form when arriving from an expo banner (e.g. /contact?expo=taape)
   useEffect(() => {
-    const expo = new URLSearchParams(window.location.search).get("expo");
-    if (expo === "taape") {
+    const expo = new URLSearchParams(search).get("expo");
+    if (expo === "taape" && taapeActive) {
+      const message = t(
+        "contact.expoTaapePrefill",
+        "I'd like to book a meeting with NinescapeLand at TAAPE 2026 (IMPACT Bangkok, Oct 29–31, Booth H33).",
+      );
+      const previousPrefill = expoPrefill.current;
+      expoPrefill.current = message;
       setFormData((prev) => ({
         ...prev,
-        projectType: "other",
-        message: t(
-          "contact.expoTaapePrefill",
-          "I'd like to book a meeting with NinescapeLand at TAAPE 2026 (IMPACT Bangkok, Oct 29–31, Booth H33).",
-        ),
+        projectType: prev.projectType || "other",
+        message: !prev.message || prev.message === previousPrefill ? message : prev.message,
       }));
+    } else if (expoPrefill.current) {
+      const previousPrefill = expoPrefill.current;
+      expoPrefill.current = "";
+      setFormData((prev) => prev.message === previousPrefill
+        ? { ...prev, message: "", projectType: prev.projectType === "other" ? "" : prev.projectType }
+        : prev);
     }
-  }, [t]);
+  }, [t, search, taapeActive]);
   
   // Rate limiting: max 3 submissions per minute, 5 minute cooldown
   const rateLimit = useRateLimit({

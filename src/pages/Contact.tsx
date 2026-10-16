@@ -11,10 +11,16 @@ import { SEOHead } from "@/components/SEOHead";
 import { BreadcrumbSchema, LocalBusinessSchema, ContactPageSchema, OrganizationSchema } from "@/components/StructuredData";
 import { useLocalizedPath } from "@/hooks/useLocalizedPath";
 import { LazySection } from "@/components/LazySection";
+import { useLocation } from "react-router-dom";
+import { useTaapeActive } from "@/hooks/useTaapeActive";
+import taapeImage from "@/assets/taape-2026-thailand.jpg";
 
 const Contact = () => {
   const { t } = useTranslation();
   const { localizedPath } = useLocalizedPath();
+  const { search } = useLocation();
+  const taapeActive = useTaapeActive();
+  const showTaape = taapeActive && new URLSearchParams(search).get("expo") === "taape";
 
   const breadcrumbItems = [
     { name: t("nav.home", "Home"), url: "https://indoorplaygroundsolution.com" },
@@ -39,7 +45,8 @@ const Contact = () => {
           titleKey="pages.contact.title"
           titleHighlightKey="pages.contact.titleHighlight"
           descriptionKey="pages.contact.description"
-          imageConfigKey="hero.contact"
+          imageConfigKey={showTaape ? undefined : "hero.contact"}
+          backgroundImage={showTaape ? taapeImage : undefined}
           breadcrumbs={heroBreadcrumbs}
         />
         <ContactMascotBanner />
