@@ -46,7 +46,7 @@ export const TaapeFloatingBanner = () => {
           className={`fixed ${sideClass} bottom-20 md:bottom-6 z-50 max-w-[280px] sm:max-w-[320px]`}
         >
           <Link
-            to={localizedPath("/contact?expo=taape")}
+            to={localizedPath("/taape-2026-bangkok")}
             className="block group relative overflow-hidden rounded-2xl shadow-glow bg-gradient-to-br from-fuchsia-500 via-pink-500 to-cyan-500 text-white p-4 pr-10 hover:scale-[1.02] transition-transform"
             aria-label={t("taape.bannerAria", { defaultValue: "Visit us at TAAPE 2026 Thailand - Booth H33" })}
           >

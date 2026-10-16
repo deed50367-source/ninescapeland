@@ -60,6 +60,7 @@ const CORE_ROUTES = [
   "/themed-indoor-playground-design",
   "/sensory-inclusive-play-equipment",
   "/iaapa-asia-2026-hong-kong",
+  "/taape-2026-bangkok",
   "/indoor-playground-roi-analysis-uk",
   "/indoor-playground-roi-canada",
   "/indoor-pe-equipment-for-schools",
