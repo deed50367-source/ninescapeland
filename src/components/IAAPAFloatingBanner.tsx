@@ -5,6 +5,7 @@ import { X, Calendar, MapPin } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { useRTL } from "@/hooks/useRTL";
 import { useLocalizedPath } from "@/hooks/useLocalizedPath";
+import iaapaImage from "@/assets/iaapa-asia-2026-invitation-landscape.jpg";
 
 // Hide after June 13, 2026 (end of show)
 const EXPIRY = new Date("2026-06-13T23:59:59+08:00").getTime();
@@ -49,6 +50,15 @@ export const IAAPAFloatingBanner = () => {
             className="block group relative overflow-hidden rounded-2xl shadow-glow bg-gradient-to-br from-orange-500 via-orange-600 to-red-600 text-white p-4 pr-10 hover:scale-[1.02] transition-transform"
             aria-label={t("iaapa.bannerAria", { defaultValue: "Visit us at IAAPA Asia 2026 - Booth 2328" })}
           >
+            <img
+              src={iaapaImage}
+              alt="IAAPA Asia 2026 Hong Kong"
+              width={1920}
+              height={1080}
+              loading="lazy"
+              decoding="async"
+              className="w-full h-16 sm:h-20 object-cover rounded-xl mb-3"
+            />
             <button
               onClick={handleClose}
               className="absolute top-2 right-2 w-6 h-6 rounded-full bg-black/20 hover:bg-black/40 flex items-center justify-center transition-colors"
