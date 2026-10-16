@@ -174,6 +174,11 @@ export const ContactSection = () => {
 
       if (error) throw error;
 
+      // 23seogeo AI 可见性转化
+      if (typeof window !== "undefined" && typeof (window as any).geoAI === "function") {
+        (window as any).geoAI("event", "lead_form");
+      }
+
       toast({
         title: t("contact.toast.successTitle"),
         description: t("contact.toast.successDescription"),
