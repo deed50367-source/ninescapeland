@@ -170,6 +170,12 @@ export const useWhatsAppTracking = () => {
     source: WhatsAppClickSource,
     options?: TrackingOptions
   ) => {
+    // 23seogeo AI 可见性转化：点击 WhatsApp
+    try {
+      if (typeof window !== "undefined" && typeof (window as any).geoAI === "function") {
+        (window as any).geoAI("event", "whatsapp_click");
+      }
+    } catch { /* no-op */ }
     try {
       // Get session ID from localStorage if exists
       const sessionId = localStorage.getItem("chat_session_id") || null;
