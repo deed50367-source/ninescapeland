@@ -39,6 +39,7 @@ export const Footer = () => {
     { label: t("footer.links.projects"), href: localizedPath("/projects") },
     { label: t("footer.links.investmentOpportunity", "Investment & ROI Hub"), href: localizedPath("/investment-opportunity") },
     { label: t("footer.links.iaapaAsia2026", "IAAPA Asia 2026 · Hong Kong"), href: localizedPath("/iaapa-asia-2026-hong-kong") },
+    { label: t("footer.links.taape2026", "TAAPE 2026 · Bangkok"), href: localizedPath("/taape-2026-bangkok") },
     { label: t("footer.links.contact"), href: localizedPath("/contact") },
   ];
 
