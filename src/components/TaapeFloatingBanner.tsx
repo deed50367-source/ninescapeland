@@ -5,6 +5,7 @@ import { X, Calendar, MapPin } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { useRTL } from "@/hooks/useRTL";
 import { useLocalizedPath } from "@/hooks/useLocalizedPath";
+import taapeImage from "@/assets/taape-2026-thailand.jpg";
 
 // Hide after October 31, 2026 (end of show)
 const EXPIRY = new Date("2026-10-31T23:59:59+07:00").getTime();
@@ -45,10 +46,19 @@ export const TaapeFloatingBanner = () => {
           className={`fixed ${sideClass} bottom-20 md:bottom-6 z-50 max-w-[280px] sm:max-w-[320px]`}
         >
           <Link
-            to={localizedPath("/contact")}
+            to={localizedPath("/contact?expo=taape")}
             className="block group relative overflow-hidden rounded-2xl shadow-glow bg-gradient-to-br from-fuchsia-500 via-pink-500 to-cyan-500 text-white p-4 pr-10 hover:scale-[1.02] transition-transform"
             aria-label={t("taape.bannerAria", { defaultValue: "Visit us at TAAPE 2026 Thailand - Booth H33" })}
           >
+            <img
+              src={taapeImage}
+              alt="TAAPE 2026 Thailand"
+              width={1920}
+              height={1080}
+              loading="lazy"
+              decoding="async"
+              className="w-full h-16 sm:h-20 object-cover rounded-xl mb-3"
+            />
             <button
               onClick={handleClose}
               className="absolute top-2 right-2 w-6 h-6 rounded-full bg-black/20 hover:bg-black/40 flex items-center justify-center transition-colors"
