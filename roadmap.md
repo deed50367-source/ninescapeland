@@ -1,8 +1,9 @@
 # Roadmap
 
-- [ ] October 22 blogs: prepare five uploaded articles, remove unverified claims, add site cover/inline images and aggregation matrix links
-- [ ] Translate and save all five articles in six languages; verify public articles and authenticated blog management
-- [ ] Add reverse aggregation links and register all 30 blog routes in sitemap/prerender
+- [x] October 22 blogs: prepare five uploaded articles, remove unverified claims, add site cover/inline images and aggregation matrix links
+- [x] Translate and save all five articles in six languages; verify 30 public pages and all five six-language sets in authenticated blog management
+- [x] Add reverse aggregation links and register all 30 blog routes in sitemap/prerender
+- [ ] Publish October 22 blog matrix links and sitemap/prerender registration; blog records are already published
 
 - [x] Save five uploaded October 15 English blog drafts with site cover images and two inline gallery images each; remove unsupported case-study, pricing and safety claims
 - [x] Complete 25 translations through configured SiliconFlow DeepSeek; all 30 six-language records published, with site cover and inline images

@@ -303,6 +303,7 @@ export const weeklyAggregationPagesB9: Record<string, StableSolutionPageProps> =
       cluster.grossMotor,
       cluster.curriculum,
       cluster.homeschoolGym,
+      { label: "Sensory room equipment: commercial buyer guide", href: "/blog/sensory-room-equipment" },
       { label: "Designing sensory play areas", href: "/designing-sensory-play-areas-for-education" },
       { label: "Inclusive special education equipment", href: "/inclusive-indoor-play-equipment-special-education" },
       { label: "Sensory inclusive play", href: "/sensory-inclusive-play-equipment" },
