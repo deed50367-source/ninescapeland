@@ -137,6 +137,7 @@ export const weeklyAggregationPagesB12: Record<string, StableSolutionPageProps> 
     related: [
       cluster.coordination,
       cluster.materials,
+      { label: "Social skills activities for kids: supervised games", href: "/blog/social-skills-activities-for-kids" },
       { label: "Custom soft play for schools", href: "/custom-soft-play-equipment-manufacturer-for-schools" },
       { label: "After-school program play equipment", href: "/after-school-program-indoor-play-equipment" },
       { label: "Inclusive equipment for special education", href: "/inclusive-indoor-play-equipment-special-education" },
@@ -220,6 +221,8 @@ export const weeklyAggregationPagesB12: Record<string, StableSolutionPageProps> 
     related: [
       cluster.cooperative,
       cluster.budget,
+      { label: "Sensory room equipment: commercial buyer guide", href: "/blog/sensory-room-equipment" },
+      { label: "Social skills activities for kids", href: "/blog/social-skills-activities-for-kids" },
       { label: "Gross motor equipment for preschoolers", href: "/gross-motor-play-equipment-for-preschoolers" },
       { label: "Kids ninja warrior course", href: "/ninja-warrior-course-for-kids-indoor-playground" },
       { label: "Kinesthetic learning equipment", href: "/kinesthetic-learning-equipment-benefits" },
@@ -302,6 +305,8 @@ export const weeklyAggregationPagesB12: Record<string, StableSolutionPageProps> 
     related: [
       cluster.materials,
       cluster.coordination,
+      { label: "Indoor play area: commercial planning guide", href: "/blog/indoor-play-area" },
+      { label: "Indoor playground ideas: choosing a concept", href: "/blog/indoor-playground-ideas" },
       { label: "Start a playground business in 2026", href: "/how-to-start-an-indoor-playground-business-2026" },
       { label: "Indoor playground business plan", href: "/indoor-playground-business-plan" },
       { label: "Safe equipment for small spaces", href: "/safe-indoor-playground-equipment-for-small-spaces" },
@@ -386,6 +391,7 @@ export const weeklyAggregationPagesB12: Record<string, StableSolutionPageProps> 
     related: [
       cluster.budget,
       cluster.indonesia,
+      { label: "Commercial soft play equipment: buying guide", href: "/blog/soft-play-equipment" },
       { label: "Manufacturer certification checklist", href: "/custom-playground-manufacturer-certification-checklist" },
       { label: "Soft play cost breakdown", href: "/soft-play-equipment-supplier-cost-breakdown" },
       { label: "Equipment for sale: new vs used", href: "/commercial-indoor-playground-equipment-for-sale" },
@@ -469,6 +475,9 @@ export const weeklyAggregationPagesB12: Record<string, StableSolutionPageProps> 
     related: [
       cluster.materials,
       cluster.cooperative,
+      { label: "Indoor play area: commercial planning guide", href: "/blog/indoor-play-area" },
+      { label: "Commercial soft play equipment: buying guide", href: "/blog/soft-play-equipment" },
+      { label: "Indoor playground ideas for commercial venues", href: "/blog/indoor-playground-ideas" },
       { label: "Soft play mall solutions", href: "/soft-play-equipment-shopping-mall-solutions" },
       { label: "Factory-direct pricing", href: "/indoor-playground-equipment-factory-direct-price" },
       { label: "Turnkey installation services", href: "/turnkey-indoor-playground-installation-services" },
