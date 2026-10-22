@@ -132,6 +132,8 @@ export const weeklyAggregationPagesB9: Record<string, StableSolutionPageProps> =
       { title: "Paediatric therapy clinics", desc: "Use the same modular pieces for both group play and targeted movement sessions." },
     ],
     related: [
+      { label: "Cooperative play equipment for schools", href: "/cooperative-play-equipment-for-schools" },
+      { label: "How indoor playgrounds improve coordination", href: "/how-indoor-playgrounds-improve-child-coordination" },
       cluster.homeschoolGym,
       cluster.sensorySystem,
       cluster.curriculum,
