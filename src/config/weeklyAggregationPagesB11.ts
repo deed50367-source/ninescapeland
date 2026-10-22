@@ -131,6 +131,11 @@ export const weeklyAggregationPagesB11: Record<string, StableSolutionPageProps> 
       { title: "Landlords and malls", desc: "Understand what a play café tenant needs from the unit." },
     ],
     related: [
+      { label: "Indoor playground equipment Indonesia", href: "/indoor-playground-equipment-indonesia" },
+      { label: "How indoor playgrounds improve coordination", href: "/how-indoor-playgrounds-improve-child-coordination" },
+      { label: "Small indoor playground on a budget", href: "/small-indoor-playground-business-on-a-budget" },
+      { label: "Soft play foam & material specs", href: "/soft-play-foam-and-material-specifications" },
+      { label: "Small indoor playground on a budget", href: "/small-indoor-playground-business-on-a-budget" },
       cluster.restaurant,
       cluster.toddler,
       cluster.franchise,

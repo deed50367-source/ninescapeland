@@ -89,6 +89,11 @@ export const Header = () => {
     { label: "Equipment for Sale: New vs Used", href: localizedPath("/commercial-indoor-playground-equipment-for-sale") },
     { label: "Franchise vs Independent", href: localizedPath("/indoor-playground-franchise-vs-independent") },
     { label: "Toddler Soft Play Zone Design", href: localizedPath("/toddler-soft-play-area-design") },
+    { label: "Cooperative Play for Schools", href: localizedPath("/cooperative-play-equipment-for-schools") },
+    { label: "Child Coordination Skills Map", href: localizedPath("/how-indoor-playgrounds-improve-child-coordination") },
+    { label: "Small Playground on a Budget", href: localizedPath("/small-indoor-playground-business-on-a-budget") },
+    { label: "Soft Play Material Specs", href: localizedPath("/soft-play-foam-and-material-specifications") },
+    { label: "Indoor Playground Indonesia", href: localizedPath("/indoor-playground-equipment-indonesia") },
     { label: t("activePlayRunning.breadcrumb", "Active Play for Running"), href: localizedPath("/best-indoorplaygroundsolution-active-play-for-running-facilities") },
     { label: t("officeWellness.breadcrumb", "Office Wellness"), href: localizedPath("/indoorplaygroundsolution-office-wellness-solutions") },
   ];

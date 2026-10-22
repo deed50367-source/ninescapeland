@@ -14,6 +14,9 @@
 - [x] Batch 10 (2026-10-08): 5 aggregation pages built and registered
 - [ ] Publish Batch 10
 
+- [x] Batch 12 (2026-10-22): 5 aggregation pages built, registered and linked
+- [ ] Publish Batch 12
+
 - [x] Navigation: clear multi-column desktop menu, sliding highlight and single-open mobile groups
 - [x] Verify navigation links, viewport bounds, keyboard controls and reduced motion
 - [x] Apply approved Modern Enterprise Manufacturer direction to shared theme, heroes, blog, product and admin surfaces

@@ -60,6 +60,11 @@ import RestaurantIndoorPlaygroundLayoutDesign from "./pages/RestaurantIndoorPlay
 import CommercialIndoorPlaygroundEquipmentForSale from "./pages/CommercialIndoorPlaygroundEquipmentForSale";
 import IndoorPlaygroundFranchiseVsIndependent from "./pages/IndoorPlaygroundFranchiseVsIndependent";
 import ToddlerSoftPlayAreaDesign from "./pages/ToddlerSoftPlayAreaDesign";
+import CooperativePlayEquipmentForSchools from "./pages/CooperativePlayEquipmentForSchools";
+import HowIndoorPlaygroundsImproveChildCoordination from "./pages/HowIndoorPlaygroundsImproveChildCoordination";
+import SmallIndoorPlaygroundBusinessOnABudget from "./pages/SmallIndoorPlaygroundBusinessOnABudget";
+import SoftPlayFoamAndMaterialSpecifications from "./pages/SoftPlayFoamAndMaterialSpecifications";
+import IndoorPlaygroundEquipmentIndonesia from "./pages/IndoorPlaygroundEquipmentIndonesia";
 import HowToStartAnIndoorPlaygroundBusiness2026 from "./pages/HowToStartAnIndoorPlaygroundBusiness2026";
 import HomeschoolGymIndoorPlayFacility from "./pages/HomeschoolGymIndoorPlayFacility";
 import SensoryPlaygroundEquipmentBySensorySystem from "./pages/SensoryPlaygroundEquipmentBySensorySystem";
@@ -233,6 +238,11 @@ const pageRoutes = (
     <Route path="commercial-indoor-playground-equipment-for-sale" element={<CommercialIndoorPlaygroundEquipmentForSale />} />
     <Route path="indoor-playground-franchise-vs-independent" element={<IndoorPlaygroundFranchiseVsIndependent />} />
     <Route path="toddler-soft-play-area-design" element={<ToddlerSoftPlayAreaDesign />} />
+    <Route path="cooperative-play-equipment-for-schools" element={<CooperativePlayEquipmentForSchools />} />
+    <Route path="how-indoor-playgrounds-improve-child-coordination" element={<HowIndoorPlaygroundsImproveChildCoordination />} />
+    <Route path="small-indoor-playground-business-on-a-budget" element={<SmallIndoorPlaygroundBusinessOnABudget />} />
+    <Route path="soft-play-foam-and-material-specifications" element={<SoftPlayFoamAndMaterialSpecifications />} />
+    <Route path="indoor-playground-equipment-indonesia" element={<IndoorPlaygroundEquipmentIndonesia />} />
     <Route path="how-to-start-an-indoor-playground-business-2026" element={<HowToStartAnIndoorPlaygroundBusiness2026 />} />
     <Route path="homeschool-gym-indoor-play-facility" element={<HomeschoolGymIndoorPlayFacility />} />
     <Route path="sensory-playground-equipment-by-sensory-system" element={<SensoryPlaygroundEquipmentBySensorySystem />} />
