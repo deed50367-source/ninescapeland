@@ -155,6 +155,8 @@ export const LiveChat = () => {
           
           // Only add if it's a staff reply (to avoid duplicates)
           if (newMsg.is_staff_reply) {
+            // 人工客服一旦介入，AI 停止自动回复
+            setIsHumanMode(true);
             const staffMessage: Message = {
               id: newMsg.id,
               role: 'assistant',
@@ -187,7 +189,8 @@ export const LiveChat = () => {
   useEffect(() => {
     if (isOpen && messages.length === 0) {
       const businessHours = isBusinessHours();
-      setIsHumanMode(businessHours);
+      // 始终先由 AI 接待，人工客服回复后再切换为人工模式
+      setIsHumanMode(false);
       setHasNewMessage(false);
       
       // Save session metadata when chat opens
@@ -200,7 +203,7 @@ export const LiveChat = () => {
           ? t('liveChat.welcomeHuman', 'Hello! Welcome to NinescapeLand. Our customer service team is online. How can we help you today?')
           : t('liveChat.welcomeAI', 'Hello! Welcome to NinescapeLand. I\'m your AI assistant. Our team is currently offline, but I\'m here to help you 24/7. How can I assist you?'),
         timestamp: new Date(),
-        isAI: !businessHours
+        isAI: true
       };
       
       setMessages([welcomeMessage]);
@@ -247,6 +250,7 @@ export const LiveChat = () => {
           body: { 
             messages: conversationHistory,
             language: i18n.language,
+            business_hours: isBusinessHours(),
             session_id: sessionId.current
           }
         });

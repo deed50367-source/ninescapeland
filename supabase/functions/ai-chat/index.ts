@@ -19,7 +19,7 @@ serve(async (req) => {
   }
 
   try {
-    const { messages, language = 'en', session_id } = await req.json();
+    const { messages, language = 'en', session_id, business_hours = false } = await req.json();
 
     // Session validation - require valid session_id to prevent abuse
     if (!session_id || typeof session_id !== 'string' || session_id.length < 10) {
@@ -99,7 +99,7 @@ Business Hours: Monday-Friday 9:00-18:00 (Beijing Time, UTC+8)
 [IMPORTANT LEAD GENERATION STRATEGY]:
 Your core mission is to naturally guide visitors to leave their contact information during friendly conversations. Follow these strategies:
 
-1. **Proactively collect information**: After answering 2-3 questions, naturally ask about their project:
+1. **Proactively collect information**: Only after answering 2 questions (follow the CONVERSATION STAGE instruction), naturally ask about their project:
    - "To give you more accurate advice, could you tell me the approximate size of your project?"
    - "Which city/country is your project planned for?"
    
@@ -174,7 +174,7 @@ Business Hours: Monday-Friday 9:00-18:00 (Beijing Time, UTC+8)
 [IMPORTANT LEAD GENERATION STRATEGY]:
 Your core mission is to naturally guide visitors to leave their contact information during friendly conversations. Follow these strategies:
 
-1. **Proactively collect information**: After answering 2-3 questions, naturally ask about their project:
+1. **Proactively collect information**: Only after answering 2 questions (follow the CONVERSATION STAGE instruction), naturally ask about their project:
    - "To give you more accurate advice, could you tell me the approximate size of your project?"
    - "Which city/country is your project planned for?"
 
@@ -204,6 +204,15 @@ Your core mission is to naturally guide visitors to leave their contact informat
 
 Please answer customer questions in a friendly and professional manner while skillfully guiding them to provide contact information. Don't be too pushy—provide value while naturally collecting information.`;
 
+    // 分阶段引导：前两轮专心回答，第三轮起引导留资并告知人工客服介入
+    const userTurns = Array.isArray(messages) ? messages.filter((m: { role?: string }) => m?.role === 'user').length : 0;
+    const handoff = business_hours
+      ? 'A human sales consultant is online now and can join this chat shortly.'
+      : 'Our sales consultants are offline now (Mon-Fri 9:00-18:00 Beijing Time) and will follow up by WhatsApp or email.';
+    const stageInstruction = userTurns <= 2
+      ? `[CONVERSATION STAGE: turn ${userTurns} of the discovery phase] Focus ONLY on answering the visitor's question helpfully and concisely. Do NOT ask for name, email, phone or WhatsApp yet. You may end with one light question about their project type (indoor playground, trampoline park, soft play, ninja course).`
+      : `[CONVERSATION STAGE: turn ${userTurns}, lead capture phase] First answer the question briefly. Then naturally invite the visitor to leave WhatsApp or email (plus country and approximate area) so we can send a free 3D design / quotation. Also tell them: "${handoff}" If they have already provided contact details, thank them, confirm a consultant will follow up, and do not ask again. Never be pushy; ask at most once per reply.`;
+
     const response = await fetch(aiProvider.url, {
       method: 'POST',
       headers: {
@@ -214,6 +223,7 @@ Please answer customer questions in a friendly and professional manner while ski
         model: aiProvider.model,
         messages: [
           { role: 'system', content: systemPrompt },
+          { role: 'system', content: stageInstruction },
           ...messages
         ],
         max_tokens: 1000,
