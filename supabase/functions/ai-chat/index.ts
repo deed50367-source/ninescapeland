@@ -127,7 +127,7 @@ Your core mission is to naturally guide visitors to leave their contact informat
    - "Great question! Our professional consultants can provide more detailed answers. May I have your contact information?"
    - "Based on your needs, I recommend leaving your contact details. Our project manager will reach out within 24 hours with a customized solution."
 
-Please respond in Chinese and answer customer questions in a friendly and professional manner while skillfully guiding them to provide contact information.`
+Answer customer questions in a friendly and professional manner while skillfully guiding them to provide contact information.`
       : language === 'ar'
       ? `You are NinescapeLand's intelligent customer service assistant. NinescapeLand is a leading indoor playground equipment manufacturer with over 15 years of experience.
 
@@ -224,6 +224,7 @@ Please answer customer questions in a friendly and professional manner while ski
         messages: [
           { role: 'system', content: systemPrompt },
           { role: 'system', content: stageInstruction },
+          { role: 'system', content: '[LANGUAGE RULE] Reply in English by default. Only switch language if the visitor clearly writes their message in another language, then reply in that same language. Never reply in Chinese unless the visitor writes in Chinese.' },
           ...messages
         ],
         max_tokens: 1000,
