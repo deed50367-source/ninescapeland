@@ -226,7 +226,7 @@ const AdminCustomerServiceTab = () => {
       setSessions(Array.from(sessionMap.values()));
     } catch (error) {
       console.error('Error fetching sessions:', error);
-      toast.error('Failed to load chat sessions');
+      toast.error('加载客服会话失败');
     } finally {
       setIsLoading(false);
     }
@@ -418,7 +418,7 @@ const AdminCustomerServiceTab = () => {
       }
     } catch (error) {
       console.error('Error fetching messages:', error);
-      toast.error('Failed to load messages');
+      toast.error('加载聊天消息失败');
     }
   }, [sessionStatuses, isAdmin]);
 
