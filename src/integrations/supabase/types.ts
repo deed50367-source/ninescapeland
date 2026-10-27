@@ -839,6 +839,7 @@ export type Database = {
       }
     }
     Functions: {
+      chat_session_exists: { Args: { _session_id: string }; Returns: boolean }
       get_recent_inquiry_countries: {
         Args: never
         Returns: {
