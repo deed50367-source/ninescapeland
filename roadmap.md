@@ -1,5 +1,9 @@
 # Roadmap
 
+- [x] Enforce third-party-only customer-service AI; three routing tests pass and actual chat returned an English SiliconFlow DeepSeek reply
+- [x] Repair missing chat session creation and RLS-dependent message existence check without granting public session reads; browser confirmed session/message inserts and AI response
+- [ ] Publish the chat widget's insert-only session creation and awaited send flow; server-side third-party restriction and message-policy repair are already active
+
 - [x] October 22 blogs: prepare five uploaded articles, remove unverified claims, add site cover/inline images and aggregation matrix links
 - [x] Translate and save all five articles in six languages; verify 30 public pages and all five six-language sets in authenticated blog management
 - [x] Add reverse aggregation links and register all 30 blog routes in sitemap/prerender

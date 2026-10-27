@@ -71,6 +71,12 @@ export function resolveAiProvider(task: AiTask): AiProvider {
           ? "deepseek"
           : "lovable");
 
+  // Customer service must never spend managed AI credits, even when an own
+  // provider is temporarily missing or misconfigured.
+  if (task === "chat" && !["siliconflow", "openai", "deepseek"].includes(name)) {
+    throw new Error("Customer-service AI requires a configured third-party provider.");
+  }
+
   const apiKey = env(KEY_ENV[name] ?? "LOVABLE_API_KEY");
 
   if (!apiKey) {
@@ -81,6 +87,10 @@ export function resolveAiProvider(task: AiTask): AiProvider {
   }
 
   const base = env("AI_BASE_URL") ?? BASES[name] ?? LOVABLE_BASE;
+
+  if (task === "chat" && new URL(base).hostname === "ai.gateway.lovable.dev") {
+    throw new Error("Customer-service AI cannot use the Lovable AI endpoint.");
+  }
 
   const overrideModel = task === "chat" ? env("AI_CHAT_MODEL") : env("AI_TRANSLATE_MODEL");
   const model = overrideModel ?? (DEFAULT_MODELS[name] ?? DEFAULT_MODELS.lovable)[task];
