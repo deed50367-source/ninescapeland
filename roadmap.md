@@ -1,5 +1,8 @@
 # Roadmap
 
+- [x] Add new-inquiry, saved chat contact and human-request/staff takeover PushPlus events; browser inquiry returned 201 and success confirmation, and new inquiry/contact/human-request notifications all have submitted provider references
+- [ ] Confirm test notification receipt on the user's actual WeChat device; PushPlus submission verified, device receipt requires user confirmation
+
 - [x] Connect PushPlus private group notification on every saved visitor message; actual browser chat triggered a submitted notification with provider reference, and visitor-only tests passed
 
 - [x] Enforce third-party-only customer-service AI; three routing tests pass and actual chat returned an English SiliconFlow DeepSeek reply
