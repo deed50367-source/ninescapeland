@@ -1,6 +1,6 @@
 # Roadmap
 
-- [ ] Connect PushPlus private group notification for every saved visitor message and verify real notification submission
+- [x] Connect PushPlus private group notification on every saved visitor message; actual browser chat triggered a submitted notification with provider reference, and visitor-only tests passed
 
 - [x] Enforce third-party-only customer-service AI; three routing tests pass and actual chat returned an English SiliconFlow DeepSeek reply
 - [x] Repair missing chat session creation and RLS-dependent message existence check without granting public session reads; browser confirmed session/message inserts and AI response
