@@ -1,5 +1,8 @@
 # Roadmap
 
+- [ ] Enforce third-party-only customer-service AI and verify an actual chat reply
+- [ ] Repair missing chat session creation without weakening access policies
+
 - [x] October 22 blogs: prepare five uploaded articles, remove unverified claims, add site cover/inline images and aggregation matrix links
 - [x] Translate and save all five articles in six languages; verify 30 public pages and all five six-language sets in authenticated blog management
 - [x] Add reverse aggregation links and register all 30 blog routes in sitemap/prerender
