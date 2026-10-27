@@ -1,5 +1,6 @@
 # Architecture rules
 - Visitor message inserts enqueue a database webhook to PushPlus independently of AI replies and human mode; a service-only message claim prevents duplicate sends, and only a generic summary leaves the app.
+- Inquiry creation, saved chat contact patterns, explicit human requests, and staff reply/assignment transitions enqueue deduplicated service-only PushPlus events; opaque event references are consumed atomically without forwarding personal details.
 - Customer-service chat rejects managed AI fallback and gateway URL overrides; other AI tasks retain their configured routing to isolate customer-service policy.
 - Public chat creates sessions with insert-only writes and awaits creation before sending messages; duplicate IDs preserve existing sessions without requiring public read/update access.
 - Chat message insert policies check session existence through a narrowly scoped security-definer boolean helper so anonymous session read restrictions do not reject valid messages.
