@@ -1,5 +1,7 @@
 # Roadmap
 
+- [ ] Add new-inquiry, chat lead-capture and human-handoff PushPlus notifications; verify a real test inquiry submission
+
 - [x] Connect PushPlus private group notification on every saved visitor message; actual browser chat triggered a submitted notification with provider reference, and visitor-only tests passed
 
 - [x] Enforce third-party-only customer-service AI; three routing tests pass and actual chat returned an English SiliconFlow DeepSeek reply
