@@ -609,6 +609,33 @@ export type Database = {
           },
         ]
       }
+      pushplus_events: {
+        Row: {
+          created_at: string
+          dedupe_key: string
+          event_type: string
+          id: string
+          provider_reference: string | null
+          status: string
+        }
+        Insert: {
+          created_at?: string
+          dedupe_key: string
+          event_type: string
+          id?: string
+          provider_reference?: string | null
+          status?: string
+        }
+        Update: {
+          created_at?: string
+          dedupe_key?: string
+          event_type?: string
+          id?: string
+          provider_reference?: string | null
+          status?: string
+        }
+        Relationships: []
+      }
       quick_reply_templates: {
         Row: {
           category: string | null
