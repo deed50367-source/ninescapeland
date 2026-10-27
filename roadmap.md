@@ -1,5 +1,7 @@
 # Roadmap
 
+- [x] Connect PushPlus private group notification on every saved visitor message; actual browser chat triggered a submitted notification with provider reference, and visitor-only tests passed
+
 - [x] Enforce third-party-only customer-service AI; three routing tests pass and actual chat returned an English SiliconFlow DeepSeek reply
 - [x] Repair missing chat session creation and RLS-dependent message existence check without granting public session reads; browser confirmed session/message inserts and AI response
 - [ ] Publish the chat widget's insert-only session creation and awaited send flow; server-side third-party restriction and message-policy repair are already active
