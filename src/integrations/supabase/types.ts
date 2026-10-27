@@ -246,6 +246,35 @@ export type Database = {
         }
         Relationships: []
       }
+      chat_push_notifications: {
+        Row: {
+          created_at: string
+          message_id: string
+          provider_reference: string | null
+          status: string
+        }
+        Insert: {
+          created_at?: string
+          message_id: string
+          provider_reference?: string | null
+          status?: string
+        }
+        Update: {
+          created_at?: string
+          message_id?: string
+          provider_reference?: string | null
+          status?: string
+        }
+        Relationships: [
+          {
+            foreignKeyName: "chat_push_notifications_message_id_fkey"
+            columns: ["message_id"]
+            isOneToOne: true
+            referencedRelation: "chat_messages"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
       chat_sessions: {
         Row: {
           assigned_to: string | null
