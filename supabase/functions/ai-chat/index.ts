@@ -234,7 +234,7 @@ Please answer customer questions in a friendly and professional manner while ski
 
     if (!response.ok) {
       const errorText = await response.text();
-      console.error('Lovable AI API error:', errorText);
+      console.error('Third-party AI API error:', response.status);
       
       // Handle specific error codes
       if (response.status === 429) {

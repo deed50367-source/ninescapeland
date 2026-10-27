@@ -94,16 +94,16 @@ const saveSessionMetadata = async (sessionId: string, language: string) => {
       status: 'new'
     };
     
-    // Try to upsert the session data
+    // Public visitors may INSERT, but cannot SELECT/UPDATE existing sessions.
+    // A duplicate means this tab already has a session; never reset its status.
     const { error } = await supabase
       .from('chat_sessions')
-      .upsert(metadata, { onConflict: 'session_id' });
+      .insert(metadata);
     
-    if (error) {
-      console.error('Error saving session metadata:', error);
-    }
+    if (error && error.code !== '23505') throw error;
   } catch (err) {
     console.error('Error saving session metadata:', err);
+    throw err;
   }
 };
 
@@ -118,6 +118,7 @@ export const LiveChat = () => {
   const [hasNewMessage, setHasNewMessage] = useState(false);
   const messagesEndRef = useRef<HTMLDivElement>(null);
   const sessionId = useRef(getSessionId());
+  const sessionReady = useRef<Promise<void> | null>(null);
   const { openWhatsApp: openWhatsAppTracking } = useWhatsAppTracking();
 
   // Hide on admin pages
@@ -194,7 +195,9 @@ export const LiveChat = () => {
       setHasNewMessage(false);
       
       // Save session metadata when chat opens
-      saveSessionMetadata(sessionId.current, i18n.language);
+      sessionReady.current = saveSessionMetadata(sessionId.current, i18n.language);
+      // Report through sendMessage if creation fails; avoid unhandled rejection.
+      void sessionReady.current.catch(() => {});
       
       const welcomeMessage: Message = {
         id: 'welcome',
@@ -230,13 +233,19 @@ export const LiveChat = () => {
     setIsLoading(true);
 
     try {
+      // Do not call AI before its required session has actually been saved.
+      if (!sessionReady.current) {
+        sessionReady.current = saveSessionMetadata(sessionId.current, i18n.language);
+      }
+      await sessionReady.current;
       // Save user message to database
-      await supabase.from('chat_messages').insert({
+      const { error: messageError } = await supabase.from('chat_messages').insert({
         session_id: sessionId.current,
         role: 'user',
         content: userMessage.content,
         is_ai_response: false
       });
+      if (messageError) throw messageError;
 
       if (!isHumanMode) {
         // AI mode - get AI response
@@ -287,6 +296,7 @@ export const LiveChat = () => {
         setMessages(prev => [...prev, waitingMessage]);
       }
     } catch (error) {
+      sessionReady.current = null;
       console.error('Error sending message:', error);
       const errorMessage: Message = {
         id: `error_${Date.now()}`,

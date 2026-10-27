@@ -1,4 +1,6 @@
 # Architecture rules
+- Customer-service chat rejects managed AI fallback and gateway URL overrides; other AI tasks retain their configured routing to isolate customer-service policy.
+- Public chat creates sessions with insert-only writes and awaits creation before sending messages; duplicate IDs preserve existing sessions without requiring public read/update access.
 - Header owns the localized navigation inventory; desktop product columns and mobile accordion groups receive the same items so destinations remain consistent.
 - Public product navigation renders from local items and existing gallery images without waiting for database queries, keeping navigation usable during service latency.
 - Navigation-only copy is maintained in a six-language dictionary and grouped by destination; retain all existing resource links when changing layout.
