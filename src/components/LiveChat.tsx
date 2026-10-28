@@ -7,6 +7,7 @@ import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { supabase } from '@/integrations/supabase/client';
 import { useWhatsAppTracking } from '@/hooks/useWhatsAppTracking';
+import { ChatMessageContent } from '@/components/ChatMessageContent';
 
 interface Message {
   id: string;
@@ -415,7 +416,7 @@ export const LiveChat = () => {
                         : 'bg-muted text-foreground rounded-bl-md'
                     }`}
                   >
-                    <p className="text-sm whitespace-pre-wrap">{message.content}</p>
+                    <ChatMessageContent content={message.content} role={message.role} />
                     <div className={`flex items-center gap-1 mt-1 text-[10px] ${
                       message.role === 'user' 
                         ? 'text-primary-foreground/70' 

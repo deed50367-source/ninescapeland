@@ -34,6 +34,7 @@ import {
 } from "@/components/ui/popover";
 import { supabase } from '@/integrations/supabase/client';
 import { toast } from 'sonner';
+import { ChatMessageContent } from '@/components/ChatMessageContent';
 
 // Language display names for the UI
 const LANGUAGE_DISPLAY_NAMES: Record<string, string> = {
@@ -941,7 +942,7 @@ const AdminCustomerServiceTab = () => {
                             : 'bg-primary text-primary-foreground rounded-br-md'
                         }`}
                       >
-                        <p className="text-sm whitespace-pre-wrap">{message.content}</p>
+                        <ChatMessageContent content={message.content} role={message.role} />
                         <div className={`flex items-center gap-1 mt-1 text-[10px] ${
                           message.role === 'user' 
                             ? 'text-muted-foreground' 
