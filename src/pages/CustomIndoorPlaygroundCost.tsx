@@ -4,6 +4,7 @@ import { FloatingCTA } from "@/components/FloatingCTA";
 import { SEOHead } from "@/components/SEOHead";
 import { FAQSchema, BreadcrumbSchema, OrganizationSchema } from "@/components/StructuredData";
 import { ContactSection } from "@/components/ContactSection";
+import { WeeklyBlogLinks } from "@/components/WeeklyBlogLinks";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -333,6 +334,7 @@ const CustomIndoorPlaygroundCost = () => {
           </div>
         </section>
 
+        <WeeklyBlogLinks slug="custom-indoor-playground-cost-free-3d-design" />
         <ContactSection />
         <EEATSignature />
       </main>

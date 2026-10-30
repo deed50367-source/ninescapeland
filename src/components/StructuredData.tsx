@@ -178,34 +178,24 @@ export const HowToSchema = ({ name, description, steps, totalTime, image }: HowT
 export interface BlogPostingSchemaProps {
   headline: string; description?: string; image?: string; datePublished?: string;
   dateModified?: string; author?: string; url?: string; keywords?: string;
-  wordCount?: number; articleBody?: string;
+  wordCount?: number; articleBody?: string; inLanguage?: string; citation?: string[];
 }
 
 export const BlogPostingSchema = ({
   headline, description, image, datePublished, dateModified,
-  author = "NinescapeLand Team", url, keywords, wordCount, articleBody
+  author = "NinescapeLand Team", url, keywords, wordCount, articleBody, inLanguage = "en", citation
 }: BlogPostingSchemaProps) => {
   const schema: Record<string, unknown> = {
     "@context": "https://schema.org", "@type": "BlogPosting", headline,
     author: {
-      "@type": "Person",
+      "@type": "Organization",
       name: author,
-      jobTitle: "Senior Indoor Playground Design Specialist",
-      worksFor: { "@type": "Organization", name: "NinescapeLand", url: SITE_URL },
       url: `${SITE_URL}/about-us`,
-      image: `${SITE_URL}/favicon-180.png`,
-      knowsAbout: [
-        "Indoor Playground Equipment",
-        "Trampoline Park Design",
-        "Ninja Warrior Course Engineering",
-        "Soft Play Safety Standards (ASTM F1918, EN 1176)",
-        "FEC Business ROI Analysis"
-      ],
-      description: "16+ years (since 2008) designing commercial indoor playgrounds, trampoline parks and FEC equipment for 2,000+ projects across 50+ countries."
     },
     publisher: { "@type": "Organization", name: "NinescapeLand", logo: { "@type": "ImageObject", url: LOGO_URL, width: 512, height: 512 } },
-    isAccessibleForFree: true, inLanguage: "en"
+    isAccessibleForFree: true, inLanguage
   };
+  if (citation?.length) schema.citation = citation;
   if (description) schema.description = description;
   if (image) schema.image = { "@type": "ImageObject", url: image };
   if (datePublished) schema.datePublished = datePublished;

@@ -50,6 +50,11 @@ const CORE_ROUTES = [
   "/faq",
   "/blog",
   // Weekly blog originals share a slug across all six language versions.
+  "/blog/indoor-playground-ceiling-height",
+  "/blog/playground-replacement-parts",
+  "/blog/indoor-playground-cleaning",
+  "/blog/playground-inspection-checklist",
+  "/blog/indoor-playground-insurance-cost",
   "/blog/indoor-play-area",
   "/blog/soft-play-equipment",
   "/blog/sensory-room-equipment",
