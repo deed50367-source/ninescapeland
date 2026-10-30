@@ -1,0 +1,617 @@
+{
+  "private-indoor-playground-party-room-design": {
+    "slug": "private-indoor-playground-party-room-design",
+    "title": "Diseño de Sala de Fiestas para Áreas de Juego Privadas",
+    "metaTitle": "Diseño de salas de fiestas privadas",
+    "metaDescription": "Planifica salas de fiestas: acceso, alimentos, supervisión, juego compartido o exclusivo y limpieza en parques interiores.",
+    "kicker": "Fiestas Privadas · Flujo de Invitados · Reinicio de Sala",
+    "intro": "Una fiesta privada en un área de juego interior puede significar una sala cerrada con juego compartido, una zona de juego reservada o el uso exclusivo de todo el lugar. Decide qué incluye la reserva antes de ordenar particiones o equipos. Esta guía es para dueños de locales que compran un diseño de sala de fiestas, no para padres buscando reservar un cumpleaños local.",
+    "imageKey": "party",
+    "answerQuestion": "¿Cómo debe conectarse una sala de fiestas privada al área de juego?",
+    "answer": "Coloca el registro antes de la entrada al juego, mantén la manipulación de alimentos y pasteles fuera de las rutas activas y dale al personal una vista clara de la puerta. Separa el almacenamiento de invitados, la circulación accesible y la ruta de reinicio. El tamaño de la sala y la ocupación necesitan una revisión local; un dibujo 3D atractivo no establece la capacidad legal.",
+    "frameworkTitle": "Planifica el Límite de la Reserva",
+    "framework": [
+      {
+        "title": "Elige la promesa",
+        "desc": "Especifica si los invitados reciben solo una sala, una zona reservada o el alquiler completo del lugar. Una sala llamada privada no debe implicar uso exclusivo del área de juego."
+      },
+      {
+        "title": "Separa grupos que llegan y se van",
+        "desc": "Proporciona un punto de registro y un área de espera fuera de las salidas. Programa tiempo de amortiguación para que un grupo que se va no bloquee al siguiente."
+      },
+      {
+        "title": "Mantén la comida fuera del juego activo",
+        "desc": "Coloca mesas, preparación de pasteles y servicio de personal en una ruta limpia. Confirma las reglas locales de servicio de alimentos en lugar de tratar una cotización de equipos de juego como una aprobación de catering."
+      },
+      {
+        "title": "Diseña la ruta de reinicio",
+        "desc": "Ubica la recolección de desechos, superficies limpiables y almacenamiento para que el personal pueda reiniciar sin cruzar un área de actividad en uso."
+      }
+    ],
+    "equipmentTitle": "Decisiones sobre Sala y Equipos",
+    "equipment": [
+      {
+        "title": "Paneles de visibilidad",
+        "desc": "Revisa secciones transparentes o abiertas con los requisitos de fuego y acústica del sistema de partición real."
+      },
+      {
+        "title": "Almacenamiento de invitados",
+        "desc": "Permite un espacio dedicado para zapatos, abrigos y bolsas que no reduzca la ruta de salida."
+      },
+      {
+        "title": "Control de acceso",
+        "desc": "Elige una puerta supervisada por el personal y una lista de reservas; evita cerraduras que comprometan la salida de emergencia."
+      },
+      {
+        "title": "Mobiliario flexible",
+        "desc": "Usa mesas movibles y limpiables solo donde sus posiciones estacionadas y ocupadas preserven la circulación."
+      }
+    ],
+    "columns": [
+      "Modelo de reserva",
+      "Qué es exclusivo",
+      "Prioridad de diseño",
+      "Verificación operativa"
+    ],
+    "rows": [
+      [
+        "Sala privada + juego compartido",
+        "Solo comedor",
+        "Puerta separada y entrada de juego visible",
+        "Explica el juego compartido antes del pago"
+      ],
+      [
+        "Zona de juego reservada",
+        "Área de equipos definida",
+        "Límite controlado y línea de visión del personal",
+        "Evita que invitados no invitados entren"
+      ],
+      [
+        "Alquiler completo del lugar",
+        "Lugar durante el horario reservado",
+        "Una ruta de llegada controlada",
+        "Confirma personal y ocupación total"
+      ],
+      [
+        "Sala convertible",
+        "Sala puede albergar otras actividades",
+        "Almacenamiento de muebles y salidas claras",
+        "Verifica cada disposición de sala"
+      ]
+    ],
+    "faq": [
+      {
+        "title": "¿Una sala de fiestas puede compartir el área de juego principal?",
+        "desc": "Sí, si la reserva indica claramente que el juego es compartido. Diseña el límite de la sala y las verificaciones del personal para que las familias entiendan qué espacio es privado."
+      },
+      {
+        "title": "¿Agregar una sala de fiestas garantiza mayores ingresos?",
+        "desc": "No. Modela reservas, tiempo de reinicio, personal, costos de catering y capacidad perdida de admisión general antes de decidir."
+      },
+      {
+        "title": "¿Qué debe recibir un proveedor?",
+        "desc": "Envía el estudio del sitio, posiciones de puertas y columnas, modelo de reserva previsto, mezcla de invitados y requisitos locales de ocupación. Solicita un diseño de muebles y circulación junto con el equipo."
+      },
+      {
+        "title": "¿Es este un plan de negocios general para áreas de juego?",
+        "desc": "No. Esta página aborda límites y rotación de salas de fiestas. Usa la guía de plan de negocios vinculada para el modelo financiero más amplio."
+      }
+    ],
+    "tableTitle": "Decisiones sobre Sala y Equipos — Matriz de Decisión",
+    "tableNote": "Orientación de planificación únicamente. Las dimensiones finales, capacidad, aprobaciones y idoneidad del producto requieren revisión específica del proyecto.",
+    "imageAlt": "Diseño de Sala de Fiestas para Áreas de Juego Privadas — renderizado 3D ilustrativo de equipos",
+    "captions": [
+      "Formato de equipo para revisar contra el estudio del sitio real.",
+      "Verifica transiciones, supervisión y acceso de servicio en el diseño ensamblado.",
+      "Incluye espacios de apoyo en el resumen del equipo."
+    ],
+    "ui": {
+      "home": "Inicio",
+      "products": "Productos",
+      "design": "Solicitar Diseño 3D Gratis",
+      "whatsapp": "Chatear por WhatsApp",
+      "compare": "Comparar Opciones",
+      "gallery": "Referencias de Diseño",
+      "relatedTitle": "Guías de Planificación Relacionadas",
+      "faqTitle": "Preguntas del Comprador",
+      "sourcesTitle": "Fuentes y Alcance",
+      "sourcesIntro": "Confirma la edición actual del estándar y los requisitos locales de construcción, fuego y accesibilidad con tu equipo de proyecto calificado. Estas referencias no son certificados de producto.",
+      "updated": "Actualizado el 30 de octubre de 2026",
+      "author": "NinescapeLand · Planificación de Áreas de Juego Comerciales",
+      "imageNote": "Los renders del sitio existente ilustran formatos de equipo, no un proyecto completado en este lugar.",
+      "inquiryIntro": "Comparte tu país, dimensiones del sitio, edades previstas y formato operativo para una propuesta específica del proyecto."
+    }
+  },
+  "commercial-indoor-playground-tunnels-and-tubes": {
+    "slug": "commercial-indoor-playground-tunnels-and-tubes",
+    "title": "Túneles y Tubos para Parques Infantiles Comerciales",
+    "metaTitle": "Túneles y tubos de juego comerciales",
+    "metaDescription": "Compara túneles comerciales por visibilidad, acceso de asistencia, limpieza y conexión con estructuras de juego interiores.",
+    "kicker": "Túneles · Tubos · Visibilidad · Acceso de Servicio",
+    "intro": "Un túnel puede ser un tubo transparente para gatear, un puente de malla o un conector acolchado dentro de una estructura de juego contenida. Los compradores comerciales necesitan más que un color y diámetro: deben saber cómo el personal puede observar, acceder, inspeccionar y limpiar la ruta. Esta guía se enfoca en equipos interiores permanentes, no en juguetes domésticos plegables.",
+    "imageKey": "tunnels",
+    "answerQuestion": "¿Cómo elegir túneles y tubos para parques infantiles comerciales?",
+    "answer": "Compare el grupo de edad declarado, la conexión estructural, la visibilidad, el acceso de limpieza y las provisiones de salida asistida para cada diseño. Pida al proveedor y a un revisor independiente que evalúen la ruta ensamblada, incluyendo transiciones de entrada y salida. Un túnel que encaje en un dibujo puede aún ser inadecuado para el marco existente o el plan de supervisión.",
+    "frameworkTitle": "Revise la Ruta Completa",
+    "framework": [
+      {
+        "title": "Defina entrada y salida",
+        "desc": "Mapee la transición de la plataforma al túnel y viceversa. Identifique puntos de espera para que las colas no bloqueen plataformas adyacentes."
+      },
+      {
+        "title": "Planee la observación",
+        "desc": "Revise secciones transparentes, visibilidad de malla y posiciones de visualización del personal. Los tubos temáticos opacos requieren especial atención en observación y acceso."
+      },
+      {
+        "title": "Pregunte sobre salida asistida",
+        "desc": "Haga que el proveedor explique cómo se puede alcanzar y asistir a un niño sin improvisar un procedimiento de desmontaje durante la operación."
+      },
+      {
+        "title": "Diseñe acceso para inspección",
+        "desc": "Especifique dónde el personal inspecciona juntas, fijaciones de red, costuras y sujetadores. Incluya acceso para limpieza y secado en el brief de compra."
+      }
+    ],
+    "equipmentTitle": "Compare Formatos de Conectores",
+    "equipment": [
+      {
+        "title": "Tubo rígido transparente",
+        "desc": "Puede facilitar la observación, pero la visibilidad depende de rayaduras, reflejos y el ángulo instalado. Confirme material y provisiones de acceso."
+      },
+      {
+        "title": "Puente de malla para gatear",
+        "desc": "Ofrece apertura visual. Pregunte cómo se inspeccionan y reemplazan fijaciones, desgaste de malla y el marco."
+      },
+      {
+        "title": "Conector acolchado para gatear",
+        "desc": "Se integra con juegos suaves contenidos. Verifique costuras, bordes cubiertos y acceso de limpieza en todo el conector."
+      },
+      {
+        "title": "Ruta temática cerrada",
+        "desc": "Crea una identidad visual fuerte pero puede complicar la supervisión. Evalúe acceso de servicio antes de aprobar una cubierta decorativa."
+      }
+    ],
+    "columns": [
+      "Formato",
+      "Observación",
+      "Enfoque de mantenimiento",
+      "Verificación de integración"
+    ],
+    "rows": [
+      [
+        "Tubo transparente",
+        "Paneles claros donde se especifique",
+        "Rayaduras, juntas y limpieza de superficie",
+        "Interfaz de marco y transiciones"
+      ],
+      [
+        "Puente de malla",
+        "Líneas de visión abiertas en malla",
+        "Desgaste de red y fijaciones",
+        "Anclaje y plataformas adyacentes"
+      ],
+      [
+        "Conector acolchado",
+        "Depende de aberturas y cubiertas",
+        "Costuras, acolchado y cierres",
+        "Sin bordes de unión expuestos"
+      ],
+      [
+        "Envoltura temática",
+        "Puede ser limitada",
+        "Remoción de paneles y juntas ocultas",
+        "Acceso asistido e inspección"
+      ]
+    ],
+    "faq": [
+      {
+        "title": "¿Cuál es la diferencia entre tubos y túneles?",
+        "desc": "Los proveedores usan los términos de manera diferente. Defina el material, encierro, tipo de movimiento y método de conexión en lugar de comprar solo por nombre."
+      },
+      {
+        "title": "¿Se puede adaptar un túnel a cualquier marco?",
+        "desc": "No. La estructura original, carga, diseño de fijación y transiciones de ruta deben revisarse. Obtenga aprobación escrita para la modificación completa."
+      },
+      {
+        "title": "¿Un tubo transparente resuelve la supervisión?",
+        "desc": "No por sí solo. La posición del personal, iluminación, condición de paneles y geometría completa de la ruta aún importan."
+      },
+      {
+        "title": "¿Qué estándar deben preguntar los compradores?",
+        "desc": "Para sistemas suaves contenidos, pregunte si ASTM F1918 es aplicable y solicite el alcance documentado y edición actual. Otros equipos y jurisdicciones pueden requerir evaluaciones diferentes."
+      }
+    ],
+    "tableTitle": "Compare Formatos de Conectores — Matriz de Decisión",
+    "tableNote": "Guía de planificación únicamente. Dimensiones finales, capacidad, aprobaciones y idoneidad del producto requieren revisión específica del proyecto.",
+    "imageAlt": "Túneles y Tubos para Parques Infantiles Comerciales — renderizado 3D ilustrativo de equipo",
+    "captions": [
+      "Formato de equipo para revisar contra el estudio de sitio real.",
+      "Verifique transiciones, supervisión y acceso de servicio en el diseño ensamblado.",
+      "Incluya espacios de soporte en el brief de equipo."
+    ],
+    "ui": {
+      "home": "Inicio",
+      "products": "Productos",
+      "design": "Solicitar Diseño 3D Gratis",
+      "whatsapp": "Chatear por WhatsApp",
+      "compare": "Comparar Opciones",
+      "gallery": "Referencias de Diseño",
+      "relatedTitle": "Guías de Planificación Relacionadas",
+      "faqTitle": "Preguntas de Compradores",
+      "sourcesTitle": "Fuentes y Alcance",
+      "sourcesIntro": "Confirme la edición actual del estándar y los requisitos locales de construcción, incendios y accesibilidad con su equipo de proyecto calificado. Estas referencias no son certificados de producto.",
+      "updated": "Actualizado el 30 de octubre de 2026",
+      "author": "NinescapeLand · Planificación de Parques Comerciales",
+      "imageNote": "Los renders de sitio existentes ilustran formatos de equipo, no un proyecto completado en este lugar.",
+      "inquiryIntro": "Comparta su país, dimensiones del sitio, edades previstas y formato operativo para una propuesta específica del proyecto."
+    }
+  },
+  "first-birthday-soft-play-equipment-for-venues": {
+    "slug": "first-birthday-soft-play-equipment-for-venues",
+    "title": "Zona de Juego Suave para Primer Cumpleaños en Locales",
+    "metaTitle": "Juego blando para el primer cumpleaños",
+    "metaDescription": "Elige equipos para el primer cumpleaños: módulos bajos, asientos para cuidadores, higiene y zonas separadas en locales comerciales.",
+    "kicker": "Primer Cumpleaños · Acceso para Cuidadores · Configuración de Eventos",
+    "intro": "Los grupos de primer cumpleaños suelen incluir bebés, hermanos y adultos en la misma reserva. La decisión del equipo se centra en un área supervisada a nivel del suelo y una configuración de evento repetible, no en una versión reducida de un circuito de obstáculos para niños mayores. Esta guía ayuda a locales comerciales a seleccionar equipos para eventos; no ofrece juguetes para el hogar ni alquiler local para fiestas.",
+    "imageKey": "birthday",
+    "answerQuestion": "¿Qué equipo debe considerar un local para eventos de primer cumpleaños?",
+    "answer": "Considere formas acolchadas bajas, un área abierta para gatear y módulos simples de exploración a nivel del suelo, sujetos a la edad declarada por el proveedor y las instrucciones de supervisión. Separe a los hermanos más activos y deje suficiente acceso para cuidadores alrededor de cada módulo. Nunca asuma que todo juego suave es adecuado para un niño solo porque la superficie se sienta blanda.",
+    "frameworkTitle": "Diseño para Bebés y Cuidadores",
+    "framework": [
+      {
+        "title": "Comience con el rango de edad declarado",
+        "desc": "Solicite la declaración de uso previsto, rango de edad e instrucciones de supervisión del fabricante para cada artículo. Rechace afirmaciones genéricas de que todos los productos son aptos para todas las edades."
+      },
+      {
+        "title": "Separe a los hermanos",
+        "desc": "Proporcione una ruta o actividad distinta para niños mayores, en lugar de permitir que pasen por el área de gateo."
+      },
+      {
+        "title": "Mantenga los módulos accesibles",
+        "desc": "Disponga módulos bajos con acceso abierto para cuidadores. Evite rutas cerradas que dificulten la observación o asistencia."
+      },
+      {
+        "title": "Trate cada evento como una configuración nueva",
+        "desc": "Inspeccione cubiertas, costuras, fijaciones y condiciones del suelo después del transporte o movimiento. Mantenga un registro firmado de la configuración antes de que lleguen los invitados."
+      }
+    ],
+    "equipmentTitle": "Construya un Kit de Evento Repetible",
+    "equipment": [
+      {
+        "title": "Formas acolchadas bajas",
+        "desc": "Especifique módulos estables y cierres cubiertos, con documentación sobre edad adecuada e instrucciones de limpieza."
+      },
+      {
+        "title": "Superficie abierta para gatear",
+        "desc": "Elija una superficie adecuada para las actividades previstas; el acolchado no garantiza un rendimiento de impacto probado."
+      },
+      {
+        "title": "Asientos para cuidadores",
+        "desc": "Coloque asientos cerca de la zona de bebés sin bloquear accesos, salidas o la observación del personal."
+      },
+      {
+        "title": "Almacenamiento limpio",
+        "desc": "Separe los módulos listos para usar de los que esperan limpieza o reparación; etiquete cada kit para trazabilidad."
+      }
+    ],
+    "columns": [
+      "Artículo",
+      "Pregunta del comprador",
+      "Evidencia a solicitar",
+      "Decisión de configuración"
+    ],
+    "rows": [
+      [
+        "Formas acolchadas",
+        "¿Para qué edades y usos está destinado?",
+        "Instrucciones específicas del artículo",
+        "Disposición estable a nivel del suelo"
+      ],
+      [
+        "Cubiertas y costuras",
+        "¿Cómo se limpian las superficies?",
+        "Método de limpieza aprobado",
+        "Secar antes del acceso de invitados"
+      ],
+      [
+        "Superficie del suelo",
+        "¿Qué actividades soporta?",
+        "Especificación del producto relevante",
+        "Sin bordes levantados o huecos"
+      ],
+      [
+        "Límite para hermanos",
+        "¿Cómo se separa el juego más rápido?",
+        "Plan de supervisión del local",
+        "Entrada controlada visible"
+      ]
+    ],
+    "faq": [
+      {
+        "title": "¿El juego suave es automáticamente seguro para niños de un año?",
+        "desc": "No. La idoneidad depende del artículo, edad prevista, disposición y supervisión. Solicite orientación por escrito e inspeccione la configuración real."
+      },
+      {
+        "title": "¿Los hermanos mayores deben usar la misma zona?",
+        "desc": "No asuma que deben. Proporcione una actividad separada adecuada a sus necesidades y supervise el límite."
+      },
+      {
+        "title": "¿Se puede mover el equipo entre salas de fiestas?",
+        "desc": "Solo si el fabricante lo permite. Incluya transporte, almacenamiento, inspección y limpieza en el flujo de trabajo del local."
+      },
+      {
+        "title": "¿En qué se diferencia de una zona permanente para niños pequeños?",
+        "desc": "La guía de zona para niños pequeños cubre un diseño fijo diario. Esta página se centra en kits para eventos, acceso para cuidadores y registros de configuración para reservas de primer cumpleaños."
+      }
+    ],
+    "tableTitle": "Construya un Kit de Evento Repetible — Matriz de Decisión",
+    "tableNote": "Orientación de planificación únicamente. Las dimensiones finales, capacidad, aprobaciones y idoneidad del producto requieren revisión específica del proyecto.",
+    "imageAlt": "Zona de Juego Suave para Primer Cumpleaños en Locales — renderizado 3D ilustrativo del equipo",
+    "captions": [
+      "Formato del equipo para revisar según el estudio del sitio real.",
+      "Verifique transiciones, supervisión y acceso de servicio en el diseño montado.",
+      "Incluya espacios de apoyo en el resumen del equipo."
+    ],
+    "ui": {
+      "home": "Inicio",
+      "products": "Productos",
+      "design": "Solicite Diseño 3D Gratis",
+      "whatsapp": "Chatear por WhatsApp",
+      "compare": "Comparar Opciones",
+      "gallery": "Referencias de Diseño",
+      "relatedTitle": "Guías de Planificación Relacionadas",
+      "faqTitle": "Preguntas de Compradores",
+      "sourcesTitle": "Fuentes y Alcance",
+      "sourcesIntro": "Confirme la edición actual del estándar y los requisitos locales de construcción, incendios y accesibilidad con su equipo de proyecto calificado. Estas referencias no son certificados de producto.",
+      "updated": "Actualizado el 30 de octubre de 2026",
+      "author": "NinescapeLand · Planificación de Juegos Comerciales",
+      "imageNote": "Los renderizados del sitio existente ilustran formatos de equipo, no un proyecto completado en este local.",
+      "inquiryIntro": "Comparta su país, dimensiones del sitio, edades previstas y formato operativo para una propuesta específica del proyecto."
+    }
+  },
+  "vacant-mall-unit-indoor-playground-conversion": {
+    "slug": "vacant-mall-unit-indoor-playground-conversion",
+    "title": "Convertir una Unidad Comercial Vacante en Área de Juego Interior",
+    "metaTitle": "Convertir locales vacíos en áreas de juego",
+    "metaDescription": "Evalúa locales vacíos: contrato, columnas, servicios, incendios y acceso de instalación antes de comprar equipos.",
+    "kicker": "Unidades Vacantes · Revisión de Adecuación · Decisiones de Arrendamiento",
+    "intro": "Una tienda vacante no está automáticamente lista para un área de juego. Su fachada, servicios en el techo, columnas, entregas y uso permitido pueden determinar si la conversión es viable. Esta guía es una lista de verificación previa al arrendamiento y de remodelación para propietarios y operadores de centros comerciales, distinta de nuestra guía general de formato de juego blando en centros comerciales o nuestra página sobre el mercado de Indonesia.",
+    "imageKey": "mall",
+    "answerQuestion": "¿Qué debes verificar antes de convertir una unidad comercial vacante?",
+    "answer": "Obtén un estudio medido y el manual de adecuación del propietario, luego revisa el uso permitido, salidas de emergencia, accesibilidad, servicios en el techo y acceso para instalación con asesores locales calificados. Resuelve los cambios dependientes de aprobación antes de comprometerte con el paquete de equipos. El precio del equipo por sí solo no describe el costo o la viabilidad de convertir una tienda minorista anterior.",
+    "frameworkTitle": "Realiza una Revisión de Viabilidad Previo al Arrendamiento",
+    "framework": [
+      {
+        "title": "Confirma el uso permitido",
+        "desc": "Pregunta al propietario y a la autoridad local si el juego interior está permitido en la unidad y qué cambios requieren aprobaciones formales."
+      },
+      {
+        "title": "Evalúa los obstáculos reales",
+        "desc": "Registra columnas, falsos techos, equipos contra incendios, suministro de aire, puertas existentes y niveles del piso. Usa dimensiones claras útiles, no solo el área bruta alquilable."
+      },
+      {
+        "title": "Divide el trabajo entre propietario y arrendatario",
+        "desc": "Acuerda quién se encarga de los cambios en el sistema contra incendios, actualizaciones eléctricas, reparación del piso, fachada y conexiones de servicios."
+      },
+      {
+        "title": "Verifica la ruta de entrega",
+        "desc": "Mide el muelle de carga, pasillos, ascensores y puertas. Confirma horarios de entrega, restricciones de ruido y acceso para ensamblaje antes de seleccionar tamaños de módulos."
+      }
+    ],
+    "equipmentTitle": "Adquiere Equipos Según las Restricciones del Edificio",
+    "equipment": [
+      {
+        "title": "Estructura de juego consciente de columnas",
+        "desc": "Organiza rutas de actividades alrededor de obstáculos fijos mientras preservas espacio para inspección y circulación."
+      },
+      {
+        "title": "Particiones reversibles",
+        "desc": "Donde esté permitido, compara límites de habitaciones modulares con obras permanentes; verifica el rendimiento contra incendios y acústico para ambos."
+      },
+      {
+        "title": "Áreas auxiliares compactas",
+        "desc": "Incluye check-in, almacenamiento, limpieza y asientos para cuidadores en el diseño en lugar de tratar todo el espacio como área de equipos."
+      },
+      {
+        "title": "Módulos instalables",
+        "desc": "Selecciona una secuencia de ensamblaje y tamaños de paquete que se ajusten a la ruta de entrega y las reglas de horario del centro comercial."
+      }
+    ],
+    "columns": [
+      "Puerta de decisión",
+      "Documento",
+      "Quién lo confirma",
+      "No asumas"
+    ],
+    "rows": [
+      [
+        "Arrendamiento y uso permitido",
+        "Términos escritos de uso y adecuación",
+        "Propietario y autoridad local",
+        "La aprobación minorista cubre el juego"
+      ],
+      [
+        "Incendios y accesibilidad",
+        "Revisión específica del proyecto",
+        "Profesionales locales calificados",
+        "El diseño 3D es una aprobación"
+      ],
+      [
+        "Servicios y techo",
+        "Estudio medido coordinado",
+        "Equipo de servicios del edificio",
+        "La altura anunciada es altura libre"
+      ],
+      [
+        "Entrega e instalación",
+        "Plan de acceso y horario de trabajo",
+        "Operaciones del centro e instalador",
+        "Cada caja cabe en el ascensor"
+      ]
+    ],
+    "faq": [
+      {
+        "title": "¿Debo pedir equipos antes de firmar el arrendamiento?",
+        "desc": "Evita compromisos irreversibles hasta que se entiendan el estudio, los requisitos del propietario y las dependencias clave de aprobación. Coordina la validez de la cotización con la decisión de arrendamiento."
+      },
+      {
+        "title": "¿Puede funcionar una tienda anterior con techo bajo?",
+        "desc": "Posiblemente con un formato compacto o a nivel del piso diseñado adecuadamente. La respuesta depende de los espacios libres reales, servicios y el equipo previsto, no de un mínimo universal."
+      },
+      {
+        "title": "¿Esta página estima el ROI de la conversión?",
+        "desc": "No. Construye un modelo específico del proyecto usando alquiler, adecuación, personal y demanda. Esta página aborda puertas de viabilidad, no un retorno prometido."
+      },
+      {
+        "title": "¿Qué necesitas para un concepto 3D gratuito?",
+        "desc": "Un estudio medido con columnas, puertas y alturas libres, las edades y formato previstos, y las principales restricciones del propietario."
+      }
+    ],
+    "tableTitle": "Adquiere Equipos Según las Restricciones del Edificio — Matriz de Decisión",
+    "tableNote": "Guía de planificación únicamente. Las dimensiones finales, capacidad, aprobaciones y idoneidad del producto requieren una revisión específica del proyecto.",
+    "imageAlt": "Convertir una Unidad Comercial Vacante en Área de Juego Interior — renderizado 3D ilustrativo de equipos",
+    "captions": [
+      "Formato de equipo para revisar contra el estudio del sitio real.",
+      "Verifica transiciones, supervisión y acceso a servicios en el diseño ensamblado.",
+      "Incluye espacios de apoyo en el brief de equipos."
+    ],
+    "ui": {
+      "home": "Inicio",
+      "products": "Productos",
+      "design": "Solicitar Diseño 3D Gratis",
+      "whatsapp": "Chatear por WhatsApp",
+      "compare": "Comparar Opciones",
+      "gallery": "Referencias de Diseño",
+      "relatedTitle": "Guías de Planificación Relacionadas",
+      "faqTitle": "Preguntas del Comprador",
+      "sourcesTitle": "Fuentes y Alcance",
+      "sourcesIntro": "Confirma la edición actual del estándar y los requisitos locales de construcción, incendios y accesibilidad con tu equipo de proyecto calificado. Estas referencias no son certificados de producto.",
+      "updated": "Actualizado el 30 de octubre de 2026",
+      "author": "NinescapeLand · Planificación de Juego Comercial",
+      "imageNote": "Los renders del sitio existente ilustran formatos de equipo, no un proyecto completado en este lugar.",
+      "inquiryIntro": "Comparte tu país, dimensiones del sitio, edades previstas y formato operativo para una propuesta específica del proyecto."
+    }
+  },
+  "hotel-resort-indoor-play-amenity-design": {
+    "slug": "hotel-resort-indoor-play-amenity-design",
+    "title": "Amenidades de Juego Interior para Hoteles y Resorts",
+    "metaTitle": "Áreas de juego en hoteles y resorts",
+    "metaDescription": "Planifica áreas de juego en hoteles: acceso de huéspedes, supervisión, acústica, limpieza y uso estacional.",
+    "kicker": "Hoteles · Resorts · Acceso de Huéspedes · Vecinos Silenciosos",
+    "intro": "Una amenidad de juego en un hotel sirve a huéspedes registrados dentro de una operación hotelera más amplia. Sus reglas de acceso, personalización, vecinos acústicos y flujo de trabajo de limpieza difieren de un parque infantil independiente con entrada pagada. Esta guía ayuda a los propietarios de hoteles y equipos de diseño a definir equipos interiores sin prometer aumentos de ocupación ni presentar proyectos hoteleros no verificados.",
+    "imageKey": "hotel",
+    "answerQuestion": "¿Cómo debe planificar un hotel una amenidad de juego interior?",
+    "answer": "Define si el espacio es supervisado por cuidadores o es un programa infantil con personal, luego planifica acceso controlado, zonas apropiadas por edad, almacenamiento de limpieza y separación acústica de habitaciones y áreas tranquilas. Coordina la propuesta con equipos de incendios, accesibilidad y operaciones hoteleras. Un fabricante de equipos de juego no reemplaza el asesoramiento local sobre licencias de cuidado infantil.",
+    "frameworkTitle": "Comienza con el Modelo Operativo",
+    "framework": [
+      {
+        "title": "Nombra quién supervisa",
+        "desc": "Haz explícita la responsabilidad del cuidador o las reglas de sesiones con personal. Revisa cualquier obligación de licencia de cuidado infantil con asesores locales."
+      },
+      {
+        "title": "Establece reglas de acceso para huéspedes",
+        "desc": "Decide si el acceso es para huéspedes registrados, visitantes diarios pagos o grupos reservados. Incluye el proceso de acceso en el plan del personal."
+      },
+      {
+        "title": "Protege a los vecinos silenciosos",
+        "desc": "Identifica habitaciones, áreas de spa y salas de reuniones adyacentes o debajo del espacio. Busca asesoramiento acústico en lugar de depender solo de superficies blandas."
+      },
+      {
+        "title": "Planifica almacenamiento estacional",
+        "desc": "Considera la reconfiguración en temporada baja, limpieza e inspección. Elige elementos móviles solo donde su movimiento esté permitido por sus instrucciones."
+      }
+    ],
+    "equipmentTitle": "Equipos e Interfaces con la Hospitalidad",
+    "equipment": [
+      {
+        "title": "Juego compacto y contenido",
+        "desc": "Considera una estructura de actividad visible donde lo permitan los servicios del techo y la circulación de emergencia; confirma los requisitos del sistema instalado."
+      },
+      {
+        "title": "Zona para niños pequeños a nivel del suelo",
+        "desc": "Proporciona acceso separado y proximidad del cuidador; especifica las edades previstas por cada elemento."
+      },
+      {
+        "title": "Exploración de baja intensidad",
+        "desc": "Selecciona módulos de juego de roles y manipulativos para actividades más silenciosas, reconociendo que la acústica necesita tratamiento a nivel de construcción."
+      },
+      {
+        "title": "Superficies listas para limpieza",
+        "desc": "Confirma compatibilidad de limpieza, tiempo de secado y almacenamiento seguro con el personal de limpieza antes de finalizar los materiales."
+      }
+    ],
+    "columns": [
+      "Modelo operativo",
+      "Acceso",
+      "Pregunta de personalización",
+      "Prioridad de diseño"
+    ],
+    "rows": [
+      [
+        "Amenidad supervisada por cuidadores",
+        "Huéspedes registrados con reglas claras",
+        "¿Quién verifica el acceso y la condición?",
+        "Proximidad del cuidador y zonas visibles"
+      ],
+      [
+        "Sesiones infantiles con personal",
+        "Reservadas y controladas",
+        "¿Qué licencias y proporciones aplican?",
+        "Registro, recogida y acceso del personal"
+      ],
+      [
+        "Huéspedes de hotel y visitantes diarios",
+        "Derecho de huéspedes separado",
+        "¿Cómo se gestionan los grupos de visitantes?",
+        "Entrada controlada y espacio de espera"
+      ],
+      [
+        "Sala flexible estacional",
+        "Específica del programa",
+        "¿Quién inspecciona cada reconfiguración?",
+        "Almacenamiento y configuración repetible"
+      ]
+    ],
+    "faq": [
+      {
+        "title": "¿Puede un área de juego en un hotel operar sin personal dedicado al cuidado infantil?",
+        "desc": "Depende de su modelo operativo y las reglas locales. No lo describas como cuidado infantil supervisado a menos que el personal y las aprobaciones respalden esa afirmación."
+      },
+      {
+        "title": "¿Una amenidad de juego interior aumentará la ocupación de habitaciones?",
+        "desc": "Puede apoyar una oferta familiar, pero no hay garantía de aumento. Evalúa comentarios de huéspedes, costos operativos y demanda local."
+      },
+      {
+        "title": "¿Cómo reducimos el ruido?",
+        "desc": "Revisa la ubicación de la sala, construcción de pisos y paredes, puertas y servicios con un profesional acústico. El equipo acolchado solo no es una especificación acústica."
+      },
+      {
+        "title": "¿En qué se diferencia de un parque infantil en un centro comercial?",
+        "desc": "El acceso del hotel, espacios vecinos silenciosos, limpieza y reglas de sesiones de huéspedes guían el diseño. El flujo de personas y locales comerciales no son las suposiciones principales."
+      }
+    ],
+    "tableTitle": "Equipos e Interfaces con la Hospitalidad — Matriz de Decisión",
+    "tableNote": "Guía de planificación únicamente. Las dimensiones finales, capacidad, aprobaciones y idoneidad del producto requieren revisión específica del proyecto.",
+    "imageAlt": "Amenidades de Juego Interior para Hoteles y Resorts — renderizado 3D ilustrativo de equipos",
+    "captions": [
+      "Formato de equipo para revisar contra el estudio del sitio real.",
+      "Verifica transiciones, supervisión y acceso de servicios en el diseño ensamblado.",
+      "Incluye espacios de apoyo en el resumen del equipo."
+    ],
+    "ui": {
+      "home": "Inicio",
+      "products": "Productos",
+      "design": "Solicitar Diseño 3D Gratis",
+      "whatsapp": "Chatear por WhatsApp",
+      "compare": "Comparar Opciones",
+      "gallery": "Referencias de Diseño",
+      "relatedTitle": "Guías de Planificación Relacionadas",
+      "faqTitle": "Preguntas del Comprador",
+      "sourcesTitle": "Fuentes y Alcance",
+      "sourcesIntro": "Confirma la edición actual del estándar y los requisitos locales de construcción, incendios y accesibilidad con tu equipo de proyecto calificado. Estas referencias no son certificados de producto.",
+      "updated": "Actualizado el 30 de octubre de 2026",
+      "author": "NinescapeLand · Planificación de Juego Comercial",
+      "imageNote": "Los renders del sitio existente ilustran formatos de equipo, no un proyecto completado en este lugar.",
+      "inquiryIntro": "Comparte tu país, dimensiones del sitio, edades previstas y formato operativo para una propuesta específica del proyecto."
+    }
+  }
+}

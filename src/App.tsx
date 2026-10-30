@@ -73,6 +73,7 @@ import TrampolineParkAndNinjaCourseBuilder from "./pages/TrampolineParkAndNinjaC
 import SoftPlayEquipmentSupplierCostBreakdown from "./pages/SoftPlayEquipmentSupplierCostBreakdown";
 import CustomPlaygroundManufacturerCertificationChecklist from "./pages/CustomPlaygroundManufacturerCertificationChecklist";
 import AstmCertifiedIndoorPlaygroundStructures from "./pages/AstmCertifiedIndoorPlaygroundStructures";
+import { b13Pages } from "@/config/weeklyAggregationB13Registry";
 
 // Resilient lazy: if a chunk fails to load (e.g. Hostinger 429), render nothing
 // instead of crashing the whole app.
@@ -120,6 +121,7 @@ const ThemedIndoorPlaygroundDesign = lazy(() => import("./pages/ThemedIndoorPlay
 const SensoryInclusivePlay = lazy(() => import("./pages/SensoryInclusivePlay"));
 const IAAPAAsia2026 = lazy(() => import("./pages/IAAPAAsia2026"));
 const TAAPE2026 = lazy(() => import("./pages/TAAPE2026"));
+const WeeklyAggregationPageB13 = lazy(() => import("./pages/WeeklyAggregationPageB13"));
 const IndoorPlaygroundROIUK = lazy(() => import("./pages/IndoorPlaygroundROIUK"));
 const IndoorPlaygroundROICanada = lazy(() => import("./pages/IndoorPlaygroundROICanada"));
 const InvestmentOpportunity = lazy(() => import("./pages/InvestmentOpportunity"));
@@ -159,6 +161,7 @@ const EnglishRedirect = () => {
 // Shared page routes for reuse
 const pageRoutes = (
   <>
+    {b13Pages.map(page => <Route key={page.slug} path={page.slug} element={<WeeklyAggregationPageB13 slug={page.slug} />} />)}
     <Route index element={<Index />} />
     <Route path="about-us" element={<AboutUs />} />
     <Route path="products" element={<DynamicProducts />} />

@@ -1,0 +1,617 @@
+{
+  "private-indoor-playground-party-room-design": {
+    "slug": "private-indoor-playground-party-room-design",
+    "title": "Private Playground Party Room Design",
+    "metaTitle": "Private Playground Party Room Design | NinescapeLand",
+    "metaDescription": "Plan private party rooms for commercial indoor playgrounds: check-in, food separation, supervision, shared versus exclusive play and reset workflows.",
+    "kicker": "Private Parties · Guest Flow · Room Reset",
+    "intro": "A private indoor playground party can mean a closed room with shared play, a reserved play zone, or exclusive use of the entire venue. Decide what the booking includes before ordering partitions or equipment. This guide is for venue owners buying a party-room layout, not parents searching for a local birthday booking.",
+    "imageKey": "party",
+    "answerQuestion": "How should a private party room connect to the playground?",
+    "answer": "Place check-in before the play entrance, keep food and cake handling outside active routes, and give staff a clear view of the door. Separate guest storage, accessible circulation and the reset route. The room size and occupancy need a local review; an attractive 3D drawing does not establish legal capacity.",
+    "frameworkTitle": "Plan the Booking Boundary",
+    "framework": [
+      {
+        "title": "Choose the promise",
+        "desc": "Write whether guests receive a room only, a reserved zone or a whole-venue buyout. A room called private must not imply exclusive playground use."
+      },
+      {
+        "title": "Separate arriving and leaving groups",
+        "desc": "Provide a check-in point and a waiting area outside exits. Schedule buffer time so a departing party does not block the next group."
+      },
+      {
+        "title": "Keep catering out of active play",
+        "desc": "Place tables, cake preparation and staff service on a cleanable route. Confirm local food-service rules instead of treating a play-equipment quote as a catering approval."
+      },
+      {
+        "title": "Design the reset route",
+        "desc": "Locate waste collection, wipeable surfaces and storage so staff can reset without crossing a live activity area."
+      }
+    ],
+    "equipmentTitle": "Room and Equipment Decisions",
+    "equipment": [
+      {
+        "title": "Visibility panels",
+        "desc": "Review transparent or open viewing sections with the fire and acoustic requirements of the actual partition system."
+      },
+      {
+        "title": "Guest storage",
+        "desc": "Allow a dedicated spot for shoes, coats and bags that does not narrow the exit route."
+      },
+      {
+        "title": "Access control",
+        "desc": "Choose a staff-supervised gate and a booking roster; avoid door locks that compromise emergency exit."
+      },
+      {
+        "title": "Flexible furniture",
+        "desc": "Use movable, cleanable tables only where their parked and occupied positions preserve circulation."
+      }
+    ],
+    "columns": [
+      "Booking model",
+      "What is exclusive",
+      "Layout priority",
+      "Operational check"
+    ],
+    "rows": [
+      [
+        "Private room + shared play",
+        "Dining room only",
+        "Separate door and visible play entrance",
+        "Explain shared play before payment"
+      ],
+      [
+        "Reserved play zone",
+        "Defined equipment area",
+        "Controlled boundary and staff sightline",
+        "Prevent non-party guests entering"
+      ],
+      [
+        "Whole-venue buyout",
+        "Venue during booked slot",
+        "One controlled guest arrival route",
+        "Confirm staffing and full-venue occupancy"
+      ],
+      [
+        "Convertible room",
+        "Room can host other activities",
+        "Furniture storage and clear exits",
+        "Check every room arrangement"
+      ]
+    ],
+    "faq": [
+      {
+        "title": "Can a party room share the main playground?",
+        "desc": "Yes, if the booking clearly states that play is shared. Design the room boundary and staff checks so families understand which space is private."
+      },
+      {
+        "title": "Does adding a party room guarantee higher revenue?",
+        "desc": "No. Model bookings, reset time, staffing, catering costs and lost general-admission capacity before deciding."
+      },
+      {
+        "title": "What should a supplier receive?",
+        "desc": "Send the site survey, door and column positions, intended booking model, guest mix and local occupancy requirements. Request a furniture and circulation layout alongside equipment."
+      },
+      {
+        "title": "Is this a general playground business plan?",
+        "desc": "No. This page addresses party-room boundaries and turnover. Use the linked business-plan guide for the wider financial model."
+      }
+    ],
+    "tableTitle": "Room and Equipment Decisions — Decision Matrix",
+    "tableNote": "Planning guidance only. Final dimensions, capacity, approvals and product suitability require project-specific review.",
+    "imageAlt": "Private Playground Party Room Design — illustrative 3D equipment render",
+    "captions": [
+      "Equipment format to review against the actual site survey.",
+      "Check transitions, supervision and service access in the assembled design.",
+      "Include supporting spaces in the equipment brief."
+    ],
+    "ui": {
+      "home": "Home",
+      "products": "Products",
+      "design": "Request Free 3D Design",
+      "whatsapp": "Chat on WhatsApp",
+      "compare": "Compare Options",
+      "gallery": "Design References",
+      "relatedTitle": "Related Planning Guides",
+      "faqTitle": "Buyer Questions",
+      "sourcesTitle": "Sources & Scope",
+      "sourcesIntro": "Confirm the current standard edition and local building, fire and accessibility requirements with your qualified project team. These references are not product certificates.",
+      "updated": "Updated October 30, 2026",
+      "author": "NinescapeLand · Commercial Play Planning",
+      "imageNote": "Existing site renders illustrate equipment formats, not a completed project at this venue.",
+      "inquiryIntro": "Share your country, site dimensions, intended ages and operating format for a project-specific proposal."
+    }
+  },
+  "first-birthday-soft-play-equipment-for-venues": {
+    "slug": "first-birthday-soft-play-equipment-for-venues",
+    "title": "First Birthday Soft Play for Venues",
+    "metaTitle": "First Birthday Soft Play Equipment | NinescapeLand",
+    "metaDescription": "Select soft play for first-birthday events at commercial venues: caregiver seating, floor-level modules, hygiene, setup checks and separated play zones.",
+    "kicker": "First Birthday · Caregiver Access · Event Setup",
+    "intro": "First-birthday groups often include babies, siblings and adults in the same booking. The equipment decision is therefore about a supervised floor-level area and a repeatable event setup, not a smaller version of an older-child obstacle course. This guide helps commercial venues select event equipment; it does not offer home toys or local party hire.",
+    "imageKey": "birthday",
+    "answerQuestion": "What equipment should a venue consider for first-birthday events?",
+    "answer": "Consider low padded shapes, an open crawling area and simple floor-level exploration modules, subject to the supplier's documented intended age and supervision instructions. Separate faster-moving siblings and leave enough caregiver access around each module. Never assume that all soft play is suitable for a child just because the surface feels soft.",
+    "frameworkTitle": "Design for Babies and Caregivers",
+    "framework": [
+      {
+        "title": "Start with the declared age range",
+        "desc": "Request the manufacturer's intended-use statement, age range and supervision instructions for every item. Reject generic claims that all products suit all ages."
+      },
+      {
+        "title": "Separate siblings",
+        "desc": "Provide a distinct older-child route or supervised activity, rather than sending older children through a crawling area."
+      },
+      {
+        "title": "Keep modules reachable",
+        "desc": "Arrange low modules with open access for caregivers. Avoid enclosed routes that make observation or assistance difficult."
+      },
+      {
+        "title": "Treat every event as a new setup",
+        "desc": "Inspect covers, seams, fixings and floor conditions after transport or movement. Keep a signed setup record before guests arrive."
+      }
+    ],
+    "equipmentTitle": "Build a Repeatable Event Kit",
+    "equipment": [
+      {
+        "title": "Low padded shapes",
+        "desc": "Specify stable modules and covered closures, with documented age suitability and cleaning instructions."
+      },
+      {
+        "title": "Open crawling surface",
+        "desc": "Choose an appropriately specified surface for the intended activities; padding is not proof of tested impact performance."
+      },
+      {
+        "title": "Caregiver seating",
+        "desc": "Position seats near the baby zone without blocking access, exits or staff observation."
+      },
+      {
+        "title": "Clean storage",
+        "desc": "Separate inspected ready-to-use modules from items awaiting cleaning or repair; label each kit for traceability."
+      }
+    ],
+    "columns": [
+      "Item",
+      "Buyer question",
+      "Evidence to request",
+      "Setup decision"
+    ],
+    "rows": [
+      [
+        "Padded shapes",
+        "Which ages and uses are intended?",
+        "Item-specific instructions",
+        "Stable floor-level arrangement"
+      ],
+      [
+        "Covers and seams",
+        "How are surfaces cleaned?",
+        "Approved cleaning method",
+        "Dry before guest access"
+      ],
+      [
+        "Floor surface",
+        "What activities does it support?",
+        "Relevant product specification",
+        "No lifted edges or gaps"
+      ],
+      [
+        "Sibling boundary",
+        "How is faster play separated?",
+        "Venue supervision plan",
+        "Visible controlled entry"
+      ]
+    ],
+    "faq": [
+      {
+        "title": "Is soft play automatically safe for one-year-olds?",
+        "desc": "No. Suitability depends on the item, intended age, arrangement and supervision. Ask for written guidance and inspect the actual setup."
+      },
+      {
+        "title": "Should older siblings use the same zone?",
+        "desc": "Do not assume they should. Provide a separated activity appropriate to their needs and supervise the boundary."
+      },
+      {
+        "title": "Can the equipment be moved between party rooms?",
+        "desc": "Only if the manufacturer permits the move and assembly method. Include transport, storage, inspection and cleaning in the venue workflow."
+      },
+      {
+        "title": "How does this differ from a permanent toddler area?",
+        "desc": "The existing toddler-zone guide covers a fixed everyday layout. This page focuses on event kits, caregiver access and setup records for first-birthday bookings."
+      }
+    ],
+    "tableTitle": "Build a Repeatable Event Kit — Decision Matrix",
+    "tableNote": "Planning guidance only. Final dimensions, capacity, approvals and product suitability require project-specific review.",
+    "imageAlt": "First Birthday Soft Play for Venues — illustrative 3D equipment render",
+    "captions": [
+      "Equipment format to review against the actual site survey.",
+      "Check transitions, supervision and service access in the assembled design.",
+      "Include supporting spaces in the equipment brief."
+    ],
+    "ui": {
+      "home": "Home",
+      "products": "Products",
+      "design": "Request Free 3D Design",
+      "whatsapp": "Chat on WhatsApp",
+      "compare": "Compare Options",
+      "gallery": "Design References",
+      "relatedTitle": "Related Planning Guides",
+      "faqTitle": "Buyer Questions",
+      "sourcesTitle": "Sources & Scope",
+      "sourcesIntro": "Confirm the current standard edition and local building, fire and accessibility requirements with your qualified project team. These references are not product certificates.",
+      "updated": "Updated October 30, 2026",
+      "author": "NinescapeLand · Commercial Play Planning",
+      "imageNote": "Existing site renders illustrate equipment formats, not a completed project at this venue.",
+      "inquiryIntro": "Share your country, site dimensions, intended ages and operating format for a project-specific proposal."
+    }
+  },
+  "commercial-indoor-playground-tunnels-and-tubes": {
+    "slug": "commercial-indoor-playground-tunnels-and-tubes",
+    "title": "Commercial Playground Tunnels & Tubes",
+    "metaTitle": "Commercial Playground Tunnels & Tubes | NinescapeLand",
+    "metaDescription": "Compare commercial indoor playground tunnels and tubes by visibility, rescue access, ventilation, cleaning and integration with existing play structures.",
+    "kicker": "Tunnels · Tubes · Visibility · Service Access",
+    "intro": "A tunnel may be a transparent crawl tube, a mesh bridge or a padded connector within a contained play structure. Commercial buyers need more than a colour and diameter: they need to know how staff can observe, access, inspect and clean the route. This guide focuses on permanent indoor equipment, not folding domestic crawl toys.",
+    "imageKey": "tunnels",
+    "answerQuestion": "How do you choose commercial playground tunnels and tubes?",
+    "answer": "Compare the declared age group, structural connection, visibility, cleaning access and assisted-exit provisions for each design. Ask the supplier and independent reviewer to assess the assembled route, including entry and exit transitions. A tunnel that fits a drawing may still be unsuitable for the existing frame or supervision plan.",
+    "frameworkTitle": "Check the Whole Route",
+    "framework": [
+      {
+        "title": "Define entry and exit",
+        "desc": "Map the transition from deck to tunnel and back. Identify waiting points so queues do not block adjoining slide platforms."
+      },
+      {
+        "title": "Plan observation",
+        "desc": "Review transparent sections, mesh visibility and staff viewing positions. Opaque themed tubes require particular scrutiny of observation and access."
+      },
+      {
+        "title": "Ask about assisted exit",
+        "desc": "Have the supplier explain how a child can be reached and assisted without improvising a dismantling procedure during operation."
+      },
+      {
+        "title": "Design inspection access",
+        "desc": "Specify where staff inspect joints, net attachments, seams and fasteners. Include cleaning and drying access in the purchase brief."
+      }
+    ],
+    "equipmentTitle": "Compare Connector Formats",
+    "equipment": [
+      {
+        "title": "Transparent rigid tube",
+        "desc": "Can support observation, but visibility depends on scratches, reflections and the installed angle. Confirm material and access provisions."
+      },
+      {
+        "title": "Mesh crawl bridge",
+        "desc": "Offers visual openness. Ask how attachments, mesh wear and the frame are inspected and replaced."
+      },
+      {
+        "title": "Padded crawl connector",
+        "desc": "Integrates with contained soft play. Check seams, covered edges and cleaning access throughout the connector."
+      },
+      {
+        "title": "Themed enclosed route",
+        "desc": "Creates a strong visual identity but may complicate supervision. Evaluate service access before approving a decorative shell."
+      }
+    ],
+    "columns": [
+      "Format",
+      "Observation",
+      "Maintenance focus",
+      "Integration check"
+    ],
+    "rows": [
+      [
+        "Transparent tube",
+        "Clear panels where specified",
+        "Scratching, joints and surface cleaning",
+        "Frame interface and transitions"
+      ],
+      [
+        "Mesh bridge",
+        "Open mesh sightlines",
+        "Net wear and attachments",
+        "Anchorage and adjoining decks"
+      ],
+      [
+        "Padded connector",
+        "Depends on openings and covers",
+        "Seams, padding and closures",
+        "No exposed joining edges"
+      ],
+      [
+        "Themed enclosure",
+        "May be limited",
+        "Panel removal and hidden joints",
+        "Assisted access and inspection"
+      ]
+    ],
+    "faq": [
+      {
+        "title": "What is the difference between tubes and tunnels?",
+        "desc": "Suppliers use the terms differently. Define the material, enclosure, movement type and connection method rather than buying by name alone."
+      },
+      {
+        "title": "Can a tunnel be retrofitted to any frame?",
+        "desc": "No. The original structure, loading, fixing design and route transitions must be reviewed. Obtain written approval for the complete modification."
+      },
+      {
+        "title": "Does a transparent tube solve supervision?",
+        "desc": "Not by itself. Staff position, lighting, panel condition and the full route geometry still matter."
+      },
+      {
+        "title": "Which standard should buyers ask about?",
+        "desc": "For soft-contained systems, ask whether ASTM F1918 is applicable and request the documented scope and current edition. Other equipment and jurisdictions may require different assessments."
+      }
+    ],
+    "tableTitle": "Compare Connector Formats — Decision Matrix",
+    "tableNote": "Planning guidance only. Final dimensions, capacity, approvals and product suitability require project-specific review.",
+    "imageAlt": "Commercial Playground Tunnels & Tubes — illustrative 3D equipment render",
+    "captions": [
+      "Equipment format to review against the actual site survey.",
+      "Check transitions, supervision and service access in the assembled design.",
+      "Include supporting spaces in the equipment brief."
+    ],
+    "ui": {
+      "home": "Home",
+      "products": "Products",
+      "design": "Request Free 3D Design",
+      "whatsapp": "Chat on WhatsApp",
+      "compare": "Compare Options",
+      "gallery": "Design References",
+      "relatedTitle": "Related Planning Guides",
+      "faqTitle": "Buyer Questions",
+      "sourcesTitle": "Sources & Scope",
+      "sourcesIntro": "Confirm the current standard edition and local building, fire and accessibility requirements with your qualified project team. These references are not product certificates.",
+      "updated": "Updated October 30, 2026",
+      "author": "NinescapeLand · Commercial Play Planning",
+      "imageNote": "Existing site renders illustrate equipment formats, not a completed project at this venue.",
+      "inquiryIntro": "Share your country, site dimensions, intended ages and operating format for a project-specific proposal."
+    }
+  },
+  "vacant-mall-unit-indoor-playground-conversion": {
+    "slug": "vacant-mall-unit-indoor-playground-conversion",
+    "title": "Convert a Vacant Mall Unit to Indoor Play",
+    "metaTitle": "Vacant Mall Unit Playground Conversion | NinescapeLand",
+    "metaDescription": "Assess a vacant retail unit for indoor play: landlord fit-out rules, columns, service access, fire review and equipment procurement before signing a lease.",
+    "kicker": "Vacant Units · Fit-Out Review · Lease Decisions",
+    "intro": "A vacant shop is not automatically ready for a playground. Its storefront, ceiling services, columns, deliveries and permitted use can determine whether a conversion is feasible. This guide is a pre-lease and retrofit checklist for mall landlords and operators, distinct from our general soft-play mall format guide or Indonesia market page.",
+    "imageKey": "mall",
+    "answerQuestion": "What should you check before converting a vacant mall unit?",
+    "answer": "Obtain a measured survey and landlord fit-out manual, then review permitted use, egress, accessibility, ceiling services and installation access with qualified local advisers. Resolve approval-dependent changes before committing to the equipment package. Equipment price alone does not describe the cost or feasibility of converting a former retail shop.",
+    "frameworkTitle": "Run a Pre-Lease Feasibility Review",
+    "framework": [
+      {
+        "title": "Confirm permitted use",
+        "desc": "Ask the landlord and local authority whether indoor play is permitted in the unit and what changes trigger formal approvals."
+      },
+      {
+        "title": "Survey the actual obstacles",
+        "desc": "Record columns, soffits, fire equipment, air supply, existing doors and floor levels. Use usable clear dimensions, not the gross leasable area alone."
+      },
+      {
+        "title": "Split landlord and tenant work",
+        "desc": "Agree who handles fire-system changes, electrical upgrades, floor repair, frontage and utility connections."
+      },
+      {
+        "title": "Check the delivery path",
+        "desc": "Measure loading bay, corridors, lifts and doors. Confirm delivery hours, noise restrictions and assembly access before selecting module sizes."
+      }
+    ],
+    "equipmentTitle": "Procure Around Building Constraints",
+    "equipment": [
+      {
+        "title": "Column-aware play structure",
+        "desc": "Arrange activity routes around fixed obstacles while preserving inspection and circulation space."
+      },
+      {
+        "title": "Reversible partitions",
+        "desc": "Where permitted, compare modular room boundaries with permanent works; check fire and acoustic performance for both."
+      },
+      {
+        "title": "Compact ancillary areas",
+        "desc": "Include check-in, storage, cleaning and caregiver seating in the layout rather than treating all floor space as equipment space."
+      },
+      {
+        "title": "Installable modules",
+        "desc": "Select an assembly sequence and package sizes that fit the mall's delivery route and working-hour rules."
+      }
+    ],
+    "columns": [
+      "Decision gate",
+      "Document",
+      "Who confirms it",
+      "Do not assume"
+    ],
+    "rows": [
+      [
+        "Lease and permitted use",
+        "Written use and fit-out terms",
+        "Landlord and local authority",
+        "Retail approval covers play"
+      ],
+      [
+        "Fire and accessibility",
+        "Project-specific review",
+        "Qualified local professionals",
+        "3D design is an approval"
+      ],
+      [
+        "Services and ceiling",
+        "Measured coordinated survey",
+        "Building services team",
+        "Advertised height is clear height"
+      ],
+      [
+        "Delivery and installation",
+        "Access and work-hour plan",
+        "Mall operations and installer",
+        "Every crate fits the lift"
+      ]
+    ],
+    "faq": [
+      {
+        "title": "Should I order equipment before signing the lease?",
+        "desc": "Avoid irreversible commitments until the survey, landlord requirements and key approval dependencies are understood. Coordinate quote validity with the lease decision."
+      },
+      {
+        "title": "Can a low-ceiling former shop work?",
+        "desc": "Possibly with an appropriately designed floor-level or compact format. The answer depends on actual clearances, services and the intended equipment, not a universal minimum."
+      },
+      {
+        "title": "Does this page estimate conversion ROI?",
+        "desc": "No. Build a project-specific model using rent, fit-out, staffing and demand. This page addresses feasibility gates, not a promised return."
+      },
+      {
+        "title": "What do you need for a free 3D concept?",
+        "desc": "A measured survey with columns, doors and clear heights, the intended ages and format, and the landlord's principal constraints."
+      }
+    ],
+    "tableTitle": "Procure Around Building Constraints — Decision Matrix",
+    "tableNote": "Planning guidance only. Final dimensions, capacity, approvals and product suitability require project-specific review.",
+    "imageAlt": "Convert a Vacant Mall Unit to Indoor Play — illustrative 3D equipment render",
+    "captions": [
+      "Equipment format to review against the actual site survey.",
+      "Check transitions, supervision and service access in the assembled design.",
+      "Include supporting spaces in the equipment brief."
+    ],
+    "ui": {
+      "home": "Home",
+      "products": "Products",
+      "design": "Request Free 3D Design",
+      "whatsapp": "Chat on WhatsApp",
+      "compare": "Compare Options",
+      "gallery": "Design References",
+      "relatedTitle": "Related Planning Guides",
+      "faqTitle": "Buyer Questions",
+      "sourcesTitle": "Sources & Scope",
+      "sourcesIntro": "Confirm the current standard edition and local building, fire and accessibility requirements with your qualified project team. These references are not product certificates.",
+      "updated": "Updated October 30, 2026",
+      "author": "NinescapeLand · Commercial Play Planning",
+      "imageNote": "Existing site renders illustrate equipment formats, not a completed project at this venue.",
+      "inquiryIntro": "Share your country, site dimensions, intended ages and operating format for a project-specific proposal."
+    }
+  },
+  "hotel-resort-indoor-play-amenity-design": {
+    "slug": "hotel-resort-indoor-play-amenity-design",
+    "title": "Hotel & Resort Indoor Play Amenities",
+    "metaTitle": "Hotel Indoor Play Amenity Design | NinescapeLand",
+    "metaDescription": "Plan indoor play amenities for hotels and resorts: guest access, staff visibility, acoustic separation, seasonal use and equipment procurement scope.",
+    "kicker": "Hotels · Resorts · Guest Access · Quiet Neighbours",
+    "intro": "A hotel play amenity serves registered guests within a wider hospitality operation. Its access rules, staffing, acoustic neighbours and housekeeping workflow differ from a standalone ticketed playground. This guide helps hotel owners and design teams scope indoor equipment without promising occupancy gains or presenting unverified hotel projects.",
+    "imageKey": "hotel",
+    "answerQuestion": "How should a hotel plan an indoor play amenity?",
+    "answer": "Define whether the space is caregiver-supervised or a staffed children's programme, then plan controlled access, age-appropriate zones, cleaning storage and acoustic separation from guestrooms and quiet amenities. Coordinate the proposal with fire, accessibility and hospitality operations teams. A play-equipment manufacturer does not replace local childcare licensing advice.",
+    "frameworkTitle": "Start with the Operating Model",
+    "framework": [
+      {
+        "title": "Name who supervises",
+        "desc": "Make caregiver responsibility or staffed-session rules explicit. Review any childcare licensing obligations with local advisers."
+      },
+      {
+        "title": "Set guest access rules",
+        "desc": "Decide whether access is for registered guests, paid day visitors or booked groups. Include the access process in the staff plan."
+      },
+      {
+        "title": "Protect quiet neighbours",
+        "desc": "Identify guestrooms, spa areas and meeting rooms next to or below the space. Seek acoustic advice rather than relying on soft surfaces alone."
+      },
+      {
+        "title": "Plan seasonal storage",
+        "desc": "Account for quiet-season reconfiguration, cleaning and inspection. Choose movable items only where movement is allowed by their instructions."
+      }
+    ],
+    "equipmentTitle": "Equipment and Hospitality Interfaces",
+    "equipment": [
+      {
+        "title": "Compact contained play",
+        "desc": "Consider a visible activity structure where ceiling services and emergency circulation allow; confirm the installed-system requirements."
+      },
+      {
+        "title": "Floor-level younger-child zone",
+        "desc": "Provide separated access and caregiver proximity; specify intended ages item by item."
+      },
+      {
+        "title": "Low-intensity exploration",
+        "desc": "Select role-play and manipulative modules for quieter activity, while recognising that acoustics need building-level treatment."
+      },
+      {
+        "title": "Housekeeping-ready surfaces",
+        "desc": "Confirm cleaning compatibility, drying time and secure storage with housekeeping before finalising materials."
+      }
+    ],
+    "columns": [
+      "Operating model",
+      "Access",
+      "Staffing question",
+      "Layout priority"
+    ],
+    "rows": [
+      [
+        "Caregiver-supervised amenity",
+        "Registered guests with clear rules",
+        "Who checks access and condition?",
+        "Caregiver proximity and visible zones"
+      ],
+      [
+        "Staffed children's sessions",
+        "Booked and controlled",
+        "What licensing and ratios apply?",
+        "Check-in, pickup and staff access"
+      ],
+      [
+        "Mixed hotel and day guests",
+        "Separate guest entitlement",
+        "How are visitor groups managed?",
+        "Controlled entry and waiting space"
+      ],
+      [
+        "Seasonal flexible room",
+        "Programme-specific",
+        "Who inspects each reconfiguration?",
+        "Storage and repeatable setup"
+      ]
+    ],
+    "faq": [
+      {
+        "title": "Can a hotel play area operate without dedicated childcare staff?",
+        "desc": "That depends on its operating model and local rules. Do not describe it as supervised childcare unless the staffing and approvals support that claim."
+      },
+      {
+        "title": "Will an indoor play amenity raise room occupancy?",
+        "desc": "It may support a family-focused offer, but no increase is guaranteed. Evaluate guest feedback, operating costs and local demand."
+      },
+      {
+        "title": "How do we reduce noise?",
+        "desc": "Review the room location, floor and wall construction, doors and services with an acoustic professional. Padded equipment alone is not an acoustic specification."
+      },
+      {
+        "title": "How does this differ from a shopping-mall playground?",
+        "desc": "Hotel access, quiet neighbouring spaces, housekeeping and guest-session rules drive the design. Mall footfall and retail tenancy are not the primary planning assumptions."
+      }
+    ],
+    "tableTitle": "Equipment and Hospitality Interfaces — Decision Matrix",
+    "tableNote": "Planning guidance only. Final dimensions, capacity, approvals and product suitability require project-specific review.",
+    "imageAlt": "Hotel & Resort Indoor Play Amenities — illustrative 3D equipment render",
+    "captions": [
+      "Equipment format to review against the actual site survey.",
+      "Check transitions, supervision and service access in the assembled design.",
+      "Include supporting spaces in the equipment brief."
+    ],
+    "ui": {
+      "home": "Home",
+      "products": "Products",
+      "design": "Request Free 3D Design",
+      "whatsapp": "Chat on WhatsApp",
+      "compare": "Compare Options",
+      "gallery": "Design References",
+      "relatedTitle": "Related Planning Guides",
+      "faqTitle": "Buyer Questions",
+      "sourcesTitle": "Sources & Scope",
+      "sourcesIntro": "Confirm the current standard edition and local building, fire and accessibility requirements with your qualified project team. These references are not product certificates.",
+      "updated": "Updated October 30, 2026",
+      "author": "NinescapeLand · Commercial Play Planning",
+      "imageNote": "Existing site renders illustrate equipment formats, not a completed project at this venue.",
+      "inquiryIntro": "Share your country, site dimensions, intended ages and operating format for a project-specific proposal."
+    }
+  }
+}

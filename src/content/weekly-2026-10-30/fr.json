@@ -1,0 +1,617 @@
+{
+  "first-birthday-soft-play-equipment-for-venues": {
+    "slug": "first-birthday-soft-play-equipment-for-venues",
+    "title": "Espace de Jeu Souple pour Premier Anniversaire - Établissements",
+    "metaTitle": "Jeux souples pour le premier anniversaire",
+    "metaDescription": "Choisissez des jeux pour le premier anniversaire : modules au sol, sièges pour adultes, hygiène et zones séparées.",
+    "kicker": "Premier Anniversaire · Accès Accompagnateurs · Organisation Événement",
+    "intro": "Les groupes de premier anniversaire incluent souvent des bébés, frères/sœurs et adultes dans une même réservation. Le choix d'équipement concerne donc un espace de sol supervisé et une organisation reproductible, pas une version réduite de parcours pour enfants plus âgés. Ce guide aide les établissements à sélectionner des équipements événementiels ; il ne couvre pas les jouets domestiques ou locations locales.",
+    "imageKey": "birthday",
+    "answerQuestion": "Quel équipement un établissement doit-il envisager pour les premiers anniversaires ?",
+    "answer": "Privilégiez des formes basses rembourrées, une zone de rampement ouverte et des modules d'exploration simples au sol, conformément à la tranche d'âge et instructions de supervision du fournisseur. Séparez les frères/sœurs plus actifs et prévoyez un accès suffisant pour les accompagnateurs autour de chaque module. Ne présumez pas que tout jeu souple convient à un enfant simplement parce que la surface semble molle.",
+    "frameworkTitle": "Concevoir pour Bébés et Accompagnateurs",
+    "framework": [
+      {
+        "title": "Commencez par la tranche d'âge déclarée",
+        "desc": "Exigez la notice d'utilisation, tranche d'âge et instructions de supervision du fabricant pour chaque article. Rejetez les affirmations génériques de compatibilité tous âges."
+      },
+      {
+        "title": "Séparez les frères et sœurs",
+        "desc": "Prévoyez un parcours ou activité distincte pour les enfants plus âgés, plutôt que de les faire passer par la zone de rampement."
+      },
+      {
+        "title": "Maintenez les modules accessibles",
+        "desc": "Disposez des modules bas avec un accès dégagé pour les accompagnateurs. Évitez les parcours fermés rendant l'observation ou l'assistance difficile."
+      },
+      {
+        "title": "Traitez chaque événement comme une nouvelle installation",
+        "desc": "Inspectez housses, coutures, fixations et état du sol après transport. Conservez un registre d'installation signé avant l'arrivée des invités."
+      }
+    ],
+    "equipmentTitle": "Constituer un Kit Événementiel Reproductible",
+    "equipment": [
+      {
+        "title": "Formes basses rembourrées",
+        "desc": "Choisissez des modules stables avec fermetures couvertes, accompagnés de leur notice d'âge et instructions de nettoyage."
+      },
+      {
+        "title": "Surface de rampement ouverte",
+        "desc": "Sélectionnez une surface adaptée aux activités prévues ; le rembourrage ne garantit pas une performance anti-choc testée."
+      },
+      {
+        "title": "Sièges accompagnateurs",
+        "desc": "Placez les sièges près de la zone bébé sans obstruer l'accès, sorties ou surveillance du personnel."
+      },
+      {
+        "title": "Stockage propre",
+        "desc": "Isolez les modules inspectés/prêts à l'emploi de ceux en attente de nettoyage/réparation ; étiquetez chaque kit pour traçabilité."
+      }
+    ],
+    "columns": [
+      "Article",
+      "Question acheteur",
+      "Preuve à demander",
+      "Décision d'installation"
+    ],
+    "rows": [
+      [
+        "Formes rembourrées",
+        "Quels âges et usages sont prévus ?",
+        "Instructions spécifiques",
+        "Disposition stable au sol"
+      ],
+      [
+        "Housses et coutures",
+        "Comment nettoyer les surfaces ?",
+        "Méthode de nettoyage approuvée",
+        "Sécher avant accès"
+      ],
+      [
+        "Revêtement de sol",
+        "Quelles activités supporte-t-il ?",
+        "Spécifications produit",
+        "Pas de bords décollés"
+      ],
+      [
+        "Limite frères/sœurs",
+        "Comment séparer les jeux vifs ?",
+        "Plan de supervision",
+        "Entrée contrôlée visible"
+      ]
+    ],
+    "faq": [
+      {
+        "title": "Un jeu souple est-il automatiquement adapté aux 1 an ?",
+        "desc": "Non. L'adéquation dépend de l'article, âge prévu, agencement et supervision. Exigez des consignes écrites et inspectez l'installation."
+      },
+      {
+        "title": "Les frères/sœurs plus âgés doivent-ils partager la zone ?",
+        "desc": "Ne présumez rien. Fournissez une activité séparée adaptée à leur âge et surveillez la limite."
+      },
+      {
+        "title": "Peut-on déplacer l'équipement entre salles ?",
+        "desc": "Seulement si le fabricant le permet. Intégrez transport, stockage, inspection et nettoyage dans le processus."
+      },
+      {
+        "title": "En quoi cela diffère-t-il d'une zone fixe pour tout-petits ?",
+        "desc": "Le guide des zones fixes couvre les aménagements permanents. Cette page se concentre sur les kits événementiels, accès accompagnateurs et traçabilité pour premiers anniversaires."
+      }
+    ],
+    "tableTitle": "Constituer un Kit Événementiel - Matrice de Décision",
+    "tableNote": "Conseils de planification uniquement. Dimensions finales, capacité, approbations et adéquation des produits nécessitent une analyse spécifique.",
+    "imageAlt": "Espace de Jeu Souple Premier Anniversaire - rendu 3D illustratif",
+    "captions": [
+      "Format d'équipement à comparer avec l'étude de site réelle.",
+      "Vérifiez transitions, supervision et accès technique dans le montage.",
+      "Incluez les espaces annexes dans le cahier des charges."
+    ],
+    "ui": {
+      "home": "Accueil",
+      "products": "Produits",
+      "design": "Demander un Design 3D Gratuit",
+      "whatsapp": "Discuter sur WhatsApp",
+      "compare": "Comparer les Options",
+      "gallery": "Références de Design",
+      "relatedTitle": "Guides Connexes",
+      "faqTitle": "Questions Acheteurs",
+      "sourcesTitle": "Sources & Périmètre",
+      "sourcesIntro": "Confirmez l'édition en vigueur des normes et réglementations locales (incendie, accessibilité) avec votre équipe projet qualifiée. Ces références ne sont pas des certificats produits.",
+      "updated": "Mis à jour le 30 octobre 2026",
+      "author": "NinescapeLand · Planification Jeu Commercial",
+      "imageNote": "Les rendus de site illustrent des formats d'équipement, pas un projet finalisé dans cet établissement.",
+      "inquiryIntro": "Indiquez pays, dimensions du site, âges ciblés et format d'exploitation pour une proposition sur mesure."
+    }
+  },
+  "vacant-mall-unit-indoor-playground-conversion": {
+    "slug": "vacant-mall-unit-indoor-playground-conversion",
+    "title": "Convertir un local commercial vacant en aire de jeu intérieure",
+    "metaTitle": "Convertir un local vacant en aire de jeux",
+    "metaDescription": "Évaluez un local vacant : bail, colonnes, réseaux, incendie et accès de montage avant de commander les équipements.",
+    "kicker": "Locaux vacants · Vérification aménagement · Décisions de bail",
+    "intro": "Un magasin vacant n'est pas automatiquement prêt pour une aire de jeu. Sa façade, les services au plafond, les colonnes, les livraisons et l'usage autorisé déterminent si une conversion est possible. Ce guide est une checklist pré-bail et rénovation pour propriétaires et opérateurs de centres commerciaux, distinct de notre guide général sur les aires de jeu ou notre page marché Indonésie.",
+    "imageKey": "mall",
+    "answerQuestion": "Que vérifier avant de convertir un local vacant ?",
+    "answer": "Obtenez un relevé précis et le manuel d'aménagement du propriétaire, puis vérifiez l'usage autorisé, les issues de secours, l'accessibilité, les services au plafond et l'accès pour l'installation avec des conseillers locaux qualifiés. Résolvez les modifications dépendant d'approbations avant de finaliser l'équipement. Le prix seul de l'équipement ne reflète pas le coût ou la faisabilité de conversion d'un ancien magasin.",
+    "frameworkTitle": "Réaliser une étude de faisabilité pré-bail",
+    "framework": [
+      {
+        "title": "Confirmer l'usage autorisé",
+        "desc": "Demandez au propriétaire et aux autorités si une aire de jeu est permise dans le local et quels changements nécessitent des approbations."
+      },
+      {
+        "title": "Relever les obstacles réels",
+        "desc": "Notez colonnes, faux-plafonds, équipements incendie, ventilation, portes existantes et niveaux de sol. Utilisez les dimensions utiles nettes, pas seulement la surface brute."
+      },
+      {
+        "title": "Répartir les travaux propriétaire/locataire",
+        "desc": "Convenez qui gère les modifications du système incendie, mises aux normes électriques, réparation du sol, façade et raccordements."
+      },
+      {
+        "title": "Vérifier le chemin de livraison",
+        "desc": "Mesurez quai de chargement, couloirs, ascenseurs et portes. Confirmez horaires de livraison, restrictions de bruit et accès pour assemblage avant de choisir les modules."
+      }
+    ],
+    "equipmentTitle": "Choisir l'équipement en fonction des contraintes",
+    "equipment": [
+      {
+        "title": "Structure adaptée aux colonnes",
+        "desc": "Organisez les parcours autour des obstacles fixes en conservant espace d'inspection et circulation."
+      },
+      {
+        "title": "Cloisons réversibles",
+        "desc": "Si permis, comparez séparations modulaires avec travaux permanents ; vérifiez performance incendie et acoustique."
+      },
+      {
+        "title": "Espaces annexes compacts",
+        "desc": "Intégrez accueil, stockage, nettoyage et sièges accompagnateurs dans le plan, pas seulement l'équipement."
+      },
+      {
+        "title": "Modules installables",
+        "desc": "Choisissez une séquence d'assemblage et des tailles adaptées aux règles de livraison du centre."
+      }
+    ],
+    "columns": [
+      "Étape décision",
+      "Document",
+      "Qui confirme",
+      "Ne pas supposer"
+    ],
+    "rows": [
+      [
+        "Bail et usage",
+        "Conditions écrites d'usage et aménagement",
+        "Propriétaire et autorités",
+        "L'autorisation commerce couvre les jeux"
+      ],
+      [
+        "Incendie et accessibilité",
+        "Revue spécifique au projet",
+        "Professionnels locaux qualifiés",
+        "Un modèle 3D vaut approbation"
+      ],
+      [
+        "Services et plafond",
+        "Relevé mesuré coordonné",
+        "Équipe technique du bâtiment",
+        "La hauteur annoncée est la hauteur libre"
+      ],
+      [
+        "Livraison et installation",
+        "Plan d'accès et horaires",
+        "Gestion du centre et installateur",
+        "Toutes les caisses passent dans l'ascenseur"
+      ]
+    ],
+    "faq": [
+      {
+        "title": "Commander l'équipement avant de signer le bail ?",
+        "desc": "Évitez tout engagement irréversible avant d'avoir le relevé, les exigences du propriétaire et les approbations clés. Alignez la validité des devis avec la décision de bail."
+      },
+      {
+        "title": "Un ancien magasin avec plafond bas peut-il convenir ?",
+        "desc": "Peut-être avec un équipement adapté au sol ou compact. La réponse dépend des espaces libres réels, des services et de l'équipement prévu, pas d'un minimum universel."
+      },
+      {
+        "title": "Cette page estime-t-elle la rentabilité ?",
+        "desc": "Non. Construisez un modèle spécifique incluant loyer, aménagement, personnel et demande. Cette page traite des conditions de faisabilité, pas d'un retour garanti."
+      },
+      {
+        "title": "Que faut-il pour un concept 3D gratuit ?",
+        "desc": "Un relevé mesuré avec colonnes, portes et hauteurs libres, les âges cibles et le format envisagé, ainsi que les contraintes principales du propriétaire."
+      }
+    ],
+    "tableTitle": "Choisir l'équipement en fonction des contraintes — Matrice décisionnelle",
+    "tableNote": "Aide à la planification uniquement. Les dimensions finales, capacité, approbations et adéquation des produits nécessitent une revue spécifique au projet.",
+    "imageAlt": "Convertir un local commercial vacant en aire de jeu intérieure — rendu 3D illustratif",
+    "captions": [
+      "Format d'équipement à comparer avec le relevé réel.",
+      "Vérifiez transitions, surveillance et accès techniques dans le design assemblé.",
+      "Incluez les espaces de support dans le cahier des charges."
+    ],
+    "ui": {
+      "home": "Accueil",
+      "products": "Produits",
+      "design": "Demander un concept 3D gratuit",
+      "whatsapp": "Discuter sur WhatsApp",
+      "compare": "Comparer les options",
+      "gallery": "Références de design",
+      "relatedTitle": "Guides connexes",
+      "faqTitle": "Questions acheteurs",
+      "sourcesTitle": "Sources & périmètre",
+      "sourcesIntro": "Confirmez l'édition en vigueur des normes et les exigences locales incendie, accessibilité avec votre équipe projet qualifiée. Ces références ne sont pas des certificats produits.",
+      "updated": "Mis à jour le 30 octobre 2026",
+      "author": "NinescapeLand · Planification aires de jeu commerciales",
+      "imageNote": "Les rendus de site existants illustrent des formats d'équipement, pas un projet finalisé sur ce lieu.",
+      "inquiryIntro": "Partagez votre pays, dimensions du site, âges cibles et format d'exploitation pour une proposition adaptée."
+    }
+  },
+  "commercial-indoor-playground-tunnels-and-tubes": {
+    "slug": "commercial-indoor-playground-tunnels-and-tubes",
+    "title": "Tunnels et Tubes pour Aires de Jeux Commerciales",
+    "metaTitle": "Tunnels et tubes de jeux commerciaux",
+    "metaDescription": "Comparez les tunnels commerciaux : visibilité, accès d’assistance, nettoyage et intégration aux structures intérieures.",
+    "kicker": "Tunnels · Tubes · Visibilité · Accès de Service",
+    "intro": "Un tunnel peut être un tube de rampage transparent, une passerelle en maille ou un connecteur rembourré dans une structure de jeu fermée. Les acheteurs professionnels ont besoin de plus qu'une couleur et d'un diamètre : ils doivent savoir comment le personnel peut observer, accéder, inspecter et nettoyer le parcours. Ce guide se concentre sur les équipements intérieurs permanents, pas sur les jouets pliants domestiques.",
+    "imageKey": "tunnels",
+    "answerQuestion": "Comment choisir les tunnels et tubes pour aires de jeux commerciales ?",
+    "answer": "Comparez la tranche d'âge déclarée, la connexion structurelle, la visibilité, l'accès pour le nettoyage et les dispositions de sortie assistée pour chaque conception. Demandez au fournisseur et à un évaluateur indépendant d'évaluer le parcours assemblé, y compris les transitions d'entrée et de sortie. Un tunnel qui correspond à un dessin peut toujours être inadapté au cadre existant ou au plan de supervision.",
+    "frameworkTitle": "Vérifiez le Parcours Complet",
+    "framework": [
+      {
+        "title": "Définir l'entrée et la sortie",
+        "desc": "Cartographiez la transition du plancher au tunnel et retour. Identifiez les points d'attente pour éviter que les files ne bloquent les plates-formes de toboggan adjacentes."
+      },
+      {
+        "title": "Planifier l'observation",
+        "desc": "Revoyez les sections transparentes, la visibilité de la maille et les positions de vue du personnel. Les tubes thématiques opaques nécessitent un examen particulier de l'observation et de l'accès."
+      },
+      {
+        "title": "Demander une sortie assistée",
+        "desc": "Demandez au fournisseur d'expliquer comment un enfant peut être atteint et aidé sans improviser une procédure de démontage pendant le fonctionnement."
+      },
+      {
+        "title": "Concevoir l'accès d'inspection",
+        "desc": "Spécifiez où le personnel inspecte les joints, les attaches de filet, les coutures et les fixations. Incluez l'accès pour le nettoyage et le séchage dans le cahier des charges."
+      }
+    ],
+    "equipmentTitle": "Comparez les Formats de Connecteurs",
+    "equipment": [
+      {
+        "title": "Tube rigide transparent",
+        "desc": "Peut favoriser l'observation, mais la visibilité dépend des rayures, reflets et de l'angle d'installation. Confirmez le matériau et les dispositions d'accès."
+      },
+      {
+        "title": "Passerelle de rampage en maille",
+        "desc": "Offre une ouverture visuelle. Demandez comment les attaches, l'usure de la maille et le cadre sont inspectés et remplacés."
+      },
+      {
+        "title": "Connecteur de rampage rembourré",
+        "desc": "S'intègre aux aires de jeux souples fermées. Vérifiez les coutures, bords couverts et accès de nettoyage sur tout le connecteur."
+      },
+      {
+        "title": "Parcours thématique fermé",
+        "desc": "Crée une forte identité visuelle mais peut compliquer la supervision. Évaluez l'accès de service avant d'approuver une coque décorative."
+      }
+    ],
+    "columns": [
+      "Format",
+      "Observation",
+      "Point de maintenance",
+      "Vérification d'intégration"
+    ],
+    "rows": [
+      [
+        "Tube transparent",
+        "Panneaux clairs si spécifiés",
+        "Rayures, joints et nettoyage de surface",
+        "Interface de cadre et transitions"
+      ],
+      [
+        "Passerelle en maille",
+        "Lignes de vue ouvertes",
+        "Usure du filet et attaches",
+        "Ancrage et planchers adjacents"
+      ],
+      [
+        "Connecteur rembourré",
+        "Dépend des ouvertures et couvercles",
+        "Coutures, rembourrage et fermetures",
+        "Pas de bords de jonction exposés"
+      ],
+      [
+        "Enceinte thématique",
+        "Peut être limitée",
+        "Retrait des panneaux et joints cachés",
+        "Accès assisté et inspection"
+      ]
+    ],
+    "faq": [
+      {
+        "title": "Quelle est la différence entre tubes et tunnels ?",
+        "desc": "Les fournisseurs utilisent les termes différemment. Définissez le matériau, l'enceinte, le type de mouvement et la méthode de connexion plutôt que d'acheter par nom seul."
+      },
+      {
+        "title": "Un tunnel peut-il être ajouté à n'importe quel cadre ?",
+        "desc": "Non. La structure originale, la charge, la conception de fixation et les transitions de parcours doivent être revues. Obtenez une approbation écrite pour la modification complète."
+      },
+      {
+        "title": "Un tube transparent résout-il la supervision ?",
+        "desc": "Pas seul. La position du personnel, l'éclairage, l'état des panneaux et la géométrie complète du parcours comptent toujours."
+      },
+      {
+        "title": "Quelle norme les acheteurs doivent-ils demander ?",
+        "desc": "Pour les systèmes souples fermés, demandez si l'ASTM F1918 est applicable et exigez la portée documentée et l'édition actuelle. D'autres équipements et juridictions peuvent nécessiter des évaluations différentes."
+      }
+    ],
+    "tableTitle": "Comparez les Formats de Connecteurs — Matrice de Décision",
+    "tableNote": "Conseils de planification uniquement. Les dimensions finales, la capacité, les approbations et la pertinence du produit nécessitent un examen spécifique au projet.",
+    "imageAlt": "Tunnels et Tubes pour Aires de Jeux Commerciales — rendu 3D illustratif d'équipement",
+    "captions": [
+      "Format d'équipement à revoir par rapport à l'étude de site réelle.",
+      "Vérifiez les transitions, la supervision et l'accès de service dans la conception assemblée.",
+      "Incluez les espaces de support dans le cahier des charges de l'équipement."
+    ],
+    "ui": {
+      "home": "Accueil",
+      "products": "Produits",
+      "design": "Demande de Conception 3D Gratuite",
+      "whatsapp": "Discuter sur WhatsApp",
+      "compare": "Comparer les Options",
+      "gallery": "Références de Conception",
+      "relatedTitle": "Guides de Planification Associés",
+      "faqTitle": "Questions des Acheteurs",
+      "sourcesTitle": "Sources et Portée",
+      "sourcesIntro": "Confirmez l'édition actuelle de la norme et les exigences locales de construction, d'incendie et d'accessibilité avec votre équipe de projet qualifiée. Ces références ne sont pas des certificats de produit.",
+      "updated": "Mis à jour le 30 octobre 2026",
+      "author": "NinescapeLand · Planification d'Aires de Jeux Commerciales",
+      "imageNote": "Les rendus de site existants illustrent les formats d'équipement, pas un projet terminé sur ce lieu.",
+      "inquiryIntro": "Partagez votre pays, dimensions du site, âges prévus et format d'exploitation pour une proposition spécifique au projet."
+    }
+  },
+  "private-indoor-playground-party-room-design": {
+    "slug": "private-indoor-playground-party-room-design",
+    "title": "Conception de Salle de Fête Privée pour Aire de Jeux",
+    "metaTitle": "Salles de fêtes pour aires de jeux intérieures",
+    "metaDescription": "Planifiez des salles de fêtes : accueil, repas, surveillance, espaces partagés ou exclusifs et remise en état.",
+    "kicker": "Fêtes Privées · Flux des Invités · Réinitialisation de la Salle",
+    "intro": "Une fête privée dans une aire de jeux intérieure peut signifier une salle fermée avec jeux partagés, une zone de jeu réservée ou l'utilisation exclusive de tout l'établissement. Déterminez ce que la réservation inclut avant de commander des cloisons ou du matériel. Ce guide est destiné aux propriétaires de lieux achetant un aménagement de salle de fête, pas aux parents cherchant une réservation locale pour un anniversaire.",
+    "imageKey": "party",
+    "answerQuestion": "Comment une salle de fête privée doit-elle être connectée à l'aire de jeux ?",
+    "answer": "Placez l'accueil avant l'entrée de jeu, gardez la manipulation des aliments et du gâteau en dehors des routes actives et donnez au personnel une vue claire sur la porte. Séparez le stockage des invités, la circulation accessible et la route de réinitialisation. La taille de la salle et l'occupation nécessitent une vérification locale ; un dessin 3D attrayant n'établit pas la capacité légale.",
+    "frameworkTitle": "Planifiez la Limite de Réservation",
+    "framework": [
+      {
+        "title": "Choisissez la promesse",
+        "desc": "Précisez si les invités reçoivent uniquement une salle, une zone réservée ou une location complète de l'établissement. Une salle dite privée ne doit pas impliquer une utilisation exclusive de l'aire de jeux."
+      },
+      {
+        "title": "Séparez les groupes arrivants et partants",
+        "desc": "Prévoyez un point d'accueil et une zone d'attente à l'extérieur des sorties. Planifiez un temps tampon pour qu'un groupe partant ne bloque pas le suivant."
+      },
+      {
+        "title": "Gardez la restauration hors des jeux actifs",
+        "desc": "Placez les tables, la préparation du gâteau et le service du personnel sur une route nettoyable. Confirmez les règles locales de service alimentaire au lieu de considérer un devis de matériel de jeu comme une approbation de restauration."
+      },
+      {
+        "title": "Concevez la route de réinitialisation",
+        "desc": "Localisez la collecte des déchets, les surfaces lavables et le stockage pour que le personnel puisse réinitialiser sans traverser une zone d'activité en cours."
+      }
+    ],
+    "equipmentTitle": "Décisions sur la Salle et le Matériel",
+    "equipment": [
+      {
+        "title": "Panneaux de visibilité",
+        "desc": "Vérifiez les sections transparentes ou ouvertes avec les exigences incendie et acoustiques du système de cloisonnement réel."
+      },
+      {
+        "title": "Stockage des invités",
+        "desc": "Prévoyez un espace dédié pour les chaussures, manteaux et sacs qui ne réduit pas la route de sortie."
+      },
+      {
+        "title": "Contrôle d'accès",
+        "desc": "Choisissez un portail supervisé par le personnel et un registre de réservation ; évitez les serrures de porte qui compromettent la sortie d'urgence."
+      },
+      {
+        "title": "Mobilier flexible",
+        "desc": "Utilisez des tables mobiles et lavables uniquement là où leurs positions stationnées et occupées préservent la circulation."
+      }
+    ],
+    "columns": [
+      "Modèle de réservation",
+      "Ce qui est exclusif",
+      "Priorité d'aménagement",
+      "Vérification opérationnelle"
+    ],
+    "rows": [
+      [
+        "Salle privée + jeux partagés",
+        "Salle à manger uniquement",
+        "Porte séparée et entrée de jeu visible",
+        "Expliquez les jeux partagés avant le paiement"
+      ],
+      [
+        "Zone de jeu réservée",
+        "Zone d'équipement définie",
+        "Limite contrôlée et ligne de vue du personnel",
+        "Empêchez les invités non-invités d'entrer"
+      ],
+      [
+        "Location complète de l'établissement",
+        "Établissement pendant le créneau réservé",
+        "Une seule route d'arrivée contrôlée",
+        "Confirmez le personnel et l'occupation complète"
+      ],
+      [
+        "Salle convertible",
+        "La salle peut accueillir d'autres activités",
+        "Stockage du mobilier et sorties dégagées",
+        "Vérifiez chaque arrangement de salle"
+      ]
+    ],
+    "faq": [
+      {
+        "title": "Une salle de fête peut-elle partager l'aire de jeux principale ?",
+        "desc": "Oui, si la réservation indique clairement que les jeux sont partagés. Concevez la limite de la salle et les vérifications du personnel pour que les familles comprennent quel espace est privé."
+      },
+      {
+        "title": "L'ajout d'une salle de fête garantit-il un revenu plus élevé ?",
+        "desc": "Non. Modélisez les réservations, le temps de réinitialisation, le personnel, les coûts de restauration et la perte de capacité d'admission générale avant de décider."
+      },
+      {
+        "title": "Que doit recevoir un fournisseur ?",
+        "desc": "Envoyez l'étude de site, les positions des portes et colonnes, le modèle de réservation prévu, le mix d'invités et les exigences locales d'occupation. Demandez un aménagement de mobilier et de circulation avec le matériel."
+      },
+      {
+        "title": "Est-ce un plan d'affaires général pour une aire de jeux ?",
+        "desc": "Non. Cette page traite des limites et du turnover des salles de fête. Utilisez le guide de plan d'affaires lié pour le modèle financier plus large."
+      }
+    ],
+    "tableTitle": "Décisions sur la Salle et le Matériel — Matrice de Décision",
+    "tableNote": "Conseils de planification uniquement. Les dimensions finales, la capacité, les approbations et la pertinence des produits nécessitent une vérification spécifique au projet.",
+    "imageAlt": "Conception de Salle de Fête Privée pour Aire de Jeux — rendu 3D illustratif du matériel",
+    "captions": [
+      "Format de matériel à vérifier avec l'étude de site réelle.",
+      "Vérifiez les transitions, la supervision et l'accès au service dans la conception assemblée.",
+      "Incluez les espaces de soutien dans le brief du matériel."
+    ],
+    "ui": {
+      "home": "Accueil",
+      "products": "Produits",
+      "design": "Demande de Conception 3D Gratuite",
+      "whatsapp": "Discuter sur WhatsApp",
+      "compare": "Comparer les Options",
+      "gallery": "Références de Conception",
+      "relatedTitle": "Guides de Planification Associés",
+      "faqTitle": "Questions des Acheteurs",
+      "sourcesTitle": "Sources & Portée",
+      "sourcesIntro": "Confirmez l'édition actuelle de la norme et les exigences locales de construction, incendie et accessibilité avec votre équipe de projet qualifiée. Ces références ne sont pas des certificats de produit.",
+      "updated": "Mis à jour le 30 octobre 2026",
+      "author": "NinescapeLand · Planification Commerciale des Aires de Jeux",
+      "imageNote": "Les rendus de site existants illustrent les formats de matériel, pas un projet terminé dans cet établissement.",
+      "inquiryIntro": "Partagez votre pays, les dimensions du site, les âges prévus et le format d'exploitation pour une proposition spécifique au projet."
+    }
+  },
+  "hotel-resort-indoor-play-amenity-design": {
+    "slug": "hotel-resort-indoor-play-amenity-design",
+    "title": "Aménagements de Jeu Intérieur pour Hôtels & Résidences",
+    "metaTitle": "Aires de jeux pour hôtels et complexes",
+    "metaDescription": "Planifiez les jeux en hôtel : accès des clients, surveillance, acoustique, nettoyage et utilisation saisonnière.",
+    "kicker": "Hôtels · Résorts · Accès Clients · Voisinage Calme",
+    "intro": "Un espace de jeu hôtelier sert les clients enregistrés dans un cadre d'hébergement plus large. Ses règles d'accès, gestion du personnel, voisinage acoustique et protocoles de nettoyage diffèrent d'une aire de jeux publique. Ce guide aide les propriétaires et concepteurs à dimensionner des équipements intérieurs sans promettre d'augmentation de fréquentation ou présenter des projets non vérifiés.",
+    "imageKey": "hotel",
+    "answerQuestion": "Comment un hôtel doit-il planifier un espace de jeu intérieur ?",
+    "answer": "Définissez si l'espace est sous surveillance parentale ou géré par du personnel, puis planifiez un accès contrôlé, des zones adaptées à l'âge, un rangement pour le nettoyage et une isolation acoustique des chambres et espaces calmes. Coordonnez le projet avec les équipes incendie, accessibilité et exploitation hôtelière. Un fabricant d'équipements ne remplace pas un conseil local sur les réglementations jeunesse.",
+    "frameworkTitle": "Commencez par le Modèle d'Exploitation",
+    "framework": [
+      {
+        "title": "Identifier la supervision",
+        "desc": "Explicitez la responsabilité des accompagnateurs ou les règles des sessions encadrées. Consultez un expert local sur les obligations légales."
+      },
+      {
+        "title": "Définir les règles d'accès",
+        "desc": "Choisissez un accès réservé aux clients, aux visiteurs payants ou aux groupes sur réservation. Intégrez ce processus au plan d'équipe."
+      },
+      {
+        "title": "Protéger les espaces voisins",
+        "desc": "Repérez les chambres, spas et salles de réunion adjacents. Sollicitez un conseil acoustique plutôt que de compter uniquement sur des surfaces molles."
+      },
+      {
+        "title": "Prévoir un rangement saisonnier",
+        "desc": "Anticipez les reconfigurations en basse saison, nettoyage et inspections. Ne choisissez des éléments mobiles que si leurs instructions le permettent."
+      }
+    ],
+    "equipmentTitle": "Équipements et Interfaces Hôtelières",
+    "equipment": [
+      {
+        "title": "Structure de jeu compacte",
+        "desc": "Optez pour une structure visible si les plafonds et circulations d'urgence le permettent ; vérifiez les exigences d'installation."
+      },
+      {
+        "title": "Zone pour jeunes enfants",
+        "desc": "Prévoyez un accès séparé et une proximité parentale ; précisez les âges ciblés pour chaque élément."
+      },
+      {
+        "title": "Exploration calme",
+        "desc": "Sélectionnez des modules de jeu d'imitation et de manipulation, tout en traitant l'acoustique au niveau du bâti."
+      },
+      {
+        "title": "Surfaces adaptées au nettoyage",
+        "desc": "Validez la compatibilité des matériaux avec les protocoles de ménage, temps de séchage et rangement sécurisé."
+      }
+    ],
+    "columns": [
+      "Modèle d'exploitation",
+      "Accès",
+      "Gestion du personnel",
+      "Priorité d'aménagement"
+    ],
+    "rows": [
+      [
+        "Espace sous surveillance parentale",
+        "Clients enregistrés avec règles claires",
+        "Qui contrôle l'accès et l'état ?",
+        "Proximité parentale et zones visibles"
+      ],
+      [
+        "Sessions encadrées",
+        "Sur réservation contrôlée",
+        "Quelles réglementations s'appliquent ?",
+        "Accueil, départ et accès du personnel"
+      ],
+      [
+        "Mixte hôtel/visiteurs",
+        "Droits d'accès distincts",
+        "Gestion des groupes ?",
+        "Entrée contrôlée et espace d'attente"
+      ],
+      [
+        "Salle polyvalente saisonnière",
+        "Programme spécifique",
+        "Qui inspecte chaque reconfiguration ?",
+        "Rangement et installation reproductible"
+      ]
+    ],
+    "faq": [
+      {
+        "title": "Un espace de jeu hôtelier peut-il fonctionner sans personnel dédié ?",
+        "desc": "Cela dépend du modèle et des réglementations locales. Ne le présentez pas comme un service de garde sans le personnel et autorisations requis."
+      },
+      {
+        "title": "Un espace de jeu augmente-t-il la fréquentation ?",
+        "desc": "Il peut renforcer l'offre familiale, mais aucune hausse n'est garantie. Évaluez les retours clients, coûts et demande locale."
+      },
+      {
+        "title": "Comment réduire le bruit ?",
+        "desc": "Consultez un acousticien pour l'emplacement, cloisonnements, portes et réseaux. Les surfaces rembourrées ne suffisent pas."
+      },
+      {
+        "title": "En quoi diffère-t-il d'une aire de jeux commerciale ?",
+        "desc": "L'accès hôtelier, voisinage calme, ménage et règles de session guident la conception. La fréquentation et commerces ne sont pas les hypothèses principales."
+      }
+    ],
+    "tableTitle": "Équipements et Interfaces Hôtelières — Matrice de Décision",
+    "tableNote": "Aide à la conception uniquement. Dimensions, capacité, approbations et produits nécessitent une analyse spécifique.",
+    "imageAlt": "Aménagements de Jeu Intérieur pour Hôtels & Résidences — rendu 3D illustratif",
+    "captions": [
+      "Format d'équipement à confronter au relevé terrain.",
+      "Vérifiez transitions, supervision et accès techniques dans la conception finale.",
+      "Intégrez les espaces annexes au cahier des charges."
+    ],
+    "ui": {
+      "home": "Accueil",
+      "products": "Produits",
+      "design": "Demander un Projet 3D Gratuit",
+      "whatsapp": "Discuter sur WhatsApp",
+      "compare": "Comparer les Options",
+      "gallery": "Références de Conception",
+      "relatedTitle": "Guides Connexes",
+      "faqTitle": "Questions Fréquentes",
+      "sourcesTitle": "Sources & Périmètre",
+      "sourcesIntro": "Vérifiez les normes en vigueur et exigences locales avec votre équipe projet. Ces références ne valent pas certification produit.",
+      "updated": "Mis à jour le 30 octobre 2026",
+      "author": "NinescapeLand · Conception d'Aires de Jeu Commerciales",
+      "imageNote": "Les rendus illustrent des formats d'équipement, non un projet finalisé sur ce site.",
+      "inquiryIntro": "Indiquez pays, dimensions, âges ciblés et modèle d'exploitation pour une proposition adaptée."
+    }
+  }
+}
