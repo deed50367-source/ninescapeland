@@ -1,8 +1,9 @@
 # Roadmap
 
-- [ ] October 30: validate five distinct aggregation topics with Semrush and the uploaded reports
-- [ ] October 30: build five six-language pages with site imagery, SEO/GEO and inbound/outbound links; register sitemap/prerender
-- [ ] October 30: verify pages and deliver five blog keyword trios in a standalone Markdown report
+- [x] October 30: validate five distinct aggregation topics with Semrush and the uploaded reports; disclose weak/mixed long-tail evidence
+- [x] October 30: build five six-language pages with concept renders/site imagery, SEO/GEO and inbound/outbound links; register all 30 sitemap/prerender routes
+- [x] October 30: verify all 30 pages, English/Arabic layout, image loading, FAQ, old-page navigation and an actual saved inquiry; deliver standalone keyword report
+- [ ] Publish October 30 pages and sitemap; requires the user's publication request
 
 - [x] Add new-inquiry, saved chat contact and human-request/staff takeover PushPlus events; browser inquiry returned 201 and success confirmation, and new inquiry/contact/human-request notifications all have submitted provider references
 - [ ] Confirm test notification receipt on the user's actual WeChat device; PushPlus submission verified, device receipt requires user confirmation

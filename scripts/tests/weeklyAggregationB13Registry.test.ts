@@ -23,6 +23,8 @@ describe("October 30 aggregation coverage", () => {
         expect(content[page.slug].framework.length).toBe(4);
         expect(content[page.slug].rows.length).toBe(4);
         expect(content[page.slug].faq.length).toBe(4);
+        expect(content[page.slug].metaTitle.length).toBeLessThan(60);
+        expect(content[page.slug].metaDescription.length).toBeLessThan(160);
       }
     }
   });
