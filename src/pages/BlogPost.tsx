@@ -23,6 +23,12 @@ import { format } from "date-fns";
 import { Skeleton } from "@/components/ui/skeleton";
 import { Button } from "@/components/ui/button";
 import { useEffect } from "react";
+import weeklyEnglish from "@/content/blog-2026-10-30/en.json";
+import { weeklyBlogSlugs } from "@/config/weeklyBlogMatrix";
+import { FAQSchema } from "@/components/StructuredData";
+
+type WeeklyArticles = typeof weeklyEnglish;
+const weeklyBundles = import.meta.glob<{ default: WeeklyArticles }>("../content/blog-2026-10-30/*.json", { eager: true });
 
 const LANGUAGES = [
   { code: 'en', name: 'English', flag: '🇺🇸' },
@@ -42,6 +48,8 @@ const BlogPost = () => {
 
   // Get current language code
   const currentLang = i18n.language?.split('-')[0] || 'en';
+  const isWeeklyBlog = weeklyBlogSlugs.some(item => item === slug);
+  const weeklyArticle = (weeklyBundles[`../content/blog-2026-10-30/${currentLang}.json`]?.default ?? weeklyEnglish).find(item => item.slug === slug);
 
   // Check for slug redirect (old long URLs → new short URLs)
   const { data: redirectData } = useQuery({
@@ -332,7 +340,10 @@ const BlogPost = () => {
         keywords={post.seo_keywords || undefined}
         wordCount={wordCount}
         articleBody={stripHtml(post.content)}
+        inLanguage={currentLang}
+        citation={isWeeklyBlog ? weeklyArticle?.sources.map(source => source.url) : undefined}
       />
+      {isWeeklyBlog && weeklyArticle && <FAQSchema items={weeklyArticle.faq.map(item => ({ question: item.q, answer: item.a }))} />}
       <BreadcrumbSchema items={breadcrumbItems} />
       
       <Header />
@@ -415,7 +426,7 @@ const BlogPost = () => {
                       <span>NinescapeLand Team</span>
                     </div>
                     <p className="text-xs text-muted-foreground mt-1 leading-snug">
-                      {t("blog.authorBio", "Senior Indoor Playground Design Specialists · 16+ years (since 2008) designing 2,000+ commercial play projects across 50+ countries. ASTM F1918 & EN 1176 certified.")}
+                      {isWeeklyBlog ? weeklyArticle?.ui.authorBio : t("blog.authorBio", "NinescapeLand editorial team.")}
                     </p>
                   </address>
                   <div className="flex flex-col gap-1.5 text-sm text-muted-foreground">

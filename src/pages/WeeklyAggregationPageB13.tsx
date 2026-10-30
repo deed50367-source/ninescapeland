@@ -10,6 +10,7 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 import { SpecComparisonTable } from "@/components/SpecComparisonTable";
 import { SourcesReferences } from "@/components/SourcesReferences";
 import { ProductInquiryForm } from "@/components/product-detail/ProductInquiryForm";
+import { WeeklyBlogLinks } from "@/components/WeeklyBlogLinks";
 import { productImages } from "@/config/galleryImages";
 import { b13Pages, b13Language, b13Path, b13Metadata, B13_BASE_URL, B13_DATE, B13_LANGUAGES } from "@/config/weeklyAggregationB13Registry";
 import english from "@/content/weekly-2026-10-30/en.json";
@@ -98,6 +99,7 @@ export default function WeeklyAggregationPageB13({ slug }: { slug: keyof Content
       <section className="border-y border-border py-12"><div className="container-wide"><h2 className="font-heading text-2xl font-bold">{ui.relatedTitle}</h2><div className="mt-5 flex flex-wrap gap-3">{related.map(item => <Button key={item.slug} variant="outline" asChild className="h-auto whitespace-normal text-start"><Link to={b13Path(item.slug,language)}>{item.labels[language]}</Link></Button>)}{registry.parents.map(parent => <Button key={parent} variant="outline" asChild className="h-auto whitespace-normal text-start"><Link to={b13Path(parent,language)}>{b13ParentLabels[language][b13ParentSlugs.indexOf(parent)]}</Link></Button>)}</div></div></section>
       <section className="py-14 md:py-20"><div className="container-wide max-w-4xl"><h2 className="font-heading text-2xl font-bold md:text-4xl">{ui.faqTitle}</h2><Accordion type="single" collapsible className="mt-6">{page.faq.map((item,index) => <AccordionItem value={String(index)} key={item.title}><AccordionTrigger className="text-start text-lg">{item.title}</AccordionTrigger><AccordionContent className="text-base leading-7 text-muted-foreground">{item.desc}</AccordionContent></AccordionItem>)}</Accordion></div></section>
       <SourcesReferences heading={ui.sourcesTitle} intro={ui.sourcesIntro} sources={sources} asOf="October 2026" />
+      <WeeklyBlogLinks slug={slug} />
       <ProductInquiryForm productName={page.title} productSlug={slug} />
     </main>
     <Footer /><FloatingCTA />

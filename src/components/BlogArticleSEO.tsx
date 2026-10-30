@@ -2,6 +2,7 @@ import { Helmet } from "react-helmet-async";
 import { useParams, useLocation } from "react-router-dom";
 import { languages } from "@/i18n/config";
 import { WebsiteSchema } from "@/components/StructuredData";
+import { boundedBlogMetadata } from "@/config/weeklyBlogMatrix";
 
 const baseUrl = "https://indoorplaygroundsolution.com";
 const siteName = "NinescapeLand";
@@ -67,7 +68,8 @@ export const BlogArticleSEO = ({
   };
   const pathWithoutLang = getPathWithoutLang();
   
-  const fullTitle = `${title} | ${siteName}`;
+  const metadata = boundedBlogMetadata(title, description);
+  const fullTitle = metadata.title;
   const ogImage = image || `${baseUrl}/og-image.png`;
 
 
@@ -86,7 +88,7 @@ export const BlogArticleSEO = ({
       <link rel="icon" href="/favicon.ico" />
       
       <title>{fullTitle}</title>
-      <meta name="description" content={description} />
+      <meta name="description" content={metadata.description} />
       {keywords && <meta name="keywords" content={keywords} />}
       <meta name="author" content={author} />
       <meta name="robots" content="index, follow, max-image-preview:large" />
@@ -94,7 +96,7 @@ export const BlogArticleSEO = ({
       
       {/* Open Graph - Article specific */}
       <meta property="og:title" content={fullTitle} />
-      <meta property="og:description" content={description} />
+      <meta property="og:description" content={metadata.description} />
       <meta property="og:type" content="article" />
       <meta property="og:url" content={canonicalUrl} />
       <meta property="og:image" content={ogImage} />
@@ -118,7 +120,7 @@ export const BlogArticleSEO = ({
       <meta name="twitter:site" content={twitterHandle} />
       <meta name="twitter:creator" content={twitterHandle} />
       <meta name="twitter:title" content={title} />
-      <meta name="twitter:description" content={description} />
+      <meta name="twitter:description" content={metadata.description} />
       <meta name="twitter:image" content={ogImage} />
       <meta name="twitter:image:alt" content={title} />
       

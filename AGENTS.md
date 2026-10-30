@@ -15,4 +15,5 @@
 - The interactive world map uses simplified local Natural Earth country outlines and shared region selectors; this keeps geographic rendering deterministic and independent of remote map services.
 - Lazy sections with public hash destinations retain placeholder IDs and reveal on hash navigation, so consultation and calculator links work before content mounts.
 - Published multilingual blog batches retain a shared slug per article and register all language routes in prerendering and the sitemap so crawlers can discover the same content as readers.
+- Reviewed weekly blogs retain localized editorial bundles and an explicit aggregation-parent matrix; render reciprocal links from that matrix, and publish database HTML only after translation and factual checks so review evidence and live content stay aligned.
 - Exhibition banners, contact-page image overrides and inquiry prefills share an expiry hook so all temporary presentation restores together, including pages left open at expiry.
