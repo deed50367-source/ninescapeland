@@ -12,6 +12,11 @@ export const SITE_CONTENT_UPDATED_AT = "2026-08-21";
 
 /** Path (no language prefix, no trailing slash) → ISO date of last content revision. */
 export const CONTENT_DATES: Record<string, string> = {
+  "/private-indoor-playground-party-room-design": "2026-10-30",
+  "/first-birthday-soft-play-equipment-for-venues": "2026-10-30",
+  "/commercial-indoor-playground-tunnels-and-tubes": "2026-10-30",
+  "/vacant-mall-unit-indoor-playground-conversion": "2026-10-30",
+  "/hotel-resort-indoor-play-amenity-design": "2026-10-30",
   "/": "2026-08-21",
   "/products": "2026-08-21",
   "/products/indoor-playground": "2026-08-21",

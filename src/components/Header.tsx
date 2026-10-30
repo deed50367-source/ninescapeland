@@ -11,6 +11,7 @@ import { useRTL } from "@/hooks/useRTL";
 import { ProductMegaMenu } from "./ProductMegaMenu";
 import { MobileProductGroups } from "./MobileProductGroups";
 import { useWhatsAppTracking } from "@/hooks/useWhatsAppTracking";
+import { b13Pages, b13Language } from "@/config/weeklyAggregationB13Registry";
 
 export const Header = () => {
   const { t } = useTranslation();
@@ -94,6 +95,7 @@ export const Header = () => {
     { label: "Small Playground on a Budget", href: localizedPath("/small-indoor-playground-business-on-a-budget") },
     { label: "Soft Play Material Specs", href: localizedPath("/soft-play-foam-and-material-specifications") },
     { label: "Indoor Playground Indonesia", href: localizedPath("/indoor-playground-equipment-indonesia") },
+    ...b13Pages.map(page => ({ label: page.labels[b13Language(pathname)], href: localizedPath(`/${page.slug}`) })),
     { label: t("activePlayRunning.breadcrumb", "Active Play for Running"), href: localizedPath("/best-indoorplaygroundsolution-active-play-for-running-facilities") },
     { label: t("officeWellness.breadcrumb", "Office Wellness"), href: localizedPath("/indoorplaygroundsolution-office-wellness-solutions") },
   ];

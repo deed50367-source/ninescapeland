@@ -12,6 +12,7 @@ import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { EEATSignature } from "@/components/EEATSignature";
+import { WeeklyPlanningLinks } from "@/components/WeeklyPlanningLinks";
 import {
   Accordion,
   AccordionContent,
@@ -194,6 +195,7 @@ const SoftPlayMallSolutions = () => {
           </div>
         </section>
 
+        <WeeklyPlanningLinks slug="soft-play-equipment-shopping-mall-solutions" />
         <ContactSection />
         <EEATSignature />
       </main>

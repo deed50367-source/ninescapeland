@@ -7,6 +7,7 @@ import { SpecComparisonTable } from "@/components/SpecComparisonTable";
 import { SourcesReferences, type SourceItem } from "@/components/SourcesReferences";
 import { getContentDate } from "@/config/contentDates";
 import { Button } from "@/components/ui/button";
+import { WeeklyPlanningLinks } from "@/components/WeeklyPlanningLinks";
 
 
 
@@ -382,6 +383,7 @@ export const StableSolutionPage = ({
 
         {sources && sources.length > 0 && <SourcesReferences sources={sources} />}
 
+        <WeeklyPlanningLinks slug={slug} />
         <ProductInquiryForm productName={title} productSlug={slug} />
 
 
