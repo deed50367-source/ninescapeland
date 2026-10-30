@@ -1,6 +1,6 @@
 import { describe, expect, test } from "bun:test";
 import { readFileSync } from "node:fs";
-import { B13_BASE_URL, B13_DATE, B13_LANGUAGES, b13Pages, b13Path, b13InboundLinks, b13Metadata } from "./weeklyAggregationB13Registry";
+import { B13_BASE_URL, B13_DATE, B13_LANGUAGES, b13Pages, b13Path, b13InboundLinks, b13Metadata } from "../../src/config/weeklyAggregationB13Registry";
 
 describe("October 30 aggregation coverage", () => {
   test("publishes exactly five unique topics", () => {
@@ -16,7 +16,7 @@ describe("October 30 aggregation coverage", () => {
   test("all five topics have six complete translations", () => {
     expect(B13_LANGUAGES).toEqual(["en", "ar", "de", "es", "pt", "fr"]);
     for (const language of B13_LANGUAGES) {
-      const content = JSON.parse(readFileSync(new URL(`../content/weekly-2026-10-30/${language}.json`, import.meta.url), "utf8"));
+      const content = JSON.parse(readFileSync(new URL(`../../src/content/weekly-2026-10-30/${language}.json`, import.meta.url), "utf8"));
       expect(Object.keys(content).length).toBe(5);
       for (const page of b13Pages) {
         expect(content[page.slug].slug).toBe(page.slug);
