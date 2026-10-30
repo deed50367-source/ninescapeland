@@ -1,4 +1,5 @@
 import { Helmet } from "react-helmet-async";
+import { useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { ArrowRight, CheckCircle2, Layers, ClipboardCheck, ShieldCheck } from "lucide-react";
 import { Header } from "@/components/Header";
@@ -26,6 +27,15 @@ const icons = [ClipboardCheck, Layers, ShieldCheck, CheckCircle2];
 export default function WeeklyAggregationPageB13({ slug }: { slug: keyof Content }) {
   const { pathname } = useLocation();
   const language = b13Language(pathname);
+  useEffect(() => {
+    // Static SPA fallbacks must not compete with this route's prerendered head.
+    document.head.querySelectorAll('meta[name="description"], meta[name="robots"], meta[property^="og:"], meta[name^="twitter:"], link[rel="canonical"]').forEach(element => {
+      if (!element.hasAttribute("data-rh")) element.remove();
+    });
+    document.head.querySelectorAll<HTMLLinkElement>('link[rel="alternate"][hreflang]').forEach(element => {
+      if (!element.href.startsWith(B13_BASE_URL)) element.remove();
+    });
+  }, [pathname]);
   const content = bundles[`../content/weekly-2026-10-30/${language}.json`]?.default ?? english;
   const page = content[slug];
   const registry = b13Pages.find(item => item.slug === slug);
