@@ -1,8 +1,9 @@
 # Roadmap
 
-- [ ] October 30 blogs: audit five uploaded articles against their self-check reports and authoritative sources; approve corrected outlines before substantial revisions
-- [ ] Revise and translate five blogs into six languages with existing site cover/inline images; publish records and verify public/authenticated admin views
-- [ ] Add bidirectional aggregation matrix links and register all 30 blog sitemap/prerender routes
+- [x] October 30 blogs: audit five uploaded articles against their self-check reports and authoritative sources; corrected outlines approved before substantial revisions
+- [x] Revise and translate five blogs into six languages with existing site cover/inline images; publish 30 records and verify all public pages/authenticated business admin views
+- [x] Add and verify bidirectional aggregation matrix links; register all 30 blog sitemap/prerender routes; nine tests passed
+- [ ] Publish October 30 blog website changes and sitemap; blog records are published, website deployment requires the user's publication request
 
 - [x] October 30: validate five distinct aggregation topics with Semrush and the uploaded reports; disclose weak/mixed long-tail evidence
 - [x] October 30: build five six-language pages with concept renders/site imagery, SEO/GEO and inbound/outbound links; register all 30 sitemap/prerender routes
