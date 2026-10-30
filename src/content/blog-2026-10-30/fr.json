@@ -2,8 +2,8 @@
   {
     "slug": "indoor-playground-ceiling-height",
     "title": "Hauteur sous plafond pour aire de jeux intérieure : Guide de mesure",
-    "seo_title": "Hauteur sous plafond pour aire de jeux intérieure : Guide de mesure",
-    "seo_description": "Mesurez l'espace utilisable sous plafond, relevez les obstacles et coordonnez les vérifications des équipements, du bâtiment et des normes incendie avant d'installer une aire de jeux intérieure.",
+    "seo_title": "Aire de jeux intérieure : Mesurer la hauteur libre",
+    "seo_description": "Mesurez la hauteur libre et les obstacles. Vérifiez les besoins des équipements et les contraintes locales avant location ou commande.",
     "excerpt": "Une méthode pratique pour documenter l'espace disponible et obtenir une confirmation spécifique aux équipements avant la location ou la commande.",
     "keywords": [
       "design",
@@ -65,15 +65,15 @@
     "sources": [
       {
         "url": "https://store.astm.org/f1918-21.html",
-        "label": "ASTM F1918-21: soft-contained play scope"
+        "label": "ASTM F1918: Champ des équipements de jeux souples confinés"
       },
       {
         "url": "https://store.astm.org/f1487-25.html",
-        "label": "ASTM F1487-25: public-playground scope and exclusions"
+        "label": "ASTM F1487: Équipements publics : champ et exclusions"
       },
       {
         "url": "https://store.astm.org/standards/f2970",
-        "label": "ASTM F2970: institutional trampoline courts scope"
+        "label": "ASTM F2970: Champ des installations institutionnelles de trampoline"
       }
     ],
     "figures": [
@@ -105,8 +105,8 @@
   {
     "slug": "playground-replacement-parts",
     "title": "Pièces de rechange pour aires de jeux : Compatibilité et garantie",
-    "seo_title": "Pièces de rechange pour aires de jeux : Compatibilité et garantie",
-    "seo_description": "Identifiez les pièces d'aire de jeux, comparez les preuves de compatibilité et les termes de garantie écrits, et documentez l'installation avant de remettre l'équipement en service.",
+    "seo_title": "Pièces pour aires de jeux : Compatibilité et garantie",
+    "seo_description": "Identifiez les pièces, vérifiez compatibilité et garantie par écrit, puis documentez installation et remise en service.",
     "excerpt": "Une checklist d'approvisionnement basée sur des preuves pour les rembourrages, filets, fixations et autres composants commerciaux d'aires de jeux.",
     "keywords": [
       "guides",
@@ -148,7 +148,7 @@
       {
         "id": "acceptance",
         "title": "Documentez l'installation et la décision de remise en service",
-        "html": "<p>À l'arrivée, vérifiez la pièce par rapport à la spécification confirmée avant de l'installer. Suivez les instructions d'installation approuvées et utilisez du personnel qualifié pour les travaux hors de la formation de l'équipe du site. Enregistrez la pièce installée, la date, le technicien, la procédure et les vérifications effectuées.</p><p>Lieez l'enregistrement de réparation au rapport de défaut original. La remise en service doit suivre la procédure du fournisseur d'équipement et toute exigence d'inspection applicable ; recevoir une nouvelle pièce seule ne clôt pas le problème. Demandez à NinescapeLand des informations sur l'identification des composants et une étendue d'approvisionnement spécifique au projet, sans supposer la disponibilité ou la compatibilité avant examen.</p>"
+        "html": "<p>À l'arrivée, vérifiez la pièce par rapport à la spécification confirmée avant de l'installer. Suivez les instructions d'installation approuvées et utilisez du personnel qualifié pour les travaux hors de la formation de l'équipe du site. Enregistrez la pièce installée, la date, le technicien, la procédure et les vérifications effectuées.</p><p>Liez l'enregistrement de réparation au rapport de défaut original. La remise en service doit suivre la procédure du fournisseur d'équipement et toute exigence d'inspection applicable ; recevoir une nouvelle pièce seule ne clôt pas le problème. Demandez à NinescapeLand des informations sur l'identification des composants et une étendue d'approvisionnement spécifique au projet, sans supposer la disponibilité ou la compatibilité avant examen.</p>"
       }
     ],
     "faq": [
@@ -168,11 +168,11 @@
     "sources": [
       {
         "url": "https://store.astm.org/f1918-21.html",
-        "label": "ASTM F1918-21: category scope, not component certification"
+        "label": "ASTM F1918: Champ des équipements de jeux souples confinés"
       },
       {
         "url": "https://store.astm.org/standards/f2970",
-        "label": "ASTM F2970: institutional trampoline maintenance and modification scope"
+        "label": "ASTM F2970: Champ des installations institutionnelles de trampoline"
       }
     ],
     "figures": [
@@ -204,8 +204,8 @@
   {
     "slug": "indoor-playground-cleaning",
     "title": "Nettoyage des aires de jeux intérieures : Étiquette des produits et procédure de surface",
-    "seo_title": "Nettoyage des aires de jeux intérieures : Étiquette et procédure",
-    "seo_description": "Élaborez une procédure de nettoyage spécifique aux matériaux en suivant les instructions des équipements et les étiquettes des produits, avec des étapes pour les piscines à balles, les enregistrements des temps de contact et les vérifications du personnel.",
+    "seo_title": "Nettoyage des aires de jeux : Étiquette et méthode",
+    "seo_description": "Planifiez le nettoyage par matériau selon les notices et étiquettes. Consignez temps de contact, traitement des balles et contrôles.",
     "excerpt": "Un processus de nettoyage surface par surface qui évite les recettes chimiques universelles et les promesses d'hygiène non étayées.",
     "keywords": [
       "safety",
@@ -268,15 +268,15 @@
     "sources": [
       {
         "url": "https://www.cdc.gov/hygiene/about/when-and-how-to-clean-and-disinfect-a-facility.html",
-        "label": "CDC: when and how to clean and disinfect a facility"
+        "label": "CDC: Nettoyage et désinfection des établissements"
       },
       {
         "url": "https://www.epa.gov/sites/production/files/2020-04/documents/disinfectants-onepager.pdf",
-        "label": "EPA: six steps for safe and effective disinfectant use"
+        "label": "EPA: Désinfectants et méthodes autorisées"
       },
       {
         "url": "https://www.epa.gov/coronavirus-and-disinfectants/can-i-use-fogging-fumigation-or-electrostatic-spraying-or-drones-help",
-        "label": "EPA: fogging and application-method limitations"
+        "label": "EPA: Désinfectants et méthodes autorisées"
       }
     ],
     "figures": [
@@ -309,8 +309,8 @@
   {
     "slug": "playground-inspection-checklist",
     "title": "Liste de contrôle d'inspection des aires de jeux : Journal des défauts et fermetures",
-    "seo_title": "Liste de contrôle d'inspection des aires de jeux : Journal des défauts et fermetures",
-    "seo_description": "Enregistrez les défauts visibles des aires de jeux, attribuez des actions correctives et documentez la réouverture, tout en séparant les vérifications des opérateurs des inspections techniques qualifiées.",
+    "seo_title": "Inspection des aires de jeux : Suivi des défauts",
+    "seo_description": "Consignez les défauts, actions et remises en service. Distinguez les observations du personnel des inspections techniques.",
     "excerpt": "Un enregistrement pratique des défauts à la fermeture pour les exploitants de jeux commerciaux, avec des responsabilités d'inspection clairement séparées.",
     "keywords": [
       "safety",
@@ -372,15 +372,15 @@
     "sources": [
       {
         "url": "https://store.astm.org/f1918-21.html",
-        "label": "ASTM F1918-21: soft-contained play scope"
+        "label": "ASTM F1918: Champ des équipements de jeux souples confinés"
       },
       {
         "url": "https://store.astm.org/f1487-25.html",
-        "label": "ASTM F1487-25: public-playground exclusions"
+        "label": "ASTM F1487: Équipements publics : champ et exclusions"
       },
       {
         "url": "https://store.astm.org/standards/f2970",
-        "label": "ASTM F2970: trampoline-court maintenance and inspection scope"
+        "label": "ASTM F2970: Champ des installations institutionnelles de trampoline"
       }
     ],
     "figures": [
@@ -412,8 +412,8 @@
   {
     "slug": "indoor-playground-insurance-cost",
     "title": "Coût de l'assurance pour parc de jeux intérieur : Guide de comparaison des devis",
-    "seo_title": "Coût de l'assurance pour parc de jeux intérieur : Guide de comparaison des devis",
-    "seo_description": "Préparez les informations sur l'assurance des parcs de jeux intérieurs et comparez les couvertures, exclusions, limites et franchises sans vous fier à des promesses de primes génériques.",
+    "seo_title": "Assurance des aires de jeux : Comparer les coûts",
+    "seo_description": "Comparez garanties, exclusions, limites et franchises avec les données du site, sans promesse générale sur les primes.",
     "excerpt": "Comment obtenir des propositions d'assurance comparables et comprendre ce qu'une prime inclut et exclut.",
     "keywords": [
       "business",
@@ -475,7 +475,7 @@
     "sources": [
       {
         "url": "https://content.naic.org/consumer/small-business.htm",
-        "label": "NAIC: small-business insurance categories and package limitations"
+        "label": "NAIC: Assurance des petites entreprises et limites de garantie"
       }
     ],
     "figures": [

@@ -2,8 +2,8 @@
   {
     "slug": "indoor-playground-ceiling-height",
     "title": "Altura del Techo para Parques Infantiles Cubiertos: Guía de Medición",
-    "seo_title": "Altura del Techo para Parques Infantiles Cubiertos: Guía de Medición",
-    "seo_description": "Mide el espacio útil de altura libre, registra obstrucciones y coordina revisiones de equipos, construcción y seguridad antes de comprometerte con un parque infantil cubierto.",
+    "seo_title": "Altura del techo en parques infantiles: Medición",
+    "seo_description": "Mide la altura libre y registra obstáculos. Coordina los requisitos del equipo y las revisiones locales antes de alquilar o comprar.",
     "excerpt": "Una forma práctica de documentar el espacio libre utilizable y obtener confirmación específica del equipo antes de alquilar o pedir.",
     "keywords": [
       "design",
@@ -65,15 +65,15 @@
     "sources": [
       {
         "url": "https://store.astm.org/f1918-21.html",
-        "label": "ASTM F1918-21: soft-contained play scope"
+        "label": "ASTM F1918: Alcance de equipos de juego blando contenido"
       },
       {
         "url": "https://store.astm.org/f1487-25.html",
-        "label": "ASTM F1487-25: public-playground scope and exclusions"
+        "label": "ASTM F1487: Equipos públicos: alcance y exclusiones"
       },
       {
         "url": "https://store.astm.org/standards/f2970",
-        "label": "ASTM F2970: institutional trampoline courts scope"
+        "label": "ASTM F2970: Alcance de instalaciones institucionales de trampolín"
       }
     ],
     "figures": [
@@ -105,8 +105,8 @@
   {
     "slug": "playground-replacement-parts",
     "title": "Piezas de repuesto para parques infantiles: Compatibilidad y garantía",
-    "seo_title": "Piezas de repuesto para parques infantiles: Compatibilidad y garantía",
-    "seo_description": "Identifique piezas de parques infantiles, compare evidencia de compatibilidad y términos de garantía escritos, y documente la instalación antes de reabrir el equipo.",
+    "seo_title": "Repuestos de parques infantiles: Ajuste y garantía",
+    "seo_description": "Identifica piezas, verifica compatibilidad y garantía por escrito, y documenta la instalación y la reapertura del equipo.",
     "excerpt": "Una lista de comprobación basada en evidencia para la adquisición de componentes compatibles como almohadillas, redes, fijaciones y otros elementos de parques infantiles comerciales.",
     "keywords": [
       "guides",
@@ -168,11 +168,11 @@
     "sources": [
       {
         "url": "https://store.astm.org/f1918-21.html",
-        "label": "ASTM F1918-21: category scope, not component certification"
+        "label": "ASTM F1918: Alcance de equipos de juego blando contenido"
       },
       {
         "url": "https://store.astm.org/standards/f2970",
-        "label": "ASTM F2970: institutional trampoline maintenance and modification scope"
+        "label": "ASTM F2970: Alcance de instalaciones institucionales de trampolín"
       }
     ],
     "figures": [
@@ -204,8 +204,8 @@
   {
     "slug": "indoor-playground-cleaning",
     "title": "Limpieza de parques infantiles interiores: Etiqueta del producto y SOP de superficies",
-    "seo_title": "Limpieza de parques infantiles interiores: Etiqueta del producto y SOP de superficies",
-    "seo_description": "Construya un procedimiento de limpieza específico para materiales usando instrucciones de equipos y etiquetas de productos, con pasos para bolas, registros de tiempo de contacto y verificaciones del personal.",
+    "seo_title": "Limpieza de parques infantiles: Etiqueta y proceso",
+    "seo_description": "Planifica la limpieza por material según el equipo y la etiqueta. Registra tiempos de contacto, limpieza de bolas y controles finales.",
     "excerpt": "Un flujo de trabajo de limpieza superficie por superficie que evita recetas químicas universales y promesas de higiene no respaldadas.",
     "keywords": [
       "safety",
@@ -268,15 +268,15 @@
     "sources": [
       {
         "url": "https://www.cdc.gov/hygiene/about/when-and-how-to-clean-and-disinfect-a-facility.html",
-        "label": "CDC: when and how to clean and disinfect a facility"
+        "label": "CDC: Limpieza y desinfección de instalaciones"
       },
       {
         "url": "https://www.epa.gov/sites/production/files/2020-04/documents/disinfectants-onepager.pdf",
-        "label": "EPA: six steps for safe and effective disinfectant use"
+        "label": "EPA: Uso de desinfectantes y métodos permitidos"
       },
       {
         "url": "https://www.epa.gov/coronavirus-and-disinfectants/can-i-use-fogging-fumigation-or-electrostatic-spraying-or-drones-help",
-        "label": "EPA: fogging and application-method limitations"
+        "label": "EPA: Uso de desinfectantes y métodos permitidos"
       }
     ],
     "figures": [
@@ -309,8 +309,8 @@
   {
     "slug": "playground-inspection-checklist",
     "title": "Lista de Verificación de Inspección de Áreas de Juego: Registro de Defectos y Cierre",
-    "seo_title": "Lista de Verificación de Inspección de Áreas de Juego: Registro de Defectos y Cierre",
-    "seo_description": "Registra defectos visibles en áreas de juego, asigna acciones correctivas y documenta la reapertura, separando las verificaciones del operador de las inspecciones técnicas calificadas.",
+    "seo_title": "Inspección de parques infantiles: Registro de defectos",
+    "seo_description": "Registra defectos, asigna acciones y documenta la reapertura. Distingue las observaciones del personal de las inspecciones técnicas.",
     "excerpt": "Un registro práctico de defectos a cierre para operadores comerciales de juegos, con responsabilidades de inspección claramente separadas.",
     "keywords": [
       "safety",
@@ -372,15 +372,15 @@
     "sources": [
       {
         "url": "https://store.astm.org/f1918-21.html",
-        "label": "ASTM F1918-21: soft-contained play scope"
+        "label": "ASTM F1918: Alcance de equipos de juego blando contenido"
       },
       {
         "url": "https://store.astm.org/f1487-25.html",
-        "label": "ASTM F1487-25: public-playground exclusions"
+        "label": "ASTM F1487: Equipos públicos: alcance y exclusiones"
       },
       {
         "url": "https://store.astm.org/standards/f2970",
-        "label": "ASTM F2970: trampoline-court maintenance and inspection scope"
+        "label": "ASTM F2970: Alcance de instalaciones institucionales de trampolín"
       }
     ],
     "figures": [
@@ -412,8 +412,8 @@
   {
     "slug": "indoor-playground-insurance-cost",
     "title": "Costo del Seguro para Parques Infantiles Cubiertos: Guía de Comparación de Cotizaciones",
-    "seo_title": "Costo del Seguro para Parques Infantiles Cubiertos: Guía de Comparación de Cotizaciones",
-    "seo_description": "Prepara información sobre seguros para parques infantiles cubiertos y compara coberturas, exclusiones, límites y deducibles sin depender de promesas genéricas de primas.",
+    "seo_title": "Seguro de parques infantiles: Comparar costos",
+    "seo_description": "Compara coberturas, exclusiones, límites y deducibles con información del lugar, sin promesas generales sobre primas.",
     "excerpt": "Cómo obtener propuestas de seguros comparables y entender qué incluye y excluye una prima cotizada.",
     "keywords": [
       "business",
@@ -475,7 +475,7 @@
     "sources": [
       {
         "url": "https://content.naic.org/consumer/small-business.htm",
-        "label": "NAIC: small-business insurance categories and package limitations"
+        "label": "NAIC: Seguros de pequeñas empresas y límites de cobertura"
       }
     ],
     "figures": [

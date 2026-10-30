@@ -65,15 +65,15 @@
     "sources": [
       {
         "url": "https://store.astm.org/f1918-21.html",
-        "label": "ASTM F1918-21: soft-contained play scope"
+        "label": "ASTM F1918: نطاق معدات اللعب الناعمة المغلقة"
       },
       {
         "url": "https://store.astm.org/f1487-25.html",
-        "label": "ASTM F1487-25: public-playground scope and exclusions"
+        "label": "ASTM F1487: نطاق معدات الملاعب العامة والاستثناءات"
       },
       {
         "url": "https://store.astm.org/standards/f2970",
-        "label": "ASTM F2970: institutional trampoline courts scope"
+        "label": "ASTM F2970: نطاق ملاعب الترامبولين المؤسسية"
       }
     ],
     "figures": [
@@ -168,11 +168,11 @@
     "sources": [
       {
         "url": "https://store.astm.org/f1918-21.html",
-        "label": "ASTM F1918-21: category scope, not component certification"
+        "label": "ASTM F1918: نطاق معدات اللعب الناعمة المغلقة"
       },
       {
         "url": "https://store.astm.org/standards/f2970",
-        "label": "ASTM F2970: institutional trampoline maintenance and modification scope"
+        "label": "ASTM F2970: نطاق ملاعب الترامبولين المؤسسية"
       }
     ],
     "figures": [
@@ -233,7 +233,7 @@
       {
         "id": "workflow",
         "title": "اكتب سير عمل قابل للتنفيذ حسب السطح",
-        "html": "<ul><li>قم بتقييد الوصول إلى المنطقة أثناء العمل واتبع تعليمات المنتج regarding التهوية ومعدات الحماية.</li><li>قم بإزالة الحطام ونظف السطح باستخدام الطريقة المعتمدة للمعدات.</li><li>إذا كان التعقيم أو التطهير مطلوبًا، استخدم المنتج المسموح به، التخفيف والطريقة.</li><li>حافظ على وقت التلامس المحدد في الملصق؛ لا تقصره لتسريع إعادة الفتح.</li><li>اشطف عند التوجيه، اترك فترة التجفيف أو التهوية المطلوبة، وافحص للبحث عن بقايا أو تلف.</li><li>سجل الانتهاء وأعد الفتح فقط بعد استيفاء التعليمات المطبقة وإجراءات المكان.</li></ul><p>قم بتعيين كل مهمة لشخص مدرب واجعل التعليمات متاحة عند نقطة الاستخدام. لا تخلط المواد الكيميائية أبدًا. التنظيف لا يضمن السلامة الهيكلية: سجل الأغطية التالفة، الأجزاء الفضفاضة أو العيوب الأخرى لإجراء صيانة منفصل.</p>"
+        "html": "<ul><li>قم بتقييد الوصول إلى المنطقة أثناء العمل واتبع تعليمات المنتج بشأن التهوية ومعدات الحماية.</li><li>قم بإزالة الحطام ونظف السطح باستخدام الطريقة المعتمدة للمعدات.</li><li>إذا كان التعقيم أو التطهير مطلوبًا، استخدم المنتج المسموح به، التخفيف والطريقة.</li><li>حافظ على وقت التلامس المحدد في الملصق؛ لا تقصره لتسريع إعادة الفتح.</li><li>اشطف عند التوجيه، اترك فترة التجفيف أو التهوية المطلوبة، وافحص للبحث عن بقايا أو تلف.</li><li>سجل الانتهاء وأعد الفتح فقط بعد استيفاء التعليمات المطبقة وإجراءات المكان.</li></ul><p>قم بتعيين كل مهمة لشخص مدرب واجعل التعليمات متاحة عند نقطة الاستخدام. لا تخلط المواد الكيميائية أبدًا. التنظيف لا يضمن السلامة الهيكلية: سجل الأغطية التالفة، الأجزاء الفضفاضة أو العيوب الأخرى لإجراء صيانة منفصل.</p>"
       },
       {
         "id": "ball-pit",
@@ -268,15 +268,15 @@
     "sources": [
       {
         "url": "https://www.cdc.gov/hygiene/about/when-and-how-to-clean-and-disinfect-a-facility.html",
-        "label": "CDC: when and how to clean and disinfect a facility"
+        "label": "CDC: تنظيف المنشآت وتطهيرها"
       },
       {
         "url": "https://www.epa.gov/sites/production/files/2020-04/documents/disinfectants-onepager.pdf",
-        "label": "EPA: six steps for safe and effective disinfectant use"
+        "label": "EPA: تعليمات استخدام المطهرات وطرق التطبيق"
       },
       {
         "url": "https://www.epa.gov/coronavirus-and-disinfectants/can-i-use-fogging-fumigation-or-electrostatic-spraying-or-drones-help",
-        "label": "EPA: fogging and application-method limitations"
+        "label": "EPA: تعليمات استخدام المطهرات وطرق التطبيق"
       }
     ],
     "figures": [
@@ -372,15 +372,15 @@
     "sources": [
       {
         "url": "https://store.astm.org/f1918-21.html",
-        "label": "ASTM F1918-21: soft-contained play scope"
+        "label": "ASTM F1918: نطاق معدات اللعب الناعمة المغلقة"
       },
       {
         "url": "https://store.astm.org/f1487-25.html",
-        "label": "ASTM F1487-25: public-playground exclusions"
+        "label": "ASTM F1487: نطاق معدات الملاعب العامة والاستثناءات"
       },
       {
         "url": "https://store.astm.org/standards/f2970",
-        "label": "ASTM F2970: trampoline-court maintenance and inspection scope"
+        "label": "ASTM F2970: نطاق ملاعب الترامبولين المؤسسية"
       }
     ],
     "figures": [
@@ -475,7 +475,7 @@
     "sources": [
       {
         "url": "https://content.naic.org/consumer/small-business.htm",
-        "label": "NAIC: small-business insurance categories and package limitations"
+        "label": "NAIC: تأمين الشركات الصغيرة وحدود التغطية"
       }
     ],
     "figures": [

@@ -2,8 +2,8 @@
   {
     "slug": "indoor-playground-ceiling-height",
     "title": "Innen-Spielplatz Deckenhöhe: Messleitfaden vor Ort",
-    "seo_title": "Innen-Spielplatz Deckenhöhe: Messleitfaden vor Ort",
-    "seo_description": "Messen Sie die nutzbare Deckenhöhe, dokumentieren Sie Hindernisse und stimmen Sie Geräte-, Bau- und Brandschutzprüfungen ab, bevor Sie einen Indoor-Spielplatz einrichten.",
+    "seo_title": "Indoor-Spielplatz: Deckenhöhe richtig messen",
+    "seo_description": "Nutzbare Höhe und Hindernisse erfassen. Geräteanforderungen sowie Bau- und Brandschutzfragen vor Mietvertrag oder Bestellung klären.",
     "excerpt": "Eine praktische Methode, um die nutzbare Höhe zu dokumentieren und gerätespezifische Bestätigungen einzuholen, bevor gemietet oder bestellt wird.",
     "keywords": [
       "design",
@@ -65,15 +65,15 @@
     "sources": [
       {
         "url": "https://store.astm.org/f1918-21.html",
-        "label": "ASTM F1918-21: soft-contained play scope"
+        "label": "ASTM F1918: Geltungsbereich für umschlossene Softplay-Geräte"
       },
       {
         "url": "https://store.astm.org/f1487-25.html",
-        "label": "ASTM F1487-25: public-playground scope and exclusions"
+        "label": "ASTM F1487: Öffentliche Spielgeräte: Geltungsbereich und Ausschlüsse"
       },
       {
         "url": "https://store.astm.org/standards/f2970",
-        "label": "ASTM F2970: institutional trampoline courts scope"
+        "label": "ASTM F2970: Geltungsbereich für institutionelle Trampolinanlagen"
       }
     ],
     "figures": [
@@ -105,8 +105,8 @@
   {
     "slug": "playground-replacement-parts",
     "title": "Ersatzteile für Spielplätze: Kompatibilität & Garantie",
-    "seo_title": "Ersatzteile für Spielplätze: Kompatibilität & Garantie",
-    "seo_description": "Identifizieren Sie Spielplatzteile, vergleichen Sie Kompatibilitätsnachweise und schriftliche Garantiebedingungen, und dokumentieren Sie die Installation vor der Wiedereröffnung der Geräte.",
+    "seo_title": "Spielplatz-Ersatzteile: Passform & Garantie",
+    "seo_description": "Teile identifizieren, Kompatibilität und Garantie schriftlich prüfen sowie Einbau und Wiedereröffnung dokumentieren.",
     "excerpt": "Eine evidenzbasierte Einkaufscheckliste für kompatible Polsterungen, Netze, Befestigungen und andere kommerzielle Spielplatzkomponenten.",
     "keywords": [
       "guides",
@@ -157,7 +157,7 @@
         "a": "Folgen Sie dem Gerätehandbuch, Inspektionsergebnissen und komponentenspezifischen Grenzen. Es gibt kein universelles Ersatzintervall für alle Polsterungen, Netze, Plattformen oder Federn."
       },
       {
-        "q": "Voiden Drittanbieter-Teile automatisch die gesamte Garantie?",
+        "q": "Führen Drittanbieter-Teile automatisch zum Garantieverlust?",
         "a": "Gehen Sie nicht davon aus. Überprüfen Sie die tatsächlichen Bedingungen und holen Sie eine schriftliche Bestätigung für die vorgeschlagene Komponente oder Modifikation ein."
       },
       {
@@ -168,11 +168,11 @@
     "sources": [
       {
         "url": "https://store.astm.org/f1918-21.html",
-        "label": "ASTM F1918-21: category scope, not component certification"
+        "label": "ASTM F1918: Geltungsbereich für umschlossene Softplay-Geräte"
       },
       {
         "url": "https://store.astm.org/standards/f2970",
-        "label": "ASTM F2970: institutional trampoline maintenance and modification scope"
+        "label": "ASTM F2970: Geltungsbereich für institutionelle Trampolinanlagen"
       }
     ],
     "figures": [
@@ -204,8 +204,8 @@
   {
     "slug": "indoor-playground-cleaning",
     "title": "Reinigung von Indoor-Spielplätzen: Produktetiketten & Oberflächen-SOP",
-    "seo_title": "Reinigung von Indoor-Spielplätzen: Produktetiketten & Oberflächen-SOP",
-    "seo_description": "Erstellen Sie ein materialspezifisches Reinigungsverfahren mit Geräteanweisungen und Produktetiketten, inklusive Schritte für Ballbecken, Kontaktzeitaufzeichnungen und Mitarbeiterprüfungen.",
+    "seo_title": "Indoor-Spielplatz reinigen: Etikett & Ablauf",
+    "seo_description": "Materialgerechte Reinigung nach Geräteanleitung und Produktetikett planen. Kontaktzeit, Ballbecken und Abschlussprüfung dokumentieren.",
     "excerpt": "Ein oberflächenspezifischer Reinigungsablauf, der universelle Chemikalienrezepte und nicht belegte Hygienezusagen vermeidet.",
     "keywords": [
       "safety",
@@ -268,15 +268,15 @@
     "sources": [
       {
         "url": "https://www.cdc.gov/hygiene/about/when-and-how-to-clean-and-disinfect-a-facility.html",
-        "label": "CDC: when and how to clean and disinfect a facility"
+        "label": "CDC: Reinigung und Desinfektion von Einrichtungen"
       },
       {
         "url": "https://www.epa.gov/sites/production/files/2020-04/documents/disinfectants-onepager.pdf",
-        "label": "EPA: six steps for safe and effective disinfectant use"
+        "label": "EPA: Desinfektionsmittel und zulässige Anwendungsmethoden"
       },
       {
         "url": "https://www.epa.gov/coronavirus-and-disinfectants/can-i-use-fogging-fumigation-or-electrostatic-spraying-or-drones-help",
-        "label": "EPA: fogging and application-method limitations"
+        "label": "EPA: Desinfektionsmittel und zulässige Anwendungsmethoden"
       }
     ],
     "figures": [
@@ -309,8 +309,8 @@
   {
     "slug": "playground-inspection-checklist",
     "title": "Spielplatz-Inspektionscheckliste: Mängel- und Schließungsprotokoll",
-    "seo_title": "Spielplatz-Inspektionscheckliste: Mängel- und Schließungsprotokoll",
-    "seo_description": "Dokumentieren Sie sichtbare Spielplatzmängel, weisen Sie Korrekturmaßnahmen zu und erfassen Sie die Wiedereröffnung, während Sie Betreiberprüfungen von qualifizierten technischen Inspektionen trennen.",
+    "seo_title": "Spielplatz-Inspektion: Mängel und Maßnahmen",
+    "seo_description": "Sichtbare Mängel erfassen, Maßnahmen zuweisen und Wiedereröffnung dokumentieren. Betreiberchecks und technische Inspektionen trennen.",
     "excerpt": "Ein praktisches Protokoll von Mängeln bis zur Schließung für gewerbliche Spielplatzbetreiber, mit klar getrennten Inspektionsverantwortlichkeiten.",
     "keywords": [
       "safety",
@@ -372,15 +372,15 @@
     "sources": [
       {
         "url": "https://store.astm.org/f1918-21.html",
-        "label": "ASTM F1918-21: soft-contained play scope"
+        "label": "ASTM F1918: Geltungsbereich für umschlossene Softplay-Geräte"
       },
       {
         "url": "https://store.astm.org/f1487-25.html",
-        "label": "ASTM F1487-25: public-playground exclusions"
+        "label": "ASTM F1487: Öffentliche Spielgeräte: Geltungsbereich und Ausschlüsse"
       },
       {
         "url": "https://store.astm.org/standards/f2970",
-        "label": "ASTM F2970: trampoline-court maintenance and inspection scope"
+        "label": "ASTM F2970: Geltungsbereich für institutionelle Trampolinanlagen"
       }
     ],
     "figures": [
@@ -412,8 +412,8 @@
   {
     "slug": "indoor-playground-insurance-cost",
     "title": "Kosten für Indoor-Spielplatz-Versicherung: Leitfaden für Angebotsvergleiche",
-    "seo_title": "Kosten für Indoor-Spielplatz-Versicherung: Angebotsvergleich",
-    "seo_description": "Bereiten Sie Informationen zur Indoor-Spielplatz-Versicherung vor und vergleichen Sie Deckung, Ausschlüsse, Limits und Selbstbehalte ohne generische Prämienversprechen.",
+    "seo_title": "Indoor-Spielplatz-Versicherung: Kosten vergleichen",
+    "seo_description": "Versicherungsangebote nach Deckung, Ausschlüssen, Limits und Selbstbehalten vergleichen, ohne pauschale Prämienversprechen.",
     "excerpt": "Wie Sie vergleichbare Versicherungsangebote erhalten und verstehen, was eine angebotene Prämie einschließt und ausschließt.",
     "keywords": [
       "business",
@@ -475,7 +475,7 @@
     "sources": [
       {
         "url": "https://content.naic.org/consumer/small-business.htm",
-        "label": "NAIC: small-business insurance categories and package limitations"
+        "label": "NAIC: Kleinbetriebsversicherung und Deckungsgrenzen"
       }
     ],
     "figures": [
