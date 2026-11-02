@@ -141,9 +141,9 @@ const AdminCustomerService = () => {
   // Fetch session statuses from chat_sessions table
   const fetchSessionStatuses = useCallback(async () => {
     try {
-      const { data, error } = await supabase
-        .from('chat_sessions')
-        .select(hasAdminRole ? 'session_id, status, notes, customer_ip' : 'session_id, status, notes');
+      const { data, error } = hasAdminRole
+        ? await supabase.from('chat_sessions').select('session_id, status, notes, customer_ip')
+        : await supabase.from('chat_sessions').select('session_id, status, notes');
 
       if (error) throw error;
 

@@ -168,9 +168,9 @@ const AdminCustomerServiceTab = () => {
 
   const fetchSessionStatuses = useCallback(async () => {
     try {
-      const { data, error } = await supabase
-        .from('chat_sessions')
-        .select(isAdmin ? 'session_id, status, notes, customer_ip' : 'session_id, status, notes');
+      const { data, error } = isAdmin
+        ? await supabase.from('chat_sessions').select('session_id, status, notes, customer_ip')
+        : await supabase.from('chat_sessions').select('session_id, status, notes');
 
       if (error) throw error;
 
