@@ -7,6 +7,7 @@ import {
   Monitor, Smartphone, Tablet, Globe, MapPin, Link, ExternalLink, Languages
 } from 'lucide-react';
 import AdminStatsPanel from '@/components/AdminStatsPanel';
+import { ChatSessionIdentity } from '@/components/admin/ChatSessionIdentity';
 import { Button } from '@/components/ui/button';
 import { useCurrentUserPermissions } from '@/hooks/useUserPermissions';
 import { Input } from '@/components/ui/input';
@@ -119,6 +120,7 @@ interface ChatMessage {
 }
 
 interface SessionStatus {
+  customer_ip?: string | null;
   session_id: string;
   status: string;
   notes: string | null;
@@ -166,9 +168,9 @@ const AdminCustomerServiceTab = () => {
 
   const fetchSessionStatuses = useCallback(async () => {
     try {
-      const { data, error } = await supabase
-        .from('chat_sessions')
-        .select('session_id, status, notes');
+      const { data, error } = isAdmin
+        ? await supabase.from('chat_sessions').select('session_id, status, notes, customer_ip')
+        : await supabase.from('chat_sessions').select('session_id, status, notes');
 
       if (error) throw error;
 
@@ -180,7 +182,7 @@ const AdminCustomerServiceTab = () => {
     } catch (error) {
       console.error('Error fetching session statuses:', error);
     }
-  }, []);
+  }, [isAdmin]);
 
   const fetchSessions = useCallback(async () => {
     try {
@@ -208,7 +210,8 @@ const AdminCustomerServiceTab = () => {
             notes: statusInfo?.notes || undefined
           });
         } else {
-          const session = sessionMap.get(msg.session_id)!;
+          const session = sessionMap.get(msg.session_id);
+          if (!session) return;
           session.message_count += 1;
           if (!msg.is_staff_reply && session.has_unread === false) {
             session.has_unread = true;
@@ -620,7 +623,8 @@ const AdminCustomerServiceTab = () => {
 
   const filteredSessions = sessions.filter(session => {
     const matchesSearch = session.session_id.toLowerCase().includes(searchQuery.toLowerCase()) ||
-      session.last_message.toLowerCase().includes(searchQuery.toLowerCase());
+      session.last_message.toLowerCase().includes(searchQuery.toLowerCase()) ||
+      (isAdmin && (sessionStatuses.get(session.session_id)?.customer_ip || '').includes(searchQuery.trim()));
     
     const sessionStatus = getSessionStatus(session.session_id);
     const matchesStatus = statusFilter === 'all' || sessionStatus === statusFilter;
@@ -673,7 +677,7 @@ const AdminCustomerServiceTab = () => {
             <div className="relative">
               <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-muted-foreground" />
               <Input
-                placeholder="搜索会话..."
+                placeholder="搜索编号、IP或留言..."
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
                 className="pl-9"
@@ -698,7 +702,7 @@ const AdminCustomerServiceTab = () => {
             </div>
           </div>
           
-          <ScrollArea className="flex-1">
+          <ScrollArea className="flex-1 min-w-0 [&_[data-radix-scroll-area-viewport]>div]:!block">
             {isLoading ? (
               <div className="flex items-center justify-center py-8">
                 <Loader2 className="w-6 h-6 animate-spin text-muted-foreground" />
@@ -715,10 +719,11 @@ const AdminCustomerServiceTab = () => {
                   const StatusIcon = STATUS_CONFIG[status]?.icon || Circle;
                   
                   return (
-                    <button
+                    <Button
                       key={session.session_id}
                       onClick={() => setSelectedSession(session.session_id)}
-                      className={`w-full p-4 text-left hover:bg-muted/50 transition-colors ${
+                      variant="ghost"
+                      className={`h-auto w-full min-w-0 block rounded-none whitespace-normal p-4 text-left hover:bg-muted/50 transition-colors ${
                         selectedSession === session.session_id ? 'bg-muted' : ''
                       }`}
                     >
@@ -731,14 +736,15 @@ const AdminCustomerServiceTab = () => {
                               status === 'resolved' ? 'text-green-500' :
                               'text-gray-500'
                             }`} />
-                            <span className="font-medium text-sm truncate">
-                              {session.session_id.slice(0, 16)}...
-                            </span>
+                            <span className="font-medium text-sm">访客会话</span>
                             {status === 'new' && (
                               <Badge variant="destructive" className="h-5 text-xs">
                                 新
                               </Badge>
                             )}
+                          </div>
+                          <div className="mt-2">
+                            <ChatSessionIdentity sessionId={session.session_id} ip={sessionStatuses.get(session.session_id)?.customer_ip} canViewIp={isAdmin} />
                           </div>
                           <p className="text-sm text-muted-foreground truncate mt-1">
                             {session.last_message}
@@ -759,7 +765,7 @@ const AdminCustomerServiceTab = () => {
                           {session.message_count} 消息
                         </Badge>
                       </div>
-                    </button>
+                    </Button>
                   );
                 })}
               </div>
@@ -772,15 +778,13 @@ const AdminCustomerServiceTab = () => {
           {selectedSession ? (
             <>
               <div className="p-4 border-b bg-muted/30">
-                <div className="flex items-center justify-between">
-                  <div className="flex items-center gap-3">
+                <div className="flex flex-wrap items-start justify-between gap-3">
+                  <div className="flex min-w-0 flex-1 items-center gap-3">
                     <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
                       <User className="w-5 h-5 text-primary" />
                     </div>
                     <div>
-                      <h3 className="font-medium text-sm">
-                        会话: {selectedSession.slice(0, 24)}...
-                      </h3>
+                      <ChatSessionIdentity sessionId={selectedSession} ip={sessionStatuses.get(selectedSession)?.customer_ip} canViewIp={isAdmin} />
                       <p className="text-xs text-muted-foreground">
                         {messages.length} 条消息
                       </p>
@@ -1033,7 +1037,7 @@ const AdminCustomerServiceTab = () => {
                                   {category}
                                 </div>
                                 {categoryTemplates.map((template) => (
-                                  <button
+                                  <Button
                                     key={template.id}
                                     onClick={() => useTemplate(template.content)}
                                     className="w-full p-3 text-left hover:bg-muted/50 transition-colors"
@@ -1042,7 +1046,7 @@ const AdminCustomerServiceTab = () => {
                                     <div className="text-xs text-muted-foreground line-clamp-2 mt-0.5">
                                       {template.content}
                                     </div>
-                                  </button>
+                                  </Button>
                                 ))}
                               </div>
                             ))}

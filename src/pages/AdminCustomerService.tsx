@@ -8,6 +8,7 @@ import {
   Monitor, Smartphone, Tablet, Globe, MapPin, Link, ExternalLink, BarChart3
 } from 'lucide-react';
 import AdminStatsPanel from '@/components/AdminStatsPanel';
+import { ChatSessionIdentity } from '@/components/admin/ChatSessionIdentity';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
@@ -80,6 +81,7 @@ interface ChatMessage {
 }
 
 interface SessionStatus {
+  customer_ip?: string | null;
   session_id: string;
   status: string;
   notes: string | null;
@@ -139,9 +141,9 @@ const AdminCustomerService = () => {
   // Fetch session statuses from chat_sessions table
   const fetchSessionStatuses = useCallback(async () => {
     try {
-      const { data, error } = await supabase
-        .from('chat_sessions')
-        .select('session_id, status, notes');
+      const { data, error } = hasAdminRole
+        ? await supabase.from('chat_sessions').select('session_id, status, notes, customer_ip')
+        : await supabase.from('chat_sessions').select('session_id, status, notes');
 
       if (error) throw error;
 
@@ -153,7 +155,7 @@ const AdminCustomerService = () => {
     } catch (error) {
       console.error('Error fetching session statuses:', error);
     }
-  }, []);
+  }, [hasAdminRole]);
 
   // Fetch chat sessions
   const fetchSessions = useCallback(async () => {
@@ -184,7 +186,8 @@ const AdminCustomerService = () => {
             notes: statusInfo?.notes || undefined
           });
         } else {
-          const session = sessionMap.get(msg.session_id)!;
+          const session = sessionMap.get(msg.session_id);
+          if (!session) return;
           session.message_count += 1;
           if (!msg.is_staff_reply && session.has_unread === false) {
             session.has_unread = true;
@@ -564,7 +567,8 @@ const AdminCustomerService = () => {
 
   const filteredSessions = sessions.filter(session => {
     const matchesSearch = session.session_id.toLowerCase().includes(searchQuery.toLowerCase()) ||
-      session.last_message.toLowerCase().includes(searchQuery.toLowerCase());
+      session.last_message.toLowerCase().includes(searchQuery.toLowerCase()) ||
+      (hasAdminRole && (sessionStatuses.get(session.session_id)?.customer_ip || '').includes(searchQuery.trim()));
     
     const sessionStatus = getSessionStatus(session.session_id);
     const matchesStatus = statusFilter === 'all' || sessionStatus === statusFilter;
@@ -641,7 +645,7 @@ const AdminCustomerService = () => {
               <div className="relative">
                 <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-muted-foreground" />
                 <Input
-                  placeholder="Search conversations..."
+                  placeholder="搜索编号、IP或留言..."
                   value={searchQuery}
                   onChange={(e) => setSearchQuery(e.target.value)}
                   className="pl-9"
@@ -667,7 +671,7 @@ const AdminCustomerService = () => {
               </div>
             </div>
             
-            <ScrollArea className="flex-1">
+            <ScrollArea className="flex-1 min-w-0 [&_[data-radix-scroll-area-viewport]>div]:!block">
               {isLoading ? (
                 <div className="flex items-center justify-center py-8">
                   <Loader2 className="w-6 h-6 animate-spin text-muted-foreground" />
@@ -684,10 +688,11 @@ const AdminCustomerService = () => {
                     const StatusIcon = STATUS_CONFIG[status]?.icon || Circle;
                     
                     return (
-                      <button
+                      <Button
                         key={session.session_id}
                         onClick={() => setSelectedSession(session.session_id)}
-                        className={`w-full p-4 text-left hover:bg-muted/50 transition-colors ${
+                        variant="ghost"
+                      className={`h-auto w-full min-w-0 block rounded-none whitespace-normal p-4 text-left hover:bg-muted/50 transition-colors ${
                           selectedSession === session.session_id ? 'bg-muted' : ''
                         }`}
                       >
@@ -700,16 +705,17 @@ const AdminCustomerService = () => {
                                 status === 'resolved' ? 'text-green-500' :
                                 'text-gray-500'
                               }`} />
-                              <span className="font-medium text-sm truncate">
-                                {session.session_id.slice(0, 16)}...
-                              </span>
+                              <span className="font-medium text-sm">访客会话</span>
                               {status === 'new' && (
                                 <Badge variant="destructive" className="h-5 text-xs">
                                   New
                                 </Badge>
                               )}
                             </div>
-                            <p className="text-sm text-muted-foreground truncate mt-1">
+                            <div className="mt-2">
+                            <ChatSessionIdentity sessionId={session.session_id} ip={sessionStatuses.get(session.session_id)?.customer_ip} canViewIp={hasAdminRole} />
+                          </div>
+                          <p className="text-sm text-muted-foreground truncate mt-1">
                               {session.last_message}
                             </p>
                           </div>
@@ -728,7 +734,7 @@ const AdminCustomerService = () => {
                             {session.message_count} 消息
                           </Badge>
                         </div>
-                      </button>
+                      </Button>
                     );
                   })}
                 </div>
@@ -742,15 +748,13 @@ const AdminCustomerService = () => {
               <>
                 {/* Chat Header with Status Control */}
                 <div className="p-4 border-b bg-muted/30">
-                  <div className="flex items-center justify-between">
-                    <div className="flex items-center gap-3">
+                  <div className="flex flex-wrap items-start justify-between gap-3">
+                    <div className="flex min-w-0 flex-1 items-center gap-3">
                       <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
                         <User className="w-5 h-5 text-primary" />
                       </div>
                       <div>
-                        <h3 className="font-medium text-sm">
-                          Session: {selectedSession.slice(0, 24)}...
-                        </h3>
+                        <ChatSessionIdentity sessionId={selectedSession} ip={sessionStatuses.get(selectedSession)?.customer_ip} canViewIp={hasAdminRole} />
                         <p className="text-xs text-muted-foreground">
                           {messages.length} 条消息
                         </p>
@@ -999,7 +1003,7 @@ const AdminCustomerService = () => {
                                     {category}
                                   </div>
                                   {categoryTemplates.map((template) => (
-                                    <button
+                                    <Button
                                       key={template.id}
                                       onClick={() => useTemplate(template.content)}
                                       className="w-full p-3 text-left hover:bg-muted/50 transition-colors"
@@ -1008,7 +1012,7 @@ const AdminCustomerService = () => {
                                       <div className="text-xs text-muted-foreground line-clamp-2 mt-0.5">
                                         {template.content}
                                       </div>
-                                    </button>
+                                    </Button>
                                   ))}
                                 </div>
                               ))}
