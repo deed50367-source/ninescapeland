@@ -1,5 +1,6 @@
 # Roadmap
 
+- [x] Rearrange the 20 October 15–November 3 articles to one article per day with six synchronized language dates; 120 records verified by three tests/302 assertions, 18 public article date checks and newest featured/list order verified; content/status preserved
 - [x] November 3 blogs: read five complete uploaded manuscripts; corrected outlines approved; confirm Gerry attribution and six site-language SEO placement (no new Chinese site version)
 - [x] November 3 blogs: revise unsupported claims, translate 25 versions using SiliconFlow, add site cover/two inline images, publish and read back 30 blog records, register reciprocal topic links and 30 sitemap/prerender paths
 - [x] November 3 blogs: verify 30 public pages and 30 authenticated admin editors, five topic-to-blog navigation flows and EN/AR mobile tables; 15 tests / 821 assertions pass
