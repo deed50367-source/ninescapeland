@@ -1370,16 +1370,16 @@
   "seo": {
     "defaultKeywords": "fabricant d'équipements d'aires de jeux intérieures, équipements d'aires de jeux intérieures à vendre, équipements de jeux commerciaux, fournisseur d'équipements de parcs de trampolines, fabricant d'aires de jeux Chine, parcours ninja warrior, équipements de jeux souples, centre de divertissement familial FEC",
     "home": {
-      "title": "Fabricant et Fournisseur d'Équipements d'Aires de Jeux Intérieures | NinescapeLand",
-      "description": "Fabricant leader d'aires de jeux intérieures depuis 2008. Parcs de trampolines, parcours ninja et jeux souples. Certifié ASTM & TUV. Design 3D gratuit."
+      "title": "Fabricant de Jeux Intérieurs | NinescapeLand",
+      "description": "Aires de jeux commerciales, trampolines, parcours ninja et soft play sur mesure. Envoyez vos dimensions pour un design 3D gratuit et un devis."
     },
     "aboutUs": {
       "title": "À Propos de NinescapeLand | Fabricant d'Aires de Jeux depuis 2008",
       "description": "Découvrez NinescapeLand - 15+ ans d'expertise en fabrication d'équipements d'aires de jeux. 2000+ projets dans 50+ pays."
     },
     "products": {
-      "title": "Équipements d'Aires de Jeux Commerciales | Parcs de Trampolines & Parcours Ninja",
-      "description": "Explorez notre gamme complète d'équipements commerciaux certifiés ASTM & TUV pour aires de jeux intérieures."
+      "title": "Catalogue de Jeux Commerciaux | NinescapeLand",
+      "description": "Explorez les jeux intérieurs, trampolines, parcours ninja et soft play. Comparez les catégories et demandez un devis pour votre établissement."
     },
     "contact": {
       "title": "Contactez-Nous | Obtenez un Devis Gratuit pour Votre Projet d'Aire de Jeux",
@@ -1421,6 +1421,22 @@
       "title": "Investissement aire de jeux intérieure & guide ROI 2026",
       "description": "Comment ouvrir une aire de jeux intérieure : plan en 10 étapes, modèles ROI et CAPEX pour 8 pays. Fabricant certifié ASTM/EN 1176.",
       "keywords": "investissement aire de jeux, ouvrir aire de jeux, investissement FEC, ROI centre familial, business plan aire de jeux"
+    },
+    "indoorPlayground": {
+      "title": "Équipements de Jeux Intérieurs | NinescapeLand",
+      "description": "Structures commerciales sur mesure avec toboggans, piscines à balles et éléments à grimper. Discutez de la surface, des âges et du design 3D gratuit."
+    },
+    "trampolinePark": {
+      "title": "Équipements de Trampolines | NinescapeLand",
+      "description": "Équipements de trampolines commerciaux avec zones modulaires. Discutez du plan, des besoins d’installation et du devis du projet."
+    },
+    "ninjaCourse": {
+      "title": "Équipements de Parcours Ninja | NinescapeLand",
+      "description": "Parcours ninja pour salles de sport et centres de loisirs familiaux. Comparez les obstacles et demandez un plan adapté à votre espace."
+    },
+    "softPlay": {
+      "title": "Équipements Soft Play Commerciaux | NinescapeLand",
+      "description": "Soft play commercial : structures rembourrées, panneaux sensoriels et piscines à balles. Discutez du plan et demandez un devis."
     }
   },
   "activePlayRunning": {

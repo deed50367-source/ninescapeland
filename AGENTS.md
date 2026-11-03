@@ -1,4 +1,5 @@
 # Architecture rules
+- Shared SEO metadata limits include the brand suffix and trim at word boundaries; edit localized purchasing copy selectively rather than duplicating landing-page intent.
 - Customer-service identity displays share a component using the complete stored session ID and existing IP metadata; retain administrator-only IP visibility and never infer authenticity from an address.
 - Weekly aggregation batches use a localized content registry with shared planning components and explicit parent-page links; register every translated route in prerendering and the sitemap to keep content discoverable without duplicating existing intent.
 - Customer-service replies share an AI Elements MessageResponse renderer across public and admin transcripts; keep visitor text literal and raw HTML disabled to preserve safe, consistent formatting.

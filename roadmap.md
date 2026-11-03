@@ -1,5 +1,9 @@
 # Roadmap
 
+- [x] November 3: audit competitor reports against current site coverage and validate ID/US demand; selectively replace 36 six-language core metadata pairs and fix shared metadata limits/duplicate fallbacks
+- [x] November 3: deliver standalone keyword report with five topic-page candidates and five blog clusters, explicitly noting missing demand; verify 36 public pages, six aggregation canonicals, 437 sitemap URLs and 11 tests
+- [ ] Publish November 3 metadata and canonical/sitemap corrections; production deployment requires the user's publication request
+
 - [x] October 30 blogs: audit five uploaded articles against their self-check reports and authoritative sources; corrected outlines approved before substantial revisions
 - [x] Revise and translate five blogs into six languages with existing site cover/inline images; publish 30 records and verify all public pages/authenticated business admin views
 - [x] Add and verify bidirectional aggregation matrix links; register all 30 blog sitemap/prerender routes; nine tests passed
