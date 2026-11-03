@@ -1,5 +1,8 @@
 # Roadmap
 
+- [ ] November 3: build five approved six-language procurement topics with independent intent, site renders, page-specific sources, SEO/GEO and reciprocal parent links; register 30 sitemap/prerender routes
+- [ ] November 3: verify all new language pages, navigation, comparison/FAQ/inquiry controls, imagery and mobile layout; production publication is outside this creation request
+
 - [x] November 3: audit competitor reports against current site coverage and validate ID/US demand; selectively replace 36 six-language core metadata pairs and fix shared metadata limits/duplicate fallbacks
 - [x] November 3: deliver standalone keyword report with five topic-page candidates and five blog clusters, explicitly noting missing demand; verify 36 public pages, six aggregation canonicals, 437 sitemap URLs and 11 tests
 - [ ] Deploy November 3 metadata corrections and verify 36 production pages; authorized Hostinger run 41570820092 remains in progress before upload, production still serves old metadata, and the homepage browser check encountered host browser verification
