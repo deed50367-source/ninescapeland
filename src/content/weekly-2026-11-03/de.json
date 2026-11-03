@@ -1,0 +1,732 @@
+{
+  "commercial-indoor-playground-slide-selection": {
+    "slug": "commercial-indoor-playground-slide-selection",
+    "title": "Auswahl von Rutschen für gewerbliche Indoor-Spielplätze",
+    "metaTitle": "Indoor-Spielplatzrutschen für Gewerbe | NinescapeLand",
+    "metaDescription": "Vergleichen Sie gewerbliche Indoor-Spielplatzrutschen nach Format, Alterseignung, Ein- und Ausstiegsgestaltung, Installationszugang und den für ein Angebot benötigten Nachweisen.",
+    "kicker": "Rutschenformate · Ein- & Ausstieg · Beschaffung",
+    "intro": "Rutschen für gewerbliche Indoor-Spielplätze müssen als Teil einer vollständigen Spielroute ausgewählt werden, nicht als isolierte Formen. Dieser Leitfaden hilft Betreibern, offene, geschlossene und mehrspurige Formate zu vergleichen, bevor sie ein projektspezifisches Angebot anfordern. Er listet keine Haushaltsspielzeuge, nahegelegene Attraktionen oder eine universelle Sicherheitshöhe auf.",
+    "answerQuestion": "Wie sollten Käufer Indoor-Spielplatzrutschen auswählen?",
+    "answer": "Beginnen Sie mit den vorgesehenen Nutzern und den Herstelleranweisungen, koordinieren Sie dann die Einstiegsplattform, die Abfahrt, den Ausstieg und die umgebende Zirkulation. Fordern Sie eine Zeichnung des montierten Systems an, die Freiräume und Schnittstellen zeigt. Vergleichen Sie Sichtbarkeit, unterstützten Zugang und Wartungsbedarf, bevor Sie das Format genehmigen; eine reine Visualisierung kann keine Eignung nachweisen.",
+    "frameworkTitle": "Erstellen Sie das Rutschendesign-Briefing",
+    "framework": [
+      {
+        "title": "Verwendungszweck definieren",
+        "desc": "Geben Sie Altersgruppen, Aufsichtsregelungen an und ob die Rutsche in einer weich umschlossenen Struktur sitzt. Fordern Sie nutzerspezifische Dokumentation zum Verwendungszweck an, keine generische All-Alters-Aussage."
+      },
+      {
+        "title": "Komplette Route nachzeichnen",
+        "desc": "Markieren Sie Warteschlangen, Plattform, Abfahrt und Auslauf auf koordinierten Zeichnungen. Halten Sie kreuzende Zirkulation vom Ausstieg getrennt; die erforderlichen Maße müssen aus dem genehmigten Design stammen."
+      },
+      {
+        "title": "Umschließung und Beobachtung prüfen",
+        "desc": "Fragen Sie bei geschlossenen Röhren, wie Personal Nutzer beobachtet und unterstützt. Prüfen Sie bei offenen und mehrspurigen Formaten den Seitenschutz und den Zugang zu jeder Spur."
+      },
+      {
+        "title": "Lieferung und Schnittstellen bestätigen",
+        "desc": "Dokumentieren Sie den Installationszugang, Rahmenverbindung, Tragkonstruktion und Inspektionspunkte. Eine raumgerechte Rutsche passt möglicherweise nicht durch den Gebäudeeingang oder zur bestehenden Struktur."
+      }
+    ],
+    "equipmentTitle": "Rutschenformate vergleichen",
+    "equipment": [
+      {
+        "title": "Offene Rutsche",
+        "desc": "Prüfen Sie Sichtlinien des Personals, Seitenschutz und Ausstiegszone als System. Spezifizieren Sie Oberfläche und Verbindungsdetails im Kaufbriefing."
+      },
+      {
+        "title": "Geschlossene Röhrenrutsche",
+        "desc": "Fordern Sie Beobachtungs- und Zugangshilfen, Verbindungsdetails und eine Reinigungsmethode an. Eine attraktive Umschließung ersetzt keine Zugangsprüfung."
+      },
+      {
+        "title": "Mehrspurige Rutsche",
+        "desc": "Fragen Sie nach der Trennung von Warteschlangen und Spur-Ausstiegen. Bestätigen Sie den Verwendungszweck; leiten Sie nie Rennregeln oder Nutzerkapazität aus der Spuranzahl ab."
+      },
+      {
+        "title": "Kompakte integrierte Rutsche",
+        "desc": "Koordinieren Sie Plattform und benachbarte Aktivitäten innerhalb der umschlossenen Struktur. Rüsten Sie keine Einheit nach, ohne das komplett modifizierte System zu prüfen."
+      }
+    ],
+    "columns": [
+      "Format",
+      "Designnachweis",
+      "Betrieblicher Fokus",
+      "Angebotsinput"
+    ],
+    "rows": [
+      [
+        "Offen",
+        "Ein-/Ausstieg und Seitenschutz-Zeichnung",
+        "Sichtbarer Auslauf und Zirkulation",
+        "Vorgesehene Nutzer und Plattformschnittstelle"
+      ],
+      [
+        "Röhre",
+        "Verbindungs- und Zugangshilfen-Details",
+        "Beobachtung und Reinigungszugang",
+        "Routengeometrie und Anschlusspunkte"
+      ],
+      [
+        "Mehrspurig",
+        "Spur- und Warteschlangenanordnung",
+        "Kontrollierter Einstieg und getrennte Ausstiege",
+        "Dokumentierter Verwendungszweck"
+      ],
+      [
+        "Integriert",
+        "Koordinierte Rahmenzeichnung",
+        "Benachbarte Aktivitäten und Inspektionen",
+        "Bestandsaufnahme und Strukturdetails"
+      ]
+    ],
+    "faq": [
+      {
+        "title": "Welche Maße sollte ich für ein Angebot senden?",
+        "desc": "Geben Sie nutzbare Standortmaße, lichte Höhen, Stützen, Leitungen, Zugangstüren und den geplanten Rutschestandort an. Der Lieferant muss die nutzerspezifischen Plattform- und Ausstiegsmaße entwickeln."
+      },
+      {
+        "title": "Gibt es universelle Rutsche-Freiraummaße?",
+        "desc": "Keine einzelne Zahl deckt jedes Format, jede Nutzergruppe und Jurisdiktion ab. Verwenden Sie Modellanweisungen und eine qualifizierte Prüfung der komplett installierten Konfiguration."
+      },
+      {
+        "title": "Kann eine Rutsche an eine bestehende Spielstruktur angeschlossen werden?",
+        "desc": "Nur nach schriftlicher Prüfung und Genehmigung der Verbindungen, Tragkonstruktion und kompletten Route. Gehen Sie nicht von Kompatibilität aufgrund passender Farbe oder Größe aus."
+      },
+      {
+        "title": "Wie unterscheidet sich dies vom Tunnel-Leitfaden?",
+        "desc": "Diese Seite behandelt Rutschendesign, Warteschlangen und Auslauf. Der Tunnel-Leitfaden behandelt Krabbelrouten, Sichtbarkeit und Verbindungszugang."
+      }
+    ],
+    "tableTitle": "Rutschenformate vergleichen — Entscheidungsmatrix",
+    "tableNote": "Nur Planungshilfe. Verwenden Sie projektspezifische Zeichnungen, Artikelangaben und schriftliche Genehmigungen; dieser Leitfaden ist kein Produktzertifikat oder Vertrag.",
+    "imageAlt": "Auswahl von Rutschen für gewerbliche Indoor-Spielplätze — veranschaulichende 3D-Visualisierung",
+    "captions": [
+      "Prüfen Sie Rutschentouren innerhalb einer koordinierten Struktur.",
+      "Überprüfen Sie die Auslaufzirkulation neben benachbarten Aktivitäten.",
+      "Vergleichen Sie Tragzonen, ohne die Visualisierung als Spezifikation zu behandeln."
+    ],
+    "ui": {
+      "home": "Startseite",
+      "products": "Produkte",
+      "design": "Kostenloses 3D-Design anfordern",
+      "whatsapp": "Chat über WhatsApp",
+      "compare": "Optionen vergleichen",
+      "gallery": "Designreferenzen",
+      "relatedTitle": "Verwandte Planungsleitfäden",
+      "faqTitle": "Käuferfragen",
+      "sourcesTitle": "Quellen & Umfang",
+      "sourcesIntro": "Bestätigen Sie die aktuelle Standardausgabe und lokale Bau-, Brandschutz- und Barrierefreiheitsanforderungen mit Ihrem qualifizierten Projektteam. Diese Referenzen sind keine Produktzertifikate.",
+      "updated": "Aktualisiert am 3. November 2026",
+      "author": "NinescapeLand · Gewerbliche Spielplanung",
+      "imageNote": "Bestehende 3D-Visualisierungen veranschaulichen Gerätekonfigurationen, keine Produktspezifikationen oder abgeschlossene Projekte.",
+      "inquiryIntro": "Senden Sie Ihre Standortzeichnungen, Land und Beschaffungsanforderungen für eine projektspezifische Beratung."
+    },
+    "parents": [
+      {
+        "slug": "products/indoor-playground",
+        "label": "Indoor-Spielplatzausrüstung"
+      },
+      {
+        "slug": "commercial-indoor-playground-tunnels-and-tubes",
+        "label": "Gewerbliche Spieltunnel & -röhren"
+      }
+    ],
+    "sources": [
+      {
+        "label": "ASTM F1918-21",
+        "publisher": "ASTM International",
+        "url": "https://store.astm.org/f1918-21.html",
+        "note": "Referenzumfang für weich umschlossene Spielgeräte. Bestätigen Sie die aktuelle gültige Ausgabe und produktspezifische Bewertung."
+      },
+      {
+        "label": "2010 ADA Standards",
+        "publisher": "U.S. Department of Justice",
+        "url": "https://www.ada.gov/law-and-regs/design-standards/2010-stds/",
+        "note": "Barrierefreiheitsanforderungen hängen von Jurisdiktion und fertiger Einrichtung ab; Gerätezeichnungen sind keine Genehmigung."
+      }
+    ]
+  },
+  "commercial-indoor-playground-netting": {
+    "slug": "commercial-indoor-playground-netting",
+    "title": "Kommerzielle Indoor-Spielplatz-Netze",
+    "metaTitle": "Spielplatz-Netze für Gewerbe | NinescapeLand",
+    "metaDescription": "Spezifizieren Sie Indoor-Spielplatz-Netze nach Verwendungszweck, Maschenweite, Befestigung, Sichtbarkeit und Ersatzdokumentation vor Angebotsanfrage.",
+    "kicker": "Absperrung · Verbindungen · Spezifikation",
+    "intro": "Indoor-Spielplatz-Netze können als Begrenzung, Kriechfläche oder Kletterelement dienen. Diese Funktionen sind nicht austauschbar. Dieser Leitfaden behandelt die Spezifikation und Nachweise für kompatible Netze, nicht generische Seilware oder Routine-Checklisten.",
+    "answerQuestion": "Was sollte eine Netzspezifikation umfassen?",
+    "answer": "Definieren Sie zuerst die Funktion: Absperrung, lasttragendes Element oder dekorative Begrenzung. Reichen Sie Maße, Anschlussdetails und Nutzergruppen ein, dann fordern Sie materialspezifische Dokumentation zu Maschen, Öffnungen und Befestigung an. Wählen Sie Netze nicht allein nach Farbe, Preis oder undefiniertem Sicherheitslabel.",
+    "frameworkTitle": "Netzsystem definieren",
+    "framework": [
+      {
+        "title": "Funktionen trennen",
+        "desc": "Kennzeichnen Sie jede Netzposition und deren Rolle. Ein Absperrnetz darf nicht ohne geprüfte Planung als Kletterelement eingesetzt werden."
+      },
+      {
+        "title": "Verbaute Geometrie spezifizieren",
+        "desc": "Zeigen Sie Panelgrenzen, Ecken, Zugänge und Rahmenanschlüsse. Berücksichtigen Sie die eingebaute Form und Montageanleitung, nicht nur Stoffmaße."
+      },
+      {
+        "title": "Befestigung dokumentieren",
+        "desc": "Fordern Sie zugelassene Befestigungen, Kantenabschlüsse und Montageanleitungen an. Panel und Anschluss müssen gemeinsam bewertet werden."
+      },
+      {
+        "title": "Nachvollziehbaren Ersatz planen",
+        "desc": "Speichern Sie Panelkennung, Zeichnungen und Version, damit Ersatzteile passen. Holen Sie schriftliche Freigabe für Änderungen ein."
+      }
+    ],
+    "equipmentTitle": "Netzanwendungen vergleichen",
+    "equipment": [
+      {
+        "title": "Absperrnetze",
+        "desc": "Fordern Sie Maschengeometrie, Randdetails und Sichtanforderungen an. Die Farbe ist kein Sicherheitsnachweis."
+      },
+      {
+        "title": "Lasttragende Spielnetze",
+        "desc": "Verlangen Sie dokumentierten Verwendungszweck und Traganschlüsse. Verwenden Sie kein Begrenzungsnetz als Kletterelement."
+      },
+      {
+        "title": "Zugangsbegrenzungen",
+        "desc": "Koordinieren Sie beaufsichtigte Durchgänge mit dem Netzlayout. Vermeiden Sie ungeplante Öffnungen."
+      },
+      {
+        "title": "Ersatzpanels",
+        "desc": "Liefern Sie Originalteilnummer, Einbaumaße, Befestigungsfotos und Version. Ähnliches Aussehen garantiert keine Austauschbarkeit."
+      }
+    ],
+    "columns": [
+      "Anwendung",
+      "Anzufordernde Nachweise",
+      "Schnittstellenentscheidung",
+      "Vermeiden"
+    ],
+    "rows": [
+      [
+        "Absperrung",
+        "Modellspezifische Maschen- und Randdetails",
+        "Rahmen- und Panelbefestigung",
+        "Kauf nur nach Farbe"
+      ],
+      [
+        "Spielelement",
+        "Geplante Belastung und Einsatzbereich",
+        "Geprüfter Traganschluss",
+        "Begrenzungsnetz als Kletternetz nutzen"
+      ],
+      [
+        "Zugangskontrolle",
+        "Durchgangs- und Öffnungsplan",
+        "Betreuter Zugangsweg",
+        "Ungeprüfte Schnitte"
+      ],
+      [
+        "Ersatz",
+        "Originalteil- und Versionsnachweis",
+        "Schriftliche Kompatibilitätsprüfung",
+        "Ungeprüfter Materialtausch"
+      ]
+    ],
+    "faq": [
+      {
+        "title": "Kann dasselbe Netz überall verwendet werden?",
+        "desc": "Nicht automatisch. Absperrung, Klettern und Dekoration haben unterschiedliche Anforderungen. Lassen Sie jeden Einsatzort spezifizieren."
+      },
+      {
+        "title": "Kann man anhand eines Fotos anbieten?",
+        "desc": "Ein Foto hilft bei der Identifikation, ersetzt aber nicht Maße, Teilenummern, Anschlüsse und Verwendungszweck. Bestätigen Sie die Spezifikation vor der Bestellung."
+      },
+      {
+        "title": "Impliziert 'Sicherheitsnetz' Brandschutzeigenschaften?",
+        "desc": "Nein. Fordern Sie Materialnachweise für den konkreten Einsatz an. Ein Marketingbegriff ist kein Prüfbericht."
+      },
+      {
+        "title": "Ersetzt dies Material- oder Wartungsanleitungen?",
+        "desc": "Nein. Diese Seite definiert Beschaffungsparameter; verlinkte Leitfäden behandeln Polsterkomponenten. Inspektionen und Austausch folgen den Herstellerangaben."
+      }
+    ],
+    "tableTitle": "Netzanwendungen vergleichen — Entscheidungsmatrix",
+    "tableNote": "Planungshilfe nur. Verwenden Sie projektspezifische Zeichnungen, Artikelangaben und Freigaben; dieser Leitfaden ist kein Produktzertifikat oder Vertrag.",
+    "imageAlt": "Kommerzielle Indoor-Spielplatz-Netze — Beispielhafte 3D-Darstellung",
+    "captions": [
+      "Netzgrenzen im montierten Design identifizieren.",
+      "Anschlüsse und Beobachtungswege prüfen.",
+      "Netze mit benachbarten Aktivitäten abstimmen."
+    ],
+    "ui": {
+      "home": "Startseite",
+      "products": "Produkte",
+      "design": "Kostenlose 3D-Planung anfordern",
+      "whatsapp": "WhatsApp-Chat",
+      "compare": "Optionen vergleichen",
+      "gallery": "Designreferenzen",
+      "relatedTitle": "Verwandte Planungsleitfäden",
+      "faqTitle": "Käuferfragen",
+      "sourcesTitle": "Quellen & Geltungsbereich",
+      "sourcesIntro": "Bestätigen Sie aktuelle Normen und lokale Bau-, Brandschutz- und Barrierefreiheitsvorgaben mit Ihrem Projektteam. Diese Referenzen sind keine Produktzertifikate.",
+      "updated": "Aktualisiert am 3. November 2026",
+      "author": "NinescapeLand · Gewerbliche Spielplanung",
+      "imageNote": "Bestehende 3D-Darstellungen zeigen Konfigurationsbeispiele, keine Produktspezifikationen oder fertige Projekte.",
+      "inquiryIntro": "Senden Sie Ihre Grundrisse, Land und Beschaffungsanforderungen für eine projektspezifische Beratung."
+    },
+    "parents": [
+      {
+        "slug": "products/indoor-playground",
+        "label": "Indoor-Spielplatzausstattung"
+      },
+      {
+        "slug": "soft-play-foam-and-material-specifications",
+        "label": "Spezifikationen für Softplay-Materialien"
+      }
+    ],
+    "sources": [
+      {
+        "label": "ASTM F1918-21",
+        "publisher": "ASTM International",
+        "url": "https://store.astm.org/f1918-21.html",
+        "note": "Referenz für Softplay-Ausrüstung. Bestätigen Sie die aktuelle Version und produktspezifische Bewertung."
+      },
+      {
+        "label": "ADA Standards 2010",
+        "publisher": "U.S. Department of Justice",
+        "url": "https://www.ada.gov/law-and-regs/design-standards/2010-stds/",
+        "note": "Barrierefreiheitsanforderungen hängen von Jurisdiktion und Gesamtanlage ab; Ausrüstungszeichnungen sind keine Freigabe."
+      }
+    ]
+  },
+  "indoor-playground-equipment-import-shipping-terms": {
+    "slug": "indoor-playground-equipment-import-shipping-terms",
+    "title": "Importbedingungen für Indoor-Spielplatzausrüstung",
+    "metaTitle": "Versandbedingungen Spielgeräte | NinescapeLand",
+    "metaDescription": "Klären Sie Lieferbedingungen, Kosten- und Risikoübergänge, Zollverantwortlichkeiten und Entladung vor Vertragsabschluss für importierte Spielplatzausrüstung.",
+    "kicker": "Benannter Ort · Risikoübergabe · Zoll",
+    "intro": "Ein Angebot für Ausrüstung und ein Frachtangebot können unterschiedliche Teile der Lieferkette abdecken. Bevor Sie importierte Spielplatzpakete vergleichen, notieren Sie den benannten Lieferort, die gewählte Incoterms-Version und wer jeden Schritt abwickelt. Dies ist eine Einkaufsleitlinie, kein feststehender Fracht-, Zoll- oder Landed-Cost-Rechner.",
+    "answerQuestion": "Was müssen Käufer vor dem Import von Spielplatzausrüstung klären?",
+    "answer": "Vereinbaren Sie die Handelsregel und den exakten benannten Ort, dokumentieren Sie dann Exportabwicklung, Haupttransport, Versicherung, Importabwicklung, Steuern und Entladeverantwortlichkeiten. Prüfen Sie den Risikoübergang, der von der Zahlungspflicht abweichen kann. Bestätigen Sie Zielanforderungen mit einem Zollexperten; Ausrüstungslieferanten können nicht jede lokale Genehmigung garantieren.",
+    "frameworkTitle": "Erstellen Sie den Lieferverantwortungsplan",
+    "framework": [
+      {
+        "title": "Regel und Ort benennen",
+        "desc": "Verwenden Sie die vollständige Regel, einen präzisen benannten Ort/Hafen und die Vertragsversion. Ein Landesname oder vage Lieferangabe ist kein klarer Übergabepunkt."
+      },
+      {
+        "title": "Kosten von Risiko trennen",
+        "desc": "Vergleichen Sie Zahlungspflichten mit dem Risikoübergang. Bei CIF zahlt der Verkäufer vereinbarten Transport/Versicherung zum Zielhafen, während das Risiko beim Verladen am Versandort übergeht."
+      },
+      {
+        "title": "Zoll und Steuern zuweisen",
+        "desc": "Identifizieren Sie Importeur, Zollmakler, Klassifizierungsprüfung und Steuern. Anforderungen variieren je Ziel; kopieren Sie keine Zollsätze von anderen Projekten."
+      },
+      {
+        "title": "Annahme und Entladung planen",
+        "desc": "Bestätigen Sie, wer Liefertermine bucht, Entladegerät stellt, Kistenzustand prüft und Mängel dokumentiert. Montage und Zollabfertigung sind separate Leistungen."
+      }
+    ],
+    "equipmentTitle": "Vergleichen Sie gängige Lieferoptionen",
+    "equipment": [
+      {
+        "title": "FCA",
+        "desc": "Nützlich für vereinbarte Speditionsübergabe, auch Containerlieferungen. Bestätigen Sie den genauen Ort und Beladungspflichten mit den Vertragspartnern."
+      },
+      {
+        "title": "FOB",
+        "desc": "Gilt für See- oder Binnenschifffahrt. Definieren Sie Verladehafen und Bordübergabe; verwenden Sie es nicht pauschal für jeden Containerübergang."
+      },
+      {
+        "title": "CIF",
+        "desc": "Bei See-/Binnenschifffahrt unterscheiden Sie verkäuferfinanzierten Transport/Versicherung vom früheren Bordrisikoübergang. Prüfen Sie Versicherungsumfang statt Vollschutz anzunehmen."
+      },
+      {
+        "title": "DAP",
+        "desc": "Am benannten Zielort sind Güter entladefähig. Importabwicklung, Abgaben und Entladung bleiben normalerweise Käuferpflichten; prüfen Sie Vertragszusätze."
+      }
+    ],
+    "columns": [
+      "Regel",
+      "Benannter Punkt",
+      "Käuferprüfung",
+      "Nicht automatisch enthalten"
+    ],
+    "rows": [
+      [
+        "FCA",
+        "Vereinbarter Übergabeort",
+        "Speditionsübergabe und Beladedetails",
+        "Haupttransport und Importabwicklung"
+      ],
+      [
+        "FOB",
+        "Benannter Verladehafen",
+        "Bordübergabe und Transporttauglichkeit",
+        "Importkosten und Montage"
+      ],
+      [
+        "CIF",
+        "Benannter Zielhafen",
+        "Risikopunkt und Versicherungsumfang",
+        "Entladung und Zielgenehmigungen"
+      ],
+      [
+        "DAP",
+        "Exaktes Ziel",
+        "Zugang, Importabwicklung und Entladung",
+        "Importabgaben und Montage"
+      ]
+    ],
+    "faq": [
+      {
+        "title": "Bestimmt der Versandbegriff das Produkteigentum?",
+        "desc": "Incoterms regeln nicht Eigentumsübergang, Zahlungsbedingungen oder alle Gewährleistungen. Adressieren Sie diese separat im Kaufvertrag."
+      },
+      {
+        "title": "Ist DAP gleich zollfrei geliefert?",
+        "desc": "Nein. Bei DAP bearbeitet der Käufer normalerweise Importabwicklung und Abgaben. Verwechseln Sie DAP nicht mit DDP oder gehen Sie von Verkäufer als Importeur aus."
+      },
+      {
+        "title": "Ist Montage im Lieferbegriff enthalten?",
+        "desc": "Nicht durch die Handelsregel allein. Dokumentieren Sie Montage, Reise, Werkzeuge, lokale Arbeitskräfte und Inbetriebnahme separat."
+      },
+      {
+        "title": "Kann diese Leitlinie meinen Zollsatz bestätigen?",
+        "desc": "Nein. Geben Sie Artikelbeschreibungen und Dokumente einem qualifizierten Zielzollmakler zur Klassifizierung und aktuellen Anforderungen vor Festlegung."
+      }
+    ],
+    "tableTitle": "Vergleichen Sie gängige Lieferoptionen — Entscheidungsmatrix",
+    "tableNote": "Planungshilfe nur. Verwenden Sie projektspezifische Zeichnungen, Artikelspezifikationen und schriftliche Freigaben; diese Leitlinie ist kein Produktzertifikat oder Vertrag.",
+    "imageAlt": "Importbedingungen für Indoor-Spielplatzausrüstung — illustrative 3D-Ansicht",
+    "captions": [
+      "Bestätigen Sie, welche Ausrüstung die Lieferung umfasst.",
+      "Nutzen Sie eine abgestimmte Planung, um Lieferung von Montage zu trennen.",
+      "Listen Sie separat gelieferte Komponenten und Zubehör auf."
+    ],
+    "ui": {
+      "home": "Startseite",
+      "products": "Produkte",
+      "design": "Kostenlose 3D-Planung anfordern",
+      "whatsapp": "WhatsApp-Chat",
+      "compare": "Optionen vergleichen",
+      "gallery": "Designreferenzen",
+      "relatedTitle": "Verwandte Planungsleitfäden",
+      "faqTitle": "Käuferfragen",
+      "sourcesTitle": "Quellen & Umfang",
+      "sourcesIntro": "Bestätigen Sie die aktuelle Standardversion und lokale Bau-, Brandschutz- und Barrierefreiheitsanforderungen mit Ihrem qualifizierten Projektteam. Diese Referenzen sind keine Produktzertifikate.",
+      "updated": "Aktualisiert am 3. November 2026",
+      "author": "NinescapeLand · Kommerzielle Spielplanung",
+      "imageNote": "Bestehende 3D-Ansichten veranschaulichen Ausrüstungskonfigurationen, nicht Produktspezifikationen oder abgeschlossene Projekte.",
+      "inquiryIntro": "Senden Sie Ihre Grundrisse, Land und Beschaffungsanforderungen für eine projektspezifische Beratung."
+    },
+    "parents": [
+      {
+        "slug": "process",
+        "label": "Planungs- & Lieferprozess"
+      },
+      {
+        "slug": "indoor-playground-equipment-indonesia",
+        "label": "Indonesien Ausrüstungsplanung"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Incoterms® 2020",
+        "publisher": "Internationale Handelskammer",
+        "url": "https://iccwbo.org/business-solutions/incoterms-rules/incoterms-2020/",
+        "note": "Die Regeln legen feste Lieferpflichten, Kosten und Risiken fest. Sie ersetzen nicht jede Vertragsklausel."
+      },
+      {
+        "label": "Grundlagen Import/Export",
+        "publisher": "U.S. Customs and Border Protection",
+        "url": "https://www.cbp.gov/trade/basic-import-export",
+        "note": "US-spezifische Importleitlinie; Zielland-Zollanforderungen müssen separat bestätigt werden."
+      }
+    ]
+  },
+  "indoor-playground-factory-acceptance-checklist": {
+    "slug": "indoor-playground-factory-acceptance-checklist",
+    "title": "Abnahmeprotokoll für Indoor-Spielplatz in der Fabrik",
+    "metaTitle": "Fabrikabnahme-Checkliste Spielplatz | NinescapeLand",
+    "metaDescription": "Vorabnahme vor dem Versand mit genehmigten Plänen, Artikel-IDs, Foto-Nachweisen, Verpackungskontrollen und dokumentierter Mängelbehebung planen.",
+    "kicker": "Genehmigte Basis · Nachweise · Freigabe",
+    "intro": "Die Fabrikabnahme ist eine vertragsspezifische Kontrolle vor dem Versand, kein Ersatz für Montageprüfung oder Produktzertifikat. Käufer sollten festlegen, was in der Fabrik geprüft werden kann, was montierte Tests erfordert und was am Bestimmungsort erfolgen muss. Dieser Leitfaden konzentriert sich auf Freigabe-Nachweise statt täglicher Betriebskontrollen.",
+    "answerQuestion": "Was gehört in eine Fabrikabnahme-Checkliste?",
+    "answer": "Verlinken Sie jede Prüfung mit den genehmigten Plänen, der Stückliste oder schriftlichen Spezifikationen. Dokumentieren Sie Ergebnis, Artikelkennung, Nachweisreferenz und offene Maßnahmen. Stimmen Sie geprüfte Artikel mit der Packliste ab und geben Sie nur nach vereinbartem Abnahmeverfahren frei. Ferndiagnosen per Bild können nicht alle Aspekte der montierten Anlage bestätigen.",
+    "frameworkTitle": "Abnahmekriterien festlegen",
+    "framework": [
+      {
+        "title": "Referenzbasis festlegen",
+        "desc": "Identifizieren Sie genehmigte Planstände, Stücklistenrevisionen, Farben, Nutzungsdokumente und Abnahmekriterien. Lösen Sie widersprüchliche Versionen vor Prüfbeginn."
+      },
+      {
+        "title": "Prüfumfang definieren",
+        "desc": "Listen Sie Fabrikkontrollen, ggf. repräsentative Montage und erforderliche Berichte auf. Kennzeichnen Sie nicht durchgeführte oder nicht anwendbare Prüfungen klar; setzen Sie montageabhängige Punkte nicht als erledigt."
+      },
+      {
+        "title": "Abweichungen dokumentieren",
+        "desc": "Vergeben Sie pro Mangel eine ID, Referenz, Beschreibung, Verantwortung und Behebungsnachweis. Klären Sie, welche offenen Punkte die Freigabe blockieren – keine mündlichen Zusagen."
+      },
+      {
+        "title": "Verpackung abstimmen und freigeben",
+        "desc": "Verknüpfen Sie Artikel-IDs mit Kistennummern und Mengen. Trennen Sie unterschriebene Freigabe und Ausnahmeregistrierung von Frachtbuchung oder Zolldokumenten."
+      }
+    ],
+    "equipmentTitle": "Nachweispaket erstellen",
+    "equipment": [
+      {
+        "title": "Referenzregister",
+        "desc": "Führen Sie genehmigte Pläne und Spezifikationsstände auf. Verkaufsvisualisierungen illustrieren Designs, ersetzen aber keine messbaren Abnahmekriterien."
+      },
+      {
+        "title": "Artikelbezogene Fotos",
+        "desc": "Dokumentieren Sie Artikel-IDs, relevante Ansichten und Prüfdatum. Bilder sollen die Kontrolle belegen – kein Fabrikpanorama als Komponentennachweis."
+      },
+      {
+        "title": "Berichtsregister",
+        "desc": "Verknüpfen Sie angeforderte Berichte mit exakten Modellen, Materialien und Umfang. Ein Fabrikqualitätszertifikat bestätigt nicht den gesamten Spielplatz."
+      },
+      {
+        "title": "Verpackungsabgleich",
+        "desc": "Zuordnen geprüfter Komponenten zu Kisten-IDs, Mengen und Zubehör. Vermerken Sie fehlende oder nachzuliefernde Artikel explizit vor Versandfreigabe."
+      }
+    ],
+    "columns": [
+      "Phase",
+      "Referenz",
+      "Nachweis",
+      "Freigabeentscheidung"
+    ],
+    "rows": [
+      [
+        "Konfiguration",
+        "Genehmigter Plan/Stücklistenstand",
+        "Artikel- und Maßprotokolle",
+        "Ungenehmigte Änderungen klären"
+      ],
+      [
+        "Spezifizierte Prüfungen",
+        "Vereinbarte Abnahmekriterien",
+        "Berichte und prüfspezifische Nachweise",
+        "Grenzen und Auslassungen dokumentieren"
+      ],
+      [
+        "Abweichungen",
+        "Mängelregister",
+        "Behebung oder akzeptierte Ausnahme",
+        "Vereinbarte Blockierungskriterien anwenden"
+      ],
+      [
+        "Verpackung",
+        "Artikel-Kisten-Zuordnung",
+        "Anzahl und Kistenkennungen",
+        "Fehlmengen vor Freigabe vermerken"
+      ]
+    ],
+    "faq": [
+      {
+        "title": "Können Fotos eine unabhängige Prüfung ersetzen?",
+        "desc": "Nein. Fotos unterstützen ausgewählte Kontrollen, zertifizieren aber nicht eigenständig Maße, Festigkeit oder montiertes Design. Klären Sie Umfang und qualifizierten Prüfer bei erforderlicher Fremdprüfung."
+      },
+      {
+        "title": "Ist Fabrikabnahme gleich Sicherheitszertifikat?",
+        "desc": "Nein. Es ist ein vereinbarter Beschaffungs-Meilenstein. Zertifizierungs- und Testansprüche benötigen eigenen gültigen Nachweis."
+      },
+      {
+        "title": "Was bleibt für die Montagephase?",
+        "desc": "Anschlüsse, Endmontage, Verankerung, Verkehrswege und lokale Prüfungen erfordern ggf. Zielort-Verifikation. Dokumentieren Sie diese Ausnahmen im Fabrikprotokoll."
+      },
+      {
+        "title": "Muss jeder Mangel den Versand stoppen?",
+        "desc": "Folgen Sie Vertrag und Freigabekriterien. Dokumentieren Sie akzeptierte Ausnahmen, Korrekturen und Genehmigende – markieren Sie offene Punkte nicht stillschweigend als erledigt."
+      }
+    ],
+    "tableTitle": "Nachweispaket erstellen – Entscheidungsmatrix",
+    "tableNote": "Nur Planungshilfe. Verwenden Sie projektspezifische Pläne, Artikelspezifikationen und schriftliche Freigaben; dieser Leitfaden ist kein Produktzertifikat oder Vertrag.",
+    "imageAlt": "Abnahmeprotokoll für Indoor-Spielplatz – beispielhafte 3D-Visualisierung",
+    "captions": [
+      "Nutzen Sie die genehmigte Konfiguration als Abnahmebasis.",
+      "Trennen Sie illustrative Visualisierungen von artikelbezogenen Prüfnachweisen.",
+      "Beziehen Sie Zubehör in den Verpackungsabgleich ein."
+    ],
+    "ui": {
+      "home": "Startseite",
+      "products": "Produkte",
+      "design": "Kostenlose 3D-Planung anfordern",
+      "whatsapp": "WhatsApp-Chat",
+      "compare": "Optionen vergleichen",
+      "gallery": "Designreferenzen",
+      "relatedTitle": "Verwandte Planungsleitfäden",
+      "faqTitle": "Käuferfragen",
+      "sourcesTitle": "Quellen & Umfang",
+      "sourcesIntro": "Bestätigen Sie die aktuelle Normenausgabe sowie lokale Bau-, Brandschutz- und Barrierefreiheits-Anforderungen mit Ihrem qualifizierten Projektteam. Diese Referenzen sind keine Produktzertifikate.",
+      "updated": "Aktualisiert am 3. November 2026",
+      "author": "NinescapeLand · Kommerzielle Spielplanung",
+      "imageNote": "Bestehende 3D-Visualisierungen zeigen Ausstattungskonfigurationen, keine Produktspezifikationen oder fertige Projekte.",
+      "inquiryIntro": "Senden Sie Ihre Grundrisse, Land und Beschaffungsanforderungen für eine projektspezifische Beratung."
+    },
+    "parents": [
+      {
+        "slug": "process",
+        "label": "Planungs- & Lieferprozess"
+      },
+      {
+        "slug": "custom-playground-manufacturer-certification-checklist",
+        "label": "Hersteller-Zertifizierungsprüfung"
+      }
+    ],
+    "sources": [
+      {
+        "label": "ISO 9001 — Qualitätsmanagement",
+        "publisher": "Internationale Organisation für Normung",
+        "url": "https://www.iso.org/iso-9001-quality-management.html",
+        "note": "Nur Qualitätsmanagement-Kontext. Zertifiziert nicht einzelne Spielplatzprodukte oder ersetzt Projektabnahme."
+      },
+      {
+        "label": "ASTM F1918-21",
+        "publisher": "ASTM International",
+        "url": "https://store.astm.org/f1918-21.html",
+        "note": "Referenz für weich gepolsterte Spielgeräte. Bestätigen Sie die aktuelle Ausgabe und produktspezifische Bewertung."
+      }
+    ]
+  },
+  "multi-site-indoor-playground-equipment-procurement": {
+    "slug": "multi-site-indoor-playground-equipment-procurement",
+    "title": "Beschaffung von Indoor-Spielplatzausrüstung für mehrere Standorte",
+    "metaTitle": "Spielplatzausrüstung für mehrere Standorte | NinescapeLand",
+    "metaDescription": "Planen Sie die Beschaffung für mehrere Standorte mit kontrollierten Ausrüstungslisten, standortspezifischen Varianten, Ersatzteilkompatibilität und gestaffelten Liefernachweisen.",
+    "kicker": "Kernkonfiguration · Standortvarianten · Rückverfolgbarkeit",
+    "intro": "Eine Kette kann ihre Ausrüstungsspezifikation standardisieren, ohne jedes Gebäude in das gleiche Layout zu zwingen. Zentrale Einkäufer benötigen eine kontrollierte Kernliste und klare Aufzeichnungen über Standortabweichungen. Dieser Leitfaden behandelt Konfiguration und Beschaffung über Standorte hinweg, nicht Franchise-Gebühren, Rentabilitätsprognosen oder behauptete Kundenprojekte der Kette.",
+    "answerQuestion": "Wie können Einkäufer für mehrere Standorte Spielplatzausrüstung standardisieren?",
+    "answer": "Führen Sie eine genehmigte Kernausrüstungsliste mit Artikel-IDs, Revisionen und Verwendungsdokumenten, erstellen Sie dann einen separaten Standortplan für Maße, Genehmigungen und Schnittstellen. Dokumentieren Sie Ersetzungen und halten Sie die Ersatzteilkompatibilität an Revisionen gebunden. Standardisieren Sie den Nachweis- und Änderungsprozess, nicht jedes physische Layout.",
+    "frameworkTitle": "Trennen Sie den Kern von Standortabweichungen",
+    "framework": [
+      {
+        "title": "Kernliste erstellen",
+        "desc": "Definieren Sie die Ausrüstungsfamilien, Artikel-IDs, Dokumentenrevisionen und erforderlichen Nachweise. Halten Sie Markenentscheidungen getrennt von strukturellen und Verwendungsanforderungen."
+      },
+      {
+        "title": "Jeden Standort erfassen",
+        "desc": "Dokumentieren Sie klare Maße, Säulen, Versorgungsleitungen, Zugänge, lokale Anforderungen und Zielgruppen. Ein genehmigter erster Standort genehmigt nicht jedes spätere Gebäude."
+      },
+      {
+        "title": "Ersetzungen kontrollieren",
+        "desc": "Verlangen Sie einen schriftlichen Änderungsantrag mit betroffenen Standorten, Zeichnungen, Verbindungen und Ersatzteilen. Genehmigen Sie keine billigere Alternative allein aufgrund eines Bildes."
+      },
+      {
+        "title": "Gestaffelte Übergaben planen",
+        "desc": "Verfolgen Sie jeden Standort von der Konfigurationsgenehmigung bis zur Lieferung und Installationsprüfung. Verwenden Sie nicht einen einzigen Lieferstatus als Nachweis, dass jeder Standort bereit ist."
+      }
+    ],
+    "equipmentTitle": "Vergleichen Sie Standardisierungsgrade",
+    "equipment": [
+      {
+        "title": "Ausrüstungsfamilie",
+        "desc": "Standardisieren Sie die geforderten Funktionen und Dokumente, während Sie genehmigte Maße und Routenänderungen für jeden Standort zulassen."
+      },
+      {
+        "title": "Komponenten-IDs",
+        "desc": "Verfolgen Sie Teile und Revisionen für Anbauteile, Abdeckungen und Module. Behandeln Sie Ersatzteile nur als austauschbar, wenn die Kompatibilität dokumentiert ist."
+      },
+      {
+        "title": "Branding-Paket",
+        "desc": "Führen Sie Farben und dekorative Elemente separat auf. Eine einheitliche visuelle Identität bedeutet nicht, dass Gebäude die gleichen technischen Einschränkungen haben."
+      },
+      {
+        "title": "Standort-Freigabepaket",
+        "desc": "Bewahren Sie standortspezifische Zeichnungen, Abweichungen, Kisten und Übergabeunterlagen auf. Die zentrale Genehmigung sollte auf die tatsächlich installierte Konfiguration verweisen."
+      }
+    ],
+    "columns": [
+      "Aufzeichnung",
+      "Zentrale Basis",
+      "Standortspezifische Eingabe",
+      "Änderungskontrolle"
+    ],
+    "rows": [
+      [
+        "Ausrüstungsliste",
+        "Genehmigte Artikel-IDs und Revisionen",
+        "Lokale Auswahl und Mengen",
+        "Revisions- und betroffene-Standort-Register"
+      ],
+      [
+        "Layout",
+        "Designprinzipien und Nachweisanforderungen",
+        "Erfassung, Versorgungsleitungen und Schnittstellen",
+        "Genehmigte Standortzeichnung"
+      ],
+      [
+        "Ersatzteile",
+        "Dokumentierte kompatible Teilfamilien",
+        "Installierte Revision und Lagerbedarf",
+        "Schriftliche Ersatzgenehmigung"
+      ],
+      [
+        "Übergabe",
+        "Gemeinsames Nachweisformat",
+        "Standortprüfungen und offene Punkte",
+        "Standortspezifische Freigabe"
+      ]
+    ],
+    "faq": [
+      {
+        "title": "Sollten alle Standorte identische Ausrüstung haben?",
+        "desc": "Nicht unbedingt. Gebäudegeometrie, Zugang, Nutzer und lokale Anforderungen können Abweichungen rechtfertigen. Bewahren Sie eine kontrollierte Kernspezifikation auf und dokumentieren Sie Ausnahmen."
+      },
+      {
+        "title": "Garantiert der Mengeneinkauf Einsparungen?",
+        "desc": "Nein. Vergleichen Sie die tatsächlichen Angebote, Fracht, Lagerung, gestaffelte Lieferungen, Ersatzteile und lokale Installationsarbeiten. Diese Seite verspricht keinen Rabatt oder Ertrag."
+      },
+      {
+        "title": "Kann ein Ersatzteil-Satz für jeden Standort dienen?",
+        "desc": "Nur für dokumentierte kompatible Komponenten und Revisionen. Zeichnen Sie auf, für welche Standorte ein Teil passt, und vermeiden Sie den Austausch optisch ähnlicher Artikel."
+      },
+      {
+        "title": "Wie unterscheidet sich dies von Franchise gegenüber unabhängig?",
+        "desc": "Dieser Leitfaden vergleicht Betriebsmodelle. Diese Seite behandelt Konfigurationslisten, Revisionskontrolle und standortbezogene Beschaffungsunterlagen unabhängig vom Eigentumsmodell."
+      }
+    ],
+    "tableTitle": "Vergleichen Sie Standardisierungsgrade — Entscheidungsmatrix",
+    "tableNote": "Nur Planungshilfe. Verwenden Sie projektspezifische Zeichnungen, Artikelspezifikationen und schriftliche Genehmigungen; dieser Leitfaden ist kein Produktzertifikat oder Vertrag.",
+    "imageAlt": "Beschaffung von Indoor-Spielplatzausrüstung für mehrere Standorte — illustrative 3D-Darstellung",
+    "captions": [
+      "Standardisieren Sie Ausrüstungsfamilien, nicht jedes Gebäudelayout.",
+      "Dokumentieren Sie standortspezifische Routen und Servicezugänge.",
+      "Verfolgen Sie gepolsterte Module und Ersatzteilkompatibilität nach Artikelrevision."
+    ],
+    "ui": {
+      "home": "Startseite",
+      "products": "Produkte",
+      "design": "Kostenloses 3D-Design anfordern",
+      "whatsapp": "Chat auf WhatsApp",
+      "compare": "Optionen vergleichen",
+      "gallery": "Designreferenzen",
+      "relatedTitle": "Verwandte Planungsleitfäden",
+      "faqTitle": "Käuferfragen",
+      "sourcesTitle": "Quellen & Umfang",
+      "sourcesIntro": "Bestätigen Sie die aktuelle Standardausgabe und lokale Bau-, Brandschutz- und Barrierefreiheitsanforderungen mit Ihrem qualifizierten Projektteam. Diese Referenzen sind keine Produktzertifikate.",
+      "updated": "Aktualisiert am 3. November 2026",
+      "author": "NinescapeLand · Kommerzielle Spielplanung",
+      "imageNote": "Bestehende 3D-Darstellungen veranschaulichen Ausrüstungskonfigurationen, nicht Produktspezifikationen oder abgeschlossene Projekte.",
+      "inquiryIntro": "Senden Sie Ihre Standortzeichnungen, Land und Beschaffungsanforderungen für eine projektspezifische Besprechung."
+    },
+    "parents": [
+      {
+        "slug": "complete-indoor-play-center-solutions",
+        "label": "Komplette Indoor-Spielcenter-Lösungen"
+      },
+      {
+        "slug": "indoor-playground-franchise-vs-independent",
+        "label": "Franchise vs Unabhängig"
+      }
+    ],
+    "sources": [
+      {
+        "label": "ISO 9001 — Qualitätsmanagement",
+        "publisher": "Internationale Organisation für Normung",
+        "url": "https://www.iso.org/iso-9001-quality-management.html",
+        "note": "Nur Qualitätsmanagement-Kontext. Es zertifiziert kein einzelnes Spielplatzprodukt oder ersetzt die Projektabnahme."
+      },
+      {
+        "label": "ASTM F1918-21",
+        "publisher": "ASTM International",
+        "url": "https://store.astm.org/f1918-21.html",
+        "note": "Referenz für weich gepolsterte Spielgeräte. Bestätigen Sie die aktuelle gültige Ausgabe und produktspezifische Bewertung."
+      }
+    ]
+  }
+}

@@ -1,0 +1,732 @@
+{
+  "commercial-indoor-playground-slide-selection": {
+    "slug": "commercial-indoor-playground-slide-selection",
+    "title": "Selección de Toboganes para Parques Infantiles Comerciales Interiores",
+    "metaTitle": "Toboganes Comerciales Interiores | NinescapeLand",
+    "metaDescription": "Compare toboganes para parques infantiles comerciales interiores por formato, idoneidad por edad, diseño de entrada y salida, acceso de instalación y documentación necesaria para cotización.",
+    "kicker": "Formatos de Toboganes · Entrada y Salida · Adquisición",
+    "intro": "Los toboganes para parques infantiles comerciales interiores deben seleccionarse como parte de una ruta de juego completa, no como elementos aislados. Esta guía ayuda a los operadores a comparar formatos abiertos, cerrados y de múltiples carriles antes de solicitar una cotización específica para el proyecto. No incluye juguetes domésticos, atracciones cercanas ni una altura segura universal.",
+    "answerQuestion": "¿Cómo deben seleccionar los compradores los toboganes interiores?",
+    "answer": "Comience con los usuarios previstos y las instrucciones del fabricante, luego coordine la plataforma de entrada, el descenso, la salida y la circulación circundante. Solicite un dibujo del sistema ensamblado que muestre los espacios libres y las interfaces. Compare la visibilidad, el acceso asistido y las necesidades de mantenimiento antes de aprobar el formato; un renderizado por sí solo no puede establecer la idoneidad.",
+    "frameworkTitle": "Preparar el Brief de Diseño del Tobogán",
+    "framework": [
+      {
+        "title": "Definir el uso previsto",
+        "desc": "Especifique los grupos de edad, los arreglos de supervisión y si el tobogán está dentro de una estructura blanda contenida. Solicite documentación específica de uso previsto en lugar de una declaración genérica para todas las edades."
+      },
+      {
+        "title": "Trazar la ruta completa",
+        "desc": "Marque las colas de entrada, la plataforma, el descenso y la zona de salida en dibujos coordinados. Mantenga la circulación cruzada separada de la salida; las dimensiones requeridas deben provenir del diseño aprobado."
+      },
+      {
+        "title": "Verificar el cerramiento y la observación",
+        "desc": "Para tubos cerrados, pregunte cómo el personal observa y asiste a un usuario. Para formatos abiertos y de múltiples carriles, revise la protección lateral y cómo los usuarios acceden y salen de cada carril."
+      },
+      {
+        "title": "Confirmar la entrega y las interfaces",
+        "desc": "Registre la ruta de acceso para la instalación, la conexión del marco, el diseño de soporte y los puntos de inspección. Un tobogán que cabe en la sala puede no caber en la entrada del edificio o en la estructura existente."
+      }
+    ],
+    "equipmentTitle": "Comparar Formatos de Toboganes",
+    "equipment": [
+      {
+        "title": "Tobogán abierto",
+        "desc": "Revise las líneas de visión del personal, la protección lateral y la zona de salida como un sistema. Especifique los detalles de superficie y conexión en el brief de compra."
+      },
+      {
+        "title": "Tobogán tubular cerrado",
+        "desc": "Solicite disposiciones de observación y acceso asistido, detalles de unión y un método de limpieza. Un cerramiento atractivo no reemplaza una revisión de acceso."
+      },
+      {
+        "title": "Tobogán de múltiples carriles",
+        "desc": "Pregunte cómo se separan las colas y las salidas de los carriles. Confirme el uso previsto; nunca infiera reglas de carrera o capacidad de usuarios simultáneos del número de carriles."
+      },
+      {
+        "title": "Tobogán integrado compacto",
+        "desc": "Coordine la plataforma y las actividades cercanas dentro de la estructura contenida. No adapte una unidad sin revisar el ensamblado modificado completo."
+      }
+    ],
+    "columns": [
+      "Formato",
+      "Evidencia de diseño",
+      "Enfoque operativo",
+      "Datos para cotización"
+    ],
+    "rows": [
+      [
+        "Abierto",
+        "Dibujo de entrada/salida y protección lateral",
+        "Zona de salida visible y circulación",
+        "Usuarios previstos e interfaz de plataforma"
+      ],
+      [
+        "Tubular",
+        "Detalles de unión y acceso asistido",
+        "Observación y acceso para limpieza",
+        "Geometría de ruta y puntos de conexión"
+      ],
+      [
+        "Múltiples carriles",
+        "Disposición de carriles y colas",
+        "Entrada controlada y salidas separadas",
+        "Uso previsto documentado"
+      ],
+      [
+        "Integrado",
+        "Dibujo coordinado del marco",
+        "Actividades adyacentes e inspecciones",
+        "Detalles de estudio y estructura existente"
+      ]
+    ],
+    "faq": [
+      {
+        "title": "¿Qué dimensiones debo enviar para una cotización?",
+        "desc": "Proporcione dimensiones útiles del sitio, alturas libres, columnas, servicios, puertas de acceso y la ubicación prevista del tobogán. El proveedor debe desarrollar las dimensiones específicas de la plataforma y la salida."
+      },
+      {
+        "title": "¿Existen números universales de espacio libre para toboganes?",
+        "desc": "Ningún número único cubre todos los formatos, grupos de usuarios y jurisdicciones. Use las instrucciones del modelo y una revisión calificada de la configuración instalada completa."
+      },
+      {
+        "title": "¿Puede un tobogán conectarse a una estructura de juego existente?",
+        "desc": "Solo después de que las conexiones, soportes y ruta completa sean revisados y aprobados por escrito. No asuma que un color o tamaño coincidente significa compatibilidad."
+      },
+      {
+        "title": "¿En qué se diferencia esto de la guía de túneles?",
+        "desc": "Esta página aborda el descenso del tobogán, las colas y la zona de salida. La guía de túneles aborda las rutas de gateo, la visibilidad y el acceso a los conectores."
+      }
+    ],
+    "tableTitle": "Comparar Formatos de Toboganes — Matriz de Decisión",
+    "tableNote": "Orientación de planificación únicamente. Utilice dibujos específicos del proyecto, especificaciones del artículo y aprobaciones por escrito; esta guía no es un certificado de producto ni un contrato.",
+    "imageAlt": "Selección de Toboganes Comerciales Interiores — renderizado 3D ilustrativo del sitio",
+    "captions": [
+      "Revise las rutas de toboganes dentro de una estructura coordinada.",
+      "Verifique la circulación de salida junto a actividades vecinas.",
+      "Compare zonas de soporte sin tratar el renderizado como una especificación."
+    ],
+    "ui": {
+      "home": "Inicio",
+      "products": "Productos",
+      "design": "Solicitar Diseño 3D Gratis",
+      "whatsapp": "Chatear por WhatsApp",
+      "compare": "Comparar Opciones",
+      "gallery": "Referencias de Diseño",
+      "relatedTitle": "Guías de Planificación Relacionadas",
+      "faqTitle": "Preguntas de Compradores",
+      "sourcesTitle": "Fuentes y Alcance",
+      "sourcesIntro": "Confirme la edición estándar actual y los requisitos locales de construcción, incendios y accesibilidad con su equipo de proyecto calificado. Estas referencias no son certificados de producto.",
+      "updated": "Actualizado el 3 de noviembre de 2026",
+      "author": "NinescapeLand · Planificación Comercial de Juego",
+      "imageNote": "Los renderizados 3D del sitio existente ilustran configuraciones de equipos, no especificaciones de producto ni proyectos completados.",
+      "inquiryIntro": "Envíe sus planos del sitio, país y requisitos de adquisición para una discusión específica del proyecto."
+    },
+    "parents": [
+      {
+        "slug": "products/indoor-playground",
+        "label": "Equipos de Parque Infantil Interior"
+      },
+      {
+        "slug": "commercial-indoor-playground-tunnels-and-tubes",
+        "label": "Túneles y Tubos Comerciales de Juego"
+      }
+    ],
+    "sources": [
+      {
+        "label": "ASTM F1918-21",
+        "publisher": "ASTM International",
+        "url": "https://store.astm.org/f1918-21.html",
+        "note": "Referencia de alcance para equipos de juego blandos contenidos. Confirme la edición aplicable actual y la evaluación específica del producto."
+      },
+      {
+        "label": "Estándares ADA 2010",
+        "publisher": "Departamento de Justicia de EE. UU.",
+        "url": "https://www.ada.gov/law-and-regs/design-standards/2010-stds/",
+        "note": "Los requisitos de accesibilidad dependen de la jurisdicción y la instalación ensamblada; los dibujos de equipos no son una aprobación."
+      }
+    ]
+  },
+  "commercial-indoor-playground-netting": {
+    "slug": "commercial-indoor-playground-netting",
+    "title": "Redes para Áreas de Juego Comerciales Interiores",
+    "metaTitle": "Redes para Áreas de Juego Comerciales | NinescapeLand",
+    "metaDescription": "Especifique redes para áreas de juego interiores según uso previsto, aberturas, interfaces de fijación, visibilidad y documentación de reemplazo antes de solicitar cotización.",
+    "kicker": "Contención · Conexiones · Especificación",
+    "intro": "Las redes para áreas de juego interiores pueden formar límites, superficies para gatear o elementos de escalada. Estos usos no son intercambiables. Esta guía de adquisición se enfoca en la especificación y evidencia necesaria para cotizar un sistema de redes compatible, no en una tienda genérica de cuerdas o una lista de verificación rutinaria de inspección de sitios completos.",
+    "answerQuestion": "¿Qué debe incluir una especificación de redes para áreas de juego?",
+    "answer": "Identifique primero la función: contención, un elemento de juego que soporta carga o un límite decorativo. Envíe las dimensiones instaladas, detalles de conexión y usuarios previstos, luego solicite documentación específica del modelo sobre materiales, aberturas y fijación. No seleccione malla solo por color, precio o una etiqueta de red de seguridad no respaldada.",
+    "frameworkTitle": "Defina el Sistema de Redes",
+    "framework": [
+      {
+        "title": "Separe funciones",
+        "desc": "Etiquete cada ubicación de red y su función prevista. Un panel de contención no debe sustituirse por un elemento de escalada o que soporta carga sin una revisión de diseño documentada."
+      },
+      {
+        "title": "Especifique la geometría instalada",
+        "desc": "Muestre límites de paneles, esquinas, aberturas de acceso y la interfaz del marco. Considere la forma ajustada y las instrucciones del fabricante en lugar de solo citar un tamaño de tela suelta."
+      },
+      {
+        "title": "Documente fijaciones",
+        "desc": "Solicite detalles de fijación y bordes aprobados, hardware compatible e instrucciones de instalación. El panel y sus fijaciones deben evaluarse juntos."
+      },
+      {
+        "title": "Planee reemplazos rastreables",
+        "desc": "Mantenga identificadores de paneles, dibujos e información de revisión para que un reemplazo futuro coincida con el ensamblaje aprobado. Obtenga aprobación por escrito para sustituciones."
+      }
+    ],
+    "equipmentTitle": "Compare Usos de Adquisición de Redes",
+    "equipment": [
+      {
+        "title": "Paneles de contención",
+        "desc": "Solicite la geometría de abertura especificada, detalles de límites y requisitos de visibilidad. Un color de red no es una evaluación de atrapamiento o resistencia."
+      },
+      {
+        "title": "Redes de juego que soportan carga",
+        "desc": "Requiera uso previsto documentado e interfaces estructurales. No reutilice una especificación de panel perimetral para un puente o ruta de escalada."
+      },
+      {
+        "title": "Límites de acceso",
+        "desc": "Coordine puertas supervisadas o aberturas de acceso aprobadas con el diseño de la red. Mantenga el acceso del personal sin cortes improvisados."
+      },
+      {
+        "title": "Paneles de reemplazo",
+        "desc": "Proporcione el ID de pieza original, dimensiones ajustadas, fotos de fijación y revisión. Una apariencia similar no establece intercambiabilidad."
+      }
+    ],
+    "columns": [
+      "Uso",
+      "Evidencia a solicitar",
+      "Decisión de interfaz",
+      "Evitar"
+    ],
+    "rows": [
+      [
+        "Contención",
+        "Detalles específicos del modelo de malla y bordes",
+        "Fijación de marco y panel",
+        "Comprar solo por color"
+      ],
+      [
+        "Elemento de juego",
+        "Carga prevista y alcance del diseño",
+        "Fijación estructural aprobada",
+        "Usar red de límite como red de escalada"
+      ],
+      [
+        "Límite de acceso",
+        "Disposición de puertas y aberturas",
+        "Ruta supervisada y asistencia",
+        "Cortes o aberturas no aprobados"
+      ],
+      [
+        "Reemplazo",
+        "Registro de pieza original y revisión",
+        "Verificación de compatibilidad por escrito",
+        "Sustitución de material no revisada"
+      ]
+    ],
+    "faq": [
+      {
+        "title": "¿Se puede usar la misma malla en todas partes?",
+        "desc": "No lo asuma. Contención, escalada y usos decorativos tienen requisitos diferentes. Pida al diseñador que especifique cada ubicación."
+      },
+      {
+        "title": "¿Pueden cotizar a partir de una fotografía?",
+        "desc": "Una fotografía ayuda a identificar el sistema pero no reemplaza medidas, IDs de pieza, detalles de conexión y uso previsto. Confirme la especificación antes de ordenar."
+      },
+      {
+        "title": "¿El rendimiento al fuego está implícito en una descripción de red de seguridad?",
+        "desc": "No. Solicite evidencia del material exacto y uso donde apliquen requisitos locales. Una etiqueta de marketing genérica no es un informe de prueba."
+      },
+      {
+        "title": "¿Esto reemplaza las guías de material o mantenimiento?",
+        "desc": "No. Esta página define insumos para compra de sistemas de redes; la guía de materiales vinculada cubre componentes acolchados. Los límites de inspección y reemplazo rutinarios deben seguir las instrucciones del modelo."
+      }
+    ],
+    "tableTitle": "Compare Usos de Adquisición de Redes — Matriz de Decisión",
+    "tableNote": "Guía de planificación únicamente. Use dibujos específicos del proyecto, especificaciones de ítems y aprobaciones por escrito; esta guía no es un certificado de producto ni un contrato.",
+    "imageAlt": "Redes para Áreas de Juego Comerciales Interiores — renderizado 3D ilustrativo del sitio",
+    "captions": [
+      "Identifique límites de redes en el diseño ensamblado.",
+      "Revise conexiones y rutas de observación.",
+      "Coordine redes con actividades acolchadas cercanas."
+    ],
+    "ui": {
+      "home": "Inicio",
+      "products": "Productos",
+      "design": "Solicitar Diseño 3D Gratis",
+      "whatsapp": "Chatear por WhatsApp",
+      "compare": "Comparar Opciones",
+      "gallery": "Referencias de Diseño",
+      "relatedTitle": "Guías de Planificación Relacionadas",
+      "faqTitle": "Preguntas de Compradores",
+      "sourcesTitle": "Fuentes y Alcance",
+      "sourcesIntro": "Confirme la edición estándar actual y los requisitos locales de construcción, incendios y accesibilidad con su equipo de proyecto calificado. Estas referencias no son certificados de producto.",
+      "updated": "Actualizado el 3 de noviembre de 2026",
+      "author": "NinescapeLand · Planificación Comercial de Áreas de Juego",
+      "imageNote": "Los renderizados 3D de sitios existentes ilustran configuraciones de equipos, no especificaciones de producto o proyectos completados.",
+      "inquiryIntro": "Envíe sus planos de sitio, país y requisitos de adquisición para una discusión específica del proyecto."
+    },
+    "parents": [
+      {
+        "slug": "products/indoor-playground",
+        "label": "Equipos para Áreas de Juego Interiores"
+      },
+      {
+        "slug": "soft-play-foam-and-material-specifications",
+        "label": "Especificaciones de Materiales para Juegos Suaves"
+      }
+    ],
+    "sources": [
+      {
+        "label": "ASTM F1918-21",
+        "publisher": "ASTM International",
+        "url": "https://store.astm.org/f1918-21.html",
+        "note": "Referencia de alcance para equipos de juego suaves contenidos. Confirme la edición aplicable actual y la evaluación específica del producto."
+      },
+      {
+        "label": "Estándares ADA 2010",
+        "publisher": "Departamento de Justicia de EE. UU.",
+        "url": "https://www.ada.gov/law-and-regs/design-standards/2010-stds/",
+        "note": "Los requisitos de accesibilidad dependen de la jurisdicción y la instalación ensamblada; los dibujos de equipos no son aprobación."
+      }
+    ]
+  },
+  "indoor-playground-equipment-import-shipping-terms": {
+    "slug": "indoor-playground-equipment-import-shipping-terms",
+    "title": "Términos de Envío para Importación de Equipos de Juegos Infantiles en Interiores",
+    "metaTitle": "Términos de Envío para Equipos | NinescapeLand",
+    "metaDescription": "Aclare términos de entrega, transferencia de costos y riesgos, responsabilidades aduaneras y descarga antes de contratar equipos de juegos infantiles importados.",
+    "kicker": "Lugar Designado · Transferencia de Riesgo · Aduanas",
+    "intro": "Una cotización de equipo y una cotización de flete pueden cubrir partes diferentes del viaje. Antes de comparar paquetes de juegos infantiles importados, registre el lugar de entrega designado, la versión de Incoterms elegida y quién maneja cada paso. Esta es una guía de responsabilidades de compra, no una calculadora fija de flete, aranceles o costos totales.",
+    "answerQuestion": "¿Qué deben acordar los compradores antes de importar equipos de juegos infantiles?",
+    "answer": "Acordar la regla comercial y el lugar exacto designado, luego documentar las responsabilidades de despacho de exportación, transporte principal, seguro, despacho de importación, impuestos y descarga. Verifique cuándo se transfiere el riesgo, que puede diferir de quién paga el transporte. Confirme los requisitos de destino con un profesional aduanero; los proveedores de equipos no pueden garantizar todas las aprobaciones locales.",
+    "frameworkTitle": "Construya el Cronograma de Responsabilidades de Entrega",
+    "framework": [
+      {
+        "title": "Nombre de la regla y lugar",
+        "desc": "Use la regla completa, un lugar o puerto designado preciso y la edición en el contrato. Un nombre de país o una cotización vaga no son una transferencia clara."
+      },
+      {
+        "title": "Separe costos de riesgo",
+        "desc": "Compare obligaciones de pago con el punto de transferencia de riesgo. Por ejemplo, bajo CIF el vendedor paga el transporte y seguro acordados hasta el puerto de destino designado, mientras que el riesgo se transfiere cuando los bienes están a bordo en el envío."
+      },
+      {
+        "title": "Asigne aduanas e impuestos",
+        "desc": "Identifique el importador de registro, agente, revisión de clasificación e impuestos. Los requisitos varían por destino; no copie una tasa arancelaria de otro proyecto."
+      },
+      {
+        "title": "Planee recepción y descarga",
+        "desc": "Confirme quién reserva horarios de entrega, maneja equipos de descarga, verifica el estado de los embalajes y registra faltantes. La instalación y el despacho aduanero son ítems de alcance separados."
+      }
+    ],
+    "equipmentTitle": "Compare Discusiones Comunes de Entrega",
+    "equipment": [
+      {
+        "title": "FCA",
+        "desc": "Útil para discutir una transferencia a un transportista designado, incluyendo envíos en contenedores. Confirme el lugar preciso y las obligaciones de carga con las partes contratantes."
+      },
+      {
+        "title": "FOB",
+        "desc": "Aplica a transporte marítimo o por vías navegables interiores. Defina el puerto de embarque y entrega a bordo; no lo use como un término universal para toda transferencia de contenedores."
+      },
+      {
+        "title": "CIF",
+        "desc": "Para transporte marítimo o por vías navegables interiores, distinga el transporte/seguro pagado por el vendedor de la transferencia de riesgo previa. Verifique el alcance del seguro en lugar de asumir cobertura total."
+      },
+      {
+        "title": "DAP",
+        "desc": "En el destino designado, los bienes están listos para descarga. El despacho de importación, aranceles y descarga normalmente siguen siendo obligaciones del comprador bajo la regla; confirme adiciones al contrato."
+      }
+    ],
+    "columns": [
+      "Regla",
+      "Punto designado",
+      "Verificación clave del comprador",
+      "No incluido automáticamente"
+    ],
+    "rows": [
+      [
+        "FCA",
+        "Lugar de entrega acordado",
+        "Detalle de transferencia al transportista y carga",
+        "Transporte principal y despacho de importación"
+      ],
+      [
+        "FOB",
+        "Puerto de embarque designado",
+        "Entrega a bordo y adecuación del transporte",
+        "Cargos de importación e instalación"
+      ],
+      [
+        "CIF",
+        "Puerto de destino designado",
+        "Punto de riesgo y cobertura de seguro",
+        "Descarga y aprobaciones de destino"
+      ],
+      [
+        "DAP",
+        "Destino exacto",
+        "Acceso, despacho de importación y descarga",
+        "Aranceles de importación e instalación"
+      ]
+    ],
+    "faq": [
+      {
+        "title": "¿El término de envío determina la propiedad del producto?",
+        "desc": "Los Incoterms no determinan la transferencia de título, términos de pago o todos los remedios. Abórdelos por separado en el contrato de venta."
+      },
+      {
+        "title": "¿DAP es lo mismo que entrega con aranceles pagados?",
+        "desc": "No. Bajo DAP el comprador normalmente maneja el despacho de importación y aranceles/impuestos relacionados. No trate DAP como DDP ni asuma que el vendedor puede actuar como importador."
+      },
+      {
+        "title": "¿La instalación está incluida en un término de entrega?",
+        "desc": "No por la regla comercial sola. Escriba las responsabilidades de instalación, viaje, herramientas, mano de obra local y puesta en marcha en un alcance separado."
+      },
+      {
+        "title": "¿Esta guía puede confirmar el arancel para mi país?",
+        "desc": "No. Proporcione descripciones y documentos a un agente de destino calificado para clasificación y requisitos actuales antes de comprometerse."
+      }
+    ],
+    "tableTitle": "Compare Discusiones Comunes de Entrega — Matriz de Decisión",
+    "tableNote": "Guía de planificación únicamente. Use planos específicos del proyecto, especificaciones de ítems y aprobaciones escritas; esta guía no es un certificado de producto ni un contrato.",
+    "imageAlt": "Términos de Envío para Importación de Equipos de Juegos Infantiles en Interiores — render 3D ilustrativo",
+    "captions": [
+      "Confirme qué equipos incluye el envío.",
+      "Use un diseño coordinado para distinguir entrega de instalación.",
+      "Enumere componentes y accesorios enviados por separado."
+    ],
+    "ui": {
+      "home": "Inicio",
+      "products": "Productos",
+      "design": "Solicite Diseño 3D Gratis",
+      "whatsapp": "Chat por WhatsApp",
+      "compare": "Compare Opciones",
+      "gallery": "Referencias de Diseño",
+      "relatedTitle": "Guías de Planificación Relacionadas",
+      "faqTitle": "Preguntas de Compradores",
+      "sourcesTitle": "Fuentes y Alcance",
+      "sourcesIntro": "Confirme la edición estándar actual y los requisitos locales de construcción, incendios y accesibilidad con su equipo de proyecto calificado. Estas referencias no son certificados de producto.",
+      "updated": "Actualizado el 3 de noviembre de 2026",
+      "author": "NinescapeLand · Planificación Comercial de Juegos Infantiles",
+      "imageNote": "Los renders 3D de sitios existentes ilustran configuraciones de equipos, no especificaciones de producto o proyectos completados.",
+      "inquiryIntro": "Envíe sus planos de sitio, país y requisitos de compra para una discusión específica del proyecto."
+    },
+    "parents": [
+      {
+        "slug": "process",
+        "label": "Proceso de Diseño y Entrega"
+      },
+      {
+        "slug": "indoor-playground-equipment-indonesia",
+        "label": "Planificación de Equipos en Indonesia"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Incoterms® 2020",
+        "publisher": "Cámara de Comercio Internacional",
+        "url": "https://iccwbo.org/business-solutions/incoterms-rules/incoterms-2020/",
+        "note": "Las reglas asignan obligaciones, costos y riesgos de entrega especificados. No reemplazan todas las cláusulas en un contrato de venta."
+      },
+      {
+        "label": "Importación y Exportación Básica",
+        "publisher": "Aduanas y Protección Fronteriza de EE.UU.",
+        "url": "https://www.cbp.gov/trade/basic-import-export",
+        "note": "Guía de importación específica para EE.UU.; los requisitos aduaneros del país de destino deben confirmarse por separado."
+      }
+    ]
+  },
+  "indoor-playground-factory-acceptance-checklist": {
+    "slug": "indoor-playground-factory-acceptance-checklist",
+    "title": "Lista de Verificación para Aceptación en Fábrica de Parques Infantiles Cubiertos",
+    "metaTitle": "Lista de Aceptación en Fábrica | NinescapeLand",
+    "metaDescription": "Planifique la aceptación previa al envío con planos aprobados, IDs de artículo, evidencia fotográfica, verificación de empaque y cierre documentado de discrepancias.",
+    "kicker": "Línea Base Aprobada · Evidencia · Liberación",
+    "intro": "La aceptación en fábrica es una verificación contractual previa al envío, no un reemplazo de la inspección de instalación ni un certificado de producto. Los compradores deben acordar qué puede verificarse en fábrica, qué requiere pruebas ensambladas y qué queda para el destino. Esta guía se enfoca en evidencia de liberación, no en inspecciones operativas diarias.",
+    "answerQuestion": "¿Qué incluye una lista de verificación de aceptación en fábrica?",
+    "answer": "Relacione cada verificación con los planos aprobados, lista de materiales o especificación escrita. Registre el resultado, identificador del artículo, referencia de evidencia y acciones pendientes. Concilie los artículos inspeccionados con la lista de empaque y libere solo bajo el procedimiento acordado. Las imágenes remotas no pueden establecer todo sobre la instalación final.",
+    "frameworkTitle": "Establecer los Criterios de Aceptación",
+    "framework": [
+      {
+        "title": "Congelar la referencia",
+        "desc": "Identifique las revisiones aprobadas de planos y lista de materiales, colores, documentos de uso previsto y criterios de aceptación. Resuelva versiones conflictivas antes de comenzar."
+      },
+      {
+        "title": "Definir lo verificable",
+        "desc": "Enumere verificaciones en fábrica, ensamblajes representativos e informes requeridos. Etiquete con honestidad las verificaciones no realizadas o no aplicables; no marque como completos elementos dependientes de instalación."
+      },
+      {
+        "title": "Registrar discrepancias",
+        "desc": "Asigne a cada problema un ID, referencia, descripción, responsable y evidencia de cierre. Acuerde qué problemas pendientes bloquean la liberación, evitando garantías verbales."
+      },
+      {
+        "title": "Conciliar empaque y liberación",
+        "desc": "Relacione IDs de artículo con números de caja y cantidades. Mantenga registros firmados de liberación y excepciones separados de comprobantes de flete o documentos aduaneros."
+      }
+    ],
+    "equipmentTitle": "Construir el Paquete de Evidencia",
+    "equipment": [
+      {
+        "title": "Registro de referencia",
+        "desc": "Incluya revisiones aprobadas de planos y especificaciones. Un render de ventas puede ilustrar el diseño pero no reemplaza criterios de aceptación medibles."
+      },
+      {
+        "title": "Fotos vinculadas a artículos",
+        "desc": "Registre IDs de artículo, vistas relevantes y fecha de inspección. Las imágenes deben mostrar la verificación; una panorámica general no es evidencia para cada componente."
+      },
+      {
+        "title": "Registro de informes",
+        "desc": "Relacione informes solicitados con modelos, materiales y alcance exactos. No trate un certificado de calidad de fábrica como certificación del parque completo."
+      },
+      {
+        "title": "Conciliación de empaque",
+        "desc": "Asigne componentes inspeccionados a IDs de caja, cantidades y accesorios. Registre explícitamente faltantes o diferidos antes de aprobar el envío."
+      }
+    ],
+    "columns": [
+      "Etapa",
+      "Referencia",
+      "Evidencia",
+      "Decisión de liberación"
+    ],
+    "rows": [
+      [
+        "Configuración",
+        "Revisión aprobada de plano/BOM",
+        "Registros de artículo y dimensiones",
+        "Resolver cambios no aprobados"
+      ],
+      [
+        "Verificaciones especificadas",
+        "Criterios de aceptación acordados",
+        "Informes y evidencia específica",
+        "Registrar límites y omisiones"
+      ],
+      [
+        "Discrepancias",
+        "Registro de problemas",
+        "Cierre o excepción aceptada",
+        "Aplicar criterios de bloqueo acordados"
+      ],
+      [
+        "Empaque",
+        "Lista artículo-caja",
+        "Conteos e identificadores",
+        "Registrar faltantes antes de liberar"
+      ]
+    ],
+    "faq": [
+      {
+        "title": "¿Pueden las fotos reemplazar una inspección independiente?",
+        "desc": "No. Las fotos respaldan verificaciones seleccionadas pero no certifican independientemente dimensiones, resistencia o diseño ensamblado. Acuerde alcance y revisor calificado cuando se requiera inspección independiente."
+      },
+      {
+        "title": "¿Es la aceptación en fábrica igual a un certificado de seguridad?",
+        "desc": "No. Es un punto de control contractual. Las certificaciones y pruebas requieren su propio alcance y evidencia válidos."
+      },
+      {
+        "title": "¿Qué debe verificarse en la instalación?",
+        "desc": "Interfaces del sitio, ensamblaje final, anclajes, circulación e inspecciones locales pueden requerir verificación en destino. Declare estas exclusiones en el registro de fábrica."
+      },
+      {
+        "title": "¿Toda discrepancia detiene el envío?",
+        "desc": "Siga el contrato y criterios acordados. Documente excepciones aceptadas, acciones correctivas y quién las autorizó; no marque silenciosamente problemas pendientes como completados."
+      }
+    ],
+    "tableTitle": "Construir el Paquete de Evidencia — Matriz de Decisión",
+    "tableNote": "Guía de planificación únicamente. Use planos, especificaciones y aprobaciones específicas del proyecto; esta guía no es certificado de producto ni contrato.",
+    "imageAlt": "Lista de Verificación para Aceptación en Fábrica — render 3D ilustrativo",
+    "captions": [
+      "Use la configuración aprobada como línea base.",
+      "Separe renders ilustrativos de evidencia de inspección vinculada.",
+      "Incluya equipos auxiliares en la conciliación de empaque."
+    ],
+    "ui": {
+      "home": "Inicio",
+      "products": "Productos",
+      "design": "Solicitar Diseño 3D Gratis",
+      "whatsapp": "Chat por WhatsApp",
+      "compare": "Comparar Opciones",
+      "gallery": "Referencias de Diseño",
+      "relatedTitle": "Guías Relacionadas",
+      "faqTitle": "Preguntas de Compradores",
+      "sourcesTitle": "Fuentes y Alcance",
+      "sourcesIntro": "Confirme la edición vigente y requisitos locales de construcción, incendios y accesibilidad con su equipo calificado. Estas referencias no son certificados de producto.",
+      "updated": "Actualizado el 3 de noviembre de 2026",
+      "author": "NinescapeLand · Planificación Comercial",
+      "imageNote": "Los renders 3D ilustran configuraciones, no especificaciones de producto ni proyectos completados.",
+      "inquiryIntro": "Envíe sus planos, país y requisitos para una discusión específica."
+    },
+    "parents": [
+      {
+        "slug": "process",
+        "label": "Proceso de Diseño y Entrega"
+      },
+      {
+        "slug": "custom-playground-manufacturer-certification-checklist",
+        "label": "Revisión de Certificación de Fabricante"
+      }
+    ],
+    "sources": [
+      {
+        "label": "ISO 9001 — Gestión de calidad",
+        "publisher": "Organización Internacional de Normalización",
+        "url": "https://www.iso.org/iso-9001-quality-management.html",
+        "note": "Contexto de gestión de calidad únicamente. No certifica productos individuales ni reemplaza aceptación de proyecto."
+      },
+      {
+        "label": "ASTM F1918-21",
+        "publisher": "ASTM International",
+        "url": "https://store.astm.org/f1918-21.html",
+        "note": "Referencia para equipos de juego suaves. Confirme edición vigente y evaluación específica."
+      }
+    ]
+  },
+  "multi-site-indoor-playground-equipment-procurement": {
+    "slug": "multi-site-indoor-playground-equipment-procurement",
+    "title": "Adquisición de Equipos para Parques Infantiles Cubiertos en Múltiples Ubicaciones",
+    "metaTitle": "Adquisición de Equipos para Parques en Múltiples Sitios | NinescapeLand",
+    "metaDescription": "Planifique compras multi-sitio con listas controladas de equipos, variaciones por ubicación, compatibilidad de repuestos y registros de entregas escalonadas.",
+    "kicker": "Configuración Básica · Variantes por Sitio · Trazabilidad",
+    "intro": "Una cadena puede estandarizar sus especificaciones de equipos sin imponer el mismo diseño en cada edificio. Los compradores centrales necesitan una lista básica controlada y un registro claro de excepciones por sitio. Esta guía aborda configuración y compras en múltiples ubicaciones, no tarifas de franquicia, pronósticos de rentabilidad o supuestos proyectos de clientes.",
+    "answerQuestion": "¿Cómo pueden los compradores multi-sitio estandarizar equipos de parques infantiles?",
+    "answer": "Mantenga una lista básica aprobada con IDs de artículos, revisiones y documentos de uso previsto, luego cree un plan por sitio para dimensiones, aprobaciones e interfaces. Registre sustituciones y mantenga compatibilidad de repuestos vinculada a revisiones. Estandarice el proceso de evidencia y cambios, no cada diseño físico.",
+    "frameworkTitle": "Separe el Núcleo de las Excepciones por Sitio",
+    "framework": [
+      {
+        "title": "Crear una lista básica",
+        "desc": "Defina familias de equipos, IDs de artículos, revisiones de documentos y evidencia requerida. Separe opciones de marca de requisitos estructurales y de uso."
+      },
+      {
+        "title": "Evaluar cada ubicación",
+        "desc": "Registre dimensiones, columnas, servicios, acceso, requisitos locales y usuarios previstos. Una ubicación aprobada no aprueba automáticamente edificios posteriores."
+      },
+      {
+        "title": "Controlar sustituciones",
+        "desc": "Exija una solicitud de cambio por escrito indicando sitios afectados, planos, conexiones y repuestos. Evite aprobar alternativas más económicas solo por imagen."
+      },
+      {
+        "title": "Programar entregas escalonadas",
+        "desc": "Rastree cada ubicación desde aprobación de configuración hasta revisión de instalación. No use un único estado de envío como evidencia de que todos los sitios están listos."
+      }
+    ],
+    "equipmentTitle": "Compare Niveles de Estandarización",
+    "equipment": [
+      {
+        "title": "Familia de equipos",
+        "desc": "Estandarice funciones solicitadas y documentos, permitiendo dimensiones y rutas aprobadas por sitio."
+      },
+      {
+        "title": "IDs de componentes",
+        "desc": "Rastree partes y revisiones para accesorios, cubiertas y módulos. Solo trate repuestos como intercambiables cuando esté documentado."
+      },
+      {
+        "title": "Paquete de marca",
+        "desc": "Registre colores y elementos decorativos por separado. Identidad visual consistente no implica mismas restricciones de ingeniería."
+      },
+      {
+        "title": "Paquete de liberación por sitio",
+        "desc": "Guarde planos específicos, desviaciones, embalajes y registros de entrega. La aprobación central debe referir a la configuración instalada real."
+      }
+    ],
+    "columns": [
+      "Registro",
+      "Línea base central",
+      "Entrada por sitio",
+      "Control de cambios"
+    ],
+    "rows": [
+      [
+        "Lista de equipos",
+        "IDs de artículos y revisiones aprobadas",
+        "Selección y cantidades locales",
+        "Registro de revisiones y sitios afectados"
+      ],
+      [
+        "Diseño",
+        "Principios de diseño y requisitos de evidencia",
+        "Evaluación, servicios e interfaces",
+        "Plano de sitio aprobado"
+      ],
+      [
+        "Repuestos",
+        "Familias de partes compatibles documentadas",
+        "Revisión instalada y necesidades de stock",
+        "Aprobación de sustitución por escrito"
+      ],
+      [
+        "Entrega",
+        "Formato común de evidencia",
+        "Verificaciones y acciones pendientes por sitio",
+        "Liberación específica por ubicación"
+      ]
+    ],
+    "faq": [
+      {
+        "title": "¿Deben todas las ubicaciones tener equipos idénticos?",
+        "desc": "No necesariamente. Geometría del edificio, acceso, usuarios y requisitos locales pueden justificar variaciones. Preserve una especificación básica controlada y registre excepciones."
+      },
+      {
+        "title": "¿Comprar al por mayor garantiza ahorros?",
+        "desc": "No. Compare cotizaciones reales, flete, almacenamiento, entregas escalonadas, repuestos e instalación local. Esta página no promete descuento ni retorno."
+      },
+      {
+        "title": "¿Un kit de repuestos puede servir para todas las ubicaciones?",
+        "desc": "Solo para componentes y revisiones compatibles documentados. Registre en qué ubicaciones encaja una parte y evite sustituir artículos visualmente similares."
+      },
+      {
+        "title": "¿En qué se diferencia esto de franquicia vs independiente?",
+        "desc": "Esa guía compara modelos operativos. Esta página aborda listas de configuración, control de revisiones y registros de compra por ubicación, independientemente del modelo de propiedad."
+      }
+    ],
+    "tableTitle": "Compare Niveles de Estandarización — Matriz de Decisión",
+    "tableNote": "Orientación de planificación únicamente. Use planos específicos, especificaciones de artículos y aprobaciones por escrito; esta guía no es certificado de producto ni contrato.",
+    "imageAlt": "Adquisición de Equipos para Parques Infantiles Cubiertos en Múltiples Ubicaciones — render 3D ilustrativo",
+    "captions": [
+      "Estandarice familias de equipos, no cada diseño de edificio.",
+      "Registre rutas y acceso a servicios específicos por ubicación.",
+      "Rastree módulos acolchados y compatibilidad de repuestos por revisión de artículo."
+    ],
+    "ui": {
+      "home": "Inicio",
+      "products": "Productos",
+      "design": "Solicitar Diseño 3D Gratis",
+      "whatsapp": "Chat por WhatsApp",
+      "compare": "Comparar Opciones",
+      "gallery": "Referencias de Diseño",
+      "relatedTitle": "Guías de Planificación Relacionadas",
+      "faqTitle": "Preguntas de Compradores",
+      "sourcesTitle": "Fuentes y Alcance",
+      "sourcesIntro": "Confirme la edición vigente de estándares y requisitos locales de construcción, incendios y accesibilidad con su equipo calificado. Estas referencias no son certificados de producto.",
+      "updated": "Actualizado el 3 de noviembre de 2026",
+      "author": "NinescapeLand · Planificación Comercial de Parques",
+      "imageNote": "Renders 3D ilustran configuraciones de equipos, no especificaciones de producto ni proyectos completados.",
+      "inquiryIntro": "Envíe sus planos de sitio, país y requisitos de compra para una discusión específica del proyecto."
+    },
+    "parents": [
+      {
+        "slug": "complete-indoor-play-center-solutions",
+        "label": "Soluciones Completas para Centros de Juego Cubiertos"
+      },
+      {
+        "slug": "indoor-playground-franchise-vs-independent",
+        "label": "Franquicia vs Independiente"
+      }
+    ],
+    "sources": [
+      {
+        "label": "ISO 9001 — Gestión de calidad",
+        "publisher": "Organización Internacional de Normalización",
+        "url": "https://www.iso.org/iso-9001-quality-management.html",
+        "note": "Contexto de gestión de calidad únicamente. No certifica productos individuales ni reemplaza aceptación de proyecto."
+      },
+      {
+        "label": "ASTM F1918-21",
+        "publisher": "ASTM International",
+        "url": "https://store.astm.org/f1918-21.html",
+        "note": "Referencia de alcance para equipos de juego suaves contenidos. Confirme edición aplicable y evaluación específica por producto."
+      }
+    ]
+  }
+}
