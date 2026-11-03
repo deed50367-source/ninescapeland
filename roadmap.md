@@ -1,7 +1,9 @@
 # Roadmap
 
-- [ ] November 3 blogs: audit five uploaded manuscripts, confirm author correspondence and Chinese/English SEO field placement; obtain corrected outline approval before substantial factual revisions
-- [ ] November 3 blogs: after outline approval, revise, add existing site cover/inline images, translate required versions, save blog records and reciprocal aggregation links, then verify public and authenticated admin views
+- [x] November 3 blogs: read five complete uploaded manuscripts; corrected outlines approved; confirm Gerry attribution and six site-language SEO placement (no new Chinese site version)
+- [x] November 3 blogs: revise unsupported claims, translate 25 versions using SiliconFlow, add site cover/two inline images, publish and read back 30 blog records, register reciprocal topic links and 30 sitemap/prerender paths
+- [x] November 3 blogs: verify 30 public pages and 30 authenticated admin editors, five topic-to-blog navigation flows and EN/AR mobile tables; 15 tests / 821 assertions pass
+- [ ] Deploy November 3 blog author display, reciprocal links and sitemap/prerender website changes to production; blog records are published, production website deployment is separate and was not performed in this task
 
 - [x] November 3: build five approved six-language procurement topics with independent intent, site renders, page-specific sources, SEO/GEO and reciprocal parent links; register 30 sitemap/prerender routes
 - [x] November 3: verify 30 language pages, ten parent navigation paths, comparison/FAQ/inquiry anchors, imagery and EN/AR mobile layout; 16 tests/707 assertions pass, actual test inquiry saved with UI success
