@@ -6,7 +6,7 @@
     "seo_description": "Verifica dimensiones del tobogán y espacio de salida antes de instalar un parque infantil interior.",
     "excerpt": "Prepara dimensiones del tobogán, registros de espacio de salida y preguntas de instalación para una revisión específica del equipo antes de pedir un parque infantil interior.",
     "keywords": [
-      "diseño",
+      "design",
       "despeje de tobogán en parque infantil interior",
       "requisitos de instalación de tobogán interior",
       "dimensiones de tobogán en parque infantil interior"
@@ -21,7 +21,7 @@
       {
         "id": "quick-answer",
         "title": "¿Por qué no hay un número único de despeje para toboganes?",
-        "html": "<p>El despeje de tobogán en parque infantil interior debe confirmarse para el tobogán real, su envolvente, usuarios previstos e instalación. No copies un solo número de distancia de salida en cada diseño comercial. Una huella de catálogo normalmente describe el equipo, pero los compradores también deben obtener los espacios operativos, de acceso y mantenimiento requeridos del diseñador del equipo.</p><p>Esta lista de verificación te ayuda a preparar un resumen de mediciones. No calcula una distancia conforme desde la altura de la plataforma ni reemplaza el estándar técnico aplicable. El <a href=\"https://store.astm.org/f1918-21.html\" target=\"_blank\" rel=\"noopener noreferrer\">alcance publicado de ASTM F1918-21 concierne a equipos de juego suaves contenidos</a>; no es evidencia de una regla universal de despeje que cubra todas las atracciones interiores. Confirma la clasificación del equipo y la edición estándar aplicable con el revisor.</p>"
+        "html": "<p>El despeje de tobogán en parque infantil interior debe confirmarse para el tobogán real, su envolvente, usuarios previstos e instalación. No copies un solo número de distancia de salida en cada diseño comercial. Una huella de catálogo normalmente describe el equipo, pero los compradores también deben obtener los espacios operativos, de acceso y mantenimiento requeridos del diseñador del equipo.</p><p>Esta lista de verificación te ayuda a preparar un resumen de mediciones. No calcula una distancia conforme desde la altura de la plataforma ni reemplaza el estándar técnico aplicable. El <a href=\"https://store.astm.org/f1918-21.html\" target=\"_blank\" rel=\"noopener noreferrer\">alcance publicado de ASTM F1918-21 concierne a equipos de juego blandos y cerrados y cerrados (soft-contained play equipment)</a>; no es evidencia de una regla universal de despeje que cubra todas las atracciones interiores. Confirma la clasificación del equipo y la edición estándar aplicable con el revisor.</p>"
       },
       {
         "id": "measure",
@@ -41,7 +41,7 @@
       {
         "id": "installation",
         "title": "Solicita requisitos de instalación para esta configuración",
-        "html": "<p>Obtén las instrucciones de instalación relevantes, detalles de anclaje, requisitos de soporte y responsabilidades de inspección antes de ordenar. Identifica qué trabajo corresponde al instalador del equipo y cuál requiere el contratista de construcción o ingeniero. No uses esta lista de verificación del propietario como instrucciones para apretar anclajes o realizar pruebas de carga.</p><p>Para comparación de alcance, <a href=\"https://store.astm.org/f1487-25.html\" target=\"_blank\" rel=\"noopener noreferrer\">ASTM F1487-25 aborda equipos de juegos infantiles de uso público y excluye equipos de juego suaves contenidos</a>. Una referencia destinada a otra categoría no debe copiarse al proyecto sin verificar aplicabilidad.</p>"
+        "html": "<p>Obtén las instrucciones de instalación relevantes, detalles de anclaje, requisitos de soporte y responsabilidades de inspección antes de ordenar. Identifica qué trabajo corresponde al instalador del equipo y cuál requiere el contratista de construcción o ingeniero. No uses esta lista de verificación del propietario como instrucciones para apretar anclajes o realizar pruebas de carga.</p><p>Para comparación de alcance, <a href=\"https://store.astm.org/f1487-25.html\" target=\"_blank\" rel=\"noopener noreferrer\">ASTM F1487-25 aborda equipos de juegos infantiles de uso público y excluye equipos de juego blandos y cerrados y cerrados (soft-contained play equipment)</a>. Una referencia destinada a otra categoría no debe copiarse al proyecto sin verificar aplicabilidad.</p>"
       },
       {
         "id": "approval",
@@ -66,7 +66,7 @@
     "sources": [
       {
         "url": "https://store.astm.org/f1918-21.html",
-        "label": "ASTM F1918-21: alcance para equipos de juego suaves contenidos"
+        "label": "ASTM F1918-21: alcance para equipos de juego blandos y cerrados y cerrados (soft-contained play equipment)"
       },
       {
         "url": "https://store.astm.org/f1487-25.html",
@@ -106,7 +106,7 @@
     "seo_description": "Registra defectos y reparaciones en redes según las instrucciones del fabricante para garantizar seguridad.",
     "excerpt": "Registre defectos en redes, problemas de fijación y decisiones de reparación utilizando instrucciones del fabricante, partes identificadas y una revisión documentada de reapertura.",
     "keywords": [
-      "seguridad",
+      "safety",
       "inspección de redes de áreas de juego",
       "fijación de redes de áreas de juego",
       "reemplazo de redes de áreas de juego"
@@ -121,7 +121,7 @@
       {
         "id": "quick-answer",
         "title": "¿Qué debe establecer una inspección de redes por parte del propietario?",
-        "html": "<p>Una inspección de redes en áreas de juego debe identificar daños visibles, registrar su ubicación y activar la acción correspondiente. No es una prueba de tensión casera ni una prueba de que una barrera sigue siendo adecuada para su uso. Comience con las instrucciones del fabricante del equipo y de la red, y con el plan de inspección aprobado para su instalación.</p><p>Mantenga separadas las verificaciones de apertura, las inspecciones periódicas detalladas y las evaluaciones especializadas. Su frecuencia y alcance dependen del equipo instalado, la exposición, el uso y los requisitos aplicables; esta guía no impone un horario de cumplimiento diario, semanal o mensual. <a href=\"https://store.astm.org/f1918-21.html\" target=\"_blank\" rel=\"noopener noreferrer\">El alcance publicado de ASTM F1918-21 identifica equipos de juego suaves contenidos</a>, no un procedimiento de prueba universal para propietarios para cada tipo de red.</p>"
+        "html": "<p>Una inspección de redes en áreas de juego debe identificar daños visibles, registrar su ubicación y activar la acción correspondiente. No es una prueba de tensión casera ni una prueba de que una barrera sigue siendo adecuada para su uso. Comience con las instrucciones del fabricante del equipo y de la red, y con el plan de inspección aprobado para su instalación.</p><p>Mantenga separadas las verificaciones de apertura, las inspecciones periódicas detalladas y las evaluaciones especializadas. Su frecuencia y alcance dependen del equipo instalado, la exposición, el uso y los requisitos aplicables; esta guía no impone un horario de cumplimiento diario, semanal o mensual. <a href=\"https://store.astm.org/f1918-21.html\" target=\"_blank\" rel=\"noopener noreferrer\">El alcance publicado de ASTM F1918-21 identifica equipos de juego blandos y cerrados y cerrados (soft-contained play equipment)</a>, no un procedimiento de prueba universal para propietarios para cada tipo de red.</p>"
       },
       {
         "id": "record",
@@ -166,7 +166,7 @@
     "sources": [
       {
         "url": "https://store.astm.org/f1918-21.html",
-        "label": "ASTM F1918-21: alcance para equipos de juego suaves contenidos"
+        "label": "ASTM F1918-21: alcance para equipos de juego blandos y cerrados y cerrados (soft-contained play equipment)"
       }
     ],
     "figures": [
@@ -202,7 +202,7 @@
     "seo_description": "Revisa facturas, listas de empaque y registros de transporte antes de la entrega del equipo.",
     "excerpt": "Verifique facturas, listas de empaque y registros de transporte; confirme requisitos de destino y acuerdos de liberación de carga antes del envío.",
     "keywords": [
-      "guías",
+      "guides",
       "documentos de envío para parque infantil interior",
       "lista de empaque de equipo para parque infantil",
       "documentación de importación para parque infantil interior"
@@ -231,7 +231,7 @@
       {
         "id": "release",
         "title": "Confirme el documento de transporte y el proceso de liberación",
-        "html": "<p>No asuma que cada envío necesita un conocimiento de embarque original en papel. El documento y los pasos de liberación apropiados dependen del arreglo del transportista, incluido cualquier conocimiento de embarque marítimo o procedimiento de entrega. Obtenga instrucciones por escrito para la reserva real y confirme quién está autorizado para solicitar o recibir la liberación.</p><p>La liberación de transporte y el despacho de aduanas son pasos separados. Pregunte al transportista o transitario sobre los requisitos del documento de transporte y al importador o agente sobre la entrada en destino. Una copia digital de un documento no relacionado no es un sustituto del proceso acordado para su envío.</p><p><a href=\"https://www.maersk.com/support/faqs/what-is-seaway-bill\" target=\"_blank\" rel=\"noopener noreferrer\">Maersk explica que una carta de porte marítima no es un documento de título y que no se emiten originales</a>. Esto ayuda a distinguir los tipos de documentos; confirma las instrucciones de liberación para tu envío real directamente con el transportista.</p>"
+        "html": "<p>No asuma que cada envío necesita un conocimiento de embarque original en papel. El documento y los pasos de liberación apropiados dependen del arreglo del transportista, incluida una carta de porte marítima (sea waybill) o un procedimiento de entrega de originales. Obtenga instrucciones por escrito para la reserva real y confirme quién está autorizado para solicitar o recibir la liberación.</p><p>La liberación de transporte y el despacho de aduanas son pasos separados. Pregunte al transportista o transitario sobre los requisitos del documento de transporte y al importador o agente sobre la entrada en destino. Una copia digital de un documento no relacionado no es un sustituto del proceso acordado para su envío.</p><p><a href=\"https://www.maersk.com/support/faqs/what-is-seaway-bill\" target=\"_blank\" rel=\"noopener noreferrer\">Maersk explica que una carta de porte marítima no es un documento de título y que no se emiten originales</a>. Esto ayuda a distinguir los tipos de documentos; confirma las instrucciones de liberación para tu envío real directamente con el transportista.</p>"
       },
       {
         "id": "arrival",
@@ -300,7 +300,7 @@
     "seo_description": "Confirma planos, fotos e informes antes de autorizar el envío del equipo de juego.",
     "excerpt": "Organiza revisiones de planos, fotos de inspección, informes de producto y registros de acciones correctivas antes de autorizar el envío del equipo de juegos.",
     "keywords": [
-      "guías",
+      "guides",
       "inspección pre-envío de parque infantil interior",
       "lista de aceptación en fábrica de parque infantil",
       "fotos de inspección de equipo de juegos"
@@ -329,7 +329,7 @@
       {
         "id": "reports",
         "title": "Verifica la identidad del informe y el alcance de evaluación",
-        "html": "<p>Compara identificadores de informe, modelos de equipo, configuración y ediciones de estándares aplicables con el pedido. Contacta a la organización emisora a través de un canal verificado cuando la autenticidad o cobertura no estén claras. Un certificado del sistema de calidad de la fábrica y una evaluación de producto responden preguntas diferentes.</p><p>El <a href=\"https://store.astm.org/f1918-21.html\" target=\"_blank\" rel=\"noopener noreferrer\">alcance de ASTM F1918-21</a> ayuda a identificar equipos de juego blandos, pero no prueba que un producto específico haya pasado las pruebas. No infieras cumplimiento de un nombre de estándar, un logo o una declaración genérica CE. Confirma los requisitos para el producto real y destino con revisores calificados.</p><p><a href=\"https://www.iso.org/standard/9001\" target=\"_blank\" rel=\"noopener noreferrer\">ISO 9001 describe los requisitos para un sistema de gestión de calidad</a>, no la especificación o certificación de cada producto de parque infantil. Solicita la evidencia específica del producto por separado de cualquier certificado del sistema de gestión de la fábrica.</p>"
+        "html": "<p>Compara identificadores de informe, modelos de equipo, configuración y ediciones de estándares aplicables con el pedido. Contacta a la organización emisora a través de un canal verificado cuando la autenticidad o cobertura no estén claras. Un certificado del sistema de calidad de la fábrica y una evaluación de producto responden preguntas diferentes.</p><p>El <a href=\"https://store.astm.org/f1918-21.html\" target=\"_blank\" rel=\"noopener noreferrer\">alcance de ASTM F1918-21</a> ayuda a identificar equipos de juego blandos y cerrados, pero no prueba que un producto específico haya pasado las pruebas. No infieras cumplimiento de un nombre de estándar, un logo o una declaración genérica CE. Confirma los requisitos para el producto real y destino con revisores calificados.</p><p><a href=\"https://www.iso.org/standard/9001\" target=\"_blank\" rel=\"noopener noreferrer\">ISO 9001 describe los requisitos para un sistema de gestión de calidad</a>, no la especificación o certificación de cada producto de parque infantil. Solicita la evidencia específica del producto por separado de cualquier certificado del sistema de gestión de la fábrica.</p>"
       },
       {
         "id": "photo-list",
@@ -359,7 +359,7 @@
     "sources": [
       {
         "url": "https://store.astm.org/f1918-21.html",
-        "label": "ASTM F1918-21: alcance para equipos de juego blandos"
+        "label": "ASTM F1918-21: alcance para equipos de juego blandos y cerrados"
       },
       {
         "url": "https://www.iso.org/standard/9001",
@@ -398,7 +398,7 @@
     "seo_description": "Controla números de pieza y especificaciones para garantizar cumplimiento en parques infantiles.",
     "excerpt": "Controla números de pieza, especificaciones aprobadas y sustituciones en múltiples ubicaciones, manteniendo revisiones de ingeniería y cumplimiento específicas por sitio.",
     "keywords": [
-      "negocios",
+      "business",
       "estandarización de equipos para parques infantiles interiores",
       "adquisición de equipos para parques infantiles multisitio",
       "lista de materiales para equipos de parques infantiles"
@@ -417,7 +417,7 @@
       {
         "id": "site-variation",
         "title": "Separa la línea base compartida de las condiciones locales",
-        "html": "<p>Identifica elementos que pueden repetirse bajo el diseño aprobado y enumera condiciones que requieren revisión separada para cada ubicación. Ejemplos incluyen arreglos de pisos y soportes, espacio disponible, servicios del edificio y rutas de acceso. Mantén las variaciones explícitas en lugar de forzar cada sitio a ajustarse al plano de la primera ubicación.</p><p>Usa estándares solo dentro de su alcance. <a href=\"https://store.astm.org/f1918-21.html\" target=\"_blank\" rel=\"noopener noreferrer\">ASTM F1918-21 se refiere a equipos de juego suaves contenidos</a>; no establece un grosor de tubería único para todas las estructuras. Actividades con cuerdas, trampolines y características de escalada requieren su propia clasificación y revisión de aplicabilidad, no un certificado general que cubra todo el centro.</p>"
+        "html": "<p>Identifica elementos que pueden repetirse bajo el diseño aprobado y enumera condiciones que requieren revisión separada para cada ubicación. Ejemplos incluyen arreglos de pisos y soportes, espacio disponible, servicios del edificio y rutas de acceso. Mantén las variaciones explícitas en lugar de forzar cada sitio a ajustarse al plano de la primera ubicación.</p><p>Usa estándares solo dentro de su alcance. <a href=\"https://store.astm.org/f1918-21.html\" target=\"_blank\" rel=\"noopener noreferrer\">ASTM F1918-21 se refiere a equipos de juego blandos y cerrados y cerrados (soft-contained play equipment)</a>; no establece un grosor de tubería único para todas las estructuras. Actividades con cuerdas, trampolines y características de escalada requieren su propia clasificación y revisión de aplicabilidad, no un certificado general que cubra todo el centro.</p>"
       },
       {
         "id": "bom",
@@ -457,7 +457,7 @@
     "sources": [
       {
         "url": "https://store.astm.org/f1918-21.html",
-        "label": "ASTM F1918-21: alcance para equipos de juego suaves contenidos"
+        "label": "ASTM F1918-21: alcance para equipos de juego blandos y cerrados y cerrados (soft-contained play equipment)"
       },
       {
         "url": "https://www.iso.org/standard/9001",

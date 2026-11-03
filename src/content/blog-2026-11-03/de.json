@@ -6,7 +6,7 @@
     "seo_description": "Vorbereitung der Rutschenmaße und Installationsanforderungen vor der Bestellung eines Indoor-Spielplatzes.",
     "excerpt": "Bereiten Sie Rutschenmaße, Ausstiegsraum-Aufzeichnungen und Installationsfragen für eine gerätespezifische Überprüfung vor, bevor Sie einen Indoor-Spielplatz bestellen.",
     "keywords": [
-      "Design",
+      "design",
       "Freiraum für Indoor-Spielplatz-Rutschen",
       "Installationsanforderungen für Indoor-Rutschen",
       "Maße für Indoor-Spielplatz-Rutschen"
@@ -21,7 +21,7 @@
       {
         "id": "quick-answer",
         "title": "Warum gibt es keine einzige Freiraum-Angabe für Rutschen?",
-        "html": "<p>Der Freiraum für Indoor-Spielplatz-Rutschen muss für die tatsächliche Rutsche, ihre Umgebung, die vorgesehenen Nutzer und die Installation bestätigt werden. Kopieren Sie nicht einfach eine Ausstiegsdistanz in jedes kommerzielle Layout. Ein Katalog-Fußabdruck beschreibt normalerweise das Gerät, aber Käufer müssen auch den erforderlichen Betriebs-, Zugangs- und Wartungsraum vom Gerätedesigner erhalten.</p><p>Diese Checkliste hilft Ihnen, ein Messbriefing vorzubereiten. Sie berechnet keine konforme Entfernung von der Deckenhöhe oder ersetzt den gültigen technischen Standard. Der <a href=\"https://store.astm.org/f1918-21.html\" target=\"_blank\" rel=\"noopener noreferrer\">veröffentlichte Geltungsbereich von ASTM F1918-21 betrifft weich gepolsterte Spielgeräte</a>; er ist kein Nachweis für eine universelle Freiraumregel, die alle Indoor-Attraktionen abdeckt. Bestätigen Sie die Geräteklassifizierung und die gültige Standardausgabe mit dem Prüfer.</p>"
+        "html": "<p>Der Freiraum für Indoor-Spielplatz-Rutschen muss für die tatsächliche Rutsche, ihre Umgebung, die vorgesehenen Nutzer und die Installation bestätigt werden. Kopieren Sie nicht einfach eine Ausstiegsdistanz in jedes kommerzielle Layout. Ein Katalog-Fußabdruck beschreibt normalerweise das Gerät, aber Käufer müssen auch den erforderlichen Betriebs-, Zugangs- und Wartungsraum vom Gerätedesigner erhalten.</p><p>Diese Checkliste hilft Ihnen, ein Messbriefing vorzubereiten. Sie berechnet keine konforme Entfernung von der Plattformhöhe oder ersetzt den gültigen technischen Standard. Der <a href=\"https://store.astm.org/f1918-21.html\" target=\"_blank\" rel=\"noopener noreferrer\">veröffentlichte Geltungsbereich von ASTM F1918-21 betrifft weich umschlossene Spielgeräte (soft-contained play equipment)</a>; er ist kein Nachweis für eine universelle Freiraumregel, die alle Indoor-Attraktionen abdeckt. Bestätigen Sie die Geräteklassifizierung und die gültige Standardausgabe mit dem Prüfer.</p>"
       },
       {
         "id": "measure",
@@ -31,7 +31,7 @@
       {
         "id": "record",
         "title": "Erstellen Sie einen Rutschendimensionen-Prüfbericht",
-        "html": "<p>Verwenden Sie eine Prüftabelle, um dem Lieferanten und dem Einbautteam dieselben Informationen zu geben. Tragen Sie gemessene Werte in Ihren Projektbericht ein; ersetzen Sie sie nicht durch generische Beispielmaße. Bitten Sie den Designer, den vollständig erforderlichen Raum in der genehmigten Zeichnung zu markieren.</p><table><thead><tr><th>Feld</th><th>Zu erfassende Nachweise</th><th>Bestätigung</th></tr></thead><tbody><tr><td>Rutschenidentifikation</td><td>Modell, Zeichnungsrevision und vorgesehene Nutzergruppe</td><td>Gerätelieferant</td></tr><tr><td>Installierte Maße</td><td>Einstieg, Kanal, Ausstieg und Tragstruktur</td><td>Gerätedesigner</td></tr><tr><td>Fertigboden-Referenz</td><td>Vorhandenes Niveau und geplanter Oberflächenaufbau</td><td>Vermessung / Einbautteam</td></tr><tr><td>Betriebsraum</td><td>Ausstiegsbewegung, benachbarte Aktivität und Zugangsumfang</td><td>Gerätedesigner</td></tr><tr><td>Standorthindernisse</td><td>Gemessene Position von Säulen, Wänden und Installationen</td><td>Qualifizierter Vermesser</td></tr><tr><td>Ungelöste Bedingungen</td><td>Eigentümer, Maßnahme und aktueller Genehmigungsstatus</td><td>Projektkoordinator</td></tr></tbody></table><p>Bewahren Sie die Zeichnungsrevision neben der Tabelle auf, damit eine scheinbar kleine Änderung nicht stillschweigend eine frühere Prüfung ungültig machen kann.</p>"
+        "html": "<p>Verwenden Sie eine Prüftabelle, um dem Lieferanten und dem Ausbauteam dieselben Informationen zu geben. Tragen Sie gemessene Werte in Ihren Projektbericht ein; ersetzen Sie sie nicht durch generische Beispielmaße. Bitten Sie den Designer, den vollständig erforderlichen Raum in der genehmigten Zeichnung zu markieren.</p><table><thead><tr><th>Feld</th><th>Zu erfassende Nachweise</th><th>Bestätigung</th></tr></thead><tbody><tr><td>Rutschenidentifikation</td><td>Modell, Zeichnungsrevision und vorgesehene Nutzergruppe</td><td>Gerätelieferant</td></tr><tr><td>Installierte Maße</td><td>Einstieg, Kanal, Ausstieg und Tragstruktur</td><td>Gerätedesigner</td></tr><tr><td>Fertigboden-Referenz</td><td>Vorhandenes Niveau und geplanter Oberflächenaufbau</td><td>Vermessung / Ausbauteam</td></tr><tr><td>Betriebsraum</td><td>Ausstiegsbewegung, benachbarte Aktivität und Zugangsumfang</td><td>Gerätedesigner</td></tr><tr><td>Standorthindernisse</td><td>Gemessene Position von Säulen, Wänden und Installationen</td><td>Qualifizierter Vermesser</td></tr><tr><td>Ungelöste Bedingungen</td><td>Eigentümer, Maßnahme und aktueller Genehmigungsstatus</td><td>Projektkoordinator</td></tr></tbody></table><p>Bewahren Sie die Zeichnungsrevision neben der Tabelle auf, damit eine scheinbar kleine Änderung nicht stillschweigend eine frühere Prüfung ungültig machen kann.</p>"
       },
       {
         "id": "circulation",
@@ -41,7 +41,7 @@
       {
         "id": "installation",
         "title": "Fragen Sie die Installationsanforderungen für diese Konfiguration an",
-        "html": "<p>Holen Sie sich die relevanten Installationsanweisungen, Verankerungsdetails, Unterstützungsanforderungen und Inspektionsverantwortlichkeiten vor der Bestellung ein. Identifizieren Sie, welche Arbeiten zum Geräteinstallateur gehören und welche den Bauunternehmer oder Ingenieur erfordern. Verwenden Sie diese Eigentümer-Checkliste nicht als Anleitung zum Anziehen von Ankern oder zur Durchführung von Belastungstests.</p><p>Zum Vergleich des Geltungsbereichs: <a href=\"https://store.astm.org/f1487-25.html\" target=\"_blank\" rel=\"noopener noreferrer\">ASTM F1487-25 behandelt öffentlich zugängliche Spielplatzgeräte und schließt weich gepolsterte Spielgeräte aus</a>. Ein für eine andere Kategorie vorgesehener Referenz darf nicht ohne Überprüfung der Anwendbarkeit in das Projekt kopiert werden.</p>"
+        "html": "<p>Holen Sie sich die relevanten Installationsanweisungen, Verankerungsdetails, Unterstützungsanforderungen und Inspektionsverantwortlichkeiten vor der Bestellung ein. Identifizieren Sie, welche Arbeiten zum Geräteinstallateur gehören und welche den Bauunternehmer oder Ingenieur erfordern. Verwenden Sie diese Eigentümer-Checkliste nicht als Anleitung zum Anziehen von Ankern oder zur Durchführung von Belastungstests.</p><p>Zum Vergleich des Geltungsbereichs: <a href=\"https://store.astm.org/f1487-25.html\" target=\"_blank\" rel=\"noopener noreferrer\">ASTM F1487-25 behandelt öffentlich zugängliche Spielplatzgeräte und schließt weich umschlossene Spielgeräte (soft-contained play equipment) aus</a>. Ein für eine andere Kategorie vorgesehener Referenz darf nicht ohne Überprüfung der Anwendbarkeit in das Projekt kopiert werden.</p>"
       },
       {
         "id": "approval",
@@ -66,7 +66,7 @@
     "sources": [
       {
         "url": "https://store.astm.org/f1918-21.html",
-        "label": "ASTM F1918-21: Geltungsbereich für weich gepolsterte Spielgeräte"
+        "label": "ASTM F1918-21: Geltungsbereich für weich umschlossene Spielgeräte (soft-contained play equipment)"
       },
       {
         "url": "https://store.astm.org/f1487-25.html",
@@ -106,7 +106,7 @@
     "seo_description": "Dokumentation von Netzdefekten, Befestigungsproblemen und Reparaturen gemäß Herstelleranleitung.",
     "excerpt": "Dokumentieren Sie Netzdefekte, Befestigungsprobleme und Reparaturentscheidungen mit Herstelleranleitungen, identifizierten Teilen und einer dokumentierten Wiedereröffnungsprüfung.",
     "keywords": [
-      "Sicherheit",
+      "safety",
       "Spielplatznetzinspektion",
       "Spielplatznetzbefestigung",
       "Spielplatznetzersatz"
@@ -121,7 +121,7 @@
       {
         "id": "quick-answer",
         "title": "Was sollte eine netzseitige Überprüfung feststellen?",
-        "html": "<p>Eine Spielplatznetzinspektion sollte sichtbare Schäden identifizieren, deren Lage dokumentieren und die geeigneten Maßnahmen einleiten. Es handelt sich nicht um einen selbst durchgeführten Zugtest oder einen Nachweis, dass eine Barriere weiterhin nutzbar ist. Beginnen Sie mit den Anleitungen des Geräte- und Netzherstellers sowie dem für Ihre Einrichtung genehmigten Inspektionsplan.</p><p>Halten Sie Eröffnungsprüfungen, regelmäßige detaillierte Inspektionen und Fachbewertungen getrennt. Häufigkeit und Umfang hängen von den installierten Geräten, der Umgebung, der Nutzung und den geltenden Anforderungen ab; dieser Leitfaden legt keinen täglichen, wöchentlichen oder monatlichen Prüfplan fest. <a href=\"https://store.astm.org/f1918-21.html\" target=\"_blank\" rel=\"noopener noreferrer\">ASTM F1918-21 definiert den Anwendungsbereich für weich gepolsterte Spielgeräte</a>, nicht jedoch ein universelles Prüfverfahren für jede Art von Netz.</p>"
+        "html": "<p>Eine Spielplatznetzinspektion sollte sichtbare Schäden identifizieren, deren Lage dokumentieren und die geeigneten Maßnahmen einleiten. Es handelt sich nicht um einen selbst durchgeführten Zugtest oder einen Nachweis, dass eine Barriere weiterhin nutzbar ist. Beginnen Sie mit den Anleitungen des Geräte- und Netzherstellers sowie dem für Ihre Einrichtung genehmigten Inspektionsplan.</p><p>Halten Sie Eröffnungsprüfungen, regelmäßige detaillierte Inspektionen und Fachbewertungen getrennt. Häufigkeit und Umfang hängen von den installierten Geräten, der Umgebung, der Nutzung und den geltenden Anforderungen ab; dieser Leitfaden legt keinen täglichen, wöchentlichen oder monatlichen Prüfplan fest. <a href=\"https://store.astm.org/f1918-21.html\" target=\"_blank\" rel=\"noopener noreferrer\">ASTM F1918-21 definiert den Anwendungsbereich für weich umschlossene Spielgeräte (soft-contained play equipment)</a>, nicht jedoch ein universelles Prüfverfahren für jede Art von Netz.</p>"
       },
       {
         "id": "record",
@@ -166,7 +166,7 @@
     "sources": [
       {
         "url": "https://store.astm.org/f1918-21.html",
-        "label": "ASTM F1918-21: Anwendungsbereich für weich gepolsterte Spielgeräte"
+        "label": "ASTM F1918-21: Anwendungsbereich für weich umschlossene Spielgeräte (soft-contained play equipment)"
       }
     ],
     "figures": [
@@ -202,7 +202,7 @@
     "seo_description": "Abgleich von Rechnungen, Packlisten und Transportunterlagen vor dem Versand.",
     "excerpt": "Rechnungen, Packlisten und Transportunterlagen abgleichen; Zielanforderungen und Frachtfreigabe vor dem Versand bestätigen.",
     "keywords": [
-      "Leitfäden",
+      "guides",
       "Versanddokumente für Indoor-Spielplätze",
       "Packliste für Spielplatzausrüstung",
       "Importdokumentation für Indoor-Spielplätze"
@@ -300,7 +300,7 @@
     "seo_description": "Prüfung von Zeichnungsrevisionen, Inspektionsfotos und Produktberichten vor dem Versand.",
     "excerpt": "Organisieren Sie Zeichnungsrevisionen, Inspektionsfotos, Produktberichte und Korrekturmaßnahmenprotokolle, bevor Sie die Versandfreigabe für Spielplatzgeräte erteilen.",
     "keywords": [
-      "Leitfäden",
+      "guides",
       "Vorab-Inspektion von Indoor-Spielplätzen vor dem Versand",
       "Fabrikabnahme-Checkliste für Spielplätze",
       "Inspektionsfotos von Spielplatzgeräten"
@@ -329,7 +329,7 @@
       {
         "id": "reports",
         "title": "Überprüfen Sie Berichtsidentität und Bewertungsumfang",
-        "html": "<p>Stimmen Sie Berichtskennungen, Gerätemodelle, Konfiguration und anwendbare Standardausgaben mit dem Auftrag ab. Kontaktieren Sie die ausstellende Organisation über einen verifizierten Kanal, wenn Authentizität oder Abdeckung unklar sind. Ein Werk-Qualitätssystem-Zertifikat und eine Produktbewertung beantworten unterschiedliche Fragen.</p><p>Der <a href=\"https://store.astm.org/f1918-21.html\" target=\"_blank\" rel=\"noopener noreferrer\">ASTM F1918-21-Umfang</a> hilft bei der Identifizierung von weich gepolsterten Spielgeräten, beweist aber nicht, dass ein bestimmtes Produkt Tests bestanden hat. Leiten Sie keine Konformität aus einem Standardnamen, einem Logo oder einer generischen CE-Erklärung ab. Bestätigen Sie Anforderungen für das tatsächliche Produkt und Ziel mit qualifizierten Gutachtern.</p><p><a href=\"https://www.iso.org/standard/9001\" target=\"_blank\" rel=\"noopener noreferrer\">ISO 9001 beschreibt Anforderungen an ein Qualitätsmanagementsystem</a>, nicht die Spezifikation oder Zertifizierung jedes Spielplatzprodukts. Fordern Sie den spezifischen Produktnachweis separat von etwaigen Zertifikaten des Fabrikmanagementsystems an.</p>"
+        "html": "<p>Stimmen Sie Berichtskennungen, Gerätemodelle, Konfiguration und anwendbare Standardausgaben mit dem Auftrag ab. Kontaktieren Sie die ausstellende Organisation über einen verifizierten Kanal, wenn Authentizität oder Abdeckung unklar sind. Ein Werk-Qualitätssystem-Zertifikat und eine Produktbewertung beantworten unterschiedliche Fragen.</p><p>Der <a href=\"https://store.astm.org/f1918-21.html\" target=\"_blank\" rel=\"noopener noreferrer\">ASTM F1918-21-Umfang</a> hilft bei der Identifizierung von weich umschlossenen Spielgeräten (soft-contained play equipment), beweist aber nicht, dass ein bestimmtes Produkt Tests bestanden hat. Leiten Sie keine Konformität aus einem Standardnamen, einem Logo oder einer generischen CE-Erklärung ab. Bestätigen Sie Anforderungen für das tatsächliche Produkt und Ziel mit qualifizierten Gutachtern.</p><p><a href=\"https://www.iso.org/standard/9001\" target=\"_blank\" rel=\"noopener noreferrer\">ISO 9001 beschreibt Anforderungen an ein Qualitätsmanagementsystem</a>, nicht die Spezifikation oder Zertifizierung jedes Spielplatzprodukts. Fordern Sie den spezifischen Produktnachweis separat von etwaigen Zertifikaten des Fabrikmanagementsystems an.</p>"
       },
       {
         "id": "photo-list",
@@ -359,7 +359,7 @@
     "sources": [
       {
         "url": "https://store.astm.org/f1918-21.html",
-        "label": "ASTM F1918-21: Umfang für weich gepolsterte Spielgeräte"
+        "label": "ASTM F1918-21: Umfang für weich umschlossene Spielgeräte (soft-contained play equipment)"
       },
       {
         "url": "https://www.iso.org/standard/9001",
@@ -379,7 +379,7 @@
       }
     ],
     "relatedLabels": [
-      "Indoor Playground Factory Acceptance Checklist"
+      "Checkliste für die Werksabnahme von Indoor-Spielplätzen"
     ],
     "ui": {
       "relatedTitle": "Verwandte Planungs- und Betriebsleitfäden",

@@ -21,7 +21,7 @@
       {
         "id": "quick-answer",
         "title": "Por que não há um único número para a folga do escorregador?",
-        "html": "<p>A folga do escorregador em playgrounds internos deve ser confirmada para o escorregador real, seu enclausuramento, usuários pretendidos e instalação. Não copie um único número de distância de saída para todos os layouts comerciais. Uma pegada de catálogo normalmente descreve o equipamento, mas os compradores também devem obter os espaços necessários para operação, acesso e manutenção do designer do equipamento.</p><p>Esta lista de verificação ajuda você a preparar um resumo de medidas. Ela não calcula uma distância compatível a partir da altura do deck ou substitui o padrão técnico aplicável. O <a href=\"https://store.astm.org/f1918-21.html\" target=\"_blank\" rel=\"noopener noreferrer\">escopo publicado da ASTM F1918-21 diz respeito a equipamentos de brincadeira macia contidos</a>; não é evidência para uma regra universal de folga cobrindo todas as atrações internas. Confirme a classificação do equipamento e a edição do padrão aplicável com o revisor.</p>"
+        "html": "<p>A folga do escorregador em playgrounds internos deve ser confirmada para o escorregador real, seu enclausuramento, usuários pretendidos e instalação. Não copie um único número de distância de saída para todos os layouts comerciais. Uma pegada de catálogo normalmente descreve o equipamento, mas os compradores também devem obter os espaços necessários para operação, acesso e manutenção do designer do equipamento.</p><p>Esta lista de verificação ajuda você a preparar um resumo de medidas. Ela não calcula uma distância compatível a partir da altura do deck ou substitui o padrão técnico aplicável. O <a href=\"https://store.astm.org/f1918-21.html\" target=\"_blank\" rel=\"noopener noreferrer\">escopo publicado da ASTM F1918-21 diz respeito a equipamentos de recreação macios e fechados (soft-contained play equipment)</a>; não é evidência para uma regra universal de folga cobrindo todas as atrações internas. Confirme a classificação do equipamento e a edição do padrão aplicável com o revisor.</p>"
       },
       {
         "id": "measure",
@@ -41,7 +41,7 @@
       {
         "id": "installation",
         "title": "Solicite requisitos de instalação para esta configuração",
-        "html": "<p>Obtenha as instruções de instalação relevantes, detalhes de fixação, requisitos de suporte e responsabilidades de inspeção antes de encomendar. Identifique qual trabalho pertence ao instalador do equipamento e qual requer o contratante ou engenheiro de construção. Não use esta lista de verificação do proprietário como instruções para apertar âncoras ou realizar testes de carga.</p><p>Para comparação de escopo, <a href=\"https://store.astm.org/f1487-25.html\" target=\"_blank\" rel=\"noopener noreferrer\">a ASTM F1487-25 aborda equipamentos de playground de uso público e exclui equipamentos de brincadeira macia contidos</a>. Uma referência destinada a outra categoria não deve ser copiada para o projeto sem verificar a aplicabilidade.</p>"
+        "html": "<p>Obtenha as instruções de instalação relevantes, detalhes de fixação, requisitos de suporte e responsabilidades de inspeção antes de encomendar. Identifique qual trabalho pertence ao instalador do equipamento e qual requer o contratante ou engenheiro de construção. Não use esta lista de verificação do proprietário como instruções para apertar âncoras ou realizar testes de carga.</p><p>Para comparação de escopo, <a href=\"https://store.astm.org/f1487-25.html\" target=\"_blank\" rel=\"noopener noreferrer\">a ASTM F1487-25 aborda equipamentos de playground de uso público e exclui equipamentos de recreação macios e fechados (soft-contained play equipment)</a>. Uma referência destinada a outra categoria não deve ser copiada para o projeto sem verificar a aplicabilidade.</p>"
       },
       {
         "id": "approval",
@@ -66,7 +66,7 @@
     "sources": [
       {
         "url": "https://store.astm.org/f1918-21.html",
-        "label": "ASTM F1918-21: escopo para equipamentos de brincadeira macia contidos"
+        "label": "ASTM F1918-21: escopo para equipamentos de recreação macios e fechados (soft-contained play equipment)"
       },
       {
         "url": "https://store.astm.org/f1487-25.html",
@@ -106,7 +106,7 @@
     "seo_description": "Registre defeitos e reparos em redes de segurança, seguindo orientações do fabricante para manutenção.",
     "excerpt": "Registre defeitos nas redes, preocupações com fixação e decisões de reparo usando instruções do fabricante, peças identificadas e uma revisão documentada de reabertura.",
     "keywords": [
-      "segurança",
+      "safety",
       "inspeção de redes de playground",
       "fixação de redes de playground",
       "substituição de redes de playground"
@@ -121,7 +121,7 @@
       {
         "id": "quick-answer",
         "title": "O que uma verificação de redes pelo proprietário deve estabelecer?",
-        "html": "<p>Uma inspeção de redes de playground deve identificar danos visíveis, registrar sua localização e acionar a ação apropriada. Não é um teste caseiro de tensão ou prova de que uma barreira permanece adequada para uso. Comece com as instruções do fabricante do equipamento e da rede e o plano de inspeção aprovado para sua instalação.</p><p>Mantenha verificações de abertura, inspeção periódica detalhada e avaliação especializada distintas. Sua frequência e escopo dependem do equipamento instalado, exposição, uso e requisitos aplicáveis; este guia não impõe um cronograma de conformidade diário, semanal ou mensal. <a href=\"https://store.astm.org/f1918-21.html\" target=\"_blank\" rel=\"noopener noreferrer\">O escopo publicado da ASTM F1918-21 identifica equipamentos de brincadeira contidos macios</a>, não um procedimento de teste universal para proprietários para cada tipo de rede.</p>"
+        "html": "<p>Uma inspeção de redes de playground deve identificar danos visíveis, registrar sua localização e acionar a ação apropriada. Não é um teste caseiro de tensão ou prova de que uma barreira permanece adequada para uso. Comece com as instruções do fabricante do equipamento e da rede e o plano de inspeção aprovado para sua instalação.</p><p>Mantenha verificações de abertura, inspeção periódica detalhada e avaliação especializada distintas. Sua frequência e escopo dependem do equipamento instalado, exposição, uso e requisitos aplicáveis; este guia não impõe um cronograma de conformidade diário, semanal ou mensal. <a href=\"https://store.astm.org/f1918-21.html\" target=\"_blank\" rel=\"noopener noreferrer\">O escopo publicado da ASTM F1918-21 identifica equipamentos de recreação macios e fechados (soft-contained play equipment)</a>, não um procedimento de teste universal para proprietários para cada tipo de rede.</p>"
       },
       {
         "id": "record",
@@ -166,7 +166,7 @@
     "sources": [
       {
         "url": "https://store.astm.org/f1918-21.html",
-        "label": "ASTM F1918-21: escopo para equipamentos de brincadeira contidos macios"
+        "label": "ASTM F1918-21: escopo para equipamentos de recreação macios e fechados (soft-contained play equipment)"
       }
     ],
     "figures": [
@@ -202,7 +202,7 @@
     "seo_description": "Confira faturas, listas de embalagem e registros de transporte antes do envio de equipamentos.",
     "excerpt": "Confira faturas, listas de embalagem e registros de transporte; confirme requisitos do destino e acordos de liberação de carga antes do envio.",
     "keywords": [
-      "guias",
+      "guides",
       "documentos de envio para playgrounds internos",
       "lista de embalagem para equipamentos de playground",
       "documentação de importação para playgrounds internos"
@@ -231,7 +231,7 @@
       {
         "id": "release",
         "title": "Confirme o documento de transporte e o processo de liberação",
-        "html": "<p>Não assuma que todo envio precisa de um conhecimento de embarque original em papel. O documento apropriado e as etapas de liberação dependem do arranjo da transportadora, incluindo qualquer conhecimento de embarque marítimo ou procedimento de entrega. Obtenha instruções por escrito para a reserva real e confirme quem está autorizado a solicitar ou receber a liberação.</p><p>Liberação de transporte e liberação alfandegária são etapas separadas. Pergunte à transportadora ou agente de carga sobre requisitos de documentos de transporte e ao importador ou despachante sobre entrada no destino. Uma cópia digital de um documento não relacionado não é um substituto para o processo acordado para o seu envio.</p><p><a href=\"https://www.maersk.com/support/faqs/what-is-seaway-bill\" target=\"_blank\" rel=\"noopener noreferrer\">A Maersk explica que uma via marítima não é um documento de título e que nenhum original é emitido</a>. Isso ajuda a distinguir os tipos de documento; confirme as instruções de liberação para o seu carregamento real diretamente com a transportadora.</p>"
+        "html": "<p>Não assuma que todo envio precisa de um conhecimento de embarque original em papel. O documento apropriado e as etapas de liberação dependem do arranjo da transportadora, incluindo uma carta de porte marítima (sea waybill) ou um procedimento de entrega dos originais. Obtenha instruções por escrito para a reserva real e confirme quem está autorizado a solicitar ou receber a liberação.</p><p>Liberação de transporte e liberação alfandegária são etapas separadas. Pergunte à transportadora ou agente de carga sobre requisitos de documentos de transporte e ao importador ou despachante sobre entrada no destino. Uma cópia digital de um documento não relacionado não é um substituto para o processo acordado para o seu envio.</p><p><a href=\"https://www.maersk.com/support/faqs/what-is-seaway-bill\" target=\"_blank\" rel=\"noopener noreferrer\">A Maersk explica que uma carta de porte marítima (sea waybill) não é um documento de título e que nenhum original é emitido</a>. Isso ajuda a distinguir os tipos de documento; confirme as instruções de liberação para o seu carregamento real diretamente com a transportadora.</p>"
       },
       {
         "id": "arrival",
@@ -264,8 +264,8 @@
         "label": "U.S. CBP: processo de resumo de entrada, exemplo dos Estados Unidos"
       },
       {
-        "url": "https://www.iso.org/standard/9001",
-        "label": "ISO 9001: escopo do sistema de gestão da qualidade"
+        "url": "https://www.maersk.com/support/faqs/what-is-seaway-bill",
+        "label": "Maersk: carta de porte marítima e documentos originais"
       }
     ],
     "figures": [
@@ -300,7 +300,7 @@
     "seo_description": "Reúna desenhos, fotos e relatórios de correções antes de liberar equipamentos para transporte.",
     "excerpt": "Organize revisões de desenhos, fotos de inspeção, relatórios de produtos e registros de ações corretivas antes de liberar o equipamento de playground para embarque.",
     "keywords": [
-      "guias",
+      "guides",
       "inspeção pré-embarque de playground indoor",
       "lista de aceitação de fábrica de playground",
       "fotos de inspeção de equipamentos de playground"
@@ -398,7 +398,7 @@
     "seo_description": "Controle peças, especificações e substituições para garantir conformidade em diferentes locais.",
     "excerpt": "Controle números de peças, especificações aprovadas e substituições em diferentes locais de playgrounds, mantendo engenharia e revisão de conformidade específicas para cada local.",
     "keywords": [
-      "negócios",
+      "business",
       "padronização de equipamentos para playgrounds internos",
       "compras de playgrounds em múltiplos locais",
       "lista de materiais para equipamentos de playground"
@@ -417,7 +417,7 @@
       {
         "id": "site-variation",
         "title": "Separe a linha de base compartilhada das condições locais",
-        "html": "<p>Identifique itens que podem ser repetidos sob o design aprovado e liste condições que exigem revisão separada para cada local. Exemplos incluem arranjos de piso e suporte, espaço disponível, serviços do edifício e rotas de acesso. Mantenha variações explícitas em vez de forçar cada local a seguir o desenho do primeiro.</p><p>Use padrões apenas dentro de seu escopo. <a href=\"https://store.astm.org/f1918-21.html\" target=\"_blank\" rel=\"noopener noreferrer\">ASTM F1918-21 trata de equipamentos de playground contidos macios</a>; não estabelece uma espessura de tubo única para todas as estruturas. Atividades com cordas, trampolins e elementos de escalada exigem sua própria classificação e revisão de aplicabilidade, não um certificado genérico cobrindo todo o centro.</p>"
+        "html": "<p>Identifique itens que podem ser repetidos sob o design aprovado e liste condições que exigem revisão separada para cada local. Exemplos incluem arranjos de piso e suporte, espaço disponível, serviços do edifício e rotas de acesso. Mantenha variações explícitas em vez de forçar cada local a seguir o desenho do primeiro.</p><p>Use padrões apenas dentro de seu escopo. <a href=\"https://store.astm.org/f1918-21.html\" target=\"_blank\" rel=\"noopener noreferrer\">ASTM F1918-21 trata de equipamentos de recreação macios e fechados (soft-contained play equipment)</a>; não estabelece uma espessura de tubo única para todas as estruturas. Atividades com cordas, trampolins e elementos de escalada exigem sua própria classificação e revisão de aplicabilidade, não um certificado genérico cobrindo todo o centro.</p>"
       },
       {
         "id": "bom",
@@ -457,7 +457,7 @@
     "sources": [
       {
         "url": "https://store.astm.org/f1918-21.html",
-        "label": "ASTM F1918-21: escopo para equipamentos de playground contidos macios"
+        "label": "ASTM F1918-21: escopo para equipamentos de recreação macios e fechados (soft-contained play equipment)"
       },
       {
         "url": "https://www.iso.org/standard/9001",
