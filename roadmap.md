@@ -1,5 +1,8 @@
 # Roadmap
 
+- [ ] November 3: audit competitor reports against current site coverage and validate keyword demand; replace only necessary copy/metadata in all six languages
+- [ ] November 3: deliver a standalone keyword report and weekly proposal with five topic-page keywords and five blog clusters; verify changed metadata and public pages
+
 - [x] October 30 blogs: audit five uploaded articles against their self-check reports and authoritative sources; corrected outlines approved before substantial revisions
 - [x] Revise and translate five blogs into six languages with existing site cover/inline images; publish 30 records and verify all public pages/authenticated business admin views
 - [x] Add and verify bidirectional aggregation matrix links; register all 30 blog sitemap/prerender routes; nine tests passed
