@@ -5,6 +5,7 @@ import { languages } from "@/i18n/config";
 import { WebsiteSchema } from "@/components/StructuredData";
 import { AutoPageSchema } from "@/components/AutoPageSchema";
 import { getContentDate } from "@/config/contentDates";
+import { boundedSiteMetadata } from "@/lib/seoMetadata";
 
 interface SEOHeadProps {
   pageKey: string;
@@ -56,10 +57,10 @@ export const SEOHead = ({
   const title = (dynamicTitle || seo?.title || [t(`pages.${pageKey}.title`, ""), t(`pages.${pageKey}.titleHighlight`, "")].filter(Boolean).join(" ") || siteName).trim();
   const rawDescription = dynamicDescription || seo?.description || t(`pages.${pageKey}.description`, "");
   // Never output an empty meta description – fall back to a site-wide default
-  const description = rawDescription?.trim() || t("seo.home.description", "Custom indoor playground equipment manufacturer & supplier since 2008. Trampoline parks, ninja courses, soft play & complete play center solutions. ASTM & TUV certified. Free 3D design!");
+  const fallbackDescription = rawDescription?.trim() || t("seo.home.description", "Commercial indoor playground equipment, trampoline parks, ninja courses and soft play. Discuss your site requirements and request a free 3D design.");
   const keywords = dynamicKeywords || seo?.keywords || t("seo.defaultKeywords", "");
 
-  const fullTitle = title.includes(siteName) ? title : `${title} | ${siteName}`;
+  const { title: fullTitle, description } = boundedSiteMetadata(title, fallbackDescription);
   
   // Generate proper canonical URL
   // English pages should use root path (no /en prefix)

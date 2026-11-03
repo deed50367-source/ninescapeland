@@ -1,5 +1,5 @@
 export const B13_DATE = "2026-10-30";
-export const B13_BASE_URL = "https://ninescapeland.lovable.app";
+export const B13_BASE_URL = "https://indoorplaygroundsolution.com";
 export const B13_LANGUAGES = ["en", "ar", "de", "es", "pt", "fr"] as const;
 export type B13Language = typeof B13_LANGUAGES[number];
 
