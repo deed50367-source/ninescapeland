@@ -1,0 +1,732 @@
+{
+  "commercial-indoor-playground-slide-selection": {
+    "slug": "commercial-indoor-playground-slide-selection",
+    "title": "Commercial Indoor Playground Slide Selection",
+    "metaTitle": "Commercial Indoor Playground Slides | NinescapeLand",
+    "metaDescription": "Compare commercial indoor playground slides by format, age suitability, entry and exit layout, installation access and the evidence needed for a quote.",
+    "kicker": "Slide Formats · Entry & Exit · Procurement",
+    "intro": "Commercial indoor playground slides must be selected as part of a complete play route, not as isolated shapes. This guide helps operators compare open, enclosed and multi-lane formats before requesting a project-specific quotation. It does not list domestic toys, nearby attractions or a universal safe height.",
+    "answerQuestion": "How should buyers select indoor playground slides?",
+    "answer": "Start with the intended users and manufacturer instructions, then coordinate the entry platform, descent, exit and surrounding circulation. Request a drawing of the assembled system showing clearances and interfaces. Compare visibility, assisted access and maintenance needs before approving the format; a render alone cannot establish suitability.",
+    "frameworkTitle": "Prepare the Slide Design Brief",
+    "framework": [
+      {
+        "title": "Define intended use",
+        "desc": "State age groups, supervision arrangements and whether the slide sits inside a soft-contained structure. Ask for item-specific intended-use documentation rather than a generic all-ages claim."
+      },
+      {
+        "title": "Trace the complete route",
+        "desc": "Mark entry queues, the platform, descent and runout on coordinated drawings. Keep crossing circulation separate from the exit; the required dimensions must come from the approved design."
+      },
+      {
+        "title": "Check enclosure and observation",
+        "desc": "For enclosed tubes, ask how staff observe and assist a user. For open and multi-lane formats, review side protection and how users reach and leave each lane."
+      },
+      {
+        "title": "Confirm delivery and interfaces",
+        "desc": "Record the installation access route, frame connection, support design and inspection points. A slide that fits the room may still not fit the building entrance or existing structure."
+      }
+    ],
+    "equipmentTitle": "Compare Slide Formats",
+    "equipment": [
+      {
+        "title": "Open slide",
+        "desc": "Review staff sightlines, side protection and the exit zone as one system. Specify surface and connection details in the purchase brief."
+      },
+      {
+        "title": "Enclosed tube slide",
+        "desc": "Request observation and assisted-access provisions, joint details and a cleaning method. An attractive enclosure does not replace an access review."
+      },
+      {
+        "title": "Multi-lane slide",
+        "desc": "Ask how queues and lane exits are separated. Confirm the intended use; never infer racing rules or simultaneous-user capacity from the number of lanes."
+      },
+      {
+        "title": "Compact integrated slide",
+        "desc": "Coordinate the platform and nearby activities within the contained structure. Do not retrofit a unit without review of the complete modified assembly."
+      }
+    ],
+    "columns": [
+      "Format",
+      "Design evidence",
+      "Operational focus",
+      "Quote input"
+    ],
+    "rows": [
+      [
+        "Open",
+        "Entry/exit and side-protection drawing",
+        "Visible runout and circulation",
+        "Intended users and platform interface"
+      ],
+      [
+        "Tube",
+        "Joint and assisted-access details",
+        "Observation and cleaning access",
+        "Route geometry and connection points"
+      ],
+      [
+        "Multi-lane",
+        "Lane and queue arrangement",
+        "Controlled entry and separated exits",
+        "Documented intended use"
+      ],
+      [
+        "Integrated",
+        "Coordinated frame drawing",
+        "Adjacent activities and inspections",
+        "Survey and existing structure details"
+      ]
+    ],
+    "faq": [
+      {
+        "title": "What dimensions should I send for a quotation?",
+        "desc": "Provide usable site dimensions, clear heights, columns, services, access doors and the intended slide location. The supplier must develop the item-specific platform and exit dimensions."
+      },
+      {
+        "title": "Are there universal slide clearance numbers?",
+        "desc": "No single number covers every format, user group and jurisdiction. Use the model instructions and a qualified review of the complete installed configuration."
+      },
+      {
+        "title": "Can a slide connect to an existing play structure?",
+        "desc": "Only after the connections, supports and complete route are reviewed and approved in writing. Do not assume a matching colour or size means compatibility."
+      },
+      {
+        "title": "How does this differ from the tunnels guide?",
+        "desc": "This page addresses slide descent, queueing and runout. The tunnels guide addresses crawl routes, visibility and connector access."
+      }
+    ],
+    "tableTitle": "Compare Slide Formats — Decision Matrix",
+    "tableNote": "Planning guidance only. Use project-specific drawings, item specifications and written approvals; this guide is not a product certificate or a contract.",
+    "imageAlt": "Commercial Indoor Playground Slide Selection — illustrative site 3D render",
+    "captions": [
+      "Review slide routes within a coordinated structure.",
+      "Check exit circulation alongside neighbouring activities.",
+      "Compare supporting zones without treating the render as a specification."
+    ],
+    "ui": {
+      "home": "Home",
+      "products": "Products",
+      "design": "Request Free 3D Design",
+      "whatsapp": "Chat on WhatsApp",
+      "compare": "Compare Options",
+      "gallery": "Design References",
+      "relatedTitle": "Related Planning Guides",
+      "faqTitle": "Buyer Questions",
+      "sourcesTitle": "Sources & Scope",
+      "sourcesIntro": "Confirm the current standard edition and local building, fire and accessibility requirements with your qualified project team. These references are not product certificates.",
+      "updated": "Updated November 3, 2026",
+      "author": "NinescapeLand · Commercial Play Planning",
+      "imageNote": "Existing site 3D renders illustrate equipment configurations, not product specifications or completed projects.",
+      "inquiryIntro": "Send your site drawings, country and procurement requirements for a project-specific discussion."
+    },
+    "parents": [
+      {
+        "slug": "products/indoor-playground",
+        "label": "Indoor Playground Equipment"
+      },
+      {
+        "slug": "commercial-indoor-playground-tunnels-and-tubes",
+        "label": "Commercial Play Tunnels & Tubes"
+      }
+    ],
+    "sources": [
+      {
+        "label": "ASTM F1918-21",
+        "publisher": "ASTM International",
+        "url": "https://store.astm.org/f1918-21.html",
+        "note": "Scope reference for soft-contained play equipment. Confirm the current applicable edition and product-specific assessment."
+      },
+      {
+        "label": "2010 ADA Standards",
+        "publisher": "U.S. Department of Justice",
+        "url": "https://www.ada.gov/law-and-regs/design-standards/2010-stds/",
+        "note": "Accessibility requirements depend on jurisdiction and the assembled facility; equipment drawings are not approval."
+      }
+    ]
+  },
+  "commercial-indoor-playground-netting": {
+    "slug": "commercial-indoor-playground-netting",
+    "title": "Commercial Indoor Playground Netting",
+    "metaTitle": "Commercial Playground Netting | NinescapeLand",
+    "metaDescription": "Specify indoor playground netting by intended use, openings, attachment interfaces, visibility and replacement documentation before requesting a quote.",
+    "kicker": "Containment · Connections · Specification",
+    "intro": "Indoor playground netting can form a boundary, a crawl surface or a climbing activity. These uses are not interchangeable. This procurement guide focuses on the specification and evidence needed to quote a compatible net system, not a generic rope shop or a routine whole-site inspection checklist.",
+    "answerQuestion": "What should a playground netting specification include?",
+    "answer": "Identify the function first: containment, a load-bearing play element or a decorative boundary. Submit the installed dimensions, connection details and intended users, then ask for model-specific material, opening and attachment documentation. Do not select mesh solely by colour, price or an unsupported safety-net label.",
+    "frameworkTitle": "Define the Net System",
+    "framework": [
+      {
+        "title": "Separate functions",
+        "desc": "Label every net location and its intended role. A containment panel must not be substituted for a climbing or load-bearing element without a documented design review."
+      },
+      {
+        "title": "Specify the installed geometry",
+        "desc": "Show panel boundaries, corners, access openings and the frame interface. Account for the fitted shape and manufacturer instructions rather than quoting only a loose fabric size."
+      },
+      {
+        "title": "Document attachments",
+        "desc": "Request approved fixing and edge details, compatible hardware and installation instructions. The panel and its attachments must be assessed together."
+      },
+      {
+        "title": "Plan traceable replacements",
+        "desc": "Keep panel identifiers, drawings and revision information so a later replacement can match the approved assembly. Obtain written approval for substitutions."
+      }
+    ],
+    "equipmentTitle": "Compare Netting Procurement Uses",
+    "equipment": [
+      {
+        "title": "Containment panels",
+        "desc": "Request the specified opening geometry, boundary details and visibility requirements. A net colour is not an entrapment or strength assessment."
+      },
+      {
+        "title": "Load-bearing play nets",
+        "desc": "Require documented intended use and structural interfaces. Do not reuse a perimeter-panel specification for a bridge or climbing route."
+      },
+      {
+        "title": "Access boundaries",
+        "desc": "Coordinate supervised gates or approved access openings with the net layout. Maintain staff access without improvised cut-outs."
+      },
+      {
+        "title": "Replacement panels",
+        "desc": "Supply the original part ID, fitted dimensions, fixing photos and revision. Similar appearance does not establish interchangeability."
+      }
+    ],
+    "columns": [
+      "Use",
+      "Evidence to request",
+      "Interface decision",
+      "Avoid"
+    ],
+    "rows": [
+      [
+        "Containment",
+        "Model-specific mesh and edge details",
+        "Frame and panel fixing",
+        "Buying by colour alone"
+      ],
+      [
+        "Play element",
+        "Intended loading and design scope",
+        "Approved structural attachment",
+        "Using boundary net as climbing net"
+      ],
+      [
+        "Access boundary",
+        "Gate and opening arrangement",
+        "Supervised route and assistance",
+        "Unapproved cuts or openings"
+      ],
+      [
+        "Replacement",
+        "Original part and revision record",
+        "Written compatibility check",
+        "Unreviewed material substitution"
+      ]
+    ],
+    "faq": [
+      {
+        "title": "Can the same mesh be used everywhere?",
+        "desc": "Do not assume so. Containment, climbing and decorative uses have different requirements. Ask the designer to specify each location."
+      },
+      {
+        "title": "Can you quote from a photograph?",
+        "desc": "A photograph helps identify the system but does not replace measurements, part IDs, connection details and intended use. Confirm the specification before ordering."
+      },
+      {
+        "title": "Is flame performance implied by a safety-net description?",
+        "desc": "No. Request evidence for the exact material and use where local requirements apply. A generic marketing label is not a test report."
+      },
+      {
+        "title": "Does this replace the material or maintenance guides?",
+        "desc": "No. This page defines net-system purchasing inputs; the linked material guide covers padded components. Routine inspection and replacement limits must follow the model instructions."
+      }
+    ],
+    "tableTitle": "Compare Netting Procurement Uses — Decision Matrix",
+    "tableNote": "Planning guidance only. Use project-specific drawings, item specifications and written approvals; this guide is not a product certificate or a contract.",
+    "imageAlt": "Commercial Indoor Playground Netting — illustrative site 3D render",
+    "captions": [
+      "Identify net boundaries in the assembled design.",
+      "Review connections and observation routes.",
+      "Coordinate netting with nearby padded activities."
+    ],
+    "ui": {
+      "home": "Home",
+      "products": "Products",
+      "design": "Request Free 3D Design",
+      "whatsapp": "Chat on WhatsApp",
+      "compare": "Compare Options",
+      "gallery": "Design References",
+      "relatedTitle": "Related Planning Guides",
+      "faqTitle": "Buyer Questions",
+      "sourcesTitle": "Sources & Scope",
+      "sourcesIntro": "Confirm the current standard edition and local building, fire and accessibility requirements with your qualified project team. These references are not product certificates.",
+      "updated": "Updated November 3, 2026",
+      "author": "NinescapeLand · Commercial Play Planning",
+      "imageNote": "Existing site 3D renders illustrate equipment configurations, not product specifications or completed projects.",
+      "inquiryIntro": "Send your site drawings, country and procurement requirements for a project-specific discussion."
+    },
+    "parents": [
+      {
+        "slug": "products/indoor-playground",
+        "label": "Indoor Playground Equipment"
+      },
+      {
+        "slug": "soft-play-foam-and-material-specifications",
+        "label": "Soft Play Material Specifications"
+      }
+    ],
+    "sources": [
+      {
+        "label": "ASTM F1918-21",
+        "publisher": "ASTM International",
+        "url": "https://store.astm.org/f1918-21.html",
+        "note": "Scope reference for soft-contained play equipment. Confirm the current applicable edition and product-specific assessment."
+      },
+      {
+        "label": "2010 ADA Standards",
+        "publisher": "U.S. Department of Justice",
+        "url": "https://www.ada.gov/law-and-regs/design-standards/2010-stds/",
+        "note": "Accessibility requirements depend on jurisdiction and the assembled facility; equipment drawings are not approval."
+      }
+    ]
+  },
+  "indoor-playground-equipment-import-shipping-terms": {
+    "slug": "indoor-playground-equipment-import-shipping-terms",
+    "title": "Indoor Playground Equipment Import Shipping Terms",
+    "metaTitle": "Playground Equipment Shipping Terms | NinescapeLand",
+    "metaDescription": "Clarify delivery terms, cost and risk handoffs, customs responsibilities and unloading before contracting imported indoor playground equipment.",
+    "kicker": "Named Place · Risk Handoff · Customs",
+    "intro": "An equipment quote and a freight quote may cover different parts of the journey. Before comparing imported playground packages, write down the named delivery place, the chosen Incoterms version and who handles each step. This is a purchasing responsibility guide, not a fixed freight, duty or landed-cost calculator.",
+    "answerQuestion": "What must buyers agree before importing playground equipment?",
+    "answer": "Agree the trade rule and exact named place, then document export clearance, main carriage, insurance, import clearance, taxes and unloading responsibilities. Check when risk transfers, which can differ from who pays transport. Confirm destination requirements with a customs professional; equipment suppliers cannot guarantee every local approval.",
+    "frameworkTitle": "Build the Delivery Responsibility Schedule",
+    "framework": [
+      {
+        "title": "Name the rule and place",
+        "desc": "Use the complete rule, a precise named place or port and the edition in the contract. A country name or a vague delivered quote is not a clear handoff."
+      },
+      {
+        "title": "Separate costs from risk",
+        "desc": "Compare payment obligations with the risk-transfer point. For example, under CIF the seller pays agreed carriage and insurance to the named destination port while risk transfers when goods are on board at shipment."
+      },
+      {
+        "title": "Assign customs and taxes",
+        "desc": "Identify the importer of record, broker, classification review and taxes. Requirements vary by destination; do not copy a tariff rate from another project."
+      },
+      {
+        "title": "Plan receipt and unloading",
+        "desc": "Confirm who books delivery slots, handles unloading equipment, checks crate condition and records shortages. Installation and customs clearance are separate scope items."
+      }
+    ],
+    "equipmentTitle": "Compare Common Delivery Discussions",
+    "equipment": [
+      {
+        "title": "FCA",
+        "desc": "Useful to discuss a named carrier handoff, including containerized shipments. Confirm the precise place and loading obligations with the contracting parties."
+      },
+      {
+        "title": "FOB",
+        "desc": "Applies to sea or inland waterway transport. Define the shipment port and on-board delivery; do not use it as a universal term for every container handoff."
+      },
+      {
+        "title": "CIF",
+        "desc": "For sea or inland waterway transport, distinguish seller-paid carriage/insurance from the earlier on-board risk transfer. Check insurance scope instead of assuming full cover."
+      },
+      {
+        "title": "DAP",
+        "desc": "At the named destination, goods are ready for unloading. Import clearance, duties and unloading normally remain buyer obligations under the rule; confirm contract additions."
+      }
+    ],
+    "columns": [
+      "Rule",
+      "Named point",
+      "Key buyer check",
+      "Not automatically included"
+    ],
+    "rows": [
+      [
+        "FCA",
+        "Agreed delivery place",
+        "Carrier handoff and loading detail",
+        "Main carriage and import clearance"
+      ],
+      [
+        "FOB",
+        "Named shipment port",
+        "On-board delivery and transport suitability",
+        "Import charges and installation"
+      ],
+      [
+        "CIF",
+        "Named destination port",
+        "Risk point and insurance coverage",
+        "Unloading and destination approvals"
+      ],
+      [
+        "DAP",
+        "Exact destination",
+        "Access, import clearance and unloading",
+        "Import duties and installation"
+      ]
+    ],
+    "faq": [
+      {
+        "title": "Does the shipping term decide product ownership?",
+        "desc": "Incoterms do not determine title transfer, payment terms or every remedy. Address those separately in the sales contract."
+      },
+      {
+        "title": "Is DAP the same as duty-paid delivery?",
+        "desc": "No. Under DAP the buyer normally handles import clearance and related duties/taxes. Do not treat DAP as DDP or assume the seller can act as importer."
+      },
+      {
+        "title": "Is installation included in a delivery term?",
+        "desc": "Not by the trade rule alone. Write installation, travel, tools, local labour and commissioning responsibilities in a separate scope."
+      },
+      {
+        "title": "Can this guide confirm the tariff for my country?",
+        "desc": "No. Provide item descriptions and documents to a qualified destination broker for classification and current requirements before committing."
+      }
+    ],
+    "tableTitle": "Compare Common Delivery Discussions — Decision Matrix",
+    "tableNote": "Planning guidance only. Use project-specific drawings, item specifications and written approvals; this guide is not a product certificate or a contract.",
+    "imageAlt": "Indoor Playground Equipment Import Shipping Terms — illustrative site 3D render",
+    "captions": [
+      "Confirm what equipment the shipment includes.",
+      "Use a coordinated layout to distinguish delivery from installation.",
+      "List separately shipped components and accessories."
+    ],
+    "ui": {
+      "home": "Home",
+      "products": "Products",
+      "design": "Request Free 3D Design",
+      "whatsapp": "Chat on WhatsApp",
+      "compare": "Compare Options",
+      "gallery": "Design References",
+      "relatedTitle": "Related Planning Guides",
+      "faqTitle": "Buyer Questions",
+      "sourcesTitle": "Sources & Scope",
+      "sourcesIntro": "Confirm the current standard edition and local building, fire and accessibility requirements with your qualified project team. These references are not product certificates.",
+      "updated": "Updated November 3, 2026",
+      "author": "NinescapeLand · Commercial Play Planning",
+      "imageNote": "Existing site 3D renders illustrate equipment configurations, not product specifications or completed projects.",
+      "inquiryIntro": "Send your site drawings, country and procurement requirements for a project-specific discussion."
+    },
+    "parents": [
+      {
+        "slug": "process",
+        "label": "Design & Delivery Process"
+      },
+      {
+        "slug": "indoor-playground-equipment-indonesia",
+        "label": "Indonesia Equipment Planning"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Incoterms® 2020",
+        "publisher": "International Chamber of Commerce",
+        "url": "https://iccwbo.org/business-solutions/incoterms-rules/incoterms-2020/",
+        "note": "The rules allocate specified delivery obligations, costs and risk. They do not replace every clause in a sales contract."
+      },
+      {
+        "label": "Basic Importing and Exporting",
+        "publisher": "U.S. Customs and Border Protection",
+        "url": "https://www.cbp.gov/trade/basic-import-export",
+        "note": "U.S.-specific import guidance; destination-country customs requirements must be confirmed separately."
+      }
+    ]
+  },
+  "indoor-playground-factory-acceptance-checklist": {
+    "slug": "indoor-playground-factory-acceptance-checklist",
+    "title": "Indoor Playground Factory Acceptance Checklist",
+    "metaTitle": "Playground Factory Acceptance Checklist | NinescapeLand",
+    "metaDescription": "Plan pre-shipment playground acceptance with approved drawings, item IDs, photo evidence, packing checks and documented closure of discrepancies.",
+    "kicker": "Approved Baseline · Evidence · Release",
+    "intro": "Factory acceptance is a contract-specific check before shipment, not a replacement for installation inspection or a product certificate. Buyers should agree what can be verified in the factory, what needs assembled testing and what remains for the destination. This guide focuses on release evidence rather than daily operational inspections.",
+    "answerQuestion": "What belongs in a factory acceptance checklist?",
+    "answer": "Link each check to the approved drawings, bill of materials or written specification. Record the result, item identifier, evidence reference and unresolved action. Reconcile the inspected items with the packing list, and release only under the agreed acceptance procedure. Remote images cannot establish everything about the installed facility.",
+    "frameworkTitle": "Set the Acceptance Gates",
+    "framework": [
+      {
+        "title": "Freeze the reference set",
+        "desc": "Identify the approved drawing and bill-of-materials revisions, colours, intended-use documents and acceptance criteria. Resolve conflicting versions before checks begin."
+      },
+      {
+        "title": "Define what can be verified",
+        "desc": "List factory checks, any representative assembly and required reports. Label checks not performed or not applicable honestly; do not tick installation-dependent items as complete."
+      },
+      {
+        "title": "Record discrepancies",
+        "desc": "Give each issue an ID, reference, description, responsible party and closure evidence. Agree which open issues block release instead of relying on verbal assurances."
+      },
+      {
+        "title": "Reconcile packing and release",
+        "desc": "Match item IDs to crate numbers and quantities. Keep signed release and exception records separate from proof of freight booking or a customs document."
+      }
+    ],
+    "equipmentTitle": "Build the Evidence Pack",
+    "equipment": [
+      {
+        "title": "Reference register",
+        "desc": "Include the approved drawings and specification revisions. A sales render may illustrate design but does not replace measurable acceptance criteria."
+      },
+      {
+        "title": "Item-linked photos",
+        "desc": "Record item IDs, relevant views and the inspection date. Images should show the check; a general factory panorama is not evidence for every component."
+      },
+      {
+        "title": "Report register",
+        "desc": "Tie requested reports to exact models, materials and scope. Do not treat a factory quality certificate as certification of the full playground."
+      },
+      {
+        "title": "Packing reconciliation",
+        "desc": "Map inspected components to crate IDs, quantities and accessories. Note missing or deferred items explicitly before shipment approval."
+      }
+    ],
+    "columns": [
+      "Gate",
+      "Reference",
+      "Evidence",
+      "Release decision"
+    ],
+    "rows": [
+      [
+        "Configuration",
+        "Approved drawing/BOM revision",
+        "Item and dimension records",
+        "Resolve unapproved changes"
+      ],
+      [
+        "Specified checks",
+        "Agreed acceptance criteria",
+        "Reports and check-specific evidence",
+        "Record limits and omissions"
+      ],
+      [
+        "Discrepancies",
+        "Issue register",
+        "Closure or accepted exception",
+        "Apply agreed blocking criteria"
+      ],
+      [
+        "Packing",
+        "Item-to-crate list",
+        "Counts and crate identifiers",
+        "Record shortages before release"
+      ]
+    ],
+    "faq": [
+      {
+        "title": "Can photos replace an independent inspection?",
+        "desc": "No. Photos support selected checks but do not independently certify dimensions, strength or the assembled design. Agree the scope and qualified reviewer when independent inspection is required."
+      },
+      {
+        "title": "Is factory acceptance the same as a safety certificate?",
+        "desc": "No. It is an agreed purchasing checkpoint. Certification and testing claims need their own valid scope and evidence."
+      },
+      {
+        "title": "What should remain for the installation stage?",
+        "desc": "Site interfaces, final assembly, anchorage, circulation and locally required inspections may need destination verification. State these exclusions in the factory record."
+      },
+      {
+        "title": "Must every discrepancy stop shipment?",
+        "desc": "Follow the contract and agreed release criteria. Document any accepted exceptions, corrective actions and who authorized them; do not silently mark open issues complete."
+      }
+    ],
+    "tableTitle": "Build the Evidence Pack — Decision Matrix",
+    "tableNote": "Planning guidance only. Use project-specific drawings, item specifications and written approvals; this guide is not a product certificate or a contract.",
+    "imageAlt": "Indoor Playground Factory Acceptance Checklist — illustrative site 3D render",
+    "captions": [
+      "Use the approved configuration as the acceptance baseline.",
+      "Separate illustrative renders from item-linked inspection evidence.",
+      "Include supporting equipment in packing reconciliation."
+    ],
+    "ui": {
+      "home": "Home",
+      "products": "Products",
+      "design": "Request Free 3D Design",
+      "whatsapp": "Chat on WhatsApp",
+      "compare": "Compare Options",
+      "gallery": "Design References",
+      "relatedTitle": "Related Planning Guides",
+      "faqTitle": "Buyer Questions",
+      "sourcesTitle": "Sources & Scope",
+      "sourcesIntro": "Confirm the current standard edition and local building, fire and accessibility requirements with your qualified project team. These references are not product certificates.",
+      "updated": "Updated November 3, 2026",
+      "author": "NinescapeLand · Commercial Play Planning",
+      "imageNote": "Existing site 3D renders illustrate equipment configurations, not product specifications or completed projects.",
+      "inquiryIntro": "Send your site drawings, country and procurement requirements for a project-specific discussion."
+    },
+    "parents": [
+      {
+        "slug": "process",
+        "label": "Design & Delivery Process"
+      },
+      {
+        "slug": "custom-playground-manufacturer-certification-checklist",
+        "label": "Manufacturer Certification Review"
+      }
+    ],
+    "sources": [
+      {
+        "label": "ISO 9001 — Quality management",
+        "publisher": "International Organization for Standardization",
+        "url": "https://www.iso.org/iso-9001-quality-management.html",
+        "note": "Quality-management context only. It does not certify an individual playground product or replace project acceptance."
+      },
+      {
+        "label": "ASTM F1918-21",
+        "publisher": "ASTM International",
+        "url": "https://store.astm.org/f1918-21.html",
+        "note": "Scope reference for soft-contained play equipment. Confirm the current applicable edition and product-specific assessment."
+      }
+    ]
+  },
+  "multi-site-indoor-playground-equipment-procurement": {
+    "slug": "multi-site-indoor-playground-equipment-procurement",
+    "title": "Multi-Site Indoor Playground Equipment Procurement",
+    "metaTitle": "Multi-Site Playground Equipment Procurement | NinescapeLand",
+    "metaDescription": "Plan multi-site playground purchasing with controlled equipment lists, site-specific variations, spare-part compatibility and phased delivery records.",
+    "kicker": "Core Configuration · Site Variants · Traceability",
+    "intro": "A chain can standardize its equipment specification without forcing the same layout into every building. Central buyers need a controlled core list and a clear record of site exceptions. This guide addresses configuration and purchasing across locations, not franchise fees, profitability forecasts or claimed chain customer projects.",
+    "answerQuestion": "How can multi-site buyers standardize playground equipment?",
+    "answer": "Maintain an approved core equipment list with item IDs, revisions and intended-use documents, then create a separate site schedule for dimensions, approvals and interfaces. Record substitutions and keep spare-part compatibility tied to revisions. Standardize the evidence and change process, not every physical layout.",
+    "frameworkTitle": "Separate the Core from Site Exceptions",
+    "framework": [
+      {
+        "title": "Create a core list",
+        "desc": "Define the equipment families, item IDs, document revisions and required evidence. Keep branding choices separate from structural and intended-use requirements."
+      },
+      {
+        "title": "Survey each location",
+        "desc": "Record clear dimensions, columns, services, access, local requirements and intended users. An approved first location does not approve every later building."
+      },
+      {
+        "title": "Control substitutions",
+        "desc": "Require a written change request stating the affected sites, drawings, connections and spare parts. Avoid approving a cheaper alternative from an image alone."
+      },
+      {
+        "title": "Schedule phased handovers",
+        "desc": "Track each location from configuration approval to delivery and installation review. Do not use a single master shipment status as evidence that every site is ready."
+      }
+    ],
+    "equipmentTitle": "Compare Standardization Levels",
+    "equipment": [
+      {
+        "title": "Equipment family",
+        "desc": "Standardize the requested functions and documents while allowing approved dimensions and route changes for each site."
+      },
+      {
+        "title": "Component IDs",
+        "desc": "Track parts and revisions for attachments, covers and modules. Only treat spares as interchangeable when compatibility is documented."
+      },
+      {
+        "title": "Branding package",
+        "desc": "Record colours and decorative elements separately. A consistent visual identity does not mean buildings share the same engineering constraints."
+      },
+      {
+        "title": "Site release pack",
+        "desc": "Keep site-specific drawings, deviations, crates and handover records. Central approval should point to the actual installed configuration."
+      }
+    ],
+    "columns": [
+      "Record",
+      "Central baseline",
+      "Site-specific input",
+      "Change control"
+    ],
+    "rows": [
+      [
+        "Equipment list",
+        "Approved item IDs and revisions",
+        "Local selection and quantities",
+        "Revision and affected-site register"
+      ],
+      [
+        "Layout",
+        "Design principles and evidence requirements",
+        "Survey, services and interfaces",
+        "Approved site drawing"
+      ],
+      [
+        "Spares",
+        "Documented compatible part families",
+        "Installed revision and stock needs",
+        "Written substitution approval"
+      ],
+      [
+        "Handover",
+        "Common evidence format",
+        "Site checks and open actions",
+        "Location-specific release"
+      ]
+    ],
+    "faq": [
+      {
+        "title": "Should all locations have identical equipment?",
+        "desc": "Not necessarily. Building geometry, access, users and local requirements can justify variations. Preserve a controlled core specification and record exceptions."
+      },
+      {
+        "title": "Does buying in bulk guarantee savings?",
+        "desc": "No. Compare the actual quotations, freight, storage, phased deliveries, spares and local installation work. This page does not promise a discount or return."
+      },
+      {
+        "title": "Can one spare kit serve every location?",
+        "desc": "Only for documented compatible components and revisions. Record which locations a part fits and avoid substituting visually similar items."
+      },
+      {
+        "title": "How is this different from franchise versus independent?",
+        "desc": "That guide compares operating models. This page addresses configuration lists, revision control and location-level procurement records regardless of ownership model."
+      }
+    ],
+    "tableTitle": "Compare Standardization Levels — Decision Matrix",
+    "tableNote": "Planning guidance only. Use project-specific drawings, item specifications and written approvals; this guide is not a product certificate or a contract.",
+    "imageAlt": "Multi-Site Indoor Playground Equipment Procurement — illustrative site 3D render",
+    "captions": [
+      "Standardize equipment families, not every building layout.",
+      "Record location-specific routes and service access.",
+      "Track padded modules and spare compatibility by item revision."
+    ],
+    "ui": {
+      "home": "Home",
+      "products": "Products",
+      "design": "Request Free 3D Design",
+      "whatsapp": "Chat on WhatsApp",
+      "compare": "Compare Options",
+      "gallery": "Design References",
+      "relatedTitle": "Related Planning Guides",
+      "faqTitle": "Buyer Questions",
+      "sourcesTitle": "Sources & Scope",
+      "sourcesIntro": "Confirm the current standard edition and local building, fire and accessibility requirements with your qualified project team. These references are not product certificates.",
+      "updated": "Updated November 3, 2026",
+      "author": "NinescapeLand · Commercial Play Planning",
+      "imageNote": "Existing site 3D renders illustrate equipment configurations, not product specifications or completed projects.",
+      "inquiryIntro": "Send your site drawings, country and procurement requirements for a project-specific discussion."
+    },
+    "parents": [
+      {
+        "slug": "complete-indoor-play-center-solutions",
+        "label": "Complete Play Center Solutions"
+      },
+      {
+        "slug": "indoor-playground-franchise-vs-independent",
+        "label": "Franchise vs Independent"
+      }
+    ],
+    "sources": [
+      {
+        "label": "ISO 9001 — Quality management",
+        "publisher": "International Organization for Standardization",
+        "url": "https://www.iso.org/iso-9001-quality-management.html",
+        "note": "Quality-management context only. It does not certify an individual playground product or replace project acceptance."
+      },
+      {
+        "label": "ASTM F1918-21",
+        "publisher": "ASTM International",
+        "url": "https://store.astm.org/f1918-21.html",
+        "note": "Scope reference for soft-contained play equipment. Confirm the current applicable edition and product-specific assessment."
+      }
+    ]
+  }
+}
