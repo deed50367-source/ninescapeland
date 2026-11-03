@@ -2,8 +2,8 @@
   {
     "slug": "indoor-playground-slide-clearance",
     "title": "Freiraum für Indoor-Spielplatz-Rutschen: Mess-Checkliste",
-    "seo_title": "Freiraum für Indoor-Rutschen: Mess-Checkliste",
-    "seo_description": "Bereiten Sie Rutschenmaße, Ausstiegsraum-Aufzeichnungen und Installationsfragen für eine gerätespezifische Überprüfung vor, bevor Sie einen Indoor-Spielplatz bestellen.",
+    "seo_title": "Maßcheckliste für Indoor-Rutschen | NinescapeLand",
+    "seo_description": "Vorbereitung der Rutschenmaße und Installationsanforderungen vor der Bestellung eines Indoor-Spielplatzes.",
     "excerpt": "Bereiten Sie Rutschenmaße, Ausstiegsraum-Aufzeichnungen und Installationsfragen für eine gerätespezifische Überprüfung vor, bevor Sie einen Indoor-Spielplatz bestellen.",
     "keywords": [
       "Design",
@@ -102,8 +102,8 @@
   {
     "slug": "playground-netting-inspection",
     "title": "Netzinspektion auf Spielplätzen: Defekt- und Reparaturprotokoll",
-    "seo_title": "Netzinspektion auf Spielplätzen: Defekt- & Reparaturprotokoll",
-    "seo_description": "Dokumentieren Sie Netzdefekte, Befestigungsprobleme und Reparaturentscheidungen mit Herstelleranleitungen, identifizierten Teilen und einer dokumentierten Wiedereröffnungsprüfung.",
+    "seo_title": "Netzinspektion auf Spielplätzen | NinescapeLand",
+    "seo_description": "Dokumentation von Netzdefekten, Befestigungsproblemen und Reparaturen gemäß Herstelleranleitung.",
     "excerpt": "Dokumentieren Sie Netzdefekte, Befestigungsprobleme und Reparaturentscheidungen mit Herstelleranleitungen, identifizierten Teilen und einer dokumentierten Wiedereröffnungsprüfung.",
     "keywords": [
       "Sicherheit",
@@ -198,8 +198,8 @@
   {
     "slug": "indoor-playground-shipping-documents",
     "title": "Versanddokumente für Indoor-Spielplätze: Überprüfung der Packliste",
-    "seo_title": "Versanddokumente für Spielplätze: Packlisten-Überprüfung",
-    "seo_description": "Rechnungen, Packlisten und Transportunterlagen abgleichen; Zielanforderungen und Frachtfreigabe vor dem Versand bestätigen.",
+    "seo_title": "Versanddokumente für Spielplatzlieferungen | NinescapeLand",
+    "seo_description": "Abgleich von Rechnungen, Packlisten und Transportunterlagen vor dem Versand.",
     "excerpt": "Rechnungen, Packlisten und Transportunterlagen abgleichen; Zielanforderungen und Frachtfreigabe vor dem Versand bestätigen.",
     "keywords": [
       "Leitfäden",
@@ -231,7 +231,7 @@
       {
         "id": "release",
         "title": "Bestätigen Sie das Transportdokument und das Freigabeverfahren",
-        "html": "<p>Gehen Sie nicht davon aus, dass jeder Versand ein originales Papier-Konnossement benötigt. Das geeignete Dokument und die Freigabeschritte hängen von der Vereinbarung des Transporteurs ab, einschließlich eines Seefrachtbriefs oder Übergabeverfahrens. Holen Sie sich schriftliche Anweisungen für die tatsächliche Buchung und bestätigen Sie, wer zur Anforderung oder Entgegennahme der Freigabe berechtigt ist.</p><p>Transportfreigabe und Zollfreigabe sind separate Schritte. Fragen Sie den Transporteur oder Spediteur nach den Anforderungen an Transportdokumente und den Importeur oder Makler nach der Zielanmeldung. Eine digitale Kopie eines nicht verwandten Dokuments ist kein Ersatz für das für Ihren Versand vereinbarte Verfahren.</p>"
+        "html": "<p>Gehen Sie nicht davon aus, dass jeder Versand ein originales Papier-Konnossement benötigt. Das geeignete Dokument und die Freigabeschritte hängen von der Vereinbarung des Transporteurs ab, einschließlich eines Seefrachtbriefs oder Übergabeverfahrens. Holen Sie sich schriftliche Anweisungen für die tatsächliche Buchung und bestätigen Sie, wer zur Anforderung oder Entgegennahme der Freigabe berechtigt ist.</p><p>Transportfreigabe und Zollfreigabe sind separate Schritte. Fragen Sie den Transporteur oder Spediteur nach den Anforderungen an Transportdokumente und den Importeur oder Makler nach der Zielanmeldung. Eine digitale Kopie eines nicht verwandten Dokuments ist kein Ersatz für das für Ihren Versand vereinbarte Verfahren.</p><p><a href=\"https://www.maersk.com/support/faqs/what-is-seaway-bill\" target=\"_blank\" rel=\"noopener noreferrer\">Maersk erklärt, dass ein Seefrachtbrief kein Eigentumsdokument ist und keine Originale ausgestellt werden</a>. Dies unterstützt die Unterscheidung von Dokumenttypen; bestätigen Sie die Freigabeanweisungen für Ihre tatsächliche Sendung direkt mit dem Transportunternehmen.</p>"
       },
       {
         "id": "arrival",
@@ -262,6 +262,10 @@
       {
         "url": "https://www.cbp.gov/trade/programs-administration/entry-summary",
         "label": "U.S. CBP: Eingangszusammenfassung, Beispiel Vereinigte Staaten"
+      },
+      {
+        "url": "https://www.maersk.com/support/faqs/what-is-seaway-bill",
+        "label": "Maersk: Unterscheidung zwischen Seefrachtbrief und Originaldokument"
       }
     ],
     "figures": [
@@ -292,8 +296,8 @@
   {
     "slug": "indoor-playground-pre-shipment-inspection",
     "title": "Vorab-Inspektion von Indoor-Spielplätzen: Nachweis-Checkliste",
-    "seo_title": "Vorab-Inspektion von Spielplätzen: Nachweis-Checkliste",
-    "seo_description": "Organisieren Sie Zeichnungsrevisionen, Inspektionsfotos, Produktberichte und Korrekturmaßnahmenprotokolle, bevor Sie die Versandfreigabe für Spielplatzgeräte erteilen.",
+    "seo_title": "Vorabinspektion von Spielplatzgeräten | NinescapeLand",
+    "seo_description": "Prüfung von Zeichnungsrevisionen, Inspektionsfotos und Produktberichten vor dem Versand.",
     "excerpt": "Organisieren Sie Zeichnungsrevisionen, Inspektionsfotos, Produktberichte und Korrekturmaßnahmenprotokolle, bevor Sie die Versandfreigabe für Spielplatzgeräte erteilen.",
     "keywords": [
       "Leitfäden",
@@ -325,7 +329,7 @@
       {
         "id": "reports",
         "title": "Überprüfen Sie Berichtsidentität und Bewertungsumfang",
-        "html": "<p>Stimmen Sie Berichtskennungen, Gerätemodelle, Konfiguration und anwendbare Standardausgaben mit dem Auftrag ab. Kontaktieren Sie die ausstellende Organisation über einen verifizierten Kanal, wenn Authentizität oder Abdeckung unklar sind. Ein Werk-Qualitätssystem-Zertifikat und eine Produktbewertung beantworten unterschiedliche Fragen.</p><p>Der <a href=\"https://store.astm.org/f1918-21.html\" target=\"_blank\" rel=\"noopener noreferrer\">ASTM F1918-21-Umfang</a> hilft bei der Identifizierung von weich gepolsterten Spielgeräten, beweist aber nicht, dass ein bestimmtes Produkt Tests bestanden hat. Leiten Sie keine Konformität aus einem Standardnamen, einem Logo oder einer generischen CE-Erklärung ab. Bestätigen Sie Anforderungen für das tatsächliche Produkt und Ziel mit qualifizierten Gutachtern.</p>"
+        "html": "<p>Stimmen Sie Berichtskennungen, Gerätemodelle, Konfiguration und anwendbare Standardausgaben mit dem Auftrag ab. Kontaktieren Sie die ausstellende Organisation über einen verifizierten Kanal, wenn Authentizität oder Abdeckung unklar sind. Ein Werk-Qualitätssystem-Zertifikat und eine Produktbewertung beantworten unterschiedliche Fragen.</p><p>Der <a href=\"https://store.astm.org/f1918-21.html\" target=\"_blank\" rel=\"noopener noreferrer\">ASTM F1918-21-Umfang</a> hilft bei der Identifizierung von weich gepolsterten Spielgeräten, beweist aber nicht, dass ein bestimmtes Produkt Tests bestanden hat. Leiten Sie keine Konformität aus einem Standardnamen, einem Logo oder einer generischen CE-Erklärung ab. Bestätigen Sie Anforderungen für das tatsächliche Produkt und Ziel mit qualifizierten Gutachtern.</p><p><a href=\"https://www.iso.org/standard/9001\" target=\"_blank\" rel=\"noopener noreferrer\">ISO 9001 beschreibt Anforderungen an ein Qualitätsmanagementsystem</a>, nicht die Spezifikation oder Zertifizierung jedes Spielplatzprodukts. Fordern Sie den spezifischen Produktnachweis separat von etwaigen Zertifikaten des Fabrikmanagementsystems an.</p>"
       },
       {
         "id": "photo-list",
@@ -356,6 +360,10 @@
       {
         "url": "https://store.astm.org/f1918-21.html",
         "label": "ASTM F1918-21: Umfang für weich gepolsterte Spielgeräte"
+      },
+      {
+        "url": "https://www.iso.org/standard/9001",
+        "label": "ISO 9001: Umfang des Qualitätsmanagementsystems"
       }
     ],
     "figures": [
@@ -386,8 +394,8 @@
   {
     "slug": "indoor-playground-equipment-standardization",
     "title": "Standardisierung von Indoor-Spielplatzausrüstung: BOM-Kontrolle",
-    "seo_title": "Standardisierung von Spielplatzausrüstung: BOM-Kontrolle",
-    "seo_description": "Kontrollieren Sie Teilenummern, genehmigte Spezifikationen und Ersatzteile über Spielplatzstandorte hinweg, während standortspezifische Technik und Compliance-Prüfung erhalten bleiben.",
+    "seo_title": "Standardisierung von Spielplatzausrüstung | NinescapeLand",
+    "seo_description": "Verwaltung von Teilenummern, Spezifikationen und Ersatzteilen für standortübergreifende Compliance.",
     "excerpt": "Kontrollieren Sie Teilenummern, genehmigte Spezifikationen und Ersatzteile über Spielplatzstandorte hinweg, während standortspezifische Technik und Compliance-Prüfung erhalten bleiben.",
     "keywords": [
       "business",
@@ -419,7 +427,7 @@
       {
         "id": "substitutions",
         "title": "Genehmigen Sie Ersatzteile vor der Produktion",
-        "html": "<p>Definieren Sie, wer eine Änderung vorschlagen und genehmigen kann. Fragen Sie nach dem Grund, betroffenen Teilenummern, technischer Überprüfung, relevanten Bewertungsnachweisen und Auswirkungen auf Installation oder Wartung. Aktualisieren Sie die Bestell- und Installationsaufzeichnungen, wenn eine Änderung akzeptiert wird.</p><p>Akzeptieren Sie keine „gleichwertigen“ Teile nur aufgrund von Farbe, Katalogabmessungen oder Preis. Ähnlich aussehende Teile können unterschiedliche Schnittstellen oder Anforderungen haben. Mehrere Lieferanten können über dieselbe kontrollierte Spezifikation bewertet werden; die Verwendung eines einzigen Lieferanten allein ist keine Qualitätsgarantie.</p>"
+        "html": "<p>Definieren Sie, wer eine Änderung vorschlagen und genehmigen kann. Fragen Sie nach dem Grund, betroffenen Teilenummern, technischer Überprüfung, relevanten Bewertungsnachweisen und Auswirkungen auf Installation oder Wartung. Aktualisieren Sie die Bestell- und Installationsaufzeichnungen, wenn eine Änderung akzeptiert wird.</p><p>Akzeptieren Sie keine „gleichwertigen“ Teile nur aufgrund von Farbe, Katalogabmessungen oder Preis. Ähnlich aussehende Teile können unterschiedliche Schnittstellen oder Anforderungen haben. Mehrere Lieferanten können über dieselbe kontrollierte Spezifikation bewertet werden; die Verwendung eines einzigen Lieferanten allein ist keine Qualitätsgarantie.</p><p><a href=\"https://www.iso.org/standard/9001\" target=\"_blank\" rel=\"noopener noreferrer\">ISO 9001 betrifft das Qualitätsmanagementsystem einer Organisation</a>. Ein Zertifikat für das Managementsystem sollte nicht als Genehmigung für jede Komponente oder jeden installierten Standort dargestellt werden.</p>"
       },
       {
         "id": "spares",
@@ -450,6 +458,10 @@
       {
         "url": "https://store.astm.org/f1918-21.html",
         "label": "ASTM F1918-21: Geltungsbereich für weich umschlossene Spielgeräte"
+      },
+      {
+        "url": "https://www.iso.org/standard/9001",
+        "label": "ISO 9001: Umfang des Qualitätsmanagementsystems"
       }
     ],
     "figures": [

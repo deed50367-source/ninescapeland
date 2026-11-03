@@ -2,8 +2,8 @@
   {
     "slug": "indoor-playground-slide-clearance",
     "title": "Espace de dégagement pour toboggan de terrain de jeu intérieur : Liste de vérification des mesures",
-    "seo_title": "Espace de dégagement pour toboggan intérieur : Liste de vérification",
-    "seo_description": "Préparez les dimensions du toboggan, les enregistrements d'espace de sortie et les questions d'installation pour une revue spécifique à l'équipement avant de commander un terrain de jeu intérieur.",
+    "seo_title": "Vérification espace toboggan intérieur | NinescapeLand",
+    "seo_description": "Contrôlez dimensions, zone de réception et installation pour un toboggan intérieur sécurisé.",
     "excerpt": "Préparez les dimensions du toboggan, les enregistrements d'espace de sortie et les questions d'installation pour une revue spécifique à l'équipement avant de commander un terrain de jeu intérieur.",
     "keywords": [
       "conception",
@@ -102,8 +102,8 @@
   {
     "slug": "playground-netting-inspection",
     "title": "Inspection des filets de terrain de jeu : journal des défauts et réparations",
-    "seo_title": "Inspection des filets de jeu : journal des défauts & réparations",
-    "seo_description": "Enregistrez les défauts des filets, les problèmes de fixation et les décisions de réparation en suivant les instructions du fabricant, les pièces identifiées et une revue documentée de réouverture.",
+    "seo_title": "Contrôle des filets de sécurité | NinescapeLand",
+    "seo_description": "Identification des défauts, vérification des fixations et suivi des réparations selon normes.",
     "excerpt": "Enregistrez les défauts des filets, les problèmes de fixation et les décisions de réparation en suivant les instructions du fabricant, les pièces identifiées et une revue documentée de réouverture.",
     "keywords": [
       "sécurité",
@@ -198,8 +198,8 @@
   {
     "slug": "indoor-playground-shipping-documents",
     "title": "Documents d'expédition pour aires de jeux intérieures : Vérification de la liste de colisage",
-    "seo_title": "Documents d'expédition pour aires de jeux : Revue de la liste de colisage",
-    "seo_description": "Vérifiez les factures, listes de colisage et documents de transport ; confirmez les exigences de destination et les modalités de libération de la cargaison avant l'expédition.",
+    "seo_title": "Vérification documents d'expédition | NinescapeLand",
+    "seo_description": "Confirmation des factures, listes de colisage et conformité aux exigences de destination.",
     "excerpt": "Vérifiez les factures, listes de colisage et documents de transport ; confirmez les exigences de destination et les modalités de libération de la cargaison avant l'expédition.",
     "keywords": [
       "guides",
@@ -231,7 +231,7 @@
       {
         "id": "release",
         "title": "Confirmez le document de transport et le processus de libération",
-        "html": "<p>Ne supposez pas que chaque expédition nécessite un original papier de connaissement. Le document approprié et les étapes de libération dépendent des arrangements du transporteur, y compris tout connaissement maritime ou procédure de remise. Obtenez des instructions écrites pour la réservation réelle et confirmez qui est autorisé à demander ou recevoir la libération.</p><p>La libération de transport et le dédouanement sont des étapes distinctes. Demandez au transporteur ou au transitaire les exigences en matière de documents de transport et à l'importateur ou au courtier les formalités d'entrée à destination. Une copie numérique d'un document non lié n'est pas un substitut au processus convenu pour votre expédition.</p>"
+        "html": "<p>Ne supposez pas que chaque expédition nécessite un original papier de connaissement. Le document approprié et les étapes de libération dépendent des arrangements du transporteur, y compris tout connaissement maritime ou procédure de remise. Obtenez des instructions écrites pour la réservation réelle et confirmez qui est autorisé à demander ou recevoir la libération.</p><p>La libération de transport et le dédouanement sont des étapes distinctes. Demandez au transporteur ou au transitaire les exigences en matière de documents de transport et à l'importateur ou au courtier les formalités d'entrée à destination. Une copie numérique d'un document non lié n'est pas un substitut au processus convenu pour votre expédition.</p><p><a href=\"https://www.maersk.com/support/faqs/what-is-seaway-bill\" target=\"_blank\" rel=\"noopener noreferrer\">Maersk explique qu'une lettre de transport maritime n'est pas un document de propriété et qu'aucun original n'est émis</a>. Cela permet de distinguer les types de documents ; confirmez les instructions de libération pour votre expédition directement avec le transporteur.</p>"
       },
       {
         "id": "arrival",
@@ -262,6 +262,10 @@
       {
         "url": "https://www.cbp.gov/trade/programs-administration/entry-summary",
         "label": "U.S. CBP : processus de résumé d'entrée, exemple des États-Unis"
+      },
+      {
+        "url": "https://www.maersk.com/support/faqs/what-is-seaway-bill",
+        "label": "Maersk : distinction entre lettre de transport maritime et document original"
       }
     ],
     "figures": [
@@ -292,8 +296,8 @@
   {
     "slug": "indoor-playground-pre-shipment-inspection",
     "title": "Inspection pré-expédition d'aire de jeux intérieure : Liste de vérification des preuves",
-    "seo_title": "Inspection pré-expédition d'aire de jeux : Liste des preuves",
-    "seo_description": "Organisez les révisions de plans, photos d'inspection, rapports produits et dossiers d'actions correctives avant de valider l'expédition des équipements de jeu.",
+    "seo_title": "Contrôle avant expédition | NinescapeLand",
+    "seo_description": "Validation des plans, rapports et corrections pour équipements de jeux avant livraison.",
     "excerpt": "Organisez les révisions de plans, photos d'inspection, rapports produits et dossiers d'actions correctives avant de valider l'expédition des équipements de jeu.",
     "keywords": [
       "guides",
@@ -325,7 +329,7 @@
       {
         "id": "reports",
         "title": "Vérifiez l'identité et le champ d'évaluation des rapports",
-        "html": "<p>Faites correspondre les identifiants de rapport, modèles d'équipement, configuration et éditions de normes applicables à la commande. Contactez l'organisme émetteur via un canal vérifié en cas de doute sur l'authenticité ou la couverture. Un certificat de système qualité d'usine et une évaluation de produit répondent à des questions différentes.</p><p>Le <a href=\"https://store.astm.org/f1918-21.html\" target=\"_blank\" rel=\"noopener noreferrer\">champ ASTM F1918-21</a> aide à identifier les équipements de jeu souples mais ne prouve pas qu'un produit spécifique a passé les tests. Ne déduisez pas la conformité d'un nom de norme, d'un logo ou d'une déclaration CE générique. Confirmez les exigences pour le produit réel et la destination avec des examinateurs qualifiés.</p>"
+        "html": "<p>Faites correspondre les identifiants de rapport, modèles d'équipement, configuration et éditions de normes applicables à la commande. Contactez l'organisme émetteur via un canal vérifié en cas de doute sur l'authenticité ou la couverture. Un certificat de système qualité d'usine et une évaluation de produit répondent à des questions différentes.</p><p>Le <a href=\"https://store.astm.org/f1918-21.html\" target=\"_blank\" rel=\"noopener noreferrer\">champ ASTM F1918-21</a> aide à identifier les équipements de jeu souples mais ne prouve pas qu'un produit spécifique a passé les tests. Ne déduisez pas la conformité d'un nom de norme, d'un logo ou d'une déclaration CE générique. Confirmez les exigences pour le produit réel et la destination avec des examinateurs qualifiés.</p><p><a href=\"https://www.iso.org/standard/9001\" target=\"_blank\" rel=\"noopener noreferrer\">La norme ISO 9001 décrit les exigences relatives à un système de management de la qualité</a>, et non les spécifications ou la certification de chaque produit de terrain de jeu. Demandez les preuves spécifiques au produit séparément de tout certificat de système de management d'usine.</p>"
       },
       {
         "id": "photo-list",
@@ -356,6 +360,10 @@
       {
         "url": "https://store.astm.org/f1918-21.html",
         "label": "ASTM F1918-21 : champ pour les équipements de jeu souples"
+      },
+      {
+        "url": "https://www.iso.org/standard/9001",
+        "label": "ISO 9001 : portée du système de management de la qualité"
       }
     ],
     "figures": [
@@ -386,8 +394,8 @@
   {
     "slug": "indoor-playground-equipment-standardization",
     "title": "Standardisation des équipements de terrains de jeux intérieurs : Contrôle de la nomenclature",
-    "seo_title": "Standardisation des équipements de jeux : Contrôle de la nomenclature",
-    "seo_description": "Contrôlez les numéros de pièces, les spécifications approuvées et les substitutions entre les sites tout en conservant l'ingénierie et la conformité spécifiques à chaque lieu.",
+    "seo_title": "Standardisation des équipements | NinescapeLand",
+    "seo_description": "Gestion des pièces, spécifications et substitutions tout en respectant les normes locales.",
     "excerpt": "Contrôlez les numéros de pièces, les spécifications approuvées et les substitutions entre les sites tout en conservant l'ingénierie et la conformité spécifiques à chaque lieu.",
     "keywords": [
       "business",
@@ -419,7 +427,7 @@
       {
         "id": "substitutions",
         "title": "Approuver les substitutions avant leur entrée en production",
-        "html": "<p>Définissez qui peut proposer et autoriser un changement. Demandez la raison, les numéros de pièces affectés, la revue d'ingénierie, les preuves d'évaluation pertinentes et les implications pour l'installation ou la maintenance. Mettez à jour les enregistrements de commande et d'installation lorsqu'un changement est accepté.</p><p>N'acceptez pas « équivalent » basé uniquement sur la couleur, les dimensions du catalogue ou le prix. Des pièces similaires peuvent avoir des interfaces ou des exigences différentes. Plusieurs fournisseurs peuvent être évalués via la même spécification contrôlée ; utiliser un seul fournisseur n'est pas une garantie de qualité.</p>"
+        "html": "<p>Définissez qui peut proposer et autoriser un changement. Demandez la raison, les numéros de pièces affectés, la revue d'ingénierie, les preuves d'évaluation pertinentes et les implications pour l'installation ou la maintenance. Mettez à jour les enregistrements de commande et d'installation lorsqu'un changement est accepté.</p><p>N'acceptez pas « équivalent » basé uniquement sur la couleur, les dimensions du catalogue ou le prix. Des pièces similaires peuvent avoir des interfaces ou des exigences différentes. Plusieurs fournisseurs peuvent être évalués via la même spécification contrôlée ; utiliser un seul fournisseur n'est pas une garantie de qualité.</p><p><a href=\"https://www.iso.org/standard/9001\" target=\"_blank\" rel=\"noopener noreferrer\">La norme ISO 9001 concerne le système de management de la qualité d'une organisation</a>. Un certificat de système de management ne doit pas être présenté comme une approbation de chaque composant ou de chaque installation.</p>"
       },
       {
         "id": "spares",
@@ -450,6 +458,10 @@
       {
         "url": "https://store.astm.org/f1918-21.html",
         "label": "ASTM F1918-21 : champ d'application pour les équipements de jeux souples"
+      },
+      {
+        "url": "https://www.iso.org/standard/9001",
+        "label": "ISO 9001 : portée du système de management de la qualité"
       }
     ],
     "figures": [
