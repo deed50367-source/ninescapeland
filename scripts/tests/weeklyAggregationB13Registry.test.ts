@@ -36,7 +36,7 @@ describe("October 30 aggregation coverage", () => {
     expect(result.description).toBe(result.description.trim());
   });
   test("all 30 discoverable URLs use the assigned domain and revision date", () => {
-    expect(B13_BASE_URL).toBe("https://ninescapeland.lovable.app");
+    expect(B13_BASE_URL).toBe("https://indoorplaygroundsolution.com");
     expect(B13_DATE).toBe("2026-10-30");
     const sitemap = readFileSync(new URL("../../public/sitemap.xml", import.meta.url), "utf8");
     for (const page of b13Pages) for (const language of B13_LANGUAGES) {
