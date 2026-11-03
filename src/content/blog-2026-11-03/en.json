@@ -1,0 +1,480 @@
+[
+  {
+    "slug": "indoor-playground-slide-clearance",
+    "title": "Indoor Playground Slide Clearance: Measurement Checklist",
+    "seo_title": "Indoor Slide Clearance: Measurement Checklist",
+    "seo_description": "Prepare slide dimensions, exit-space records and installation questions for an equipment-specific review before ordering an indoor playground.",
+    "excerpt": "Prepare slide dimensions, exit-space records and installation questions for an equipment-specific review before ordering an indoor playground.",
+    "keywords": [
+      "design",
+      "indoor playground slide clearance",
+      "indoor slide installation requirements",
+      "indoor playground slide dimensions"
+    ],
+    "author": "Gerry",
+    "cover": "https://gianldlquknsdhfpqqfe.supabase.co/storage/v1/object/public/assets/adaf5265-c979-48b7-b4c1-808e1e4b87b8/1768294592888-x69bgi.jpg",
+    "parents": [
+      "commercial-indoor-playground-slide-selection",
+      "blog/indoor-playground-ceiling-height"
+    ],
+    "sections": [
+      {
+        "id": "quick-answer",
+        "title": "Why is there no single slide-clearance number?",
+        "html": "<p>Indoor playground slide clearance must be confirmed for the actual slide, its enclosure, intended users and installation. Do not copy one exit-distance number into every commercial layout. A catalog footprint normally describes the equipment, but buyers must also obtain the required operating, access and maintenance spaces from the equipment designer.</p><p>This checklist helps you prepare a measurement brief. It does not calculate a compliant distance from deck height or replace the applicable technical standard. The <a href=\"https://store.astm.org/f1918-21.html\" target=\"_blank\" rel=\"noopener noreferrer\">published scope of ASTM F1918-21 concerns soft-contained play equipment</a>; it is not evidence for a universal clearance rule covering all indoor attractions. Confirm equipment classification and the applicable standard edition with the reviewer.</p>"
+      },
+      {
+        "id": "measure",
+        "title": "Measure from the proposed finished floor",
+        "html": "<p>Record the slide entry platform, chute, exit and runout in the same drawing revision. Note whether measurements describe supplied parts or the completed installation. If impact surfacing is not installed, list its planned build-up separately rather than assuming the structural floor is the final reference.</p><ul><li>Identify the slide model and orientation, including any enclosed exit.</li><li>Measure nearby walls, columns and other attractions from an agreed datum.</li><li>Map overhead services and access points without climbing or altering equipment.</li><li>Label unknown dimensions and request a safe survey by the relevant qualified person.</li></ul><p>A photograph can show an obstruction but cannot establish a dimension without a reliable reference. Keep survey results distinct from a concept rendering.</p>"
+      },
+      {
+        "id": "record",
+        "title": "Build a slide-dimensions review record",
+        "html": "<p>Use a review table to give the supplier and fit-out team the same information. Enter measured values in your project record; do not substitute generic example dimensions. Ask the designer to mark the complete required space on the approved drawing.</p><table><thead><tr><th>Field</th><th>Evidence to record</th><th>Confirmation</th></tr></thead><tbody><tr><td>Slide identification</td><td>Model, drawing revision and intended user group</td><td>Equipment supplier</td></tr><tr><td>Installed dimensions</td><td>Entry, chute, exit and supporting structure</td><td>Equipment designer</td></tr><tr><td>Finished-floor reference</td><td>Existing level and proposed surfacing build-up</td><td>Survey / fit-out team</td></tr><tr><td>Operating space</td><td>Exit movement, neighboring activity and access envelope</td><td>Equipment designer</td></tr><tr><td>Site obstructions</td><td>Measured position of columns, walls and services</td><td>Qualified surveyor</td></tr><tr><td>Unresolved conditions</td><td>Owner, action and current approval status</td><td>Project coordinator</td></tr></tbody></table><p>Retain the drawing revision alongside the table so an apparently small change cannot silently invalidate an earlier review.</p>"
+      },
+      {
+        "id": "circulation",
+        "title": "Separate slide-exit movement from surrounding traffic",
+        "html": "<p>Show entry queues, other attraction entrances, seating and service routes on the coordination drawing. Ask how a user leaves the slide and how staff can reach someone needing assistance. Check the complete arrangement rather than the chute alone.</p><p>Do not treat thicker mats as permission to reduce the specified operating space. Surfacing and spatial arrangements solve different issues and must be reviewed together. Moving a column, changing an exit direction or lowering a platform requires a revised review; it is not a field adjustment to authorize from a photograph.</p>"
+      },
+      {
+        "id": "installation",
+        "title": "Request installation requirements for this configuration",
+        "html": "<p>Obtain the relevant installation instructions, anchorage details, support requirements and inspection responsibilities before ordering. Identify which work belongs to the equipment installer and which requires the building contractor or engineer. Do not use this owner-side checklist as instructions to tighten anchors or perform load tests.</p><p>For scope comparison, <a href=\"https://store.astm.org/f1487-25.html\" target=\"_blank\" rel=\"noopener noreferrer\">ASTM F1487-25 addresses public-use playground equipment and excludes soft-contained play equipment</a>. A reference intended for another category must not be copied into the project without checking applicability.</p>"
+      },
+      {
+        "id": "approval",
+        "title": "Close the measurement brief before committing",
+        "html": "<p>Send the measured brief, obstruction photographs and intended attraction list to the equipment designer. Request written confirmation of required spaces and a list of unresolved conditions. Coordinate building, fire, accessibility and structural questions with the qualified local parties.</p><p>A 3D perspective is useful for discussing the arrangement, but it is not a survey, engineering calculation or operating permit. Use the linked slide-selection guide to compare configurations after the measurement brief is ready; use the ceiling-height article for the separate overhead-clearance record.</p>"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Does a catalog footprint include every required space?",
+        "a": "Do not assume it does. Ask the designer for the installed dimensions and the additional operating, access and maintenance envelope for that model."
+      },
+      {
+        "q": "Can thicker surfacing compensate for a smaller exit space?",
+        "a": "Do not substitute one for the other. Obtain written review of both the required spatial arrangement and the selected surfacing."
+      },
+      {
+        "q": "Does a 3D rendering establish approval?",
+        "a": "No. It supports coordination but does not replace measured drawings, equipment instructions, engineering or local review."
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://store.astm.org/f1918-21.html",
+        "label": "ASTM F1918-21: scope for soft-contained play equipment"
+      },
+      {
+        "url": "https://store.astm.org/f1487-25.html",
+        "label": "ASTM F1487-25: public-playground scope and exclusions"
+      }
+    ],
+    "figures": [
+      {
+        "src": "https://gianldlquknsdhfpqqfe.supabase.co/storage/v1/object/public/assets/adaf5265-c979-48b7-b4c1-808e1e4b87b8/1768294592888-x69bgi.jpg",
+        "alt": "Perspective render of an enclosed indoor play concept with slides",
+        "caption": "Discuss the slide arrangement using the concept, then measure the site independently. Site 3D concept render; not a test, inspection record or completed-project claim."
+      },
+      {
+        "src": "https://gianldlquknsdhfpqqfe.supabase.co/storage/v1/object/public/assets/dcbc5ed3-1863-4db6-bacf-59919b3abec6/1768294400190-bx9gha.jpg",
+        "alt": "Perspective render of ground-level soft play elements",
+        "caption": "Ground-level elements still need their own operating-space review. Site 3D concept render; not a test, inspection record or completed-project claim."
+      }
+    ],
+    "relatedLabels": [
+      "Commercial Indoor Playground Slide Selection",
+      "Indoor Playground Ceiling Height"
+    ],
+    "ui": {
+      "relatedTitle": "Related planning and operating guides",
+      "authorBio": "Gerry · NinescapeLand. General planning guidance; product instructions and qualified local review take priority.",
+      "faqTitle": "Frequently asked questions",
+      "sourcesTitle": "Sources and scope",
+      "sourceNote": "Source scopes checked on November 3, 2026. Public summaries do not establish product-specific test limits or local approval. Confirm the applicable edition and full requirements with qualified reviewers.",
+      "contactLabel": "Discuss your project with NinescapeLand",
+      "imageNote": "Site 3D concept render; not an inspection or certification record."
+    }
+  },
+  {
+    "slug": "playground-netting-inspection",
+    "title": "Playground Netting Inspection: Defect and Repair Log",
+    "seo_title": "Playground Netting Inspection: Defect & Repair Log",
+    "seo_description": "Record netting defects, attachment concerns and repair decisions using manufacturer instructions, identified parts and a documented reopening review.",
+    "excerpt": "Record netting defects, attachment concerns and repair decisions using manufacturer instructions, identified parts and a documented reopening review.",
+    "keywords": [
+      "safety",
+      "playground netting inspection",
+      "playground net attachment",
+      "playground netting replacement"
+    ],
+    "author": "Gerry",
+    "cover": "https://gianldlquknsdhfpqqfe.supabase.co/storage/v1/object/public/assets/adaf5265-c979-48b7-b4c1-808e1e4b87b8/1768294592888-x69bgi.jpg",
+    "parents": [
+      "commercial-indoor-playground-netting",
+      "blog/playground-inspection-checklist"
+    ],
+    "sections": [
+      {
+        "id": "quick-answer",
+        "title": "What should an owner-side netting check establish?",
+        "html": "<p>A playground netting inspection should identify visible damage, record its location and trigger the appropriate action. It is not a home-made tensile test or proof that a barrier remains suitable for use. Start with the equipment and net manufacturer’s instructions and the inspection plan approved for your facility.</p><p>Keep opening checks, periodic detailed inspection and specialist assessment distinct. Their frequency and scope depend on the installed equipment, exposure, use and applicable requirements; this guide does not impose one daily, weekly or monthly compliance schedule. <a href=\"https://store.astm.org/f1918-21.html\" target=\"_blank\" rel=\"noopener noreferrer\">ASTM F1918-21’s published scope identifies soft-contained play equipment</a>, not a universal owner-side test procedure for every type of net.</p>"
+      },
+      {
+        "id": "record",
+        "title": "Inspect by zone and record what is visible",
+        "html": "<p>Use the installation drawing or your own zone inventory to locate each net panel and connection. A useful log distinguishes an observation from its technical interpretation. Photograph the affected location from a safe position and record the panel reference, not simply “net damaged.”</p><ul><li>Look for broken strands, holes, rubbing and obvious changes from the documented installation.</li><li>Record loose or missing connections, exposed sharp edges and adjacent frame damage.</li><li>Identify the affected level, access route and nearby activity.</li><li>Describe uncertainty explicitly; do not turn a visual observation into a load-capacity claim.</li></ul>"
+      },
+      {
+        "id": "defect-log",
+        "title": "Use a defect and action log",
+        "html": "<p>The following fields form an operator record, not technical pass/fail criteria. Keep unresolved items open until the responsible qualified person documents the decision.</p><table><thead><tr><th>Record</th><th>What to enter</th><th>Why it matters</th></tr></thead><tbody><tr><td>Panel / zone</td><td>Drawing reference and part identification</td><td>Locate the same defect later</td></tr><tr><td>Observation</td><td>Visible condition, time and photograph references</td><td>Separate evidence from assumption</td></tr><tr><td>Immediate action</td><td>Affected area isolated under site procedures</td><td>Prevent use pending assessment</td></tr><tr><td>Assessment owner</td><td>Manufacturer / qualified inspector or repairer</td><td>Assign technical responsibility</td></tr><tr><td>Repair approval</td><td>Written method, compatible parts and revision</td><td>Avoid unapproved substitutions</td></tr><tr><td>Reopening record</td><td>Completed work and authorized review</td><td>Keep the decision traceable</td></tr></tbody></table><p>Paper or digital logs can be useful if they are legible, controlled and retrievable; a digital format alone does not establish compliance.</p>"
+      },
+      {
+        "id": "isolate",
+        "title": "Isolate affected equipment when a defect needs assessment",
+        "html": "<p>Follow the facility’s procedures to stop access to an affected area when a defect could compromise its intended function. Escalate the record to the manufacturer or qualified inspector rather than attempting an improvised repair to keep the attraction open.</p><p>Do not apply a percentage-damage rule, a fixed number of torn mesh squares or an assumed age limit from a general article. Damage at a critical connection may require action even when the visible area is small. The appropriate response must come from the actual equipment assessment.</p>"
+      },
+      {
+        "id": "attachment",
+        "title": "Confirm attachment instructions instead of improvising",
+        "html": "<p>Match the installed attachment arrangement to the approved documentation. Record the cord or connector identification, panel reference and connection detail for the reviewer. Do not prescribe a universal knot, wrap count, spacing or fastener material from this guide.</p><p>A hand pull does not establish tensile strength. Do not apply loads or disconnect a panel unless the approved method and competent personnel allow it. Replacing one fastener type with another can change the system; obtain written acceptance of the proposed replacement.</p>"
+      },
+      {
+        "id": "replacement",
+        "title": "Build a replacement and reopening request",
+        "html": "<p>Send the supplier panel dimensions, part references, existing attachment details and safe photographs. Ask whether repair is permitted or replacement is needed, who should do the work and what checks are required afterward. Record compatibility and the approved instruction revision with the work order.</p><p>Keep removed parts or evidence only as directed by the responsible parties and site procedures. A new-looking replacement does not by itself authorize reopening. Use the linked netting procurement guide to discuss specifications and the inspection checklist article to maintain the wider facility log.</p>"
+      }
+    ],
+    "faq": [
+      {
+        "q": "How often should netting be inspected?",
+        "a": "Follow the manufacturer’s instructions, the facility inspection plan and applicable local requirements. Adjust the plan through qualified review when use or conditions change."
+      },
+      {
+        "q": "Can staff patch any tear?",
+        "a": "No universal permission applies. Isolate the affected area as required and obtain an approved repair or replacement method from the responsible qualified party."
+      },
+      {
+        "q": "Does pulling the net by hand prove it can carry a load?",
+        "a": "No. A hand pull is not a documented strength test. Do not improvise load testing on installed play equipment."
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://store.astm.org/f1918-21.html",
+        "label": "ASTM F1918-21: scope for soft-contained play equipment"
+      }
+    ],
+    "figures": [
+      {
+        "src": "https://gianldlquknsdhfpqqfe.supabase.co/storage/v1/object/public/assets/adaf5265-c979-48b7-b4c1-808e1e4b87b8/1768294592888-x69bgi.jpg",
+        "alt": "Perspective render of a net-enclosed commercial indoor play concept",
+        "caption": "The enclosure is a concept illustration, not evidence of net condition. Site 3D concept render; not a test, inspection record or completed-project claim."
+      },
+      {
+        "src": "https://gianldlquknsdhfpqqfe.supabase.co/storage/v1/object/public/assets/dcbc5ed3-1863-4db6-bacf-59919b3abec6/1768294400190-bx9gha.jpg",
+        "alt": "Perspective render of soft play shapes",
+        "caption": "Keep inspection records specific to actual installed equipment. Site 3D concept render; not a test, inspection record or completed-project claim."
+      }
+    ],
+    "relatedLabels": [
+      "Commercial Indoor Playground Netting",
+      "Playground Inspection Checklist"
+    ],
+    "ui": {
+      "relatedTitle": "Related planning and operating guides",
+      "authorBio": "Gerry · NinescapeLand. General planning guidance; product instructions and qualified local review take priority.",
+      "faqTitle": "Frequently asked questions",
+      "sourcesTitle": "Sources and scope",
+      "sourceNote": "Source scopes checked on November 3, 2026. Public summaries do not establish product-specific test limits or local approval. Confirm the applicable edition and full requirements with qualified reviewers.",
+      "contactLabel": "Discuss your project with NinescapeLand",
+      "imageNote": "Site 3D concept render; not an inspection or certification record."
+    }
+  },
+  {
+    "slug": "indoor-playground-shipping-documents",
+    "title": "Indoor Playground Shipping Documents: Packing List Review",
+    "seo_title": "Playground Shipping Documents: Packing List Review",
+    "seo_description": "Cross-check invoices, packing lists and transport records; confirm destination requirements and cargo-release arrangements before shipment.",
+    "excerpt": "Cross-check invoices, packing lists and transport records; confirm destination requirements and cargo-release arrangements before shipment.",
+    "keywords": [
+      "guides",
+      "indoor playground shipping documents",
+      "playground equipment packing list",
+      "indoor playground import documentation"
+    ],
+    "author": "Gerry",
+    "cover": "https://gianldlquknsdhfpqqfe.supabase.co/storage/v1/object/public/assets/adaf5265-c979-48b7-b4c1-808e1e4b87b8/1768294592888-x69bgi.jpg",
+    "parents": [
+      "indoor-playground-equipment-import-shipping-terms"
+    ],
+    "sections": [
+      {
+        "id": "quick-answer",
+        "title": "Which shipping documents should be confirmed?",
+        "html": "<p>Start with the commercial invoice, packing list and the transport record relevant to the shipment. Confirm additional origin, insurance, inspection or destination-agency documents with the importer, broker and carrier. There is no global five-document list that guarantees clearance for every indoor playground shipment.</p><p>This article is a document-consistency workflow, not a tariff ruling or freight quotation. The <a href=\"https://www.cbp.gov/trade/programs-administration/entry-summary\" target=\"_blank\" rel=\"noopener noreferrer\">U.S. CBP entry-summary guidance</a> is an example of a destination-specific process. Other destinations and entry types can require different information and procedures.</p>"
+      },
+      {
+        "id": "responsibility",
+        "title": "Assign the document owner before loading",
+        "html": "<p>Ask the seller, buyer, broker and forwarder which party prepares each record and who verifies it. Distinguish export paperwork, transport arrangements, destination entry and equipment conformity documentation. A product test report is not automatically a required customs certificate, and cargo clearance is not permission to operate the venue.</p><table><thead><tr><th>Document / record</th><th>Review focus</th><th>Confirm with</th></tr></thead><tbody><tr><td>Commercial invoice</td><td>Parties, goods description, value and agreed terms</td><td>Seller / importer / broker</td></tr><tr><td>Packing list</td><td>Package identifiers, quantities, weights and contents</td><td>Seller / receiving team</td></tr><tr><td>Transport record</td><td>Shipment identifiers and cargo-release arrangement</td><td>Carrier / forwarder</td></tr><tr><td>Origin evidence</td><td>Whether required and correct format for this entry</td><td>Importer / broker</td></tr><tr><td>Insurance evidence</td><td>Coverage and claims instructions if insurance is arranged</td><td>Policy provider / responsible party</td></tr><tr><td>Additional entry information</td><td>Destination and product-specific requirements</td><td>Importer / destination authority</td></tr></tbody></table><p>This table is a starting point for questions, not a declaration that every listed item is mandatory for every shipment.</p>"
+      },
+      {
+        "id": "packing-list",
+        "title": "Match each package to the equipment record",
+        "html": "<p>Cross-reference package numbers against the bill of materials and installation references. Check that the same revision is used for the order, package contents and assembly documents. Ask how mixed cartons and split consignments are identified.</p><ul><li>Compare package count with the transport booking and loading record.</li><li>Identify whether quantities are parts, sets or packages.</li><li>Distinguish net and gross weights and check consistent units.</li><li>Record dimensions and labels as provided; do not assume every item occupies one crate.</li><li>Resolve missing part references before loading, not after the installation crew arrives.</li></ul><p>An operator can check consistency without attempting to determine tariff classification from the packing list.</p>"
+      },
+      {
+        "id": "release",
+        "title": "Confirm the transport document and release process",
+        "html": "<p>Do not assume every shipment needs a paper original bill of lading. The appropriate document and release steps depend on the carrier’s arrangement, including any sea waybill or surrender procedure. Obtain written instructions for the actual booking and confirm who is authorized to request or receive release.</p><p>Transport release and customs release are separate steps. Ask the carrier or forwarder about transport-document requirements and the importer or broker about destination entry. A digital copy of an unrelated document is not a substitute for the process agreed for your shipment.</p>"
+      },
+      {
+        "id": "arrival",
+        "title": "Record arrival discrepancies without inventing claim deadlines",
+        "html": "<p>Before delivery, agree who checks the packages, where unloading occurs and how exceptions are documented safely. Compare visible package identifiers and condition with the expected list. Photograph damage and retain delivery exceptions through the carrier’s and insurer’s instructed channels.</p><p>If contents do not match, record the affected package and part numbers and notify the responsible parties promptly. Follow the actual contract, transport and insurance claim procedures; this guide does not provide a universal claim deadline or guarantee reimbursement.</p>"
+      },
+      {
+        "id": "archive",
+        "title": "Keep the shipment file and unresolved questions together",
+        "html": "<p>Retain the order revision, approved packing list, invoice, transport record, entry documents and discrepancy correspondence according to applicable legal and contractual requirements. Do not use a generic article to set one worldwide retention period.</p><p>Ask a qualified broker to confirm classification for the actual goods and destination rather than copying a single HS code. Resolve requirements for any replacement-parts consignment independently. Use the shipping-terms topic for cost and responsibility allocation; this checklist focuses on whether the documents tell the same shipment story.</p>"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Is there one HS code for every indoor playground shipment?",
+        "a": "Do not assume so. Classification depends on the goods and the destination tariff system. Obtain shipment-specific advice from the responsible broker or authority."
+      },
+      {
+        "q": "Must every shipment use an original paper bill of lading?",
+        "a": "No universal rule applies. Confirm the actual transport document and release arrangement with the carrier or forwarder, separately from customs entry."
+      },
+      {
+        "q": "Are origin and insurance certificates always required?",
+        "a": "Requirements vary with the entry procedure, trade arrangements and coverage. Confirm whether each document is needed for the specific shipment."
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.cbp.gov/trade/programs-administration/entry-summary",
+        "label": "U.S. CBP: entry-summary process, United States example"
+      }
+    ],
+    "figures": [
+      {
+        "src": "https://gianldlquknsdhfpqqfe.supabase.co/storage/v1/object/public/assets/adaf5265-c979-48b7-b4c1-808e1e4b87b8/1768294592888-x69bgi.jpg",
+        "alt": "Perspective render of modular commercial indoor play equipment",
+        "caption": "Use actual component and package identifiers for shipping records. Site 3D concept render; not a test, inspection record or completed-project claim."
+      },
+      {
+        "src": "https://gianldlquknsdhfpqqfe.supabase.co/storage/v1/object/public/assets/dcbc5ed3-1863-4db6-bacf-59919b3abec6/1768294400190-bx9gha.jpg",
+        "alt": "Perspective render of soft play components",
+        "caption": "The concept does not show packed cargo or prove shipment completion. Site 3D concept render; not a test, inspection record or completed-project claim."
+      }
+    ],
+    "relatedLabels": [
+      "Indoor Playground Equipment Import and Shipping Terms"
+    ],
+    "ui": {
+      "relatedTitle": "Related planning and operating guides",
+      "authorBio": "Gerry · NinescapeLand. General planning guidance; product instructions and qualified local review take priority.",
+      "faqTitle": "Frequently asked questions",
+      "sourcesTitle": "Sources and scope",
+      "sourceNote": "Source scopes checked on November 3, 2026. Public summaries do not establish product-specific test limits or local approval. Confirm the applicable edition and full requirements with qualified reviewers.",
+      "contactLabel": "Discuss your project with NinescapeLand",
+      "imageNote": "Site 3D concept render; not an inspection or certification record."
+    }
+  },
+  {
+    "slug": "indoor-playground-pre-shipment-inspection",
+    "title": "Indoor Playground Pre-Shipment Inspection: Evidence Checklist",
+    "seo_title": "Playground Pre-Shipment Inspection: Evidence Checklist",
+    "seo_description": "Organize drawing revisions, inspection photos, product reports and corrective-action records before agreeing to release playground equipment for shipment.",
+    "excerpt": "Organize drawing revisions, inspection photos, product reports and corrective-action records before agreeing to release playground equipment for shipment.",
+    "keywords": [
+      "guides",
+      "indoor playground pre shipment inspection",
+      "playground factory acceptance checklist",
+      "playground equipment inspection photos"
+    ],
+    "author": "Gerry",
+    "cover": "https://gianldlquknsdhfpqqfe.supabase.co/storage/v1/object/public/assets/adaf5265-c979-48b7-b4c1-808e1e4b87b8/1768294592888-x69bgi.jpg",
+    "parents": [
+      "indoor-playground-factory-acceptance-checklist"
+    ],
+    "sections": [
+      {
+        "id": "quick-answer",
+        "title": "What should a pre-shipment evidence file contain?",
+        "html": "<p>An indoor playground pre-shipment inspection should compare the ordered configuration with agreed acceptance evidence before shipment. Identify the contract, drawing and bill-of-materials revisions; record the checks performed, results, unresolved defects and the authorized release decision.</p><p>This is a buyer-side evidence checklist, not instructions to conduct structural testing. Photos, certificates and a factory visit each have limits. None alone proves that the completed installation will be suitable for use or meet local operating requirements.</p>"
+      },
+      {
+        "id": "baseline",
+        "title": "Tie every inspection item to the approved baseline",
+        "html": "<p>Prepare an acceptance table before inspection. Reference the requirement, component, evidence method and responsible person. Use dimensions and tolerances from approved specifications, not arbitrary pipe thicknesses or generic values copied from another project.</p><table><thead><tr><th>Inspection record</th><th>Required reference</th><th>Evidence to retain</th></tr></thead><tbody><tr><td>Configuration</td><td>Order, drawing and BOM revision</td><td>Identified components and deviations</td></tr><tr><td>Measured item</td><td>Approved dimension and tolerance</td><td>Method, result and responsible person</td></tr><tr><td>Assembly check</td><td>Agreed scope and installation references</td><td>Fit-up record and unresolved issues</td></tr><tr><td>Conformity document</td><td>Product and assessment scope</td><td>Issuer, report identifier and coverage</td></tr><tr><td>Packaging</td><td>Agreed protection and package references</td><td>Labels, contents and condition record</td></tr><tr><td>Release decision</td><td>Accepted conditions and authority</td><td>Signed decision and remaining actions</td></tr></tbody></table><p>The checklist has contractual effect only to the extent agreed by the relevant parties. Do not assume an online template changes payment or acceptance terms.</p>"
+      },
+      {
+        "id": "assembly",
+        "title": "Agree the assembly and testing scope",
+        "html": "<p>Confirm which sections will be assembled and which checks can be performed at the factory. If only selected modules are trial-assembled, document the selection and the untested interfaces. Do not describe partial evidence as a complete installation test.</p><p>Any load testing must use the applicable approved method, qualified personnel and suitable equipment. Do not ask an operator to add improvised weights to a structure. Record limitations and responsibility for site installation and commissioning. There is no universal tail-payment percentage or full-assembly promise in this workflow.</p>"
+      },
+      {
+        "id": "reports",
+        "title": "Check report identity and assessment scope",
+        "html": "<p>Match report identifiers, equipment models, configuration and applicable standard editions to the order. Contact the issuing organization through a verified channel when authenticity or coverage is unclear. A factory quality-system certificate and a product assessment answer different questions.</p><p>The <a href=\"https://store.astm.org/f1918-21.html\" target=\"_blank\" rel=\"noopener noreferrer\">ASTM F1918-21 scope</a> helps identify soft-contained equipment but does not prove that a particular product passed testing. Do not infer compliance from a standard name, a logo or a generic CE statement. Confirm requirements for the actual product and destination with qualified reviewers.</p>"
+      },
+      {
+        "id": "photo-list",
+        "title": "Specify an identified photo and video list",
+        "html": "<p>Request an overview showing the identified order and close views linked to part numbers, measured items and the relevant drawing positions. Include connections, padding condition, labels and package references where these belong to the agreed inspection scope.</p><ul><li>Record the date, order reference and person collecting the evidence.</li><li>Ask for measurement references where a dimension needs checking.</li><li>Link each photo to the inspection table rather than accepting an unlabeled gallery.</li><li>Separate actual inspection media from design concepts and marketing images.</li></ul><p>Photos can document visible condition; they cannot establish hidden weld properties, chemical composition or load capacity. Use the specified technical evidence for those questions.</p>"
+      },
+      {
+        "id": "release",
+        "title": "Close corrective actions and document shipment release",
+        "html": "<p>List each nonconformity, its owner, agreed remedy and required recheck. Retain the original finding and the corrected evidence so the decision remains traceable. Ask the authorized person to record which conditions are closed and which remain open.</p><p>Check packaging against the actual agreed transport conditions, component needs and loading plan; do not prescribe one container type for every order. Release for shipment does not replace arrival inventory, site inspection or commissioning. Use the factory-acceptance topic to develop the broader purchasing framework.</p>"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Do inspection photos prove equipment safety?",
+        "a": "No. They document visible features within their scope. Product testing, engineering and installation review require their own applicable evidence."
+      },
+      {
+        "q": "Does factory acceptance replace site commissioning?",
+        "a": "No. Arrival condition, installation, building interfaces and local operating requirements must still be reviewed at the site."
+      },
+      {
+        "q": "Is there a standard final-payment percentage?",
+        "a": "No universal percentage is established here. Use the actual contract and agreed acceptance and payment conditions."
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://store.astm.org/f1918-21.html",
+        "label": "ASTM F1918-21: scope for soft-contained play equipment"
+      }
+    ],
+    "figures": [
+      {
+        "src": "https://gianldlquknsdhfpqqfe.supabase.co/storage/v1/object/public/assets/adaf5265-c979-48b7-b4c1-808e1e4b87b8/1768294592888-x69bgi.jpg",
+        "alt": "Perspective render of a modular indoor play structure",
+        "caption": "Use this concept for discussion, not as a pre-shipment inspection photograph. Site 3D concept render; not a test, inspection record or completed-project claim."
+      },
+      {
+        "src": "https://gianldlquknsdhfpqqfe.supabase.co/storage/v1/object/public/assets/dcbc5ed3-1863-4db6-bacf-59919b3abec6/1768294400190-bx9gha.jpg",
+        "alt": "Perspective render of soft play equipment",
+        "caption": "Actual acceptance evidence must identify the ordered components. Site 3D concept render; not a test, inspection record or completed-project claim."
+      }
+    ],
+    "relatedLabels": [
+      "Indoor Playground Factory Acceptance Checklist"
+    ],
+    "ui": {
+      "relatedTitle": "Related planning and operating guides",
+      "authorBio": "Gerry · NinescapeLand. General planning guidance; product instructions and qualified local review take priority.",
+      "faqTitle": "Frequently asked questions",
+      "sourcesTitle": "Sources and scope",
+      "sourceNote": "Source scopes checked on November 3, 2026. Public summaries do not establish product-specific test limits or local approval. Confirm the applicable edition and full requirements with qualified reviewers.",
+      "contactLabel": "Discuss your project with NinescapeLand",
+      "imageNote": "Site 3D concept render; not an inspection or certification record."
+    }
+  },
+  {
+    "slug": "indoor-playground-equipment-standardization",
+    "title": "Indoor Playground Equipment Standardization: BOM Control",
+    "seo_title": "Playground Equipment Standardization: BOM Control",
+    "seo_description": "Control part numbers, approved specifications and substitutions across playground locations while retaining site-specific engineering and compliance review.",
+    "excerpt": "Control part numbers, approved specifications and substitutions across playground locations while retaining site-specific engineering and compliance review.",
+    "keywords": [
+      "business",
+      "indoor playground equipment standardization",
+      "multi site playground procurement",
+      "playground equipment bill of materials"
+    ],
+    "author": "Gerry",
+    "cover": "https://gianldlquknsdhfpqqfe.supabase.co/storage/v1/object/public/assets/adaf5265-c979-48b7-b4c1-808e1e4b87b8/1768294592888-x69bgi.jpg",
+    "parents": [
+      "multi-site-indoor-playground-equipment-procurement"
+    ],
+    "sections": [
+      {
+        "id": "quick-answer",
+        "title": "What does equipment standardization actually control?",
+        "html": "<p>Indoor playground equipment standardization controls the approved component baseline, documentation and change process across orders. It can support consistent purchasing and replacement-part identification, but it does not make every building, installation or jurisdiction identical.</p><p>Distinguish reusable component specifications from site-specific engineering, circulation, accessibility and local approvals. A common brand appearance is not proof that every venue meets the same operating requirements. This guide focuses on BOM and revision control, not a guarantee of franchise rollout speed or savings.</p>"
+      },
+      {
+        "id": "site-variation",
+        "title": "Separate the shared baseline from local conditions",
+        "html": "<p>Identify items that can be repeated under the approved design and list conditions needing separate review for each location. Examples include floor and support arrangements, available space, building services and access routes. Keep variations explicit instead of forcing every site into the first location’s drawing.</p><p>Use standards only within their scope. <a href=\"https://store.astm.org/f1918-21.html\" target=\"_blank\" rel=\"noopener noreferrer\">ASTM F1918-21 concerns soft-contained play equipment</a>; it does not establish one pipe thickness for every structure. Rope activities, trampolines and climbing features require their own classification and applicability review rather than a blanket certificate covering the whole center.</p>"
+      },
+      {
+        "id": "bom",
+        "title": "Build a controlled bill of materials",
+        "html": "<p>A BOM should identify the ordered part and its approved specification, not just its appearance. Link the material grade, dimensions and tolerances to the approved engineering record. The table below defines record fields; it does not prescribe construction dimensions or declare a material suitable for every project.</p><table><thead><tr><th>BOM field</th><th>What to record</th><th>Control purpose</th></tr></thead><tbody><tr><td>Part number</td><td>Unique identifier and supplier reference</td><td>Identify the same component</td></tr><tr><td>Revision</td><td>Current approved drawing and specification</td><td>Prevent silent design changes</td></tr><tr><td>Specification</td><td>Approved material, dimensions and finish</td><td>Compare offers against the baseline</td></tr><tr><td>Quantity / location</td><td>Units and applicable sites or zones</td><td>Reconcile orders and delivery</td></tr><tr><td>Assessment reference</td><td>Applicable report and scope when required</td><td>Trace the supporting evidence</td></tr><tr><td>Substitution approval</td><td>Reviewer, reason and affected documents</td><td>Control compatibility changes</td></tr></tbody></table><p>Keep withdrawn revisions available for traceability, but mark which version is valid for new orders.</p>"
+      },
+      {
+        "id": "substitutions",
+        "title": "Approve substitutions before they enter production",
+        "html": "<p>Define who can propose and authorize a change. Ask for the reason, affected part numbers, engineering review, relevant assessment evidence and implications for installation or maintenance. Update the order and installation records when a change is accepted.</p><p>Do not accept “equivalent” based only on color, catalog dimensions or price. Similar-looking parts may have different interfaces or requirements. Multiple suppliers can be evaluated through the same controlled specification; using one supplier alone is not a quality guarantee.</p>"
+      },
+      {
+        "id": "spares",
+        "title": "Keep spare-part compatibility traceable",
+        "html": "<p>Maintain the installed configuration for each location and link maintenance orders to its revision. Before ordering a replacement, verify the part identifier, interfaces, instruction revision and any approved alternatives. Ask for written availability and warranty terms rather than promising universal long-term supply.</p><p>Record replacements and the qualified review needed before return to use. A shared part number helps identify the intended item, but it does not remove the need to check the actual installed system and condition.</p>"
+      },
+      {
+        "id": "receipt",
+        "title": "Close the order-to-receipt loop",
+        "html": "<p>Compare the purchase order, approved BOM, packing list and receiving record. Identify missing, excess or substituted parts by reference and revision. Assign an owner and action to each discrepancy instead of resolving it through informal messages alone.</p><p>Use the multi-site procurement topic for supplier scope and rollout planning; this article supplies the component-control record. Standardization supports repeatable documentation while retaining site-specific responsibility. It is not a substitute for engineering, testing or local approval.</p>"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Does one standard configuration establish compliance at every site?",
+        "a": "No. Review building conditions, installed configuration and applicable local requirements for each location."
+      },
+      {
+        "q": "Can a similar-looking part replace an approved component?",
+        "a": "Do not assume compatibility. Obtain the appropriate specification and interface review and record written substitution approval."
+      },
+      {
+        "q": "Can several suppliers use the same BOM?",
+        "a": "A controlled specification can support comparison, but each supplier’s actual parts, evidence and change process still need review."
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://store.astm.org/f1918-21.html",
+        "label": "ASTM F1918-21: scope for soft-contained play equipment"
+      }
+    ],
+    "figures": [
+      {
+        "src": "https://gianldlquknsdhfpqqfe.supabase.co/storage/v1/object/public/assets/adaf5265-c979-48b7-b4c1-808e1e4b87b8/1768294592888-x69bgi.jpg",
+        "alt": "Perspective render of modular indoor playground equipment",
+        "caption": "A concept can show visual consistency, not prove component interchangeability. Site 3D concept render; not a test, inspection record or completed-project claim."
+      },
+      {
+        "src": "https://gianldlquknsdhfpqqfe.supabase.co/storage/v1/object/public/assets/dcbc5ed3-1863-4db6-bacf-59919b3abec6/1768294400190-bx9gha.jpg",
+        "alt": "Perspective render of soft play elements",
+        "caption": "Keep approved specifications tied to actual part references. Site 3D concept render; not a test, inspection record or completed-project claim."
+      }
+    ],
+    "relatedLabels": [
+      "Multi-Site Indoor Playground Equipment Procurement"
+    ],
+    "ui": {
+      "relatedTitle": "Related planning and operating guides",
+      "authorBio": "Gerry · NinescapeLand. General planning guidance; product instructions and qualified local review take priority.",
+      "faqTitle": "Frequently asked questions",
+      "sourcesTitle": "Sources and scope",
+      "sourceNote": "Source scopes checked on November 3, 2026. Public summaries do not establish product-specific test limits or local approval. Confirm the applicable edition and full requirements with qualified reviewers.",
+      "contactLabel": "Discuss your project with NinescapeLand",
+      "imageNote": "Site 3D concept render; not an inspection or certification record."
+    }
+  }
+]
