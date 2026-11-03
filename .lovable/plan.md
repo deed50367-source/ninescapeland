@@ -35,7 +35,7 @@
 6. FAQ：目录尺寸是否包含使用空间、加厚垫能否代替空间、效果图是否等于审批
 
 主词：`indoor playground slide clearance`；辅助：`indoor slide installation requirements`、`indoor playground slide dimensions`。
-关联专题：`/indoor-playground-slides`；另链接既有净高文章。
+关联专题：`/commercial-indoor-playground-slide-selection`；另链接既有净高文章。
 
 ### 2. Playground Netting Inspection: Defect and Repair Log
 **任务：**指导运营人员形成缺陷记录和维修申请，不重复围网材料采购专题。
@@ -48,7 +48,7 @@
 6. FAQ：频次由什么确定、能否自行修补、手拉是否证明承载能力
 
 主词：`playground netting inspection`；辅助：`playground net attachment`、`playground netting replacement`。
-关联专题：`/indoor-playground-netting`；另链接既有日常巡检文章。
+关联专题：`/commercial-indoor-playground-netting`；另链接既有日常巡检文章。
 
 ### 3. Indoor Playground Shipping Documents: Packing List Review
 **任务：**检查文件之间是否一致，不重复运输条款责任专题。
