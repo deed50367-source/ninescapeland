@@ -1,6 +1,6 @@
 import { useTranslation } from "react-i18next";
 import { Link, useLocation, useParams } from "react-router-dom";
-import { Mail, Phone, MapPin, Facebook, Linkedin, Youtube, Instagram, Globe } from "lucide-react";
+import { Mail, Phone, MapPin, Linkedin, Youtube, Instagram, Globe } from "lucide-react";
 import { useRTL } from "@/hooks/useRTL";
 
 import { useLocalizedPath } from "@/hooks/useLocalizedPath";
@@ -11,7 +11,6 @@ import { supabase } from "@/integrations/supabase/client";
 import { languages } from "@/i18n/config";
 
 const socialLinks = [
-  { icon: Facebook, href: "https://www.facebook.com/ninescapeland", label: "Facebook" },
   { icon: Youtube, href: "https://www.youtube.com/@ninescapeland", label: "YouTube" },
   { icon: Linkedin, href: "https://www.linkedin.com/company/ninescapeland", label: "LinkedIn" },
   { icon: Instagram, href: "https://www.instagram.com/ninescapeland", label: "Instagram" },

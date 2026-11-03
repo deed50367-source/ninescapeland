@@ -33,7 +33,6 @@ export const OrganizationSchema = ({
     addressCountry: "CN"
   },
   sameAs = [
-    "https://www.facebook.com/ninescapeland",
     "https://www.youtube.com/@ninescapeland",
     "https://www.linkedin.com/company/ninescapeland",
     "https://www.instagram.com/ninescapeland"
