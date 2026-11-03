@@ -31,6 +31,12 @@ const BASE_URL = `http://localhost:${PORT}`;
 
 // All core routes to prerender
 const CORE_ROUTES = [
+  "/commercial-indoor-playground-slide-selection",
+  "/commercial-indoor-playground-netting",
+  "/indoor-playground-equipment-import-shipping-terms",
+  "/indoor-playground-factory-acceptance-checklist",
+  "/multi-site-indoor-playground-equipment-procurement",
+
   "/private-indoor-playground-party-room-design",
   "/first-birthday-soft-play-equipment-for-venues",
   "/commercial-indoor-playground-tunnels-and-tubes",
