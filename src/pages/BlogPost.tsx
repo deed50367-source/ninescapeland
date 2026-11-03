@@ -23,12 +23,10 @@ import { format } from "date-fns";
 import { Skeleton } from "@/components/ui/skeleton";
 import { Button } from "@/components/ui/button";
 import { useEffect } from "react";
-import weeklyEnglish from "@/content/blog-2026-10-30/en.json";
-import { weeklyBlogSlugs } from "@/config/weeklyBlogMatrix";
+import { reviewedBlogArticles } from "@/config/reviewedBlogContent";
+import { novemberBlogAuthor } from "@/config/novemberBlogMatrix";
+import { WeeklyBlogLinks } from "@/components/WeeklyBlogLinks";
 import { FAQSchema } from "@/components/StructuredData";
-
-type WeeklyArticles = typeof weeklyEnglish;
-const weeklyBundles = import.meta.glob<{ default: WeeklyArticles }>("../content/blog-2026-10-30/*.json", { eager: true });
 
 const LANGUAGES = [
   { code: 'en', name: 'English', flag: '🇺🇸' },
@@ -48,8 +46,9 @@ const BlogPost = () => {
 
   // Get current language code
   const currentLang = i18n.language?.split('-')[0] || 'en';
-  const isWeeklyBlog = weeklyBlogSlugs.some(item => item === slug);
-  const weeklyArticle = (weeklyBundles[`../content/blog-2026-10-30/${currentLang}.json`]?.default ?? weeklyEnglish).find(item => item.slug === slug);
+  const weeklyArticle = reviewedBlogArticles(currentLang).find(item => item.slug === slug);
+  const isWeeklyBlog = Boolean(weeklyArticle);
+  const articleAuthor = novemberBlogAuthor(slug) ?? "NinescapeLand Team";
 
   // Check for slug redirect (old long URLs → new short URLs)
   const { data: redirectData } = useQuery({
@@ -324,7 +323,7 @@ const BlogPost = () => {
         image={post.cover_image || undefined}
         publishedAt={post.published_at || undefined}
         modifiedAt={post.updated_at}
-        author="NinescapeLand Team"
+        author={articleAuthor}
         section="Indoor Playground Industry"
         tags={postTags}
       />
@@ -341,6 +340,8 @@ const BlogPost = () => {
         wordCount={wordCount}
         articleBody={stripHtml(post.content)}
         inLanguage={currentLang}
+        author={articleAuthor}
+        authorType={novemberBlogAuthor(slug) ? "Person" : "Organization"}
         citation={isWeeklyBlog ? weeklyArticle?.sources.map(source => source.url) : undefined}
       />
       {isWeeklyBlog && weeklyArticle && <FAQSchema items={weeklyArticle.faq.map(item => ({ question: item.q, answer: item.a }))} />}
@@ -418,12 +419,12 @@ const BlogPost = () => {
                 {/* Author Byline Card — E-E-A-T signal */}
                 <aside className="flex flex-wrap items-start gap-4 border-y border-border py-5">
                   <div className="w-12 h-12 rounded-full bg-gradient-to-br from-primary to-primary/60 text-primary-foreground flex items-center justify-center font-bold text-lg flex-shrink-0">
-                    NL
+                    {novemberBlogAuthor(slug) ? "G" : "NL"}
                   </div>
                   <address className="not-italic flex-1 min-w-[200px]">
                     <div className="flex items-center gap-2 text-foreground font-semibold">
                       <User className="w-4 h-4" />
-                      <span>NinescapeLand Team</span>
+                      <span>{articleAuthor}</span>
                     </div>
                     <p className="text-xs text-muted-foreground mt-1 leading-snug">
                       {isWeeklyBlog ? weeklyArticle?.ui.authorBio : t("blog.authorBio", "NinescapeLand editorial team.")}
@@ -449,7 +450,9 @@ const BlogPost = () => {
                   </div>
                 </aside>
 
-                {/* Excerpt / Lead paragraph */}
+              <WeeklyBlogLinks slug={`blog/${slug ?? ""}`} />
+
+              {/* Excerpt / Lead paragraph */}
                 {post.excerpt && (
                   <p className="text-lg md:text-xl text-muted-foreground mt-6 leading-relaxed font-medium">
                     {post.excerpt}
