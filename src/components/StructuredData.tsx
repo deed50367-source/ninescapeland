@@ -177,17 +177,18 @@ export const HowToSchema = ({ name, description, steps, totalTime, image }: HowT
 export interface BlogPostingSchemaProps {
   headline: string; description?: string; image?: string; datePublished?: string;
   dateModified?: string; author?: string; url?: string; keywords?: string;
+  authorType?: "Person" | "Organization";
   wordCount?: number; articleBody?: string; inLanguage?: string; citation?: string[];
 }
 
 export const BlogPostingSchema = ({
   headline, description, image, datePublished, dateModified,
-  author = "NinescapeLand Team", url, keywords, wordCount, articleBody, inLanguage = "en", citation
+  author = "NinescapeLand Team", authorType = "Organization", url, keywords, wordCount, articleBody, inLanguage = "en", citation
 }: BlogPostingSchemaProps) => {
   const schema: Record<string, unknown> = {
     "@context": "https://schema.org", "@type": "BlogPosting", headline,
     author: {
-      "@type": "Organization",
+      "@type": authorType,
       name: author,
       url: `${SITE_URL}/about-us`,
     },
