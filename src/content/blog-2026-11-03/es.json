@@ -2,8 +2,8 @@
   {
     "slug": "indoor-playground-slide-clearance",
     "title": "Despeje de tobogán en parque infantil interior: Lista de verificación de mediciones",
-    "seo_title": "Despeje de tobogán interior: Lista de verificación de mediciones",
-    "seo_description": "Prepara dimensiones del tobogán, registros de espacio de salida y preguntas de instalación para una revisión específica del equipo antes de pedir un parque infantil interior.",
+    "seo_title": "Mediciones para despeje de tobogán interior",
+    "seo_description": "Revisa dimensiones del tobogán, espacio de salida y preguntas de instalación antes de comprar un parque infantil interior.",
     "excerpt": "Prepara dimensiones del tobogán, registros de espacio de salida y preguntas de instalación para una revisión específica del equipo antes de pedir un parque infantil interior.",
     "keywords": [
       "diseño",
@@ -102,8 +102,8 @@
   {
     "slug": "playground-netting-inspection",
     "title": "Inspección de Redes de Áreas de Juego: Registro de Defectos y Reparaciones",
-    "seo_title": "Inspección de Redes de Áreas de Juego: Registro de Defectos y Reparaciones",
-    "seo_description": "Registre defectos en redes, problemas de fijación y decisiones de reparación utilizando instrucciones del fabricante, partes identificadas y una revisión documentada de reapertura.",
+    "seo_title": "Inspección de Redes de Juego: Registro de Defectos",
+    "seo_description": "Documente defectos en redes y reparaciones según instrucciones del fabricante, con revisión para reapertura.",
     "excerpt": "Registre defectos en redes, problemas de fijación y decisiones de reparación utilizando instrucciones del fabricante, partes identificadas y una revisión documentada de reapertura.",
     "keywords": [
       "seguridad",
@@ -231,7 +231,7 @@
       {
         "id": "release",
         "title": "Confirme el documento de transporte y el proceso de liberación",
-        "html": "<p>No asuma que cada envío necesita un conocimiento de embarque original en papel. El documento y los pasos de liberación apropiados dependen del arreglo del transportista, incluido cualquier conocimiento de embarque marítimo o procedimiento de entrega. Obtenga instrucciones por escrito para la reserva real y confirme quién está autorizado para solicitar o recibir la liberación.</p><p>La liberación de transporte y el despacho de aduanas son pasos separados. Pregunte al transportista o transitario sobre los requisitos del documento de transporte y al importador o agente sobre la entrada en destino. Una copia digital de un documento no relacionado no es un sustituto del proceso acordado para su envío.</p>"
+        "html": "<p>No asuma que cada envío necesita un conocimiento de embarque original en papel. El documento y los pasos de liberación apropiados dependen del arreglo del transportista, incluido cualquier conocimiento de embarque marítimo o procedimiento de entrega. Obtenga instrucciones por escrito para la reserva real y confirme quién está autorizado para solicitar o recibir la liberación.</p><p>La liberación de transporte y el despacho de aduanas son pasos separados. Pregunte al transportista o transitario sobre los requisitos del documento de transporte y al importador o agente sobre la entrada en destino. Una copia digital de un documento no relacionado no es un sustituto del proceso acordado para su envío.</p><p><a href=\"https://www.maersk.com/support/faqs/what-is-seaway-bill\" target=\"_blank\" rel=\"noopener noreferrer\">Maersk explica que una carta de porte marítima no es un documento de título y que no se emiten originales</a>. Esto ayuda a distinguir los tipos de documentos; confirma las instrucciones de liberación para tu envío real directamente con el transportista.</p>"
       },
       {
         "id": "arrival",
@@ -262,6 +262,10 @@
       {
         "url": "https://www.cbp.gov/trade/programs-administration/entry-summary",
         "label": "CBP de EE. UU.: proceso de resumen de entrada, ejemplo de Estados Unidos"
+      },
+      {
+        "url": "https://www.maersk.com/support/faqs/what-is-seaway-bill",
+        "label": "Maersk: distinción entre carta de porte marítima y documentos originales"
       }
     ],
     "figures": [
@@ -292,8 +296,8 @@
   {
     "slug": "indoor-playground-pre-shipment-inspection",
     "title": "Inspección Pre-Envío de Parque Infantil Interior: Lista de Evidencias",
-    "seo_title": "Inspección Pre-Envío de Parque Infantil: Lista de Evidencias",
-    "seo_description": "Organiza revisiones de planos, fotos de inspección, informes de producto y registros de acciones correctivas antes de autorizar el envío del equipo de juegos.",
+    "seo_title": "Lista de evidencias para inspección pre-envío de parque",
+    "seo_description": "Revisa planos, fotos, informes y registros antes de autorizar el envío del equipo.",
     "excerpt": "Organiza revisiones de planos, fotos de inspección, informes de producto y registros de acciones correctivas antes de autorizar el envío del equipo de juegos.",
     "keywords": [
       "guías",
@@ -325,7 +329,7 @@
       {
         "id": "reports",
         "title": "Verifica la identidad del informe y el alcance de evaluación",
-        "html": "<p>Compara identificadores de informe, modelos de equipo, configuración y ediciones de estándares aplicables con el pedido. Contacta a la organización emisora a través de un canal verificado cuando la autenticidad o cobertura no estén claras. Un certificado del sistema de calidad de la fábrica y una evaluación de producto responden preguntas diferentes.</p><p>El <a href=\"https://store.astm.org/f1918-21.html\" target=\"_blank\" rel=\"noopener noreferrer\">alcance de ASTM F1918-21</a> ayuda a identificar equipos de juego blandos, pero no prueba que un producto específico haya pasado las pruebas. No infieras cumplimiento de un nombre de estándar, un logo o una declaración genérica CE. Confirma los requisitos para el producto real y destino con revisores calificados.</p>"
+        "html": "<p>Compara identificadores de informe, modelos de equipo, configuración y ediciones de estándares aplicables con el pedido. Contacta a la organización emisora a través de un canal verificado cuando la autenticidad o cobertura no estén claras. Un certificado del sistema de calidad de la fábrica y una evaluación de producto responden preguntas diferentes.</p><p>El <a href=\"https://store.astm.org/f1918-21.html\" target=\"_blank\" rel=\"noopener noreferrer\">alcance de ASTM F1918-21</a> ayuda a identificar equipos de juego blandos, pero no prueba que un producto específico haya pasado las pruebas. No infieras cumplimiento de un nombre de estándar, un logo o una declaración genérica CE. Confirma los requisitos para el producto real y destino con revisores calificados.</p><p><a href=\"https://www.iso.org/standard/9001\" target=\"_blank\" rel=\"noopener noreferrer\">ISO 9001 describe los requisitos para un sistema de gestión de calidad</a>, no la especificación o certificación de cada producto de parque infantil. Solicita la evidencia específica del producto por separado de cualquier certificado del sistema de gestión de la fábrica.</p>"
       },
       {
         "id": "photo-list",
@@ -356,6 +360,10 @@
       {
         "url": "https://store.astm.org/f1918-21.html",
         "label": "ASTM F1918-21: alcance para equipos de juego blandos"
+      },
+      {
+        "url": "https://www.iso.org/standard/9001",
+        "label": "ISO 9001: alcance del sistema de gestión de calidad"
       }
     ],
     "figures": [
@@ -386,8 +394,8 @@
   {
     "slug": "indoor-playground-equipment-standardization",
     "title": "Estandarización de Equipos para Parques Infantiles Interiores: Control de la Lista de Materiales (BOM)",
-    "seo_title": "Estandarización de Equipos para Parques Infantiles: Control BOM",
-    "seo_description": "Controla números de pieza, especificaciones aprobadas y sustituciones en múltiples ubicaciones, manteniendo revisiones de ingeniería y cumplimiento específicas por sitio.",
+    "seo_title": "Estandarización de Equipos para Parques Infantiles",
+    "seo_description": "Control de números de pieza, especificaciones y sustituciones en parques infantiles, con revisiones de ingeniería y cumplimiento por sitio.",
     "excerpt": "Controla números de pieza, especificaciones aprobadas y sustituciones en múltiples ubicaciones, manteniendo revisiones de ingeniería y cumplimiento específicas por sitio.",
     "keywords": [
       "negocios",
@@ -419,7 +427,7 @@
       {
         "id": "substitutions",
         "title": "Aprueba sustituciones antes de que entren en producción",
-        "html": "<p>Define quién puede proponer y autorizar un cambio. Solicita la razón, números de pieza afectados, revisión de ingeniería, evidencia de evaluación relevante e implicaciones para instalación o mantenimiento. Actualiza los registros de pedidos e instalación cuando se acepta un cambio.</p><p>No aceptes \"equivalente\" basado solo en color, dimensiones de catálogo o precio. Piezas de apariencia similar pueden tener interfaces o requisitos diferentes. Varios proveedores pueden evaluarse mediante la misma especificación controlada; usar un solo proveedor no es garantía de calidad.</p>"
+        "html": "<p>Define quién puede proponer y autorizar un cambio. Solicita la razón, números de pieza afectados, revisión de ingeniería, evidencia de evaluación relevante e implicaciones para instalación o mantenimiento. Actualiza los registros de pedidos e instalación cuando se acepta un cambio.</p><p>No aceptes \"equivalente\" basado solo en color, dimensiones de catálogo o precio. Piezas de apariencia similar pueden tener interfaces o requisitos diferentes. Varios proveedores pueden evaluarse mediante la misma especificación controlada; usar un solo proveedor no es garantía de calidad.</p><p><a href=\"https://www.iso.org/standard/9001\" target=\"_blank\" rel=\"noopener noreferrer\">ISO 9001 se refiere al sistema de gestión de calidad de una organización</a>. Un certificado del sistema de gestión no debe presentarse como aprobación de cada componente o de cada instalación.</p>"
       },
       {
         "id": "spares",
@@ -450,6 +458,10 @@
       {
         "url": "https://store.astm.org/f1918-21.html",
         "label": "ASTM F1918-21: alcance para equipos de juego suaves contenidos"
+      },
+      {
+        "url": "https://www.iso.org/standard/9001",
+        "label": "ISO 9001: alcance del sistema de gestión de calidad"
       }
     ],
     "figures": [

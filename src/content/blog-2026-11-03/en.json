@@ -231,7 +231,7 @@
       {
         "id": "release",
         "title": "Confirm the transport document and release process",
-        "html": "<p>Do not assume every shipment needs a paper original bill of lading. The appropriate document and release steps depend on the carrier’s arrangement, including any sea waybill or surrender procedure. Obtain written instructions for the actual booking and confirm who is authorized to request or receive release.</p><p>Transport release and customs release are separate steps. Ask the carrier or forwarder about transport-document requirements and the importer or broker about destination entry. A digital copy of an unrelated document is not a substitute for the process agreed for your shipment.</p>"
+        "html": "<p>Do not assume every shipment needs a paper original bill of lading. The appropriate document and release steps depend on the carrier’s arrangement, including any sea waybill or surrender procedure. Obtain written instructions for the actual booking and confirm who is authorized to request or receive release.</p><p>Transport release and customs release are separate steps. Ask the carrier or forwarder about transport-document requirements and the importer or broker about destination entry. A digital copy of an unrelated document is not a substitute for the process agreed for your shipment.</p><p><a href=\"https://www.maersk.com/support/faqs/what-is-seaway-bill\" target=\"_blank\" rel=\"noopener noreferrer\">Maersk explains that a sea waybill is not a document of title and that no originals are issued</a>. This supports distinguishing document types; confirm release instructions for your actual shipment directly with the carrier.</p>"
       },
       {
         "id": "arrival",
@@ -262,6 +262,10 @@
       {
         "url": "https://www.cbp.gov/trade/programs-administration/entry-summary",
         "label": "U.S. CBP: entry-summary process, United States example"
+      },
+      {
+        "url": "https://www.maersk.com/support/faqs/what-is-seaway-bill",
+        "label": "Maersk: sea waybill and original-document distinction"
       }
     ],
     "figures": [
@@ -325,7 +329,7 @@
       {
         "id": "reports",
         "title": "Check report identity and assessment scope",
-        "html": "<p>Match report identifiers, equipment models, configuration and applicable standard editions to the order. Contact the issuing organization through a verified channel when authenticity or coverage is unclear. A factory quality-system certificate and a product assessment answer different questions.</p><p>The <a href=\"https://store.astm.org/f1918-21.html\" target=\"_blank\" rel=\"noopener noreferrer\">ASTM F1918-21 scope</a> helps identify soft-contained equipment but does not prove that a particular product passed testing. Do not infer compliance from a standard name, a logo or a generic CE statement. Confirm requirements for the actual product and destination with qualified reviewers.</p>"
+        "html": "<p>Match report identifiers, equipment models, configuration and applicable standard editions to the order. Contact the issuing organization through a verified channel when authenticity or coverage is unclear. A factory quality-system certificate and a product assessment answer different questions.</p><p>The <a href=\"https://store.astm.org/f1918-21.html\" target=\"_blank\" rel=\"noopener noreferrer\">ASTM F1918-21 scope</a> helps identify soft-contained equipment but does not prove that a particular product passed testing. Do not infer compliance from a standard name, a logo or a generic CE statement. Confirm requirements for the actual product and destination with qualified reviewers.</p><p><a href=\"https://www.iso.org/standard/9001\" target=\"_blank\" rel=\"noopener noreferrer\">ISO 9001 describes requirements for a quality management system</a>, not the specification or certification of each playground product. Ask for the specific product evidence separately from any factory management-system certificate.</p>"
       },
       {
         "id": "photo-list",
@@ -356,6 +360,10 @@
       {
         "url": "https://store.astm.org/f1918-21.html",
         "label": "ASTM F1918-21: scope for soft-contained play equipment"
+      },
+      {
+        "url": "https://www.iso.org/standard/9001",
+        "label": "ISO 9001: quality management system scope"
       }
     ],
     "figures": [
@@ -419,7 +427,7 @@
       {
         "id": "substitutions",
         "title": "Approve substitutions before they enter production",
-        "html": "<p>Define who can propose and authorize a change. Ask for the reason, affected part numbers, engineering review, relevant assessment evidence and implications for installation or maintenance. Update the order and installation records when a change is accepted.</p><p>Do not accept “equivalent” based only on color, catalog dimensions or price. Similar-looking parts may have different interfaces or requirements. Multiple suppliers can be evaluated through the same controlled specification; using one supplier alone is not a quality guarantee.</p>"
+        "html": "<p>Define who can propose and authorize a change. Ask for the reason, affected part numbers, engineering review, relevant assessment evidence and implications for installation or maintenance. Update the order and installation records when a change is accepted.</p><p>Do not accept “equivalent” based only on color, catalog dimensions or price. Similar-looking parts may have different interfaces or requirements. Multiple suppliers can be evaluated through the same controlled specification; using one supplier alone is not a quality guarantee.</p><p><a href=\"https://www.iso.org/standard/9001\" target=\"_blank\" rel=\"noopener noreferrer\">ISO 9001 concerns an organization’s quality management system</a>. A management-system certificate should not be presented as approval of each component or every installed venue.</p>"
       },
       {
         "id": "spares",
@@ -450,6 +458,10 @@
       {
         "url": "https://store.astm.org/f1918-21.html",
         "label": "ASTM F1918-21: scope for soft-contained play equipment"
+      },
+      {
+        "url": "https://www.iso.org/standard/9001",
+        "label": "ISO 9001: quality management system scope"
       }
     ],
     "figures": [

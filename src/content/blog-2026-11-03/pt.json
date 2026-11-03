@@ -2,8 +2,8 @@
   {
     "slug": "indoor-playground-slide-clearance",
     "title": "Folga de Escorregador em Playgrounds Internos: Lista de Verificação de Medidas",
-    "seo_title": "Folga de Escorregador Interno: Lista de Verificação de Medidas",
-    "seo_description": "Prepare as dimensões do escorregador, registros de espaço de saída e perguntas de instalação para uma revisão específica do equipamento antes de encomendar um playground interno.",
+    "seo_title": "Folga de Escorregador Interno: Medidas",
+    "seo_description": "Confira dimensões, espaço de saída e instalação antes de encomendar um playground interno.",
     "excerpt": "Prepare as dimensões do escorregador, registros de espaço de saída e perguntas de instalação para uma revisão específica do equipamento antes de encomendar um playground interno.",
     "keywords": [
       "design",
@@ -102,8 +102,8 @@
   {
     "slug": "playground-netting-inspection",
     "title": "Inspeção de Redes de Playground: Registro de Defeitos e Reparos",
-    "seo_title": "Inspeção de Redes de Playground: Registro de Defeitos & Reparos",
-    "seo_description": "Registre defeitos nas redes, preocupações com fixação e decisões de reparo usando instruções do fabricante, peças identificadas e uma revisão documentada de reabertura.",
+    "seo_title": "Inspeção de Redes de Playground: Registro e Reparos",
+    "seo_description": "Registre defeitos e reparos em redes de playground, seguindo instruções do fabricante e revisão de reabertura.",
     "excerpt": "Registre defeitos nas redes, preocupações com fixação e decisões de reparo usando instruções do fabricante, peças identificadas e uma revisão documentada de reabertura.",
     "keywords": [
       "segurança",
@@ -231,7 +231,7 @@
       {
         "id": "release",
         "title": "Confirme o documento de transporte e o processo de liberação",
-        "html": "<p>Não assuma que todo envio precisa de um conhecimento de embarque original em papel. O documento apropriado e as etapas de liberação dependem do arranjo da transportadora, incluindo qualquer conhecimento de embarque marítimo ou procedimento de entrega. Obtenha instruções por escrito para a reserva real e confirme quem está autorizado a solicitar ou receber a liberação.</p><p>Liberação de transporte e liberação alfandegária são etapas separadas. Pergunte à transportadora ou agente de carga sobre requisitos de documentos de transporte e ao importador ou despachante sobre entrada no destino. Uma cópia digital de um documento não relacionado não é um substituto para o processo acordado para o seu envio.</p>"
+        "html": "<p>Não assuma que todo envio precisa de um conhecimento de embarque original em papel. O documento apropriado e as etapas de liberação dependem do arranjo da transportadora, incluindo qualquer conhecimento de embarque marítimo ou procedimento de entrega. Obtenha instruções por escrito para a reserva real e confirme quem está autorizado a solicitar ou receber a liberação.</p><p>Liberação de transporte e liberação alfandegária são etapas separadas. Pergunte à transportadora ou agente de carga sobre requisitos de documentos de transporte e ao importador ou despachante sobre entrada no destino. Uma cópia digital de um documento não relacionado não é um substituto para o processo acordado para o seu envio.</p><p><a href=\"https://www.maersk.com/support/faqs/what-is-seaway-bill\" target=\"_blank\" rel=\"noopener noreferrer\">A Maersk explica que uma via marítima não é um documento de título e que nenhum original é emitido</a>. Isso ajuda a distinguir os tipos de documento; confirme as instruções de liberação para o seu carregamento real diretamente com a transportadora.</p>"
       },
       {
         "id": "arrival",
@@ -262,6 +262,10 @@
       {
         "url": "https://www.cbp.gov/trade/programs-administration/entry-summary",
         "label": "U.S. CBP: processo de resumo de entrada, exemplo dos Estados Unidos"
+      },
+      {
+        "url": "https://www.iso.org/standard/9001",
+        "label": "ISO 9001: escopo do sistema de gestão da qualidade"
       }
     ],
     "figures": [
@@ -292,8 +296,8 @@
   {
     "slug": "indoor-playground-pre-shipment-inspection",
     "title": "Inspeção Pré-Embarque de Playground Indoor: Lista de Verificação de Evidências",
-    "seo_title": "Inspeção Pré-Embarque de Playground: Lista de Evidências",
-    "seo_description": "Organize revisões de desenhos, fotos de inspeção, relatórios de produtos e registros de ações corretivas antes de liberar o equipamento de playground para embarque.",
+    "seo_title": "Inspeção Pré-Embarque de Playground: Documentos",
+    "seo_description": "Reúna desenhos, fotos, relatórios e registros de correções antes de liberar equipamentos de playground.",
     "excerpt": "Organize revisões de desenhos, fotos de inspeção, relatórios de produtos e registros de ações corretivas antes de liberar o equipamento de playground para embarque.",
     "keywords": [
       "guias",
@@ -325,7 +329,7 @@
       {
         "id": "reports",
         "title": "Verifique a identidade do relatório e o escopo de avaliação",
-        "html": "<p>Combine identificadores de relatório, modelos de equipamento, configuração e edições de padrão aplicáveis ao pedido. Entre em contato com a organização emissora por um canal verificado quando a autenticidade ou cobertura não estiver clara. Um certificado de sistema de qualidade da fábrica e uma avaliação de produto respondem a perguntas diferentes.</p><p>O <a href=\"https://store.astm.org/f1918-21.html\" target=\"_blank\" rel=\"noopener noreferrer\">escopo ASTM F1918-21</a> ajuda a identificar equipamentos de playground com contenção macia, mas não prova que um produto específico passou nos testes. Não infira conformidade a partir de um nome de padrão, um logotipo ou uma declaração genérica CE. Confirme os requisitos para o produto real e destino com revisores qualificados.</p>"
+        "html": "<p>Combine identificadores de relatório, modelos de equipamento, configuração e edições de padrão aplicáveis ao pedido. Entre em contato com a organização emissora por um canal verificado quando a autenticidade ou cobertura não estiver clara. Um certificado de sistema de qualidade da fábrica e uma avaliação de produto respondem a perguntas diferentes.</p><p>O <a href=\"https://store.astm.org/f1918-21.html\" target=\"_blank\" rel=\"noopener noreferrer\">escopo ASTM F1918-21</a> ajuda a identificar equipamentos de playground com contenção macia, mas não prova que um produto específico passou nos testes. Não infira conformidade a partir de um nome de padrão, um logotipo ou uma declaração genérica CE. Confirme os requisitos para o produto real e destino com revisores qualificados.</p><p><a href=\"https://www.iso.org/standard/9001\" target=\"_blank\" rel=\"noopener noreferrer\">A ISO 9001 descreve os requisitos para um sistema de gestão da qualidade</a>, não a especificação ou certificação de cada produto de playground. Solicite a evidência específica do produto separadamente de qualquer certificado de sistema de gestão da fábrica.</p>"
       },
       {
         "id": "photo-list",
@@ -356,6 +360,10 @@
       {
         "url": "https://store.astm.org/f1918-21.html",
         "label": "ASTM F1918-21: escopo para equipamentos de playground com contenção macia"
+      },
+      {
+        "url": "https://www.iso.org/standard/9001",
+        "label": "ISO 9001: escopo do sistema de gestão da qualidade"
       }
     ],
     "figures": [
@@ -386,8 +394,8 @@
   {
     "slug": "indoor-playground-equipment-standardization",
     "title": "Padronização de Equipamentos para Playgrounds Internos: Controle da Lista de Materiais",
-    "seo_title": "Padronização de Equipamentos para Playgrounds: Controle da Lista de Materiais",
-    "seo_description": "Controle números de peças, especificações aprovadas e substituições em diferentes locais de playgrounds, mantendo engenharia e revisão de conformidade específicas para cada local.",
+    "seo_title": "Padronização de Equipamentos para Playgrounds",
+    "seo_description": "Controle peças, especificações e substituições em playgrounds, com engenharia e conformidade por local.",
     "excerpt": "Controle números de peças, especificações aprovadas e substituições em diferentes locais de playgrounds, mantendo engenharia e revisão de conformidade específicas para cada local.",
     "keywords": [
       "negócios",
@@ -419,7 +427,7 @@
       {
         "id": "substitutions",
         "title": "Aprove substituições antes de entrarem em produção",
-        "html": "<p>Defina quem pode propor e autorizar uma alteração. Solicite o motivo, números de peças afetados, revisão de engenharia, evidência de avaliação relevante e implicações para instalação ou manutenção. Atualize os registros de pedido e instalação quando uma alteração for aceita.</p><p>Não aceite \"equivalente\" baseado apenas em cor, dimensões de catálogo ou preço. Peças de aparência semelhante podem ter interfaces ou requisitos diferentes. Vários fornecedores podem ser avaliados pela mesma especificação controlada; usar apenas um fornecedor não é garantia de qualidade.</p>"
+        "html": "<p>Defina quem pode propor e autorizar uma alteração. Solicite o motivo, números de peças afetados, revisão de engenharia, evidência de avaliação relevante e implicações para instalação ou manutenção. Atualize os registros de pedido e instalação quando uma alteração for aceita.</p><p>Não aceite \"equivalente\" baseado apenas em cor, dimensões de catálogo ou preço. Peças de aparência semelhante podem ter interfaces ou requisitos diferentes. Vários fornecedores podem ser avaliados pela mesma especificação controlada; usar apenas um fornecedor não é garantia de qualidade.</p><p><a href=\"https://www.iso.org/standard/9001\" target=\"_blank\" rel=\"noopener noreferrer\">A ISO 9001 trata do sistema de gestão da qualidade de uma organização</a>. Um certificado de sistema de gestão não deve ser apresentado como aprovação de cada componente ou de cada instalação.</p>"
       },
       {
         "id": "spares",
@@ -450,6 +458,10 @@
       {
         "url": "https://store.astm.org/f1918-21.html",
         "label": "ASTM F1918-21: escopo para equipamentos de playground contidos macios"
+      },
+      {
+        "url": "https://www.iso.org/standard/9001",
+        "label": "ISO 9001: escopo do sistema de gestão da qualidade"
       }
     ],
     "figures": [
