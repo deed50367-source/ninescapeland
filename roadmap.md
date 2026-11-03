@@ -1,5 +1,8 @@
 # Roadmap
 
+- [ ] November 3 blogs: audit five uploaded manuscripts, confirm author correspondence and Chinese/English SEO field placement; obtain corrected outline approval before substantial factual revisions
+- [ ] November 3 blogs: after outline approval, revise, add existing site cover/inline images, translate required versions, save blog records and reciprocal aggregation links, then verify public and authenticated admin views
+
 - [x] November 3: build five approved six-language procurement topics with independent intent, site renders, page-specific sources, SEO/GEO and reciprocal parent links; register 30 sitemap/prerender routes
 - [x] November 3: verify 30 language pages, ten parent navigation paths, comparison/FAQ/inquiry anchors, imagery and EN/AR mobile layout; 16 tests/707 assertions pass, actual test inquiry saved with UI success
 - [ ] Publish November 3 procurement pages to production; creation request did not authorize publication, and current production deployment status remains unverified
