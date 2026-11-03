@@ -1,3 +1,4 @@
+import { WeeklyPlanningLinks } from "@/components/WeeklyPlanningLinks";
 import { Header } from "@/components/Header";
 import { PageHero } from "@/components/PageHero";
 import { Footer } from "@/components/Footer";
@@ -941,6 +942,7 @@ const IndoorPlayground = () => {
         <ProductFAQ productType="indoorPlayground" />
         <QuoteCalculator />
         <GeoAnswerBlock />
+        <WeeklyPlanningLinks slug="products/indoor-playground" />
       </main>
       <Footer />
       <FloatingCTA />

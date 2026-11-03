@@ -1,3 +1,4 @@
+import { WeeklyPlanningLinks } from "@/components/WeeklyPlanningLinks";
 import { useTranslation } from "react-i18next";
 import { Header } from "@/components/Header";
 import { PageHero } from "@/components/PageHero";
@@ -49,6 +50,7 @@ const Process = () => {
         <ProcessTestimonialsSection />
         <ProcessCTASection />
         <FAQSection />
+        <WeeklyPlanningLinks slug="process" />
       </main>
       <Footer />
       <FloatingCTA />

@@ -11,7 +11,7 @@ export function navigationCopy(language: string) { return copy[language.split('-
 export function navigationGroups(items: NavigationItem[]) {
  const education: NavigationItem[] = [], support: NavigationItem[] = [];
  items.slice(4).forEach(item => {
-  if (/cost|price|profit|business|fund|certif|astm|tuv|safety|installation|maintenance|ownership|builder|complete|free-3d/i.test(item.href)) support.push(item);
+  if (/cost|price|profit|business|fund|certif|astm|tuv|safety|installation|maintenance|ownership|builder|complete|free-3d|shipping|acceptance|procurement/i.test(item.href)) support.push(item);
   else education.push(item);
  });
  return [items.slice(0, 4), education, support];

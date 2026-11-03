@@ -1,5 +1,6 @@
 import { Link, useLocation } from "react-router-dom";
 import { ArrowUpRight } from "lucide-react";
+import { b14InboundLinks } from "@/config/weeklyAggregationB14Registry";
 import { b13InboundLinks, b13Language, b13Path } from "@/config/weeklyAggregationB13Registry";
 import { Button } from "@/components/ui/button";
 import { WeeklyBlogLinks } from "@/components/WeeklyBlogLinks";
@@ -9,7 +10,7 @@ const headings = { en: "Detailed Planning Guides", ar: "أدلة التخطيط 
 export function WeeklyPlanningLinks({ slug }: { slug: string }) {
   const { pathname } = useLocation();
   const language = b13Language(pathname);
-  const links = b13InboundLinks(slug);
+  const links = [...b14InboundLinks(slug), ...b13InboundLinks(slug)];
   if (!links.length) return <WeeklyBlogLinks slug={slug} />;
   return <><section className="border-y border-border bg-muted/30 py-10">
     <div className="container-wide">
