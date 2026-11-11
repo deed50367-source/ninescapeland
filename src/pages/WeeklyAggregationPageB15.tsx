@@ -16,7 +16,6 @@ import { b15Slugs, b15Content, b15Language, b15Path, b15Metadata, B15_BASE_URL, 
 import english from "@/content/weekly-2026-11-11/en.json";
 import { b15Media } from "@/config/weeklyAggregationB15Media";
 import { WeeklyPlanningLinks } from "@/components/WeeklyPlanningLinks";
-import { WeeklyBlogLinks } from "@/components/WeeklyBlogLinks";
 
 type Content = typeof english;
 
@@ -100,7 +99,6 @@ export default function WeeklyAggregationPageB15({ slug }: { slug: keyof Content
       <section className="py-14 md:py-20"><div className="container-wide max-w-4xl"><h2 className="font-heading text-2xl font-bold md:text-4xl">{ui.faqTitle}</h2><Accordion type="single" collapsible className="mt-6">{page.faq.map((item,index) => <AccordionItem value={String(index)} key={item.title}><AccordionTrigger className="text-start text-lg">{item.title}</AccordionTrigger><AccordionContent className="text-base leading-7 text-muted-foreground">{item.desc}</AccordionContent></AccordionItem>)}</Accordion></div></section>
       <SourcesReferences heading={ui.sourcesTitle} intro={ui.sourcesIntro} sources={sources} asOf="November 2026" />
       <WeeklyPlanningLinks slug={slug} />
-      <WeeklyBlogLinks slug={slug} />
       <LazySection id="inquiry-form" minHeight="360px"><ProductInquiryForm productName={page.title} productSlug={slug} /></LazySection>
     </main>
     <Footer /><FloatingCTA />

@@ -2,8 +2,8 @@
   {
     "slug": "indoor-playground-party-room-turnover",
     "title": "Rotation des salles de fête en aire de jeux intérieure : Liste de vérification pour la remise en état",
-    "seo_title": "Liste de vérification pour rotation des salles | NinescapeLand",
-    "seo_description": "Enregistrez le nettoyage, la remise en stock et les vérifications de libération des salles de fête. Calculez les délais de réservation sur des observations concrètes, pas sur des affirmations générales.",
+    "seo_title": "Remise en état des salles de fête | NinescapeLand",
+    "seo_description": "Consignez départ, nettoyage, réapprovisionnement et remise en service. Fixez les délais entre réservations selon le travail observé.",
     "excerpt": "Enregistrez le nettoyage, la remise en stock et les vérifications de libération des salles de fête. Calculez les délais de réservation sur des observations concrètes, pas sur des affirmations générales.",
     "keywords": [
       "business",
@@ -100,8 +100,8 @@
   {
     "slug": "ninja-birthday-party",
     "title": "Fête d'anniversaire ninja : Liste de vérification pour la rotation des activités",
-    "seo_title": "Checklist d'organisation de fête ninja | NinescapeLand",
-    "seo_description": "Organisez des fêtes ninja commerciales en tenant compte des limites d'équipement, des groupes supervisés, des zones d'attente et des vérifications enregistrées ; pas de capacité fixe ni de garantie de rotation.",
+    "seo_title": "Organisation de fête ninja | NinescapeLand",
+    "seo_description": "Planifiez groupes, surveillance, attente et rotations selon les limites des équipements, sans capacité ou durée universelle promise.",
     "excerpt": "Organisez des fêtes ninja commerciales en tenant compte des limites d'équipement, des groupes supervisés, des zones d'attente et des vérifications enregistrées ; pas de capacité fixe ni de garantie de rotation.",
     "keywords": [
       "guides",
@@ -138,7 +138,7 @@
       {
         "id": "standards",
         "title": "Demander des preuves pour la classe réelle d'équipement",
-        "html": "<p>Demandez au fournisseur et à un examinateur qualifié quelles normes et éditions s'appliquent à chaque type d'équipement. <a href=\"https://store.astm.org/f1487-25.html\" target=\"_blank\" rel=\"noopener noreferrer\">ASTM F1487-25</a> exclut plusieurs catégories, dont les aires de jeu souples et équipements sportifs. <a href=\"https://store.astm.org/f1918-21.html\" target=\"_blank\" rel=\"noopener noreferrer\">ASTM F1918-21</a> concerne les aires de jeu souples et liste aussi des exclusions. Le simple nom de parcours ninja ne résout pas la classification.</p><ul><li>Faites correspondre numéros de rapport et identification de modèle à l'équipement cité.</li><li>Demandez plans, instructions, limites d'usage et exigences de maintenance.</li><li>Clarifiez par écrit les responsabilités d'installation, revue de site et acceptation.</li><li>Considérez le nom d'un organisme de test comme une affirmation à vérifier, pas une garantie universelle.</li></ul>"
+        "html": "<p>Demandez au fournisseur et à un examinateur qualifié quelles normes et éditions s'appliquent à chaque type d'équipement. <a href=\"https://store.astm.org/f1487-25.html\" target=\"_blank\" rel=\"noopener noreferrer\">ASTM F1487-25</a> exclut plusieurs catégories, dont les aires de jeu souples et équipements sportifs. <a href=\"https://store.astm.org/f1918-21.html\" target=\"_blank\" rel=\"noopener noreferrer\">ASTM F1918-21</a> concerne les aires de jeu souples et liste aussi des exclusions. Le simple nom de parcours ninja ne résout pas la classification.</p><ul><li>Faites correspondre numéros de rapport et identification de modèle à l'équipement figurant dans le devis.</li><li>Demandez plans, instructions, limites d'usage et exigences de maintenance.</li><li>Clarifiez par écrit les responsabilités d'installation, revue de site et acceptation.</li><li>Considérez le nom d'un organisme de test comme une affirmation à vérifier, pas une garantie universelle.</li></ul>"
       },
       {
         "id": "review",
@@ -202,8 +202,8 @@
   {
     "slug": "indoor-playground-theme-design-brief",
     "title": "Cahier des charges pour la conception thématique d'une aire de jeux intérieure : Document acheteur",
-    "seo_title": "Cahier des charges thématique | NinescapeLand",
-    "seo_description": "Préparez les contraintes du site, les utilisateurs, les droits thématiques, le budget, les livrables et les approbations de révision dans un cahier des charges commercial pour une aire de jeux.",
+    "seo_title": "Cahier de conception thématique | NinescapeLand",
+    "seo_description": "Précisez site, utilisateurs, droits du thème, budget, livrables et validation des modifications pour un parc intérieur commercial.",
     "excerpt": "Préparez les contraintes du site, les utilisateurs, les droits thématiques, le budget, les livrables et les approbations de révision dans un cahier des charges commercial pour une aire de jeux.",
     "keywords": [
       "design",
@@ -300,8 +300,8 @@
   {
     "slug": "loose-parts-play-equipment",
     "title": "Équipement de jeu libre : Guide de stockage et d'inspection",
-    "seo_title": "Guide des équipements de jeu libre | NinescapeLand",
-    "seo_description": "Organisez des jeux libres supervisés avec des limites d'utilisation, inspection, stockage, nettoyage et traçabilité des achats spécifiques à chaque produit.",
+    "seo_title": "Jeu avec pièces mobiles : guide | NinescapeLand",
+    "seo_description": "Organisez le jeu surveillé avec limites du produit, contrôles, rangement, nettoyage et documents d’achat.",
     "excerpt": "Organisez des jeux libres supervisés avec des limites d'utilisation, inspection, stockage, nettoyage et traçabilité des achats spécifiques à chaque produit.",
     "keywords": [
       "guides",
@@ -382,12 +382,12 @@
       {
         "src": "https://gianldlquknsdhfpqqfe.supabase.co/storage/v1/object/public/assets/dcbc5ed3-1863-4db6-bacf-59919b3abec6/1768294400190-bx9gha.jpg",
         "alt": "Rendu en perspective d'éléments de jeu souple",
-        "caption": "Illustration de conception pour discuter équipement et espace. Elle ne démontre pas une procédure opérationnelle, installation de stockage ou conditions de site vérifiées."
+        "caption": "Concept général de parc, sans démonstration du stock de pièces mobiles, des usages autorisés ou du rangement. Les composants mobiles doivent être identifiés et examinés séparément."
       },
       {
         "src": "https://gianldlquknsdhfpqqfe.supabase.co/storage/v1/object/public/assets/adaf5265-c979-48b7-b4c1-808e1e4b87b8/1768294592888-x69bgi.jpg",
         "alt": "Rendu en perspective d'un concept d'équipement de jeu intérieur",
-        "caption": "Illustration de conception pour discuter équipement et espace. Elle ne démontre pas une procédure opérationnelle, installation de stockage ou conditions de site vérifiées."
+        "caption": "Concept général de parc, sans démonstration du stock de pièces mobiles, des usages autorisés ou du rangement. Les composants mobiles doivent être identifiés et examinés séparément."
       }
     ],
     "relatedLabels": [
@@ -406,8 +406,8 @@
   {
     "slug": "indoor-playground-project-scope",
     "title": "Périmètre de projet d'aire de jeux intérieure : Liste de contrôle des responsabilités",
-    "seo_title": "Guide du périmètre de projet | NinescapeLand",
-    "seo_description": "Comparez conception, équipements, livraison, installation, exclusions et responsabilités d'acceptation avec un périmètre de projet écrit.",
+    "seo_title": "Périmètre du projet de parc | NinescapeLand",
+    "seo_description": "Comparez conception, équipements, transport, montage, exclusions et réception dans un périmètre de projet écrit.",
     "excerpt": "Comparez conception, équipements, livraison, installation, exclusions et responsabilités d'acceptation avec un périmètre de projet écrit.",
     "keywords": [
       "business",
@@ -429,7 +429,7 @@
       {
         "id": "matrix",
         "title": "Construire une matrice des responsabilités",
-        "html": "<p>Pour chaque ligne, indiquez la partie responsable, les preuves requises, l'échéance et le propriétaire de l'acceptation dans votre dossier contractuel. Les questions ci-dessous sont à résoudre, pas des affirmations que tous les fournisseurs incluent ces services.</p><table><thead><tr><th>Livrable</th><th>Questions à résoudre</th><th>Preuves</th></tr></thead><tbody><tr><td>Relevé et brief</td><td>Qui vérifie les dimensions et les conditions du site ?</td><td>Dessin coté daté</td></tr><tr><td>Conception</td><td>Qui fournit les plans d'équipement et de coordination ?</td><td>Journal des révisions et approbations</td></tr><tr><td>Équipement</td><td>Quels modèles, quantités et finitions sont fournis ?</td><td>Liste détaillée des matériaux</td></tr><tr><td>Documents de test</td><td>Quels produits et exigences sont couverts ?</td><td>Rapports correspondant au périmètre</td></tr><tr><td>Transport</td><td>Qui organise le fret, gère les formalités et assume les risques spécifiés ?</td><td>Conditions d'expédition convenues</td></tr><tr><td>Déchargement et accès</td><td>Qui organise la main-d'œuvre, la manutention et l'accès ?</td><td>Plan d'accès au site</td></tr><tr><td>Installation</td><td>Qui installe, supervise et gère les interfaces sur site ?</td><td>Périmètre et instructions d'installation</td></tr><tr><td>Acceptation</td><td>Qui examine les défauts et autorise la remise ?</td><td>Procès-verbal d'inspection signé</td></tr></tbody></table><p>Distinguer responsabilités, paiement et répartition des risques. Un fournisseur peut coordonner le fret sans assumer toutes les obligations douanières. Résolvez les termes avec les professionnels concernés avant engagement.</p>"
+        "html": "<p>Pour chaque ligne, indiquez la partie responsable, les preuves requises, l'échéance et le propriétaire de l'acceptation dans votre dossier contractuel. Les questions ci-dessous sont à résoudre, pas des affirmations que tous les fournisseurs incluent ces services.</p><table><thead><tr><th>Livrable</th><th>Questions à résoudre</th><th>Preuves</th></tr></thead><tbody><tr><td>Relevé et brief</td><td>Qui vérifie les dimensions et les conditions du site ?</td><td>Dessin coté daté</td></tr><tr><td>Conception</td><td>Qui fournit les plans d'équipement et de coordination ?</td><td>Journal des révisions et approbations</td></tr><tr><td>Équipement</td><td>Quels modèles, quantités et finitions sont fournis ?</td><td>Liste détaillée des matériaux</td></tr><tr><td>Documents de test</td><td>Quels produits et exigences sont couverts ?</td><td>Rapports correspondant au périmètre</td></tr><tr><td>Transport</td><td>Qui organise le fret, gère les formalités et assume les risques spécifiés ?</td><td>Conditions d'expédition convenues</td></tr><tr><td>Déchargement et accès</td><td>Qui organise la main-d'œuvre, la manutention et l'accès ?</td><td>Plan d'accès au site</td></tr><tr><td>Installation</td><td>Qui installe, supervise et gère les interfaces sur site ?</td><td>Périmètre et instructions d'installation</td></tr><tr><td>Acceptation</td><td>Qui examine les défauts et autorise la remise ?</td><td>Procès-verbal d'inspection signé</td></tr></tbody></table><p>Distinguer responsabilités, paiement et répartition des risques. Un fournisseur peut aider à coordonner le fret sans assumer toutes les obligations douanières ou de déchargement. Résolvez les termes avec les professionnels concernés avant engagement.</p>"
       },
       {
         "id": "exclusions",
@@ -439,12 +439,12 @@
       {
         "id": "comparison",
         "title": "Comparez clé en main et équipement seul sur la même base",
-        "html": "<p>Demandez les deux offres pour une même liste d'équipement, brief de site et révision de plan. Comparez main-d'œuvre d'installation, déplacements, travaux d'entrepreneurs locaux, supervision, revue professionnelle, expédition et support plutôt que le prix seul. Précisez comment les défauts non résolus, réclamations de garantie et modifications ultérieures sont gérés.</p><ul><li>Identifiez les travaux conservés par l'acheteur dans chaque offre.</li><li>Vérifiez l'expertise locale disponible et la capacité de coordination.</li><li>Enregistrez hypothèses et contingences sans les présenter comme prix confirmés.</li><li>Confirmez qui peut approuver un changement et comment son impact est documenté.</li></ul><p>Aucun modèle ne transfère automatiquement tous les risques ou garantit une date d'ouverture. Faites examiner les obligations contestées par des conseillers qualifiés.</p>"
+        "html": "<p>Demandez les deux offres pour une même liste d'équipement, brief de site et révision de plan. Comparez main-d'œuvre d'installation, déplacements, travaux d'entrepreneurs locaux, supervision, revue professionnelle, expédition et support plutôt que le prix seul. Précisez comment les défauts non résolus, réclamations de garantie et modifications ultérieures sont gérés.</p><ul><li>Identifiez les travaux conservés par l'acheteur dans chaque offre.</li><li>Vérifiez l'expertise locale disponible et la capacité de coordination.</li><li>Enregistrez hypothèses et contingences sans les présenter comme prix confirmés.</li><li>Confirmez qui peut approuver un changement et comment son impact sur les coûts et le calendrier est documenté.</li></ul><p>Aucun modèle ne transfère automatiquement tous les risques ou garantit une date d'ouverture. Faites examiner les obligations contestées par des conseillers qualifiés.</p>"
       },
       {
         "id": "requirements",
         "title": "Séparez tests d'équipement et approbations locales",
-        "html": "<p>Demandez des preuves de conformité spécifiques et les normes convenues. <a href=\"https://store.astm.org/f1918-21.html\" target=\"_blank\" rel=\"noopener noreferrer\">ASTM F1918-21</a> concerne les équipements de jeu souples. <a href=\"https://store.astm.org/f1487-25.html\" target=\"_blank\" rel=\"noopener noreferrer\">ASTM F1487-25</a> couvre les équipements de jeux publics avec exclusions. Ces résumés ne prouvent pas qu'une installation mixte répond à toutes les exigences.</p><p>Pour les projets US, le <a href=\"https://www.access-board.gov/ada/guides/chapter-10-play-areas/\" target=\"_blank\" rel=\"noopener noreferrer\">guide d'accessibilité des aires de jeux</a> couvre un périmètre distinct. Identifiez séparément les revues locales de construction et incendie. Un rapport produit n'est pas un permis d'occupation ou une preuve de réduction d'assurance.</p>"
+        "html": "<p>Demandez des preuves de conformité propres au produit ainsi que les normes et éditions convenues. <a href=\"https://store.astm.org/f1918-21.html\" target=\"_blank\" rel=\"noopener noreferrer\">ASTM F1918-21</a> concerne les équipements de jeu souples avec enceinte (soft-contained play equipment). <a href=\"https://store.astm.org/f1487-25.html\" target=\"_blank\" rel=\"noopener noreferrer\">ASTM F1487-25</a> couvre les équipements de jeux publics avec exclusions. Ces résumés ne prouvent pas qu'une installation mixte répond à toutes les exigences.</p><p>Pour les projets US, le <a href=\"https://www.access-board.gov/ada/guides/chapter-10-play-areas/\" target=\"_blank\" rel=\"noopener noreferrer\">guide d'accessibilité des aires de jeux</a> couvre un périmètre distinct. Identifiez séparément les revues locales de construction et incendie. Un rapport produit n'est pas un permis d'occupation ou une preuve de réduction d'assurance.</p>"
       },
       {
         "id": "handover",
@@ -469,7 +469,7 @@
     "sources": [
       {
         "url": "https://store.astm.org/f1918-21.html",
-        "label": "ASTM F1918-21 : périmètre des jeux souples"
+        "label": "ASTM F1918-21 : périmètre des équipements de jeu souples avec enceinte"
       },
       {
         "url": "https://store.astm.org/f1487-25.html",

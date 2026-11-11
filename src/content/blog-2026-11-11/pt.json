@@ -2,8 +2,8 @@
   {
     "slug": "indoor-playground-party-room-turnover",
     "title": "Rotatividade de Salas de Festa em Playgrounds Cobertos: Lista de Verificação para Reinicialização",
-    "seo_title": "Lista de Verificação para Rotatividade de Salas | NinescapeLand",
-    "seo_description": "Registre limpeza, reabastecimento e liberação de salas de festa. Defina buffers de reserva com base em observações, não em tempos universais.",
+    "seo_title": "Preparação da sala de festas | NinescapeLand",
+    "seo_description": "Registre saída, limpeza, reposição e liberação da sala. Defina intervalos entre reservas com base no trabalho observado.",
     "excerpt": "Registre limpeza, reabastecimento e liberação de salas de festa. Defina buffers de reserva com base em observações, não em tempos universais.",
     "keywords": [
       "business",
@@ -100,8 +100,8 @@
   {
     "slug": "ninja-birthday-party",
     "title": "Festa de Aniversário Ninja: Lista de Verificação de Rotação de Operadores",
-    "seo_title": "Checklist para Festa Ninja | NinescapeLand",
-    "seo_description": "Planeje festas ninja comerciais considerando limites de equipamentos, grupos supervisionados, áreas de espera e verificações registradas; sem garantia de capacidade fixa ou rotação.",
+    "seo_title": "Planejamento de festa ninja | NinescapeLand",
+    "seo_description": "Planeje grupos, supervisão, espera e rodízio conforme os limites do equipamento, sem promessas de capacidade ou tempo universal.",
     "excerpt": "Planeje festas ninja comerciais considerando limites de equipamentos, grupos supervisionados, áreas de espera e verificações registradas; sem garantia de capacidade fixa ou rotação.",
     "keywords": [
       "guides",
@@ -138,7 +138,7 @@
       {
         "id": "standards",
         "title": "Solicite evidências para a classe real do equipamento",
-        "html": "<p>Pergunte ao fornecedor e ao revisor qualificado quais normas e edições se aplicam a cada tipo de equipamento. <a href=\"https://store.astm.org/f1487-25.html\" target=\"_blank\" rel=\"noopener noreferrer\">ASTM F1487-25</a> exclui várias categorias, incluindo brinquedos de pelúcia e equipamentos esportivos. <a href=\"https://store.astm.org/f1918-21.html\" target=\"_blank\" rel=\"noopener noreferrer\">ASTM F1918-21</a> trata de brinquedos de pelúcia e também lista exclusões. O nome 'circuito ninja' sozinho não resolve a classificação.</p><ul><li>Relacione números de relatório e identificação de modelo ao equipamento citado.</li><li>Solicite desenhos, instruções, limites de usuário e requisitos de manutenção.</li><li>Esclareça por escrito as responsabilidades de instalação, revisão do local e aceitação.</li><li>Trate o nome de uma organização de teste como uma afirmação a verificar, não como uma garantia universal de segurança.</li></ul>"
+        "html": "<p>Pergunte ao fornecedor e ao revisor qualificado quais normas e edições se aplicam a cada tipo de equipamento. <a href=\"https://store.astm.org/f1487-25.html\" target=\"_blank\" rel=\"noopener noreferrer\">ASTM F1487-25</a> exclui várias categorias, incluindo equipamentos de recreação com estrutura macia e delimitada e equipamentos esportivos. <a href=\"https://store.astm.org/f1918-21.html\" target=\"_blank\" rel=\"noopener noreferrer\">ASTM F1918-21</a> trata de equipamentos de recreação com estrutura macia e delimitada e também lista exclusões. O nome 'circuito ninja' sozinho não resolve a classificação.</p><ul><li>Relacione números de relatório e identificação de modelo ao equipamento incluído na cotação.</li><li>Solicite desenhos, instruções, limites de usuário e requisitos de manutenção.</li><li>Esclareça por escrito as responsabilidades de instalação, revisão do local e aceitação.</li><li>Trate o nome de uma organização de teste como uma afirmação a verificar, não como uma garantia universal de segurança.</li></ul>"
       },
       {
         "id": "review",
@@ -167,7 +167,7 @@
       },
       {
         "url": "https://store.astm.org/f1918-21.html",
-        "label": "ASTM F1918-21: escopo de brinquedos de pelúcia"
+        "label": "ASTM F1918-21: escopo de equipamentos de recreação com estrutura macia e delimitada"
       },
       {
         "url": "https://www.access-board.gov/ada/guides/chapter-10-play-areas/",
@@ -202,8 +202,8 @@
   {
     "slug": "indoor-playground-theme-design-brief",
     "title": "Briefing de Design Temático para Playgrounds Internos: Planilha do Comprador",
-    "seo_title": "Briefing de Design Temático | NinescapeLand",
-    "seo_description": "Prepare restrições do local, usuários, direitos temáticos, orçamento, entregáveis e aprovações de revisão em um briefing comercial de design para playground.",
+    "seo_title": "Briefing de design temático | NinescapeLand",
+    "seo_description": "Documente restrições do local, usuários, direitos do tema, orçamento, entregas e aprovação de alterações.",
     "excerpt": "Prepare restrições do local, usuários, direitos temáticos, orçamento, entregáveis e aprovações de revisão em um briefing comercial de design para playground.",
     "keywords": [
       "design",
@@ -300,8 +300,8 @@
   {
     "slug": "loose-parts-play-equipment",
     "title": "Equipamento de Jogo com Peças Soltas: Guia de Armazenamento e Inspeção",
-    "seo_title": "Guia de Equipamento de Jogo com Peças Soltas | NinescapeLand",
-    "seo_description": "Planeje jogos supervisionados com peças soltas, incluindo limites de usuários, inspeção, armazenamento, limpeza e registros de aquisição.",
+    "seo_title": "Equipamentos de peças soltas | NinescapeLand",
+    "seo_description": "Organize o brincar supervisionado com limites do produto, inspeção, armazenamento, limpeza e registros de compra.",
     "excerpt": "Planeje jogos supervisionados com peças soltas, incluindo limites de usuários, inspeção, armazenamento, limpeza e registros de aquisição.",
     "keywords": [
       "guides",
@@ -338,7 +338,7 @@
       {
         "id": "evidence",
         "title": "Verifique o escopo do teste em vez de um slogan de certificação",
-        "html": "<p>Solicite identificação de relatório, modelos de produto correspondentes, edições de padrão aplicáveis e limitações de teste. <a href=\"https://store.astm.org/f1487-25.html\" target=\"_blank\" rel=\"noopener noreferrer\">ASTM F1487-25</a> exclui brinquedos e play soft contido, entre outras categorias. <a href=\"https://store.astm.org/f1918-21.html\" target=\"_blank\" rel=\"noopener noreferrer\">ASTM F1918-21</a> também tem exclusões. Nenhum título classifica automaticamente todas as peças soltas.</p><p>Peça ao revisor qualificado relevante determinar quais requisitos se aplicam. Um certificado não remove as responsabilidades do operador, demonstra durabilidade ilimitada ou substitui inspeção. Mantenha evidências de teste distintas de pesquisas educacionais, avaliações e marketing do fabricante.</p>"
+        "html": "<p>Solicite identificação de relatório, modelos de produto correspondentes, edições de padrão aplicáveis e limitações de teste. <a href=\"https://store.astm.org/f1487-25.html\" target=\"_blank\" rel=\"noopener noreferrer\">ASTM F1487-25</a> exclui brinquedos e play soft contido, entre outras categorias. <a href=\"https://store.astm.org/f1918-21.html\" target=\"_blank\" rel=\"noopener noreferrer\">ASTM F1918-21</a> também tem exclusões. Nenhum título classifica automaticamente todas as peças soltas.</p><p>Peça ao revisor qualificado relevante determinar quais requisitos se aplicam. Um certificado não elimina as responsabilidades do operador, não demonstra durabilidade ilimitada nem substitui a inspeção. Mantenha evidências de teste distintas de pesquisas educacionais, avaliações e marketing do fabricante.</p>"
       },
       {
         "id": "procurement",
@@ -382,12 +382,12 @@
       {
         "src": "https://gianldlquknsdhfpqqfe.supabase.co/storage/v1/object/public/assets/dcbc5ed3-1863-4db6-bacf-59919b3abec6/1768294400190-bx9gha.jpg",
         "alt": "Render em perspectiva de elementos de play soft",
-        "caption": "Ilustração de design para discutir equipamento e espaço. Não demonstra um procedimento operacional, instalação de armazenamento ou condições de site verificadas."
+        "caption": "Conceito geral de playground, não uma demonstração do estoque de peças soltas, usos permitidos ou armazenamento. Componentes móveis devem ser identificados e avaliados separadamente."
       },
       {
         "src": "https://gianldlquknsdhfpqqfe.supabase.co/storage/v1/object/public/assets/adaf5265-c979-48b7-b4c1-808e1e4b87b8/1768294592888-x69bgi.jpg",
         "alt": "Render em perspectiva de um conceito de equipamento de jogo indoor",
-        "caption": "Ilustração de design para discutir equipamento e espaço. Não demonstra um procedimento operacional, instalação de armazenamento ou condições de site verificadas."
+        "caption": "Conceito geral de playground, não uma demonstração do estoque de peças soltas, usos permitidos ou armazenamento. Componentes móveis devem ser identificados e avaliados separadamente."
       }
     ],
     "relatedLabels": [
@@ -406,8 +406,8 @@
   {
     "slug": "indoor-playground-project-scope",
     "title": "Escopo do Projeto de Playground Interno: Lista de Verificação de Responsabilidades",
-    "seo_title": "Guia de Escopo para Projeto de Playground | NinescapeLand",
-    "seo_description": "Compare design, equipamentos, transporte, instalação, exclusões e deveres de aceitação usando um escopo de projeto escrito para playground.",
+    "seo_title": "Escopo do projeto de playground | NinescapeLand",
+    "seo_description": "Compare design, equipamentos, transporte, instalação, exclusões e aceite com um escopo de projeto escrito.",
     "excerpt": "Compare design, equipamentos, transporte, instalação, exclusões e deveres de aceitação usando um escopo de projeto escrito para playground.",
     "keywords": [
       "business",
@@ -444,7 +444,7 @@
       {
         "id": "requirements",
         "title": "Mantenha testes de equipamentos e aprovação local separados",
-        "html": "<p>Solicite evidências de conformidade específicas do produto e os padrões e edições acordados. <a href=\"https://store.astm.org/f1918-21.html\" target=\"_blank\" rel=\"noopener noreferrer\">ASTM F1918-21</a> trata de equipamentos de playground contidos em superfícies macias. <a href=\"https://store.astm.org/f1487-25.html\" target=\"_blank\" rel=\"noopener noreferrer\">ASTM F1487-25</a> aborda equipamentos de playground público com exclusões. Esses resumos não podem provar que uma instalação com atrações mistas atende a todos os requisitos.</p><p>Para projetos nos EUA, o <a href=\"https://www.access-board.gov/ada/guides/chapter-10-play-areas/\" target=\"_blank\" rel=\"noopener noreferrer\">guia de áreas de jogo do Access Board</a> aborda um escopo separado de acessibilidade. Identifique revisões locais de construção e incêndio independentemente. Um relatório de produto não é uma licença de ocupação ou evidência de redução de custo de seguro.</p>"
+        "html": "<p>Solicite evidências de conformidade específicas do produto e os padrões e edições acordados. <a href=\"https://store.astm.org/f1918-21.html\" target=\"_blank\" rel=\"noopener noreferrer\">ASTM F1918-21</a> trata de equipamentos de playground macios com fechamento (soft-contained play equipment). <a href=\"https://store.astm.org/f1487-25.html\" target=\"_blank\" rel=\"noopener noreferrer\">ASTM F1487-25</a> aborda equipamentos de playground público com exclusões. Esses resumos não podem provar que uma instalação com atrações mistas atende a todos os requisitos.</p><p>Para projetos nos EUA, o <a href=\"https://www.access-board.gov/ada/guides/chapter-10-play-areas/\" target=\"_blank\" rel=\"noopener noreferrer\">guia de áreas de jogo do Access Board</a> aborda um escopo separado de acessibilidade. Identifique revisões locais de construção e incêndio independentemente. Um relatório de produto não é uma licença de ocupação ou evidência de redução de custo de seguro.</p>"
       },
       {
         "id": "handover",
@@ -469,7 +469,7 @@
     "sources": [
       {
         "url": "https://store.astm.org/f1918-21.html",
-        "label": "ASTM F1918-21: escopo de equipamentos de playground macio"
+        "label": "ASTM F1918-21: escopo de equipamentos de playground macios com fechamento"
       },
       {
         "url": "https://store.astm.org/f1487-25.html",
