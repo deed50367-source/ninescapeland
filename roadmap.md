@@ -1,5 +1,9 @@
 # Roadmap
 
+- [ ] November 11 blogs: approve corrected outlines for the five uploaded manuscripts; remove unsupported operational figures, certification guarantees and unverified author credentials before full revision
+- [ ] November 11 blogs: revise five distinct articles, credit source author Gerry, add site cover/inline renders, translate all article and SEO fields into six languages and save CMS records
+- [ ] November 11 blogs: verify public articles and authenticated admin editors, image loading, author/SEO consistency, reciprocal topic links and sitemap/prerender registration; website production deployment remains separate
+
 - [x] November 11: audit six uploaded reports against existing pages and 194 English blog records; verify US/ID demand and intent; deliver a standalone keyword analysis with five blog clusters
 - [x] November 11: approved outlines implemented on five existing URLs in six languages, with source scope, reciprocal links, original publication dates and separate SOP re-review
 - [x] November 11: verify 30 pages, metadata/schema/images/inquiry navigation, EN/AR mobile and product/process inbound links; 21 tests/1031 assertions pass, no form submission
