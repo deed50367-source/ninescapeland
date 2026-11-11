@@ -1,5 +1,9 @@
 # Roadmap
 
+- [ ] November 11: audit six uploaded keyword/intent/link reports against existing pages and blogs; verify demand and ranking intent; deliver a standalone keyword analysis with five blog clusters
+- [ ] November 11: approve five distinct topic-page outlines, then update six-language content with source-backed SEO/GEO, reciprocal links and SOP re-review
+- [ ] November 11: verify updated pages, metadata, images, language routes and inquiry navigation; production publication remains separate
+
 - [x] Rearrange the 20 October 15–November 3 articles to one article per day with six synchronized language dates; 120 records verified by three tests/302 assertions, 18 public article date checks and newest featured/list order verified; content/status preserved
 - [x] November 3 blogs: read five complete uploaded manuscripts; corrected outlines approved; confirm Gerry attribution and six site-language SEO placement (no new Chinese site version)
 - [x] November 3 blogs: revise unsupported claims, translate 25 versions using SiliconFlow, add site cover/two inline images, publish and read back 30 blog records, register reciprocal topic links and 30 sitemap/prerender paths
