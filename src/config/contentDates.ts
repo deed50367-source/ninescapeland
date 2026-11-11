@@ -18,7 +18,7 @@ export const CONTENT_DATES: Record<string, string> = {
   "/indoor-playground-factory-acceptance-checklist": "2026-11-03",
   "/multi-site-indoor-playground-equipment-procurement": "2026-11-03",
 
-  "/private-indoor-playground-party-room-design": "2026-10-30",
+  "/private-indoor-playground-party-room-design": "2026-11-11",
   "/first-birthday-soft-play-equipment-for-venues": "2026-10-30",
   "/commercial-indoor-playground-tunnels-and-tubes": "2026-10-30",
   "/vacant-mall-unit-indoor-playground-conversion": "2026-10-30",
@@ -64,7 +64,7 @@ export const CONTENT_DATES: Record<string, string> = {
   "/designing-sensory-play-areas-for-education": "2026-08-06",
   "/indoor-trampoline-park-business-for-schools": "2026-08-06",
   "/montessori-indoor-playground-design": "2026-08-06",
-  "/themed-indoor-playground-design": "2026-08-06",
+  "/themed-indoor-playground-design": "2026-11-11",
   "/homeschool-coop-indoor-play": "2026-08-06",
   "/indoor-summer-camp-playground": "2026-08-06",
   "/indoor-pe-equipment-for-schools": "2026-08-06",
@@ -91,7 +91,7 @@ export const CONTENT_DATES: Record<string, string> = {
   "/how-to-design-an-educational-indoor-play-area": "2026-09-04",
   "/indoor-playground-equipment-for-early-childhood-centers": "2026-09-04",
   "/interactive-play-equipment-for-learning-centers": "2026-09-04",
-  "/modular-reconfigurable-indoor-play-equipment": "2026-09-04",
+  "/modular-reconfigurable-indoor-play-equipment": "2026-11-11",
 
   // Weekly aggregation pages (batch 6)
   "/after-school-program-indoor-play-equipment": "2026-09-10",
@@ -107,7 +107,7 @@ export const CONTENT_DATES: Record<string, string> = {
   "/durable-soft-play-equipment-title-1-schools": "2026-09-18",
   "/astm-certified-commercial-trampoline-park-supplier": "2026-09-18",
   "/ninja-course-equipment-indoor-education-centers": "2026-09-18",
-  "/complete-indoor-play-center-solutions": "2026-09-18",
+  "/complete-indoor-play-center-solutions": "2026-11-11",
 
   // Weekly aggregation pages (batch 8)
   "/indoor-playground-equipment-factory-direct-price": "2026-09-23",
@@ -116,7 +116,7 @@ export const CONTENT_DATES: Record<string, string> = {
   "/gross-motor-play-equipment-for-preschoolers": "2026-10-02",
   "/turnkey-indoor-playground-installation-services": "2026-10-08",
   "/indoor-playground-maintenance-and-cleaning-guide": "2026-10-08",
-  "/ninja-warrior-course-for-kids-indoor-playground": "2026-10-08",
+  "/ninja-warrior-course-for-kids-indoor-playground": "2026-11-11",
   "/indoor-trampoline-park-layout-design": "2026-10-08",
   "/indoor-playground-cafe-business-model": "2026-10-15",
   "/restaurant-indoor-playground-layout-design": "2026-10-15",

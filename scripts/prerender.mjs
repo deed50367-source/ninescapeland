@@ -31,6 +31,8 @@ const BASE_URL = `http://localhost:${PORT}`;
 
 // All core routes to prerender
 const CORE_ROUTES = [
+  "/ninja-warrior-course-for-kids-indoor-playground",
+  "/complete-indoor-play-center-solutions",
   "/commercial-indoor-playground-slide-selection",
   "/commercial-indoor-playground-netting",
   "/indoor-playground-equipment-import-shipping-terms",
@@ -176,7 +178,6 @@ const ENGLISH_ONLY_ROUTES = [
   "/durable-soft-play-equipment-title-1-schools",
   "/astm-certified-commercial-trampoline-park-supplier",
   "/ninja-course-equipment-indoor-education-centers",
-  "/complete-indoor-play-center-solutions",
   // Weekly aggregation pages (batch 8, English originals)
   "/indoor-playground-equipment-factory-direct-price",
   "/commercial-indoor-playground-profit-margin",
@@ -184,7 +185,6 @@ const ENGLISH_ONLY_ROUTES = [
   "/gross-motor-play-equipment-for-preschoolers",
   "/turnkey-indoor-playground-installation-services",
   "/indoor-playground-maintenance-and-cleaning-guide",
-  "/ninja-warrior-course-for-kids-indoor-playground",
   "/indoor-trampoline-park-layout-design",
   "/indoor-playground-cafe-business-model",
   "/restaurant-indoor-playground-layout-design",

@@ -1,4 +1,5 @@
 import { Header } from "@/components/Header";
+import { WeeklyPlanningLinks } from "@/components/WeeklyPlanningLinks";
 import { PageHero } from "@/components/PageHero";
 import { Footer } from "@/components/Footer";
 import { FloatingCTA } from "@/components/FloatingCTA";
@@ -800,6 +801,7 @@ const SoftPlay = () => {
         <ProductFAQ productType="softPlay" />
         <QuoteCalculator />
         <GeoAnswerBlock />
+        <WeeklyPlanningLinks slug="products/soft-play" />
       </main>
       <Footer />
       <FloatingCTA />

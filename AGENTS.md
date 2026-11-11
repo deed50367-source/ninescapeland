@@ -19,3 +19,5 @@
 - Published multilingual blog batches retain a shared slug per article and register all language routes in prerendering and the sitemap so crawlers can discover the same content as readers.
 - Reviewed weekly blogs retain localized editorial bundles, an explicit aggregation-parent matrix and a shared credited-author resolver for public, admin and schema displays; keep account ownership separate from editorial authorship, and publish database HTML only after translation and factual checks so review evidence and live content stay aligned.
 - Exhibition banners, contact-page image overrides and inquiry prefills share an expiry hook so all temporary presentation restores together, including pages left open at expiry.
+
+- Existing-topic refresh bundles override only their registered legacy routes, preserve original publication dates and update modification dates; shared reciprocal links keep established URLs discoverable.

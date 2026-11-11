@@ -1,0 +1,758 @@
+{
+  "private-indoor-playground-party-room-design": {
+    "slug": "private-indoor-playground-party-room-design",
+    "title": "Diseño de Sala de Fiestas para Parque Infantil Interior",
+    "metaTitle": "Diseño de Sala de Fiestas | NinescapeLand",
+    "metaDescription": "Diseñe salas de fiestas con límites de reserva, rutas de comida, relevo de grupos y alcance escrito del equipo.",
+    "kicker": "Parques Comerciales · Diseño y Adquisición",
+    "intro": "Una sala de fiestas es un espacio de reunión dedicado, no necesariamente un parque infantil privado. Para un local comercial, especifique si los invitados comparten la zona de juego, reservan una sala o alquilan todo el local. Incluya en el mismo diseño el servicio de alimentos, la observación y la entrega del grupo.",
+    "answerQuestion": "¿Qué debe incluir el diseño de una sala de fiestas para parque infantil?",
+    "answer": "Defina primero el espacio reservado y las responsabilidades del personal. Coordine una ruta visible entre el juego y la sala, circulación accesible, manipulación de alimentos y la llegada del siguiente grupo. Una reserva de autoservicio de dos horas es un escenario de planificación, no un requisito de la industria; el autoservicio no elimina las obligaciones de supervisión.",
+    "frameworkTitle": "Construya la Sala y el Brief de Reserva",
+    "framework": [
+      {
+        "title": "Defina el límite de la reserva",
+        "desc": "Registre salas exclusivas, atracciones compartidas, adultos acompañantes y acceso de hermanos. Muestre qué puerta o punto controlado separa al grupo de las entradas generales. No describa una reserva de sala como alquiler exclusivo del local."
+      },
+      {
+        "title": "Planifique llegada, actividades y comida",
+        "desc": "Planifique el registro, pertenencias, juego supervisado, la comida, salida y reinicio como tareas separadas. Identifique al responsable en cada entrega y proteja las salidas de muebles, carros de catering y huéspedes en espera. Verifique requisitos locales de accesibilidad y alimentos. Utiliza una ruta de servicio desde el punto de entrada de catering o preparación hasta las mesas de la fiesta, luego un punto de recolección separado para residuos y platos usados. Mantén esos movimientos fuera del juego activo, las colas de admisión y la entrega grupal; si las rutas deben cruzarse, documenta una transferencia controlada con el operador."
+      },
+      {
+        "title": "Pruebe el escenario de dos horas",
+        "desc": "Use una muestra de autoservicio de dos horas para revisar esas tareas con el operador. Registre acceso para preparación, tiempo real de actividad, responsabilidad de catering y manejo de salidas tardías. Mida necesidades de reinicio antes de establecer intervalos de reserva; no se asume un búfer universal."
+      },
+      {
+        "title": "Maneje grupos superpuestos",
+        "desc": "Trace la salida del grupo anterior mientras el siguiente se registra. Proporcione áreas de espera y limpieza sin rutear llegadas a través de juego activo o limpieza de alimentos. Envíe al proveedor dimensiones de la sala, puertas, servicios, mezcla de edades y el modelo operativo propuesto."
+      }
+    ],
+    "equipmentTitle": "Compare Modelos de Reserva y Espacio",
+    "equipment": [
+      {
+        "title": "Sala privada, juego compartido",
+        "desc": "Una sala separada da al grupo un punto de encuentro mientras el juego público sigue compartido. Coordine identificación de invitados y observación de adultos."
+      },
+      {
+        "title": "Zona de fiestas compartida",
+        "desc": "Una zona flexible necesita límites claros de almacenamiento y grupo. Pruebe ruido, acceso de catering y desplazamiento de asientos cotidianos."
+      },
+      {
+        "title": "Alquiler completo del local",
+        "desc": "El uso exclusivo cambia el control de acceso y alcance del personal, no la idoneidad del equipo. Documente qué atracciones y servicios están incluidos."
+      },
+      {
+        "title": "Paquete de autoservicio",
+        "desc": "Especifique qué traen los invitados, qué hace el personal y quién limpia. El suministro de equipo no incluye catering o supervisión operativa a menos que se contrate."
+      }
+    ],
+    "columns": [
+      "Modelo",
+      "Límite del espacio",
+      "Tarea del operador",
+      "Evidencia del comprador"
+    ],
+    "rows": [
+      [
+        "Sala privada",
+        "Solo la sala; el juego puede ser compartido",
+        "Registro del grupo y observación",
+        "Ruta sala/juego y paquete escrito"
+      ],
+      [
+        "Zona compartida",
+        "Mesas marcadas o área móvil",
+        "Separación y reinicio del grupo",
+        "Prueba de muebles/almacenamiento"
+      ],
+      [
+        "Alquiler completo",
+        "Áreas definidas del local",
+        "Control de acceso y personal",
+        "Horario de atracciones incluidas"
+      ],
+      [
+        "Autoservicio",
+        "Según lo indicado en la reserva",
+        "Supervisión y limpieza asignadas",
+        "Alcance del servicio tarea por tarea"
+      ]
+    ],
+    "faq": [
+      {
+        "title": "¿Una sala de fiestas significa alquiler privado del parque infantil?",
+        "desc": "No. Defina la exclusividad de la sala, atracciones compartidas y exclusividad del local por separado en la reserva y diseño."
+      },
+      {
+        "title": "¿Son dos horas la duración recomendada para una fiesta?",
+        "desc": "Es el escenario planteado en el brief de palabras clave, no un estándar. Establezca tiempo útil de actividad y intervalos de entrega usando sus tareas y registros reales."
+      },
+      {
+        "title": "¿Autoservicio significa que el personal es innecesario?",
+        "desc": "No. Alimentos o decoraciones proporcionados por el cliente no eliminan responsabilidades de observación, control de acceso, emergencias o limpieza."
+      },
+      {
+        "title": "¿Qué debe recibir el proveedor del equipo?",
+        "desc": "Un plano del sitio medido, usuarios previstos, rutas de invitados, muebles de la sala, servicios y el límite escrito entre el equipo suministrado y las operaciones del local."
+      }
+    ],
+    "tableTitle": "Compare Modelos de Reserva y Espacio — Matriz de Decisión",
+    "tableNote": "Orientación de planificación, no un certificado de seguridad o promesa contractual. Verifique dimensiones, uso previsto, requisitos locales y responsabilidades escritas para su proyecto.",
+    "imageAlt": "Diseño de Sala de Fiestas para Parque Infantil Interior — render 3D ilustrativo del sitio",
+    "captions": [
+      "Render conceptual de un espacio de reunión dedicado para fiestas.",
+      "Estructura de juego como referencia para rutas de invitados compartidas.",
+      "Render conceptual de un local temático completo; una zona separada para hermanos menores requiere un plano específico del proyecto."
+    ],
+    "ui": {
+      "home": "Inicio",
+      "products": "Productos",
+      "design": "Solicitar Diseño 3D Gratis",
+      "whatsapp": "Chatear por WhatsApp",
+      "compare": "Comparar Opciones",
+      "gallery": "Referencias de Diseño",
+      "relatedTitle": "Guías de Planificación Relacionadas",
+      "faqTitle": "Preguntas de Compradores",
+      "sourcesTitle": "Fuentes y Alcance",
+      "sourcesIntro": "Las fuentes enlazadas explican su propio equipo o alcance jurisdiccional. No son certificados de producto. Las recomendaciones de adquisición y operación son orientación de planificación; obtenga una revisión específica para su proyecto.",
+      "updated": "Actualizado el 11 de noviembre de 2026",
+      "author": "NinescapeLand · Planificación de Parques Comerciales",
+      "imageNote": "Los renders 3D de sitios existentes ilustran configuraciones de equipo, no especificaciones de producto o proyectos completados.",
+      "inquiryIntro": "Envíe sus planos del sitio, país y requisitos de adquisición para una discusión específica de su proyecto."
+    },
+    "parents": [
+      {
+        "slug": "products/indoor-playground",
+        "label": "Equipo para Parque Infantil Interior"
+      },
+      {
+        "slug": "complete-indoor-play-center-solutions",
+        "label": "Alcance Completo de Centro de Juegos Interior"
+      }
+    ],
+    "sources": [
+      {
+        "label": "ASTM F1918 — Equipo de Juego Suave Contenido",
+        "publisher": "ASTM International",
+        "url": "https://store.astm.org/standards/f1918",
+        "note": "El alcance 1.1–1.4 concierne a equipos suaves contenidos, no a todas las atracciones o requisitos de accesibilidad. Use la edición aplicable y evidencia específica del artículo."
+      },
+      {
+        "label": "Estándares ADA 2010 para Diseño Accesible",
+        "publisher": "U.S. Department of Justice",
+        "url": "https://www.ada.gov/law-and-regs/design-standards/2010-stds/",
+        "note": "Requisitos de accesibilidad en EE.UU., incluyendo rutas accesibles y áreas de juego (secciones 240 y 1008). No es una aprobación mundial."
+      }
+    ],
+    "publishedDate": "2026-10-30",
+    "checklist": [],
+    "checklistTitle": ""
+  },
+  "ninja-warrior-course-for-kids-indoor-playground": {
+    "slug": "ninja-warrior-course-for-kids-indoor-playground",
+    "title": "Circuito Ninja para Niños",
+    "metaTitle": "Planificación de Circuito Ninja Infantil | NinescapeLand",
+    "metaDescription": "Planifique circuitos ninja infantiles con rutas por capacidad, espera, desvíos y comprobaciones de compra para cada equipo.",
+    "kicker": "Juego Comercial · Diseño y Adquisición",
+    "intro": "Un circuito ninja infantil requiere una ruta conectada y un plan operativo, no solo una colección de obstáculos difíciles. Para un cumpleaños de ocho años o un grupo escolar mixto, evalúe diferentes habilidades y usuarios primerizos sin asumir que la edad por sí sola determina la preparación.",
+    "answerQuestion": "¿Cómo se planifica un circuito ninja para niños?",
+    "answer": "Seleccione obstáculos según su uso documentado, luego proporcione progresión, espera visible, un desvío y acceso para el personal. Separe a los hermanos menores de los obstáculos activos. Revise la ruta ensamblada, protección y disposiciones de emergencia con personal calificado; no asigne alturas universales de obstáculos ni tiempos de finalización.",
+    "frameworkTitle": "Coordine Desafío y Movimiento Grupal",
+    "framework": [
+      {
+        "title": "Agrupe por habilidad además de edad",
+        "desc": "Pregunte cómo los usuarios primerizos aprenden cada obstáculo y cómo se mantiene disponible una ruta más fácil. Una fiesta de ocho años es un escenario de uso, no prueba de que cada obstáculo sea adecuado para todos. Registre usuarios previstos y restricciones por elemento."
+      },
+      {
+        "title": "Diseñe estaciones, espera y desvíos",
+        "desc": "Muestre dónde los usuarios esperan, entran, intentan, salen o rechazan cada desafío. Mantenga colas fuera del área de movimiento activo y permita que un participante se retire sin cruzar otro intento. Pruebe la rotación propuesta con el operador."
+      },
+      {
+        "title": "Separe hermanos y observadores",
+        "desc": "Proporcione una actividad adecuada para hermanos y una ruta de observación para adultos fuera del camino de obstáculos. Confirme observación, asistencia y acceso de emergencia. No equipare acolchado atractivo o un render con protección verificada."
+      },
+      {
+        "title": "Revise el paquete completo de equipamiento",
+        "desc": "Solicite dimensiones, detalles de conexión/soporte, superficies protectoras, instrucciones de instalación y acceso de inspección. Clasifique elementos ninja, estructuras blandas y canchas de trampolín por separado; la referencia ASTM F2970 mencionada abajo concierne a canchas de trampolín, no a todos los obstáculos ninja."
+      }
+    ],
+    "equipmentTitle": "Elija una Ruta de Desafío Documentada",
+    "equipment": [
+      {
+        "title": "Ruta de equilibrio",
+        "desc": "Revise los usuarios previstos del elemento, entorno de aterrizaje y desvío. Elementos de apariencia más fácil aún requieren la protección especificada."
+      },
+      {
+        "title": "Ruta de escalada o travesía",
+        "desc": "Confirme agarre, transiciones, soportes y acceso asistido. Las alturas siguen el diseño aprobado, no una tabla genérica por edad."
+      },
+      {
+        "title": "Desafío progresivo",
+        "desc": "Ofrezca alternativas en lugar de obligar a cada niño a superar el obstáculo más difícil. Registre el uso permitido real y controles de entrada."
+      },
+      {
+        "title": "Ninja más trampolín",
+        "desc": "Separe colas, límites de actividad y reglas operativas. Clasifique la cancha de trampolín bajo sus propios requisitos aplicables."
+      }
+    ],
+    "columns": [
+      "Opción",
+      "Decisión de ruta",
+      "Enfoque operativo",
+      "Evidencia de adquisición"
+    ],
+    "rows": [
+      [
+        "Introductorio",
+        "Entrada visible y desvío fácil",
+        "Demostración para primerizos",
+        "Uso previsto e instrucciones del artículo"
+      ],
+      [
+        "Progresivo",
+        "Rutas de dificultad alternativa",
+        "Agrupación sensible a habilidades",
+        "Revisión completa de ruta y protección"
+      ],
+      [
+        "Rotación para fiestas",
+        "Espera y salidas separadas",
+        "Tareas asignadas por estación/observación",
+        "Recorrido del operador"
+      ],
+      [
+        "Atracciones combinadas",
+        "Límite definido ninja/trampolín",
+        "Reglas de uso diferentes",
+        "Evidencia separada del alcance del equipamiento"
+      ]
+    ],
+    "faq": [
+      {
+        "title": "¿Está todo niño de ocho años preparado para los mismos obstáculos?",
+        "desc": "No. Utilice la información de uso previsto del fabricante y considere habilidad, experiencia y configuración de la actividad."
+      },
+      {
+        "title": "¿Cuánto personal o área necesita un circuito?",
+        "desc": "Determínelo según el equipamiento, líneas de visión, modelo operativo y revisión local. Esta guía no promete una proporción fija de personal ni área universal."
+      },
+      {
+        "title": "¿Puede la certificación de trampolín cubrir una ruta ninja?",
+        "desc": "No lo asuma. ASTM F2970 concierne a canchas de trampolín especificadas; determine los requisitos para cada tipo de equipamiento e interfaz ensamblada."
+      },
+      {
+        "title": "¿Qué hace funcional una rotación para fiestas?",
+        "desc": "Un punto de espera visible, entrada/salida clara, un desvío y responsabilidades asignadas. Pruebe la secuencia antes de establecer números de participantes o tiempos por estación."
+      }
+    ],
+    "tableTitle": "Elija una Ruta de Desafío Documentada — Matriz de Decisión",
+    "tableNote": "Orientación de planificación, no un certificado de seguridad ni promesa contractual. Verifique dimensiones, uso previsto, requisitos locales y responsabilidades escritas para su proyecto.",
+    "imageAlt": "Circuito Ninja para Niños — render ilustrativo del sitio",
+    "captions": [
+      "Render de configuración existente de circuito ninja.",
+      "Referencia de estructura interior, no una especificación ninja.",
+      "Referencia de trampolín para una atracción revisada por separado."
+    ],
+    "ui": {
+      "home": "Inicio",
+      "products": "Productos",
+      "design": "Solicitar Diseño 3D Gratis",
+      "whatsapp": "Chat por WhatsApp",
+      "compare": "Comparar Opciones",
+      "gallery": "Referencias de Diseño",
+      "relatedTitle": "Guías de Planificación Relacionadas",
+      "faqTitle": "Preguntas de Compradores",
+      "sourcesTitle": "Fuentes y Alcance",
+      "sourcesIntro": "Las fuentes enlazadas explican su propio equipamiento o alcance jurisdiccional. No son certificados de producto. Las recomendaciones de adquisición y operación son orientación; obtenga una revisión específica para su proyecto.",
+      "updated": "Actualizado el 11 de noviembre de 2026",
+      "author": "NinescapeLand · Planificación de Juego Comercial",
+      "imageNote": "Los renders de sitios existentes ilustran configuraciones de equipamiento, no especificaciones de producto ni proyectos completados.",
+      "inquiryIntro": "Envíe sus planos del sitio, país y requisitos de adquisición para una discusión específica del proyecto."
+    },
+    "parents": [
+      {
+        "slug": "products/ninja-course",
+        "label": "Equipamiento de Circuito Ninja"
+      },
+      {
+        "slug": "complete-indoor-play-center-solutions",
+        "label": "Alcance de Centro de Juego Interior Completo"
+      }
+    ],
+    "sources": [
+      {
+        "label": "ASTM F2970 — Canchas de Trampolín",
+        "publisher": "ASTM International",
+        "url": "https://store.astm.org/standards/f2970",
+        "note": "El alcance 5.1–5.5 aborda canchas de trampolín institucionales con exclusiones listadas. No es un estándar universal para circuitos ninja."
+      },
+      {
+        "label": "ASTM F1918 — Equipamiento de Juego Blando Contenido",
+        "publisher": "ASTM International",
+        "url": "https://store.astm.org/standards/f1918",
+        "note": "El alcance 1.1–1.4 concierne a equipamiento blando contenido, no a todas las atracciones ni requisitos de accesibilidad. Utilice la edición aplicable y evidencia específica por artículo."
+      }
+    ],
+    "publishedDate": "2026-10-08",
+    "checklistTitle": "Lista de Verificación de Adquisición Ninja",
+    "checklist": [
+      "Registra los usuarios previstos y el uso permitido de cada obstáculo.",
+      "Obtén los planos completos de la ruta, soporte, conexión y superficie protectora.",
+      "Marca puntos separados de espera, entrada, salida, desvío y acceso para el personal.",
+      "Enumera cualquier pista de trampolín por separado, con sus propias instrucciones y revisión de interfaz."
+    ]
+  },
+  "themed-indoor-playground-design": {
+    "slug": "themed-indoor-playground-design",
+    "title": "Diseño de Parque Infantil Temático Interior",
+    "metaTitle": "Diseño de Parque Temático | NinescapeLand",
+    "metaDescription": "Elija un tema de parque infantil según diseño, rutas de juego, mantenimiento, derechos de imagen y planos de fabricación.",
+    "kicker": "Parque Comercial · Diseño y Adquisición",
+    "intro": "Un tema debe dar al lugar una identidad coherente sin ocultar sus rutas de juego, observación o acceso de mantenimiento. Los diseños de océano, espacio y naturaleza son opciones, no un ranking de popularidad verificado. Elíjalos en función del brief del sitio y el equipo, no de pronósticos de ingresos no respaldados.",
+    "answerQuestion": "¿Cómo seleccionar un tema para un parque infantil comercial?",
+    "answer": "Defina la atmósfera deseada, usuarios, equipos y restricciones de mantenimiento antes de aprobar el arte. Revise la identidad visual, rutas físicas y detalles reemplazables por separado. Un concepto en 3D ayuda a comunicar las opciones; la especificación coordinada y los planos aprobados controlan la fabricación.",
+    "frameworkTitle": "Convertir un Tema en un Brief de Fabricación",
+    "framework": [
+      {
+        "title": "Definir el objetivo del tema",
+        "desc": "Registre la audiencia, identidad del lugar, preferencias de color/material, atracciones deseadas y elementos a evitar. Use océano, espacio o naturaleza como conceptos alternativos, no como tendencias comprobadas. Indique quién aprueba el arte y quién puede autorizar cambios."
+      },
+      {
+        "title": "Separar tres capas de diseño",
+        "desc": "Primero elija gráficos visuales y formas decorativas; luego confirme las rutas de juego/observación; finalmente verifique el acceso para limpieza, inspección y reemplazo. Los paneles decorativos no deben ocultar puntos de observación acordados ni bloquear el acceso de mantenimiento."
+      },
+      {
+        "title": "Elegir elementos físicos e interactivos",
+        "desc": "Compare escenarios estáticos con dispositivos interactivos opcionales usando datos de energía, mantenimiento, reemplazo y accesibilidad. No se promete ningún porcentaje de participación o mejora de ingresos. En espacios pequeños, preserve rutas útiles antes de añadir escenarios voluminosos."
+      },
+      {
+        "title": "Controlar el arte y la transición",
+        "desc": "Use personajes y gráficos originales o con licencia adecuada; obtenga permiso para marcas protegidas. Liste acabados aprobados, identificadores de componentes, planos y requisitos de acceso. Un render conceptual no es un informe de prueba, plano de instalación final ni evidencia de un proyecto completado."
+      }
+    ],
+    "equipmentTitle": "Comparar Opciones Temáticas",
+    "equipment": [
+      {
+        "title": "Océano",
+        "desc": "Use formas marinas y una paleta coherente manteniendo puntos de observación transparentes y acceso de servicio."
+      },
+      {
+        "title": "Espacio",
+        "desc": "Coordine paneles temáticos y formas con iluminación, servicios y decoración reemplazable; evite añadidos aéreos no revisados."
+      },
+      {
+        "title": "Naturaleza",
+        "desc": "Revise formas de hojas/árboles para acceso de limpieza e inspección. La suavidad visual no es una afirmación de seguridad o rendimiento sensorial."
+      },
+      {
+        "title": "Opción interactiva",
+        "desc": "Especifique controles, energía, manejo de fallos y soporte por separado. Elija interacción solo donde el operador pueda mantenerla."
+      }
+    ],
+    "columns": [
+      "Opción",
+      "Brief visual",
+      "Compromiso operativo",
+      "Registro de aprobación"
+    ],
+    "rows": [
+      [
+        "Escenario físico",
+        "Formas, acabados y gráficos",
+        "Limpieza y paneles reemplazables",
+        "Listado de materiales/componentes"
+      ],
+      [
+        "Capa interactiva",
+        "Contenido y comportamiento del dispositivo",
+        "Energía, fallos y soporte",
+        "Especificación del dispositivo/interfaz"
+      ],
+      [
+        "Tema compacto",
+        "Elementos focales selectivos",
+        "Rutas y líneas de visión preservadas",
+        "Plano de sitio coordinado"
+      ],
+      [
+        "Identidad con licencia",
+        "Personajes/arte permitidos",
+        "Límites de uso y renovación",
+        "Licencia/permiso escrito"
+      ]
+    ],
+    "faq": [
+      {
+        "title": "¿Qué tema es actualmente el más popular?",
+        "desc": "El material proporcionado no establece un ranking de mercado. Elija un tema según su audiencia y brief operativo, no según una tendencia no verificada."
+      },
+      {
+        "title": "¿El diseño temático garantiza mejores ingresos?",
+        "desc": "No. El rendimiento del lugar depende de múltiples factores, y esta página no proporciona porcentajes verificados de aumento de ingresos o interacción social."
+      },
+      {
+        "title": "¿Podemos usar un personaje de dibujos famoso?",
+        "desc": "Solo con los derechos necesarios. Solicite arte original o permiso escrito que cubra el uso propuesto y territorio."
+      },
+      {
+        "title": "¿Un render 3D está listo para fabricación?",
+        "desc": "No por sí solo. Apruebe planos de equipo coordinados, detalles de materiales/componentes, acceso de servicio y cualquier revisión específica del proyecto."
+      }
+    ],
+    "tableTitle": "Comparar Opciones Temáticas — Matriz de Decisión",
+    "tableNote": "Guía de planificación, no un certificado de seguridad o promesa contractual. Verifique dimensiones, uso previsto, requisitos locales y responsabilidades escritas para su proyecto.",
+    "imageAlt": "Diseño de Parque Infantil Temático Interior — render 3D ilustrativo",
+    "captions": [
+      "Render conceptual de parque infantil interior existente; no se afirma un proyecto completado.",
+      "Referencia de diseño alternativo, no evidencia de un ranking temático.",
+      "Render conceptual de un local temático completo; las zonas de juego separadas por edad requieren un plano específico del proyecto."
+    ],
+    "ui": {
+      "home": "Inicio",
+      "products": "Productos",
+      "design": "Solicitar Diseño 3D Gratis",
+      "whatsapp": "Chat por WhatsApp",
+      "compare": "Comparar Opciones",
+      "gallery": "Referencias de Diseño",
+      "relatedTitle": "Guías de Planificación Relacionadas",
+      "faqTitle": "Preguntas de Compradores",
+      "sourcesTitle": "Fuentes y Alcance",
+      "sourcesIntro": "Las fuentes enlazadas explican su propio equipo o alcance jurisdiccional. No son certificados de producto. Las recomendaciones de adquisición y operación son guías de planificación; obtenga una revisión específica del proyecto.",
+      "updated": "Actualizado el 11 de noviembre de 2026",
+      "author": "NinescapeLand · Planificación de Parques Comerciales",
+      "imageNote": "Los renders 3D de sitios existentes ilustran configuraciones de equipo, no especificaciones de producto o proyectos completados.",
+      "inquiryIntro": "Envíe sus planos del sitio, país y requisitos de adquisición para una discusión específica del proyecto."
+    },
+    "parents": [
+      {
+        "slug": "products/indoor-playground",
+        "label": "Equipos de Parque Infantil Interior"
+      },
+      {
+        "slug": "complete-indoor-play-center-solutions",
+        "label": "Alcance de Centro de Juego Interior Completo"
+      }
+    ],
+    "sources": [
+      {
+        "label": "ASTM F1918 — Equipo de Juego Suave Contenido",
+        "publisher": "ASTM International",
+        "url": "https://store.astm.org/standards/f1918",
+        "note": "El alcance 1.1–1.4 se refiere a equipos de juego suave contenido, no a todas las atracciones o requisitos de accesibilidad. Use la edición aplicable y evidencia específica del artículo."
+      },
+      {
+        "label": "Estándares ADA 2010 para Diseño Accesible",
+        "publisher": "U.S. Department of Justice",
+        "url": "https://www.ada.gov/law-and-regs/design-standards/2010-stds/",
+        "note": "Requisitos de accesibilidad en EE.UU., incluyendo rutas accesibles y áreas de juego (secciones 240 y 1008). No es una aprobación mundial."
+      }
+    ],
+    "publishedDate": "2026-08-06",
+    "checklist": [],
+    "checklistTitle": ""
+  },
+  "modular-reconfigurable-indoor-play-equipment": {
+    "slug": "modular-reconfigurable-indoor-play-equipment",
+    "title": "Equipo de Juego Modular para Interiores",
+    "metaTitle": "Equipo de Juego Modular | NinescapeLand",
+    "metaDescription": "Compare equipos fijos y modulares: montajes permitidos, juego libre supervisado, almacenaje y pruebas reales de la sala.",
+    "kicker": "Juego Comercial · Diseño y Adquisición",
+    "intro": "El equipo modular puede adaptarse a diferentes usos de una sala solo si se comprenden sus configuraciones permitidas, conexiones y almacenamiento. El juego dirigido por niños difiere de mover una estructura fija. Para salas comunitarias, verifique el proceso real de montaje y almacenamiento antes de comprar basándose en un tiempo prometido de reconfiguración.",
+    "answerQuestion": "¿Qué hace que un equipo de juego interior sea realmente reconfigurable?",
+    "answer": "Exija diseños permitidos por escrito, instrucciones de manejo y detalles de conexión, luego pruebe el almacenamiento y montaje en la sala real. Distinga componentes blandos móviles de estructuras fijas diseñadas. El juego no estructurado o dirigido por niños aún requiere supervisión adecuada, verificaciones de uso previsto y un registro de cada disposición.",
+    "frameworkTitle": "Valide Movimiento, Juego y Almacenamiento",
+    "framework": [
+      {
+        "title": "Clasifique lo que puede moverse",
+        "desc": "Enumere estructuras fijas, ensamblajes modulares aprobados y componentes blandos sueltos. Obtenga las combinaciones y restricciones permitidas. No desconecte partes estructurales porque el producto se describa como modular."
+      },
+      {
+        "title": "Apoye el juego dirigido por niños adecuadamente",
+        "desc": "La guía de juego de la AAP describe exploración con bloques y juego simbólico; no valida un módulo comercial. Elija componentes para los usuarios reales y verifique piezas pequeñas o dañadas según la guía de riesgo de asfixia."
+      },
+      {
+        "title": "Pruebe la sala multiusos",
+        "desc": "Mueva los componentes propuestos por puertas reales hasta el almacén designado. Registre peso/manejo, personal requerido, ruta y duración medida. Verifique otros usos de la sala y evite suponer un porcentaje fijo de almacenamiento."
+      },
+      {
+        "title": "Registre cada disposición aprobada",
+        "desc": "Use un inventario fechado de componentes y verificaciones de conexión del fabricante. Mantenga observación, rutas de acceso y limpieza. El operador debe establecer una verificación previa al uso; no hay una inspección universal de cinco minutos ni ciclo garantizado de fatiga/re-enganche."
+      }
+    ],
+    "equipmentTitle": "Compare Categorías de Equipos",
+    "equipment": [
+      {
+        "title": "Estructura fija",
+        "desc": "Proporciona una ruta de juego conectada y diseñada. Los cambios requieren revisión; no es mueble reconfigurable libremente."
+      },
+      {
+        "title": "Ensamblaje modular aprobado",
+        "desc": "Usa partes y configuraciones compatibles documentadas. Siga instrucciones de conexión, soporte e inspección."
+      },
+      {
+        "title": "Componentes blandos sueltos",
+        "desc": "Pueden apoyar juego abierto si son apropiados para la edad. Verifique condición, cantidad, limpieza y riesgos de piezas pequeñas."
+      },
+      {
+        "title": "Paquete para sala comunitaria",
+        "desc": "Requiere una ruta probada hacia almacenamiento y responsabilidad clara de montaje, supervisión y reconfiguración de usos compartidos."
+      }
+    ],
+    "columns": [
+      "Categoría",
+      "Cambio permitido",
+      "Verificación",
+      "Registro de sala"
+    ],
+    "rows": [
+      [
+        "Fijo",
+        "Solo modificación aprobada",
+        "Revisión estructural/interfaz",
+        "Revisión de plano aprobado"
+      ],
+      [
+        "Modular",
+        "Configuraciones documentadas",
+        "Verificaciones de compatibilidad/conexión",
+        "Diseño e IDs de componentes"
+      ],
+      [
+        "Componentes sueltos",
+        "Disposiciones de uso previsto",
+        "Revisión de condición, edad y piezas pequeñas",
+        "Inventario y lista de almacenamiento"
+      ],
+      [
+        "Sala compartida",
+        "Montaje y retiro aprobados",
+        "Prueba real de manejo/almacenamiento",
+        "Tareas medidas y personal responsable"
+      ]
+    ],
+    "faq": [
+      {
+        "title": "¿El juego no estructurado es juego sin supervisión?",
+        "desc": "No. Las elecciones dirigidas por niños y la observación adulta adecuada son diferentes. Proporcione supervisión acorde a los usuarios y actividad."
+      },
+      {
+        "title": "¿Pueden dos personas reconfigurar cada sala en una hora?",
+        "desc": "No se respalda tal afirmación universal. Realice una prueba real de manejo y registre equipo, personal, ruta y duración medida."
+      },
+      {
+        "title": "¿Cuánto espacio de almacenamiento reservar?",
+        "desc": "Pruebe los componentes reales, estantes, acceso y otras funciones de la sala. Esta página no impone un porcentaje fijo de área."
+      },
+      {
+        "title": "¿El equipo modular garantiza beneficios de desarrollo?",
+        "desc": "No. La fuente de la AAP habla de juego en general, no resultados probados de un producto comercial o tratamiento terapéutico."
+      }
+    ],
+    "tableTitle": "Compare Categorías de Equipos — Matriz de Decisión",
+    "tableNote": "Guía de planificación, no certificado de seguridad o promesa contractual. Verifique dimensiones, uso previsto, requisitos locales y responsabilidades escritas para su proyecto.",
+    "imageAlt": "Equipo de Juego Modular para Interiores — render 3D ilustrativo",
+    "captions": [
+      "Concepto existente de lugar de juegos suaves; no demuestra componentes movibles.",
+      "Estructura fija de referencia para comparación, no un ensamblaje movible.",
+      "Se repite el render conceptual del mismo local; las combinaciones de módulos permitidas requieren planos separados."
+    ],
+    "ui": {
+      "home": "Inicio",
+      "products": "Productos",
+      "design": "Solicitar Diseño 3D Gratis",
+      "whatsapp": "Chat por WhatsApp",
+      "compare": "Comparar Opciones",
+      "gallery": "Referencias de Diseño",
+      "relatedTitle": "Guías de Planificación Relacionadas",
+      "faqTitle": "Preguntas de Compradores",
+      "sourcesTitle": "Fuentes y Alcance",
+      "sourcesIntro": "Las fuentes enlazadas explican su propio equipo o alcance jurisdiccional. No son certificados de producto. Las recomendaciones de adquisición y operación son guía de planificación; obtenga una revisión específica para su proyecto.",
+      "updated": "Actualizado el 11 de noviembre de 2026",
+      "author": "NinescapeLand · Planificación de Juego Comercial",
+      "imageNote": "Renders 3D de sitios existentes ilustran configuraciones de equipo, no especificaciones de producto o proyectos completados.",
+      "inquiryIntro": "Envíe sus planos, país y requisitos de adquisición para una discusión específica de proyecto."
+    },
+    "parents": [
+      {
+        "slug": "products/soft-play",
+        "label": "Equipo de Juego Blando"
+      },
+      {
+        "slug": "complete-indoor-play-center-solutions",
+        "label": "Alcance de Centro de Juego Interior Completo"
+      }
+    ],
+    "sources": [
+      {
+        "label": "El Poder del Juego",
+        "publisher": "American Academy of Pediatrics",
+        "url": "https://www.healthychildren.org/english/family-life/power-of-play/pages/the-power-of-play-how-fun-and-games-help-children-thrive.aspx",
+        "note": "La guía de juego dirigido por niños incluye bloques y juego simbólico; la atención adulta importa. No establece rendimiento de equipo comercial."
+      },
+      {
+        "label": "Prevención de Asfixia para Bebés y Niños",
+        "publisher": "American Academy of Pediatrics",
+        "url": "https://www.healthychildren.org/English/health-issues/injuries-emergencies/Pages/choking-prevention.aspx",
+        "note": "Objetos pequeños pueden obstruir la vía aérea de un niño. Revise componentes sueltos y piezas dañadas para los usuarios reales."
+      },
+      {
+        "label": "ASTM F1918 — Equipo de Juego Blando Contenido",
+        "publisher": "ASTM International",
+        "url": "https://store.astm.org/standards/f1918",
+        "note": "El alcance 1.1–1.4 cubre equipo blando contenido, no todas las atracciones o requisitos de accesibilidad. Use la edición aplicable y evidencia específica del artículo."
+      }
+    ],
+    "publishedDate": "2026-09-04",
+    "checklist": [],
+    "checklistTitle": ""
+  },
+  "complete-indoor-play-center-solutions": {
+    "slug": "complete-indoor-play-center-solutions",
+    "title": "Soluciones Integrales para Centros de Juego Interior",
+    "metaTitle": "Soluciones para Centros de Juego | NinescapeLand",
+    "metaDescription": "Compare suministro, instalación supervisada y coordinación del proyecto con exclusiones, responsables y documentos de entrega.",
+    "kicker": "Juego Comercial · Diseño y Adquisición",
+    "intro": "Una propuesta completa para un centro de juego debe definir quién suministra el equipo, coordina las interfaces y acepta cada entrega. El término 'llave en mano' por sí solo no identifica el alcance del contrato. Compare los entregables y exclusiones antes de comparar precios; las aprobaciones locales y trabajos de construcción deben tener responsables asignados.",
+    "answerQuestion": "¿Qué incluye el alcance de un centro de juego interior completo?",
+    "answer": "Utilice una matriz de responsabilidades escrita para equipos, trabajos de construcción, entrega, instalación, aprobaciones y operaciones. Compare suministro solo de equipos, instalación supervisada y coordinación ampliada por sus entregables reales. Mantenga explícitos los requisitos de ingeniería local, permisos y decisiones de apertura; una referencia estándar del proveedor no es una certificación mundial.",
+    "frameworkTitle": "Utilice Seis Etapas de Entrega Documentadas",
+    "framework": [
+      {
+        "title": "Etapas 1–2: diseño inicial y coordinado",
+        "desc": "La Etapa 1 captura el sitio medido, usuarios previstos, país y modelo operativo. La Etapa 2 registra planos, interfaces, elección de equipos y responsables de aprobación. Nombre a los profesionales locales responsables de aspectos estructurales, contra incendios, accesibilidad y otros temas de construcción."
+      },
+      {
+        "title": "Etapa 3: fabricación y control de cambios",
+        "desc": "Apruebe el programa de componentes/materiales y evidencia de inspección antes de la fabricación. Registre cambios en alcance, planos, costos o cronograma por escrito, con la parte aprobadora. Vincule la aceptación detallada en fábrica con su lista de verificación dedicada en lugar de tratar un render como aceptación."
+      },
+      {
+        "title": "Etapas 4–5: entrega e instalación",
+        "desc": "La Etapa 4 define responsabilidades de envío, aduanas, descarga, almacenamiento y preparación del sitio. La Etapa 5 define instalación, supervisión, herramientas y verificaciones de interfaz. Un supervisor de instalación no es automáticamente el equipo completo de mano de obra local o el profesional de permisos."
+      },
+      {
+        "title": "Etapa 6: entrega y decisiones de apertura",
+        "desc": "Recopile información as-built aprobada, manuales, registros de inspección/aceptación, instrucciones de mantenimiento, detalles de repuestos y propiedad de elementos pendientes. El operador y las autoridades/profesionales locales relevantes toman sus decisiones de apertura aplicables; la entrega de equipos no autoriza automáticamente la apertura."
+      }
+    ],
+    "equipmentTitle": "Compare Alcances de Suministro Escritos",
+    "equipment": [
+      {
+        "title": "Solo equipos",
+        "desc": "Enumere componentes y documentos suministrados. Asigne por separado trabajos locales, importación, descarga, ensamblaje y operación."
+      },
+      {
+        "title": "Instalación supervisada",
+        "desc": "Defina tareas del supervisor, base de duración y entregables junto con mano de obra, herramientas y preparación del sitio proporcionados por el comprador."
+      },
+      {
+        "title": "Coordinación ampliada de proyecto",
+        "desc": "Enumere la coordinación de diseño/interfaz e instalación incluida. Identifique cada servicio profesional o trabajo de construcción local excluido."
+      },
+      {
+        "title": "Entrega para apertura",
+        "desc": "Acuerde la lista de documentos, problemas pendientes y responsables de aceptación. No confunda la aceptación de equipos con una licencia de local."
+      }
+    ],
+    "columns": [
+      "Flujo de trabajo",
+      "Línea base solo equipos",
+      "Alcance supervisado/ampliado",
+      "Responsable/evidencia escrita"
+    ],
+    "rows": [
+      [
+        "Equipos y planos",
+        "Elementos/documentos listados",
+        "Coordinación adicional solo según lo indicado",
+        "Especificación y revisión aprobadas"
+      ],
+      [
+        "Trabajos y aprobaciones locales",
+        "No se asume incluido",
+        "Solo servicios contratados explícitamente",
+        "Profesional/autoridad local y alcance"
+      ],
+      [
+        "Entrega e instalación",
+        "Asigne tareas comprador/proveedor",
+        "Defina supervisor versus equipo",
+        "Tareas nombradas, preparación y acceso"
+      ],
+      [
+        "Entrega y operación",
+        "Manuales según listado",
+        "Aceptación y capacitación acordadas",
+        "Lista de documentos, defectos y deberes del operador"
+      ]
+    ],
+    "faq": [
+      {
+        "title": "¿Llave en mano incluye todos los permisos?",
+        "desc": "No. El contrato debe nombrar servicios incluidos, exclusiones y responsables de aprobación local. No infiera permisos a partir de una etiqueta de marketing."
+      },
+      {
+        "title": "¿Instalación supervisada es igual a un equipo completo de instalación?",
+        "desc": "No. Defina quién proporciona mano de obra, herramientas, elevación, acceso al sitio y supervisión, y qué tareas de inspección/aceptación realiza cada parte."
+      },
+      {
+        "title": "¿Qué normas cubren todo el local?",
+        "desc": "Clasifique requisitos de equipos y construcción por separado. ASTM F1918 cubre su alcance de equipos blandos contenidos; los requisitos ADA de EE.UU. tienen una jurisdicción específica. Ninguno es un certificado mundial de local."
+      },
+      {
+        "title": "¿Qué debe estar listo antes de la apertura?",
+        "desc": "Un paquete de entrega acordado, elementos pendientes resueltos o asignados, preparación del operador y las aprobaciones locales aplicables. No se promete un cronograma universal de apertura."
+      }
+    ],
+    "tableTitle": "Compare Alcances de Suministro Escritos — Matriz de Decisión",
+    "tableNote": "Orientación de planificación, no un certificado de seguridad o promesa contractual. Verifique dimensiones, uso previsto, requisitos locales y responsabilidades escritas para su proyecto.",
+    "imageAlt": "Soluciones Integrales para Centros de Juego Interior — render 3D ilustrativo del sitio",
+    "captions": [
+      "Estructura interior de referencia para el alcance del equipo.",
+      "Concepto de local de referencia, no un proyecto llave en mano completado.",
+      "Referencia de juego blando para una zona especificada por separado."
+    ],
+    "ui": {
+      "home": "Inicio",
+      "products": "Productos",
+      "design": "Solicitar Diseño 3D Gratis",
+      "whatsapp": "Chatear por WhatsApp",
+      "compare": "Comparar Opciones",
+      "gallery": "Referencias de Diseño",
+      "relatedTitle": "Guías de Planificación Relacionadas",
+      "faqTitle": "Preguntas del Comprador",
+      "sourcesTitle": "Fuentes y Alcance",
+      "sourcesIntro": "Las fuentes vinculadas explican su propio alcance de equipos o jurisdicción. No son certificados de producto. Las recomendaciones de adquisición y operación a continuación son orientación de planificación; obtenga una revisión específica para su proyecto.",
+      "updated": "Actualizado el 11 de noviembre de 2026",
+      "author": "NinescapeLand · Planificación de Juego Comercial",
+      "imageNote": "Los renders 3D de sitios existentes ilustran configuraciones de equipos, no especificaciones de producto o proyectos completados.",
+      "inquiryIntro": "Envíe sus planos de sitio, país y requisitos de adquisición para una discusión específica del proyecto."
+    },
+    "parents": [
+      {
+        "slug": "process",
+        "label": "Proceso de Diseño y Fabricación"
+      },
+      {
+        "slug": "products/indoor-playground",
+        "label": "Equipos de Juego Interior"
+      }
+    ],
+    "sources": [
+      {
+        "label": "ASTM F1918 — Equipos de Juego Blandos Contenidos",
+        "publisher": "ASTM International",
+        "url": "https://store.astm.org/standards/f1918",
+        "note": "El alcance 1.1–1.4 se refiere a equipos blandos contenidos, no a todas las atracciones o requisitos de accesibilidad. Utilice la edición aplicable y evidencia específica del artículo."
+      },
+      {
+        "label": "Estándares ADA 2010 para Diseño Accesible",
+        "publisher": "U.S. Department of Justice",
+        "url": "https://www.ada.gov/law-and-regs/design-standards/2010-stds/",
+        "note": "Requisitos de accesibilidad de EE.UU., incluyendo rutas accesibles y áreas de juego (secciones 240 y 1008). No es una aprobación mundial."
+      }
+    ],
+    "publishedDate": "2026-09-18",
+    "checklist": [],
+    "checklistTitle": ""
+  }
+}
