@@ -24,7 +24,7 @@ import { Skeleton } from "@/components/ui/skeleton";
 import { Button } from "@/components/ui/button";
 import { useEffect } from "react";
 import { reviewedBlogArticles } from "@/config/reviewedBlogContent";
-import { novemberBlogAuthor } from "@/config/novemberBlogMatrix";
+import { creditedBlogAuthor } from "@/config/creditedBlogAuthor";
 import { WeeklyBlogLinks } from "@/components/WeeklyBlogLinks";
 import { FAQSchema } from "@/components/StructuredData";
 
@@ -48,7 +48,7 @@ const BlogPost = () => {
   const currentLang = i18n.language?.split('-')[0] || 'en';
   const weeklyArticle = reviewedBlogArticles(currentLang).find(item => item.slug === slug);
   const isWeeklyBlog = Boolean(weeklyArticle);
-  const articleAuthor = novemberBlogAuthor(slug) ?? "NinescapeLand Team";
+  const articleAuthor = creditedBlogAuthor(slug) ?? "NinescapeLand Team";
 
   // Check for slug redirect (old long URLs → new short URLs)
   const { data: redirectData } = useQuery({
@@ -341,7 +341,7 @@ const BlogPost = () => {
         articleBody={stripHtml(post.content)}
         inLanguage={currentLang}
         author={articleAuthor}
-        authorType={novemberBlogAuthor(slug) ? "Person" : "Organization"}
+        authorType={creditedBlogAuthor(slug) ? "Person" : "Organization"}
         citation={isWeeklyBlog ? weeklyArticle?.sources.map(source => source.url) : undefined}
       />
       {isWeeklyBlog && weeklyArticle && <FAQSchema items={weeklyArticle.faq.map(item => ({ question: item.q, answer: item.a }))} />}
@@ -419,7 +419,7 @@ const BlogPost = () => {
                 {/* Author Byline Card — E-E-A-T signal */}
                 <aside className="flex flex-wrap items-start gap-4 border-y border-border py-5">
                   <div className="w-12 h-12 rounded-full bg-gradient-to-br from-primary to-primary/60 text-primary-foreground flex items-center justify-center font-bold text-lg flex-shrink-0">
-                    {novemberBlogAuthor(slug) ? "G" : "NL"}
+                    {creditedBlogAuthor(slug) ? "G" : "NL"}
                   </div>
                   <address className="not-italic flex-1 min-w-[200px]">
                     <div className="flex items-center gap-2 text-foreground font-semibold">

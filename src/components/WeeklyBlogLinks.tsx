@@ -4,12 +4,13 @@ import { Button } from "@/components/ui/button";
 import { b13Language, b13Path } from "@/config/weeklyAggregationB13Registry";
 import { weeklyBlogInbound } from "@/config/weeklyBlogMatrix";
 import { novemberBlogInbound } from "@/config/novemberBlogMatrix";
+import { november11BlogInbound } from "@/config/november11BlogMatrix";
 import { reviewedBlogArticles } from "@/config/reviewedBlogContent";
 
 export function WeeklyBlogLinks({ slug }: { slug: string }) {
   const { pathname } = useLocation();
   const language = b13Language(pathname);
-  const slugs = [...weeklyBlogInbound(slug), ...novemberBlogInbound(slug)];
+  const slugs = [...weeklyBlogInbound(slug), ...novemberBlogInbound(slug), ...november11BlogInbound(slug)];
   if (!slugs.length) return null;
   const articles = reviewedBlogArticles(language);
   return <section className="border-y border-border py-10"><div className="container-wide">

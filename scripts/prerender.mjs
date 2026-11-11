@@ -58,6 +58,11 @@ const CORE_ROUTES = [
   "/faq",
   "/blog",
   // Weekly blog originals share a slug across all six language versions.
+  "/blog/indoor-playground-party-room-turnover",
+  "/blog/ninja-birthday-party",
+  "/blog/indoor-playground-theme-design-brief",
+  "/blog/loose-parts-play-equipment",
+  "/blog/indoor-playground-project-scope",
   "/blog/indoor-playground-slide-clearance",
   "/blog/playground-netting-inspection",
   "/blog/indoor-playground-shipping-documents",

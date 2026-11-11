@@ -30,7 +30,7 @@ import { format } from "date-fns";
 import RichTextEditor from "./RichTextEditor";
 import GalleryPicker from "./GalleryPicker";
 import BlogImageAltFixer from "./BlogImageAltFixer";
-import { novemberBlogAuthor } from "@/config/novemberBlogMatrix";
+import { creditedBlogAuthor } from "@/config/creditedBlogAuthor";
 import {
   Collapsible,
   CollapsibleContent,
@@ -629,10 +629,10 @@ const AdminBlogTab = () => {
                 </div>
                 
                 {/* Slug Display */}
-                {novemberBlogAuthor(formData.slug) && (
+                {creditedBlogAuthor(formData.slug) && (
                   <div className="space-y-2">
                     <Label htmlFor="article-author">文章作者</Label>
-                    <Input id="article-author" value={novemberBlogAuthor(formData.slug)} readOnly />
+                    <Input id="article-author" value={creditedBlogAuthor(formData.slug)} readOnly />
                   </div>
                 )}
                 <div className="space-y-2">
