@@ -1,5 +1,7 @@
 # Roadmap
 
+- [ ] November 11 production request: Hostinger run 42971888653 uploaded the current content successfully, but raw HTML acceptance passed only 62/96 checked pages (34 had homepage fallback metadata). Route-specific canonical/locale capture gate repaired; 17 tests/949 assertions pass. The repair commit will trigger the existing main-branch deployment after sync; confirm that run and recheck all 96 production HTML pages before declaring deployment complete. Blog date checks passed all 120 records and production UI/schema confirmed October 15/November 3 endpoints. External host returned an intermittent 403 during browser checks.
+
 - [x] November 11 blogs: corrected outlines approved; five full manuscripts revised without unsupported figures, certification guarantees or unverified author credentials
 - [x] November 11 blogs: five distinct articles credited to Gerry, each with cover/two inline renders; 30 translated CMS records saved and read back with full field equality
 - [x] November 11 blogs: 30 public pages and five topic-to-blog-to-contact flows checked, EN/AR mobile tables verified; 17 tests/1320 assertions pass; 30 sitemap/prerender routes registered
@@ -18,11 +20,11 @@
 
 - [x] November 3: build five approved six-language procurement topics with independent intent, site renders, page-specific sources, SEO/GEO and reciprocal parent links; register 30 sitemap/prerender routes
 - [x] November 3: verify 30 language pages, ten parent navigation paths, comparison/FAQ/inquiry anchors, imagery and EN/AR mobile layout; 16 tests/707 assertions pass, actual test inquiry saved with UI success
-- [ ] Publish November 3 procurement pages to production; creation request did not authorize publication, and current production deployment status remains unverified
+- [ ] November 3 procurement pages: deployment authorized November 11 and prior upload succeeded; formal-domain English paths render, but raw metadata on three pages needs the new capture-gate redeployment and acceptance.
 
 - [x] November 3: audit competitor reports against current site coverage and validate ID/US demand; selectively replace 36 six-language core metadata pairs and fix shared metadata limits/duplicate fallbacks
 - [x] November 3: deliver standalone keyword report with five topic-page candidates and five blog clusters, explicitly noting missing demand; verify 36 public pages, six aggregation canonicals, 437 sitemap URLs and 11 tests
-- [ ] Deploy November 3 metadata corrections and verify 36 production pages; authorized Hostinger run 41570820092 remains in progress before upload, production still serves old metadata, and the homepage browser check encountered host browser verification
+- [ ] November 3 metadata corrections: latest Hostinger upload completed November 11; production English core pages match current TDK, but seven localized core pages retain fallback metadata. Await repair deployment and full 36-page production acceptance.
 
 - [x] October 30 blogs: audit five uploaded articles against their self-check reports and authoritative sources; corrected outlines approved before substantial revisions
 - [x] Revise and translate five blogs into six languages with existing site cover/inline images; publish 30 records and verify all public pages/authenticated business admin views

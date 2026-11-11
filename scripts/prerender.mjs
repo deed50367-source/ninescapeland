@@ -20,12 +20,14 @@ import { createServer } from "http";
 import { readFileSync, writeFileSync, mkdirSync, existsSync } from "fs";
 import { join, extname, dirname } from "path";
 import { fileURLToPath } from "url";
+import { routeHeadReady } from "./lib/prerenderHead.mjs";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const DIST_DIR = join(__dirname, "..", "dist");
 // CSS that Vite injects as inline <style> for async chunks. Collected across all routes
 // and written once to dist/assets/prerender-styles.css so each static HTML stays small.
 const EXTRACTED_CSS = new Set();
+const FAILED_ROUTES = [];
 const PORT = 4173;
 const BASE_URL = `http://localhost:${PORT}`;
 
@@ -328,10 +330,14 @@ async function prerenderRoute(browser, route) {
     // most routes was saved WITHOUT title / description / canonical / JSON-LD.
     // That single bug made the GEO audit report "no BreadcrumbList / no dateModified /
     // no FAQPage / no author" on pages whose code does emit them.
+    const expectedCanonical = `https://indoorplaygroundsolution.com${route.replace(/\/$/, "") || "/"}`;
     const helmetReady = () =>
       page.waitForFunction(
-        () => document.querySelectorAll("head [data-rh]").length > 5,
-        { timeout: 12000 }
+        (expected) => document.querySelector('link[rel="canonical"]')?.getAttribute("href") === expected &&
+          Boolean(document.querySelector('head title[data-rh]')?.textContent?.trim()) &&
+          Boolean(document.querySelector('meta[name="description"][data-rh]')?.getAttribute("content")?.trim()),
+        { timeout: 12000 },
+        expectedCanonical
       );
     let helmetOk = await helmetReady().then(() => true).catch(() => false);
     if (!helmetOk) {
@@ -341,8 +347,15 @@ async function prerenderRoute(browser, route) {
       helmetOk = await helmetReady().then(() => true).catch(() => false);
     }
     if (!helmetOk) {
-      console.warn(`     ⚠️  ${route} — head tags (title/meta/JSON-LD) not flushed`);
+      throw new Error(`Route-specific head did not flush: ${route}`);
     }
+    const head = await page.evaluate(() => ({
+      canonical: document.querySelector('link[rel="canonical"]')?.getAttribute("href") || "",
+      title: document.title,
+      description: document.querySelector('meta[name="description"]')?.getAttribute("content") || "",
+      language: document.documentElement.lang,
+    }));
+    if (!routeHeadReady(head, route)) throw new Error(`Wrong route/language metadata: ${route}`);
 
     // Get the full rendered HTML
     let html = await page.content();
@@ -454,6 +467,7 @@ async function prerenderRoute(browser, route) {
     console.log(`     ✅ Saved → ${outputPath.replace(DIST_DIR, "dist")}`);
     console.log('');
   } catch (err) {
+    FAILED_ROUTES.push(route);
     console.error(`  ❌ ${route} — ${err.message}`);
   } finally {
     await page.close();
@@ -503,6 +517,9 @@ async function main() {
 
   await browser.close();
   server.close();
+  if (FAILED_ROUTES.length > 0) {
+    throw new Error(`Prerender failed for ${FAILED_ROUTES.length} routes; refusing production upload.`);
+  }
 
   console.log(`\n✨ Prerendering complete! ${routes.length} static HTML files generated.`);
 
