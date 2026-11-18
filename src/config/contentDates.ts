@@ -95,8 +95,9 @@ export const CONTENT_DATES: Record<string, string> = {
 
   // Weekly aggregation pages (batch 6)
   "/after-school-program-indoor-play-equipment": "2026-09-10",
-  "/daycare-indoor-playground-equipment": "2026-09-10",
-  "/church-indoor-playground-equipment": "2026-09-10",
+  "/daycare-indoor-playground-equipment": "2026-11-18",
+  "/church-indoor-playground-equipment": "2026-11-18",
+  "/sensory-inclusive-play-equipment": "2026-11-18",
   "/screen-free-play-alternatives-for-kids": "2026-09-10",
   "/indoor-playground-total-cost-of-ownership": "2026-09-10",
 
@@ -115,7 +116,7 @@ export const CONTENT_DATES: Record<string, string> = {
   "/kids-education-combo-play-center-layout-ideas": "2026-09-23",
   "/gross-motor-play-equipment-for-preschoolers": "2026-10-02",
   "/turnkey-indoor-playground-installation-services": "2026-10-08",
-  "/indoor-playground-maintenance-and-cleaning-guide": "2026-10-08",
+  "/indoor-playground-maintenance-and-cleaning-guide": "2026-11-18",
   "/ninja-warrior-course-for-kids-indoor-playground": "2026-11-11",
   "/indoor-trampoline-park-layout-design": "2026-10-08",
   "/indoor-playground-cafe-business-model": "2026-10-15",
@@ -126,7 +127,7 @@ export const CONTENT_DATES: Record<string, string> = {
   "/cooperative-play-equipment-for-schools": "2026-10-22",
   "/how-indoor-playgrounds-improve-child-coordination": "2026-10-22",
   "/small-indoor-playground-business-on-a-budget": "2026-10-22",
-  "/soft-play-foam-and-material-specifications": "2026-10-22",
+  "/soft-play-foam-and-material-specifications": "2026-11-18",
   "/indoor-playground-equipment-indonesia": "2026-10-22",
   "/how-to-start-an-indoor-playground-business-2026": "2026-10-08",
   "/homeschool-gym-indoor-play-facility": "2026-10-02",

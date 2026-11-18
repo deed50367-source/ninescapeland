@@ -1,8 +1,9 @@
 # Roadmap
 
-- [ ] November 18: audit five uploaded keyword/Reddit/intent/link reports against current topics and blogs; verify demand and B2B intent, deliver independent Markdown with three blog keyword groups and GEO questions.
-- [ ] November 18: obtain approval for five corrected topic outlines before substantive revisions; preserve existing URLs where intent overlaps, implement six languages and SEO/GEO/SOP checks.
-- [ ] November 18: verify topic metadata, citations, images, reciprocal links and inquiry flows; production publication remains separately authorized.
+- [x] November 18: read five reports and 199 English blog metadata records; verify US demand and B2B intent, deliver independent keyword Markdown with three blog groups and GEO questions.
+- [x] November 18: approved five corrected outlines; refreshed five existing URLs in six languages with scoped citations, decision matrices, FAQ, concept images and original dates.
+- [x] November 18: 30 language pages and FAQ/inquiry navigation verified, 10 mobile layouts and 10 product backlinks checked; 16 tests/956 assertions pass; build OK. No inquiry submitted.
+- [ ] November 18: production publication/indexing acceptance, independent native proofreading and historic image-rights/first-production-date evidence remain unavailable; local checks do not establish these.
 
 - [ ] November 11 production request: Hostinger run 42971888653 uploaded the current content successfully, but raw HTML acceptance passed only 62/96 checked pages (34 had homepage fallback metadata). Route-specific canonical/locale capture gate repaired; 17 tests/949 assertions pass. The repair commit will trigger the existing main-branch deployment after sync; confirm that run and recheck all 96 production HTML pages before declaring deployment complete. Blog date checks passed all 120 records and production UI/schema confirmed October 15/November 3 endpoints. External host returned an intermittent 403 during browser checks.
 

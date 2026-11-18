@@ -35,8 +35,6 @@ import EducationalIndoorPlayAreaDesign from "./pages/EducationalIndoorPlayAreaDe
 import EarlyChildhoodCenterPlaygroundEquipment from "./pages/EarlyChildhoodCenterPlaygroundEquipment";
 import InteractivePlayEquipmentForLearningCenters from "./pages/InteractivePlayEquipmentForLearningCenters";
 import AfterSchoolProgramPlayEquipment from "./pages/AfterSchoolProgramPlayEquipment";
-import DaycareIndoorPlaygroundEquipment from "./pages/DaycareIndoorPlaygroundEquipment";
-import ChurchIndoorPlaygroundEquipment from "./pages/ChurchIndoorPlaygroundEquipment";
 import ScreenFreePlayAlternatives from "./pages/ScreenFreePlayAlternatives";
 import IndoorPlaygroundTotalCostOfOwnership from "./pages/IndoorPlaygroundTotalCostOfOwnership";
 import HowToFundSchoolPlaygroundEquipment from "./pages/HowToFundSchoolPlaygroundEquipment";
@@ -50,7 +48,6 @@ import CommercialIndoorPlaygroundProfitMargin from "./pages/CommercialIndoorPlay
 import KidsEducationComboPlayCenterLayoutIdeas from "./pages/KidsEducationComboPlayCenterLayoutIdeas";
 import GrossMotorPlayEquipmentForPreschoolers from "./pages/GrossMotorPlayEquipmentForPreschoolers";
 import TurnkeyIndoorPlaygroundInstallationServices from "./pages/TurnkeyIndoorPlaygroundInstallationServices";
-import IndoorPlaygroundMaintenanceAndCleaningGuide from "./pages/IndoorPlaygroundMaintenanceAndCleaningGuide";
 import IndoorTrampolineParkLayoutDesign from "./pages/IndoorTrampolineParkLayoutDesign";
 import IndoorPlaygroundCafeBusinessModel from "./pages/IndoorPlaygroundCafeBusinessModel";
 import RestaurantIndoorPlaygroundLayoutDesign from "./pages/RestaurantIndoorPlaygroundLayoutDesign";
@@ -60,7 +57,6 @@ import ToddlerSoftPlayAreaDesign from "./pages/ToddlerSoftPlayAreaDesign";
 import CooperativePlayEquipmentForSchools from "./pages/CooperativePlayEquipmentForSchools";
 import HowIndoorPlaygroundsImproveChildCoordination from "./pages/HowIndoorPlaygroundsImproveChildCoordination";
 import SmallIndoorPlaygroundBusinessOnABudget from "./pages/SmallIndoorPlaygroundBusinessOnABudget";
-import SoftPlayFoamAndMaterialSpecifications from "./pages/SoftPlayFoamAndMaterialSpecifications";
 import IndoorPlaygroundEquipmentIndonesia from "./pages/IndoorPlaygroundEquipmentIndonesia";
 import HowToStartAnIndoorPlaygroundBusiness2026 from "./pages/HowToStartAnIndoorPlaygroundBusiness2026";
 import HomeschoolGymIndoorPlayFacility from "./pages/HomeschoolGymIndoorPlayFacility";
@@ -72,6 +68,7 @@ import CustomPlaygroundManufacturerCertificationChecklist from "./pages/CustomPl
 import AstmCertifiedIndoorPlaygroundStructures from "./pages/AstmCertifiedIndoorPlaygroundStructures";
 import { b14Pages } from "@/config/weeklyAggregationB14Registry";
 import { b15Slugs } from "@/config/weeklyAggregationB15Registry";
+import { b16Slugs } from "@/config/weeklyAggregationB16Registry";
 import { b13Pages } from "@/config/weeklyAggregationB13Registry";
 
 // Resilient lazy: if a chunk fails to load (e.g. Hostinger 429), render nothing
@@ -116,10 +113,10 @@ const SoftPlayMallSolutions = lazy(() => import("./pages/SoftPlayMallSolutions")
 const TrampolineParkFEC = lazy(() => import("./pages/TrampolineParkFEC"));
 const GamifiedAttractionsManufacturer = lazy(() => import("./pages/GamifiedAttractionsManufacturer"));
 const CustomIndoorPlaygroundCost = lazy(() => import("./pages/CustomIndoorPlaygroundCost"));
-const SensoryInclusivePlay = lazy(() => import("./pages/SensoryInclusivePlay"));
 const IAAPAAsia2026 = lazy(() => import("./pages/IAAPAAsia2026"));
 const TAAPE2026 = lazy(() => import("./pages/TAAPE2026"));
 const WeeklyAggregationPageB15 = lazy(() => import("./pages/WeeklyAggregationPageB15"));
+const WeeklyAggregationPageB16 = lazy(() => import("./pages/WeeklyAggregationPageB16"));
 const WeeklyAggregationPageB14 = lazy(() => import("./pages/WeeklyAggregationPageB14"));
 const WeeklyAggregationPageB13 = lazy(() => import("./pages/WeeklyAggregationPageB13"));
 const IndoorPlaygroundROIUK = lazy(() => import("./pages/IndoorPlaygroundROIUK"));
@@ -185,7 +182,7 @@ const pageRoutes = (
     <Route path="trampoline-park-fec-solutions" element={<TrampolineParkFEC />} />
     <Route path="gamified-attractions-manufacturer" element={<GamifiedAttractionsManufacturer />} />
     <Route path="custom-indoor-playground-cost-free-3d-design" element={<CustomIndoorPlaygroundCost />} />
-    <Route path="sensory-inclusive-play-equipment" element={<SensoryInclusivePlay />} />
+    {b16Slugs.map(slug => <Route key={slug} path={slug} element={<WeeklyAggregationPageB16 slug={slug} />} />)}
     <Route path="iaapa-asia-2026-hong-kong" element={<IAAPAAsia2026 />} />
     <Route path="taape-2026-bangkok" element={<TAAPE2026 />} />
     <Route path="indoor-playground-roi-analysis-uk" element={<IndoorPlaygroundROIUK />} />
@@ -217,8 +214,6 @@ const pageRoutes = (
     <Route path="indoor-playground-equipment-for-early-childhood-centers" element={<EarlyChildhoodCenterPlaygroundEquipment />} />
     <Route path="interactive-play-equipment-for-learning-centers" element={<InteractivePlayEquipmentForLearningCenters />} />
     <Route path="after-school-program-indoor-play-equipment" element={<AfterSchoolProgramPlayEquipment />} />
-    <Route path="daycare-indoor-playground-equipment" element={<DaycareIndoorPlaygroundEquipment />} />
-    <Route path="church-indoor-playground-equipment" element={<ChurchIndoorPlaygroundEquipment />} />
     <Route path="screen-free-play-alternatives-for-kids" element={<ScreenFreePlayAlternatives />} />
     <Route path="indoor-playground-total-cost-of-ownership" element={<IndoorPlaygroundTotalCostOfOwnership />} />
     <Route path="how-to-fund-school-playground-equipment" element={<HowToFundSchoolPlaygroundEquipment />} />
@@ -232,7 +227,6 @@ const pageRoutes = (
     <Route path="kids-education-combo-play-center-layout-ideas" element={<KidsEducationComboPlayCenterLayoutIdeas />} />
     <Route path="gross-motor-play-equipment-for-preschoolers" element={<GrossMotorPlayEquipmentForPreschoolers />} />
     <Route path="turnkey-indoor-playground-installation-services" element={<TurnkeyIndoorPlaygroundInstallationServices />} />
-    <Route path="indoor-playground-maintenance-and-cleaning-guide" element={<IndoorPlaygroundMaintenanceAndCleaningGuide />} />
     <Route path="indoor-trampoline-park-layout-design" element={<IndoorTrampolineParkLayoutDesign />} />
     <Route path="indoor-playground-cafe-business-model" element={<IndoorPlaygroundCafeBusinessModel />} />
     <Route path="restaurant-indoor-playground-layout-design" element={<RestaurantIndoorPlaygroundLayoutDesign />} />
@@ -242,7 +236,6 @@ const pageRoutes = (
     <Route path="cooperative-play-equipment-for-schools" element={<CooperativePlayEquipmentForSchools />} />
     <Route path="how-indoor-playgrounds-improve-child-coordination" element={<HowIndoorPlaygroundsImproveChildCoordination />} />
     <Route path="small-indoor-playground-business-on-a-budget" element={<SmallIndoorPlaygroundBusinessOnABudget />} />
-    <Route path="soft-play-foam-and-material-specifications" element={<SoftPlayFoamAndMaterialSpecifications />} />
     <Route path="indoor-playground-equipment-indonesia" element={<IndoorPlaygroundEquipmentIndonesia />} />
     <Route path="how-to-start-an-indoor-playground-business-2026" element={<HowToStartAnIndoorPlaygroundBusiness2026 />} />
     <Route path="homeschool-gym-indoor-play-facility" element={<HomeschoolGymIndoorPlayFacility />} />

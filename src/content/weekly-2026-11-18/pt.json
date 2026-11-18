@@ -1,0 +1,826 @@
+{
+  "indoor-playground-maintenance-and-cleaning-guide": {
+    "slug": "indoor-playground-maintenance-and-cleaning-guide",
+    "title": "Manutenção e Limpeza de Playgrounds Internos",
+    "metaTitle": "Manutenção & Limpeza de Playground",
+    "metaDescription": "Planeje limpeza, inspeção de defeitos e gestão do ar em playgrounds com rótulos de produtos, registros e responsabilidades claras.",
+    "publishedDate": "2026-10-08",
+    "kicker": "Playground Comercial · Aquisição & Operações",
+    "intro": "A manutenção de playgrounds comerciais combina cuidados com superfícies, inspeção de equipamentos e operações do edifício. São tarefas distintas. Escolha uma rotina baseada nas instruções do equipamento, uso real, eventos de contaminação e requisitos locais; não trate um calendário universal de desinfecção diária, semanal ou mensal como prova de segurança.",
+    "answerQuestion": "A desinfecção de superfícies pode substituir a gestão do ar interno?",
+    "answer": "Não. O tratamento de superfícies aborda as superfícies nomeadas no rótulo de um produto; medidas de ar limpo abordam a exposição ao ar. Mantenha responsáveis separados para limpeza, equipamentos danificados e ventilação do edifício. O CDC descreve o ar limpo como uma medida de redução de risco, não a eliminação de infecções. Um piso visivelmente limpo não verifica fluxo de ar, filtragem ou a política de doenças do local.",
+    "frameworkTitle": "Construa a Rotina de Limpeza e Gestão do Ar",
+    "framework": [
+      {
+        "title": "Separe as tarefas e os responsáveis",
+        "desc": "Liste limpeza, sanitização ou desinfecção necessária, inspeção mecânica e revisão do sistema de ar separadamente. Designe um operador para registros, um adulto treinado para aplicação de produtos químicos e um contato qualificado do edifício para ventilação. O fornecimento de equipamentos não inclui automaticamente esses serviços."
+      },
+      {
+        "title": "Defina a frequência com base na tarefa real",
+        "desc": "Use instruções do fabricante, requisitos de saúde locais, tráfego e eventos de contaminação para decidir o cronograma. Registre o que acionou trabalho adicional e quando foi concluído. Um incidente com fluidos corporais ou superfície danificada requer sua própria resposta controlada; não continue o uso enquanto a equipe improvisa um método."
+      },
+      {
+        "title": "Combine o rótulo e o material",
+        "desc": "Identifique a superfície, produto, alegação alvo, método permitido, tempo de contato e qualquer requisito de enxágue ou secagem. Siga o rótulo e as instruções de compatibilidade do fornecedor do equipamento. Crianças não devem aplicar desinfetantes. Nebulização ou pulverização eletrostática não é um método padrão; a EPA exige instruções de rótulo relevantes."
+      },
+      {
+        "title": "Revise o ar e a reabertura separadamente",
+        "desc": "Peça ao operador do edifício para revisar a ventilação conforme os requisitos aplicáveis do local e a ocupação proposta. Mantenha entradas, saídas e acesso ao serviço de ar utilizáveis. Registre a reabertura apenas após a conclusão das etapas de superfície e controles de defeitos necessários; um cheiro químico ou janela aberta não é um teste de fluxo de ar."
+      }
+    ],
+    "equipmentTitle": "Compare as Decisões do Projeto",
+    "equipment": [
+      {
+        "title": "Estofamento e capas",
+        "desc": "Registre o material da capa, costuras e superfícies de limpeza acessíveis. Um rasgo que expõe espuma pertence ao registro de defeitos; limpá-lo não restaura a capa."
+      },
+      {
+        "title": "Bolas, redes e áreas fechadas",
+        "desc": "Documente como a equipe acessa e remove itens, limpa o interior do poço, verifica fixações e seca componentes conforme as instruções. Nenhum calendário único serve para todos os poços ou redes."
+      },
+      {
+        "title": "Escorregadores e superfícies móveis",
+        "desc": "Use o método de cuidado específico do equipamento e inspecione juntas, suportes e interfaces de proteção. Não use um produto químico ou polimento simplesmente porque é adequado para outra superfície."
+      },
+      {
+        "title": "Serviços do edifício",
+        "desc": "Mantenha o contato do serviço de ventilação, registros de manutenção e caminho de escalonamento. Uma inspeção de equipamento ou registro de desinfecção de superfície não pode substituir este arquivo."
+      }
+    ],
+    "columns": [
+      "Tarefa",
+      "Gatilho ou entrada",
+      "Registro",
+      "Função responsável"
+    ],
+    "rows": [
+      [
+        "Cuidado com superfícies",
+        "Uso, contaminação, rótulo e instruções de material",
+        "Produto, método e conclusão",
+        "Equipe de limpeza treinada"
+      ],
+      [
+        "Inspeção mecânica",
+        "Manual do equipamento, dano ou preocupação relatada",
+        "Componente, defeito e restrição",
+        "Líder de manutenção do local"
+      ],
+      [
+        "Revisão do sistema de ar",
+        "Requisitos do edifício e uso proposto",
+        "Revisão do serviço e responsável pela ação",
+        "Operador do edifício / especialista qualificado"
+      ],
+      [
+        "Reabertura",
+        "Tratamento necessário e controles de defeitos concluídos",
+        "Decisão de liberação e restrições não resolvidas",
+        "Gerente do local nomeado"
+      ]
+    ],
+    "tableTitle": "Manutenção e Limpeza de Playgrounds Internos — Matriz de Decisão do Comprador",
+    "tableNote": "Orientação de planejamento, não capacidade universal, conselho médico, regra de licenciamento ou certificado. Registre requisitos específicos do projeto e responsabilidades nomeadas antes da aquisição.",
+    "faq": [
+      {
+        "title": "Com que frequência o equipamento deve ser desinfetado?",
+        "desc": "Não há uma frequência universal nesta página. Use requisitos locais, contaminação real, o rótulo do produto e instruções do equipamento. Limpeza e verificações mecânicas têm gatilhos diferentes."
+      },
+      {
+        "title": "Pulverizar todo o local é suficiente?",
+        "desc": "Não. Um método de aplicação deve ser permitido pelo rótulo do produto, e o tratamento de superfície não substitui a gestão do ar, inspeção de equipamentos ou controles da equipe."
+      },
+      {
+        "title": "Uma capa antimicrobiana elimina a necessidade de limpeza?",
+        "desc": "Não. Obtenha a evidência exata do produto e siga suas instruções de cuidado. Não estenda uma alegação de material para uma garantia de proteção para visitantes."
+      },
+      {
+        "title": "Quando um componente fechado pode reabrir?",
+        "desc": "Após o tratamento documentado e qualquer reparo ou verificação especializada serem concluídos, com a liberação do operador nomeado. Não invente um período de espera universal."
+      }
+    ],
+    "imageAlt": "Manutenção e Limpeza de Playgrounds Internos — renderização conceitual 3D ilustrativa do local",
+    "captions": [
+      "Referência conceitual de soft-play; nenhum desempenho de limpeza é demonstrado.",
+      "Referência conceitual de estrutura; o acesso real à manutenção requer uma revisão específica do local.",
+      "Referência conceitual de trampolim; as instruções de cuidado devem corresponder ao equipamento real."
+    ],
+    "ui": {
+      "home": "Início",
+      "products": "Produtos",
+      "design": "Conversar sobre um projeto 3D",
+      "whatsapp": "Conversar no WhatsApp",
+      "compare": "Comparar Opções",
+      "gallery": "Referências de Design",
+      "relatedTitle": "Guias de Planejamento Relacionados",
+      "faqTitle": "Perguntas dos Compradores",
+      "sourcesTitle": "Fontes & Escopo",
+      "sourcesIntro": "As fontes vinculadas explicam seu próprio equipamento ou escopo jurisdicional. Elas não são certificados de produto. Recomendações de aquisição e operação abaixo são orientações de planejamento; obtenha uma revisão específica do projeto.",
+      "updated": "Atualizado em 18 de novembro de 2026",
+      "author": "NinescapeLand · Planejamento de Playground Comercial",
+      "imageNote": "Renderizações conceituais 3D de locais existentes mostram configurações de equipamentos, não amostras de materiais verificadas, projetos concluídos de creches ou igrejas, instalações clínicas ou evidências de conformidade.",
+      "inquiryIntro": "Envie seus desenhos do local, país e requisitos de aquisição para uma discussão específica do projeto."
+    },
+    "parents": [
+      {
+        "slug": "products/soft-play",
+        "label": "Equipamentos de Soft Play"
+      },
+      {
+        "slug": "complete-indoor-play-center-solutions",
+        "label": "Responsabilidades do Centro de Play Completo"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Rótulos e instruções de desinfetantes",
+        "publisher": "Agência de Proteção Ambiental dos EUA",
+        "url": "https://www.epa.gov/pesticide-registration/selected-epa-registered-disinfectants",
+        "note": "Registro de desinfetantes e instruções de rótulo nos EUA; não certifica materiais de playground ou substitui requisitos locais."
+      },
+      {
+        "label": "Ar mais limpo para prevenção de vírus respiratórios",
+        "publisher": "Centros de Controle e Prevenção de Doenças",
+        "url": "https://cdc.gov/respiratory-viruses/prevention/air-quality.html",
+        "note": "Orientação de saúde pública dos EUA sobre ar mais limpo e redução de risco de exposição; não é um projeto de ventilação de playground ou garantia contra infecção."
+      },
+      {
+        "label": "Métodos de aplicação e rótulos de desinfetantes",
+        "publisher": "Agência de Proteção Ambiental dos EUA",
+        "url": "https://www.epa.gov/coronavirus-and-disinfectants/can-i-use-fogging-fumigation-or-electrostatic-spraying-or-drones-help",
+        "note": "Métodos como nebulização ou pulverização eletrostática precisam de instruções explícitas de rótulo; nenhuma recomendação de pulverização rotineira de todo o local."
+      },
+      {
+        "label": "Desinfetantes e crianças",
+        "publisher": "Agência de Proteção Ambiental dos EUA",
+        "url": "https://www.epa.gov/coronavirus-and-disinfectants/are-disinfectants-harmful-children-can-children-apply-disinfectants",
+        "note": "Crianças não devem aplicar desinfetantes. Produtos requerem armazenamento e uso seguros conforme seus rótulos; isso não é uma admissão ou regra de retorno ao jogo."
+      }
+    ],
+    "checklistTitle": "Informações para Registrar Antes do Pedido",
+    "checklist": [
+      "ID do componente, superfícies acessíveis e instruções de cuidado do fabricante.",
+      "Rótulo do produto de limpeza, superfícies/método permitido e confirmação de compatibilidade.",
+      "Registro de defeito, restrição, reparo e liberação com equipe nomeada.",
+      "Contato do serviço de ar do edifício e ações não resolvidas, separado do registro de superfície."
+    ]
+  },
+  "soft-play-foam-and-material-specifications": {
+    "slug": "soft-play-foam-and-material-specifications",
+    "title": "Especificações de Espuma e Materiais para Soft Play",
+    "metaTitle": "Materiais & Especificações de Soft Play",
+    "metaDescription": "Compare espuma, capas, madeira, plástico e fixações com especificações, compatibilidade de limpeza e evidências de cada item.",
+    "publishedDate": "2026-10-22",
+    "kicker": "Playground Comercial · Aquisição & Operações",
+    "intro": "Uma especificação de material comercial descreve o item montado, seus usuários pretendidos e seus requisitos de cuidado. Um painel de madeira, um escorregador de plástico moldado e um módulo de soft-play acolchoado desempenham funções diferentes. Compare o uso proposto e a construção documentada em vez de declarar um material universalmente mais seguro, durável ou amigável aos sentidos.",
+    "answerQuestion": "Como os compradores devem comparar madeira, plástico e materiais de soft-play?",
+    "answer": "Comece com a função do componente e o uso pretendido. Solicite o substrato ou resina, detalhes da espuma e da capa, onde relevante, conexões, interfaces de proteção e método de cuidado. Combine relatórios com o item fornecido e escopo aplicável. Nem o nome do material nem a densidade da espuma sozinhos provam proteção contra impactos, adequação estrutural ou vida útil esperada.",
+    "frameworkTitle": "Especifique Materiais por Uso e Evidência",
+    "framework": [
+      {
+        "title": "Defina o componente e o uso",
+        "desc": "Registre se o item é um painel, escorregador, deck, acolchoamento ou módulo móvel. Especifique usuários pretendidos, método de suporte e condições de limpeza esperadas. Não trate um conjunto de brinquedos residencial e uma estrutura comercial como intercambiáveis apenas porque ambos usam madeira ou plástico."
+      },
+      {
+        "title": "Descreva a montagem completa",
+        "desc": "Solicite espécie de madeira ou construção e acabamento da placa, resina plástica e construção moldada, tipo e densidade da espuma, material da capa, costuras, fixações e bordas, conforme relevante. Revise as interfaces juntas; uma amostra favorável de uma camada não verifica o item completo."
+      },
+      {
+        "title": "Confirme a compatibilidade de limpeza",
+        "desc": "Forneça o produto de limpeza real e o método pretendido ao fornecedor. Registre superfícies permitidas, tempo de contato, condições de enxágue/secagem e restrições do fornecedor. O registro da EPA apoia a alegação de desinfetante do rótulo, não a durabilidade de uma capa de playground sob esse tratamento."
+      },
+      {
+        "title": "Combine evidência com o item entregue",
+        "desc": "Compare número do relatório, laboratório, data, identificação do produto, escopo e descrição da amostra com o pedido. Pergunte quais diferenças exigem novas evidências. Use equipamento aplicável e requisitos locais de fogo/químicos; um relatório de brinquedo não estabelece automaticamente a conformidade de toda a estrutura comercial."
+      }
+    ],
+    "equipmentTitle": "Compare as Decisões do Projeto",
+    "equipment": [
+      {
+        "title": "Componentes de madeira",
+        "desc": "Especifique substrato, acabamento, juntas e acesso para inspeção. Confirme restrições de cuidado e condição das bordas; aparência não é evidência química ou estrutural."
+      },
+      {
+        "title": "Componentes de plástico moldado",
+        "desc": "Especifique resina, construção montada, suportes e instruções de cuidado. Um acrônimo de resina sozinho não estabelece comportamento de impacto ou vida útil."
+      },
+      {
+        "title": "Espuma e capas",
+        "desc": "Registre espuma, capa, costuras e partes substituíveis juntas. Densidade é uma característica, não um substituto para evidência de proteção montada."
+      },
+      {
+        "title": "Estruturas, decks e fixações",
+        "desc": "Solicite dimensões, revestimento, conexões, instruções de instalação e acesso para inspeção. Verifique interfaces de proteção em vez de confiar em partes ocultas em uma renderização."
+      }
+    ],
+    "columns": [
+      "Componente",
+      "Especificação escrita",
+      "Evidência para combinar",
+      "Não inferir"
+    ],
+    "rows": [
+      [
+        "Painel de madeira",
+        "Substrato, acabamento, juntas e cuidado",
+        "Descrição do item e evidência relevante de acabamento/montagem",
+        "Toda madeira é mais inclusiva"
+      ],
+      [
+        "Escorregador de plástico",
+        "Resina, suportes, juntas e cuidado",
+        "Item especificado e escopo de teste aplicável",
+        "Um nome de resina garante segurança"
+      ],
+      [
+        "Módulo acolchoado",
+        "Espuma, capa, costuras e substituição",
+        "Detalhes da montagem e compatibilidade de cuidado",
+        "Densidade sozinha prova proteção"
+      ],
+      [
+        "Estrutura e deck",
+        "Seções, conexões, acabamento e instalação",
+        "Desenhos, manual e avaliação relevante",
+        "Uma amostra de material verifica toda a estrutura"
+      ]
+    ],
+    "tableTitle": "Especificações de Espuma e Materiais para Soft Play — Matriz de Decisão do Comprador",
+    "tableNote": "Orientação de planejamento, não capacidade universal, conselho médico, regra de licenciamento ou certificado. Registre requisitos específicos do projeto e responsabilidades nomeadas antes da aquisição.",
+    "faq": [
+      {
+        "title": "Espuma de alta densidade é sempre a opção mais segura?",
+        "desc": "Não. Avalie a espuma dentro de sua capa, espessura, suporte e uso pretendido. Densidade sozinha não estabelece desempenho de amortecimento ou adequação comercial."
+      },
+      {
+        "title": "Madeira é mais amigável aos sentidos que plástico?",
+        "desc": "Não universalmente. Textura, cheiro, acabamento, som e preferências pessoais importam. Avalie o componente real com os usuários pretendidos em vez de atribuir uma propriedade terapêutica ao seu material."
+      },
+      {
+        "title": "Um teste de material certifica todo o playground?",
+        "desc": "Não. Verifique a amostra, padrão e escopo do relatório. Evidência de componente e avaliação do equipamento montado respondem a perguntas diferentes."
+      },
+      {
+        "title": "E se um desinfetante e a instrução da capa conflitarem?",
+        "desc": "Não improvise uma mistura ou método. Obtenha uma abordagem permitida compatível e esclarecimento por escrito antes do uso; compatibilidade do fornecedor e o rótulo químico são importantes."
+      }
+    ],
+    "imageAlt": "Especificações de Espuma e Materiais para Soft Play — renderização conceitual 3D ilustrativa do local",
+    "captions": [
+      "Conceito de soft-play mostrando configurações, não uma amostra verificada de espuma ou capa.",
+      "Conceito de estrutura de brinquedo; construção interna requer especificações escritas.",
+      "Renderização conceitual temática; cores não demonstram conformidade de material ou química."
+    ],
+    "ui": {
+      "home": "Início",
+      "products": "Produtos",
+      "design": "Conversar sobre um projeto 3D",
+      "whatsapp": "Conversar no WhatsApp",
+      "compare": "Comparar Opções",
+      "gallery": "Referências de Design",
+      "relatedTitle": "Guias de Planejamento Relacionados",
+      "faqTitle": "Perguntas dos Compradores",
+      "sourcesTitle": "Fontes & Escopo",
+      "sourcesIntro": "As fontes vinculadas explicam seu próprio equipamento ou escopo jurisdicional. Elas não são certificados de produto. Recomendações de aquisição e operação abaixo são orientações de planejamento; obtenha uma revisão específica do projeto.",
+      "updated": "Atualizado em 18 de novembro de 2026",
+      "author": "NinescapeLand · Planejamento de Playground Comercial",
+      "imageNote": "Renderizações conceituais 3D de locais existentes mostram configurações de equipamentos, não amostras de materiais verificadas, projetos concluídos de creches ou igrejas, instalações clínicas ou evidências de conformidade.",
+      "inquiryIntro": "Envie seus desenhos do local, país e requisitos de aquisição para uma discussão específica do projeto."
+    },
+    "parents": [
+      {
+        "slug": "products/soft-play",
+        "label": "Equipamentos de Soft Play"
+      },
+      {
+        "slug": "indoor-playground-maintenance-and-cleaning-guide",
+        "label": "Manutenção e Limpeza"
+      },
+      {
+        "slug": "complete-indoor-play-center-solutions",
+        "label": "Escopo do Centro de Play Completo"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Rótulos e instruções de desinfetantes",
+        "publisher": "Agência de Proteção Ambiental dos EUA",
+        "url": "https://www.epa.gov/pesticide-registration/selected-epa-registered-disinfectants",
+        "note": "Registro de desinfetantes e instruções de rótulo nos EUA; não certifica materiais de playground ou substitui requisitos locais."
+      },
+      {
+        "label": "ASTM F1918: equipamento de soft-contained play",
+        "publisher": "ASTM International",
+        "url": "https://store.astm.org/standards/f1918",
+        "note": "O âmbito público da ASTM F1918-21 abrange equipamentos de brincadeira macia contida, do percentil 5 de crianças de dois anos ao percentil 95 de crianças de doze anos. Exclui equipamentos de parques domésticos e públicos e outras categorias indicadas. Verifique cada item; não cobre todas as atrações ou requisitos de acessibilidade."
+      },
+      {
+        "label": "Ambientes acessíveis",
+        "publisher": "National Autistic Society",
+        "url": "https://www.autism.org.uk/learn/knowledge-hub/guides-and-resources/accessible-environments",
+        "note": "Ajustes práticos do Reino Unido para luz, ruído, multidões e filas; necessidades individuais diferem. Não é uma prescrição terapêutica ou certificado de equipamento."
+      }
+    ],
+    "checklistTitle": "Informações para Registrar Antes do Pedido",
+    "checklist": [
+      "Identificadores de item e montagem compartilhados entre cotação, desenhos e relatórios.",
+      "Detalhes de espuma/capa, substrato/resina, acabamento, costura e fixação relevantes para cada item.",
+      "Rótulo químico real e instruções de compatibilidade de limpeza do fornecedor.",
+      "Escopo do relatório, amostra, laboratório e diferenças não resolvidas do item fornecido."
+    ]
+  },
+  "daycare-indoor-playground-equipment": {
+    "slug": "daycare-indoor-playground-equipment",
+    "title": "Equipamento de Playground Interno para Creches",
+    "metaTitle": "Equipamento de Playground para Creches",
+    "metaDescription": "Planeje equipamentos para creches por sala, usuários, regras locais, visibilidade, limpeza e responsabilidades de instalação.",
+    "publishedDate": "2026-09-10",
+    "kicker": "Playground Comercial · Aquisição & Operações",
+    "intro": "O equipamento de creche deve se adequar às salas reais, crianças e requisitos de licenciamento aplicáveis do centro. Estabeleça essas entradas antes de escolher um pacote. Este guia não define uma proporção universal de equipe, área por criança, altura da plataforma ou limite de idade: esses valores precisam da regra local relevante e da evidência de uso pretendido para o equipamento.",
+    "answerQuestion": "A certificação do equipamento estabelece aprovação de licenciamento de creche?",
+    "answer": "Não. Evidência de produto aborda seu escopo declarado; uma licença de creche diz respeito à instalação e sua operação sob a jurisdição relevante. Registre requisitos locais para grupos, espaço utilizável e supervisão, então coordene adequação do equipamento, rotas da sala, limpeza e instalação. Um certificado ou um conceito 3D gratuito não substitui a revisão de licenciamento.",
+    "frameworkTitle": "Traduza Requisitos da Sala em um Brief de Equipamento",
+    "framework": [
+      {
+        "title": "Crie uma folha de entrada por sala",
+        "desc": "Para cada sala, registre dimensões, espaço utilizável, saídas, crianças pretendidas e necessidades de suporte, atividades planejadas e a referência de licenciamento local. Separe qualquer valor exigido por autoridade de uma recomendação de fornecedor. Não copie uma proporção ou altura de plataforma de um exemplo de outro país."
+      },
+      {
+        "title": "Mantenha rotas da equipe e observação utilizáveis",
+        "desc": "Mostre como a equipe observa o brincar enquanto apoia chegadas, idas ao banheiro ou trocas e partidas. Revise pontos cegos, portas e acesso às crianças sem tratar um desenho como garantia de supervisão. O posicionamento do equipamento não deve obstruir circulação de emergência ou acessível."
+      },
+      {
+        "title": "Planeje armazenamento limpo/usado e interfaces de ar",
+        "desc": "Forneça uma rota para equipamento removido ou sujo, armazenamento seguro de produtos químicos e acesso a itens limpos sem cruzar brincadeiras ativas desnecessariamente. Adultos treinados lidam com desinfetantes sob o rótulo do produto. Atribua ações de ventilação do edifício separadamente da limpeza do equipamento."
+      },
+      {
+        "title": "Feche o arquivo de instalação e inspeção",
+        "desc": "Solicite informações de uso pretendido, dimensões, áreas de uso, detalhes de fixação/suporte, instruções de cuidado e evidência de avaliação aplicável. Registre quem verifica os suportes do local, instala, inspeciona e aprova o uso. A aquisição de equipamento não transfere as obrigações de licenciamento ou supervisão do centro."
+      }
+    ],
+    "equipmentTitle": "Compare as Decisões do Projeto",
+    "equipment": [
+      {
+        "title": "Opções de atividade no nível do chão",
+        "desc": "Avalie formas e atividades no nível do chão para os usuários pretendidos, incluindo acesso e cuidado. Baixa aparência sozinha não verifica adequação."
+      },
+      {
+        "title": "Opções de escalada e movimento",
+        "desc": "Combine o uso pretendido e requisitos de proteção de cada item com a sala. Revise desvios e acesso da equipe; evite uma tabela universal de idade para altura."
+      },
+      {
+        "title": "Salas de atividade compartilhadas",
+        "desc": "Verifique se itens móveis podem ser armazenados e reinstalados sob suas instruções sem obstruir saídas, refeições ou outros usos da sala."
+      },
+      {
+        "title": "Opções de participação mais silenciosa",
+        "desc": "Forneça atividades mais silenciosas opcionais dentro de um plano de observação viável. Pergunte às famílias e profissionais relevantes sobre necessidades individuais sem prometer terapia."
+      }
+    ],
+    "columns": [
+      "Entrada da sala",
+      "Registros do comprador",
+      "Fornecedor responde com",
+      "Revisão local"
+    ],
+    "rows": [
+      [
+        "Crianças e atividades",
+        "Usuários pretendidos e programa da sala",
+        "Uso pretendido do item e restrições",
+        "Aplicabilidade de licenciamento/supervisão"
+      ],
+      [
+        "Sala medida",
+        "Dimensões utilizáveis, portas, suportes e serviços",
+        "Layout, áreas de uso e acesso de instalação",
+        "Rotas acessíveis e circulação de emergência"
+      ],
+      [
+        "Rotina de cuidado",
+        "Produtos de limpeza, armazenamento e manuseio",
+        "Cuidado e compatibilidade do material",
+        "Requisitos de saúde aplicáveis"
+      ],
+      [
+        "Entrega",
+        "Instalador, registros e responsável pela liberação",
+        "Manual, fixações e evidência específica do item",
+        "Permissão da instalação para operar"
+      ]
+    ],
+    "tableTitle": "Equipamento de Playground Interno para Creches — Matriz de Decisão do Comprador",
+    "tableNote": "Orientação de planejamento, não capacidade universal, conselho médico, regra de licenciamento ou certificado. Registre requisitos específicos do projeto e responsabilidades nomeadas antes da aquisição.",
+    "faq": [
+      {
+        "title": "Qual proporção de equipe e área por criança devo usar?",
+        "desc": "Use as regras de licenciamento aplicáveis atuais para sua jurisdição e programa. Este guia não fornece uma proporção ou mínimo de espaço global."
+      },
+      {
+        "title": "Uma estrutura pode servir a todas as salas de creche?",
+        "desc": "Não assuma isso. Compare os usuários pretendidos, uso da sala e restrições do item separadamente; registre por que cada item proposto se encaixa naquela sala."
+      },
+      {
+        "title": "Quais informações de limpeza o fornecedor deve receber?",
+        "desc": "Os produtos químicos reais, métodos permitidos, plano de manuseio e restrições de armazenamento, para que compatibilidade e acesso possam ser abordados antes da aquisição."
+      },
+      {
+        "title": "O que devo enviar para um conceito de sala?",
+        "desc": "Desenhos medidos, país e contexto de licenciamento, programa da sala, usuários pretendidos, portas, serviços e responsabilidades escritas de instalação/operação."
+      }
+    ],
+    "imageAlt": "Equipamento de Playground Interno para Creches — renderização conceitual 3D ilustrativa do local",
+    "captions": [
+      "Conceito geral de soft-play, não uma sala de creche concluída ou licenciada.",
+      "Conceito de equipamento; adequação de idade da sala requer revisão específica do item.",
+      "Referência conceitual de local; capacidade de licenciamento e observação não são verificadas por esta imagem."
+    ],
+    "ui": {
+      "home": "Início",
+      "products": "Produtos",
+      "design": "Conversar sobre um projeto 3D",
+      "whatsapp": "Conversar no WhatsApp",
+      "compare": "Comparar Opções",
+      "gallery": "Referências de Design",
+      "relatedTitle": "Guias de Planejamento Relacionados",
+      "faqTitle": "Perguntas dos Compradores",
+      "sourcesTitle": "Fontes & Escopo",
+      "sourcesIntro": "As fontes vinculadas explicam seu próprio equipamento ou escopo jurisdicional. Elas não são certificados de produto. Recomendações de aquisição e operação abaixo são orientações de planejamento; obtenha uma revisão específica do projeto.",
+      "updated": "Atualizado em 18 de novembro de 2026",
+      "author": "NinescapeLand · Planejamento de Playground Comercial",
+      "imageNote": "Renderizações conceituais 3D de locais existentes mostram configurações de equipamentos, não amostras de materiais verificadas, projetos concluídos de creches ou igrejas, instalações clínicas ou evidências de conformidade.",
+      "inquiryIntro": "Envie seus desenhos do local, país e requisitos de aquisição para uma discussão específica do projeto."
+    },
+    "parents": [
+      {
+        "slug": "products/soft-play",
+        "label": "Equipamentos de Soft Play"
+      },
+      {
+        "slug": "complete-indoor-play-center-solutions",
+        "label": "Responsabilidades do Centro de Play Completo"
+      },
+      {
+        "slug": "indoor-playground-maintenance-and-cleaning-guide",
+        "label": "Manutenção e Limpeza"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Áreas de brincar: guia de acessibilidade",
+        "publisher": "U.S. Access Board",
+        "url": "https://www.access-board.gov/ada/guides/chapter-10-play-areas/",
+        "note": "Requisitos de áreas de brincar acessíveis e rotas nos EUA; aplicabilidade depende da instalação e jurisdição, não uma aprovação mundial de produto."
+      },
+      {
+        "label": "Desinfetantes e crianças",
+        "publisher": "Agência de Proteção Ambiental dos EUA",
+        "url": "https://www.epa.gov/coronavirus-and-disinfectants/are-disinfectants-harmful-children-can-children-apply-disinfectants",
+        "note": "Crianças não devem aplicar desinfetantes. Produtos requerem armazenamento e uso seguros conforme seus rótulos; isso não é uma admissão ou regra de retorno ao jogo."
+      },
+      {
+        "label": "Ar mais limpo para prevenção de vírus respiratórios",
+        "publisher": "Centros de Controle e Prevenção de Doenças",
+        "url": "https://cdc.gov/respiratory-viruses/prevention/air-quality.html",
+        "note": "Orientação de saúde pública dos EUA sobre ar mais limpo e redução de risco de exposição; não é um projeto de ventilação de playground ou garantia contra infecção."
+      },
+      {
+        "label": "ASTM F1918: equipamento de soft-contained play",
+        "publisher": "ASTM International",
+        "url": "https://store.astm.org/standards/f1918",
+        "note": "O âmbito público da ASTM F1918-21 abrange equipamentos de brincadeira macia contida, do percentil 5 de crianças de dois anos ao percentil 95 de crianças de doze anos. Exclui equipamentos de parques domésticos e públicos e outras categorias indicadas. Verifique cada item; não cobre todas as atrações ou requisitos de acessibilidade."
+      }
+    ],
+    "checklistTitle": "Informações para Registrar Antes do Pedido",
+    "checklist": [
+      "Jurisdição, programa e referências exatas de licenciamento local.",
+      "Dimensões da sala, áreas utilizáveis, portas, preocupações com linhas de visão e serviços.",
+      "Crianças pretendidas e escolhas de atividades sem capacidades universais assumidas.",
+      "Cuidado, instalação, avaliação e responsabilidades de liberação do operador."
+    ]
+  },
+  "church-indoor-playground-equipment": {
+    "slug": "church-indoor-playground-equipment",
+    "title": "Equipamento de Playground Interno para Igrejas",
+    "metaTitle": "Equipamento de Playground para Igrejas",
+    "metaDescription": "Planeje equipamentos para igrejas em salões compartilhados: recepção, voluntários, armazenamento, reabertura e rotas de saída.",
+    "publishedDate": "2026-09-10",
+    "kicker": "Playground Comercial · Aquisição & Operações",
+    "intro": "Uma área de brincar de igreja pode compartilhar uma sala com reuniões, refeições ou creche durante a semana. Comece com o cronograma real, usuários e pessoas responsáveis. Capacidade do equipamento, supervisão e transição são decisões do projeto, não um pico semanal universal, proporção de voluntários ou promessa de desmontagem em vinte minutos.",
+    "answerQuestion": "Como uma igreja deve escolher equipamento para um salão compartilhado?",
+    "answer": "Compare opções fixas e armazenáveis contra outros usos do salão, instruções do equipamento e tarefas reais de montagem. Mantenha check-in e coleta legíveis sem restringir a fuga de emergência necessária. Registre responsabilidades dos voluntários, acesso ao armazenamento e condições para reabertura. Se o uso durante a semana envolve creche licenciada, verifique os requisitos desse programa separadamente.",
+    "frameworkTitle": "Planeje o Salão em Torno de Seus Usos Reais",
+    "framework": [
+      {
+        "title": "Registre serviços reais e outros usos",
+        "desc": "Mapeie crianças, adultos acompanhantes, atividades e uso da sala em horários relevantes. Mantenha demanda medida separada de qualquer capacidade proposta de equipamento. Identifique reuniões, catering, programas durante a semana e restrições de armazenamento em vez de adicionar uma porcentagem geral à frequência mais movimentada."
+      },
+      {
+        "title": "Planeje transferência e funções de voluntários",
+        "desc": "Nomeie as responsabilidades de check-in, observação, assistência e coleta, incluindo um substituto e contato de escalonamento. Caminhe pelo layout proposto com as pessoas que o usarão. Linhas de visão abertas apoiam observação, mas não estabelecem uma proporção universal segura de equipe."
+      },
+      {
+        "title": "Compare montagens fixas e armazenáveis",
+        "desc": "Para itens permanentes, revise a pegada dedicada e requisitos de instalação. Para itens móveis, verifique manuseio, colocação estável, armazenamento e instruções de remontagem. Não adicione rodas ou remova âncoras apenas para acelerar a desmontagem. Teste tarefas reais antes de prometer um tempo de mudança de sala."
+      },
+      {
+        "title": "Libere cada uso e fase do projeto",
+        "desc": "Mantenha saídas de emergência e circulação acessível claras durante montagem, brincadeira, armazenamento e refeições. Registre verificações antes da reabertura e responsabilidade por defeitos. Se o financiamento for em fases, cada fase entregue precisa de seu próprio plano completo de proteção, acesso e operação; financiamento posterior não pode ser assumido para corrigir controles ausentes."
+      }
+    ],
+    "equipmentTitle": "Compare as Decisões do Projeto",
+    "equipment": [
+      {
+        "title": "Sala de brincar dedicada",
+        "desc": "Uma instalação fixa pode se adequar a uma sala dedicada se o local, uso pretendido, observação e plano de manutenção forem revisados."
+      },
+      {
+        "title": "Salão compartilhado",
+        "desc": "Equipamento armazenável precisa de montagem permitida, acesso de transporte e armazenamento seguro. Verifique a sala em ambos os modos de brincar e não brincar."
+      },
+      {
+        "title": "Creche durante a semana",
+        "desc": "Identifique qualquer licenciamento, equipe e requisitos de saúde separados. Uso no domingo não estabelece permissão para um programa durante a semana."
+      },
+      {
+        "title": "Participação mais silenciosa opcional",
+        "desc": "Uma atividade mais silenciosa opcional deve permanecer acessível e observável sob o plano de operação acordado, não isolada atrás de uma porta não gerenciada."
+      }
+    ],
+    "columns": [
+      "Opção",
+      "Entrada de design",
+      "Verificação de entrega",
+      "Evidência necessária"
+    ],
+    "rows": [
+      [
+        "Instalação fixa",
+        "Pegada dedicada e suporte",
+        "Acesso, proteção e observação",
+        "Desenhos e instruções de instalação"
+      ],
+      [
+        "Conjunto armazenável",
+        "Rota de manuseio, armazenamento seguro e montagem permitida",
+        "Remontagem estável e liberação da sala",
+        "Manual do equipamento e teste de tarefa real"
+      ],
+      [
+        "Uso licenciado durante a semana",
+        "Programa e jurisdição",
+        "Requisitos adicionais ao uso no domingo",
+        "Referências de licenciamento aplicáveis"
+      ],
+      [
+        "Aquisição em fases",
+        "Escopo entregue utilizável independentemente",
+        "Nenhum acesso ou proteção incompleto",
+        "Registro de responsabilidade e liberação da fase"
+      ]
+    ],
+    "tableTitle": "Equipamento de Playground Interno para Igrejas — Matriz de Decisão do Comprador",
+    "tableNote": "Orientação de planejamento, não capacidade universal, conselho médico, regra de licenciamento ou certificado. Registre requisitos específicos do projeto e responsabilidades nomeadas antes da aquisição.",
+    "faq": [
+      {
+        "title": "Há uma proporção padrão de voluntários para crianças em brincadeiras de igreja?",
+        "desc": "Esta página não define uma. Determine a equipe a partir de requisitos aplicáveis, o programa, usuários pretendidos, equipamento e o plano real do operador."
+      },
+      {
+        "title": "O salão pode voltar a mesas em vinte minutos?",
+        "desc": "Não assuma isso. Teste o manuseio, armazenamento e tarefas de remontagem com o equipamento real e equipe antes de definir um alvo de mudança."
+      },
+      {
+        "title": "O check-in pode controlar a única saída?",
+        "desc": "Check-in pode gerenciar acesso comum, mas não deve bloquear fuga de emergência necessária ou rotas acessíveis. Coordene o arranjo real da porta com o revisor relevante da instalação."
+      },
+      {
+        "title": "O uso de pré-escola durante a semana muda o brief?",
+        "desc": "Pode introduzir requisitos de licenciamento e operação separados. Registre o programa pretendido e jurisdição antes de tratar uma configuração como adequada para ambos os usos."
+      }
+    ],
+    "imageAlt": "Equipamento de Playground Interno para Igrejas — renderização conceitual 3D ilustrativa do local",
+    "captions": [
+      "Conceito geral de soft-play, não um berçário de igreja fotografado.",
+      "Conceito de estrutura de brinquedo; visibilidade do voluntário depende do layout real.",
+      "Conceito de equipamento ninja, não prova de adequação para um salão de igreja ou faixa etária."
+    ],
+    "ui": {
+      "home": "Início",
+      "products": "Produtos",
+      "design": "Conversar sobre um projeto 3D",
+      "whatsapp": "Conversar no WhatsApp",
+      "compare": "Comparar Opções",
+      "gallery": "Referências de Design",
+      "relatedTitle": "Guias de Planejamento Relacionados",
+      "faqTitle": "Perguntas dos Compradores",
+      "sourcesTitle": "Fontes & Escopo",
+      "sourcesIntro": "As fontes vinculadas explicam seu próprio equipamento ou escopo jurisdicional. Elas não são certificados de produto. Recomendações de aquisição e operação abaixo são orientações de planejamento; obtenha uma revisão específica do projeto.",
+      "updated": "Atualizado em 18 de novembro de 2026",
+      "author": "NinescapeLand · Planejamento de Playground Comercial",
+      "imageNote": "Renderizações conceituais 3D de locais existentes mostram configurações de equipamentos, não amostras de materiais verificadas, projetos concluídos de creches ou igrejas, instalações clínicas ou evidências de conformidade.",
+      "inquiryIntro": "Envie seus desenhos do local, país e requisitos de aquisição para uma discussão específica do projeto."
+    },
+    "parents": [
+      {
+        "slug": "products/soft-play",
+        "label": "Equipamentos de Soft Play"
+      },
+      {
+        "slug": "complete-indoor-play-center-solutions",
+        "label": "Responsabilidades do Centro de Play Completo"
+      },
+      {
+        "slug": "modular-reconfigurable-indoor-play-equipment",
+        "label": "Planejamento de Equipamento Modular"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Áreas de brincar: guia de acessibilidade",
+        "publisher": "U.S. Access Board",
+        "url": "https://www.access-board.gov/ada/guides/chapter-10-play-areas/",
+        "note": "Requisitos de áreas de brincar acessíveis e rotas nos EUA; aplicabilidade depende da instalação e jurisdição, não uma aprovação mundial de produto."
+      },
+      {
+        "label": "ASTM F1918: equipamento de soft-contained play",
+        "publisher": "ASTM International",
+        "url": "https://store.astm.org/standards/f1918",
+        "note": "O âmbito público da ASTM F1918-21 abrange equipamentos de brincadeira macia contida, do percentil 5 de crianças de dois anos ao percentil 95 de crianças de doze anos. Exclui equipamentos de parques domésticos e públicos e outras categorias indicadas. Verifique cada item; não cobre todas as atrações ou requisitos de acessibilidade."
+      },
+      {
+        "label": "Desinfetantes e crianças",
+        "publisher": "Agência de Proteção Ambiental dos EUA",
+        "url": "https://www.epa.gov/coronavirus-and-disinfectants/are-disinfectants-harmful-children-can-children-apply-disinfectants",
+        "note": "Crianças não devem aplicar desinfetantes. Produtos requerem armazenamento e uso seguros conforme seus rótulos; isso não é uma admissão ou regra de retorno ao jogo."
+      }
+    ],
+    "checklistTitle": "Informações para Registrar Antes do Pedido",
+    "checklist": [
+      "Cronograma para brincadeira, refeições, reuniões e qualquer creche durante a semana.",
+      "Funções nomeadas de check-in, observação, coleta e reabertura.",
+      "Instruções de montagem/armazenamento suportadas pelo equipamento e teste de manuseio real.",
+      "Revisão de emergência/acessibilidade e escopo completo para cada fase financiada."
+    ]
+  },
+  "sensory-inclusive-play-equipment": {
+    "slug": "sensory-inclusive-play-equipment",
+    "title": "Equipamento de Brincar Sensorial-Inclusivo",
+    "metaTitle": "Equipamento de Playground Sensorial-Amigável",
+    "metaDescription": "Planeje brincadeiras inclusivas com preferências individuais, opções mais tranquilas, acessos e ajustes de luz, som e filas.",
+    "publishedDate": "2026-05-29",
+    "kicker": "Playground Comercial · Aquisição & Operações",
+    "intro": "Brincadeiras comerciais sensorial-inclusivas oferecem escolhas em vez de um único nível de estimulação para cada criança. Preferências e necessidades de suporte diferem. Revise a luz, som, cheiro, aglomeração e rotas reais com usuários pretendidos e profissionais relevantes; equipamento não é um tratamento e um rótulo de hora silenciosa não é prova de que um ambiente serve a todos.",
+    "answerQuestion": "O que torna um playground interno sensorial-amigável?",
+    "frameworkTitle": "Planeje Escolha, Acesso e Ajustes Sensoriais",
+    "framework": [
+      {
+        "title": "Pergunte sobre escolhas individuais de participação",
+        "desc": "Colete preferências sobre som, luz, textura, cheiros, filas e comunicação. Forneça maneiras de recusar ou sair de uma atividade sem cruzar um perigo ativo. Não exija que crianças usem equipamento estimulante porque é rotulado como sensorial."
+      },
+      {
+        "title": "Revise o ambiente real",
+        "desc": "Caminhe pela rota desde a chegada até brincar, banheiros, áreas mais silenciosas e partida. Observe música, som do equipamento, ofuscamento, efeitos de luz intermitente, odores de limpeza, condições de fila e transições inesperadas. Registre um ajuste e responsável para cada problema em vez de alegar uma redução acústica fixa."
+      },
+      {
+        "title": "Coordene opções silenciosas e riscos do equipamento",
+        "desc": "Coloque uma opção mais silenciosa dentro do plano de acesso e observação acordado. Confirme suportes, áreas de uso, equipamento elétrico, limpeza e acesso de emergência por item. Produtos com peso, suspensos ou outros especializados requerem avaliação específica do item apropriada; esta página não prescreve uso terapêutico."
+      },
+      {
+        "title": "Verifique a configuração de hora silenciosa na prática",
+        "desc": "Registre quais configurações de som e iluminação mudam, o que permanece barulhento e como as chegadas são tratadas. Compartilhe informações factuais sobre as condições e uma maneira de pedir ajuda. Revise feedback e demanda real antes de atribuir limites de presença ou equipe; não comercialize uma sessão universalmente calma ou medicamente eficaz."
+      }
+    ],
+    "equipmentTitle": "Compare as Decisões do Projeto",
+    "equipment": [
+      {
+        "title": "Escolhas de luz e visuais",
+        "desc": "Registre luminosidade controlável, ofuscamento e recursos de luz intermitente. Mantenha visibilidade suficiente para participação, observação e circulação segura."
+      },
+      {
+        "title": "Escolhas de som e transição",
+        "desc": "Descreva música de fundo, ruído do equipamento e rotas mais silenciosas. Sinalize sons inevitáveis em vez de prometer silêncio."
+      },
+      {
+        "title": "Texturas e atividades opcionais",
+        "desc": "Ofereça escolhas sem classificar madeira, plástico ou produtos táteis como universalmente melhores. Registre cuidado e restrições de uso pretendido."
+      },
+      {
+        "title": "Escolhas de chegada e retirada",
+        "desc": "Explique filas, assistência e um espaço mais silencioso opcional. Mantenha acesso, observação e arranjos de emergência consistentes."
+      }
+    ],
+    "columns": [
+      "Ambiente",
+      "Observar",
+      "Possível ajuste",
+      "Verificar depois"
+    ],
+    "rows": [
+      [
+        "Luz",
+        "Ofuscamento, luzes piscantes e luminosidade inesperada",
+        "Configurações controláveis práticas e informação antecipada",
+        "Visibilidade e feedback do usuário"
+      ],
+      [
+        "Som",
+        "Música, ruído do equipamento e secadores de mão",
+        "Volume de fundo mais baixo / sinalize áreas barulhentas",
+        "Sons restantes e comunicação utilizável"
+      ],
+      [
+        "Filas",
+        "Aglomeração e incerteza na chegada",
+        "Informação de chegada previsível e contato de ajuda",
+        "Transferência real e rota acessível"
+      ],
+      [
+        "Espaço mais silencioso",
+        "Acesso, observação e retirada opcional",
+        "Uma escolha mais silenciosa acessível",
+        "Nenhuma fuga bloqueada ou participação forçada"
+      ]
+    ],
+    "tableTitle": "Equipamento de Brincar Sensorial-Inclusivo — Matriz de Decisão do Comprador",
+    "tableNote": "Orientação de planejamento, não capacidade universal, conselho médico, regra de licenciamento ou certificado. Registre requisitos específicos do projeto e responsabilidades nomeadas antes da aquisição.",
+    "faq": [
+      {
+        "title": "Estruturas de madeira são naturalmente mais sensorial-amigáveis?",
+        "desc": "Nenhuma alegação universal é justificada. Avalie a textura real, acabamento, cheiro, som e preferência individual em vez do nome do material."
+      },
+      {
+        "title": "Horas silenciosas servem a todas as crianças autistas?",
+        "desc": "Não. Explique as condições reais e ofereça escolhas; preferências individuais e necessidades de suporte variam."
+      },
+      {
+        "title": "Este equipamento trata diferenças de processamento sensorial?",
+        "desc": "Este é um guia de planejamento comercial, não uma prescrição clínica. Não prometa tratamento, regulação emocional ou resultados terapêuticos do equipamento."
+      },
+      {
+        "title": "Como devo documentar uma sessão sensorial-amigável?",
+        "desc": "Registre as configurações, fontes restantes de ruído/luz, arranjos de chegada, rota mais silenciosa opcional, contato de ajuda da equipe e feedback. Evite limites universais sem evidência específica do projeto."
+      }
+    ],
+    "imageAlt": "Equipamento de Brincar Sensorial-Inclusivo — renderização conceitual 3D ilustrativa do local",
+    "captions": [
+      "Conceito geral de brincadeira, não um ambiente sensorial clinicamente avaliado.",
+      "Referência de estrutura; condições reais de som e iluminação não são mostradas.",
+      "Conceito de soft-play; acessibilidade e adequação individual requerem revisão específica do projeto."
+    ],
+    "ui": {
+      "home": "Início",
+      "products": "Produtos",
+      "design": "Conversar sobre um projeto 3D",
+      "whatsapp": "Conversar no WhatsApp",
+      "compare": "Comparar Opções",
+      "gallery": "Referências de Design",
+      "relatedTitle": "Guias de Planejamento Relacionados",
+      "faqTitle": "Perguntas dos Compradores",
+      "sourcesTitle": "Fontes & Escopo",
+      "sourcesIntro": "As fontes vinculadas explicam seu próprio equipamento ou escopo jurisdicional. Elas não são certificados de produto. Recomendações de aquisição e operação abaixo são orientações de planejamento; obtenha uma revisão específica do projeto.",
+      "updated": "Atualizado em 18 de novembro de 2026",
+      "author": "NinescapeLand · Planejamento de Playground Comercial",
+      "imageNote": "Renderizações conceituais 3D de locais existentes mostram configurações de equipamentos, não amostras de materiais verificadas, projetos concluídos de creches ou igrejas, instalações clínicas ou evidências de conformidade.",
+      "inquiryIntro": "Envie seus desenhos do local, país e requisitos de aquisição para uma discussão específica do projeto."
+    },
+    "parents": [
+      {
+        "slug": "products/soft-play",
+        "label": "Equipamentos de Soft Play"
+      },
+      {
+        "slug": "complete-indoor-play-center-solutions",
+        "label": "Responsabilidades do Centro de Play Completo"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Ambientes acessíveis",
+        "publisher": "National Autistic Society",
+        "url": "https://www.autism.org.uk/learn/knowledge-hub/guides-and-resources/accessible-environments",
+        "note": "Ajustes práticos do Reino Unido para luz, ruído, multidões e filas; necessidades individuais diferem. Não é uma prescrição terapêutica ou certificado de equipamento."
+      },
+      {
+        "label": "Áreas de brincar: guia de acessibilidade",
+        "publisher": "U.S. Access Board",
+        "url": "https://www.access-board.gov/ada/guides/chapter-10-play-areas/",
+        "note": "Requisitos de áreas de brincar acessíveis e rotas nos EUA; aplicabilidade depende da instalação e jurisdição, não uma aprovação mundial de produto."
+      },
+      {
+        "label": "Rótulos e instruções de desinfetantes",
+        "publisher": "Agência de Proteção Ambiental dos EUA",
+        "url": "https://www.epa.gov/pesticide-registration/selected-epa-registered-disinfectants",
+        "note": "Registro de desinfetantes e instruções de rótulo nos EUA; não certifica materiais de playground ou substitui requisitos locais."
+      }
+    ],
+    "checklistTitle": "Informações para Registrar Antes do Pedido",
+    "checklist": [
+      "Preferências individuais e escolhas de participação/retirada.",
+      "Observações reais de luz, som, cheiro e chegada com ações nomeadas.",
+      "Requisitos específicos do item para suporte, elétrico, acesso, cuidado e inspeção.",
+      "Configurações de sessão silenciosa e informação factual ao visitante, sem garantias de tratamento."
+    ],
+    "answer": "Ajustes úteis tornam participação e retirada previsíveis: reduza ruído ou brilho de fundo indesejados onde prático, explique áreas e horários mais movimentados, ofereça uma opção mais silenciosa e mantenha rotas acessíveis. Pergunte sobre necessidades individuais. A orientação da National Autistic Society apoia ajustes ambientais, não um limite universal de decibéis, um material preferido ou um resultado garantido de regulação."
+  }
+}

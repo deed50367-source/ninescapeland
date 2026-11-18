@@ -1,6 +1,7 @@
 import { Link, useLocation } from "react-router-dom";
 import { ArrowUpRight } from "lucide-react";
 import { b15InboundLinks } from "@/config/weeklyAggregationB15Registry";
+import { b16InboundLinks } from "@/config/weeklyAggregationB16Registry";
 import { b14InboundLinks } from "@/config/weeklyAggregationB14Registry";
 import { b13InboundLinks, b13Language, b13Path } from "@/config/weeklyAggregationB13Registry";
 import { Button } from "@/components/ui/button";
@@ -11,7 +12,8 @@ const headings = { en: "Detailed Planning Guides", ar: "أدلة التخطيط 
 export function WeeklyPlanningLinks({ slug }: { slug: string }) {
   const { pathname } = useLocation();
   const language = b13Language(pathname);
-  const links = [...b15InboundLinks(slug, pathname), ...b14InboundLinks(slug).map(item => ({ slug: item.slug, label: item.labels[language] })), ...b13InboundLinks(slug).filter(item => item.slug !== "private-indoor-playground-party-room-design").map(item => ({ slug: item.slug, label: item.labels[language] }))];
+  const candidates = [...b16InboundLinks(slug, pathname), ...b15InboundLinks(slug, pathname), ...b14InboundLinks(slug).map(item => ({ slug: item.slug, label: item.labels[language] })), ...b13InboundLinks(slug).filter(item => item.slug !== "private-indoor-playground-party-room-design").map(item => ({ slug: item.slug, label: item.labels[language] }))];
+  const links = candidates.filter((item, index) => candidates.findIndex(other => other.slug === item.slug) === index);
   if (!links.length) return <WeeklyBlogLinks slug={slug} />;
   return <><section className="border-y border-border bg-muted/30 py-10">
     <div className="container-wide">

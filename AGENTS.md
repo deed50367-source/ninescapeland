@@ -21,4 +21,5 @@
 - Exhibition banners, contact-page image overrides and inquiry prefills share an expiry hook so all temporary presentation restores together, including pages left open at expiry.
 
 - Existing-topic refresh bundles override only their registered legacy routes, preserve original publication dates and update modification dates; shared reciprocal links keep established URLs discoverable.
+- Weekly planning link inventories combine refresh bundles with unique destination keys so repeated parent relationships do not render duplicate links.
 - Prerender captures require the exact route canonical and locale, not template head markers; any failed capture must fail deployment so fallback homepage metadata cannot reach production.

@@ -1,0 +1,826 @@
+{
+  "indoor-playground-maintenance-and-cleaning-guide": {
+    "slug": "indoor-playground-maintenance-and-cleaning-guide",
+    "title": "Mantenimiento y Limpieza de Áreas de Juego Interiores",
+    "metaTitle": "Mantenimiento y Limpieza de Áreas de Juego",
+    "metaDescription": "Planifique limpieza, inspecciones y gestión del aire con etiquetas, registros de componentes y responsabilidades claras.",
+    "publishedDate": "2026-10-08",
+    "kicker": "Juego Comercial · Adquisición y Operaciones",
+    "intro": "El mantenimiento de áreas de juego comerciales combina el cuidado de superficies, inspección de equipos y operaciones del edificio. Estos son trabajos diferentes. Elige una rutina basada en las instrucciones del equipo, el uso real, eventos de contaminación y requisitos locales; no trates un calendario universal de desinfección diario, semanal o mensual como prueba de seguridad.",
+    "answerQuestion": "¿Puede la desinfección de superficies reemplazar la gestión del aire interior?",
+    "answer": "No. El tratamiento de superficies aborda las superficies nombradas en la etiqueta del producto; las medidas de aire limpio abordan la exposición en el aire. Mantén responsables separados para la limpieza, equipos dañados y ventilación del edificio. Los CDC describen el aire limpio como una medida de reducción de riesgo, no como eliminación de infecciones. Un piso visiblemente limpio no verifica el flujo de aire, filtración o la política de enfermedad del lugar.",
+    "frameworkTitle": "Construye la Rutina de Limpieza y Gestión del Aire",
+    "framework": [
+      {
+        "title": "Separa las tareas y responsables",
+        "desc": "Enumera por separado la limpieza, cualquier desinfección o sanitización requerida, inspección mecánica y revisión del sistema de aire. Asigna un operador para registros, un adulto capacitado para aplicación de químicos y un contacto calificado del edificio para ventilación. El suministro de equipos no incluye automáticamente estos servicios."
+      },
+      {
+        "title": "Establece la frecuencia según la tarea real",
+        "desc": "Usa instrucciones del fabricante, requisitos de salud locales, tráfico y eventos de contaminación para decidir el horario. Registra qué activó trabajo adicional y cuándo se completó. Un incidente con fluidos corporales o una superficie dañada requiere su propia respuesta controlada; no continúes el uso mientras el personal improvisa un método."
+      },
+      {
+        "title": "Ajusta la etiqueta y el material",
+        "desc": "Identifica la superficie, producto, reclamo objetivo, método permitido, tiempo de contacto y cualquier requisito de enjuague o secado. Sigue la etiqueta y las instrucciones de compatibilidad del proveedor del equipo. Los niños no deben aplicar desinfectantes. La nebulización o pulverización electrostática no es un método predeterminado; la EPA requiere instrucciones de etiqueta relevantes."
+      },
+      {
+        "title": "Revisa el aire y la reapertura por separado",
+        "desc": "Pide al operador del edificio que revise la ventilación según los requisitos aplicables y la ocupación propuesta. Mantén entradas, salidas y acceso al servicio de aire utilizables. Registra la reapertura solo después de completar los pasos de superficie y controles de defectos requeridos; un olor a químico o una ventana abierta no son una prueba de flujo de aire."
+      }
+    ],
+    "equipmentTitle": "Compara las Decisiones del Proyecto",
+    "equipment": [
+      {
+        "title": "Almohadillas y cubiertas",
+        "desc": "Registra el material de la cubierta, costuras y superficies de limpieza accesibles. Un desgarro que exponga espuma pertenece al registro de defectos; limpiarlo no restaura la cubierta."
+      },
+      {
+        "title": "Pelotas, redes y áreas cerradas",
+        "desc": "Documenta cómo el personal accede y retira objetos, limpia el interior del foso, revisa fijaciones y seca componentes según las instrucciones. Ningún calendario único se adapta a todos los fosos o redes."
+      },
+      {
+        "title": "Toboganes y superficies móviles",
+        "desc": "Usa el método de cuidado específico del equipo e inspecciona juntas, soportes e interfaces protectoras. No uses un químico o pulidor solo porque sea adecuado para otra superficie."
+      },
+      {
+        "title": "Servicios del edificio",
+        "desc": "Mantén el contacto del servicio de ventilación, registros de mantenimiento y ruta de escalamiento. Un registro de inspección de equipos o desinfección de superficies no puede reemplazar este archivo."
+      }
+    ],
+    "columns": [
+      "Tarea",
+      "Activador o entrada",
+      "Registro",
+      "Rol responsable"
+    ],
+    "rows": [
+      [
+        "Cuidado de superficies",
+        "Uso, contaminación, etiqueta e instrucciones de material",
+        "Producto, método y finalización",
+        "Personal de limpieza capacitado"
+      ],
+      [
+        "Inspección mecánica",
+        "Manual del equipo, daño o preocupación reportada",
+        "Componente, defecto y restricción",
+        "Líder de mantenimiento del lugar"
+      ],
+      [
+        "Revisión del sistema de aire",
+        "Requisitos del edificio y uso propuesto",
+        "Revisión del servicio y responsable de acción",
+        "Operador del edificio / especialista calificado"
+      ],
+      [
+        "Reapertura",
+        "Tratamiento requerido y controles de defectos completados",
+        "Decisión de liberación y restricciones no resueltas",
+        "Gerente nombrado del lugar"
+      ]
+    ],
+    "tableTitle": "Mantenimiento y Limpieza de Áreas de Juego Interiores — Matriz de Decisiones del Comprador",
+    "tableNote": "Guía de planificación, no capacidad universal, consejo médico, regla de licencia o certificado. Registra requisitos específicos del proyecto y responsabilidades nombradas antes de la adquisición.",
+    "faq": [
+      {
+        "title": "¿Con qué frecuencia debe desinfectarse el equipo?",
+        "desc": "No hay una frecuencia universal en esta página. Usa requisitos locales, contaminación real, la etiqueta del producto e instrucciones del equipo. La limpieza y revisiones mecánicas tienen activadores diferentes."
+      },
+      {
+        "title": "¿Es suficiente rociar todo el lugar?",
+        "desc": "No. Un método de aplicación debe estar permitido por la etiqueta del producto, y el tratamiento de superficies no reemplaza la gestión del aire, inspección de equipos o controles del personal."
+      },
+      {
+        "title": "¿Una cubierta antimicrobiana elimina la necesidad de limpiar?",
+        "desc": "No. Obtén la evidencia exacta del producto y sigue sus instrucciones de cuidado. No extiendas un reclamo de material a una garantía de protección para visitantes."
+      },
+      {
+        "title": "¿Cuándo puede reabrirse un componente cerrado?",
+        "desc": "Después de completar el tratamiento documentado y cualquier reparación o revisión especializada, con la liberación del operador nombrado. No inventes un período de espera universal."
+      }
+    ],
+    "imageAlt": "Mantenimiento y Limpieza de Áreas de Juego Interiores — renderizado conceptual ilustrativo en 3D",
+    "captions": [
+      "Referencia conceptual de juego suave; no se demuestra rendimiento de limpieza.",
+      "Referencia conceptual de estructura; el acceso real de mantenimiento necesita una revisión específica del sitio.",
+      "Referencia conceptual de trampolín; las instrucciones de cuidado deben coincidir con el equipo real."
+    ],
+    "ui": {
+      "home": "Inicio",
+      "products": "Productos",
+      "design": "Consultar un diseño 3D",
+      "whatsapp": "Chatea por WhatsApp",
+      "compare": "Comparar Opciones",
+      "gallery": "Referencias de Diseño",
+      "relatedTitle": "Guías de Planificación Relacionadas",
+      "faqTitle": "Preguntas del Comprador",
+      "sourcesTitle": "Fuentes y Alcance",
+      "sourcesIntro": "Las fuentes enlazadas explican su propio equipo o alcance jurisdiccional. No son certificados de producto. Las recomendaciones de adquisición y operación a continuación son guías de planificación; obtén una revisión específica del proyecto.",
+      "updated": "Actualizado el 18 de noviembre de 2026",
+      "author": "NinescapeLand · Planificación de Juego Comercial",
+      "imageNote": "Los renders conceptuales 3D de sitios existentes muestran configuraciones de equipo, no muestras de material verificadas, proyectos completados de cuidado infantil o iglesias, instalaciones clínicas o evidencia de cumplimiento.",
+      "inquiryIntro": "Envía tus planos del sitio, país y requisitos de adquisición para una discusión específica del proyecto."
+    },
+    "parents": [
+      {
+        "slug": "products/soft-play",
+        "label": "Equipo de Juego Suave"
+      },
+      {
+        "slug": "complete-indoor-play-center-solutions",
+        "label": "Responsabilidades de Centros de Juego Completos"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Etiquetas y direcciones de desinfectantes",
+        "publisher": "Agencia de Protección Ambiental de EE. UU.",
+        "url": "https://www.epa.gov/pesticide-registration/selected-epa-registered-disinfectants",
+        "note": "Registro de desinfectantes y direcciones de etiqueta en EE. UU.; no certifica materiales de áreas de juego ni reemplaza requisitos locales."
+      },
+      {
+        "label": "Aire más limpio para prevención de virus respiratorios",
+        "publisher": "Centros para el Control y la Prevención de Enfermedades",
+        "url": "https://cdc.gov/respiratory-viruses/prevention/air-quality.html",
+        "note": "Guía de salud pública de EE. UU. sobre aire más limpio y reducción de riesgo de exposición; no es un diseño de ventilación para áreas de juego ni garantía contra infecciones."
+      },
+      {
+        "label": "Métodos de aplicación y etiquetas de desinfectantes",
+        "publisher": "Agencia de Protección Ambiental de EE. UU.",
+        "url": "https://www.epa.gov/coronavirus-and-disinfectants/can-i-use-fogging-fumigation-or-electrostatic-spraying-or-drones-help",
+        "note": "Métodos como nebulización o pulverización electrostática necesitan direcciones explícitas de etiqueta; no hay recomendación de rociado rutinario de todo el lugar."
+      },
+      {
+        "label": "Desinfectantes y niños",
+        "publisher": "Agencia de Protección Ambiental de EE. UU.",
+        "url": "https://www.epa.gov/coronavirus-and-disinfectants/are-disinfectants-harmful-children-can-children-apply-disinfectants",
+        "note": "Los niños no deben aplicar desinfectantes. Los productos requieren almacenamiento y uso seguro según sus etiquetas; esto no es una admisión o regla de retorno al juego."
+      }
+    ],
+    "checklistTitle": "Información para Registrar Antes de Ordenar",
+    "checklist": [
+      "ID del componente, superficies accesibles e instrucciones de cuidado del fabricante.",
+      "Etiqueta del producto de limpieza, superficies/método permitido y confirmación de compatibilidad.",
+      "Registro de defectos, restricciones, reparaciones y liberación con personal nombrado.",
+      "Contacto del servicio de aire del edificio y acciones no resueltas, separado del registro de superficies."
+    ]
+  },
+  "soft-play-foam-and-material-specifications": {
+    "slug": "soft-play-foam-and-material-specifications",
+    "title": "Especificaciones de Espuma y Materiales para Juegos Blandos",
+    "metaTitle": "Materiales y Especificaciones para Juegos Blandos",
+    "metaDescription": "Compare espuma, cubiertas, madera, plástico y uniones según especificaciones, limpieza compatible y pruebas de cada elemento.",
+    "publishedDate": "2026-10-22",
+    "kicker": "Juego Comercial · Adquisiciones y Operaciones",
+    "intro": "Una especificación de material comercial describe el artículo ensamblado, sus usuarios previstos y sus requisitos de cuidado. Un panel de madera, un tobogán de plástico moldeado y un módulo acolchado de juego blando cumplen funciones diferentes. Compare el uso propuesto y la construcción documentada en lugar de declarar un material universalmente más seguro, duradero o favorable para los sentidos.",
+    "answerQuestion": "¿Cómo deben los compradores comparar madera, plástico y materiales de juego blando?",
+    "answer": "Comience con la función del componente y su uso previsto. Solicite detalles del sustrato o resina, espuma y cubierta donde sea relevante, conexiones, interfaces protectoras y método de cuidado. Relacione los informes con el artículo suministrado y el alcance aplicable. Ni el nombre del material ni la densidad de la espuma por sí solos prueban protección contra impactos, idoneidad estructural o vida útil esperada.",
+    "frameworkTitle": "Especifique Materiales por Uso y Evidencia",
+    "framework": [
+      {
+        "title": "Defina el componente y su uso",
+        "desc": "Registre si el artículo es un panel, tobogán, plataforma, acolchado o módulo móvil. Especifique los usuarios previstos, método de soporte y condiciones de limpieza esperadas. No trate un juego residencial y una estructura comercial como intercambiables solo porque ambos usen madera o plástico."
+      },
+      {
+        "title": "Describa el ensamblaje completo",
+        "desc": "Solicite especie de madera o construcción de tablero y acabado, resina plástica y construcción moldeada, tipo y densidad de espuma, material de cubierta, costuras, fijaciones y bordes según corresponda. Revise las interfaces juntas; una muestra favorable de una capa no verifica el artículo completo."
+      },
+      {
+        "title": "Confirme compatibilidad de limpieza",
+        "desc": "Proporcione el producto de limpieza real y el método previsto al proveedor. Registre superficies permitidas, tiempo de contacto, condiciones de enjuague/secado y restricciones del proveedor. El registro de la EPA respalda la afirmación del desinfectante en la etiqueta, no la durabilidad de una cubierta de juegos bajo ese tratamiento."
+      },
+      {
+        "title": "Relacione evidencia con el artículo entregado",
+        "desc": "Compare número de informe, laboratorio, fecha, identificación del producto, alcance y descripción de la muestra con el pedido. Pregunte qué diferencias requieren nueva evidencia. Use equipos aplicables y requisitos locales de incendios/químicos; un informe de juguete no establece automáticamente el cumplimiento de toda la estructura comercial."
+      }
+    ],
+    "equipmentTitle": "Compare las Decisiones del Proyecto",
+    "equipment": [
+      {
+        "title": "Componentes de madera",
+        "desc": "Especifique sustrato, acabado, uniones y acceso para inspección. Confirme restricciones de cuidado y condición de bordes; la apariencia no es evidencia química o estructural."
+      },
+      {
+        "title": "Componentes de plástico moldeado",
+        "desc": "Especifique resina, construcción ensamblada, soportes e instrucciones de cuidado. Un acrónimo de resina por sí solo no establece comportamiento ante impactos o vida útil."
+      },
+      {
+        "title": "Espuma y cubiertas",
+        "desc": "Registre espuma, cubierta, costuras y partes reemplazables juntas. La densidad es una característica, no un sustituto de la evidencia de protección ensamblada."
+      },
+      {
+        "title": "Marcos, plataformas y fijaciones",
+        "desc": "Solicite dimensiones, recubrimiento, conexiones, instrucciones de instalación y acceso de inspección. Verifique interfaces protectoras en lugar de confiar en partes ocultas en un render."
+      }
+    ],
+    "columns": [
+      "Componente",
+      "Especificación escrita",
+      "Evidencia a relacionar",
+      "No asuma"
+    ],
+    "rows": [
+      [
+        "Panel de madera",
+        "Sustrato, acabado, uniones y cuidado",
+        "Descripción del artículo y evidencia relevante de acabado/ensamblaje",
+        "Toda la madera es más inclusiva"
+      ],
+      [
+        "Tobogán de plástico",
+        "Resina, soportes, uniones y cuidado",
+        "Artículo especificado y alcance de prueba aplicable",
+        "Un nombre de resina garantiza seguridad"
+      ],
+      [
+        "Módulo acolchado",
+        "Espuma, cubierta, costuras y reemplazo",
+        "Detalles de ensamblaje y compatibilidad de cuidado",
+        "La densidad sola prueba protección"
+      ],
+      [
+        "Marco y plataforma",
+        "Secciones, conexiones, acabado e instalación",
+        "Dibujos, manual y evaluación relevante",
+        "Una muestra de material verifica toda la estructura"
+      ]
+    ],
+    "tableTitle": "Especificaciones de Espuma y Materiales para Juegos Blandos — Matriz de Decisiones del Comprador",
+    "tableNote": "Orientación de planificación, no capacidad universal, consejo médico, regla de licencia o certificado. Registre requisitos específicos del proyecto y responsabilidades nombradas antes de la adquisición.",
+    "faq": [
+      {
+        "title": "¿La espuma de alta densidad es siempre la opción más segura?",
+        "desc": "No. Evalúe la espuma dentro de su cubierta, grosor, soporte y uso previsto. La densidad sola no establece rendimiento de amortiguación o idoneidad comercial."
+      },
+      {
+        "title": "¿La madera es más amigable para los sentidos que el plástico?",
+        "desc": "No universalmente. Textura, olor, acabado, sonido y preferencias personales importan. Evalúe el componente real con los usuarios previstos en lugar de asignar una propiedad terapéutica a su material."
+      },
+      {
+        "title": "¿Una prueba de material certifica todo el parque infantil?",
+        "desc": "No. Verifique la muestra, estándar y alcance del informe. La evidencia del componente y la evaluación del equipo ensamblado responden preguntas diferentes."
+      },
+      {
+        "title": "¿Qué hacer si un desinfectante y las instrucciones de la cubierta entran en conflicto?",
+        "desc": "No improvise una mezcla o método. Obtenga un enfoque permitido compatible y aclaración por escrito antes de usar; la compatibilidad del proveedor y la etiqueta química importan."
+      }
+    ],
+    "imageAlt": "Especificaciones de Espuma y Materiales para Juegos Blandos — render conceptual ilustrativo del sitio",
+    "captions": [
+      "Concepto de juego blando mostrando configuraciones, no una muestra verificada de espuma o cubierta.",
+      "Concepto de estructura de juego; la construcción interna requiere especificaciones escritas.",
+      "Render conceptual temático; los colores no demuestran cumplimiento de material o químico."
+    ],
+    "ui": {
+      "home": "Inicio",
+      "products": "Productos",
+      "design": "Consultar un diseño 3D",
+      "whatsapp": "Chatear por WhatsApp",
+      "compare": "Comparar Opciones",
+      "gallery": "Referencias de Diseño",
+      "relatedTitle": "Guías de Planificación Relacionadas",
+      "faqTitle": "Preguntas del Comprador",
+      "sourcesTitle": "Fuentes y Alcance",
+      "sourcesIntro": "Las fuentes enlazadas explican su propio equipo o alcance jurisdiccional. No son certificados de producto. Las recomendaciones de adquisición y operación a continuación son orientación de planificación; obtenga una revisión específica del proyecto.",
+      "updated": "Actualizado el 18 de noviembre de 2026",
+      "author": "NinescapeLand · Planificación de Juego Comercial",
+      "imageNote": "Los renders conceptuales 3D del sitio existente muestran configuraciones de equipo, no muestras de material verificadas, proyectos completos de cuidado infantil o iglesias, instalaciones clínicas o evidencia de cumplimiento.",
+      "inquiryIntro": "Envíe sus planos del sitio, país y requisitos de adquisición para una discusión específica del proyecto."
+    },
+    "parents": [
+      {
+        "slug": "products/soft-play",
+        "label": "Equipos de Juego Blando"
+      },
+      {
+        "slug": "indoor-playground-maintenance-and-cleaning-guide",
+        "label": "Mantenimiento y Limpieza"
+      },
+      {
+        "slug": "complete-indoor-play-center-solutions",
+        "label": "Alcance Completo de Centro de Juego Interior"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Etiquetas y direcciones de desinfectantes",
+        "publisher": "Agencia de Protección Ambiental de EE. UU.",
+        "url": "https://www.epa.gov/pesticide-registration/selected-epa-registered-disinfectants",
+        "note": "Registro de desinfectantes y direcciones de etiqueta en EE. UU.; no certifica materiales de juegos ni reemplaza requisitos locales."
+      },
+      {
+        "label": "ASTM F1918: equipo de juego blando contenido",
+        "publisher": "ASTM International",
+        "url": "https://store.astm.org/standards/f1918",
+        "note": "El alcance público de ASTM F1918-21 corresponde a equipos de juego blando contenido, del percentil 5 de niños de dos años al percentil 95 de niños de doce años. Excluye equipos de parques domésticos y públicos y otras categorías indicadas. Verifique cada elemento; no cubre todas las atracciones ni requisitos de accesibilidad."
+      },
+      {
+        "label": "Entornos accesibles",
+        "publisher": "Sociedad Nacional de Autismo",
+        "url": "https://www.autism.org.uk/learn/knowledge-hub/guides-and-resources/accessible-environments",
+        "note": "Ajustes prácticos del Reino Unido para luz, ruido, multitudes y colas; las necesidades individuales difieren. No es una prescripción terapéutica o certificado de equipo."
+      }
+    ],
+    "checklistTitle": "Información para Registrar Antes de Ordenar",
+    "checklist": [
+      "Identificadores de artículo y ensamblaje compartidos entre cotización, planos e informes.",
+      "Detalles de espuma/cubierta, sustrato/resina, acabado, costura y fijación relevantes para cada artículo.",
+      "Etiqueta química real e instrucciones de compatibilidad de limpieza del proveedor.",
+      "Alcance del informe, muestra, laboratorio y diferencias no resueltas con el artículo suministrado."
+    ]
+  },
+  "daycare-indoor-playground-equipment": {
+    "slug": "daycare-indoor-playground-equipment",
+    "title": "Equipo de Juego Interior para Guarderías",
+    "metaTitle": "Equipo de Juego Interior para Guarderías",
+    "metaDescription": "Planifique juegos para guarderías por sala, usuarios, normas locales, visibilidad, limpieza y responsabilidades de instalación.",
+    "publishedDate": "2026-09-10",
+    "kicker": "Juego Comercial · Adquisición y Operaciones",
+    "intro": "El equipo para guarderías debe adaptarse a las habitaciones reales del centro, los niños y los requisitos de licencia aplicables. Establezca esos requisitos antes de elegir un paquete. Esta guía no establece una proporción universal de personal, área por niño, altura de plataforma o umbral de edad: esos valores necesitan la normativa local relevante y la evidencia de uso previsto para el equipo.",
+    "answerQuestion": "¿La certificación del equipo establece la aprobación de la licencia de la guardería?",
+    "answer": "No. La evidencia del producto aborda su alcance declarado; una licencia de cuidado infantil concierne a las instalaciones y su operación bajo la jurisdicción relevante. Registre los requisitos locales para grupos, espacio utilizable y supervisión, luego coordine la idoneidad del equipo, rutas de la habitación, limpieza e instalación. Un certificado o un concepto 3D gratuito no reemplazan la revisión de licencia.",
+    "frameworkTitle": "Traducir los Requisitos de la Habitación en un Resumen de Equipo",
+    "framework": [
+      {
+        "title": "Crear una hoja de requisitos por habitación",
+        "desc": "Para cada habitación, registre dimensiones, espacio utilizable, salidas, niños previstos y necesidades de apoyo, actividades planificadas y la referencia de licencia local. Separe cualquier valor requerido por la autoridad de una recomendación del proveedor. No copie una proporción o altura de plataforma de un ejemplo de otro país."
+      },
+      {
+        "title": "Mantener las rutas del personal y la observación utilizables",
+        "desc": "Muestre cómo el personal observa el juego mientras apoya llegadas, uso del baño o cambios y salidas. Revise puntos ciegos, puertas y acceso a los niños sin tratar un dibujo como una garantía de supervisión. La colocación del equipo no debe obstruir la circulación de emergencia o accesible."
+      },
+      {
+        "title": "Planificar el almacenamiento limpio/usado y las interfaces de aire",
+        "desc": "Proporcione una ruta para el equipo retirado o sucio, almacenamiento seguro de químicos y acceso a artículos limpios sin cruzar el juego activo innecesariamente. Adultos capacitados manejan desinfectantes bajo la etiqueta del producto. Asigne acciones de ventilación del edificio por separado de la limpieza del equipo."
+      },
+      {
+        "title": "Cerrar el archivo de instalación e inspección",
+        "desc": "Solicite información de uso previsto, dimensiones, áreas de uso, detalles de fijación/soporte, instrucciones de cuidado y evidencia de evaluación aplicable. Registre quién verifica los soportes del sitio, instala, inspecciona y aprueba el uso. La adquisición de equipo no transfiere las obligaciones de licencia o supervisión del centro."
+      }
+    ],
+    "equipmentTitle": "Comparar las Decisiones del Proyecto",
+    "equipment": [
+      {
+        "title": "Opciones de actividad a nivel del suelo",
+        "desc": "Evalúe formas y actividades a nivel del suelo para los usuarios previstos, incluyendo acceso y cuidado. Una apariencia baja por sí sola no verifica la idoneidad."
+      },
+      {
+        "title": "Opciones de escalada y movimiento",
+        "desc": "Relacione el uso previsto y los requisitos de protección de cada artículo con la habitación. Revise desvíos y acceso del personal; evite una tabla universal de edad a altura."
+      },
+      {
+        "title": "Habitaciones de actividad compartida",
+        "desc": "Verifique si los artículos móviles pueden almacenarse y reinstalarse bajo sus instrucciones sin obstruir salidas, comidas u otros usos de la habitación."
+      },
+      {
+        "title": "Opciones de participación tranquila",
+        "desc": "Proporcione actividades más tranquilas opcionales dentro de un plan de observación viable. Pregunte a las familias y profesionales relevantes sobre necesidades individuales sin prometer terapia."
+      }
+    ],
+    "columns": [
+      "Requisitos de la habitación",
+      "Registros del comprador",
+      "Respuesta del proveedor",
+      "Revisión local"
+    ],
+    "rows": [
+      [
+        "Niños y actividades",
+        "Usuarios previstos y programa de la habitación",
+        "Uso previsto y restricciones del artículo",
+        "Aplicabilidad de licencia/supervisión"
+      ],
+      [
+        "Habitación medida",
+        "Dimensiones utilizables, puertas, soportes y servicios",
+        "Diseño, áreas de uso y acceso de instalación",
+        "Rutas accesibles y circulación de emergencia"
+      ],
+      [
+        "Rutina de cuidado",
+        "Productos de limpieza, almacenamiento y manejo",
+        "Cuidado y compatibilidad del material",
+        "Requisitos de salud aplicables"
+      ],
+      [
+        "Entrega",
+        "Instalador, registros y propietario de liberación",
+        "Manual, fijaciones y evidencia específica del artículo",
+        "Permiso de la instalación para operar"
+      ]
+    ],
+    "tableTitle": "Equipo de Juego Interior para Guarderías — Matriz de Decisión del Comprador",
+    "tableNote": "Orientación de planificación, no capacidad universal, consejo médico, una regla de licencia o un certificado. Registre requisitos específicos del proyecto y responsabilidades nombradas antes de la adquisición.",
+    "faq": [
+      {
+        "title": "¿Qué proporción de personal y área por niño debo usar?",
+        "desc": "Utilice las normas de licencia actuales aplicables para su jurisdicción y programa. Esta guía no proporciona una proporción global o mínimo de espacio."
+      },
+      {
+        "title": "¿Puede una estructura servir para cada habitación de guardería?",
+        "desc": "No asuma eso. Compare los usuarios previstos, uso de la habitación y restricciones del artículo por separado; registre por qué cada artículo propuesto se adapta a esa habitación."
+      },
+      {
+        "title": "¿Qué información de limpieza debe recibir el proveedor?",
+        "desc": "Los químicos reales, métodos permitidos, plan de manejo y limitaciones de almacenamiento, para que la compatibilidad y el acceso puedan abordarse antes de la adquisición."
+      },
+      {
+        "title": "¿Qué debo enviar para un concepto de habitación?",
+        "desc": "Dibujos medidos, contexto de país y licencia, programa de la habitación, usuarios previstos, puertas, servicios y responsabilidades escritas de instalación/operación."
+      }
+    ],
+    "imageAlt": "Equipo de Juego Interior para Guarderías — renderizado conceptual 3D ilustrativo del sitio",
+    "captions": [
+      "Concepto general de juego suave, no una habitación de guardería completada o con licencia.",
+      "Concepto de equipo; la idoneidad por edad de la habitación requiere revisión específica del artículo.",
+      "Referencia conceptual del lugar; la capacidad de licencia y observación no están verificadas por esta imagen."
+    ],
+    "ui": {
+      "home": "Inicio",
+      "products": "Productos",
+      "design": "Consultar un diseño 3D",
+      "whatsapp": "Chatear por WhatsApp",
+      "compare": "Comparar Opciones",
+      "gallery": "Referencias de Diseño",
+      "relatedTitle": "Guías de Planificación Relacionadas",
+      "faqTitle": "Preguntas del Comprador",
+      "sourcesTitle": "Fuentes y Alcance",
+      "sourcesIntro": "Las fuentes enlazadas explican su propio alcance de equipo o jurisdicción. No son certificados de producto. Las recomendaciones de adquisición y operación a continuación son orientación de planificación; obtenga una revisión específica del proyecto.",
+      "updated": "Actualizado el 18 de noviembre de 2026",
+      "author": "NinescapeLand · Planificación de Juego Comercial",
+      "imageNote": "Los renders conceptuales 3D de sitios existentes muestran configuraciones de equipo, no muestras de material verificadas, proyectos completados de cuidado infantil o iglesias, instalaciones clínicas o evidencia de cumplimiento.",
+      "inquiryIntro": "Envíe sus dibujos del sitio, país y requisitos de adquisición para una discusión específica del proyecto."
+    },
+    "parents": [
+      {
+        "slug": "products/soft-play",
+        "label": "Equipo de Juego Suave"
+      },
+      {
+        "slug": "complete-indoor-play-center-solutions",
+        "label": "Responsabilidades Completas del Centro de Juego Interior"
+      },
+      {
+        "slug": "indoor-playground-maintenance-and-cleaning-guide",
+        "label": "Mantenimiento y Limpieza"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Áreas de juego: guía de accesibilidad",
+        "publisher": "U.S. Access Board",
+        "url": "https://www.access-board.gov/ada/guides/chapter-10-play-areas/",
+        "note": "Requisitos de áreas de juego accesibles en EE. UU. y rutas; la aplicabilidad depende de las instalaciones y jurisdicción, no una aprobación mundial de producto."
+      },
+      {
+        "label": "Desinfectantes y niños",
+        "publisher": "Agencia de Protección Ambiental de EE. UU.",
+        "url": "https://www.epa.gov/coronavirus-and-disinfectants/are-disinfectants-harmful-children-can-children-apply-disinfectants",
+        "note": "Los niños no deben aplicar desinfectantes. Los productos requieren almacenamiento y uso seguro según sus etiquetas; esto no es una regla de admisión o retorno al juego."
+      },
+      {
+        "label": "Aire más limpio para la prevención de virus respiratorios",
+        "publisher": "Centros para el Control y la Prevención de Enfermedades",
+        "url": "https://cdc.gov/respiratory-viruses/prevention/air-quality.html",
+        "note": "Orientación de salud pública de EE. UU. sobre aire más limpio y reducción del riesgo de exposición; no un diseño de ventilación de área de juego o una garantía contra infección."
+      },
+      {
+        "label": "ASTM F1918: equipo de juego suave contenido",
+        "publisher": "ASTM International",
+        "url": "https://store.astm.org/standards/f1918",
+        "note": "El alcance público de ASTM F1918-21 corresponde a equipos de juego blando contenido, del percentil 5 de niños de dos años al percentil 95 de niños de doce años. Excluye equipos de parques domésticos y públicos y otras categorías indicadas. Verifique cada elemento; no cubre todas las atracciones ni requisitos de accesibilidad."
+      }
+    ],
+    "checklistTitle": "Información para Registrar Antes de Ordenar",
+    "checklist": [
+      "Jurisdicción, programa y referencias exactas de licencia local.",
+      "Dimensiones de la habitación, áreas utilizables, puertas, preocupaciones de líneas de visión y servicios.",
+      "Niños previstos y opciones de actividad sin capacidades universales asumidas.",
+      "Responsabilidades de cuidado, instalación, evaluación y liberación del operador."
+    ]
+  },
+  "church-indoor-playground-equipment": {
+    "slug": "church-indoor-playground-equipment",
+    "title": "Equipo de Juego Interior para Iglesias",
+    "metaTitle": "Equipo de Juego Interior para Iglesias",
+    "metaDescription": "Planifique juegos para iglesias en salas compartidas: recepción, voluntarios, almacenamiento, reapertura y vías de salida.",
+    "publishedDate": "2026-09-10",
+    "kicker": "Juego Comercial · Adquisición y Operaciones",
+    "intro": "Un área de juego en una iglesia puede compartir espacio con reuniones, comidas o cuidado infantil durante la semana. Comienza con el horario real, los usuarios y las personas responsables. La capacidad del equipo, la supervisión y el cambio de uso son decisiones del proyecto, no un pico semanal universal, una proporción de voluntarios o una promesa de desmontaje en veinte minutos.",
+    "answerQuestion": "¿Cómo debe una iglesia elegir equipo para un salón compartido?",
+    "answer": "Compara opciones fijas y almacenables con los otros usos del salón, las instrucciones del equipo y las tareas reales de montaje. Mantén el control de acceso y recogida legible sin obstruir las salidas de emergencia requeridas. Registra las responsabilidades de los voluntarios, el acceso al almacenamiento y las condiciones para reabrir. Si el uso semanal incluye cuidado infantil con licencia, verifica los requisitos de ese programa por separado.",
+    "frameworkTitle": "Planifica el Salón Según Sus Usos Reales",
+    "framework": [
+      {
+        "title": "Registra los servicios y otros usos reales",
+        "desc": "Mapea niños, adultos acompañantes, actividades y uso del espacio en horarios relevantes. Mantén la demanda medida separada de cualquier capacidad propuesta del equipo. Identifica reuniones, catering, programas entre semana y limitaciones de almacenamiento en lugar de agregar un porcentaje general a la asistencia más concurrida."
+      },
+      {
+        "title": "Planifica la transición y roles de voluntarios",
+        "desc": "Nombra las responsabilidades de control de acceso, observación, asistencia y recogida, incluyendo un sustituto y contacto de escalación. Recorre el diseño propuesto con las personas que lo usarán. Las líneas de visión abiertas facilitan la observación pero no establecen una proporción segura universal de personal."
+      },
+      {
+        "title": "Compara ensamblajes fijos y almacenables",
+        "desc": "Para elementos permanentes, revisa la huella dedicada y los requisitos de instalación. Para elementos móviles, verifica el manejo, colocación estable, almacenamiento e instrucciones de reensamblaje. No añadas ruedas ni elimines anclajes solo para acelerar el desmontaje. Prueba las tareas reales antes de prometer un tiempo de cambio de sala."
+      },
+      {
+        "title": "Libera cada uso y fase del proyecto",
+        "desc": "Mantén las salidas de emergencia y la circulación accesible despejadas durante el montaje, juego, almacenamiento y comidas. Registra verificaciones antes de reabrir y la responsabilidad por defectos. Si el financiamiento es por fases, cada fase entregada necesita su propio plan completo de protección, acceso y operación; no se puede asumir que fondos posteriores corregirán controles faltantes."
+      }
+    ],
+    "equipmentTitle": "Compara las Decisiones del Proyecto",
+    "equipment": [
+      {
+        "title": "Sala de juego dedicada",
+        "desc": "Una instalación fija puede ser adecuada para una sala dedicada si se revisan el sitio, uso previsto, plan de observación y mantenimiento."
+      },
+      {
+        "title": "Salón compartido",
+        "desc": "El equipo almacenable necesita permiso de montaje, acceso para transporte y almacenamiento seguro. Verifica la sala en modo juego y no juego."
+      },
+      {
+        "title": "Cuidado infantil entre semana",
+        "desc": "Identifica cualquier licencia, personal y requisitos de salud separados. El uso dominical no establece permiso para un programa entre semana."
+      },
+      {
+        "title": "Participación opcional más tranquila",
+        "desc": "Una actividad opcional más tranquila debe seguir siendo accesible y observable bajo el plan operativo acordado, no aislada tras una puerta sin gestión."
+      }
+    ],
+    "columns": [
+      "Opción",
+      "Entrada de diseño",
+      "Verificación de transición",
+      "Evidencia necesaria"
+    ],
+    "rows": [
+      [
+        "Instalación fija",
+        "Huella y soporte dedicados",
+        "Acceso, protección y observación",
+        "Planos e instrucciones de instalación"
+      ],
+      [
+        "Conjunto almacenable",
+        "Ruta de manejo, almacenamiento seguro y montaje permitido",
+        "Reensamblaje estable y liberación de sala",
+        "Manual del equipo y prueba de tarea real"
+      ],
+      [
+        "Uso entre semana con licencia",
+        "Programa y jurisdicción",
+        "Requisitos adicionales al uso dominical",
+        "Referencias de licencia aplicables"
+      ],
+      [
+        "Adquisición por fases",
+        "Alcance entregado utilizable independientemente",
+        "Sin acceso o protección incompletos",
+        "Responsabilidad de fase y registro de liberación"
+      ]
+    ],
+    "tableTitle": "Equipo de Juego Interior para Iglesias — Matriz de Decisiones del Comprador",
+    "tableNote": "Orientación de planificación, no capacidad universal, consejo médico, norma de licencia o certificado. Registra requisitos específicos del proyecto y responsabilidades nombradas antes de la adquisición.",
+    "faq": [
+      {
+        "title": "¿Hay una proporción estándar de voluntarios por niño para juegos en iglesias?",
+        "desc": "Esta página no establece una. Determina el personal según los requisitos aplicables, el programa, usuarios previstos, equipo y plan real del operador."
+      },
+      {
+        "title": "¿Puede el salón volver a mesas en veinte minutos?",
+        "desc": "No lo asumas. Prueba el manejo, almacenamiento y reensamblaje con el equipo y personal real antes de establecer un objetivo de cambio."
+      },
+      {
+        "title": "¿Puede el control de acceso gestionar la única salida?",
+        "desc": "El control de acceso puede gestionar el ingreso ordinario pero no debe bloquear las salidas de emergencia requeridas ni rutas accesibles. Coordina el arreglo real de puertas con el revisor de instalaciones relevante."
+      },
+      {
+        "title": "¿El uso de preescolar entre semana cambia el brief?",
+        "desc": "Puede introducir requisitos de licencia y operación separados. Registra el programa previsto y jurisdicción antes de tratar una configuración como adecuada para ambos usos."
+      }
+    ],
+    "imageAlt": "Equipo de Juego Interior para Iglesias — renderizado conceptual 3D ilustrativo",
+    "captions": [
+      "Concepto general de juego suave, no una guardería fotografiada en iglesia.",
+      "Concepto de estructura de juego; la visibilidad de voluntarios depende del diseño real.",
+      "Concepto de equipo ninja, no prueba de idoneidad para salón de iglesia o grupo de edad."
+    ],
+    "ui": {
+      "home": "Inicio",
+      "products": "Productos",
+      "design": "Consultar un diseño 3D",
+      "whatsapp": "Chatear por WhatsApp",
+      "compare": "Comparar Opciones",
+      "gallery": "Referencias de Diseño",
+      "relatedTitle": "Guías de Planificación Relacionadas",
+      "faqTitle": "Preguntas de Compradores",
+      "sourcesTitle": "Fuentes y Alcance",
+      "sourcesIntro": "Las fuentes enlazadas explican su propio equipo o alcance jurisdiccional. No son certificados de producto. Las recomendaciones de adquisición y operación son orientación de planificación; obtén una revisión específica del proyecto.",
+      "updated": "Actualizado el 18 de noviembre de 2026",
+      "author": "NinescapeLand · Planificación de Juego Comercial",
+      "imageNote": "Los renders 3D conceptuales de sitios existentes muestran configuraciones de equipo, no muestras de materiales verificadas, proyectos completados de cuidado infantil o iglesias, instalaciones clínicas o evidencia de cumplimiento.",
+      "inquiryIntro": "Envía tus planos de sitio, país y requisitos de adquisición para una discusión específica del proyecto."
+    },
+    "parents": [
+      {
+        "slug": "products/soft-play",
+        "label": "Equipo de Juego Suave"
+      },
+      {
+        "slug": "complete-indoor-play-center-solutions",
+        "label": "Responsabilidades de Centro de Juego Interior Completo"
+      },
+      {
+        "slug": "modular-reconfigurable-indoor-play-equipment",
+        "label": "Planificación de Equipo Modular"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Áreas de juego: guía de accesibilidad",
+        "publisher": "U.S. Access Board",
+        "url": "https://www.access-board.gov/ada/guides/chapter-10-play-areas/",
+        "note": "Requisitos de áreas de juego accesibles en EE.UU.; aplicabilidad depende de la instalación y jurisdicción, no es una aprobación mundial de producto."
+      },
+      {
+        "label": "ASTM F1918: equipo de juego suave contenido",
+        "publisher": "ASTM International",
+        "url": "https://store.astm.org/standards/f1918",
+        "note": "El alcance público de ASTM F1918-21 corresponde a equipos de juego blando contenido, del percentil 5 de niños de dos años al percentil 95 de niños de doce años. Excluye equipos de parques domésticos y públicos y otras categorías indicadas. Verifique cada elemento; no cubre todas las atracciones ni requisitos de accesibilidad."
+      },
+      {
+        "label": "Desinfectantes y niños",
+        "publisher": "U.S. Environmental Protection Agency",
+        "url": "https://www.epa.gov/coronavirus-and-disinfectants/are-disinfectants-harmful-children-can-children-apply-disinfectants",
+        "note": "Los niños no deben aplicar desinfectantes. Los productos requieren almacenamiento y uso seguro según sus etiquetas; esto no es una regla de admisión o retorno al juego."
+      }
+    ],
+    "checklistTitle": "Información para Registrar Antes de Ordenar",
+    "checklist": [
+      "Horario para juego, comidas, reuniones y cualquier cuidado infantil entre semana.",
+      "Roles nombrados de control de acceso, observación, recogida y reapertura.",
+      "Instrucciones de montaje/almacenamiento soportadas por equipo y prueba real de manejo.",
+      "Revisión de emergencia/accesibilidad y alcance completo para cada fase financiada."
+    ]
+  },
+  "sensory-inclusive-play-equipment": {
+    "slug": "sensory-inclusive-play-equipment",
+    "title": "Equipo de juego sensorial-inclusivo",
+    "metaTitle": "Equipo de juegos sensorial-amigable",
+    "metaDescription": "Planifique juegos inclusivos según preferencias individuales, opciones tranquilas, accesos y ajustes de luz, sonido y colas.",
+    "publishedDate": "2026-05-29",
+    "kicker": "Juego comercial · Adquisición y operaciones",
+    "intro": "El juego comercial sensorial-inclusivo ofrece opciones en lugar de un único nivel de estimulación para cada niño. Las preferencias y necesidades de apoyo varían. Revisa la luz, sonido, olores, aglomeraciones y rutas reales con los usuarios previstos y profesionales relevantes; el equipo no es un tratamiento y una etiqueta de hora silenciosa no prueba que un entorno sea adecuado para todos.",
+    "answerQuestion": "¿Qué hace que un parque infantil cubierto sea sensorial-amigable?",
+    "answer": "Los ajustes útiles hacen que la participación y la retirada sean predecibles: reduce el ruido o brillo de fondo no deseado donde sea práctico, explica las áreas y horarios más concurridos, ofrece una opción más silenciosa y mantén las rutas accesibles. Pregunta sobre necesidades individuales. La guía de la Sociedad Nacional de Autismo apoya ajustes ambientales, no un umbral universal de decibelios, un material preferido o un resultado garantizado de regulación.",
+    "frameworkTitle": "Planifica opciones, acceso y ajustes sensoriales",
+    "framework": [
+      {
+        "title": "Pregunta sobre opciones individuales de participación",
+        "desc": "Recoge preferencias sobre sonido, luz, textura, olores, colas y comunicación. Proporciona formas de declinar o abandonar una actividad sin cruzar un peligro activo. No requieras que los niños usen equipos estimulantes solo porque estén etiquetados como sensoriales."
+      },
+      {
+        "title": "Revisa el entorno real",
+        "desc": "Recorre la ruta desde la llegada hasta el juego, baños, áreas más silenciosas y salida. Anota música, sonido del equipo, resplandor, efectos de parpadeo, olores de limpieza, condiciones de colas y transiciones inesperadas. Registra un ajuste y responsable para cada problema en lugar de afirmar una reducción acústica fija."
+      },
+      {
+        "title": "Coordina opciones silenciosas y riesgos del equipo",
+        "desc": "Coloca una opción más silenciosa dentro del plan de acceso y observación acordado. Confirma soportes, áreas de uso, equipos eléctricos, limpieza y acceso de emergencia por artículo. Productos especializados como pesos, suspendidos u otros requieren una evaluación específica por artículo; esta página no prescribe uso terapéutico."
+      },
+      {
+        "title": "Verifica la configuración de hora silenciosa en la práctica",
+        "desc": "Registra qué configuraciones de sonido e iluminación cambian, qué sigue siendo ruidoso y cómo se manejan las llegadas. Comparte información factual sobre las condiciones y una forma de pedir ayuda. Revisa comentarios y demanda real antes de asignar límites de asistencia o personal; no comercialices una sesión universalmente tranquila o médicamente efectiva."
+      }
+    ],
+    "equipmentTitle": "Compara las decisiones del proyecto",
+    "equipment": [
+      {
+        "title": "Opciones de luz y visuales",
+        "desc": "Registra brillo controlable, resplandor y características de parpadeo. Mantén suficiente visibilidad para participación, observación y circulación segura."
+      },
+      {
+        "title": "Opciones de sonido y transición",
+        "desc": "Describe música de fondo, ruido del equipo y rutas más silenciosas. Señala sonidos inevitables en lugar de prometer silencio."
+      },
+      {
+        "title": "Texturas y actividades opcionales",
+        "desc": "Ofrece opciones sin clasificar madera, plástico o productos táctiles como universalmente mejores. Registra restricciones de cuidado y uso previsto."
+      },
+      {
+        "title": "Opciones de llegada y retiro",
+        "desc": "Explica colas, asistencia y un espacio más silencioso opcional. Mantén acceso, observación y arreglos de emergencia consistentes."
+      }
+    ],
+    "columns": [
+      "Entorno",
+      "Observa",
+      "Ajuste posible",
+      "Verifica después"
+    ],
+    "rows": [
+      [
+        "Luz",
+        "Resplandor, parpadeo y brillo inesperado",
+        "Configuraciones controlables prácticas e información anticipada",
+        "Visibilidad y comentarios de usuarios"
+      ],
+      [
+        "Sonido",
+        "Música, ruido del equipo y secadores de manos",
+        "Volumen de fondo más bajo / señala áreas ruidosas",
+        "Sonidos restantes y comunicación utilizable"
+      ],
+      [
+        "Colas",
+        "Aglomeración e incertidumbre al llegar",
+        "Información predecible de llegada y contacto de ayuda",
+        "Traspaso real y ruta accesible"
+      ],
+      [
+        "Espacio silencioso",
+        "Acceso, observación y retiro opcional",
+        "Una opción más silenciosa accesible",
+        "Sin escape bloqueado o participación forzada"
+      ]
+    ],
+    "tableTitle": "Equipo de juego sensorial-inclusivo — Matriz de decisiones del comprador",
+    "tableNote": "Guía de planificación, no capacidad universal, consejo médico, regla de licencia o certificado. Registra requisitos específicos del proyecto y responsabilidades nombradas antes de la adquisición.",
+    "faq": [
+      {
+        "title": "¿Las estructuras de madera son naturalmente más sensorial-amigables?",
+        "desc": "No se justifica una afirmación universal. Evalúa la textura real, acabado, olor, sonido y preferencia individual en lugar del nombre del material."
+      },
+      {
+        "title": "¿Las horas silenciosas son adecuadas para todos los niños autistas?",
+        "desc": "No. Explica las condiciones reales y ofrece opciones; las preferencias individuales y necesidades de apoyo varían."
+      },
+      {
+        "title": "¿Este equipo trata diferencias de procesamiento sensorial?",
+        "desc": "Esta es una guía de planificación comercial, no una prescripción clínica. No prometas tratamiento, regulación emocional o resultados terapéuticos del equipo."
+      },
+      {
+        "title": "¿Cómo debo documentar una sesión sensorial-amigable?",
+        "desc": "Registra las configuraciones, fuentes restantes de ruido/luz, arreglos de llegada, ruta más silenciosa opcional, contacto de ayuda del personal y comentarios. Evita umbrales universales sin evidencia específica del proyecto."
+      }
+    ],
+    "imageAlt": "Equipo de juego sensorial-inclusivo — renderizado conceptual 3D ilustrativo del sitio",
+    "captions": [
+      "Concepto general de juego, no un entorno sensorial clínicamente evaluado.",
+      "Referencia de estructura; las condiciones reales de sonido e iluminación no se muestran.",
+      "Concepto de juego suave; accesibilidad y idoneidad individual requieren revisión específica del proyecto."
+    ],
+    "ui": {
+      "home": "Inicio",
+      "products": "Productos",
+      "design": "Consultar un diseño 3D",
+      "whatsapp": "Chatea por WhatsApp",
+      "compare": "Compara opciones",
+      "gallery": "Referencias de diseño",
+      "relatedTitle": "Guías de planificación relacionadas",
+      "faqTitle": "Preguntas del comprador",
+      "sourcesTitle": "Fuentes y alcance",
+      "sourcesIntro": "Las fuentes enlazadas explican su propio equipo o alcance jurisdiccional. No son certificados de producto. Las recomendaciones de adquisición y operación a continuación son guía de planificación; obtén una revisión específica del proyecto.",
+      "updated": "Actualizado el 18 de noviembre de 2026",
+      "author": "NinescapeLand · Planificación de juegos comerciales",
+      "imageNote": "Los renders conceptuales 3D de sitios existentes muestran configuraciones de equipo, no muestras de materiales verificadas, proyectos completos de cuidado infantil o iglesias, instalaciones clínicas o evidencia de cumplimiento.",
+      "inquiryIntro": "Envía tus planos del sitio, país y requisitos de adquisición para una discusión específica del proyecto."
+    },
+    "parents": [
+      {
+        "slug": "products/soft-play",
+        "label": "Equipo de juego suave"
+      },
+      {
+        "slug": "complete-indoor-play-center-solutions",
+        "label": "Responsabilidades completas del centro de juego cubierto"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Entornos accesibles",
+        "publisher": "Sociedad Nacional de Autismo",
+        "url": "https://www.autism.org.uk/learn/knowledge-hub/guides-and-resources/accessible-environments",
+        "note": "Ajustes prácticos del Reino Unido para luz, ruido, multitudes y colas; las necesidades individuales difieren. No es una prescripción terapéutica o certificado de equipo."
+      },
+      {
+        "label": "Áreas de juego: guía de accesibilidad",
+        "publisher": "Junta de Acceso de EE. UU.",
+        "url": "https://www.access-board.gov/ada/guides/chapter-10-play-areas/",
+        "note": "Requisitos y rutas de áreas de juego accesibles en EE. UU.; la aplicabilidad depende de la instalación y jurisdicción, no una aprobación mundial de producto."
+      },
+      {
+        "label": "Etiquetas y direcciones de desinfectantes",
+        "publisher": "Agencia de Protección Ambiental de EE. UU.",
+        "url": "https://www.epa.gov/pesticide-registration/selected-epa-registered-disinfectants",
+        "note": "Registro de desinfectantes en EE. UU. y direcciones de etiquetas; no certifica materiales de juegos ni reemplaza requisitos locales."
+      }
+    ],
+    "checklistTitle": "Información para registrar antes de ordenar",
+    "checklist": [
+      "Preferencias individuales y opciones de participación/retiro.",
+      "Observaciones reales de luz, sonido, olores y llegada con acciones nombradas.",
+      "Requisitos específicos de soporte, eléctricos, acceso, cuidado e inspección por artículo.",
+      "Configuraciones de sesión silenciosa e información factual para visitantes, sin garantías de tratamiento."
+    ]
+  }
+}

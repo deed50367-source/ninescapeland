@@ -1,0 +1,826 @@
+{
+  "indoor-playground-maintenance-and-cleaning-guide": {
+    "slug": "indoor-playground-maintenance-and-cleaning-guide",
+    "title": "Indoor Playground Maintenance and Cleaning",
+    "metaTitle": "Playground Maintenance & Cleaning",
+    "metaDescription": "Plan playground cleaning, defect checks and air-management responsibilities with product labels, component records and incident-triggered routines.",
+    "publishedDate": "2026-10-08",
+    "kicker": "Commercial Play · Procurement & Operations",
+    "intro": "Commercial playground maintenance combines surface care, equipment inspection and building operations. These are different jobs. Choose a routine from the equipment instructions, actual use, contamination events and local requirements; do not treat a universal daily, weekly or monthly disinfecting calendar as proof of safety.",
+    "answerQuestion": "Can surface disinfection replace indoor air management?",
+    "answer": "No. Surface treatment addresses the surfaces named on a product label; cleaner-air measures address airborne exposure. Keep separate owners for cleaning, damaged equipment and building ventilation. CDC describes cleaner air as a risk-reduction measure, not elimination of infection. A visibly clean floor does not verify airflow, filtration or the venue’s illness policy.",
+    "frameworkTitle": "Build the Cleaning and Air-Management Routine",
+    "framework": [
+      {
+        "title": "Separate the tasks and owners",
+        "desc": "List cleaning, any required sanitizing or disinfection, mechanical inspection and air-system review separately. Assign an operator for records, a trained adult for chemical application and a qualified building contact for ventilation. Equipment supply does not automatically include these services."
+      },
+      {
+        "title": "Set frequency from the actual task",
+        "desc": "Use manufacturer instructions, local health requirements, traffic and contamination events to decide the schedule. Record what triggered additional work and when it was completed. A body-fluid incident or damaged surface requires its own controlled response; do not continue use while staff improvise a method."
+      },
+      {
+        "title": "Match the label and material",
+        "desc": "Identify the surface, product, target claim, permitted method, contact time and any rinse or drying requirement. Follow the label and equipment supplier’s compatibility instructions. Children must not apply disinfectants. Fogging or electrostatic spraying is not a default method; EPA requires relevant label directions."
+      },
+      {
+        "title": "Review air and reopening separately",
+        "desc": "Ask the building operator to review ventilation against the facility’s applicable requirements and proposed occupancy. Keep entrances, exits and air-service access usable. Record reopening only after required surface steps and defect controls are complete; a chemical smell or an open window is not an airflow test."
+      }
+    ],
+    "equipmentTitle": "Compare the Project Decisions",
+    "equipment": [
+      {
+        "title": "Padding and covers",
+        "desc": "Record cover material, seams and accessible cleaning surfaces. A tear that exposes foam belongs in the defect log; wiping it does not restore the cover."
+      },
+      {
+        "title": "Balls, nets and enclosed areas",
+        "desc": "Document how staff reach and remove items, clean the pit interior, check fixings and dry components according to instructions. No single calendar suits every pit or net."
+      },
+      {
+        "title": "Slides and moving surfaces",
+        "desc": "Use the equipment-specific care method and inspect joints, supports and protective interfaces. Do not use a chemical or polish simply because it is suitable for another surface."
+      },
+      {
+        "title": "Building services",
+        "desc": "Maintain the ventilation service contact, maintenance records and escalation path. An equipment inspection or surface-disinfection record cannot stand in for this file."
+      }
+    ],
+    "columns": [
+      "Task",
+      "Trigger or input",
+      "Record",
+      "Responsible role"
+    ],
+    "rows": [
+      [
+        "Surface care",
+        "Use, contamination, label and material instructions",
+        "Product, method and completion",
+        "Trained cleaning staff"
+      ],
+      [
+        "Mechanical inspection",
+        "Equipment manual, damage or reported concern",
+        "Component, defect and restriction",
+        "Venue maintenance lead"
+      ],
+      [
+        "Air-system review",
+        "Building requirements and proposed use",
+        "Service review and action owner",
+        "Building operator / qualified specialist"
+      ],
+      [
+        "Reopening",
+        "Required treatment and defect controls completed",
+        "Release decision and unresolved restrictions",
+        "Named venue manager"
+      ]
+    ],
+    "tableTitle": "Indoor Playground Maintenance and Cleaning — Buyer Decision Matrix",
+    "tableNote": "Planning guidance, not universal capacity, medical advice, a licensing rule or a certificate. Record project-specific requirements and named responsibilities before procurement.",
+    "faq": [
+      {
+        "title": "How often should equipment be disinfected?",
+        "desc": "There is no universal frequency on this page. Use local requirements, actual contamination, the product label and equipment instructions. Cleaning and mechanical checks have different triggers."
+      },
+      {
+        "title": "Is spraying the whole venue sufficient?",
+        "desc": "No. An application method must be permitted by the product label, and surface treatment does not replace air management, equipment inspection or staff controls."
+      },
+      {
+        "title": "Does an antimicrobial cover remove the need to clean?",
+        "desc": "No. Obtain the exact product evidence and follow its care instructions. Do not extend a material claim into a guarantee of protection for visitors."
+      },
+      {
+        "title": "When can a closed component reopen?",
+        "desc": "After the documented treatment and any repair or specialist check are complete, with the named operator’s release. Do not invent a universal waiting period."
+      }
+    ],
+    "imageAlt": "Indoor Playground Maintenance and Cleaning — illustrative site 3D concept render",
+    "captions": [
+      "Soft-play concept reference; no cleaning performance is demonstrated.",
+      "Structure concept reference; actual maintenance access needs a site-specific review.",
+      "Trampoline concept reference; care instructions must match the actual equipment."
+    ],
+    "ui": {
+      "home": "Home",
+      "products": "Products",
+      "design": "Request a 3D Design Discussion",
+      "whatsapp": "Chat on WhatsApp",
+      "compare": "Compare Options",
+      "gallery": "Design References",
+      "relatedTitle": "Related Planning Guides",
+      "faqTitle": "Buyer Questions",
+      "sourcesTitle": "Sources & Scope",
+      "sourcesIntro": "The linked sources explain their own equipment or jurisdictional scope. They are not product certificates. Procurement and operating recommendations below are planning guidance; obtain a project-specific review.",
+      "updated": "Updated November 18, 2026",
+      "author": "NinescapeLand · Commercial Play Planning",
+      "imageNote": "Existing site 3D concept renders show equipment configurations, not verified material samples, completed childcare or church projects, clinical facilities or compliance evidence.",
+      "inquiryIntro": "Send your site drawings, country and procurement requirements for a project-specific discussion."
+    },
+    "parents": [
+      {
+        "slug": "products/soft-play",
+        "label": "Soft Play Equipment"
+      },
+      {
+        "slug": "complete-indoor-play-center-solutions",
+        "label": "Complete Play Center Responsibilities"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Disinfectant labels and directions",
+        "publisher": "U.S. Environmental Protection Agency",
+        "url": "https://www.epa.gov/pesticide-registration/selected-epa-registered-disinfectants",
+        "note": "US disinfectant registration and label directions; does not certify playground materials or replace local requirements."
+      },
+      {
+        "label": "Cleaner air for respiratory virus prevention",
+        "publisher": "Centers for Disease Control and Prevention",
+        "url": "https://cdc.gov/respiratory-viruses/prevention/air-quality.html",
+        "note": "US public-health guidance on cleaner air and lowering exposure risk; not a playground ventilation design or a guarantee against infection."
+      },
+      {
+        "label": "Application methods and disinfectant labels",
+        "publisher": "U.S. Environmental Protection Agency",
+        "url": "https://www.epa.gov/coronavirus-and-disinfectants/can-i-use-fogging-fumigation-or-electrostatic-spraying-or-drones-help",
+        "note": "Methods such as fogging or electrostatic spraying need explicit label directions; no routine whole-venue spraying recommendation."
+      },
+      {
+        "label": "Disinfectants and children",
+        "publisher": "U.S. Environmental Protection Agency",
+        "url": "https://www.epa.gov/coronavirus-and-disinfectants/are-disinfectants-harmful-children-can-children-apply-disinfectants",
+        "note": "Children should not apply disinfectants. Products require safe storage and use according to their labels; this is not an admission or return-to-play rule."
+      }
+    ],
+    "checklistTitle": "Information to Record Before Ordering",
+    "checklist": [
+      "Component ID, accessible surfaces and manufacturer care instructions.",
+      "Cleaning product label, permitted surfaces/method and compatibility confirmation.",
+      "Defect, restriction, repair and release record with named staff.",
+      "Building air-service contact and unresolved actions, separate from the surface log."
+    ]
+  },
+  "soft-play-foam-and-material-specifications": {
+    "slug": "soft-play-foam-and-material-specifications",
+    "title": "Soft Play Foam and Material Specifications",
+    "metaTitle": "Soft Play Materials & Specifications",
+    "metaDescription": "Compare foam, covers, wood, plastic, frames and fixings using item-specific specifications, cleaning compatibility and matching report evidence.",
+    "publishedDate": "2026-10-22",
+    "kicker": "Commercial Play · Procurement & Operations",
+    "intro": "A commercial material specification describes the assembled item, its intended users and its care requirements. A wood panel, a moulded plastic slide and a padded soft-play module perform different jobs. Compare the proposed use and documented construction rather than declaring one material universally safer, more durable or more sensory-friendly.",
+    "answerQuestion": "How should buyers compare wood, plastic and soft-play materials?",
+    "answer": "Start with the component’s job and intended use. Ask for the substrate or resin, foam and cover details where relevant, connections, protective interfaces and care method. Match reports to the supplied item and applicable scope. Neither a material name nor foam density alone proves impact protection, structural suitability or expected service life.",
+    "frameworkTitle": "Specify Materials by Use and Evidence",
+    "framework": [
+      {
+        "title": "Define the component and use",
+        "desc": "Record whether the item is a panel, slide, deck, padding or movable module. Specify intended users, support method and expected cleaning conditions. Do not treat a residential playset and a commercial structure as interchangeable merely because both use wood or plastic."
+      },
+      {
+        "title": "Describe the whole assembly",
+        "desc": "Request wood species or board construction and finish, plastic resin and moulded construction, foam type and density, cover material, seams, fixings and edges as relevant. Review the interfaces together; a favourable sample of one layer does not verify the complete item."
+      },
+      {
+        "title": "Confirm cleaning compatibility",
+        "desc": "Provide the actual cleaning product and intended method to the supplier. Record permitted surfaces, contact time, rinse/dry conditions and supplier restrictions. EPA registration supports the label’s disinfectant claim, not the durability of a playground cover under that treatment."
+      },
+      {
+        "title": "Match evidence to the delivered item",
+        "desc": "Compare report number, laboratory, date, product identification, scope and sample description to the order. Ask which differences require new evidence. Use applicable equipment and local fire/chemical requirements; a toy report does not automatically establish compliance of the entire commercial structure."
+      }
+    ],
+    "equipmentTitle": "Compare the Project Decisions",
+    "equipment": [
+      {
+        "title": "Wood components",
+        "desc": "Specify substrate, finish, joints and access for inspection. Confirm care restrictions and condition of edges; appearance is not chemical or structural evidence."
+      },
+      {
+        "title": "Moulded plastic components",
+        "desc": "Specify resin, assembled construction, supports and care instructions. A resin acronym alone does not establish impact behaviour or lifetime."
+      },
+      {
+        "title": "Foam and covers",
+        "desc": "Record foam, cover, seams and replaceable parts together. Density is one characteristic, not a substitute for assembled protection evidence."
+      },
+      {
+        "title": "Frames, decks and fixings",
+        "desc": "Request dimensions, coating, connections, installation instructions and inspection access. Check protective interfaces rather than relying on hidden parts in a render."
+      }
+    ],
+    "columns": [
+      "Component",
+      "Written specification",
+      "Evidence to match",
+      "Do not infer"
+    ],
+    "rows": [
+      [
+        "Wood panel",
+        "Substrate, finish, joints and care",
+        "Item description and relevant finish/assembly evidence",
+        "All wood is more inclusive"
+      ],
+      [
+        "Plastic slide",
+        "Resin, supports, joints and care",
+        "Specified item and applicable test scope",
+        "A resin name guarantees safety"
+      ],
+      [
+        "Padded module",
+        "Foam, cover, seams and replacement",
+        "Assembly details and care compatibility",
+        "Density alone proves protection"
+      ],
+      [
+        "Frame and deck",
+        "Sections, connections, finish and installation",
+        "Drawings, manual and relevant assessment",
+        "A material sample verifies the whole structure"
+      ]
+    ],
+    "tableTitle": "Soft Play Foam and Material Specifications — Buyer Decision Matrix",
+    "tableNote": "Planning guidance, not universal capacity, medical advice, a licensing rule or a certificate. Record project-specific requirements and named responsibilities before procurement.",
+    "faq": [
+      {
+        "title": "Is high-density foam always the safest option?",
+        "desc": "No. Evaluate the foam within its cover, thickness, support and intended use. Density alone does not establish cushioning performance or commercial suitability."
+      },
+      {
+        "title": "Is wood more sensory-friendly than plastic?",
+        "desc": "Not universally. Texture, smell, finish, sound and personal preferences matter. Assess the actual component with the intended users rather than assigning a therapeutic property to its material."
+      },
+      {
+        "title": "Does a material test certify the whole playground?",
+        "desc": "No. Check the report’s sample, standard and scope. Component evidence and assessment of the assembled equipment answer different questions."
+      },
+      {
+        "title": "What if a disinfectant and cover instruction conflict?",
+        "desc": "Do not improvise a mixture or method. Obtain a compatible permitted approach and written clarification before use; supplier compatibility and the chemical label both matter."
+      }
+    ],
+    "imageAlt": "Soft Play Foam and Material Specifications — illustrative site 3D concept render",
+    "captions": [
+      "Soft-play concept showing configurations, not a verified foam or cover sample.",
+      "Play-structure concept; internal construction requires written specifications.",
+      "Themed concept render; colours do not demonstrate material or chemical compliance."
+    ],
+    "ui": {
+      "home": "Home",
+      "products": "Products",
+      "design": "Request a 3D Design Discussion",
+      "whatsapp": "Chat on WhatsApp",
+      "compare": "Compare Options",
+      "gallery": "Design References",
+      "relatedTitle": "Related Planning Guides",
+      "faqTitle": "Buyer Questions",
+      "sourcesTitle": "Sources & Scope",
+      "sourcesIntro": "The linked sources explain their own equipment or jurisdictional scope. They are not product certificates. Procurement and operating recommendations below are planning guidance; obtain a project-specific review.",
+      "updated": "Updated November 18, 2026",
+      "author": "NinescapeLand · Commercial Play Planning",
+      "imageNote": "Existing site 3D concept renders show equipment configurations, not verified material samples, completed childcare or church projects, clinical facilities or compliance evidence.",
+      "inquiryIntro": "Send your site drawings, country and procurement requirements for a project-specific discussion."
+    },
+    "parents": [
+      {
+        "slug": "products/soft-play",
+        "label": "Soft Play Equipment"
+      },
+      {
+        "slug": "indoor-playground-maintenance-and-cleaning-guide",
+        "label": "Maintenance and Cleaning"
+      },
+      {
+        "slug": "complete-indoor-play-center-solutions",
+        "label": "Complete Play Center Scope"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Disinfectant labels and directions",
+        "publisher": "U.S. Environmental Protection Agency",
+        "url": "https://www.epa.gov/pesticide-registration/selected-epa-registered-disinfectants",
+        "note": "US disinfectant registration and label directions; does not certify playground materials or replace local requirements."
+      },
+      {
+        "label": "ASTM F1918: soft-contained play equipment",
+        "publisher": "ASTM International",
+        "url": "https://store.astm.org/standards/f1918",
+        "note": "Public ASTM F1918-21 scope covers soft-contained equipment and users from the 5th percentile two-year-old to the 95th percentile twelve-year-old; it excludes home/public playground equipment and other listed categories. Confirm item-specific applicability; not every attraction or accessibility requirement is covered."
+      },
+      {
+        "label": "Accessible environments",
+        "publisher": "National Autistic Society",
+        "url": "https://www.autism.org.uk/learn/knowledge-hub/guides-and-resources/accessible-environments",
+        "note": "UK practical adjustments for light, noise, crowds and queues; individual needs differ. Not a therapeutic prescription or equipment certificate."
+      }
+    ],
+    "checklistTitle": "Information to Record Before Ordering",
+    "checklist": [
+      "Item and assembly identifiers shared between quotation, drawings and reports.",
+      "Foam/cover, substrate/resin, finish, seam and fixing details relevant to each item.",
+      "Actual chemical label and supplier cleaning compatibility instructions.",
+      "Report scope, sample, laboratory and unresolved differences from the supplied item."
+    ]
+  },
+  "daycare-indoor-playground-equipment": {
+    "slug": "daycare-indoor-playground-equipment",
+    "title": "Daycare Indoor Playground Equipment",
+    "metaTitle": "Daycare Indoor Playground Equipment",
+    "metaDescription": "Specify daycare equipment by room, intended users, local licensing inputs, sightlines, cleaning access and documented installation responsibilities.",
+    "publishedDate": "2026-09-10",
+    "kicker": "Commercial Play · Procurement & Operations",
+    "intro": "Daycare equipment must fit the centre’s actual rooms, children and applicable licensing requirements. Establish those inputs before choosing a package. This guide does not set a universal staff ratio, area per child, platform height or age threshold: those values need the relevant local rule and the intended-use evidence for the equipment.",
+    "answerQuestion": "Does equipment certification establish daycare licensing approval?",
+    "answer": "No. Product evidence addresses its stated scope; a childcare licence concerns the facility and its operation under the relevant jurisdiction. Record local requirements for groups, usable space and supervision, then coordinate equipment suitability, room routes, cleaning and installation. A certificate or a free 3D concept does not replace the licensing review.",
+    "frameworkTitle": "Translate Room Requirements into an Equipment Brief",
+    "framework": [
+      {
+        "title": "Build a room-by-room input sheet",
+        "desc": "For each room, record dimensions, usable space, exits, intended children and support needs, planned activities and the local licensing reference. Separate any authority-required value from a supplier recommendation. Do not copy a ratio or platform height from another country’s example."
+      },
+      {
+        "title": "Keep staff routes and observation usable",
+        "desc": "Show how staff observe play while supporting arrivals, toileting or changing and departures. Review blind spots, doors and access to children without treating a drawing as a supervision guarantee. Equipment placement must not obstruct emergency or accessible circulation."
+      },
+      {
+        "title": "Plan clean/used storage and air interfaces",
+        "desc": "Provide a route for removed or soiled equipment, secure chemical storage and access to clean items without crossing active play unnecessarily. Trained adults handle disinfectants under the product label. Assign building ventilation actions separately from equipment cleaning."
+      },
+      {
+        "title": "Close the installation and inspection file",
+        "desc": "Request intended-use information, dimensions, use areas, fixing/support details, care instructions and applicable assessment evidence. Record who checks the site supports, installs, inspects and approves use. Equipment procurement does not transfer the centre’s licensing or supervision duties."
+      }
+    ],
+    "equipmentTitle": "Compare the Project Decisions",
+    "equipment": [
+      {
+        "title": "Floor-level activity options",
+        "desc": "Evaluate floor-level forms and activities for the intended users, including access and care. Low appearance alone does not verify suitability."
+      },
+      {
+        "title": "Climbing and movement options",
+        "desc": "Match each item’s intended use and protection requirements to the room. Review bypasses and staff access; avoid a universal age-to-height table."
+      },
+      {
+        "title": "Shared activity rooms",
+        "desc": "Check whether movable items can be stored and reinstalled under their instructions without obstructing exits, meals or other room uses."
+      },
+      {
+        "title": "Quiet participation choices",
+        "desc": "Provide optional quieter activities within a workable observation plan. Ask families and relevant professionals about individual needs without promising therapy."
+      }
+    ],
+    "columns": [
+      "Room input",
+      "Buyer records",
+      "Supplier responds with",
+      "Local review"
+    ],
+    "rows": [
+      [
+        "Children and activities",
+        "Intended users and room programme",
+        "Item intended use and restrictions",
+        "Licensing/supervision applicability"
+      ],
+      [
+        "Measured room",
+        "Usable dimensions, doors, supports and services",
+        "Layout, use areas and installation access",
+        "Accessible routes and emergency circulation"
+      ],
+      [
+        "Care routine",
+        "Cleaning products, storage and handling",
+        "Material care and compatibility",
+        "Applicable health requirements"
+      ],
+      [
+        "Handover",
+        "Installer, records and release owner",
+        "Manual, fixings and item-specific evidence",
+        "Facility permission to operate"
+      ]
+    ],
+    "tableTitle": "Daycare Indoor Playground Equipment — Buyer Decision Matrix",
+    "tableNote": "Planning guidance, not universal capacity, medical advice, a licensing rule or a certificate. Record project-specific requirements and named responsibilities before procurement.",
+    "faq": [
+      {
+        "title": "Which staff ratio and area per child should I use?",
+        "desc": "Use the applicable current licensing rules for your jurisdiction and programme. This guide does not supply a global ratio or space minimum."
+      },
+      {
+        "title": "Can one structure suit every daycare room?",
+        "desc": "Do not assume that. Compare the intended users, room use and item restrictions separately; record why each proposed item fits that room."
+      },
+      {
+        "title": "What cleaning information should the supplier receive?",
+        "desc": "The actual chemicals, permitted methods, handling plan and storage constraints, so compatibility and access can be addressed before procurement."
+      },
+      {
+        "title": "What should I send for a room concept?",
+        "desc": "Measured drawings, country and licensing context, room programme, intended users, doors, services and written installation/operating responsibilities."
+      }
+    ],
+    "imageAlt": "Daycare Indoor Playground Equipment — illustrative site 3D concept render",
+    "captions": [
+      "General soft-play concept, not a completed or licensed daycare room.",
+      "Equipment concept; room age suitability requires item-specific review.",
+      "Venue concept reference; licensing capacity and observation are not verified by this image."
+    ],
+    "ui": {
+      "home": "Home",
+      "products": "Products",
+      "design": "Request a 3D Design Discussion",
+      "whatsapp": "Chat on WhatsApp",
+      "compare": "Compare Options",
+      "gallery": "Design References",
+      "relatedTitle": "Related Planning Guides",
+      "faqTitle": "Buyer Questions",
+      "sourcesTitle": "Sources & Scope",
+      "sourcesIntro": "The linked sources explain their own equipment or jurisdictional scope. They are not product certificates. Procurement and operating recommendations below are planning guidance; obtain a project-specific review.",
+      "updated": "Updated November 18, 2026",
+      "author": "NinescapeLand · Commercial Play Planning",
+      "imageNote": "Existing site 3D concept renders show equipment configurations, not verified material samples, completed childcare or church projects, clinical facilities or compliance evidence.",
+      "inquiryIntro": "Send your site drawings, country and procurement requirements for a project-specific discussion."
+    },
+    "parents": [
+      {
+        "slug": "products/soft-play",
+        "label": "Soft Play Equipment"
+      },
+      {
+        "slug": "complete-indoor-play-center-solutions",
+        "label": "Complete Play Center Responsibilities"
+      },
+      {
+        "slug": "indoor-playground-maintenance-and-cleaning-guide",
+        "label": "Maintenance and Cleaning"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Play areas: accessibility guide",
+        "publisher": "U.S. Access Board",
+        "url": "https://www.access-board.gov/ada/guides/chapter-10-play-areas/",
+        "note": "US accessible play-area requirements and routes; applicability depends on the facility and jurisdiction, not a worldwide product approval."
+      },
+      {
+        "label": "Disinfectants and children",
+        "publisher": "U.S. Environmental Protection Agency",
+        "url": "https://www.epa.gov/coronavirus-and-disinfectants/are-disinfectants-harmful-children-can-children-apply-disinfectants",
+        "note": "Children should not apply disinfectants. Products require safe storage and use according to their labels; this is not an admission or return-to-play rule."
+      },
+      {
+        "label": "Cleaner air for respiratory virus prevention",
+        "publisher": "Centers for Disease Control and Prevention",
+        "url": "https://cdc.gov/respiratory-viruses/prevention/air-quality.html",
+        "note": "US public-health guidance on cleaner air and lowering exposure risk; not a playground ventilation design or a guarantee against infection."
+      },
+      {
+        "label": "ASTM F1918: soft-contained play equipment",
+        "publisher": "ASTM International",
+        "url": "https://store.astm.org/standards/f1918",
+        "note": "Public ASTM F1918-21 scope covers soft-contained equipment and users from the 5th percentile two-year-old to the 95th percentile twelve-year-old; it excludes home/public playground equipment and other listed categories. Confirm item-specific applicability; not every attraction or accessibility requirement is covered."
+      }
+    ],
+    "checklistTitle": "Information to Record Before Ordering",
+    "checklist": [
+      "Jurisdiction, programme and exact local licensing references.",
+      "Room dimensions, usable areas, doorways, sightline concerns and services.",
+      "Intended children and activity choices without assumed universal capacities.",
+      "Care, installation, assessment and operator release responsibilities."
+    ]
+  },
+  "church-indoor-playground-equipment": {
+    "slug": "church-indoor-playground-equipment",
+    "title": "Church Indoor Playground Equipment",
+    "metaTitle": "Church Indoor Playground Equipment",
+    "metaDescription": "Plan church play equipment for shared halls, check-in, volunteer responsibilities, storage, reopening and accessible emergency circulation.",
+    "publishedDate": "2026-09-10",
+    "kicker": "Commercial Play · Procurement & Operations",
+    "intro": "A church play area may share a room with meetings, meals or weekday childcare. Start with the actual timetable, users and responsible people. Equipment capacity, supervision and changeover are project decisions, not a universal weekly peak, volunteer ratio or twenty-minute pack-down promise.",
+    "answerQuestion": "How should a church choose equipment for a shared hall?",
+    "answer": "Compare fixed and storable options against the hall’s other uses, equipment instructions and actual setup tasks. Keep check-in and collection legible without restricting required emergency escape. Record volunteer responsibilities, storage access and the conditions for reopening. If weekday use involves licensed childcare, check that programme’s requirements separately.",
+    "frameworkTitle": "Plan the Hall Around Its Actual Uses",
+    "framework": [
+      {
+        "title": "Record actual services and other uses",
+        "desc": "Map children, accompanying adults, activities and room use at relevant times. Keep measured demand separate from any proposed equipment capacity. Identify meetings, catering, weekday programmes and storage constraints instead of adding a blanket percentage to the busiest attendance."
+      },
+      {
+        "title": "Plan handover and volunteer roles",
+        "desc": "Name the check-in, observation, assistance and collection responsibilities, including a substitute and escalation contact. Walk the proposed layout with the people who will use it. Open sightlines support observation but do not establish a safe universal staff ratio."
+      },
+      {
+        "title": "Compare fixed and storable assemblies",
+        "desc": "For permanent items, review the dedicated footprint and installation requirements. For movable items, verify handling, stable placement, storage and reassembly instructions. Do not add wheels or remove anchors simply to speed pack-down. Trial actual tasks before promising a room changeover time."
+      },
+      {
+        "title": "Release each use and project phase",
+        "desc": "Keep emergency exits and accessible circulation clear through setup, play, storage and meals. Record checks before reopening and responsibility for defects. If funding is phased, each delivered phase needs its own complete protection, access and operating plan; later funding cannot be assumed to cure missing controls."
+      }
+    ],
+    "equipmentTitle": "Compare the Project Decisions",
+    "equipment": [
+      {
+        "title": "Dedicated play room",
+        "desc": "A fixed installation may suit a dedicated room if the site, intended use, observation and maintenance plan are reviewed."
+      },
+      {
+        "title": "Shared hall",
+        "desc": "Storable equipment needs permitted setup, carrying access and secure storage. Check the room in both play and non-play modes."
+      },
+      {
+        "title": "Weekday childcare",
+        "desc": "Identify any separate licensing, staffing and health requirements. Sunday use does not establish permission for a weekday programme."
+      },
+      {
+        "title": "Optional quieter participation",
+        "desc": "An optional quieter activity should remain accessible and observable under the agreed operating plan, not isolated behind an unmanaged doorway."
+      }
+    ],
+    "columns": [
+      "Option",
+      "Design input",
+      "Handover check",
+      "Evidence needed"
+    ],
+    "rows": [
+      [
+        "Fixed installation",
+        "Dedicated footprint and support",
+        "Access, protection and observation",
+        "Drawings and installation instructions"
+      ],
+      [
+        "Storable set",
+        "Handling route, secure storage and permitted setup",
+        "Stable reassembly and room release",
+        "Equipment manual and actual task trial"
+      ],
+      [
+        "Licensed weekday use",
+        "Programme and jurisdiction",
+        "Requirements additional to Sunday use",
+        "Applicable licensing references"
+      ],
+      [
+        "Phased procurement",
+        "Independently usable delivered scope",
+        "No incomplete access or protection",
+        "Phase responsibility and release record"
+      ]
+    ],
+    "tableTitle": "Church Indoor Playground Equipment — Buyer Decision Matrix",
+    "tableNote": "Planning guidance, not universal capacity, medical advice, a licensing rule or a certificate. Record project-specific requirements and named responsibilities before procurement.",
+    "faq": [
+      {
+        "title": "Is there a standard volunteer-to-child ratio for church play?",
+        "desc": "This page does not set one. Determine staffing from applicable requirements, the programme, intended users, equipment and the operator’s actual plan."
+      },
+      {
+        "title": "Can the hall revert to tables in twenty minutes?",
+        "desc": "Do not assume it. Trial the handling, storage and reassembly tasks with the actual equipment and staff before setting a changeover target."
+      },
+      {
+        "title": "Can check-in control the only exit?",
+        "desc": "Check-in may manage ordinary access but must not block required emergency escape or accessible routes. Coordinate the actual door arrangement with the relevant facility reviewer."
+      },
+      {
+        "title": "Does weekday preschool use change the brief?",
+        "desc": "It can introduce separate licensing and operating requirements. Record the intended programme and jurisdiction before treating one setup as suitable for both uses."
+      }
+    ],
+    "imageAlt": "Church Indoor Playground Equipment — illustrative site 3D concept render",
+    "captions": [
+      "General soft-play concept, not a photographed church nursery.",
+      "Play-structure concept; volunteer visibility depends on the actual layout.",
+      "Ninja equipment concept, not proof of suitability for a church hall or age group."
+    ],
+    "ui": {
+      "home": "Home",
+      "products": "Products",
+      "design": "Request a 3D Design Discussion",
+      "whatsapp": "Chat on WhatsApp",
+      "compare": "Compare Options",
+      "gallery": "Design References",
+      "relatedTitle": "Related Planning Guides",
+      "faqTitle": "Buyer Questions",
+      "sourcesTitle": "Sources & Scope",
+      "sourcesIntro": "The linked sources explain their own equipment or jurisdictional scope. They are not product certificates. Procurement and operating recommendations below are planning guidance; obtain a project-specific review.",
+      "updated": "Updated November 18, 2026",
+      "author": "NinescapeLand · Commercial Play Planning",
+      "imageNote": "Existing site 3D concept renders show equipment configurations, not verified material samples, completed childcare or church projects, clinical facilities or compliance evidence.",
+      "inquiryIntro": "Send your site drawings, country and procurement requirements for a project-specific discussion."
+    },
+    "parents": [
+      {
+        "slug": "products/soft-play",
+        "label": "Soft Play Equipment"
+      },
+      {
+        "slug": "complete-indoor-play-center-solutions",
+        "label": "Complete Play Center Responsibilities"
+      },
+      {
+        "slug": "modular-reconfigurable-indoor-play-equipment",
+        "label": "Modular Equipment Planning"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Play areas: accessibility guide",
+        "publisher": "U.S. Access Board",
+        "url": "https://www.access-board.gov/ada/guides/chapter-10-play-areas/",
+        "note": "US accessible play-area requirements and routes; applicability depends on the facility and jurisdiction, not a worldwide product approval."
+      },
+      {
+        "label": "ASTM F1918: soft-contained play equipment",
+        "publisher": "ASTM International",
+        "url": "https://store.astm.org/standards/f1918",
+        "note": "Public ASTM F1918-21 scope covers soft-contained equipment and users from the 5th percentile two-year-old to the 95th percentile twelve-year-old; it excludes home/public playground equipment and other listed categories. Confirm item-specific applicability; not every attraction or accessibility requirement is covered."
+      },
+      {
+        "label": "Disinfectants and children",
+        "publisher": "U.S. Environmental Protection Agency",
+        "url": "https://www.epa.gov/coronavirus-and-disinfectants/are-disinfectants-harmful-children-can-children-apply-disinfectants",
+        "note": "Children should not apply disinfectants. Products require safe storage and use according to their labels; this is not an admission or return-to-play rule."
+      }
+    ],
+    "checklistTitle": "Information to Record Before Ordering",
+    "checklist": [
+      "Timetable for play, meals, meetings and any weekday childcare.",
+      "Named check-in, observation, collection and reopening roles.",
+      "Equipment-supported setup/storage instructions and actual handling trial.",
+      "Emergency/accessibility review and complete scope for each funded phase."
+    ]
+  },
+  "sensory-inclusive-play-equipment": {
+    "slug": "sensory-inclusive-play-equipment",
+    "title": "Sensory-Inclusive Play Equipment",
+    "metaTitle": "Sensory-Friendly Playground Equipment",
+    "metaDescription": "Plan sensory-friendly commercial play with individual preferences, quieter choices, accessible routes and documented light, sound and queue adjustments.",
+    "publishedDate": "2026-05-29",
+    "kicker": "Commercial Play · Procurement & Operations",
+    "intro": "Sensory-inclusive commercial play offers choices rather than a single stimulation level for every child. Preferences and support needs differ. Review the actual light, sound, smell, crowding and routes with intended users and relevant professionals; equipment is not a treatment and a quiet-hour label is not proof that an environment suits everyone.",
+    "answerQuestion": "What makes an indoor playground sensory-friendly?",
+    "answer": "Useful adjustments make participation and withdrawal predictable: reduce unwanted background noise or brightness where practical, explain busier areas and times, offer a quieter option and keep routes accessible. Ask about individual needs. National Autistic Society guidance supports environmental adjustments, not a universal decibel threshold, a preferred material or a guaranteed regulation outcome.",
+    "frameworkTitle": "Plan Choice, Access and Sensory Adjustments",
+    "framework": [
+      {
+        "title": "Ask about individual participation choices",
+        "desc": "Gather preferences about sound, light, texture, smells, queues and communication. Provide ways to decline or leave an activity without crossing an active hazard. Do not require children to use stimulating equipment because it is labelled sensory."
+      },
+      {
+        "title": "Review the actual environment",
+        "desc": "Walk the route from arrival to play, toilets, quieter areas and departure. Note music, equipment sound, glare, flashing effects, cleaning odours, queue conditions and unexpected transitions. Record an adjustment and owner for each issue instead of claiming a fixed acoustic reduction."
+      },
+      {
+        "title": "Coordinate quiet options and equipment risks",
+        "desc": "Place a quieter option within the agreed access and observation plan. Confirm supports, use areas, electrical equipment, cleaning and emergency access per item. Weighted, suspended or other specialist products require appropriate item-specific assessment; this page does not prescribe therapeutic use."
+      },
+      {
+        "title": "Check the quiet-hour setting in practice",
+        "desc": "Record which sound and lighting settings change, what remains noisy and how arrivals are handled. Share factual information about the conditions and a way to ask for help. Review feedback and actual demand before assigning attendance or staffing limits; do not market a universally calm or medically effective session."
+      }
+    ],
+    "equipmentTitle": "Compare the Project Decisions",
+    "equipment": [
+      {
+        "title": "Light and visual choices",
+        "desc": "Record controllable brightness, glare and flashing features. Keep enough visibility for participation, observation and safe circulation."
+      },
+      {
+        "title": "Sound and transition choices",
+        "desc": "Describe background music, equipment noise and quieter routes. Signpost unavoidable sounds rather than promising silence."
+      },
+      {
+        "title": "Textures and optional activities",
+        "desc": "Offer choices without ranking wood, plastic or tactile products as universally better. Record care and intended-use restrictions."
+      },
+      {
+        "title": "Arrival and retreat choices",
+        "desc": "Explain queues, assistance and an optional quieter space. Keep access, observation and emergency arrangements consistent."
+      }
+    ],
+    "columns": [
+      "Environment",
+      "Observe",
+      "Possible adjustment",
+      "Verify afterwards"
+    ],
+    "rows": [
+      [
+        "Light",
+        "Glare, flashing and unexpected brightness",
+        "Practical controllable settings and advance information",
+        "Visibility and user feedback"
+      ],
+      [
+        "Sound",
+        "Music, equipment and hand-dryer noise",
+        "Lower background volume / signpost noisy areas",
+        "Remaining sounds and usable communication"
+      ],
+      [
+        "Queues",
+        "Crowding and uncertainty at arrival",
+        "Predictable arrival information and help contact",
+        "Actual handover and accessible route"
+      ],
+      [
+        "Quieter space",
+        "Access, observation and optional withdrawal",
+        "An accessible quieter choice",
+        "No blocked escape or forced participation"
+      ]
+    ],
+    "tableTitle": "Sensory-Inclusive Play Equipment — Buyer Decision Matrix",
+    "tableNote": "Planning guidance, not universal capacity, medical advice, a licensing rule or a certificate. Record project-specific requirements and named responsibilities before procurement.",
+    "faq": [
+      {
+        "title": "Are wood structures naturally more sensory-friendly?",
+        "desc": "No universal claim is justified. Assess the actual texture, finish, smell, sound and individual preference rather than the material name."
+      },
+      {
+        "title": "Do quiet hours suit every autistic child?",
+        "desc": "No. Explain the actual conditions and offer choices; individual preferences and support needs vary."
+      },
+      {
+        "title": "Does this equipment treat sensory processing differences?",
+        "desc": "This is a commercial planning guide, not a clinical prescription. Do not promise treatment, emotional regulation or therapeutic outcomes from the equipment."
+      },
+      {
+        "title": "How should I document a sensory-friendly session?",
+        "desc": "Record the settings, remaining noise/light sources, arrival arrangements, optional quieter route, staff help contact and feedback. Avoid universal thresholds without project-specific evidence."
+      }
+    ],
+    "imageAlt": "Sensory-Inclusive Play Equipment — illustrative site 3D concept render",
+    "captions": [
+      "General play concept, not a clinically assessed sensory environment.",
+      "Structure reference; actual sound and lighting conditions are not shown.",
+      "Soft-play concept; accessibility and individual suitability require project-specific review."
+    ],
+    "ui": {
+      "home": "Home",
+      "products": "Products",
+      "design": "Request a 3D Design Discussion",
+      "whatsapp": "Chat on WhatsApp",
+      "compare": "Compare Options",
+      "gallery": "Design References",
+      "relatedTitle": "Related Planning Guides",
+      "faqTitle": "Buyer Questions",
+      "sourcesTitle": "Sources & Scope",
+      "sourcesIntro": "The linked sources explain their own equipment or jurisdictional scope. They are not product certificates. Procurement and operating recommendations below are planning guidance; obtain a project-specific review.",
+      "updated": "Updated November 18, 2026",
+      "author": "NinescapeLand · Commercial Play Planning",
+      "imageNote": "Existing site 3D concept renders show equipment configurations, not verified material samples, completed childcare or church projects, clinical facilities or compliance evidence.",
+      "inquiryIntro": "Send your site drawings, country and procurement requirements for a project-specific discussion."
+    },
+    "parents": [
+      {
+        "slug": "products/soft-play",
+        "label": "Soft Play Equipment"
+      },
+      {
+        "slug": "complete-indoor-play-center-solutions",
+        "label": "Complete Play Center Responsibilities"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Accessible environments",
+        "publisher": "National Autistic Society",
+        "url": "https://www.autism.org.uk/learn/knowledge-hub/guides-and-resources/accessible-environments",
+        "note": "UK practical adjustments for light, noise, crowds and queues; individual needs differ. Not a therapeutic prescription or equipment certificate."
+      },
+      {
+        "label": "Play areas: accessibility guide",
+        "publisher": "U.S. Access Board",
+        "url": "https://www.access-board.gov/ada/guides/chapter-10-play-areas/",
+        "note": "US accessible play-area requirements and routes; applicability depends on the facility and jurisdiction, not a worldwide product approval."
+      },
+      {
+        "label": "Disinfectant labels and directions",
+        "publisher": "U.S. Environmental Protection Agency",
+        "url": "https://www.epa.gov/pesticide-registration/selected-epa-registered-disinfectants",
+        "note": "US disinfectant registration and label directions; does not certify playground materials or replace local requirements."
+      }
+    ],
+    "checklistTitle": "Information to Record Before Ordering",
+    "checklist": [
+      "Individual preferences and participation/withdrawal choices.",
+      "Actual light, sound, smell and arrival observations with named actions.",
+      "Item-specific support, electrical, access, care and inspection requirements.",
+      "Quiet-session settings and factual visitor information, without treatment guarantees."
+    ]
+  }
+}

@@ -1,0 +1,826 @@
+{
+  "indoor-playground-maintenance-and-cleaning-guide": {
+    "slug": "indoor-playground-maintenance-and-cleaning-guide",
+    "title": "Maintenance et Nettoyage des Aires de Jeux Intérieures",
+    "metaTitle": "Maintenance & Nettoyage des Aires de Jeux",
+    "metaDescription": "Organisez le nettoyage, les contrôles de défauts et la gestion de l’air des jeux intérieurs avec des consignes et des responsabilités claires.",
+    "publishedDate": "2026-10-08",
+    "kicker": "Jeu Commercial · Approvisionnement & Exploitation",
+    "intro": "La maintenance des aires de jeux commerciales combine l'entretien des surfaces, l'inspection des équipements et la gestion du bâtiment. Ce sont des tâches distinctes. Choisissez une routine basée sur les instructions des équipements, l'utilisation réelle, les incidents de contamination et les exigences locales ; ne considérez pas un calendrier universel de désinfection quotidien, hebdomadaire ou mensuel comme une preuve de sécurité.",
+    "answerQuestion": "La désinfection des surfaces peut-elle remplacer la gestion de l'air intérieur ?",
+    "answer": "Non. Le traitement des surfaces concerne les surfaces mentionnées sur une étiquette produit ; les mesures pour un air plus propre concernent l'exposition aérienne. Gardez des responsables distincts pour le nettoyage, les équipements endommagés et la ventilation du bâtiment. Le CDC décrit un air plus propre comme une mesure de réduction des risques, pas comme une élimination des infections. Un sol visiblement propre ne vérifie pas le flux d'air, la filtration ou la politique de maladie de l'établissement.",
+    "frameworkTitle": "Établissez la Routine de Nettoyage et de Gestion de l'Air",
+    "framework": [
+      {
+        "title": "Séparez les tâches et les responsables",
+        "desc": "Listez séparément le nettoyage, toute désinfection requise, l'inspection mécanique et la vérification du système d'air. Désignez un opérateur pour les registres, un adulte formé pour l'application des produits chimiques et un contact qualifié pour la ventilation. La fourniture d'équipements n'inclut pas automatiquement ces services."
+      },
+      {
+        "title": "Déterminez la fréquence en fonction de la tâche réelle",
+        "desc": "Utilisez les instructions du fabricant, les exigences sanitaires locales, la fréquentation et les incidents de contamination pour établir le calendrier. Notez ce qui a déclenché un travail supplémentaire et quand il a été terminé. Un incident impliquant des fluides corporels ou une surface endommagée nécessite une réponse contrôlée spécifique ; ne poursuivez pas l'utilisation pendant que le personnel improvise une méthode."
+      },
+      {
+        "title": "Corrélez l'étiquette et le matériau",
+        "desc": "Identifiez la surface, le produit, la revendication cible, la méthode autorisée, le temps de contact et toute exigence de rinçage ou de séchage. Suivez l'étiquette et les instructions de compatibilité du fournisseur. Les enfants ne doivent pas appliquer de désinfectants. Le brouillard ou la pulvérisation électrostatique n'est pas une méthode par défaut ; l'EPA exige des instructions d'étiquette pertinentes."
+      },
+      {
+        "title": "Vérifiez l'air et la réouverture séparément",
+        "desc": "Demandez à l'opérateur du bâtiment de vérifier la ventilation par rapport aux exigences applicables et à l'occupation proposée. Gardez les entrées, sorties et accès aux services d'air utilisables. Enregistrez la réouverture uniquement après que les étapes de surface et les contrôles des défauts requis sont terminés ; une odeur chimique ou une fenêtre ouverte n'est pas un test de flux d'air."
+      }
+    ],
+    "equipmentTitle": "Comparez les Décisions du Projet",
+    "equipment": [
+      {
+        "title": "Rembourrage et housses",
+        "desc": "Enregistrez le matériau de la housse, les coutures et les surfaces de nettoyage accessibles. Une déchirure exposant la mousse appartient au registre des défauts ; la nettoyer ne restaure pas la housse."
+      },
+      {
+        "title": "Balles, filets et zones fermées",
+        "desc": "Documentez comment le personnel accède et retire les articles, nettoie l'intérieur de la fosse, vérifie les fixations et sèche les composants selon les instructions. Aucun calendrier unique ne convient à toutes les fosses ou filets."
+      },
+      {
+        "title": "Toboggans et surfaces mobiles",
+        "desc": "Utilisez la méthode d'entretien spécifique à l'équipement et inspectez les joints, supports et interfaces de protection. N'utilisez pas un produit chimique ou un polish simplement parce qu'il convient à une autre surface."
+      },
+      {
+        "title": "Services du bâtiment",
+        "desc": "Maintenez le contact pour le service de ventilation, les registres de maintenance et le chemin d'escalade. Une inspection d'équipement ou un registre de désinfection des surfaces ne peut pas remplacer ce dossier."
+      }
+    ],
+    "columns": [
+      "Tâche",
+      "Déclencheur ou entrée",
+      "Registre",
+      "Rôle responsable"
+    ],
+    "rows": [
+      [
+        "Entretien des surfaces",
+        "Utilisation, contamination, étiquette et instructions matérielles",
+        "Produit, méthode et achèvement",
+        "Personnel de nettoyage formé"
+      ],
+      [
+        "Inspection mécanique",
+        "Manuel d'équipement, dommage ou signalement",
+        "Composant, défaut et restriction",
+        "Responsable de la maintenance"
+      ],
+      [
+        "Vérification du système d'air",
+        "Exigences du bâtiment et utilisation proposée",
+        "Revue de service et responsable",
+        "Opérateur du bâtiment / spécialiste qualifié"
+      ],
+      [
+        "Réouverture",
+        "Traitement requis et contrôles des défauts terminés",
+        "Décision de libération et restrictions non résolues",
+        "Gestionnaire désigné"
+      ]
+    ],
+    "tableTitle": "Maintenance et Nettoyage des Aires de Jeux Intérieures — Matrice de Décision pour l'Acheteur",
+    "tableNote": "Conseils de planification, pas une capacité universelle, un avis médical, une règle de licence ou un certificat. Enregistrez les exigences spécifiques au projet et les responsabilités désignées avant l'approvisionnement.",
+    "faq": [
+      {
+        "title": "À quelle fréquence les équipements doivent-ils être désinfectés ?",
+        "desc": "Il n'y a pas de fréquence universelle sur cette page. Utilisez les exigences locales, la contamination réelle, l'étiquette du produit et les instructions des équipements. Le nettoyage et les vérifications mécaniques ont des déclencheurs différents."
+      },
+      {
+        "title": "Est-ce que pulvériser tout l'établissement suffit ?",
+        "desc": "Non. Une méthode d'application doit être autorisée par l'étiquette du produit, et le traitement des surfaces ne remplace pas la gestion de l'air, l'inspection des équipements ou les contrôles du personnel."
+      },
+      {
+        "title": "Une housse antimicrobienne élimine-t-elle le besoin de nettoyer ?",
+        "desc": "Non. Obtenez les preuves exactes du produit et suivez ses instructions d'entretien. N'étendez pas une revendication matérielle à une garantie de protection pour les visiteurs."
+      },
+      {
+        "title": "Quand un composant fermé peut-il rouvrir ?",
+        "desc": "Après le traitement documenté et toute réparation ou vérification spécialisée terminée, avec la libération de l'opérateur désigné. N'inventez pas une période d'attente universelle."
+      }
+    ],
+    "imageAlt": "Maintenance et Nettoyage des Aires de Jeux Intérieures — rendu 3D conceptuel illustratif",
+    "captions": [
+      "Référence conceptuelle de jeu souple ; aucune performance de nettoyage n'est démontrée.",
+      "Référence conceptuelle de structure ; les besoins réels d'accès à la maintenance nécessitent un examen spécifique au site.",
+      "Référence conceptuelle de trampoline ; les instructions d'entretien doivent correspondre à l'équipement réel."
+    ],
+    "ui": {
+      "home": "Accueil",
+      "products": "Produits",
+      "design": "Discuter d’un projet 3D",
+      "whatsapp": "Discuter sur WhatsApp",
+      "compare": "Comparer les Options",
+      "gallery": "Références de Conception",
+      "relatedTitle": "Guides de Planification Associés",
+      "faqTitle": "Questions des Acheteurs",
+      "sourcesTitle": "Sources & Portée",
+      "sourcesIntro": "Les sources liées expliquent leur propre portée d'équipement ou juridictionnelle. Ce ne sont pas des certificats de produit. Les recommandations d'approvisionnement et d'exploitation ci-dessous sont des conseils de planification ; obtenez un examen spécifique au projet.",
+      "updated": "Mis à jour le 18 novembre 2026",
+      "author": "NinescapeLand · Planification des Aires de Jeux Commerciales",
+      "imageNote": "Les rendus 3D conceptuels de sites existants montrent des configurations d'équipements, pas des échantillons de matériaux vérifiés, des projets de garde d'enfants ou d'église terminés, des installations cliniques ou des preuves de conformité.",
+      "inquiryIntro": "Envoyez vos plans de site, pays et exigences d'approvisionnement pour une discussion spécifique au projet."
+    },
+    "parents": [
+      {
+        "slug": "products/soft-play",
+        "label": "Équipements de Jeu Souple"
+      },
+      {
+        "slug": "complete-indoor-play-center-solutions",
+        "label": "Responsabilités des Centres de Jeu Complets"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Étiquettes et instructions des désinfectants",
+        "publisher": "Agence de Protection de l'Environnement des États-Unis",
+        "url": "https://www.epa.gov/pesticide-registration/selected-epa-registered-disinfectants",
+        "note": "Enregistrement et instructions d'étiquette des désinfectants aux États-Unis ; ne certifie pas les matériaux des aires de jeux ni ne remplace les exigences locales."
+      },
+      {
+        "label": "Air plus propre pour la prévention des virus respiratoires",
+        "publisher": "Centres pour le Contrôle et la Prévention des Maladies",
+        "url": "https://cdc.gov/respiratory-viruses/prevention/air-quality.html",
+        "note": "Conseils de santé publique américains sur un air plus propre et la réduction des risques d'exposition ; pas une conception de ventilation d'aire de jeux ni une garantie contre l'infection."
+      },
+      {
+        "label": "Méthodes d'application et étiquettes des désinfectants",
+        "publisher": "Agence de Protection de l'Environnement des États-Unis",
+        "url": "https://www.epa.gov/coronavirus-and-disinfectants/can-i-use-fogging-fumigation-or-electrostatic-spraying-or-drones-help",
+        "note": "Les méthodes comme le brouillard ou la pulvérisation électrostatique nécessitent des instructions d'étiquette explicites ; aucune recommandation de pulvérisation universelle de l'établissement."
+      },
+      {
+        "label": "Désinfectants et enfants",
+        "publisher": "Agence de Protection de l'Environnement des États-Unis",
+        "url": "https://www.epa.gov/coronavirus-and-disinfectants/are-disinfectants-harmful-children-can-children-apply-disinfectants",
+        "note": "Les enfants ne doivent pas appliquer de désinfectants. Les produits nécessitent un stockage et une utilisation sûrs selon leurs étiquettes ; ce n'est pas une admission ou une règle de retour au jeu."
+      }
+    ],
+    "checklistTitle": "Informations à Enregistrer Avant la Commande",
+    "checklist": [
+      "ID du composant, surfaces accessibles et instructions d'entretien du fabricant.",
+      "Étiquette du produit de nettoyage, surfaces/méthode autorisées et confirmation de compatibilité.",
+      "Registre des défauts, restrictions, réparations et libérations avec personnel désigné.",
+      "Contact du service d'air du bâtiment et actions non résolues, séparément du registre des surfaces."
+    ]
+  },
+  "soft-play-foam-and-material-specifications": {
+    "slug": "soft-play-foam-and-material-specifications",
+    "title": "Spécifications des Mousses et Matériaux pour Jeux Souples",
+    "metaTitle": "Matériaux & Spécifications pour Jeux Souples",
+    "metaDescription": "Comparez mousse, housses, bois, plastique et fixations selon les spécifications, le nettoyage compatible et les preuves propres aux éléments.",
+    "publishedDate": "2026-10-22",
+    "kicker": "Jeu Commercial · Approvisionnement & Exploitation",
+    "intro": "Une spécification de matériau commercial décrit l'article assemblé, ses utilisateurs prévus et ses exigences d'entretien. Un panneau en bois, un toboggan en plastique moulé et un module de jeu souple rembourré remplissent des fonctions différentes. Comparez l'utilisation proposée et la construction documentée plutôt que de déclarer un matériau universellement plus sûr, plus durable ou plus adapté aux sens.",
+    "answerQuestion": "Comment les acheteurs doivent-ils comparer le bois, le plastique et les matériaux de jeu souple ?",
+    "answer": "Commencez par la fonction du composant et son utilisation prévue. Demandez le substrat ou la résine, les détails de la mousse et de la housse le cas échéant, les connexions, les interfaces de protection et la méthode d'entretien. Faites correspondre les rapports à l'article fourni et à la portée applicable. Ni le nom d'un matériau ni la densité de la mousse seule ne prouvent la protection contre les chocs, l'adéquation structurelle ou la durée de vie attendue.",
+    "frameworkTitle": "Spécifiez les Matériaux par Utilisation et Preuve",
+    "framework": [
+      {
+        "title": "Définissez le composant et l'utilisation",
+        "desc": "Enregistrez si l'article est un panneau, un toboggan, un plancher, un rembourrage ou un module mobile. Spécifiez les utilisateurs prévus, la méthode de support et les conditions de nettoyage attendues. Ne traitez pas un ensemble de jeu résidentiel et une structure commerciale comme interchangeables simplement parce que les deux utilisent du bois ou du plastique."
+      },
+      {
+        "title": "Décrivez l'assemblage complet",
+        "desc": "Demandez l'espèce de bois ou la construction de planche et la finition, la résine plastique et la construction moulée, le type et la densité de la mousse, le matériau de la housse, les coutures, les fixations et les bords le cas échéant. Examinez les interfaces ensemble ; un échantillon favorable d'une couche ne vérifie pas l'article complet."
+      },
+      {
+        "title": "Confirmez la compatibilité de nettoyage",
+        "desc": "Fournissez le produit de nettoyage réel et la méthode prévue au fournisseur. Enregistrez les surfaces autorisées, le temps de contact, les conditions de rinçage/séchage et les restrictions du fournisseur. L'enregistrement EPA soutient la revendication de désinfectant de l'étiquette, pas la durabilité d'une housse d'aire de jeux sous ce traitement."
+      },
+      {
+        "title": "Faites correspondre les preuves à l'article livré",
+        "desc": "Comparez le numéro de rapport, le laboratoire, la date, l'identification du produit, la portée et la description de l'échantillon à la commande. Demandez quelles différences nécessitent de nouvelles preuves. Utilisez les équipements applicables et les exigences locales en matière d'incendie/produits chimiques ; un rapport de jouet n'établit pas automatiquement la conformité de toute la structure commerciale."
+      }
+    ],
+    "equipmentTitle": "Comparez les Décisions du Projet",
+    "equipment": [
+      {
+        "title": "Composants en bois",
+        "desc": "Spécifiez le substrat, la finition, les joints et l'accès pour l'inspection. Confirmez les restrictions d'entretien et l'état des bords ; l'apparence n'est pas une preuve chimique ou structurelle."
+      },
+      {
+        "title": "Composants en plastique moulé",
+        "desc": "Spécifiez la résine, la construction assemblée, les supports et les instructions d'entretien. Un acronyme de résine seul n'établit pas le comportement aux chocs ou la durée de vie."
+      },
+      {
+        "title": "Mousses et housses",
+        "desc": "Enregistrez la mousse, la housse, les coutures et les pièces remplaçables ensemble. La densité est une caractéristique, pas un substitut à une preuve de protection assemblée."
+      },
+      {
+        "title": "Cadres, planchers et fixations",
+        "desc": "Demandez les dimensions, le revêtement, les connexions, les instructions d'installation et l'accès à l'inspection. Vérifiez les interfaces de protection plutôt que de compter sur des pièces cachées dans un rendu."
+      }
+    ],
+    "columns": [
+      "Composant",
+      "Spécification écrite",
+      "Preuve à faire correspondre",
+      "Ne pas déduire"
+    ],
+    "rows": [
+      [
+        "Panneau en bois",
+        "Substrat, finition, joints et entretien",
+        "Description de l'article et preuve de finition/assemblage pertinente",
+        "Tout bois est plus inclusif"
+      ],
+      [
+        "Toboggan en plastique",
+        "Résine, supports, joints et entretien",
+        "Article spécifié et portée de test applicable",
+        "Un nom de résine garantit la sécurité"
+      ],
+      [
+        "Module rembourré",
+        "Mousse, housse, coutures et remplacement",
+        "Détails d'assemblage et compatibilité d'entretien",
+        "La densité seule prouve la protection"
+      ],
+      [
+        "Cadre et plancher",
+        "Sections, connexions, finition et installation",
+        "Dessins, manuel et évaluation pertinente",
+        "Un échantillon de matériau vérifie toute la structure"
+      ]
+    ],
+    "tableTitle": "Spécifications des Mousses et Matériaux pour Jeux Souples — Matrice de Décision pour l'Acheteur",
+    "tableNote": "Conseils de planification, pas une capacité universelle, un avis médical, une règle de licence ou un certificat. Enregistrez les exigences spécifiques au projet et les responsabilités désignées avant l'approvisionnement.",
+    "faq": [
+      {
+        "title": "La mousse à haute densité est-elle toujours l'option la plus sûre ?",
+        "desc": "Non. Évaluez la mousse dans sa housse, son épaisseur, son support et son utilisation prévue. La densité seule n'établit pas la performance d'amortissement ou l'adéquation commerciale."
+      },
+      {
+        "title": "Le bois est-il plus adapté aux sens que le plastique ?",
+        "desc": "Pas universellement. La texture, l'odeur, la finition, le son et les préférences personnelles comptent. Évaluez le composant réel avec les utilisateurs prévus plutôt que d'attribuer une propriété thérapeutique à son matériau."
+      },
+      {
+        "title": "Un test de matériau certifie-t-il toute l'aire de jeux ?",
+        "desc": "Non. Vérifiez l'échantillon, la norme et la portée du rapport. Les preuves des composants et l'évaluation des équipements assemblés répondent à des questions différentes."
+      },
+      {
+        "title": "Que faire si un désinfectant et une instruction de housse sont en conflit ?",
+        "desc": "N'improvisez pas un mélange ou une méthode. Obtenez une approche compatible et une clarification écrite avant utilisation ; la compatibilité du fournisseur et l'étiquette du produit chimique comptent toutes deux."
+      }
+    ],
+    "imageAlt": "Spécifications des Mousses et Matériaux pour Jeux Souples — rendu 3D conceptuel illustratif",
+    "captions": [
+      "Concept de jeu souple montrant des configurations, pas un échantillon de mousse ou de housse vérifié.",
+      "Concept de structure de jeu ; la construction interne nécessite des spécifications écrites.",
+      "Rendu conceptuel thématique ; les couleurs ne démontrent pas la conformité des matériaux ou des produits chimiques."
+    ],
+    "ui": {
+      "home": "Accueil",
+      "products": "Produits",
+      "design": "Discuter d’un projet 3D",
+      "whatsapp": "Discuter sur WhatsApp",
+      "compare": "Comparer les Options",
+      "gallery": "Références de Conception",
+      "relatedTitle": "Guides de Planification Associés",
+      "faqTitle": "Questions des Acheteurs",
+      "sourcesTitle": "Sources & Portée",
+      "sourcesIntro": "Les sources liées expliquent leur propre portée d'équipement ou juridictionnelle. Ce ne sont pas des certificats de produit. Les recommandations d'approvisionnement et d'exploitation ci-dessous sont des conseils de planification ; obtenez un examen spécifique au projet.",
+      "updated": "Mis à jour le 18 novembre 2026",
+      "author": "NinescapeLand · Planification des Aires de Jeux Commerciales",
+      "imageNote": "Les rendus 3D conceptuels de sites existants montrent des configurations d'équipements, pas des échantillons de matériaux vérifiés, des projets de garde d'enfants ou d'église terminés, des installations cliniques ou des preuves de conformité.",
+      "inquiryIntro": "Envoyez vos plans de site, pays et exigences d'approvisionnement pour une discussion spécifique au projet."
+    },
+    "parents": [
+      {
+        "slug": "products/soft-play",
+        "label": "Équipements de Jeu Souple"
+      },
+      {
+        "slug": "indoor-playground-maintenance-and-cleaning-guide",
+        "label": "Maintenance et Nettoyage"
+      },
+      {
+        "slug": "complete-indoor-play-center-solutions",
+        "label": "Portée des Centres de Jeu Complets"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Étiquettes et instructions des désinfectants",
+        "publisher": "Agence de Protection de l'Environnement des États-Unis",
+        "url": "https://www.epa.gov/pesticide-registration/selected-epa-registered-disinfectants",
+        "note": "Enregistrement et instructions d'étiquette des désinfectants aux États-Unis ; ne certifie pas les matériaux des aires de jeux ni ne remplace les exigences locales."
+      },
+      {
+        "label": "ASTM F1918 : équipements de jeu souples contenus",
+        "publisher": "ASTM International",
+        "url": "https://store.astm.org/standards/f1918",
+        "note": "Le domaine public de la norme ASTM F1918-21 concerne les équipements de jeu souple confiné, du 5e percentile des enfants de deux ans au 95e percentile des enfants de douze ans. Il exclut les équipements de jeux domestiques et publics et les autres catégories indiquées. Vérifiez chaque élément ; toutes les attractions et exigences d’accessibilité ne sont pas couvertes."
+      },
+      {
+        "label": "Environnements accessibles",
+        "publisher": "Société Nationale de l'Autisme",
+        "url": "https://www.autism.org.uk/learn/knowledge-hub/guides-and-resources/accessible-environments",
+        "note": "Ajustements pratiques britanniques pour la lumière, le bruit, les foules et les files d'attente ; les besoins individuels diffèrent. Pas une prescription thérapeutique ou un certificat d'équipement."
+      }
+    ],
+    "checklistTitle": "Informations à Enregistrer Avant la Commande",
+    "checklist": [
+      "Identifiants d'article et d'assemblage partagés entre devis, dessins et rapports.",
+      "Détails de mousse/housse, substrat/résine, finition, couture et fixation pertinents pour chaque article.",
+      "Étiquette chimique réelle et instructions de compatibilité de nettoyage du fournisseur.",
+      "Portée du rapport, échantillon, laboratoire et différences non résolues avec l'article fourni."
+    ]
+  },
+  "daycare-indoor-playground-equipment": {
+    "slug": "daycare-indoor-playground-equipment",
+    "title": "Équipements d'Aire de Jeux Intérieure pour Garderies",
+    "metaTitle": "Équipements d'Aire de Jeux pour Garderies",
+    "metaDescription": "Prévoyez les jeux de garderie par salle, usagers, règles locales, visibilité, nettoyage et responsabilités d’installation.",
+    "publishedDate": "2026-09-10",
+    "kicker": "Jeu Commercial · Approvisionnement & Exploitation",
+    "intro": "Les équipements de garderie doivent correspondre aux salles réelles du centre, aux enfants et aux exigences de licence applicables. Établissez ces entrées avant de choisir un package. Ce guide ne fixe pas un ratio universel de personnel, une surface par enfant, une hauteur de plateforme ou un seuil d'âge : ces valeurs nécessitent la règle locale pertinente et les preuves d'utilisation prévue pour les équipements.",
+    "answerQuestion": "La certification des équipements établit-elle l'approbation de licence de garderie ?",
+    "answer": "Non. Les preuves de produit concernent leur portée déclarée ; une licence de garderie concerne l'établissement et son fonctionnement sous la juridiction pertinente. Enregistrez les exigences locales pour les groupes, l'espace utilisable et la supervision, puis coordonnez l'adéquation des équipements, les itinéraires des salles, le nettoyage et l'installation. Un certificat ou un concept 3D gratuit ne remplace pas l'examen de licence.",
+    "frameworkTitle": "Traduisez les Exigences des Salles en un Cahier des Charges",
+    "framework": [
+      {
+        "title": "Créez une feuille d'entrée par salle",
+        "desc": "Pour chaque salle, enregistrez les dimensions, l'espace utilisable, les sorties, les enfants prévus et les besoins de soutien, les activités planifiées et la référence de licence locale. Séparez toute valeur requise par une autorité d'une recommandation de fournisseur. Ne copiez pas un ratio ou une hauteur de plateforme à partir d'un exemple d'un autre pays."
+      },
+      {
+        "title": "Gardez les itinéraires du personnel et l'observation utilisables",
+        "desc": "Montrez comment le personnel observe le jeu tout en soutenant les arrivées, les toilettes ou les changements et les départs. Examinez les angles morts, les portes et l'accès aux enfants sans traiter un dessin comme une garantie de supervision. Le placement des équipements ne doit pas obstruer la circulation d'urgence ou accessible."
+      },
+      {
+        "title": "Planifiez le stockage propre/usage et les interfaces d'air",
+        "desc": "Fournissez un itinéraire pour les équipements retirés ou souillés, le stockage sécurisé des produits chimiques et l'accès aux articles propres sans traverser inutilement le jeu actif. Les adultes formés manipulent les désinfectants sous l'étiquette du produit. Attribuez les actions de ventilation du bâtiment séparément du nettoyage des équipements."
+      },
+      {
+        "title": "Fermez le dossier d'installation et d'inspection",
+        "desc": "Demandez des informations sur l'utilisation prévue, les dimensions, les zones d'utilisation, les détails de fixation/support, les instructions d'entretien et les preuves d'évaluation applicables. Enregistrez qui vérifie les supports du site, installe, inspecte et approuve l'utilisation. L'approvisionnement en équipements ne transfère pas les responsabilités de licence ou de supervision du centre."
+      }
+    ],
+    "equipmentTitle": "Comparez les Décisions du Projet",
+    "equipment": [
+      {
+        "title": "Options d'activité au niveau du sol",
+        "desc": "Évaluez les formes et activités au niveau du sol pour les utilisateurs prévus, y compris l'accès et l'entretien. Une apparence basse seule ne vérifie pas l'adéquation."
+      },
+      {
+        "title": "Options d'escalade et de mouvement",
+        "desc": "Faites correspondre l'utilisation prévue et les exigences de protection de chaque article à la salle. Examinez les contournements et l'accès du personnel ; évitez un tableau universel âge-hauteur."
+      },
+      {
+        "title": "Salles d'activité partagées",
+        "desc": "Vérifiez si les articles mobiles peuvent être stockés et réinstallés selon leurs instructions sans obstruer les sorties, les repas ou d'autres utilisations de la salle."
+      },
+      {
+        "title": "Choix de participation calme",
+        "desc": "Fournissez des activités plus calmes optionnelles dans un plan d'observation réalisable. Demandez aux familles et aux professionnels pertinents les besoins individuels sans promettre de thérapie."
+      }
+    ],
+    "columns": [
+      "Entrée de salle",
+      "Registres de l'acheteur",
+      "Réponse du fournisseur",
+      "Examen local"
+    ],
+    "rows": [
+      [
+        "Enfants et activités",
+        "Utilisateurs prévus et programme de salle",
+        "Utilisation prévue et restrictions de l'article",
+        "Applicabilité de la licence/supervision"
+      ],
+      [
+        "Salle mesurée",
+        "Dimensions utilisables, portes, supports et services",
+        "Disposition, zones d'utilisation et accès à l'installation",
+        "Itinéraires accessibles et circulation d'urgence"
+      ],
+      [
+        "Routine d'entretien",
+        "Produits de nettoyage, stockage et manipulation",
+        "Entretien et compatibilité des matériaux",
+        "Exigences sanitaires applicables"
+      ],
+      [
+        "Remise",
+        "Installateur, registres et responsable de libération",
+        "Manuel, fixations et preuves spécifiques à l'article",
+        "Autorisation de fonctionnement de l'établissement"
+      ]
+    ],
+    "tableTitle": "Équipements d'Aire de Jeux Intérieure pour Garderies — Matrice de Décision pour l'Acheteur",
+    "tableNote": "Conseils de planification, pas une capacité universelle, un avis médical, une règle de licence ou un certificat. Enregistrez les exigences spécifiques au projet et les responsabilités désignées avant l'approvisionnement.",
+    "faq": [
+      {
+        "title": "Quel ratio de personnel et surface par enfant dois-je utiliser ?",
+        "desc": "Utilisez les règles de licence applicables actuelles pour votre juridiction et programme. Ce guide ne fournit pas de ratio ou de minimum d'espace global."
+      },
+      {
+        "title": "Une structure peut-elle convenir à toutes les salles de garderie ?",
+        "desc": "Ne supposez pas cela. Comparez les utilisateurs prévus, l'utilisation de la salle et les restrictions des articles séparément ; enregistrez pourquoi chaque article proposé convient à cette salle."
+      },
+      {
+        "title": "Quelles informations de nettoyage le fournisseur doit-il recevoir ?",
+        "desc": "Les produits chimiques réels, les méthodes autorisées, le plan de manipulation et les contraintes de stockage, afin que la compatibilité et l'accès puissent être abordés avant l'approvisionnement."
+      },
+      {
+        "title": "Que dois-je envoyer pour un concept de salle ?",
+        "desc": "Dessins mesurés, pays et contexte de licence, programme de salle, utilisateurs prévus, portes, services et responsabilités écrites d'installation/exploitation."
+      }
+    ],
+    "imageAlt": "Équipements d'Aire de Jeux Intérieure pour Garderies — rendu 3D conceptuel illustratif",
+    "captions": [
+      "Concept général de jeu souple, pas une salle de garderie terminée ou licenciée.",
+      "Concept d'équipement ; l'adéquation à l'âge de la salle nécessite un examen spécifique à l'article.",
+      "Référence conceptuelle d'établissement ; la capacité de licence et l'observation ne sont pas vérifiées par cette image."
+    ],
+    "ui": {
+      "home": "Accueil",
+      "products": "Produits",
+      "design": "Discuter d’un projet 3D",
+      "whatsapp": "Discuter sur WhatsApp",
+      "compare": "Comparer les Options",
+      "gallery": "Références de Conception",
+      "relatedTitle": "Guides de Planification Associés",
+      "faqTitle": "Questions des Acheteurs",
+      "sourcesTitle": "Sources & Portée",
+      "sourcesIntro": "Les sources liées expliquent leur propre portée d'équipement ou juridictionnelle. Ce ne sont pas des certificats de produit. Les recommandations d'approvisionnement et d'exploitation ci-dessous sont des conseils de planification ; obtenez un examen spécifique au projet.",
+      "updated": "Mis à jour le 18 novembre 2026",
+      "author": "NinescapeLand · Planification des Aires de Jeux Commerciales",
+      "imageNote": "Les rendus 3D conceptuels de sites existants montrent des configurations d'équipements, pas des échantillons de matériaux vérifiés, des projets de garde d'enfants ou d'église terminés, des installations cliniques ou des preuves de conformité.",
+      "inquiryIntro": "Envoyez vos plans de site, pays et exigences d'approvisionnement pour une discussion spécifique au projet."
+    },
+    "parents": [
+      {
+        "slug": "products/soft-play",
+        "label": "Équipements de Jeu Souple"
+      },
+      {
+        "slug": "complete-indoor-play-center-solutions",
+        "label": "Responsabilités des Centres de Jeu Complets"
+      },
+      {
+        "slug": "indoor-playground-maintenance-and-cleaning-guide",
+        "label": "Maintenance et Nettoyage"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Zones de jeu : guide d'accessibilité",
+        "publisher": "U.S. Access Board",
+        "url": "https://www.access-board.gov/ada/guides/chapter-10-play-areas/",
+        "note": "Exigences et itinéraires accessibles aux États-Unis pour les aires de jeu ; l'applicabilité dépend de l'établissement et de la juridiction, pas d'une approbation mondiale de produit."
+      },
+      {
+        "label": "Désinfectants et enfants",
+        "publisher": "Agence de Protection de l'Environnement des États-Unis",
+        "url": "https://www.epa.gov/coronavirus-and-disinfectants/are-disinfectants-harmful-children-can-children-apply-disinfectants",
+        "note": "Les enfants ne doivent pas appliquer de désinfectants. Les produits nécessitent un stockage et une utilisation sûrs selon leurs étiquettes ; ce n'est pas une admission ou une règle de retour au jeu."
+      },
+      {
+        "label": "Air plus propre pour la prévention des virus respiratoires",
+        "publisher": "Centres pour le Contrôle et la Prévention des Maladies",
+        "url": "https://cdc.gov/respiratory-viruses/prevention/air-quality.html",
+        "note": "Conseils de santé publique américains sur un air plus propre et la réduction des risques d'exposition ; pas une conception de ventilation d'aire de jeux ni une garantie contre l'infection."
+      },
+      {
+        "label": "ASTM F1918 : équipements de jeu souples contenus",
+        "publisher": "ASTM International",
+        "url": "https://store.astm.org/standards/f1918",
+        "note": "Le domaine public de la norme ASTM F1918-21 concerne les équipements de jeu souple confiné, du 5e percentile des enfants de deux ans au 95e percentile des enfants de douze ans. Il exclut les équipements de jeux domestiques et publics et les autres catégories indiquées. Vérifiez chaque élément ; toutes les attractions et exigences d’accessibilité ne sont pas couvertes."
+      }
+    ],
+    "checklistTitle": "Informations à Enregistrer Avant la Commande",
+    "checklist": [
+      "Juridiction, programme et références exactes de licence locales.",
+      "Dimensions des salles, zones utilisables, portes, préoccupations de visibilité et services.",
+      "Enfants prévus et choix d'activités sans capacités universelles supposées.",
+      "Responsabilités d'entretien, installation, évaluation et libération de l'opérateur."
+    ]
+  },
+  "church-indoor-playground-equipment": {
+    "slug": "church-indoor-playground-equipment",
+    "title": "Équipements d'Aire de Jeux Intérieure pour Églises",
+    "metaTitle": "Équipements d'Aire de Jeux pour Églises",
+    "metaDescription": "Prévoyez les jeux d’église en salle partagée : accueil, bénévoles, rangement, réouverture, accès et évacuation.",
+    "publishedDate": "2026-09-10",
+    "kicker": "Jeu Commercial · Approvisionnement & Exploitation",
+    "intro": "Une aire de jeu d'église peut partager une salle avec des réunions, des repas ou une garderie en semaine. Commencez par l'horaire réel, les utilisateurs et les personnes responsables. La capacité des équipements, la supervision et la transition sont des décisions de projet, pas un pic hebdomadaire universel, un ratio de bénévoles ou une promesse de rangement en vingt minutes.",
+    "answerQuestion": "Comment une église doit-elle choisir des équipements pour une salle partagée ?",
+    "frameworkTitle": "Planifiez la Salle en Fonction de Ses Utilisations Réelles",
+    "framework": [
+      {
+        "title": "Enregistrez les services réels et autres utilisations",
+        "desc": "Cartographiez les enfants, les adultes accompagnateurs, les activités et l'utilisation de la salle aux moments pertinents. Gardez la demande mesurée séparée de toute capacité d'équipement proposée. Identifiez les réunions, la restauration, les programmes en semaine et les contraintes de stockage au lieu d'ajouter un pourcentage global à l'affluence la plus élevée."
+      },
+      {
+        "title": "Planifiez la transmission et les rôles des bénévoles",
+        "desc": "Nommez les responsabilités d'enregistrement, d'observation, d'assistance et de collecte, y compris un substitut et un contact d'escalade. Parcourez la disposition proposée avec les personnes qui l'utiliseront. Les lignes de vue ouvertes soutiennent l'observation mais n'établissent pas un ratio universel de personnel sûr."
+      },
+      {
+        "title": "Comparez les assemblages fixes et stockables",
+        "desc": "Pour les articles permanents, examinez l'empreinte dédiée et les exigences d'installation. Pour les articles mobiles, vérifiez la manipulation, le placement stable, le stockage et les instructions de réassemblage. N'ajoutez pas de roues ou ne retirez pas d'ancres simplement pour accélérer le rangement. Testez les tâches réelles avant de promettre un temps de transition de salle."
+      },
+      {
+        "title": "Libérez chaque utilisation et phase de projet",
+        "desc": "Gardez les sorties d'urgence et la circulation accessible claires pendant la configuration, le jeu, le stockage et les repas. Enregistrez les vérifications avant la réouverture et la responsabilité des défauts. Si le financement est échelonné, chaque phase livrée nécessite son propre plan complet de protection, d'accès et d'exploitation ; un financement ultérieur ne peut pas être supposé pour corriger les contrôles manquants."
+      }
+    ],
+    "equipmentTitle": "Comparez les Décisions du Projet",
+    "equipment": [
+      {
+        "title": "Salle de jeu dédiée",
+        "desc": "Une installation fixe peut convenir à une salle dédiée si le site, l'utilisation prévue, l'observation et le plan de maintenance sont examinés."
+      },
+      {
+        "title": "Salle partagée",
+        "desc": "Les équipements stockables nécessitent une configuration autorisée, un accès de transport et un stockage sécurisé. Vérifiez la salle en modes jeu et non-jeu."
+      },
+      {
+        "title": "Garderie en semaine",
+        "desc": "Identifiez toute licence, personnel et exigences sanitaires séparés. L'utilisation du dimanche n'établit pas la permission pour un programme en semaine."
+      },
+      {
+        "title": "Participation calme optionnelle",
+        "desc": "Une activité plus calme optionnelle doit rester accessible et observable sous le plan d'exploitation convenu, pas isolée derrière une porte non gérée."
+      }
+    ],
+    "columns": [
+      "Option",
+      "Entrée de conception",
+      "Vérification de transmission",
+      "Preuve nécessaire"
+    ],
+    "rows": [
+      [
+        "Installation fixe",
+        "Empreinte dédiée et support",
+        "Accès, protection et observation",
+        "Dessins et instructions d'installation"
+      ],
+      [
+        "Ensemble stockable",
+        "Itinéraire de manipulation, stockage sécurisé et configuration autorisée",
+        "Réassemblage stable et libération de salle",
+        "Manuel d'équipement et test de tâche réelle"
+      ],
+      [
+        "Utilisation licenciée en semaine",
+        "Programme et juridiction",
+        "Exigences supplémentaires à l'utilisation du dimanche",
+        "Références de licence applicables"
+      ],
+      [
+        "Approvisionnement échelonné",
+        "Portée livrée utilisable indépendamment",
+        "Pas d'accès ou de protection incomplet",
+        "Responsabilité de phase et registre de libération"
+      ]
+    ],
+    "tableTitle": "Équipements d'Aire de Jeux Intérieure pour Églises — Matrice de Décision pour l'Acheteur",
+    "tableNote": "Conseils de planification, pas une capacité universelle, un avis médical, une règle de licence ou un certificat. Enregistrez les exigences spécifiques au projet et les responsabilités désignées avant l'approvisionnement.",
+    "faq": [
+      {
+        "title": "Existe-t-il un ratio standard bénévole-enfant pour les jeux d'église ?",
+        "desc": "Cette page n'en fixe pas. Déterminez le personnel à partir des exigences applicables, du programme, des utilisateurs prévus, des équipements et du plan réel de l'opérateur."
+      },
+      {
+        "title": "La salle peut-elle revenir aux tables en vingt minutes ?",
+        "desc": "Ne supposez pas cela. Testez la manipulation, le stockage et les tâches de réassemblage avec les équipements et le personnel réels avant de fixer un objectif de transition."
+      },
+      {
+        "title": "L'enregistrement peut-il contrôler la seule sortie ?",
+        "desc": "L'enregistrement peut gérer l'accès ordinaire mais ne doit pas bloquer l'évacuation d'urgence requise ou les itinéraires accessibles. Coordonnez l'arrangement réel des portes avec l'examinateur de l'établissement concerné."
+      },
+      {
+        "title": "L'utilisation en semaine de la maternelle change-t-elle le cahier des charges ?",
+        "desc": "Elle peut introduire des exigences de licence et d'exploitation séparées. Enregistrez le programme prévu et la juridiction avant de traiter une configuration comme adaptée aux deux utilisations."
+      }
+    ],
+    "imageAlt": "Équipements d'Aire de Jeux Intérieure pour Églises — rendu 3D conceptuel illustratif",
+    "captions": [
+      "Concept général de jeu souple, pas une crèche d'église photographiée.",
+      "Concept de structure de jeu ; la visibilité des bénévoles dépend de la disposition réelle.",
+      "Concept d'équipement ninja, pas une preuve d'adéquation pour une salle d'église ou un groupe d'âge."
+    ],
+    "ui": {
+      "home": "Accueil",
+      "products": "Produits",
+      "design": "Discuter d’un projet 3D",
+      "whatsapp": "Discuter sur WhatsApp",
+      "compare": "Comparer les Options",
+      "gallery": "Références de Conception",
+      "relatedTitle": "Guides de Planification Associés",
+      "faqTitle": "Questions des Acheteurs",
+      "sourcesTitle": "Sources & Portée",
+      "sourcesIntro": "Les sources liées expliquent leur propre portée d'équipement ou juridictionnelle. Ce ne sont pas des certificats de produit. Les recommandations d'approvisionnement et d'exploitation ci-dessous sont des conseils de planification ; obtenez un examen spécifique au projet.",
+      "updated": "Mis à jour le 18 novembre 2026",
+      "author": "NinescapeLand · Planification des Aires de Jeux Commerciales",
+      "imageNote": "Les rendus 3D conceptuels de sites existants montrent des configurations d'équipements, pas des échantillons de matériaux vérifiés, des projets de garde d'enfants ou d'église terminés, des installations cliniques ou des preuves de conformité.",
+      "inquiryIntro": "Envoyez vos plans de site, pays et exigences d'approvisionnement pour une discussion spécifique au projet."
+    },
+    "parents": [
+      {
+        "slug": "products/soft-play",
+        "label": "Équipements de Jeu Souple"
+      },
+      {
+        "slug": "complete-indoor-play-center-solutions",
+        "label": "Responsabilités des Centres de Jeu Complets"
+      },
+      {
+        "slug": "modular-reconfigurable-indoor-play-equipment",
+        "label": "Planification des Équipements Modulaires"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Zones de jeu : guide d'accessibilité",
+        "publisher": "U.S. Access Board",
+        "url": "https://www.access-board.gov/ada/guides/chapter-10-play-areas/",
+        "note": "Exigences et itinéraires accessibles aux États-Unis pour les aires de jeu ; l'applicabilité dépend de l'établissement et de la juridiction, pas d'une approbation mondiale de produit."
+      },
+      {
+        "label": "ASTM F1918 : équipements de jeu souples contenus",
+        "publisher": "ASTM International",
+        "url": "https://store.astm.org/standards/f1918",
+        "note": "Le domaine public de la norme ASTM F1918-21 concerne les équipements de jeu souple confiné, du 5e percentile des enfants de deux ans au 95e percentile des enfants de douze ans. Il exclut les équipements de jeux domestiques et publics et les autres catégories indiquées. Vérifiez chaque élément ; toutes les attractions et exigences d’accessibilité ne sont pas couvertes."
+      },
+      {
+        "label": "Désinfectants et enfants",
+        "publisher": "Agence de Protection de l'Environnement des États-Unis",
+        "url": "https://www.epa.gov/coronavirus-and-disinfectants/are-disinfectants-harmful-children-can-children-apply-disinfectants",
+        "note": "Les enfants ne doivent pas appliquer de désinfectants. Les produits nécessitent un stockage et une utilisation sûrs selon leurs étiquettes ; ce n'est pas une admission ou une règle de retour au jeu."
+      }
+    ],
+    "checklistTitle": "Informations à Enregistrer Avant la Commande",
+    "checklist": [
+      "Horaire pour le jeu, les repas, les réunions et toute garderie en semaine.",
+      "Rôles désignés d'enregistrement, d'observation, de collecte et de réouverture.",
+      "Instructions de configuration/stockage supportées par les équipements et test de manipulation réel.",
+      "Examen d'urgence/accessibilité et portée complète pour chaque phase financée."
+    ],
+    "answer": "Comparez les options fixes et stockables par rapport aux autres utilisations de la salle, aux instructions des équipements et aux tâches réelles de configuration. Gardez l'enregistrement et la collecte lisibles sans restreindre l'évacuation d'urgence requise. Enregistrez les responsabilités des bénévoles, l'accès au stockage et les conditions de réouverture. Si l'utilisation en semaine implique une garderie licenciée, vérifiez les exigences de ce programme séparément."
+  },
+  "sensory-inclusive-play-equipment": {
+    "slug": "sensory-inclusive-play-equipment",
+    "title": "Équipements de Jeu Sensoriels Inclusifs",
+    "metaTitle": "Équipements de Jeu Sensoriels Inclusifs",
+    "metaDescription": "Prévoyez des jeux inclusifs selon les préférences individuelles, les choix plus calmes, les accès et les réglages de lumière et de son.",
+    "publishedDate": "2026-05-29",
+    "kicker": "Jeu Commercial · Approvisionnement & Exploitation",
+    "intro": "Le jeu commercial inclusif pour les sens offre des choix plutôt qu'un seul niveau de stimulation pour chaque enfant. Les préférences et les besoins de soutien diffèrent. Examinez la lumière, le son, l'odeur, l'encombrement et les itinéraires réels avec les utilisateurs prévus et les professionnels pertinents ; les équipements ne sont pas un traitement et une étiquette d'heure calme n'est pas une preuve qu'un environnement convient à tout le monde.",
+    "answerQuestion": "Qu'est-ce qui rend une aire de jeux intérieure adaptée aux sens ?",
+    "answer": "Les ajustements utiles rendent la participation et le retrait prévisibles : réduisez le bruit ou la luminosité de fond indésirables lorsque c'est possible, expliquez les zones et heures plus fréquentées, offrez une option plus calme et gardez les itinéraires accessibles. Demandez les besoins individuels. Les conseils de la Société Nationale de l'Autisme soutiennent les ajustements environnementaux, pas un seuil universel de décibels, un matériau préféré ou un résultat garanti en matière d’autorégulation.",
+    "frameworkTitle": "Planifiez les Choix, l'Accès et les Ajustements Sensoriels",
+    "framework": [
+      {
+        "title": "Demandez les choix de participation individuels",
+        "desc": "Recueillez les préférences concernant le son, la lumière, la texture, les odeurs, les files d'attente et la communication. Fournissez des moyens de refuser ou de quitter une activité sans traverser un danger actif. N'obligez pas les enfants à utiliser des équipements stimulants simplement parce qu'ils sont étiquetés sensoriels."
+      },
+      {
+        "title": "Examinez l'environnement réel",
+        "desc": "Parcourez l'itinéraire de l'arrivée au jeu, aux toilettes, aux zones plus calmes et au départ. Notez la musique, le son des équipements, l'éblouissement, les effets clignotants, les odeurs de nettoyage, les conditions des files d'attente et les transitions inattendues. Enregistrez un ajustement et un responsable pour chaque problème au lieu de revendiquer une réduction acoustique fixe."
+      },
+      {
+        "title": "Coordonnez les options calmes et les risques des équipements",
+        "desc": "Placez une option plus calme dans le plan d'accès et d'observation convenu. Confirmez les supports, les zones d'utilisation, les équipements électriques, le nettoyage et l'accès d'urgence par article. Les produits pondérés, suspendus ou autres spécialisés nécessitent une évaluation spécifique à l'article appropriée ; cette page ne prescrit pas d'utilisation thérapeutique."
+      },
+      {
+        "title": "Vérifiez le cadre de l'heure calme en pratique",
+        "desc": "Enregistrez quels paramètres de son et d'éclairage changent, ce qui reste bruyant et comment les arrivées sont gérées. Partagez des informations factuelles sur les conditions et un moyen de demander de l'aide. Examinez les commentaires et la demande réelle avant d'attribuer des limites de fréquentation ou de personnel ; ne commercialisez pas une session universellement calme ou médicalement efficace."
+      }
+    ],
+    "equipmentTitle": "Comparez les Décisions du Projet",
+    "equipment": [
+      {
+        "title": "Choix de lumière et visuels",
+        "desc": "Enregistrez la luminosité, l'éblouissement et les caractéristiques clignotantes contrôlables. Gardez une visibilité suffisante pour la participation, l'observation et la circulation sûre."
+      },
+      {
+        "title": "Choix de son et transitions",
+        "desc": "Décrivez la musique de fond, le bruit des équipements et les itinéraires plus calmes. Signalez les sons inévitables plutôt que de promettre le silence."
+      },
+      {
+        "title": "Textures et activités optionnelles",
+        "desc": "Offrez des choix sans classer le bois, le plastique ou les produits tactiles comme universellement meilleurs. Enregistrez les restrictions d'entretien et d'utilisation prévue."
+      },
+      {
+        "title": "Choix d'arrivée et de retrait",
+        "desc": "Expliquez les files d'attente, l'assistance et un espace plus calme optionnel. Gardez les arrangements d'accès, d'observation et d'urgence cohérents."
+      }
+    ],
+    "columns": [
+      "Environnement",
+      "Observer",
+      "Ajustement possible",
+      "Vérifier ensuite"
+    ],
+    "rows": [
+      [
+        "Lumière",
+        "Éblouissement, clignotement et luminosité inattendue",
+        "Paramètres contrôlables pratiques et informations préalables",
+        "Visibilité et commentaires des utilisateurs"
+      ],
+      [
+        "Son",
+        "Musique, équipements et bruit des sèche-mains",
+        "Volume de fond réduit / signalez les zones bruyantes",
+        "Sons restants et communication utilisable"
+      ],
+      [
+        "Files d'attente",
+        "Encombrement et incertitude à l'arrivée",
+        "Informations d'arrivée prévisibles et contact d'aide",
+        "Transmission réelle et itinéraire accessible"
+      ],
+      [
+        "Espace plus calme",
+        "Accès, observation et retrait optionnel",
+        "Un choix plus calme accessible",
+        "Pas d'évacuation bloquée ou de participation forcée"
+      ]
+    ],
+    "tableTitle": "Équipements de Jeu Sensoriels Inclusifs — Matrice de Décision pour l'Acheteur",
+    "tableNote": "Conseils de planification, pas une capacité universelle, un avis médical, une règle de licence ou un certificat. Enregistrez les exigences spécifiques au projet et les responsabilités désignées avant l'approvisionnement.",
+    "faq": [
+      {
+        "title": "Les structures en bois sont-elles naturellement plus adaptées aux sens ?",
+        "desc": "Aucune revendication universelle n'est justifiée. Évaluez la texture, la finition, l'odeur, le son et la préférence individuelle réels plutôt que le nom du matériau."
+      },
+      {
+        "title": "Les heures calmes conviennent-elles à chaque enfant autiste ?",
+        "desc": "Non. Expliquez les conditions réelles et offrez des choix ; les préférences et les besoins de soutien individuels varient."
+      },
+      {
+        "title": "Ces équipements traitent-ils les différences de traitement sensoriel ?",
+        "desc": "Ceci est un guide de planification commerciale, pas une prescription clinique. Ne promettez pas de traitement, de régulation émotionnelle ou de résultats thérapeutiques des équipements."
+      },
+      {
+        "title": "Comment dois-je documenter une session adaptée aux sens ?",
+        "desc": "Enregistrez les paramètres, les sources de bruit/lumière restantes, les arrangements d'arrivée, l'itinéraire plus calme optionnel, le contact d'aide du personnel et les commentaires. Évitez les seuils universels sans preuve spécifique au projet."
+      }
+    ],
+    "imageAlt": "Équipements de Jeu Sensoriels Inclusifs — rendu 3D conceptuel illustratif",
+    "captions": [
+      "Concept général de jeu, pas un environnement sensoriel évalué cliniquement.",
+      "Référence de structure ; les conditions réelles de son et d'éclairage ne sont pas montrées.",
+      "Concept de jeu souple ; l'accessibilité et l'adéquation individuelle nécessitent un examen spécifique au projet."
+    ],
+    "ui": {
+      "home": "Accueil",
+      "products": "Produits",
+      "design": "Discuter d’un projet 3D",
+      "whatsapp": "Discuter sur WhatsApp",
+      "compare": "Comparer les Options",
+      "gallery": "Références de Conception",
+      "relatedTitle": "Guides de Planification Associés",
+      "faqTitle": "Questions des Acheteurs",
+      "sourcesTitle": "Sources & Portée",
+      "sourcesIntro": "Les sources liées expliquent leur propre portée d'équipement ou juridictionnelle. Ce ne sont pas des certificats de produit. Les recommandations d'approvisionnement et d'exploitation ci-dessous sont des conseils de planification ; obtenez un examen spécifique au projet.",
+      "updated": "Mis à jour le 18 novembre 2026",
+      "author": "NinescapeLand · Planification des Aires de Jeux Commerciales",
+      "imageNote": "Les rendus 3D conceptuels de sites existants montrent des configurations d'équipements, pas des échantillons de matériaux vérifiés, des projets de garde d'enfants ou d'église terminés, des installations cliniques ou des preuves de conformité.",
+      "inquiryIntro": "Envoyez vos plans de site, pays et exigences d'approvisionnement pour une discussion spécifique au projet."
+    },
+    "parents": [
+      {
+        "slug": "products/soft-play",
+        "label": "Équipements de Jeu Souple"
+      },
+      {
+        "slug": "complete-indoor-play-center-solutions",
+        "label": "Responsabilités des Centres de Jeu Complets"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Environnements accessibles",
+        "publisher": "Société Nationale de l'Autisme",
+        "url": "https://www.autism.org.uk/learn/knowledge-hub/guides-and-resources/accessible-environments",
+        "note": "Ajustements pratiques britanniques pour la lumière, le bruit, les foules et les files d'attente ; les besoins individuels diffèrent. Pas une prescription thérapeutique ou un certificat d'équipement."
+      },
+      {
+        "label": "Zones de jeu : guide d'accessibilité",
+        "publisher": "U.S. Access Board",
+        "url": "https://www.access-board.gov/ada/guides/chapter-10-play-areas/",
+        "note": "Exigences et itinéraires accessibles aux États-Unis pour les aires de jeu ; l'applicabilité dépend de l'établissement et de la juridiction, pas d'une approbation mondiale de produit."
+      },
+      {
+        "label": "Étiquettes et instructions des désinfectants",
+        "publisher": "Agence de Protection de l'Environnement des États-Unis",
+        "url": "https://www.epa.gov/pesticide-registration/selected-epa-registered-disinfectants",
+        "note": "Enregistrement et instructions d'étiquette des désinfectants aux États-Unis ; ne certifie pas les matériaux des aires de jeux ni ne remplace les exigences locales."
+      }
+    ],
+    "checklistTitle": "Informations à Enregistrer Avant la Commande",
+    "checklist": [
+      "Préférences individuelles et choix de participation/retrait.",
+      "Observations réelles de lumière, son, odeur et arrivée avec actions nommées.",
+      "Exigences spécifiques à l'article pour le support, l'électricité, l'accès, l'entretien et l'inspection.",
+      "Paramètres de session calme et informations factuelles aux visiteurs, sans garanties de traitement."
+    ]
+  }
+}
