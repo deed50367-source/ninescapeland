@@ -1,5 +1,9 @@
 # Roadmap
 
+- [x] November 18 blogs: read five complete uploaded manuscripts and check exact slugs against CMS; identify unsupported health, certification, ROI and staffing claims; prepare corrected outlines.
+- [ ] November 18 blogs: approve corrected outlines, revise five articles with Gerry attribution and concept cover/two inline images; translate all six languages into CMS editorial fields.
+- [ ] November 18 blogs: save/read back records, register reciprocal topic links and discoverability; verify public pages and authenticated admin editors. Production deployment remains separate.
+
 - [x] November 18: read five reports and 199 English blog metadata records; verify US demand and B2B intent, deliver independent keyword Markdown with three blog groups and GEO questions.
 - [x] November 18: approved five corrected outlines; refreshed five existing URLs in six languages with scoped citations, decision matrices, FAQ, concept images and original dates.
 - [x] November 18: 30 language pages and FAQ/inquiry navigation verified, 10 mobile layouts and 10 product backlinks checked; 16 tests/956 assertions pass; build OK. No inquiry submitted.
