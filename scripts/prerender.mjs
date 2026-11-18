@@ -33,6 +33,12 @@ const BASE_URL = `http://localhost:${PORT}`;
 
 // All core routes to prerender
 const CORE_ROUTES = [
+  "/blog/indoor-playground-air-quality",
+  "/blog/soft-play-disinfectant-compatibility",
+  "/blog/indoor-playground-quiet-hours",
+  "/blog/playground-supervision-checklist",
+  "/blog/church-playground-volunteer-training",
+
   "/ninja-warrior-course-for-kids-indoor-playground",
   "/complete-indoor-play-center-solutions",
   "/commercial-indoor-playground-slide-selection",

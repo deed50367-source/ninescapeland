@@ -1,0 +1,484 @@
+[
+  {
+    "slug": "indoor-playground-air-quality",
+    "title": "Calidad del Aire en Parques Infantiles Cubiertos: Registro de Responsabilidades del Operador",
+    "seo_title": "Calidad del aire en parques interiores | NinescapeLand",
+    "seo_description": "Ventilación independiente, evidencia de emisiones de materiales y comunicación sobre salud de los visitantes. Registre responsabilidades y verificaciones.",
+    "excerpt": "Ventilación independiente, evidencia de emisiones de materiales y comunicación sobre salud de los visitantes. Registre responsabilidades y verificaciones.",
+    "keywords": [
+      "guides",
+      "calidad del aire en parques infantiles cubiertos",
+      "ventilación en parques infantiles cubiertos",
+      "política para niños enfermos en parques infantiles cubiertos"
+    ],
+    "author": "Gerry",
+    "cover": "https://gianldlquknsdhfpqqfe.supabase.co/storage/v1/object/public/assets/adaf5265-c979-48b7-b4c1-808e1e4b87b8/1768294592888-x69bgi.jpg",
+    "parents": [
+      "indoor-playground-maintenance-and-cleaning-guide"
+    ],
+    "sections": [
+      {
+        "id": "definition",
+        "title": "Separe la gestión del aire de la limpieza de superficies",
+        "html": "<p>La calidad del aire en parques infantiles cubiertos se refiere al aire que las personas respiran dentro del edificio. La limpieza de superficies, ventilación, filtración, control de fuentes de emisiones y comunicación sobre la salud de los visitantes abordan tareas diferentes. Un tobogán desinfectado no garantiza que la ventilación sea adecuada, y el aire con olor fresco no es una medida de los niveles de contaminantes.</p><p><a href=\"https://www.epa.gov/indoor-air-quality-iaq/introduction-indoor-air-quality\" target=\"_blank\" rel=\"noopener noreferrer\">La guía de la EPA de EE. UU. sobre calidad del aire interior</a> identifica fuentes de contaminantes interiores y ventilación inadecuada como contribuyentes a problemas de calidad del aire. Es una guía general para edificios, no una regla de diseño mecánico específica para parques infantiles. Úsela para organizar preguntas para el operador del edificio y un profesional calificado en ventilación, en lugar de inventar una tasa de flujo de aire universal.</p>"
+      },
+      {
+        "id": "roles",
+        "title": "Asigne responsabilidades al edificio, al local y a los proveedores",
+        "html": "<p>Antes de pedir equipos, recopile el plano medido de la sala, la información mecánica existente, las actividades previstas y la ocupación propuesta para revisión profesional. Los dibujos del equipo pueden ubicar estructuras en relación con las aberturas de suministro y retorno; el proveedor del equipo no debe certificar un sistema de ventilación a partir de una imagen en perspectiva.</p><table><thead><tr><th>Rol</th><th>Información a recopilar</th><th>Decisión a registrar</th></tr></thead><tbody><tr><td>Operador del edificio</td><td>Sistema existente, acceso de mantenimiento y cambios autorizados</td><td>Quién proporciona registros mecánicos y aprueba trabajos en el edificio</td></tr><tr><td>Operador del local</td><td>Horarios, actividades, uso esperado y quejas observadas</td><td>Quién registra problemas y coordina la revisión</td></tr><tr><td>Profesional calificado en ventilación</td><td>Datos del edificio y disposición instalada</td><td>Evaluación, recomendaciones y alcance de verificación</td></tr><tr><td>Proveedor de equipos</td><td>Dimensiones, acceso y documentación de materiales</td><td>Información del equipo y revisión del diseño</td></tr></tbody></table><p>Estos son roles propuestos para el proyecto, no una asignación universal de contratos. Nombre a las partes realmente responsables y registre cualquier interfaz no resuelta antes de la fabricación o apertura.</p>"
+      },
+      {
+        "id": "walkthrough",
+        "title": "Registre las condiciones antes y después de la instalación",
+        "html": "<p>Recorra la sala con las partes responsables del edificio y la instalación. Registre las ubicaciones de suministro y retorno, acceso de servicio, estructuras envolventes, fuentes potenciales de humedad y cambios respecto al dibujo aprobado. No mueva conductos, deshabilite equipos o redirija aire sin autorización.</p><ul><li>Identifique cada observación por área de la sala, fecha y revisión del dibujo.</li><li>Describa las condiciones de uso cuando ocurra una queja por olor o falta de aire.</li><li>Pregunte al revisor calificado qué mediciones y verificaciones posteriores son apropiadas.</li><li>Registre las acciones completadas y quién las verifica después de la instalación.</li></ul><p>No hay una regla universal aquí para colocar equipos de malla cerca de retornos o restar el volumen del equipo como única base para el dimensionamiento del HVAC. Una vista en 3D es una ayuda de coordinación, no una simulación de flujo de aire o prueba de que se hayan eliminado todas las áreas mal ventiladas.</p>"
+      },
+      {
+        "id": "materials",
+        "title": "Verifique la evidencia de emisiones por separado de la seguridad del equipo",
+        "html": "<p>Solicite la identidad exacta del material o producto terminado, el método de prueba de emisiones relevante, la muestra probada, la fecha del informe y las condiciones declaradas. Compare la documentación con el producto propuesto y pregunte qué cubre y qué no cubre el resultado. Incluya adhesivos, recubrimientos, cubiertas y acabados instalados en el sitio cuando sean relevantes para el alcance del revisor.</p><p>Un nombre de material, una etiqueta comercial de bajo VOC o un informe de seguridad de parque infantil no prueban cero emisiones. No trate una referencia a una norma ASTM o el nombre de un organismo de prueba como un certificado general del fabricante. Identifique qué evidencia aplica a cada reclamo del producto; los reclamos no resueltos deben permanecer sin resolver en lugar de convertirse en una garantía.</p>"
+      },
+      {
+        "id": "policy",
+        "title": "Mantenga la comunicación sobre salud de los visitantes dentro de una política aprobada",
+        "html": "<p>Cree una política para niños enfermos en parques infantiles cubiertos con el operador responsable y la orientación de salud local relevante. Explique cómo las familias contactan al personal, cómo el personal escala preocupaciones y cómo se manejan los cambios de reserva bajo los términos reales del local. No diagnostique a los visitantes ni publique una regla universal de exclusión para cada tos, secreción nasal o período después de la fiebre.</p><p>Documente qué puede decir el personal y quién toma decisiones. Una política puede apoyar la comunicación pero no puede garantizar que no ocurra una infección. Mantenga la información de salud privada fuera de los registros públicos; use solo la información necesaria bajo los procedimientos de privacidad aprobados.</p>"
+      },
+      {
+        "id": "followup",
+        "title": "Use el registro para coordinar la próxima revisión",
+        "html": "<p>Mantenga observaciones, dibujos, acciones del edificio, solicitudes de documentación de materiales y cambios en la política para visitantes en columnas separadas. Registre problemas abiertos y el revisor responsable, luego verifique si la acción prevista se completó realmente. La desinfección de superficies no sustituye el plan de gestión del aire del edificio.</p><p>El tema de mantenimiento vinculado a continuación cubre la planificación de limpieza y cuidado del equipo. Lleve el plano medido de la sala y las interfaces de diseño no resueltas a NinescapeLand para una discusión sobre equipos; el diseño mecánico y la aprobación de políticas de salud siguen siendo responsabilidad de sus partes calificadas.</p>"
+      }
+    ],
+    "faq": [
+      {
+        "q": "¿Un diseño en 3D prueba una ventilación adecuada?",
+        "a": "No. Puede ayudar a ubicar equipos e interfaces del edificio; la ventilación real necesita evaluación calificada y verificación apropiada."
+      },
+      {
+        "q": "¿Un informe de seguridad del equipo prueba bajas emisiones?",
+        "a": "No por sí solo. Verifique el reclamo específico de emisiones, el producto probado, el método y el alcance del informe por separado."
+      },
+      {
+        "q": "¿La desinfección de superficies puede reemplazar la gestión del aire?",
+        "a": "No. El tratamiento de superficies y la gestión del aire del edificio abordan vías diferentes y necesitan responsabilidades separadas."
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.epa.gov/indoor-air-quality-iaq/introduction-indoor-air-quality",
+        "label": "EPA de EE. UU.: calidad del aire interior, fuentes de contaminantes y ventilación"
+      }
+    ],
+    "figures": [
+      {
+        "src": "https://gianldlquknsdhfpqqfe.supabase.co/storage/v1/object/public/assets/adaf5265-c979-48b7-b4c1-808e1e4b87b8/1768294592888-x69bgi.jpg",
+        "alt": "Render en perspectiva de un concepto de equipo de juego comercial",
+        "caption": "Ilustración conceptual en 3D del sitio, no un local en operación ni evidencia de aire medido, rendimiento acústico, compatibilidad de limpieza o cumplimiento."
+      },
+      {
+        "src": "https://gianldlquknsdhfpqqfe.supabase.co/storage/v1/object/public/assets/dcbc5ed3-1863-4db6-bacf-59919b3abec6/1768294400190-bx9gha.jpg",
+        "alt": "Render en perspectiva de un concepto de equipo de juego comercial",
+        "caption": "Ilustración conceptual en 3D del sitio, no un local en operación ni evidencia de aire medido, rendimiento acústico, compatibilidad de limpieza o cumplimiento."
+      }
+    ],
+    "relatedLabels": [
+      "Mantenimiento y Limpieza de Parques Infantiles Cubiertos"
+    ],
+    "ui": {
+      "relatedTitle": "Guías de planificación relacionadas",
+      "authorBio": "Gerry · NinescapeLand. Orientación general de planificación; las instrucciones del equipo y la revisión local calificada tienen prioridad.",
+      "faqTitle": "Preguntas frecuentes",
+      "sourcesTitle": "Fuentes y alcance",
+      "sourceNote": "La orientación pública verificada el 18 de noviembre de 2026. Las fuentes solo respaldan su alcance declarado, no la certificación del producto o la aprobación local. Cumpla con los requisitos legales aplicables y las instrucciones de la etiqueta del producto junto con las instrucciones del equipo; busque una revisión calificada cuando los requisitos entren en conflicto.",
+      "contactLabel": "Discuta su proyecto con NinescapeLand",
+      "imageNote": "Render conceptual en 3D del sitio; no es un proyecto completado, inspección o registro de certificación."
+    }
+  },
+  {
+    "slug": "soft-play-disinfectant-compatibility",
+    "title": "Compatibilidad de Desinfectantes para Áreas de Juego Suave: Lista de Verificación de Dos Evidencias",
+    "seo_title": "Desinfectantes y juego blando | NinescapeLand",
+    "seo_description": "Verifique etiquetas de desinfectantes y guías de cuidado de equipos. Registre identidad del material, uso permitido, requisitos de contacto y preocupaciones.",
+    "excerpt": "Verifique etiquetas de desinfectantes y guías de cuidado de equipos. Registre identidad del material, uso permitido, requisitos de contacto y preocupaciones.",
+    "keywords": [
+      "guides",
+      "compatibilidad de desinfectantes para áreas de juego suave",
+      "compatibilidad de limpieza de materiales de parques infantiles",
+      "estructuras de juego interiores de plástico o madera"
+    ],
+    "author": "Gerry",
+    "cover": "https://gianldlquknsdhfpqqfe.supabase.co/storage/v1/object/public/assets/root/1768967512755-1708914619333.jpg",
+    "parents": [
+      "soft-play-foam-and-material-specifications"
+    ],
+    "sections": [
+      {
+        "id": "definition",
+        "title": "Distinguir compatibilidad de materiales de eficacia de desinfección",
+        "html": "<p>La compatibilidad de desinfectantes para áreas de juego suave pregunta si un producto y procedimiento específicos son aceptables para una superficie de equipo determinada. La eficacia de desinfección pregunta si ese producto cumple con el uso reclamado contra un organismo específico bajo las condiciones de su etiqueta. La evidencia de uno no establece el otro.</p><p><a href=\"https://www.epa.gov/pesticide-registration/selected-epa-registered-disinfectants\" target=\"_blank\" rel=\"noopener noreferrer\">La información de desinfectantes de la EPA de EE. UU.</a> organiza productos registrados por sus reclamos y direcciones de uso. Esta es una guía de pesticidas de EE. UU., no evidencia de que cada producto listado sea compatible con su cubierta, recubrimiento, costura o espuma. La limpieza con detergente ordinario no es automáticamente desinfección.</p>"
+      },
+      {
+        "id": "documents",
+        "title": "Emparejar la etiqueta del producto con la guía de cuidado del equipo",
+        "html": "<p>Registre la identidad del producto químico y la etiqueta actual junto con el material exacto del equipo y las instrucciones de cuidado. Verifique las superficies y configuraciones permitidas, la preparación, la concentración, el método de aplicación, los requisitos de contacto y cualquier instrucción de enjuague o secado. Si la etiqueta del desinfectante y las instrucciones de cuidado del equipo entran en conflicto, no use ese producto en la superficie afectada. Obtenga aclaraciones del proveedor del equipo y del fabricante del desinfectante y seleccione un procedimiento que satisfaga ambos. El consejo del proveedor no autoriza desviarse de la etiqueta del desinfectante.</p><table><thead><tr><th>Evidencia</th><th>Qué verificar</th><th>Qué no prueba</th></tr></thead><tbody><tr><td>Etiqueta del desinfectante</td><td>Producto exacto, reclamo objetivo y procedimiento permitido</td><td>Compatibilidad con todos los acabados de áreas de juego</td></tr><tr><td>Guía de cuidado del equipo</td><td>Superficie exacta y condiciones aprobadas de producto/uso</td><td>Efectividad contra un patógeno</td></tr><tr><td>Aclaración del proveedor</td><td>Alcance escrito y conflictos no resueltos</td><td>Una recomendación universal para todos los materiales</td></tr><tr><td>Registro de observación</td><td>Cambios después de una prueba autorizada</td><td>Eficacia microbiana o durabilidad a largo plazo</td></tr></tbody></table><p>No seleccione productos químicos únicamente porque sean de pH neutro o pertenezcan a una familia química familiar. Aquí no se hace una aprobación general de productos de amonio cuaternario ni un rechazo general del blanqueador; la etiqueta exacta y las instrucciones de la superficie gobiernan la revisión.</p>"
+      },
+      {
+        "id": "surfaces",
+        "title": "Registrar la superficie real, no una clasificación de madera versus plástico",
+        "html": "<p>Identifique si la superficie expuesta es madera recubierta, un plástico particular, vinilo, tela, una costura u otro acabado. La construcción, recubrimientos, condición y uso permitido importan. Un nombre de categoría no establece rendimiento de higiene, y ni la madera ni el plástico se declaran ganadores universales.</p><ul><li>Empareje cada superficie y acabado con su documentación de cuidado.</li><li>Note recubrimientos dañados, cubiertas rasgadas y juntas inaccesibles.</li><li>Pregunte qué componentes deben permanecer secos y qué procedimientos están permitidos.</li><li>No asuma que un químico adecuado para un panel expuesto es adecuado para la espuma o costura debajo de él.</li></ul>"
+      },
+      {
+        "id": "trial",
+        "title": "Definir una prueba de observación aprobada por el proveedor y sus límites",
+        "html": "<p>Si el proveedor autoriza una muestra o prueba en un área discreta, acuerde por escrito el producto, método, condiciones y observaciones. Registre cambios como decoloración, pegajosidad, daño superficial o preocupaciones en las costuras, y deténgase si no se cumplen los criterios acordados. Una prueba informal no debe sustituir una evaluación específica del producto apropiada.</p><p>La ausencia de cambios visibles no demuestra la eficacia de la desinfección, la seguridad frente a la exposición química ni la durabilidad a largo plazo. No exponga deliberadamente equipos instalados para uso infantil a productos no aprobados para descubrir una concentración segura.</p>"
+      },
+      {
+        "id": "use",
+        "title": "Seguir las instrucciones elegidas en lugar de una receta universal de limpieza",
+        "html": "<p>Capacite al personal adulto asignado para seguir la etiqueta seleccionada y el procedimiento de cuidado compatible, incluyendo preparación, equipo de protección, almacenamiento y cualquier limpieza previa. Cuando la etiqueta requiera contacto húmedo, mantenga la superficie tratada visiblemente húmeda durante todo el tiempo de contacto especificado, utilizando solo el procedimiento de aplicación etiquetado. Si esto no se puede lograr sin violar las instrucciones de cuidado del equipo, deténgase y seleccione otro procedimiento compatible y conforme a la etiqueta. El enjuague, secado al aire o limpieza se determinan según las instrucciones aplicables, no una instrucción universal de limpiar inmediatamente.</p><p>Nunca mezcle productos químicos de limpieza. No asuma que un método de aplicación de niebla fina, nebulización u otro está permitido. <a href=\"https://www.epa.gov/coronavirus-and-disinfectants/are-disinfectants-harmful-children-can-children-apply-disinfectants\" target=\"_blank\" rel=\"noopener noreferrer\">La guía de la EPA para niños</a> indica que los niños no deben aplicar desinfectantes; los productos químicos de limpieza no deben convertirse en tareas de autoservicio para invitados.</p>"
+      },
+      {
+        "id": "damage",
+        "title": "Mantener el daño no resuelto fuera de servicio y preservar el registro",
+        "html": "<p>Registre la identidad del equipo, producto, procedimiento, fecha, miembro del personal y cambios observados. Restrinja el equipo afectado y escale el daño a través del proceso de reparación del operador; el personal de limpieza no debe hacer reparaciones estructurales o de material no autorizadas. Haga que la persona responsable designada confirme las condiciones para volver a usar.</p><p>El tema de materiales vinculado concierne a las especificaciones de adquisición. Este artículo agrega el registro de evidencia operativa; no promete un ahorro fijo, una vida útil más larga o protección contra cada disputa de garantía. Pida a NinescapeLand la información de cuidado aplicable al equipo especificado.</p>"
+      }
+    ],
+    "faq": [
+      {
+        "q": "¿Una prueba en un área pequeña prueba desinfección?",
+        "a": "No. Una observación de apariencia no establece eficacia microbiana; el reclamo exacto del producto y las condiciones de la etiqueta requieren verificación por separado."
+      },
+      {
+        "q": "¿El pH neutro prueba compatibilidad de materiales?",
+        "a": "No. La formulación del producto, identidad del material y uso permitido deben verificarse contra las instrucciones de cuidado del equipo."
+      },
+      {
+        "q": "¿Deben secarse inmediatamente todas las superficies tratadas?",
+        "a": "No aplica una instrucción universal. Siga las instrucciones del producto y del equipo compatible para tiempo de contacto, enjuague y secado."
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.epa.gov/pesticide-registration/selected-epa-registered-disinfectants",
+        "label": "EPA de EE. UU.: reclamos de desinfectantes y direcciones de etiqueta"
+      },
+      {
+        "url": "https://www.epa.gov/coronavirus-and-disinfectants/are-disinfectants-harmful-children-can-children-apply-disinfectants",
+        "label": "EPA de EE. UU.: los niños no deben aplicar desinfectantes"
+      }
+    ],
+    "figures": [
+      {
+        "src": "https://gianldlquknsdhfpqqfe.supabase.co/storage/v1/object/public/assets/root/1768967512755-1708914619333.jpg",
+        "alt": "Render en perspectiva de un concepto de equipo de juego comercial",
+        "caption": "Ilustración conceptual en 3D del sitio, no un lugar operativo ni evidencia de medición de aire, rendimiento acústico, compatibilidad de limpieza o cumplimiento."
+      },
+      {
+        "src": "https://gianldlquknsdhfpqqfe.supabase.co/storage/v1/object/public/assets/adaf5265-c979-48b7-b4c1-808e1e4b87b8/1768294592888-x69bgi.jpg",
+        "alt": "Render en perspectiva de un concepto de equipo de juego comercial",
+        "caption": "Ilustración conceptual en 3D del sitio, no un lugar operativo ni evidencia de medición de aire, rendimiento acústico, compatibilidad de limpieza o cumplimiento."
+      }
+    ],
+    "relatedLabels": [
+      "Especificaciones de Espuma y Material para Áreas de Juego Suave"
+    ],
+    "ui": {
+      "relatedTitle": "Guías de planificación relacionadas",
+      "authorBio": "Gerry · NinescapeLand. Orientación general de planificación; las instrucciones del equipo y la revisión local calificada tienen prioridad.",
+      "faqTitle": "Preguntas frecuentes",
+      "sourcesTitle": "Fuentes y alcance",
+      "sourceNote": "La orientación pública verificada el 18 de noviembre de 2026. Las fuentes solo respaldan su alcance declarado, no la certificación del producto o la aprobación local. Cumpla con los requisitos legales aplicables y las instrucciones de la etiqueta del producto junto con las instrucciones del equipo; busque una revisión calificada cuando los requisitos entren en conflicto.",
+      "contactLabel": "Discuta su proyecto con NinescapeLand",
+      "imageNote": "Render conceptual en 3D del sitio; no es un proyecto completado, registro de inspección o certificación."
+    }
+  },
+  {
+    "slug": "indoor-playground-quiet-hours",
+    "title": "Horarios Silenciosos en Parques Infantiles Cubiertos: Una Auditoría Sensorial In Situ",
+    "seo_title": "Horarios de juego tranquilos | NinescapeLand",
+    "seo_description": "Audita luz, sonido, olores, colas y opciones de retiro. Describe ajustes reales en sesiones silenciosas y condiciones remanentes sin promesas universales.",
+    "excerpt": "Audita luz, sonido, olores, colas y opciones de retiro. Describe ajustes reales en sesiones silenciosas y condiciones remanentes sin promesas universales.",
+    "keywords": [
+      "guides",
+      "horarios silenciosos en parques infantiles cubiertos",
+      "horarios sensorialmente amigables",
+      "auditoría sensorial en parques infantiles"
+    ],
+    "author": "Gerry",
+    "cover": "https://gianldlquknsdhfpqqfe.supabase.co/storage/v1/object/public/assets/adaf5265-c979-48b7-b4c1-808e1e4b87b8/1768294592888-x69bgi.jpg",
+    "parents": [
+      "sensory-inclusive-play-equipment"
+    ],
+    "sections": [
+      {
+        "id": "definition",
+        "title": "Describe la oferta real de horarios silenciosos",
+        "html": "<p>Los horarios silenciosos en parques infantiles cubiertos son sesiones definidas por el operador con cambios establecidos respecto al entorno habitual. La etiqueta por sí sola no garantiza que todos los visitantes lo encuentren cómodo. Publica qué luces, sonidos, actividades y disposiciones de llegada cambian, y qué permanece igual.</p><p><a href=\"https://www.autism.org.uk/learn/knowledge-hub/guides-and-resources/accessible-environments\" target=\"_blank\" rel=\"noopener noreferrer\">La guía de la Sociedad Nacional de Autismo sobre entornos accesibles</a> describe diferencias en la experiencia sensorial relacionadas con sonido, luz, olores y espacios concurridos. Recomienda preguntar sobre necesidades individuales y ajustar entornos, no establecer un objetivo universal de decibelios ni afirmar que el equipo trata el autismo.</p>"
+      },
+      {
+        "id": "preferences",
+        "title": "Consulta preferencias sin exigir participación",
+        "html": "<p>Invita a las familias a explicar preferencias relevantes mediante un proceso de contacto accesible y respetuoso con la privacidad. Ofrece información factual sobre la sesión para que puedan decidir si asistir. Planifica una forma de pausar o abandonar una actividad sin presión para continuar.</p><p>No exijas un diagnóstico para recopilar comentarios útiles sobre el entorno ni asumas que todos los visitantes autistas prefieren luz tenue, colores apagados o actividades táctiles. Algunas personas pueden preferir configuraciones diferentes. El personal debe saber dónde está disponible la ayuda y cómo apoyar el retiro voluntario bajo los procedimientos aprobados del lugar.</p>"
+      },
+      {
+        "id": "route",
+        "title": "Recorre toda la visita, no solo la zona de juego",
+        "html": "<p>Revisa la llegada, recepción, colas, áreas de juego, baños, opciones más silenciosas y salida bajo las condiciones propuestas para la sesión. Usa observaciones y comentarios de usuarios para identificar cambios; obtén mediciones calificadas donde sea necesario, sin tratar una lectura como prueba de comodidad para todos.</p><table><thead><tr><th>Área</th><th>Condiciones a registrar</th><th>Seguimiento</th></tr></thead><tbody><tr><td>Llegada y recepción</td><td>Colas, anuncios y cambios inesperados</td><td>Publica información de llegada y contacto de apoyo</td></tr><tr><td>Zonas de juego</td><td>Sonido del equipo, reflejos y características intermitentes</td><td>Identifica configuraciones autorizadas y estímulos remanentes</td></tr><tr><td>Opción más silenciosa</td><td>Acceso, visibilidad y retiro voluntario</td><td>Confirma ruta y apoyo del personal</td></tr><tr><td>Salida</td><td>Aglo-meración y rutas accesibles</td><td>Explica opciones de salida y asistencia disponibles</td></tr></tbody></table><p>Incluye olores de limpieza, aglomeración, reverberación e incertidumbre sobre transiciones. Apagar la música de fondo no audita todo el entorno.</p>"
+      },
+      {
+        "id": "settings",
+        "title": "Cambia solo configuraciones autorizadas y preserva sistemas de seguridad",
+        "html": "<p>Confirma qué ajustes de equipo o iluminación permiten el operador responsable y las instrucciones del equipo. No desconectes dispositivos indiscriminadamente, ocultes información contra incendios, desactives alarmas o elimines luces de seguridad requeridas. Materiales acústicos temporales o equipos alterados necesitan revisión apropiada para acceso, mantenimiento y riesgos relevantes.</p><p>Un diseño en perspectiva puede ayudar a discutir ubicación pero no establece absorción sonora, reducción de ruido o un resultado sensorial exitoso. La densidad de espuma no es evidencia de rendimiento acústico, y un refugio cerrado no debe obstruir observación, rutas accesibles o acceso de emergencia.</p>"
+      },
+      {
+        "id": "trial",
+        "title": "Realiza una prueba limitada y actualiza la descripción pública",
+        "html": "<p>Registra las configuraciones usadas realmente, fuentes de ruido remanentes, colas, disposiciones de personal, interrupciones y comentarios. Asigna un responsable a cada ajuste propuesto. Si las condiciones difieren de la oferta publicitada, comunícalo pronto en lugar de mantener una promesa genérica de ser sensorialmente amigable.</p><p>Revisa participación y uso de recursos con registros reales del lugar si evalúas el caso de negocio. Esta guía no garantiza asistencia, retorno de inversión o implementación sin costo. Los comentarios individuales y la operación segura siguen siendo necesarios incluso cuando una sesión tiene éxito comercial.</p>"
+      },
+      {
+        "id": "review",
+        "title": "Conecta la auditoría con la discusión del equipo",
+        "html": "<p>Mantén la auditoría con el plan de sesión del operador y revísala después de cambios en equipo, configuración o necesidades de usuarios. <a href=\"https://www.access-board.gov/ada/guides/chapter-10-play-areas/\" target=\"_blank\" rel=\"noopener noreferrer\">La guía de áreas de juego de la Junta de Acceso de EE.UU.</a> aborda accesibilidad en su alcance estadounidense; una etiqueta de horario silencioso no es evidencia de que un lugar cumpla todos los requisitos de acceso aplicables.</p><p>El tema vinculado sobre equipos sensorialmente inclusivos cubre opciones de adquisición. Usa esta auditoría operativa para llevar observaciones específicas a NinescapeLand, mientras revisores calificados abordan requisitos acústicos, de accesibilidad y del sitio por separado.</p>"
+      }
+    ],
+    "faq": [
+      {
+        "q": "¿Es suficiente apagar la música para los horarios silenciosos?",
+        "a": "No necesariamente. Revisa sonidos del equipo, luz, olores, colas, información de llegada y opciones de retiro bajo condiciones reales de sesión."
+      },
+      {
+        "q": "¿Son los horarios silenciosos adecuados para todos los niños?",
+        "a": "No se justifica una afirmación universal de idoneidad. Describe condiciones reales y discute preferencias individuales para que las familias decidan."
+      },
+      {
+        "q": "¿Puede un render 3D probar un entorno más silencioso?",
+        "a": "No. Es una ilustración de coordinación, no una prueba acústica ni garantía de resultado sensorial."
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.autism.org.uk/learn/knowledge-hub/guides-and-resources/accessible-environments",
+        "label": "Sociedad Nacional de Autismo: diferencias sensoriales y ajustes ambientales"
+      },
+      {
+        "url": "https://www.access-board.gov/ada/guides/chapter-10-play-areas/",
+        "label": "Junta de Acceso de EE.UU.: alcance de accesibilidad en áreas de juego"
+      }
+    ],
+    "figures": [
+      {
+        "src": "https://gianldlquknsdhfpqqfe.supabase.co/storage/v1/object/public/assets/adaf5265-c979-48b7-b4c1-808e1e4b87b8/1768294592888-x69bgi.jpg",
+        "alt": "Render en perspectiva de un concepto de equipo de juego comercial",
+        "caption": "Ilustración conceptual 3D del sitio, no un lugar operativo ni evidencia de medición de aire, rendimiento acústico, compatibilidad de limpieza o cumplimiento."
+      },
+      {
+        "src": "https://gianldlquknsdhfpqqfe.supabase.co/storage/v1/object/public/assets/dcbc5ed3-1863-4db6-bacf-59919b3abec6/1768294400190-bx9gha.jpg",
+        "alt": "Render en perspectiva de un concepto de equipo de juego comercial",
+        "caption": "Ilustración conceptual 3D del sitio, no un lugar operativo ni evidencia de medición de aire, rendimiento acústico, compatibilidad de limpieza o cumplimiento."
+      }
+    ],
+    "relatedLabels": [
+      "Equipos de Juego Sensorialmente Inclusivos"
+    ],
+    "ui": {
+      "relatedTitle": "Guías de planificación relacionadas",
+      "authorBio": "Gerry · NinescapeLand. Orientación general de planificación; las instrucciones del equipo y la revisión local calificada tienen prioridad.",
+      "faqTitle": "Preguntas frecuentes",
+      "sourcesTitle": "Fuentes y alcance",
+      "sourceNote": "La orientación pública verificada el 18 de noviembre de 2026. Las fuentes solo respaldan su alcance declarado, no la certificación del producto o la aprobación local. Cumpla con los requisitos legales aplicables y las instrucciones de la etiqueta del producto junto con las instrucciones del equipo; busque una revisión calificada cuando los requisitos entren en conflicto.",
+      "contactLabel": "Discute tu proyecto con NinescapeLand",
+      "imageNote": "Render conceptual 3D del sitio; no es un proyecto completado, inspección o registro de certificación."
+    }
+  },
+  {
+    "slug": "playground-supervision-checklist",
+    "title": "Lista de verificación de supervisión en áreas de juego: Líneas de visión y cobertura de turnos",
+    "seo_title": "Lista de supervisión del parque | NinescapeLand",
+    "seo_description": "Recorra las líneas de visión en condiciones reales, asigne roles de observación y respuesta, y confirme la cobertura de turnos sin asumir que menos personal.",
+    "excerpt": "Recorra las líneas de visión en condiciones reales, asigne roles de observación y respuesta, y confirme la cobertura de turnos sin asumir que menos personal.",
+    "keywords": [
+      "guides",
+      "lista de verificación de supervisión en áreas de juego",
+      "supervisión en áreas de juego interiores",
+      "líneas de visión en áreas de juego interiores"
+    ],
+    "author": "Gerry",
+    "cover": "https://gianldlquknsdhfpqqfe.supabase.co/storage/v1/object/public/assets/dcbc5ed3-1863-4db6-bacf-59919b3abec6/1768294400190-bx9gha.jpg",
+    "parents": [
+      "daycare-indoor-playground-equipment"
+    ],
+    "sections": [
+      {
+        "id": "definition",
+        "title": "Comience con el equipo instalado y sus usuarios",
+        "html": "<p>Una lista de verificación de supervisión en áreas de juego registra cómo el personal observa la actividad, asiste a quien lo necesita y mantiene la cobertura durante los cambios. No certifica equipos, garantiza la prevención de accidentes ni establece una proporción universal de personal.</p><p>Recopile las instrucciones del equipo instalado, los usuarios permitidos, los límites operativos, los espacios requeridos y los procedimientos del operador. Un área para niños pequeños, un circuito de obstáculos y una actividad de trampolín requieren su propia revisión; una lista genérica no es un manual operativo para los tres. La supervisión no puede hacer que un equipo inadecuado sea apropiado para un usuario.</p>"
+      },
+      {
+        "id": "walk",
+        "title": "Verifique las líneas de visión en condiciones operativas reales",
+        "html": "<p>Recorra las instalaciones desde las posiciones propuestas del personal, considerando usuarios, filas, elementos móviles y obstrucciones normales. Registre qué actividades no se pueden observar y dónde un miembro del personal no puede llegar rápidamente al área relevante. Use observaciones reales del sitio para probar el diseño en lugar de aceptar un dibujo como evidencia completa.</p><p><a href=\"https://headstart.gov/safety-practices/article/active-supervision\" target=\"_blank\" rel=\"noopener noreferrer\">La guía de supervisión activa de Head Start</a> describe posicionamiento, escaneo, escucha y anticipación de comportamiento en su contexto de programas para la primera infancia. Estos son recordatorios útiles, no una regulación universal para áreas de juego comerciales ni una autorización automática para reducir el personal.</p>"
+      },
+      {
+        "id": "log",
+        "title": "Haga explícita la cobertura de observación y respuesta",
+        "html": "<p>Para cada zona, registre la actividad observada, el rol asignado, las limitaciones de visibilidad, la ruta de asistencia y el contacto de escalamiento. Discuta responsabilidades superpuestas y tareas conflictivas con el líder de turno. Poder ver un área no significa que un empleado pueda supervisar simultáneamente cada actividad dentro de ella.</p><table><thead><tr><th>Registro de zona</th><th>Observación requerida</th><th>Acción si no se resuelve</th></tr></thead><tbody><tr><td>Equipo y usuarios</td><td>Instrucciones y participación permitida</td><td>Aclarar restricción antes del acceso</td></tr><tr><td>Posición del personal</td><td>Actividades visibles y áreas ciegas</td><td>Reasignar cobertura o restringir acceso</td></tr><tr><td>Ruta de asistencia</td><td>Cómo el personal llega a quien necesita ayuda</td><td>Resolver ruta bloqueada o cerrar área</td></tr><tr><td>Otras tareas</td><td>Conflictos con recepción, limpieza o descansos</td><td>Proveer cobertura de reemplazo confirmada</td></tr></tbody></table><p>No convierta una mejor vista en un argumento para ahorrar personal. Determine el personal según las instrucciones aplicables, los requisitos locales y las tareas evaluadas por el operador.</p>"
+      },
+      {
+        "id": "shift",
+        "title": "Confirme la cobertura antes de un relevo o descanso",
+        "html": "<p>Acuerde quién transfiere la responsabilidad, quién la acepta y cómo ambos confirman el estado actual de la zona. Comparta equipos cerrados, actividad inusual, necesidades de asistencia e incidentes no resueltos mediante el proceso aprobado que respeta la privacidad. El personal no debe dejar una zona asumiendo que la siguiente persona ha llegado.</p><ul><li>Confirme que la persona entrante comprende los límites del equipo.</li><li>Registre cierres activos y la autoridad para reabrir.</li><li>Verifique si filas o actividades cambiaron las condiciones de visibilidad.</li><li>Escale una brecha de cobertura antes de admitir más usuarios si la operación no puede continuar según lo aprobado.</li></ul><p>No se prescribe una rotación universal de treinta minutos ni una regla de movimiento continuo. El movimiento y la posición deben apoyar las tareas reales de observación y respuesta.</p>"
+      },
+      {
+        "id": "exceptions",
+        "title": "Use una respuesta definida para cierres e incidentes",
+        "html": "<p>Registre daños, rutas bloqueadas, problemas de visibilidad, cobertura insuficiente e incidentes usando el proceso de reporte del operador. Mantenga el equipo afectado no disponible hasta la revisión requerida; no haga ajustes no autorizados a anclajes, barreras o acolchados. Use el procedimiento de emergencia aprobado del sitio cuando sea necesario.</p><p>Las preocupaciones de salud y las tareas de limpieza pertenecen a sus procedimientos aprobados, no a diagnósticos improvisados o reglas de desinfección por hora. Mantenga las responsabilidades de recepción, limpieza y supervisión activa distintas para que una tarea no deje silenciosamente otra sin cobertura.</p>"
+      },
+      {
+        "id": "recheck",
+        "title": "Revise cambios antes de confiar en la lista de verificación",
+        "html": "<p>Vuelva a verificar las rutas de observación y asistencia después de cambios en el equipo, decoraciones temporales, actividades alteradas o cambios de personal. Mantenga el registro de observación fechado y las acciones asignadas, y verifique que la solución propuesta sea efectiva en condiciones reales de uso.</p><p>El tema vinculado de equipos para guarderías aborda insumos de sala y adquisiciones. Lleve el diseño medido y las líneas de visión no resueltas a NinescapeLand para discusión; una vista 3D puede explicar una opción pero no elimina todos los puntos ciegos ni justifica menos personal, costos de seguro o exposición legal.</p>"
+      }
+    ],
+    "faq": [
+      {
+        "q": "¿Las mejores líneas de visión justifican menos personal?",
+        "a": "No por sí solas. La supervisión requerida depende de las instrucciones del equipo, los requisitos locales y las tareas evaluadas de observación y respuesta."
+      },
+      {
+        "q": "¿Puede un render reemplazar un recorrido del sitio?",
+        "a": "No. Verifique líneas de visión, obstrucciones, filas y rutas de asistencia en condiciones operativas reales."
+      },
+      {
+        "q": "¿Puede la supervisión hacer que un equipo inadecuado sea seguro?",
+        "a": "No. Siga los usos y restricciones permitidos del equipo; la supervisión no elimina una incompatibilidad."
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://headstart.gov/safety-practices/article/active-supervision",
+        "label": "Head Start: supervisión activa en contexto de programas para la primera infancia"
+      }
+    ],
+    "figures": [
+      {
+        "src": "https://gianldlquknsdhfpqqfe.supabase.co/storage/v1/object/public/assets/dcbc5ed3-1863-4db6-bacf-59919b3abec6/1768294400190-bx9gha.jpg",
+        "alt": "Render en perspectiva de un concepto de equipo de juego comercial",
+        "caption": "Ilustración conceptual 3D del sitio, no un lugar operativo ni evidencia de rendimiento medido de aire, acústica, compatibilidad de limpieza o cumplimiento."
+      },
+      {
+        "src": "https://gianldlquknsdhfpqqfe.supabase.co/storage/v1/object/public/assets/adaf5265-c979-48b7-b4c1-808e1e4b87b8/1768294592888-x69bgi.jpg",
+        "alt": "Render en perspectiva de un concepto de equipo de juego comercial",
+        "caption": "Ilustración conceptual 3D del sitio, no un lugar operativo ni evidencia de rendimiento medido de aire, acústica, compatibilidad de limpieza o cumplimiento."
+      }
+    ],
+    "relatedLabels": [
+      "Equipo de área de juego interior para guarderías"
+    ],
+    "ui": {
+      "relatedTitle": "Guías de planificación relacionadas",
+      "authorBio": "Gerry · NinescapeLand. Orientación general de planificación; las instrucciones del equipo y la revisión local calificada tienen prioridad.",
+      "faqTitle": "Preguntas frecuentes",
+      "sourcesTitle": "Fuentes y alcance",
+      "sourceNote": "La orientación pública verificada el 18 de noviembre de 2026. Las fuentes solo respaldan su alcance declarado, no la certificación del producto o la aprobación local. Cumpla con los requisitos legales aplicables y las instrucciones de la etiqueta del producto junto con las instrucciones del equipo; busque una revisión calificada cuando los requisitos entren en conflicto.",
+      "contactLabel": "Discuta su proyecto con NinescapeLand",
+      "imageNote": "Render conceptual 3D del sitio; no es un proyecto terminado, inspección o registro de certificación."
+    }
+  },
+  {
+    "slug": "church-playground-volunteer-training",
+    "title": "Capacitación para Voluntarios de Patio de Juegos de la Iglesia: Registro de Entrega de Equipos",
+    "seo_title": "Formación de voluntarios de iglesia | NinescapeLand",
+    "seo_description": "Capacita a voluntarios sobre límites de equipos, recogida autorizada y traspaso de turnos. Separa responsabilidades de protección, ocupación de salas y uso.",
+    "excerpt": "Capacita a voluntarios sobre límites de equipos, recogida autorizada y traspaso de turnos. Separa responsabilidades de protección, ocupación de salas y uso.",
+    "keywords": [
+      "guides",
+      "capacitación para voluntarios de patio de juegos de iglesia",
+      "capacitación para voluntarios de guardería de iglesia",
+      "procedimientos de registro para ministerio infantil"
+    ],
+    "author": "Gerry",
+    "cover": "https://gianldlquknsdhfpqqfe.supabase.co/storage/v1/object/public/assets/adaf5265-c979-48b7-b4c1-808e1e4b87b8/1768294592888-x69bgi.jpg",
+    "parents": [
+      "church-indoor-playground-equipment"
+    ],
+    "sections": [
+      {
+        "id": "roles",
+        "title": "Separa la política de protección de las instrucciones de equipos",
+        "html": "<p>La capacitación para voluntarios de patio de juegos de la iglesia debe combinar las políticas aprobadas de protección y emergencia con las instrucciones de operación de los equipos instalados. Ni un dibujo del proveedor ni la documentación del equipo reemplazan las responsabilidades locales de protección infantil.</p><p>Nombra al líder del ministerio que confirma la elegibilidad de los voluntarios y a la persona responsable de la operación del equipo. Determina los requisitos de verificación, capacitación y reporte según las normas locales y la política de la iglesia; este artículo no prescribe un proceso universal de verificación de antecedentes ni una proporción de personal.</p>"
+      },
+      {
+        "id": "training",
+        "title": "Realiza un recorrido práctico antes de asignar una zona",
+        "html": "<p>Muestra a los voluntarios el equipo real, los usuarios permitidos, los límites de operación, los espacios requeridos y los componentes no disponibles. Pide a cada voluntario que demuestre los pasos relevantes de observación, asistencia y escalamiento según el procedimiento aprobado. Revisa los cambios antes de asignar a alguien a un equipo para el que no ha sido capacitado.</p><p>Una ilustración en 3D puede ayudar a explicar un arreglo propuesto; no prueba que cada tobogán o área oculta sea visible desde la posición asignada. Confirma la línea de visión y la ruta de asistencia en el sitio. No asumas que un voluntario en el área de niños pequeños y otro en la entrada son suficientes para cada iglesia.</p>"
+      },
+      {
+        "id": "entry",
+        "title": "Mantén separados los registros de autorización de recogida y capacidad",
+        "html": "<p>Aplica el proceso aprobado por la iglesia para identificar adultos autorizados y manejar excepciones. Una etiqueta impresa o digital coincidente es una ayuda dentro de ese proceso, no una prueba de autoridad por sí sola. Los voluntarios deben saber quién decide en caso de disputa de recogida y cómo obtener ayuda sin exponer información privada del niño.</p><table><thead><tr><th>Registro</th><th>Decisión responsable</th><th>Confusión común a evitar</th></tr></thead><tbody><tr><td>Autorización de recogida</td><td>Líder de protección de la iglesia y procedimiento aprobado</td><td>Una etiqueta sola establece permiso</td></tr><tr><td>Ocupación de la sala</td><td>Revisor responsable de edificio/incendios y operador</td><td>La capacidad del equipo equivale a la ocupación de la sala</td></tr><tr><td>Usuarios del equipo</td><td>Instrucciones del equipo y operador capacitado</td><td>Un conteo de personas cubre cada límite de actividad</td></tr><tr><td>Entradas y salidas</td><td>Arreglos de acceso y emergencia aprobados</td><td>Una puerta cerrada garantiza seguridad</td></tr></tbody></table><p>Cuenta entradas y salidas según lo requiera la operación aprobada, verificando los límites específicos de cada actividad por separado. No dirijas a todos por una sola barrera si esto conflictúa con las rutas de emergencia o accesibles requeridas.</p>"
+      },
+      {
+        "id": "handoff",
+        "title": "Exige aceptación del estado actual del equipo",
+        "html": "<p>Antes de cambiar turnos, identifica al voluntario saliente y entrante, las zonas transferidas y las restricciones actuales. Registra componentes dañados o cerrados, incidentes no resueltos, arreglos de asistencia y el contacto para escalamiento. Transfiere información privada solo mediante el proceso de protección aprobado.</p><ul><li>Confirma que la persona entrante conoce la actividad y usuarios permitidos.</li><li>Identifica daños no resueltos y quién puede autorizar la reapertura.</li><li>Confirma cobertura mientras otro voluntario maneja recepción o un descanso.</li><li>Explica qué equipo o actividad cambió desde el último turno.</li></ul><p>El traspaso debe ser reconocido; no se completa solo porque una lista de verificación esté cerca de la entrada.</p>"
+      },
+      {
+        "id": "care",
+        "title": "Asigna limpieza y reporte de daños a adultos capacitados",
+        "html": "<p>Muestra a los voluntarios cómo reconocer daños visibles y reportarlos al operador responsable. Mantén el equipo afectado no disponible hasta la revisión especificada; los voluntarios no deben improvisar reparaciones. Nombra a la persona responsable de verificar la finalización antes de reanudar el acceso.</p><p>La limpieza y cualquier desinfección requerida deben seguir las instrucciones compatibles del equipo y la etiqueta del producto elegido. <a href=\"https://www.epa.gov/coronavirus-and-disinfectants/are-disinfectants-harmful-children-can-children-apply-disinfectants\" target=\"_blank\" rel=\"noopener noreferrer\">La guía de la EPA de EE. UU.</a> indica que los niños no deben aplicar desinfectantes. Asigna tareas químicas solo a adultos debidamente capacitados bajo el procedimiento aprobado; no describas todos los productos como no tóxicos ni impongas un tratamiento universal entre sesiones sin evaluar los requisitos reales.</p>"
+      },
+      {
+        "id": "review",
+        "title": "Actualiza el registro de capacitación cuando cambie la sala o el programa",
+        "html": "<p>Registra la fecha, configuración del equipo, capacitador, temas cubiertos y preguntas no resueltas. Revisa los procedimientos cuando cambien los equipos, deberes de voluntarios, uso de la sala o el programa. Un servicio de cuidado infantil en días laborales puede tener requisitos de licencia diferentes a una actividad ministerial dominical; obtén revisión local en lugar de asumir que el reporte del equipo cubre ambos.</p><p>El tema vinculado de equipos de iglesia cubre decisiones de salas compartidas y adquisiciones. Trae las preguntas sobre espacio medido y equipos a NinescapeLand para discusión; la iglesia retiene sus responsabilidades de protección y operación. No se ofrece garantía de cumplimiento total o prevención de accidentes.</p>"
+      }
+    ],
+    "faq": [
+      {
+        "q": "¿Una etiqueta de recogida coincidente prueba autorización?",
+        "a": "No por sí sola. Usa el procedimiento aprobado de identidad y autorización de la iglesia, incluyendo escalamiento para excepciones."
+      },
+      {
+        "q": "¿La capacidad del equipo es igual a la ocupación de la sala?",
+        "a": "No. Los límites de operación del equipo y la ocupación del edificio o incendios necesitan confirmación separada por sus partes responsables."
+      },
+      {
+        "q": "¿Qué debe transmitirse en el cambio de turno?",
+        "a": "Transfiere responsabilidad de zona, restricciones de equipo, cierres, problemas no resueltos y contactos de escalamiento, y confirma que el voluntario entrante acepta la cobertura."
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.epa.gov/coronavirus-and-disinfectants/are-disinfectants-harmful-children-can-children-apply-disinfectants",
+        "label": "EPA de EE. UU.: los niños no deben aplicar desinfectantes"
+      },
+      {
+        "url": "https://www.access-board.gov/ada/guides/chapter-10-play-areas/",
+        "label": "Junta de Acceso de EE. UU.: los requisitos de accesibilidad necesitan revisión separada"
+      }
+    ],
+    "figures": [
+      {
+        "src": "https://gianldlquknsdhfpqqfe.supabase.co/storage/v1/object/public/assets/adaf5265-c979-48b7-b4c1-808e1e4b87b8/1768294592888-x69bgi.jpg",
+        "alt": "Render en perspectiva de un concepto de equipo de juego comercial",
+        "caption": "Ilustración conceptual en 3D del sitio, no un lugar operativo ni evidencia de rendimiento medido de aire, acústico, compatibilidad de limpieza o cumplimiento."
+      },
+      {
+        "src": "https://gianldlquknsdhfpqqfe.supabase.co/storage/v1/object/public/assets/dcbc5ed3-1863-4db6-bacf-59919b3abec6/1768294400190-bx9gha.jpg",
+        "alt": "Render en perspectiva de un concepto de equipo de juego comercial",
+        "caption": "Ilustración conceptual en 3D del sitio, no un lugar operativo ni evidencia de rendimiento medido de aire, acústico, compatibilidad de limpieza o cumplimiento."
+      }
+    ],
+    "relatedLabels": [
+      "Equipo de Patio de Juegos Interior para Iglesias"
+    ],
+    "ui": {
+      "relatedTitle": "Guías de planificación relacionadas",
+      "authorBio": "Gerry · NinescapeLand. Orientación general de planificación; las instrucciones del equipo y la revisión local calificada tienen prioridad.",
+      "faqTitle": "Preguntas frecuentes",
+      "sourcesTitle": "Fuentes y alcance",
+      "sourceNote": "La orientación pública verificada el 18 de noviembre de 2026. Las fuentes solo respaldan su alcance declarado, no la certificación del producto o la aprobación local. Cumpla con los requisitos legales aplicables y las instrucciones de la etiqueta del producto junto con las instrucciones del equipo; busque una revisión calificada cuando los requisitos entren en conflicto.",
+      "contactLabel": "Discute tu proyecto con NinescapeLand",
+      "imageNote": "Render conceptual en 3D del sitio; no es un proyecto completado, registro de inspección o certificación."
+    }
+  }
+]
