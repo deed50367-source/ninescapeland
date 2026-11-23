@@ -1,5 +1,7 @@
 # Roadmap
 
+- [x] November 23 homepage correction: removed dark mask, white reading fade/dark text and existing colorful equipment render; 1280/1966 desktop and 390 EN/AR screenshots verified, original full hero text/metadata/schema equality and product/contact navigation passed; eight SEO tests passed, no runtime errors. Production deployment not performed.
+
 - [x] November 23 homepage presentation: lighter desktop/mobile hero, homepage-only visible translation entrances with lazy-section registration and reduced-motion support, static partners and no floating mascots; original homepage text/metadata/schema equality, six locales, 25 sections, product hover, FAQ and contact navigation verified; 10 SEO tests/45 assertions passed. Production deployment not performed.
 
 - [x] November 23 SEO/GEO: validate five uploaded reports against current source and formal-domain HTML; correct shared metadata/locale identity, duplicate head entities, homepage HTML budget, exact fallback routing, resized product images and seven priority hub destinations.

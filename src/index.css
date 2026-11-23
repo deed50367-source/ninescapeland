@@ -138,9 +138,8 @@ html, body {
     --hero-surface: 225 18% 13%;
     --hero-foreground: 0 0% 100%;
     --gradient-hero-overlay: linear-gradient(90deg, hsl(var(--hero-surface) / .94) 0%, hsl(var(--hero-surface) / .79) 40%, hsl(var(--hero-surface) / .2) 100%);
-    --home-hero-overlay: linear-gradient(90deg, hsl(var(--hero-surface) / .78) 0%, hsl(var(--hero-surface) / .72) 42%, hsl(var(--hero-surface) / .28) 67%, hsl(var(--hero-surface) / .04) 100%);
-    --home-hero-overlay-mobile: linear-gradient(180deg, hsl(var(--hero-surface) / .68) 0%, hsl(var(--hero-surface) / .6) 65%, hsl(var(--hero-surface) / .28) 100%);
-    --shadow-hero-text: 0 1px 3px hsl(var(--hero-surface) / .6);
+    --home-hero-overlay: linear-gradient(90deg, hsl(var(--background)) 0%, hsl(var(--background) / .98) 38%, hsl(var(--background) / .93) 51%, hsl(var(--background) / .3) 66%, transparent 78%);
+    --home-hero-overlay-mobile: linear-gradient(180deg, transparent 0%, transparent 140px, hsl(var(--background) / .55) 190px, hsl(var(--background)) 240px);
     --motion-interaction: 220ms;
     --motion-entry: 450ms;
     --motion-ease: cubic-bezier(.22, 1, .36, 1);
@@ -780,7 +779,8 @@ html, body {
 .hero-overlay { background: var(--gradient-hero-overlay); }
 .home-hero-overlay { background: var(--home-hero-overlay); }
 [dir="rtl"] .home-hero-overlay { transform: scaleX(-1); }
-.home-hero .container-wide { text-shadow: var(--shadow-hero-text); }
+.home-hero-copy { max-width: 56%; }
+.home-hero-image { object-position: 75% center; }
 .home-hero-entry { animation: home-entry var(--motion-entry) var(--motion-ease) both; }
 .home-hero h1.home-hero-entry { animation-delay: 60ms; }
 .home-hero p.home-hero-entry { animation-delay: 100ms; }
@@ -802,7 +802,11 @@ html, body {
 @media (max-width: 767px) {
   .home-hero-overlay { background: var(--home-hero-overlay-mobile); }
   [dir="rtl"] .home-hero-overlay { transform: none; }
-  .home-hero-image { object-position: 62% center; }
+  .home-hero { padding-top: 200px; }
+  .home-hero > .absolute { height: 260px; }
+  .home-hero-image { object-position: center; }
+  .home-hero-copy { max-width: 100%; }
+  .home-hero .container-wide { padding-top: 24px; }
   .home-hero-entry { animation-duration: 350ms; }
   .home-motion main .animate-marquee { animation: none; overflow-x: auto; }
 }

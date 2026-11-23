@@ -21,7 +21,7 @@ export const HeroSection = () => {
   const ArrowIcon = isRTL ? ArrowLeft : ArrowRight;
 
   return (
-    <section id="home" className="home-hero relative min-h-[720px] flex items-center bg-hero overflow-hidden">
+    <section id="home" className="home-hero relative min-h-[720px] flex items-center bg-background overflow-hidden">
       {/* Animated Background Image */}
       <div className="absolute inset-0">
         {/* Main background with slow zoom animation */}
@@ -30,12 +30,12 @@ export const HeroSection = () => {
 
         >
           <img
-            src={getOptimizedImageUrl("hero.home", { width: 1440, quality: 72 })}
+            src={getOptimizedImageUrl("product.indoorPlayground", { width: 1440, quality: 80 })}
             srcSet={[
-              `${getOptimizedImageUrl("hero.home", { width: 640, quality: 60 })} 640w`,
-              `${getOptimizedImageUrl("hero.home", { width: 960, quality: 68 })} 960w`,
-              `${getOptimizedImageUrl("hero.home", { width: 1280, quality: 70 })} 1280w`,
-              `${getOptimizedImageUrl("hero.home", { width: 1440, quality: 72 })} 1440w`,
+              `${getOptimizedImageUrl("product.indoorPlayground", { width: 640, quality: 75 })} 640w`,
+              `${getOptimizedImageUrl("product.indoorPlayground", { width: 960, quality: 78 })} 960w`,
+              `${getOptimizedImageUrl("product.indoorPlayground", { width: 1280, quality: 80 })} 1280w`,
+              `${getOptimizedImageUrl("product.indoorPlayground", { width: 1440, quality: 80 })} 1440w`,
             ].join(", ")}
             sizes="100vw"
             alt="Custom Commercial Indoor Playground Equipment by NinescapeLand"
@@ -54,12 +54,12 @@ export const HeroSection = () => {
 
       {/* Content */}
       <div className="container-wide relative z-10 py-12 sm:py-16 lg:py-20">
-        <div className="max-w-3xl">
+        <div className="home-hero-copy max-w-3xl">
           <motion.span
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
-            className="home-hero-entry inline-block px-3 py-1.5 sm:px-4 sm:py-2 bg-hero-foreground/10 text-hero-foreground rounded-md text-xs sm:text-sm font-semibold mb-4 sm:mb-6 border border-accent-foreground/20"
+            className="home-hero-entry inline-block text-primary text-xs sm:text-sm font-semibold mb-4 sm:mb-6"
           >
             {t("hero.badge")}
           </motion.span>
@@ -68,17 +68,17 @@ export const HeroSection = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.1 }}
-            className="home-hero-entry text-3xl sm:text-4xl lg:text-5xl font-heading font-bold text-hero-foreground leading-tight mb-4 sm:mb-6"
+            className="home-hero-entry text-3xl sm:text-4xl lg:text-5xl font-heading font-bold text-foreground leading-tight mb-4 sm:mb-6"
           >
             {t("hero.title")}{" "}
-            <span className="block text-accent">{t("hero.titleHighlight")}</span>
+            <span className="block text-primary">{t("hero.titleHighlight")}</span>
           </motion.h1>
 
           <motion.p
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="home-hero-entry text-sm sm:text-base leading-relaxed text-hero-foreground/90 mb-4 sm:mb-6 max-w-2xl"
+            className="home-hero-entry text-sm sm:text-base leading-relaxed text-foreground mb-4 sm:mb-6 max-w-2xl"
           >
             {t("hero.description")}
           </motion.p>
@@ -88,9 +88,9 @@ export const HeroSection = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.25 }}
-            className="text-xs sm:text-sm md:text-base text-hero-foreground/80 mb-6 sm:mb-8 max-w-2xl leading-relaxed"
+            className="text-xs sm:text-sm md:text-base text-muted-foreground mb-6 sm:mb-8 max-w-2xl leading-relaxed"
           >
-            <strong className="text-accent-foreground font-semibold">Custom indoor playground equipment manufacturer</strong> serving 50+ countries since 2008 — <strong className="text-accent-foreground font-semibold">ASTM &amp; TUV certified</strong> commercial-grade play structures, trampoline parks, ninja courses and soft play systems shipped worldwide.
+            <strong className="text-foreground font-semibold">Custom indoor playground equipment manufacturer</strong> serving 50+ countries since 2008 — <strong className="text-foreground font-semibold">ASTM &amp; TUV certified</strong> commercial-grade play structures, trampoline parks, ninja courses and soft play systems shipped worldwide.
           </motion.p>
 
           {/* Benefits */}
@@ -103,7 +103,7 @@ export const HeroSection = () => {
             {benefits.map((benefit, index) => (
               <div
                 key={index}
-                className="flex items-center gap-1.5 sm:gap-2 text-hero-foreground/90"
+                className="flex items-center gap-1.5 sm:gap-2 text-foreground"
               >
                 <CheckCircle className="w-4 h-4 sm:w-5 sm:h-5 text-accent flex-shrink-0" />
                 <span className="text-xs sm:text-sm font-medium">{benefit}</span>
@@ -127,7 +127,7 @@ export const HeroSection = () => {
                 </a>
               </Button>
             </motion.div>
-            <Button variant="heroOutline" size="lg" className="sm:h-12 sm:px-8 sm:text-base lg:h-14 lg:px-10 lg:text-lg" asChild>
+            <Button variant="outline" size="lg" className="sm:h-12 sm:px-8 sm:text-base lg:h-14 lg:px-10 lg:text-lg" asChild>
               <a href="#products">{t("hero.cta.viewProducts")}</a>
             </Button>
           </motion.div>
@@ -137,14 +137,14 @@ export const HeroSection = () => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.8, delay: 0.6 }}
-            className="mt-8 sm:mt-12 pt-6 sm:pt-8 border-t border-hero-foreground/20"
+            className="mt-8 sm:mt-12 pt-6 sm:pt-8 border-t border-border"
           >
-            <p className="text-hero-foreground/60 text-xs sm:text-sm mb-3 sm:mb-4">{t("hero.trustedCertifications")}</p>
+            <p className="text-muted-foreground text-xs sm:text-sm mb-3 sm:mb-4">{t("hero.trustedCertifications")}</p>
             <div className="flex flex-wrap items-center gap-2 sm:gap-4 lg:gap-6">
               {["ISO 9001", "CE", "TUV", "ASTM", "IAAPA Member"].map((cert, index) => (
                 <span
                   key={index}
-                  className="px-2.5 py-1.5 sm:px-4 sm:py-2 bg-hero-foreground/10 rounded-lg text-hero-foreground font-semibold text-xs sm:text-sm"
+                  className="px-2.5 py-1.5 sm:px-4 sm:py-2 bg-muted rounded-md text-foreground font-semibold text-xs sm:text-sm"
                 >
                   {cert}
                 </span>
