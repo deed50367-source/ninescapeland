@@ -9,6 +9,11 @@ const AdsPrivacy = () => {
         <meta name="description" content="How NinescapeLand collects, uses, and protects information submitted through our advertising landing pages and inquiry forms." />
         <meta name="robots" content="noindex, follow" />
         <link rel="canonical" href="https://indoorplaygroundsolution.com/lp/privacy" />
+        <meta property="og:title" content="Privacy Policy — NinescapeLand" />
+        <meta property="og:description" content="How NinescapeLand collects, uses, and protects information submitted through our advertising landing pages and inquiry forms." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://indoorplaygroundsolution.com/lp/privacy" />
+        <meta name="twitter:card" content="summary" />
       </Helmet>
 
       <header className="border-b bg-background">

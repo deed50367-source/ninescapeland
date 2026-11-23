@@ -118,15 +118,21 @@ def media(dist):
         print(f'Staged {pointer.name}: {len(data)} bytes')
 
 def manifest(dist, revision):
-    pages, assets = {}, set()
+    pages, assets, invalid = {}, set(), []
     for file in sorted(dist.rglob('index.html')):
         relative = file.relative_to(dist).parent.as_posix()
         route = '/' if relative == '.' else '/' + relative
         page, linked = evidence(file.read_text())
         problems = local_errors(route, page)
-        if problems: raise ValueError(f'Invalid capture {route}: {problems}')
+        if problems:
+            invalid.append(f'{route}: {problems}')
+            continue
         pages[route] = page
         assets.update(linked)
+    # Report every invalid capture in one run instead of one failed deployment per page.
+    if invalid:
+        for line in invalid: print('Invalid capture', line)
+        raise ValueError(f'{len(invalid)} invalid captures')
     if not pages: raise ValueError('No captured pages')
     for file in (dist / '__l5e').rglob('*') if (dist / '__l5e').exists() else []:
         if file.is_file(): assets.add('/' + file.relative_to(dist).as_posix())

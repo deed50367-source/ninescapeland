@@ -69,6 +69,9 @@ const AdsLandingPage = () => {
         <meta property="og:description" content={config.seoDescription} />
         <meta property="og:type" content="website" />
         <meta property="og:url" content={canonical} />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={config.seoTitle} />
+        <meta name="twitter:description" content={config.seoDescription} />
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",
