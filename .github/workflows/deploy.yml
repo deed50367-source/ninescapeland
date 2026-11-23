@@ -6,6 +6,11 @@ on:
     branches: [main]
   workflow_dispatch: # Allow manual trigger
 
+# Serialize uploads; GitHub keeps only the latest pending release in this group.
+concurrency:
+  group: hostinger-production
+  cancel-in-progress: false
+
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
@@ -32,7 +37,9 @@ jobs:
           chrome-version: stable
 
       - name: Build and Prerender static HTML
-        run: npm run build:static
+        run: |
+          set -o pipefail
+          npm run build:static 2>&1 | tee prerender.log
         env:
           PUPPETEER_EXECUTABLE_PATH: ${{ steps.setup-chrome.outputs.chrome-path }}
           # Backend endpoint is configurable so the self-hosted VPS backend can be
@@ -43,6 +50,10 @@ jobs:
           VITE_SUPABASE_PUBLISHABLE_KEY: ${{ secrets.VITE_SUPABASE_PUBLISHABLE_KEY || 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImdpYW5sZGxxdWtuc2RoZnBxcWZlIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjgxODU5MzgsImV4cCI6MjA4Mzc2MTkzOH0.yEFhGkbyfDFqJNcKsS4QBo1ZSPV8MN9oAHpih3yOhak' }}
           VITE_SUPABASE_PROJECT_ID: ${{ secrets.VITE_SUPABASE_PROJECT_ID || 'gianldlquknsdhfpqqfe' }}
 
+      - name: Stage external media and prepare release acceptance
+        run: |
+          python3 scripts/production_acceptance.py media
+          python3 scripts/production_acceptance.py manifest --revision "$GITHUB_SHA"
 
       - name: Deploy to Hostinger via FTPS (port 21)
         uses: SamKirkland/FTP-Deploy-Action@v4.3.6
@@ -60,3 +71,25 @@ jobs:
           # action skip HTML whose size was unchanged, leaving stale pages online).
           state-name: .ftp-deploy-sync-state-geo.json
           log-level: verbose
+
+      - name: Verify formal-domain release and all captured pages
+        run: python3 scripts/production_acceptance.py verify
+
+      - name: Verify production browser and equipment playback
+        run: node scripts/production_browser.mjs
+        env:
+          PUPPETEER_EXECUTABLE_PATH: ${{ steps.setup-chrome.outputs.chrome-path }}
+
+      - name: Retain generation logs and production acceptance
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: hostinger-acceptance-${{ github.sha }}
+          path: |
+            prerender.log
+            deployment-manifest.json
+            production-acceptance.json
+            production-browser.json
+            production-screenshots/
+          if-no-files-found: warn
+          retention-days: 14

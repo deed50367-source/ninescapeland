@@ -22,6 +22,7 @@ import { Badge } from "@/components/ui/badge";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { EEATSignature } from "@/components/EEATSignature";
+import { SEOHead } from "@/components/SEOHead";
 import invitationLandscape from "@/assets/taape-2026-thailand.jpg";
 import { useLocalizedPath } from "@/hooks/useLocalizedPath";
 const invitationPortrait = invitationLandscape;
@@ -93,12 +94,14 @@ export default function TAAPE2026() {
 
   return (
     <div className="min-h-screen bg-background">
+      <SEOHead
+        pageKey="home"
+        dynamicTitle={t("taape.metaTitle", "TAAPE 2026 Bangkok · Booth H33 | NinescapeLand")}
+        dynamicDescription={t("taape.metaDesc", "Meet NinescapeLand at TAAPE 2026, IMPACT Bangkok, Oct 29-31, Booth H33. Indoor playground, trampoline park & FEC design consultations.")}
+        ogImage={invitationLandscape}
+        serviceSchema={false}
+      />
       <Helmet>
-        <title>{t("taape.metaTitle", "TAAPE 2026 Bangkok · Booth H33 | NinescapeLand")}</title>
-        <meta name="description" content={t("taape.metaDesc", "Meet NinescapeLand at TAAPE 2026, IMPACT Bangkok, Oct 29-31, Booth H33. Indoor playground, trampoline park & FEC design consultations.")} />
-        <meta property="og:title" content={t("taape.metaTitle", "NinescapeLand · TAAPE 2026 Booth H33")} />
-        <meta property="og:description" content={t("taape.metaDesc", "IMPACT Bangkok · October 29-31, 2026 · Booth H33.")} />
-        <meta property="og:image" content={invitationLandscape} />
         <script type="application/ld+json">{JSON.stringify(eventLd)}</script>
       </Helmet>
 

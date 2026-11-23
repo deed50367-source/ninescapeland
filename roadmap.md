@@ -1,5 +1,9 @@
 # Roadmap
 
+- [x] November 23 production repair: impossible title-marker check reproduced in browser and 279 failed GitHub captures/zero saves; readiness repaired without relaxing canonical/locale gates, first failed batch stops generation. Initial 786-route scan passed 774 and found 12 exhibition identity omissions; shared SEOHead repair and 30 normalized recaptures confirm all 786 readiness paths. Five CDN files staged successfully; 11 JS tests/49 assertions and four Python acceptance tests passed.
+- [x] November 23 production pipeline: serialize uploads; generate revision-bound manifest, stage external media in dist, verify all raw captured pages (SEO/H1/body/schema), script/style/media checksums and unknown-URL 404s; add browser checks for six home locales/five topics/five blogs and desktop/mobile video controls, retain logs/reports/screenshots.
+- [ ] November 23 production closure: repair must sync to GitHub before the new workflow can execute; latest run #415 still uses the old script. Production upload and acceptance remain unconfirmed; no live-success claim until revision/HTML/browser reports pass.
+
 - [x] November 23 homepage spacing: full-width hero content container, bounded 736px copy and responsive 24–112px edge spacing; 1966/1440/1280/1024 EN and 390/1966 AR verified without overflow, title/description/H1/canonical/full hero copy unchanged; metadata tests passed. Production deployment not performed.
 
 - [x] November 23 homepage clip: generated an 8.0s bright push-in from the current equipment image, embedded a silent 1.7MB single-play clip with static image underneath; desktop/mobile AR playback, pause/replay/end/offscreen pause and reduced-motion fallback verified, SEO/full hero text unchanged, eight SEO tests passed. Production deployment not performed.

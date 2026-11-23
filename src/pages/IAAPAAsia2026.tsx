@@ -22,6 +22,7 @@ import { Badge } from "@/components/ui/badge";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { EEATSignature } from "@/components/EEATSignature";
+import { SEOHead } from "@/components/SEOHead";
 import invitationLandscape from "@/assets/iaapa-asia-2026-invitation-landscape.jpg";
 import invitationPortrait from "@/assets/iaapa-asia-2026-invitation-portrait.jpg";
 
@@ -91,12 +92,14 @@ export default function IAAPAAsia2026() {
 
   return (
     <div className="min-h-screen bg-background">
+      <SEOHead
+        pageKey="home"
+        dynamicTitle={t("iaapa.metaTitle", "IAAPA Asia 2026 Hong Kong · Booth 2328 | NinescapeLand")}
+        dynamicDescription={t("iaapa.metaDesc", "Visit NinescapeLand at IAAPA Asia 2026 in Hong Kong, Jun 10-12, Booth 2328. Live demos of indoor playgrounds, trampoline parks & gamified attractions.")}
+        ogImage={invitationLandscape}
+        serviceSchema={false}
+      />
       <Helmet>
-        <title>{t("iaapa.metaTitle", "IAAPA Asia 2026 Hong Kong · Booth 2328 | NinescapeLand")}</title>
-        <meta name="description" content={t("iaapa.metaDesc", "Visit NinescapeLand at IAAPA Asia 2026 in Hong Kong, Jun 10-12, Booth 2328. Live demos of indoor playgrounds, trampoline parks & gamified attractions.")} />
-        <meta property="og:title" content={t("iaapa.metaTitle", "NinescapeLand · IAAPA Asia 2026 Booth 2328")} />
-        <meta property="og:description" content={t("iaapa.metaDesc", "Hong Kong Convention Centre · June 10-12, 2026 · Booth 2328.")} />
-        <meta property="og:image" content={invitationLandscape} />
         <script type="application/ld+json">{JSON.stringify(eventLd)}</script>
       </Helmet>
 

@@ -21,6 +21,7 @@ import { readFileSync, writeFileSync, mkdirSync, existsSync } from "fs";
 import { join, extname, dirname } from "path";
 import { fileURLToPath } from "url";
 import { routeHeadReady } from "./lib/prerenderHead.mjs";
+import { browserRouteReady } from "./lib/prerenderReady.mjs";
 import { normalizePrerenderDocument } from "./lib/prerenderDocument.mjs";
 import { cmsPublicRoutes, productionFallbackRules } from "./lib/productionRouting.mjs";
 
@@ -329,7 +330,9 @@ function startServer() {
 }
 
 async function prerenderRoute(browser, route) {
+  const started = Date.now();
   const page = await browser.newPage();
+  page.on('pageerror', error => console.error(`Runtime error on ${route}: ${error.message}`));
 
   // Block unnecessary resources to speed up rendering
   await page.setRequestInterception(true);
@@ -346,27 +349,9 @@ async function prerenderRoute(browser, route) {
 
   try {
     await page.goto(url, {
-      waitUntil: "networkidle0",
+      waitUntil: "domcontentloaded",
       timeout: 30000,
     });
-
-    // Wait for React to finish rendering
-    await page.waitForFunction(
-      () => {
-        const root = document.getElementById("root");
-        if (!root || root.children.length === 0 || root.innerHTML.length < 500) return false;
-        // Ensure the initial loader is gone
-        const loader = document.getElementById("initial-loader");
-        if (loader && loader.style.display !== "none") return false;
-        return true;
-      },
-      { timeout: 15000 }
-    ).catch(() => {
-      // Fallback: just wait a bit more
-    });
-
-    // Extra wait for lazy-loaded content
-    await new Promise((r) => setTimeout(r, 2000));
 
     // ── Wait for react-helmet-async to flush <head> ──
     // Helmet applies its tags through requestAnimationFrame. Chrome throttles rAF in
@@ -375,13 +360,13 @@ async function prerenderRoute(browser, route) {
     // That single bug made the GEO audit report "no BreadcrumbList / no dateModified /
     // no FAQPage / no author" on pages whose code does emit them.
     const expectedCanonical = `https://indoorplaygroundsolution.com${route.replace(/\/$/, "") || "/"}`;
+    const expectedLanguage = route.match(/^\/(ar|de|es|pt|fr)(?:\/|$)/)?.[1] || 'en';
     const helmetReady = () =>
       page.waitForFunction(
-        (expected) => document.querySelector('link[rel="canonical"]')?.getAttribute("href") === expected &&
-          Boolean(document.querySelector('head title[data-rh]')?.textContent?.trim()) &&
-          Boolean(document.querySelector('meta[name="description"][data-rh]')?.getAttribute("content")?.trim()),
+        browserRouteReady,
         { timeout: 12000 },
-        expectedCanonical
+        expectedCanonical,
+        expectedLanguage
       );
     let helmetOk = await helmetReady().then(() => true).catch(() => false);
     if (!helmetOk) {
@@ -391,8 +376,17 @@ async function prerenderRoute(browser, route) {
       helmetOk = await helmetReady().then(() => true).catch(() => false);
     }
     if (!helmetOk) {
+      console.error(`Readiness evidence for ${route}:`, await page.evaluate(() => ({
+        title: document.title,
+        canonical: document.querySelector('link[rel="canonical"]')?.getAttribute('href'),
+        language: document.documentElement.lang,
+        h1: document.querySelector('h1')?.textContent,
+      })));
       throw new Error(`Route-specific head did not flush: ${route}`);
     }
+    // Allow already-visible lazy content and JSON-LD effects to settle; analytics
+    // and chat connections must not control whether a page can be captured.
+    await new Promise(r => setTimeout(r, 2000));
     const head = await page.evaluate(() => ({
       canonical: document.querySelector('link[rel="canonical"]')?.getAttribute("href") || "",
       title: document.title,
@@ -514,7 +508,7 @@ async function prerenderRoute(browser, route) {
     }
 
     writeFileSync(outputPath, html, "utf-8");
-    console.log(`     ✅ Saved → ${outputPath.replace(DIST_DIR, "dist")}`);
+    console.log(`     ✅ Saved → ${outputPath.replace(DIST_DIR, "dist")} (${Date.now() - started}ms)`);
     console.log('');
   } catch (err) {
     FAILED_ROUTES.push(route);
@@ -561,13 +555,20 @@ async function main() {
 
   // Process routes in small batches (smaller = less rAF contention per page)
   const BATCH_SIZE = 3;
-  for (let i = 0; i < routes.length; i += BATCH_SIZE) {
-    const batch = routes.slice(i, i + BATCH_SIZE);
-    await Promise.all(batch.map((route) => prerenderRoute(browser, route)));
+  try {
+    for (let i = 0; i < routes.length; i += BATCH_SIZE) {
+      const batch = routes.slice(i, i + BATCH_SIZE);
+      await Promise.all(batch.map((route) => prerenderRoute(browser, route)));
+      // Do not spend 45 minutes repeating a shared failure over hundreds of pages.
+      if (FAILED_ROUTES.length > 0) {
+        throw new Error(`Prerender failed: ${FAILED_ROUTES.join(', ')}; refusing production upload.`);
+      }
+      console.log(`Progress: ${Math.min(i + BATCH_SIZE, routes.length)}/${routes.length}`);
+    }
+  } finally {
+    await browser.close();
+    server.close();
   }
-
-  await browser.close();
-  server.close();
   if (FAILED_ROUTES.length > 0) {
     throw new Error(`Prerender failed for ${FAILED_ROUTES.length} routes; refusing production upload.`);
   }
