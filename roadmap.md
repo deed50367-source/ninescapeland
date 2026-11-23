@@ -1,5 +1,7 @@
 # Roadmap
 
+- [x] November 23 homepage spacing: full-width hero content container, bounded 736px copy and responsive 24–112px edge spacing; 1966/1440/1280/1024 EN and 390/1966 AR verified without overflow, title/description/H1/canonical/full hero copy unchanged; metadata tests passed. Production deployment not performed.
+
 - [x] November 23 homepage clip: generated an 8.0s bright push-in from the current equipment image, embedded a silent 1.7MB single-play clip with static image underneath; desktop/mobile AR playback, pause/replay/end/offscreen pause and reduced-motion fallback verified, SEO/full hero text unchanged, eight SEO tests passed. Production deployment not performed.
 
 - [x] November 23 homepage correction: removed dark mask, white reading fade/dark text and existing colorful equipment render; 1280/1966 desktop and 390 EN/AR screenshots verified, original full hero text/metadata/schema equality and product/contact navigation passed; eight SEO tests passed, no runtime errors. Production deployment not performed.
