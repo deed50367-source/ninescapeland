@@ -28,17 +28,19 @@ class PageEvidence(HTMLParser):
         self.depth = 0
         self.skip = 0
         self.body = False
+        self.head = False
         self.buffer = []
 
     def handle_starttag(self, tag, attrs):
         a = dict(attrs)
         if tag == 'html': self.language = a.get('lang', '')
+        if tag == 'head': self.head = True
         if tag == 'body': self.body = True
-        if tag == 'meta':
+        if tag == 'meta' and self.head:
             key = a.get('name') or a.get('property')
             if key in ('description', 'og:title', 'og:description', 'og:url', 'og:type', 'twitter:card', 'twitter:title', 'twitter:description', 'robots'):
                 self.tags.setdefault(key, []).append(a.get('content', ''))
-        if tag == 'link':
+        if tag == 'link' and self.head:
             if a.get('rel') == 'canonical': self.tags.setdefault('canonical', []).append(a.get('href', ''))
             if a.get('rel') == 'alternate' and 'hreflang' in a:
                 self.tags.setdefault('alternate:' + a['hreflang'], []).append(a.get('href', ''))
@@ -47,7 +49,7 @@ class PageEvidence(HTMLParser):
             if path.startswith('/assets/') and path.endswith(('.js', '.css')): self.assets.add(path)
             if path.startswith('/__l5e/assets-v1/'): self.assets.add(path)
         if self.active: self.depth += 1
-        elif tag in ('title', 'h1') or (tag == 'script' and a.get('type') == 'application/ld+json'):
+        elif (tag == 'title' and self.head) or tag == 'h1' or (tag == 'script' and a.get('type') == 'application/ld+json'):
             self.active = tag
             self.depth = 1
             self.buffer = []
@@ -64,6 +66,7 @@ class PageEvidence(HTMLParser):
                 else: self.schemas.append(json.loads(value))
                 self.active = None
         if tag in ('script', 'style'): self.skip = max(0, self.skip - 1)
+        if tag == 'head': self.head = False
         if tag == 'body': self.body = False
 
     def handle_data(self, data):
