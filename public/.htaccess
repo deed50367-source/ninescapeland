@@ -120,6 +120,12 @@ ErrorDocument 404 /404/index.html
     Header unset Expires
   </FilesMatch>
 
+  # Sitemap/robots/llms change on every release; keep CDN copies short-lived.
+  <FilesMatch "\.(xml|txt)$">
+    Header set Cache-Control "public, max-age=3600, must-revalidate"
+    Header unset Expires
+  </FilesMatch>
+
   # Service worker & manifest must never be cached
   <FilesMatch "(manifest\.webmanifest|sw\.js|service-worker\.js|workbox-.*\.js)$">
     Header set Cache-Control "no-cache, no-store, must-revalidate"

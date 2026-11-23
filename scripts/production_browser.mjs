@@ -24,15 +24,20 @@ try {
       if (!expected || head.title !== expected.tags.title[0] || head.description !== expected.tags.description[0] || JSON.stringify(head.h1) !== JSON.stringify(expected.h1) || head.language !== expected.language) throw new Error('Rendered page differs from approved capture');
       if (route === '/') {
         await page.waitForFunction(() => { const v = document.querySelector('#home video'); const i = document.querySelector('#home img'); return v && v.readyState >= 2 && i?.complete && i.naturalWidth > 0; }, { timeout: 25000 });
-        const play = await page.$('button[aria-label="Play equipment video"]');
-        if (play) await play.click();
+        // The single-play video autoplays; labels follow React state, so wait for each toggle.
+        const PLAY = 'button[aria-label="Play equipment video"]', PAUSE = 'button[aria-label="Pause equipment video"]';
+        await page.waitForSelector(`${PLAY}, ${PAUSE}`, { timeout: 10000 });
+        if (await page.$(PLAY)) await page.click(PLAY);
+        await page.waitForSelector(PAUSE, { timeout: 5000 });
         const start = await page.$eval('#home video', v => v.currentTime);
         await new Promise(r => setTimeout(r, 600));
         const now = await page.$eval('#home video', v => v.currentTime);
         if (!(now > start)) throw new Error('Equipment video is not playing');
-        await page.click('button[aria-label="Pause equipment video"]');
+        await page.click(PAUSE);
+        await page.waitForSelector(PLAY, { timeout: 5000 });
         if (!(await page.$eval('#home video', v => v.paused))) throw new Error('Pause failed');
-        await page.click('button[aria-label="Play equipment video"]');
+        await page.click(PLAY);
+        await page.waitForSelector(PAUSE, { timeout: 5000 });
         await page.setViewport({ width: 1966, height: 1362 });
         await page.screenshot({ path: 'production-screenshots/home-desktop.png' });
         await page.click('#home a[href="#products"]');

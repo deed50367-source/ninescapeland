@@ -27,4 +27,11 @@ class ProductionAcceptanceTests(unittest.TestCase):
     def test_changed_asset_has_different_digest(self):
         self.assertNotEqual(module.digest(b'current equipment video'), module.digest(b'old equipment video'))
 
+    def test_cdn_resized_jpeg_is_accepted(self):
+        self.assertTrue(module.image_ok('/__l5e/a/trampoline.jpg', 'image/jpeg', b'\xff\xd8\xff' + b'0' * 600))
+    def test_html_served_for_image_fails(self):
+        self.assertFalse(module.image_ok('/__l5e/a/trampoline.jpg', 'text/html', b'<!doctype html>' + b'0' * 600))
+    def test_truncated_image_fails(self):
+        self.assertFalse(module.image_ok('/__l5e/a/ninja.jpg', 'image/jpeg', b'\xff\xd8\xff'))
+
 if __name__ == '__main__': unittest.main()

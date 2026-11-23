@@ -14,6 +14,15 @@ from urllib.request import Request, urlopen
 
 ORIGIN = 'https://indoorplaygroundsolution.com'
 ASSET_ORIGIN = 'https://ninescapeland.lovable.app'
+# Hostinger's CDN re-encodes/resizes images, so bytes legitimately differ from dist.
+IMAGE_SIGNATURES = {'.jpg': (b'\xff\xd8\xff',), '.jpeg': (b'\xff\xd8\xff',), '.png': (b'\x89PNG',),
+                    '.gif': (b'GIF8',), '.webp': (b'RIFF',), '.avif': (b'\x00\x00\x00',)}
+# Long-lived edge copies of these files survive a deploy; checksum the origin copy instead.
+EDGE_CACHED = ('/sitemap.xml',)
+
+def image_ok(path, content_type, data):
+    signatures = IMAGE_SIGNATURES.get(Path(urlsplit(path).path).suffix.lower())
+    return bool(signatures) and content_type.startswith('image/') and len(data) > 512 and data.startswith(signatures)
 
 class PageEvidence(HTMLParser):
     def __init__(self):
@@ -151,7 +160,7 @@ def differences(expected, actual):
 def verify(manifest_file, report_file):
     inventory = json.loads(Path(manifest_file).read_text())
     revision = inventory['revision']
-    report = dict(revision=revision, origin=ORIGIN, results=[], failures=[])
+    report = dict(revision=revision, origin=ORIGIN, results=[], failures=[], warnings=[])
     def checked(item):
         kind, path, expected = item
         error = ''
@@ -166,6 +175,13 @@ def verify(manifest_file, report_file):
                     actual, _ = evidence(data.decode('utf-8'))
                     mismatch = differences(expected, actual)
                     if mismatch: raise ValueError('Mismatch: ' + ', '.join(mismatch))
+                elif Path(path).suffix.lower() in IMAGE_SIGNATURES:
+                    if not image_ok(path, content_type, data): raise ValueError('Image not delivered')
+                elif path in EDGE_CACHED:
+                    _, _, fresh = request(f'{ORIGIN}{path}?release={revision[:12]}')
+                    if digest(fresh) != expected: raise ValueError('Origin checksum mismatch')
+                    if digest(data) != expected:
+                        return dict(kind=kind, path=path, passed=True, warning='CDN edge still serves an older copy; purge Hostinger CDN cache')
                 else:
                     if digest(data) != expected: raise ValueError('Asset checksum mismatch')
                 return dict(kind=kind, path=path, passed=True)
@@ -179,6 +195,9 @@ def verify(manifest_file, report_file):
     with ThreadPoolExecutor(max_workers=3) as pool:
         for result in pool.map(checked, items):
             report['results'].append(result)
+            if result.get('warning'):
+                report['warnings'].append(result)
+                print('WARN', result['path'], result['warning'])
             if not result['passed']:
                 report['failures'].append(result)
                 print('FAIL', result['path'], result['error'])
