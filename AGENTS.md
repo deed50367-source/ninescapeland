@@ -28,3 +28,4 @@
 - Storage-image sizing uses a shared delivery helper to preserve image identity and leave unrelated asset origins untouched.
 - Priority discovery links use a six-language path registry on the product hub so audited destinations remain within two homepage clicks.
 - Homepage entry motion is owned by HomeMotion using translation-only observation with lazy-child registration; disable nested transform entrances and keep text visible so animation cannot hide SEO content or duplicate motion.
+- Homepage equipment video is a silent single-play CDN asset with a static image underneath; reduced-motion removes the video and viewport/document visibility pauses playback to preserve access and performance.

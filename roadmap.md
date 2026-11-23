@@ -1,5 +1,7 @@
 # Roadmap
 
+- [x] November 23 homepage clip: generated an 8.0s bright push-in from the current equipment image, embedded a silent 1.7MB single-play clip with static image underneath; desktop/mobile AR playback, pause/replay/end/offscreen pause and reduced-motion fallback verified, SEO/full hero text unchanged, eight SEO tests passed. Production deployment not performed.
+
 - [x] November 23 homepage correction: removed dark mask, white reading fade/dark text and existing colorful equipment render; 1280/1966 desktop and 390 EN/AR screenshots verified, original full hero text/metadata/schema equality and product/contact navigation passed; eight SEO tests passed, no runtime errors. Production deployment not performed.
 
 - [x] November 23 homepage presentation: lighter desktop/mobile hero, homepage-only visible translation entrances with lazy-section registration and reduced-motion support, static partners and no floating mascots; original homepage text/metadata/schema equality, six locales, 25 sections, product hover, FAQ and contact navigation verified; 10 SEO tests/45 assertions passed. Production deployment not performed.

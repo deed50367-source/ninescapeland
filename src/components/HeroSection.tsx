@@ -4,6 +4,7 @@ import { ArrowRight, ArrowLeft, CheckCircle } from "lucide-react";
 import { Button } from "./ui/button";
 import { useRTL } from "@/hooks/useRTL";
 import { useSiteImages } from "@/hooks/useSiteImages";
+import { HeroEquipmentVideo } from "@/components/HeroEquipmentVideo";
 
 export const HeroSection = () => {
   const { t } = useTranslation();
@@ -48,7 +49,8 @@ export const HeroSection = () => {
           />
         </motion.div>
         
-        <div className="absolute inset-0 home-hero-overlay" />
+        <HeroEquipmentVideo />
+        <div className="absolute inset-0 home-hero-overlay pointer-events-none" />
       </div>
 
 
