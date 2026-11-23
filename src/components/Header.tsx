@@ -192,7 +192,7 @@ export const Header = () => {
         <div className="container-wide">
           <div className="flex items-center justify-between h-16 md:h-20">
             {/* Logo */}
-            <Link to={localizedPath("/")} className="flex items-center py-2">
+            <Link to={localizedPath("/")} aria-label={`NinescapeLand — ${t("nav.home")}`} className="flex items-center py-2">
               <img src={logo} alt="NinescapeLand" className="h-14 md:h-20 w-auto max-w-[200px] md:max-w-[280px] object-contain" loading="eager" decoding="async" width="280" height="80" />
             </Link>
 

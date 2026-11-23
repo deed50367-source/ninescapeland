@@ -8,7 +8,7 @@ import { useSiteImages } from "@/hooks/useSiteImages";
  */
 export const ProductPreloader = () => {
   const { preloadImages, addPreloadLink } = useImagePreload();
-  const { getImageUrl } = useSiteImages();
+  const { getOptimizedImageUrl } = useSiteImages();
 
   useEffect(() => {
     // Skip on mobile devices to save bandwidth
@@ -16,10 +16,10 @@ export const ProductPreloader = () => {
 
     const timer = setTimeout(() => {
       const productImages = [
-        getImageUrl("product.indoorPlayground"),
-        getImageUrl("product.trampolinePark"),
-        getImageUrl("product.ninjaCourse"),
-        getImageUrl("product.softPlay"),
+        getOptimizedImageUrl("product.indoorPlayground", { width: 640, quality: 70 }),
+        getOptimizedImageUrl("product.trampolinePark", { width: 640, quality: 70 }),
+        getOptimizedImageUrl("product.ninjaCourse", { width: 640, quality: 70 }),
+        getOptimizedImageUrl("product.softPlay", { width: 640, quality: 70 }),
       ].filter(Boolean) as string[];
 
       preloadImages(productImages);
@@ -30,7 +30,7 @@ export const ProductPreloader = () => {
     }, 3000); // Wait 3s on desktop
 
     return () => clearTimeout(timer);
-  }, [preloadImages, addPreloadLink, getImageUrl]);
+  }, [preloadImages, addPreloadLink, getOptimizedImageUrl]);
 
   return null;
 };

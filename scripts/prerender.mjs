@@ -21,6 +21,8 @@ import { readFileSync, writeFileSync, mkdirSync, existsSync } from "fs";
 import { join, extname, dirname } from "path";
 import { fileURLToPath } from "url";
 import { routeHeadReady } from "./lib/prerenderHead.mjs";
+import { normalizePrerenderDocument } from "./lib/prerenderDocument.mjs";
+import { cmsPublicRoutes, productionFallbackRules } from "./lib/productionRouting.mjs";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const DIST_DIR = join(__dirname, "..", "dist");
@@ -233,7 +235,43 @@ function generateAllRoutes() {
     const only = process.env.PRERENDER_ONLY.split(",").map((r) => r.trim());
     return routes.filter((r) => only.includes(r));
   }
-  return routes;
+  return [...new Set(routes)];
+}
+
+async function prepareProductionRouting() {
+  // Deployment provides publishable values; local checks can read the same generated env file.
+  const envFile = join(__dirname, '..', '.env');
+  const fileEnv = existsSync(envFile) ? Object.fromEntries(readFileSync(envFile, 'utf8').split('\n').filter(line => /^VITE_SUPABASE_\w+=/.test(line)).map(line => {
+    const equals = line.indexOf('=');
+    return [line.slice(0, equals), line.slice(equals + 1).trim().replace(/^["']|["']$/g, '')];
+  })) : {};
+  const endpoint = process.env.VITE_SUPABASE_URL || fileEnv.VITE_SUPABASE_URL;
+  const key = process.env.VITE_SUPABASE_PUBLISHABLE_KEY || fileEnv.VITE_SUPABASE_PUBLISHABLE_KEY;
+  if (!endpoint || !key) throw new Error('Public CMS configuration unavailable; refusing incomplete route allowlist.');
+  async function readRows(table, query) {
+    const rows = [];
+    for (let offset = 0; ; offset += 1000) {
+      const response = await fetch(`${endpoint}/rest/v1/${table}?${query}&order=id&offset=${offset}&limit=1000`, {
+        headers: { apikey: key, Authorization: `Bearer ${key}` }, signal: AbortSignal.timeout(30000),
+      });
+      if (!response.ok) throw new Error(`Public route inventory request failed: ${table} HTTP ${response.status}`);
+      const batch = await response.json();
+      rows.push(...batch);
+      if (batch.length < 1000) return rows;
+    }
+  }
+  const [posts, products] = await Promise.all([
+    readRows('blog_posts', 'select=slug,language,status&status=eq.published'),
+    readRows('products', 'select=slug,is_active&is_active=eq.true'),
+  ]);
+  // Ignore the local PRERENDER_ONLY smoke-test filter when preserving production routes.
+  const sitemap = readFileSync(join(__dirname, '..', 'public', 'sitemap.xml'), 'utf8');
+  const sitemapPaths = [...sitemap.matchAll(/<loc>([^<]+)<\/loc>/g)].map(match => new URL(match[1]).pathname);
+  const registered = [...CORE_ROUTES, ...LANGUAGES.flatMap(lang => CORE_ROUTES.map(route => route === '/' ? `/${lang}` : `/${lang}${route}`)), ...ENGLISH_ONLY_ROUTES, ...sitemapPaths];
+  const rules = productionFallbackRules([...registered, ...cmsPublicRoutes(posts, products)]);
+  const template = readFileSync(join(__dirname, '..', 'public', '.htaccess'), 'utf8');
+  writeFileSync(join(DIST_DIR, '.htaccess'), template.replace(/  # BEGIN GENERATED PUBLIC ROUTES[\s\S]*?  # END GENERATED PUBLIC ROUTES/, `  # BEGIN GENERATED PUBLIC ROUTES\n${rules}\n  # END GENERATED PUBLIC ROUTES`));
+  console.log(`Exact public routing inventory: ${new Set([...registered, ...cmsPublicRoutes(posts, products)]).size} paths`);
 }
 
 // Simple static file server for dist/
@@ -364,7 +402,7 @@ async function prerenderRoute(browser, route) {
     if (!routeHeadReady(head, route)) throw new Error(`Wrong route/language metadata: ${route}`);
 
     // Get the full rendered HTML
-    let html = await page.content();
+    let html = normalizePrerenderDocument(await page.content());
 
     // Hostinger can rate-limit pages that fan out dozens of concurrent chunk requests.
     // During prerender, Vite injects <link rel="modulepreload"> tags for every lazy chunk
@@ -457,6 +495,12 @@ async function prerenderRoute(browser, route) {
       html = `<!DOCTYPE html>\n${html}`;
     }
 
+    // Enforce the project's homepage crawl budget without discarding the eagerly
+    // rendered answer block, sources or the core product links.
+    if (/^\/(ar|de|es|pt|fr)?$/.test(route) && Buffer.byteLength(html, 'utf8') > 125 * 1024) {
+      throw new Error(`Homepage HTML exceeds 125KB budget: ${route}`);
+    }
+
     // Determine output path
     const outputPath =
       route === "/"
@@ -490,6 +534,7 @@ async function main() {
   }
 
   const routes = generateAllRoutes();
+  await prepareProductionRouting();
   console.log(`📝 ${routes.length} routes to prerender\n`);
 
   // Start local server

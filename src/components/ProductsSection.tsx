@@ -30,7 +30,7 @@ export const ProductsSection = () => {
   const { t } = useTranslation();
   const { localizedPath } = useLocalizedPath();
   const { isRTL } = useRTL();
-  const { getImageUrl } = useSiteImages();
+  const { getOptimizedImageUrl } = useSiteImages();
   const { getPreloadProps } = useImagePreload();
 
   // Choose the correct arrow based on RTL
@@ -40,7 +40,7 @@ export const ProductsSection = () => {
     {
       title: t("products.items.indoorPlayground.title"),
       description: t("products.items.indoorPlayground.description"),
-      image: getImageUrl("product.indoorPlayground"),
+      image: getOptimizedImageUrl("product.indoorPlayground", { width: 640, quality: 70 }),
       features: t("products.items.indoorPlayground.features", { returnObjects: true }) as string[],
       slug: "indoor-playground",
       mascot: mascotPlayground,
@@ -48,7 +48,7 @@ export const ProductsSection = () => {
     {
       title: t("products.items.trampolinePark.title"),
       description: t("products.items.trampolinePark.description"),
-      image: getImageUrl("product.trampolinePark"),
+      image: getOptimizedImageUrl("product.trampolinePark", { width: 640, quality: 70 }),
       features: t("products.items.trampolinePark.features", { returnObjects: true }) as string[],
       slug: "trampoline-park",
       mascot: mascotTrampoline,
@@ -56,7 +56,7 @@ export const ProductsSection = () => {
     {
       title: t("products.items.ninjaCourse.title"),
       description: t("products.items.ninjaCourse.description"),
-      image: getImageUrl("product.ninjaCourse"),
+      image: getOptimizedImageUrl("product.ninjaCourse", { width: 640, quality: 70 }),
       features: t("products.items.ninjaCourse.features", { returnObjects: true }) as string[],
       slug: "ninja-course",
       mascot: mascotNinja,
@@ -64,7 +64,7 @@ export const ProductsSection = () => {
     {
       title: t("products.items.softPlay.title"),
       description: t("products.items.softPlay.description"),
-      image: getImageUrl("product.softPlay"),
+      image: getOptimizedImageUrl("product.softPlay", { width: 640, quality: 70 }),
       features: t("products.items.softPlay.features", { returnObjects: true }) as string[],
       slug: "soft-play",
       mascot: mascotSoftplay,
@@ -158,7 +158,9 @@ export const ProductsSection = () => {
                 {/* Mascot decoration */}
                 <motion.img
                   src={product.mascot}
-                  alt="Ball mascot"
+                  alt=""
+                  width="80"
+                  height="80"
                   className="absolute -top-12 right-2 w-16 h-16 sm:w-20 sm:h-20 object-contain drop-shadow-lg pointer-events-none"
                   loading="lazy"
                   decoding="async"

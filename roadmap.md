@@ -1,5 +1,9 @@
 # Roadmap
 
+- [x] November 23 SEO/GEO: validate five uploaded reports against current source and formal-domain HTML; correct shared metadata/locale identity, duplicate head entities, homepage HTML budget, exact fallback routing, resized product images and seven priority hub destinations.
+- [x] November 23 SEO/GEO: 149 multilingual route head checks pass, zero runtime errors, EN/AR desktop/mobile and product-hub navigation verified; normalized homepage capture samples 114.0–118.5KiB, 14 tests/539 assertions pass; document false positives and limits in docs/reviews/seo-2026-11-23.md.
+- [ ] November 23 SEO/GEO: formal-domain deployment/static HTML/HTTP404 and external rescan require production acceptance; no new production publication or Google indexing check performed. Existing legacy English-only body translation, independent factual credentials and PageSpeed field/lab measurements are outside verified results.
+
 - [x] November 18 blogs: read five complete uploaded manuscripts and check exact slugs against CMS; identify unsupported health, certification, ROI and staffing claims; prepare corrected outlines.
 - [x] November 18 blogs: outlines approved; five full revised articles credited to Gerry, site concept cover/two inline figures per article; all six language bundles complete with corrected label-conflict/wet-contact requirements and six semantic defects; 14 tests/1315 assertions pass, build OK.
 - [x] November 18 blogs: register reciprocal topic links and all 30 sitemap/prerender destinations without replacing existing material-selection articles.

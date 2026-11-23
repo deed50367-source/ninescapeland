@@ -74,7 +74,6 @@ const Index = () => {
       <SEOHead pageKey="home" />
       <OrganizationSchema />
       <LocalBusinessSchema />
-      <WebsiteSchema />
       <BreadcrumbSchema
         items={[{ name: "Home", url: "https://indoorplaygroundsolution.com/" }]}
       />
@@ -108,9 +107,9 @@ const Index = () => {
         {/* Above-the-fold: loaded eagerly */}
         <HeroSection />
         <GlobalActivityTicker />
-        <PartnersSection />
+        <LazySection minHeight="500px"><PartnersSection /></LazySection>
         <CoreSolutionsSection />
-        <ProductsSection />
+        <LazySection minHeight="800px" id="products"><ProductsSection /></LazySection>
 
         {/* GEO: eagerly rendered Q&A + table + citations so prerendered HTML carries them */}
         <GeoAnswerBlock />

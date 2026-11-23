@@ -34,7 +34,7 @@ export const BlogArticleSEO = ({
 }: BlogArticleSEOProps) => {
   const { lang } = useParams<{ lang: string }>();
   const location = useLocation();
-  const currentLang = lang || "en";
+  const currentLang = lang || location.pathname.match(/^\/(ar|de|es|pt|fr)(?:\/|$)/)?.[1] || "en";
   // Never output an empty meta description
   const description = rawDescription?.trim() || `${title} - Expert insights from NinescapeLand, leading indoor playground equipment manufacturer since 2008.`;
 
@@ -89,7 +89,6 @@ export const BlogArticleSEO = ({
       
       <title>{fullTitle}</title>
       <meta name="description" content={metadata.description} />
-      {keywords && <meta name="keywords" content={keywords} />}
       <meta name="author" content={author} />
       <meta name="robots" content="index, follow, max-image-preview:large" />
       <link rel="canonical" href={canonicalUrl} />

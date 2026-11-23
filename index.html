@@ -29,17 +29,11 @@
     <!-- DNS Prefetch for external resources -->
     <link rel="dns-prefetch" href="https://gianldlquknsdhfpqqfe.supabase.co" />
     <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
-    <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
     
     <!-- Preconnect for critical external resources -->
     <link rel="preconnect" href="https://gianldlquknsdhfpqqfe.supabase.co" crossorigin />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    
-    <!-- Async-load actual fonts used (Montserrat + Open Sans) to avoid render-blocking CSS @import -->
-    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Open+Sans:wght@400;500;600&display=swap" onload="this.onload=null;this.rel='stylesheet'" />
-    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Open+Sans:wght@400;500;600&display=swap" /></noscript>
-    
+    <!-- Active typography is served locally from public/fonts. -->
+
     <!-- Preload hero image - mobile gets smaller version; fetchpriority boosts LCP -->
     <link rel="preload" as="image" type="image/webp" fetchpriority="high" imagesrcset="https://gianldlquknsdhfpqqfe.supabase.co/storage/v1/render/image/public/assets/e781d029-b8d9-4101-8835-35d1d8938a12/1768294274127-w29hc.jpg?width=640&quality=60&format=webp 640w, https://gianldlquknsdhfpqqfe.supabase.co/storage/v1/render/image/public/assets/e781d029-b8d9-4101-8835-35d1d8938a12/1768294274127-w29hc.jpg?width=1280&quality=75&format=webp 1280w, https://gianldlquknsdhfpqqfe.supabase.co/storage/v1/render/image/public/assets/e781d029-b8d9-4101-8835-35d1d8938a12/1768294274127-w29hc.jpg?width=1920&quality=75&format=webp 1920w" imagesizes="100vw" />
 
@@ -74,7 +68,7 @@
     <meta name="google-site-verification" content="KEpjrSvAcvMdFSNcHsNuFVH_UMflG89e6Yh9OJeikKM" />
 
     <!-- Robots: allow indexing + large image previews for Google Discover (overridden per route by react-helmet-async) -->
-    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    <meta data-rh="true" name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
     
     <!-- Fallback title & meta description for non-JS crawlers (overridden by react-helmet-async per route) -->
     <title data-rh="true">Indoor Playground Manufacturer | NinescapeLand</title>
@@ -82,20 +76,20 @@
     <!-- Meta keywords intentionally removed: Google ignores them and SEO audits flag them as legacy/over-optimization signal -->
 
     <!-- Fallback OG tags for non-JS crawlers (overridden by react-helmet-async per route) -->
-    <meta property="og:type" content="website" />
-    <meta property="og:site_name" content="NinescapeLand" />
+    <meta data-rh="true" property="og:type" content="website" />
+    <meta data-rh="true" property="og:site_name" content="NinescapeLand" />
     <meta data-rh="true" property="og:title" content="Indoor Playground Manufacturer | NinescapeLand" />
     <meta data-rh="true" property="og:description" content="Custom commercial indoor playground equipment, trampoline parks, ninja courses and soft play. Share your site dimensions for a free 3D design and quote." />
-    <meta property="og:image" content="https://indoorplaygroundsolution.com/og-image.png" />
-    <meta property="og:image:width" content="1200" />
-    <meta property="og:image:height" content="630" />
-    <meta property="og:url" content="https://indoorplaygroundsolution.com" />
-    <meta property="og:locale" content="en" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="@NinescapeLand" />
+    <meta data-rh="true" property="og:image" content="https://indoorplaygroundsolution.com/og-image.png" />
+    <meta data-rh="true" property="og:image:width" content="1200" />
+    <meta data-rh="true" property="og:image:height" content="630" />
+    <meta data-rh="true" property="og:url" content="https://indoorplaygroundsolution.com" />
+    <meta data-rh="true" property="og:locale" content="en" />
+    <meta data-rh="true" name="twitter:card" content="summary_large_image" />
+    <meta data-rh="true" name="twitter:site" content="@NinescapeLand" />
     <meta data-rh="true" name="twitter:title" content="Indoor Playground Manufacturer | NinescapeLand" />
     <meta data-rh="true" name="twitter:description" content="Custom commercial indoor playground equipment, trampoline parks, ninja courses and soft play. Share your site dimensions for a free 3D design and quote." />
-    <meta name="twitter:image" content="https://indoorplaygroundsolution.com/og-image.png" />
+    <meta data-rh="true" name="twitter:image" content="https://indoorplaygroundsolution.com/og-image.png" />
     
     <!-- Canonical is set dynamically per route by react-helmet-async to avoid wrong canonical on non-homepage routes -->
 
@@ -134,6 +128,7 @@
     {
       "@context": "https://schema.org",
       "@type": "WebSite",
+      "@id": "https://indoorplaygroundsolution.com/#website",
       "name": "NinescapeLand",
       "url": "https://indoorplaygroundsolution.com",
       "description": "Professional indoor playground equipment manufacturer",

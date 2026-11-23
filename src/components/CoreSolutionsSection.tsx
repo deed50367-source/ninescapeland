@@ -28,7 +28,7 @@ export const CoreSolutionsSection = () => {
   const { t } = useTranslation();
   const { localizedPath } = useLocalizedPath();
   const { isRTL } = useRTL();
-  const { getImageUrl } = useSiteImages();
+  const { getOptimizedImageUrl } = useSiteImages();
 
   const ArrowIcon = isRTL ? ArrowLeft : ArrowRight;
 
@@ -36,25 +36,25 @@ export const CoreSolutionsSection = () => {
     {
       title: t("coreSolutions.indoorPlayground.title", "Indoor Playground"),
       description: t("coreSolutions.indoorPlayground.description", "Multi-level custom play structures with slides, ball pits, and climbing nets for all ages."),
-      image: getImageUrl("product.indoorPlayground") || productIndoorPlayground,
+      image: getOptimizedImageUrl("product.indoorPlayground", { width: 640, quality: 70 }) || productIndoorPlayground,
       link: "products/indoor-playground",
     },
     {
       title: t("coreSolutions.trampolinePark.title", "Trampoline Park"),
       description: t("coreSolutions.trampolinePark.description", "Commercial trampoline systems with 12+ activity zones including foam pits and slam dunk areas."),
-      image: getImageUrl("product.trampolinePark") || productTrampolinePark,
+      image: getOptimizedImageUrl("product.trampolinePark", { width: 640, quality: 70 }) || productTrampolinePark,
       link: "products/trampoline-park",
     },
     {
       title: t("coreSolutions.ninjaCourse.title", "Ninja Course"),
       description: t("coreSolutions.ninjaCourse.description", "Challenging obstacle courses with warped walls, monkey bars, and balance elements for all skill levels."),
-      image: getImageUrl("product.ninjaCourse") || productNinjaCourse,
+      image: getOptimizedImageUrl("product.ninjaCourse", { width: 640, quality: 70 }) || productNinjaCourse,
       link: "products/ninja-course",
     },
     {
       title: t("coreSolutions.softPlay.title", "Soft Play"),
       description: t("coreSolutions.softPlay.description", "Safe, padded play environments designed specifically for toddlers and young children."),
-      image: getImageUrl("product.softPlay") || productSoftPlay,
+      image: getOptimizedImageUrl("product.softPlay", { width: 640, quality: 70 }) || productSoftPlay,
       link: "products/soft-play",
     },
   ];

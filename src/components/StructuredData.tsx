@@ -271,12 +271,13 @@ export const ContactPageSchema = () => {
 export const WebsiteSchema = () => {
   const schema = {
     "@context": "https://schema.org", "@type": "WebSite",
+    "@id": `${SITE_URL}/#website`,
     name: "NinescapeLand", url: SITE_URL,
     description: "Professional indoor playground equipment manufacturer",
     publisher: { "@type": "Organization", name: "NinescapeLand" },
     potentialAction: {
       "@type": "SearchAction",
-      target: { "@type": "EntryPoint", urlTemplate: `${SITE_URL}/en/products?search={search_term_string}` },
+      target: { "@type": "EntryPoint", urlTemplate: `${SITE_URL}/products?search={search_term_string}` },
       "query-input": "required name=search_term_string"
     }
   };

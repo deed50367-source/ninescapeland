@@ -41,8 +41,8 @@ export const SEOHead = ({
   const { t, i18n } = useTranslation();
   const { lang } = useParams<{ lang: string }>();
   const location = useLocation();
-  // If no lang param, we're on English (default)
-  const currentLang = lang || "en";
+  // Locale routes are literal /de, /ar, etc., not a :lang route parameter.
+  const currentLang = lang || location.pathname.match(/^\/(ar|de|es|pt|fr)(?:\/|$)/)?.[1] || "en";
   // Real content-revision date for this route (never a build timestamp)
   const contentModifiedAt = lastModified || getContentDate(location.pathname);
   
@@ -126,7 +126,7 @@ export const SEOHead = ({
       <meta property="og:description" content={description} />
       <meta property="og:type" content={ogType} />
       <meta property="og:url" content={canonicalUrl} />
-      <meta property="og:image" content={`${baseUrl}${ogImage || defaultOgImage}`} />
+      <meta property="og:image" content={ogImage?.startsWith("https://") ? ogImage : `${baseUrl}${ogImage || defaultOgImage}`} />
       <meta property="og:image:width" content="1200" />
       <meta property="og:image:height" content="630" />
       <meta property="og:image:alt" content={fullTitle} />
@@ -139,7 +139,7 @@ export const SEOHead = ({
       <meta name="twitter:creator" content="@NinescapeLand" />
       <meta name="twitter:title" content={fullTitle} />
       <meta name="twitter:description" content={description} />
-      <meta name="twitter:image" content={`${baseUrl}${ogImage || defaultOgImage}`} />
+      <meta name="twitter:image" content={ogImage?.startsWith("https://") ? ogImage : `${baseUrl}${ogImage || defaultOgImage}`} />
       <meta name="twitter:image:alt" content={fullTitle} />
       
       {/* Content freshness — real per-route content revision date, not a build timestamp */}

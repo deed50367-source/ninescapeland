@@ -1,4 +1,8 @@
-import { useEffect } from "react";
+import { useTranslation } from "react-i18next";
+import { useLocation } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
+import { SEOHead } from "@/components/SEOHead";
+import { boundedSiteMetadata } from "@/lib/seoMetadata";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { FloatingCTA } from "@/components/FloatingCTA";
@@ -80,27 +84,6 @@ const baseUrl = "https://indoorplaygroundsolution.com";
 const defaultOgImage = `${baseUrl}/og-image.jpg`;
 const whatsappUrl = "https://wa.me/18969753002";
 
-const upsertMeta = (selector: string, create: () => HTMLMetaElement, content: string) => {
-  const existing = document.head.querySelector<HTMLMetaElement>(selector);
-  const meta = existing ?? create();
-  meta.setAttribute("content", content.trim());
-  if (!existing) document.head.appendChild(meta);
-};
-
-const upsertLink = (selector: string, href: string) => {
-  const existing = document.head.querySelector<HTMLLinkElement>(selector);
-  const link = existing ?? document.createElement("link");
-  link.setAttribute("rel", "canonical");
-  link.setAttribute("href", href);
-  if (!existing) document.head.appendChild(link);
-};
-
-const buildTitle = (title: string, override?: string) => {
-  if (override) return override.slice(0, 60).trim();
-  const branded = `${title} | ${siteName}`;
-  return (branded.length <= 60 ? branded : title).slice(0, 60).trim();
-};
-
 export const StableSolutionPage = ({
   slug,
   title,
@@ -132,40 +115,17 @@ export const StableSolutionPage = ({
 
 
 }: StableSolutionPageProps) => {
-  const canonicalUrl = `${baseUrl}/${slug}`;
-  const pageTitle = buildTitle(title, metaTitle);
-  const pageDescription = (metaDescription ?? description).slice(0, 158).trim();
+  const { t } = useTranslation();
+  const { pathname } = useLocation();
+  const language = pathname.match(/^\/(ar|de|es|pt|fr)(?:\/|$)/)?.[1] || "en";
+  const prefix = language === "en" ? "" : `/${language}`;
+  const canonicalUrl = `${baseUrl}${pathname.replace(/\/$/, "")}`;
+  const { title: pageTitle, description: pageDescription } = boundedSiteMetadata(metaTitle ?? title, metaDescription ?? description);
   const shareImage = ogImage
     ? (ogImage.startsWith("http") ? ogImage : `${baseUrl}${ogImage.startsWith("/") ? "" : "/"}${ogImage}`)
     : defaultOgImage;
   const keywordList = (keywords ?? []).map((k) => k.trim()).filter(Boolean);
   const contentDate = getContentDate(`/${slug}`);
-
-  useEffect(() => {
-    document.documentElement.lang = "en";
-    document.documentElement.dir = "ltr";
-    document.title = pageTitle;
-    const m = (attr: "name" | "property", key: string, value: string) => {
-      upsertMeta(`meta[${attr}="${key}"]`, () => {
-        const el = document.createElement("meta");
-        el.setAttribute(attr, key);
-        return el;
-      }, value);
-    };
-    m("name", "description", pageDescription);
-    if (keywordList.length) m("name", "keywords", keywordList.join(", "));
-    m("property", "og:title", pageTitle);
-    m("property", "og:description", pageDescription);
-    m("property", "og:url", canonicalUrl);
-    m("property", "og:type", "article");
-    m("property", "og:site_name", siteName);
-    m("property", "og:image", shareImage);
-    m("name", "twitter:card", "summary_large_image");
-    m("name", "twitter:title", pageTitle);
-    m("name", "twitter:description", pageDescription);
-    m("name", "twitter:image", shareImage);
-    upsertLink('link[rel="canonical"]', canonicalUrl);
-  }, [canonicalUrl, pageDescription, pageTitle, shareImage, keywordList]);
 
   const faqSchema = {
     "@context": "https://schema.org",
@@ -181,8 +141,8 @@ export const StableSolutionPage = ({
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     itemListElement: [
-      { "@type": "ListItem", position: 1, name: "Home", item: `${baseUrl}/` },
-      { "@type": "ListItem", position: 2, name: "Products & Solutions", item: `${baseUrl}/products` },
+      { "@type": "ListItem", position: 1, name: t("nav.home"), item: `${baseUrl}${prefix}/` },
+      { "@type": "ListItem", position: 2, name: t("nav.products"), item: `${baseUrl}${prefix}/products` },
       { "@type": "ListItem", position: 3, name: title, item: canonicalUrl },
     ],
   };
@@ -194,7 +154,7 @@ export const StableSolutionPage = ({
     description: pageDescription,
     image: shareImage,
     mainEntityOfPage: canonicalUrl,
-    inLanguage: "en",
+    inLanguage: language,
     datePublished: contentDate,
     dateModified: contentDate,
     author: { "@type": "Organization", name: siteName, url: baseUrl },
@@ -208,9 +168,12 @@ export const StableSolutionPage = ({
 
   return (
     <div className="min-h-screen bg-background text-foreground">
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
+      <SEOHead pageKey={slug} dynamicTitle={pageTitle} dynamicDescription={pageDescription} ogImage={shareImage} ogType="article" serviceSchema={false} />
+      <Helmet>
+        <script type="application/ld+json">{JSON.stringify(faqSchema)}</script>
+        <script type="application/ld+json">{JSON.stringify(breadcrumbSchema)}</script>
+        <script type="application/ld+json">{JSON.stringify(articleSchema)}</script>
+      </Helmet>
       <Header />
 
       <main>
@@ -358,7 +321,7 @@ export const StableSolutionPage = ({
             <h2 className="font-heading text-xl font-bold">Related solutions</h2>
             <div className="mt-5 flex flex-wrap gap-3">
               {related.map((link) => (
-                <a key={link.href} className="rounded-md border border-border bg-background px-4 py-2 text-sm font-medium hover:border-primary hover:text-primary" href={link.href}>
+                <a key={link.href} className="rounded-md border border-border bg-background px-4 py-2 text-sm font-medium hover:border-primary hover:text-primary" href={link.href.startsWith("/") && !/^\/(ar|de|es|pt|fr)(?:\/|$)/.test(link.href) ? `${prefix}${link.href}` : link.href}>
                   {link.label}
                 </a>
               ))}

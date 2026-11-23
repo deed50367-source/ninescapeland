@@ -28,6 +28,8 @@ import {
   X,
 } from "lucide-react";
 import { Input } from "@/components/ui/input";
+import { optimizedStorageImage } from "@/lib/imageDelivery";
+import { PriorityPlanningLinks } from "@/components/PriorityPlanningLinks";
 
 interface ProductCategory {
   id: string;
@@ -239,10 +241,12 @@ const DynamicProducts = () => {
                         <div className="aspect-[4/3] overflow-hidden">
                           {product.featured_image ? (
                             <img
-                              src={product.featured_image}
+                              src={optimizedStorageImage(product.featured_image, { width: 640, quality: 70 })}
                               alt={`${getLocalizedName(product)} by NinescapeLand`}
                               className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                               loading="lazy"
+                              width="640"
+                              height="400"
                               decoding="async"
                             />
                           ) : (
@@ -352,7 +356,7 @@ const DynamicProducts = () => {
             {/* Results count */}
             <p className="text-sm text-muted-foreground mb-6">
               {t("products.showing", "Showing")} {filteredProducts.length}{" "}
-              {t("products.items", "products")}
+              {t("nav.products", "Products")}
               {selectedCategory !== "all" && (
                 <Button
                   variant="link"
@@ -415,10 +419,12 @@ const DynamicProducts = () => {
                               <div className="aspect-[4/3] overflow-hidden relative">
                                 {product.featured_image ? (
                                   <img
-                                    src={product.featured_image}
+                                    src={optimizedStorageImage(product.featured_image, { width: 640, quality: 70 })}
                                     alt={`${getLocalizedName(product)} by NinescapeLand`}
                                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                                     loading="lazy"
+                              width="640"
+                              height="400"
                                     decoding="async"
                                   />
                                 ) : (
@@ -459,10 +465,12 @@ const DynamicProducts = () => {
                               <div className="w-24 h-24 flex-shrink-0 rounded-lg overflow-hidden">
                                 {product.featured_image ? (
                                   <img
-                                    src={product.featured_image}
+                                    src={optimizedStorageImage(product.featured_image, { width: 640, quality: 70 })}
                                     alt={`${getLocalizedName(product)} by NinescapeLand`}
                                     className="w-full h-full object-cover"
                                     loading="lazy"
+                              width="640"
+                              height="400"
                                     decoding="async"
                                   />
                                 ) : (
@@ -569,10 +577,12 @@ const DynamicProducts = () => {
                         <div className="relative aspect-[4/3] rounded-lg overflow-hidden bg-card border">
                           {category.image_url ? (
                             <img
-                              src={category.image_url}
+                              src={optimizedStorageImage(category.image_url, { width: 640, quality: 70 })}
                               alt={getLocalizedName(category)}
                               className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                               loading="lazy"
+                              width="640"
+                              height="400"
                               decoding="async"
                             />
                           ) : (
@@ -587,7 +597,7 @@ const DynamicProducts = () => {
                             </h3>
                             <p className="text-sm text-hero-foreground/85">
                               {categoryProducts.length}{" "}
-                              {t("products.items", "products")}
+                              {t("nav.products", "Products")}
                             </p>
                           </div>
                         </div>
@@ -599,6 +609,7 @@ const DynamicProducts = () => {
             </div>
           </section>
         )}
+        <PriorityPlanningLinks />
         <GeoAnswerBlock />
       </main>
       <Footer />

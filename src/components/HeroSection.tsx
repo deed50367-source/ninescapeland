@@ -71,7 +71,7 @@ export const HeroSection = () => {
             transition={{ duration: 0.6, delay: 0.1 }}
             className="text-3xl sm:text-4xl lg:text-5xl font-heading font-bold text-hero-foreground leading-tight mb-4 sm:mb-6"
           >
-            {t("hero.title")}
+            {t("hero.title")}{" "}
             <span className="block text-accent">{t("hero.titleHighlight")}</span>
           </motion.h1>
 

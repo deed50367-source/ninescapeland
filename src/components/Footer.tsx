@@ -10,6 +10,8 @@ import { useQuery } from "@tanstack/react-query";
 import { supabase } from "@/integrations/supabase/client";
 import { languages } from "@/i18n/config";
 
+const homeLabels: Record<string, string> = { en: "Home", ar: "الرئيسية", de: "Startseite", es: "Inicio", pt: "Início", fr: "Accueil" };
+
 const socialLinks = [
   { icon: Youtube, href: "https://www.youtube.com/@ninescapeland", label: "YouTube" },
   { icon: Linkedin, href: "https://www.linkedin.com/company/ninescapeland", label: "LinkedIn" },
@@ -210,7 +212,7 @@ export const Footer = () => {
                 className={`hover:text-hero-foreground transition-colors ${isCurrent ? "text-hero-foreground font-semibold" : "text-hero-foreground/75"}`}
                 hrefLang={langItem.code}
               >
-                {langItem.flag} {langItem.name}
+                {langItem.flag} {langItem.name} — {homeLabels[langItem.code]}
               </a>
             );
           })}

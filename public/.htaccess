@@ -33,16 +33,21 @@ AddType text/plain .txt
   RewriteCond %{DOCUMENT_ROOT}/$1/index.html -f
   RewriteRule ^(.*)$ /$1/index.html [L]
 
-  # SPA fallback for any navigation-like request (no file extension) that has no prerendered page.
-  # This guarantees new routes never hard-404 even before prerendered HTML is uploaded.
-  # NOTE: do NOT reference $1 in these conditions — the rule pattern below has no capture,
-  # so $1 would be empty and the condition would evaluate against the root index.html.
+  # English aliases retain their existing canonical destination.
+  RewriteRule ^en/?$ / [R=301,L]
+  RewriteRule ^en/(.*)$ /$1 [R=301,L]
+
+  # Authenticated utility pages are intentionally not prerendered.
   RewriteCond %{REQUEST_FILENAME} !-f
   RewriteCond %{REQUEST_FILENAME} !-d
-  RewriteCond %{REQUEST_URI} !\.[a-zA-Z0-9]{2,5}$
-  RewriteRule ^(.*)$ /index.html [L]
+  RewriteRule ^(?:admin|admin/login|admin-login)/?$ /index.html [L]
 
-  # Asset-like requests (with extension) that don't exist → real 404
+  # Exact public-route fallback allowlist is generated from registered routes and
+  # published CMS slugs during build: unknown public URLs must remain real 404s.
+  # BEGIN GENERATED PUBLIC ROUTES
+  # END GENERATED PUBLIC ROUTES
+
+  # Unknown pages AND missing assets return a real 404, never the homepage.
   RewriteCond %{REQUEST_FILENAME} !-f
   RewriteCond %{REQUEST_FILENAME} !-d
   RewriteRule ^ - [R=404,L]

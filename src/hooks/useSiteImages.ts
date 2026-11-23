@@ -1,5 +1,6 @@
 import { useState, useEffect, useCallback } from "react";
 import { supabase } from "@/integrations/supabase/client";
+import { optimizedStorageImage, type ImageDeliveryOptions } from "@/lib/imageDelivery";
 
 interface SiteImageConfig {
   config_key: string;
@@ -72,33 +73,8 @@ const buildImageUrl = (path: string): string => {
 };
 
 // 构建带 Supabase Storage Transformation 参数的优化 URL
-interface ImageTransformOptions {
-  width?: number;
-  height?: number;
-  quality?: number;
-  format?: 'webp' | 'origin';
-}
-
-const buildOptimizedUrl = (baseUrl: string, options: ImageTransformOptions = {}): string => {
-  if (!baseUrl || baseUrl === "/placeholder.svg") return baseUrl;
-  
-  // Only apply transforms to Supabase storage URLs
-  if (!baseUrl.includes('supabase.co/storage')) return baseUrl;
-  
-  // Use render endpoint for transformations
-  const renderUrl = baseUrl.replace(
-    '/storage/v1/object/public/',
-    '/storage/v1/render/image/public/'
-  );
-  
-  const url = new URL(renderUrl);
-  if (options.width) url.searchParams.set('width', options.width.toString());
-  if (options.height) url.searchParams.set('height', options.height.toString());
-  url.searchParams.set('quality', (options.quality || 75).toString());
-  url.searchParams.set('format', options.format || 'webp');
-  
-  return url.toString();
-};
+type ImageTransformOptions = ImageDeliveryOptions;
+const buildOptimizedUrl = optimizedStorageImage;
 
 export const getSiteImageUrl = (key: string): string => {
   const path = cachedImages?.[key] || defaultImages[key] || "";

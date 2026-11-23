@@ -23,3 +23,7 @@
 - Existing-topic refresh bundles override only their registered legacy routes, preserve original publication dates and update modification dates; shared reciprocal links keep established URLs discoverable.
 - Weekly planning link inventories combine refresh bundles with unique destination keys so repeated parent relationships do not render duplicate links.
 - Prerender captures require the exact route canonical and locale, not template head markers; any failed capture must fail deployment so fallback homepage metadata cannot reach production.
+- Formal-domain fallback routing uses an exact registered/published CMS path allowlist; unknown URLs return HTTP 404 without blocking existing public or admin pages.
+- Saved prerender heads retain one route-owned metadata value and one declaration per shared entity; homepage output must stay within the project's 125KB HTML budget without removing primary answers or sources.
+- Storage-image sizing uses a shared delivery helper to preserve image identity and leave unrelated asset origins untouched.
+- Priority discovery links use a six-language path registry on the product hub so audited destinations remain within two homepage clicks.
