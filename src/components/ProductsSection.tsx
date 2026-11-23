@@ -156,7 +156,7 @@ export const ProductsSection = () => {
               {/* Content */}
               <div className="p-4 sm:p-6 relative">
                 {/* Mascot decoration */}
-                <motion.img
+                <img
                   src={product.mascot}
                   alt=""
                   width="80"
@@ -164,8 +164,6 @@ export const ProductsSection = () => {
                   className="absolute -top-12 right-2 w-16 h-16 sm:w-20 sm:h-20 object-contain drop-shadow-lg pointer-events-none"
                   loading="lazy"
                   decoding="async"
-                  animate={{ y: [0, -6, 0] }}
-                  transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
                 />
                 
                 <h3 className="text-lg sm:text-xl font-heading font-bold mb-2 sm:mb-3 group-hover:text-primary transition-colors">

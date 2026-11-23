@@ -18,6 +18,7 @@ import { LazySection } from "@/components/LazySection";
 import { TrustHubLinks } from "@/components/TrustHubLinks";
 import { EEATSignature } from "@/components/EEATSignature";
 import { GeoAnswerBlock } from "@/components/GeoAnswerBlock";
+import { HomeMotion } from "@/components/HomeMotion";
 
 // Lazy load below-fold sections to speed up initial render
 const FeaturesGridSection = lazy(() => import("@/components/FeaturesGridSection").then(m => ({ default: m.FeaturesGridSection })));
@@ -70,7 +71,7 @@ const Index = () => {
     : [];
 
   return (
-    <div className="min-h-screen pb-16 md:pb-0">
+    <HomeMotion><div className="min-h-screen pb-16 md:pb-0">
       <SEOHead pageKey="home" />
       <OrganizationSchema />
       <LocalBusinessSchema />
@@ -182,7 +183,7 @@ const Index = () => {
       <Suspense fallback={null}>
         <ProductPreloader />
       </Suspense>
-    </div>
+    </div></HomeMotion>
   );
 };
 

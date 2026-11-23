@@ -12,5 +12,7 @@ Global CSS owns semantic color, shadow, radius and hero-overlay roles. The white
 ## Motion and layout
 Keep the existing sliding navigation highlight, dropdown and accordion interactions. No looping hero bokeh, shimmer, zoom or pulsing CTA. Respect reduced motion. Blog images and product renders retain stable aspect ratios. Admin tabs remain visible and scroll horizontally when necessary without changing permissions.
 
+Homepage uses a localized lighter image overlay, with separate mobile treatment and text shadow for readability. Homepage entrance motion is translation-only and once per element; content stays visible before observation. Short interactions, static partner labels, slower pausable activity scrolling and reduced-motion/mobile fallbacks preserve reading focus without changing SEO copy.
+
 ## Review
 Representative public pages, localized pages, navigation and login rendering are browser-checked. Global styling reaches every route; page-specific content and authorization remain unchanged. Do not copy illustrative statistics or claims from the visual prototype.

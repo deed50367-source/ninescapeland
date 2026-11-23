@@ -1,5 +1,5 @@
 import { useTranslation } from "react-i18next";
-import { motion, MotionConfig } from "framer-motion";
+import { motion } from "framer-motion";
 import { ArrowRight, ArrowLeft, CheckCircle } from "lucide-react";
 import { Button } from "./ui/button";
 import { useRTL } from "@/hooks/useRTL";
@@ -21,8 +21,7 @@ export const HeroSection = () => {
   const ArrowIcon = isRTL ? ArrowLeft : ArrowRight;
 
   return (
-    <MotionConfig reducedMotion="user">
-    <section id="home" className="relative min-h-[720px] flex items-center bg-hero overflow-hidden">
+    <section id="home" className="home-hero relative min-h-[720px] flex items-center bg-hero overflow-hidden">
       {/* Animated Background Image */}
       <div className="absolute inset-0">
         {/* Main background with slow zoom animation */}
@@ -40,7 +39,7 @@ export const HeroSection = () => {
             ].join(", ")}
             sizes="100vw"
             alt="Custom Commercial Indoor Playground Equipment by NinescapeLand"
-            className="w-full h-full object-cover"
+            className="home-hero-image w-full h-full object-cover"
             loading="eager"
             fetchPriority="high"
             decoding="sync"
@@ -49,7 +48,7 @@ export const HeroSection = () => {
           />
         </motion.div>
         
-        <div className="absolute inset-0 hero-overlay" />
+        <div className="absolute inset-0 home-hero-overlay" />
       </div>
 
 
@@ -60,7 +59,7 @@ export const HeroSection = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
-            className="inline-block px-3 py-1.5 sm:px-4 sm:py-2 bg-hero-foreground/10 text-hero-foreground rounded-md text-xs sm:text-sm font-semibold mb-4 sm:mb-6 border border-accent-foreground/20"
+            className="home-hero-entry inline-block px-3 py-1.5 sm:px-4 sm:py-2 bg-hero-foreground/10 text-hero-foreground rounded-md text-xs sm:text-sm font-semibold mb-4 sm:mb-6 border border-accent-foreground/20"
           >
             {t("hero.badge")}
           </motion.span>
@@ -69,7 +68,7 @@ export const HeroSection = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.1 }}
-            className="text-3xl sm:text-4xl lg:text-5xl font-heading font-bold text-hero-foreground leading-tight mb-4 sm:mb-6"
+            className="home-hero-entry text-3xl sm:text-4xl lg:text-5xl font-heading font-bold text-hero-foreground leading-tight mb-4 sm:mb-6"
           >
             {t("hero.title")}{" "}
             <span className="block text-accent">{t("hero.titleHighlight")}</span>
@@ -79,7 +78,7 @@ export const HeroSection = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="text-sm sm:text-base leading-relaxed text-hero-foreground/90 mb-4 sm:mb-6 max-w-2xl"
+            className="home-hero-entry text-sm sm:text-base leading-relaxed text-hero-foreground/90 mb-4 sm:mb-6 max-w-2xl"
           >
             {t("hero.description")}
           </motion.p>
@@ -117,7 +116,7 @@ export const HeroSection = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.4 }}
-            className="flex flex-col sm:flex-row gap-3 sm:gap-4"
+            className="home-hero-entry flex flex-col sm:flex-row gap-3 sm:gap-4"
           >
             <motion.div
             >
@@ -155,6 +154,5 @@ export const HeroSection = () => {
         </div>
       </div>
     </section>
-    </MotionConfig>
   );
 };

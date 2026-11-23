@@ -138,6 +138,12 @@ html, body {
     --hero-surface: 225 18% 13%;
     --hero-foreground: 0 0% 100%;
     --gradient-hero-overlay: linear-gradient(90deg, hsl(var(--hero-surface) / .94) 0%, hsl(var(--hero-surface) / .79) 40%, hsl(var(--hero-surface) / .2) 100%);
+    --home-hero-overlay: linear-gradient(90deg, hsl(var(--hero-surface) / .78) 0%, hsl(var(--hero-surface) / .72) 42%, hsl(var(--hero-surface) / .28) 67%, hsl(var(--hero-surface) / .04) 100%);
+    --home-hero-overlay-mobile: linear-gradient(180deg, hsl(var(--hero-surface) / .68) 0%, hsl(var(--hero-surface) / .6) 65%, hsl(var(--hero-surface) / .28) 100%);
+    --shadow-hero-text: 0 1px 3px hsl(var(--hero-surface) / .6);
+    --motion-interaction: 220ms;
+    --motion-entry: 450ms;
+    --motion-ease: cubic-bezier(.22, 1, .36, 1);
     --gradient-accent: linear-gradient(0deg, hsl(var(--accent)), hsl(var(--accent)));
     --gradient-card-hover: linear-gradient(180deg, transparent 0%, hsl(258 47% 45% / 0.05) 100%);
     --shadow-soft: 0 3px 12px -6px hsl(var(--foreground) / 0.12);
@@ -772,6 +778,39 @@ html, body {
 
 /* Manufacturer visual language shared by public and administrative surfaces. */
 .hero-overlay { background: var(--gradient-hero-overlay); }
+.home-hero-overlay { background: var(--home-hero-overlay); }
+[dir="rtl"] .home-hero-overlay { transform: scaleX(-1); }
+.home-hero .container-wide { text-shadow: var(--shadow-hero-text); }
+.home-hero-entry { animation: home-entry var(--motion-entry) var(--motion-ease) both; }
+.home-hero h1.home-hero-entry { animation-delay: 60ms; }
+.home-hero p.home-hero-entry { animation-delay: 100ms; }
+.home-hero .flex.home-hero-entry { animation-delay: 150ms; }
+@keyframes home-entry { from { translate: 0 12px; } to { translate: 0 0; } }
+/* Never hide readable content while waiting for animation or prerender observation. */
+.home-motion main [style*="opacity"]:not(img):not(svg):not(path) { opacity: 1 !important; }
+.home-motion :is(a, button, input, textarea, [data-state]) { transition-duration: var(--motion-interaction); }
+.home-motion main .group img { transition-duration: var(--motion-entry); }
+.home-motion main .animate-marquee { animation-duration: 65s; }
+.home-motion main .animate-ping { animation: none; }
+.home-motion main section.bg-muted\/50 .animate-marquee { animation: none; flex-wrap: wrap; justify-content: center; gap: 1rem; }
+.home-motion main section.bg-muted\/50 .animate-marquee > div { flex-wrap: wrap; justify-content: center; gap: 1rem; }
+.home-motion main section.bg-muted\/50 .animate-marquee > div + div { display: none; }
+@media (hover: hover) and (pointer: fine) {
+  .home-motion main :is(article.group, a.group.bg-card):hover { translate: 0 -3px; }
+  .home-motion main :is(article.group, a.group.bg-card) { transition: translate var(--motion-interaction), box-shadow var(--motion-interaction); }
+}
+@media (max-width: 767px) {
+  .home-hero-overlay { background: var(--home-hero-overlay-mobile); }
+  [dir="rtl"] .home-hero-overlay { transform: none; }
+  .home-hero-image { object-position: 62% center; }
+  .home-hero-entry { animation-duration: 350ms; }
+  .home-motion main .animate-marquee { animation: none; overflow-x: auto; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .home-hero-entry { animation: none; }
+  .home-motion main .animate-marquee { animation: none; overflow-x: auto; }
+  .home-motion main :is(article.group, a.group.bg-card):hover { translate: none; }
+}
 [dir="rtl"] .hero-overlay { transform: scaleX(-1); }
 ::selection { background: hsl(var(--primary) / .18); color: hsl(var(--foreground)); }
 input, textarea { caret-color: hsl(var(--primary)); }
