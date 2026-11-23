@@ -14,7 +14,8 @@ concurrency:
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
-    timeout-minutes: 45
+    # Covers a full six-language prerender plus a first full FTPS upload and acceptance.
+    timeout-minutes: 75
     
     steps:
       - name: Checkout code
@@ -42,6 +43,7 @@ jobs:
           npm run build:static 2>&1 | tee prerender.log
         env:
           PUPPETEER_EXECUTABLE_PATH: ${{ steps.setup-chrome.outputs.chrome-path }}
+          PRERENDER_CONCURRENCY: '6'
           # Backend endpoint is configurable so the self-hosted VPS backend can be
           # switched in without a code change. Falls back to the current hosted
           # backend when the repo secrets are not set yet.

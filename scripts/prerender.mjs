@@ -386,7 +386,12 @@ async function prerenderRoute(browser, route) {
     }
     // Allow already-visible lazy content and JSON-LD effects to settle; analytics
     // and chat connections must not control whether a page can be captured.
-    await new Promise(r => setTimeout(r, 2000));
+    // Wait for structured data when the route emits it, then a short settle; a fixed
+    // 2s sleep per page alone cost ~9 minutes across the full six-language site.
+    await page
+      .waitForFunction(() => document.querySelector('script[type="application/ld+json"]'), { timeout: 2000 })
+      .catch(() => {});
+    await new Promise(r => setTimeout(r, 400));
     const head = await page.evaluate(() => ({
       canonical: document.querySelector('link[rel="canonical"]')?.getAttribute("href") || "",
       title: document.title,
@@ -554,7 +559,7 @@ async function main() {
   });
 
   // Process routes in small batches (smaller = less rAF contention per page)
-  const BATCH_SIZE = 3;
+  const BATCH_SIZE = Math.max(1, Number(process.env.PRERENDER_CONCURRENCY) || 6);
   try {
     for (let i = 0; i < routes.length; i += BATCH_SIZE) {
       const batch = routes.slice(i, i + BATCH_SIZE);
