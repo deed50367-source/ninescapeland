@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { Pause, Play } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import equipmentVideo from "@/assets/equipment-hero.mp4.asset.json";
+import equipmentVideo from "@/assets/ningbo-equipment-walkthrough.mp4.asset.json";
 
 const labels: Record<string, { play: string; pause: string }> = {
   en: { play: "Play equipment video", pause: "Pause equipment video" },
@@ -13,7 +13,7 @@ const labels: Record<string, { play: string; pause: string }> = {
   fr: { play: "Lire la vidéo des équipements", pause: "Mettre la vidéo en pause" },
 };
 
-/** One silent push-in, with the existing image always available underneath. */
+/** One silent equipment walkthrough, with the existing image available underneath. */
 export function HeroEquipmentVideo() {
   const { i18n } = useTranslation();
   const video = useRef<HTMLVideoElement>(null);
